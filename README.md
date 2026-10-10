@@ -48,3 +48,8 @@
 - 筛选：资源类型 / 页面风格 / 按组件找 / 标签四行，标签在上、chip 与网格同一左边线。
 - 详情：桌面右侧抽屉 640px，手机底部 sheet。主题存储键改为 `uihub.theme4`。
 - 截图：`screenshots/v4-*.png`。
+
+## v5（2026-10-10）fancy 回归 + 预览随主题
+- 配色：Midnight Ink + 电光青，极光渐变（青→长春花蓝→玫瑰）只用在描边/数字/高亮。默认深色（localStorage `uihub.theme5`）。详见 DESIGN_BRIEF.md。
+- 版式沿用 v4：对齐、等高卡片、两行简介、按钮贴底都不变。
+- 预览随主题：自制示意分深浅两套；64 个重点站有浅/深两张真实截图（`build_theme.py`，在 build_media.py 之后跑），随主题切换，详情里可手动切；其余截图只标注是浅色还是深色截图，不做假暗化；live iframe 发送 color-scheme / postMessage，跨域无法强制的标注「仅深色演示」或「跟随系统主题」。

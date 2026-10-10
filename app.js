@@ -32,13 +32,13 @@ function vis(i){return !!VISUAL[i.type]&&(i.type==='style'||!!LIVE[i.id]||!!(M[i
 /* ---------- 精选：live = 原站页面 iframe 嵌入（裁出演示区域） ---------- */
 // w: iframe 的虚拟宽度；top/view: 演示区域在页面里的纵向位置和高度（像素，按 w 宽度时）
 var LIB = 'https://libraries.dev/';
-function lib(p){return {src:LIB+p+'.html',w:480,top:375,view:440}}
+function lib(p){return {src:LIB+p+'.html',w:480,top:375,view:440,scheme:'dark'}}
 var FEAT = [
-  {id:'metal-jakubantalik-com', live:{src:'https://metal.jakubantalik.com',w:480,top:140,view:420}, poster:'previews/live-metal.webp', title:'Liquid Metal 液态金属', hint:'鼠标移到按钮上看金属流动', big:1},
+  {id:'metal-jakubantalik-com', live:{src:'https://metal.jakubantalik.com',w:480,top:140,view:420,scheme:'dark'}, poster:'previews/live-metal.webp', title:'Liquid Metal 液态金属', hint:'鼠标移到按钮上看金属流动', big:1},
   {id:'libraries-dev', live:lib('voice'), poster:'previews/live-voice.webp', title:'Voice 语音光效', sub:'Libraries.dev · 9 月新组件', hint:'在原站点麦克风按钮，说话时光会升起'},
   {id:'orbs-jakubantalik-com', live:lib('orbs'), poster:'previews/live-orbs.webp', title:'Thinking Orbs 思考光球', sub:'原站已迁到 libraries.dev，嵌入的是新地址'},
   {id:'beam-jakubantalik-com', live:lib('beam'), poster:'previews/live-beam.webp', title:'Border Beam 流光边框', sub:'原站已迁到 libraries.dev，嵌入的是新地址'},
-  {id:'shaders-paper-design-liquid-metal', live:{src:'https://shaders.paper.design/liquid-metal',w:420,top:160,view:300}, poster:'previews/live-paper.webp', title:'Paper Shaders 液态金属', hint:'原站右侧可以调参数'},
+  {id:'shaders-paper-design-liquid-metal', live:{src:'https://shaders.paper.design/liquid-metal',w:420,top:160,view:300,scheme:'system'}, poster:'previews/live-paper.webp', title:'Paper Shaders 液态金属', hint:'原站右侧可以调参数'},
     {id:'ui-aceternity-com',wide:1},{id:'magicui-design'},{id:'reactbits-dev'},{id:'animate-ui-com'},{id:'21st-dev'},{id:'coss-com-ui'},{id:'www-heroui-com'}
 ];
 var MORE = ['motion-primitives-com','www-beautifului-dev','www-shadcnblocks-com','reactbits-dev-animations-metallic-paint'];
@@ -60,6 +60,9 @@ function tagsOf(i){return i.tags.concat(utags[i.id]||[])}
 function shown(n){return (n||'').replace(/（@[A-Za-z0-9_]+）$/,'')}
 function canFrame(i){return !!(LIVE[i.id]||(M[i.id]&&M[i.id].frame))}
 var IC = {
+  sun:'<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>',
+  moon:'<svg viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>',
+  half:'<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"/></svg>',
   ext:'<svg viewBox="0 0 24 24"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg>',
   copy:'<svg viewBox="0 0 24 24"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v1"/></svg>',
   star:'<svg viewBox="0 0 24 24"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/></svg>',
@@ -185,16 +188,24 @@ function liveBox(f,opts){
     '<div class="ifw"></div><div class="shield" data-play="'+f.id+'"><span class="tap">'+IC.play+esc(t('btn_tryit'))+'</span></div>'+
     '<span class="ld"><i></i>'+esc(t('loading_live'))+'</span></div>';
 }
-function thumb(i){var m=M[i.id]||{},lv=LIVE[i.id];return lv?'<img src="'+lv.poster+'" alt="" loading="lazy">':(m.img?'<img src="'+m.img+'" alt="" loading="lazy">':demo(i))}
+/* v5：主题 —— 自制示意随主题换色；有浅/深双截图的随主题切换；只有一张的标出是浅色还是深色截图（不伪造暗色） */
+function curTheme(){return document.documentElement.dataset.theme==='light'?'light':'dark'}
+function thmTag(sc){if(!sc)return '';return '<span class="thm" data-s="'+sc+'">'+(sc==='dark'?IC.moon:IC.half)+'<span>'+esc(t(sc==='dark'?'thm_dark_only':'thm_system'))+'</span></span>'}
+function shotTag(m){if(m.imgL&&m.imgD)return '<span class="shot-t dual" title="'+esc(t('thm_follow'))+'">'+IC.half+'</span>';if(!m.tone)return '';return '<span class="shot-t" data-t="'+m.tone+'" title="'+esc(t(m.tone==='l'?'shot_l':'shot_d'))+'">'+(m.tone==='l'?IC.sun:IC.moon)+'</span>'}
+function shotImg(m,cls,extra){cls=cls?cls+' ':'';extra=extra||'';if(m.imgL&&m.imgD)return '<img class="'+cls+'ts ts-l" src="'+m.imgL+'" alt="" '+extra+'><img class="'+cls+'ts ts-d" src="'+m.imgD+'" alt="" '+extra+'>';return '<img'+(cls?' class="'+cls.trim()+'"':'')+' src="'+m.img+'" alt="" '+extra+'>'}
+function postTheme(fr,n){try{fr.style.colorScheme=n;fr.contentWindow&&fr.contentWindow.postMessage({type:'theme',theme:n,source:'uihub'},'*');fr.contentWindow&&fr.contentWindow.postMessage({type:'uihub:theme',theme:n},'*')}catch(e){}}
+window.UIHUB_postTheme=function(fr){postTheme(fr,curTheme())};
+function applyTheme(n){document.querySelectorAll('.pvw[data-ts]').forEach(function(p){p.removeAttribute('data-ts')});document.querySelectorAll('iframe').forEach(function(fr){postTheme(fr,n)})}
+function thumb(i){var m=M[i.id]||{},lv=LIVE[i.id];return lv?'<img src="'+lv.poster+'" alt="" loading="lazy">'+thmTag(lv.live.scheme==='dark'?'dark':''):(m.img?shotImg(m,'','loading="lazy"')+shotTag(m):demo(i))}
 
 /* ---------- 精选 ---------- */
 function featCard(f,k){
   var i=BY[f.id]; if(!i)return '';
   var m=M[i.id]||{}, live=!!f.live;
-  var media = live ? liveBox(f) : (m.img?'<img class="poster" src="'+m.img+'" alt="'+esc(i.name)+'" loading="'+(k<8?'eager':'lazy')+'">':demo(i));
+  var media = live ? liveBox(f) : (m.img?shotImg(m,'poster','loading="'+(k<8?'eager':'lazy')+'"')+shotTag(m):demo(i));
   var title=isZh()?(f.title||shown(i.name)):shown(i.name), sub=isZh()?(f.sub||noteOf(i)||host(i.url)):(noteOf(i)||host(i.url));
   return '<article class="fc'+(f.big?' big':'')+(f.wide?' wide':'')+(live?' is-live':'')+'" style="--i:'+k+'">'+
-    '<div class="fm" '+(live?'':'data-open="'+i.id+'"')+'>'+media+'<div class="ftop">'+(live?srcTag(i,live):'')+'</div></div>'+
+    '<div class="fm" '+(live?'':'data-open="'+i.id+'"')+'>'+media+'<div class="ftop">'+(live?srcTag(i,live)+thmTag(f.live.scheme==='dark'?'dark':''):'')+'</div></div>'+
     '<div class="fb" data-open="'+i.id+'"><h3>'+esc(title)+'</h3>'+metaLine(i)+
     '<p class="note">'+esc(f.hint&&isZh()?sub+' · '+f.hint:sub)+'</p>'+foot(i)+
     '</div></article>';
@@ -295,9 +306,9 @@ function loadLive(box){
   var fr=document.createElement('iframe');
   fr.src=box.dataset.live; fr.loading='eager'; fr.title='live preview'; fr.referrerPolicy='no-referrer-when-downgrade';
   fr.setAttribute('allow','microphone; autoplay; clipboard-write'); fr.tabIndex=-1;
-  box.querySelector('.ifw').appendChild(fr); fit(box); box.classList.add('loading');
+  fr.style.colorScheme=curTheme(); box.querySelector('.ifw').appendChild(fr); fit(box); box.classList.add('loading');
   var to=setTimeout(function(){box.classList.add('slow')},12000);
-  fr.addEventListener('load',function(){clearTimeout(to);setTimeout(function(){box.classList.remove('loading','slow');box.classList.add('ready')},900)});
+  fr.addEventListener('load',function(){clearTimeout(to);postTheme(fr,curTheme());setTimeout(function(){box.classList.remove('loading','slow');box.classList.add('ready')},900)});
 }
 function unloadLive(box){if(!box.dataset.on)return;delete box.dataset.on;box.querySelector('.ifw').innerHTML='';box.classList.remove('ready','loading','slow')}
 var io = 'IntersectionObserver' in window ? new IntersectionObserver(function(es){
@@ -315,7 +326,7 @@ function loadSite(box){
   fr.style.width=vw+'px'; fr.style.height=(ch/s)+'px'; fr.style.transform='scale('+s+')';
   box.querySelector('.ifw').appendChild(fr); box.classList.add('loading');
   var to=setTimeout(function(){box.classList.add('slow')},12000);
-  fr.addEventListener('load',function(){clearTimeout(to);setTimeout(function(){box.classList.remove('loading','slow');box.classList.add('ready')},600)});
+  fr.addEventListener('load',function(){clearTimeout(to);postTheme(fr,curTheme());setTimeout(function(){box.classList.remove('loading','slow');box.classList.add('ready')},600)});
 }
 
 /* ---------- 详情 ---------- */
@@ -330,17 +341,19 @@ function preview(i){
   var f=LIVE[i.id], m=M[i.id]||{};
   if(i.id==='libraries-dev'){
     return '<div class="pv-tabs" id="libTabs">'+LIBTABS.map(function(x,k){return '<button class="'+(k?'':'on')+'" data-lib="'+x[0]+'">'+x[1]+'</button>'}).join('')+'</div>'+
-      '<div class="pvw big">'+liveBox({id:i.id,live:lib('voice'),poster:'previews/live-voice.webp'},{eager:1})+'<div class="pvtag"><span class="tag-lv">'+t('tag_live')+'</span><span>'+esc(t('pv_libtabs'))+'</span></div></div>';
+      '<div class="pvw big">'+liveBox({id:i.id,live:lib('voice'),poster:'previews/live-voice.webp'},{eager:1})+'<div class="pvtag"><span class="tag-lv">'+t('tag_live')+'</span>'+thmTag('dark')+'<span>'+esc(t('pv_libtabs'))+'</span></div></div>';
   }
-  if(f)return '<div class="pvw big">'+liveBox(f,{eager:1})+'<div class="pvtag"><span class="tag-lv">'+t('tag_live')+'</span><span>'+esc(t('pv_live_d'))+'</span></div></div>';
-  if(m.frame)return '<div class="pvw big"><div class="site-wrap">'+(m.img?'<img class="poster" src="'+m.img+'" alt="">':demo(i))+
+  if(f)return '<div class="pvw big">'+liveBox(f,{eager:1})+'<div class="pvtag"><span class="tag-lv">'+t('tag_live')+'</span>'+thmTag(f.live.scheme)+'<span>'+esc(t('pv_live_d'))+'</span></div></div>';
+  if(m.frame)return '<div class="pvw big">'+tsw(m)+'<div class="site-wrap">'+(m.img?shotImg(m,'poster'):demo(i))+
     '<button class="loadsite" data-site-load="'+esc(i.url)+'">'+IC.play+'<span>'+esc(t('pv_frame_btn'))+'<small>'+esc(t('pv_frame_sub'))+'</small></span></button></div>'+
-    '<div class="pvtag">'+srcTag(i)+'<span>'+esc(t('pv_frame_d'))+'</span></div></div>';
-  if(m.img)return '<div class="pvw big"><img class="poster" src="'+m.img+'" alt="'+esc(i.name)+'" data-play="'+i.id+'"><div class="pvtag">'+srcTag(i)+'<span>'+esc(t('pv_noframe_d'))+'</span></div></div>';
+    '<div class="pvtag">'+srcTag(i)+shotNote(m)+'<span>'+esc(t('pv_frame_d'))+'</span></div></div>';
+  if(m.img)return '<div class="pvw big">'+tsw(m)+shotImg(m,'poster','data-play="'+i.id+'"')+'<div class="pvtag">'+srcTag(i)+shotNote(m)+'<span>'+esc(t('pv_noframe_d'))+'</span></div></div>';
   if(vis(i))return '<div class="pvw big">'+demo(i)+'<div class="pvtag">'+srcTag(i)+'<span>'+esc(t('pv_demo_d'))+'</span></div></div>';
   var parts=shown(i.name).split('/');
   return '<div class="pvw sk"><div class="term"><i></i><i></i><i></i><span>'+esc(i.type==='skill'?'SKILL.md':host(i.url))+'</span></div><div class="skn"><small>'+esc(parts.length>1?parts[0]+' /':TN(i.type))+'</small><b>'+esc(parts[parts.length-1])+'</b></div></div>';
 }
+function tsw(m){if(!(m.imgL&&m.imgD))return '';return '<div class="tsw" role="group"><button data-ts="light">'+IC.sun+esc(t('shot_sw_l'))+'</button><button data-ts="dark">'+IC.moon+esc(t('shot_sw_d'))+'</button></div>'}
+function shotNote(m){if(m.imgL&&m.imgD||!m.tone)return '';return '<span class="thm one" data-t="'+m.tone+'">'+(m.tone==='l'?IC.sun:IC.moon)+'<span>'+esc(t(m.tone==='l'?'shot_one_l':'shot_one_d'))+'</span></span>'}
 function srcLink(u){return u?'<a class="osrc" href="'+esc(u)+'" target="_blank" rel="noopener noreferrer">'+esc(t('src_l'))+' · '+esc(host(u))+'</a>':''}
 function promptBlock(i){
   var p=promptParts(i);
@@ -409,9 +422,9 @@ function playFull(id){
   if(f||m.frame){
     var src=f?f.live.src:i.url;
     if(id==='libraries-dev'){var on=document.querySelector('#libTabs .on');if(on)src=LIB+on.dataset.lib+'.html'}
-    $('play').innerHTML=bar('<span class="'+(f?'tag-lv':'tag-fr')+'">'+(f?t('tag_live'):t('tag_frame'))+'</span>',src)+'<iframe src="'+esc(src)+'" title="'+esc(shown(i.name))+'" allow="microphone; autoplay; clipboard-write"></iframe>';
+    $('play').innerHTML=bar('<span class="'+(f?'tag-lv':'tag-fr')+'">'+(f?t('tag_live'):t('tag_frame'))+'</span>',src)+'<iframe src="'+esc(src)+'" title="'+esc(shown(i.name))+'" style="color-scheme:'+curTheme()+'" allow="microphone; autoplay; clipboard-write" onload="window.UIHUB_postTheme&&UIHUB_postTheme(this)"></iframe>';
   }else{
-    $('play').innerHTML=bar(srcTag(i),i.url)+'<div class="lb">'+(m.img?'<img src="'+m.img+'" alt="'+esc(i.name)+'">':'<div class="lbd">'+demo(i)+'</div>')+
+    $('play').innerHTML=bar(srcTag(i),i.url)+'<div class="lb">'+(m.img?shotImg(m,'',''):'<div class="lbd">'+demo(i)+'</div>')+
       '<p>'+esc(m.img?t('lb_hint'):t('pv_demo_d'))+'</p><div class="lba"><a class="b pri" href="'+esc(i.url)+'" target="_blank" rel="noopener noreferrer">'+esc(t('btn_original'))+IC.ext+'</a>'+cardActs(i,'lbc')+'</div></div>';
   }
   $('play').hidden=false; document.body.classList.add('lock');
@@ -463,7 +476,7 @@ function focusSearch(){if(state.view!=='home')location.hash='#/';setTimeout(func
 document.addEventListener('click',function(e){
   var mb=e.target.closest('[data-more]'); if(mb){e.preventDefault();e.stopPropagation();openMenu(mb.dataset.more,mb);return}
   if(!$('menu').hidden&&(!e.target.closest('#menu')||e.target.closest('.mi')))closeMenu();
-  var el=e.target.closest('#gridMore,[data-copy],[data-cp],[data-cc],[data-cpo],[data-cco],[data-tip],[data-fav],[data-type],[data-rt],[data-vs],[data-ct],[data-tag],[data-close],[data-closeplay],[data-rmtag],[data-g],[data-play],[data-lib],[data-site-load],[data-open],a');
+  var el=e.target.closest('#gridMore,[data-copy],[data-cp],[data-cc],[data-cpo],[data-cco],[data-tip],[data-fav],[data-type],[data-rt],[data-vs],[data-ct],[data-tag],[data-close],[data-closeplay],[data-rmtag],[data-g],[data-play],[data-lib],[data-site-load],[data-ts],[data-open],a');
   if(!el)return;
   if(el.tagName==='A'&&!el.dataset.g){e.stopPropagation();return}
   if(el.dataset.copy){e.preventDefault();copy(el.dataset.copy,el.dataset.msg||t('toast_link'));return}
@@ -489,7 +502,8 @@ document.addEventListener('click',function(e){
     var p=box.querySelector('.poster'); var pm={voice:1,orbs:1,beam:1,metal:'libmetal',gooey:1,image:1}[el.dataset.lib];
     p.style.visibility=pm?'':'hidden'; if(pm)p.src='previews/live-'+(pm===1?el.dataset.lib:pm)+'.webp';
     el.scrollIntoView({inline:'center',block:'nearest',behavior:'smooth'}); loadLive(box); return}
-  if(el.dataset.siteLoad){var w=el.closest('.site-wrap');w.outerHTML=siteBox(el.dataset.siteLoad);var sb=$('sheet').querySelector('.site');track($('sheet'));loadSite(sb);return}
+  if(el.dataset.ts){var pw=el.closest('.pvw');if(pw){pw.dataset.ts=el.dataset.ts}return}
+  if(el.dataset.siteLoad){var w=el.closest('.site-wrap');var tw=w.parentNode.querySelector('.tsw');tw&&tw.remove();w.outerHTML=siteBox(el.dataset.siteLoad);var sb=$('sheet').querySelector('.site');track($('sheet'));loadSite(sb);return}
   if(el.dataset.rmtag!=null){var id=$('sheet').dataset.id;utags[id].splice(+el.dataset.rmtag,1);if(!utags[id].length)delete utags[id];LS.set('tags',utags);openSheet(id);refresh();return}
   if(el.dataset.g){e.preventDefault();closeSheet();location.hash='#/guides';setTimeout(function(){var g=$('g-'+el.dataset.g);g&&g.scrollIntoView({behavior:'smooth'})},80);return}
   if(el.dataset.open){if(!$('play').hidden)closePlay();location.hash='#/r/'+el.dataset.open}
@@ -510,7 +524,7 @@ document.addEventListener('keydown',function(e){
   if(e.key==='/'&&!/INPUT|TEXTAREA|SELECT/.test(document.activeElement.tagName)){e.preventDefault();focusSearch()}
   if(e.key==='Escape'){if(!$('menu').hidden)closeMenu();else if(!$('play').hidden)closePlay();else if($('sheet').classList.contains('open'))back()}
 });
-$('themeBtn').addEventListener('click',function(){var r=document.documentElement,n=r.dataset.theme==='dark'?'light':'dark';r.dataset.theme=n;try{localStorage.setItem('uihub.theme4',n);var mt=document.querySelector('meta[name=theme-color]');mt&&mt.setAttribute('content',n==='dark'?'#0d0d0d':'#f6f6f4')}catch(e){}});
+$('themeBtn').addEventListener('click',function(){var r=document.documentElement,n=r.dataset.theme==='dark'?'light':'dark';r.dataset.theme=n;try{applyTheme(n);localStorage.setItem('uihub.theme5',n);var mt=document.querySelector('meta[name=theme-color]');mt&&mt.setAttribute('content',n==='dark'?'#06070b':'#f5f6fa')}catch(e){}});
 (function(){var sel=$('langSel');if(!sel)return;sel.innerHTML=I18N.langs.map(function(l){return '<option value="'+l[0]+'">'+l[1]+'</option>'}).join('');sel.addEventListener('change',function(){setLang(sel.value)})})();
 (function(){var y0=null,s=$('sheet');s.addEventListener('touchstart',function(e){y0=s.scrollTop<=0&&!e.target.closest('.live,.site,.pv-tabs')?e.touches[0].clientY:null},{passive:true});
  s.addEventListener('touchend',function(e){if(y0!=null&&e.changedTouches[0].clientY-y0>90)back();y0=null},{passive:true})})();

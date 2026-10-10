@@ -1,3 +1,25 @@
+# UI Hub — v5 Fancy Restore (2026-10-10)
+
+v4 layout is kept 1:1 (shared 1320 max-width + 20/40 gutters, equal-height cards, 2-line notes, pinned actions, `.more` spacing untouched). v5 only changes colour, light, depth and motion — appended as the "v5 FANCY LAYER" and "v5 THEME-AWARE PREVIEWS" blocks at the end of styles.css.
+
+## Palette: Midnight Ink + Electric Cyan, aurora sheen
+Studied: Aceternity UI, Magic UI, React Bits, Beautiful UI, Originkit, Cult UI, Motion, 21st.dev (previews/).
+- Dark (default): ink `#06070b` / surface `#0d0f15` / mat `#10131a`; text `#f3f5fb · #a6adbf · #687086`.
+- Accent: electric cyan `#67e8f9`; sheen gradient cyan → periwinkle `#a5b4fc` → rose `#f9a8d4`, used only on edges, numbers, the italic headline word, active tab bar and focus — never as a fill. Gold `#fcd34d` for saved stars.
+- Light: cool white `#f5f6fa`, ink `#0a0c14`, accent `#2563eb`, sheen `#06b6d4 → #6366f1 → #ec4899`.
+- Why: the fancy libs in the catalog are near-black stages where the component itself is the light source; one luminous accent + a thin multi-hue edge reads premium. Black+orange read as a warning palette and fought every thumbnail; purple fills read as generic AI.
+
+## Richness
+Ambient aurora + masked dot field; Aceternity-style spotlight beam in the hero; Geist 650 display with gradient serif italic; glass eyebrow pill; gradient-bordered search; gradient stat numbers; cards with pointer-tracked spotlight + gradient border on hover and thumb lift/zoom; pill chips with glow on active; glass media tags; luminous mesh covers for text-only resources; drawer with aurora header + gradient top edge; glass tab bar with glowing active indicator; gradient-bordered toast.
+
+## Theme-aware previews
+- Sketches (`.demo`): restyled for light and dark.
+- 64 key sites (featured + library homepages): real light AND dark captures (`prefers-color-scheme` emulation, `build_theme.py`), swapped with the site theme; drawer has a Light/Dark switch.
+- Every other screenshot is tagged `tone` (l/d by luminance). Never tinted. A small sun/moon chip appears on the card only when the shot's theme differs from the site theme; the drawer states "only a light/dark screenshot exists".
+- Live iframes: get `color-scheme` + `postMessage({type:'theme'})` on load and on toggle for demos that listen. Cross-origin iframes can't be forced (Chrome ignores the embedder's color-scheme), so libraries.dev / metal are badged "Dark-only demo" and Paper Shaders "Follows system theme".
+
+---
+
 # UI Hub — Visual Rebuild Brief (v4, 2026-10-10)
 
 ## What we studied (screenshots in /workspace/rebuild/ref-*.png)
