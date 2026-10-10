@@ -26,3 +26,10 @@
 - 组件库卡片：原来共用「自制示意」的 106 条换成各自官网首页截图（`previews/_home_shots.txt`）。
 - 真实预览 iframe 改为 contain 缩放：整块演示区完整缩进卡片，手机上不再左右裁切。
 - 卡面复制按钮收成 26px 小胶囊；窄屏「复制代码」只留图标。
+
+## v3f（2026-10-10）完整官方代码
+- `_orig/fetch_full.py`：从官方 GitHub 仓库的文档演示源文件抓原文（PrimeVue / PrimeNG / PrimeReact、Ant Design、NG-ZORRO、TDesign Vue Next、Naive UI、Quasar、Vuetify、shadcn/ui、Arco、HeroUI v3），写 `_orig/fullcode.json`（树缓存 `_orig/full/*.json`，原文缓存 `_orig/full/raw/`）。
+- `build_orig.py`：复制代码的「原站原文」按 ① 安装 → ② 配置 → ③ 引入 → ④ 示例 排列，每段注释写官方来源文件；注释行是本站分段标题，代码逐字不改。「聚合站补充」只放原站链接、许可、付费部分说明。
+- `build_legal.py`：Prime 系社区版核实为 MIT（LTS / PrimeBlocks 付费，不提供）；HeroUI v3 仓库为 Apache-2.0。
+- 卡片和详情显示框架标签（Vue / Angular / React）；Prime 系详情里有「同一演示的其他框架版本」互链。
+- 构建顺序：`build_legal.py → _orig/fetch_full.py → build_orig.py`。

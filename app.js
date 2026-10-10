@@ -89,7 +89,7 @@ function promptParts(i){
   if(!orig)return {o:'',s:promptOld(i)};
   var c=codeParts(i), head=(o.p?t('p_orig_h',{url:src}):t('p_desc_h',{url:src}))+'\n'+orig;
   if(i.type==='style'||src!==i.url)head+='\n'+t('p_demo',{url:i.url});
-  if(c.o&&c.o.length<=1600)head+='\n\n'+t('p_code_h',{lic:c.lic})+'\n```\n'+c.o+'\n```';
+  if(c.o&&c.o.length<=12000)head+='\n\n'+t('p_code_h',{lic:c.lic})+'\n```\n'+c.o+'\n```';
   return {o:head,src:src,s:(i.type==='skill'&&o.p?t('p_task_skill'):t('p_task',{name:n}))+'\n\n'+t('p_sup',{url:i.url})};
 }
 function promptFor(i){var p=promptParts(i);return p.o?p.o+'\n\n'+p.s:p.s}
@@ -113,6 +113,7 @@ function metaLine(i){
   var l=lg(i), out='<span class="tp">'+TN(i.type)+'</span>';
   if(PR(i.pricing))out+='<span class="pill '+i.pricing+'" title="'+esc(t('price_tip_'+i.pricing))+'">'+PR(i.pricing)+'</span>';
   if(l.k==='oss')out+='<span class="pill oss" title="'+esc(t('kv_license'))+'">'+esc(l.lic)+'</span>';
+  var fw=(O[i.id]||{}).fw; if(fw)out+='<span class="pill fw">'+esc(fw)+'</span>';
   return '<div class="cmeta">'+out+'</div>';
 }
 function ctl(i){return '<div class="ctl">'+favBtn(i,'r')+'<button class="ib r more" data-more="'+i.id+'" aria-haspopup="menu" aria-label="'+esc(t('btn_more'))+'" title="'+esc(t('btn_more'))+'">'+IC.dots+'</button></div>'}
@@ -335,12 +336,21 @@ function promptBlock(i){
 function codeBlock(i){
   var l=lg(i), c=codeOf(i), cp=codeParts(i);
   if(c&&cp.o)return '<div class="prompt code"><div class="ph"><span>'+IC.code+esc(t('code_h'))+'</span><span class="phb">'+(cp.s?'<button class="b sm ghost" data-cco="'+i.id+'">'+esc(t('btn_copy_orig'))+'</button>':'')+'<button class="b sm pri" data-cc="'+i.id+'">'+IC.copy+esc(t('btn_copy_code'))+'</button></span></div>'+
-    '<div class="ogs org"><span class="ogh">'+esc(t('orig_h'))+srcLink(cp.os)+'</span><pre>'+esc(cp.o)+'</pre><p class="cnote">'+esc(t('code_orig_note',{lic:cp.lic}))+'</p></div>'+
+    '<div class="ogs org"><span class="ogh">'+esc(t('orig_h'))+((O[i.id]||{}).fw?' <span class="pill fw">'+esc(O[i.id].fw)+'</span>':'')+srcLink(cp.os)+'</span><pre>'+esc(cp.o)+'</pre><p class="cnote">'+esc(t((O[i.id]||{}).full&&/① /.test(cp.o)?'code_full_note':'code_orig_note',{lic:cp.lic}))+'</p></div>'+
     (cp.s?'<div class="ogs sup"><span class="ogh">'+esc(t('sup_h'))+'</span><pre>'+esc(cp.s)+'</pre><p class="cnote">'+esc(t('code_sup_note'))+'</p></div>':'')+
     (l.pro?'<p class="cnote">'+esc(t('pro_note',{pro:l.pro}))+'</p>':'')+'</div>';
   if(c)return '<div class="prompt code"><div class="ph"><span>'+IC.code+esc(t('code_h'))+'</span><button class="b sm pri" data-cc="'+i.id+'">'+IC.copy+esc(t('btn_copy_code'))+'</button></div><div class="ogs sup"><span class="ogh">'+esc(t('sup_h'))+'</span><pre>'+esc(c)+'</pre></div>'+
     '<p class="cnote">'+esc(t('code_note',{lic:l.lic}))+(l.pro?' '+esc(t('pro_note',{pro:l.pro})):'')+'</p></div>';
   return '<div class="prompt code off"><div class="ph"><span>'+IC.lock+esc(t('code_none_h'))+'</span><button class="b sm ghost" disabled title="'+esc(codeTip(i))+'">'+IC.copy+esc(t('btn_copy_code'))+'</button></div><p class="cnote">'+esc(codeTip(i))+'</p></div>';
+}
+/* v3f：Prime 系（Vue / Angular / React）同款演示互链，避免复制到错框架的代码 */
+var PRIME={'lib-primevue-org':'Vue','lib-primeng-org':'Angular','lib-primereact-org':'React'};
+function pslug(x){return (x.page||x.url||'').replace(/\/+$/,'').split('/').pop()}
+function fwSibs(i){
+  if(!PRIME[i.lib])return '';
+  var s=pslug(i), seen={}, out=ITEMS.filter(function(x){return x.lib&&PRIME[x.lib]&&x.lib!==i.lib&&(pslug(x)===s||x.kind===i.kind)}).sort(function(a,b){return (pslug(b)===s)-(pslug(a)===s)}).filter(function(x){if(seen[x.lib])return false;seen[x.lib]=1;return true});
+  if(!out.length)return '';
+  return '<p class="fwsibs">'+esc(t('fw_sibs'))+' '+out.map(function(x){return '<button class="b sm ghost" data-open="'+x.id+'">'+esc(x.libName||x.lib)+' · '+PRIME[x.lib]+'</button>'}).join(' ')+'</p>';
 }
 function openSheet(id){
   var i=BY[id]; if(!i)return;
@@ -352,6 +362,7 @@ function openSheet(id){
    '<div class="acts"><a class="b pri" href="'+esc(i.url)+'" target="_blank" rel="noopener noreferrer">'+esc(t('btn_original'))+IC.ext+'</a>'+
    (VISUAL[i.type]?'<button class="b ghost" data-play="'+i.id+'">'+IC.full+esc(canFrame(i)?t('btn_play'):t('btn_view'))+'</button>':'')+
    '<button class="b ghost" data-copy="'+esc(i.url)+'" data-msg="'+esc(t('toast_link'))+'">'+IC.copy+esc(t('btn_copy_link'))+'</button>'+favBtn(i,'lg')+'</div>'+
+   fwSibs(i)+
    promptBlock(i)+
    codeBlock(i)+
    '<dl class="kv"><dt>'+esc(t('kv_url'))+'</dt><dd class="u"><a href="'+esc(i.url)+'" target="_blank" rel="noopener noreferrer">'+esc(i.url)+'</a></dd>'+

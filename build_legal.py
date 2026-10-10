@@ -39,7 +39,7 @@ OSS = {
  'www-shadergradient-co': ('MIT', 'npm install @shadergradient/react', '@shadergradient/react', 'ruucm/shadergradient'),
  'github-com-rdev-liquid-glass-react': ('MIT', 'npm install liquid-glass-react', 'liquid-glass-react', 'rdev/liquid-glass-react'),
  'motion-primitives-com': ('MIT', 'npx motion-primitives@latest add text-effect', 'motion-primitives', 'ibelick/motion-primitives'),
- 'www-heroui-com': ('MIT', 'npm install @heroui/react', '@heroui/react', 'heroui-inc/heroui'),
+ 'www-heroui-com': ('Apache-2.0', 'npm i @heroui/styles @heroui/react', '@heroui/react', 'heroui-inc/heroui'),  # v3 仓库许可 Apache-2.0（GitHub API 2026-10-10）
  'kokonutui-com': ('MIT', '', '', 'kokonut-labs/kokonutui'),
  'www-cult-ui-com': ('MIT', '', '', 'nolly-studio/cult-ui'),
  'smoothui-dev': ('MIT', '', '', 'educlopez/smoothui'),
@@ -68,6 +68,12 @@ OTHERLIC = {'coss-com-ui': ('AGPL-3.0', 'cosscom/coss'), 'reactbits-dev': ('MIT 
             'vercel-com-templates-next-js-chatbot': ('见仓库', 'vercel/chatbot'), 'neat-firecms-co': ('自定义许可', 'FireCMSco/neat'),
             'agentation-com': ('PolyForm Shield', '')}
 PRICE_NOTE = None
+# v3f：Prime 系社区版已核实为 MIT（仓库 LICENSE.md 原文，2026-10-10）；LTS 版本、PrimeBlocks、模板等另售，不提供
+LICFIX = {
+ 'lib-primevue-org': ('MIT', 'npm install primevue @primeuix/themes', 'primevue', 'primefaces/primevue', 'PrimeVue LTS、PrimeBlocks、付费模板'),
+ 'lib-primeng-org': ('MIT', 'npm install primeng @primeuix/themes', 'primeng', 'primefaces/primeng', 'PrimeNG LTS（-lts 版本为商业许可）、PrimeBlocks、付费模板'),
+ 'lib-primereact-org': ('MIT', 'npm install primereact', 'primereact', 'primefaces/primereact', 'PrimeReact LTS、PrimeBlocks、付费模板'),
+}
 SERVICE = {'inspiration', 'generator', 'guide'}
 LIBS = {L['id']: L for L in json.load(open(os.path.join(HERE, 'libs.src.json'), encoding='utf-8'))}
 out = {}
@@ -85,6 +91,9 @@ for it in d['items']:
         else: e = {'k': 'svc' if t in SERVICE else 'unk'}
         if L['pkg'] and L['licOk']: e['npm'] = NPM + L['pkg']
         if L['repo']: e['gh'] = GH + L['repo']
+        if rid in LICFIX:
+            lic, code, pkg, repo, pro = LICFIX[rid]
+            e = {'k': 'oss', 'lic': lic, 'code': code, 'npm': NPM + pkg, 'gh': GH + repo, 'pro': pro}
         out[rid] = e; continue
     if rid in OSS:
         lic, code, pkg, repo = OSS[rid]

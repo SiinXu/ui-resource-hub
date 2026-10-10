@@ -31,6 +31,47 @@ lib_usage = {}
 for k, v in C.items():
     lib = k.split('|')[0]
     if ok_code(tidy(v.get('usage'))) and lib not in lib_usage: lib_usage[lib] = (tidy(v['usage']), v.get('final') or v['url'])
+# v3f：官方仓库文档演示原文（_orig/fetch_full.py）+ 官方安装/配置原文，组成「安装 → 配置 → 引入 → 基础用法」
+FULL = json.load(open(os.path.join(H, '_orig', 'fullcode.json'), encoding='utf-8')) if os.path.exists(os.path.join(H, '_orig', 'fullcode.json')) else {}
+SETUP = FULL.pop('__setup__', {})
+GHR = lambda r, f='README.md', b='HEAD': f'https://github.com/{r}/blob/{b}/{f}'
+INSTALL = {  # 官方 README / 官方入门文档里的安装命令原文（2026-10-10 核对）
+ 'lib-ant-design': [('Install', 'npm install antd', GHR('ant-design/ant-design'))],
+ 'lib-ng-ant-design': [('Install', 'ng add ng-zorro-antd', GHR('NG-ZORRO/ng-zorro-antd'))],
+ 'lib-www-naiveui-com': [('Install', 'npm i naive-ui', GHR('tusen-ai/naive-ui'))],
+ 'lib-quasar-dev': [('Install', 'pnpm create quasar@latest\n# or\nnpm init quasar@latest', GHR('quasarframework/quasar', 'docs/src/pages/start/quick-start.md'))],
+ 'lib-tdesign-tencent-com': [('Install', 'npm i tdesign-vue-next', GHR('Tencent/tdesign-vue-next'))],
+ 'lib-vuetifyjs-com': [('Install', 'npm create vuetify@latest', GHR('vuetifyjs/vuetify', 'packages/docs/src/pages/en/getting-started/installation.md'))],
+ 'lib-arco-design': [('Install', 'npm install @arco-design/web-react', GHR('arco-design/arco-design'))],
+ 'www-heroui-com': [('Install', 'npm i @heroui/styles @heroui/react', GHR('heroui-inc/heroui', 'apps/docs/content/docs/en/react/getting-started/(overview)/quick-start.mdx', 'v3')),
+                    ('Setup · globals.css', '@import "tailwindcss";\n@import "@heroui/styles";', GHR('heroui-inc/heroui', 'apps/docs/content/docs/en/react/getting-started/(overview)/quick-start.mdx', 'v3'))],
+}
+STEP = {'Install': '① 安装 Install', 'Setup': '② 配置 Setup', 'Import': '③ 引入 Import'}
+def hdr(h, src, code):
+    k = h.split(' ')[0]
+    lab = STEP.get(k, '④ 示例 Example · ' + h)
+    if k == 'Setup': lab = '② 配置 ' + h
+    txt = f'{lab} — {src}'
+    if k == 'Install': return '# ' + txt
+    if code.lstrip().startswith('<'): return '<!-- ' + txt + ' -->'
+    if code.lstrip().startswith('@import'): return '/* ' + txt + ' */'
+    return '// ' + txt
+def compose(parts):
+    return '\n\n'.join(hdr(p['h'], p['src'], p['code']) + '\n' + p['code'].strip() for p in parts)
+def install_parts(i, L):
+    lib = i.get('lib') or i['id']
+    if lib in SETUP: return SETUP[lib]
+    if lib in INSTALL: return [{'h': h, 'code': c, 'src': u} for h, c, u in INSTALL[lib]]
+    if L.get('code') and L.get('gh'): return [{'h': 'Install', 'code': L['code'], 'src': L['gh'] + '#readme'}]
+    return []
+def sup_text(i, L, fw=None):
+    s = f"# 聚合站补充 · Hub notes\n# 原站文档 Docs: {i['url']}\n# 许可 License: {L.get('lic')}" + (f" · 框架 Framework: {fw}" if fw else '')
+    s += "\n# 以上「原站原文」逐字来自官方仓库/文档（每段标了来源）；完整变体与 API 请看原站。"
+    if L.get('pro'): s += f"\n# 不含付费部分：{L['pro']}（请到原站购买）。"
+    else: s += "\n# 本站不提供任何付费模板 / Pro 组件源码。"
+    return s
+FULLN = 0
+CSSLIB = {'lib-getbootstrap-com', 'lib-daisyui-com', 'lib-flowbite-com', 'lib-bulma-io', 'lib-picocss-com', 'lib-open-props-style', 'lib-www-hyperui-dev'}
 out = {}; stat = dict(code_orig=0, code_sup_only=0, code_off=0, prompt_orig=0, prompt_desc=0, prompt_sup_only=0)
 for i in d['items']:
     rid = i['id']; o = {}
@@ -70,6 +111,21 @@ for i in d['items']:
             if not code and i['id'] in lib_usage and ok_code(lib_usage[i['id']][0]): code, src = lib_usage[i['id']]
             if code: o['c'] = tidy(code); o['cs'] = src; o['cl'] = L['lic']
             if L.get('code') and L['code'].strip() not in (o.get('c') or ''): o['sup'] = L['code']
+    # v3f：完整官方代码（安装 → 配置 → 引入 → 用法）
+    if oss:
+        fw = None
+        fk = rid if rid in FULL else (next((k for k in (f'cs-{rid}-button', f'cs2-{rid}--button--button--v0', f'cs2-{rid}--button--button--v2') if k in FULL), None) if i['type'] == 'library' and rid in SETUP else None)
+        if fk:
+            fu = FULL[fk]; fw = fu.get('fw')
+            parts = ([] if fu.get('noinst') else install_parts(i, L)) + fu['parts']
+            o['c'] = compose(parts); o['cs'] = fu['parts'][-1]['src']; o['cl'] = fu.get('lic') or L['lic']; o['fw'] = fw; o['full'] = 1
+        elif o.get('c') and i['type'] == 'style':
+            ip = install_parts(i, L)
+            if ip and ip[0]['code'] not in o['c']:
+                o['c'] = compose(ip) + '\n\n' + hdr('官方文档示例', o.get('cs') or i['url'], o['c']) + '\n' + o['c']
+            if ip and (re.search(r'^\s*import |@import|<script', o['c'], re.M) or i.get('lib') in CSSLIB): o['full'] = 1
+        if o.get('c'): o['sup'] = sup_text(i, L, fw)
+        if o.get('full'): FULLN += 1
     if o.get('c'): stat['code_orig'] += 1
     elif o.get('sup'): stat['code_sup_only'] += 1
     else: stat['code_off'] += 1
@@ -78,4 +134,5 @@ for i in d['items']:
     else: stat['prompt_sup_only'] += 1
     if o: out[rid] = o
 open(os.path.join(H, 'orig.js'), 'w', encoding='utf-8').write('window.UI_ORIG=' + json.dumps(out, ensure_ascii=False) + ';\n')
+stat['full_official'] = FULLN
 print('items', len(d['items']), stat)
