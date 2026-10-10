@@ -431,7 +431,7 @@ kbd{font:11px var(--mono);padding:1px 6px;border-radius:5px;border:1px solid var
 @media(hover:hover){.card:hover .cview{opacity:1;transform:none}}
 .card .cb{padding:12px 14px 10px;gap:0}
 .card .cb h3{font-size:14.5px;font-weight:600;letter-spacing:-.015em;line-height:1.35}
-.card .note{margin:2px 0 0;font-size:12.5px;line-height:1.45;color:var(--mut)}
+.card .note{margin:4px 0 0;font-size:12.5px;line-height:1.45;color:var(--mut);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 .cf{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:auto;min-height:28px}
 .cmeta{display:flex;align-items:center;gap:6px;min-width:0;overflow:hidden;white-space:nowrap;-webkit-mask-image:linear-gradient(90deg,#000 85%,transparent);mask-image:linear-gradient(90deg,#000 85%,transparent)}
 .cmeta .tp{font-size:10.5px;text-transform:uppercase;letter-spacing:.06em;color:var(--mut2)}
@@ -565,10 +565,18 @@ kbd{font:11px var(--mono);padding:1px 6px;border-radius:5px;border:1px solid var
 .pvw.big .site-wrap .poster{object-fit:cover;object-position:center top}
 .card .cm img{object-fit:cover;object-position:center top}
 
-/* v3i: cards hug content — no equal-height empty middle */
-.grid,.feat{align-items:start}
-.card,.fc{height:auto;align-self:start}
-.card .cb,.fc .cb{flex:0 0 auto;height:auto}
-.card .ccp,.fc .ccp{margin-top:8px}
-.card .cf,.fc .cf{margin-top:6px}
-.fc.big .fm,.fc.wide .fm{min-height:0!important;flex:0 0 auto!important;aspect-ratio:16/10;height:auto!important;max-height:220px}
+/* v3j: equal-height rows, notes clamped, actions pinned to bottom */
+.grid,.feat{align-items:stretch}
+.card,.fc{height:100%;display:flex;flex-direction:column}
+.card .cb,.fc .cb{flex:1 1 auto;display:flex;flex-direction:column;min-height:0}
+.card .cb h3,.fc .cb h3{flex:none}
+.card .note,.fc .note{flex:none;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;margin:4px 0 0;min-height:0}
+.card .ccp,.fc .ccp{margin-top:auto;flex:none}
+.card .cf,.fc .cf{margin-top:6px;flex:none}
+.card .cm,.fc .cm,.fc .fm{flex:none}
+/* featured wide card: keep same visual weight, don't explode height */
+.fc.big .fm,.fc.wide .fm{min-height:0!important;flex:none!important;aspect-ratio:16/10;height:auto!important;max-height:200px}
+@media(min-width:900px){
+  .fc.big{grid-column:span 2;grid-row:auto}
+  .fc.big .fm{aspect-ratio:16/9;max-height:220px}
+}
