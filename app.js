@@ -51,6 +51,8 @@ var IC = {
   spark:'<svg viewBox="0 0 24 24"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5 18 18M6 18l2.5-2.5M15.5 8.5 18 6"/></svg>',
   x:'<svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg>',
   code:'<svg viewBox="0 0 24 24"><path d="m8 7-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>',
+  dots:'<svg viewBox="0 0 24 24"><circle cx="5" cy="12" r="1.4"/><circle cx="12" cy="12" r="1.4"/><circle cx="19" cy="12" r="1.4"/></svg>',
+  info:'<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.01"/></svg>',
   lock:'<svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>'
 };
 function favBtn(i,cls){return '<button class="ib fav'+(favs[i.id]?' on':'')+(cls?' '+cls:'')+'" data-fav="'+i.id+'" aria-label="'+esc(t('fav'))+'">'+IC.star+'</button>'}
@@ -82,6 +84,46 @@ function cardActs(i,cls){
     (c?'<button class="ab code" data-cc="'+i.id+'" title="'+esc(t('btn_copy_code'))+'">'+IC.code+'<span>'+esc(t('code_none_h'))+'</span></button>'
       :'<button class="ab off" aria-disabled="true" data-tip="'+esc(tip)+'" title="'+esc(tip)+'">'+IC.lock+'<span>'+esc(t('code_none_h'))+'</span></button>')+
   '</div>';
+}
+
+/* 卡片底栏：左侧信息，右侧只有 收藏 + 更多 两个控件 */
+function metaLine(i){
+  var l=lg(i), out='<span class="tp">'+TN(i.type)+'</span>';
+  if(PR(i.pricing))out+='<span class="pill '+i.pricing+'">'+PR(i.pricing)+'</span>';
+  if(l.k==='oss')out+='<span class="pill oss" title="'+esc(t('kv_license'))+'">'+esc(l.lic)+'</span>';
+  return '<div class="cmeta">'+out+'</div>';
+}
+function ctl(i){return '<div class="ctl">'+favBtn(i,'r')+'<button class="ib r more" data-more="'+i.id+'" aria-haspopup="menu" aria-label="'+esc(t('btn_more'))+'" title="'+esc(t('btn_more'))+'">'+IC.dots+'</button></div>'}
+function foot(i){return '<div class="cf">'+metaLine(i)+ctl(i)+'</div>'}
+function menuHTML(i){
+  var c=codeOf(i), tip=codeTip(i);
+  return '<div class="mh"><b>'+esc(shown(i.name))+'</b><small>'+esc(host(i.url))+'</small></div>'+
+    '<button class="mi" role="menuitem" data-cp="'+i.id+'">'+IC.spark+'<span>'+esc(t('btn_copy_prompt'))+'</span></button>'+
+    (c?'<button class="mi" role="menuitem" data-cc="'+i.id+'">'+IC.code+'<span>'+esc(t('btn_copy_code'))+'<small class="ok">'+esc(lg(i).lic)+'</small></span></button>'
+      :'<button class="mi off" role="menuitem" aria-disabled="true" data-tip="'+esc(tip)+'" title="'+esc(tip)+'">'+IC.lock+'<span>'+esc(t('btn_copy_code'))+'<small>'+esc(tip)+'</small></span></button>')+
+    '<i class="msep"></i>'+
+    (VISUAL[i.type]?'<button class="mi" role="menuitem" data-play="'+i.id+'">'+IC.full+'<span>'+esc(canFrame(i)?t('btn_play'):t('btn_view'))+'</span></button>':'')+
+    '<a class="mi" role="menuitem" href="'+esc(i.url)+'" target="_blank" rel="noopener noreferrer">'+IC.ext+'<span>'+esc(t('btn_original'))+'</span></a>'+
+    '<button class="mi" role="menuitem" data-open="'+i.id+'">'+IC.info+'<span>'+esc(t('btn_details'))+'</span></button>';
+}
+var menuFor=null;
+function isSheetMenu(){return matchMedia('(max-width:640px),(pointer:coarse)').matches}
+function openMenu(id,btn){
+  var i=BY[id]; if(!i)return; var m=$('menu');
+  if(menuFor===id&&!m.hidden){closeMenu();return}
+  closeMenu(); menuFor=id; m.innerHTML=menuHTML(i); m.hidden=false; btn.setAttribute('aria-expanded','true'); btn.classList.add('act');
+  var sheet=isSheetMenu(); m.classList.toggle('as-sheet',sheet); $('menuScrim').hidden=!sheet;
+  if(sheet){m.style.left=m.style.top='';document.body.classList.add('lock')}
+  else{var r=btn.getBoundingClientRect(), w=m.offsetWidth, h=m.offsetHeight;
+    var left=Math.max(8,Math.min(innerWidth-w-8,r.right-w)), top=r.bottom+6; if(top+h>innerHeight-8)top=Math.max(8,r.top-h-6);
+    m.style.left=left+'px'; m.style.top=top+'px'}
+  requestAnimationFrame(function(){m.classList.add('show')});
+}
+function closeMenu(){
+  var m=$('menu'); if(!m||m.hidden)return;
+  m.hidden=true; m.classList.remove('show'); $('menuScrim').hidden=true; menuFor=null;
+  document.querySelectorAll('[data-more].act').forEach(function(b){b.classList.remove('act');b.setAttribute('aria-expanded','false')});
+  if($('sheet').classList.contains('open')||!$('play').hidden){}else document.body.classList.remove('lock');
 }
 
 /* ---------- 预览区 ---------- */
@@ -118,11 +160,9 @@ function featCard(f,k){
   var media = live ? liveBox(f) : (m.img?'<img class="poster kb" src="'+m.img+'" alt="'+esc(i.name)+'" loading="'+(k<8?'eager':'lazy')+'">':demo(i));
   var title=isZh()?(f.title||shown(i.name)):shown(i.name), sub=isZh()?(f.sub||shown(i.note)||host(i.url)):host(i.url);
   return '<article class="fc'+(f.big?' big':'')+(f.wide?' wide':'')+(live?' is-live':'')+'" style="--i:'+k+'">'+
-    '<div class="fm" '+(live?'':'data-open="'+i.id+'"')+'>'+media+'<div class="ftop">'+srcTag(i,live)+favBtn(i)+'</div></div>'+
-    '<div class="fb"><div class="ft"><h3 data-open="'+i.id+'">'+esc(title)+'</h3>'+
-    '<p>'+esc(sub)+'</p>'+(f.hint&&isZh()?'<p class="hint">'+esc(f.hint)+'</p>':'')+'</div>'+
-    '<div class="fa">'+(live?'<button class="b pri" data-play="'+i.id+'">'+IC.full+esc(t('btn_play'))+'</button>':'<button class="b pri" data-play="'+i.id+'">'+IC.full+esc(canFrame(i)?t('btn_play'):t('btn_view'))+'</button>')+
-      '<button class="b ghost" data-open="'+i.id+'">'+esc(t('btn_details'))+'</button></div>'+cardActs(i,'fx')+
+    '<div class="fm" '+(live?'':'data-open="'+i.id+'"')+'>'+media+'<div class="ftop">'+srcTag(i,live)+'</div></div>'+
+    '<div class="fb" data-open="'+i.id+'"><div class="ft"><h3>'+esc(title)+'</h3>'+
+    '<p>'+esc(sub)+'</p>'+(f.hint&&isZh()?'<p class="hint">'+esc(f.hint)+'</p>':'')+'</div>'+foot(i)+
     '</div></article>';
 }
 function renderFeat(){
@@ -134,20 +174,16 @@ function renderFeat(){
 /* ---------- 目录卡片 ---------- */
 function card(i){
   var m=M[i.id]||{}, live=LIVE[i.id];
-  var price = (PR(i.pricing)?'<span class="pill '+i.pricing+'">'+PR(i.pricing)+'</span>':'');
-  var l=lg(i), lic=l.k==='oss'?'<span class="pill oss" title="'+esc(t('kv_license'))+'">'+esc(l.lic)+'</span>':'';
-  var row='<div class="row"><span class="tp">'+TN(i.type)+'</span>'+price+lic+(i.source?'<span class="src">'+esc(i.source)+'</span>':'')+favBtn(i,'r')+'</div>';
   if(!VISUAL[i.type]){
     var parts=shown(i.name).split('/');
-    return '<article class="card sk"><div class="skm" data-open="'+i.id+'"><div class="term"><i></i><i></i><i></i><span>SKILL.md</span></div>'+
+    return '<article class="card sk" data-open="'+i.id+'"><div class="skm"><div class="term"><i></i><i></i><i></i><span>SKILL.md</span></div>'+
       '<div class="skn"><small>'+esc(parts.length>1?parts[0]+' /':TN(i.type))+'</small><b>'+esc(parts[parts.length-1])+'</b></div></div>'+
-      '<div class="cb"><p class="note" data-open="'+i.id+'">'+esc(shown(i.note)||host(i.url))+'</p>'+row+cardActs(i)+'</div></article>';
+      '<div class="cb"><p class="note">'+esc(shown(i.note)||host(i.url))+'</p>'+foot(i)+'</div></article>';
   }
   var tag = live?'<span class="tag-lv">'+t('tag_live')+'</span>':(m.frame?'<span class="tag-fr">'+t('tag_frame')+'</span>':srcTag(i));
-  return '<article class="card"><div class="cm" data-open="'+i.id+'">'+thumb(i)+
-    '<button class="cmo" data-play="'+i.id+'" aria-label="'+esc(canFrame(i)?t('btn_play'):t('btn_view'))+'"><span class="play-i'+(canFrame(i)?'':' st')+'">'+(canFrame(i)?IC.play:IC.full)+'</span></button>'+
-    '<div class="ctop">'+tag+'</div></div>'+
-    '<div class="cb"><h3 data-open="'+i.id+'">'+esc(shown(i.name))+'</h3><p class="note">'+esc(shown(i.note)||host(i.url))+'</p>'+row+cardActs(i)+'</div></article>';
+  return '<article class="card" data-open="'+i.id+'"><div class="cm">'+thumb(i)+
+    '<div class="ctop">'+tag+'</div><span class="cview">'+esc(t('btn_details'))+IC.ext.replace('M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5','M7 17 17 7M9 7h8v8')+'</span></div>'+
+    '<div class="cb"><h3>'+esc(shown(i.name))+'</h3><p class="note">'+esc(shown(i.note)||host(i.url))+'</p>'+foot(i)+'</div></article>';
 }
 function match(i){
   if(state.view==='fav'&&!favs[i.id])return false;
@@ -326,7 +362,7 @@ function copy(x,msg){
 }
 function syncFav(id){document.querySelectorAll('[data-fav="'+id+'"]').forEach(function(b){b.classList.toggle('on',!!favs[id])})}
 function toggleFav(id){if(favs[id])delete favs[id];else favs[id]=Date.now();LS.set('favs',favs);toast(favs[id]?t('toast_fav'):t('toast_unfav'));syncFav(id);$('favCnt').textContent=Object.keys(favs).length||'';if(state.view==='fav'){renderChips();renderGrid()}}
-function refresh(){renderChips();renderGrid()}
+function refresh(){closeMenu();renderChips();renderGrid()}
 function setView(v){
   state.view=v; $('home').hidden=v==='guides'; $('guides').hidden=v!=='guides';
   $('hero').hidden=$('featWrap').hidden=v==='fav';
@@ -342,6 +378,8 @@ function route(){
 function focusSearch(){if(state.view!=='home')location.hash='#/';setTimeout(function(){var q=$('q');q.scrollIntoView({behavior:'smooth',block:'center'});q.focus({preventScroll:true})},60)}
 
 document.addEventListener('click',function(e){
+  var mb=e.target.closest('[data-more]'); if(mb){e.preventDefault();e.stopPropagation();openMenu(mb.dataset.more,mb);return}
+  if(!$('menu').hidden&&(!e.target.closest('#menu')||e.target.closest('.mi')))closeMenu();
   var el=e.target.closest('[data-copy],[data-cp],[data-cc],[data-tip],[data-fav],[data-type],[data-tag],[data-close],[data-closeplay],[data-rmtag],[data-g],[data-play],[data-lib],[data-site-load],[data-open],a');
   if(!el)return;
   if(el.tagName==='A'&&!el.dataset.g){e.stopPropagation();return}
@@ -380,12 +418,14 @@ var qt; $('q').addEventListener('input',function(e){clearTimeout(qt);qt=setTimeo
 },160)});
 document.addEventListener('keydown',function(e){
   if(e.key==='/'&&!/INPUT|TEXTAREA|SELECT/.test(document.activeElement.tagName)){e.preventDefault();focusSearch()}
-  if(e.key==='Escape'){if(!$('play').hidden)closePlay();else if($('sheet').classList.contains('open'))back()}
+  if(e.key==='Escape'){if(!$('menu').hidden)closeMenu();else if(!$('play').hidden)closePlay();else if($('sheet').classList.contains('open'))back()}
 });
 $('themeBtn').addEventListener('click',function(){var r=document.documentElement,n=r.dataset.theme==='dark'?'light':'dark';r.dataset.theme=n;try{localStorage.setItem('uihub.theme',n)}catch(e){}});
 (function(){var sel=$('langSel');if(!sel)return;sel.innerHTML=I18N.langs.map(function(l){return '<option value="'+l[0]+'">'+l[1]+'</option>'}).join('');sel.addEventListener('change',function(){setLang(sel.value)})})();
 (function(){var y0=null,s=$('sheet');s.addEventListener('touchstart',function(e){y0=s.scrollTop<=0&&!e.target.closest('.live,.site,.pv-tabs')?e.touches[0].clientY:null},{passive:true});
  s.addEventListener('touchend',function(e){if(y0!=null&&e.changedTouches[0].clientY-y0>90)back();y0=null},{passive:true})})();
+addEventListener('scroll',function(){if(menuFor&&!isSheetMenu())closeMenu()},{passive:true});
+addEventListener('resize',closeMenu);
 addEventListener('scroll',function(){$('top').classList.toggle('scrolled',scrollY>8)},{passive:true});
 window.addEventListener('hashchange',route);
 applyStatic(); renderFeat(); renderGuides(); setView("home"); route();
