@@ -1,11 +1,15 @@
 (function(){
 'use strict';
-var D = window.UI_DATA || {items:[],guides:[]}, M = window.UI_MEDIA || {};
+var D = window.UI_DATA || {items:[],guides:[]}, M = window.UI_MEDIA || {}, LG = window.UI_LEGAL || {}, I18N = window.UI_I18N || {langs:[['zh-CN','中文']],'zh-CN':{}};
+var LANG = (function(){try{var v=localStorage.getItem('uihub.lang');if(v&&I18N[v])return v}catch(e){}
+  var n=(navigator.language||'zh-CN').toLowerCase(), m={zh:'zh-CN',en:'en',ja:'ja',ko:'ko',ms:'ms',es:'es',de:'de',fr:'fr'}[n.slice(0,2)];return m||'zh-CN'})();
+function t(k,v){var s=(I18N[LANG]&&I18N[LANG][k]!=null)?I18N[LANG][k]:(I18N['zh-CN'][k]!=null?I18N['zh-CN'][k]:k);if(v)Object.keys(v).forEach(function(x){s=s.split('{'+x+'}').join(v[x])});return s}
+function isZh(){return LANG==='zh-CN'}
 var ITEMS = D.items, BY = {};
 ITEMS.forEach(function(i){BY[i.id]=i});
-var TYPES = [['all','全部'],['component','组件'],['effect','特效'],['skill','Skill'],['inspiration','灵感'],['template','模板'],['generator','AI 生成'],['guide','思路']];
-var TNAME = {prompt:'Prompt'}; TYPES.forEach(function(t){TNAME[t[0]]=t[1]});
-var PRICE = {free:'免费',paid:'付费',freemium:'免费+Pro'};
+var TYPES = ['all','component','effect','skill','inspiration','template','generator','guide'];
+function TN(k){return t('t_'+k)}
+function PR(k){return {free:1,paid:1,freemium:1}[k]?t('price_'+k):''}
 var VISUAL = {component:1,effect:1,template:1,generator:1,inspiration:1,guide:1};
 
 /* ---------- 精选：live = 原站页面 iframe 嵌入（裁出演示区域） ---------- */
@@ -23,7 +27,7 @@ var FEAT = [
 var MORE = ['motion-primitives-com','www-beautifului-dev','www-shadcnblocks-com','reactbits-dev-animations-metallic-paint'];
 var LIVE = {}; FEAT.forEach(function(f){if(f.live)LIVE[f.id]=f});
 // Libraries.dev 详情页里可以切换的全部效果（都是 libraries.dev 自己的页面，不是新资源）
-var LIBTABS = [['voice','Voice 语音光效'],['orbs','Thinking orbs'],['beam','Border beam'],['metal','Metal 液态金属'],['gooey','Gooey 黏液'],['image','Image 生成加载'],['bots','Bot avatars']];
+var LIBTABS = [['voice','Voice'],['orbs','Thinking orbs'],['beam','Border beam'],['metal','Metal'],['gooey','Gooey'],['image','Image'],['bots','Bot avatars']];
 
 var LS = {
   get:function(k,d){try{var v=localStorage.getItem('uihub.'+k);return v?JSON.parse(v):d}catch(e){return d}},
@@ -45,103 +49,143 @@ var IC = {
   play:'<svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>',
   full:'<svg viewBox="0 0 24 24"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg>',
   spark:'<svg viewBox="0 0 24 24"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5 18 18M6 18l2.5-2.5M15.5 8.5 18 6"/></svg>',
-  x:'<svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg>'
+  x:'<svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg>',
+  code:'<svg viewBox="0 0 24 24"><path d="m8 7-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>',
+  lock:'<svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>'
 };
-function favBtn(i,cls){return '<button class="ib fav'+(favs[i.id]?' on':'')+(cls?' '+cls:'')+'" data-fav="'+i.id+'" aria-label="收藏">'+IC.star+'</button>'}
+function favBtn(i,cls){return '<button class="ib fav'+(favs[i.id]?' on':'')+(cls?' '+cls:'')+'" data-fav="'+i.id+'" aria-label="'+esc(t('fav'))+'">'+IC.star+'</button>'}
+
+/* ---------- 许可 / 代码 / 提示词 ---------- */
+function lg(i){return LG[i.id]||{k:'unk'}}
+function codeOf(i){var l=lg(i);return l.k==='oss'&&l.code?l.code:''}
+function codeTip(i){
+  var l=lg(i);
+  if(l.k==='oss')return l.code?'':t('code_oss_nosnip',{lic:l.lic});
+  if(l.k==='paid'||i.pricing==='paid')return t('code_paid');
+  if(l.k==='lic')return t('code_lic',{lic:l.lic});
+  if(l.k==='skill')return t('code_skill');
+  if(l.k==='svc')return t('code_svc');
+  return i.pricing==='freemium'?t('code_paid'):t('code_unk');
+}
+function promptFor(i){
+  var n=shown(i.name), note=shown(i.note);
+  if(i.type==='skill')return '请帮我安装并使用「'+n+'」这个 Skill（原站：'+i.url+'，安装命令以原站为准）。它的作用：'+(note||'见原站')+'。装好后用它检查并改进我当前项目的界面：先列出问题，再逐条修改，最后告诉我改了哪些地方。\n\n'+
+    'Please install and use the "'+n+'" skill (original: '+i.url+'; follow the install command on that page). Then use it to review and improve the UI of my current project: list the issues first, fix them one by one, and summarize what you changed.';
+  return '请参考「'+n+'」的公开设计语言与交互（原站：'+i.url+'），帮我做一个类似效果：\n- 我要做的是：【在这里写你的页面或组件，比如 AI 聊天输入框】\n- 参考它的：视觉风格、动效节奏、细节处理'+(note?'（'+note+'）':'')+'\n- 技术栈：React + Tailwind，动效用 CSS 或 Motion\n- 要求：深浅色都好看，手机电脑都适配，动效流畅\n- 不要复制它的源码、图片、文案或付费素材，请自己实现\n\n'+
+    'Please reference the public design language and interactions of "'+n+'" (original: '+i.url+') and help me build a similar effect:\n- What I am building: [describe your page or component, e.g. an AI chat input]\n- Borrow: visual style, motion rhythm, attention to detail\n- Stack: React + Tailwind, motion with CSS or Motion\n- Must look good in dark and light mode, work on mobile and desktop, and animate smoothly\n- Do not copy its source code, images, copy text or paid assets; implement it from scratch';
+}
+function cardActs(i,cls){
+  var c=codeOf(i), tip=codeTip(i);
+  return '<div class="cacts'+(cls?' '+cls:'')+'">'+
+    '<a class="ab go" href="'+esc(i.url)+'" target="_blank" rel="noopener noreferrer" title="'+esc(t('btn_original'))+'">'+IC.ext+'<span>'+esc(t('btn_original'))+'</span></a>'+
+    '<button class="ab" data-cp="'+i.id+'" title="'+esc(t('btn_copy_prompt'))+'">'+IC.spark+'<span>Prompt</span></button>'+
+    (c?'<button class="ab code" data-cc="'+i.id+'" title="'+esc(t('btn_copy_code'))+'">'+IC.code+'<span>'+esc(t('code_none_h'))+'</span></button>'
+      :'<button class="ab off" aria-disabled="true" data-tip="'+esc(tip)+'" title="'+esc(tip)+'">'+IC.lock+'<span>'+esc(t('code_none_h'))+'</span></button>')+
+  '</div>';
+}
 
 /* ---------- 预览区 ---------- */
-function mono(i){ // 没有图片时的字母封面
-  var h=hash(i.id), a=h%360;
-  return '<div class="mono" style="--h:'+a+'"><span>'+esc(shown(i.name).replace(/^[^A-Za-z\u4e00-\u9fa5]+/,'').slice(0,2))+'</span></div>';
+// 自制示意：本站用 CSS 画的抽象示意图，明确标注「自制示意」，不复制原站画面
+function demo(i){
+  var h=hash(i.id)%360, k=i.type, inner;
+  if(k==='effect')inner='<i class="d-orb"></i><i class="d-ring"></i>';
+  else if(k==='template')inner='<div class="d-chat"><i class="l"></i><i class="r"></i><i class="l s"></i><b></b></div>';
+  else if(k==='generator')inner='<div class="d-gen"><b><i></i></b><span><i></i><i></i><i></i></span></div>';
+  else if(k==='inspiration')inner='<div class="d-grid"><i></i><i></i><i></i><i></i><i></i><i></i></div>';
+  else if(k==='guide')inner='<div class="d-notes"><i></i><i></i><i></i></div>';
+  else inner='<div class="d-ui"><b></b><i class="w"></i><i></i><span><i></i><i class="p"></i></span></div>';
+  return '<div class="demo d-'+k+'" style="--h:'+h+'">'+inner+'<em class="d-n">'+esc(shown(i.name).split('/').pop())+'</em></div>';
 }
 function srcTag(i,live){
-  if(live)return '<span class="tag-lv">真实预览</span>';
-  var m=M[i.id]; if(!m||!m.img)return '';
-  return '<span class="tag-pv">'+(m.src==='shot'?'原站截图':'原站封面')+'</span>';
+  if(live)return '<span class="tag-lv">'+t('tag_live')+'</span>';
+  var m=M[i.id]; if(!m||!m.img)return VISUAL[i.type]?'<span class="tag-dm">'+t('tag_demo')+'</span>':'';
+  return '<span class="tag-pv">'+(m.src==='shot'?t('tag_shot'):t('tag_og'))+'</span>';
 }
-function liveBox(f,opts){ // 裁剪窗口：iframe 懒加载，加载前显示截图
+function liveBox(f,opts){
   opts=opts||{};
   var L=f.live;
   return '<div class="live" data-live="'+esc(L.src)+'" data-w="'+L.w+'" data-top="'+L.top+'" data-view="'+L.view+'"'+(opts.eager?' data-eager="1"':'')+'>'+
     '<img class="poster" src="'+f.poster+'" alt="" loading="lazy">'+
-    '<div class="ifw"></div><div class="shield" data-play="'+f.id+'"><span class="tap">'+IC.play+'点开试玩</span></div>'+
-    '<span class="ld"><i></i>正在连接原站…</span></div>';
+    '<div class="ifw"></div><div class="shield" data-play="'+f.id+'"><span class="tap">'+IC.play+esc(t('btn_tryit'))+'</span></div>'+
+    '<span class="ld"><i></i>'+esc(t('loading_live'))+'</span></div>';
 }
+function thumb(i){var m=M[i.id]||{},lv=LIVE[i.id];return lv?'<img src="'+lv.poster+'" alt="" loading="lazy">':(m.img?'<img src="'+m.img+'" alt="" loading="lazy">':demo(i))}
 
 /* ---------- 精选 ---------- */
 function featCard(f,k){
   var i=BY[f.id]; if(!i)return '';
   var m=M[i.id]||{}, live=!!f.live;
-  var media = live ? liveBox(f) : (m.img?'<img class="poster kb" src="'+m.img+'" alt="'+esc(i.name)+' 预览" loading="'+(k<8?'eager':'lazy')+'">':mono(i));
+  var media = live ? liveBox(f) : (m.img?'<img class="poster kb" src="'+m.img+'" alt="'+esc(i.name)+'" loading="'+(k<8?'eager':'lazy')+'">':demo(i));
+  var title=isZh()?(f.title||shown(i.name)):shown(i.name), sub=isZh()?(f.sub||shown(i.note)||host(i.url)):host(i.url);
   return '<article class="fc'+(f.big?' big':'')+(f.wide?' wide':'')+(live?' is-live':'')+'" style="--i:'+k+'">'+
     '<div class="fm" '+(live?'':'data-open="'+i.id+'"')+'>'+media+'<div class="ftop">'+srcTag(i,live)+favBtn(i)+'</div></div>'+
-    '<div class="fb"><div class="ft"><h3 data-open="'+i.id+'">'+esc(f.title||shown(i.name))+'</h3>'+
-    '<p>'+esc(f.sub||shown(i.note)||host(i.url))+'</p>'+(f.hint?'<p class="hint">'+esc(f.hint)+'</p>':'')+'</div>'+
-    '<div class="fa">'+(live?'<button class="b pri" data-play="'+i.id+'">'+IC.full+'全屏试玩</button><button class="b ghost" data-open="'+i.id+'">详情</button>'+
-      '<a class="b ghost sq" href="'+esc(f.live.src)+'" target="_blank" rel="noopener noreferrer" aria-label="在原站预览" title="在原站预览">'+IC.ext+'</a>'
-     :'<a class="b pri" href="'+esc(i.url)+'" target="_blank" rel="noopener noreferrer">在原站预览'+IC.ext+'</a><button class="b ghost" data-open="'+i.id+'">详情</button>')+
-    '</div></div></article>';
+    '<div class="fb"><div class="ft"><h3 data-open="'+i.id+'">'+esc(title)+'</h3>'+
+    '<p>'+esc(sub)+'</p>'+(f.hint&&isZh()?'<p class="hint">'+esc(f.hint)+'</p>':'')+'</div>'+
+    '<div class="fa">'+(live?'<button class="b pri" data-play="'+i.id+'">'+IC.full+esc(t('btn_play'))+'</button>':'<button class="b pri" data-play="'+i.id+'">'+IC.full+esc(canFrame(i)?t('btn_play'):t('btn_view'))+'</button>')+
+      '<button class="b ghost" data-open="'+i.id+'">'+esc(t('btn_details'))+'</button></div>'+cardActs(i,'fx')+
+    '</div></article>';
 }
 function renderFeat(){
   $('feat').innerHTML = FEAT.map(featCard).join('');
-  $('more').innerHTML = '<span class="ml">还值得看</span>'+MORE.map(function(id){var i=BY[id],m=M[id]||{};return '<button class="mc" data-open="'+id+'">'+(m.img?'<img src="'+m.img+'" alt="" loading="lazy">':mono(i))+'<span><b>'+esc(shown(i.name))+'</b><small>'+esc(shown(i.note))+'</small></span></button>'}).join('');
-  observeLive($('feat'));
+  $('more').innerHTML = '<span class="ml">'+esc(t('more_title'))+'</span>'+MORE.map(function(id){var i=BY[id];return '<button class="mc" data-open="'+id+'">'+thumb(i)+'<span><b>'+esc(shown(i.name))+'</b><small>'+esc(shown(i.note))+'</small></span></button>'}).join('');
+  observeLive($('feat')); track($('feat'));
 }
 
 /* ---------- 目录卡片 ---------- */
 function card(i){
   var m=M[i.id]||{}, live=LIVE[i.id];
-  var price = PRICE[i.pricing]?'<span class="pill '+i.pricing+'">'+PRICE[i.pricing]+'</span>':'';
-  if(!VISUAL[i.type]){ // Skill / Prompt：排版卡片
+  var price = (PR(i.pricing)?'<span class="pill '+i.pricing+'">'+PR(i.pricing)+'</span>':'');
+  var l=lg(i), lic=l.k==='oss'?'<span class="pill oss" title="'+esc(t('kv_license'))+'">'+esc(l.lic)+'</span>':'';
+  var row='<div class="row"><span class="tp">'+TN(i.type)+'</span>'+price+lic+(i.source?'<span class="src">'+esc(i.source)+'</span>':'')+favBtn(i,'r')+'</div>';
+  if(!VISUAL[i.type]){
     var parts=shown(i.name).split('/');
-    return '<article class="card sk" data-open="'+i.id+'"><div class="skm"><div class="term"><i></i><i></i><i></i><span>SKILL.md</span></div>'+
-      '<div class="skn"><small>'+esc(parts.length>1?parts[0]+' /':TNAME[i.type])+'</small><b>'+esc(parts[parts.length-1])+'</b></div></div>'+
-      '<div class="cb"><p class="note">'+esc(shown(i.note)||host(i.url))+'</p><div class="row"><span class="tp">'+TNAME[i.type]+'</span>'+price+(i.source?'<span class="src">'+esc(i.source)+'</span>':'')+favBtn(i,'r')+'</div></div></article>';
+    return '<article class="card sk"><div class="skm" data-open="'+i.id+'"><div class="term"><i></i><i></i><i></i><span>SKILL.md</span></div>'+
+      '<div class="skn"><small>'+esc(parts.length>1?parts[0]+' /':TN(i.type))+'</small><b>'+esc(parts[parts.length-1])+'</b></div></div>'+
+      '<div class="cb"><p class="note" data-open="'+i.id+'">'+esc(shown(i.note)||host(i.url))+'</p>'+row+cardActs(i)+'</div></article>';
   }
-  var media = m.img?'<img src="'+(live?live.poster:m.img)+'" alt="" loading="lazy">':(live?'<img src="'+live.poster+'" alt="" loading="lazy">':mono(i));
-  return '<article class="card" data-open="'+i.id+'"><div class="cm">'+media+
-    '<div class="cmo">'+(canFrame(i)?'<span class="play-i">'+IC.play+'</span>':'')+'</div>'+
-    '<div class="ctop">'+(live?'<span class="tag-lv">真实预览</span>':(canFrame(i)?'<span class="tag-fr">可嵌入试看</span>':srcTag(i)))+'</div></div>'+
-    '<div class="cb"><h3>'+esc(shown(i.name))+'</h3><p class="note">'+esc(shown(i.note)||host(i.url))+'</p>'+
-    '<div class="row"><span class="tp">'+TNAME[i.type]+'</span>'+price+(i.source?'<span class="src">'+esc(i.source)+'</span>':'')+favBtn(i,'r')+'</div></div></article>';
+  var tag = live?'<span class="tag-lv">'+t('tag_live')+'</span>':(m.frame?'<span class="tag-fr">'+t('tag_frame')+'</span>':srcTag(i));
+  return '<article class="card"><div class="cm" data-open="'+i.id+'">'+thumb(i)+
+    '<button class="cmo" data-play="'+i.id+'" aria-label="'+esc(canFrame(i)?t('btn_play'):t('btn_view'))+'"><span class="play-i'+(canFrame(i)?'':' st')+'">'+(canFrame(i)?IC.play:IC.full)+'</span></button>'+
+    '<div class="ctop">'+tag+'</div></div>'+
+    '<div class="cb"><h3 data-open="'+i.id+'">'+esc(shown(i.name))+'</h3><p class="note">'+esc(shown(i.note)||host(i.url))+'</p>'+row+cardActs(i)+'</div></article>';
 }
 function match(i){
   if(state.view==='fav'&&!favs[i.id])return false;
   if(state.type!=='all'&&i.type!==state.type)return false;
   if(state.tag&&tagsOf(i).indexOf(state.tag)<0)return false;
   if(!state.q)return true;
-  var hay=(i.name+' '+i.note+' '+i.url+' '+i.source+' '+i.section+' '+TNAME[i.type]+' '+tagsOf(i).join(' ')).toLowerCase();
+  var l=lg(i), hay=(i.name+' '+i.note+' '+i.url+' '+i.source+' '+i.section+' '+TN(i.type)+' '+i.type+' '+(l.lic||'')+' '+tagsOf(i).join(' ')).toLowerCase();
   return state.q.toLowerCase().split(/\s+/).every(function(w){return hay.indexOf(w)>=0});
 }
 function renderChips(){
   var base = ITEMS.filter(function(i){return state.view!=='fav'||favs[i.id]});
-  var html = TYPES.map(function(t){
-    var n = t[0]==='all'?base.length:base.filter(function(i){return i.type===t[0]}).length;
-    if(!n&&t[0]!=='all')return '';
-    return '<button class="chip'+(state.type===t[0]?' on':'')+'" data-type="'+t[0]+'">'+t[1]+'<small>'+n+'</small></button>';
+  var html = TYPES.map(function(k){
+    var n = k==='all'?base.length:base.filter(function(i){return i.type===k}).length;
+    if(!n&&k!=='all')return '';
+    return '<button class="chip'+(state.type===k?' on':'')+'" data-type="'+k+'">'+esc(TN(k))+'<small>'+n+'</small></button>';
   }).join('');
-  var tc={}; base.forEach(function(i){tagsOf(i).forEach(function(t){tc[t]=(tc[t]||0)+1})});
+  var tc={}; base.forEach(function(i){tagsOf(i).forEach(function(x){tc[x]=(tc[x]||0)+1})});
   var top=Object.keys(tc).sort(function(a,b){return tc[b]-tc[a]}).slice(0,12);
   if(state.tag&&top.indexOf(state.tag)<0)top.unshift(state.tag);
-  html += '<span class="sep"></span>' + top.map(function(t){return '<button class="chip t'+(state.tag===t?' on':'')+'" data-tag="'+esc(t)+'">#'+esc(t)+'</button>'}).join('');
+  html += '<span class="sep"></span>' + top.map(function(x){return '<button class="chip t'+(state.tag===x?' on':'')+'" data-tag="'+esc(x)+'">#'+esc(x)+'</button>'}).join('');
   $('chips').innerHTML = html;
 }
 function renderGrid(){
   var list = ITEMS.filter(match);
-  // 有画面的排前面，Skill 排后面，组内保持原顺序
   list = list.map(function(i,k){return [VISUAL[i.type]?(M[i.id]&&M[i.id].img||LIVE[i.id]?0:1):2,k,i]}).sort(function(a,b){return a[0]-b[0]||a[1]-b[1]}).map(function(a){return a[2]});
   $('grid').innerHTML = list.map(card).join('');
   var fc=Object.keys(favs).length; $('favCnt').textContent=fc||'';
   var isFav=state.view==='fav';
   $('empty').hidden = !!list.length;
-  $('empty').textContent = isFav&&!fc?'还没有收藏。点卡片右下角的星标就能收藏，只存在这台设备上。':'没有匹配的资源，换个关键词试试。';
-  $('catTitle').textContent = isFav?'我的收藏':(state.q?'搜索结果':'全部资源');
-  $('meta').textContent = list.length+' 个'+(list.length!==ITEMS.length?' / 共 '+ITEMS.length:'')+' · 有图的排在前面';
+  $('empty').textContent = isFav&&!fc?t('empty_fav'):t('empty');
+  $('catTitle').textContent = isFav?t('cat_fav'):(state.q?t('cat_search'):t('cat_all'));
+  $('meta').textContent = t('meta',{n:list.length})+(list.length!==ITEMS.length?t('meta_total',{t:ITEMS.length}):'')+t('meta_sort');
 }
+function gk(g,s){return 'g_'+g.id.replace(/-/g,'_')+'_'+s}
 function renderGuides(){
-  $('guideList').innerHTML = D.guides.map(function(g,gk){
-    return '<div class="guide" id="g-'+g.id+'" style="--i:'+gk+'"><div class="gh"><span class="ge">'+g.emoji+'</span><div><h2>'+esc(g.title)+'</h2><p>'+esc(g.problem)+'</p></div></div><ol>'+
-      g.picks.map(function(p){var i=BY[p.id],m=M[i.id]||{};return '<li data-open="'+i.id+'"><span class="gt">'+(m.img?'<img src="'+m.img+'" alt="" loading="lazy">':'<b>'+esc(shown(i.name).split('/').pop().slice(0,2))+'</b>')+'</span><div><b>'+esc(shown(i.name))+'</b><span class="tp">'+TNAME[i.type]+'</span><p>'+esc(p.why)+'</p></div></li>'}).join('')+'</ol></div>';
+  $('guideList').innerHTML = D.guides.map(function(g,n){
+    return '<div class="guide" id="g-'+g.id+'" style="--i:'+n+'"><div class="gh"><span class="ge">'+g.emoji+'</span><div><h2>'+esc(t(gk(g,'t')))+'</h2><p>'+esc(t(gk(g,'p')))+'</p></div></div><ol>'+
+      g.picks.map(function(p){var i=BY[p.id],m=M[i.id]||{};return '<li data-open="'+i.id+'"><span class="gt">'+(m.img?'<img src="'+m.img+'" alt="" loading="lazy">':'<b>'+esc(shown(i.name).split('/').pop().slice(0,2))+'</b>')+'</span><div><b>'+esc(shown(i.name))+'</b><span class="tp">'+TN(i.type)+'</span><p>'+esc(p.why)+'</p></div></li>'}).join('')+'</ol></div>';
   }).join('');
 }
 
@@ -156,7 +200,7 @@ function fit(box){
 function loadLive(box){
   if(box.dataset.on)return; box.dataset.on='1';
   var fr=document.createElement('iframe');
-  fr.src=box.dataset.live; fr.loading='eager'; fr.title='原站实时预览'; fr.referrerPolicy='no-referrer-when-downgrade';
+  fr.src=box.dataset.live; fr.loading='eager'; fr.title='live preview'; fr.referrerPolicy='no-referrer-when-downgrade';
   fr.setAttribute('allow','microphone; autoplay; clipboard-write'); fr.tabIndex=-1;
   box.querySelector('.ifw').appendChild(fr); fit(box); box.classList.add('loading');
   var to=setTimeout(function(){box.classList.add('slow')},12000);
@@ -171,10 +215,10 @@ var ro = 'ResizeObserver' in window ? new ResizeObserver(function(es){es.forEach
 function track(root){root.querySelectorAll('.live,.site').forEach(function(b){ro&&ro.observe(b)})}
 
 // 整页嵌入（详情页里用）：按宽度缩放原站页面
-function siteBox(url){return '<div class="site" data-site="'+esc(url)+'"><div class="ifw"></div><span class="ld"><i></i>正在加载原站页面…</span></div>'}
+function siteBox(url){return '<div class="site" data-site="'+esc(url)+'"><div class="ifw"></div><span class="ld"><i></i>'+esc(t('loading_site'))+'</span></div>'}
 function loadSite(box){
   var cw=box.clientWidth, vw=cw<640?Math.max(cw,375):1180, s=cw/vw, ch=box.clientHeight;
-  var fr=document.createElement('iframe'); fr.src=box.dataset.site; fr.title='原站页面';
+  var fr=document.createElement('iframe'); fr.src=box.dataset.site; fr.title='original page';
   fr.style.width=vw+'px'; fr.style.height=(ch/s)+'px'; fr.style.transform='scale('+s+')';
   box.querySelector('.ifw').appendChild(fr); box.classList.add('loading');
   var to=setTimeout(function(){box.classList.add('slow')},12000);
@@ -182,50 +226,56 @@ function loadSite(box){
 }
 
 /* ---------- 详情 ---------- */
-function promptFor(i){
-  var n=shown(i.name);
-  if(i.type==='skill')return '请帮我安装并使用「'+n+'」这个 Skill（'+i.url+'）。它的作用：'+(shown(i.note)||'见链接')+'。装好后，用它检查并改进我当前项目的界面：先列出你发现的问题，再逐条修改，改完告诉我改了哪些地方。';
-  return '请参考「'+n+'」（'+i.url+'）的设计语言和交互，帮我做一个类似效果：\n- 我要做的是：【在这里写你的页面或组件，比如 AI 聊天输入框】\n- 参考它的：视觉风格、动效节奏、细节处理（'+(shown(i.note)||'见链接')+'）\n- 技术栈：React + Tailwind，动效用 CSS 或 Motion\n- 要求：深色和浅色都好看，手机上也能用，动效流畅不卡顿，不要直接照抄它的代码和文案';
-}
 function related(i){
   var mine=tagsOf(i);
   return ITEMS.filter(function(x){return x.type===i.type&&x.id!==i.id}).map(function(x){
-    var s=0; tagsOf(x).forEach(function(t){if(mine.indexOf(t)>=0)s+=2}); if(x.section===i.section)s+=1; if(M[x.id]&&M[x.id].img)s+=.5; return [s,x];
+    var s=0; tagsOf(x).forEach(function(z){if(mine.indexOf(z)>=0)s+=2}); if(x.section===i.section)s+=1; if(M[x.id]&&M[x.id].img)s+=.5; return [s,x];
   }).sort(function(a,b){return b[0]-a[0]}).slice(0,6).map(function(a){return a[1]});
 }
 function guidesFor(i){return D.guides.filter(function(g){return g.picks.some(function(p){return p.id===i.id})})}
 function preview(i){
   var f=LIVE[i.id], m=M[i.id]||{};
   if(i.id==='libraries-dev'){
-    return '<div class="pv-tabs" id="libTabs">'+LIBTABS.map(function(t,k){return '<button class="'+(k?'':'on')+'" data-lib="'+t[0]+'">'+t[1]+'</button>'}).join('')+'</div>'+
-      '<div class="pvw big">'+liveBox({id:i.id,live:lib('voice'),poster:'previews/live-voice.webp'},{eager:1})+'<div class="pvtag"><span class="tag-lv">真实预览</span><span>原站页面嵌入，上方可切换 7 个效果</span></div></div>';
+    return '<div class="pv-tabs" id="libTabs">'+LIBTABS.map(function(x,k){return '<button class="'+(k?'':'on')+'" data-lib="'+x[0]+'">'+x[1]+'</button>'}).join('')+'</div>'+
+      '<div class="pvw big">'+liveBox({id:i.id,live:lib('voice'),poster:'previews/live-voice.webp'},{eager:1})+'<div class="pvtag"><span class="tag-lv">'+t('tag_live')+'</span><span>'+esc(t('pv_libtabs'))+'</span></div></div>';
   }
-  if(f)return '<div class="pvw big">'+liveBox(f,{eager:1})+'<div class="pvtag"><span class="tag-lv">真实预览</span><span>原站页面嵌入'+(f.sub&&/迁/.test(f.sub)?'（已迁到 libraries.dev）':'')+'</span></div></div>';
-  if(m.frame)return '<div class="pvw big"><div class="site-wrap">'+(m.img?'<img class="poster" src="'+m.img+'" alt="">':mono(i))+
-    '<button class="loadsite" data-site-load="'+esc(i.url)+'">'+IC.play+'<span>在这里加载原站页面<small>原站允许嵌入，缩小显示</small></span></button></div>'+
-    '<div class="pvtag">'+srcTag(i)+'<span>'+(m.img?'先看封面，点按钮在这里打开原站':'点按钮在这里打开原站')+'</span></div></div>';
-  if(m.img)return '<div class="pvw big"><img class="poster" src="'+m.img+'" alt="'+esc(i.name)+'"><div class="pvtag">'+srcTag(i)+'<span>原站不允许嵌入，完整效果去原站看</span></div></div>';
-  if(VISUAL[i.type])return '<div class="pvw big">'+mono(i)+'<div class="pvtag"><span>暂无预览图，去原站看</span></div></div>';
+  if(f)return '<div class="pvw big">'+liveBox(f,{eager:1})+'<div class="pvtag"><span class="tag-lv">'+t('tag_live')+'</span><span>'+esc(t('pv_live_d'))+'</span></div></div>';
+  if(m.frame)return '<div class="pvw big"><div class="site-wrap">'+(m.img?'<img class="poster" src="'+m.img+'" alt="">':demo(i))+
+    '<button class="loadsite" data-site-load="'+esc(i.url)+'">'+IC.play+'<span>'+esc(t('pv_frame_btn'))+'<small>'+esc(t('pv_frame_sub'))+'</small></span></button></div>'+
+    '<div class="pvtag">'+srcTag(i)+'<span>'+esc(t('pv_frame_d'))+'</span></div></div>';
+  if(m.img)return '<div class="pvw big"><img class="poster" src="'+m.img+'" alt="'+esc(i.name)+'" data-play="'+i.id+'"><div class="pvtag">'+srcTag(i)+'<span>'+esc(t('pv_noframe_d'))+'</span></div></div>';
+  if(VISUAL[i.type])return '<div class="pvw big">'+demo(i)+'<div class="pvtag">'+srcTag(i)+'<span>'+esc(t('pv_demo_d'))+'</span></div></div>';
   var parts=shown(i.name).split('/');
-  return '<div class="pvw sk"><div class="term"><i></i><i></i><i></i><span>SKILL.md</span></div><div class="skn"><small>'+esc(parts.length>1?parts[0]+' /':TNAME[i.type])+'</small><b>'+esc(parts[parts.length-1])+'</b></div></div>';
+  return '<div class="pvw sk"><div class="term"><i></i><i></i><i></i><span>SKILL.md</span></div><div class="skn"><small>'+esc(parts.length>1?parts[0]+' /':TN(i.type))+'</small><b>'+esc(parts[parts.length-1])+'</b></div></div>';
+}
+function codeBlock(i){
+  var l=lg(i), c=codeOf(i);
+  if(c)return '<div class="prompt code"><div class="ph"><span>'+IC.code+esc(t('code_h'))+'</span><button class="b sm pri" data-cc="'+i.id+'">'+IC.copy+esc(t('btn_copy_code'))+'</button></div><pre>'+esc(c)+'</pre>'+
+    '<p class="cnote">'+esc(t('code_note',{lic:l.lic}))+(l.pro?' '+esc(t('pro_note',{pro:l.pro})):'')+'</p></div>';
+  return '<div class="prompt code off"><div class="ph"><span>'+IC.lock+esc(t('code_none_h'))+'</span><button class="b sm ghost" disabled title="'+esc(codeTip(i))+'">'+IC.copy+esc(t('btn_copy_code'))+'</button></div><p class="cnote">'+esc(codeTip(i))+'</p></div>';
 }
 function openSheet(id){
   var i=BY[id]; if(!i)return;
-  var ut=utags[i.id]||[], gs=guidesFor(i), pr=promptFor(i), f=LIVE[i.id];
-  $('sheet').innerHTML = '<div class="grab"></div><button class="ib close" data-close aria-label="关闭">'+IC.x+'</button>'+preview(i)+
-   '<div class="sb"><div class="row">'+'<span class="tp">'+TNAME[i.type]+'</span>'+(PRICE[i.pricing]?'<span class="pill '+i.pricing+'">'+PRICE[i.pricing]+'</span>':'')+(i.source?'<span class="src">'+esc(i.source)+' 推荐</span>':'')+'</div>'+
+  var ut=utags[i.id]||[], gs=guidesFor(i), pr=promptFor(i), l=lg(i);
+  var links=(l.npm?'<a href="'+esc(l.npm)+'" target="_blank" rel="noopener noreferrer">npm</a>':'')+(l.gh?'<a href="'+esc(l.gh)+'" target="_blank" rel="noopener noreferrer">GitHub</a>':'');
+  $('sheet').innerHTML = '<div class="grab"></div><button class="ib close" data-close aria-label="'+esc(t('close'))+'">'+IC.x+'</button>'+preview(i)+
+   '<div class="sb"><div class="row">'+'<span class="tp">'+TN(i.type)+'</span>'+(PR(i.pricing)?'<span class="pill '+i.pricing+'">'+PR(i.pricing)+'</span>':'')+(l.lic?'<span class="pill oss">'+esc(l.lic)+'</span>':'')+(i.source?'<span class="src">'+esc(i.source)+'</span>':'')+'</div>'+
    '<h2>'+esc(shown(i.name))+'</h2>'+(i.note?'<p class="lead">'+esc(i.note)+'</p>':'')+
-   '<div class="acts"><a class="b pri" href="'+esc(i.url)+'" target="_blank" rel="noopener noreferrer">打开原站'+IC.ext+'</a>'+
-   (f?'<button class="b ghost" data-play="'+i.id+'">'+IC.full+'全屏试玩</button>':'')+
-   '<button class="b ghost" data-copy="'+esc(i.url)+'" data-msg="链接已复制">'+IC.copy+'复制链接</button>'+favBtn(i,'lg')+'</div>'+
-   '<div class="prompt"><div class="ph"><span>'+IC.spark+'给 AI 的提示词</span><button class="b sm pri" data-copyp>'+IC.copy+'复制</button></div><pre>'+esc(pr)+'</pre></div>'+
-   '<dl class="kv"><dt>网址</dt><dd class="u">'+esc(i.url)+'</dd><dt>分组</dt><dd>'+esc(i.sectionTitle)+(i.sectionDesc?'<span>'+esc(i.sectionDesc)+'</span>':'')+'</dd>'+
-   (gs.length?'<dt>指南</dt><dd>'+gs.map(function(g){return '<a href="#/guides" data-g="'+g.id+'">'+g.emoji+' '+esc(g.title)+'</a>'}).join('')+'</dd>':'')+'</dl>'+
-   '<h3>标签</h3><div class="tagrow">'+i.tags.map(function(t){return '<span class="tg">'+esc(t)+'</span>'}).join('')+
-     ut.map(function(t,k){return '<span class="tg u">'+esc(t)+'<b data-rmtag="'+k+'">×</b></span>'}).join('')+'</div>'+
-   '<form class="addtag" data-addtag="'+i.id+'"><input name="t" maxlength="16" placeholder="加个自己的标签，比如：下个项目用"><button class="b ghost sm">添加</button></form>'+
-   '<h3>同类推荐</h3><div class="rel">'+related(i).map(function(x){var m=M[x.id]||{},lv=LIVE[x.id];return '<button data-open="'+x.id+'">'+(m.img||lv?'<img src="'+(lv?lv.poster:m.img)+'" alt="" loading="lazy">':'<span class="rm">'+esc(shown(x.name).split('/').pop().slice(0,2))+'</span>')+'<b>'+esc(shown(x.name))+'</b></button>'}).join('')+'</div></div>';
-  $('sheet').dataset.id=i.id; $('sheet').dataset.prompt=pr;
+   '<div class="acts"><a class="b pri" href="'+esc(i.url)+'" target="_blank" rel="noopener noreferrer">'+esc(t('btn_original'))+IC.ext+'</a>'+
+   (VISUAL[i.type]?'<button class="b ghost" data-play="'+i.id+'">'+IC.full+esc(canFrame(i)?t('btn_play'):t('btn_view'))+'</button>':'')+
+   '<button class="b ghost" data-copy="'+esc(i.url)+'" data-msg="'+esc(t('toast_link'))+'">'+IC.copy+esc(t('btn_copy_link'))+'</button>'+favBtn(i,'lg')+'</div>'+
+   '<div class="prompt"><div class="ph"><span>'+IC.spark+esc(t('prompt_h'))+'</span><button class="b sm pri" data-cp="'+i.id+'">'+IC.copy+esc(t('btn_copy_prompt'))+'</button></div><pre>'+esc(pr)+'</pre></div>'+
+   codeBlock(i)+
+   '<dl class="kv"><dt>'+esc(t('kv_url'))+'</dt><dd class="u"><a href="'+esc(i.url)+'" target="_blank" rel="noopener noreferrer">'+esc(i.url)+'</a></dd>'+
+   (l.lic?'<dt>'+esc(t('kv_license'))+'</dt><dd>'+esc(l.lic)+(links?'<span class="lk">'+links+'</span>':'')+'</dd>':'')+
+   '<dt>'+esc(t('kv_group'))+'</dt><dd>'+esc(i.sectionTitle)+(i.sectionDesc?'<span>'+esc(i.sectionDesc)+'</span>':'')+'</dd>'+
+   (gs.length?'<dt>'+esc(t('kv_guide'))+'</dt><dd>'+gs.map(function(g){return '<a href="#/guides" data-g="'+g.id+'">'+g.emoji+' '+esc(t(gk(g,'t')))+'</a>'}).join('')+'</dd>':'')+'</dl>'+
+   '<h3>'+esc(t('tags_h'))+'</h3><div class="tagrow">'+i.tags.map(function(x){return '<span class="tg">'+esc(x)+'</span>'}).join('')+
+     ut.map(function(x,k){return '<span class="tg u">'+esc(x)+'<b data-rmtag="'+k+'">×</b></span>'}).join('')+'</div>'+
+   '<form class="addtag" data-addtag="'+i.id+'"><input name="t" maxlength="16" placeholder="'+esc(t('tag_ph'))+'"><button class="b ghost sm">'+esc(t('btn_add'))+'</button></form>'+
+   '<h3>'+esc(t('related_h'))+'</h3><div class="rel">'+related(i).map(function(x){var m=M[x.id]||{},lv=LIVE[x.id];return '<button data-open="'+x.id+'">'+(m.img||lv?'<img src="'+(lv?lv.poster:m.img)+'" alt="" loading="lazy">':'<span class="rm">'+esc(shown(x.name).split('/').pop().slice(0,2))+'</span>')+'<b>'+esc(shown(x.name))+'</b></button>'}).join('')+'</div>'+
+   '<p class="legal-s">'+esc(t('legal'))+'</p></div>';
+  $('sheet').dataset.id=i.id;
   $('scrim').hidden=false; $('sheet').classList.add('open'); $('sheet').setAttribute('aria-hidden','false'); $('sheet').scrollTop=0;
   document.body.classList.add('lock');
   requestAnimationFrame(function(){var b=$('sheet').querySelector('.live');if(b){track($('sheet'));setTimeout(function(){loadLive(b)},280)}});
@@ -235,25 +285,47 @@ function closeSheet(){
   s.classList.remove('open'); $('scrim').hidden=true; s.setAttribute('aria-hidden','true'); document.body.classList.remove('lock');
   setTimeout(function(){if(!s.classList.contains('open'))s.innerHTML=''},350);
 }
+// 全屏：真实预览 → 裁剪页；可嵌入 → 整页原站；否则 → 原站公开图片 / 自制示意大图
 function playFull(id){
-  var i=BY[id], f=LIVE[id]; if(!f)return;
-  var src=f.live.src;
-  if(id==='libraries-dev'){var on=document.querySelector('#libTabs .on');if(on)src=LIB+on.dataset.lib+'.html'}
-  $('play').innerHTML='<div class="pbar"><span class="tag-lv">真实预览</span><b>'+esc(f.title||shown(i.name))+'</b><a class="b ghost sm" href="'+esc(src)+'" target="_blank" rel="noopener noreferrer">新窗口'+IC.ext+'</a><button class="ib" data-closeplay aria-label="关闭">'+IC.x+'</button></div><iframe src="'+esc(src)+'" title="原站实时预览" allow="microphone; autoplay; clipboard-write"></iframe>';
+  var i=BY[id], f=LIVE[id], m=M[id]||{}; if(!i)return;
+  var bar=function(tag,src){return '<div class="pbar">'+tag+'<b>'+esc(shown(i.name))+'</b><a class="b ghost sm" href="'+esc(src)+'" target="_blank" rel="noopener noreferrer">'+esc(t('btn_original'))+IC.ext+'</a><button class="ib" data-closeplay aria-label="'+esc(t('close'))+'">'+IC.x+'</button></div>'};
+  if(f||m.frame){
+    var src=f?f.live.src:i.url;
+    if(id==='libraries-dev'){var on=document.querySelector('#libTabs .on');if(on)src=LIB+on.dataset.lib+'.html'}
+    $('play').innerHTML=bar('<span class="'+(f?'tag-lv':'tag-fr')+'">'+(f?t('tag_live'):t('tag_frame'))+'</span>',src)+'<iframe src="'+esc(src)+'" title="'+esc(shown(i.name))+'" allow="microphone; autoplay; clipboard-write"></iframe>';
+  }else{
+    $('play').innerHTML=bar(srcTag(i),i.url)+'<div class="lb">'+(m.img?'<img src="'+m.img+'" alt="'+esc(i.name)+'">':'<div class="lbd">'+demo(i)+'</div>')+
+      '<p>'+esc(m.img?t('lb_hint'):t('pv_demo_d'))+'</p><div class="lba"><a class="b pri" href="'+esc(i.url)+'" target="_blank" rel="noopener noreferrer">'+esc(t('btn_original'))+IC.ext+'</a>'+cardActs(i,'lbc')+'</div></div>';
+  }
   $('play').hidden=false; document.body.classList.add('lock');
 }
 function closePlay(){$('play').hidden=true;$('play').innerHTML='';if(!$('sheet').classList.contains('open'))document.body.classList.remove('lock')}
 
+/* ---------- 语言 ---------- */
+function applyStatic(){
+  document.documentElement.lang=LANG;
+  document.querySelectorAll('[data-i18n]').forEach(function(el){el.textContent=t(el.dataset.i18n,{n:ITEMS.length})});
+  document.querySelectorAll('[data-i18n-ph]').forEach(function(el){el.placeholder=t(el.dataset.i18nPh)});
+  document.querySelectorAll('[data-i18n-aria]').forEach(function(el){el.setAttribute('aria-label',t(el.dataset.i18nAria));el.title=t(el.dataset.i18nAria)});
+  var sel=$('langSel'); if(sel){sel.value=LANG}
+  document.title='UI Hub · '+t('hero_title');
+}
+function setLang(l){
+  if(!I18N[l])return; LANG=l; try{localStorage.setItem('uihub.lang',l)}catch(e){}
+  applyStatic(); renderFeat(); renderGuides(); refresh();
+  var id=$('sheet').classList.contains('open')&&$('sheet').dataset.id; if(id)openSheet(id);
+}
+
 /* ---------- 通用 ---------- */
 var inApp=false; window.addEventListener('hashchange',function(){inApp=true});
 function back(){if(inApp)history.back();else location.hash='#/'}
-function toast(t){var el=$('toast');el.textContent=t;el.classList.add('show');clearTimeout(toast.t);toast.t=setTimeout(function(){el.classList.remove('show')},1500)}
-function copy(t,msg){
-  function fb(){var a=document.createElement('textarea');a.value=t;a.setAttribute('readonly','');a.style.position='fixed';a.style.opacity='0';document.body.appendChild(a);a.select();a.setSelectionRange(0,t.length);try{document.execCommand('copy');toast(msg)}catch(e){prompt('复制下面的内容',t)}document.body.removeChild(a)}
-  if(navigator.clipboard&&window.isSecureContext)navigator.clipboard.writeText(t).then(function(){toast(msg)},fb);else fb();
+function toast(x){var el=$('toast');el.textContent=x;el.classList.add('show');clearTimeout(toast.t);toast.t=setTimeout(function(){el.classList.remove('show')},x.length>30?3200:1600)}
+function copy(x,msg){
+  function fb(){var a=document.createElement('textarea');a.value=x;a.setAttribute('readonly','');a.style.position='fixed';a.style.opacity='0';document.body.appendChild(a);a.select();a.setSelectionRange(0,x.length);try{document.execCommand('copy');toast(msg)}catch(e){prompt('',x)}document.body.removeChild(a)}
+  if(navigator.clipboard&&window.isSecureContext)navigator.clipboard.writeText(x).then(function(){toast(msg)},fb);else fb();
 }
 function syncFav(id){document.querySelectorAll('[data-fav="'+id+'"]').forEach(function(b){b.classList.toggle('on',!!favs[id])})}
-function toggleFav(id){if(favs[id])delete favs[id];else favs[id]=Date.now();LS.set('favs',favs);toast(favs[id]?'已收藏':'已取消收藏');syncFav(id);$('favCnt').textContent=Object.keys(favs).length||'';if(state.view==='fav'){renderChips();renderGrid()}}
+function toggleFav(id){if(favs[id])delete favs[id];else favs[id]=Date.now();LS.set('favs',favs);toast(favs[id]?t('toast_fav'):t('toast_unfav'));syncFav(id);$('favCnt').textContent=Object.keys(favs).length||'';if(state.view==='fav'){renderChips();renderGrid()}}
 function refresh(){renderChips();renderGrid()}
 function setView(v){
   state.view=v; $('home').hidden=v==='guides'; $('guides').hidden=v!=='guides';
@@ -263,40 +335,42 @@ function setView(v){
 }
 function route(){
   var h=location.hash.replace(/^#\/?/,'');
-  if(h.indexOf('r/')===0){if(!$('home').hidden||$('guides').hidden){if(state.view==='guides')setView('home')}openSheet(decodeURIComponent(h.slice(2)));return}
+  if(h.indexOf('r/')===0){if(state.view==='guides')setView('home');openSheet(decodeURIComponent(h.slice(2)));return}
   closeSheet();
   if(h==='guides'){setView('guides');scrollTo(0,0)}else if(h==='fav'){state.type='all';setView('fav');scrollTo(0,0)}else if(state.view!=='home')setView('home');
 }
 function focusSearch(){if(state.view!=='home')location.hash='#/';setTimeout(function(){var q=$('q');q.scrollIntoView({behavior:'smooth',block:'center'});q.focus({preventScroll:true})},60)}
 
 document.addEventListener('click',function(e){
-  var t=e.target.closest('[data-copy],[data-copyp],[data-fav],[data-type],[data-tag],[data-close],[data-closeplay],[data-rmtag],[data-g],[data-play],[data-lib],[data-site-load],[data-open],a');
-  if(!t)return;
-  if(t.tagName==='A'&&!t.dataset.g)return;
-  if(t.dataset.copy){e.preventDefault();copy(t.dataset.copy,t.dataset.msg||'已复制');return}
-  if(t.hasAttribute('data-copyp')){copy($('sheet').dataset.prompt,'提示词已复制，粘贴给 AI 就行');return}
-  if(t.dataset.fav){e.preventDefault();e.stopPropagation();toggleFav(t.dataset.fav);return}
-  if(t.dataset.type){state.type=t.dataset.type;refresh();return}
-  if(t.dataset.tag!=null&&t.classList.contains('chip')){state.tag=state.tag===t.dataset.tag?'':t.dataset.tag;refresh();return}
-  if(t.hasAttribute('data-close')){back();return}
-  if(t.hasAttribute('data-closeplay')){closePlay();return}
-  if(t.dataset.play){playFull(t.dataset.play);return}
-  if(t.dataset.lib){
-    document.querySelectorAll('#libTabs button').forEach(function(b){b.classList.toggle('on',b===t)});
-    var box=$('sheet').querySelector('.live'); unloadLive(box); box.dataset.live=LIB+t.dataset.lib+'.html';
-    var p=box.querySelector('.poster'); var pm={voice:1,orbs:1,beam:1,metal:'libmetal',gooey:1,image:1}[t.dataset.lib];
-    p.style.visibility=pm?'':'hidden'; if(pm)p.src='previews/live-'+(pm===1?t.dataset.lib:pm)+'.webp';
-    t.scrollIntoView({inline:'center',block:'nearest',behavior:'smooth'}); loadLive(box); return}
-  if(t.dataset.siteLoad){var w=t.closest('.site-wrap');w.outerHTML=siteBox(t.dataset.siteLoad);var sb=$('sheet').querySelector('.site');track($('sheet'));loadSite(sb);return}
-  if(t.dataset.rmtag!=null){var id=$('sheet').dataset.id;utags[id].splice(+t.dataset.rmtag,1);if(!utags[id].length)delete utags[id];LS.set('tags',utags);openSheet(id);refresh();return}
-  if(t.dataset.g){e.preventDefault();closeSheet();location.hash='#/guides';setTimeout(function(){var el=$('g-'+t.dataset.g);el&&el.scrollIntoView({behavior:'smooth'})},80);return}
-  if(t.dataset.open){location.hash='#/r/'+t.dataset.open}
+  var el=e.target.closest('[data-copy],[data-cp],[data-cc],[data-tip],[data-fav],[data-type],[data-tag],[data-close],[data-closeplay],[data-rmtag],[data-g],[data-play],[data-lib],[data-site-load],[data-open],a');
+  if(!el)return;
+  if(el.tagName==='A'&&!el.dataset.g){e.stopPropagation();return}
+  if(el.dataset.copy){e.preventDefault();copy(el.dataset.copy,el.dataset.msg||t('toast_link'));return}
+  if(el.dataset.cp){e.preventDefault();copy(promptFor(BY[el.dataset.cp]),t('toast_prompt'));return}
+  if(el.dataset.cc){e.preventDefault();copy(codeOf(BY[el.dataset.cc]),t('toast_code'));return}
+  if(el.dataset.tip){e.preventDefault();toast(el.dataset.tip);return}
+  if(el.dataset.fav){e.preventDefault();e.stopPropagation();toggleFav(el.dataset.fav);return}
+  if(el.dataset.type){state.type=el.dataset.type;refresh();return}
+  if(el.dataset.tag!=null&&el.classList.contains('chip')){state.tag=state.tag===el.dataset.tag?'':el.dataset.tag;refresh();return}
+  if(el.hasAttribute('data-close')){back();return}
+  if(el.hasAttribute('data-closeplay')){closePlay();return}
+  if(el.dataset.play){e.stopPropagation();playFull(el.dataset.play);return}
+  if(el.dataset.lib){
+    document.querySelectorAll('#libTabs button').forEach(function(b){b.classList.toggle('on',b===el)});
+    var box=$('sheet').querySelector('.live'); unloadLive(box); box.dataset.live=LIB+el.dataset.lib+'.html';
+    var p=box.querySelector('.poster'); var pm={voice:1,orbs:1,beam:1,metal:'libmetal',gooey:1,image:1}[el.dataset.lib];
+    p.style.visibility=pm?'':'hidden'; if(pm)p.src='previews/live-'+(pm===1?el.dataset.lib:pm)+'.webp';
+    el.scrollIntoView({inline:'center',block:'nearest',behavior:'smooth'}); loadLive(box); return}
+  if(el.dataset.siteLoad){var w=el.closest('.site-wrap');w.outerHTML=siteBox(el.dataset.siteLoad);var sb=$('sheet').querySelector('.site');track($('sheet'));loadSite(sb);return}
+  if(el.dataset.rmtag!=null){var id=$('sheet').dataset.id;utags[id].splice(+el.dataset.rmtag,1);if(!utags[id].length)delete utags[id];LS.set('tags',utags);openSheet(id);refresh();return}
+  if(el.dataset.g){e.preventDefault();closeSheet();location.hash='#/guides';setTimeout(function(){var g=$('g-'+el.dataset.g);g&&g.scrollIntoView({behavior:'smooth'})},80);return}
+  if(el.dataset.open){if(!$('play').hidden)closePlay();location.hash='#/r/'+el.dataset.open}
 });
 document.addEventListener('submit',function(e){
   var f=e.target; if(!f.dataset.addtag)return; e.preventDefault();
   var v=f.t.value.trim(); if(!v)return; var id=f.dataset.addtag;
   (utags[id]=utags[id]||[]); if(utags[id].indexOf(v)<0&&BY[id].tags.indexOf(v)<0)utags[id].push(v);
-  LS.set('tags',utags); openSheet(id); refresh(); toast('标签已添加');
+  LS.set('tags',utags); openSheet(id); refresh(); toast(t('toast_tag'));
 });
 $('scrim').addEventListener('click',back);
 $('searchOpen').addEventListener('click',focusSearch);
@@ -305,16 +379,14 @@ var qt; $('q').addEventListener('input',function(e){clearTimeout(qt);qt=setTimeo
   if(state.q&&$('catalog').getBoundingClientRect().top>innerHeight*.6)$('catalog').scrollIntoView({behavior:'smooth'});
 },160)});
 document.addEventListener('keydown',function(e){
-  if(e.key==='/'&&!/INPUT|TEXTAREA/.test(document.activeElement.tagName)){e.preventDefault();focusSearch()}
+  if(e.key==='/'&&!/INPUT|TEXTAREA|SELECT/.test(document.activeElement.tagName)){e.preventDefault();focusSearch()}
   if(e.key==='Escape'){if(!$('play').hidden)closePlay();else if($('sheet').classList.contains('open'))back()}
 });
 $('themeBtn').addEventListener('click',function(){var r=document.documentElement,n=r.dataset.theme==='dark'?'light':'dark';r.dataset.theme=n;try{localStorage.setItem('uihub.theme',n)}catch(e){}});
-// 手机上下滑关闭详情
+(function(){var sel=$('langSel');if(!sel)return;sel.innerHTML=I18N.langs.map(function(l){return '<option value="'+l[0]+'">'+l[1]+'</option>'}).join('');sel.addEventListener('change',function(){setLang(sel.value)})})();
 (function(){var y0=null,s=$('sheet');s.addEventListener('touchstart',function(e){y0=s.scrollTop<=0&&!e.target.closest('.live,.site,.pv-tabs')?e.touches[0].clientY:null},{passive:true});
  s.addEventListener('touchend',function(e){if(y0!=null&&e.changedTouches[0].clientY-y0>90)back();y0=null},{passive:true})})();
-// 顶栏滚动后加玻璃底
 addEventListener('scroll',function(){$('top').classList.toggle('scrolled',scrollY>8)},{passive:true});
 window.addEventListener('hashchange',route);
-$('statAll').textContent=ITEMS.length;
-renderFeat(); track($("feat")); renderGuides(); setView("home"); route();
+applyStatic(); renderFeat(); renderGuides(); setView("home"); route();
 })();

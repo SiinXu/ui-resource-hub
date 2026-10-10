@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#07070a">
-<title>UI Hub · 精华组件展</title>
+<title>UI Hub</title>
 <link rel="preload" href="fonts/geist.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Cdefs%3E%3ClinearGradient id=%27g%27%3E%3Cstop offset=%270%27 stop-color=%27%23a78bfa%27/%3E%3Cstop offset=%271%27 stop-color=%27%2334d399%27/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width=%2732%27 height=%2732%27 rx=%279%27 fill=%27url(%23g)%27/%3E%3Crect x=%274%27 y=%274%27 width=%2724%27 height=%2724%27 rx=%276%27 fill=%27%23060608%27/%3E%3Ccircle cx=%2716%27 cy=%2716%27 r=%276%27 fill=%27%23fff%27/%3E%3C/svg%3E">
 <link rel="stylesheet" href="styles.css">
@@ -17,24 +17,25 @@
   <div class="bar wrap">
     <a class="logo" href="#/"><span class="mark"><i></i></span>UI<em>Hub</em></a>
     <nav class="tabs" id="tabsTop">
-      <a href="#/" data-v="home">发现</a><a href="#/guides" data-v="guides">指南</a><a href="#/fav" data-v="fav">收藏<span class="cnt" id="favCnt"></span></a>
+      <a href="#/" data-v="home" data-i18n="nav_discover">发现</a><a href="#/guides" data-v="guides" data-i18n="nav_guides">指南</a><a href="#/fav" data-v="fav"><span data-i18n="nav_fav">收藏</span><span class="cnt" id="favCnt"></span></a>
     </nav>
-    <button class="sbtn" id="searchOpen" aria-label="搜索"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span>搜索</span><kbd>/</kbd></button>
-    <button class="icon" id="themeBtn" aria-label="切换深浅色"><svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 9 9 7 7 0 0 1-9-9z"/></svg></button>
+    <button class="sbtn" id="searchOpen" data-i18n-aria="search"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span data-i18n="search">搜索</span><kbd>/</kbd></button>
+    <label class="langw" data-i18n-aria="lang"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.5 3 14.5 0 18M12 3c-3 3.5-3 14.5 0 18"/></svg><select id="langSel"></select></label>
+    <button class="icon" id="themeBtn" data-i18n-aria="theme"><svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 9 9 7 7 0 0 1-9-9z"/></svg></button>
   </div>
 </header>
 
 <main id="main">
   <section id="home" class="view">
     <div class="hero wrap" id="hero">
-      <p class="eyebrow"><span class="dot"></span>实时预览 · 直接嵌入原站</p>
-      <h1>精华组件展 <em>Live Showcase</em></h1>
-      <p class="lede">从你收藏的 <b id="statAll">142</b> 个资源里挑出最好看的。带 <span class="lv">真实预览</span> 的卡片是原站页面直接嵌在这里跑的，可以上手玩；其余是原站封面图，点进去或去原站看完整效果。</p>
-      <label class="hsearch"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="q" type="search" placeholder="搜组件、特效、Skill、作者…" autocomplete="off" enterkeyhint="search"><kbd>/</kbd></label>
+      <p class="eyebrow"><span class="dot"></span><span data-i18n="hero_eyebrow"></span></p>
+      <h1><span data-i18n="hero_title">精华组件展</span> <em data-i18n="hero_em">Live Showcase</em></h1>
+      <p class="lede" data-i18n="hero_lede"></p>
+      <label class="hsearch"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="q" type="search" data-i18n-ph="search_ph" placeholder="" autocomplete="off" enterkeyhint="search"><kbd>/</kbd></label>
     </div>
 
     <div class="feat-wrap" id="featWrap">
-      <div class="sec-h wrap"><h2>精选 12 <small>大图预览</small></h2><div class="legend"><span class="lv">真实预览</span>原站嵌入可交互 <span class="pv">原站封面</span>静态图，点按钮去原站看</div></div>
+      <div class="sec-h wrap"><h2><span data-i18n="feat_title">精选</span> <small data-i18n="feat_small">大图预览</small></h2><div class="legend"><span class="lv" data-i18n="legend_live"></span><span data-i18n="legend_live_d"></span> <span class="pv" data-i18n="legend_pv"></span><span data-i18n="legend_pv_d"></span> <span class="dm" data-i18n="legend_demo"></span><span data-i18n="legend_demo_d"></span></div></div>
       <div class="feat wrap" id="feat"></div>
       <div class="more wrap" id="more"></div>
     </div>
@@ -42,22 +43,22 @@
     <div class="sec-h wrap cat-h" id="catalog"><h2 id="catTitle">全部资源</h2><p class="meta" id="meta"></p></div>
     <div class="chips-bar" id="chipsBar"><div class="chips wrap" id="chips"></div></div>
     <div class="grid wrap" id="grid"></div>
-    <p class="empty wrap" id="empty" hidden>没有匹配的资源，换个关键词试试。</p>
+    <p class="empty wrap" id="empty" hidden></p>
   </section>
 
   <section id="guides" class="view wrap" hidden>
-    <div class="hero sm"><p class="eyebrow"><span class="dot"></span>调教指南</p><h1>按问题找资源 <em>Playbook</em></h1>
-    <p class="lede">遇到具体问题时按这里找。每篇只推荐清单里已有的资源，点名字看详情。</p></div>
+    <div class="hero sm"><p class="eyebrow"><span class="dot"></span><span data-i18n="guides_eyebrow"></span></p><h1><span data-i18n="guides_title"></span> <em data-i18n="guides_em">Playbook</em></h1>
+    <p class="lede" data-i18n="guides_lede"></p></div>
     <div id="guideList" class="guides"></div>
   </section>
 </main>
 
-<footer class="foot wrap">数据来自群聊「好看的 UI 资源合集」整理 · 收藏和标签只存在这台设备的浏览器里 · 预览图版权归各原站</footer>
+<footer class="foot wrap"><p class="legal"><b data-i18n="legal_h">声明</b> <span data-i18n="legal">本站仅为公开 UI 资源聚合与导航，不提供付费或专利源码；预览来自原站或自制示意。</span></p><p data-i18n="foot_data"></p></footer>
 
 <nav class="bottom" id="tabsBottom">
-  <a href="#/" data-v="home"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="2"/><rect x="14" y="3" width="7" height="7" rx="2"/><rect x="3" y="14" width="7" height="7" rx="2"/><rect x="14" y="14" width="7" height="7" rx="2"/></svg>发现</a>
-  <a href="#/guides" data-v="guides"><svg viewBox="0 0 24 24"><path d="M4 5a2 2 0 0 1 2-2h12v18H6a2 2 0 0 1-2-2z"/><path d="M8 7h6M8 11h6"/></svg>指南</a>
-  <a href="#/fav" data-v="fav"><svg viewBox="0 0 24 24"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/></svg>收藏</a>
+  <a href="#/" data-v="home"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="2"/><rect x="14" y="3" width="7" height="7" rx="2"/><rect x="3" y="14" width="7" height="7" rx="2"/><rect x="14" y="14" width="7" height="7" rx="2"/></svg><span data-i18n="nav_discover">发现</span></a>
+  <a href="#/guides" data-v="guides"><svg viewBox="0 0 24 24"><path d="M4 5a2 2 0 0 1 2-2h12v18H6a2 2 0 0 1-2-2z"/><path d="M8 7h6M8 11h6"/></svg><span data-i18n="nav_guides">指南</span></a>
+  <a href="#/fav" data-v="fav"><svg viewBox="0 0 24 24"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/></svg><span data-i18n="nav_fav">收藏</span></a>
 </nav>
 
 <div class="scrim" id="scrim" hidden></div>
@@ -67,6 +68,8 @@
 
 <script src="data.js"></script>
 <script src="media.js"></script>
+<script src="legal.js"></script>
+<script src="i18n.js"></script>
 <script src="app.js"></script>
 </body>
 </html>
