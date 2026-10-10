@@ -33,6 +33,6 @@
   {"name":"ibelick/ui-skills-root","why":"总入口，按需求自动挑合适的 UI 技能，第一个装它"},
   {"name":"frontend-design（Anthropic）","why":"Anthropic 官方前端设计技能，基础必装"},
   {"name":"pbakaus/shape","why":"写代码前先做设计访谈，适合产品经理"},
-  {"name":"Libraries.dev Skill","why":"你是 Libraries.dev Pro，可装 Pro 版一句话调特效参数"},
+  {"name":"Libraries.dev Skill","why":"免费 Skill 可扫描项目推荐特效位置；原站另有 Pro 付费版，可一句话调特效参数"},
   {"name":"leonxlnx/stitch-skill","why":"如果用 Google Stitch 出稿，配它一起用"}]}
 ]

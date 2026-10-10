@@ -7,10 +7,16 @@ function t(k,v){var s=(I18N[LANG]&&I18N[LANG][k]!=null)?I18N[LANG][k]:(I18N['zh-
 function isZh(){return LANG==='zh-CN'}
 var ITEMS = D.items, BY = {};
 ITEMS.forEach(function(i){BY[i.id]=i});
-var TYPES = ['all','component','effect','skill','inspiration','template','generator','guide'];
+var TYPES = ['all','library','component','effect','skill','inspiration','template','generator','guide'];
+var NOTES = window.UI_NOTES || {notes:{},why:{}}, CTO = window.UI_CT_ORDER || [], SECO = window.UI_SEC_ORDER || [];
+// 资源说明随界面语言切换：非中文用人工撰写的译文，缺失时回落到中文原文
+function noteOf(i){var m=!isZh()&&NOTES.notes[LANG];return (m&&m[i.id])||shown(i.note)}
+function whyOf(p,g){var m=!isZh()&&NOTES.why[LANG];return (m&&m[p.id+'@'+g.id])||p.why}
+function secOf(i){if(isZh())return i.sectionTitle;var n=SECO.indexOf(i.section);return n<0?i.sectionTitle:t('sec_'+n)}
+function CTN(k){return t('ct_'+k)}
 function TN(k){return t('t_'+k)}
 function PR(k){return {free:1,paid:1,freemium:1}[k]?t('price_'+k):''}
-var VISUAL = {component:1,effect:1,template:1,generator:1,inspiration:1,guide:1};
+var VISUAL = {library:1,component:1,effect:1,template:1,generator:1,inspiration:1,guide:1};
 
 /* ---------- 精选：live = 原站页面 iframe 嵌入（裁出演示区域） ---------- */
 // w: iframe 的虚拟宽度；top/view: 演示区域在页面里的纵向位置和高度（像素，按 w 宽度时）
@@ -34,7 +40,7 @@ var LS = {
   set:function(k,v){try{localStorage.setItem('uihub.'+k,JSON.stringify(v))}catch(e){}}
 };
 var favs = LS.get('favs',{}), utags = LS.get('tags',{});
-var state = {type:'all', q:'', tag:'', view:'home'};
+var state = {type:'all', ct:'', q:'', tag:'', view:'home'};
 var $ = function(id){return document.getElementById(id)};
 function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})}
 function host(u){try{return new URL(u).hostname.replace(/^www\./,'')}catch(e){return u}}
@@ -70,11 +76,9 @@ function codeTip(i){
   return i.pricing==='freemium'?t('code_paid'):t('code_unk');
 }
 function promptFor(i){
-  var n=shown(i.name), note=shown(i.note);
-  if(i.type==='skill')return '请帮我安装并使用「'+n+'」这个 Skill（原站：'+i.url+'，安装命令以原站为准）。它的作用：'+(note||'见原站')+'。装好后用它检查并改进我当前项目的界面：先列出问题，再逐条修改，最后告诉我改了哪些地方。\n\n'+
-    'Please install and use the "'+n+'" skill (original: '+i.url+'; follow the install command on that page). Then use it to review and improve the UI of my current project: list the issues first, fix them one by one, and summarize what you changed.';
-  return '请参考「'+n+'」的公开设计语言与交互（原站：'+i.url+'），帮我做一个类似效果：\n- 我要做的是：【在这里写你的页面或组件，比如 AI 聊天输入框】\n- 参考它的：视觉风格、动效节奏、细节处理'+(note?'（'+note+'）':'')+'\n- 技术栈：React + Tailwind，动效用 CSS 或 Motion\n- 要求：深浅色都好看，手机电脑都适配，动效流畅\n- 不要复制它的源码、图片、文案或付费素材，请自己实现\n\n'+
-    'Please reference the public design language and interactions of "'+n+'" (original: '+i.url+') and help me build a similar effect:\n- What I am building: [describe your page or component, e.g. an AI chat input]\n- Borrow: visual style, motion rhythm, attention to detail\n- Stack: React + Tailwind, motion with CSS or Motion\n- Must look good in dark and light mode, work on mobile and desktop, and animate smoothly\n- Do not copy its source code, images, copy text or paid assets; implement it from scratch';
+  var n=shown(i.name), note=noteOf(i);
+  if(i.type==='skill')return t('prompt_skill',{name:n,url:i.url,note:note||t('note_none')});
+  return t('prompt_ref',{name:n,url:i.url,note:note?t('note_wrap',{note:note}):''});
 }
 function cardActs(i,cls){
   var c=codeOf(i), tip=codeTip(i);
@@ -89,19 +93,23 @@ function cardActs(i,cls){
 /* 卡片底栏：左侧信息，右侧只有 收藏 + 更多 两个控件 */
 function metaLine(i){
   var l=lg(i), out='<span class="tp">'+TN(i.type)+'</span>';
-  if(PR(i.pricing))out+='<span class="pill '+i.pricing+'">'+PR(i.pricing)+'</span>';
+  if(PR(i.pricing))out+='<span class="pill '+i.pricing+'" title="'+esc(t('price_tip_'+i.pricing))+'">'+PR(i.pricing)+'</span>';
   if(l.k==='oss')out+='<span class="pill oss" title="'+esc(t('kv_license'))+'">'+esc(l.lic)+'</span>';
   return '<div class="cmeta">'+out+'</div>';
 }
 function ctl(i){return '<div class="ctl">'+favBtn(i,'r')+'<button class="ib r more" data-more="'+i.id+'" aria-haspopup="menu" aria-label="'+esc(t('btn_more'))+'" title="'+esc(t('btn_more'))+'">'+IC.dots+'</button></div>'}
-function foot(i){return '<div class="cf">'+metaLine(i)+ctl(i)+'</div>'}
-function menuHTML(i){
+/* 卡面复制按钮：Prompt 永远可复制；代码仅限核对过许可证的 MIT/Apache 短片段，其余置灰并说明原因 */
+function copyRow(i){
   var c=codeOf(i), tip=codeTip(i);
+  return '<div class="ccp">'+
+    '<button class="cpb pri" data-cp="'+i.id+'" title="'+esc(t('btn_copy_prompt'))+'" aria-label="'+esc(t('btn_copy_prompt'))+'">'+IC.copy+'<span>'+esc(t('btn_cp_card'))+'</span></button>'+
+    (c?'<button class="cpb code" data-cc="'+i.id+'" title="'+esc(t('btn_copy_code')+' · '+lg(i).lic)+'" aria-label="'+esc(t('btn_copy_code'))+'">'+IC.code+'<span>'+esc(t('btn_cc_card'))+'</span></button>'
+      :'<button class="cpb off" aria-disabled="true" data-tip="'+esc(tip)+'" title="'+esc(tip)+'" aria-label="'+esc(t('code_off_short'))+'">'+IC.lock+'<span>'+esc(t('btn_cc_card'))+'</span></button>')+
+  '</div>';
+}
+function foot(i){return copyRow(i)+'<div class="cf">'+metaLine(i)+ctl(i)+'</div>'}
+function menuHTML(i){
   return '<div class="mh"><b>'+esc(shown(i.name))+'</b><small>'+esc(host(i.url))+'</small></div>'+
-    '<button class="mi" role="menuitem" data-cp="'+i.id+'">'+IC.spark+'<span>'+esc(t('btn_copy_prompt'))+'</span></button>'+
-    (c?'<button class="mi" role="menuitem" data-cc="'+i.id+'">'+IC.code+'<span>'+esc(t('btn_copy_code'))+'<small class="ok">'+esc(lg(i).lic)+'</small></span></button>'
-      :'<button class="mi off" role="menuitem" aria-disabled="true" data-tip="'+esc(tip)+'" title="'+esc(tip)+'">'+IC.lock+'<span>'+esc(t('btn_copy_code'))+'<small>'+esc(tip)+'</small></span></button>')+
-    '<i class="msep"></i>'+
     (VISUAL[i.type]?'<button class="mi" role="menuitem" data-play="'+i.id+'">'+IC.full+'<span>'+esc(canFrame(i)?t('btn_play'):t('btn_view'))+'</span></button>':'')+
     '<a class="mi" role="menuitem" href="'+esc(i.url)+'" target="_blank" rel="noopener noreferrer">'+IC.ext+'<span>'+esc(t('btn_original'))+'</span></a>'+
     '<button class="mi" role="menuitem" data-open="'+i.id+'">'+IC.info+'<span>'+esc(t('btn_details'))+'</span></button>';
@@ -136,7 +144,7 @@ function demo(i){
   else if(k==='inspiration')inner='<div class="d-grid"><i></i><i></i><i></i><i></i><i></i><i></i></div>';
   else if(k==='guide')inner='<div class="d-notes"><i></i><i></i><i></i></div>';
   else inner='<div class="d-ui"><b></b><i class="w"></i><i></i><span><i></i><i class="p"></i></span></div>';
-  return '<div class="demo d-'+k+'" style="--h:'+h+'">'+inner+'<em class="d-n">'+esc(shown(i.name).split('/').pop())+'</em></div>';
+  return '<div class="demo d-'+k+'" style="--h:'+h+'">'+inner+'<em class="d-n">'+esc(i.type==='library'?shown(i.name):shown(i.name).split('/').pop())+'</em></div>';
 }
 function srcTag(i,live){
   if(live)return '<span class="tag-lv">'+t('tag_live')+'</span>';
@@ -158,7 +166,7 @@ function featCard(f,k){
   var i=BY[f.id]; if(!i)return '';
   var m=M[i.id]||{}, live=!!f.live;
   var media = live ? liveBox(f) : (m.img?'<img class="poster kb" src="'+m.img+'" alt="'+esc(i.name)+'" loading="'+(k<8?'eager':'lazy')+'">':demo(i));
-  var title=isZh()?(f.title||shown(i.name)):shown(i.name), sub=isZh()?(f.sub||shown(i.note)||host(i.url)):host(i.url);
+  var title=isZh()?(f.title||shown(i.name)):shown(i.name), sub=isZh()?(f.sub||noteOf(i)||host(i.url)):(noteOf(i)||host(i.url));
   return '<article class="fc'+(f.big?' big':'')+(f.wide?' wide':'')+(live?' is-live':'')+'" style="--i:'+k+'">'+
     '<div class="fm" '+(live?'':'data-open="'+i.id+'"')+'>'+media+'<div class="ftop">'+srcTag(i,live)+'</div></div>'+
     '<div class="fb" data-open="'+i.id+'"><div class="ft"><h3>'+esc(title)+'</h3>'+
@@ -167,7 +175,7 @@ function featCard(f,k){
 }
 function renderFeat(){
   $('feat').innerHTML = FEAT.map(featCard).join('');
-  $('more').innerHTML = '<span class="ml">'+esc(t('more_title'))+'</span>'+MORE.map(function(id){var i=BY[id];return '<button class="mc" data-open="'+id+'">'+thumb(i)+'<span><b>'+esc(shown(i.name))+'</b><small>'+esc(shown(i.note))+'</small></span></button>'}).join('');
+  $('more').innerHTML = '<span class="ml">'+esc(t('more_title'))+'</span>'+MORE.map(function(id){var i=BY[id];return '<button class="mc" data-open="'+id+'">'+thumb(i)+'<span><b>'+esc(shown(i.name))+'</b><small>'+esc(noteOf(i))+'</small></span></button>'}).join('');
   observeLive($('feat')); track($('feat'));
 }
 
@@ -178,19 +186,20 @@ function card(i){
     var parts=shown(i.name).split('/');
     return '<article class="card sk" data-open="'+i.id+'"><div class="skm"><div class="term"><i></i><i></i><i></i><span>SKILL.md</span></div>'+
       '<div class="skn"><small>'+esc(parts.length>1?parts[0]+' /':TN(i.type))+'</small><b>'+esc(parts[parts.length-1])+'</b></div></div>'+
-      '<div class="cb"><p class="note">'+esc(shown(i.note)||host(i.url))+'</p>'+foot(i)+'</div></article>';
+      '<div class="cb"><p class="note">'+esc(noteOf(i)||host(i.url))+'</p>'+foot(i)+'</div></article>';
   }
   var tag = live?'<span class="tag-lv">'+t('tag_live')+'</span>':(m.frame?'<span class="tag-fr">'+t('tag_frame')+'</span>':srcTag(i));
   return '<article class="card" data-open="'+i.id+'"><div class="cm">'+thumb(i)+
     '<div class="ctop">'+tag+'</div><span class="cview">'+esc(t('btn_details'))+IC.ext.replace('M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5','M7 17 17 7M9 7h8v8')+'</span></div>'+
-    '<div class="cb"><h3>'+esc(shown(i.name))+'</h3><p class="note">'+esc(shown(i.note)||host(i.url))+'</p>'+foot(i)+'</div></article>';
+    '<div class="cb"><h3>'+esc(shown(i.name))+'</h3><p class="note">'+esc(noteOf(i)||host(i.url))+'</p>'+foot(i)+'</div></article>';
 }
 function match(i){
   if(state.view==='fav'&&!favs[i.id])return false;
   if(state.type!=='all'&&i.type!==state.type)return false;
+  if(state.ct&&(i.ct||[]).indexOf(state.ct)<0)return false;
   if(state.tag&&tagsOf(i).indexOf(state.tag)<0)return false;
   if(!state.q)return true;
-  var l=lg(i), hay=(i.name+' '+i.note+' '+i.url+' '+i.source+' '+i.section+' '+TN(i.type)+' '+i.type+' '+(l.lic||'')+' '+tagsOf(i).join(' ')).toLowerCase();
+  var l=lg(i), hay=(i.name+' '+i.note+' '+noteOf(i)+' '+i.url+' '+i.source+' '+i.section+' '+TN(i.type)+' '+i.type+' '+(l.lic||'')+' '+tagsOf(i).join(' ')+' '+(i.ct||[]).map(function(c){return c+' '+CTN(c)}).join(' ')).toLowerCase();
   return state.q.toLowerCase().split(/\s+/).every(function(w){return hay.indexOf(w)>=0});
 }
 function renderChips(){
@@ -205,6 +214,11 @@ function renderChips(){
   if(state.tag&&top.indexOf(state.tag)<0)top.unshift(state.tag);
   html += '<span class="sep"></span>' + top.map(function(x){return '<button class="chip t'+(state.tag===x?' on':'')+'" data-tag="'+esc(x)+'">#'+esc(x)+'</button>'}).join('');
   $('chips').innerHTML = html;
+  // 第二行：按组件类型细分（随当前大类和收藏视图计数）
+  var cb = base.filter(function(i){return state.type==='all'||i.type===state.type}), cc={};
+  cb.forEach(function(i){(i.ct||[]).forEach(function(c){cc[c]=(cc[c]||0)+1})});
+  $('ctChips').innerHTML = '<span class="ct-h">'+esc(t('ct_h'))+'</span><button class="chip c'+(state.ct?'':' on')+'" data-ct="">'+esc(t('ct_all'))+'</button>'+
+    CTO.filter(function(c){return cc[c]||state.ct===c}).map(function(c){return '<button class="chip c'+(state.ct===c?' on':'')+'" data-ct="'+c+'">'+esc(CTN(c))+'<small>'+(cc[c]||0)+'</small></button>'}).join('');
 }
 function renderGrid(){
   var list = ITEMS.filter(match);
@@ -221,7 +235,7 @@ function gk(g,s){return 'g_'+g.id.replace(/-/g,'_')+'_'+s}
 function renderGuides(){
   $('guideList').innerHTML = D.guides.map(function(g,n){
     return '<div class="guide" id="g-'+g.id+'" style="--i:'+n+'"><div class="gh"><span class="ge">'+g.emoji+'</span><div><h2>'+esc(t(gk(g,'t')))+'</h2><p>'+esc(t(gk(g,'p')))+'</p></div></div><ol>'+
-      g.picks.map(function(p){var i=BY[p.id],m=M[i.id]||{};return '<li data-open="'+i.id+'"><span class="gt">'+(m.img?'<img src="'+m.img+'" alt="" loading="lazy">':'<b>'+esc(shown(i.name).split('/').pop().slice(0,2))+'</b>')+'</span><div><b>'+esc(shown(i.name))+'</b><span class="tp">'+TN(i.type)+'</span><p>'+esc(p.why)+'</p></div></li>'}).join('')+'</ol></div>';
+      g.picks.map(function(p){var i=BY[p.id],m=M[i.id]||{};return '<li data-open="'+i.id+'"><span class="gt">'+(m.img?'<img src="'+m.img+'" alt="" loading="lazy">':'<b>'+esc(shown(i.name).split('/').pop().slice(0,2))+'</b>')+'</span><div><b>'+esc(shown(i.name))+'</b><span class="tp">'+TN(i.type)+'</span><p>'+esc(whyOf(p,g))+'</p></div></li>'}).join('')+'</ol></div>';
   }).join('');
 }
 
@@ -296,7 +310,7 @@ function openSheet(id){
   var links=(l.npm?'<a href="'+esc(l.npm)+'" target="_blank" rel="noopener noreferrer">npm</a>':'')+(l.gh?'<a href="'+esc(l.gh)+'" target="_blank" rel="noopener noreferrer">GitHub</a>':'');
   $('sheet').innerHTML = '<div class="grab"></div><button class="ib close" data-close aria-label="'+esc(t('close'))+'">'+IC.x+'</button>'+preview(i)+
    '<div class="sb"><div class="row">'+'<span class="tp">'+TN(i.type)+'</span>'+(PR(i.pricing)?'<span class="pill '+i.pricing+'">'+PR(i.pricing)+'</span>':'')+(l.lic?'<span class="pill oss">'+esc(l.lic)+'</span>':'')+(i.source?'<span class="src">'+esc(i.source)+'</span>':'')+'</div>'+
-   '<h2>'+esc(shown(i.name))+'</h2>'+(i.note?'<p class="lead">'+esc(i.note)+'</p>':'')+
+   '<h2>'+esc(shown(i.name))+'</h2>'+(noteOf(i)?'<p class="lead">'+esc(noteOf(i))+'</p>':'')+
    '<div class="acts"><a class="b pri" href="'+esc(i.url)+'" target="_blank" rel="noopener noreferrer">'+esc(t('btn_original'))+IC.ext+'</a>'+
    (VISUAL[i.type]?'<button class="b ghost" data-play="'+i.id+'">'+IC.full+esc(canFrame(i)?t('btn_play'):t('btn_view'))+'</button>':'')+
    '<button class="b ghost" data-copy="'+esc(i.url)+'" data-msg="'+esc(t('toast_link'))+'">'+IC.copy+esc(t('btn_copy_link'))+'</button>'+favBtn(i,'lg')+'</div>'+
@@ -304,7 +318,7 @@ function openSheet(id){
    codeBlock(i)+
    '<dl class="kv"><dt>'+esc(t('kv_url'))+'</dt><dd class="u"><a href="'+esc(i.url)+'" target="_blank" rel="noopener noreferrer">'+esc(i.url)+'</a></dd>'+
    (l.lic?'<dt>'+esc(t('kv_license'))+'</dt><dd>'+esc(l.lic)+(links?'<span class="lk">'+links+'</span>':'')+'</dd>':'')+
-   '<dt>'+esc(t('kv_group'))+'</dt><dd>'+esc(i.sectionTitle)+(i.sectionDesc?'<span>'+esc(i.sectionDesc)+'</span>':'')+'</dd>'+
+   '<dt>'+esc(t('kv_group'))+'</dt><dd>'+esc(secOf(i))+(i.sectionDesc&&isZh()?'<span>'+esc(i.sectionDesc)+'</span>':'')+'</dd>'+
    (gs.length?'<dt>'+esc(t('kv_guide'))+'</dt><dd>'+gs.map(function(g){return '<a href="#/guides" data-g="'+g.id+'">'+g.emoji+' '+esc(t(gk(g,'t')))+'</a>'}).join('')+'</dd>':'')+'</dl>'+
    '<h3>'+esc(t('tags_h'))+'</h3><div class="tagrow">'+i.tags.map(function(x){return '<span class="tg">'+esc(x)+'</span>'}).join('')+
      ut.map(function(x,k){return '<span class="tg u">'+esc(x)+'<b data-rmtag="'+k+'">×</b></span>'}).join('')+'</div>'+
@@ -380,7 +394,7 @@ function focusSearch(){if(state.view!=='home')location.hash='#/';setTimeout(func
 document.addEventListener('click',function(e){
   var mb=e.target.closest('[data-more]'); if(mb){e.preventDefault();e.stopPropagation();openMenu(mb.dataset.more,mb);return}
   if(!$('menu').hidden&&(!e.target.closest('#menu')||e.target.closest('.mi')))closeMenu();
-  var el=e.target.closest('[data-copy],[data-cp],[data-cc],[data-tip],[data-fav],[data-type],[data-tag],[data-close],[data-closeplay],[data-rmtag],[data-g],[data-play],[data-lib],[data-site-load],[data-open],a');
+  var el=e.target.closest('[data-copy],[data-cp],[data-cc],[data-tip],[data-fav],[data-type],[data-ct],[data-tag],[data-close],[data-closeplay],[data-rmtag],[data-g],[data-play],[data-lib],[data-site-load],[data-open],a');
   if(!el)return;
   if(el.tagName==='A'&&!el.dataset.g){e.stopPropagation();return}
   if(el.dataset.copy){e.preventDefault();copy(el.dataset.copy,el.dataset.msg||t('toast_link'));return}
@@ -389,6 +403,7 @@ document.addEventListener('click',function(e){
   if(el.dataset.tip){e.preventDefault();toast(el.dataset.tip);return}
   if(el.dataset.fav){e.preventDefault();e.stopPropagation();toggleFav(el.dataset.fav);return}
   if(el.dataset.type){state.type=el.dataset.type;refresh();return}
+  if(el.dataset.ct!=null&&el.classList.contains('chip')){state.ct=state.ct===el.dataset.ct?'':el.dataset.ct;refresh();return}
   if(el.dataset.tag!=null&&el.classList.contains('chip')){state.tag=state.tag===el.dataset.tag?'':el.dataset.tag;refresh();return}
   if(el.hasAttribute('data-close')){back();return}
   if(el.hasAttribute('data-closeplay')){closePlay();return}

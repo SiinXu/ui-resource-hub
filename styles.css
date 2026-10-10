@@ -473,3 +473,32 @@ kbd{font:11px var(--mono);padding:1px 6px;border-radius:5px;border:1px solid var
 .menu.as-sheet .mi svg{width:18px;height:18px;margin:0}
 .menu.as-sheet .mh{padding:6px 12px 10px}
 .menu.as-sheet .mh b{font-size:15px}
+
+/* v3c 卡面复制按钮：Prompt 主按钮 + 代码次按钮；其余操作收进「更多」 */
+.ccp{display:flex;gap:6px;margin:0 0 10px}
+.cpb{flex:1 1 0;min-width:0;display:inline-flex;align-items:center;justify-content:center;gap:6px;height:32px;padding:0 10px;border:0;border-radius:9px;font:560 12.5px var(--sans);letter-spacing:-.01em;color:var(--fg);background:var(--chip);box-shadow:inset 0 0 0 1px var(--line2);cursor:pointer;transition:background .2s,box-shadow .2s,color .2s,transform .15s}
+.cpb span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cpb svg{width:14px;height:14px}
+.cpb.pri{flex:1.35 1 0;color:var(--bg);background:var(--fg);box-shadow:none}
+.cpb.code{color:var(--fg)}
+.cpb.code svg{color:var(--lv)}
+.cpb.off{color:var(--mut2);background:transparent;box-shadow:inset 0 0 0 1px var(--line);cursor:help}
+.cpb.off svg{opacity:.7}
+@media(hover:hover){.cpb.pri:hover{opacity:.88}.cpb.code:hover{background:color-mix(in srgb,var(--lv) 10%,transparent);box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--lv) 45%,transparent)}.cpb.off:hover{color:var(--mut)}}
+.cpb:active{transform:scale(.97)}
+.cpb:focus-visible{outline:2px solid var(--acc2);outline-offset:2px}
+.card .ccp{margin-top:auto}
+.card .cf{margin-top:0}
+.fc .ccp{margin:auto 0 0;padding-top:12px;border-top:1px solid var(--line)}
+.fc .cf{margin-top:0;padding-top:0;border-top:0}
+@media(max-width:560px){
+  .ccp{gap:5px;margin-bottom:8px}
+  .cpb{height:30px;font-size:12px;padding:0 8px;gap:5px}
+  .cpb.code,.cpb.off{flex:0 0 30px;padding:0}
+  .cpb.code span,.cpb.off span{display:none}
+}
+/* 第二行：细分组件类型 */
+.chips.ctrow{padding-top:0;gap:5px}
+.chips.ctrow .ct-h{flex:none;font:600 11px var(--mono);letter-spacing:.04em;text-transform:uppercase;color:var(--mut2);margin-right:4px}
+.chip.c{height:28px;padding:0 11px;font-size:12.5px;border-radius:8px}
+.chip.c.on{color:var(--bg);background:var(--fg);box-shadow:none}

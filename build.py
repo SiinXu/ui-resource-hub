@@ -11,7 +11,7 @@ ns = {}; exec(code, ns); S = ns['S']
 # ---- 分类映射 ----
 SEC_TYPE = {1:'component',2:'skill',3:'component',4:'component',5:'component',6:'inspiration',7:'template',8:'generator',9:'skill'}
 EFFECT = {'Transitions','Thinking Orbs','Motion+','Paper Shaders 全集','Rive','ShaderGradient','NEAT','Liquid Glass React',
-  'Codrops','Libraries.dev（你订阅了 Pro）','Paper Shaders 液态金属','React Bits 金属漆','Canvas UI','Border Beam','Liquid Metal'}
+  'Codrops','Libraries.dev','Paper Shaders 液态金属','React Bits 金属漆','Canvas UI','Border Beam','Liquid Metal'}
 OVERRIDE = {'Unicorn Studio':'generator','UI 问题盘点可视化（@Linmiv）':'guide'}
 SEC_SOURCE = {1:'@lumxss',2:'@kail_designs',9:'ui-skills.com'}
 SEC_SHORT = {1:'最初推荐',2:'设计 Skills',3:'海外 AI 组件',4:'国内大厂 AI 组件',5:'动效与通用组件',6:'AI 产品灵感',7:'开源 AI 聊天应用',8:'AI 生成界面',9:'更多 UI Skills'}
@@ -35,6 +35,7 @@ def pricing(name, note):
 items = []; seen = {}
 for si,(title,desc,lst) in enumerate(S, 1):
     for name,url,note in lst:
+        name = re.sub(r'（你[^）]*）$', '', name)
         t = OVERRIDE.get(name) or ('effect' if name in EFFECT else SEC_TYPE[si])
         m = re.findall(r'@[A-Za-z0-9_]+', title+name+note)
         src = m[0] if m else SEC_SOURCE.get(si, '')
@@ -46,6 +47,37 @@ for si,(title,desc,lst) in enumerate(S, 1):
         items.append(dict(id=rid, name=name, url=url, note=note, type=t, section=SEC_SHORT[si],
                           sectionTitle=title, sectionDesc=desc, source=src, pricing=pricing(name,note), tags=tags))
 
+# 面向普通访客：名称里不保留针对清单作者本人的括注（如「（你…）」），价格标签只描述原站的免费/付费档位
+NAME_FIX = {}
+NOTE_FIX = {'libraries-dev': 'Jakub Antalik 的特效合集：液态金属、思考光球、流光边框、黏液融合、语音光效、AI 头像、图片生成加载。npm 包免费；原站另有 Pro 付费版，解锁 Studio 深度定制',
+            'libraries-dev-skill-html': '装上后能扫描项目、推荐放液态金属光球等特效的位置；原站另有 Pro 付费版，支持一句话调参数'}
+PRICE_FIX = {'libraries-dev-skill-html': 'freemium'}
+for i in items:
+    i['name'] = NAME_FIX.get(i['name'], i['name'])
+    if i['id'] in NOTE_FIX: i['note'] = NOTE_FIX[i['id']]
+    if i['id'] in PRICE_FIX: i['pricing'] = PRICE_FIX[i['id']]
+    if re.search(r'你(订|是 .*Pro|买了)', i['name']+i['note']): sys.exit('发现假设访客身份的文案: '+i['name'])
+# ---- 开源组件库入口（libs.src.json，许可已用 npm registry / GitHub API 核对，2026-10-10）----
+LIBS = json.load(open(os.path.join(HERE,'libs.src.json'), encoding='utf-8'))
+for L in LIBS:
+    items.append(dict(id=L['id'], name=L['name'], url=L['url'], note=L['note'],
+                      type='inspiration' if L['name']=='The Component Gallery' else 'library',
+                      section='开源组件库', sectionTitle='开源组件库与组件注册表', sectionDesc='', source='',
+                      pricing=L['pricing'], tags=L['fw'] + (['开源'] if L['licOk'] else []), ct=L['ct']))
+# ---- 细分组件类型（ct）：原有资源按名称/说明关键词归类 ----
+CT_RULES = [('chat', r'聊天|对话|Chat|chat|助手|Copilot|智能体|Agent'), ('motion', r'动效|动画|过渡|Motion|motion|animat|Transition|spring|Lottie|Rive'),
+ ('background', r'背景|渐变|Gradient|着色器|Shader|shader|WebGL|液态|光效'), ('threed', r'3D|Three|WebGL'),
+ ('button', r'按钮|button|Button'), ('input', r'输入框|输入|input|Input'), ('form', r'表单|form\b|Form'),
+ ('chart', r'图表|chart|Chart|可视化'), ('table', r'表格|table|Table'), ('dialog', r'弹窗|对话框|Dialog|Modal|抽屉'),
+ ('nav', r'导航|侧边栏|Sidebar|nav'), ('card', r'卡片|Card'), ('avatar', r'头像|Avatar|avatar'), ('toast', r'通知|Toast|toast'),
+ ('loader', r'加载|Loading|loader|思考'), ('layout', r'落地页|区块|Blocks|blocks|模板|Landing|页面'), ('icon', r'图标|icon|Icon'),
+ ('mobile', r'移动端|App|手机|iOS'), ('editor', r'编辑器|Editor|富文本')]
+for i in items:
+    if 'ct' in i: continue
+    if i['type'] in ('skill','guide','inspiration','generator'): i['ct'] = []; continue
+    hay = i['name']+' '+i['note']+' '+i['url']
+    i['ct'] = [k for k,rx in CT_RULES if re.search(rx, hay)]
+    if i['type']=='template' and 'chat' not in i['ct']: i['ct'].append('chat')
 byname = {i['name']: i['id'] for i in items}
 guides = json.load(open(os.path.join(HERE,'guides.src.json'), encoding='utf-8'))
 for g in guides:
@@ -57,3 +89,4 @@ json.dump(data, open(os.path.join(HERE,'data.json'),'w',encoding='utf-8'), ensur
 open(os.path.join(HERE,'data.js'),'w',encoding='utf-8').write('window.UI_DATA=' + json.dumps(data, ensure_ascii=False) + ';\n')
 from collections import Counter
 print(len(items), dict(Counter(i['type'] for i in items)), dict(Counter(i['pricing'] for i in items)))
+print('ct', dict(Counter(c for i in items for c in i['ct'])))

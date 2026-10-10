@@ -1,0 +1,2299 @@
+[
+ {
+  "id": "lib-www-radix-ui-com-primitives",
+  "name": "Radix Primitives",
+  "url": "https://www.radix-ui.com/primitives",
+  "note": "无样式、可访问的 React 底层组件：对话框、下拉菜单、选择器、Tabs、Tooltip 等，shadcn/ui 的地基",
+  "ct": [
+   "dialog",
+   "menu",
+   "select",
+   "tabs",
+   "tooltip",
+   "form",
+   "nav"
+  ],
+  "fw": [
+   "React"
+  ],
+  "pkg": "radix-ui",
+  "repo": "radix-ui/primitives",
+  "install": "npm install radix-ui",
+  "lic": "MIT",
+  "licOk": true,
+  "pricing": "free"
+ },
+ {
+  "id": "lib-www-radix-ui-com-themes",
+  "name": "Radix Themes",
+  "url": "https://www.radix-ui.com/themes",
+  "note": "Radix 官方带样式组件主题，开箱即用、配色体系完整",
+  "ct": [
+   "button",
+   "input",
+   "select",
+   "dialog",
+   "card",
+   "table",
+   "tabs",
+   "avatar"
+  ],
+  "fw": [
+   "React"
+  ],
+  "pkg": "@radix-ui/themes",
+  "repo": "radix-ui/themes",
+  "install": "npm install @radix-ui/themes",
+  "lic": "MIT",
+  "licOk": true,
+  "pricing": "free"
+ },
+ {
+  "id": "lib-headlessui-com",
+  "name": "Headless UI",
+  "url": "https://headlessui.com/",
+  "note": "Tailwind 团队出品的无样式组件：弹窗、菜单、列表框、开关、Tabs",
+  "ct": [
+   "dialog",
+   "menu",
+   "select",
+   "tabs",
+   "input"
+  ],
+  "fw": [
+   "React",
+   "Vue"
+  ],
+  "pkg": "@headlessui/react",
+  "repo": "tailwindlabs/headlessui",
+  "install": "npm install @headlessui/react",
+  "lic": "MIT",
+  "licOk": true,
+  "pricing": "free"
+ },
+ {
+  "id": "lib-ark-ui-com",
+  "name": "Ark UI",
+  "url": "https://ark-ui.com/",
+  "note": "Chakra 团队的无样式组件，45+ 组件，React / Vue / Solid / Svelte 通用",
+  "ct": [
+   "dialog",
+   "menu",
+   "select",
+   "date",
+   "upload",
+   "carousel",
+   "input",
+   "tooltip"
+  ],
+  "fw": [
+   "React",
+   "Vue",
+   "Solid",
+   "Svelte"
+  ],
+  "pkg": "@ark-ui/react",
+  "repo": "chakra-ui/ark",
+  "install": "npm install @ark-ui/react",
+  "lic": "MIT",
+  "licOk": true,
+  "pricing": "free"
+ },
+ {
+  "id": "lib-park-ui-com",
+  "name": "Park UI",
+  "url": "https://park-ui.com/",
+  "note": "基于 Ark UI 的带样式组件，Panda CSS / Tailwind 两套写法",
+  "ct": [
+   "button",
+   "input",
+   "dialog",
+   "select",
+   "card",
+   "tabs"
+  ],
+  "fw": [
+   "React",
+   "Vue",
+   "Solid"
+  ],
+  "pkg": "",
+  "repo": "chakra-ui/park-ui",
+  "install": "",
+  "lic": "MIT",
+  "licOk": true,
+  "pricing": "free"
+ },
+ {
+  "id": "lib-ui-shadcn-com-blocks",
+  "name": "shadcn/ui Blocks",
+  "url": "https://ui.shadcn.com/blocks",
+  "note": "shadcn 官方区块：登录页、侧边栏、仪表盘、日历，可直接用 CLI 添加",
+  "ct": [
+   "layout",
+   "nav",
+   "form",
+   "chart"
+  ],
+  "fw": [
+   "React"
+  ],
+  "pkg": "",
+  "repo": "shadcn-ui/ui",
+  "install": "npx shadcn@latest add sidebar-07",
+  "lic": "MIT",
+  "licOk": true,
+  "pricing": "free"
+ },
+ {
+  "id": "lib-ui-shadcn-com-charts",
+  "name": "shadcn/ui Charts",
+  "url": "https://ui.shadcn.com/charts",
+  "note": "shadcn 官方图表：面积、柱状、折线、饼图、雷达，基于 Recharts",
+  "ct": [
+   "chart"
+  ],
+  "fw": [
+   "React"
+  ],
+  "pkg": "",
+  "repo": "shadcn-ui/ui",
+  "install": "npx shadcn@latest add chart",
+  "lic": "MIT",
+  "licOk": true,
+  "pricing": "free"
+ },
+ {
+  "id": "lib-ui-shadcn-com-docs-directory",
+  "name": "shadcn Registry 目录",
+  "url": "https://ui.shadcn.com/docs/directory",
+  "note": "shadcn 官方收录的第三方组件注册表目录，一站找到各家兼容 shadcn 的组件",
+  "ct": [
+   "layout",
+   "button",
+   "chat",
+   "motion"
+  ],
+  "fw": [
+   "React"
+  ],
+  "pkg": "",
+  "repo": "shadcn-ui/ui",
+  "install": "",
+  "lic": "MIT",
+  "licOk": true,
+  "pricing": "free"
+ },
+ {
+  "id": "lib-daisyui-com",
+  "name": "daisyUI",
+  "url": "https://daisyui.com/",
+  "note": "最流行的 Tailwind 组件类名插件，60+ 组件、30+ 主题",
+  "ct": [
+   "button",
+   "card",
+   "nav",
+   "dialog",
+   "form",
+   "input",
+   "table",
+   "toast",
+   "avatar",
+   "tabs"
+  ],
+  "fw": [
+   "CSS"
+  ],
+  "pkg": "daisyui",
+  "repo": "saadeghi/daisyui",
+  "install": "npm install -D daisyui@latest",
+  "lic": "MIT",
+  "licOk": true,
+  "pricing": "free"
+ },
+ {
+  "id": "lib-flowbite-com",
+  "name": "Flowbite",
+  "url": "https://flowbite.com/",
+  "note": "Tailwind 组件库，开源版 50+ 组件；原站另有付费 Pro 区块",
+  "ct": [
+   "button",
+   "card",
+   "nav",
+   "dialog",
+   "form",
+   "table",
+   "chart",
+   "date"
+  ],
+  "fw": [
+   "CSS",
+   "React",
+   "Vue",
+   "Svelte"
+  ],
+  "pkg": "flowbite",
+  "repo": "themesberg/flowbite",
+  "install": "npm install flowbite",
+  "lic": "MIT",
+  "licOk": true,
+  "pricing": "freemium"
+ },
+ {
+  "id": "lib-www-hyperui-dev",
+  "name": "HyperUI",
+  "url": "https://www.hyperui.dev/",
+  "note": "免费 Tailwind 组件片段合集：营销页、电商、后台，复制即用",
+  "ct": [
+   "layout",
+   "card",
+   "button",
+   "form",
+   "table",
+   "nav"
+  ],
+  "fw": [
+   "CSS"
+  ],
+  "pkg": "",
+  "repo": "markmead/hyperui",
+  "install": "",
+  "lic": "MIT",
+  "licOk": true,
+  "pricing": "free"
+ },
+ {
+  "id": "lib-preline-co",
+  "name": "Preline UI",
+  "url": "https://preline.co/",
+  "note": "Tailwind 组件与区块，开源部分免费；原站另有付费 Pro",
+  "ct": [
+   "layout",
+   "nav",
+   "form",
+   "table",
+   "dialog"
+  ],
+  "fw": [
+   "CSS"
+  ],
+  "pkg": "preline",
+  "repo": "htmlstreamofficial/preline",
+  "install": "",
+  "lic": "MIT + Fair Use",
+  "licOk": false,
+  "pricing": "freemium"
+ },
+ {
+  "id": "lib-merakiui-com",
+  "name": "Meraki UI",
+  "url": "https://merakiui.com/",
+  "note": "Tailwind 组件，支持 RTL 和暗色模式",
+  "ct": [
+   "card",
+   "nav",
+   "form",
+   "layout",
+   "button"
+  ],
+  "fw": [
+   "CSS"
+  ],
+  "pkg": "",
+  "repo": "merakiui/merakiui",
+  "install": "",
+  "lic": "",
+  "licOk": false,
+  "pricing": "free"
+ },
+ {
+  "id": "lib-tailwindcss-com-plus",
+  "name": "Tailwind Plus",
+  "url": "https://tailwindcss.com/plus",
+  "note": "Tailwind 官方付费组件与模板（原 Tailwind UI），500+ 组件；本站只放链接",
+  "ct": [
+   "layout",
+   "nav",
+   "form",
+   "table",
+   "card"
+  ],
+  "fw": [
+   "React",
+   "Vue",
+   "CSS"
+  ],
+  "pkg": "",
+  "repo": "",
+  "install": "",
+  "lic": "",
+  "licOk": false,
+  "pricing": "paid"
+ },
+ {
+  "id": "lib-mantine-dev",
+  "name": "Mantine",
+  "url": "https://mantine.dev/",
+  "note": "100+ 组件和 70+ hooks，自带日期、图表、富文本、通知",
+  "ct": [
+   "button",
+   "input",
+   "form",
+   "select",
+   "date",
+   "dialog",
+   "table",
+   "chart",
+   "editor",
+   "toast"
+  ],
+  "fw": [
+   "React"
+  ],
+  "pkg": "@mantine/core",
+  "repo": "mantinedev/mantine",
+  "install": "npm install @mantine/core @mantine/hooks",
+  "lic": "MIT",
+  "licOk": true,
+  "pricing": "free"
+ },
+ {
+  "id": "lib-chakra-ui-com",
+  "name": "Chakra UI",
+  "url": "https://chakra-ui.com/",
+  "note": "老牌 React 组件库，主题系统灵活，v3 基于 Ark UI",
+  "ct": [
+   "button",
+   "input",
+   "form",
+   "dialog",
+   "menu",
+   "toast",
+   "avatar",
+   "tabs"
+  ],
+  "fw": [
+   "React"
+  ],
+  "pkg": "@chakra-ui/react",
+  "repo": "chakra-ui/chakra-ui",
+  "install": "npm install @chakra-ui/react @emotion/react",
+  "lic": "MIT",
+  "licOk": true,
+  "pricing": "free"
+ },
+ {
+  "id": "lib-mui-com-material-ui",
+  "name": "MUI Material UI",
+  "url": "https://mui.com/material-ui/",
+  "note": "Material Design 的 React 实现，组件最全之一",
+  "ct": [
+   "button",
+   "input",
+   "form",
+   "select",
+   "dialog",
+   "table",
+   "card",
+   "avatar",
+   "tabs",
+   "nav",
+   "toast"
+  ],
+  "fw": [
+   "React"
+  ],
+  "pkg": "@mui/material",
+  "repo": "mui/material-ui",
+  "install": "npm install @mui/material @emotion/react @emotion/styled",
+  "lic": "MIT",
+  "licOk": true,
+  "pricing": "free"
+ },
+ {
+  "id": "lib-mui-com-x",
+  "name": "MUI X",
+  "url": "https://mui.com/x/",
+  "note": "数据表格、日期选择、图表、树视图；基础版免费开源，Pro / Premium 付费",
+  "ct": [
+   "table",
+   "date",
+   "chart"
+  ],
+  "fw": [
+   "React"
+  ],
+  "pkg": "@mui/x-data-grid",
+  "repo": "mui/mui-x",
+  "install": "npm install @mui/x-data-grid",
+  "lic": "MIT",
+  "licOk": true,
+  "pricing": "freemium"
+ },
+ {
+  "id": "lib-base-ui-com",
+  "name": "Base UI",
+  "url": "https://base-ui.com/",
+  "note": "Radix / MUI / Floating UI 作者合作的无样式组件库",
+  "ct": [
+   "dialog",
+   "menu",
+   "select",
+   "tooltip",
+   "input",
+   "tabs"
+  ],
+  "fw": [
+   "React"
+  ],
+  "pkg": "@base-ui-components/react",
+  "repo": "mui/base-ui",
+  "install": "",
+  "lic": "MIT",
+  "licOk": true,
+  "pricing": "free"
+ },
+ {
+  "id": "lib-react-aria-adobe-com",
+  "name": "React Aria",
+  "url": "https://react-aria.adobe.com/",
+  "note": "Adobe 出品，无障碍做得最细的无样式组件与 hooks",
+  "ct": [
+   "button",
+   "input",
+   "form",
+   "select",
+   "date",
+   "dialog",
+   "menu",
+   "table",
+   "tabs",
+   "tooltip"
+  ],
+  "fw": [
+   "React"
+  ],
+  "pkg": "react-aria-components",
+  "repo": "adobe/react-spectrum",
+  "install": "npm install react-aria-components",
+  "lic": "Apache-2.0",
+  "licOk": true,
+  "pricing": "free"
+ },
+ {
+  "id": "lib-ant-design",
+  "name": "Ant Design",
+  "url": "https://ant.design/",
+  "note": "蚂蚁中后台组件库，60+ 组件，表格表单极强",
+  "ct": [
+   "button",
+   "input",
+   "form",
+   "select",
+   "date",
+   "dialog",
+   "table",
+   "chart",
+   "nav",
+   "tabs",
+   "upload"
+  ],
+  "fw": [
+   "React"
+  ],
+  "pkg": "antd",
+  "repo": "ant-design/ant-design",
+  "install": "npm install antd",
+  "lic": "MIT",
+  "licOk": true,
+  "pricing": "free"
+ },
+ {
+  "id": "lib-mobile-ant-design",
+  "name": "Ant Design Mobile",
+  "url": "https://mobile.ant.design/",
+  "note": "蚂蚁移动端组件库",
+  "ct": [
+   "mobile",
+   "button",
+   "form",
+   "dialog",
+   "toast",
+   "nav"
+  ],
+  "fw": [
+   "React"
+  ],
+  "pkg": "antd-mobile",
+  "repo": "ant-design/ant-design-mobile",
+  "install": "npm install antd-mobile",
+  "lic": "MIT",
+  "licOk": true,
+  "pricing": "free"
+ },
+ {
+  "id": "lib-g2-antv-antgroup-com",
+  "name": "AntV G2",
+  "url": "https://g2.antv.antgroup.com/",
+  "note": "蚂蚁可视化语法，几十种图表",
+  "ct": [
+   "chart"
+  ],
+  "fw": [
+   "JS"
+  ],
+  "pkg": "@antv/g2",
+  "repo": "antvis/G2",
+  "install": "npm install @antv/g2",
+  "lic": "MIT",
+  "licOk": true,
+  "pricing": "free"
+ },
+ {
+  "id": "lib-tdesign-tencent-com",
+  "name": "TDesign",
+  "url": "https://tdesign.tencent.com/",
+  "note": "腾讯企业级设计体系，React / Vue / 小程序 / 移动端全覆盖",
+  "ct": [
+   "button",
+   "input",
+   "form",
+   "select",
+   "date",
+   "dialog",
+   "table",
+   "nav",
+   "upload",
+   "mobile"
+  ],
+  "fw": [
+   "React",
+   "Vue"
+  ],
+  "pkg": "tdesign-react",
+  "repo": "Tencent/tdesign-react",
+  "install": "npm install tdesign-react",
+  "lic": "MIT",
+  "licOk": true,
+  "pricing": "free"
+ },
+ {
+  "id": "lib-arco-design",
+  "name": "Arco Design",
+  "url": "https://arco.design/",
+  "note": "字节中后台组件库，60+ 组件，带物料市场",
+  "ct": [
+   "button",
+   "input",
+   "form",
+   "select",
+   "date",
+   "dialog",
+   "table",
+   "nav",
+   "upload"
+  ],
+  "fw": [
+   "React",
+   "Vue"
+  ],
+  "pkg": "@arco-design/web-react",
+  "repo": "arco-design/arco-design",
+  "install": "npm install @arco-design/web-react",
+  "lic": "MIT",
+  "licOk": true,
+  "pricing": "free"
+ },
+ {
+  "id": "lib-semi-design",
+  "name": "Semi Design",
+  "url": "https://semi.design/",
+  "note": "抖音前端出品，设计到代码一体，组件细节好",
+  "ct": [
+   "button",
+   "input",
+   "form",
+   "select",
+   "date",
+   "dialog",
+   "table",
+   "nav",
+   "upload"
+  ],
+  "fw": [
+   "React"
+  ],
+  "pkg": "@douyinfe/semi-ui",
+  "repo": "DouyinFE/semi-design",
+  "install": "npm install @douyinfe/semi-ui",
+  "lic": "MIT",
+  "licOk": true,
+  "pricing": "free"
+ },
+ {
+  "id": "lib-www-naiveui-com",
+  "name": "Naive UI",
+  "url": "https://www.naiveui.com/",
+  "note": "Vue 3 组件库，90+ 组件，主题可调",
+  "ct": [
+   "button",
+   "input",
+   "form",
+   "select",
+   "date",
+   "dialog",
+   "table",
+   "nav",
+   "tabs"
+  ],
+  "fw": [
+   "Vue"
+  ],
+  "pkg": "naive-ui",
+  "repo": "tusen-ai/naive-ui",
+  "install": "npm install -D naive-ui",
+  "lic": "MIT",
+  "licOk": true,
+  "pricing": "free"
+ },
+ {
+  "id": "lib-element-plus-org",
+  "name": "Element Plus",
+  "url": "https://element-plus.org/",
+  "note": "饿了么 Vue 3 组件库，国内后台最常用",
+  "ct": [
+   "button",
+   "input",
+   "form",
+   "select",
+   "date",
+   "dialog",
+   "table",
+   "nav",
+   "upload"
+  ],
+  "fw": [
+   "Vue"
+  ],
+  "pkg": "element-plus",
+  "repo": "element-plus/element-plus",
+  "install": "npm install element-plus",
+  "lic": "MIT",
+  "licOk": true,
+  "pricing": "free"
+ },
+ {
+  "id": "lib-vuetifyjs-com",
+  "name": "Vuetify",
+  "url": "https://vuetifyjs.com/",
+  "note": "Vue 的 Material 组件框架",
+  "ct": [
+   "button",
+   "input",
+   "form",
+   "select",
+   "date",
+   "dialog",
+   "table",
+   "card",
+   "nav"
+  ],
+  "fw": [
+   "Vue"
+  ],
+  "pkg": "vuetify",
+  "repo": "vuetifyjs/vuetify",
+  "install": "npm install vuetify",
+  "lic": "MIT",
+  "licOk": true,
+  "pricing": "free"
+ },
+ {
+  "id": "lib-primevue-org",
+  "name": "PrimeVue",
+  "url": "https://primevue.org/",
+  "note": "Vue 组件库，90+ 组件；原站另有付费模板",
+  "ct": [
+   "button",
+   "input",
+   "form",
+   "select",
+   "date",
+   "dialog",
+   "table",
+   "chart",
+   "editor",
+   "upload"
+  ],
+  "fw": [
+   "Vue"
+  ],
+  "pkg": "primevue",
+  "repo": "primefaces/primevue",
+  "install": "",
+  "lic": "见仓库 LICENSE",
+  "licOk": false,
+  "pricing": "freemium"
+ },
+ {
+  "id": "lib-primereact-org",
+  "name": "PrimeReact",
+  "url": "https://primereact.org/",
+  "note": "React 版 Prime 组件库，90+ 组件；原站另有付费模板",
+  "ct": [
+   "button",
+   "input",
+   "form",
+   "select",
+   "date",
+   "dialog",
+   "table",
+   "chart",
+   "editor",
+   "upload"
+  ],
+  "fw": [
+   "React"
+  ],
+  "pkg": "primereact",
+  "repo": "primefaces/primereact",
+  "install": "",
+  "lic": "见仓库 LICENSE",
+  "licOk": false,
+  "pricing": "freemium"
+ },
+ {
+  "id": "lib-primeng-org",
+  "name": "PrimeNG",
+  "url": "https://primeng.org/",
+  "note": "Angular 版 Prime 组件库；原站另有付费模板",
+  "ct": [
+   "button",
+   "input",
+   "form",
+   "select",
+   "date",
+   "dialog",
+   "table",
+   "chart"
+  ],
+  "fw": [
+   "Angular"
+  ],
+  "pkg": "primeng",
+  "repo": "primefaces/primeng",
+  "install": "",
+  "lic": "见仓库 LICENSE",
+  "licOk": false,
+  "pricing": "freemium"
+ },
+ {
+  "id": "lib-ui-nuxt-com",
+  "name": "Nuxt UI",
+  "url": "https://ui.nuxt.com/",
+  "note": "Nuxt 官方组件库，基于 Reka UI + Tailwind",
+  "ct": [
+   "button",
+   "input",
+   "form",
+   "dialog",
+   "table",
+   "nav",
+   "layout"
+  ],
+  "fw": [
+   "Vue"
+  ],
+  "pkg": "@nuxt/ui",
+  "repo": "nuxt/ui",
+  "install": "npm install @nuxt/ui",
+  "lic": "MIT",
+  "licOk": true,
+  "pricing": "free"
+ },
+ {
+  "id": "lib-reka-ui-com",
+  "name": "Reka UI",
+  "url": "https://reka-ui.com/",
+  "note": "Vue 版 Radix（原 Radix Vue），无样式可访问组件",
+  "ct": [
+   "dialog",
+   "menu",
+   "select",
+   "tabs",
+   "tooltip",
+   "date"
+  ],
+  "fw": [
+   "Vue"
+  ],
+  "pkg": "reka-ui",
+  "repo": "unovue/reka-ui",
+  "install": "npm install reka-ui",
+  "lic": "MIT",
+  "licOk": true,
+  "pricing": "free"
+ },
+ {
+  "id": "lib-www-shadcn-vue-com",
+  "name": "shadcn-vue",
+  "url": "https://www.shadcn-vue.com/",
+  "note": "shadcn/ui 的 Vue 移植",
+  "ct": [
+   "button",
+   "input",
+   "form",
+   "dialog",
+   "table",
+   "chart"
+  ],
+  "fw": [
+   "Vue"
+  ],
+  "pkg": "",
+  "repo": "unovue/shadcn-vue",
+  "install": "npx shadcn-vue@latest init",
+  "lic": "MIT",
+  "licOk": true,
+  "pricing": "free"
+ },
+ {
+  "id": "lib-quasar-dev",
+  "name": "Quasar",
+  "url": "https://quasar.dev/",
+  "note": "Vue 全家桶框架，一套代码出网页 / 移动 / 桌面",
+  "ct": [
+   "button",
+   "input",
+   "form",
+   "date",
+   "dialog",
+   "table",
+   "mobile"
+  ],
+  "fw": [
+   "Vue"
+  ],
+  "pkg": "quasar",
+  "repo": "quasarframework/quasar",
+  "install": "",
+  "lic": "MIT",
+  "licOk": true,
+  "pricing": "free"
+ },
+ {
+  "id": "lib-vant-ui-github-io-vant",
+  "name": "Vant",
+  "url": "https://vant-ui.github.io/vant/",
+  "note": "有赞移动端 Vue 组件库",
+  "ct": [
+   "mobile",
+   "button",
+   "form",
+   "dialog",
+   "toast",
+   "upload"
+  ],
+  "fw": [
+   "Vue"
+  ],
+  "pkg": "vant",
+  "repo": "youzan/vant",
+  "install": "npm install vant",
+  "lic": "MIT",
+  "licOk": true,
+  "pricing": "free"
+ },
+ {
+  "id": "lib-www-shadcn-svelte-com",
+  "name": "shadcn-svelte",
+  "url": "https://www.shadcn-svelte.com/",
+  "note": "shadcn/ui 的 Svelte 移植",
+  "ct": [
+   "button",
+   "input",
+   "form",
+   "dialog",
+   "table",
+   "chart"
+  ],
+  "fw": [
+   "Svelte"
+  ],
+  "pkg": "",
+  "repo": "huntabyte/shadcn-svelte",
+  "install": "npx shadcn-svelte@latest init",
+  "lic": "MIT",
+  "licOk": true,
+  "pricing": "free"
+ },
+ {
+  "id": "lib-bits-ui-com",
+  "name": "Bits UI",
+  "url": "https://bits-ui.com/",
+  "note": "Svelte 无样式组件",
+  "ct": [
+   "dialog",
+   "menu",
+   "select",
+   "date",
+   "tabs",
+   "tooltip"
+  ],
+  "fw": [
+   "Svelte"
+  ],
+  "pkg": "bits-ui",
+  "repo": "huntabyte/bits-ui",
+  "install": "npm install bits-ui",
+  "lic": "MIT",
+  "licOk": true,
+  "pricing": "free"
+ },
+ {
+  "id": "lib-melt-ui-com",
+  "name": "Melt UI",
+  "url": "https://melt-ui.com/",
+  "note": "Svelte 无样式组件构建器",
+  "ct": [
+   "dialog",
+   "menu",
+   "select",
+   "tabs",
+   "tooltip"
+  ],
+  "fw": [
+   "Svelte"
+  ],
+  "pkg": "@melt-ui/svelte",
+  "repo": "melt-ui/melt-ui",
+  "install": "npm install @melt-ui/svelte",
+  "lic": "MIT",
+  "licOk": true,
+  "pricing": "free"
+ },
+ {
+  "id": "lib-www-skeleton-dev",
+  "name": "Skeleton",
+  "url": "https://www.skeleton.dev/",
+  "note": "Svelte / React 的 Tailwind 设计系统",
+  "ct": [
+   "button",
+   "card",
+   "nav",
+   "form",
+   "dialog"
+  ],
+  "fw": [
+   "Svelte",
+   "React"
+  ],
+  "pkg": "@skeletonlabs/skeleton",
+  "repo": "skeletonlabs/skeleton",
+  "install": "",
+  "lic": "MIT",
+  "licOk": true,
+  "pricing": "free"
+ },
+ {
+  "id": "lib-kobalte-dev",
+  "name": "Kobalte",
+  "url": "https://kobalte.dev/",
+  "note": "SolidJS 无样式可访问组件",
+  "ct": [
+   "dialog",
+   "menu",
+   "select",
+   "tabs",
+   "tooltip"
+  ],
+  "fw": [
+   "Solid"
+  ],
+  "pkg": "@kobalte/core",
+  "repo": "kobaltedev/kobalte",
+  "install": "npm install @kobalte/core",
+  "lic": "MIT",
+  "licOk": true,
+  "pricing": "free"
+ },
+ {
+  "id": "lib-material-angular-dev",
+  "name": "Angular Material",
+  "url": "https://material.angular.dev/",
+  "note": "Angular 官方 Material 组件",
+  "ct": [
+   "button",
+   "input",
+   "form",
+   "select",
+   "date",
+   "dialog",
+   "table",
+   "tabs",
+   "nav"
+  ],
+  "fw": [
+   "Angular"
+  ],
+  "pkg": "@angular/material",
+  "repo": "angular/components",
+  "install": "ng add @angular/material",
+  "lic": "MIT",
+  "licOk": true,
+  "pricing": "free"
+ },
+ {
+  "id": "lib-www-spartan-ng",
+  "name": "Spartan",
+  "url": "https://www.spartan.ng/",
+  "note": "Angular 版 shadcn 风格组件",
+  "ct": [
+   "button",
+   "input",
+   "dialog",
+   "menu",
+   "table"
+  ],
+  "fw": [
+   "Angular"
+  ],
+  "pkg": "",
+  "repo": "spartan-ng/spartan",
+  "install": "",
+  "lic": "MIT",
+  "licOk": true,
+  "pricing": "free"
+ },
+ {
+  "id": "lib-ng-ant-design",
+  "name": "NG-ZORRO",
+  "url": "https://ng.ant.design/",
+  "note": "Ant Design 的 Angular 实现",
+  "ct": [
+   "button",
+   "input",
+   "form",
+   "select",
+   "date",
+   "dialog",
+   "table",
+   "nav"
+  ],
+  "fw": [
+   "Angular"
+  ],
+  "pkg": "ng-zorro-antd",
+  "repo": "NG-ZORRO/ng-zorro-antd",
+  "install": "ng add ng-zorro-antd",
+  "lic": "MIT",
+  "licOk": true,
+  "pricing": "free"
+ },
+ {
+  "id": "lib-react-fluentui-dev",
+  "name": "Fluent UI",
+  "url": "https://react.fluentui.dev/",
+  "note": "微软 Fluent 2 设计体系的 React 组件",
+  "ct": [
+   "button",
+   "input",
+   "form",
+   "dialog",
+   "menu",
+   "table",
+   "avatar",
+   "toast"
+  ],
+  "fw": [
+   "React"
+  ],
+  "pkg": "@fluentui/react-components",
+  "repo": "microsoft/fluentui",
+  "install": "npm install @fluentui/react-components",
+  "lic": "MIT",
+  "licOk": true,
+  "pricing": "free"
+ },
+ {
+  "id": "lib-carbondesignsystem-com",
+  "name": "Carbon Design System",
+  "url": "https://carbondesignsystem.com/",
+  "note": "IBM 设计体系，数据密集型界面优秀",
+  "ct": [
+   "button",
+   "input",
+   "form",
+   "dialog",
+   "table",
+   "chart",
+   "nav"
+  ],
+  "fw": [
+   "React",
+   "Web",
+   "Components"
+  ],
+  "pkg": "@carbon/react",
+  "repo": "carbon-design-system/carbon",
+  "install": "npm install @carbon/react",
+  "lic": "Apache-2.0",
+  "licOk": true,
+  "pricing": "free"
+ },
+ {
+  "id": "lib-primer-style",
+  "name": "Primer",
+  "url": "https://primer.style/",
+  "note": "GitHub 设计体系的 React 组件",
+  "ct": [
+   "button",
+   "input",
+   "form",
+   "dialog",
+   "menu",
+   "nav",
+   "avatar"
+  ],
+  "fw": [
+   "React"
+  ],
+  "pkg": "@primer/react",
+  "repo": "primer/react",
+  "install": "npm install @primer/react",
+  "lic": "MIT",
+  "licOk": true,
+  "pricing": "free"
+ },
+ {
+  "id": "lib-shoelace-style",
+  "name": "Shoelace",
+  "url": "https://shoelace.style/",
+  "note": "Web Components 组件库，任何框架都能用",
+  "ct": [
+   "button",
+   "input",
+   "form",
+   "dialog",
+   "menu",
+   "tooltip"
+  ],
+  "fw": [
+   "Web",
+   "Components"
+  ],
+  "pkg": "@shoelace-style/shoelace",
+  "repo": "shoelace-style/shoelace",
+  "install": "npm install @shoelace-style/shoelace",
+  "lic": "MIT",
+  "licOk": true,
+  "pricing": "free"
+ },
+ {
+  "id": "lib-material-web-dev",
+  "name": "Material Web",
+  "url": "https://material-web.dev/",
+  "note": "Google 官方 Material 3 Web Components",
+  "ct": [
+   "button",
+   "input",
+   "form",
+   "dialog",
+   "menu",
+   "tabs"
+  ],
+  "fw": [
+   "Web",
+   "Components"
+  ],
+  "pkg": "@material/web",
+  "repo": "material-components/material-web",
+  "install": "npm install @material/web",
+  "lic": "Apache-2.0",
+  "licOk": true,
+  "pricing": "free"
+ },
+ {
+  "id": "lib-getbootstrap-com",
+  "name": "Bootstrap",
+  "url": "https://getbootstrap.com/",
+  "note": "经典 CSS 组件框架",
+  "ct": [
+   "button",
+   "card",
+   "nav",
+   "form",
+   "dialog",
+   "toast",
+   "carousel"
+  ],
+  "fw": [
+   "CSS"
+  ],
+  "pkg": "bootstrap",
+  "repo": "twbs/bootstrap",
+  "install": "npm install bootstrap",
+  "lic": "MIT",
+  "licOk": true,
+  "pricing": "free"
+ },
+ {
+  "id": "lib-bulma-io",
+  "name": "Bulma",
+  "url": "https://bulma.io/",
+  "note": "纯 CSS 组件框架，无 JS",
+  "ct": [
+   "button",
+   "card",
+   "nav",
+   "form"
+  ],
+  "fw": [
+   "CSS"
+  ],
+  "pkg": "bulma",
+  "repo": "jgthms/bulma",
+  "install": "npm install bulma",
+  "lic": "MIT",
+  "licOk": true,
+  "pricing": "free"
+ },
+ {
+  "id": "lib-picocss-com",
+  "name": "Pico CSS",
+  "url": "https://picocss.com/",
+  "note": "极简语义化 CSS，HTML 写完就好看",
+  "ct": [
+   "button",
+   "form",
+   "input",
+   "card",
+   "dialog"
+  ],
+  "fw": [
+   "CSS"
+  ],
+  "pkg": "@picocss/pico",
+  "repo": "picocss/pico",
+  "install": "npm install @picocss/pico",
+  "lic": "MIT",
+  "licOk": true,
+  "pricing": "free"
+ },
+ {
+  "id": "lib-open-props-style",
+  "name": "Open Props",
+  "url": "https://open-props.style/",
+  "note": "CSS 变量设计令牌：颜色、阴影、渐变、缓动",
+  "ct": [
+   "background",
+   "motion"
+  ],
+  "fw": [
+   "CSS"
+  ],
+  "pkg": "open-props",
+  "repo": "argyleink/open-props",
+  "install": "npm install open-props",
+  "lic": "MIT",
+  "licOk": true,
+  "pricing": "free"
+ },
+ {
+  "id": "lib-tremor-so",
+  "name": "Tremor",
+  "url": "https://tremor.so/",
+  "note": "仪表盘组件和图表，Tailwind + Recharts",
+  "ct": [
+   "chart",
+   "table",
+   "card"
+  ],
+  "fw": [
+   "React"
+  ],
+  "pkg": "@tremor/react",
+  "repo": "tremorlabs/tremor",
+  "install": "npm install @tremor/react",
+  "lic": "Apache-2.0",
+  "licOk": true,
+  "pricing": "free"
+ },
+ {
+  "id": "lib-recharts-org",
+  "name": "Recharts",
+  "url": "https://recharts.org/",
+  "note": "React 最常用的图表库",
+  "ct": [
+   "chart"
+  ],
+  "fw": [
+   "React"
+  ],
+  "pkg": "recharts",
+  "repo": "recharts/recharts",
+  "install": "npm install recharts",
+  "lic": "MIT",
+  "licOk": true,
+  "pricing": "free"
+ },
+ {
+  "id": "lib-echarts-apache-org",
+  "name": "Apache ECharts",
+  "url": "https://echarts.apache.org/",
+  "note": "功能最全的开源图表库之一，示例画廊很大",
+  "ct": [
+   "chart"
+  ],
+  "fw": [
+   "JS"
+  ],
+  "pkg": "echarts",
+  "repo": "apache/echarts",
+  "install": "npm install echarts",
+  "lic": "Apache-2.0",
+  "licOk": true,
+  "pricing": "free"
+ },
+ {
+  "id": "lib-www-chartjs-org",
+  "name": "Chart.js",
+  "url": "https://www.chartjs.org/",
+  "note": "轻量 Canvas 图表",
+  "ct": [
+   "chart"
+  ],
+  "fw": [
+   "JS"
+  ],
+  "pkg": "chart.js",
+  "repo": "chartjs/Chart.js",
+  "install": "npm install chart.js",
+  "lic": "MIT",
+  "licOk": true,
+  "pricing": "free"
+ },
+ {
+  "id": "lib-nivo-rocks",
+  "name": "Nivo",
+  "url": "https://nivo.rocks/",
+  "note": "好看的 React 数据可视化组件",
+  "ct": [
+   "chart"
+  ],
+  "fw": [
+   "React"
+  ],
+  "pkg": "@nivo/core",
+  "repo": "plouc/nivo",
+  "install": "npm install @nivo/core",
+  "lic": "MIT",
+  "licOk": true,
+  "pricing": "free"
+ },
+ {
+  "id": "lib-airbnb-io-visx",
+  "name": "visx",
+  "url": "https://airbnb.io/visx/",
+  "note": "Airbnb 的底层可视化组件",
+  "ct": [
+   "chart"
+  ],
+  "fw": [
+   "React"
+  ],
+  "pkg": "@visx/visx",
+  "repo": "airbnb/visx",
+  "install": "npm install @visx/visx",
+  "lic": "MIT",
+  "licOk": true,
+  "pricing": "free"
+ },
+ {
+  "id": "lib-tanstack-com-table",
+  "name": "TanStack Table",
+  "url": "https://tanstack.com/table",
+  "note": "无头表格引擎：排序、筛选、分页、虚拟滚动",
+  "ct": [
+   "table"
+  ],
+  "fw": [
+   "React",
+   "Vue",
+   "Solid",
+   "Svelte"
+  ],
+  "pkg": "@tanstack/react-table",
+  "repo": "TanStack/table",
+  "install": "npm install @tanstack/react-table",
+  "lic": "MIT",
+  "licOk": true,
+  "pricing": "free"
+ },
+ {
+  "id": "lib-www-ag-grid-com",
+  "name": "AG Grid",
+  "url": "https://www.ag-grid.com/",
+  "note": "高性能数据表格；社区版免费开源，企业版付费",
+  "ct": [
+   "table",
+   "chart"
+  ],
+  "fw": [
+   "React",
+   "Vue",
+   "Angular",
+   "JS"
+  ],
+  "pkg": "ag-grid-community",
+  "repo": "ag-grid/ag-grid",
+  "install": "npm install ag-grid-community ag-grid-react",
+  "lic": "MIT",
+  "licOk": true,
+  "pricing": "freemium"
+ },
+ {
+  "id": "lib-fullcalendar-io",
+  "name": "FullCalendar",
+  "url": "https://fullcalendar.io/",
+  "note": "日历排期组件；核心开源，部分高级插件付费",
+  "ct": [
+   "date"
+  ],
+  "fw": [
+   "React",
+   "Vue",
+   "Angular",
+   "JS"
+  ],
+  "pkg": "@fullcalendar/core",
+  "repo": "fullcalendar/fullcalendar",
+  "install": "npm install @fullcalendar/react @fullcalendar/daygrid",
+  "lic": "MIT",
+  "licOk": true,
+  "pricing": "freemium"
+ },
+ {
+  "id": "lib-daypicker-dev",
+  "name": "React DayPicker",
+  "url": "https://daypicker.dev/",
+  "note": "日期选择器，shadcn Calendar 用的就是它",
+  "ct": [
+   "date"
+  ],
+  "fw": [
+   "React"
+  ],
+  "pkg": "react-day-picker",
+  "repo": "gpbl/react-day-picker",
+  "install": "npm install react-day-picker",
+  "lic": "MIT",
+  "licOk": true,
+  "pricing": "free"
+ },
+ {
+  "id": "lib-sonner-emilkowal-ski",
+  "name": "Sonner",
+  "url": "https://sonner.emilkowal.ski/",
+  "note": "Emil Kowalski 做的 Toast 通知，动效顺滑",
+  "ct": [
+   "toast",
+   "motion"
+  ],
+  "fw": [
+   "React"
+  ],
+  "pkg": "sonner",
+  "repo": "emilkowalski/sonner",
+  "install": "npm install sonner",
+  "lic": "MIT",
+  "licOk": true,
+  "pricing": "free"
+ },
+ {
+  "id": "lib-react-hot-toast-com",
+  "name": "react-hot-toast",
+  "url": "https://react-hot-toast.com/",
+  "note": "轻量好看的 Toast 通知",
+  "ct": [
+   "toast"
+  ],
+  "fw": [
+   "React"
+  ],
+  "pkg": "react-hot-toast",
+  "repo": "timolins/react-hot-toast",
+  "install": "npm install react-hot-toast",
+  "lic": "MIT",
+  "licOk": true,
+  "pricing": "free"
+ },
+ {
+  "id": "lib-vaul-emilkowal-ski",
+  "name": "Vaul",
+  "url": "https://vaul.emilkowal.ski/",
+  "note": "移动端风格的底部抽屉",
+  "ct": [
+   "dialog",
+   "mobile",
+   "motion"
+  ],
+  "fw": [
+   "React"
+  ],
+  "pkg": "vaul",
+  "repo": "emilkowalski/vaul",
+  "install": "npm install vaul",
+  "lic": "MIT",
+  "licOk": true,
+  "pricing": "free"
+ },
+ {
+  "id": "lib-github-com-dip-cmdk",
+  "name": "cmdk",
+  "url": "https://github.com/dip/cmdk",
+  "note": "⌘K 命令面板组件",
+  "ct": [
+   "menu",
+   "input"
+  ],
+  "fw": [
+   "React"
+  ],
+  "pkg": "cmdk",
+  "repo": "dip/cmdk",
+  "install": "npm install cmdk",
+  "lic": "MIT",
+  "licOk": true,
+  "pricing": "free"
+ },
+ {
+  "id": "lib-floating-ui-com",
+  "name": "Floating UI",
+  "url": "https://floating-ui.com/",
+  "note": "Tooltip / Popover / 下拉的定位引擎",
+  "ct": [
+   "tooltip",
+   "menu"
+  ],
+  "fw": [
+   "React",
+   "Vue",
+   "JS"
+  ],
+  "pkg": "@floating-ui/react",
+  "repo": "floating-ui/floating-ui",
+  "install": "npm install @floating-ui/react",
+  "lic": "MIT",
+  "licOk": true,
+  "pricing": "free"
+ },
+ {
+  "id": "lib-input-otp-rodz-dev",
+  "name": "input-otp",
+  "url": "https://input-otp.rodz.dev/",
+  "note": "验证码输入框",
+  "ct": [
+   "input",
+   "form"
+  ],
+  "fw": [
+   "React"
+  ],
+  "pkg": "input-otp",
+  "repo": "guilhermerodz/input-otp",
+  "install": "npm install input-otp",
+  "lic": "MIT",
+  "licOk": true,
+  "pricing": "free"
+ },
+ {
+  "id": "lib-react-hook-form-com",
+  "name": "React Hook Form",
+  "url": "https://react-hook-form.com/",
+  "note": "高性能表单状态与校验",
+  "ct": [
+   "form",
+   "input"
+  ],
+  "fw": [
+   "React"
+  ],
+  "pkg": "react-hook-form",
+  "repo": "react-hook-form/react-hook-form",
+  "install": "npm install react-hook-form",
+  "lic": "MIT",
+  "licOk": true,
+  "pricing": "free"
+ },
+ {
+  "id": "lib-www-embla-carousel-com",
+  "name": "Embla Carousel",
+  "url": "https://www.embla-carousel.com/",
+  "note": "轻量轮播，手感顺滑",
+  "ct": [
+   "carousel",
+   "motion"
+  ],
+  "fw": [
+   "React",
+   "Vue",
+   "Svelte",
+   "JS"
+  ],
+  "pkg": "embla-carousel-react",
+  "repo": "davidjerleke/embla-carousel",
+  "install": "npm install embla-carousel-react",
+  "lic": "MIT",
+  "licOk": true,
+  "pricing": "free"
+ },
+ {
+  "id": "lib-swiperjs-com",
+  "name": "Swiper",
+  "url": "https://swiperjs.com/",
+  "note": "最常用的移动端轮播 / 滑动组件",
+  "ct": [
+   "carousel",
+   "mobile",
+   "motion"
+  ],
+  "fw": [
+   "React",
+   "Vue",
+   "JS"
+  ],
+  "pkg": "swiper",
+  "repo": "nolimits4web/swiper",
+  "install": "npm install swiper",
+  "lic": "MIT",
+  "licOk": true,
+  "pricing": "free"
+ },
+ {
+  "id": "lib-dndkit-com",
+  "name": "dnd kit",
+  "url": "https://dndkit.com/",
+  "note": "拖拽排序工具包：列表、看板、网格",
+  "ct": [
+   "dnd"
+  ],
+  "fw": [
+   "React"
+  ],
+  "pkg": "@dnd-kit/core",
+  "repo": "clauderic/dnd-kit",
+  "install": "npm install @dnd-kit/core",
+  "lic": "MIT",
+  "licOk": true,
+  "pricing": "free"
+ },
+ {
+  "id": "lib-reactflow-dev",
+  "name": "React Flow",
+  "url": "https://reactflow.dev/",
+  "note": "节点流程图 / 工作流画布；开源免费，原站另有付费 Pro 示例",
+  "ct": [
+   "flow",
+   "dnd"
+  ],
+  "fw": [
+   "React",
+   "Svelte"
+  ],
+  "pkg": "@xyflow/react",
+  "repo": "xyflow/xyflow",
+  "install": "npm install @xyflow/react",
+  "lic": "MIT",
+  "licOk": true,
+  "pricing": "freemium"
+ },
+ {
+  "id": "lib-uppy-io",
+  "name": "Uppy",
+  "url": "https://uppy.io/",
+  "note": "文件上传组件：拖拽、进度、网盘导入",
+  "ct": [
+   "upload"
+  ],
+  "fw": [
+   "React",
+   "Vue",
+   "JS"
+  ],
+  "pkg": "@uppy/core",
+  "repo": "transloadit/uppy",
+  "install": "npm install @uppy/core @uppy/dashboard",
+  "lic": "MIT",
+  "licOk": true,
+  "pricing": "free"
+ },
+ {
+  "id": "lib-pqina-nl-filepond",
+  "name": "FilePond",
+  "url": "https://pqina.nl/filepond/",
+  "note": "顺滑的文件上传组件",
+  "ct": [
+   "upload"
+  ],
+  "fw": [
+   "React",
+   "Vue",
+   "JS"
+  ],
+  "pkg": "filepond",
+  "repo": "pqina/filepond",
+  "install": "npm install filepond",
+  "lic": "MIT",
+  "licOk": true,
+  "pricing": "free"
+ },
+ {
+  "id": "lib-tiptap-dev",
+  "name": "Tiptap",
+  "url": "https://tiptap.dev/",
+  "note": "无头富文本编辑器；编辑器核心开源，原站另有付费云服务",
+  "ct": [
+   "editor"
+  ],
+  "fw": [
+   "React",
+   "Vue",
+   "JS"
+  ],
+  "pkg": "@tiptap/react",
+  "repo": "ueberdosis/tiptap",
+  "install": "npm install @tiptap/react @tiptap/pm @tiptap/starter-kit",
+  "lic": "MIT",
+  "licOk": true,
+  "pricing": "freemium"
+ },
+ {
+  "id": "lib-lexical-dev",
+  "name": "Lexical",
+  "url": "https://lexical.dev/",
+  "note": "Meta 出品的可扩展编辑器框架",
+  "ct": [
+   "editor"
+  ],
+  "fw": [
+   "React",
+   "JS"
+  ],
+  "pkg": "lexical",
+  "repo": "facebook/lexical",
+  "install": "npm install lexical @lexical/react",
+  "lic": "MIT",
+  "licOk": true,
+  "pricing": "free"
+ },
+ {
+  "id": "lib-www-blocknotejs-org",
+  "name": "BlockNote",
+  "url": "https://www.blocknotejs.org/",
+  "note": "Notion 风格的块编辑器",
+  "ct": [
+   "editor"
+  ],
+  "fw": [
+   "React"
+  ],
+  "pkg": "@blocknote/react",
+  "repo": "TypeCellOS/BlockNote",
+  "install": "",
+  "lic": "MPL-2.0",
+  "licOk": false,
+  "pricing": "free"
+ },
+ {
+  "id": "lib-lucide-dev",
+  "name": "Lucide",
+  "url": "https://lucide.dev/",
+  "note": "1500+ 线性图标，shadcn 默认图标",
+  "ct": [
+   "icon"
+  ],
+  "fw": [
+   "React",
+   "Vue",
+   "Svelte",
+   "JS"
+  ],
+  "pkg": "lucide-react",
+  "repo": "lucide-icons/lucide",
+  "install": "",
+  "lic": "ISC",
+  "licOk": false,
+  "pricing": "free"
+ },
+ {
+  "id": "lib-heroicons-com",
+  "name": "Heroicons",
+  "url": "https://heroicons.com/",
+  "note": "Tailwind 团队的图标集",
+  "ct": [
+   "icon"
+  ],
+  "fw": [
+   "React",
+   "Vue"
+  ],
+  "pkg": "@heroicons/react",
+  "repo": "tailwindlabs/heroicons",
+  "install": "npm install @heroicons/react",
+  "lic": "MIT",
+  "licOk": true,
+  "pricing": "free"
+ },
+ {
+  "id": "lib-tabler-io-icons",
+  "name": "Tabler Icons",
+  "url": "https://tabler.io/icons",
+  "note": "5000+ 免费线性图标",
+  "ct": [
+   "icon"
+  ],
+  "fw": [
+   "React",
+   "Vue",
+   "JS"
+  ],
+  "pkg": "@tabler/icons-react",
+  "repo": "tabler/tabler-icons",
+  "install": "npm install @tabler/icons-react",
+  "lic": "MIT",
+  "licOk": true,
+  "pricing": "free"
+ },
+ {
+  "id": "lib-phosphoricons-com",
+  "name": "Phosphor Icons",
+  "url": "https://phosphoricons.com/",
+  "note": "灵活图标家族，六种粗细",
+  "ct": [
+   "icon"
+  ],
+  "fw": [
+   "React",
+   "Vue",
+   "JS"
+  ],
+  "pkg": "@phosphor-icons/react",
+  "repo": "phosphor-icons/react",
+  "install": "npm install @phosphor-icons/react",
+  "lic": "MIT",
+  "licOk": true,
+  "pricing": "free"
+ },
+ {
+  "id": "lib-icon-sets-iconify-design",
+  "name": "Iconify",
+  "url": "https://icon-sets.iconify.design/",
+  "note": "20 万+ 开源图标统一入口；各图标集许可不同，请看原站标注",
+  "ct": [
+   "icon"
+  ],
+  "fw": [
+   "React",
+   "Vue",
+   "JS"
+  ],
+  "pkg": "@iconify/react",
+  "repo": "iconify/iconify",
+  "install": "",
+  "lic": "MIT",
+  "licOk": true,
+  "pricing": "free"
+ },
+ {
+  "id": "lib-motion-dev",
+  "name": "Motion",
+  "url": "https://motion.dev/",
+  "note": "原 Framer Motion，React / JS 动画库开源版",
+  "ct": [
+   "motion"
+  ],
+  "fw": [
+   "React",
+   "Vue",
+   "JS"
+  ],
+  "pkg": "motion",
+  "repo": "motiondivision/motion",
+  "install": "npm install motion",
+  "lic": "MIT",
+  "licOk": true,
+  "pricing": "free"
+ },
+ {
+  "id": "lib-motion-dev-examples",
+  "name": "Motion 示例",
+  "url": "https://motion.dev/examples",
+  "note": "Motion 官方示例画廊；部分示例属于付费 Motion+，本站只放链接",
+  "ct": [
+   "motion"
+  ],
+  "fw": [
+   "React",
+   "Vue",
+   "JS"
+  ],
+  "pkg": "",
+  "repo": "",
+  "install": "",
+  "lic": "",
+  "licOk": false,
+  "pricing": "freemium"
+ },
+ {
+  "id": "lib-www-react-spring-dev",
+  "name": "React Spring",
+  "url": "https://www.react-spring.dev/",
+  "note": "弹簧物理动画库",
+  "ct": [
+   "motion"
+  ],
+  "fw": [
+   "React"
+  ],
+  "pkg": "@react-spring/web",
+  "repo": "pmndrs/react-spring",
+  "install": "npm install @react-spring/web",
+  "lic": "MIT",
+  "licOk": true,
+  "pricing": "free"
+ },
+ {
+  "id": "lib-gsap-com",
+  "name": "GSAP",
+  "url": "https://gsap.com/",
+  "note": "专业级 JS 动画平台，免费使用但为自有许可（非 MIT），本站只放链接",
+  "ct": [
+   "motion"
+  ],
+  "fw": [
+   "JS"
+  ],
+  "pkg": "gsap",
+  "repo": "greensock/GSAP",
+  "install": "",
+  "lic": "GSAP Standard License",
+  "licOk": false,
+  "pricing": "free"
+ },
+ {
+  "id": "lib-auto-animate-formkit-com",
+  "name": "AutoAnimate",
+  "url": "https://auto-animate.formkit.com/",
+  "note": "一行代码给列表加进出场动画",
+  "ct": [
+   "motion"
+  ],
+  "fw": [
+   "React",
+   "Vue",
+   "JS"
+  ],
+  "pkg": "@formkit/auto-animate",
+  "repo": "formkit/auto-animate",
+  "install": "npm install @formkit/auto-animate",
+  "lic": "MIT",
+  "licOk": true,
+  "pricing": "free"
+ },
+ {
+  "id": "lib-airbnb-io-lottie",
+  "name": "Lottie Web",
+  "url": "https://airbnb.io/lottie/",
+  "note": "播放 AE 导出的 Lottie 动画",
+  "ct": [
+   "motion",
+   "loader"
+  ],
+  "fw": [
+   "JS"
+  ],
+  "pkg": "lottie-web",
+  "repo": "airbnb/lottie-web",
+  "install": "npm install lottie-web",
+  "lic": "MIT",
+  "licOk": true,
+  "pricing": "free"
+ },
+ {
+  "id": "lib-lenis-darkroom-engineering",
+  "name": "Lenis",
+  "url": "https://lenis.darkroom.engineering/",
+  "note": "丝滑滚动库，很多获奖网站在用",
+  "ct": [
+   "motion"
+  ],
+  "fw": [
+   "JS",
+   "React"
+  ],
+  "pkg": "lenis",
+  "repo": "darkroom-engineering/lenis",
+  "install": "npm install lenis",
+  "lic": "MIT",
+  "licOk": true,
+  "pricing": "free"
+ },
+ {
+  "id": "lib-animate-style",
+  "name": "Animate.css",
+  "url": "https://animate.style/",
+  "note": "现成的 CSS 动画类，加个 class 就能动；许可以原仓库为准，本站只放链接",
+  "ct": [
+   "motion"
+  ],
+  "fw": [
+   "CSS"
+  ],
+  "pkg": "animate.css",
+  "repo": "animate-css/animate.css",
+  "install": "",
+  "lic": "见仓库",
+  "licOk": false,
+  "pricing": "free"
+ },
+ {
+  "id": "lib-threejs-org",
+  "name": "Three.js",
+  "url": "https://threejs.org/",
+  "note": "最主流的 WebGL 3D 库，示例画廊很大",
+  "ct": [
+   "threed",
+   "background"
+  ],
+  "fw": [
+   "JS"
+  ],
+  "pkg": "three",
+  "repo": "mrdoob/three.js",
+  "install": "npm install three",
+  "lic": "MIT",
+  "licOk": true,
+  "pricing": "free"
+ },
+ {
+  "id": "lib-r3f-docs-pmnd-rs",
+  "name": "React Three Fiber",
+  "url": "https://r3f.docs.pmnd.rs/",
+  "note": "用 React 写 Three.js",
+  "ct": [
+   "threed"
+  ],
+  "fw": [
+   "React"
+  ],
+  "pkg": "@react-three/fiber",
+  "repo": "pmndrs/react-three-fiber",
+  "install": "npm install three @react-three/fiber",
+  "lic": "MIT",
+  "licOk": true,
+  "pricing": "free"
+ },
+ {
+  "id": "lib-drei-docs-pmnd-rs",
+  "name": "Drei",
+  "url": "https://drei.docs.pmnd.rs/",
+  "note": "React Three Fiber 的现成 3D 组件集",
+  "ct": [
+   "threed"
+  ],
+  "fw": [
+   "React"
+  ],
+  "pkg": "@react-three/drei",
+  "repo": "pmndrs/drei",
+  "install": "npm install @react-three/drei",
+  "lic": "MIT",
+  "licOk": true,
+  "pricing": "free"
+ },
+ {
+  "id": "lib-www-eldoraui-site",
+  "name": "Eldora UI",
+  "url": "https://www.eldoraui.site/",
+  "note": "动效组件与模板，shadcn 风格",
+  "ct": [
+   "motion",
+   "background",
+   "button",
+   "card"
+  ],
+  "fw": [
+   "React"
+  ],
+  "pkg": "",
+  "repo": "karthikmudunuri/eldoraui",
+  "install": "",
+  "lic": "MIT",
+  "licOk": true,
+  "pricing": "free"
+ },
+ {
+  "id": "lib-tamagui-dev",
+  "name": "Tamagui",
+  "url": "https://tamagui.dev/",
+  "note": "React Native + Web 一套组件",
+  "ct": [
+   "mobile",
+   "button",
+   "input",
+   "dialog"
+  ],
+  "fw": [
+   "React",
+   "Native"
+  ],
+  "pkg": "tamagui",
+  "repo": "tamagui/tamagui",
+  "install": "npm install tamagui",
+  "lic": "MIT",
+  "licOk": true,
+  "pricing": "free"
+ },
+ {
+  "id": "lib-gluestack-io",
+  "name": "gluestack-ui",
+  "url": "https://gluestack.io/",
+  "note": "React Native 的可复制组件，类 shadcn",
+  "ct": [
+   "mobile",
+   "button",
+   "input",
+   "form",
+   "dialog"
+  ],
+  "fw": [
+   "React",
+   "Native"
+  ],
+  "pkg": "",
+  "repo": "gluestack/gluestack-ui",
+  "install": "",
+  "lic": "",
+  "licOk": false,
+  "pricing": "free"
+ },
+ {
+  "id": "lib-reactnativepaper-com",
+  "name": "React Native Paper",
+  "url": "https://reactnativepaper.com/",
+  "note": "React Native 的 Material 组件",
+  "ct": [
+   "mobile",
+   "button",
+   "input",
+   "dialog",
+   "card"
+  ],
+  "fw": [
+   "React",
+   "Native"
+  ],
+  "pkg": "react-native-paper",
+  "repo": "callstack/react-native-paper",
+  "install": "npm install react-native-paper",
+  "lic": "MIT",
+  "licOk": true,
+  "pricing": "free"
+ },
+ {
+  "id": "lib-reactnativereusables-com",
+  "name": "React Native Reusables",
+  "url": "https://reactnativereusables.com/",
+  "note": "shadcn/ui 的 React Native 版",
+  "ct": [
+   "mobile",
+   "button",
+   "input",
+   "dialog",
+   "card"
+  ],
+  "fw": [
+   "React",
+   "Native"
+  ],
+  "pkg": "",
+  "repo": "founded-labs/react-native-reusables",
+  "install": "",
+  "lic": "MIT",
+  "licOk": true,
+  "pricing": "free"
+ },
+ {
+  "id": "lib-ionicframework-com",
+  "name": "Ionic",
+  "url": "https://ionicframework.com/",
+  "note": "跨平台移动端 UI 组件",
+  "ct": [
+   "mobile",
+   "button",
+   "input",
+   "nav",
+   "tabs",
+   "dialog"
+  ],
+  "fw": [
+   "React",
+   "Vue",
+   "Angular"
+  ],
+  "pkg": "@ionic/core",
+  "repo": "ionic-team/ionic-framework",
+  "install": "",
+  "lic": "MIT",
+  "licOk": true,
+  "pricing": "free"
+ },
+ {
+  "id": "lib-konstaui-com",
+  "name": "Konsta UI",
+  "url": "https://konstaui.com/",
+  "note": "iOS / Material 风格的 Tailwind 移动组件",
+  "ct": [
+   "mobile",
+   "button",
+   "nav",
+   "dialog"
+  ],
+  "fw": [
+   "React",
+   "Vue",
+   "Svelte"
+  ],
+  "pkg": "konsta",
+  "repo": "konstaui/konsta",
+  "install": "npm install konsta",
+  "lic": "MIT",
+  "licOk": true,
+  "pricing": "free"
+ },
+ {
+  "id": "lib-component-gallery",
+  "name": "The Component Gallery",
+  "url": "https://component.gallery/",
+  "note": "按组件类型整理的真实设计体系案例库，同一种组件能看到各大公司的做法，适合对照找灵感",
+  "ct": [
+   "button",
+   "input",
+   "form",
+   "dialog",
+   "table",
+   "nav",
+   "card",
+   "tabs",
+   "toast"
+  ],
+  "fw": [],
+  "pkg": "",
+  "repo": "",
+  "install": "",
+  "lic": "",
+  "licOk": false,
+  "pricing": "free"
+ }
+]

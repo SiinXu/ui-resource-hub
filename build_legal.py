@@ -67,11 +67,24 @@ OTHERLIC = {'coss-com-ui': ('AGPL-3.0', 'cosscom/coss'), 'reactbits-dev': ('MIT 
             'animate-ui-com': ('自定义许可', 'imskyleen/animate-ui'), 'openwebui-com': ('Open WebUI License', 'open-webui/open-webui'),
             'vercel-com-templates-next-js-chatbot': ('见仓库', 'vercel/chatbot'), 'neat-firecms-co': ('自定义许可', 'FireCMSco/neat'),
             'agentation-com': ('PolyForm Shield', '')}
+PRICE_NOTE = None
 SERVICE = {'inspiration', 'generator', 'guide'}
+LIBS = {L['id']: L for L in json.load(open(os.path.join(HERE, 'libs.src.json'), encoding='utf-8'))}
 out = {}
 for it in d['items']:
     rid, t = it['id'], it['type']
     e = {}
+    if rid in LIBS:
+        L = LIBS[rid]
+        if L['pricing'] == 'paid': e = {'k': 'paid'}
+        elif L['licOk']:
+            e = {'k': 'oss', 'lic': L['lic']}
+            if L['install']: e['code'] = L['install']
+        elif L['lic']: e = {'k': 'lic', 'lic': L['lic']}
+        else: e = {'k': 'svc' if t in SERVICE else 'unk'}
+        if L['pkg'] and L['licOk']: e['npm'] = NPM + L['pkg']
+        if L['repo']: e['gh'] = GH + L['repo']
+        out[rid] = e; continue
     if rid in OSS:
         lic, code, pkg, repo = OSS[rid]
         e = {'k': 'oss', 'lic': lic}
