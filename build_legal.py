@@ -73,6 +73,7 @@ LIBS = {L['id']: L for L in json.load(open(os.path.join(HERE, 'libs.src.json'), 
 out = {}
 for it in d['items']:
     rid, t = it['id'], it['type']
+    if t == 'style': continue  # 组件样式卡沿用来源库的许可（前端 lg() 回退到 lib）
     e = {}
     if rid in LIBS:
         L = LIBS[rid]

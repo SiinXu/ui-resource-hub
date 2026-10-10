@@ -11,7 +11,7 @@ var TYPES = ['all','style','library','component','effect','skill','inspiration',
 var NOTES = window.UI_NOTES || {notes:{},why:{}}, CTO = window.UI_CT_ORDER || [], SECO = window.UI_SEC_ORDER || [];
 // 资源说明随界面语言切换：非中文用人工撰写的译文，缺失时回落到中文原文
 // 组件样式卡：名称/说明按语言模板生成（组件类型 · 来源库）
-function styleName(i){return CTN(i.kind)+' · '+i.libName}
+function styleName(i){return CTN(i.kind)+' · '+i.libName+(i.var?' · '+i.var:'')}
 function syncStyleNames(){ITEMS.forEach(function(i){if(i.type==='style')i.name=styleName(i)})}
 function noteOf(i){if(i.type==='style')return t('cs_note',{lib:i.libName,kind:CTN(i.kind)});var m=!isZh()&&NOTES.notes[LANG];return (m&&m[i.id])||shown(i.note)}
 function whyOf(p,g){var m=!isZh()&&NOTES.why[LANG];return (m&&m[p.id+'@'+g.id])||p.why}
@@ -68,7 +68,11 @@ function favBtn(i,cls){return '<button class="ib fav'+(favs[i.id]?' on':'')+(cls
 
 /* ---------- 许可 / 代码 / 提示词 ---------- */
 function lg(i){return LG[i.id]||(i.lib&&LG[i.lib])||{k:'unk'}}
-function codeOf(i){var l=lg(i);return l.k==='oss'&&l.code?l.code:''}
+var O = window.UI_ORIG || {};
+/* v3e：原站原文在前、原样保留；聚合站补充放后面并明确标注 */
+function codeParts(i){var l=lg(i),o=O[i.id]||{};if(l.k!=='oss')return {o:'',s:''};
+  var sup=o.sup||(!o.c?(l.code||''):'');return {o:o.c||'',os:o.cs||'',lic:o.cl||l.lic,s:(o.c&&sup&&o.c.indexOf(sup)>=0)?'':sup}}
+function codeOf(i){var p=codeParts(i);if(!p.o)return p.s;return p.o+(p.s?'\n\n'+t('sup_mark')+'\n'+p.s:'')}
 function codeTip(i){
   var l=lg(i);
   if(l.k==='oss')return l.code?'':t('code_oss_nosnip',{lic:l.lic});
@@ -78,7 +82,18 @@ function codeTip(i){
   if(l.k==='svc')return t('code_svc');
   return i.pricing==='freemium'?t('code_paid'):t('code_unk');
 }
-function promptFor(i){
+function promptParts(i){
+  var o=O[i.id]||{}, n=i.type==='style'?(i.libName+' · '+CTN(i.kind)+(i.var?' · '+i.var:'')):shown(i.name), orig='', src='';
+  if(o.p){orig=o.p;src=o.ps}
+  else if(o.d){orig='\u201c'+o.d+'\u201d';src=o.ds}
+  if(!orig)return {o:'',s:promptOld(i)};
+  var c=codeParts(i), head=(o.p?t('p_orig_h',{url:src}):t('p_desc_h',{url:src}))+'\n'+orig;
+  if(i.type==='style'||src!==i.url)head+='\n'+t('p_demo',{url:i.url});
+  if(c.o&&c.o.length<=1600)head+='\n\n'+t('p_code_h',{lic:c.lic})+'\n```\n'+c.o+'\n```';
+  return {o:head,src:src,s:(i.type==='skill'&&o.p?t('p_task_skill'):t('p_task',{name:n}))+'\n\n'+t('p_sup',{url:i.url})};
+}
+function promptFor(i){var p=promptParts(i);return p.o?p.o+'\n\n'+p.s:p.s}
+function promptOld(i){
   var n=shown(i.name), note=noteOf(i);
   if(i.type==='skill')return t('prompt_skill',{name:n,url:i.url,note:note||t('note_none')});
   return t('prompt_ref',{name:n,url:i.url,note:note?t('note_wrap',{note:note}):''});
@@ -152,7 +167,7 @@ function demo(i){
 function srcTag(i,live){
   if(live)return '<span class="tag-lv">'+t('tag_live')+'</span>';
   var m=M[i.id]; if(!m||!m.img)return VISUAL[i.type]?'<span class="tag-dm">'+t('tag_demo')+'</span>':'';
-  return '<span class="tag-pv">'+(m.src==='shot'?t('tag_shot'):t('tag_og'))+'</span>';
+  return '<span class="tag-pv">'+(m.src==='comp'?t('tag_comp'):m.src==='app'?t('tag_app'):m.src==='shot'?t('tag_shot'):t('tag_og'))+'</span>';
 }
 function liveBox(f,opts){
   opts=opts||{};
@@ -194,7 +209,7 @@ function card(i){
   var tag = live?'<span class="tag-lv">'+t('tag_live')+'</span>':(m.frame?'<span class="tag-fr">'+t('tag_frame')+'</span>':srcTag(i));
   if(i.type==='style')return '<article class="card cs" data-open="'+i.id+'"><div class="cm">'+thumb(i)+
     '<div class="ctop"><span class="tag-pv">'+esc(t('tag_cs'))+'</span></div></div>'+
-    '<div class="cb"><h3>'+esc(CTN(i.kind))+'<span class="csl">'+esc(i.libName)+'</span></h3><p class="note">'+esc(host(i.url)+(new URL(i.url).pathname.length>1?new URL(i.url).pathname.replace(/\/$/,''):''))+'</p>'+foot(i)+'</div></article>';
+    '<div class="cb"><h3>'+esc(CTN(i.kind))+'<span class="csl">'+esc(i.libName)+'</span></h3><p class="note">'+(i.var?'<b class="cv">'+esc(i.var)+'</b> ':'')+esc(host(i.url)+(new URL(i.url).pathname.length>1?new URL(i.url).pathname.replace(/\/$/,''):''))+'</p>'+foot(i)+'</div></article>';
   return '<article class="card" data-open="'+i.id+'"><div class="cm">'+thumb(i)+
     '<div class="ctop">'+tag+'</div><span class="cview">'+esc(t('btn_details'))+IC.ext.replace('M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5','M7 17 17 7M9 7h8v8')+'</span></div>'+
     '<div class="cb"><h3>'+esc(shown(i.name))+'</h3><p class="note">'+esc(noteOf(i)||host(i.url))+'</p>'+foot(i)+'</div></article>';
@@ -226,10 +241,14 @@ function renderChips(){
   $('ctChips').innerHTML = '<span class="ct-h">'+esc(t('ct_h'))+'</span><button class="chip c'+(state.ct?'':' on')+'" data-ct="">'+esc(t('ct_all'))+'</button>'+
     CTO.filter(function(c){return cc[c]||state.ct===c}).map(function(c){return '<button class="chip c'+(state.ct===c?' on':'')+'" data-ct="'+c+'">'+esc(CTN(c))+'<small>'+(cc[c]||0)+'</small></button>'}).join('');
 }
-function renderGrid(){
+/* v3e：两千多张卡分批渲染，滚到底部再追加，手机上不卡 */
+var GL=[], GN=0, GIO=null;
+function moreGrid(){var n=Math.min(GL.length,GN+(GN?160:96));if(n>GN)$('grid').insertAdjacentHTML('beforeend',GL.slice(GN,n).map(card).join(''));GN=n;var s=$('gridMore');if(s)s.hidden=GN>=GL.length}
+function initMore(){var s=$('gridMore');if(!s||GIO||!('IntersectionObserver' in window))return;GIO=new IntersectionObserver(function(es){if(es[0].isIntersecting)moreGrid()},{rootMargin:'1200px 0px'});GIO.observe(s)}
+function renderGrid(){initMore();
   var list = ITEMS.filter(match);
   list = list.map(function(i,k){return [i.type==='style'?-1:VISUAL[i.type]?(M[i.id]&&M[i.id].img||LIVE[i.id]?0:1):2,k,i]}).sort(function(a,b){return a[0]-b[0]||a[1]-b[1]}).map(function(a){return a[2]});
-  $('grid').innerHTML = list.map(card).join('');
+  GL=list; GN=0; $('grid').innerHTML=''; moreGrid();
   var fc=Object.keys(favs).length; $('favCnt').textContent=fc||'';
   var isFav=state.view==='fav';
   $('empty').hidden = !!list.length;
@@ -305,9 +324,21 @@ function preview(i){
   var parts=shown(i.name).split('/');
   return '<div class="pvw sk"><div class="term"><i></i><i></i><i></i><span>SKILL.md</span></div><div class="skn"><small>'+esc(parts.length>1?parts[0]+' /':TN(i.type))+'</small><b>'+esc(parts[parts.length-1])+'</b></div></div>';
 }
+function srcLink(u){return u?'<a class="osrc" href="'+esc(u)+'" target="_blank" rel="noopener noreferrer">'+esc(t('src_l'))+' · '+esc(host(u))+'</a>':''}
+function promptBlock(i){
+  var p=promptParts(i);
+  if(!p.o)return '<div class="prompt"><div class="ph"><span>'+IC.spark+esc(t('prompt_h'))+'</span><button class="b sm pri" data-cp="'+i.id+'">'+IC.copy+esc(t('btn_copy_prompt'))+'</button></div><div class="ogs sup"><span class="ogh">'+esc(t('sup_h'))+'</span><pre>'+esc(p.s)+'</pre></div></div>';
+  return '<div class="prompt"><div class="ph"><span>'+IC.spark+esc(t('prompt_h'))+'</span><span class="phb"><button class="b sm ghost" data-cpo="'+i.id+'">'+esc(t('btn_copy_orig'))+'</button><button class="b sm pri" data-cp="'+i.id+'">'+IC.copy+esc(t('btn_copy_prompt'))+'</button></span></div>'+
+    '<div class="ogs org"><span class="ogh">'+esc(t('orig_h'))+srcLink(p.src)+'</span><pre>'+esc(p.o)+'</pre></div>'+
+    '<div class="ogs sup"><span class="ogh">'+esc(t('sup_h'))+'</span><pre>'+esc(p.s)+'</pre></div></div>';
+}
 function codeBlock(i){
-  var l=lg(i), c=codeOf(i);
-  if(c)return '<div class="prompt code"><div class="ph"><span>'+IC.code+esc(t('code_h'))+'</span><button class="b sm pri" data-cc="'+i.id+'">'+IC.copy+esc(t('btn_copy_code'))+'</button></div><pre>'+esc(c)+'</pre>'+
+  var l=lg(i), c=codeOf(i), cp=codeParts(i);
+  if(c&&cp.o)return '<div class="prompt code"><div class="ph"><span>'+IC.code+esc(t('code_h'))+'</span><span class="phb">'+(cp.s?'<button class="b sm ghost" data-cco="'+i.id+'">'+esc(t('btn_copy_orig'))+'</button>':'')+'<button class="b sm pri" data-cc="'+i.id+'">'+IC.copy+esc(t('btn_copy_code'))+'</button></span></div>'+
+    '<div class="ogs org"><span class="ogh">'+esc(t('orig_h'))+srcLink(cp.os)+'</span><pre>'+esc(cp.o)+'</pre><p class="cnote">'+esc(t('code_orig_note',{lic:cp.lic}))+'</p></div>'+
+    (cp.s?'<div class="ogs sup"><span class="ogh">'+esc(t('sup_h'))+'</span><pre>'+esc(cp.s)+'</pre><p class="cnote">'+esc(t('code_sup_note'))+'</p></div>':'')+
+    (l.pro?'<p class="cnote">'+esc(t('pro_note',{pro:l.pro}))+'</p>':'')+'</div>';
+  if(c)return '<div class="prompt code"><div class="ph"><span>'+IC.code+esc(t('code_h'))+'</span><button class="b sm pri" data-cc="'+i.id+'">'+IC.copy+esc(t('btn_copy_code'))+'</button></div><div class="ogs sup"><span class="ogh">'+esc(t('sup_h'))+'</span><pre>'+esc(c)+'</pre></div>'+
     '<p class="cnote">'+esc(t('code_note',{lic:l.lic}))+(l.pro?' '+esc(t('pro_note',{pro:l.pro})):'')+'</p></div>';
   return '<div class="prompt code off"><div class="ph"><span>'+IC.lock+esc(t('code_none_h'))+'</span><button class="b sm ghost" disabled title="'+esc(codeTip(i))+'">'+IC.copy+esc(t('btn_copy_code'))+'</button></div><p class="cnote">'+esc(codeTip(i))+'</p></div>';
 }
@@ -321,7 +352,7 @@ function openSheet(id){
    '<div class="acts"><a class="b pri" href="'+esc(i.url)+'" target="_blank" rel="noopener noreferrer">'+esc(t('btn_original'))+IC.ext+'</a>'+
    (VISUAL[i.type]?'<button class="b ghost" data-play="'+i.id+'">'+IC.full+esc(canFrame(i)?t('btn_play'):t('btn_view'))+'</button>':'')+
    '<button class="b ghost" data-copy="'+esc(i.url)+'" data-msg="'+esc(t('toast_link'))+'">'+IC.copy+esc(t('btn_copy_link'))+'</button>'+favBtn(i,'lg')+'</div>'+
-   '<div class="prompt"><div class="ph"><span>'+IC.spark+esc(t('prompt_h'))+'</span><button class="b sm pri" data-cp="'+i.id+'">'+IC.copy+esc(t('btn_copy_prompt'))+'</button></div><pre>'+esc(pr)+'</pre></div>'+
+   promptBlock(i)+
    codeBlock(i)+
    '<dl class="kv"><dt>'+esc(t('kv_url'))+'</dt><dd class="u"><a href="'+esc(i.url)+'" target="_blank" rel="noopener noreferrer">'+esc(i.url)+'</a></dd>'+
    (l.lic?'<dt>'+esc(t('kv_license'))+'</dt><dd>'+esc(l.lic)+(links?'<span class="lk">'+links+'</span>':'')+'</dd>':'')+
@@ -401,12 +432,15 @@ function focusSearch(){if(state.view!=='home')location.hash='#/';setTimeout(func
 document.addEventListener('click',function(e){
   var mb=e.target.closest('[data-more]'); if(mb){e.preventDefault();e.stopPropagation();openMenu(mb.dataset.more,mb);return}
   if(!$('menu').hidden&&(!e.target.closest('#menu')||e.target.closest('.mi')))closeMenu();
-  var el=e.target.closest('[data-copy],[data-cp],[data-cc],[data-tip],[data-fav],[data-type],[data-ct],[data-tag],[data-close],[data-closeplay],[data-rmtag],[data-g],[data-play],[data-lib],[data-site-load],[data-open],a');
+  var el=e.target.closest('#gridMore,[data-copy],[data-cp],[data-cc],[data-cpo],[data-cco],[data-tip],[data-fav],[data-type],[data-ct],[data-tag],[data-close],[data-closeplay],[data-rmtag],[data-g],[data-play],[data-lib],[data-site-load],[data-open],a');
   if(!el)return;
   if(el.tagName==='A'&&!el.dataset.g){e.stopPropagation();return}
   if(el.dataset.copy){e.preventDefault();copy(el.dataset.copy,el.dataset.msg||t('toast_link'));return}
   if(el.dataset.cp){e.preventDefault();copy(promptFor(BY[el.dataset.cp]),t('toast_prompt'));return}
   if(el.dataset.cc){e.preventDefault();copy(codeOf(BY[el.dataset.cc]),t('toast_code'));return}
+  if(el.dataset.cpo){e.preventDefault();copy(promptParts(BY[el.dataset.cpo]).o,t('toast_prompt'));return}
+  if(el.id==='gridMore'){moreGrid();return}
+  if(el.dataset.cco){e.preventDefault();copy(codeParts(BY[el.dataset.cco]).o,t('toast_code'));return}
   if(el.dataset.tip){e.preventDefault();toast(el.dataset.tip);return}
   if(el.dataset.fav){e.preventDefault();e.stopPropagation();toggleFav(el.dataset.fav);return}
   if(el.dataset.type){state.type=el.dataset.type;refresh();return}
