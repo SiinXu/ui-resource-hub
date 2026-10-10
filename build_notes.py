@@ -5,6 +5,6 @@ H = os.path.dirname(os.path.abspath(__file__))
 d = json.load(open(os.path.join(H,'data.json'), encoding='utf-8'))
 o = json.load(open(os.path.join(H,'notes_src','notes_i18n.json'), encoding='utf-8'))
 for lang, m in o['notes'].items():
-    miss = [i['id'] for i in d['items'] if i['note'] and i['id'] not in m]
+    miss = [i['id'] for i in d['items'] if i['note'] and i['type']!='style' and i['id'] not in m]
     if miss: print('缺少', lang, miss)
 open(os.path.join(H,'notes.js'),'w',encoding='utf-8').write('window.UI_NOTES='+json.dumps(o,ensure_ascii=False)+';\n')

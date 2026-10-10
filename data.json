@@ -1,6 +1,6 @@
 {
  "generated": "2026-10-10",
- "count": 246,
+ "count": 512,
  "items": [
   {
    "id": "www-beautifului-dev",
@@ -4702,6 +4702,5945 @@
     "card",
     "tabs",
     "toast"
+   ]
+  },
+  {
+   "id": "cs-ui-aceternity-com-background",
+   "type": "style",
+   "lib": "ui-aceternity-com",
+   "libName": "Aceternity UI",
+   "kind": "background",
+   "name": "Background · Aceternity UI",
+   "url": "https://ui.aceternity.com/components/background-beams",
+   "note": "Aceternity UI 官方文档里的「背景」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "Aceternity UI"
+   ],
+   "ct": [
+    "background"
+   ]
+  },
+  {
+   "id": "cs-lib-flowbite-com-button",
+   "type": "style",
+   "lib": "lib-flowbite-com",
+   "libName": "Flowbite",
+   "kind": "button",
+   "name": "Button · Flowbite",
+   "url": "https://flowbite.com/docs/components/buttons/",
+   "note": "Flowbite 官方文档里的「按钮」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "freemium",
+   "tags": [
+    "CSS",
+    "React",
+    "Vue",
+    "Svelte",
+    "Flowbite"
+   ],
+   "ct": [
+    "button"
+   ]
+  },
+  {
+   "id": "cs-lib-vuetifyjs-com-date",
+   "type": "style",
+   "lib": "lib-vuetifyjs-com",
+   "libName": "Vuetify",
+   "kind": "date",
+   "name": "Date picker · Vuetify",
+   "url": "https://vuetifyjs.com/en/components/date-pickers/#usage",
+   "note": "Vuetify 官方文档里的「日期」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "Vue",
+    "Vuetify"
+   ],
+   "ct": [
+    "date"
+   ]
+  },
+  {
+   "id": "cs-lib-park-ui-com-button",
+   "type": "style",
+   "lib": "lib-park-ui-com",
+   "libName": "Park UI",
+   "kind": "button",
+   "name": "Button · Park UI",
+   "url": "https://park-ui.com/docs/components/button",
+   "note": "Park UI 官方文档里的「按钮」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Vue",
+    "Solid",
+    "Park UI"
+   ],
+   "ct": [
+    "button"
+   ]
+  },
+  {
+   "id": "cs-lib-bits-ui-com-dialog",
+   "type": "style",
+   "lib": "lib-bits-ui-com",
+   "libName": "Bits UI",
+   "kind": "dialog",
+   "name": "Dialog · Bits UI",
+   "url": "https://bits-ui.com/docs/components/dialog",
+   "note": "Bits UI 官方文档里的「弹窗」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "Svelte",
+    "Bits UI"
+   ],
+   "ct": [
+    "dialog"
+   ]
+  },
+  {
+   "id": "cs-lib-mui-com-material-ui-button",
+   "type": "style",
+   "lib": "lib-mui-com-material-ui",
+   "libName": "Material UI",
+   "kind": "button",
+   "name": "Button · Material UI",
+   "url": "https://mui.com/material-ui/react-button/",
+   "note": "Material UI 官方文档里的「按钮」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Material UI"
+   ],
+   "ct": [
+    "button"
+   ]
+  },
+  {
+   "id": "cs-lib-www-shadcn-vue-com-dialog",
+   "type": "style",
+   "lib": "lib-www-shadcn-vue-com",
+   "libName": "shadcn-vue",
+   "kind": "dialog",
+   "name": "Dialog · shadcn-vue",
+   "url": "https://www.shadcn-vue.com/docs/components/dialog",
+   "note": "shadcn-vue 官方文档里的「弹窗」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "Vue",
+    "shadcn-vue"
+   ],
+   "ct": [
+    "dialog"
+   ]
+  },
+  {
+   "id": "cs-lib-picocss-com-table",
+   "type": "style",
+   "lib": "lib-picocss-com",
+   "libName": "Pico CSS",
+   "kind": "table",
+   "name": "Table · Pico CSS",
+   "url": "https://picocss.com/docs/table",
+   "note": "Pico CSS 官方文档里的「表格」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "CSS",
+    "Pico CSS"
+   ],
+   "ct": [
+    "table"
+   ]
+  },
+  {
+   "id": "cs-lib-ark-ui-com-carousel",
+   "type": "style",
+   "lib": "lib-ark-ui-com",
+   "libName": "Ark UI",
+   "kind": "carousel",
+   "name": "Carousel · Ark UI",
+   "url": "https://ark-ui.com/docs/components/carousel",
+   "note": "Ark UI 官方文档里的「轮播」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Vue",
+    "Solid",
+    "Svelte",
+    "Ark UI"
+   ],
+   "ct": [
+    "carousel"
+   ]
+  },
+  {
+   "id": "cs-lib-open-props-style-layout",
+   "type": "style",
+   "lib": "lib-open-props-style",
+   "libName": "Open Props",
+   "kind": "layout",
+   "name": "Layout · Open Props",
+   "url": "https://open-props.style/",
+   "note": "Open Props 官方文档里的「区块」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "CSS",
+    "Open Props"
+   ],
+   "ct": [
+    "layout"
+   ]
+  },
+  {
+   "id": "cs-lib-semi-design-chat",
+   "type": "style",
+   "lib": "lib-semi-design",
+   "libName": "Semi Design",
+   "kind": "chat",
+   "name": "Chat · Semi Design",
+   "url": "https://semi.design/zh-CN/plus/chat",
+   "note": "Semi Design 官方文档里的「聊天」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Semi Design"
+   ],
+   "ct": [
+    "chat"
+   ]
+  },
+  {
+   "id": "cs-lib-material-angular-dev-card",
+   "type": "style",
+   "lib": "lib-material-angular-dev",
+   "libName": "Angular Material",
+   "kind": "card",
+   "name": "Card · Angular Material",
+   "url": "https://material.angular.dev/components/card/overview",
+   "note": "Angular Material 官方文档里的「卡片」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "Angular",
+    "Angular Material"
+   ],
+   "ct": [
+    "card"
+   ]
+  },
+  {
+   "id": "cs-motion-primitives-com-card",
+   "type": "style",
+   "lib": "motion-primitives-com",
+   "libName": "Motion Primitives",
+   "kind": "card",
+   "name": "Card · Motion Primitives",
+   "url": "https://motion-primitives.com/docs/tilt",
+   "note": "Motion Primitives 官方文档里的「卡片」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "动效",
+    "Motion Primitives"
+   ],
+   "ct": [
+    "card"
+   ]
+  },
+  {
+   "id": "cs-lib-nivo-rocks-chart",
+   "type": "style",
+   "lib": "lib-nivo-rocks",
+   "libName": "nivo",
+   "kind": "chart",
+   "name": "Chart · nivo",
+   "url": "https://nivo.rocks/bar/",
+   "note": "nivo 官方文档里的「图表」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "nivo"
+   ],
+   "ct": [
+    "chart"
+   ]
+  },
+  {
+   "id": "cs-lib-react-aria-adobe-com-dnd",
+   "type": "style",
+   "lib": "lib-react-aria-adobe-com",
+   "libName": "React Aria",
+   "kind": "dnd",
+   "name": "Drag & drop · React Aria",
+   "url": "https://react-aria.adobe.com/GridList",
+   "note": "React Aria 官方文档里的「拖拽」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "React Aria"
+   ],
+   "ct": [
+    "dnd"
+   ]
+  },
+  {
+   "id": "cs-www-kibo-ui-com-input",
+   "type": "style",
+   "lib": "www-kibo-ui-com",
+   "libName": "Kibo UI",
+   "kind": "input",
+   "name": "Input · Kibo UI",
+   "url": "https://www.kibo-ui.com/components/color-picker",
+   "note": "Kibo UI 官方文档里的「输入框」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "shadcn",
+    "Kibo UI"
+   ],
+   "ct": [
+    "input"
+   ]
+  },
+  {
+   "id": "cs-lib-getbootstrap-com-carousel",
+   "type": "style",
+   "lib": "lib-getbootstrap-com",
+   "libName": "Bootstrap",
+   "kind": "carousel",
+   "name": "Carousel · Bootstrap",
+   "url": "https://getbootstrap.com/docs/5.3/components/carousel/",
+   "note": "Bootstrap 官方文档里的「轮播」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "CSS",
+    "Bootstrap"
+   ],
+   "ct": [
+    "carousel"
+   ]
+  },
+  {
+   "id": "cs-lib-mantine-dev-carousel",
+   "type": "style",
+   "lib": "lib-mantine-dev",
+   "libName": "Mantine",
+   "kind": "carousel",
+   "name": "Carousel · Mantine",
+   "url": "https://mantine.dev/x/carousel/",
+   "note": "Mantine 官方文档里的「轮播」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Mantine"
+   ],
+   "ct": [
+    "carousel"
+   ]
+  },
+  {
+   "id": "cs-lib-www-radix-ui-com-themes-avatar",
+   "type": "style",
+   "lib": "lib-www-radix-ui-com-themes",
+   "libName": "Radix Themes",
+   "kind": "avatar",
+   "name": "Avatar · Radix Themes",
+   "url": "https://www.radix-ui.com/themes/docs/components/avatar",
+   "note": "Radix Themes 官方文档里的「头像」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Radix Themes"
+   ],
+   "ct": [
+    "avatar"
+   ]
+  },
+  {
+   "id": "cs-lib-mui-com-x-chart",
+   "type": "style",
+   "lib": "lib-mui-com-x",
+   "libName": "MUI X",
+   "kind": "chart",
+   "name": "Chart · MUI X",
+   "url": "https://mui.com/x/react-charts/bars/",
+   "note": "MUI X 官方文档里的「图表」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "freemium",
+   "tags": [
+    "React",
+    "MUI X"
+   ],
+   "ct": [
+    "chart"
+   ]
+  },
+  {
+   "id": "cs-lib-daisyui-com-carousel",
+   "type": "style",
+   "lib": "lib-daisyui-com",
+   "libName": "daisyUI",
+   "kind": "carousel",
+   "name": "Carousel · daisyUI",
+   "url": "https://daisyui.com/components/carousel/",
+   "note": "daisyUI 官方文档里的「轮播」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "CSS",
+    "daisyUI"
+   ],
+   "ct": [
+    "carousel"
+   ]
+  },
+  {
+   "id": "cs-www-heroui-com-dialog",
+   "type": "style",
+   "lib": "www-heroui-com",
+   "libName": "HeroUI",
+   "kind": "dialog",
+   "name": "Dialog · HeroUI",
+   "url": "https://heroui.com/en/docs/react/components/modal",
+   "note": "HeroUI 官方文档里的「弹窗」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "HeroUI"
+   ],
+   "ct": [
+    "dialog"
+   ]
+  },
+  {
+   "id": "cs-lib-ionicframework-com-dialog",
+   "type": "style",
+   "lib": "lib-ionicframework-com",
+   "libName": "Ionic",
+   "kind": "dialog",
+   "name": "Dialog · Ionic",
+   "url": "https://ionicframework.com/docs/api/modal",
+   "note": "Ionic 官方文档里的「弹窗」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Vue",
+    "Angular",
+    "Ionic"
+   ],
+   "ct": [
+    "dialog"
+   ]
+  },
+  {
+   "id": "cs-ui-shadcn-com-chart",
+   "type": "style",
+   "lib": "ui-shadcn-com",
+   "libName": "shadcn/ui",
+   "kind": "chart",
+   "name": "Chart · shadcn/ui",
+   "url": "https://ui.shadcn.com/docs/components/base/chart",
+   "note": "shadcn/ui 官方文档里的「图表」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "shadcn",
+    "shadcn/ui"
+   ],
+   "ct": [
+    "chart"
+   ]
+  },
+  {
+   "id": "cs-magicui-design-card",
+   "type": "style",
+   "lib": "magicui-design",
+   "libName": "Magic UI",
+   "kind": "card",
+   "name": "Card · Magic UI",
+   "url": "https://magicui.design/docs/components/magic-card",
+   "note": "Magic UI 官方文档里的「卡片」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "Magic UI"
+   ],
+   "ct": [
+    "card"
+   ]
+  },
+  {
+   "id": "cs-lib-echarts-apache-org-chart",
+   "type": "style",
+   "lib": "lib-echarts-apache-org",
+   "libName": "ECharts",
+   "kind": "chart",
+   "name": "Chart · ECharts",
+   "url": "https://echarts.apache.org/examples/en/editor.html?c=area-basic",
+   "note": "ECharts 官方文档里的「图表」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "JS",
+    "ECharts"
+   ],
+   "ct": [
+    "chart"
+   ]
+  },
+  {
+   "id": "cs-lib-vaul-emilkowal-ski-dialog",
+   "type": "style",
+   "lib": "lib-vaul-emilkowal-ski",
+   "libName": "Vaul",
+   "kind": "dialog",
+   "name": "Dialog · Vaul",
+   "url": "https://vaul.emilkowal.ski/",
+   "note": "Vaul 官方文档里的「弹窗」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Vaul"
+   ],
+   "ct": [
+    "dialog"
+   ]
+  },
+  {
+   "id": "cs-lib-www-spartan-ng-card",
+   "type": "style",
+   "lib": "lib-www-spartan-ng",
+   "libName": "Spartan",
+   "kind": "card",
+   "name": "Card · Spartan",
+   "url": "https://www.spartan.ng/components/card",
+   "note": "Spartan 官方文档里的「卡片」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "Angular",
+    "Spartan"
+   ],
+   "ct": [
+    "card"
+   ]
+  },
+  {
+   "id": "cs-lib-www-shadcn-svelte-com-card",
+   "type": "style",
+   "lib": "lib-www-shadcn-svelte-com",
+   "libName": "shadcn-svelte",
+   "kind": "card",
+   "name": "Card · shadcn-svelte",
+   "url": "https://www.shadcn-svelte.com/docs/components/card",
+   "note": "shadcn-svelte 官方文档里的「卡片」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "Svelte",
+    "shadcn-svelte"
+   ],
+   "ct": [
+    "card"
+   ]
+  },
+  {
+   "id": "cs-lib-primevue-org-chart",
+   "type": "style",
+   "lib": "lib-primevue-org",
+   "libName": "PrimeVue",
+   "kind": "chart",
+   "name": "Chart · PrimeVue",
+   "url": "https://primevue.dev/chart/",
+   "note": "PrimeVue 官方文档里的「图表」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "freemium",
+   "tags": [
+    "Vue",
+    "PrimeVue"
+   ],
+   "ct": [
+    "chart"
+   ]
+  },
+  {
+   "id": "cs-lib-www-skeleton-dev-tabs",
+   "type": "style",
+   "lib": "lib-www-skeleton-dev",
+   "libName": "Skeleton",
+   "kind": "tabs",
+   "name": "Tabs · Skeleton",
+   "url": "https://www.skeleton.dev/docs/svelte/framework-components/tabs",
+   "note": "Skeleton 官方文档里的「标签页」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "Svelte",
+    "React",
+    "Skeleton"
+   ],
+   "ct": [
+    "tabs"
+   ]
+  },
+  {
+   "id": "cs-lib-ant-design-button",
+   "type": "style",
+   "lib": "lib-ant-design",
+   "libName": "Ant Design",
+   "kind": "button",
+   "name": "Button · Ant Design",
+   "url": "https://ant.design/components/button",
+   "note": "Ant Design 官方文档里的「按钮」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Ant Design"
+   ],
+   "ct": [
+    "button"
+   ]
+  },
+  {
+   "id": "cs-lib-g2-antv-antgroup-com-chart",
+   "type": "style",
+   "lib": "lib-g2-antv-antgroup-com",
+   "libName": "AntV G2",
+   "kind": "chart",
+   "name": "Chart · AntV G2",
+   "url": "https://g2.antv.antgroup.com/en/examples",
+   "note": "AntV G2 官方文档里的「图表」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "JS",
+    "AntV G2"
+   ],
+   "ct": [
+    "chart"
+   ]
+  },
+  {
+   "id": "cs-lib-primeng-org-button",
+   "type": "style",
+   "lib": "lib-primeng-org",
+   "libName": "PrimeNG",
+   "kind": "button",
+   "name": "Button · PrimeNG",
+   "url": "https://primeng.dev/button",
+   "note": "PrimeNG 官方文档里的「按钮」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "freemium",
+   "tags": [
+    "Angular",
+    "PrimeNG"
+   ],
+   "ct": [
+    "button"
+   ]
+  },
+  {
+   "id": "cs-lib-heroicons-com-icon",
+   "type": "style",
+   "lib": "lib-heroicons-com",
+   "libName": "Heroicons",
+   "kind": "icon",
+   "name": "Icons · Heroicons",
+   "url": "https://heroicons.com/",
+   "note": "Heroicons 官方文档里的「图标」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Vue",
+    "Heroicons"
+   ],
+   "ct": [
+    "icon"
+   ]
+  },
+  {
+   "id": "cs-lib-tdesign-tencent-com-table",
+   "type": "style",
+   "lib": "lib-tdesign-tencent-com",
+   "libName": "TDesign",
+   "kind": "table",
+   "name": "Table · TDesign",
+   "url": "https://tdesign.tencent.com/vue-next/components/table",
+   "note": "TDesign 官方文档里的「表格」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Vue",
+    "TDesign"
+   ],
+   "ct": [
+    "table"
+   ]
+  },
+  {
+   "id": "cs-lib-headlessui-com-tabs",
+   "type": "style",
+   "lib": "lib-headlessui-com",
+   "libName": "Headless UI",
+   "kind": "tabs",
+   "name": "Tabs · Headless UI",
+   "url": "https://headlessui.com/react/tabs",
+   "note": "Headless UI 官方文档里的「标签页」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Vue",
+    "Headless UI"
+   ],
+   "ct": [
+    "tabs"
+   ]
+  },
+  {
+   "id": "cs-lib-kobalte-dev-dialog",
+   "type": "style",
+   "lib": "lib-kobalte-dev",
+   "libName": "Kobalte",
+   "kind": "dialog",
+   "name": "Dialog · Kobalte",
+   "url": "https://kobalte.dev/docs/core/components/dialog",
+   "note": "Kobalte 官方文档里的「弹窗」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "Solid",
+    "Kobalte"
+   ],
+   "ct": [
+    "dialog"
+   ]
+  },
+  {
+   "id": "cs-lib-react-hot-toast-com-toast",
+   "type": "style",
+   "lib": "lib-react-hot-toast-com",
+   "libName": "react-hot-toast",
+   "kind": "toast",
+   "name": "Toast · react-hot-toast",
+   "url": "https://react-hot-toast.com/",
+   "note": "react-hot-toast 官方文档里的「通知」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "react-hot-toast"
+   ],
+   "ct": [
+    "toast"
+   ]
+  },
+  {
+   "id": "cs-lib-chakra-ui-com-button",
+   "type": "style",
+   "lib": "lib-chakra-ui-com",
+   "libName": "Chakra UI",
+   "kind": "button",
+   "name": "Button · Chakra UI",
+   "url": "https://chakra-ui.com/docs/components/button",
+   "note": "Chakra UI 官方文档里的「按钮」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Chakra UI"
+   ],
+   "ct": [
+    "button"
+   ]
+  },
+  {
+   "id": "cs-lib-ui-nuxt-com-tabs",
+   "type": "style",
+   "lib": "lib-ui-nuxt-com",
+   "libName": "Nuxt UI",
+   "kind": "tabs",
+   "name": "Tabs · Nuxt UI",
+   "url": "https://ui.nuxt.com/docs/components/tabs",
+   "note": "Nuxt UI 官方文档里的「标签页」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "Vue",
+    "Nuxt UI"
+   ],
+   "ct": [
+    "tabs"
+   ]
+  },
+  {
+   "id": "cs-lib-www-hyperui-dev-layout",
+   "type": "style",
+   "lib": "lib-www-hyperui-dev",
+   "libName": "HyperUI",
+   "kind": "layout",
+   "name": "Layout · HyperUI",
+   "url": "https://www.hyperui.dev/components/marketing/pricing/",
+   "note": "HyperUI 官方文档里的「区块」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "CSS",
+    "HyperUI"
+   ],
+   "ct": [
+    "layout"
+   ]
+  },
+  {
+   "id": "cs-lib-quasar-dev-date",
+   "type": "style",
+   "lib": "lib-quasar-dev",
+   "libName": "Quasar",
+   "kind": "date",
+   "name": "Date picker · Quasar",
+   "url": "https://quasar.dev/vue-components/date/",
+   "note": "Quasar 官方文档里的「日期」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "Vue",
+    "Quasar"
+   ],
+   "ct": [
+    "date"
+   ]
+  },
+  {
+   "id": "cs-lib-www-blocknotejs-org-editor",
+   "type": "style",
+   "lib": "lib-www-blocknotejs-org",
+   "libName": "BlockNote",
+   "kind": "editor",
+   "name": "Editor · BlockNote",
+   "url": "https://www.blocknotejs.org/demo#nf2ny",
+   "note": "BlockNote 官方文档里的「编辑器」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "BlockNote"
+   ],
+   "ct": [
+    "editor"
+   ]
+  },
+  {
+   "id": "cs-lib-lucide-dev-icon",
+   "type": "style",
+   "lib": "lib-lucide-dev",
+   "libName": "Lucide",
+   "kind": "icon",
+   "name": "Icons · Lucide",
+   "url": "https://lucide.dev/icons/",
+   "note": "Lucide 官方文档里的「图标」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Vue",
+    "Svelte",
+    "JS",
+    "Lucide"
+   ],
+   "ct": [
+    "icon"
+   ]
+  },
+  {
+   "id": "cs-lib-base-ui-com-dialog",
+   "type": "style",
+   "lib": "lib-base-ui-com",
+   "libName": "Base UI",
+   "kind": "dialog",
+   "name": "Dialog · Base UI",
+   "url": "https://base-ui.com/react/components/dialog",
+   "note": "Base UI 官方文档里的「弹窗」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Base UI"
+   ],
+   "ct": [
+    "dialog"
+   ]
+  },
+  {
+   "id": "cs-lib-ng-ant-design-button",
+   "type": "style",
+   "lib": "lib-ng-ant-design",
+   "libName": "NG-ZORRO",
+   "kind": "button",
+   "name": "Button · NG-ZORRO",
+   "url": "https://ng.ant.design/components/button/en",
+   "note": "NG-ZORRO 官方文档里的「按钮」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "Angular",
+    "NG-ZORRO"
+   ],
+   "ct": [
+    "button"
+   ]
+  },
+  {
+   "id": "cs-lib-www-ag-grid-com-table",
+   "type": "style",
+   "lib": "lib-www-ag-grid-com",
+   "libName": "AG Grid",
+   "kind": "table",
+   "name": "Table · AG Grid",
+   "url": "https://www.ag-grid.com/example/",
+   "note": "AG Grid 官方文档里的「表格」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "freemium",
+   "tags": [
+    "React",
+    "Vue",
+    "Angular",
+    "JS",
+    "AG Grid"
+   ],
+   "ct": [
+    "table"
+   ]
+  },
+  {
+   "id": "cs-lib-element-plus-org-button",
+   "type": "style",
+   "lib": "lib-element-plus-org",
+   "libName": "Element Plus",
+   "kind": "button",
+   "name": "Button · Element Plus",
+   "url": "https://element-plus.org/en-US/component/button.html",
+   "note": "Element Plus 官方文档里的「按钮」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "Vue",
+    "Element Plus"
+   ],
+   "ct": [
+    "button"
+   ]
+  },
+  {
+   "id": "cs-lib-tremor-so-table",
+   "type": "style",
+   "lib": "lib-tremor-so",
+   "libName": "Tremor",
+   "kind": "table",
+   "name": "Table · Tremor",
+   "url": "https://www.tremor.so/docs/ui/table",
+   "note": "Tremor 官方文档里的「表格」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Tremor"
+   ],
+   "ct": [
+    "table"
+   ]
+  },
+  {
+   "id": "cs-lib-arco-design-table",
+   "type": "style",
+   "lib": "lib-arco-design",
+   "libName": "Arco Design",
+   "kind": "table",
+   "name": "Table · Arco Design",
+   "url": "https://arco.design/react/components/table",
+   "note": "Arco Design 官方文档里的「表格」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Vue",
+    "Arco Design"
+   ],
+   "ct": [
+    "table"
+   ]
+  },
+  {
+   "id": "cs-lib-uppy-io-upload",
+   "type": "style",
+   "lib": "lib-uppy-io",
+   "libName": "Uppy",
+   "kind": "upload",
+   "name": "Upload · Uppy",
+   "url": "https://uppy.io/examples/",
+   "note": "Uppy 官方文档里的「上传」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Vue",
+    "JS",
+    "Uppy"
+   ],
+   "ct": [
+    "upload"
+   ]
+  },
+  {
+   "id": "cs-x-ant-design-avatar",
+   "type": "style",
+   "lib": "x-ant-design",
+   "libName": "Ant Design X",
+   "kind": "avatar",
+   "name": "Avatar · Ant Design X",
+   "url": "https://x.ant.design/components/welcome",
+   "note": "Ant Design X 官方文档里的「头像」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "中文",
+    "Ant Design X"
+   ],
+   "ct": [
+    "avatar"
+   ]
+  },
+  {
+   "id": "cs-lib-primer-style-nav",
+   "type": "style",
+   "lib": "lib-primer-style",
+   "libName": "Primer",
+   "kind": "nav",
+   "name": "Navigation · Primer",
+   "url": "https://primer.style/product/components/tree-view/",
+   "note": "Primer 官方文档里的「导航」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Primer"
+   ],
+   "ct": [
+    "nav"
+   ]
+  },
+  {
+   "id": "cs-lib-reactflow-dev-flow",
+   "type": "style",
+   "lib": "lib-reactflow-dev",
+   "libName": "React Flow",
+   "kind": "flow",
+   "name": "Flow · React Flow",
+   "url": "https://reactflow.dev/examples/overview",
+   "note": "React Flow 官方文档里的「流程图」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "freemium",
+   "tags": [
+    "React",
+    "Svelte",
+    "React Flow"
+   ],
+   "ct": [
+    "flow"
+   ]
+  },
+  {
+   "id": "cs-lib-carbondesignsystem-com-table",
+   "type": "style",
+   "lib": "lib-carbondesignsystem-com",
+   "libName": "Carbon",
+   "kind": "table",
+   "name": "Table · Carbon",
+   "url": "https://www.carbondesignsystem.com/building-blocks/core/components/data-table/guidelines",
+   "note": "Carbon 官方文档里的「表格」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Web",
+    "Components",
+    "Carbon"
+   ],
+   "ct": [
+    "table"
+   ]
+  },
+  {
+   "id": "cs-lib-daypicker-dev-date",
+   "type": "style",
+   "lib": "lib-daypicker-dev",
+   "libName": "React DayPicker",
+   "kind": "date",
+   "name": "Date picker · React DayPicker",
+   "url": "https://daypicker.dev/",
+   "note": "React DayPicker 官方文档里的「日期」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "React DayPicker"
+   ],
+   "ct": [
+    "date"
+   ]
+  },
+  {
+   "id": "cs-lib-input-otp-rodz-dev-input",
+   "type": "style",
+   "lib": "lib-input-otp-rodz-dev",
+   "libName": "input-otp",
+   "kind": "input",
+   "name": "Input · input-otp",
+   "url": "https://input-otp.rodz.dev/",
+   "note": "input-otp 官方文档里的「输入框」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "input-otp"
+   ],
+   "ct": [
+    "input"
+   ]
+  },
+  {
+   "id": "cs-ui-aceternity-com-carousel",
+   "type": "style",
+   "lib": "ui-aceternity-com",
+   "libName": "Aceternity UI",
+   "kind": "carousel",
+   "name": "Carousel · Aceternity UI",
+   "url": "https://ui.aceternity.com/components/apple-cards-carousel",
+   "note": "Aceternity UI 官方文档里的「轮播」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "Aceternity UI"
+   ],
+   "ct": [
+    "carousel"
+   ]
+  },
+  {
+   "id": "cs-lib-flowbite-com-carousel",
+   "type": "style",
+   "lib": "lib-flowbite-com",
+   "libName": "Flowbite",
+   "kind": "carousel",
+   "name": "Carousel · Flowbite",
+   "url": "https://flowbite.com/docs/components/carousel/",
+   "note": "Flowbite 官方文档里的「轮播」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "freemium",
+   "tags": [
+    "CSS",
+    "React",
+    "Vue",
+    "Svelte",
+    "Flowbite"
+   ],
+   "ct": [
+    "carousel"
+   ]
+  },
+  {
+   "id": "cs-lib-vuetifyjs-com-table",
+   "type": "style",
+   "lib": "lib-vuetifyjs-com",
+   "libName": "Vuetify",
+   "kind": "table",
+   "name": "Table · Vuetify",
+   "url": "https://vuetifyjs.com/en/components/data-tables/basics/#usage",
+   "note": "Vuetify 官方文档里的「表格」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "Vue",
+    "Vuetify"
+   ],
+   "ct": [
+    "table"
+   ]
+  },
+  {
+   "id": "cs-lib-park-ui-com-dialog",
+   "type": "style",
+   "lib": "lib-park-ui-com",
+   "libName": "Park UI",
+   "kind": "dialog",
+   "name": "Dialog · Park UI",
+   "url": "https://park-ui.com/docs/components/dialog",
+   "note": "Park UI 官方文档里的「弹窗」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Vue",
+    "Solid",
+    "Park UI"
+   ],
+   "ct": [
+    "dialog"
+   ]
+  },
+  {
+   "id": "cs-lib-bits-ui-com-menu",
+   "type": "style",
+   "lib": "lib-bits-ui-com",
+   "libName": "Bits UI",
+   "kind": "menu",
+   "name": "Menu · Bits UI",
+   "url": "https://bits-ui.com/docs/components/dropdown-menu",
+   "note": "Bits UI 官方文档里的「菜单」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "Svelte",
+    "Bits UI"
+   ],
+   "ct": [
+    "menu"
+   ]
+  },
+  {
+   "id": "cs-lib-mui-com-material-ui-input",
+   "type": "style",
+   "lib": "lib-mui-com-material-ui",
+   "libName": "Material UI",
+   "kind": "input",
+   "name": "Input · Material UI",
+   "url": "https://mui.com/material-ui/react-autocomplete/",
+   "note": "Material UI 官方文档里的「输入框」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Material UI"
+   ],
+   "ct": [
+    "input"
+   ]
+  },
+  {
+   "id": "cs-lib-www-shadcn-vue-com-card",
+   "type": "style",
+   "lib": "lib-www-shadcn-vue-com",
+   "libName": "shadcn-vue",
+   "kind": "card",
+   "name": "Card · shadcn-vue",
+   "url": "https://www.shadcn-vue.com/docs/components/card",
+   "note": "shadcn-vue 官方文档里的「卡片」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "Vue",
+    "shadcn-vue"
+   ],
+   "ct": [
+    "card"
+   ]
+  },
+  {
+   "id": "cs-lib-ark-ui-com-tabs",
+   "type": "style",
+   "lib": "lib-ark-ui-com",
+   "libName": "Ark UI",
+   "kind": "tabs",
+   "name": "Tabs · Ark UI",
+   "url": "https://ark-ui.com/docs/components/tabs",
+   "note": "Ark UI 官方文档里的「标签页」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Vue",
+    "Solid",
+    "Svelte",
+    "Ark UI"
+   ],
+   "ct": [
+    "tabs"
+   ]
+  },
+  {
+   "id": "cs-lib-semi-design-table",
+   "type": "style",
+   "lib": "lib-semi-design",
+   "libName": "Semi Design",
+   "kind": "table",
+   "name": "Table · Semi Design",
+   "url": "https://semi.design/zh-CN/show/table",
+   "note": "Semi Design 官方文档里的「表格」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Semi Design"
+   ],
+   "ct": [
+    "table"
+   ]
+  },
+  {
+   "id": "cs-lib-material-angular-dev-dialog",
+   "type": "style",
+   "lib": "lib-material-angular-dev",
+   "libName": "Angular Material",
+   "kind": "dialog",
+   "name": "Dialog · Angular Material",
+   "url": "https://material.angular.dev/components/dialog/overview",
+   "note": "Angular Material 官方文档里的「弹窗」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "Angular",
+    "Angular Material"
+   ],
+   "ct": [
+    "dialog"
+   ]
+  },
+  {
+   "id": "cs-motion-primitives-com-dialog",
+   "type": "style",
+   "lib": "motion-primitives-com",
+   "libName": "Motion Primitives",
+   "kind": "dialog",
+   "name": "Dialog · Motion Primitives",
+   "url": "https://motion-primitives.com/docs/morphing-dialog",
+   "note": "Motion Primitives 官方文档里的「弹窗」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "动效",
+    "Motion Primitives"
+   ],
+   "ct": [
+    "dialog"
+   ]
+  },
+  {
+   "id": "cs-lib-getbootstrap-com-card",
+   "type": "style",
+   "lib": "lib-getbootstrap-com",
+   "libName": "Bootstrap",
+   "kind": "card",
+   "name": "Card · Bootstrap",
+   "url": "https://getbootstrap.com/docs/5.3/components/card/",
+   "note": "Bootstrap 官方文档里的「卡片」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "CSS",
+    "Bootstrap"
+   ],
+   "ct": [
+    "card"
+   ]
+  },
+  {
+   "id": "cs-lib-mantine-dev-card",
+   "type": "style",
+   "lib": "lib-mantine-dev",
+   "libName": "Mantine",
+   "kind": "card",
+   "name": "Card · Mantine",
+   "url": "https://mantine.dev/core/card/",
+   "note": "Mantine 官方文档里的「卡片」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Mantine"
+   ],
+   "ct": [
+    "card"
+   ]
+  },
+  {
+   "id": "cs-lib-www-radix-ui-com-themes-table",
+   "type": "style",
+   "lib": "lib-www-radix-ui-com-themes",
+   "libName": "Radix Themes",
+   "kind": "table",
+   "name": "Table · Radix Themes",
+   "url": "https://www.radix-ui.com/themes/docs/components/table",
+   "note": "Radix Themes 官方文档里的「表格」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Radix Themes"
+   ],
+   "ct": [
+    "table"
+   ]
+  },
+  {
+   "id": "cs-lib-mui-com-x-table",
+   "type": "style",
+   "lib": "lib-mui-com-x",
+   "libName": "MUI X",
+   "kind": "table",
+   "name": "Table · MUI X",
+   "url": "https://mui.com/x/react-data-grid/",
+   "note": "MUI X 官方文档里的「表格」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "freemium",
+   "tags": [
+    "React",
+    "MUI X"
+   ],
+   "ct": [
+    "table"
+   ]
+  },
+  {
+   "id": "cs-lib-daisyui-com-avatar",
+   "type": "style",
+   "lib": "lib-daisyui-com",
+   "libName": "daisyUI",
+   "kind": "avatar",
+   "name": "Avatar · daisyUI",
+   "url": "https://daisyui.com/components/avatar/",
+   "note": "daisyUI 官方文档里的「头像」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "CSS",
+    "daisyUI"
+   ],
+   "ct": [
+    "avatar"
+   ]
+  },
+  {
+   "id": "cs-www-heroui-com-table",
+   "type": "style",
+   "lib": "www-heroui-com",
+   "libName": "HeroUI",
+   "kind": "table",
+   "name": "Table · HeroUI",
+   "url": "https://heroui.com/en/docs/react/components/table",
+   "note": "HeroUI 官方文档里的「表格」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "HeroUI"
+   ],
+   "ct": [
+    "table"
+   ]
+  },
+  {
+   "id": "cs-lib-ionicframework-com-toast",
+   "type": "style",
+   "lib": "lib-ionicframework-com",
+   "libName": "Ionic",
+   "kind": "toast",
+   "name": "Toast · Ionic",
+   "url": "https://ionicframework.com/docs/api/toast",
+   "note": "Ionic 官方文档里的「通知」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Vue",
+    "Angular",
+    "Ionic"
+   ],
+   "ct": [
+    "toast"
+   ]
+  },
+  {
+   "id": "cs-ui-shadcn-com-card",
+   "type": "style",
+   "lib": "ui-shadcn-com",
+   "libName": "shadcn/ui",
+   "kind": "card",
+   "name": "Card · shadcn/ui",
+   "url": "https://ui.shadcn.com/docs/components/base/card",
+   "note": "shadcn/ui 官方文档里的「卡片」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "shadcn",
+    "shadcn/ui"
+   ],
+   "ct": [
+    "card"
+   ]
+  },
+  {
+   "id": "cs-magicui-design-button",
+   "type": "style",
+   "lib": "magicui-design",
+   "libName": "Magic UI",
+   "kind": "button",
+   "name": "Button · Magic UI",
+   "url": "https://magicui.design/docs/components/shimmer-button",
+   "note": "Magic UI 官方文档里的「按钮」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "Magic UI"
+   ],
+   "ct": [
+    "button"
+   ]
+  },
+  {
+   "id": "cs-lib-www-spartan-ng-tabs",
+   "type": "style",
+   "lib": "lib-www-spartan-ng",
+   "libName": "Spartan",
+   "kind": "tabs",
+   "name": "Tabs · Spartan",
+   "url": "https://www.spartan.ng/components/tabs",
+   "note": "Spartan 官方文档里的「标签页」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "Angular",
+    "Spartan"
+   ],
+   "ct": [
+    "tabs"
+   ]
+  },
+  {
+   "id": "cs-lib-www-shadcn-svelte-com-table",
+   "type": "style",
+   "lib": "lib-www-shadcn-svelte-com",
+   "libName": "shadcn-svelte",
+   "kind": "table",
+   "name": "Table · shadcn-svelte",
+   "url": "https://www.shadcn-svelte.com/docs/components/data-table",
+   "note": "shadcn-svelte 官方文档里的「表格」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "Svelte",
+    "shadcn-svelte"
+   ],
+   "ct": [
+    "table"
+   ]
+  },
+  {
+   "id": "cs-lib-primevue-org-select",
+   "type": "style",
+   "lib": "lib-primevue-org",
+   "libName": "PrimeVue",
+   "kind": "select",
+   "name": "Select · PrimeVue",
+   "url": "https://primevue.dev/select/",
+   "note": "PrimeVue 官方文档里的「选择器」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "freemium",
+   "tags": [
+    "Vue",
+    "PrimeVue"
+   ],
+   "ct": [
+    "select"
+   ]
+  },
+  {
+   "id": "cs-lib-www-skeleton-dev-date",
+   "type": "style",
+   "lib": "lib-www-skeleton-dev",
+   "libName": "Skeleton",
+   "kind": "date",
+   "name": "Date picker · Skeleton",
+   "url": "https://www.skeleton.dev/docs/svelte/framework-components/date-picker",
+   "note": "Skeleton 官方文档里的「日期」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "Svelte",
+    "React",
+    "Skeleton"
+   ],
+   "ct": [
+    "date"
+   ]
+  },
+  {
+   "id": "cs-lib-ant-design-table",
+   "type": "style",
+   "lib": "lib-ant-design",
+   "libName": "Ant Design",
+   "kind": "table",
+   "name": "Table · Ant Design",
+   "url": "https://ant.design/components/table",
+   "note": "Ant Design 官方文档里的「表格」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Ant Design"
+   ],
+   "ct": [
+    "table"
+   ]
+  },
+  {
+   "id": "cs-lib-primeng-org-select",
+   "type": "style",
+   "lib": "lib-primeng-org",
+   "libName": "PrimeNG",
+   "kind": "select",
+   "name": "Select · PrimeNG",
+   "url": "https://primeng.dev/select",
+   "note": "PrimeNG 官方文档里的「选择器」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "freemium",
+   "tags": [
+    "Angular",
+    "PrimeNG"
+   ],
+   "ct": [
+    "select"
+   ]
+  },
+  {
+   "id": "cs-lib-tdesign-tencent-com-upload",
+   "type": "style",
+   "lib": "lib-tdesign-tencent-com",
+   "libName": "TDesign",
+   "kind": "upload",
+   "name": "Upload · TDesign",
+   "url": "https://tdesign.tencent.com/vue-next/components/upload",
+   "note": "TDesign 官方文档里的「上传」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Vue",
+    "TDesign"
+   ],
+   "ct": [
+    "upload"
+   ]
+  },
+  {
+   "id": "cs-lib-headlessui-com-select",
+   "type": "style",
+   "lib": "lib-headlessui-com",
+   "libName": "Headless UI",
+   "kind": "select",
+   "name": "Select · Headless UI",
+   "url": "https://headlessui.com/react/listbox",
+   "note": "Headless UI 官方文档里的「选择器」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Vue",
+    "Headless UI"
+   ],
+   "ct": [
+    "select"
+   ]
+  },
+  {
+   "id": "cs-lib-kobalte-dev-tabs",
+   "type": "style",
+   "lib": "lib-kobalte-dev",
+   "libName": "Kobalte",
+   "kind": "tabs",
+   "name": "Tabs · Kobalte",
+   "url": "https://kobalte.dev/docs/core/components/tabs",
+   "note": "Kobalte 官方文档里的「标签页」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "Solid",
+    "Kobalte"
+   ],
+   "ct": [
+    "tabs"
+   ]
+  },
+  {
+   "id": "cs-lib-chakra-ui-com-card",
+   "type": "style",
+   "lib": "lib-chakra-ui-com",
+   "libName": "Chakra UI",
+   "kind": "card",
+   "name": "Card · Chakra UI",
+   "url": "https://chakra-ui.com/docs/components/card",
+   "note": "Chakra UI 官方文档里的「卡片」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Chakra UI"
+   ],
+   "ct": [
+    "card"
+   ]
+  },
+  {
+   "id": "cs-lib-ui-nuxt-com-table",
+   "type": "style",
+   "lib": "lib-ui-nuxt-com",
+   "libName": "Nuxt UI",
+   "kind": "table",
+   "name": "Table · Nuxt UI",
+   "url": "https://ui.nuxt.com/docs/components/table",
+   "note": "Nuxt UI 官方文档里的「表格」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "Vue",
+    "Nuxt UI"
+   ],
+   "ct": [
+    "table"
+   ]
+  },
+  {
+   "id": "cs-lib-www-hyperui-dev-table",
+   "type": "style",
+   "lib": "lib-www-hyperui-dev",
+   "libName": "HyperUI",
+   "kind": "table",
+   "name": "Table · HyperUI",
+   "url": "https://www.hyperui.dev/components/application/tables/",
+   "note": "HyperUI 官方文档里的「表格」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "CSS",
+    "HyperUI"
+   ],
+   "ct": [
+    "table"
+   ]
+  },
+  {
+   "id": "cs-lib-base-ui-com-tabs",
+   "type": "style",
+   "lib": "lib-base-ui-com",
+   "libName": "Base UI",
+   "kind": "tabs",
+   "name": "Tabs · Base UI",
+   "url": "https://base-ui.com/react/components/tabs",
+   "note": "Base UI 官方文档里的「标签页」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Base UI"
+   ],
+   "ct": [
+    "tabs"
+   ]
+  },
+  {
+   "id": "cs-lib-ng-ant-design-table",
+   "type": "style",
+   "lib": "lib-ng-ant-design",
+   "libName": "NG-ZORRO",
+   "kind": "table",
+   "name": "Table · NG-ZORRO",
+   "url": "https://ng.ant.design/components/table/en",
+   "note": "NG-ZORRO 官方文档里的「表格」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "Angular",
+    "NG-ZORRO"
+   ],
+   "ct": [
+    "table"
+   ]
+  },
+  {
+   "id": "cs-lib-element-plus-org-nav",
+   "type": "style",
+   "lib": "lib-element-plus-org",
+   "libName": "Element Plus",
+   "kind": "nav",
+   "name": "Navigation · Element Plus",
+   "url": "https://element-plus.org/en-US/component/steps.html",
+   "note": "Element Plus 官方文档里的「导航」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "Vue",
+    "Element Plus"
+   ],
+   "ct": [
+    "nav"
+   ]
+  },
+  {
+   "id": "cs-lib-arco-design-button",
+   "type": "style",
+   "lib": "lib-arco-design",
+   "libName": "Arco Design",
+   "kind": "button",
+   "name": "Button · Arco Design",
+   "url": "https://arco.design/react/components/button",
+   "note": "Arco Design 官方文档里的「按钮」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Vue",
+    "Arco Design"
+   ],
+   "ct": [
+    "button"
+   ]
+  },
+  {
+   "id": "cs-x-ant-design-input",
+   "type": "style",
+   "lib": "x-ant-design",
+   "libName": "Ant Design X",
+   "kind": "input",
+   "name": "Input · Ant Design X",
+   "url": "https://x.ant.design/components/sender",
+   "note": "Ant Design X 官方文档里的「输入框」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "中文",
+    "Ant Design X"
+   ],
+   "ct": [
+    "input"
+   ]
+  },
+  {
+   "id": "cs-lib-primer-style-toast",
+   "type": "style",
+   "lib": "lib-primer-style",
+   "libName": "Primer",
+   "kind": "toast",
+   "name": "Toast · Primer",
+   "url": "https://primer.style/product/components/banner/",
+   "note": "Primer 官方文档里的「通知」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Primer"
+   ],
+   "ct": [
+    "toast"
+   ]
+  },
+  {
+   "id": "cs-lib-carbondesignsystem-com-button",
+   "type": "style",
+   "lib": "lib-carbondesignsystem-com",
+   "libName": "Carbon",
+   "kind": "button",
+   "name": "Button · Carbon",
+   "url": "https://www.carbondesignsystem.com/building-blocks/core/components/button/guidelines",
+   "note": "Carbon 官方文档里的「按钮」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Web",
+    "Components",
+    "Carbon"
+   ],
+   "ct": [
+    "button"
+   ]
+  },
+  {
+   "id": "cs-ui-aceternity-com-card",
+   "type": "style",
+   "lib": "ui-aceternity-com",
+   "libName": "Aceternity UI",
+   "kind": "card",
+   "name": "Card · Aceternity UI",
+   "url": "https://ui.aceternity.com/components/3d-card-effect",
+   "note": "Aceternity UI 官方文档里的「卡片」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "Aceternity UI"
+   ],
+   "ct": [
+    "card"
+   ]
+  },
+  {
+   "id": "cs-lib-flowbite-com-table",
+   "type": "style",
+   "lib": "lib-flowbite-com",
+   "libName": "Flowbite",
+   "kind": "table",
+   "name": "Table · Flowbite",
+   "url": "https://flowbite.com/docs/components/tables/",
+   "note": "Flowbite 官方文档里的「表格」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "freemium",
+   "tags": [
+    "CSS",
+    "React",
+    "Vue",
+    "Svelte",
+    "Flowbite"
+   ],
+   "ct": [
+    "table"
+   ]
+  },
+  {
+   "id": "cs-lib-vuetifyjs-com-chip",
+   "type": "style",
+   "lib": "lib-vuetifyjs-com",
+   "libName": "Vuetify",
+   "kind": "button",
+   "name": "Button · Vuetify",
+   "url": "https://vuetifyjs.com/en/components/chips/#usage",
+   "note": "Vuetify 官方文档里的「按钮」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "Vue",
+    "Vuetify"
+   ],
+   "ct": [
+    "button"
+   ]
+  },
+  {
+   "id": "cs-lib-park-ui-com-card",
+   "type": "style",
+   "lib": "lib-park-ui-com",
+   "libName": "Park UI",
+   "kind": "card",
+   "name": "Card · Park UI",
+   "url": "https://park-ui.com/docs/components/card",
+   "note": "Park UI 官方文档里的「卡片」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Vue",
+    "Solid",
+    "Park UI"
+   ],
+   "ct": [
+    "card"
+   ]
+  },
+  {
+   "id": "cs-lib-bits-ui-com-select",
+   "type": "style",
+   "lib": "lib-bits-ui-com",
+   "libName": "Bits UI",
+   "kind": "select",
+   "name": "Select · Bits UI",
+   "url": "https://bits-ui.com/docs/components/select",
+   "note": "Bits UI 官方文档里的「选择器」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "Svelte",
+    "Bits UI"
+   ],
+   "ct": [
+    "select"
+   ]
+  },
+  {
+   "id": "cs-lib-mui-com-material-ui-tabs",
+   "type": "style",
+   "lib": "lib-mui-com-material-ui",
+   "libName": "Material UI",
+   "kind": "tabs",
+   "name": "Tabs · Material UI",
+   "url": "https://mui.com/material-ui/react-tabs/",
+   "note": "Material UI 官方文档里的「标签页」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Material UI"
+   ],
+   "ct": [
+    "tabs"
+   ]
+  },
+  {
+   "id": "cs-lib-www-shadcn-vue-com-tabs",
+   "type": "style",
+   "lib": "lib-www-shadcn-vue-com",
+   "libName": "shadcn-vue",
+   "kind": "tabs",
+   "name": "Tabs · shadcn-vue",
+   "url": "https://www.shadcn-vue.com/docs/components/tabs",
+   "note": "shadcn-vue 官方文档里的「标签页」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "Vue",
+    "shadcn-vue"
+   ],
+   "ct": [
+    "tabs"
+   ]
+  },
+  {
+   "id": "cs-lib-ark-ui-com-form",
+   "type": "style",
+   "lib": "lib-ark-ui-com",
+   "libName": "Ark UI",
+   "kind": "form",
+   "name": "Form · Ark UI",
+   "url": "https://ark-ui.com/docs/components/slider",
+   "note": "Ark UI 官方文档里的「表单」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Vue",
+    "Solid",
+    "Svelte",
+    "Ark UI"
+   ],
+   "ct": [
+    "form"
+   ]
+  },
+  {
+   "id": "cs-lib-semi-design-select",
+   "type": "style",
+   "lib": "lib-semi-design",
+   "libName": "Semi Design",
+   "kind": "select",
+   "name": "Select · Semi Design",
+   "url": "https://semi.design/zh-CN/input/select",
+   "note": "Semi Design 官方文档里的「选择器」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Semi Design"
+   ],
+   "ct": [
+    "select"
+   ]
+  },
+  {
+   "id": "cs-lib-material-angular-dev-table",
+   "type": "style",
+   "lib": "lib-material-angular-dev",
+   "libName": "Angular Material",
+   "kind": "table",
+   "name": "Table · Angular Material",
+   "url": "https://material.angular.dev/components/table/overview",
+   "note": "Angular Material 官方文档里的「表格」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "Angular",
+    "Angular Material"
+   ],
+   "ct": [
+    "table"
+   ]
+  },
+  {
+   "id": "cs-motion-primitives-com-nav",
+   "type": "style",
+   "lib": "motion-primitives-com",
+   "libName": "Motion Primitives",
+   "kind": "nav",
+   "name": "Navigation · Motion Primitives",
+   "url": "https://motion-primitives.com/docs/dock",
+   "note": "Motion Primitives 官方文档里的「导航」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "动效",
+    "Motion Primitives"
+   ],
+   "ct": [
+    "nav"
+   ]
+  },
+  {
+   "id": "cs-lib-getbootstrap-com-menu",
+   "type": "style",
+   "lib": "lib-getbootstrap-com",
+   "libName": "Bootstrap",
+   "kind": "menu",
+   "name": "Menu · Bootstrap",
+   "url": "https://getbootstrap.com/docs/5.3/components/dropdowns/",
+   "note": "Bootstrap 官方文档里的「菜单」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "CSS",
+    "Bootstrap"
+   ],
+   "ct": [
+    "menu"
+   ]
+  },
+  {
+   "id": "cs-lib-mantine-dev-tabs",
+   "type": "style",
+   "lib": "lib-mantine-dev",
+   "libName": "Mantine",
+   "kind": "tabs",
+   "name": "Tabs · Mantine",
+   "url": "https://mantine.dev/core/tabs/",
+   "note": "Mantine 官方文档里的「标签页」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Mantine"
+   ],
+   "ct": [
+    "tabs"
+   ]
+  },
+  {
+   "id": "cs-lib-www-radix-ui-com-themes-input",
+   "type": "style",
+   "lib": "lib-www-radix-ui-com-themes",
+   "libName": "Radix Themes",
+   "kind": "input",
+   "name": "Input · Radix Themes",
+   "url": "https://www.radix-ui.com/themes/docs/components/text-field",
+   "note": "Radix Themes 官方文档里的「输入框」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Radix Themes"
+   ],
+   "ct": [
+    "input"
+   ]
+  },
+  {
+   "id": "cs-lib-mui-com-x-date",
+   "type": "style",
+   "lib": "lib-mui-com-x",
+   "libName": "MUI X",
+   "kind": "date",
+   "name": "Date picker · MUI X",
+   "url": "https://mui.com/x/react-date-pickers/date-range-picker/",
+   "note": "MUI X 官方文档里的「日期」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "freemium",
+   "tags": [
+    "React",
+    "MUI X"
+   ],
+   "ct": [
+    "date"
+   ]
+  },
+  {
+   "id": "cs-lib-daisyui-com-dialog",
+   "type": "style",
+   "lib": "lib-daisyui-com",
+   "libName": "daisyUI",
+   "kind": "dialog",
+   "name": "Dialog · daisyUI",
+   "url": "https://daisyui.com/components/modal/",
+   "note": "daisyUI 官方文档里的「弹窗」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "CSS",
+    "daisyUI"
+   ],
+   "ct": [
+    "dialog"
+   ]
+  },
+  {
+   "id": "cs-www-heroui-com-button",
+   "type": "style",
+   "lib": "www-heroui-com",
+   "libName": "HeroUI",
+   "kind": "button",
+   "name": "Button · HeroUI",
+   "url": "https://heroui.com/en/docs/react/components/button",
+   "note": "HeroUI 官方文档里的「按钮」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "HeroUI"
+   ],
+   "ct": [
+    "button"
+   ]
+  },
+  {
+   "id": "cs-lib-ionicframework-com-button",
+   "type": "style",
+   "lib": "lib-ionicframework-com",
+   "libName": "Ionic",
+   "kind": "button",
+   "name": "Button · Ionic",
+   "url": "https://ionicframework.com/docs/api/button",
+   "note": "Ionic 官方文档里的「按钮」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Vue",
+    "Angular",
+    "Ionic"
+   ],
+   "ct": [
+    "button"
+   ]
+  },
+  {
+   "id": "cs-ui-shadcn-com-table",
+   "type": "style",
+   "lib": "ui-shadcn-com",
+   "libName": "shadcn/ui",
+   "kind": "table",
+   "name": "Table · shadcn/ui",
+   "url": "https://ui.shadcn.com/docs/components/base/data-table",
+   "note": "shadcn/ui 官方文档里的「表格」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "shadcn",
+    "shadcn/ui"
+   ],
+   "ct": [
+    "table"
+   ]
+  },
+  {
+   "id": "cs-magicui-design-chart",
+   "type": "style",
+   "lib": "magicui-design",
+   "libName": "Magic UI",
+   "kind": "chart",
+   "name": "Chart · Magic UI",
+   "url": "https://magicui.design/docs/components/number-ticker",
+   "note": "Magic UI 官方文档里的「图表」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "Magic UI"
+   ],
+   "ct": [
+    "chart"
+   ]
+  },
+  {
+   "id": "cs-lib-www-spartan-ng-dialog",
+   "type": "style",
+   "lib": "lib-www-spartan-ng",
+   "libName": "Spartan",
+   "kind": "dialog",
+   "name": "Dialog · Spartan",
+   "url": "https://www.spartan.ng/components/dialog",
+   "note": "Spartan 官方文档里的「弹窗」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "Angular",
+    "Spartan"
+   ],
+   "ct": [
+    "dialog"
+   ]
+  },
+  {
+   "id": "cs-lib-www-shadcn-svelte-com-dialog",
+   "type": "style",
+   "lib": "lib-www-shadcn-svelte-com",
+   "libName": "shadcn-svelte",
+   "kind": "dialog",
+   "name": "Dialog · shadcn-svelte",
+   "url": "https://www.shadcn-svelte.com/docs/components/dialog",
+   "note": "shadcn-svelte 官方文档里的「弹窗」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "Svelte",
+    "shadcn-svelte"
+   ],
+   "ct": [
+    "dialog"
+   ]
+  },
+  {
+   "id": "cs-lib-primevue-org-table",
+   "type": "style",
+   "lib": "lib-primevue-org",
+   "libName": "PrimeVue",
+   "kind": "table",
+   "name": "Table · PrimeVue",
+   "url": "https://primevue.dev/datatable/",
+   "note": "PrimeVue 官方文档里的「表格」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "freemium",
+   "tags": [
+    "Vue",
+    "PrimeVue"
+   ],
+   "ct": [
+    "table"
+   ]
+  },
+  {
+   "id": "cs-lib-ant-design-nav",
+   "type": "style",
+   "lib": "lib-ant-design",
+   "libName": "Ant Design",
+   "kind": "nav",
+   "name": "Navigation · Ant Design",
+   "url": "https://ant.design/components/steps",
+   "note": "Ant Design 官方文档里的「导航」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Ant Design"
+   ],
+   "ct": [
+    "nav"
+   ]
+  },
+  {
+   "id": "cs-lib-primeng-org-table",
+   "type": "style",
+   "lib": "lib-primeng-org",
+   "libName": "PrimeNG",
+   "kind": "table",
+   "name": "Table · PrimeNG",
+   "url": "https://primeng.dev/table",
+   "note": "PrimeNG 官方文档里的「表格」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "freemium",
+   "tags": [
+    "Angular",
+    "PrimeNG"
+   ],
+   "ct": [
+    "table"
+   ]
+  },
+  {
+   "id": "cs-lib-tdesign-tencent-com-nav",
+   "type": "style",
+   "lib": "lib-tdesign-tencent-com",
+   "libName": "TDesign",
+   "kind": "nav",
+   "name": "Navigation · TDesign",
+   "url": "https://tdesign.tencent.com/vue-next/components/steps",
+   "note": "TDesign 官方文档里的「导航」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Vue",
+    "TDesign"
+   ],
+   "ct": [
+    "nav"
+   ]
+  },
+  {
+   "id": "cs-lib-headlessui-com-dialog",
+   "type": "style",
+   "lib": "lib-headlessui-com",
+   "libName": "Headless UI",
+   "kind": "dialog",
+   "name": "Dialog · Headless UI",
+   "url": "https://headlessui.com/react/dialog",
+   "note": "Headless UI 官方文档里的「弹窗」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Vue",
+    "Headless UI"
+   ],
+   "ct": [
+    "dialog"
+   ]
+  },
+  {
+   "id": "cs-lib-kobalte-dev-toast",
+   "type": "style",
+   "lib": "lib-kobalte-dev",
+   "libName": "Kobalte",
+   "kind": "toast",
+   "name": "Toast · Kobalte",
+   "url": "https://kobalte.dev/docs/core/components/toast",
+   "note": "Kobalte 官方文档里的「通知」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "Solid",
+    "Kobalte"
+   ],
+   "ct": [
+    "toast"
+   ]
+  },
+  {
+   "id": "cs-lib-chakra-ui-com-table",
+   "type": "style",
+   "lib": "lib-chakra-ui-com",
+   "libName": "Chakra UI",
+   "kind": "table",
+   "name": "Table · Chakra UI",
+   "url": "https://chakra-ui.com/docs/components/table",
+   "note": "Chakra UI 官方文档里的「表格」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Chakra UI"
+   ],
+   "ct": [
+    "table"
+   ]
+  },
+  {
+   "id": "cs-lib-ui-nuxt-com-date",
+   "type": "style",
+   "lib": "lib-ui-nuxt-com",
+   "libName": "Nuxt UI",
+   "kind": "date",
+   "name": "Date picker · Nuxt UI",
+   "url": "https://ui.nuxt.com/docs/components/calendar",
+   "note": "Nuxt UI 官方文档里的「日期」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "Vue",
+    "Nuxt UI"
+   ],
+   "ct": [
+    "date"
+   ]
+  },
+  {
+   "id": "cs-lib-www-hyperui-dev-card",
+   "type": "style",
+   "lib": "lib-www-hyperui-dev",
+   "libName": "HyperUI",
+   "kind": "card",
+   "name": "Card · HyperUI",
+   "url": "https://www.hyperui.dev/components/marketing/cards/",
+   "note": "HyperUI 官方文档里的「卡片」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "CSS",
+    "HyperUI"
+   ],
+   "ct": [
+    "card"
+   ]
+  },
+  {
+   "id": "cs-lib-ng-ant-design-tabs",
+   "type": "style",
+   "lib": "lib-ng-ant-design",
+   "libName": "NG-ZORRO",
+   "kind": "tabs",
+   "name": "Tabs · NG-ZORRO",
+   "url": "https://ng.ant.design/components/tabs/en",
+   "note": "NG-ZORRO 官方文档里的「标签页」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "Angular",
+    "NG-ZORRO"
+   ],
+   "ct": [
+    "tabs"
+   ]
+  },
+  {
+   "id": "cs-lib-element-plus-org-table",
+   "type": "style",
+   "lib": "lib-element-plus-org",
+   "libName": "Element Plus",
+   "kind": "table",
+   "name": "Table · Element Plus",
+   "url": "https://element-plus.org/en-US/component/table.html",
+   "note": "Element Plus 官方文档里的「表格」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "Vue",
+    "Element Plus"
+   ],
+   "ct": [
+    "table"
+   ]
+  },
+  {
+   "id": "cs-lib-arco-design-upload",
+   "type": "style",
+   "lib": "lib-arco-design",
+   "libName": "Arco Design",
+   "kind": "upload",
+   "name": "Upload · Arco Design",
+   "url": "https://arco.design/react/components/upload",
+   "note": "Arco Design 官方文档里的「上传」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Vue",
+    "Arco Design"
+   ],
+   "ct": [
+    "upload"
+   ]
+  },
+  {
+   "id": "cs-x-ant-design-loader",
+   "type": "style",
+   "lib": "x-ant-design",
+   "libName": "Ant Design X",
+   "kind": "loader",
+   "name": "Loader · Ant Design X",
+   "url": "https://x.ant.design/components/thought-chain",
+   "note": "Ant Design X 官方文档里的「加载」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "中文",
+    "Ant Design X"
+   ],
+   "ct": [
+    "loader"
+   ]
+  },
+  {
+   "id": "cs-lib-primer-style-button",
+   "type": "style",
+   "lib": "lib-primer-style",
+   "libName": "Primer",
+   "kind": "button",
+   "name": "Button · Primer",
+   "url": "https://primer.style/product/components/button/",
+   "note": "Primer 官方文档里的「按钮」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Primer"
+   ],
+   "ct": [
+    "button"
+   ]
+  },
+  {
+   "id": "cs-lib-carbondesignsystem-com-date",
+   "type": "style",
+   "lib": "lib-carbondesignsystem-com",
+   "libName": "Carbon",
+   "kind": "date",
+   "name": "Date picker · Carbon",
+   "url": "https://www.carbondesignsystem.com/building-blocks/core/components/date-picker/guidelines",
+   "note": "Carbon 官方文档里的「日期」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Web",
+    "Components",
+    "Carbon"
+   ],
+   "ct": [
+    "date"
+   ]
+  },
+  {
+   "id": "cs-ui-aceternity-com-motion",
+   "type": "style",
+   "lib": "ui-aceternity-com",
+   "libName": "Aceternity UI",
+   "kind": "motion",
+   "name": "Motion · Aceternity UI",
+   "url": "https://ui.aceternity.com/components/text-generate-effect",
+   "note": "Aceternity UI 官方文档里的「动效」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "Aceternity UI"
+   ],
+   "ct": [
+    "motion"
+   ]
+  },
+  {
+   "id": "cs-lib-flowbite-com-card",
+   "type": "style",
+   "lib": "lib-flowbite-com",
+   "libName": "Flowbite",
+   "kind": "card",
+   "name": "Card · Flowbite",
+   "url": "https://flowbite.com/docs/components/card/",
+   "note": "Flowbite 官方文档里的「卡片」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "freemium",
+   "tags": [
+    "CSS",
+    "React",
+    "Vue",
+    "Svelte",
+    "Flowbite"
+   ],
+   "ct": [
+    "card"
+   ]
+  },
+  {
+   "id": "cs-lib-vuetifyjs-com-toast",
+   "type": "style",
+   "lib": "lib-vuetifyjs-com",
+   "libName": "Vuetify",
+   "kind": "toast",
+   "name": "Toast · Vuetify",
+   "url": "https://vuetifyjs.com/en/components/snackbars/#usage",
+   "note": "Vuetify 官方文档里的「通知」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "Vue",
+    "Vuetify"
+   ],
+   "ct": [
+    "toast"
+   ]
+  },
+  {
+   "id": "cs-lib-park-ui-com-tabs",
+   "type": "style",
+   "lib": "lib-park-ui-com",
+   "libName": "Park UI",
+   "kind": "tabs",
+   "name": "Tabs · Park UI",
+   "url": "https://park-ui.com/docs/components/tabs",
+   "note": "Park UI 官方文档里的「标签页」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Vue",
+    "Solid",
+    "Park UI"
+   ],
+   "ct": [
+    "tabs"
+   ]
+  },
+  {
+   "id": "cs-lib-bits-ui-com-tabs",
+   "type": "style",
+   "lib": "lib-bits-ui-com",
+   "libName": "Bits UI",
+   "kind": "tabs",
+   "name": "Tabs · Bits UI",
+   "url": "https://bits-ui.com/docs/components/tabs",
+   "note": "Bits UI 官方文档里的「标签页」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "Svelte",
+    "Bits UI"
+   ],
+   "ct": [
+    "tabs"
+   ]
+  },
+  {
+   "id": "cs-lib-mui-com-material-ui-loader",
+   "type": "style",
+   "lib": "lib-mui-com-material-ui",
+   "libName": "Material UI",
+   "kind": "loader",
+   "name": "Loader · Material UI",
+   "url": "https://mui.com/material-ui/react-progress/",
+   "note": "Material UI 官方文档里的「加载」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Material UI"
+   ],
+   "ct": [
+    "loader"
+   ]
+  },
+  {
+   "id": "cs-lib-www-shadcn-vue-com-date",
+   "type": "style",
+   "lib": "lib-www-shadcn-vue-com",
+   "libName": "shadcn-vue",
+   "kind": "date",
+   "name": "Date picker · shadcn-vue",
+   "url": "https://www.shadcn-vue.com/docs/components/calendar",
+   "note": "shadcn-vue 官方文档里的「日期」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "Vue",
+    "shadcn-vue"
+   ],
+   "ct": [
+    "date"
+   ]
+  },
+  {
+   "id": "cs-lib-ark-ui-com-toast",
+   "type": "style",
+   "lib": "lib-ark-ui-com",
+   "libName": "Ark UI",
+   "kind": "toast",
+   "name": "Toast · Ark UI",
+   "url": "https://ark-ui.com/docs/components/toast",
+   "note": "Ark UI 官方文档里的「通知」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Vue",
+    "Solid",
+    "Svelte",
+    "Ark UI"
+   ],
+   "ct": [
+    "toast"
+   ]
+  },
+  {
+   "id": "cs-lib-semi-design-upload",
+   "type": "style",
+   "lib": "lib-semi-design",
+   "libName": "Semi Design",
+   "kind": "upload",
+   "name": "Upload · Semi Design",
+   "url": "https://semi.design/zh-CN/input/upload",
+   "note": "Semi Design 官方文档里的「上传」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Semi Design"
+   ],
+   "ct": [
+    "upload"
+   ]
+  },
+  {
+   "id": "cs-lib-material-angular-dev-toast",
+   "type": "style",
+   "lib": "lib-material-angular-dev",
+   "libName": "Angular Material",
+   "kind": "toast",
+   "name": "Toast · Angular Material",
+   "url": "https://material.angular.dev/components/snack-bar/overview",
+   "note": "Angular Material 官方文档里的「通知」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "Angular",
+    "Angular Material"
+   ],
+   "ct": [
+    "toast"
+   ]
+  },
+  {
+   "id": "cs-motion-primitives-com-carousel",
+   "type": "style",
+   "lib": "motion-primitives-com",
+   "libName": "Motion Primitives",
+   "kind": "carousel",
+   "name": "Carousel · Motion Primitives",
+   "url": "https://motion-primitives.com/docs/carousel",
+   "note": "Motion Primitives 官方文档里的「轮播」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "动效",
+    "Motion Primitives"
+   ],
+   "ct": [
+    "carousel"
+   ]
+  },
+  {
+   "id": "cs-lib-getbootstrap-com-dialog",
+   "type": "style",
+   "lib": "lib-getbootstrap-com",
+   "libName": "Bootstrap",
+   "kind": "dialog",
+   "name": "Dialog · Bootstrap",
+   "url": "https://getbootstrap.com/docs/5.3/components/modal/",
+   "note": "Bootstrap 官方文档里的「弹窗」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "CSS",
+    "Bootstrap"
+   ],
+   "ct": [
+    "dialog"
+   ]
+  },
+  {
+   "id": "cs-lib-mantine-dev-form",
+   "type": "style",
+   "lib": "lib-mantine-dev",
+   "libName": "Mantine",
+   "kind": "form",
+   "name": "Form · Mantine",
+   "url": "https://mantine.dev/core/slider/",
+   "note": "Mantine 官方文档里的「表单」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Mantine"
+   ],
+   "ct": [
+    "form"
+   ]
+  },
+  {
+   "id": "cs-lib-www-radix-ui-com-themes-card",
+   "type": "style",
+   "lib": "lib-www-radix-ui-com-themes",
+   "libName": "Radix Themes",
+   "kind": "card",
+   "name": "Card · Radix Themes",
+   "url": "https://www.radix-ui.com/themes/docs/components/card",
+   "note": "Radix Themes 官方文档里的「卡片」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Radix Themes"
+   ],
+   "ct": [
+    "card"
+   ]
+  },
+  {
+   "id": "cs-lib-daisyui-com-card",
+   "type": "style",
+   "lib": "lib-daisyui-com",
+   "libName": "daisyUI",
+   "kind": "card",
+   "name": "Card · daisyUI",
+   "url": "https://daisyui.com/components/card/",
+   "note": "daisyUI 官方文档里的「卡片」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "CSS",
+    "daisyUI"
+   ],
+   "ct": [
+    "card"
+   ]
+  },
+  {
+   "id": "cs-www-heroui-com-form",
+   "type": "style",
+   "lib": "www-heroui-com",
+   "libName": "HeroUI",
+   "kind": "form",
+   "name": "Form · HeroUI",
+   "url": "https://heroui.com/en/docs/react/components/slider",
+   "note": "HeroUI 官方文档里的「表单」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "HeroUI"
+   ],
+   "ct": [
+    "form"
+   ]
+  },
+  {
+   "id": "cs-lib-ionicframework-com-card",
+   "type": "style",
+   "lib": "lib-ionicframework-com",
+   "libName": "Ionic",
+   "kind": "card",
+   "name": "Card · Ionic",
+   "url": "https://ionicframework.com/docs/api/card",
+   "note": "Ionic 官方文档里的「卡片」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Vue",
+    "Angular",
+    "Ionic"
+   ],
+   "ct": [
+    "card"
+   ]
+  },
+  {
+   "id": "cs-ui-shadcn-com-avatar",
+   "type": "style",
+   "lib": "ui-shadcn-com",
+   "libName": "shadcn/ui",
+   "kind": "avatar",
+   "name": "Avatar · shadcn/ui",
+   "url": "https://ui.shadcn.com/docs/components/base/avatar",
+   "note": "shadcn/ui 官方文档里的「头像」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "shadcn",
+    "shadcn/ui"
+   ],
+   "ct": [
+    "avatar"
+   ]
+  },
+  {
+   "id": "cs-magicui-design-effect",
+   "type": "style",
+   "lib": "magicui-design",
+   "libName": "Magic UI",
+   "kind": "background",
+   "name": "Background · Magic UI",
+   "url": "https://magicui.design/docs/components/border-beam",
+   "note": "Magic UI 官方文档里的「背景」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "Magic UI"
+   ],
+   "ct": [
+    "background"
+   ]
+  },
+  {
+   "id": "cs-lib-www-spartan-ng-table",
+   "type": "style",
+   "lib": "lib-www-spartan-ng",
+   "libName": "Spartan",
+   "kind": "table",
+   "name": "Table · Spartan",
+   "url": "https://www.spartan.ng/components/data-table",
+   "note": "Spartan 官方文档里的「表格」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "Angular",
+    "Spartan"
+   ],
+   "ct": [
+    "table"
+   ]
+  },
+  {
+   "id": "cs-lib-www-shadcn-svelte-com-date",
+   "type": "style",
+   "lib": "lib-www-shadcn-svelte-com",
+   "libName": "shadcn-svelte",
+   "kind": "date",
+   "name": "Date picker · shadcn-svelte",
+   "url": "https://www.shadcn-svelte.com/docs/components/calendar",
+   "note": "shadcn-svelte 官方文档里的「日期」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "Svelte",
+    "shadcn-svelte"
+   ],
+   "ct": [
+    "date"
+   ]
+  },
+  {
+   "id": "cs-lib-primevue-org-nav",
+   "type": "style",
+   "lib": "lib-primevue-org",
+   "libName": "PrimeVue",
+   "kind": "nav",
+   "name": "Navigation · PrimeVue",
+   "url": "https://primevue.dev/stepper/",
+   "note": "PrimeVue 官方文档里的「导航」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "freemium",
+   "tags": [
+    "Vue",
+    "PrimeVue"
+   ],
+   "ct": [
+    "nav"
+   ]
+  },
+  {
+   "id": "cs-lib-ant-design-upload",
+   "type": "style",
+   "lib": "lib-ant-design",
+   "libName": "Ant Design",
+   "kind": "upload",
+   "name": "Upload · Ant Design",
+   "url": "https://ant.design/components/upload",
+   "note": "Ant Design 官方文档里的「上传」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Ant Design"
+   ],
+   "ct": [
+    "upload"
+   ]
+  },
+  {
+   "id": "cs-lib-primeng-org-date",
+   "type": "style",
+   "lib": "lib-primeng-org",
+   "libName": "PrimeNG",
+   "kind": "date",
+   "name": "Date picker · PrimeNG",
+   "url": "https://primeng.dev/datepicker",
+   "note": "PrimeNG 官方文档里的「日期」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "freemium",
+   "tags": [
+    "Angular",
+    "PrimeNG"
+   ],
+   "ct": [
+    "date"
+   ]
+  },
+  {
+   "id": "cs-lib-tdesign-tencent-com-toast",
+   "type": "style",
+   "lib": "lib-tdesign-tencent-com",
+   "libName": "TDesign",
+   "kind": "toast",
+   "name": "Toast · TDesign",
+   "url": "https://tdesign.tencent.com/vue-next/components/message",
+   "note": "TDesign 官方文档里的「通知」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Vue",
+    "TDesign"
+   ],
+   "ct": [
+    "toast"
+   ]
+  },
+  {
+   "id": "cs-lib-headlessui-com-input",
+   "type": "style",
+   "lib": "lib-headlessui-com",
+   "libName": "Headless UI",
+   "kind": "input",
+   "name": "Input · Headless UI",
+   "url": "https://headlessui.com/react/combobox",
+   "note": "Headless UI 官方文档里的「输入框」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Vue",
+    "Headless UI"
+   ],
+   "ct": [
+    "input"
+   ]
+  },
+  {
+   "id": "cs-lib-kobalte-dev-select",
+   "type": "style",
+   "lib": "lib-kobalte-dev",
+   "libName": "Kobalte",
+   "kind": "select",
+   "name": "Select · Kobalte",
+   "url": "https://kobalte.dev/docs/core/components/select",
+   "note": "Kobalte 官方文档里的「选择器」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "Solid",
+    "Kobalte"
+   ],
+   "ct": [
+    "select"
+   ]
+  },
+  {
+   "id": "cs-lib-chakra-ui-com-tabs",
+   "type": "style",
+   "lib": "lib-chakra-ui-com",
+   "libName": "Chakra UI",
+   "kind": "tabs",
+   "name": "Tabs · Chakra UI",
+   "url": "https://chakra-ui.com/docs/components/tabs",
+   "note": "Chakra UI 官方文档里的「标签页」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Chakra UI"
+   ],
+   "ct": [
+    "tabs"
+   ]
+  },
+  {
+   "id": "cs-lib-www-hyperui-dev-nav",
+   "type": "style",
+   "lib": "lib-www-hyperui-dev",
+   "libName": "HyperUI",
+   "kind": "nav",
+   "name": "Navigation · HyperUI",
+   "url": "https://www.hyperui.dev/components/marketing/headers/",
+   "note": "HyperUI 官方文档里的「导航」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "CSS",
+    "HyperUI"
+   ],
+   "ct": [
+    "nav"
+   ]
+  },
+  {
+   "id": "cs-lib-ng-ant-design-select",
+   "type": "style",
+   "lib": "lib-ng-ant-design",
+   "libName": "NG-ZORRO",
+   "kind": "select",
+   "name": "Select · NG-ZORRO",
+   "url": "https://ng.ant.design/components/select/en",
+   "note": "NG-ZORRO 官方文档里的「选择器」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "Angular",
+    "NG-ZORRO"
+   ],
+   "ct": [
+    "select"
+   ]
+  },
+  {
+   "id": "cs-lib-element-plus-org-card",
+   "type": "style",
+   "lib": "lib-element-plus-org",
+   "libName": "Element Plus",
+   "kind": "card",
+   "name": "Card · Element Plus",
+   "url": "https://element-plus.org/en-US/component/card.html",
+   "note": "Element Plus 官方文档里的「卡片」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "Vue",
+    "Element Plus"
+   ],
+   "ct": [
+    "card"
+   ]
+  },
+  {
+   "id": "cs-lib-arco-design-card",
+   "type": "style",
+   "lib": "lib-arco-design",
+   "libName": "Arco Design",
+   "kind": "card",
+   "name": "Card · Arco Design",
+   "url": "https://arco.design/react/components/card",
+   "note": "Arco Design 官方文档里的「卡片」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Vue",
+    "Arco Design"
+   ],
+   "ct": [
+    "card"
+   ]
+  },
+  {
+   "id": "cs-x-ant-design-upload",
+   "type": "style",
+   "lib": "x-ant-design",
+   "libName": "Ant Design X",
+   "kind": "upload",
+   "name": "Upload · Ant Design X",
+   "url": "https://x.ant.design/components/attachments",
+   "note": "Ant Design X 官方文档里的「上传」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "中文",
+    "Ant Design X"
+   ],
+   "ct": [
+    "upload"
+   ]
+  },
+  {
+   "id": "cs-lib-carbondesignsystem-com-tabs",
+   "type": "style",
+   "lib": "lib-carbondesignsystem-com",
+   "libName": "Carbon",
+   "kind": "tabs",
+   "name": "Tabs · Carbon",
+   "url": "https://www.carbondesignsystem.com/building-blocks/core/components/tabs/guidelines",
+   "note": "Carbon 官方文档里的「标签页」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Web",
+    "Components",
+    "Carbon"
+   ],
+   "ct": [
+    "tabs"
+   ]
+  },
+  {
+   "id": "cs-ui-aceternity-com-layout",
+   "type": "style",
+   "lib": "ui-aceternity-com",
+   "libName": "Aceternity UI",
+   "kind": "layout",
+   "name": "Layout · Aceternity UI",
+   "url": "https://ui.aceternity.com/components/bento-grid",
+   "note": "Aceternity UI 官方文档里的「区块」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "Aceternity UI"
+   ],
+   "ct": [
+    "layout"
+   ]
+  },
+  {
+   "id": "cs-lib-flowbite-com-chat",
+   "type": "style",
+   "lib": "lib-flowbite-com",
+   "libName": "Flowbite",
+   "kind": "chat",
+   "name": "Chat · Flowbite",
+   "url": "https://flowbite.com/docs/components/chat-bubble/",
+   "note": "Flowbite 官方文档里的「聊天」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "freemium",
+   "tags": [
+    "CSS",
+    "React",
+    "Vue",
+    "Svelte",
+    "Flowbite"
+   ],
+   "ct": [
+    "chat"
+   ]
+  },
+  {
+   "id": "cs-lib-vuetifyjs-com-tabs",
+   "type": "style",
+   "lib": "lib-vuetifyjs-com",
+   "libName": "Vuetify",
+   "kind": "tabs",
+   "name": "Tabs · Vuetify",
+   "url": "https://vuetifyjs.com/en/components/tabs/#usage",
+   "note": "Vuetify 官方文档里的「标签页」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "Vue",
+    "Vuetify"
+   ],
+   "ct": [
+    "tabs"
+   ]
+  },
+  {
+   "id": "cs-lib-park-ui-com-table",
+   "type": "style",
+   "lib": "lib-park-ui-com",
+   "libName": "Park UI",
+   "kind": "table",
+   "name": "Table · Park UI",
+   "url": "https://park-ui.com/docs/components/table",
+   "note": "Park UI 官方文档里的「表格」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Vue",
+    "Solid",
+    "Park UI"
+   ],
+   "ct": [
+    "table"
+   ]
+  },
+  {
+   "id": "cs-lib-bits-ui-com-form",
+   "type": "style",
+   "lib": "lib-bits-ui-com",
+   "libName": "Bits UI",
+   "kind": "form",
+   "name": "Form · Bits UI",
+   "url": "https://bits-ui.com/docs/components/slider",
+   "note": "Bits UI 官方文档里的「表单」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "Svelte",
+    "Bits UI"
+   ],
+   "ct": [
+    "form"
+   ]
+  },
+  {
+   "id": "cs-lib-mui-com-material-ui-toast",
+   "type": "style",
+   "lib": "lib-mui-com-material-ui",
+   "libName": "Material UI",
+   "kind": "toast",
+   "name": "Toast · Material UI",
+   "url": "https://mui.com/material-ui/react-snackbar/",
+   "note": "Material UI 官方文档里的「通知」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Material UI"
+   ],
+   "ct": [
+    "toast"
+   ]
+  },
+  {
+   "id": "cs-lib-www-shadcn-vue-com-select",
+   "type": "style",
+   "lib": "lib-www-shadcn-vue-com",
+   "libName": "shadcn-vue",
+   "kind": "select",
+   "name": "Select · shadcn-vue",
+   "url": "https://www.shadcn-vue.com/docs/components/select",
+   "note": "shadcn-vue 官方文档里的「选择器」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "Vue",
+    "shadcn-vue"
+   ],
+   "ct": [
+    "select"
+   ]
+  },
+  {
+   "id": "cs-lib-ark-ui-com-upload",
+   "type": "style",
+   "lib": "lib-ark-ui-com",
+   "libName": "Ark UI",
+   "kind": "upload",
+   "name": "Upload · Ark UI",
+   "url": "https://ark-ui.com/docs/components/file-upload",
+   "note": "Ark UI 官方文档里的「上传」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Vue",
+    "Solid",
+    "Svelte",
+    "Ark UI"
+   ],
+   "ct": [
+    "upload"
+   ]
+  },
+  {
+   "id": "cs-lib-material-angular-dev-button",
+   "type": "style",
+   "lib": "lib-material-angular-dev",
+   "libName": "Angular Material",
+   "kind": "button",
+   "name": "Button · Angular Material",
+   "url": "https://material.angular.dev/components/button/overview",
+   "note": "Angular Material 官方文档里的「按钮」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "Angular",
+    "Angular Material"
+   ],
+   "ct": [
+    "button"
+   ]
+  },
+  {
+   "id": "cs-lib-mantine-dev-button",
+   "type": "style",
+   "lib": "lib-mantine-dev",
+   "libName": "Mantine",
+   "kind": "button",
+   "name": "Button · Mantine",
+   "url": "https://mantine.dev/core/button/",
+   "note": "Mantine 官方文档里的「按钮」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Mantine"
+   ],
+   "ct": [
+    "button"
+   ]
+  },
+  {
+   "id": "cs-lib-daisyui-com-menu",
+   "type": "style",
+   "lib": "lib-daisyui-com",
+   "libName": "daisyUI",
+   "kind": "menu",
+   "name": "Menu · daisyUI",
+   "url": "https://daisyui.com/components/dropdown/",
+   "note": "daisyUI 官方文档里的「菜单」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "CSS",
+    "daisyUI"
+   ],
+   "ct": [
+    "menu"
+   ]
+  },
+  {
+   "id": "cs-www-heroui-com-input",
+   "type": "style",
+   "lib": "www-heroui-com",
+   "libName": "HeroUI",
+   "kind": "input",
+   "name": "Input · HeroUI",
+   "url": "https://heroui.com/en/docs/react/components/input-otp",
+   "note": "HeroUI 官方文档里的「输入框」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "HeroUI"
+   ],
+   "ct": [
+    "input"
+   ]
+  },
+  {
+   "id": "cs-ui-shadcn-com-dialog",
+   "type": "style",
+   "lib": "ui-shadcn-com",
+   "libName": "shadcn/ui",
+   "kind": "dialog",
+   "name": "Dialog · shadcn/ui",
+   "url": "https://ui.shadcn.com/docs/components/base/dialog",
+   "note": "shadcn/ui 官方文档里的「弹窗」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "shadcn",
+    "shadcn/ui"
+   ],
+   "ct": [
+    "dialog"
+   ]
+  },
+  {
+   "id": "cs-magicui-design-motion",
+   "type": "style",
+   "lib": "magicui-design",
+   "libName": "Magic UI",
+   "kind": "motion",
+   "name": "Motion · Magic UI",
+   "url": "https://magicui.design/docs/components/marquee",
+   "note": "Magic UI 官方文档里的「动效」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "Magic UI"
+   ],
+   "ct": [
+    "motion"
+   ]
+  },
+  {
+   "id": "cs-lib-www-spartan-ng-select",
+   "type": "style",
+   "lib": "lib-www-spartan-ng",
+   "libName": "Spartan",
+   "kind": "select",
+   "name": "Select · Spartan",
+   "url": "https://www.spartan.ng/components/select",
+   "note": "Spartan 官方文档里的「选择器」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "Angular",
+    "Spartan"
+   ],
+   "ct": [
+    "select"
+   ]
+  },
+  {
+   "id": "cs-lib-www-shadcn-svelte-com-select",
+   "type": "style",
+   "lib": "lib-www-shadcn-svelte-com",
+   "libName": "shadcn-svelte",
+   "kind": "select",
+   "name": "Select · shadcn-svelte",
+   "url": "https://www.shadcn-svelte.com/docs/components/select",
+   "note": "shadcn-svelte 官方文档里的「选择器」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "Svelte",
+    "shadcn-svelte"
+   ],
+   "ct": [
+    "select"
+   ]
+  },
+  {
+   "id": "cs-lib-primevue-org-upload",
+   "type": "style",
+   "lib": "lib-primevue-org",
+   "libName": "PrimeVue",
+   "kind": "upload",
+   "name": "Upload · PrimeVue",
+   "url": "https://primevue.dev/fileupload/",
+   "note": "PrimeVue 官方文档里的「上传」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "freemium",
+   "tags": [
+    "Vue",
+    "PrimeVue"
+   ],
+   "ct": [
+    "upload"
+   ]
+  },
+  {
+   "id": "cs-lib-ant-design-select",
+   "type": "style",
+   "lib": "lib-ant-design",
+   "libName": "Ant Design",
+   "kind": "select",
+   "name": "Select · Ant Design",
+   "url": "https://ant.design/components/select",
+   "note": "Ant Design 官方文档里的「选择器」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Ant Design"
+   ],
+   "ct": [
+    "select"
+   ]
+  },
+  {
+   "id": "cs-lib-tdesign-tencent-com-tabs",
+   "type": "style",
+   "lib": "lib-tdesign-tencent-com",
+   "libName": "TDesign",
+   "kind": "tabs",
+   "name": "Tabs · TDesign",
+   "url": "https://tdesign.tencent.com/vue-next/components/tabs",
+   "note": "TDesign 官方文档里的「标签页」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Vue",
+    "TDesign"
+   ],
+   "ct": [
+    "tabs"
+   ]
+  },
+  {
+   "id": "cs-lib-headlessui-com-nav",
+   "type": "style",
+   "lib": "lib-headlessui-com",
+   "libName": "Headless UI",
+   "kind": "nav",
+   "name": "Navigation · Headless UI",
+   "url": "https://headlessui.com/react/disclosure",
+   "note": "Headless UI 官方文档里的「导航」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Vue",
+    "Headless UI"
+   ],
+   "ct": [
+    "nav"
+   ]
+  },
+  {
+   "id": "cs-lib-chakra-ui-com-form",
+   "type": "style",
+   "lib": "lib-chakra-ui-com",
+   "libName": "Chakra UI",
+   "kind": "form",
+   "name": "Form · Chakra UI",
+   "url": "https://chakra-ui.com/docs/components/slider",
+   "note": "Chakra UI 官方文档里的「表单」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Chakra UI"
+   ],
+   "ct": [
+    "form"
+   ]
+  },
+  {
+   "id": "cs-lib-www-hyperui-dev-toast",
+   "type": "style",
+   "lib": "lib-www-hyperui-dev",
+   "libName": "HyperUI",
+   "kind": "toast",
+   "name": "Toast · HyperUI",
+   "url": "https://www.hyperui.dev/components/application/toasts/",
+   "note": "HyperUI 官方文档里的「通知」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "CSS",
+    "HyperUI"
+   ],
+   "ct": [
+    "toast"
+   ]
+  },
+  {
+   "id": "cs-lib-ng-ant-design-date",
+   "type": "style",
+   "lib": "lib-ng-ant-design",
+   "libName": "NG-ZORRO",
+   "kind": "date",
+   "name": "Date picker · NG-ZORRO",
+   "url": "https://ng.ant.design/components/date-picker/en",
+   "note": "NG-ZORRO 官方文档里的「日期」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "Angular",
+    "NG-ZORRO"
+   ],
+   "ct": [
+    "date"
+   ]
+  },
+  {
+   "id": "cs-lib-element-plus-org-date",
+   "type": "style",
+   "lib": "lib-element-plus-org",
+   "libName": "Element Plus",
+   "kind": "date",
+   "name": "Date picker · Element Plus",
+   "url": "https://element-plus.org/en-US/component/date-picker.html",
+   "note": "Element Plus 官方文档里的「日期」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "Vue",
+    "Element Plus"
+   ],
+   "ct": [
+    "date"
+   ]
+  },
+  {
+   "id": "cs-lib-arco-design-nav",
+   "type": "style",
+   "lib": "lib-arco-design",
+   "libName": "Arco Design",
+   "kind": "nav",
+   "name": "Navigation · Arco Design",
+   "url": "https://arco.design/react/components/steps",
+   "note": "Arco Design 官方文档里的「导航」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Vue",
+    "Arco Design"
+   ],
+   "ct": [
+    "nav"
+   ]
+  },
+  {
+   "id": "cs-ui-aceternity-com-input",
+   "type": "style",
+   "lib": "ui-aceternity-com",
+   "libName": "Aceternity UI",
+   "kind": "input",
+   "name": "Input · Aceternity UI",
+   "url": "https://ui.aceternity.com/components/placeholders-and-vanish-input",
+   "note": "Aceternity UI 官方文档里的「输入框」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "Aceternity UI"
+   ],
+   "ct": [
+    "input"
+   ]
+  },
+  {
+   "id": "cs-lib-flowbite-com-dialog",
+   "type": "style",
+   "lib": "lib-flowbite-com",
+   "libName": "Flowbite",
+   "kind": "dialog",
+   "name": "Dialog · Flowbite",
+   "url": "https://flowbite.com/docs/components/modal/",
+   "note": "Flowbite 官方文档里的「弹窗」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "freemium",
+   "tags": [
+    "CSS",
+    "React",
+    "Vue",
+    "Svelte",
+    "Flowbite"
+   ],
+   "ct": [
+    "dialog"
+   ]
+  },
+  {
+   "id": "cs-lib-vuetifyjs-com-nav",
+   "type": "style",
+   "lib": "lib-vuetifyjs-com",
+   "libName": "Vuetify",
+   "kind": "nav",
+   "name": "Navigation · Vuetify",
+   "url": "https://vuetifyjs.com/en/components/steppers/#usage",
+   "note": "Vuetify 官方文档里的「导航」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "Vue",
+    "Vuetify"
+   ],
+   "ct": [
+    "nav"
+   ]
+  },
+  {
+   "id": "cs-lib-park-ui-com-select",
+   "type": "style",
+   "lib": "lib-park-ui-com",
+   "libName": "Park UI",
+   "kind": "select",
+   "name": "Select · Park UI",
+   "url": "https://park-ui.com/docs/components/select",
+   "note": "Park UI 官方文档里的「选择器」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Vue",
+    "Solid",
+    "Park UI"
+   ],
+   "ct": [
+    "select"
+   ]
+  },
+  {
+   "id": "cs-lib-bits-ui-com-date",
+   "type": "style",
+   "lib": "lib-bits-ui-com",
+   "libName": "Bits UI",
+   "kind": "date",
+   "name": "Date picker · Bits UI",
+   "url": "https://bits-ui.com/docs/components/date-picker",
+   "note": "Bits UI 官方文档里的「日期」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "Svelte",
+    "Bits UI"
+   ],
+   "ct": [
+    "date"
+   ]
+  },
+  {
+   "id": "cs-lib-mui-com-material-ui-nav",
+   "type": "style",
+   "lib": "lib-mui-com-material-ui",
+   "libName": "Material UI",
+   "kind": "nav",
+   "name": "Navigation · Material UI",
+   "url": "https://mui.com/material-ui/react-stepper/",
+   "note": "Material UI 官方文档里的「导航」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Material UI"
+   ],
+   "ct": [
+    "nav"
+   ]
+  },
+  {
+   "id": "cs-lib-www-shadcn-vue-com-button",
+   "type": "style",
+   "lib": "lib-www-shadcn-vue-com",
+   "libName": "shadcn-vue",
+   "kind": "button",
+   "name": "Button · shadcn-vue",
+   "url": "https://www.shadcn-vue.com/docs/components/button",
+   "note": "shadcn-vue 官方文档里的「按钮」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "Vue",
+    "shadcn-vue"
+   ],
+   "ct": [
+    "button"
+   ]
+  },
+  {
+   "id": "cs-lib-ark-ui-com-select",
+   "type": "style",
+   "lib": "lib-ark-ui-com",
+   "libName": "Ark UI",
+   "kind": "select",
+   "name": "Select · Ark UI",
+   "url": "https://ark-ui.com/docs/components/select",
+   "note": "Ark UI 官方文档里的「选择器」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Vue",
+    "Solid",
+    "Svelte",
+    "Ark UI"
+   ],
+   "ct": [
+    "select"
+   ]
+  },
+  {
+   "id": "cs-lib-material-angular-dev-date",
+   "type": "style",
+   "lib": "lib-material-angular-dev",
+   "libName": "Angular Material",
+   "kind": "date",
+   "name": "Date picker · Angular Material",
+   "url": "https://material.angular.dev/components/datepicker/overview",
+   "note": "Angular Material 官方文档里的「日期」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "Angular",
+    "Angular Material"
+   ],
+   "ct": [
+    "date"
+   ]
+  },
+  {
+   "id": "cs-lib-mantine-dev-nav",
+   "type": "style",
+   "lib": "lib-mantine-dev",
+   "libName": "Mantine",
+   "kind": "nav",
+   "name": "Navigation · Mantine",
+   "url": "https://mantine.dev/core/stepper/",
+   "note": "Mantine 官方文档里的「导航」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Mantine"
+   ],
+   "ct": [
+    "nav"
+   ]
+  },
+  {
+   "id": "cs-lib-daisyui-com-toast",
+   "type": "style",
+   "lib": "lib-daisyui-com",
+   "libName": "daisyUI",
+   "kind": "toast",
+   "name": "Toast · daisyUI",
+   "url": "https://daisyui.com/components/toast/",
+   "note": "daisyUI 官方文档里的「通知」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "CSS",
+    "daisyUI"
+   ],
+   "ct": [
+    "toast"
+   ]
+  },
+  {
+   "id": "cs-www-heroui-com-tabs",
+   "type": "style",
+   "lib": "www-heroui-com",
+   "libName": "HeroUI",
+   "kind": "tabs",
+   "name": "Tabs · HeroUI",
+   "url": "https://heroui.com/en/docs/react/components/tabs",
+   "note": "HeroUI 官方文档里的「标签页」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "HeroUI"
+   ],
+   "ct": [
+    "tabs"
+   ]
+  },
+  {
+   "id": "cs-ui-shadcn-com-date",
+   "type": "style",
+   "lib": "ui-shadcn-com",
+   "libName": "shadcn/ui",
+   "kind": "date",
+   "name": "Date picker · shadcn/ui",
+   "url": "https://ui.shadcn.com/docs/components/base/calendar",
+   "note": "shadcn/ui 官方文档里的「日期」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "shadcn",
+    "shadcn/ui"
+   ],
+   "ct": [
+    "date"
+   ]
+  },
+  {
+   "id": "cs-magicui-design-icon",
+   "type": "style",
+   "lib": "magicui-design",
+   "libName": "Magic UI",
+   "kind": "icon",
+   "name": "Icons · Magic UI",
+   "url": "https://magicui.design/docs/components/icon-cloud",
+   "note": "Magic UI 官方文档里的「图标」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "Magic UI"
+   ],
+   "ct": [
+    "icon"
+   ]
+  },
+  {
+   "id": "cs-lib-www-spartan-ng-button",
+   "type": "style",
+   "lib": "lib-www-spartan-ng",
+   "libName": "Spartan",
+   "kind": "button",
+   "name": "Button · Spartan",
+   "url": "https://www.spartan.ng/components/button",
+   "note": "Spartan 官方文档里的「按钮」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "Angular",
+    "Spartan"
+   ],
+   "ct": [
+    "button"
+   ]
+  },
+  {
+   "id": "cs-lib-www-shadcn-svelte-com-tabs",
+   "type": "style",
+   "lib": "lib-www-shadcn-svelte-com",
+   "libName": "shadcn-svelte",
+   "kind": "tabs",
+   "name": "Tabs · shadcn-svelte",
+   "url": "https://www.shadcn-svelte.com/docs/components/tabs",
+   "note": "shadcn-svelte 官方文档里的「标签页」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "Svelte",
+    "shadcn-svelte"
+   ],
+   "ct": [
+    "tabs"
+   ]
+  },
+  {
+   "id": "cs-lib-ant-design-form",
+   "type": "style",
+   "lib": "lib-ant-design",
+   "libName": "Ant Design",
+   "kind": "form",
+   "name": "Form · Ant Design",
+   "url": "https://ant.design/components/form",
+   "note": "Ant Design 官方文档里的「表单」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Ant Design"
+   ],
+   "ct": [
+    "form"
+   ]
+  },
+  {
+   "id": "cs-lib-tdesign-tencent-com-button",
+   "type": "style",
+   "lib": "lib-tdesign-tencent-com",
+   "libName": "TDesign",
+   "kind": "button",
+   "name": "Button · TDesign",
+   "url": "https://tdesign.tencent.com/vue-next/components/button",
+   "note": "TDesign 官方文档里的「按钮」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Vue",
+    "TDesign"
+   ],
+   "ct": [
+    "button"
+   ]
+  },
+  {
+   "id": "cs-lib-headlessui-com-tooltip",
+   "type": "style",
+   "lib": "lib-headlessui-com",
+   "libName": "Headless UI",
+   "kind": "tooltip",
+   "name": "Tooltip · Headless UI",
+   "url": "https://headlessui.com/react/popover",
+   "note": "Headless UI 官方文档里的「气泡」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Vue",
+    "Headless UI"
+   ],
+   "ct": [
+    "tooltip"
+   ]
+  },
+  {
+   "id": "cs-lib-chakra-ui-com-avatar",
+   "type": "style",
+   "lib": "lib-chakra-ui-com",
+   "libName": "Chakra UI",
+   "kind": "avatar",
+   "name": "Avatar · Chakra UI",
+   "url": "https://chakra-ui.com/docs/components/avatar",
+   "note": "Chakra UI 官方文档里的「头像」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Chakra UI"
+   ],
+   "ct": [
+    "avatar"
+   ]
+  },
+  {
+   "id": "cs-lib-www-hyperui-dev-menu",
+   "type": "style",
+   "lib": "lib-www-hyperui-dev",
+   "libName": "HyperUI",
+   "kind": "menu",
+   "name": "Menu · HyperUI",
+   "url": "https://www.hyperui.dev/components/application/dropdown/",
+   "note": "HyperUI 官方文档里的「菜单」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "CSS",
+    "HyperUI"
+   ],
+   "ct": [
+    "menu"
+   ]
+  },
+  {
+   "id": "cs-lib-element-plus-org-form",
+   "type": "style",
+   "lib": "lib-element-plus-org",
+   "libName": "Element Plus",
+   "kind": "form",
+   "name": "Form · Element Plus",
+   "url": "https://element-plus.org/en-US/component/slider.html",
+   "note": "Element Plus 官方文档里的「表单」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "Vue",
+    "Element Plus"
+   ],
+   "ct": [
+    "form"
+   ]
+  },
+  {
+   "id": "cs-lib-arco-design-date",
+   "type": "style",
+   "lib": "lib-arco-design",
+   "libName": "Arco Design",
+   "kind": "date",
+   "name": "Date picker · Arco Design",
+   "url": "https://arco.design/react/components/date-picker",
+   "note": "Arco Design 官方文档里的「日期」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Vue",
+    "Arco Design"
+   ],
+   "ct": [
+    "date"
+   ]
+  },
+  {
+   "id": "cs-ui-aceternity-com-button",
+   "type": "style",
+   "lib": "ui-aceternity-com",
+   "libName": "Aceternity UI",
+   "kind": "button",
+   "name": "Button · Aceternity UI",
+   "url": "https://ui.aceternity.com/components/moving-border",
+   "note": "Aceternity UI 官方文档里的「按钮」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "Aceternity UI"
+   ],
+   "ct": [
+    "button"
+   ]
+  },
+  {
+   "id": "cs-lib-flowbite-com-date",
+   "type": "style",
+   "lib": "lib-flowbite-com",
+   "libName": "Flowbite",
+   "kind": "date",
+   "name": "Date picker · Flowbite",
+   "url": "https://flowbite.com/docs/components/datepicker/",
+   "note": "Flowbite 官方文档里的「日期」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "freemium",
+   "tags": [
+    "CSS",
+    "React",
+    "Vue",
+    "Svelte",
+    "Flowbite"
+   ],
+   "ct": [
+    "date"
+   ]
+  },
+  {
+   "id": "cs-lib-mui-com-material-ui-tooltip",
+   "type": "style",
+   "lib": "lib-mui-com-material-ui",
+   "libName": "Material UI",
+   "kind": "tooltip",
+   "name": "Tooltip · Material UI",
+   "url": "https://mui.com/material-ui/react-tooltip/",
+   "note": "Material UI 官方文档里的「气泡」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Material UI"
+   ],
+   "ct": [
+    "tooltip"
+   ]
+  },
+  {
+   "id": "cs-lib-ark-ui-com-date",
+   "type": "style",
+   "lib": "lib-ark-ui-com",
+   "libName": "Ark UI",
+   "kind": "date",
+   "name": "Date picker · Ark UI",
+   "url": "https://ark-ui.com/docs/components/date-picker",
+   "note": "Ark UI 官方文档里的「日期」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Vue",
+    "Solid",
+    "Svelte",
+    "Ark UI"
+   ],
+   "ct": [
+    "date"
+   ]
+  },
+  {
+   "id": "cs-lib-material-angular-dev-tabs",
+   "type": "style",
+   "lib": "lib-material-angular-dev",
+   "libName": "Angular Material",
+   "kind": "tabs",
+   "name": "Tabs · Angular Material",
+   "url": "https://material.angular.dev/components/tabs/overview",
+   "note": "Angular Material 官方文档里的「标签页」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "Angular",
+    "Angular Material"
+   ],
+   "ct": [
+    "tabs"
+   ]
+  },
+  {
+   "id": "cs-lib-mantine-dev-avatar",
+   "type": "style",
+   "lib": "lib-mantine-dev",
+   "libName": "Mantine",
+   "kind": "avatar",
+   "name": "Avatar · Mantine",
+   "url": "https://mantine.dev/core/avatar/",
+   "note": "Mantine 官方文档里的「头像」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Mantine"
+   ],
+   "ct": [
+    "avatar"
+   ]
+  },
+  {
+   "id": "cs-lib-daisyui-com-table",
+   "type": "style",
+   "lib": "lib-daisyui-com",
+   "libName": "daisyUI",
+   "kind": "table",
+   "name": "Table · daisyUI",
+   "url": "https://daisyui.com/components/table/",
+   "note": "daisyUI 官方文档里的「表格」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "CSS",
+    "daisyUI"
+   ],
+   "ct": [
+    "table"
+   ]
+  },
+  {
+   "id": "cs-www-heroui-com-avatar",
+   "type": "style",
+   "lib": "www-heroui-com",
+   "libName": "HeroUI",
+   "kind": "avatar",
+   "name": "Avatar · HeroUI",
+   "url": "https://heroui.com/en/docs/react/components/avatar",
+   "note": "HeroUI 官方文档里的「头像」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "HeroUI"
+   ],
+   "ct": [
+    "avatar"
+   ]
+  },
+  {
+   "id": "cs-ui-shadcn-com-tabs",
+   "type": "style",
+   "lib": "ui-shadcn-com",
+   "libName": "shadcn/ui",
+   "kind": "tabs",
+   "name": "Tabs · shadcn/ui",
+   "url": "https://ui.shadcn.com/docs/components/base/tabs",
+   "note": "shadcn/ui 官方文档里的「标签页」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "shadcn",
+    "shadcn/ui"
+   ],
+   "ct": [
+    "tabs"
+   ]
+  },
+  {
+   "id": "cs-magicui-design-background",
+   "type": "style",
+   "lib": "magicui-design",
+   "libName": "Magic UI",
+   "kind": "background",
+   "name": "Background · Magic UI",
+   "url": "https://magicui.design/docs/components/retro-grid",
+   "note": "Magic UI 官方文档里的「背景」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "Magic UI"
+   ],
+   "ct": [
+    "background"
+   ]
+  },
+  {
+   "id": "cs-lib-www-shadcn-svelte-com-button",
+   "type": "style",
+   "lib": "lib-www-shadcn-svelte-com",
+   "libName": "shadcn-svelte",
+   "kind": "button",
+   "name": "Button · shadcn-svelte",
+   "url": "https://www.shadcn-svelte.com/docs/components/button",
+   "note": "shadcn-svelte 官方文档里的「按钮」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "Svelte",
+    "shadcn-svelte"
+   ],
+   "ct": [
+    "button"
+   ]
+  },
+  {
+   "id": "cs-lib-ant-design-card",
+   "type": "style",
+   "lib": "lib-ant-design",
+   "libName": "Ant Design",
+   "kind": "card",
+   "name": "Card · Ant Design",
+   "url": "https://ant.design/components/card",
+   "note": "Ant Design 官方文档里的「卡片」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Ant Design"
+   ],
+   "ct": [
+    "card"
+   ]
+  },
+  {
+   "id": "cs-lib-tdesign-tencent-com-select",
+   "type": "style",
+   "lib": "lib-tdesign-tencent-com",
+   "libName": "TDesign",
+   "kind": "select",
+   "name": "Select · TDesign",
+   "url": "https://tdesign.tencent.com/vue-next/components/select",
+   "note": "TDesign 官方文档里的「选择器」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Vue",
+    "TDesign"
+   ],
+   "ct": [
+    "select"
+   ]
+  },
+  {
+   "id": "cs-lib-headlessui-com-menu",
+   "type": "style",
+   "lib": "lib-headlessui-com",
+   "libName": "Headless UI",
+   "kind": "menu",
+   "name": "Menu · Headless UI",
+   "url": "https://headlessui.com/react/menu",
+   "note": "Headless UI 官方文档里的「菜单」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Vue",
+    "Headless UI"
+   ],
+   "ct": [
+    "menu"
+   ]
+  },
+  {
+   "id": "cs-lib-chakra-ui-com-loader",
+   "type": "style",
+   "lib": "lib-chakra-ui-com",
+   "libName": "Chakra UI",
+   "kind": "loader",
+   "name": "Loader · Chakra UI",
+   "url": "https://chakra-ui.com/docs/components/skeleton",
+   "note": "Chakra UI 官方文档里的「加载」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Chakra UI"
+   ],
+   "ct": [
+    "loader"
+   ]
+  },
+  {
+   "id": "cs-lib-arco-design-tabs",
+   "type": "style",
+   "lib": "lib-arco-design",
+   "libName": "Arco Design",
+   "kind": "tabs",
+   "name": "Tabs · Arco Design",
+   "url": "https://arco.design/react/components/tabs",
+   "note": "Arco Design 官方文档里的「标签页」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Vue",
+    "Arco Design"
+   ],
+   "ct": [
+    "tabs"
+   ]
+  },
+  {
+   "id": "cs-lib-flowbite-com-toast",
+   "type": "style",
+   "lib": "lib-flowbite-com",
+   "libName": "Flowbite",
+   "kind": "toast",
+   "name": "Toast · Flowbite",
+   "url": "https://flowbite.com/docs/components/toast/",
+   "note": "Flowbite 官方文档里的「通知」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "freemium",
+   "tags": [
+    "CSS",
+    "React",
+    "Vue",
+    "Svelte",
+    "Flowbite"
+   ],
+   "ct": [
+    "toast"
+   ]
+  },
+  {
+   "id": "cs-lib-mui-com-material-ui-menu",
+   "type": "style",
+   "lib": "lib-mui-com-material-ui",
+   "libName": "Material UI",
+   "kind": "menu",
+   "name": "Menu · Material UI",
+   "url": "https://mui.com/material-ui/react-menu/",
+   "note": "Material UI 官方文档里的「菜单」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Material UI"
+   ],
+   "ct": [
+    "menu"
+   ]
+  },
+  {
+   "id": "cs-lib-ark-ui-com-dialog",
+   "type": "style",
+   "lib": "lib-ark-ui-com",
+   "libName": "Ark UI",
+   "kind": "dialog",
+   "name": "Dialog · Ark UI",
+   "url": "https://ark-ui.com/docs/components/dialog",
+   "note": "Ark UI 官方文档里的「弹窗」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Vue",
+    "Solid",
+    "Svelte",
+    "Ark UI"
+   ],
+   "ct": [
+    "dialog"
+   ]
+  },
+  {
+   "id": "cs-lib-mantine-dev-loader",
+   "type": "style",
+   "lib": "lib-mantine-dev",
+   "libName": "Mantine",
+   "kind": "loader",
+   "name": "Loader · Mantine",
+   "url": "https://mantine.dev/core/loader/",
+   "note": "Mantine 官方文档里的「加载」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Mantine"
+   ],
+   "ct": [
+    "loader"
+   ]
+  },
+  {
+   "id": "cs-lib-daisyui-com-chat",
+   "type": "style",
+   "lib": "lib-daisyui-com",
+   "libName": "daisyUI",
+   "kind": "chat",
+   "name": "Chat · daisyUI",
+   "url": "https://daisyui.com/components/chat/",
+   "note": "daisyUI 官方文档里的「聊天」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "CSS",
+    "daisyUI"
+   ],
+   "ct": [
+    "chat"
+   ]
+  },
+  {
+   "id": "cs-www-heroui-com-date",
+   "type": "style",
+   "lib": "www-heroui-com",
+   "libName": "HeroUI",
+   "kind": "date",
+   "name": "Date picker · HeroUI",
+   "url": "https://heroui.com/en/docs/react/components/date-picker",
+   "note": "HeroUI 官方文档里的「日期」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "HeroUI"
+   ],
+   "ct": [
+    "date"
+   ]
+  },
+  {
+   "id": "cs-ui-shadcn-com-button",
+   "type": "style",
+   "lib": "ui-shadcn-com",
+   "libName": "shadcn/ui",
+   "kind": "button",
+   "name": "Button · shadcn/ui",
+   "url": "https://ui.shadcn.com/docs/components/base/button",
+   "note": "shadcn/ui 官方文档里的「按钮」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "shadcn",
+    "shadcn/ui"
+   ],
+   "ct": [
+    "button"
+   ]
+  },
+  {
+   "id": "cs-magicui-design-layout",
+   "type": "style",
+   "lib": "magicui-design",
+   "libName": "Magic UI",
+   "kind": "layout",
+   "name": "Layout · Magic UI",
+   "url": "https://magicui.design/docs/components/bento-grid",
+   "note": "Magic UI 官方文档里的「区块」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "Magic UI"
+   ],
+   "ct": [
+    "layout"
+   ]
+  },
+  {
+   "id": "cs-lib-ant-design-input",
+   "type": "style",
+   "lib": "lib-ant-design",
+   "libName": "Ant Design",
+   "kind": "input",
+   "name": "Input · Ant Design",
+   "url": "https://ant.design/components/cascader",
+   "note": "Ant Design 官方文档里的「输入框」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Ant Design"
+   ],
+   "ct": [
+    "input"
+   ]
+  },
+  {
+   "id": "cs-lib-tdesign-tencent-com-date",
+   "type": "style",
+   "lib": "lib-tdesign-tencent-com",
+   "libName": "TDesign",
+   "kind": "date",
+   "name": "Date picker · TDesign",
+   "url": "https://tdesign.tencent.com/vue-next/components/date-picker",
+   "note": "TDesign 官方文档里的「日期」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Vue",
+    "TDesign"
+   ],
+   "ct": [
+    "date"
+   ]
+  },
+  {
+   "id": "cs-lib-headlessui-com-form",
+   "type": "style",
+   "lib": "lib-headlessui-com",
+   "libName": "Headless UI",
+   "kind": "form",
+   "name": "Form · Headless UI",
+   "url": "https://headlessui.com/react/switch",
+   "note": "Headless UI 官方文档里的「表单」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Vue",
+    "Headless UI"
+   ],
+   "ct": [
+    "form"
+   ]
+  },
+  {
+   "id": "cs-lib-chakra-ui-com-input",
+   "type": "style",
+   "lib": "lib-chakra-ui-com",
+   "libName": "Chakra UI",
+   "kind": "input",
+   "name": "Input · Chakra UI",
+   "url": "https://chakra-ui.com/docs/components/pin-input",
+   "note": "Chakra UI 官方文档里的「输入框」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Chakra UI"
+   ],
+   "ct": [
+    "input"
+   ]
+  },
+  {
+   "id": "cs-lib-mui-com-material-ui-select",
+   "type": "style",
+   "lib": "lib-mui-com-material-ui",
+   "libName": "Material UI",
+   "kind": "select",
+   "name": "Select · Material UI",
+   "url": "https://mui.com/material-ui/react-select/",
+   "note": "Material UI 官方文档里的「选择器」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Material UI"
+   ],
+   "ct": [
+    "select"
+   ]
+  },
+  {
+   "id": "cs-lib-mantine-dev-table",
+   "type": "style",
+   "lib": "lib-mantine-dev",
+   "libName": "Mantine",
+   "kind": "table",
+   "name": "Table · Mantine",
+   "url": "https://mantine.dev/core/table/",
+   "note": "Mantine 官方文档里的「表格」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Mantine"
+   ],
+   "ct": [
+    "table"
+   ]
+  },
+  {
+   "id": "cs-lib-daisyui-com-select",
+   "type": "style",
+   "lib": "lib-daisyui-com",
+   "libName": "daisyUI",
+   "kind": "select",
+   "name": "Select · daisyUI",
+   "url": "https://daisyui.com/components/select/",
+   "note": "daisyUI 官方文档里的「选择器」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "CSS",
+    "daisyUI"
+   ],
+   "ct": [
+    "select"
+   ]
+  },
+  {
+   "id": "cs-ui-shadcn-com-input",
+   "type": "style",
+   "lib": "ui-shadcn-com",
+   "libName": "shadcn/ui",
+   "kind": "input",
+   "name": "Input · shadcn/ui",
+   "url": "https://ui.shadcn.com/docs/components/base/input-otp",
+   "note": "shadcn/ui 官方文档里的「输入框」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "shadcn",
+    "shadcn/ui"
+   ],
+   "ct": [
+    "input"
+   ]
+  },
+  {
+   "id": "cs-magicui-design-loader",
+   "type": "style",
+   "lib": "magicui-design",
+   "libName": "Magic UI",
+   "kind": "loader",
+   "name": "Loader · Magic UI",
+   "url": "https://magicui.design/docs/components/animated-beam",
+   "note": "Magic UI 官方文档里的「加载」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "Magic UI"
+   ],
+   "ct": [
+    "loader"
+   ]
+  },
+  {
+   "id": "cs-lib-ant-design-tabs",
+   "type": "style",
+   "lib": "lib-ant-design",
+   "libName": "Ant Design",
+   "kind": "tabs",
+   "name": "Tabs · Ant Design",
+   "url": "https://ant.design/components/tabs",
+   "note": "Ant Design 官方文档里的「标签页」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Ant Design"
+   ],
+   "ct": [
+    "tabs"
+   ]
+  },
+  {
+   "id": "cs-lib-mui-com-material-ui-table",
+   "type": "style",
+   "lib": "lib-mui-com-material-ui",
+   "libName": "Material UI",
+   "kind": "table",
+   "name": "Table · Material UI",
+   "url": "https://mui.com/material-ui/react-table/",
+   "note": "Material UI 官方文档里的「表格」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Material UI"
+   ],
+   "ct": [
+    "table"
+   ]
+  },
+  {
+   "id": "cs-lib-mantine-dev-chart",
+   "type": "style",
+   "lib": "lib-mantine-dev",
+   "libName": "Mantine",
+   "kind": "chart",
+   "name": "Chart · Mantine",
+   "url": "https://mantine.dev/charts/area-chart/",
+   "note": "Mantine 官方文档里的「图表」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Mantine"
+   ],
+   "ct": [
+    "chart"
+   ]
+  },
+  {
+   "id": "cs-lib-daisyui-com-loader",
+   "type": "style",
+   "lib": "lib-daisyui-com",
+   "libName": "daisyUI",
+   "kind": "loader",
+   "name": "Loader · daisyUI",
+   "url": "https://daisyui.com/components/loading/",
+   "note": "daisyUI 官方文档里的「加载」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "CSS",
+    "daisyUI"
+   ],
+   "ct": [
+    "loader"
+   ]
+  },
+  {
+   "id": "cs-ui-shadcn-com-carousel",
+   "type": "style",
+   "lib": "ui-shadcn-com",
+   "libName": "shadcn/ui",
+   "kind": "carousel",
+   "name": "Carousel · shadcn/ui",
+   "url": "https://ui.shadcn.com/docs/components/base/carousel",
+   "note": "shadcn/ui 官方文档里的「轮播」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "shadcn",
+    "shadcn/ui"
+   ],
+   "ct": [
+    "carousel"
+   ]
+  },
+  {
+   "id": "cs-lib-ant-design-loader",
+   "type": "style",
+   "lib": "lib-ant-design",
+   "libName": "Ant Design",
+   "kind": "loader",
+   "name": "Loader · Ant Design",
+   "url": "https://ant.design/components/skeleton",
+   "note": "Ant Design 官方文档里的「加载」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Ant Design"
+   ],
+   "ct": [
+    "loader"
+   ]
+  },
+  {
+   "id": "cs-lib-mui-com-material-ui-card",
+   "type": "style",
+   "lib": "lib-mui-com-material-ui",
+   "libName": "Material UI",
+   "kind": "card",
+   "name": "Card · Material UI",
+   "url": "https://mui.com/material-ui/react-card/",
+   "note": "Material UI 官方文档里的「卡片」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Material UI"
+   ],
+   "ct": [
+    "card"
+   ]
+  },
+  {
+   "id": "cs-lib-mantine-dev-select",
+   "type": "style",
+   "lib": "lib-mantine-dev",
+   "libName": "Mantine",
+   "kind": "select",
+   "name": "Select · Mantine",
+   "url": "https://mantine.dev/core/select/",
+   "note": "Mantine 官方文档里的「选择器」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Mantine"
+   ],
+   "ct": [
+    "select"
+   ]
+  },
+  {
+   "id": "cs-lib-daisyui-com-form",
+   "type": "style",
+   "lib": "lib-daisyui-com",
+   "libName": "daisyUI",
+   "kind": "form",
+   "name": "Form · daisyUI",
+   "url": "https://daisyui.com/components/toggle/",
+   "note": "daisyUI 官方文档里的「表单」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "CSS",
+    "daisyUI"
+   ],
+   "ct": [
+    "form"
+   ]
+  },
+  {
+   "id": "cs-lib-mui-com-material-ui-dialog",
+   "type": "style",
+   "lib": "lib-mui-com-material-ui",
+   "libName": "Material UI",
+   "kind": "dialog",
+   "name": "Dialog · Material UI",
+   "url": "https://mui.com/material-ui/react-dialog/",
+   "note": "Material UI 官方文档里的「弹窗」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Material UI"
+   ],
+   "ct": [
+    "dialog"
+   ]
+  },
+  {
+   "id": "cs-lib-mantine-dev-input",
+   "type": "style",
+   "lib": "lib-mantine-dev",
+   "libName": "Mantine",
+   "kind": "input",
+   "name": "Input · Mantine",
+   "url": "https://mantine.dev/core/pin-input/",
+   "note": "Mantine 官方文档里的「输入框」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Mantine"
+   ],
+   "ct": [
+    "input"
+   ]
+  },
+  {
+   "id": "cs-lib-daisyui-com-date",
+   "type": "style",
+   "lib": "lib-daisyui-com",
+   "libName": "daisyUI",
+   "kind": "date",
+   "name": "Date picker · daisyUI",
+   "url": "https://daisyui.com/components/calendar/",
+   "note": "daisyUI 官方文档里的「日期」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "CSS",
+    "daisyUI"
+   ],
+   "ct": [
+    "date"
+   ]
+  },
+  {
+   "id": "cs-lib-mantine-dev-date",
+   "type": "style",
+   "lib": "lib-mantine-dev",
+   "libName": "Mantine",
+   "kind": "date",
+   "name": "Date picker · Mantine",
+   "url": "https://mantine.dev/dates/date-picker/",
+   "note": "Mantine 官方文档里的「日期」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Mantine"
+   ],
+   "ct": [
+    "date"
+   ]
+  },
+  {
+   "id": "cs-lib-daisyui-com-button",
+   "type": "style",
+   "lib": "lib-daisyui-com",
+   "libName": "daisyUI",
+   "kind": "button",
+   "name": "Button · daisyUI",
+   "url": "https://daisyui.com/components/button/",
+   "note": "daisyUI 官方文档里的「按钮」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "CSS",
+    "daisyUI"
+   ],
+   "ct": [
+    "button"
+   ]
+  },
+  {
+   "id": "cs-lib-mantine-dev-editor",
+   "type": "style",
+   "lib": "lib-mantine-dev",
+   "libName": "Mantine",
+   "kind": "editor",
+   "name": "Editor · Mantine",
+   "url": "https://mantine.dev/x/tiptap/",
+   "note": "Mantine 官方文档里的「编辑器」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Mantine"
+   ],
+   "ct": [
+    "editor"
+   ]
+  },
+  {
+   "id": "cs-lib-daisyui-com-nav",
+   "type": "style",
+   "lib": "lib-daisyui-com",
+   "libName": "daisyUI",
+   "kind": "nav",
+   "name": "Navigation · daisyUI",
+   "url": "https://daisyui.com/components/navbar/",
+   "note": "daisyUI 官方文档里的「导航」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "CSS",
+    "daisyUI"
+   ],
+   "ct": [
+    "nav"
+   ]
+  },
+  {
+   "id": "cs-lib-daisyui-com-tabs",
+   "type": "style",
+   "lib": "lib-daisyui-com",
+   "libName": "daisyUI",
+   "kind": "tabs",
+   "name": "Tabs · daisyUI",
+   "url": "https://daisyui.com/components/tab/",
+   "note": "daisyUI 官方文档里的「标签页」公开演示",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "CSS",
+    "daisyUI"
+   ],
+   "ct": [
+    "tabs"
    ]
   }
  ],

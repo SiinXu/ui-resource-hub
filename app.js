@@ -7,23 +7,26 @@ function t(k,v){var s=(I18N[LANG]&&I18N[LANG][k]!=null)?I18N[LANG][k]:(I18N['zh-
 function isZh(){return LANG==='zh-CN'}
 var ITEMS = D.items, BY = {};
 ITEMS.forEach(function(i){BY[i.id]=i});
-var TYPES = ['all','library','component','effect','skill','inspiration','template','generator','guide'];
+var TYPES = ['all','style','library','component','effect','skill','inspiration','template','generator','guide'];
 var NOTES = window.UI_NOTES || {notes:{},why:{}}, CTO = window.UI_CT_ORDER || [], SECO = window.UI_SEC_ORDER || [];
 // 资源说明随界面语言切换：非中文用人工撰写的译文，缺失时回落到中文原文
-function noteOf(i){var m=!isZh()&&NOTES.notes[LANG];return (m&&m[i.id])||shown(i.note)}
+// 组件样式卡：名称/说明按语言模板生成（组件类型 · 来源库）
+function styleName(i){return CTN(i.kind)+' · '+i.libName}
+function syncStyleNames(){ITEMS.forEach(function(i){if(i.type==='style')i.name=styleName(i)})}
+function noteOf(i){if(i.type==='style')return t('cs_note',{lib:i.libName,kind:CTN(i.kind)});var m=!isZh()&&NOTES.notes[LANG];return (m&&m[i.id])||shown(i.note)}
 function whyOf(p,g){var m=!isZh()&&NOTES.why[LANG];return (m&&m[p.id+'@'+g.id])||p.why}
 function secOf(i){if(isZh())return i.sectionTitle;var n=SECO.indexOf(i.section);return n<0?i.sectionTitle:t('sec_'+n)}
 function CTN(k){return t('ct_'+k)}
 function TN(k){return t('t_'+k)}
 function PR(k){return {free:1,paid:1,freemium:1}[k]?t('price_'+k):''}
-var VISUAL = {library:1,component:1,effect:1,template:1,generator:1,inspiration:1,guide:1};
+var VISUAL = {style:1,library:1,component:1,effect:1,template:1,generator:1,inspiration:1,guide:1};
 
 /* ---------- 精选：live = 原站页面 iframe 嵌入（裁出演示区域） ---------- */
 // w: iframe 的虚拟宽度；top/view: 演示区域在页面里的纵向位置和高度（像素，按 w 宽度时）
 var LIB = 'https://libraries.dev/';
 function lib(p){return {src:LIB+p+'.html',w:480,top:375,view:440}}
 var FEAT = [
-  {id:'metal-jakubantalik-com', live:{src:'https://metal.jakubantalik.com',w:420,top:60,view:340}, poster:'previews/live-metal.webp', title:'Liquid Metal 液态金属', hint:'鼠标移到按钮上看金属流动', big:1},
+  {id:'metal-jakubantalik-com', live:{src:'https://metal.jakubantalik.com',w:480,top:140,view:420}, poster:'previews/live-metal.webp', title:'Liquid Metal 液态金属', hint:'鼠标移到按钮上看金属流动', big:1},
   {id:'libraries-dev', live:lib('voice'), poster:'previews/live-voice.webp', title:'Voice 语音光效', sub:'Libraries.dev · 9 月新组件', hint:'在原站点麦克风按钮，说话时光会升起'},
   {id:'orbs-jakubantalik-com', live:lib('orbs'), poster:'previews/live-orbs.webp', title:'Thinking Orbs 思考光球', sub:'原站已迁到 libraries.dev，嵌入的是新地址'},
   {id:'beam-jakubantalik-com', live:lib('beam'), poster:'previews/live-beam.webp', title:'Border Beam 流光边框', sub:'原站已迁到 libraries.dev，嵌入的是新地址'},
@@ -64,7 +67,7 @@ var IC = {
 function favBtn(i,cls){return '<button class="ib fav'+(favs[i.id]?' on':'')+(cls?' '+cls:'')+'" data-fav="'+i.id+'" aria-label="'+esc(t('fav'))+'">'+IC.star+'</button>'}
 
 /* ---------- 许可 / 代码 / 提示词 ---------- */
-function lg(i){return LG[i.id]||{k:'unk'}}
+function lg(i){return LG[i.id]||(i.lib&&LG[i.lib])||{k:'unk'}}
 function codeOf(i){var l=lg(i);return l.k==='oss'&&l.code?l.code:''}
 function codeTip(i){
   var l=lg(i);
@@ -189,6 +192,9 @@ function card(i){
       '<div class="cb"><p class="note">'+esc(noteOf(i)||host(i.url))+'</p>'+foot(i)+'</div></article>';
   }
   var tag = live?'<span class="tag-lv">'+t('tag_live')+'</span>':(m.frame?'<span class="tag-fr">'+t('tag_frame')+'</span>':srcTag(i));
+  if(i.type==='style')return '<article class="card cs" data-open="'+i.id+'"><div class="cm">'+thumb(i)+
+    '<div class="ctop"><span class="tag-pv">'+esc(t('tag_cs'))+'</span></div></div>'+
+    '<div class="cb"><h3>'+esc(CTN(i.kind))+'<span class="csl">'+esc(i.libName)+'</span></h3><p class="note">'+esc(host(i.url)+(new URL(i.url).pathname.length>1?new URL(i.url).pathname.replace(/\/$/,''):''))+'</p>'+foot(i)+'</div></article>';
   return '<article class="card" data-open="'+i.id+'"><div class="cm">'+thumb(i)+
     '<div class="ctop">'+tag+'</div><span class="cview">'+esc(t('btn_details'))+IC.ext.replace('M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5','M7 17 17 7M9 7h8v8')+'</span></div>'+
     '<div class="cb"><h3>'+esc(shown(i.name))+'</h3><p class="note">'+esc(noteOf(i)||host(i.url))+'</p>'+foot(i)+'</div></article>';
@@ -199,7 +205,7 @@ function match(i){
   if(state.ct&&(i.ct||[]).indexOf(state.ct)<0)return false;
   if(state.tag&&tagsOf(i).indexOf(state.tag)<0)return false;
   if(!state.q)return true;
-  var l=lg(i), hay=(i.name+' '+i.note+' '+noteOf(i)+' '+i.url+' '+i.source+' '+i.section+' '+TN(i.type)+' '+i.type+' '+(l.lic||'')+' '+tagsOf(i).join(' ')+' '+(i.ct||[]).map(function(c){return c+' '+CTN(c)}).join(' ')).toLowerCase();
+  var l=lg(i), hay=(i.name+' '+(i.libName||'')+' '+(i.kind||'')+' '+i.note+' '+noteOf(i)+' '+i.url+' '+i.source+' '+i.section+' '+TN(i.type)+' '+i.type+' '+(l.lic||'')+' '+tagsOf(i).join(' ')+' '+(i.ct||[]).map(function(c){return c+' '+CTN(c)}).join(' ')).toLowerCase();
   return state.q.toLowerCase().split(/\s+/).every(function(w){return hay.indexOf(w)>=0});
 }
 function renderChips(){
@@ -222,7 +228,7 @@ function renderChips(){
 }
 function renderGrid(){
   var list = ITEMS.filter(match);
-  list = list.map(function(i,k){return [VISUAL[i.type]?(M[i.id]&&M[i.id].img||LIVE[i.id]?0:1):2,k,i]}).sort(function(a,b){return a[0]-b[0]||a[1]-b[1]}).map(function(a){return a[2]});
+  list = list.map(function(i,k){return [i.type==='style'?-1:VISUAL[i.type]?(M[i.id]&&M[i.id].img||LIVE[i.id]?0:1):2,k,i]}).sort(function(a,b){return a[0]-b[0]||a[1]-b[1]}).map(function(a){return a[2]});
   $('grid').innerHTML = list.map(card).join('');
   var fc=Object.keys(favs).length; $('favCnt').textContent=fc||'';
   var isFav=state.view==='fav';
@@ -243,8 +249,9 @@ function renderGuides(){
 function fit(box){
   var w=+box.dataset.w, top=+box.dataset.top, view=+box.dataset.view, cw=box.clientWidth, ch=box.clientHeight;
   if(!cw||!ch)return;
-  var s=Math.max(cw/w, ch/view), vis=ch/s;
-  var off=top+Math.max(0,(view-vis)/2), fr=box.querySelector('iframe');
+  // contain：整块演示区（w × view）完整缩进卡片里，左右不裁切；多出的高度上下居中留白
+  var s=Math.min(cw/w, ch/view), vis=ch/s;
+  var off=Math.max(0, top-(vis-view)/2), fr=box.querySelector('iframe');
   if(fr){fr.style.width=w+'px';fr.style.height=(off+vis+40)+'px';fr.style.transform='translate('+((cw-w*s)/2)+'px,'+(-off*s)+'px) scale('+s+')'}
 }
 function loadLive(box){
@@ -362,7 +369,7 @@ function applyStatic(){
 }
 function setLang(l){
   if(!I18N[l])return; LANG=l; try{localStorage.setItem('uihub.lang',l)}catch(e){}
-  applyStatic(); renderFeat(); renderGuides(); refresh();
+  syncStyleNames(); applyStatic(); renderFeat(); renderGuides(); refresh();
   var id=$('sheet').classList.contains('open')&&$('sheet').dataset.id; if(id)openSheet(id);
 }
 
@@ -443,5 +450,5 @@ addEventListener('scroll',function(){if(menuFor&&!isSheetMenu())closeMenu()},{pa
 addEventListener('resize',closeMenu);
 addEventListener('scroll',function(){$('top').classList.toggle('scrolled',scrollY>8)},{passive:true});
 window.addEventListener('hashchange',route);
-applyStatic(); renderFeat(); renderGuides(); setView("home"); route();
+syncStyleNames(); applyStatic(); renderFeat(); renderGuides(); setView("home"); route();
 })();

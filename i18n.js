@@ -220,3 +220,14 @@ fr: {
 };
 window.UI_CT_ORDER=["chat", "button", "input", "form", "select", "date", "dialog", "menu", "nav", "tabs", "table", "chart", "card", "avatar", "toast", "tooltip", "carousel", "upload", "editor", "icon", "motion", "background", "threed", "loader", "dnd", "flow", "mobile", "layout"];
 window.UI_SEC_ORDER=["最初推荐", "设计 Skills", "海外 AI 组件", "国内大厂 AI 组件", "动效与通用组件", "AI 产品灵感", "开源 AI 聊天应用", "AI 生成界面", "更多 UI Skills", "开源组件库"];
+/* v3d：组件样式卡 */
+(function(I){var A={
+'zh-CN':{t_style:'组件样式',tag_cs:'官方演示截图',cs_note:'{lib} 官方文档里的「{kind}」公开演示，点开到原站看全部变体与用法',filter_note:'站内为公开组件库导航与演示截图；单个组件的全部变体请进入原站浏览',ct_code:'代码块'},
+'en':{t_style:'Component styles',tag_cs:'Official demo',cs_note:'Public {kind} demo from the {lib} docs — open the original to see every variant and usage',filter_note:'This site links to public component libraries and shows demo screenshots; browse each component\u2019s full variants on the original site',ct_code:'Code block'},
+'ja':{t_style:'コンポーネント',tag_cs:'公式デモ',cs_note:'{lib} 公式ドキュメントの「{kind}」公開デモ。全バリエーションと使い方は元サイトへ',filter_note:'当サイトは公開コンポーネントライブラリへの案内とデモのスクリーンショットです。各コンポーネントの全バリエーションは元サイトでご覧ください',ct_code:'コードブロック'},
+'ko':{t_style:'컴포넌트 스타일',tag_cs:'공식 데모',cs_note:'{lib} 공식 문서의 「{kind}」 공개 데모. 모든 변형과 사용법은 원본 사이트에서 확인',filter_note:'이 사이트는 공개 컴포넌트 라이브러리 안내와 데모 스크린샷입니다. 각 컴포넌트의 전체 변형은 원본 사이트에서 보세요',ct_code:'코드 블록'},
+'ms':{t_style:'Gaya komponen',tag_cs:'Demo rasmi',cs_note:'Demo awam {kind} daripada dokumentasi {lib} — buka laman asal untuk semua varian dan cara guna',filter_note:'Laman ini memautkan pustaka komponen awam dan tangkapan skrin demo; lihat semua varian setiap komponen di laman asal',ct_code:'Blok kod'},
+'es':{t_style:'Estilos de componentes',tag_cs:'Demo oficial',cs_note:'Demo pública de {kind} en la documentación de {lib}: abre el sitio original para ver todas las variantes y su uso',filter_note:'Este sitio enlaza bibliotecas públicas de componentes y muestra capturas de sus demos; consulta todas las variantes de cada componente en el sitio original',ct_code:'Bloque de código'},
+'de':{t_style:'Komponenten-Stile',tag_cs:'Offizielle Demo',cs_note:'Öffentliche {kind}-Demo aus der {lib}-Dokumentation – alle Varianten und Nutzung auf der Originalseite',filter_note:'Diese Seite verlinkt öffentliche Komponentenbibliotheken und zeigt Demo-Screenshots; alle Varianten einer Komponente findest du auf der Originalseite',ct_code:'Codeblock'},
+'fr':{t_style:'Styles de composants',tag_cs:'Démo officielle',cs_note:'Démo publique « {kind} » de la documentation {lib} — ouvrez le site d\u2019origine pour toutes les variantes et l\u2019usage',filter_note:'Ce site référence des bibliothèques de composants publiques et montre des captures de leurs démos ; consultez toutes les variantes de chaque composant sur le site d\u2019origine',ct_code:'Bloc de code'}
+};for(var l in A)if(I[l])for(var k in A[l])I[l][k]=A[l][k]})(window.UI_I18N);

@@ -134,7 +134,8 @@ kbd{font:11px var(--mono);padding:1px 6px;border-radius:5px;border:1px solid var
 
 /* 实时预览裁剪窗 */
 .live,.site{position:absolute;inset:0;overflow:hidden;background:#0a0a0d}
-.live .poster,.site-wrap .poster{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:opacity .6s}
+.live .poster{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;transition:opacity .6s}
+.site-wrap .poster{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:opacity .6s}
 .ifw{position:absolute;inset:0}
 .ifw iframe{position:absolute;left:0;top:0;border:0;transform-origin:0 0;opacity:0;transition:opacity .7s;background:transparent}
 .live.ready iframe,.site.ready iframe{opacity:1}
@@ -502,3 +503,19 @@ kbd{font:11px var(--mono);padding:1px 6px;border-radius:5px;border:1px solid var
 .chips.ctrow .ct-h{flex:none;font:600 11px var(--mono);letter-spacing:.04em;text-transform:uppercase;color:var(--mut2);margin-right:4px}
 .chip.c{height:28px;padding:0 11px;font-size:12.5px;border-radius:8px}
 .chip.c.on{color:var(--bg);background:var(--fg);box-shadow:none}
+/* v3d：复制按钮收成小胶囊，不再撑满卡片；视觉 26px，触控区靠 ::after 扩到 ~44px */
+.ccp{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 8px;justify-content:flex-start}
+.cpb,.cpb.pri,.cpb.code,.cpb.off{flex:0 0 auto;position:relative;height:26px;padding:0 9px;gap:5px;border-radius:999px;font:560 11.5px var(--sans);color:var(--mut);background:var(--chip);box-shadow:inset 0 0 0 1px var(--line)}
+.cpb.pri{color:var(--fg)}
+.cpb.off{background:transparent;color:var(--mut2)}
+.cpb svg{width:12px;height:12px}
+.cpb::after{content:"";position:absolute;inset:-9px -3px}
+@media(hover:hover){.cpb.pri:hover{opacity:1;background:var(--fg);color:var(--bg)}}
+@media(max-width:640px){.cpb,.cpb.pri,.cpb.code,.cpb.off{flex:0 0 auto;height:26px;padding:0 8px}.cpb.code span,.cpb.off span{display:none}.cpb.code,.cpb.off{width:26px;padding:0;justify-content:center}}
+/* v3d：组件样式卡——组件是主角，来源库降为小标签 */
+.card.cs .cm{background:#fff}
+.card.cs .cm img{object-fit:cover;object-position:center}
+.card.cs h3{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+.csl{font:500 11.5px var(--sans);color:var(--mut);padding:2px 7px;border-radius:999px;background:var(--chip);box-shadow:inset 0 0 0 1px var(--line)}
+.card.cs .note{font:12px var(--mono);color:var(--mut2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.fnote{margin:2px 0 0;font-size:12px;color:var(--mut2)}

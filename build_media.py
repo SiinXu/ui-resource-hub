@@ -7,6 +7,7 @@ d = json.load(open(os.path.join(HERE, 'data.json'), encoding='utf-8'))
 probe = {r[0]: r for r in json.load(open(os.path.join(HERE, '_probe/probe.json')))}
 SHOT = {'www-beautifului-dev','beautiful-ui-five-vercel-app','ai-sdk-dev-elements','openai-github-io-chatkit-js','ui-elevenlabs-io',
         'chatscope-io','tdesign-tencent-com-chat','www-hover-dev','motion-primitives-com'}
+HOME = set(open(os.path.join(HERE,'previews','_home_shots.txt')).read().split())  # v3d：原站首页截图
 ALIAS = {'orbs-jakubantalik-com': 'live-orbs', 'metal-jakubantalik-com': 'live-metal'}
 media = {}
 for it in d['items']:
@@ -14,7 +15,7 @@ for it in d['items']:
     name = ALIAS.get(rid, rid)
     if os.path.exists(os.path.join(HERE, 'previews', name + '.webp')):
         m['img'] = 'previews/' + name + '.webp'
-        m['src'] = 'shot' if (rid in SHOT or rid in ALIAS) else 'og'
+        m['src'] = 'shot' if (rid in SHOT or rid in ALIAS or rid in HOME) else 'og'
     p = probe.get(rid)
     if p:
         code, xfo, fa = p[1], p[2], p[3]
