@@ -1,0 +1,2272 @@
+{
+ "generated": "2026-10-10",
+ "count": 142,
+ "items": [
+  {
+   "id": "www-beautifului-dev",
+   "name": "Beautiful UI",
+   "url": "https://www.beautifului.dev/",
+   "note": "精选的漂亮 AI 界面组件",
+   "type": "component",
+   "section": "最初推荐",
+   "sectionTitle": "一、最初推荐的 5 个站（@lumxss）",
+   "sectionDesc": "找现成的漂亮组件，丢给 Claude Code、Codex 这类 Agent 参考",
+   "source": "@lumxss",
+   "pricing": "unknown",
+   "tags": []
+  },
+  {
+   "id": "beui-dev",
+   "name": "BeUI",
+   "url": "https://beui.dev",
+   "note": "漂亮的 React 组件",
+   "type": "component",
+   "section": "最初推荐",
+   "sectionTitle": "一、最初推荐的 5 个站（@lumxss）",
+   "sectionDesc": "找现成的漂亮组件，丢给 Claude Code、Codex 这类 Agent 参考",
+   "source": "@lumxss",
+   "pricing": "unknown",
+   "tags": [
+    "React"
+   ]
+  },
+  {
+   "id": "rareui-com",
+   "name": "Rare UI",
+   "url": "https://rareui.com",
+   "note": "少见、有设计感的组件",
+   "type": "component",
+   "section": "最初推荐",
+   "sectionTitle": "一、最初推荐的 5 个站（@lumxss）",
+   "sectionDesc": "找现成的漂亮组件，丢给 Claude Code、Codex 这类 Agent 参考",
+   "source": "@lumxss",
+   "pricing": "unknown",
+   "tags": []
+  },
+  {
+   "id": "transitions-dev",
+   "name": "Transitions",
+   "url": "https://transitions.dev",
+   "note": "页面过渡和动效",
+   "type": "effect",
+   "section": "最初推荐",
+   "sectionTitle": "一、最初推荐的 5 个站（@lumxss）",
+   "sectionDesc": "找现成的漂亮组件，丢给 Claude Code、Codex 这类 Agent 参考",
+   "source": "@lumxss",
+   "pricing": "unknown",
+   "tags": [
+    "动效"
+   ]
+  },
+  {
+   "id": "ui-shadcn-com",
+   "name": "shadcn/ui",
+   "url": "https://ui.shadcn.com/",
+   "note": "最主流的基础组件库，很多库都基于它",
+   "type": "component",
+   "section": "最初推荐",
+   "sectionTitle": "一、最初推荐的 5 个站（@lumxss）",
+   "sectionDesc": "找现成的漂亮组件，丢给 Claude Code、Codex 这类 Agent 参考",
+   "source": "@lumxss",
+   "pricing": "unknown",
+   "tags": [
+    "shadcn"
+   ]
+  },
+  {
+   "id": "www-ui-skills-com-skills-anthropics-frontend-design",
+   "name": "frontend-design（Anthropic）",
+   "url": "https://www.ui-skills.com/skills/anthropics/frontend-design",
+   "note": "Anthropic 官方的前端设计技能",
+   "type": "skill",
+   "section": "设计 Skills",
+   "sectionTitle": "二、让 AI 写的界面更好看的 Skills（@kail_designs）",
+   "sectionDesc": "给 Claude Code 等 Agent 装上，生成的界面审美会明显提升",
+   "source": "@kail_designs",
+   "pricing": "unknown",
+   "tags": []
+  },
+  {
+   "id": "www-ui-skills-com-skills-emilkowalski-apple-design",
+   "name": "apple-design（Emil Kowalski）",
+   "url": "https://www.ui-skills.com/skills/emilkowalski/apple-design",
+   "note": "苹果风格设计",
+   "type": "skill",
+   "section": "设计 Skills",
+   "sectionTitle": "二、让 AI 写的界面更好看的 Skills（@kail_designs）",
+   "sectionDesc": "给 Claude Code 等 Agent 装上，生成的界面审美会明显提升",
+   "source": "@kail_designs",
+   "pricing": "unknown",
+   "tags": []
+  },
+  {
+   "id": "www-ui-skills-com-skills-mengto-beautiful-shadows",
+   "name": "beautiful-shadows（Meng To）",
+   "url": "https://www.ui-skills.com/skills/mengto/beautiful-shadows",
+   "note": "好看的阴影",
+   "type": "skill",
+   "section": "设计 Skills",
+   "sectionTitle": "二、让 AI 写的界面更好看的 Skills（@kail_designs）",
+   "sectionDesc": "给 Claude Code 等 Agent 装上，生成的界面审美会明显提升",
+   "source": "@kail_designs",
+   "pricing": "unknown",
+   "tags": []
+  },
+  {
+   "id": "www-ui-skills-com-skills-addyosmani-accessibility",
+   "name": "accessibility（Addy Osmani）",
+   "url": "https://www.ui-skills.com/skills/addyosmani/accessibility",
+   "note": "无障碍设计",
+   "type": "skill",
+   "section": "设计 Skills",
+   "sectionTitle": "二、让 AI 写的界面更好看的 Skills（@kail_designs）",
+   "sectionDesc": "给 Claude Code 等 Agent 装上，生成的界面审美会明显提升",
+   "source": "@kail_designs",
+   "pricing": "unknown",
+   "tags": [
+    "无障碍"
+   ]
+  },
+  {
+   "id": "www-ui-skills-com-skills-superfuture-design-review",
+   "name": "design-review（superfuture）",
+   "url": "https://www.ui-skills.com/skills/superfuture/design-review",
+   "note": "设计走查",
+   "type": "skill",
+   "section": "设计 Skills",
+   "sectionTitle": "二、让 AI 写的界面更好看的 Skills（@kail_designs）",
+   "sectionDesc": "给 Claude Code 等 Agent 装上，生成的界面审美会明显提升",
+   "source": "@kail_designs",
+   "pricing": "unknown",
+   "tags": [
+    "审查走查"
+   ]
+  },
+  {
+   "id": "www-ui-skills-com-skills-emilkowalski-emil-design-eng",
+   "name": "emil-design-eng（Emil Kowalski）",
+   "url": "https://www.ui-skills.com/skills/emilkowalski/emil-design-eng",
+   "note": "设计工程细节",
+   "type": "skill",
+   "section": "设计 Skills",
+   "sectionTitle": "二、让 AI 写的界面更好看的 Skills（@kail_designs）",
+   "sectionDesc": "给 Claude Code 等 Agent 装上，生成的界面审美会明显提升",
+   "source": "@kail_designs",
+   "pricing": "unknown",
+   "tags": []
+  },
+  {
+   "id": "www-ui-skills-com-skills-shadcn-ui-shadcn",
+   "name": "shadcn（shadcn-ui）",
+   "url": "https://www.ui-skills.com/skills/shadcn-ui/shadcn",
+   "note": "正确使用 shadcn 组件",
+   "type": "skill",
+   "section": "设计 Skills",
+   "sectionTitle": "二、让 AI 写的界面更好看的 Skills（@kail_designs）",
+   "sectionDesc": "给 Claude Code 等 Agent 装上，生成的界面审美会明显提升",
+   "source": "@kail_designs",
+   "pricing": "unknown",
+   "tags": [
+    "shadcn"
+   ]
+  },
+  {
+   "id": "www-ui-skills-com-skills-pbakaus-adapt",
+   "name": "adapt（Paul Bakaus）",
+   "url": "https://www.ui-skills.com/skills/pbakaus/adapt",
+   "note": "响应式适配",
+   "type": "skill",
+   "section": "设计 Skills",
+   "sectionTitle": "二、让 AI 写的界面更好看的 Skills（@kail_designs）",
+   "sectionDesc": "给 Claude Code 等 Agent 装上，生成的界面审美会明显提升",
+   "source": "@kail_designs",
+   "pricing": "unknown",
+   "tags": []
+  },
+  {
+   "id": "www-ui-skills-com-skills-jakubkrehel-better-interface",
+   "name": "better-interface（Jakub Krehel）",
+   "url": "https://www.ui-skills.com/skills/jakubkrehel/better-interface",
+   "note": "界面细节打磨",
+   "type": "skill",
+   "section": "设计 Skills",
+   "sectionTitle": "二、让 AI 写的界面更好看的 Skills（@kail_designs）",
+   "sectionDesc": "给 Claude Code 等 Agent 装上，生成的界面审美会明显提升",
+   "source": "@kail_designs",
+   "pricing": "unknown",
+   "tags": []
+  },
+  {
+   "id": "www-ui-skills-com-skills-wshobson-interaction-design",
+   "name": "interaction-design（wshobson）",
+   "url": "https://www.ui-skills.com/skills/wshobson/interaction-design",
+   "note": "交互设计",
+   "type": "skill",
+   "section": "设计 Skills",
+   "sectionTitle": "二、让 AI 写的界面更好看的 Skills（@kail_designs）",
+   "sectionDesc": "给 Claude Code 等 Agent 装上，生成的界面审美会明显提升",
+   "source": "@kail_designs",
+   "pricing": "unknown",
+   "tags": []
+  },
+  {
+   "id": "www-prompt-kit-com",
+   "name": "prompt-kit",
+   "url": "https://www.prompt-kit.com/",
+   "note": "AI 对话组件，风格干净",
+   "type": "component",
+   "section": "海外 AI 组件",
+   "sectionTitle": "三、海外 AI 界面组件库",
+   "sectionDesc": "做 AI 产品的对话、思考过程、工具调用等界面",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "AI 聊天"
+   ]
+  },
+  {
+   "id": "www-assistant-ui-com",
+   "name": "assistant-ui",
+   "url": "https://www.assistant-ui.com/",
+   "note": "AI 助手界面组件，有仿 ChatGPT、Claude 的示例",
+   "type": "component",
+   "section": "海外 AI 组件",
+   "sectionTitle": "三、海外 AI 界面组件库",
+   "sectionDesc": "做 AI 产品的对话、思考过程、工具调用等界面",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "AI 聊天"
+   ]
+  },
+  {
+   "id": "ai-sdk-dev-elements",
+   "name": "AI Elements（Vercel）",
+   "url": "https://ai-sdk.dev/elements",
+   "note": "Vercel 官方 AI 组件",
+   "type": "component",
+   "section": "海外 AI 组件",
+   "sectionTitle": "三、海外 AI 界面组件库",
+   "sectionDesc": "做 AI 产品的对话、思考过程、工具调用等界面",
+   "source": "",
+   "pricing": "unknown",
+   "tags": []
+  },
+  {
+   "id": "www-shadcn-io-ai",
+   "name": "shadcn.io AI 组件",
+   "url": "https://www.shadcn.io/ai",
+   "note": "50 多个 AI 聊天组件，能拼出 Claude 风格界面",
+   "type": "component",
+   "section": "海外 AI 组件",
+   "sectionTitle": "三、海外 AI 界面组件库",
+   "sectionDesc": "做 AI 产品的对话、思考过程、工具调用等界面",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "AI 聊天",
+    "shadcn"
+   ]
+  },
+  {
+   "id": "openai-github-io-chatkit-js",
+   "name": "OpenAI ChatKit",
+   "url": "https://openai.github.io/chatkit-js/",
+   "note": "OpenAI 官方聊天组件",
+   "type": "component",
+   "section": "海外 AI 组件",
+   "sectionTitle": "三、海外 AI 界面组件库",
+   "sectionDesc": "做 AI 产品的对话、思考过程、工具调用等界面",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "AI 聊天"
+   ]
+  },
+  {
+   "id": "ui-elevenlabs-io",
+   "name": "ElevenLabs UI",
+   "url": "https://ui.elevenlabs.io/",
+   "note": "语音 AI 组件，声波动画好看",
+   "type": "component",
+   "section": "海外 AI 组件",
+   "sectionTitle": "三、海外 AI 界面组件库",
+   "sectionDesc": "做 AI 产品的对话、思考过程、工具调用等界面",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "语音",
+    "动效"
+   ]
+  },
+  {
+   "id": "shadcn-chatbot-kit-vercel-app",
+   "name": "shadcn-chatbot-kit",
+   "url": "https://shadcn-chatbot-kit.vercel.app/",
+   "note": "基于 shadcn 的聊天机器人组件",
+   "type": "component",
+   "section": "海外 AI 组件",
+   "sectionTitle": "三、海外 AI 界面组件库",
+   "sectionDesc": "做 AI 产品的对话、思考过程、工具调用等界面",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "AI 聊天",
+    "shadcn"
+   ]
+  },
+  {
+   "id": "www-kibo-ui-com",
+   "name": "Kibo UI",
+   "url": "https://www.kibo-ui.com/",
+   "note": "shadcn 扩展组件，含 AI 类",
+   "type": "component",
+   "section": "海外 AI 组件",
+   "sectionTitle": "三、海外 AI 界面组件库",
+   "sectionDesc": "做 AI 产品的对话、思考过程、工具调用等界面",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "shadcn"
+   ]
+  },
+  {
+   "id": "www-simple-ai-dev",
+   "name": "Simple AI",
+   "url": "https://www.simple-ai.dev/",
+   "note": "AI 组件和工作流节点画布",
+   "type": "component",
+   "section": "海外 AI 组件",
+   "sectionTitle": "三、海外 AI 界面组件库",
+   "sectionDesc": "做 AI 产品的对话、思考过程、工具调用等界面",
+   "source": "",
+   "pricing": "unknown",
+   "tags": []
+  },
+  {
+   "id": "ui-inference-sh",
+   "name": "inference.sh UI",
+   "url": "https://ui.inference.sh/",
+   "note": "AI 应用界面组件",
+   "type": "component",
+   "section": "海外 AI 组件",
+   "sectionTitle": "三、海外 AI 界面组件库",
+   "sectionDesc": "做 AI 产品的对话、思考过程、工具调用等界面",
+   "source": "",
+   "pricing": "unknown",
+   "tags": []
+  },
+  {
+   "id": "llm-ui-com",
+   "name": "llm-ui",
+   "url": "https://llm-ui.com/",
+   "note": "大模型输出的流式渲染",
+   "type": "component",
+   "section": "海外 AI 组件",
+   "sectionTitle": "三、海外 AI 界面组件库",
+   "sectionDesc": "做 AI 产品的对话、思考过程、工具调用等界面",
+   "source": "",
+   "pricing": "unknown",
+   "tags": []
+  },
+  {
+   "id": "reachat-dev",
+   "name": "reachat",
+   "url": "https://reachat.dev/",
+   "note": "开源大模型聊天组件",
+   "type": "component",
+   "section": "海外 AI 组件",
+   "sectionTitle": "三、海外 AI 界面组件库",
+   "sectionDesc": "做 AI 产品的对话、思考过程、工具调用等界面",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "AI 聊天",
+    "开源"
+   ]
+  },
+  {
+   "id": "deepchat-dev",
+   "name": "Deep Chat",
+   "url": "https://deepchat.dev/",
+   "note": "一个组件嵌入完整 AI 聊天窗口",
+   "type": "component",
+   "section": "海外 AI 组件",
+   "sectionTitle": "三、海外 AI 界面组件库",
+   "sectionDesc": "做 AI 产品的对话、思考过程、工具调用等界面",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "AI 聊天"
+   ]
+  },
+  {
+   "id": "chatscope-io",
+   "name": "chatscope",
+   "url": "https://chatscope.io/",
+   "note": "传统聊天界面组件",
+   "type": "component",
+   "section": "海外 AI 组件",
+   "sectionTitle": "三、海外 AI 界面组件库",
+   "sectionDesc": "做 AI 产品的对话、思考过程、工具调用等界面",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "AI 聊天"
+   ]
+  },
+  {
+   "id": "21st-dev-community-components-s-ai-chat",
+   "name": "21st.dev AI 聊天组件合集",
+   "url": "https://21st.dev/community/components/s/ai-chat",
+   "note": "248 个以上社区组件",
+   "type": "component",
+   "section": "海外 AI 组件",
+   "sectionTitle": "三、海外 AI 界面组件库",
+   "sectionDesc": "做 AI 产品的对话、思考过程、工具调用等界面",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "AI 聊天"
+   ]
+  },
+  {
+   "id": "www-copilotkit-ai",
+   "name": "CopilotKit",
+   "url": "https://www.copilotkit.ai/",
+   "note": "应用内 AI 副驾驶界面",
+   "type": "component",
+   "section": "海外 AI 组件",
+   "sectionTitle": "三、海外 AI 界面组件库",
+   "sectionDesc": "做 AI 产品的对话、思考过程、工具调用等界面",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "AI 聊天"
+   ]
+  },
+  {
+   "id": "tambo-co",
+   "name": "Tambo",
+   "url": "https://tambo.co/",
+   "note": "AI 生成式界面",
+   "type": "component",
+   "section": "海外 AI 组件",
+   "sectionTitle": "三、海外 AI 界面组件库",
+   "sectionDesc": "做 AI 产品的对话、思考过程、工具调用等界面",
+   "source": "",
+   "pricing": "unknown",
+   "tags": []
+  },
+  {
+   "id": "www-thesys-dev",
+   "name": "Thesys",
+   "url": "https://www.thesys.dev/",
+   "note": "AI 生成式界面",
+   "type": "component",
+   "section": "海外 AI 组件",
+   "sectionTitle": "三、海外 AI 界面组件库",
+   "sectionDesc": "做 AI 产品的对话、思考过程、工具调用等界面",
+   "source": "",
+   "pricing": "unknown",
+   "tags": []
+  },
+  {
+   "id": "hashbrown-dev",
+   "name": "Hashbrown",
+   "url": "https://hashbrown.dev/",
+   "note": "让 AI 调用你自己的组件生成界面",
+   "type": "component",
+   "section": "海外 AI 组件",
+   "sectionTitle": "三、海外 AI 界面组件库",
+   "sectionDesc": "做 AI 产品的对话、思考过程、工具调用等界面",
+   "source": "",
+   "pricing": "unknown",
+   "tags": []
+  },
+  {
+   "id": "github-com-langchain-ai-agent-chat-ui",
+   "name": "LangChain Agent Chat UI",
+   "url": "https://github.com/langchain-ai/agent-chat-ui",
+   "note": "智能体聊天界面",
+   "type": "component",
+   "section": "海外 AI 组件",
+   "sectionTitle": "三、海外 AI 界面组件库",
+   "sectionDesc": "做 AI 产品的对话、思考过程、工具调用等界面",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "AI 聊天",
+    "开源",
+    "智能体"
+   ]
+  },
+  {
+   "id": "docs-livekit-io-agents-start-frontend",
+   "name": "LiveKit 智能体前端",
+   "url": "https://docs.livekit.io/agents/start/frontend/",
+   "note": "实时语音和视频智能体界面",
+   "type": "component",
+   "section": "海外 AI 组件",
+   "sectionTitle": "三、海外 AI 界面组件库",
+   "sectionDesc": "做 AI 产品的对话、思考过程、工具调用等界面",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "语音",
+    "智能体"
+   ]
+  },
+  {
+   "id": "getstream-io-chat-solutions-ai-integration",
+   "name": "Stream AI Chat",
+   "url": "https://getstream.io/chat/solutions/ai-integration/",
+   "note": "商用级聊天组件",
+   "type": "component",
+   "section": "海外 AI 组件",
+   "sectionTitle": "三、海外 AI 界面组件库",
+   "sectionDesc": "做 AI 产品的对话、思考过程、工具调用等界面",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "AI 聊天"
+   ]
+  },
+  {
+   "id": "aicss-dev",
+   "name": "aicss",
+   "url": "https://aicss.dev",
+   "note": "AI 智能体聊天组件（@tranmautritam）",
+   "type": "component",
+   "section": "海外 AI 组件",
+   "sectionTitle": "三、海外 AI 界面组件库",
+   "sectionDesc": "做 AI 产品的对话、思考过程、工具调用等界面",
+   "source": "@tranmautritam",
+   "pricing": "unknown",
+   "tags": [
+    "AI 聊天",
+    "智能体"
+   ]
+  },
+  {
+   "id": "beautiful-ui-five-vercel-app",
+   "name": "Beautiful UI 原语",
+   "url": "https://beautiful-ui-five.vercel.app",
+   "note": "给 AI 界面做的精致基础组件（@tranmautritam）",
+   "type": "component",
+   "section": "海外 AI 组件",
+   "sectionTitle": "三、海外 AI 界面组件库",
+   "sectionDesc": "做 AI 产品的对话、思考过程、工具调用等界面",
+   "source": "@tranmautritam",
+   "pricing": "unknown",
+   "tags": []
+  },
+  {
+   "id": "orbs-jakubantalik-com",
+   "name": "Thinking Orbs",
+   "url": "https://orbs.jakubantalik.com",
+   "note": "AI 思考中的动态光球（@tranmautritam）",
+   "type": "effect",
+   "section": "海外 AI 组件",
+   "sectionTitle": "三、海外 AI 界面组件库",
+   "sectionDesc": "做 AI 产品的对话、思考过程、工具调用等界面",
+   "source": "@tranmautritam",
+   "pricing": "unknown",
+   "tags": []
+  },
+  {
+   "id": "x-ant-design",
+   "name": "Ant Design X（蚂蚁）",
+   "url": "https://x.ant.design/",
+   "note": "专门做 AI 界面",
+   "type": "component",
+   "section": "国内大厂 AI 组件",
+   "sectionTitle": "四、国内大厂 AI 界面组件",
+   "sectionDesc": "中文文档全",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "中文"
+   ]
+  },
+  {
+   "id": "ui-lobehub-com",
+   "name": "LobeHub UI",
+   "url": "https://ui.lobehub.com/",
+   "note": "LobeChat 背后的组件库",
+   "type": "component",
+   "section": "国内大厂 AI 组件",
+   "sectionTitle": "四、国内大厂 AI 界面组件",
+   "sectionDesc": "中文文档全",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "AI 聊天",
+    "中文"
+   ]
+  },
+  {
+   "id": "tdesign-tencent-com-chat",
+   "name": "TDesign AI Chat（腾讯）",
+   "url": "https://tdesign.tencent.com/chat",
+   "note": "Vue 3 AI 对话组件",
+   "type": "component",
+   "section": "国内大厂 AI 组件",
+   "sectionTitle": "四、国内大厂 AI 界面组件",
+   "sectionDesc": "中文文档全",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "AI 聊天",
+    "中文"
+   ]
+  },
+  {
+   "id": "motion-dev-plus",
+   "name": "Motion+",
+   "url": "https://motion.dev/plus",
+   "note": "Motion 官方付费版，一次性买断，480 多个高级动效示例和 AI Kit",
+   "type": "effect",
+   "section": "动效与通用组件",
+   "sectionTitle": "五、动效和好看的通用组件",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "paid",
+   "tags": [
+    "动效"
+   ]
+  },
+  {
+   "id": "shaders-paper-design",
+   "name": "Paper Shaders 全集",
+   "url": "https://shaders.paper.design/",
+   "note": "零依赖的着色器特效合集，React 或 GLSL",
+   "type": "effect",
+   "section": "动效与通用组件",
+   "sectionTitle": "五、动效和好看的通用组件",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "WebGL/着色器",
+    "React"
+   ]
+  },
+  {
+   "id": "rive-app",
+   "name": "Rive",
+   "url": "https://rive.app/",
+   "note": "可交互的矢量动画，做会动的角色和按钮",
+   "type": "effect",
+   "section": "动效与通用组件",
+   "sectionTitle": "五、动效和好看的通用组件",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "动效"
+   ]
+  },
+  {
+   "id": "www-hover-dev",
+   "name": "Hover.dev",
+   "url": "https://www.hover.dev/",
+   "note": "偏交互感的现成组件和模板",
+   "type": "component",
+   "section": "动效与通用组件",
+   "sectionTitle": "五、动效和好看的通用组件",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "unknown",
+   "tags": []
+  },
+  {
+   "id": "skiper-ui-com",
+   "name": "Skiper UI",
+   "url": "https://skiper-ui.com/",
+   "note": "少见的 shadcn 组件",
+   "type": "component",
+   "section": "动效与通用组件",
+   "sectionTitle": "五、动效和好看的通用组件",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "shadcn"
+   ]
+  },
+  {
+   "id": "www-shadergradient-co",
+   "name": "ShaderGradient",
+   "url": "https://www.shadergradient.co/",
+   "note": "流动的 3D 渐变背景，支持 Framer、Figma、React",
+   "type": "effect",
+   "section": "动效与通用组件",
+   "sectionTitle": "五、动效和好看的通用组件",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "WebGL/着色器",
+    "React",
+    "背景"
+   ]
+  },
+  {
+   "id": "neat-firecms-co",
+   "name": "NEAT",
+   "url": "https://neat.firecms.co/",
+   "note": "免费动态 3D 渐变背景生成器",
+   "type": "effect",
+   "section": "动效与通用组件",
+   "sectionTitle": "五、动效和好看的通用组件",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "WebGL/着色器",
+    "背景"
+   ]
+  },
+  {
+   "id": "github-com-rdev-liquid-glass-react",
+   "name": "Liquid Glass React",
+   "url": "https://github.com/rdev/liquid-glass-react",
+   "note": "苹果液态玻璃效果的 React 版",
+   "type": "effect",
+   "section": "动效与通用组件",
+   "sectionTitle": "五、动效和好看的通用组件",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "开源"
+   ]
+  },
+  {
+   "id": "smoothui-dev",
+   "name": "SmoothUI",
+   "url": "https://smoothui.dev/",
+   "note": "顺滑动效组件",
+   "type": "component",
+   "section": "动效与通用组件",
+   "sectionTitle": "五、动效和好看的通用组件",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "动效"
+   ]
+  },
+  {
+   "id": "animata-design",
+   "name": "Animata",
+   "url": "https://animata.design/",
+   "note": "数百个免费动效组件",
+   "type": "component",
+   "section": "动效与通用组件",
+   "sectionTitle": "五、动效和好看的通用组件",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "动效"
+   ]
+  },
+  {
+   "id": "www-vengenceui-com",
+   "name": "Vengeance UI",
+   "url": "https://www.vengenceui.com/",
+   "note": "落地页动效组件",
+   "type": "component",
+   "section": "动效与通用组件",
+   "sectionTitle": "五、动效和好看的通用组件",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "动效",
+    "落地页"
+   ]
+  },
+  {
+   "id": "ui-lukacho-com",
+   "name": "Lukacho UI",
+   "url": "https://ui.lukacho.com/",
+   "note": "动效组件和图表",
+   "type": "component",
+   "section": "动效与通用组件",
+   "sectionTitle": "五、动效和好看的通用组件",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "动效"
+   ]
+  },
+  {
+   "id": "tympanus-net-codrops",
+   "name": "Codrops",
+   "url": "https://tympanus.net/codrops/",
+   "note": "前端特效教程和 Demo 老牌站",
+   "type": "effect",
+   "section": "动效与通用组件",
+   "sectionTitle": "五、动效和好看的通用组件",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "unknown",
+   "tags": []
+  },
+  {
+   "id": "libraries-dev",
+   "name": "Libraries.dev（你订阅了 Pro）",
+   "url": "https://libraries.dev/",
+   "note": "Jakub Antalik 的特效合集：液态金属、思考光球、流光边框、黏液融合、语音光效、AI 头像、图片生成加载，免费 npm 包，Pro 解锁 Studio 深度定制",
+   "type": "effect",
+   "section": "动效与通用组件",
+   "sectionTitle": "五、动效和好看的通用组件",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "freemium",
+   "tags": [
+    "语音",
+    "液态金属"
+   ]
+  },
+  {
+   "id": "shaders-paper-design-liquid-metal",
+   "name": "Paper Shaders 液态金属",
+   "url": "https://shaders.paper.design/liquid-metal",
+   "note": "Paper 的液态金属着色器，可调参数后导出代码",
+   "type": "effect",
+   "section": "动效与通用组件",
+   "sectionTitle": "五、动效和好看的通用组件",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "WebGL/着色器",
+    "液态金属"
+   ]
+  },
+  {
+   "id": "reactbits-dev-animations-metallic-paint",
+   "name": "React Bits 金属漆",
+   "url": "https://reactbits.dev/animations/metallic-paint",
+   "note": "把 Logo 做成流动的金属质感",
+   "type": "effect",
+   "section": "动效与通用组件",
+   "sectionTitle": "五、动效和好看的通用组件",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "动效",
+    "React",
+    "液态金属"
+   ]
+  },
+  {
+   "id": "www-unicorn-studio",
+   "name": "Unicorn Studio",
+   "url": "https://www.unicorn.studio/",
+   "note": "无代码做 WebGL 特效",
+   "type": "generator",
+   "section": "动效与通用组件",
+   "sectionTitle": "五、动效和好看的通用组件",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "WebGL/着色器"
+   ]
+  },
+  {
+   "id": "magicui-design",
+   "name": "Magic UI",
+   "url": "https://magicui.design/",
+   "note": "",
+   "type": "component",
+   "section": "动效与通用组件",
+   "sectionTitle": "五、动效和好看的通用组件",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "unknown",
+   "tags": []
+  },
+  {
+   "id": "ui-aceternity-com",
+   "name": "Aceternity UI",
+   "url": "https://ui.aceternity.com/",
+   "note": "",
+   "type": "component",
+   "section": "动效与通用组件",
+   "sectionTitle": "五、动效和好看的通用组件",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "unknown",
+   "tags": []
+  },
+  {
+   "id": "reactbits-dev",
+   "name": "React Bits",
+   "url": "https://reactbits.dev/",
+   "note": "",
+   "type": "component",
+   "section": "动效与通用组件",
+   "sectionTitle": "五、动效和好看的通用组件",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "React"
+   ]
+  },
+  {
+   "id": "animate-ui-com",
+   "name": "Animate UI",
+   "url": "https://animate-ui.com/",
+   "note": "",
+   "type": "component",
+   "section": "动效与通用组件",
+   "sectionTitle": "五、动效和好看的通用组件",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "动效"
+   ]
+  },
+  {
+   "id": "motion-primitives-com",
+   "name": "Motion Primitives",
+   "url": "https://motion-primitives.com/",
+   "note": "",
+   "type": "component",
+   "section": "动效与通用组件",
+   "sectionTitle": "五、动效和好看的通用组件",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "动效"
+   ]
+  },
+  {
+   "id": "kokonutui-com",
+   "name": "Kokonut UI",
+   "url": "https://kokonutui.com/",
+   "note": "",
+   "type": "component",
+   "section": "动效与通用组件",
+   "sectionTitle": "五、动效和好看的通用组件",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "unknown",
+   "tags": []
+  },
+  {
+   "id": "www-cult-ui-com",
+   "name": "Cult UI",
+   "url": "https://www.cult-ui.com/",
+   "note": "",
+   "type": "component",
+   "section": "动效与通用组件",
+   "sectionTitle": "五、动效和好看的通用组件",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "unknown",
+   "tags": []
+  },
+  {
+   "id": "21st-dev",
+   "name": "21st.dev",
+   "url": "https://21st.dev/",
+   "note": "社区组件市场",
+   "type": "component",
+   "section": "动效与通用组件",
+   "sectionTitle": "五、动效和好看的通用组件",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "unknown",
+   "tags": []
+  },
+  {
+   "id": "www-heroui-com",
+   "name": "HeroUI",
+   "url": "https://www.heroui.com/",
+   "note": "色彩鲜艳、主题丰富（@vikingmute 推荐）",
+   "type": "component",
+   "section": "动效与通用组件",
+   "sectionTitle": "五、动效和好看的通用组件",
+   "sectionDesc": "",
+   "source": "@vikingmute",
+   "pricing": "unknown",
+   "tags": []
+  },
+  {
+   "id": "coss-com-ui",
+   "name": "COSS UI",
+   "url": "https://coss.com/ui",
+   "note": "基于 Base UI，简洁考究、带 Skills、对 AI 友好（@vikingmute 最推荐，可替代 shadcn 默认样式）",
+   "type": "component",
+   "section": "动效与通用组件",
+   "sectionTitle": "五、动效和好看的通用组件",
+   "sectionDesc": "",
+   "source": "@vikingmute",
+   "pricing": "unknown",
+   "tags": [
+    "shadcn"
+   ]
+  },
+  {
+   "id": "www-shadcnblocks-com",
+   "name": "Shadcnblocks",
+   "url": "https://www.shadcnblocks.com/",
+   "note": "现成页面区块",
+   "type": "component",
+   "section": "动效与通用组件",
+   "sectionTitle": "五、动效和好看的通用组件",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "shadcn"
+   ]
+  },
+  {
+   "id": "uiverse-io",
+   "name": "Uiverse",
+   "url": "https://uiverse.io/",
+   "note": "开源小组件",
+   "type": "component",
+   "section": "动效与通用组件",
+   "sectionTitle": "五、动效和好看的通用组件",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "开源"
+   ]
+  },
+  {
+   "id": "originkit-dev",
+   "name": "Origin Kit",
+   "url": "https://originkit.dev",
+   "note": "免费动效组件库（@tranmautritam）",
+   "type": "component",
+   "section": "动效与通用组件",
+   "sectionTitle": "五、动效和好看的通用组件",
+   "sectionDesc": "",
+   "source": "@tranmautritam",
+   "pricing": "free",
+   "tags": [
+    "动效"
+   ]
+  },
+  {
+   "id": "canvasui-dev",
+   "name": "Canvas UI",
+   "url": "https://canvasui.dev",
+   "note": "在真实网页上叠 WebGL 特效（@tranmautritam）",
+   "type": "effect",
+   "section": "动效与通用组件",
+   "sectionTitle": "五、动效和好看的通用组件",
+   "sectionDesc": "",
+   "source": "@tranmautritam",
+   "pricing": "unknown",
+   "tags": [
+    "WebGL/着色器"
+   ]
+  },
+  {
+   "id": "beam-jakubantalik-com",
+   "name": "Border Beam",
+   "url": "https://beam.jakubantalik.com",
+   "note": "动态流光边框（@tranmautritam）",
+   "type": "effect",
+   "section": "动效与通用组件",
+   "sectionTitle": "五、动效和好看的通用组件",
+   "sectionDesc": "",
+   "source": "@tranmautritam",
+   "pricing": "unknown",
+   "tags": []
+  },
+  {
+   "id": "metal-jakubantalik-com",
+   "name": "Liquid Metal",
+   "url": "https://metal.jakubantalik.com",
+   "note": "液态金属质感按钮，React 可用、零依赖（@tranmautritam 重点推荐）",
+   "type": "effect",
+   "section": "动效与通用组件",
+   "sectionTitle": "五、动效和好看的通用组件",
+   "sectionDesc": "",
+   "source": "@tranmautritam",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "液态金属"
+   ]
+  },
+  {
+   "id": "www-aiverse-design",
+   "name": "aiverse",
+   "url": "https://www.aiverse.design/",
+   "note": "200 多个海外 AI 产品交互案例",
+   "type": "inspiration",
+   "section": "AI 产品灵感",
+   "sectionTitle": "六、AI 产品设计灵感",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "unknown",
+   "tags": []
+  },
+  {
+   "id": "www-shapeof-ai",
+   "name": "The Shape of AI",
+   "url": "https://www.shapeof.ai/",
+   "note": "AI 交互模式库",
+   "type": "inspiration",
+   "section": "AI 产品灵感",
+   "sectionTitle": "六、AI 产品设计灵感",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "unknown",
+   "tags": []
+  },
+  {
+   "id": "agentic-design-ai",
+   "name": "agentic-design.ai",
+   "url": "https://agentic-design.ai/",
+   "note": "智能体设计模式",
+   "type": "inspiration",
+   "section": "AI 产品灵感",
+   "sectionTitle": "六、AI 产品设计灵感",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "智能体"
+   ]
+  },
+  {
+   "id": "mobbin-com",
+   "name": "Mobbin",
+   "url": "https://mobbin.com/",
+   "note": "真实 App 截图库",
+   "type": "inspiration",
+   "section": "AI 产品灵感",
+   "sectionTitle": "六、AI 产品设计灵感",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "移动端"
+   ]
+  },
+  {
+   "id": "land-book-com",
+   "name": "Land-book",
+   "url": "https://land-book.com/",
+   "note": "落地页灵感",
+   "type": "inspiration",
+   "section": "AI 产品灵感",
+   "sectionTitle": "六、AI 产品设计灵感",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "落地页"
+   ]
+  },
+  {
+   "id": "refero-design",
+   "name": "Refero",
+   "url": "https://refero.design/",
+   "note": "真实产品界面库（@neropursue）",
+   "type": "inspiration",
+   "section": "AI 产品灵感",
+   "sectionTitle": "六、AI 产品设计灵感",
+   "sectionDesc": "",
+   "source": "@neropursue",
+   "pricing": "unknown",
+   "tags": []
+  },
+  {
+   "id": "60fps-design",
+   "name": "60fps",
+   "url": "https://60fps.design/",
+   "note": "移动端界面动效（@neropursue）",
+   "type": "inspiration",
+   "section": "AI 产品灵感",
+   "sectionTitle": "六、AI 产品设计灵感",
+   "sectionDesc": "",
+   "source": "@neropursue",
+   "pricing": "unknown",
+   "tags": [
+    "动效",
+    "移动端"
+   ]
+  },
+  {
+   "id": "inspora-design",
+   "name": "Inspora",
+   "url": "https://inspora.design/",
+   "note": "从 X 上收集的设计灵感（@neropursue）",
+   "type": "inspiration",
+   "section": "AI 产品灵感",
+   "sectionTitle": "六、AI 产品设计灵感",
+   "sectionDesc": "",
+   "source": "@neropursue",
+   "pricing": "unknown",
+   "tags": []
+  },
+  {
+   "id": "brandguidelines-net",
+   "name": "Brand Guidelines",
+   "url": "https://brandguidelines.net/",
+   "note": "品牌规范灵感（@neropursue）",
+   "type": "inspiration",
+   "section": "AI 产品灵感",
+   "sectionTitle": "六、AI 产品设计灵感",
+   "sectionDesc": "",
+   "source": "@neropursue",
+   "pricing": "unknown",
+   "tags": []
+  },
+  {
+   "id": "backgrounds-supply",
+   "name": "Backgrounds Supply",
+   "url": "https://backgrounds.supply/",
+   "note": "好看的设计背景素材（@neropursue）",
+   "type": "inspiration",
+   "section": "AI 产品灵感",
+   "sectionTitle": "六、AI 产品设计灵感",
+   "sectionDesc": "",
+   "source": "@neropursue",
+   "pricing": "unknown",
+   "tags": [
+    "背景"
+   ]
+  },
+  {
+   "id": "reelfolio-io",
+   "name": "Reelfolio",
+   "url": "https://reelfolio.io/",
+   "note": "做漂亮的作品集（@neropursue）",
+   "type": "inspiration",
+   "section": "AI 产品灵感",
+   "sectionTitle": "六、AI 产品设计灵感",
+   "sectionDesc": "",
+   "source": "@neropursue",
+   "pricing": "unknown",
+   "tags": []
+  },
+  {
+   "id": "openwebui-com",
+   "name": "Open WebUI",
+   "url": "https://openwebui.com/",
+   "note": "",
+   "type": "template",
+   "section": "开源 AI 聊天应用",
+   "sectionTitle": "七、开源 AI 聊天应用和模板",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "unknown",
+   "tags": []
+  },
+  {
+   "id": "www-librechat-ai",
+   "name": "LibreChat",
+   "url": "https://www.librechat.ai/",
+   "note": "",
+   "type": "template",
+   "section": "开源 AI 聊天应用",
+   "sectionTitle": "七、开源 AI 聊天应用和模板",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "AI 聊天"
+   ]
+  },
+  {
+   "id": "github-com-huggingface-chat-ui",
+   "name": "HuggingChat 源码",
+   "url": "https://github.com/huggingface/chat-ui",
+   "note": "",
+   "type": "template",
+   "section": "开源 AI 聊天应用",
+   "sectionTitle": "七、开源 AI 聊天应用和模板",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "AI 聊天",
+    "开源"
+   ]
+  },
+  {
+   "id": "chainlit-io",
+   "name": "Chainlit",
+   "url": "https://chainlit.io/",
+   "note": "Python",
+   "type": "template",
+   "section": "开源 AI 聊天应用",
+   "sectionTitle": "七、开源 AI 聊天应用和模板",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "Python"
+   ]
+  },
+  {
+   "id": "www-gradio-app",
+   "name": "Gradio",
+   "url": "https://www.gradio.app/",
+   "note": "Python",
+   "type": "template",
+   "section": "开源 AI 聊天应用",
+   "sectionTitle": "七、开源 AI 聊天应用和模板",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "Python"
+   ]
+  },
+  {
+   "id": "vercel-com-templates-next-js-chatbot",
+   "name": "Vercel AI 聊天机器人模板",
+   "url": "https://vercel.com/templates/next.js/chatbot",
+   "note": "",
+   "type": "template",
+   "section": "开源 AI 聊天应用",
+   "sectionTitle": "七、开源 AI 聊天应用和模板",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "AI 聊天"
+   ]
+  },
+  {
+   "id": "www-assistant-ui-com-examples",
+   "name": "assistant-ui 示例",
+   "url": "https://www.assistant-ui.com/examples",
+   "note": "",
+   "type": "template",
+   "section": "开源 AI 聊天应用",
+   "sectionTitle": "七、开源 AI 聊天应用和模板",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "unknown",
+   "tags": []
+  },
+  {
+   "id": "v0-app-templates",
+   "name": "v0 模板库",
+   "url": "https://v0.app/templates",
+   "note": "",
+   "type": "template",
+   "section": "开源 AI 聊天应用",
+   "sectionTitle": "七、开源 AI 聊天应用和模板",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "unknown",
+   "tags": []
+  },
+  {
+   "id": "agentation-com",
+   "name": "Agentation",
+   "url": "https://agentation.com/",
+   "note": "在界面上直接标注问题，生成说明给编程 Agent（@tranmautritam）",
+   "type": "generator",
+   "section": "AI 生成界面",
+   "sectionTitle": "八、用 AI 直接生成界面和配合 AI 改界面",
+   "sectionDesc": "",
+   "source": "@tranmautritam",
+   "pricing": "unknown",
+   "tags": [
+    "智能体"
+   ]
+  },
+  {
+   "id": "x-com-linmiv-status-2106383164923060266",
+   "name": "UI 问题盘点可视化（@Linmiv）",
+   "url": "https://x.com/Linmiv/status/2106383164923060266",
+   "note": "思路参考：把一个 App 所有页面的顶栏截图拼成画布，逐条标注不统一的地方和待定决策，适合做 UI 走查",
+   "type": "guide",
+   "section": "AI 生成界面",
+   "sectionTitle": "八、用 AI 直接生成界面和配合 AI 改界面",
+   "sectionDesc": "",
+   "source": "@Linmiv",
+   "pricing": "unknown",
+   "tags": [
+    "移动端",
+    "审查走查"
+   ]
+  },
+  {
+   "id": "stitch-withgoogle-com",
+   "name": "Google Stitch",
+   "url": "https://stitch.withgoogle.com/",
+   "note": "文字生成设计稿，可导出 Figma",
+   "type": "generator",
+   "section": "AI 生成界面",
+   "sectionTitle": "八、用 AI 直接生成界面和配合 AI 改界面",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "原型"
+   ]
+  },
+  {
+   "id": "www-figma-com-make",
+   "name": "Figma Make",
+   "url": "https://www.figma.com/make/",
+   "note": "AI 生成可交互原型",
+   "type": "generator",
+   "section": "AI 生成界面",
+   "sectionTitle": "八、用 AI 直接生成界面和配合 AI 改界面",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "原型"
+   ]
+  },
+  {
+   "id": "www-magicpatterns-com",
+   "name": "Magic Patterns",
+   "url": "https://www.magicpatterns.com/",
+   "note": "给产品经理做原型",
+   "type": "generator",
+   "section": "AI 生成界面",
+   "sectionTitle": "八、用 AI 直接生成界面和配合 AI 改界面",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "原型"
+   ]
+  },
+  {
+   "id": "uxpilot-ai",
+   "name": "UX Pilot",
+   "url": "https://uxpilot.ai/",
+   "note": "线框图和高保真稿",
+   "type": "generator",
+   "section": "AI 生成界面",
+   "sectionTitle": "八、用 AI 直接生成界面和配合 AI 改界面",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "原型"
+   ]
+  },
+  {
+   "id": "www-relume-io",
+   "name": "Relume",
+   "url": "https://www.relume.io/",
+   "note": "站点地图和线框图",
+   "type": "generator",
+   "section": "AI 生成界面",
+   "sectionTitle": "八、用 AI 直接生成界面和配合 AI 改界面",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "原型"
+   ]
+  },
+  {
+   "id": "lovable-dev",
+   "name": "Lovable",
+   "url": "https://lovable.dev/",
+   "note": "对话生成网页应用",
+   "type": "generator",
+   "section": "AI 生成界面",
+   "sectionTitle": "八、用 AI 直接生成界面和配合 AI 改界面",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "AI 聊天"
+   ]
+  },
+  {
+   "id": "bolt-new",
+   "name": "Bolt",
+   "url": "https://bolt.new/",
+   "note": "对话生成应用，可在线改代码",
+   "type": "generator",
+   "section": "AI 生成界面",
+   "sectionTitle": "八、用 AI 直接生成界面和配合 AI 改界面",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "AI 聊天"
+   ]
+  },
+  {
+   "id": "www-ui-skills-com-skills-ibelick-ui-skills-root",
+   "name": "ibelick/ui-skills-root",
+   "url": "https://www.ui-skills.com/skills/ibelick/ui-skills-root",
+   "note": "总入口，按需求自动挑最合适的几个 UI 技能",
+   "type": "skill",
+   "section": "更多 UI Skills",
+   "sectionTitle": "九、更多 UI Skills（来自 ui-skills.com）",
+   "sectionDesc": "安装方法见各页面，适用于 Claude Code、Cursor、Codex 等",
+   "source": "ui-skills.com",
+   "pricing": "unknown",
+   "tags": []
+  },
+  {
+   "id": "www-ui-skills-com-skills-ibelick-baseline-ui",
+   "name": "ibelick/baseline-ui",
+   "url": "https://www.ui-skills.com/skills/ibelick/baseline-ui",
+   "note": "快速去掉 AI 味：修间距、层级、字体和小布局问题",
+   "type": "skill",
+   "section": "更多 UI Skills",
+   "sectionTitle": "九、更多 UI Skills（来自 ui-skills.com）",
+   "sectionDesc": "安装方法见各页面，适用于 Claude Code、Cursor、Codex 等",
+   "source": "ui-skills.com",
+   "pricing": "unknown",
+   "tags": [
+    "字体",
+    "去 AI 味"
+   ]
+  },
+  {
+   "id": "www-ui-skills-com-skills-ibelick-improve-ui",
+   "name": "ibelick/improve-ui",
+   "url": "https://www.ui-skills.com/skills/ibelick/improve-ui",
+   "note": "按产品自己的设计规范审查界面，写出修改方案",
+   "type": "skill",
+   "section": "更多 UI Skills",
+   "sectionTitle": "九、更多 UI Skills（来自 ui-skills.com）",
+   "sectionDesc": "安装方法见各页面，适用于 Claude Code、Cursor、Codex 等",
+   "source": "ui-skills.com",
+   "pricing": "unknown",
+   "tags": [
+    "审查走查"
+   ]
+  },
+  {
+   "id": "www-ui-skills-com-skills-ibelick-create-design-md",
+   "name": "ibelick/create-design-md",
+   "url": "https://www.ui-skills.com/skills/ibelick/create-design-md",
+   "note": "从现有产品或网站提取设计规范，生成 DESIGN.md",
+   "type": "skill",
+   "section": "更多 UI Skills",
+   "sectionTitle": "九、更多 UI Skills（来自 ui-skills.com）",
+   "sectionDesc": "安装方法见各页面，适用于 Claude Code、Cursor、Codex 等",
+   "source": "ui-skills.com",
+   "pricing": "unknown",
+   "tags": []
+  },
+  {
+   "id": "www-ui-skills-com-skills-pbakaus-impeccable",
+   "name": "pbakaus/impeccable",
+   "url": "https://www.ui-skills.com/skills/pbakaus/impeccable",
+   "note": "Impeccable 主技能，做不千篇一律的高质量界面",
+   "type": "skill",
+   "section": "更多 UI Skills",
+   "sectionTitle": "九、更多 UI Skills（来自 ui-skills.com）",
+   "sectionDesc": "安装方法见各页面，适用于 Claude Code、Cursor、Codex 等",
+   "source": "ui-skills.com",
+   "pricing": "unknown",
+   "tags": [
+    "去 AI 味"
+   ]
+  },
+  {
+   "id": "www-ui-skills-com-skills-pbakaus-polish",
+   "name": "pbakaus/polish",
+   "url": "https://www.ui-skills.com/skills/pbakaus/polish",
+   "note": "上线前最后一遍对齐、间距、一致性打磨",
+   "type": "skill",
+   "section": "更多 UI Skills",
+   "sectionTitle": "九、更多 UI Skills（来自 ui-skills.com）",
+   "sectionDesc": "安装方法见各页面，适用于 Claude Code、Cursor、Codex 等",
+   "source": "ui-skills.com",
+   "pricing": "unknown",
+   "tags": []
+  },
+  {
+   "id": "www-ui-skills-com-skills-pbakaus-critique",
+   "name": "pbakaus/critique",
+   "url": "https://www.ui-skills.com/skills/pbakaus/critique",
+   "note": "给设计打分，按用户角色检查并给出修改建议",
+   "type": "skill",
+   "section": "更多 UI Skills",
+   "sectionTitle": "九、更多 UI Skills（来自 ui-skills.com）",
+   "sectionDesc": "安装方法见各页面，适用于 Claude Code、Cursor、Codex 等",
+   "source": "ui-skills.com",
+   "pricing": "unknown",
+   "tags": [
+    "审查走查"
+   ]
+  },
+  {
+   "id": "www-ui-skills-com-skills-pbakaus-bolder",
+   "name": "pbakaus/bolder",
+   "url": "https://www.ui-skills.com/skills/pbakaus/bolder",
+   "note": "界面太平淡时加强视觉冲击和个性",
+   "type": "skill",
+   "section": "更多 UI Skills",
+   "sectionTitle": "九、更多 UI Skills（来自 ui-skills.com）",
+   "sectionDesc": "安装方法见各页面，适用于 Claude Code、Cursor、Codex 等",
+   "source": "ui-skills.com",
+   "pricing": "unknown",
+   "tags": []
+  },
+  {
+   "id": "www-ui-skills-com-skills-pbakaus-quieter",
+   "name": "pbakaus/quieter",
+   "url": "https://www.ui-skills.com/skills/pbakaus/quieter",
+   "note": "界面太花时降噪，保留层级",
+   "type": "skill",
+   "section": "更多 UI Skills",
+   "sectionTitle": "九、更多 UI Skills（来自 ui-skills.com）",
+   "sectionDesc": "安装方法见各页面，适用于 Claude Code、Cursor、Codex 等",
+   "source": "ui-skills.com",
+   "pricing": "unknown",
+   "tags": []
+  },
+  {
+   "id": "www-ui-skills-com-skills-pbakaus-delight",
+   "name": "pbakaus/delight",
+   "url": "https://www.ui-skills.com/skills/pbakaus/delight",
+   "note": "加有记忆点的小交互和情绪细节",
+   "type": "skill",
+   "section": "更多 UI Skills",
+   "sectionTitle": "九、更多 UI Skills（来自 ui-skills.com）",
+   "sectionDesc": "安装方法见各页面，适用于 Claude Code、Cursor、Codex 等",
+   "source": "ui-skills.com",
+   "pricing": "unknown",
+   "tags": []
+  },
+  {
+   "id": "www-ui-skills-com-skills-pbakaus-harden",
+   "name": "pbakaus/harden",
+   "url": "https://www.ui-skills.com/skills/pbakaus/harden",
+   "note": "补齐空状态、报错、引导、多语言等边界情况",
+   "type": "skill",
+   "section": "更多 UI Skills",
+   "sectionTitle": "九、更多 UI Skills（来自 ui-skills.com）",
+   "sectionDesc": "安装方法见各页面，适用于 Claude Code、Cursor、Codex 等",
+   "source": "ui-skills.com",
+   "pricing": "unknown",
+   "tags": []
+  },
+  {
+   "id": "www-ui-skills-com-skills-pbakaus-shape",
+   "name": "pbakaus/shape",
+   "url": "https://www.ui-skills.com/skills/pbakaus/shape",
+   "note": "写代码前先做设计访谈，产出设计简报（适合产品经理）",
+   "type": "skill",
+   "section": "更多 UI Skills",
+   "sectionTitle": "九、更多 UI Skills（来自 ui-skills.com）",
+   "sectionDesc": "安装方法见各页面，适用于 Claude Code、Cursor、Codex 等",
+   "source": "ui-skills.com",
+   "pricing": "unknown",
+   "tags": []
+  },
+  {
+   "id": "www-ui-skills-com-skills-pbakaus-overdrive",
+   "name": "pbakaus/overdrive",
+   "url": "https://www.ui-skills.com/skills/pbakaus/overdrive",
+   "note": "往高冲击力走：高级动效、着色器",
+   "type": "skill",
+   "section": "更多 UI Skills",
+   "sectionTitle": "九、更多 UI Skills（来自 ui-skills.com）",
+   "sectionDesc": "安装方法见各页面，适用于 Claude Code、Cursor、Codex 等",
+   "source": "ui-skills.com",
+   "pricing": "unknown",
+   "tags": [
+    "动效",
+    "WebGL/着色器"
+   ]
+  },
+  {
+   "id": "www-ui-skills-com-skills-leonxlnx-taste-skill",
+   "name": "leonxlnx/taste-skill",
+   "url": "https://www.ui-skills.com/skills/leonxlnx/taste-skill",
+   "note": "资深 UI 审美约束，专门防 AI 套路化设计",
+   "type": "skill",
+   "section": "更多 UI Skills",
+   "sectionTitle": "九、更多 UI Skills（来自 ui-skills.com）",
+   "sectionDesc": "安装方法见各页面，适用于 Claude Code、Cursor、Codex 等",
+   "source": "ui-skills.com",
+   "pricing": "unknown",
+   "tags": [
+    "去 AI 味"
+   ]
+  },
+  {
+   "id": "www-ui-skills-com-skills-leonxlnx-redesign-skill",
+   "name": "leonxlnx/redesign-skill",
+   "url": "https://www.ui-skills.com/skills/leonxlnx/redesign-skill",
+   "note": "在不改功能的前提下把现有界面升级到高级感",
+   "type": "skill",
+   "section": "更多 UI Skills",
+   "sectionTitle": "九、更多 UI Skills（来自 ui-skills.com）",
+   "sectionDesc": "安装方法见各页面，适用于 Claude Code、Cursor、Codex 等",
+   "source": "ui-skills.com",
+   "pricing": "unknown",
+   "tags": [
+    "去 AI 味"
+   ]
+  },
+  {
+   "id": "www-ui-skills-com-skills-leonxlnx-soft-skill",
+   "name": "leonxlnx/soft-skill",
+   "url": "https://www.ui-skills.com/skills/leonxlnx/soft-skill",
+   "note": "高端柔和风：字体、留白、层次、动效",
+   "type": "skill",
+   "section": "更多 UI Skills",
+   "sectionTitle": "九、更多 UI Skills（来自 ui-skills.com）",
+   "sectionDesc": "安装方法见各页面，适用于 Claude Code、Cursor、Codex 等",
+   "source": "ui-skills.com",
+   "pricing": "unknown",
+   "tags": [
+    "动效",
+    "字体"
+   ]
+  },
+  {
+   "id": "www-ui-skills-com-skills-leonxlnx-minimalist-skill",
+   "name": "leonxlnx/minimalist-skill",
+   "url": "https://www.ui-skills.com/skills/leonxlnx/minimalist-skill",
+   "note": "编辑感极简风，黑白配色",
+   "type": "skill",
+   "section": "更多 UI Skills",
+   "sectionTitle": "九、更多 UI Skills（来自 ui-skills.com）",
+   "sectionDesc": "安装方法见各页面，适用于 Claude Code、Cursor、Codex 等",
+   "source": "ui-skills.com",
+   "pricing": "unknown",
+   "tags": [
+    "配色"
+   ]
+  },
+  {
+   "id": "www-ui-skills-com-skills-leonxlnx-stitch-skill",
+   "name": "leonxlnx/stitch-skill",
+   "url": "https://www.ui-skills.com/skills/leonxlnx/stitch-skill",
+   "note": "配合 Google Stitch 生成不套路的设计",
+   "type": "skill",
+   "section": "更多 UI Skills",
+   "sectionTitle": "九、更多 UI Skills（来自 ui-skills.com）",
+   "sectionDesc": "安装方法见各页面，适用于 Claude Code、Cursor、Codex 等",
+   "source": "ui-skills.com",
+   "pricing": "unknown",
+   "tags": [
+    "去 AI 味"
+   ]
+  },
+  {
+   "id": "www-ui-skills-com-skills-nextlevelbuilder-ui-ux-pro-max",
+   "name": "nextlevelbuilder/ui-ux-pro-max",
+   "url": "https://www.ui-skills.com/skills/nextlevelbuilder/ui-ux-pro-max",
+   "note": "50 多种风格、97 套配色、9 种技术栈的设计知识库",
+   "type": "skill",
+   "section": "更多 UI Skills",
+   "sectionTitle": "九、更多 UI Skills（来自 ui-skills.com）",
+   "sectionDesc": "安装方法见各页面，适用于 Claude Code、Cursor、Codex 等",
+   "source": "ui-skills.com",
+   "pricing": "unknown",
+   "tags": [
+    "配色"
+   ]
+  },
+  {
+   "id": "www-ui-skills-com-skills-jakubkrehel-make-interfaces-feel-be",
+   "name": "jakubkrehel/make-interfaces-feel-better",
+   "url": "https://www.ui-skills.com/skills/jakubkrehel/make-interfaces-feel-better",
+   "note": "让界面更精致：微交互、字体、细节",
+   "type": "skill",
+   "section": "更多 UI Skills",
+   "sectionTitle": "九、更多 UI Skills（来自 ui-skills.com）",
+   "sectionDesc": "安装方法见各页面，适用于 Claude Code、Cursor、Codex 等",
+   "source": "ui-skills.com",
+   "pricing": "unknown",
+   "tags": [
+    "字体"
+   ]
+  },
+  {
+   "id": "www-ui-skills-com-skills-jakubkrehel-better-typography",
+   "name": "jakubkrehel/better-typography",
+   "url": "https://www.ui-skills.com/skills/jakubkrehel/better-typography",
+   "note": "字体选择、搭配、行距和换行",
+   "type": "skill",
+   "section": "更多 UI Skills",
+   "sectionTitle": "九、更多 UI Skills（来自 ui-skills.com）",
+   "sectionDesc": "安装方法见各页面，适用于 Claude Code、Cursor、Codex 等",
+   "source": "ui-skills.com",
+   "pricing": "unknown",
+   "tags": [
+    "字体"
+   ]
+  },
+  {
+   "id": "www-ui-skills-com-skills-jakubkrehel-better-colors",
+   "name": "jakubkrehel/better-colors",
+   "url": "https://www.ui-skills.com/skills/jakubkrehel/better-colors",
+   "note": "用 OKLCH 生成配色、查对比度",
+   "type": "skill",
+   "section": "更多 UI Skills",
+   "sectionTitle": "九、更多 UI Skills（来自 ui-skills.com）",
+   "sectionDesc": "安装方法见各页面，适用于 Claude Code、Cursor、Codex 等",
+   "source": "ui-skills.com",
+   "pricing": "unknown",
+   "tags": [
+    "配色",
+    "无障碍"
+   ]
+  },
+  {
+   "id": "www-ui-skills-com-skills-emilkowalski-animate",
+   "name": "emilkowalski/animate",
+   "url": "https://www.ui-skills.com/skills/emilkowalski/animate",
+   "note": "从零做动画，按正确顺序决定要不要动、怎么动",
+   "type": "skill",
+   "section": "更多 UI Skills",
+   "sectionTitle": "九、更多 UI Skills（来自 ui-skills.com）",
+   "sectionDesc": "安装方法见各页面，适用于 Claude Code、Cursor、Codex 等",
+   "source": "ui-skills.com",
+   "pricing": "unknown",
+   "tags": [
+    "动效"
+   ]
+  },
+  {
+   "id": "www-ui-skills-com-skills-emilkowalski-review-animations",
+   "name": "emilkowalski/review-animations",
+   "url": "https://www.ui-skills.com/skills/emilkowalski/review-animations",
+   "note": "审查动画的时机、节奏和一致性",
+   "type": "skill",
+   "section": "更多 UI Skills",
+   "sectionTitle": "九、更多 UI Skills（来自 ui-skills.com）",
+   "sectionDesc": "安装方法见各页面，适用于 Claude Code、Cursor、Codex 等",
+   "source": "ui-skills.com",
+   "pricing": "unknown",
+   "tags": [
+    "动效",
+    "审查走查"
+   ]
+  },
+  {
+   "id": "www-ui-skills-com-skills-raphaelsalaja-12-principles-of-anim",
+   "name": "raphaelsalaja/12-principles-of-animation",
+   "url": "https://www.ui-skills.com/skills/raphaelsalaja/12-principles-of-animation",
+   "note": "把迪士尼动画 12 原则用到网页上",
+   "type": "skill",
+   "section": "更多 UI Skills",
+   "sectionTitle": "九、更多 UI Skills（来自 ui-skills.com）",
+   "sectionDesc": "安装方法见各页面，适用于 Claude Code、Cursor、Codex 等",
+   "source": "ui-skills.com",
+   "pricing": "unknown",
+   "tags": [
+    "动效"
+   ]
+  },
+  {
+   "id": "www-ui-skills-com-skills-raphaelsalaja-to-spring-or-not-to-s",
+   "name": "raphaelsalaja/to-spring-or-not-to-spring",
+   "url": "https://www.ui-skills.com/skills/raphaelsalaja/to-spring-or-not-to-spring",
+   "note": "判断该用弹簧动画还是缓动曲线",
+   "type": "skill",
+   "section": "更多 UI Skills",
+   "sectionTitle": "九、更多 UI Skills（来自 ui-skills.com）",
+   "sectionDesc": "安装方法见各页面，适用于 Claude Code、Cursor、Codex 等",
+   "source": "ui-skills.com",
+   "pricing": "unknown",
+   "tags": [
+    "动效"
+   ]
+  },
+  {
+   "id": "www-ui-skills-com-skills-raphaelsalaja-morphing-icons",
+   "name": "raphaelsalaja/morphing-icons",
+   "url": "https://www.ui-skills.com/skills/raphaelsalaja/morphing-icons",
+   "note": "图标之间平滑变形",
+   "type": "skill",
+   "section": "更多 UI Skills",
+   "sectionTitle": "九、更多 UI Skills（来自 ui-skills.com）",
+   "sectionDesc": "安装方法见各页面，适用于 Claude Code、Cursor、Codex 等",
+   "source": "ui-skills.com",
+   "pricing": "unknown",
+   "tags": []
+  },
+  {
+   "id": "www-ui-skills-com-skills-jakubantalik-transitions-dev",
+   "name": "jakubantalik/transitions-dev",
+   "url": "https://www.ui-skills.com/skills/jakubantalik/transitions-dev",
+   "note": "Transitions.dev 作者的过渡动效片段",
+   "type": "skill",
+   "section": "更多 UI Skills",
+   "sectionTitle": "九、更多 UI Skills（来自 ui-skills.com）",
+   "sectionDesc": "安装方法见各页面，适用于 Claude Code、Cursor、Codex 等",
+   "source": "ui-skills.com",
+   "pricing": "unknown",
+   "tags": [
+    "动效"
+   ]
+  },
+  {
+   "id": "www-ui-skills-com-skills-jakubantalik-refine-live",
+   "name": "jakubantalik/refine-live",
+   "url": "https://www.ui-skills.com/skills/jakubantalik/refine-live",
+   "note": "实时迭代打磨界面细节",
+   "type": "skill",
+   "section": "更多 UI Skills",
+   "sectionTitle": "九、更多 UI Skills（来自 ui-skills.com）",
+   "sectionDesc": "安装方法见各页面，适用于 Claude Code、Cursor、Codex 等",
+   "source": "ui-skills.com",
+   "pricing": "unknown",
+   "tags": []
+  },
+  {
+   "id": "www-ui-skills-com-skills-0xdesign-design-lab",
+   "name": "0xdesign/design-lab",
+   "url": "https://www.ui-skills.com/skills/0xdesign/design-lab",
+   "note": "设计探索流程：访谈、出多个方案、按反馈迭代",
+   "type": "skill",
+   "section": "更多 UI Skills",
+   "sectionTitle": "九、更多 UI Skills（来自 ui-skills.com）",
+   "sectionDesc": "安装方法见各页面，适用于 Claude Code、Cursor、Codex 等",
+   "source": "ui-skills.com",
+   "pricing": "unknown",
+   "tags": [
+    "审查走查"
+   ]
+  },
+  {
+   "id": "www-ui-skills-com-skills-dammyjay93-interface-design",
+   "name": "dammyjay93/interface-design",
+   "url": "https://www.ui-skills.com/skills/dammyjay93/interface-design",
+   "note": "专攻后台、仪表盘、SaaS 界面",
+   "type": "skill",
+   "section": "更多 UI Skills",
+   "sectionTitle": "九、更多 UI Skills（来自 ui-skills.com）",
+   "sectionDesc": "安装方法见各页面，适用于 Claude Code、Cursor、Codex 等",
+   "source": "ui-skills.com",
+   "pricing": "unknown",
+   "tags": []
+  },
+  {
+   "id": "www-ui-skills-com-skills-rams-rams",
+   "name": "rams/rams",
+   "url": "https://www.ui-skills.com/skills/rams/rams",
+   "note": "实时设计反馈：无障碍、间距、字体、对比度",
+   "type": "skill",
+   "section": "更多 UI Skills",
+   "sectionTitle": "九、更多 UI Skills（来自 ui-skills.com）",
+   "sectionDesc": "安装方法见各页面，适用于 Claude Code、Cursor、Codex 等",
+   "source": "ui-skills.com",
+   "pricing": "unknown",
+   "tags": [
+    "字体",
+    "无障碍",
+    "审查走查"
+   ]
+  },
+  {
+   "id": "www-ui-skills-com-skills-vercel-labs-web-design-guidelines",
+   "name": "vercel-labs/web-design-guidelines",
+   "url": "https://www.ui-skills.com/skills/vercel-labs/web-design-guidelines",
+   "note": "按 Vercel 的界面规范审查代码",
+   "type": "skill",
+   "section": "更多 UI Skills",
+   "sectionTitle": "九、更多 UI Skills（来自 ui-skills.com）",
+   "sectionDesc": "安装方法见各页面，适用于 Claude Code、Cursor、Codex 等",
+   "source": "ui-skills.com",
+   "pricing": "unknown",
+   "tags": [
+    "审查走查"
+   ]
+  },
+  {
+   "id": "www-ui-skills-com-skills-anthropics-canvas-design",
+   "name": "anthropics/canvas-design",
+   "url": "https://www.ui-skills.com/skills/anthropics/canvas-design",
+   "note": "Anthropic 官方，生成海报和视觉设计",
+   "type": "skill",
+   "section": "更多 UI Skills",
+   "sectionTitle": "九、更多 UI Skills（来自 ui-skills.com）",
+   "sectionDesc": "安装方法见各页面，适用于 Claude Code、Cursor、Codex 等",
+   "source": "ui-skills.com",
+   "pricing": "unknown",
+   "tags": []
+  },
+  {
+   "id": "www-ui-skills-com-skills-zarazhangrui-frontend-slides",
+   "name": "zarazhangrui/frontend-slides",
+   "url": "https://www.ui-skills.com/skills/zarazhangrui/frontend-slides",
+   "note": "把 PPT 转成带动画的网页演示",
+   "type": "skill",
+   "section": "更多 UI Skills",
+   "sectionTitle": "九、更多 UI Skills（来自 ui-skills.com）",
+   "sectionDesc": "安装方法见各页面，适用于 Claude Code、Cursor、Codex 等",
+   "source": "ui-skills.com",
+   "pricing": "unknown",
+   "tags": [
+    "动效"
+   ]
+  },
+  {
+   "id": "www-ui-skills-com-skills-jane-xiaoer-web-clone",
+   "name": "jane-xiaoer/web-clone",
+   "url": "https://www.ui-skills.com/skills/jane-xiaoer/web-clone",
+   "note": "中文作者，复刻网站和 WebGL 特效的方法论",
+   "type": "skill",
+   "section": "更多 UI Skills",
+   "sectionTitle": "九、更多 UI Skills（来自 ui-skills.com）",
+   "sectionDesc": "安装方法见各页面，适用于 Claude Code、Cursor、Codex 等",
+   "source": "ui-skills.com",
+   "pricing": "unknown",
+   "tags": [
+    "WebGL/着色器",
+    "中文"
+   ]
+  },
+  {
+   "id": "www-ui-skills-com-skills-diffusionstudio-text-to-lottie",
+   "name": "diffusionstudio/text-to-lottie",
+   "url": "https://www.ui-skills.com/skills/diffusionstudio/text-to-lottie",
+   "note": "用文字生成 Lottie 动画",
+   "type": "skill",
+   "section": "更多 UI Skills",
+   "sectionTitle": "九、更多 UI Skills（来自 ui-skills.com）",
+   "sectionDesc": "安装方法见各页面，适用于 Claude Code、Cursor、Codex 等",
+   "source": "ui-skills.com",
+   "pricing": "unknown",
+   "tags": [
+    "动效"
+   ]
+  },
+  {
+   "id": "libraries-dev-skill-html",
+   "name": "Libraries.dev Skill",
+   "url": "https://libraries.dev/skill.html",
+   "note": "装上后能扫描项目、推荐放液态金属光球等特效的位置；Pro 版能用一句话调参数",
+   "type": "skill",
+   "section": "更多 UI Skills",
+   "sectionTitle": "九、更多 UI Skills（来自 ui-skills.com）",
+   "sectionDesc": "安装方法见各页面，适用于 Claude Code、Cursor、Codex 等",
+   "source": "ui-skills.com",
+   "pricing": "unknown",
+   "tags": [
+    "液态金属"
+   ]
+  }
+ ],
+ "guides": [
+  {
+   "id": "template-look",
+   "emoji": "🧩",
+   "title": "做出来太像模板",
+   "problem": "AI 写的页面一眼就是 shadcn 默认样式，和别人家长得一样。",
+   "picks": [
+    {
+     "name": "leonxlnx/taste-skill",
+     "why": "专门约束 AI 的审美，防止套路化布局",
+     "id": "www-ui-skills-com-skills-leonxlnx-taste-skill"
+    },
+    {
+     "name": "ibelick/baseline-ui",
+     "why": "见效最快：先把间距、层级、字体这些基础问题修掉",
+     "id": "www-ui-skills-com-skills-ibelick-baseline-ui"
+    },
+    {
+     "name": "pbakaus/impeccable",
+     "why": "Impeccable 主技能，目标就是不千篇一律",
+     "id": "www-ui-skills-com-skills-pbakaus-impeccable"
+    },
+    {
+     "name": "COSS UI",
+     "why": "@vikingmute 最推荐，可直接替换 shadcn 默认样式",
+     "id": "coss-com-ui"
+    },
+    {
+     "name": "Refero",
+     "why": "先看真实产品怎么做，再给 AI 当参考",
+     "id": "refero-design"
+    }
+   ]
+  },
+  {
+   "id": "stiff-motion",
+   "emoji": "🎞️",
+   "title": "动效生硬",
+   "problem": "按钮、弹窗、页面切换要么不动，要么动得很廉价。",
+   "picks": [
+    {
+     "name": "emilkowalski/animate",
+     "why": "按正确顺序决定要不要动、怎么动",
+     "id": "www-ui-skills-com-skills-emilkowalski-animate"
+    },
+    {
+     "name": "raphaelsalaja/to-spring-or-not-to-spring",
+     "why": "判断用弹簧还是缓动曲线，手感差异主要在这",
+     "id": "www-ui-skills-com-skills-raphaelsalaja-to-spring-or-not-to-s"
+    },
+    {
+     "name": "emilkowalski/review-animations",
+     "why": "已经有动画时，用它审查节奏和一致性",
+     "id": "www-ui-skills-com-skills-emilkowalski-review-animations"
+    },
+    {
+     "name": "Transitions",
+     "why": "现成的页面过渡和动效可直接参考",
+     "id": "transitions-dev"
+    },
+    {
+     "name": "60fps",
+     "why": "看真实移动端动效，找感觉",
+     "id": "60fps-design"
+    }
+   ]
+  },
+  {
+   "id": "cheap-colors",
+   "emoji": "🎨",
+   "title": "配色廉价",
+   "problem": "颜色要么太艳要么发灰，对比度和层次不对。",
+   "picks": [
+    {
+     "name": "jakubkrehel/better-colors",
+     "why": "用 OKLCH 生成配色并检查对比度",
+     "id": "www-ui-skills-com-skills-jakubkrehel-better-colors"
+    },
+    {
+     "name": "nextlevelbuilder/ui-ux-pro-max",
+     "why": "内置 97 套配色，可以直接挑",
+     "id": "www-ui-skills-com-skills-nextlevelbuilder-ui-ux-pro-max"
+    },
+    {
+     "name": "pbakaus/quieter",
+     "why": "颜色太花时降噪，保留层级",
+     "id": "www-ui-skills-com-skills-pbakaus-quieter"
+    },
+    {
+     "name": "Brand Guidelines",
+     "why": "看成熟品牌怎么定颜色规范",
+     "id": "brandguidelines-net"
+    },
+    {
+     "name": "ShaderGradient",
+     "why": "需要好看背景时，用流动渐变替代纯色块",
+     "id": "www-shadergradient-co"
+    }
+   ]
+  },
+  {
+   "id": "mobile-cramped",
+   "emoji": "📱",
+   "title": "手机上挤成一团",
+   "problem": "桌面端还行，手机上文字挤、按钮小、布局乱。",
+   "picks": [
+    {
+     "name": "adapt（Paul Bakaus）",
+     "why": "专做响应式适配",
+     "id": "www-ui-skills-com-skills-pbakaus-adapt"
+    },
+    {
+     "name": "pbakaus/harden",
+     "why": "补齐空状态、报错、长文本等边界情况",
+     "id": "www-ui-skills-com-skills-pbakaus-harden"
+    },
+    {
+     "name": "jakubkrehel/better-typography",
+     "why": "手机上最容易出问题的是字号、行距和换行",
+     "id": "www-ui-skills-com-skills-jakubkrehel-better-typography"
+    },
+    {
+     "name": "Mobbin",
+     "why": "真实 App 截图库，看别人的移动端怎么排",
+     "id": "mobbin-com"
+    },
+    {
+     "name": "rams/rams",
+     "why": "实时检查间距、对比度、无障碍",
+     "id": "www-ui-skills-com-skills-rams-rams"
+    }
+   ]
+  },
+  {
+   "id": "ai-chat",
+   "emoji": "💬",
+   "title": "AI 聊天页要好看",
+   "problem": "要做像 ChatGPT / Claude 那样的对话、思考过程、工具调用界面。",
+   "picks": [
+    {
+     "name": "shadcn.io AI 组件",
+     "why": "50 多个 AI 聊天组件，能直接拼出 Claude 风格",
+     "id": "www-shadcn-io-ai"
+    },
+    {
+     "name": "assistant-ui",
+     "why": "有仿 ChatGPT、Claude 的完整示例",
+     "id": "www-assistant-ui-com"
+    },
+    {
+     "name": "OpenAI ChatKit",
+     "why": "要标准 ChatGPT 交互时最省事",
+     "id": "openai-github-io-chatkit-js"
+    },
+    {
+     "name": "Thinking Orbs",
+     "why": "AI 思考中的动态光球，加一点灵气",
+     "id": "orbs-jakubantalik-com"
+    },
+    {
+     "name": "aiverse",
+     "why": "200 多个海外 AI 产品交互案例，先找灵感",
+     "id": "www-aiverse-design"
+    }
+   ]
+  },
+  {
+   "id": "install-skill",
+   "emoji": "🛠️",
+   "title": "Skill 怎么装、先装哪个",
+   "problem": "Skill 是装给 Claude Code / Cursor / Codex 的设计规则，不是组件库。每个 Skill 页面都有安装命令，复制到终端执行即可。",
+   "picks": [
+    {
+     "name": "ibelick/ui-skills-root",
+     "why": "总入口，按需求自动挑合适的 UI 技能，第一个装它",
+     "id": "www-ui-skills-com-skills-ibelick-ui-skills-root"
+    },
+    {
+     "name": "frontend-design（Anthropic）",
+     "why": "Anthropic 官方前端设计技能，基础必装",
+     "id": "www-ui-skills-com-skills-anthropics-frontend-design"
+    },
+    {
+     "name": "pbakaus/shape",
+     "why": "写代码前先做设计访谈，适合产品经理",
+     "id": "www-ui-skills-com-skills-pbakaus-shape"
+    },
+    {
+     "name": "Libraries.dev Skill",
+     "why": "你是 Libraries.dev Pro，可装 Pro 版一句话调特效参数",
+     "id": "libraries-dev-skill-html"
+    },
+    {
+     "name": "leonxlnx/stitch-skill",
+     "why": "如果用 Google Stitch 出稿，配它一起用",
+     "id": "www-ui-skills-com-skills-leonxlnx-stitch-skill"
+    }
+   ]
+  }
+ ]
+}

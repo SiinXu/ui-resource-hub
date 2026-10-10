@@ -1,0 +1,38 @@
+[
+ {"id":"template-look","emoji":"🧩","title":"做出来太像模板","problem":"AI 写的页面一眼就是 shadcn 默认样式，和别人家长得一样。","picks":[
+  {"name":"leonxlnx/taste-skill","why":"专门约束 AI 的审美，防止套路化布局"},
+  {"name":"ibelick/baseline-ui","why":"见效最快：先把间距、层级、字体这些基础问题修掉"},
+  {"name":"pbakaus/impeccable","why":"Impeccable 主技能，目标就是不千篇一律"},
+  {"name":"COSS UI","why":"@vikingmute 最推荐，可直接替换 shadcn 默认样式"},
+  {"name":"Refero","why":"先看真实产品怎么做，再给 AI 当参考"}]},
+ {"id":"stiff-motion","emoji":"🎞️","title":"动效生硬","problem":"按钮、弹窗、页面切换要么不动，要么动得很廉价。","picks":[
+  {"name":"emilkowalski/animate","why":"按正确顺序决定要不要动、怎么动"},
+  {"name":"raphaelsalaja/to-spring-or-not-to-spring","why":"判断用弹簧还是缓动曲线，手感差异主要在这"},
+  {"name":"emilkowalski/review-animations","why":"已经有动画时，用它审查节奏和一致性"},
+  {"name":"Transitions","why":"现成的页面过渡和动效可直接参考"},
+  {"name":"60fps","why":"看真实移动端动效，找感觉"}]},
+ {"id":"cheap-colors","emoji":"🎨","title":"配色廉价","problem":"颜色要么太艳要么发灰，对比度和层次不对。","picks":[
+  {"name":"jakubkrehel/better-colors","why":"用 OKLCH 生成配色并检查对比度"},
+  {"name":"nextlevelbuilder/ui-ux-pro-max","why":"内置 97 套配色，可以直接挑"},
+  {"name":"pbakaus/quieter","why":"颜色太花时降噪，保留层级"},
+  {"name":"Brand Guidelines","why":"看成熟品牌怎么定颜色规范"},
+  {"name":"ShaderGradient","why":"需要好看背景时，用流动渐变替代纯色块"}]},
+ {"id":"mobile-cramped","emoji":"📱","title":"手机上挤成一团","problem":"桌面端还行，手机上文字挤、按钮小、布局乱。","picks":[
+  {"name":"adapt（Paul Bakaus）","why":"专做响应式适配"},
+  {"name":"pbakaus/harden","why":"补齐空状态、报错、长文本等边界情况"},
+  {"name":"jakubkrehel/better-typography","why":"手机上最容易出问题的是字号、行距和换行"},
+  {"name":"Mobbin","why":"真实 App 截图库，看别人的移动端怎么排"},
+  {"name":"rams/rams","why":"实时检查间距、对比度、无障碍"}]},
+ {"id":"ai-chat","emoji":"💬","title":"AI 聊天页要好看","problem":"要做像 ChatGPT / Claude 那样的对话、思考过程、工具调用界面。","picks":[
+  {"name":"shadcn.io AI 组件","why":"50 多个 AI 聊天组件，能直接拼出 Claude 风格"},
+  {"name":"assistant-ui","why":"有仿 ChatGPT、Claude 的完整示例"},
+  {"name":"OpenAI ChatKit","why":"要标准 ChatGPT 交互时最省事"},
+  {"name":"Thinking Orbs","why":"AI 思考中的动态光球，加一点灵气"},
+  {"name":"aiverse","why":"200 多个海外 AI 产品交互案例，先找灵感"}]},
+ {"id":"install-skill","emoji":"🛠️","title":"Skill 怎么装、先装哪个","problem":"Skill 是装给 Claude Code / Cursor / Codex 的设计规则，不是组件库。每个 Skill 页面都有安装命令，复制到终端执行即可。","picks":[
+  {"name":"ibelick/ui-skills-root","why":"总入口，按需求自动挑合适的 UI 技能，第一个装它"},
+  {"name":"frontend-design（Anthropic）","why":"Anthropic 官方前端设计技能，基础必装"},
+  {"name":"pbakaus/shape","why":"写代码前先做设计访谈，适合产品经理"},
+  {"name":"Libraries.dev Skill","why":"你是 Libraries.dev Pro，可装 Pro 版一句话调特效参数"},
+  {"name":"leonxlnx/stitch-skill","why":"如果用 Google Stitch 出稿，配它一起用"}]}
+]
