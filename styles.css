@@ -559,3 +559,8 @@ kbd{font:11px var(--mono);padding:1px 6px;border-radius:5px;border:1px solid var
 .tg.lk{display:inline-flex;align-items:center;gap:6px;cursor:pointer;font:inherit;font-size:12.5px}
 .tg.lk:hover{box-shadow:inset 0 0 0 1px var(--acc)}
 @media(max-width:640px){.chips-bar{position:static}.chips.ctrow{padding-bottom:8px}}
+
+/* v3h bad-preview: detail posters never extreme-crop; cards keep cover */
+.pvw.big .poster{object-fit:contain;object-position:center top;background:var(--card2)}
+.pvw.big .site-wrap .poster{object-fit:cover;object-position:center top}
+.card .cm img{object-fit:cover;object-position:center top}
