@@ -123,7 +123,7 @@ kbd{font:11px var(--mono);padding:1px 6px;border-radius:5px;border:1px solid var
 }
 @media(min-width:760px){.fc{flex-basis:46%}}
 @media(min-width:1080px){
-  .feat{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;overflow:visible;padding:0 40px}
+  .feat{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;overflow:visible;padding:0 40px;align-items:start}
   .fc{flex:none}
   .fc.big{grid-column:span 2;grid-row:span 2}
   .fc.big .fm{aspect-ratio:auto;flex:1;min-height:480px}
@@ -196,7 +196,7 @@ kbd{font:11px var(--mono);padding:1px 6px;border-radius:5px;border:1px solid var
 .chip.t.on{background:color-mix(in srgb,var(--acc) 20%,transparent);color:var(--fg);box-shadow:inset 0 0 0 1px var(--acc)}
 .sep{flex:none;width:1px;height:18px;background:var(--line2);margin:0 6px}
 
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,290px),1fr));gap:16px;padding-bottom:40px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,290px),1fr));gap:16px;padding-bottom:40px;align-items:start}
 @media(max-width:560px){.grid{grid-template-columns:1fr 1fr;gap:10px}}
 .card{position:relative;display:flex;flex-direction:column;border-radius:18px;background:var(--card);box-shadow:inset 0 0 0 1px var(--line);overflow:hidden;cursor:pointer;transition:transform .35s var(--ease),box-shadow .35s}
 @media(hover:hover){.card:hover{transform:translateY(-4px);box-shadow:inset 0 0 0 1px var(--line2),0 24px 50px -24px rgba(0,0,0,.8)}.card:hover .cm img{transform:scale(1.05)}.card:hover .cmo{opacity:1}}
@@ -564,3 +564,11 @@ kbd{font:11px var(--mono);padding:1px 6px;border-radius:5px;border:1px solid var
 .pvw.big .poster{object-fit:contain;object-position:center top;background:var(--card2)}
 .pvw.big .site-wrap .poster{object-fit:cover;object-position:center top}
 .card .cm img{object-fit:cover;object-position:center top}
+
+/* v3i: cards hug content — no equal-height empty middle */
+.grid,.feat{align-items:start}
+.card,.fc{height:auto;align-self:start}
+.card .cb,.fc .cb{flex:0 0 auto;height:auto}
+.card .ccp,.fc .ccp{margin-top:8px}
+.card .cf,.fc .cf{margin-top:6px}
+.fc.big .fm,.fc.wide .fm{min-height:0!important;flex:0 0 auto!important;aspect-ratio:16/10;height:auto!important;max-height:220px}
