@@ -34,6 +34,12 @@ for k, v in C.items():
 # v3f：官方仓库文档演示原文（_orig/fetch_full.py）+ 官方安装/配置原文，组成「安装 → 配置 → 引入 → 基础用法」
 FULL = json.load(open(os.path.join(H, '_orig', 'fullcode.json'), encoding='utf-8')) if os.path.exists(os.path.join(H, '_orig', 'fullcode.json')) else {}
 SETUP = FULL.pop('__setup__', {})
+_F2 = os.path.join(H, '_orig', 'fullcode2.json')  # v3g：第二批官方完整代码（_orig/fetch_full2.py）
+if os.path.exists(_F2): FULL.update(json.load(open(_F2, encoding='utf-8')))
+_S2 = os.path.join(H, '_orig', 'setup2.json')  # v3g：CSS / Vue 库官方安装 + 引入原文（_orig/fetch_setup2.py）
+if os.path.exists(_S2): SETUP.update(json.load(open(_S2, encoding='utf-8')))
+# v3g：商业许可部分（MUI X Pro / Premium）不给代码，即使库本体是 MIT
+PRO_URL = re.compile(r'mui\.com/x/react-date-pickers/date-range-picker|mui\.com/x/react-data-grid/#(pro|premium)-version')
 GHR = lambda r, f='README.md', b='HEAD': f'https://github.com/{r}/blob/{b}/{f}'
 INSTALL = {  # 官方 README / 官方入门文档里的安装命令原文（2026-10-10 核对）
  'lib-ant-design': [('Install', 'npm install antd', GHR('ant-design/ant-design'))],
@@ -71,6 +77,19 @@ def sup_text(i, L, fw=None):
     else: s += "\n# 本站不提供任何付费模板 / Pro 组件源码。"
     return s
 FULLN = 0
+# v3g：原站公开的 Prompt 全文（不截断）——Skill 的 SKILL.md 全文、README 里写明「给 coding agent 的 prompt」
+SKMD = json.load(open(os.path.join(H, '_orig', 'skillmd.json'), encoding='utf-8')) if os.path.exists(os.path.join(H, '_orig', 'skillmd.json')) else {}
+RPR = {k: [x for x in v if 'prompt' in x['h'].lower()] for k, v in (json.load(open(os.path.join(H, '_orig', 'readme_prompts.json'), encoding='utf-8')) if os.path.exists(os.path.join(H, '_orig', 'readme_prompts.json')) else {}).items()}
+PAGE_PROMPTS = {  # 官网页面上公开列出的示例 Prompt（原文，2026-10-10 抓取）
+ 'libraries-dev-skill-html': ('Try it', 'https://libraries.dev/skill.html', ['Review my project and suggest where libraries.dev effects fit', 'Show a thinking orb while the chat reply is streaming', 'Add a border beam to the prompt input while it generates', 'Give each agent in the sidebar a bot avatar that follows its status']),
+}
+def skill_prompt(rid):
+    k = SKMD[rid]
+    t = f"# 官方安装命令 Install\n{k['install']}\n\n# SKILL.md 全文 · {k['src']} · License: {k['lic']}\n{k['md']}"
+    if rid in PAGE_PROMPTS:
+        h, u, ps = PAGE_PROMPTS[rid]; t += f"\n\n# 官网示例 Prompt（{h}）· {u}\n" + '\n'.join('- ' + x for x in ps)
+    return t
+DESCS = json.load(open(os.path.join(H, '_orig', 'descs.json'), encoding='utf-8')) if os.path.exists(os.path.join(H, '_orig', 'descs.json')) else {}  # v3g：缺说明的卡补官方文档原文（_orig/fetch_desc.py）
 CSSLIB = {'lib-getbootstrap-com', 'lib-daisyui-com', 'lib-flowbite-com', 'lib-bulma-io', 'lib-picocss-com', 'lib-open-props-style', 'lib-www-hyperui-dev'}
 out = {}; stat = dict(code_orig=0, code_sup_only=0, code_off=0, prompt_orig=0, prompt_desc=0, prompt_sup_only=0)
 for i in d['items']:
@@ -111,6 +130,10 @@ for i in d['items']:
             if not code and i['id'] in lib_usage and ok_code(lib_usage[i['id']][0]): code, src = lib_usage[i['id']]
             if code: o['c'] = tidy(code); o['cs'] = src; o['cl'] = L['lic']
             if L.get('code') and L['code'].strip() not in (o.get('c') or ''): o['sup'] = L['code']
+    if rid in SKMD: o['p'] = skill_prompt(rid); o['ps'] = SKMD[rid]['src']; o['pl'] = len(o['p'])
+    elif repo_of(L) in RPR and RPR[repo_of(L)] and i['type'] != 'style':
+        x = RPR[repo_of(L)][0]; o['p'] = f"# {x['h']}\n{x['p']}"; o['ps'] = x['src']
+    if not o.get('d') and not o.get('p') and rid in DESCS: o['d'] = DESCS[rid]['d']; o['ds'] = DESCS[rid]['ds']
     # v3f：完整官方代码（安装 → 配置 → 引入 → 用法）
     if oss:
         fw = None
@@ -125,7 +148,10 @@ for i in d['items']:
                 o['c'] = compose(ip) + '\n\n' + hdr('官方文档示例', o.get('cs') or i['url'], o['c']) + '\n' + o['c']
             if ip and (re.search(r'^\s*import |@import|<script', o['c'], re.M) or i.get('lib') in CSSLIB): o['full'] = 1
         if o.get('c'): o['sup'] = sup_text(i, L, fw)
-        if o.get('full'): FULLN += 1
+        if o.get('full') and not PRO_URL.search(i['url']): FULLN += 1
+    if PRO_URL.search(i['url']):
+        for k in ('c', 'cs', 'cl', 'full', 'fw', 'sup'): o.pop(k, None)
+        o['nc'] = 'MUI X Pro / Premium 为商业许可，本站不提供代码 · Commercial license (MUI X Pro/Premium) — no code here'
     if o.get('c'): stat['code_orig'] += 1
     elif o.get('sup'): stat['code_sup_only'] += 1
     else: stat['code_off'] += 1

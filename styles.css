@@ -525,6 +525,7 @@ kbd{font:11px var(--mono);padding:1px 6px;border-radius:5px;border:1px solid var
 .ogs .ogh{display:flex;justify-content:space-between;align-items:center;gap:8px;font-size:12px;font-weight:600;padding:6px 10px;background:rgba(127,127,127,.08)}
 .ogs.org .ogh{color:#0a7d4f}.ogs.sup .ogh{color:#8a6a00}
 .ogs pre{margin:0;border:0;border-radius:0;max-height:320px;overflow:auto}
+.ogs.org pre{max-height:min(60vh,560px)}
 .ogs .osrc{font-weight:500;font-size:11px;opacity:.85;text-decoration:underline}
 .ogs .cnote{padding:4px 10px 8px;margin:0}
 .cs .note .cv{font-weight:600;opacity:.9}

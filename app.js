@@ -70,11 +70,11 @@ function favBtn(i,cls){return '<button class="ib fav'+(favs[i.id]?' on':'')+(cls
 function lg(i){return LG[i.id]||(i.lib&&LG[i.lib])||{k:'unk'}}
 var O = window.UI_ORIG || {};
 /* v3e：原站原文在前、原样保留；聚合站补充放后面并明确标注 */
-function codeParts(i){var l=lg(i),o=O[i.id]||{};if(l.k!=='oss')return {o:'',s:''};
+function codeParts(i){var l=lg(i),o=O[i.id]||{};if(l.k!=='oss'||o.nc)return {o:'',s:''};
   var sup=o.sup||(!o.c?(l.code||''):'');return {o:o.c||'',os:o.cs||'',lic:o.cl||l.lic,s:(o.c&&sup&&o.c.indexOf(sup)>=0)?'':sup}}
 function codeOf(i){var p=codeParts(i);if(!p.o)return p.s;return p.o+(p.s?'\n\n'+t('sup_mark')+'\n'+p.s:'')}
 function codeTip(i){
-  var l=lg(i);
+  var l=lg(i);if((O[i.id]||{}).nc)return O[i.id].nc;
   if(l.k==='oss')return l.code?'':t('code_oss_nosnip',{lic:l.lic});
   if(l.k==='paid'||i.pricing==='paid')return t('code_paid');
   if(l.k==='lic')return t('code_lic',{lic:l.lic});
