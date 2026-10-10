@@ -33,3 +33,10 @@
 - `build_legal.py`：Prime 系社区版核实为 MIT（LTS / PrimeBlocks 付费，不提供）；HeroUI v3 仓库为 Apache-2.0。
 - 卡片和详情显示框架标签（Vue / Angular / React）；Prime 系详情里有「同一演示的其他框架版本」互链。
 - 构建顺序：`build_legal.py → _orig/fetch_full.py → build_orig.py`。
+
+## v3h（2026-10-10）资源类型 + 页面样式风格 + 第二批资源
+- 新增 187 张卡（`build_ued.py`，数据在 `_ued/items_[a-d].py`，8 语说明人工撰写）：Agent 设计 Skills、大厂 UED / 设计系统（Apple HIG、Material 3、Fluent 2、Polaris、Atlassian、Spectrum、GOV.UK…）、设计教程、组件风格与 Token 规范（DTCG、WCAG、APG、Open UI…）、UI 灵感站与素材、AI Coding × 设计。已和现有卡按 URL 去重（Ant / Arco / Semi / TDesign / Element / Vant / Carbon / Primer 等沿用原卡，只补标签）。
+- 每张卡新增两个多选字段：`rt` 资源类型（19 类）、`vs` 页面样式风格（20 种）；首页筛选栏变为「资源类型 / 页面风格 / 按组件找」三行，计数为分面计数，可与搜索、标签、收藏叠加；详情页里的类型 / 风格标签可点击直接筛选。
+- 原站原文：`_ued/fetch.py` 抓 GitHub 仓库描述与许可、宽松许可（MIT / Apache-2.0 等）Skill 仓库的 SKILL.md 原文和 README 中的安装命令、其他站点的 meta description，写入 `orig.js`。无许可或非宽松许可的仓库只给描述和链接。
+- 封面：网站 / 灵感站 / 设计系统 / 文档类卡片统一用原站首页真实截图（`/workspace/cap/home2.py`，1440×900 首屏缩到 800×500，`previews/site/`，选用清单 `_ued/covers.json`）；拿不到截图（如 X 帖子、Cloudflare 拦截）的新卡用文字卡，不用自制示意。
+- 构建顺序：原有流程之后运行 `python3 build_ued.py`（可重复运行）；i18n 增量在 `_ued/i18n_v3h.py`。
