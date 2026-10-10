@@ -117,25 +117,23 @@ function cardActs(i,cls){
   '</div>';
 }
 
-/* 卡片底栏：左侧信息，右侧只有 收藏 + 更多 两个控件 */
-function metaLine(i){
-  var l=lg(i), out='<span class="tp">'+TN(i.type)+'</span>';
-  if(PR(i.pricing))out+='<span class="pill '+i.pricing+'" title="'+esc(t('price_tip_'+i.pricing))+'">'+PR(i.pricing)+'</span>';
-  if(l.k==='oss')out+='<span class="pill oss" title="'+esc(t('kv_license'))+'">'+esc(l.lic)+'</span>';
-  var fw=(O[i.id]||{}).fw; if(fw)out+='<span class="pill fw">'+esc(fw)+'</span>';
-  return '<div class="cmeta">'+out+'</div>';
+/* v4 卡片：标题 / 一行 mono 元信息 / 两行说明 / 操作栏 */
+function hostPath(u){try{var x=new URL(u),p=x.pathname.replace(/\/$/,'');return x.hostname.replace(/^www\./,'')+(p.length>1?p:'')}catch(e){return u}}
+function metaLine(i,path){
+  var l=lg(i), out=['<span class="h">'+esc(path?hostPath(i.url):host(i.url))+'</span>'];
+  if(PR(i.pricing))out.push('<span class="pr '+i.pricing+'" title="'+esc(t('price_tip_'+i.pricing))+'">'+PR(i.pricing)+'</span>');
+  if(l.k==='oss')out.push('<span title="'+esc(t('kv_license'))+'">'+esc(l.lic)+'</span>');
+  return '<p class="cu">'+out.join('<i aria-hidden="true">·</i>')+'</p>';
 }
-function ctl(i){return '<div class="ctl">'+favBtn(i,'r')+'<button class="ib r more" data-more="'+i.id+'" aria-haspopup="menu" aria-label="'+esc(t('btn_more'))+'" title="'+esc(t('btn_more'))+'">'+IC.dots+'</button></div>'}
-/* 卡面复制按钮：Prompt 永远可复制；代码仅限核对过许可证的 MIT/Apache 短片段，其余置灰并说明原因 */
+function ctl(i){return favBtn(i)+'<button class="ib more" data-more="'+i.id+'" aria-haspopup="menu" aria-label="'+esc(t('btn_more'))+'" title="'+esc(t('btn_more'))+'">'+IC.dots+'</button>'}
+/* 卡面复制按钮：Prompt 永远可复制；代码仅限核对过许可证的片段，其余置灰并说明原因 */
 function copyRow(i){
   var c=codeOf(i), tip=codeTip(i);
-  return '<div class="ccp">'+
-    '<button class="cpb pri" data-cp="'+i.id+'" title="'+esc(t('btn_copy_prompt'))+'" aria-label="'+esc(t('btn_copy_prompt'))+'">'+IC.copy+'<span>'+esc(t('btn_cp_card'))+'</span></button>'+
-    (c?'<button class="cpb code" data-cc="'+i.id+'" title="'+esc(t('btn_copy_code')+' · '+lg(i).lic)+'" aria-label="'+esc(t('btn_copy_code'))+'">'+IC.code+'<span>'+esc(t('btn_cc_card'))+'</span></button>'
-      :'<button class="cpb off" aria-disabled="true" data-tip="'+esc(tip)+'" title="'+esc(tip)+'" aria-label="'+esc(t('code_off_short'))+'">'+IC.lock+'<span>'+esc(t('btn_cc_card'))+'</span></button>')+
-  '</div>';
+  return '<button class="cpb" data-cp="'+i.id+'" title="'+esc(t('btn_copy_prompt'))+'" aria-label="'+esc(t('btn_copy_prompt'))+'">'+IC.copy+'<span>Prompt</span></button>'+
+    (c?'<button class="cpb" data-cc="'+i.id+'" title="'+esc(t('btn_copy_code')+' · '+lg(i).lic)+'" aria-label="'+esc(t('btn_copy_code'))+'">'+IC.code+'<span>'+esc(t('code_none_h'))+'</span></button>'
+      :'<button class="cpb off" aria-disabled="true" data-tip="'+esc(tip)+'" title="'+esc(tip)+'" aria-label="'+esc(t('code_off_short'))+'">'+IC.lock+'<span>'+esc(t('code_none_h'))+'</span></button>');
 }
-function foot(i){return copyRow(i)+'<div class="cf">'+metaLine(i)+ctl(i)+'</div>'}
+function foot(i){return '<div class="cbar">'+copyRow(i)+'<span class="sp"></span>'+ctl(i)+'</div>'}
 function menuHTML(i){
   return '<div class="mh"><b>'+esc(shown(i.name))+'</b><small>'+esc(host(i.url))+'</small></div>'+
     (vis(i)?'<button class="mi" role="menuitem" data-play="'+i.id+'">'+IC.full+'<span>'+esc(canFrame(i)?t('btn_play'):t('btn_view'))+'</span></button>':'')+
@@ -193,36 +191,34 @@ function thumb(i){var m=M[i.id]||{},lv=LIVE[i.id];return lv?'<img src="'+lv.post
 function featCard(f,k){
   var i=BY[f.id]; if(!i)return '';
   var m=M[i.id]||{}, live=!!f.live;
-  var media = live ? liveBox(f) : (m.img?'<img class="poster kb" src="'+m.img+'" alt="'+esc(i.name)+'" loading="'+(k<8?'eager':'lazy')+'">':demo(i));
+  var media = live ? liveBox(f) : (m.img?'<img class="poster" src="'+m.img+'" alt="'+esc(i.name)+'" loading="'+(k<8?'eager':'lazy')+'">':demo(i));
   var title=isZh()?(f.title||shown(i.name)):shown(i.name), sub=isZh()?(f.sub||noteOf(i)||host(i.url)):(noteOf(i)||host(i.url));
   return '<article class="fc'+(f.big?' big':'')+(f.wide?' wide':'')+(live?' is-live':'')+'" style="--i:'+k+'">'+
-    '<div class="fm" '+(live?'':'data-open="'+i.id+'"')+'>'+media+'<div class="ftop">'+srcTag(i,live)+'</div></div>'+
-    '<div class="fb" data-open="'+i.id+'"><div class="ft"><h3>'+esc(title)+'</h3>'+
-    '<p>'+esc(sub)+'</p>'+(f.hint&&isZh()?'<p class="hint">'+esc(f.hint)+'</p>':'')+'</div>'+foot(i)+
+    '<div class="fm" '+(live?'':'data-open="'+i.id+'"')+'>'+media+'<div class="ftop">'+(live?srcTag(i,live):'')+'</div></div>'+
+    '<div class="fb" data-open="'+i.id+'"><h3>'+esc(title)+'</h3>'+metaLine(i)+
+    '<p class="note">'+esc(f.hint&&isZh()?sub+' · '+f.hint:sub)+'</p>'+foot(i)+
     '</div></article>';
 }
 function renderFeat(){
   $('feat').innerHTML = FEAT.map(featCard).join('');
-  $('more').innerHTML = '<span class="ml">'+esc(t('more_title'))+'</span>'+MORE.map(function(id){var i=BY[id];return '<button class="mc" data-open="'+id+'">'+thumb(i)+'<span><b>'+esc(shown(i.name))+'</b><small>'+esc(noteOf(i))+'</small></span></button>'}).join('');
+  $('more').innerHTML = '<span class="ml">'+esc(t('more_title'))+'</span><div class="mcs">'+MORE.map(function(id){var i=BY[id];return '<button class="mc" data-open="'+id+'">'+thumb(i)+'<span><b>'+esc(shown(i.name))+'</b><small>'+esc(noteOf(i))+'</small></span></button>'}).join('')+'</div>';
   observeLive($('feat')); track($('feat'));
 }
 
 /* ---------- 目录卡片 ---------- */
 function card(i){
-  var m=M[i.id]||{}, live=LIVE[i.id];
+  var m=M[i.id]||{}, live=LIVE[i.id], nm=shown(i.name);
   if(!vis(i)){
-    var parts=shown(i.name).split('/');
-    return '<article class="card sk" data-open="'+i.id+'"><div class="skm"><div class="term"><i></i><i></i><i></i><span>'+esc(i.type==='skill'?'SKILL.md':host(i.url))+'</span></div>'+
-      '<div class="skn"><small>'+esc(parts.length>1?parts[0]+' /':TN(i.type))+'</small><b>'+esc(parts[parts.length-1])+'</b></div></div>'+
-      '<div class="cb"><p class="note">'+esc(noteOf(i)||host(i.url))+'</p>'+foot(i)+'</div></article>';
+    var parts=nm.split('/');
+    return '<article class="card tx" data-open="'+i.id+'"><div class="cm"><div class="th cover"><span class="cl">'+esc(i.type==='skill'?'SKILL.md':TN(i.type))+'</span>'+
+      '<b>'+esc(parts[parts.length-1])+'</b><small>'+esc(parts.length>1?parts[0]:host(i.url))+'</small></div></div>'+
+      '<div class="cb"><h3>'+esc(nm)+'</h3>'+metaLine(i)+'<p class="note">'+esc(noteOf(i)||host(i.url))+'</p>'+foot(i)+'</div></article>';
   }
-  var tag = live?'<span class="tag-lv">'+t('tag_live')+'</span>':(m.frame?'<span class="tag-fr">'+t('tag_frame')+'</span>':srcTag(i));
-  if(i.type==='style')return '<article class="card cs" data-open="'+i.id+'"><div class="cm">'+thumb(i)+
-    '<div class="ctop"><span class="tag-pv">'+esc(t('tag_cs'))+'</span></div></div>'+
-    '<div class="cb"><h3>'+esc(CTN(i.kind))+'<span class="csl">'+esc(i.libName)+'</span></h3><p class="note">'+(i.var?'<b class="cv">'+esc(i.var)+'</b> ':'')+esc(host(i.url)+(new URL(i.url).pathname.length>1?new URL(i.url).pathname.replace(/\/$/,''):''))+'</p>'+foot(i)+'</div></article>';
-  return '<article class="card" data-open="'+i.id+'"><div class="cm">'+thumb(i)+
-    '<div class="ctop">'+tag+'</div><span class="cview">'+esc(t('btn_details'))+IC.ext.replace('M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5','M7 17 17 7M9 7h8v8')+'</span></div>'+
-    '<div class="cb"><h3>'+esc(shown(i.name))+'</h3><p class="note">'+esc(noteOf(i)||host(i.url))+'</p>'+foot(i)+'</div></article>';
+  var tag = live?'<span class="tag-lv">'+t('tag_live')+'</span>':(m.frame?'<span class="tag-fr">'+t('tag_frame')+'</span>':'');
+  if(i.type==='style')return '<article class="card cs" data-open="'+i.id+'"><div class="cm"><div class="th">'+thumb(i)+'</div></div>'+
+    '<div class="cb"><h3>'+esc(CTN(i.kind))+'<span class="csl">'+esc(i.libName)+(i.var?' · '+esc(i.var):'')+'</span></h3>'+metaLine(i,1)+'<p class="note">'+esc(noteOf(i))+'</p>'+foot(i)+'</div></article>';
+  return '<article class="card" data-open="'+i.id+'"><div class="cm"><div class="th">'+thumb(i)+'</div>'+(tag?'<div class="ctop">'+tag+'</div>':'')+'</div>'+
+    '<div class="cb"><h3>'+esc(nm)+'</h3>'+metaLine(i)+'<p class="note">'+esc(noteOf(i)||host(i.url))+'</p>'+foot(i)+'</div></article>';
 }
 function match(i){
   if(state.view==='fav'&&!favs[i.id])return false;
@@ -246,18 +242,20 @@ function renderChips(){
     return true}
   function cnt(skip,f){var c={},n=0;base.forEach(function(i){if(!ok(i,skip))return;n++;(i[f]||[]).forEach(function(x){c[x]=(c[x]||0)+1})});c._n=n;return c}
   var rc=cnt('rt','rt');
-  var html = '<span class="ct-h">'+esc(t('rt_h'))+'</span><button class="chip'+(state.rt?'':' on')+'" data-rt="">'+esc(t('rt_all'))+'<small>'+rc._n+'</small></button>'+
+  function lab(id,k){var p=$(id).parentNode;p.dataset.label=t(k)}
+  lab('chips','rt_h');lab('vsChips','vs_h');lab('ctChips','ct_h');lab('tagChips','tags_h');
+  var html = '<button class="chip'+(state.rt?'':' on')+'" data-rt="">'+esc(t('rt_all'))+'<small>'+rc._n+'</small></button>'+
     RTO.filter(function(k){return rc[k]||state.rt===k}).map(function(k){return '<button class="chip'+(state.rt===k?' on':'')+'" data-rt="'+k+'">'+esc(RTN(k))+'<small>'+(rc[k]||0)+'</small></button>'}).join('');
   var tc={}; base.forEach(function(i){if(ok(i,'tag'))tagsOf(i).forEach(function(x){tc[x]=(tc[x]||0)+1})});
   var top=Object.keys(tc).sort(function(a,b){return tc[b]-tc[a]}).slice(0,12);
   if(state.tag&&top.indexOf(state.tag)<0)top.unshift(state.tag);
-  html += '<span class="sep"></span>' + top.map(function(x){return '<button class="chip t'+(state.tag===x?' on':'')+'" data-tag="'+esc(x)+'">#'+esc(x)+'</button>'}).join('');
+  $('tagChips').innerHTML = top.map(function(x){return '<button class="chip t'+(state.tag===x?' on':'')+'" data-tag="'+esc(x)+'">#'+esc(x)+'</button>'}).join('');
   $('chips').innerHTML = html;
   var vc=cnt('vs','vs');
-  $('vsChips').innerHTML = '<span class="ct-h">'+esc(t('vs_h'))+'</span><button class="chip c'+(state.vs?'':' on')+'" data-vs="">'+esc(t('vs_all'))+'</button>'+
+  $('vsChips').innerHTML = '<button class="chip c'+(state.vs?'':' on')+'" data-vs="">'+esc(t('vs_all'))+'</button>'+
     VSO.filter(function(k){return vc[k]||state.vs===k}).map(function(k){return '<button class="chip c v'+(state.vs===k?' on':'')+'" data-vs="'+k+'"><i class="vsw vs-'+k+'"></i>'+esc(VSN(k))+'<small>'+(vc[k]||0)+'</small></button>'}).join('');
   var cc=cnt('ct','ct');
-  $('ctChips').innerHTML = '<span class="ct-h">'+esc(t('ct_h'))+'</span><button class="chip c'+(state.ct?'':' on')+'" data-ct="">'+esc(t('ct_all'))+'</button>'+
+  $('ctChips').innerHTML = '<button class="chip c'+(state.ct?'':' on')+'" data-ct="">'+esc(t('ct_all'))+'</button>'+
     CTO.filter(function(c){return cc[c]||state.ct===c}).map(function(c){return '<button class="chip c'+(state.ct===c?' on':'')+'" data-ct="'+c+'">'+esc(CTN(c))+'<small>'+(cc[c]||0)+'</small></button>'}).join('');
 }
 /* v3e：两千多张卡分批渲染，滚到底部再追加，手机上不卡 */
@@ -426,6 +424,8 @@ function applyStatic(){
   document.querySelectorAll('[data-i18n]').forEach(function(el){el.textContent=t(el.dataset.i18n,{n:ITEMS.length})});
   document.querySelectorAll('[data-i18n-ph]').forEach(function(el){el.placeholder=t(el.dataset.i18nPh)});
   document.querySelectorAll('[data-i18n-aria]').forEach(function(el){el.setAttribute('aria-label',t(el.dataset.i18nAria));el.title=t(el.dataset.i18nAria)});
+  var hs=$('hstats'); if(hs){var u=function(f){var s={};ITEMS.forEach(function(i){(i[f]||[]).forEach(function(x){s[x]=1})});return Object.keys(s).length};
+    hs.innerHTML=[[ITEMS.length,t('cat_all')],[u('rt'),t('rt_h')],[u('vs'),t('vs_h')],[(I18N.langs||[]).length,t('lang')]].map(function(r){return '<div><dt>'+r[0]+'</dt><dd>'+esc(r[1])+'</dd></div>'}).join('')}
   var sel=$('langSel'); if(sel){sel.value=LANG}
   document.title='UI Hub · '+t('hero_title');
 }
@@ -510,7 +510,7 @@ document.addEventListener('keydown',function(e){
   if(e.key==='/'&&!/INPUT|TEXTAREA|SELECT/.test(document.activeElement.tagName)){e.preventDefault();focusSearch()}
   if(e.key==='Escape'){if(!$('menu').hidden)closeMenu();else if(!$('play').hidden)closePlay();else if($('sheet').classList.contains('open'))back()}
 });
-$('themeBtn').addEventListener('click',function(){var r=document.documentElement,n=r.dataset.theme==='dark'?'light':'dark';r.dataset.theme=n;try{localStorage.setItem('uihub.theme',n)}catch(e){}});
+$('themeBtn').addEventListener('click',function(){var r=document.documentElement,n=r.dataset.theme==='dark'?'light':'dark';r.dataset.theme=n;try{localStorage.setItem('uihub.theme4',n);var mt=document.querySelector('meta[name=theme-color]');mt&&mt.setAttribute('content',n==='dark'?'#0d0d0d':'#f6f6f4')}catch(e){}});
 (function(){var sel=$('langSel');if(!sel)return;sel.innerHTML=I18N.langs.map(function(l){return '<option value="'+l[0]+'">'+l[1]+'</option>'}).join('');sel.addEventListener('change',function(){setLang(sel.value)})})();
 (function(){var y0=null,s=$('sheet');s.addEventListener('touchstart',function(e){y0=s.scrollTop<=0&&!e.target.closest('.live,.site,.pv-tabs')?e.touches[0].clientY:null},{passive:true});
  s.addEventListener('touchend',function(e){if(y0!=null&&e.changedTouches[0].clientY-y0>90)back();y0=null},{passive:true})})();

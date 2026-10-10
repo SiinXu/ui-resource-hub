@@ -40,3 +40,11 @@
 - 原站原文：`_ued/fetch.py` 抓 GitHub 仓库描述与许可、宽松许可（MIT / Apache-2.0 等）Skill 仓库的 SKILL.md 原文和 README 中的安装命令、其他站点的 meta description，写入 `orig.js`。无许可或非宽松许可的仓库只给描述和链接。
 - 封面：网站 / 灵感站 / 设计系统 / 文档类卡片统一用原站首页真实截图（`/workspace/cap/home2.py`，1440×900 首屏缩到 800×500，`previews/site/`，选用清单 `_ued/covers.json`）；拿不到截图（如 X 帖子、Cloudflare 拦截）的新卡用文字卡，不用自制示意。
 - 构建顺序：原有流程之后运行 `python3 build_ued.py`（可重复运行）；i18n 增量在 `_ued/i18n_v3h.py`。
+
+## v4（2026-10-10）视觉重建
+- 设计说明见 `DESIGN_BRIEF.md`（参考 Mobbin / Refero / Linear / Beautiful UI / anti-slop）。
+- 默认浅色纸面（深色为中性石墨，不再有紫蓝光晕和网格背景）；标题用 Instrument Serif，界面 Geist，URL / 计数用 Geist Mono；圆角只有 6 / 10 / 14 三档。
+- 卡片：缩略图嵌在中性底板上（16:10），下方标题 / 一行 mono 元信息 / 两行说明（固定高度）/ 操作栏；同一行等高、等宽列，全部 2357 张。无图资源用排版封面。
+- 筛选：资源类型 / 页面风格 / 按组件找 / 标签四行，标签在上、chip 与网格同一左边线。
+- 详情：桌面右侧抽屉 640px，手机底部 sheet。主题存储键改为 `uihub.theme4`。
+- 截图：`screenshots/v4-*.png`。
