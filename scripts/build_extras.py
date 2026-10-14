@@ -28,6 +28,7 @@ U = {
  'ag_title': dict(zh='给 AI Agent 的使用指南',zht='給 AI Agent 的使用指南',en='Guide for AI agents',ja='AIエージェント向けガイド',ko='AI 에이전트 가이드',ms='Panduan untuk ejen AI',vi='Hướng dẫn cho AI agent',fr='Guide pour agents IA',es='Guía para agentes de IA',de='Leitfaden für KI-Agents'),
  'ag_lede': dict(zh='把本站交给你的 AI 助手：它可以读取机器可读索引，按风格和类型挑组件，复制代码和 Prompt，并按设计 skill 的流程做出好看的界面。',zht='把本站交給你的 AI 助手：它可以讀取機器可讀索引，按風格和類型挑元件，複製程式碼和 Prompt，並按設計 skill 的流程做出好看的介面。',en='Hand this site to your AI assistant: it can read the machine-readable index, pick components by style and type, copy code and prompts, and follow design skills to build good-looking UIs.',ja='このサイトをAIアシスタントに渡すと、機械可読インデックスを読み、スタイルと種類でコンポーネントを選び、コードとプロンプトをコピーし、デザインスキルに沿って美しいUIを作れます。',ko='이 사이트를 AI 어시스턴트에게 주면 기계 판독 인덱스를 읽고, 스타일·유형별로 컴포넌트를 고르고, 코드와 프롬프트를 복사하며, 디자인 스킬에 따라 UI를 만들 수 있습니다.',ms='Serahkan laman ini kepada pembantu AI anda: ia boleh membaca indeks mesin, memilih komponen mengikut gaya dan jenis, menyalin kod dan prompt, serta mengikut kemahiran reka bentuk.',vi='Đưa trang này cho trợ lý AI: nó đọc chỉ mục máy, chọn component theo phong cách và loại, sao chép code và prompt, rồi làm theo skill thiết kế.',fr='Confiez ce site à votre assistant IA : il lit l’index machine, choisit des composants par style et type, copie code et prompts, et suit les skills de design.',es='Dale este sitio a tu asistente de IA: lee el índice legible por máquina, elige componentes por estilo y tipo, copia código y prompts y sigue los skills de diseño.',de='Geben Sie diese Seite Ihrem KI-Assistenten: Er liest den maschinenlesbaren Index, wählt Komponenten nach Stil und Typ, kopiert Code und Prompts und folgt Design-Skills.'),
 }
+U['kb']=dict(zh='百科',zht='百科',en='Encyclopedia',ja='百科',ko='백과',ms='Ensiklopedia',vi='Bách khoa',fr='Encyclopédie',es='Enciclopedia',de='Enzyklopädie')
 def L(k, code): return U[k].get(code) or U[k]['en']
 
 CSS = """@font-face{font-family:Geist;src:url(%(r)sfonts/geist.woff2) format('woff2');font-weight:100 900;font-display:swap}
@@ -66,7 +67,7 @@ pre{background:var(--mat);border:1px solid var(--line);border-radius:12px;paddin
 details{border-bottom:1px solid var(--line);padding:12px 0}summary{cursor:pointer;font-weight:500}details p{color:var(--ink2);margin:8px 0 0}
 .foot{border-top:1px solid var(--line);padding:24px 0 40px;color:var(--ink3);font-size:13px}
 [data-l]{display:none}
-@media(max-width:600px){.bar{gap:8px}.logo{font-size:0;gap:0}nav.tb{margin-left:0}nav.tb a{padding:6px 7px;font-size:13px;white-space:nowrap}select{max-width:92px}.hero{padding:40px 0 20px}}"""
+@media(max-width:600px){.bar{gap:6px}nav.tb{overflow-x:auto;min-width:0;flex:1;scrollbar-width:none}.sp{display:none}select{max-width:70px!important}.logo{font-size:0;gap:0}nav.tb{margin-left:0}nav.tb a{padding:6px 7px;font-size:13px;white-space:nowrap}select{max-width:92px}.hero{padding:40px 0 20px}}"""
 
 def head(title, desc, path, extra_ld, root, img='og.png'):
     url = BASE + path
@@ -87,7 +88,7 @@ def ml(key_or_dict, tag='span'):
 def topbar(root, on):
     opts = ''.join(f'<option value="{c}">{n}</option>' for c,n,_ in LANGS)
     def a(href, key, v): return f'<a href="{root}{href}"{" class=on" if on==v else ""}>{ml(key)}</a>'
-    return f"""<header class="top"><div class="bar wrap"><a class="logo" href="{root}"><i></i>UI Hub</a><nav class="tb">{a('','home','home')}{a('blog/','blog','blog')}{a('agents/','agents','agents')}</nav><span class="sp"></span>
+    return f"""<header class="top"><div class="bar wrap"><a class="logo" href="{root}"><i></i>UI Hub</a><nav class="tb">{a('','home','home')}{a('kb/','kb','kb')}{a('blog/','blog','blog')}{a('agents/','agents','agents')}</nav><span class="sp"></span>
 <select id="ls" aria-label="Language">{opts}</select><button class="th" id="th" aria-label="Theme">◐</button></div></header>"""
 
 SCRIPT = """<script>(function(){var M={'zh-cn':'zh-Hans','zh-sg':'zh-Hans','zh-tw':'zh-Hant','zh-hk':'zh-Hant','zh-mo':'zh-Hant'},A=['zh-Hans','zh-Hant','en','ja','ko','ms','vi','fr','es','de'],APP={'zh-Hans':'zh-CN','zh-Hant':'zh-TW'};
@@ -184,6 +185,13 @@ llms = f"""# UI Hub
 
 Use the JSON endpoints, not the SPA, when acting as an agent. Every entry links to its original site; licenses belong to the original authors.
 
+## Design encyclopedia (query this first)
+- [Encyclopedia]({BASE}kb/): skills (full SKILL.md where licensed), design specs (spacing, typography, colour, motion, accessibility, dark mode, mobile), house style & lessons, blog notes
+- [KB JSON]({BASE}api/kb.json): every entry with type, tags, url, raw .md URL and full markdown
+- [Search index]({BASE}api/search-index.json): kb entries + all resources/components, fields t,k,u,r,d,g
+- Raw entry pattern: {BASE}kb/<type>/<slug>.md  (type = skill | spec | note), e.g. {BASE}kb/spec/motion.md, {BASE}kb/skill/taste-skill.md
+- [Context bundle]({BASE}context-bundle.md): AGENTS.md + all specs + house style + skills index in one file
+
 ## Machine-readable
 - [Resources JSON]({BASE}api/resources.json): all items with type, ct (component kind), vs (visual style), pricing, url
 - [Skills JSON]({BASE}api/skills.json): design + engineering agent skills and the recommended workflow
@@ -200,7 +208,7 @@ w('llms.txt', llms)
 full = llms + "\n\n# Blog posts (full text, English)\n\n" + '\n\n'.join(f"## {p['t']['en']}\n\n{re.sub(r'<[^>]+>','',p['en']).strip()}\n\nReferences:\n"+'\n'.join(f'- {t} — {a}: {u}' for t,a,u in p['refs']) for p in POSTS)
 full += "\n\n# All resources (name | type | url | note)\n\n" + '\n'.join(f"- {i['name']} | {i['type']} | {i['url']} | {(i.get('noteEn') or i['note'])[:160]}" for i in ITEMS if i['type']!='style')
 full += "\n\n# Component style demos: %d entries, see api/resources.json (type=style)\n" % tc['style']
-w('llms-full.txt', full)
+full_holder=[full]
 AG = f"""# AGENTS.md — using UI Hub as a design source
 
 You are an AI coding/design agent. UI Hub ({BASE}) is a curated index of UI libraries, component demos and design skills.
@@ -240,8 +248,10 @@ r.items.filter(i =&gt; i.ct?.includes('dialog') &amp;&amp; i.vs?.includes('minim
 <section class="sec"><h2>FAQ</h2>{fq}</section></main>{foot('../')}{SCRIPT}</body></html>""")
 
 import agents_page; agents_page.build(globals())
+import kb; KB = kb.build(globals())
+w('llms-full.txt', full_holder[0] + '\n\n# Design encyclopedia entries (specs + notes, full; skills: see raw URLs)\n\n' + '\n\n'.join(e['md'] for e in KB if e['type'] in ('spec','note') and not e['slug'].startswith('blog-')) + '\n\n# Skill raw URLs\n' + '\n'.join(f"- {e['title']}: {e['raw']}" for e in KB if e['type']=='skill'))
 # ---------- sitemap / robots ----------
-urls = [('',UPD[:10]),('blog/',TODAY),('agents/',TODAY)] + [(f'blog/{p["slug"]}/',p['date']) for p in POSTS]
+urls = [('',UPD[:10]),('blog/',TODAY),('agents/',TODAY)] + [(f'blog/{p["slug"]}/',p['date']) for p in POSTS] + [('kb/',TODAY)] + [(f'kb/{e["type"]}/{e["slug"]}/',TODAY) for e in KB]
 sm = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n'
 for u,d in urls:
     sm += f'<url><loc>{BASE}{u}</loc><lastmod>{d}</lastmod>' + ''.join(f'<xhtml:link rel="alternate" hreflang="{c}" href="{BASE}{u}?lang={c}"/>' for c,_,_ in LANGS) + f'<xhtml:link rel="alternate" hreflang="x-default" href="{BASE}{u}"/></url>\n'
@@ -269,6 +279,8 @@ s = s.replace('<title>UI Hub</title>', '<title>UI Hub — UI components, librari
 s = s.replace('</title>\n', '</title>\n'+seo+'\n', 1)
 if 'class="bblog"' not in s:
     s = s.replace('<a href="#/fav" data-v="fav"><svg', '<a href="blog/" class="bblog"><svg viewBox="0 0 24 24"><path d="M5 4h10l4 4v12H5z"/><path d="M9 12h6M9 16h6M9 8h3"/></svg><span data-i18n="nav_blog">Blog</span></a><a href="#/fav" data-v="fav"><svg', 1)
+if 'href="kb/" data-i18n' not in s:
+    s = s.replace('<a href="blog/" data-i18n="nav_blog">', '<a href="kb/" data-i18n="nav_kb">Encyclopedia</a><a href="blog/" data-i18n="nav_blog">', 1)
 if 'href="blog/" data-i18n' not in s:
     s = s.replace('<a href="#/fav" data-v="fav"><span data-i18n="nav_fav">', '<a href="blog/" data-i18n="nav_blog">Blog</a><a href="agents/" data-i18n="nav_agents">Agents</a><a href="#/fav" data-v="fav"><span data-i18n="nav_fav">', 1)
 if 'id="upd"' not in s:

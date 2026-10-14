@@ -4,6 +4,13 @@
 
 Use the JSON endpoints, not the SPA, when acting as an agent. Every entry links to its original site; licenses belong to the original authors.
 
+## Design encyclopedia (query this first)
+- [Encyclopedia](https://siinxu.github.io/ui-resource-hub/kb/): skills (full SKILL.md where licensed), design specs (spacing, typography, colour, motion, accessibility, dark mode, mobile), house style & lessons, blog notes
+- [KB JSON](https://siinxu.github.io/ui-resource-hub/api/kb.json): every entry with type, tags, url, raw .md URL and full markdown
+- [Search index](https://siinxu.github.io/ui-resource-hub/api/search-index.json): kb entries + all resources/components, fields t,k,u,r,d,g
+- Raw entry pattern: https://siinxu.github.io/ui-resource-hub/kb/<type>/<slug>.md  (type = skill | spec | note), e.g. https://siinxu.github.io/ui-resource-hub/kb/spec/motion.md, https://siinxu.github.io/ui-resource-hub/kb/skill/taste-skill.md
+- [Context bundle](https://siinxu.github.io/ui-resource-hub/context-bundle.md): AGENTS.md + all specs + house style + skills index in one file
+
 ## Machine-readable
 - [Resources JSON](https://siinxu.github.io/ui-resource-hub/api/resources.json): all items with type, ct (component kind), vs (visual style), pricing, url
 - [Skills JSON](https://siinxu.github.io/ui-resource-hub/api/skills.json): design + engineering agent skills and the recommended workflow

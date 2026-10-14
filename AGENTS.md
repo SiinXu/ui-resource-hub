@@ -14,6 +14,16 @@ EN: Use UI Hub (https://siinxu.github.io/ui-resource-hub/) as your design source
 - **Load design skills** — api/skills.json lists 29 agent skills and the order to run them.
 - **Audit a UI** — Run impeccable / baseline-ui / web-design-guidelines / accessibility against the draft, then verify in a browser.
 
+## Query the encyclopedia
+- Search everything: `{BASE}api/search-index.json` (fields t=title, k=kind skill|spec|note|resource|component, u=url, r=raw md, d=description, g=tags). Human UI: {BASE}kb/?q=pricing
+- Full knowledge entries: `{BASE}api/kb.json` (type, slug, tags, url, raw, md).
+- Raw markdown per entry: `{BASE}kb/<type>/<slug>.md`, e.g. `kb/spec/spacing.md`, `kb/spec/dark-mode.md`, `kb/note/restrained-fancy.md`, `kb/skill/emil-design-eng.md`.
+- One-file context: `{BASE}context-bundle.md` (this guide + specs + house style + skills index).
+```bash
+curl -s {BASE}api/search-index.json | jq '.items[] | select(.k=="spec" or .k=="note") | {{t,r}}'
+curl -s {BASE}kb/spec/motion.md
+```
+
 ## Fields
 - `type`: library | style | effect | template | skill | system | spec | tool | tutorial | collection | generator | inspiration
 - `ct` (component kind): button, input, select, dialog, menu, tabs, table, chart, card, nav, form, toast, avatar, loader, layout, chat, motion, background, editor, icon, mobile

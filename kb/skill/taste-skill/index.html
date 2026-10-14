@@ -1,0 +1,1388 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>taste-skill · UI Hub encyclopedia</title><meta name="description" content="Anti-slop frontend skill for landing pages, portfolios, and redesigns. The agent reads the brief, infers the right design direction, and ships interfaces that d"><link rel="canonical" href="https://siinxu.github.io/ui-resource-hub/kb/skill/taste-skill/"><link rel="alternate" hreflang="zh-Hans" href="https://siinxu.github.io/ui-resource-hub/kb/skill/taste-skill/?lang=zh-Hans"><link rel="alternate" hreflang="zh-Hant" href="https://siinxu.github.io/ui-resource-hub/kb/skill/taste-skill/?lang=zh-Hant"><link rel="alternate" hreflang="en" href="https://siinxu.github.io/ui-resource-hub/kb/skill/taste-skill/?lang=en"><link rel="alternate" hreflang="ja" href="https://siinxu.github.io/ui-resource-hub/kb/skill/taste-skill/?lang=ja"><link rel="alternate" hreflang="ko" href="https://siinxu.github.io/ui-resource-hub/kb/skill/taste-skill/?lang=ko"><link rel="alternate" hreflang="ms" href="https://siinxu.github.io/ui-resource-hub/kb/skill/taste-skill/?lang=ms"><link rel="alternate" hreflang="vi" href="https://siinxu.github.io/ui-resource-hub/kb/skill/taste-skill/?lang=vi"><link rel="alternate" hreflang="fr" href="https://siinxu.github.io/ui-resource-hub/kb/skill/taste-skill/?lang=fr"><link rel="alternate" hreflang="es" href="https://siinxu.github.io/ui-resource-hub/kb/skill/taste-skill/?lang=es"><link rel="alternate" hreflang="de" href="https://siinxu.github.io/ui-resource-hub/kb/skill/taste-skill/?lang=de"><link rel="alternate" hreflang="x-default" href="https://siinxu.github.io/ui-resource-hub/kb/skill/taste-skill/">
+<meta property="og:type" content="website"><meta property="og:site_name" content="UI Hub"><meta property="og:title" content="taste-skill · UI Hub encyclopedia"><meta property="og:description" content="Anti-slop frontend skill for landing pages, portfolios, and redesigns. The agent reads the brief, infers the right design direction, and ships interfaces that d"><meta property="og:url" content="https://siinxu.github.io/ui-resource-hub/kb/skill/taste-skill/"><meta property="og:image" content="https://siinxu.github.io/ui-resource-hub/og.png">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="taste-skill · UI Hub encyclopedia"><meta name="twitter:description" content="Anti-slop frontend skill for landing pages, portfolios, and redesigns. The agent reads the brief, infers the right design direction, and ships interfaces that d"><meta name="twitter:image" content="https://siinxu.github.io/ui-resource-hub/og.png">
+<link rel="alternate" type="text/plain" title="llms.txt" href="https://siinxu.github.io/ui-resource-hub/llms.txt">
+<script>try{document.documentElement.dataset.theme=localStorage.getItem('uihub.theme5')||(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark')}catch(e){document.documentElement.dataset.theme='dark'}</script>
+<style>@font-face{font-family:Geist;src:url(../../../fonts/geist.woff2) format('woff2');font-weight:100 900;font-display:swap}
+@font-face{font-family:'Instrument Serif';src:url(../../../fonts/instrument-serif.woff2) format('woff2');font-display:swap}
+@font-face{font-family:'Instrument Serif';font-style:italic;src:url(../../../fonts/instrument-serif-italic.woff2) format('woff2');font-display:swap}
+:root{--sans:Geist,"PingFang SC","Hiragino Sans","Apple SD Gothic Neo","Noto Sans CJK SC","Microsoft YaHei",system-ui,sans-serif;--serif:"Instrument Serif","Songti SC","Noto Serif SC",Georgia,serif;--mono:ui-monospace,SFMono-Regular,Menlo,monospace;--max:1120px}
+[data-theme=dark]{color-scheme:dark;--bg:#06070b;--surf:#0d0f15;--mat:#10131a;--ink:#f3f5fb;--ink2:#a6adbf;--ink3:#687086;--acc:#67e8f9;--g1:#67e8f9;--g2:#a5b4fc;--g3:#f9a8d4;--line:rgba(255,255,255,.08);--line2:rgba(255,255,255,.14);--hdr:rgba(6,7,11,.66);--glow1:rgba(56,189,248,.18);--glow2:rgba(129,140,248,.16)}
+[data-theme=light]{color-scheme:light;--bg:#f5f6fa;--surf:#fff;--mat:#eef0f6;--ink:#0a0c14;--ink2:#4a5164;--ink3:#878da0;--acc:#2563eb;--g1:#06b6d4;--g2:#6366f1;--g3:#ec4899;--line:rgba(10,12,20,.08);--line2:rgba(10,12,20,.14);--hdr:rgba(245,246,250,.72);--glow1:rgba(6,182,212,.12);--glow2:rgba(99,102,241,.12)}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.65 var(--sans);-webkit-font-smoothing:antialiased}
+body:before{content:"";position:fixed;inset:-20% -10% auto;height:70vh;z-index:-1;background:radial-gradient(40% 50% at 20% 20%,var(--glow1),transparent 70%),radial-gradient(40% 50% at 80% 10%,var(--glow2),transparent 70%);pointer-events:none}
+a{color:inherit}.wrap{max-width:var(--max);margin:0 auto;padding:0 20px}@media(min-width:900px){.wrap{padding:0 40px}}
+.top{position:sticky;top:0;z-index:9;background:var(--hdr);backdrop-filter:blur(14px) saturate(1.4);-webkit-backdrop-filter:blur(14px) saturate(1.4);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;gap:14px;height:58px}.logo{font-weight:600;text-decoration:none;display:flex;gap:8px;align-items:center;letter-spacing:-.01em}
+.logo i{width:18px;height:18px;border-radius:5px;background:linear-gradient(135deg,var(--g1),var(--g2));display:inline-block}
+nav.tb{display:flex;gap:2px;margin-left:8px}nav.tb a{padding:6px 10px;border-radius:8px;text-decoration:none;color:var(--ink2);font-size:13.5px}nav.tb a:hover,nav.tb a.on{color:var(--ink);background:var(--mat)}
+.sp{flex:1}select,button.th{font:inherit;font-size:13px;color:var(--ink);background:var(--surf);border:1px solid var(--line2);border-radius:8px;padding:5px 8px;cursor:pointer}
+.hero{padding:64px 0 28px}.eb{font:500 12px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--ink3);display:flex;gap:8px;align-items:center}.eb:before{content:"";width:6px;height:6px;border-radius:9px;background:var(--acc);box-shadow:0 0 12px var(--acc)}
+h1{font:400 clamp(36px,6vw,64px)/1.02 var(--serif);letter-spacing:-.02em;margin:14px 0 14px;max-width:18ch}h1 em{background:linear-gradient(100deg,var(--g1),var(--g2),var(--g3));-webkit-background-clip:text;background-clip:text;color:transparent}
+.lede{color:var(--ink2);max-width:62ch;font-size:16.5px;margin:0}
+.posts{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));padding:20px 0 60px}
+.pc{position:relative;display:flex;flex-direction:column;overflow:hidden;padding:0;border-radius:16px;background:var(--surf);border:1px solid var(--line);text-decoration:none;transition:border-color .2s,transform .2s}
+.pc:hover{border-color:var(--line2);transform:translateY(-2px)}.pb{display:flex;flex-direction:column;gap:8px;padding:16px 18px 18px;flex:1}.cv{width:100%;height:auto;flex:none;aspect-ratio:1200/630;object-fit:cover;border-bottom:1px solid var(--line);background:#07080d}
+@media(min-width:900px){.pc:first-child{grid-column:1/-1;flex-direction:row;align-items:center}.pc:first-child .cv{width:58%;height:auto;flex:none;border-bottom:0;border-right:1px solid var(--line)}.pc:first-child .pb{justify-content:center;padding:28px}.pc:first-child h2{font-size:34px}}
+.posts{grid-template-columns:repeat(auto-fill,minmax(290px,1fr))!important}
+figure{margin:26px 0}figure img{width:100%;height:auto;border-radius:14px;border:1px solid var(--line2);background:#07080d;display:block}figcaption{font-size:12.5px;color:var(--ink3);margin-top:8px;line-height:1.5}figcaption a{color:var(--acc)}.hc{margin:22px 0 8px}
+.pc .no{font:500 12px var(--mono);color:var(--ink3)}.pc h2{font:400 23px/1.15 var(--serif);margin:0;letter-spacing:-.01em}.pc p{margin:0;color:var(--ink2);font-size:14px}
+.tg{display:flex;gap:6px;flex-wrap:wrap}.tg span{font:500 11px var(--mono);color:var(--ink3);border:1px solid var(--line);padding:2px 7px;border-radius:99px}
+article{max-width:720px;margin:0 auto;padding:48px 20px 72px}article h1{max-width:none;font-size:clamp(32px,5vw,50px)}
+article h2{font:400 26px/1.2 var(--serif);margin:36px 0 10px}article p,article li{color:var(--ink2)}article strong{color:var(--ink)}
+pre{background:var(--mat);border:1px solid var(--line);border-radius:12px;padding:14px 16px;overflow:auto;font:12.5px/1.6 var(--mono)}code{font-family:var(--mono);font-size:.9em}
+.refs{margin-top:40px;padding-top:18px;border-top:1px solid var(--line)}.refs li{margin:4px 0}.refs a{color:var(--acc)}
+.meta{font:500 12px var(--mono);color:var(--ink3);margin:0 0 6px}.note{font-size:13px;color:var(--ink3)}
+.grid2{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));margin:18px 0}
+.box{padding:20px;border-radius:16px;background:var(--surf);border:1px solid var(--line)}.box h3{margin:0 0 6px;font-size:16px}.box p{margin:0;color:var(--ink2);font-size:14px}
+.box code,.sec code{background:var(--mat);padding:1px 6px;border-radius:6px}.sec{padding:8px 0 30px}.sec h2{font:400 30px var(--serif);margin:26px 0 8px}
+details{border-bottom:1px solid var(--line);padding:12px 0}summary{cursor:pointer;font-weight:500}details p{color:var(--ink2);margin:8px 0 0}
+.foot{border-top:1px solid var(--line);padding:24px 0 40px;color:var(--ink3);font-size:13px}
+[data-l]{display:none}
+@media(max-width:600px){.bar{gap:6px}nav.tb{overflow-x:auto;min-width:0;flex:1;scrollbar-width:none}.sp{display:none}select{max-width:70px!important}.logo{font-size:0;gap:0}nav.tb{margin-left:0}nav.tb a{padding:6px 7px;font-size:13px;white-space:nowrap}select{max-width:92px}.hero{padding:40px 0 20px}}</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "TechArticle", "headline": "taste-skill", "description": "Anti-slop frontend skill for landing pages, portfolios, and redesigns. The agent reads the brief, infers the right design direction, and ships interfaces that do not look templated. Real design systems when applicable, audit-first on redesigns, strict pre-flight check.", "url": "https://siinxu.github.io/ui-resource-hub/kb/skill/taste-skill/", "dateModified": "2026-10-14", "isPartOf": {"@type": "CollectionPage", "name": "UI Hub encyclopedia", "url": "https://siinxu.github.io/ui-resource-hub/kb/"}, "encoding": {"@type": "MediaObject", "contentUrl": "https://siinxu.github.io/ui-resource-hub/kb/skill/taste-skill.md", "encodingFormat": "text/markdown"}}</script></head><style>.kbs{display:flex;gap:8px;align-items:center;padding:12px 14px;border-radius:14px;background:var(--surf);border:1px solid var(--line2);margin:6px 0 10px}.kbs input{flex:1;font:inherit;font-size:16px;border:0;background:none;color:var(--ink);outline:none}
+.chips{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 14px}.chips button{font:500 12.5px var(--sans);color:var(--ink2);background:var(--surf);border:1px solid var(--line);border-radius:99px;padding:5px 11px;cursor:pointer}.chips button.on{color:var(--bg);background:var(--ink);border-color:var(--ink)}
+.res{display:grid;gap:10px;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));padding-bottom:30px}.r{display:flex;flex-direction:column;gap:6px;padding:14px 16px;border-radius:14px;background:var(--surf);border:1px solid var(--line);text-decoration:none}.r:hover{border-color:var(--acc)}
+.r .k{font:500 11px var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--acc)}.r b{font-size:15px}.r p{margin:0;color:var(--ink2);font-size:13px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.cnt{font:500 12px var(--mono);color:var(--ink3);margin:0 0 10px}
+.acts{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 14px}.btn{font:500 13.5px var(--sans);text-decoration:none;color:var(--ink);background:var(--surf);border:1px solid var(--line2);border-radius:10px;padding:8px 13px;cursor:pointer}.btn.pri{background:var(--ink);color:var(--bg)}
+.md table{border-collapse:collapse;width:100%;font-size:13.5px;display:block;overflow:auto}.md th,.md td{border:1px solid var(--line);padding:6px 9px;text-align:left}.md blockquote{margin:0;padding:2px 14px;border-left:3px solid var(--acc);color:var(--ink2)}.md a{color:var(--acc)}.md img{max-width:100%}</style><script>function cpx(t,b){(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).catch(function(){var a=document.createElement('textarea');a.value=t;document.body.appendChild(a);a.select();document.execCommand('copy');a.remove()}).finally(function(){if(b){var o=b.innerHTML;b.textContent='✓';setTimeout(function(){b.innerHTML=o},1200)}})}</script><body><header class="top"><div class="bar wrap"><a class="logo" href="../../../"><i></i>UI Hub</a><nav class="tb"><a href="../../../"><span data-l="zh-Hans">资源</span><span data-l="zh-Hant">資源</span><span data-l="en">Resources</span><span data-l="ja">リソース</span><span data-l="ko">리소스</span><span data-l="ms">Sumber</span><span data-l="vi">Tài nguyên</span><span data-l="fr">Ressources</span><span data-l="es">Recursos</span><span data-l="de">Ressourcen</span></a><a href="../../../kb/" class=on><span data-l="zh-Hans">百科</span><span data-l="zh-Hant">百科</span><span data-l="en">Encyclopedia</span><span data-l="ja">百科</span><span data-l="ko">백과</span><span data-l="ms">Ensiklopedia</span><span data-l="vi">Bách khoa</span><span data-l="fr">Encyclopédie</span><span data-l="es">Enciclopedia</span><span data-l="de">Enzyklopädie</span></a><a href="../../../blog/"><span data-l="zh-Hans">博客</span><span data-l="zh-Hant">部落格</span><span data-l="en">Blog</span><span data-l="ja">ブログ</span><span data-l="ko">블로그</span><span data-l="ms">Blog</span><span data-l="vi">Blog</span><span data-l="fr">Blog</span><span data-l="es">Blog</span><span data-l="de">Blog</span></a><a href="../../../agents/"><span data-l="zh-Hans">给 Agent</span><span data-l="zh-Hant">給 Agent</span><span data-l="en">For agents</span><span data-l="ja">エージェント向け</span><span data-l="ko">에이전트용</span><span data-l="ms">Untuk ejen</span><span data-l="vi">Cho Agent</span><span data-l="fr">Pour agents</span><span data-l="es">Para agentes</span><span data-l="de">Für Agents</span></a></nav><span class="sp"></span>
+<select id="ls" aria-label="Language"><option value="zh-Hans">简体中文</option><option value="zh-Hant">繁體中文</option><option value="en">English</option><option value="ja">日本語</option><option value="ko">한국어</option><option value="ms">Bahasa Melayu</option><option value="vi">Tiếng Việt</option><option value="fr">Français</option><option value="es">Español</option><option value="de">Deutsch</option></select><button class="th" id="th" aria-label="Theme">◐</button></div></header><article class="md"><p class="meta"><a href="../../">← <span data-l="zh-Hans">百科</span><span data-l="zh-Hant">百科</span><span data-l="en">Encyclopedia</span><span data-l="ja">百科</span><span data-l="ko">백과</span><span data-l="ms">Ensiklopedia</span><span data-l="vi">Bách khoa</span><span data-l="fr">Encyclopédie</span><span data-l="es">Enciclopedia</span><span data-l="de">Enzyklopädie</span></a> · skill · design · full-text</p>
+<div class="acts"><a class="btn" href="../taste-skill.md"><span data-l="zh-Hans">原始 Markdown</span><span data-l="zh-Hant">原始 Markdown</span><span data-l="en">Raw Markdown</span><span data-l="ja">生Markdown</span><span data-l="ko">원본 Markdown</span><span data-l="ms">Markdown mentah</span><span data-l="vi">Markdown gốc</span><span data-l="fr">Markdown brut</span><span data-l="es">Markdown en bruto</span><span data-l="de">Rohes Markdown</span></a><button class="btn pri" type="button" onclick="fetch('../taste-skill.md').then(r=>r.text()).then(t=>cpx(t,this))">Copy .md</button></div><h1>Skill: taste-skill</h1>
+<blockquote>
+<p>Anti-slop frontend skill for landing pages, portfolios, and redesigns. The agent reads the brief, infers the right design direction, and ships interfaces that do not look templated. Real design systems when applicable, audit-first on redesigns, strict pre-flight check.</p>
+</blockquote>
+<p><em>Licence: MIT · Upstream: https://github.com/Leonxlnx/taste-skill · Redistributed unmodified below.</em></p>
+<h1>tasteskill: Anti-Slop Frontend Skill</h1>
+<blockquote>
+<p>Landing pages, portfolios, and redesigns. Not dashboards, not data tables, not multi-step product UI.
+Every rule below is <strong>contextual</strong>. None of it fires automatically. First read the brief, then pull only what fits.</p>
+</blockquote>
+<hr />
+<h2>0. BRIEF INFERENCE (Read the Room Before Anything Else)</h2>
+<p>Before touching code or tweaking dials, <strong>infer what the user actually wants</strong>. Most LLM design output is bad because the model jumps to a default aesthetic instead of reading the room.</p>
+<h3>0.A Read these signals first</h3>
+<ol>
+<li><strong>Page kind</strong> - landing (SaaS / consumer / agency / event), portfolio (dev / designer / creative studio), redesign (preserve vs overhaul), editorial / blog.</li>
+<li><strong>Vibe words</strong> the user used - "minimalist", "calm", "Linear-style", "Awwwards", "brutalist", "premium consumer", "Apple-y", "playful", "serious B2B", "editorial", "agency-y", "glassy", "dark tech".</li>
+<li><strong>Reference signals</strong> - URLs they linked, screenshots they pasted, products they named, brands they're competing with.</li>
+<li><strong>Audience</strong> - B2B procurement panel vs. design-conscious consumer vs. recruiter scanning a portfolio. The audience picks the aesthetic, not your taste.</li>
+<li><strong>Brand assets that already exist</strong> - logo, color, type, photography. For redesigns, these are starting material, not optional input (see Section 11).</li>
+<li><strong>Quiet constraints</strong> - accessibility-first audiences, public-sector, regulated industries, trust-first commerce, kids' products. These constraints OVERRIDE aesthetic preference.</li>
+</ol>
+<h3>0.B Output a one-line "Design Read" before generating</h3>
+<p>Before any code, state in one line: <strong>"Reading this as: \<page kind> for \<audience>, with a \<vibe> language, leaning toward \<design system or aesthetic family>."</strong></p>
+<p>Example reads:
+- <em>"Reading this as: B2B SaaS landing for technical buyers, with a Linear-style minimalist language, leaning toward Tailwind utilities + Geist + restrained motion."</em>
+- <em>"Reading this as: solo designer portfolio for hiring managers, with an editorial / kinetic-type language, leaning toward native CSS + scroll-driven animation + custom typography."</em>
+- <em>"Reading this as: redesign of a public-sector service site, with a trust-first language, leaning toward GOV.UK Frontend or USWDS."</em></p>
+<h3>0.C If the brief is ambiguous, ask one question, do not guess</h3>
+<p>Ask exactly <strong>one</strong> clarifying question - never a multi-question dump - and only when the design read genuinely diverges. Example: <em>"Should this feel closer to Linear-clean or Awwwards-experimental?"</em></p>
+<p>If you can confidently infer from context, <strong>do not ask</strong>. Just declare the design read and proceed.</p>
+<h3>0.D Anti-Default Discipline</h3>
+<p>Do not default to: AI-purple gradients, centered hero over dark mesh, three equal feature cards, generic glassmorphism on everything, infinite-loop micro-animations everywhere, Inter + slate-900. These are the LLM defaults. Reach past them deliberately based on the design read.</p>
+<hr />
+<h2>1. THE THREE DIALS (Core Configuration)</h2>
+<p>After the design read, set three dials. Every layout, motion, and density decision below is gated by these.</p>
+<ul>
+<li><strong><code>DESIGN_VARIANCE: 8</code></strong> - 1 = Perfect Symmetry, 10 = Artsy Chaos</li>
+<li><strong><code>MOTION_INTENSITY: 6</code></strong> - 1 = Static, 10 = Cinematic / Physics</li>
+<li><strong><code>VISUAL_DENSITY: 4</code></strong> - 1 = Art Gallery / Airy, 10 = Cockpit / Packed Data</li>
+</ul>
+<p><strong>Baseline:</strong> <code>8 / 6 / 4</code>. Use these unless the design read overrides them. Do not ask the user to edit this file - overrides happen conversationally.</p>
+<h3>1.A Dial Inference (design read → dial values)</h3>
+<table>
+<thead>
+<tr>
+<th>Signal</th>
+<th>VARIANCE</th>
+<th>MOTION</th>
+<th>DENSITY</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>"minimalist / clean / calm / editorial / Linear-style"</td>
+<td>5-6</td>
+<td>3-4</td>
+<td>2-3</td>
+</tr>
+<tr>
+<td>"premium consumer / Apple-y / luxury / brand"</td>
+<td>7-8</td>
+<td>5-7</td>
+<td>3-4</td>
+</tr>
+<tr>
+<td>"playful / wild / Dribbble / Awwwards / experimental / agency"</td>
+<td>9-10</td>
+<td>8-10</td>
+<td>3-4</td>
+</tr>
+<tr>
+<td>"landing page / portfolio / marketing site (default)"</td>
+<td>7-9</td>
+<td>6-8</td>
+<td>3-5</td>
+</tr>
+<tr>
+<td>"trust-first / public-sector / regulated / accessibility-critical"</td>
+<td>3-4</td>
+<td>2-3</td>
+<td>4-5</td>
+</tr>
+<tr>
+<td>"redesign - preserve"</td>
+<td>match existing</td>
+<td>+1</td>
+<td>match existing</td>
+</tr>
+<tr>
+<td>"redesign - overhaul"</td>
+<td>+2</td>
+<td>+2</td>
+<td>match existing</td>
+</tr>
+</tbody>
+</table>
+<h3>1.B Use-Case Presets</h3>
+<table>
+<thead>
+<tr>
+<th>Use case</th>
+<th>VARIANCE</th>
+<th>MOTION</th>
+<th>DENSITY</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Landing (SaaS, mainstream)</td>
+<td>7</td>
+<td>6</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Landing (Agency / creative)</td>
+<td>9</td>
+<td>8</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Landing (Premium consumer)</td>
+<td>7</td>
+<td>6</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Portfolio (Designer / studio)</td>
+<td>8</td>
+<td>7</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Portfolio (Developer)</td>
+<td>6</td>
+<td>5</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Editorial / Blog</td>
+<td>6</td>
+<td>4</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Public-sector service</td>
+<td>3</td>
+<td>2</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Redesign - preserve</td>
+<td>match</td>
+<td>match+1</td>
+<td>match</td>
+</tr>
+<tr>
+<td>Redesign - overhaul</td>
+<td>+2</td>
+<td>+2</td>
+<td>match</td>
+</tr>
+</tbody>
+</table>
+<h3>1.C How the Dials Drive Output</h3>
+<p>Use these (or user-overridden values) as global variables. Cross-references throughout this document refer to these exact variable names - never invent aliases like <code>LAYOUT_VARIANCE</code> or <code>ANIM_LEVEL</code>.</p>
+<hr />
+<h2>2. BRIEF → DESIGN SYSTEM MAP</h2>
+<p>Once you have the design read (Section 0) and dials (Section 1), pick the right foundation. Do not invent CSS for things that have an official package. Do not pretend an aesthetic trend is an official system.</p>
+<h3>2.A When to reach for a real design system (use official packages)</h3>
+<table>
+<thead>
+<tr>
+<th>Brief reads as…</th>
+<th>Reach for</th>
+<th>Why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Microsoft / enterprise SaaS / dashboards</td>
+<td><code>@fluentui/react-components</code> or <code>@fluentui/web-components</code></td>
+<td>Official Fluent UI, Microsoft tokens, accessibility done</td>
+</tr>
+<tr>
+<td>Google-ish UI, Material-flavored product</td>
+<td><code>@material/web</code> + Material 3 tokens</td>
+<td>Official, theme-able via Material Theming</td>
+</tr>
+<tr>
+<td>IBM-style B2B / enterprise analytics</td>
+<td><code>@carbon/react</code> + <code>@carbon/styles</code></td>
+<td>Official Carbon, mature data-density patterns</td>
+</tr>
+<tr>
+<td>Shopify app surfaces</td>
+<td><code>polaris.js</code> web components / Polaris React</td>
+<td>Required for Shopify admin UI</td>
+</tr>
+<tr>
+<td>Atlassian / Jira-style product</td>
+<td><code>@atlaskit/*</code> + <code>@atlaskit/tokens</code></td>
+<td>Official Atlassian DS</td>
+</tr>
+<tr>
+<td>GitHub-style devtool / community page</td>
+<td><code>@primer/css</code> or <code>@primer/react-brand</code></td>
+<td>Official Primer; Brand variant for marketing</td>
+</tr>
+<tr>
+<td>Public-sector UK service</td>
+<td><code>govuk-frontend</code></td>
+<td>Legally / regulatorily expected</td>
+</tr>
+<tr>
+<td>US public-sector / trust-first</td>
+<td><code>uswds</code></td>
+<td>Same</td>
+</tr>
+<tr>
+<td>Fast local-business / agency MVP</td>
+<td>Bootstrap 5.3</td>
+<td>Boring, fast, works</td>
+</tr>
+<tr>
+<td>Modern accessible React foundation</td>
+<td><code>@radix-ui/themes</code></td>
+<td>Primitives + polished theme</td>
+</tr>
+<tr>
+<td>Modern SaaS where you own the components</td>
+<td>shadcn/ui (<code>npx shadcn@latest add ...</code>)</td>
+<td>You own the code, easy to customise; never ship default state</td>
+</tr>
+<tr>
+<td>Tailwind-based modern SaaS / AI marketing</td>
+<td>Tailwind v4 utilities + <code>dark:</code> variant</td>
+<td>Default for indie + small team builds</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Honesty rule:</strong> if the brief reads as one of the systems above, install and use the <strong>official</strong> package. Do not recreate its CSS by hand. Do not import a system's tokens but then override 90% of them.</p>
+<p><strong>One system per project.</strong> Do not mix Fluent React with Carbon in the same tree. Do not import shadcn/ui components into a Material 3 app.</p>
+<h3>2.B When the brief is an aesthetic, not a system</h3>
+<p>For these directions, there is <strong>no single official package</strong>. Build with native CSS + Tailwind + a maintained component library. Be honest in code comments about what is borrowed inspiration vs. official material.</p>
+<table>
+<thead>
+<tr>
+<th>Aesthetic</th>
+<th>Honest implementation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Glassmorphism / "frosted glass"</td>
+<td><code>backdrop-filter</code>, layered borders, highlight overlays. Provide solid-fill fallback for <code>prefers-reduced-transparency</code>.</td>
+</tr>
+<tr>
+<td>Bento (Apple-style tile grids)</td>
+<td>CSS Grid with mixed cell sizes. No single library owns this.</td>
+</tr>
+<tr>
+<td>Brutalism</td>
+<td>Native CSS, monospace, raw borders. No library.</td>
+</tr>
+<tr>
+<td>Editorial / magazine</td>
+<td>Serif type, asymmetric grid, generous whitespace. No library.</td>
+</tr>
+<tr>
+<td>Dark tech / hacker</td>
+<td>Mono + accent neon, terminal motifs. No library.</td>
+</tr>
+<tr>
+<td>Aurora / mesh gradients</td>
+<td>SVG or layered radial gradients. No library.</td>
+</tr>
+<tr>
+<td>Kinetic typography</td>
+<td>Native CSS animations, scroll-driven animations, GSAP for hijacks. No library.</td>
+</tr>
+<tr>
+<td><strong>Apple Liquid Glass</strong></td>
+<td>Apple documents this for Apple platforms only. <strong>There is no official <code>liquid-glass.css</code>.</strong> Web implementations are approximations using <code>backdrop-filter</code> + layered borders + highlights. Label clearly as approximation.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>3. DEFAULT ARCHITECTURE &amp; CONVENTIONS</h2>
+<p>Unless the design read picks a real design system (Section 2.A), these are the defaults:</p>
+<h3>3.A Stack</h3>
+<ul>
+<li><strong>Framework:</strong> React or Next.js. Default to Server Components (RSC).</li>
+<li><strong>RSC SAFETY:</strong> Global state works ONLY in Client Components. In Next.js, wrap providers in a <code>"use client"</code> component.</li>
+<li><strong>INTERACTIVITY ISOLATION:</strong> Any component using Motion, scroll listeners, or pointer physics MUST be an isolated leaf with <code>'use client'</code> at the top. Server Components render static layouts only.</li>
+<li><strong>Styling:</strong> <strong>Tailwind v4</strong> (default). Tailwind v3 only if the existing project demands it.</li>
+<li>For v4: do NOT use <code>tailwindcss</code> plugin in <code>postcss.config.js</code>. Use <code>@tailwindcss/postcss</code> or the Vite plugin.</li>
+<li><strong>Animation:</strong> <strong>Motion</strong> (the library formerly known as Framer Motion). Import from <code>motion/react</code> (<code>import { motion } from "motion/react"</code>). The <code>framer-motion</code> package still works as a legacy alias - prefer <code>motion/react</code> in new code.</li>
+<li><strong>Fonts:</strong> Always use <code>next/font</code> (Next.js) or self-host with <code>@font-face</code> + <code>font-display: swap</code>. Never link Google Fonts via <code>&lt;link&gt;</code> in production.</li>
+</ul>
+<h3>3.B State</h3>
+<ul>
+<li>Local <code>useState</code> / <code>useReducer</code> for isolated UI.</li>
+<li>Global state ONLY for deep prop-drilling avoidance - Zustand, Jotai, or React context.</li>
+<li><strong>NEVER</strong> use <code>useState</code> to track continuous values driven by user input (mouse position, scroll progress, pointer physics, magnetic hover). Use Motion's <code>useMotionValue</code> / <code>useTransform</code> / <code>useScroll</code>. <code>useState</code> re-renders the React tree on every change and collapses on mobile.</li>
+</ul>
+<h3>3.C Icons</h3>
+<ul>
+<li><strong>Allowed libraries (priority order):</strong> <code>@phosphor-icons/react</code>, <code>hugeicons-react</code>, <code>@radix-ui/react-icons</code>, <code>@tabler/icons-react</code>.</li>
+<li><strong>Discouraged:</strong> <code>lucide-react</code>. Acceptable only when the user explicitly asks for it or the project already depends on it.</li>
+<li><strong>NEVER hand-roll SVG icons.</strong> If a glyph is missing, install a second library or compose from primitives - do not draw icon paths from scratch.</li>
+<li><strong>One family per project.</strong> Do not mix Phosphor with Lucide in the same component tree.</li>
+<li><strong>Standardize <code>strokeWidth</code> globally</strong> (e.g. <code>1.5</code> or <code>2.0</code>).</li>
+</ul>
+<h3>3.D Emoji Policy</h3>
+<p>Discouraged by default in code, markup, and visible text. Replace symbols with icon-library glyphs. <strong>Override:</strong> allow emojis only when the user explicitly asks for a playful / chat-style / social-native vibe - and even then use them sparingly with intent.</p>
+<h3>3.E Responsiveness &amp; Layout Mechanics</h3>
+<ul>
+<li>Standardize breakpoints (<code>sm 640</code>, <code>md 768</code>, <code>lg 1024</code>, <code>xl 1280</code>, <code>2xl 1536</code>).</li>
+<li>Contain page layouts using <code>max-w-[1400px] mx-auto</code> or <code>max-w-7xl</code>.</li>
+<li><strong>Viewport Stability:</strong> NEVER use <code>h-screen</code> for full-height Hero sections. ALWAYS use <code>min-h-[100dvh]</code> to prevent layout jumping on mobile (iOS Safari address bar).</li>
+<li><strong>Grid over Flex-Math:</strong> NEVER use complex flexbox percentage math (<code>w-[calc(33%-1rem)]</code>). ALWAYS use CSS Grid (<code>grid grid-cols-1 md:grid-cols-3 gap-6</code>).</li>
+</ul>
+<h3>3.F Dependency Verification (mandatory)</h3>
+<p>Before importing ANY 3rd-party library, check <code>package.json</code>. If the package is missing, output the install command first. <strong>Never</strong> assume a library exists.</p>
+<hr />
+<h2>4. DESIGN ENGINEERING DIRECTIVES (Bias Correction)</h2>
+<p>LLMs default to clichés. Override these defaults proactively. Each rule has a context-aware override path.</p>
+<h3>4.1 Typography</h3>
+<ul>
+<li><strong>Display / Headlines:</strong> Default <code>text-4xl md:text-6xl tracking-tighter leading-none</code>.</li>
+<li><strong>Body / Paragraphs:</strong> Default <code>text-base text-gray-600 leading-relaxed max-w-[65ch]</code>.</li>
+<li><strong>Sans font choice:</strong></li>
+<li><strong>Discouraged as default:</strong> <code>Inter</code>. Pick <code>Geist</code>, <code>Outfit</code>, <code>Cabinet Grotesk</code>, <code>Satoshi</code>, or a brand-appropriate serif first.</li>
+<li><strong>Override:</strong> Inter is acceptable when the user explicitly asks for a neutral / standard / Linear-style feel, or when the brief is a public-sector / accessibility-first site.</li>
+<li>
+<p><strong>Pairings to know:</strong> <code>Geist</code> + <code>Geist Mono</code>, <code>Satoshi</code> + <code>JetBrains Mono</code>, <code>Cabinet Grotesk</code> + <code>Inter Tight</code>, <code>GT America</code> + <code>IBM Plex Mono</code>.</p>
+</li>
+<li>
+<p><strong>SERIF DISCIPLINE (VERY DISCOURAGED AS DEFAULT):</strong></p>
+</li>
+<li>Serif is <strong>very discouraged as the default font for any project.</strong> "It feels creative / premium / editorial" is NOT a reason to reach for serif. The agent's default mental model that "creative brief = serif" is the single most-tested AI tell in production rounds.</li>
+<li><strong>Serif is only acceptable when ONE of these is explicitly true:</strong><ul>
+<li>The brand brief literally names a serif font, OR</li>
+<li>The aesthetic family is genuinely editorial / luxury / publication / manuscript / heritage / vintage AND you can articulate why this specific serif fits this specific brand</li>
+</ul>
+</li>
+<li>For everything else (creative agency, design studio, modern brand, premium consumer, portfolio, lifestyle), <strong>default sans-serif display</strong> (Geist Display, ABC Diatype, Söhne Breit, Cabinet Grotesk Display, Migra Sans, GT Walsheim, Inter Display, PP Neue Montreal). Sans display fonts are not "boring" — they are the default for the same reason black is the default in fashion.</li>
+<li><strong>EMPHASIS RULE (related):</strong> When you want to emphasize a word within a headline (the kinetic "and <code>spatial</code> design" type move), use <strong>italic or bold of the SAME font</strong>. Do NOT inject a random serif word into a sans headline (or vice versa) just to add visual interest. Mixed-family emphasis is amateur. Italic/bold emphasis in the same family is the right move.</li>
+<li><strong>Specifically BANNED as defaults:</strong> <code>Fraunces</code> and <code>Instrument_Serif</code> (the two LLM-favorite display serifs).</li>
+<li>
+<p><strong>If a serif is justified</strong> (rare, per the above), rotate from this pool, do NOT reuse the same serif across consecutive projects: PP Editorial New, GT Sectra Display, Cardinal Grotesque, Reckless Neue, Tiempos Headline, Recoleta, Cormorant Garamond, Playfair Display, EB Garamond, IvyPresto, Migra, Editorial Old, Saol Display, Söhne Breit Kursiv, Domaine Display, Canela, Schnyder, Tobias, NB Architekt, ITC Galliard.</p>
+</li>
+<li>
+<p><strong>ITALIC DESCENDER CLEARANCE (mandatory):</strong> When italic is used in display type and the word contains a descender letter (<code>y g j p q</code>), <code>leading-[1]</code> or <code>leading-none</code> will clip the descender. Use <code>leading-[1.1]</code> minimum and add <code>pb-1</code> or <code>mb-1</code> reserve on the wrapping element. Audit every italic word in display headlines before shipping.</p>
+</li>
+</ul>
+<h3>4.2 Color Calibration</h3>
+<ul>
+<li>Max 1 accent color. Saturation &lt; 80% by default.</li>
+<li><strong>THE LILA RULE:</strong> The "AI Purple / Blue glow" aesthetic is discouraged as a default. No automatic purple button glows, no random neon gradients. Use neutral bases (Zinc / Slate / Stone) with high-contrast singular accents (Emerald, Electric Blue, Deep Rose, Burnt Orange, etc.).</li>
+<li><strong>Override:</strong> if the brand or brief explicitly asks for purple / violet / lila, embrace it. But execute with intent: consistent palette, harmonised neutrals, restrained gradients. Not generic AI gradient slop.</li>
+<li><strong>One palette per project.</strong> Do not fluctuate between warm and cool grays within the same project.</li>
+<li>
+<p><strong>COLOR CONSISTENCY LOCK (mandatory):</strong> Once an accent color is chosen for a page, it is used on the WHOLE page. A warm-grey site does not suddenly get a blue CTA in section 7. A rose-accented site does not get a teal status badge in the footer. Pick one accent, lock it, audit every component before shipping.</p>
+</li>
+<li>
+<p><strong>PREMIUM-CONSUMER PALETTE BAN (mandatory, second-most-recurring AI-tell):</strong></p>
+</li>
+<li>For premium-consumer briefs (cookware, wellness, artisan, luxury, heritage craft, DTC home goods, etc.) the LLM default is <strong>warm beige/cream + brass/clay/oxblood/ochre + espresso/ink dark text</strong>. Concretely banned hex families as default backgrounds and accents:<ul>
+<li>Backgrounds: <code>#f5f1ea</code>, <code>#f7f5f1</code>, <code>#fbf8f1</code>, <code>#efeae0</code>, <code>#ece6db</code>, <code>#faf7f1</code>, <code>#e8dfcb</code> (all "warm paper / cream / chalk / bone")</li>
+<li>Accents: <code>#b08947</code>, <code>#b6553a</code>, <code>#9a2436</code>, <code>#9c6e2a</code>, <code>#bc7c3a</code>, <code>#7d5621</code> (all "brass / clay / oxblood / ochre")</li>
+<li>Text: <code>#1a1714</code>, <code>#1a1814</code>, <code>#1b1814</code> (all "espresso / warm near-black")</li>
+</ul>
+</li>
+<li>This palette is BANNED as the default reach for premium-consumer briefs. Every premium-consumer site you have ever shipped uses this exact palette. The brand becomes invisible.</li>
+<li><strong>Default alternatives (rotate, do not reuse):</strong><ul>
+<li><strong>Cold Luxury:</strong> silver-grey + chrome + smoke (think Tesla, Apple Watch Hermes-without-the-leather)</li>
+<li><strong>Forest:</strong> deep green + bone + amber accent (think Filson, Patagonia premium)</li>
+<li><strong>Black and Tan:</strong> true off-black + warm tan, sharp contrast, no beige</li>
+<li><strong>Cobalt + Cream:</strong> saturated blue against a single neutral, no brass</li>
+<li><strong>Terracotta + Slate:</strong> warm rust against cool grey, no brass</li>
+<li><strong>Olive + Brick + Paper:</strong> muted olive plus brick-red accent</li>
+<li><strong>Pure monochrome + single saturated pop:</strong> off-white + off-black + one bright accent (electric blue, emerald, hot pink, etc.)</li>
+</ul>
+</li>
+<li><strong>Palette-rotation rule:</strong> if the previous premium-consumer project you generated used the beige+brass family, this one MUST use a different family. Do not ship the same warm-craft palette twice in a row.</li>
+<li><strong>Override:</strong> the beige+brass+espresso palette is acceptable ONLY when the brand brief explicitly names those colors, or when the brand identity is genuinely vintage / artisan / warm-craft AND you can articulate why this specific palette fits this specific brand. Default-reaching for it because "this is a cookware brief" is banned.</li>
+</ul>
+<h3>4.3 Layout Diversification</h3>
+<ul>
+<li><strong>ANTI-CENTER BIAS:</strong> Centered Hero / H1 sections are avoided when <code>DESIGN_VARIANCE &gt; 4</code>. Force "Split Screen" (50/50), "Left-aligned content / right-aligned asset", "Asymmetric white-space", or scroll-pinned structures.</li>
+<li><strong>Override:</strong> centered hero is OK for editorial / manifesto / launch-announcement briefs where the message itself is the design.</li>
+</ul>
+<h3>4.4 Materiality, Shadows, Cards</h3>
+<ul>
+<li>Use cards ONLY when elevation communicates real hierarchy. Otherwise group with <code>border-t</code>, <code>divide-y</code>, or negative space.</li>
+<li>When a shadow is used, tint it to the background hue. No pure-black drop shadows on light backgrounds.</li>
+<li>For <code>VISUAL_DENSITY &gt; 7</code>: generic card containers are banned. Data metrics breathe in plain layout.</li>
+<li><strong>SHAPE CONSISTENCY LOCK (mandatory):</strong> Pick ONE corner-radius scale for the page and stick to it. Options: all-sharp (radius 0), all-soft (radius 12-16px), all-pill (full radius for interactive). Mixed systems are allowed only when there is a documented rule (e.g. "buttons are full-pill, cards are 16px, inputs are 8px") and that rule is followed everywhere. Round buttons in a square layout, or square cards on a pill-button page, is broken design.</li>
+</ul>
+<h3>4.5 Interactive UI States</h3>
+<p>LLMs default to "static successful state only." Always implement full cycles:
+* <strong>Loading:</strong> Skeletal loaders matching the final layout's shape. Avoid generic circular spinners.
+* <strong>Empty States:</strong> Beautifully composed; indicate how to populate.
+* <strong>Error States:</strong> Clear, inline (forms), or contextual (toasts only for transient).
+* <strong>Tactile Feedback:</strong> On <code>:active</code>, use <code>-translate-y-[1px]</code> or <code>scale-[0.98]</code> to simulate a physical push.
+* <strong>BUTTON CONTRAST CHECK (mandatory, a11y):</strong> Before shipping any button, verify the button text is readable against the button background. White button + white text, <code>bg-white</code> CTA with <code>text-white</code> label, transparent button against the page background with no border → all banned. Audit every CTA: contrast ratio WCAG AA min (4.5:1 for body, 3:1 for large text 18px+). Same rule applies to ghost buttons over photographic backgrounds (use a backdrop, scrim, or stroke).
+* <strong>CTA BUTTON WRAP BAN (mandatory):</strong> Button text MUST fit on one line at desktop. If a label like "VIEW SELECTED WORK" wraps to 2 or 3 lines, the button is broken. Fix by EITHER shortening the label (3 words max for primary CTAs, ideally 1-2) OR widening the button (do not artificially constrain <code>max-width</code> on CTAs). Wrapped CTAs at desktop are a Pre-Flight Fail.
+* <strong>NO DUPLICATE CTA INTENT (mandatory):</strong> Two CTAs with the same intent on one page is a Pre-Flight Fail. Examples of same intent: "Get in touch" + "Contact us" + "Let's talk" + "Start a project" + "Start something" + "Reach out" = all "contact" intent → pick ONE label and use it everywhere on the page (nav, hero, footer). Same for "Try free" + "Get started" + "Sign up free" (all "signup" intent) and "View work" + "See selected work" + "Browse projects" (all "portfolio" intent). One label per intent.
+* <strong>FORM CONTRAST CHECK (mandatory, a11y):</strong> Form inputs, placeholder text, focus rings, helper text, and error text all pass WCAG AA contrast against the section background. Light placeholders on a near-white form, white form on white page section, form labels grayer than 4.5:1 contrast → all banned. Audit every form before shipping.</p>
+<h3>4.6 Data &amp; Form Patterns</h3>
+<ul>
+<li>Label ABOVE input. Helper text optional but present in markup. Error text BELOW input. Standard <code>gap-2</code> for input blocks.</li>
+<li>No placeholder-as-label. Ever.</li>
+</ul>
+<h3>4.7 Layout Discipline (Hard Rules. Failing any of these is shipping broken work)</h3>
+<ul>
+<li><strong>Hero MUST fit in the initial viewport.</strong> Headline max 2 lines on desktop, subtext max <strong>20 words</strong> AND max 3-4 lines, CTAs visible without scroll. If the copy is too long: reduce font scale OR cut copy. If you cannot describe the value-prop in 20 words of subtext, the value-prop is unclear, not the rule too tight. Never let the hero overflow and force scroll to find the CTA.</li>
+<li><strong>Hero font-scale discipline.</strong> Plan font size and image size <em>together</em>. If the hero asset is large and the headline is more than 6 words, do not start at <code>text-7xl/text-8xl</code>. Default sensible range: <code>text-4xl md:text-5xl lg:text-6xl</code> for most heroes; <code>text-6xl md:text-7xl</code> only when the headline is 3-5 words. A 4-line hero headline is always a font-size error, never a copy-length error.</li>
+<li><strong>HERO TOP PADDING CAP (mandatory):</strong> Hero top padding max <code>pt-24</code> (≈6rem) at desktop. More than that means the hero content floats halfway down the viewport and reads as a layout bug, not as intentional space. If your hero needs more breathing room, increase font scale or asset size, not top padding.</li>
+<li><strong>HERO STACK DISCIPLINE (max 4 text elements).</strong> The hero is a single moment, not a feature list. Allowed text elements, max 4 in total:</li>
+<li>Eyebrow (small uppercase label) OR brand strip OR neither - pick zero or one</li>
+<li>Headline (max 2 lines, see above)</li>
+<li>Subtext (max 20 words, max 4 lines)</li>
+<li>CTAs (1 primary + max 1 secondary)</li>
+<li><strong>BANNED in the hero:</strong> tiny tagline below CTAs ("Works with GitHub, GitLab, and self-hosted Git"), trust micro-strip ("Used by engineering teams at..."), pricing teaser ("Free for solo, $10/user for teams"), feature bullet list, social-proof avatar row. All of those move to dedicated sections directly below the hero.</li>
+<li>If you have an eyebrow AND a tagline below CTAs in the same hero, drop the tagline. If you have a brand strip AND a tagline, drop the tagline. One small text element per hero, max.</li>
+<li><strong>"Used by" / "Trusted by" logo wall belongs UNDER the hero, never inside it.</strong> The hero is for the value prop and primary CTA. The logo wall is a separate section directly below. Do not stuff trust logos into the same flex row as the hero copy.</li>
+<li><strong>Navigation MUST render on a single line on desktop.</strong> If items don't fit at <code>lg</code> (1024px), condense labels, drop secondary items, or move to a hamburger. A two-line nav at desktop is broken design.</li>
+<li><strong>Navigation height cap: 80px max desktop, default 64-72px.</strong> No huge "agency" nav bars that eat 15% of the viewport.</li>
+<li><strong>Bento grids MUST have rhythm, not one-sided repetition.</strong> Do not stack 6 left-image / right-text rows. Vary the composition: alternate full-width feature rows, asymmetric tile sizes, vertical breaks.</li>
+<li><strong>BENTO CELL COUNT RULE (mandatory):</strong> A bento grid has EXACTLY as many cells as you have content for. 3 items → 3 cells (1+2 split, or 2+1, or asymmetric trio). 5 items → 5 cells (2+3, 3+2, hero+4, etc.). If your grid has an empty cell in the middle or at the end, you planned wrong. Re-shape the grid; do not paste a blank tile.</li>
+<li><strong>Section-Layout-Repetition Ban.</strong> Once you use a layout family for a section (e.g., 3-column-image-cards, full-width-quote, split-text-image), that family can appear at most ONCE on the page. "Selected commissions" must not look like "What we do." A landing page with 8 sections must use at least 4 different layout families.</li>
+<li><strong>ZIGZAG ALTERNATION CAP (mandatory).</strong> Alternating "left-image + right-text" then "left-text + right-image" zigzag layout = banal. Max 2 sections in a row with this image+text-split pattern. The 3rd consecutive image+text split is a Pre-Flight Fail. Break the pattern with a full-width section, a vertical-stack section, a bento grid, a marquee, or a different layout family.</li>
+<li><strong>EYEBROW RESTRAINT (mandatory, the #1 violated rule in production tests).</strong> An "eyebrow" is the small uppercase wide-tracking label sitting above a section headline (e.g. <code>FOUR COLORWAYS</code>, <code>SELECTED WORK</code>, <code>THE HARDWARE</code>, <code>Git-native task management</code>). Typical CSS signature: <code>text-[11px] uppercase tracking-[0.18em]</code>, <code>font-mono text-[10.5px] uppercase tracking-[0.22em]</code>. Every AI-built site puts an eyebrow above EVERY section header, producing the same templated rhythm. Hard rule:</li>
+<li><strong>Maximum 1 eyebrow per 3 sections.</strong> Hero counts as 1. So a page with 9 sections may use at most 3 eyebrows total.</li>
+<li>If section A has an eyebrow, the next 2 sections cannot have one.</li>
+<li><strong>Pre-Flight Check is mechanical:</strong> count instances of <code>uppercase tracking</code> (or similar small-caps mono labels above headlines) across all section components. If count &gt; ceil(sectionCount / 3), the output fails.</li>
+<li><strong>What to do instead of an eyebrow:</strong> drop it entirely. The headline alone is enough. If you need to categorize a section, the section's location on the page already categorizes it; no label needed.</li>
+<li><strong>SPLIT-HEADER BAN (mandatory).</strong> The pattern "left big headline + right small explainer paragraph" as a section header (left col-span-7/8, right col-span-4/5 with a small body paragraph floating in the right column) is <strong>banned as default</strong>. Sections should have ONE focused message. If you genuinely need both a headline and an explainer paragraph, stack them vertically (headline on top, body below, max-width 65ch). Reach for the split-header pattern only when there is a real compositional reason (e.g., the right column carries a visual or interactive element, not just filler text).</li>
+<li><strong>Bento Background Diversity (mandatory).</strong> Bento and feature-grid sections cannot be 6 white-on-white cards with text inside. At least 2-3 cells in any multi-cell grid need real visual variation: a real image, a brand-appropriate gradient (not AI-purple), a pattern, a tinted background. A cream-on-cream bento with only typography inside reads as boring AI default, even when the rest of the page is good.</li>
+<li><strong>Mobile collapse must be explicit per section.</strong> For every multi-column layout, declare the <code>&lt; 768px</code> fallback in the same component. No "it'll work, Tailwind handles it" assumptions.</li>
+</ul>
+<h3>4.8 Image &amp; Visual Asset Strategy</h3>
+<p>Landing pages and portfolios are <strong>visual products</strong>. Text-only pages with fake-screenshot divs are slop.</p>
+<p><strong>Priority order for visual assets:</strong>
+1. <strong>Image-generation tool first.</strong> If ANY image-gen tool is available in the environment (<code>generate_image</code>, MCP image tool, IDE-integrated gen, OpenAI image tools, etc.) you MUST use it to create section-specific assets: hero photography, product shots, texture backgrounds, mood images. Generate at the right aspect ratio for the section. Do not skip this step because hand-rolled CSS feels faster.
+2. <strong>Real web images second.</strong> When no gen tool is available, use real photography sources. Acceptable defaults:
+   * <code>https://picsum.photos/seed/{descriptive-seed}/{w}/{h}</code> for placeholder photography (seed should describe the section, e.g. <code>marrow-cookware-kitchen</code>)
+   * Actual stock or brand URLs when the brief provides them
+   * Open-license sources (Unsplash via direct URL, Pexels) if explicitly allowed
+3. <strong>Last resort: tell the user.</strong> If neither is possible, do NOT fill the page with hand-rolled SVG illustrations or div-based "fake screenshots." Instead, leave clearly-labeled placeholder slots (<code>&lt;!-- TODO: hero product photo, 1600x1200 --&gt;</code>) and at the end of the response say: <em>"This page needs real images at: [list of placements]. Please generate or provide them."</em></p>
+<p><strong>Even minimalist sites need real images.</strong> A pure-text page is not minimalism. It is incomplete work. Even an editorial Linear-style site needs at least 2-3 real images (hero, one product/lifestyle shot, one supporting image). Generate B&amp;W minimalist photography if the brief is restrained; do not skip images entirely because the dial is low.</p>
+<p><strong>Real company logos for social proof.</strong> When the brief calls for a "Trusted by / Used by / Customers" logo wall, do NOT default to plain text wordmarks (<code>&lt;span&gt;Acme Co&lt;/span&gt;</code> styled in a row). Use real SVG logos:
+* <strong>Source: Simple Icons</strong> (<code>https://cdn.simpleicons.org/{slug}/ffffff</code> for any color, or <code>simple-icons</code> npm package). Covers most known brands.
+* <strong>Alternative: devicon</strong> for tech-stack logos (<code>@svgr/cli</code> or CDN).
+* <strong>Make-up the brand name? Then make-up an SVG mark too.</strong> Generate a simple monogram (one letter in a circle, two-letter ligature, abstract glyph) rendered as an inline <code>&lt;svg&gt;</code> matching the page style. Plain text wordmarks for invented brand names look generic.
+* <strong>Always</strong> ensure logos render in both light and dark mode (white-on-dark, black-on-light, or single-color theme variable).
+* <strong>LOGO-ONLY rule (mandatory):</strong> logo wall = logos and nothing else. Do NOT print industry / category labels below each logo (no <code>Vercel</code> + <code>hosting</code> underneath, no <code>Stripe</code> + <code>payments</code>, no <code>Cloudflare</code> + <code>infra</code>). The logo is the credibility, the label adds nothing the user does not already know. Optional: brand name as alt-text for screen readers, optional link to the brand's site. That is it.</p>
+<p><strong>Hand-rolled illustrations:</strong>
+* SVG icons from libraries: fine (see Section 3.C).
+* Hand-rolled decorative SVGs (custom illustrations, logos, marks): <strong>strongly discouraged</strong>, never as default. Acceptable only when:
+  - The brief explicitly calls for it ("draw me an SVG logo")
+  - It's a single, simple geometric mark (a square, a circle, a wordmark in display type)
+  - You're confident in the output quality</p>
+<p><strong>Div-based fake screenshots are banned.</strong> A "hand-built product preview" rendered with <code>&lt;div&gt;</code> rectangles, fake task lists, fake dashboards, fake terminal windows is a Tell. If you need to show a product:
+* Use a real screenshot URL if one exists
+* Generate one via image tool
+* Use a real component preview (an actual mini-version of the UI inside the page)
+* Or skip the preview entirely and use editorial photography</p>
+<p><strong>Hero needs a real visual.</strong> Text + gradient blob is not a hero - it's a placeholder.</p>
+<h3>4.9 Content Density</h3>
+<p>Landing pages live on the <strong>first impression</strong>, not the full read. Cut ruthlessly.</p>
+<ul>
+<li><strong>Default content shape per section:</strong> short headline (≤ 8 words) + short sub-paragraph (≤ 25 words) + one visual asset OR one CTA. Anything more must be justified by the section's job.</li>
+<li><strong>No data-dump sections.</strong> A 20-row publication table, a 30-row award list, a giant pricing matrix on a marketing page = wrong layout. Use:</li>
+<li>Top 3-5 highlights + "View full list" link</li>
+<li>Marquee / carousel for breadth</li>
+<li>Different page entirely if the data is the product</li>
+<li><strong>Long lists need a different UI component, not a longer list.</strong> Default <code>&lt;ul&gt;</code> with bullets / <code>divide-y</code> rows is the lazy choice. If you have &gt; 5 items, reach for one of these instead:</li>
+<li>2-column split with grouped items</li>
+<li>Card grid with image + label per item</li>
+<li>Tabs / accordion if items are categorisable</li>
+<li>Horizontal scroll-snap pills</li>
+<li>Carousel for breadth-heavy lists (testimonials, logos, capabilities)</li>
+<li>Marquee for "lots-of-things-that-don't-need-individual-attention"
+  A spec sheet with 10 rows + a hairline under every row is the WORST default. Either group rows into 2-3 chunks with sparse dividers, or move to a card-per-spec layout.</li>
+<li><strong>Spec sheets specifically (the Marrow-cookware pattern).</strong> A long product specification table with <code>border-b</code> on every row is the AI default for cookware / hardware / apparel / artisan-goods briefs. Banned. Concrete alternatives:</li>
+<li><strong>2-col card grid:</strong> each spec gets its own card with the spec name, the value (large display number), and a one-line "why it matters" body. Cards arranged 2-col on desktop, 1-col mobile.</li>
+<li><strong>Scroll-snap horizontal pills:</strong> each spec is a pill, user can flick through.</li>
+<li><strong>Grouped chunks:</strong> group 10 specs into 3 logical clusters (e.g. "Materials", "Cooking", "Warranty"), each cluster gets ONE soft divider and a cluster heading.</li>
+<li>
+<p><strong>Featured-vs-rest:</strong> 3-4 hero specs visualised as large display tiles, the rest collapsed under a "View full specifications" disclosure.</p>
+</li>
+<li>
+<p><strong>COPY SELF-AUDIT (mandatory before ship):</strong> Before declaring any task done, re-read every visible string on the page (headlines, subheads, eyebrows, button labels, body copy, captions, alt text, footer text, error messages). Flag any string that is:</p>
+</li>
+<li><strong>Grammatically broken</strong> ("free on its past", "two plans but one is honest", "to put it on the table" out of context)</li>
+<li><strong>Has unclear referents</strong> ("we plan to stay that way" without prior context)</li>
+<li><strong>Sounds like AI hallucination</strong> (cute-but-wrong wordplay, forced metaphors that don't track, "elegant nothing" phrases)</li>
+<li><strong>Reads like an LLM trying to sound thoughtful</strong> (passive-aggressive humility, fake-craftsman labels, mock-poetic micro-meta)
+  Rewrite every flagged string. If unsure whether a string makes sense, replace it with a plain functional sentence. AI-generated cute copy is worse than boring copy.</li>
+<li><strong>Fake-precise numbers are flagged.</strong> Numbers like <code>92%</code>, <code>4.1×</code>, <code>48k</code>, <code>5.8 mm</code>, <code>13.4 lb</code> either:</li>
+<li>Come from real data (brief, brand guidelines, public metrics) - fine</li>
+<li>Are explicitly labeled as mock (<code>&lt;!-- mock --&gt;</code>, "example", "sample data") - fine</li>
+<li>Are AI-invented spec aesthetics - banned. Don't fake engineering precision the brand doesn't claim.</li>
+<li><strong>One copy register per page.</strong> Don't mix technical mono ("47 tasks · 0.6 ctx-switches/day"), editorial prose, and marketing punch in the same composition unless the brand voice explicitly calls for it.</li>
+</ul>
+<h3>4.10 Quotes &amp; Testimonials</h3>
+<ul>
+<li><strong>Max 3 lines</strong> of quote body. Never 6. If the original quote is longer → cut it. A landing-page quote is a snippet, not the full review.</li>
+<li>For very small font sizes (e.g. footer-style testimonials), the line cap can stretch slightly. Spirit: "fits in a glance."</li>
+<li><strong>No em-dashes inside the quote text</strong> as design flourish (long pauses, kinetic em-dashes, em-dash-bullets). See Section 9.G - em-dash is completely banned.</li>
+<li>Attribution: name + role + (optionally) company. Never name only ("- Sarah").</li>
+<li>Quote marks: use real typographic quotes ( " " ) or none at all. Not straight ASCII ( " ).</li>
+</ul>
+<h3>4.11 Page Theme Lock (Light / Dark Mode Consistency)</h3>
+<p>The page has ONE theme. Sections do not invert.</p>
+<ul>
+<li>If the page is dark mode, ALL sections are dark mode. No light-mode-warm-paper section sandwiched between dark sections (or vice versa). The user must not feel they walked into a different website mid-scroll.</li>
+<li>The exception: if the brief explicitly calls for a "Color Block Story" or "Theme Switch on Scroll" device AND that is a deliberate composition (one full theme switch with a strong transition, not random alternation), it is allowed once per page.</li>
+<li>Default behaviour: pick light, dark, or auto (<code>prefers-color-scheme</code>) at the page level and lock it. Section-level background tints within the same theme family are fine (<code>bg-zinc-950</code> next to <code>bg-zinc-900</code>); flipping to <code>bg-amber-50</code> in the middle of a <code>bg-zinc-950</code> page is broken.</li>
+<li>When using a design system with built-in theming (Radix Themes, shadcn/ui with <code>&lt;Theme&gt;</code>), set the theme ONCE in <code>layout.tsx</code> or the page root. Do not let individual sections override.</li>
+</ul>
+<hr />
+<h2>5. CONTEXT-AWARE PROACTIVITY</h2>
+<p>These are tools, not defaults. Use them when the design read calls for them. <strong>None of these fire automatically.</strong></p>
+<ul>
+<li><strong>Liquid Glass / Glassmorphism:</strong> Appropriate for premium consumer, Apple-adjacent, luxury brand, or media-overlay vibes. Inappropriate for dashboards, public-sector, or "boring B2B." When used, go beyond <code>backdrop-blur</code>: add a 1px inner border (<code>border-white/10</code>) and a subtle inner shadow (<code>shadow-[inset_0_1px_0_rgba(255,255,255,0.1)]</code>) for physical edge refraction. Provide a solid-fill fallback under <code>prefers-reduced-transparency</code>.</li>
+<li><strong>Magnetic Micro-physics:</strong> Use when <code>MOTION_INTENSITY &gt; 5</code> AND the brief reads premium / playful / agency. Implement EXCLUSIVELY with Motion's <code>useMotionValue</code> / <code>useTransform</code> outside the React render cycle. Never <code>useState</code>. See Section 3.B.</li>
+<li><strong>Perpetual Micro-Interactions</strong> (Pulse, Typewriter, Float, Shimmer, Carousel): Use when <code>MOTION_INTENSITY &gt; 5</code> AND the section actively benefits from motion (status indicators, live feeds, AI-feel). <strong>Not every card needs an infinite loop.</strong> If a section is informational, leave it still. Apply Spring Physics (<code>type: "spring", stiffness: 100, damping: 20</code>) - no linear easing.</li>
+<li><strong>"Motion claimed, motion shown."</strong> If <code>MOTION_INTENSITY &gt; 4</code>, the page must actually move: entry transitions on hero, scroll-reveal on key sections, hover physics on CTAs, at minimum. A static page that claims <code>MOTION_INTENSITY: 7</code> is broken. Conversely, if you cannot ship working motion in the available scope, drop the dial to 3 and ship a clean static page. Never half-build motion that breaks (cut-off ScrollTriggers, jumpy enters, missing cleanups).</li>
+<li><strong>MOTION MUST BE MOTIVATED (mandatory).</strong> Before adding any animation, ask: "what does this animation communicate?" Valid answers: hierarchy (drawing attention to the right thing), storytelling (revealing content in sequence that matches a narrative), feedback (acknowledging a user action), state transition (showing something changed). Invalid answer: "it looked cool". GSAP everywhere because GSAP is available is amateur. Each ScrollTrigger, each marquee, each pinned section needs a reason. If you cannot articulate the reason in one sentence, drop the animation.</li>
+<li><strong>MARQUEE MAX-ONE-PER-PAGE (mandatory).</strong> Horizontal scrolling text marquees ("logos endlessly scrolling", "manifesto scrolling sideways", "kinetic word strip") are appropriate at most ONCE per page. Two or more marquees on the same page reads as lazy filler. Pick the one section where the marquee actually serves the content; the others get a different layout.</li>
+<li><strong>GSAP Sticky-Stack Pattern (when scroll-stack is used).</strong> A "card stack on scroll" must be a REAL sticky-stack, not a sequential reveal list. See Section 5.A below for the canonical code skeleton. Common failure: trigger fires halfway through scroll instead of pinning at viewport top. Fix: <code>start: "top top"</code> not <code>start: "top center"</code> or <code>"top 80%"</code>.</li>
+<li><strong>GSAP Horizontal-Pan Pattern (when horizontal scroll-hijack is used).</strong> See Section 5.B below for the canonical skeleton. Common failure: animation starts before the section is pinned, so the user sees half a slide. Same fix: <code>start: "top top"</code>, pin the wrapper, scrub the inner track.</li>
+</ul>
+<h3>5.A Sticky-Stack - Canonical Skeleton</h3>
+<pre><code class="language-tsx">&quot;use client&quot;;
+import { useRef, useEffect } from &quot;react&quot;;
+import { gsap } from &quot;gsap&quot;;
+import { ScrollTrigger } from &quot;gsap/ScrollTrigger&quot;;
+import { useReducedMotion } from &quot;motion/react&quot;;
+
+gsap.registerPlugin(ScrollTrigger);
+
+export function StickyStack({ cards }: { cards: React.ReactNode[] }) {
+  const ref = useRef&lt;HTMLDivElement&gt;(null);
+  const reduce = useReducedMotion();
+
+  useEffect(() =&gt; {
+    if (reduce || !ref.current) return;
+    const ctx = gsap.context(() =&gt; {
+      const cardEls = gsap.utils.toArray&lt;HTMLElement&gt;(&quot;.stack-card&quot;);
+      cardEls.forEach((card, i) =&gt; {
+        if (i === cardEls.length - 1) return;
+        ScrollTrigger.create({
+          trigger: card,
+          start: &quot;top top&quot;,                              // pin at viewport top
+          endTrigger: cardEls[cardEls.length - 1],
+          end: &quot;top top&quot;,
+          pin: true,
+          pinSpacing: false,
+        });
+        gsap.to(card, {
+          scale: 0.92,
+          opacity: 0.55,
+          ease: &quot;none&quot;,
+          scrollTrigger: {
+            trigger: cardEls[i + 1],
+            start: &quot;top bottom&quot;,
+            end: &quot;top top&quot;,
+            scrub: true,
+          },
+        });
+      });
+    }, ref);
+    return () =&gt; ctx.revert();
+  }, [reduce]);
+
+  return (
+    &lt;div ref={ref} className=&quot;relative&quot;&gt;
+      {cards.map((card, i) =&gt; (
+        &lt;div
+          key={i}
+          className=&quot;stack-card sticky top-0 min-h-[100dvh] flex items-center justify-center&quot;
+        &gt;
+          {card}
+        &lt;/div&gt;
+      ))}
+    &lt;/div&gt;
+  );
+}
+</code></pre>
+<p>Critical points: <code>start: "top top"</code>, <code>pin: true</code>, every card except the last is pinned, the scale/opacity transform is driven by the NEXT card's scroll trigger (so previous card shrinks as next one arrives).</p>
+<h3>5.B Horizontal-Pan - Canonical Skeleton</h3>
+<pre><code class="language-tsx">&quot;use client&quot;;
+import { useRef, useEffect } from &quot;react&quot;;
+import { gsap } from &quot;gsap&quot;;
+import { ScrollTrigger } from &quot;gsap/ScrollTrigger&quot;;
+import { useReducedMotion } from &quot;motion/react&quot;;
+
+gsap.registerPlugin(ScrollTrigger);
+
+export function HorizontalPan({ children }: { children: React.ReactNode }) {
+  const wrap = useRef&lt;HTMLDivElement&gt;(null);
+  const track = useRef&lt;HTMLDivElement&gt;(null);
+  const reduce = useReducedMotion();
+
+  useEffect(() =&gt; {
+    if (reduce || !wrap.current || !track.current) return;
+    const ctx = gsap.context(() =&gt; {
+      const distance = track.current!.scrollWidth - window.innerWidth;
+      gsap.to(track.current, {
+        x: -distance,
+        ease: &quot;none&quot;,
+        scrollTrigger: {
+          trigger: wrap.current,
+          start: &quot;top top&quot;,                              // pin starts when section top hits viewport top
+          end: () =&gt; `+=${distance}`,                    // scroll distance = track width minus viewport
+          pin: true,
+          scrub: 1,
+          invalidateOnRefresh: true,
+        },
+      });
+    }, wrap);
+    return () =&gt; ctx.revert();
+  }, [reduce]);
+
+  return (
+    &lt;section ref={wrap} className=&quot;relative overflow-hidden&quot;&gt;
+      &lt;div ref={track} className=&quot;flex h-[100dvh] items-center&quot;&gt;
+        {children}
+      &lt;/div&gt;
+    &lt;/section&gt;
+  );
+}
+</code></pre>
+<p>Critical points: <code>start: "top top"</code>, <code>pin: true</code>, <code>end: "+=${distance}"</code> (scroll length = horizontal travel needed), <code>scrub: 1</code>. The wrapper is pinned, the inner track slides horizontally as the user scrolls vertically.</p>
+<h3>5.C Scroll-Reveal Stagger - Canonical Skeleton (lighter alternative)</h3>
+<p>For simple "items appear as they enter viewport" (no pinning), prefer Motion's <code>whileInView</code> over GSAP - lighter, no ScrollTrigger needed:</p>
+<pre><code class="language-tsx">&quot;use client&quot;;
+import { motion, useReducedMotion } from &quot;motion/react&quot;;
+
+export function RevealStagger({ items }: { items: string[] }) {
+  const reduce = useReducedMotion();
+  return (
+    &lt;ul className=&quot;grid gap-6&quot;&gt;
+      {items.map((item, i) =&gt; (
+        &lt;motion.li
+          key={item}
+          initial={reduce ? false : { opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{
+            duration: 0.6,
+            delay: i * 0.06,
+            ease: [0.16, 1, 0.3, 1],
+          }}
+        &gt;
+          {item}
+        &lt;/motion.li&gt;
+      ))}
+    &lt;/ul&gt;
+  );
+}
+</code></pre>
+<p>Use this for: feature lists, testimonial grids, logo walls, anything that just needs "enter on scroll." Save GSAP for actual pin/scrub work.</p>
+<h3>5.D Forbidden Animation Patterns</h3>
+<ul>
+<li><strong><code>window.addEventListener("scroll", ...)</code></strong> is banned. It runs on every scroll frame, jank-prone, no batching. Use Motion's <code>useScroll()</code>, GSAP's <code>ScrollTrigger</code>, IntersectionObserver, or CSS <code>scroll-driven animations</code> (<code>animation-timeline: view()</code>).</li>
+<li><strong>Custom scroll progress calculations using <code>window.scrollY</code></strong> in React state. Same reason. Re-renders on every frame.</li>
+<li><strong><code>requestAnimationFrame</code> loops that touch React state.</strong> Use motion values (<code>useMotionValue</code> + <code>useTransform</code>) instead.</li>
+<li><strong>Layout Transitions:</strong> Use Motion's <code>layout</code> and <code>layoutId</code> props for visible state changes (re-ordering lists, expanding modals, shared elements between routes). Do not wrap static content in <code>layout</code> props "for safety" - it costs measurement work.</li>
+<li><strong>Staggered Orchestration:</strong> Use <code>staggerChildren</code> (Motion) or CSS cascade (<code>animation-delay: calc(var(--index) * 100ms)</code>) for reveal moments where sequence matters. For <code>staggerChildren</code>, parent (<code>variants</code>) and children MUST share the same Client Component tree.</li>
+</ul>
+<hr />
+<h2>6. PERFORMANCE &amp; ACCESSIBILITY GUARDRAILS</h2>
+<h3>6.A Hardware Acceleration</h3>
+<ul>
+<li>Animate ONLY <code>transform</code> and <code>opacity</code>. Never animate <code>top</code>, <code>left</code>, <code>width</code>, <code>height</code>.</li>
+<li>Use <code>will-change: transform</code> sparingly - only on elements that will actually animate.</li>
+</ul>
+<h3>6.B Reduced Motion (mandatory)</h3>
+<ul>
+<li><strong>Any motion above <code>MOTION_INTENSITY &gt; 3</code> MUST honor <code>prefers-reduced-motion</code>.</strong> This is non-negotiable.</li>
+<li>In Motion: wrap with <code>useReducedMotion()</code> and degrade to static.</li>
+<li>In CSS: gate animations behind <code>@media (prefers-reduced-motion: no-preference)</code> or provide an override block under <code>@media (prefers-reduced-motion: reduce)</code> that disables.</li>
+<li>Infinite loops, parallax, scroll-hijack, and magnetic physics MUST collapse to static / instant under reduced motion.</li>
+</ul>
+<h3>6.C Dark Mode (mandatory for any consumer-facing page)</h3>
+<ul>
+<li>Design for <strong>both modes from the start</strong>. Never ship light-only or dark-only without explicit user instruction.</li>
+<li>Use Tailwind <code>dark:</code> variant OR CSS variables for tokens. Pick one strategy per project.</li>
+<li><strong>Do not prescribe specific dark-mode colors here.</strong> The brief decides. Maintain visual hierarchy, brand identity, and WCAG AA contrast (AAA for body) across both modes.</li>
+<li>Respect <code>prefers-color-scheme: dark</code>. Default to system preference unless the brand insists on one mode.</li>
+</ul>
+<h3>6.D Core Web Vitals Targets</h3>
+<ul>
+<li><strong>LCP</strong> &lt; 2.5s. Hero image must be <code>next/image priority</code> or preloaded.</li>
+<li><strong>INP</strong> &lt; 200ms. Heavy work off main thread.</li>
+<li><strong>CLS</strong> &lt; 0.1. Reserve space for images, fonts, embeds.</li>
+<li>Run Lighthouse before declaring a page done.</li>
+</ul>
+<h3>6.E DOM Cost</h3>
+<ul>
+<li>Apply grain / noise filters EXCLUSIVELY to fixed, <code>pointer-events-none</code> pseudo-elements (e.g., <code>fixed inset-0 z-[60] pointer-events-none</code>). NEVER on scrolling containers - continuous GPU repaints destroy mobile FPS.</li>
+<li>Be aware of bundle size. Motion is not tiny. Three.js is large. Lazy-load anything that's not above-the-fold.</li>
+</ul>
+<h3>6.F Z-Index Restraint</h3>
+<p>NEVER spam arbitrary <code>z-50</code> or <code>z-10</code>. Use z-index strictly for systemic layer contexts (sticky navbars, modals, overlays, grain). Document the z-index scale in a project constants file.</p>
+<hr />
+<h2>7. DIAL DEFINITIONS (Technical Reference)</h2>
+<h3>DESIGN_VARIANCE (Level 1-10)</h3>
+<ul>
+<li><strong>1-3 (Predictable):</strong> Symmetrical CSS Grid (12-col, equal fr-units), equal paddings, centered alignment.</li>
+<li><strong>4-7 (Offset):</strong> <code>margin-top: -2rem</code> overlaps, varied image aspect ratios (4:3 next to 16:9), left-aligned headers over center-aligned data.</li>
+<li><strong>8-10 (Asymmetric):</strong> Masonry layouts, CSS Grid with fractional units (<code>grid-template-columns: 2fr 1fr 1fr</code>), massive empty zones (<code>padding-left: 20vw</code>).</li>
+<li><strong>MOBILE OVERRIDE:</strong> For levels 4-10, asymmetric layouts above <code>md:</code> MUST collapse to strict single-column (<code>w-full</code>, <code>px-4</code>, <code>py-8</code>) on viewports <code>&lt; 768px</code>.</li>
+</ul>
+<h3>MOTION_INTENSITY (Level 1-10)</h3>
+<ul>
+<li><strong>1-3 (Static):</strong> No automatic animations. CSS <code>:hover</code> and <code>:active</code> states only. <code>prefers-reduced-motion</code> is the default mode anyway.</li>
+<li><strong>4-7 (Fluid CSS):</strong> <code>transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1)</code>. <code>animation-delay</code> cascades for load-ins. Focus on <code>transform</code> and <code>opacity</code>.</li>
+<li><strong>8-10 (Advanced Choreography):</strong> Complex scroll-triggered reveals, parallax, scroll-driven animation (CSS <code>animation-timeline</code> or GSAP ScrollTrigger). Use Motion hooks. <strong>NEVER use <code>window.addEventListener('scroll')</code></strong> - it is a hard ban, not a "prefer-not." See Section 5.D for the allowed alternatives.</li>
+</ul>
+<h3>VISUAL_DENSITY (Level 1-10)</h3>
+<ul>
+<li><strong>1-3 (Art Gallery):</strong> Lots of white space. Huge section gaps (<code>py-32</code> to <code>py-48</code>). Expensive, clean.</li>
+<li><strong>4-7 (Daily App):</strong> Standard web app spacing (<code>py-16</code> to <code>py-24</code>).</li>
+<li><strong>8-10 (Cockpit):</strong> Tight paddings. No card boxes; 1px lines separate data. Mandatory: <code>font-mono</code> for all numbers.</li>
+</ul>
+<hr />
+<h2>8. DARK MODE PROTOCOL</h2>
+<p>Dual-mode by default. Never assume light-only unless the brief is print-emulating editorial.</p>
+<h3>8.A Token Strategy (pick one, stick to it)</h3>
+<ul>
+<li><strong>Tailwind <code>dark:</code> variant</strong> (default for utility-first projects): every color utility paired with its dark variant (<code>bg-white dark:bg-zinc-950</code>, <code>text-gray-900 dark:text-gray-100</code>).</li>
+<li><strong>CSS variables</strong> (for shadcn/ui, Radix Themes, or component libraries with theming): define semantic tokens (<code>--surface</code>, <code>--surface-elevated</code>, <code>--text-primary</code>, <code>--accent</code>) and swap values under <code>[data-theme="dark"]</code> or <code>@media (prefers-color-scheme: dark)</code>.</li>
+</ul>
+<h3>8.B Do Not Prescribe Specific Colors Here</h3>
+<p>The brief and brand decide. This skill enforces only:
+* <strong>Contrast</strong> - WCAG AA minimum for body text, AAA target for hero copy.
+* <strong>Hierarchy parity</strong> - visual hierarchy that works in light must work in dark. If a CTA pops in light, it pops in dark.
+* <strong>Brand fidelity</strong> - primary brand color stays recognisable. Don't desaturate the brand into a dark mode.
+* <strong>No pure <code>#000000</code> and no pure <code>#ffffff</code></strong> - use off-black (zinc-950, near-black warm gray) and off-white. Pure values kill depth.</p>
+<h3>8.C Default Mode</h3>
+<p>Respect <code>prefers-color-scheme</code> unless the brand insists. Add a manual toggle if either mode would lose key brand expression.</p>
+<h3>8.D Test in Both Modes Before Finishing</h3>
+<p>Open the page in both modes during development. Do not ship a page you've only seen in one mode.</p>
+<hr />
+<h2>9. AI TELLS (Forbidden Patterns)</h2>
+<p>Avoid these signatures unless the brief explicitly asks for them.</p>
+<h3>9.A Visual &amp; CSS</h3>
+<ul>
+<li><strong>NO neon / outer glows</strong> by default. Use inner borders or subtle tinted shadows.</li>
+<li><strong>NO pure black (<code>#000000</code>).</strong> Off-black, zinc-950, or charcoal.</li>
+<li><strong>NO oversaturated accents.</strong> Desaturate to blend with neutrals.</li>
+<li><strong>NO excessive gradient text</strong> for large headers.</li>
+<li><strong>NO custom mouse cursors.</strong> Outdated, accessibility-hostile, perf-hostile.</li>
+</ul>
+<h3>9.B Typography</h3>
+<ul>
+<li><strong>AVOID Inter as default.</strong> See Section 4.1. Override path exists.</li>
+<li><strong>NO oversized H1s</strong> that just scream. Control hierarchy with weight + color, not raw scale.</li>
+<li><strong>Serif constraints:</strong> Serif for editorial / luxury / publication. Not for dashboards.</li>
+</ul>
+<h3>9.C Layout &amp; Spacing</h3>
+<ul>
+<li><strong>Mathematically perfect</strong> padding and margins. No floating elements with awkward gaps.</li>
+<li><strong>NO 3-column equal feature cards.</strong> The generic "three identical cards horizontally" feature row is banned. Use 2-column zig-zag, asymmetric grid, scroll-pinned, or horizontal-scroll alternative.</li>
+</ul>
+<h3>9.D Content &amp; Data ("Jane Doe" Effect)</h3>
+<ul>
+<li><strong>NO generic names.</strong> "John Doe", "Sarah Chan", "Jack Su" → use creative, realistic, locale-appropriate names.</li>
+<li><strong>NO generic avatars.</strong> No SVG "egg" or Lucide user icons → use believable photo placeholders or specific styling.</li>
+<li><strong>NO fake-perfect numbers.</strong> Avoid <code>99.99%</code>, <code>50%</code>, <code>1234567</code>. Use organic, messy data (<code>47.2%</code>, <code>+1 (312) 847-1928</code>).</li>
+<li><strong>NO startup-slop brand names.</strong> "Acme", "Nexus", "SmartFlow", "Cloudly" → invent contextual, premium names that sound real.</li>
+<li><strong>NO filler verbs.</strong> "Elevate", "Seamless", "Unleash", "Next-Gen", "Revolutionize" → concrete verbs only.</li>
+</ul>
+<h3>9.E External Resources &amp; Components</h3>
+<ul>
+<li><strong>NO hand-rolled SVG icons.</strong> Use Phosphor / HugeIcons / Radix / Tabler. Lucide on explicit request only.</li>
+<li><strong>Hand-rolled decorative SVGs strongly discouraged</strong> as default (see Section 4.8).</li>
+<li><strong>NO div-based fake screenshots.</strong> Never build a fake product UI out of <code>&lt;div&gt;</code> rectangles to simulate a screenshot. Use real images, generated images, or skip the preview.</li>
+<li><strong>NO broken Unsplash links.</strong> Use <code>https://picsum.photos/seed/{descriptive-string}/{w}/{h}</code>, or generated photo placeholders, or actual assets.</li>
+<li><strong>shadcn/ui customization:</strong> Allowed, but NEVER in default state. Customize radii, colors, shadows, typography to the project aesthetic.</li>
+<li><strong>Production-Ready Cleanliness:</strong> Code visually clean, memorable, meticulously refined.</li>
+</ul>
+<h3>9.F Production-Test Tells (banned outright)</h3>
+<p>These patterns came out of real LLM-generated landing-page tests. They are the signatures the model defaults to when it tries to "look designed." Treat them as hard bans unless the brief explicitly calls for one.</p>
+<p><strong>Hero &amp; top-of-page</strong>
+* <strong>NO version labels in the hero.</strong> <code>V0.6</code>, <code>v2.0</code>, <code>BETA</code>, <code>INVITE-ONLY PREVIEW</code>, <code>EARLY ACCESS</code>, <code>ALPHA</code> - banned as default eyebrows. Only acceptable when the brief is explicitly about a product launch / preview status.
+* <strong>NO "Brand · No. 01"-style sub-eyebrows.</strong> "Marrow · No. 01 · The 6-quart" type micro-meta lines. Skip them.</p>
+<p><strong>Section numbering &amp; micro-labels</strong>
+* <strong>NO section-number eyebrows.</strong> <code>00 / INDEX</code>, <code>001 · Capabilities</code>, <code>002 · Featured commission</code>, <code>06 · how it works</code>, <code>05 · The honest table</code> - banned. Eyebrows should name the topic in plain language, not enumerate.
+* <strong>NO <code>01 / 4</code>-style pagination on images or bento tiles.</strong> If the user can count, they don't need the label.
+* <strong>NO <code>Scroll · 001 Capabilities</code>-style scroll cues.</strong> A simple arrow or "Scroll" is enough; no section-number prefix.
+* <strong>NO "Index of Work, 2018 - 2026"-style range labels</strong> as eyebrows. Just say what the section is.</p>
+<p><strong>Separators &amp; dots</strong>
+* <strong>The middle-dot (<code>·</code>) is rationed.</strong> Maximum 1 per line in metadata strips. Do NOT use it as the default separator for everything ("foo · bar · baz · qux · quux"). If you need a separator family, prefer line breaks, hairlines, or columns.
+* <strong>NO decorative colored status dots on every list/nav/badge.</strong> A colored dot before "ONE Q4 SLOT OPEN" or before every nav link, or every task row - banned by default. Acceptable only when the dot conveys actual semantic state (a server status, an availability flag) and is used sparingly.</p>
+<p><strong>Em-dashes &amp; typography flourishes</strong>
+* <strong>NO em-dash (<code>—</code>) as a design element OR anywhere else.</strong> See Section 9.G below for the complete, non-negotiable ban. The em-dash character is forbidden in headlines, eyebrows, pills, body copy, quotes, attribution, captions, button text, and alt text. Use the regular hyphen (<code>-</code>).
+* <strong>NO <code>&lt;br&gt;</code>-broken-and-italicized headlines</strong> as a default "design move." "for thirty\&lt;br&gt;<em>years.</em>" type splits. Headlines should read naturally first, get clever only when the brief demands it.
+* <strong>NO vertical rotated text</strong> ("INDEX OF WORK, 2018 - 2026" rotated 90°). Agency-portfolio cliché. Use it only when the brief is explicitly agency / Awwwards / experimental AND it serves a real composition purpose.
+* <strong>NO crosshair / hairline grid lines as decoration.</strong> Vertical and horizontal lines drawn just to make the page "feel designed" - banned. Use them only when they organize real content.</p>
+<p><strong>Fake product previews</strong>
+* <strong>NO div-based fake product UI in the hero</strong> (fake task list, fake terminal, fake dashboard built from styled divs). It is the #1 LLM-design Tell. Use a real screenshot, a generated image, a real component preview, or none at all.
+* <strong>NO fake version footers</strong> ("v0.6.2-rc.1", "last sync 4s ago · main") inside fake screenshots. Adds nothing, screams AI.</p>
+<p><strong>Marketing-copy Tells</strong>
+* <strong>NO "Quietly in use at" / "Quietly trusted by"</strong> social-proof headers. Use natural language: "Trusted by", "Used at", "Customers include", or skip the heading entirely if the logos speak.
+* <strong>NO "From the field" / "Field notes" / "Currently on the bench" / "On our desks" / "Loose plates" style poetic labels</strong> on quote, blog, or sidebar sections. Reads as performative-craftsman. Use plain functional labels ("Testimonials", "Latest writing", "Now working on") or skip the label.
+* <strong>NO "We respect the French ones"-style</strong> mock-humble industry-references in body copy. Cute and AI-y.
+* <strong>NO weather / locale strips</strong> ("LIS 14:23 · 18°C") in headers/footers unless the brief is explicitly about a place / time-zone-distributed studio.
+* <strong>NO micro-meta-sentences under eyebrows.</strong> Sentences like <em>"Each of these is a feature we ship today, not a roadmap promise. The list will stay short on purpose."</em> sitting under a section heading are clutter. Eyebrow + Headline + Body is enough.
+* <strong>NO generic step labels.</strong> "Stage 1 / Stage 2 / Stage 3", "Step 1 / Step 2 / Step 3", "Phase 01 / Phase 02 / Phase 03", "Pass One / Pass Two / Pass Three". Banned. The actual step content is the label. If you must show progression, use the verb-noun directly ("Install", "Configure", "Ship") not "Stage 1: Install".</p>
+<p><strong>Pills, labels and version stamps</strong>
+* <strong>NO pills/labels/tags overlaid on images.</strong> No <code>&lt;span&gt;</code> overlays on photos with tags like <code>Brand · 02</code>, <code>PLATE · BRAND</code>, <code>Field notes - journal</code>. Either let the image speak alone, or add a caption directly below (outside the image).
+* <strong>NO photo-credit captions as decoration.</strong> Strings like <code>Field study no. 12 · Ines Caetano</code>, <code>Plate 03 · House archive</code>, <code>Frame XII · 35mm</code> under stock/picsum images are pretentious. Photo credit is allowed ONLY when there is a real photographer being credited for a real photo (with permission). Otherwise: skip the caption or use a one-line functional caption ("The 6-quart, in Sage.").
+* <strong>NO version footers on marketing pages.</strong> Footer strings like <code>v1.4.2</code>, <code>Build 0048</code>, <code>last sync 4s ago · main</code> are CLI / devtool fixtures, not landing-page content. Banned on marketing/landing/portfolio pages.
+* <strong>NO "Reservation 412 of 800"-style live-stock counters</strong> as decoration. Only if the brief is explicitly a limited-run waitlist with real data.</p>
+<p><strong>Decoration text strips</strong>
+* <strong>NO decoration text strip at hero bottom.</strong> Patterns like <code>BRAND. MOTION. SPATIAL.</code>, <code>TYPE / FORM / MOTION</code>, <code>DESIGN · BUILD · SHIP</code>, <code>ESTD. 2018 · LISBON · BRAND. MOTION. SPATIAL.</code> as a small mono-caps strip across the bottom of the hero are an agency-portfolio cliché. Banned by default. Only acceptable when the strip carries real, navigable links (sticky bottom nav) or real status info (cookie banner, build info on a docs site).
+* <strong>NO floating top-right sub-text in section headings.</strong> Pattern: section has a giant left-aligned headline; in the top-right corner of the same section header there is a small explainer paragraph floating with no clear alignment to anything else. That floater is the Tell. Either put the sub-text directly under the headline, or build a clean 2-column header (left: headline, right: aligned body), but not a tiny corner paragraph.</p>
+<p><strong>Lists, dividers and scoring</strong>
+* <strong>NO <code>border-t</code> + <code>border-b</code> on every row of a long list / spec table.</strong> Pick one (bottom-border between rows OR top-border above the group) and use it sparsely. A 10-row spec table with hairlines under each row is the laziest layout - see Section 4.9 for alternative UI components.
+* <strong>NO scoring/progress bars with filled background tracks</strong> as comparison visuals. If you need to show "X out of Y" comparisons, prefer a number + small icon, or a tiny inline bar WITHOUT a background track. Big filled <code>bg-zinc-200</code> tracks with a partial fill on top are dashboard-UI clutter on a landing page.</p>
+<p><strong>Locale, time, scroll cues</strong>
+* <strong>Locale / city-name / time / weather strips are banned for 99% of briefs.</strong> "Lisbon, working with founders" in the hero, "1200-690 Lisbon, Portugal" in the footer, "Lisbon 14:23 · 18°C" in the nav. These are agency-portfolio decoration tells. Allowed ONLY when: the brief explicitly describes a globally-distributed studio with timezone-relevant work, OR a travel-focused brand, OR a real-world physical venue. A single contact-address mention in the footer is fine; an atmospheric locale strip is not.
+* <strong>Scroll cues are banned.</strong> <code>Scroll</code>, <code>↓ scroll</code>, <code>Scroll to explore</code>, <code>Scroll to walk through it</code>, animated mouse-wheel icons. If the user has not scrolled yet, they are looking at the hero. They know what scroll is. The bottom of the viewport does not need a label.
+* <strong>ZERO decorative status dots by default.</strong> A coloured dot before nav items, before list rows, before badges, before status labels is a Tell. Only acceptable when conveying real semantic state (a live indicator on actual server status, a live availability flag) and limited to one per page section.</p>
+<h3>9.G EM-DASH BAN (the single most-violated Tell)</h3>
+<p><strong>Em-dash (<code>—</code>) is COMPLETELY banned.</strong> It is the LLM's signature stylistic crutch and it is the #1 visual Tell in production tests. There is no "limited use" allowance, no "natural language frequency" allowance, no "in body copy is fine" allowance. None.</p>
+<ul>
+<li><strong>Banned in headlines.</strong> Use a period or a comma.</li>
+<li><strong>Banned in eyebrows / labels / pills / button text / image captions / nav items.</strong> Replace with line breaks, columns, or hairlines.</li>
+<li><strong>Banned in body copy.</strong> Restructure the sentence: two sentences with a period, OR a comma, OR parentheses, OR a colon.</li>
+<li><strong>Banned in quote attribution.</strong> Use a normal hyphen with spaces (<code>-</code>) or a line break + smaller-weight name.</li>
+<li><strong>Banned in en-dash form too (<code>–</code>) when used as a separator.</strong> Date ranges (<code>2018-2026</code>) use a hyphen. Number ranges (<code>€40-80k</code>) use a hyphen.</li>
+</ul>
+<p>The ONLY permitted dash characters on the page are:
+* Regular hyphen <code>-</code> (for compound words, ranges, line dividers in markup)
+* Minus sign in math (<code>-5°C</code>)</p>
+<p>If your output contains a single <code>—</code> or <code>–</code> anywhere visible to the user, the output fails the Pre-Flight Check and must be rewritten.</p>
+<p>This rule is non-negotiable. The agent has historically ignored em-dash limits when phrased as "use sparingly." The phrasing here is binary: zero em-dashes.</p>
+<hr />
+<h2>10. REFERENCE VOCABULARY (Pattern Names the Agent Should Know)</h2>
+<p>This is a vocabulary, not a library. The agent should KNOW these pattern names to communicate about them, design with them in mind, and reach for them when the design read calls for them. <strong>Implementations and code sketches live in the Block Library (Section 12), which is populated iteratively.</strong></p>
+<h3>Hero Paradigms</h3>
+<ul>
+<li><strong>Asymmetric Split Hero</strong> - Text on one side, asset on the other, generous white space.</li>
+<li><strong>Editorial Manifesto Hero</strong> - Large type, no asset, almost-poster.</li>
+<li><strong>Video / Media Mask Hero</strong> - Type cut out as mask over video background.</li>
+<li><strong>Kinetic-Type Hero</strong> - Animated typography as the primary visual.</li>
+<li><strong>Curtain-Reveal Hero</strong> - Hero parts on scroll like a curtain.</li>
+<li><strong>Scroll-Pinned Hero</strong> - Hero stays pinned while content scrolls behind.</li>
+</ul>
+<h3>Navigation &amp; Menus</h3>
+<ul>
+<li><strong>Mac OS Dock Magnification</strong> - Edge nav, icons scale fluidly on hover.</li>
+<li><strong>Magnetic Button</strong> - Pulls toward cursor.</li>
+<li><strong>Gooey Menu</strong> - Sub-items detach like viscous liquid.</li>
+<li><strong>Dynamic Island</strong> - Morphing pill for status / alerts.</li>
+<li><strong>Contextual Radial Menu</strong> - Circular menu expanding at click point.</li>
+<li><strong>Floating Speed Dial</strong> - FAB springing into curved secondary actions.</li>
+<li><strong>Mega Menu Reveal</strong> - Full-screen dropdown, stagger-fade content.</li>
+</ul>
+<h3>Layout &amp; Grids</h3>
+<ul>
+<li><strong>Bento Grid</strong> - Asymmetric tile grouping (Apple Control Center).</li>
+<li><strong>Masonry Layout</strong> - Staggered grid, no fixed row height.</li>
+<li><strong>Chroma Grid</strong> - Borders / tiles with subtle animating gradients.</li>
+<li><strong>Split-Screen Scroll</strong> - Two halves sliding in opposite directions.</li>
+<li><strong>Sticky-Stack Sections</strong> - Sections that pin and stack on scroll.</li>
+</ul>
+<h3>Cards &amp; Containers</h3>
+<ul>
+<li><strong>Parallax Tilt Card</strong> - 3D tilt tracking mouse coordinates.</li>
+<li><strong>Spotlight Border Card</strong> - Borders illuminate under cursor.</li>
+<li><strong>Glassmorphism Panel</strong> - Frosted glass with inner refraction.</li>
+<li><strong>Holographic Foil Card</strong> - Iridescent rainbow shift on hover.</li>
+<li><strong>Tinder Swipe Stack</strong> - Physical card stack, swipe-away.</li>
+<li><strong>Morphing Modal</strong> - Button expands into its own dialog.</li>
+</ul>
+<h3>Scroll Animations</h3>
+<ul>
+<li><strong>Sticky Scroll Stack</strong> - Cards stick and physically stack.</li>
+<li><strong>Horizontal Scroll Hijack</strong> - Vertical scroll → horizontal pan.</li>
+<li><strong>Locomotive / Sequence Scroll</strong> - Video / 3D sequence tied to scrollbar.</li>
+<li><strong>Zoom Parallax</strong> - Central background image zooming on scroll.</li>
+<li><strong>Scroll Progress Path</strong> - SVG line drawing along scroll.</li>
+<li><strong>Liquid Swipe Transition</strong> - Page transition like viscous liquid.</li>
+</ul>
+<h3>Galleries &amp; Media</h3>
+<ul>
+<li><strong>Dome Gallery</strong> - 3D panoramic gallery.</li>
+<li><strong>Coverflow Carousel</strong> - 3D carousel with angled edges.</li>
+<li><strong>Drag-to-Pan Grid</strong> - Boundless draggable canvas.</li>
+<li><strong>Accordion Image Slider</strong> - Narrow strips expanding on hover.</li>
+<li><strong>Hover Image Trail</strong> - Mouse leaves popping image trail.</li>
+<li><strong>Glitch Effect Image</strong> - RGB-channel shift on hover.</li>
+</ul>
+<h3>Typography &amp; Text</h3>
+<ul>
+<li><strong>Kinetic Marquee</strong> - Endless text bands reversing on scroll.</li>
+<li><strong>Text Mask Reveal</strong> - Massive type as transparent window to video.</li>
+<li><strong>Text Scramble Effect</strong> - Matrix-style decoding on load / hover.</li>
+<li><strong>Circular Text Path</strong> - Text curving along spinning circle.</li>
+<li><strong>Gradient Stroke Animation</strong> - Outlined text with running gradient.</li>
+<li><strong>Kinetic Typography Grid</strong> - Letters dodging the cursor.</li>
+</ul>
+<h3>Micro-Interactions &amp; Effects</h3>
+<ul>
+<li><strong>Particle Explosion Button</strong> - CTA shatters into particles on success.</li>
+<li><strong>Liquid Pull-to-Refresh</strong> - Reload indicator like detaching droplets.</li>
+<li><strong>Skeleton Shimmer</strong> - Shifting light reflection across placeholders.</li>
+<li><strong>Directional Hover-Aware Button</strong> - Fill enters from cursor's exact side.</li>
+<li><strong>Ripple Click Effect</strong> - Wave from click coordinates.</li>
+<li><strong>Animated SVG Line Drawing</strong> - Vectors drawing themselves in real time.</li>
+<li><strong>Mesh Gradient Background</strong> - Organic lava-lamp blobs.</li>
+<li><strong>Lens Blur Depth</strong> - Background UI blurred to focus foreground action.</li>
+</ul>
+<h3>Animation Library Choice</h3>
+<ul>
+<li><strong>Motion (<code>motion/react</code>)</strong> - default for UI / Bento / state-change motion.</li>
+<li><strong>GSAP + ScrollTrigger</strong> - for full-page scrolltelling and scroll hijacks. Isolate in dedicated leaf components with <code>useEffect</code> cleanup.</li>
+<li><strong>Three.js / WebGL</strong> - for canvas backgrounds and 3D scenes. Same isolation rule.</li>
+<li><strong>NEVER mix GSAP / Three.js with Motion in the same component tree.</strong> They fight over the same frames.</li>
+</ul>
+<hr />
+<h2>11. REDESIGN PROTOCOL</h2>
+<p>This skill handles <strong>greenfield builds AND redesigns</strong>. Misclassifying the mode is the single biggest source of bad redesign output.</p>
+<h3>11.A Detect the Mode (first action)</h3>
+<ul>
+<li><strong>Greenfield</strong> - no existing site, or full overhaul approved. Dial baseline from Section 1.</li>
+<li><strong>Redesign - Preserve</strong> - modernise without breaking the brand. Audit first, extract brand tokens, evolve gradually.</li>
+<li><strong>Redesign - Overhaul</strong> - new visual language on top of existing content. Treat as greenfield for visuals; preserve content and IA.</li>
+</ul>
+<p>If ambiguous, ask <strong>once</strong>: <em>"Should this redesign preserve the existing brand, or are we starting visually from scratch?"</em></p>
+<h3>11.B Audit Before Touching</h3>
+<p>Document the current state before proposing changes:
+* <strong>Brand tokens</strong> - primary / accent colors, type stack, logo treatment, radii.
+* <strong>Information architecture</strong> - page tree, primary nav, key conversion paths.
+* <strong>Content blocks</strong> - what exists, what's doing work, what's filler.
+* <strong>Patterns to preserve</strong> - signature interactions, recognisable hero, copy voice.
+* <strong>Patterns to retire</strong> - AI-slop tells, broken layouts, dead links, generic stock imagery, perf traps.
+* <strong>Dial reading of the existing site</strong> - infer current <code>DESIGN_VARIANCE</code> / <code>MOTION_INTENSITY</code> / <code>VISUAL_DENSITY</code>. That's your starting point, not the baseline.
+* <strong>SEO baseline</strong> - current ranking pages, meta titles, structured data, OG cards. <strong>SEO migration is the #1 redesign risk.</strong></p>
+<h3>11.C Preservation Rules</h3>
+<ul>
+<li><strong>Do not change information architecture</strong> unless asked. Keep page slugs, anchor IDs, primary nav labels stable for SEO and muscle memory.</li>
+<li><strong>Extract brand colors before applying Section 4.2.</strong> A brand that is already purple stays purple - apply the LILA RULE's override.</li>
+<li><strong>Preserve copy voice</strong> unless asked for a rewrite. Visual modernisation ≠ content rewrite.</li>
+<li><strong>Honor existing accessibility wins.</strong> Do not regress focus states, alt text, keyboard nav, contrast.</li>
+<li><strong>Respect existing analytics events.</strong> Do not rename buttons, form fields, section IDs that downstream tracking depends on.</li>
+</ul>
+<h3>11.D Modernisation Levers (priority order)</h3>
+<p>Apply in order - stop when the brief is satisfied:
+1. <strong>Typography refresh</strong> - biggest visual lift per unit of risk.
+2. <strong>Spacing &amp; rhythm</strong> - increase section padding, fix vertical rhythm.
+3. <strong>Color recalibration</strong> - desaturate, unify neutrals, keep brand accent.
+4. <strong>Motion layer</strong> - add <code>MOTION_INTENSITY</code>-appropriate micro-interactions to existing components.
+5. <strong>Hero &amp; key-section recomposition</strong> - restructure top-of-funnel using Section 10 vocabulary.
+6. <strong>Full block replacement</strong> - only when the existing block is unsalvageable.</p>
+<h3>11.E Decision Tree: Targeted Evolution vs Full Redesign</h3>
+<ul>
+<li>IA, content, and SEO sound → <strong>targeted evolution</strong> (Levers 1-4). ~70% of value at ~40% of risk.</li>
+<li>Visual debt is structural (broken IA, no design system, broken mobile) → <strong>full redesign</strong> with strict content preservation.</li>
+<li>Brand itself is changing → <strong>greenfield</strong>.</li>
+</ul>
+<h3>11.F What Never Changes Silently</h3>
+<p>Never modify without explicit user approval:
+* URL structure / route slugs.
+* Primary nav labels.
+* Form field names or order (breaks analytics + autofill).
+* Brand logo or wordmark.
+* Existing legal / consent / cookie copy.</p>
+<hr />
+<h2>12. THE BLOCK LIBRARY (Contract - Implementations Land Here Iteratively)</h2>
+<p>The Reference Vocabulary (Section 10) names patterns. The Block Library implements them with real props, real motion specs, and real code sketches.</p>
+<p><strong>Status:</strong> schema defined here. Blocks will be added iteratively. Do not freelance new blocks without following this schema.</p>
+<h3>12.A File Location</h3>
+<pre><code>skills/taste-skill/blocks/
+  hero/
+    asymmetric-split.md
+    editorial-manifesto.md
+    kinetic-type.md
+    ...
+  feature/
+    bento-grid.md
+    sticky-scroll-stack.md
+    zig-zag.md
+    ...
+  social-proof/
+  pricing/
+  cta/
+  footer/
+  navigation/
+  portfolio/
+  transition/
+</code></pre>
+<h3>12.B Required Frontmatter</h3>
+<pre><code class="language-yaml">---
+name: asymmetric-split-hero
+category: hero
+dial_compatibility:
+  variance: [6, 10]
+  motion: [3, 10]
+  density: [2, 5]
+when_to_use: &quot;Landing pages with one strong asset and one strong message. Default hero for SaaS, agency, premium consumer.&quot;
+not_for: &quot;Editorial / manifesto launches where the message IS the design.&quot;
+stack: [&quot;react&quot;, &quot;next&quot;, &quot;tailwind&quot;, &quot;motion&quot;]
+---
+</code></pre>
+<h3>12.C Required Body Sections</h3>
+<ol>
+<li><strong>Visual sketch</strong> - short ASCII or description of the layout.</li>
+<li><strong>Props API</strong> - the component's interface.</li>
+<li><strong>Code sketch</strong> - minimal working implementation (Server Component default, Client island for motion).</li>
+<li><strong>Mobile fallback</strong> - explicit collapse rules for <code>&lt; 768px</code>.</li>
+<li><strong>Motion variants</strong> - one variant per <code>MOTION_INTENSITY</code> band (1-3, 4-7, 8-10). Reduced-motion fallback explicit.</li>
+<li><strong>Dark-mode notes</strong> - token strategy specific to this block.</li>
+<li><strong>Anti-patterns</strong> - common ways this block goes wrong.</li>
+<li><strong>References</strong> - links to real examples in production.</li>
+</ol>
+<h3>12.D Block-Library Discipline</h3>
+<ul>
+<li>One block per file. No multi-block files.</li>
+<li>Every block must work standalone (drop it into a page, it renders).</li>
+<li>Every block must pass the Pre-Flight Check (Section 14).</li>
+<li>Blocks that depend on a design system from Section 2.A live under <code>blocks/&lt;category&gt;/&lt;name&gt;--&lt;system&gt;.md</code> (e.g. <code>feature/bento-grid--material.md</code>).</li>
+</ul>
+<hr />
+<h2>13. OUT OF SCOPE</h2>
+<p>This skill is NOT for:
+* Dashboards / dense product UI / admin panels (use Fluent, Carbon, Atlassian, or Polaris from Section 2.A).
+* Data tables (use TanStack Table or AG Grid).
+* Multi-step forms / wizards (use Form-specific patterns; this skill won't make them better).
+* Code editors (use Monaco / CodeMirror with their official skinning).
+* Native mobile (use Apple HIG / Material directly).
+* Realtime collab UIs (presence, cursors, OT-aware - different problem class).</p>
+<p>If the brief is one of the above, <strong>say so explicitly</strong>, point to the right tool, and only apply this skill's marketing-page / about-page / landing-page parts to the surfaces where they apply.</p>
+<hr />
+<h2>14. FINAL PRE-FLIGHT CHECK</h2>
+<p>Run this matrix before outputting code. This is the last filter.</p>
+<p><strong>THIS IS NOT OPTIONAL. Run every box. If any box fails, the output is not done.</strong></p>
+<ul>
+<li>[ ] <strong>Brief inference</strong> declared (Section 0.B one-liner)?</li>
+<li>[ ] <strong>Dial values</strong> explicit and reasoned from the brief, not silently using baseline?</li>
+<li>[ ] <strong>Design system</strong> chosen from Section 2 if applicable, or aesthetic labeled honestly?</li>
+<li>[ ] <strong>Redesign mode</strong> detected and audit performed (if applicable, Section 11)?</li>
+<li>[ ] <strong>ZERO em-dashes (<code>—</code>) anywhere on the page.</strong> Headlines, eyebrows, pills, body, quotes, attribution, captions, buttons, alt text. Zero. (Section 9.G - non-negotiable.)</li>
+<li>[ ] <strong>Page Theme Lock</strong>: ONE theme (light, dark, or auto) for the whole page. No section flips to inverted mode mid-page (Section 4.11)?</li>
+<li>[ ] <strong>Color Consistency Lock</strong>: one accent color used identically across all sections (Section 4.2)?</li>
+<li>[ ] <strong>Shape Consistency Lock</strong>: one corner-radius system applied consistently (Section 4.4)?</li>
+<li>[ ] <strong>Button Contrast Check</strong>: every CTA text is readable against its background (no white-on-white, WCAG AA 4.5:1)?</li>
+<li>[ ] <strong>CTA Button Wrap</strong>: no CTA label wraps to 2+ lines at desktop?</li>
+<li>[ ] <strong>Form Contrast Check</strong>: form inputs, placeholders, focus rings, labels all pass WCAG AA against the section background?</li>
+<li>[ ] <strong>Serif discipline</strong>: if a serif is used, it is NOT Fraunces or Instrument_Serif (or it is, with explicit brand justification)? Different serif from your previous project?</li>
+<li>[ ] <strong>Premium-consumer palette check</strong>: if the brief is premium-consumer (cookware / wellness / artisan / luxury), the palette is NOT the AI-default beige+brass+oxblood+espresso family? Different family from your previous premium-consumer project?</li>
+<li>[ ] <strong>Italic descender clearance</strong>: every italic word with <code>y g j p q</code> has <code>leading-[1.1]</code> min + <code>pb-1</code> reserve?</li>
+<li>[ ] <strong>Hero fits the viewport</strong>: headline ≤ 2 lines, subtext ≤ 20 words AND ≤ 4 lines, CTA visible without scroll, font scale planned around image?</li>
+<li>[ ] <strong>Hero top padding</strong>: max <code>pt-24</code> at desktop, hero content does not float halfway down the viewport?</li>
+<li>[ ] <strong>Hero stack discipline</strong>: max 4 text elements in hero (eyebrow OR brand strip, headline, subtext, CTAs)? No tiny tagline below CTAs, no trust micro-strip in hero?</li>
+<li>[ ] <strong>EYEBROW COUNT (mechanical)</strong>: count instances of <code>uppercase tracking</code> micro-labels above section headlines across all components. Count ≤ ceil(sectionCount / 3)? Hero counts as 1.</li>
+<li>[ ] <strong>Split-Header Ban</strong>: no "left big headline + right small explainer paragraph" pattern as a section header (vertical stack instead)?</li>
+<li>[ ] <strong>Zigzag Alternation Cap</strong>: no 3+ consecutive sections with the same image+text-split layout?</li>
+<li>[ ] <strong>No Duplicate CTA Intent</strong>: no two CTAs with the same intent ("Get in touch" + "Let's talk" both on page = Fail)?</li>
+<li>[ ] <strong>Logo wall = logo only</strong>: no industry / category labels printed below logos?</li>
+<li>[ ] <strong>Bento Background Diversity</strong>: at least 2-3 bento cells have real visual variation (image, gradient, pattern), not all white-on-white text cards?</li>
+<li>[ ] <strong>"Used by / Trusted by" logo wall</strong> lives UNDER the hero, not inside it, uses REAL SVG logos (Simple Icons / devicon) or generated SVG marks, NOT plain text wordmarks?</li>
+<li>[ ] <strong>Copy Self-Audit</strong>: every visible string re-read, no grammatically-broken or AI-hallucinated phrases ("free on its past" type) shipped?</li>
+<li>[ ] <strong>Motion motivated</strong>: every animation can be justified in one sentence (hierarchy / storytelling / feedback / state transition), no GSAP-for-show?</li>
+<li>[ ] <strong>Marquee max-one-per-page</strong>: no two horizontal marquees on the same page?</li>
+<li>[ ] <strong>Navigation on ONE line</strong> at desktop, height ≤ 80px?</li>
+<li>[ ] <strong>Section-Layout-Repetition</strong> check: no two sections share the same layout family (at least 4 different families across 8 sections)?</li>
+<li>[ ] <strong>Bento has rhythm AND exact cell count</strong> (N items → N cells, no empty cells in middle or at end)?</li>
+<li>[ ] <strong>Long lists use the right UI component</strong> (not default <code>&lt;ul&gt;</code> with <code>divide-y</code> for &gt; 5 items - see Section 4.9 alternatives)?</li>
+<li>[ ] <strong>Real images used</strong> (gen-tool first, then Picsum-seed, then explicit placeholder slots) - NO div-based fake screenshots, NO hand-rolled decorative SVGs, NO pure-text minimalism?</li>
+<li>[ ] <strong>No pills/labels overlaid on images</strong> (no <code>Plate · Brand</code>, no <code>Field notes - journal</code>)?</li>
+<li>[ ] <strong>No photo-credit captions as decoration</strong> (<code>Field study no. 12 · Ines Caetano</code>)?</li>
+<li>[ ] <strong>No version footers</strong> (<code>v1.4.2</code>, <code>Build 0048</code>) on marketing pages?</li>
+<li>[ ] <strong>No micro-meta-sentences</strong> under eyebrows ("Each of these is a feature we ship today...")?</li>
+<li>[ ] <strong>No decoration text strip at hero bottom</strong> (<code>BRAND. MOTION. SPATIAL.</code>)?</li>
+<li>[ ] <strong>No floating top-right sub-text</strong> in section headings?</li>
+<li>[ ] <strong>No scoring/progress bars with filled background tracks</strong> as comparison visuals?</li>
+<li>[ ] <strong>No locale / city-name / time / weather strips</strong> unless brief is genuinely globally-distributed or place-focused?</li>
+<li>[ ] <strong>No scroll cues</strong> (<code>Scroll</code>, <code>↓ scroll</code>, <code>Scroll to explore</code>)?</li>
+<li>[ ] <strong>No version labels in hero</strong> (V0.6, BETA, INVITE-ONLY) unless the brief is a launch?</li>
+<li>[ ] <strong>No section-numbering eyebrows</strong> (<code>00 / INDEX</code>, <code>001 · Capabilities</code>, <code>06 · how it works</code>)?</li>
+<li>[ ] <strong>No decorative dots</strong> (zero by default, only for real semantic state)?</li>
+<li>[ ] <strong>No <code>border-t</code> + <code>border-b</code> on every row</strong> of long lists / spec tables?</li>
+<li>[ ] <strong>Content density</strong> sane: no 20-row data tables, no fake-precise specs without justification, ≤ 25-word sub-paragraphs by default?</li>
+<li>[ ] <strong>Quotes ≤ 3 lines</strong> of body, attribution clean (no em-dash)?</li>
+<li>[ ] <strong>Motion claimed = motion shown</strong>: if <code>MOTION_INTENSITY &gt; 4</code>, page actually animates, not just claimed?</li>
+<li>[ ] <strong>GSAP sticky-stack / horizontal-pan</strong> implemented per Section 5.A / 5.B canonical skeleton (<code>start: "top top"</code>, <code>pin: true</code>, correct scrub)?</li>
+<li>[ ] <strong>No <code>window.addEventListener('scroll')</code></strong> - using Motion <code>useScroll()</code> / ScrollTrigger / IntersectionObserver / CSS scroll-driven animations only?</li>
+<li>[ ] <strong>Reduced motion</strong> wrapped for everything <code>MOTION_INTENSITY &gt; 3</code>?</li>
+<li>[ ] <strong>Dark mode</strong> tokens defined and tested in both modes?</li>
+<li>[ ] <strong>Mobile collapse</strong> explicit (<code>w-full</code>, <code>px-4</code>, <code>max-w-7xl mx-auto</code>) for high-variance layouts?</li>
+<li>[ ] <strong>Viewport stability</strong>: <code>min-h-[100dvh]</code>, never <code>h-screen</code>?</li>
+<li>[ ] <strong><code>useEffect</code> animations</strong> have strict cleanup functions?</li>
+<li>[ ] <strong>Empty / loading / error</strong> states provided?</li>
+<li>[ ] <strong>Cards omitted</strong> in favor of spacing where possible?</li>
+<li>[ ] <strong>Icons</strong> from an allowed library only (Phosphor / HugeIcons / Radix / Tabler), no hand-rolled SVG paths?</li>
+<li>[ ] <strong>Motion</strong> isolated in client-leaf components with <code>'use client'</code> at the top, memoized?</li>
+<li>[ ] <strong>No AI Tells</strong> from Section 9 (Inter as default, AI-purple, three-equal cards, Jane Doe, Acme, "Quietly in use at")?</li>
+<li>[ ] <strong>Core Web Vitals</strong> plausibly hit (LCP &lt; 2.5s, INP &lt; 200ms, CLS &lt; 0.1)?</li>
+<li>[ ] <strong>One design system</strong> per project (no Material + shadcn mixed)?</li>
+</ul>
+<p>If a single checkbox cannot be honestly ticked, the page is not done. Fix it before delivering.</p>
+<hr />
+<h1>APPENDICES - Real Source-Backed Reference Material</h1>
+<p>The sections below are vendored reference content. They give the agent real install commands, real canonical doc links, and real working starter snippets for each design system named in Section 2. Use them to ground decisions in production reality, not training-data fiction.</p>
+<h2>Appendix A - Install Commands per Design System</h2>
+<pre><code class="language-bash"># Material Web (Material 3)
+npm install @material/web
+
+# Fluent UI React (v9)
+npm install @fluentui/react-components
+
+# Fluent UI Web Components (framework-free)
+npm install @fluentui/web-components @fluentui/tokens
+
+# IBM Carbon
+npm install @carbon/react @carbon/styles
+
+# Radix Themes
+npm install @radix-ui/themes
+
+# shadcn/ui (open code, owned components)
+npx shadcn@latest init
+npx shadcn@latest add button card badge separator input
+
+# Primer CSS (GitHub product/devtool UI)
+npm install --save @primer/css
+
+# Primer Brand (GitHub marketing UI)
+npm install @primer/react-brand
+
+# GOV.UK Frontend
+npm install govuk-frontend
+
+# USWDS (US Web Design System)
+npm install uswds
+
+# Atlassian Design System (Atlaskit)
+yarn add @atlaskit/css-reset @atlaskit/tokens @atlaskit/button @atlaskit/badge @atlaskit/section-message @atlaskit/card
+
+# Bootstrap 5.3
+npm install bootstrap
+
+# Shopify Polaris Web Components (Shopify apps only)
+# Add this to your app HTML head:
+#   &lt;meta name=&quot;shopify-api-key&quot; content=&quot;%SHOPIFY_API_KEY%&quot; /&gt;
+#   &lt;script src=&quot;https://cdn.shopify.com/shopifycloud/polaris.js&quot;&gt;&lt;/script&gt;
+</code></pre>
+<h2>Appendix B - Canonical Sources (read these before reinventing)</h2>
+<h3>Material Web</h3>
+<ul>
+<li>https://github.com/material-components/material-web</li>
+<li>https://material-web.dev/theming/material-theming/</li>
+<li>https://m3.material.io/develop/web</li>
+</ul>
+<h3>Fluent UI</h3>
+<ul>
+<li>https://fluent2.microsoft.design/get-started/develop</li>
+<li>https://fluent2.microsoft.design/components/web/react/</li>
+<li>https://github.com/microsoft/fluentui</li>
+<li>https://learn.microsoft.com/en-us/fluent-ui/web-components/</li>
+</ul>
+<h3>Carbon</h3>
+<ul>
+<li>https://carbondesignsystem.com/</li>
+<li>https://github.com/carbon-design-system/carbon</li>
+<li>https://carbondesignsystem.com/developing/react-tutorial/overview/</li>
+<li>https://carbondesignsystem.com/developing/web-components-tutorial/overview/</li>
+</ul>
+<h3>Shopify Polaris</h3>
+<ul>
+<li>https://shopify.dev/docs/api/app-home/web-components</li>
+<li>https://github.com/Shopify/polaris-react</li>
+<li>https://polaris-react.shopify.com/components</li>
+</ul>
+<h3>Atlassian</h3>
+<ul>
+<li>https://atlassian.design/get-started/develop</li>
+<li>https://atlassian.design/components/button/examples</li>
+<li>https://atlaskit.atlassian.com/packages/design-system/button/example/disabled</li>
+<li>https://atlassian.design/tokens/design-tokens</li>
+</ul>
+<h3>Primer</h3>
+<ul>
+<li>https://primer.style/</li>
+<li>https://github.com/primer/css</li>
+<li>https://github.com/primer/brand</li>
+</ul>
+<h3>GOV.UK</h3>
+<ul>
+<li>https://design-system.service.gov.uk/components/button/</li>
+<li>https://design-system.service.gov.uk/styles/layout/</li>
+<li>https://github.com/alphagov/govuk-frontend</li>
+</ul>
+<h3>USWDS</h3>
+<ul>
+<li>https://designsystem.digital.gov/documentation/developers/</li>
+<li>https://designsystem.digital.gov/components/button/</li>
+<li>https://designsystem.digital.gov/components/card/</li>
+<li>https://github.com/uswds/uswds</li>
+</ul>
+<h3>Bootstrap</h3>
+<ul>
+<li>https://getbootstrap.com/docs/5.3/layout/grid/</li>
+<li>https://getbootstrap.com/docs/5.3/components/card/</li>
+</ul>
+<h3>Tailwind</h3>
+<ul>
+<li>https://tailwindcss.com/docs/dark-mode</li>
+<li>https://tailwindcss.com/blog/tailwindcss-v4</li>
+</ul>
+<h3>Radix</h3>
+<ul>
+<li>https://www.radix-ui.com/themes/docs/components/theme</li>
+<li>https://www.radix-ui.com/themes/docs/components/card</li>
+<li>https://github.com/radix-ui/themes</li>
+</ul>
+<h3>shadcn/ui</h3>
+<ul>
+<li>https://ui.shadcn.com/docs</li>
+<li>https://ui.shadcn.com/docs/components/card</li>
+<li>https://github.com/shadcn-ui/ui</li>
+</ul>
+<h3>Native CSS / W3C standards</h3>
+<ul>
+<li>https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/backdrop-filter</li>
+<li>https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@media/prefers-color-scheme</li>
+<li>https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@media/prefers-reduced-motion</li>
+<li>https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Grid_layout</li>
+<li>https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Scroll-driven_animations</li>
+<li>https://drafts.csswg.org/scroll-animations-1/</li>
+</ul>
+<h3>Apple Liquid Glass (Apple platforms only)</h3>
+<ul>
+<li>https://developer.apple.com/design/human-interface-guidelines/materials</li>
+<li>https://developer.apple.com/documentation/TechnologyOverviews/liquid-glass</li>
+<li>https://developer.apple.com/documentation/TechnologyOverviews/adopting-liquid-glass</li>
+<li>https://developer.apple.com/documentation/SwiftUI/Material</li>
+</ul>
+<hr />
+<h2>Appendix C - Apple Liquid Glass: Honest Web Approximation</h2>
+<p>Do <strong>not</strong> treat random CSS snippets as official Apple Liquid Glass.</p>
+<h3>What is official</h3>
+<p>Apple documents Liquid Glass inside Apple's Human Interface Guidelines and Developer Documentation for <strong>Apple platforms</strong>. It is a dynamic material used across Apple platform UI. Apple's native implementation belongs to Apple platform APIs and system components, <strong>not a public web CSS package</strong>.</p>
+<p>Relevant official docs:
+- Apple Human Interface Guidelines → Materials
+- Apple Developer Documentation → Liquid Glass
+- Apple Developer Documentation → Adopting Liquid Glass
+- SwiftUI → Material</p>
+<h3>What is NOT official</h3>
+<p>There is no <code>liquid-glass.css</code> from Apple for normal websites.</p>
+<p>A web approximation can use:
+- <code>backdrop-filter</code>
+- transparent backgrounds
+- layered borders
+- highlight overlays
+- gradients
+- motion
+- strong contrast fallbacks</p>
+<p>But that is <strong>web glassmorphism / frosted-glass approximation</strong>, not official Apple Liquid Glass. Label it as such in comments.</p>
+<h3>Safer web approximation skeleton</h3>
+<pre><code class="language-css">.liquid-glass-web-approx {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  border-radius: 999px;
+  border: 1px solid rgb(255 255 255 / .32);
+  background:
+    linear-gradient(135deg, rgb(255 255 255 / .30), rgb(255 255 255 / .08)),
+    rgb(255 255 255 / .12);
+  backdrop-filter: blur(24px) saturate(180%) contrast(1.05);
+  -webkit-backdrop-filter: blur(24px) saturate(180%) contrast(1.05);
+  box-shadow:
+    inset 0 1px 0 rgb(255 255 255 / .48),
+    inset 0 -1px 0 rgb(255 255 255 / .12),
+    0 18px 60px rgb(0 0 0 / .18);
+}
+
+.liquid-glass-web-approx::before {
+  content: &quot;&quot;;
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: inherit;
+  background:
+    radial-gradient(circle at 20% 0%, rgb(255 255 255 / .55), transparent 34%),
+    linear-gradient(90deg, rgb(255 255 255 / .18), transparent 42%, rgb(255 255 255 / .14));
+  pointer-events: none;
+}
+
+.liquid-glass-web-approx::after {
+  content: &quot;&quot;;
+  position: absolute;
+  inset: 1px;
+  border-radius: inherit;
+  border: 1px solid rgb(255 255 255 / .14);
+  pointer-events: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  .liquid-glass-web-approx {
+    border-color: rgb(255 255 255 / .18);
+    background:
+      linear-gradient(135deg, rgb(255 255 255 / .16), rgb(255 255 255 / .04)),
+      rgb(15 23 42 / .42);
+    box-shadow:
+      inset 0 1px 0 rgb(255 255 255 / .22),
+      0 18px 60px rgb(0 0 0 / .42);
+  }
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  .liquid-glass-web-approx {
+    background: rgb(255 255 255 / .96);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+}
+</code></pre>
+<p><strong>Important:</strong> <code>prefers-reduced-transparency</code> has uneven browser support; test it. Always provide enough contrast even without blur.</p>
+<hr />
+<p><strong>End of appendices.</strong> Install commands above are reality anchors. The Apple Liquid Glass skeleton is a labeled approximation, not an Apple-issued package. For canonical docs per design system, consult the system's official docs (links in Section 2 plus Appendix B).</p></article><footer class="foot wrap"><span data-l="zh-Hans">数据更新于</span><span data-l="zh-Hant">資料更新於</span><span data-l="en">Data updated</span><span data-l="ja">データ更新</span><span data-l="ko">데이터 업데이트</span><span data-l="ms">Data dikemas kini</span><span data-l="vi">Dữ liệu cập nhật</span><span data-l="fr">Données mises à jour</span><span data-l="es">Datos actualizados</span><span data-l="de">Daten aktualisiert</span> 2026-10-14 08:54 UTC · <a href="../../../llms.txt">llms.txt</a> · <a href="../../../api/resources.json">API</a> · <a href="../../../sitemap.xml">sitemap</a></footer><script>(function(){var M={'zh-cn':'zh-Hans','zh-sg':'zh-Hans','zh-tw':'zh-Hant','zh-hk':'zh-Hant','zh-mo':'zh-Hant'},A=['zh-Hans','zh-Hant','en','ja','ko','ms','vi','fr','es','de'],APP={'zh-Hans':'zh-CN','zh-Hant':'zh-TW'};
+function pick(){var q=(location.search.match(/[?&]lang=([\w-]+)/)||[])[1];if(q&&A.indexOf(q)>=0)return q;try{var s=localStorage.getItem('uihub.lang');if(s){s={'zh-CN':'zh-Hans','zh-TW':'zh-Hant'}[s]||s;if(A.indexOf(s)>=0)return s}}catch(e){}
+var n=(navigator.language||'en').toLowerCase();if(M[n])return M[n];if(/^zh-hant/.test(n))return 'zh-Hant';if(n.slice(0,2)==='zh')return 'zh-Hans';var b=n.slice(0,2);return A.indexOf(b)>=0?b:'en'}
+function set(l){document.documentElement.lang=l;var st=document.getElementById('lst');if(!st){st=document.createElement('style');st.id='lst';document.head.appendChild(st)}st.textContent='[data-l="'+l+'"]{display:revert}';document.getElementById('ls').value=l;try{localStorage.setItem('uihub.lang',APP[l]||l)}catch(e){}}
+set(pick());document.getElementById('ls').onchange=function(){set(this.value)};
+document.getElementById('th').onclick=function(){var r=document.documentElement,n=r.dataset.theme==='dark'?'light':'dark';r.dataset.theme=n;try{localStorage.setItem('uihub.theme5',n)}catch(e){}}})();</script></body></html>
