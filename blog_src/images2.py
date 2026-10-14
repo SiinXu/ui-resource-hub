@@ -68,4 +68,8 @@ IMAGES2 = {
   S('https://siinxu.github.io/ui-resource-hub/agents/','UI Hub','UI Hub Agents guide page','UI Hub 的 Agent 指南页'),
   D('flow','The six-step loop','Six-step loop: guide, search, pick, skills, build, verify','六步循环：指南、搜索、挑选、技能、构建、验证',steps=[('1–2','Guide + search','AGENTS.md, /kb/?q='),('3','Pick','resources.json by licence'),('4–5','Skills + build','tokens, one effect'),('6','Verify','390/1440, light/dark')]),
   S('https://siinxu.github.io/ui-resource-hub/kb/','UI Hub','UI Hub design encyclopedia','UI Hub 设计百科')]),
+'claude-design-everywhere': dict(cover=dict(chips=[('8 Oct','Out of beta'),('Design','Every chat'),('Dashboards','Paid beta'),('14 Dec','Standalone ends')]), inline=[
+  S('https://claude.com/product/design','Anthropic','Claude Design product page: design inside every Claude conversation','Claude Design 产品页：在每场 Claude 对话里做设计',dismiss=['button:has-text("Accept")','button:has-text("Accept all")','button:has-text("Got it")','[aria-label*="lose"]','button:has-text("Dismiss")']),
+  D('flow','From chat to shippable UI','Flow: migrate system, brief in chat, refine on canvas, hand off','流程：迁移系统、对话写需求、画布打磨、交接',steps=[('01','Migrate','design systems → Artifacts'),('02','Brief','chat + /design-sync'),('03','Refine','comments · canvas'),('04','Ship','Code / connectors')]),
+  S('https://claude.com/resources/articles/dashboards-and-motion','Anthropic','Anthropic announcement: Dashboards and Motion beta, Design out of beta','Anthropic 公告：Dashboards 与 Motion 测试版，Design 退出测试',dismiss=['button:has-text("Accept")','button:has-text("Accept all")','button:has-text("Got it")','[aria-label*="lose"]'])]),
 }

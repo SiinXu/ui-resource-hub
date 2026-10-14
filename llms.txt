@@ -45,6 +45,7 @@ Use the JSON endpoints, not the SPA, when acting as an agent. Every entry links 
 - [Design skills for Claude and Cursor: SKILL.md, rules and AGENTS.md](https://siinxu.github.io/ui-resource-hub/blog/claude-cursor-design-skills/): Three file formats, one idea: durable instructions an agent loads when relevant. How to write a design skill that changes output, with a template.
 - [Weekly roundup, 14 Oct 2026: guideline files go mainstream](https://siinxu.github.io/ui-resource-hub/blog/weekly-roundup-2026-w42/): Figma agent GA with team guidelines, Lovable drops its pick-a-look step, Magic Patterns launches MagicOS, Chrome iterates on HTML-in-Canvas. What it means for your workflow.
 - [Tutorial: have an agent build a landing page using UI Hub as context](https://siinxu.github.io/ui-resource-hub/blog/tutorial-agent-builds-landing-with-ui-hub/): Six steps from an empty folder to a verified page: load AGENTS.md, search the encyclopedia, pick components, load skills, build, verify in a browser.
+- [Claude Design everywhere: out of beta, into every chat](https://siinxu.github.io/ui-resource-hub/blog/claude-design-everywhere/): Anthropic took Docs, Slides and Design out of beta on every plan, launched Dashboards and Motion in beta, and will close the standalone Design site on 14 Dec 2026. For UI builders the practical move is to migrate the design system now.
 
 ## Top component libraries
 - [Radix Primitives](https://www.radix-ui.com/primitives): 无样式、可访问的 React 底层组件：对话框、下拉菜单、选择器、Tabs、Tooltip 等，shadcn/ui 的地基

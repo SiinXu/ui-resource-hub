@@ -1,5 +1,5 @@
 {
- "count": 25,
+ "count": 26,
  "rss": "https://siinxu.github.io/ui-resource-hub/blog/rss.xml",
  "categories": {
   "tools": "Tools",
@@ -18,6 +18,76 @@
   "weekly": "Series: Weekly roundup"
  },
  "posts": [
+  {
+   "slug": "claude-design-everywhere",
+   "url": "https://siinxu.github.io/ui-resource-hub/blog/claude-design-everywhere/",
+   "date": "2026-10-14",
+   "category": "tools",
+   "series": null,
+   "featured": true,
+   "tags": [
+    "Claude",
+    "Design",
+    "Artifacts",
+    "Dashboards"
+   ],
+   "title": {
+    "en": "Claude Design everywhere: out of beta, into every chat",
+    "zh": "Claude Design 全面开放：退出测试，进入每一场对话",
+    "zht": "Claude Design 全面開放：退出測試，進入每一場對話",
+    "ja": "Claude Designが正式版に：すべての会話で使える",
+    "ko": "Claude Design 정식 출시: 모든 대화에서 사용",
+    "ms": "Claude Design di mana-mana: keluar beta, masuk setiap sembang",
+    "vi": "Claude Design mọi nơi: hết beta, vào mọi cuộc trò chuyện",
+    "fr": "Claude Design partout : fin du bêta, dans chaque chat",
+    "es": "Claude Design en todas partes: fuera de beta, en cada chat",
+    "de": "Claude Design überall: aus der Beta, in jedem Chat"
+   },
+   "summary": {
+    "en": "Anthropic took Docs, Slides and Design out of beta on every plan, launched Dashboards and Motion in beta, and will close the standalone Design site on 14 Dec 2026. For UI builders the practical move is to migrate the design system now.",
+    "zh": "Anthropic 让 Docs、Slides、Design 在所有套餐正式可用，推出 Dashboards 与 Motion 测试版，并宣布独立 Design 站点将于 2026-12-14 关闭。界面构建者现在就该迁移设计系统。",
+    "zht": "Anthropic 讓 Docs、Slides、Design 在所有方案正式可用，推出 Dashboards 與 Motion 測試版，並宣布獨立 Design 站點將於 2026-12-14 關閉。介面建構者現在就該遷移設計系統。",
+    "ja": "AnthropicはDocs/Slides/Designを全プランで正式化し、DashboardsとMotionのベータを開始。スタンドアロンDesignは2026-12-14閉鎖。UI制作者は今すぐデザインシステムを移行すべき。",
+    "ko": "Anthropic이 Docs·Slides·Design을 전 요금제에서 정식 출시하고 Dashboards·Motion 베타를 열었으며, 단독 Design 사이트는 2026-12-14에 닫힌다. UI 제작자는 지금 디자인 시스템을 옮겨야 한다.",
+    "ms": "Anthropic keluarkan Docs, Slides dan Design dari beta pada semua pelan, lancar Dashboards dan Motion beta, dan tutup tapak Design berasingan pada 14 Dis 2026. Pembina UI patut pindahkan sistem reka bentuk sekarang.",
+    "vi": "Anthropic đưa Docs, Slides và Design ra khỏi beta trên mọi gói, mở beta Dashboards và Motion, và đóng site Design độc lập vào 14/12/2026. Người dựng UI nên migrate design system ngay.",
+    "fr": "Anthropic sort Docs, Slides et Design du bêta sur tous les forfaits, lance Dashboards et Motion en bêta, et fermera le site Design autonome le 14 déc. 2026. Les builders UI doivent migrer le design system maintenant.",
+    "es": "Anthropic saca Docs, Slides y Design de beta en todos los planes, lanza Dashboards y Motion en beta, y cerrará el sitio Design independiente el 14 dic 2026. Quien construye UI debe migrar el design system ya.",
+    "de": "Anthropic nimmt Docs, Slides und Design auf allen Plänen aus der Beta, startet Dashboards und Motion in Beta und schließt die eigenständige Design-Site am 14. Dez. 2026. UI-Builder sollten das Design System jetzt migrieren."
+   },
+   "reading_minutes": {
+    "en": 3,
+    "zh": 4
+   },
+   "cover": "https://siinxu.github.io/ui-resource-hub/blog/img/claude-design-everywhere-cover.webp",
+   "references": [
+    {
+     "title": "Build live dashboards and animate explainers with Claude",
+     "by": "Anthropic",
+     "url": "https://claude.com/resources/articles/dashboards-and-motion"
+    },
+    {
+     "title": "Claude Design product page",
+     "by": "Anthropic",
+     "url": "https://claude.com/product/design"
+    },
+    {
+     "title": "Get started with Claude Design",
+     "by": "Claude Help Center",
+     "url": "https://support.claude.com/en/articles/14604416-get-started-with-claude-design"
+    },
+    {
+     "title": "Claude Design admin guide for Team and Enterprise",
+     "by": "Claude Help Center",
+     "url": "https://support.claude.com/en/articles/14604406-claude-design-admin-guide-for-team-and-enterprise-plans"
+    },
+    {
+     "title": "Claude Dashboards and Claude Motion: Anthropic’s new beta tools",
+     "by": "Mad Robot",
+     "url": "https://madrobot.blog/2026/10/08/claude-dashboards-motion-beta-docs-slides-design-free-plan/"
+    }
+   ]
+  },
   {
    "slug": "tutorial-agent-builds-landing-with-ui-hub",
    "url": "https://siinxu.github.io/ui-resource-hub/blog/tutorial-agent-builds-landing-with-ui-hub/",
