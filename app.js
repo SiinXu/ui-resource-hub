@@ -1,10 +1,10 @@
 (function(){
 'use strict';
 var D = window.UI_DATA || {items:[],guides:[]}, M = window.UI_MEDIA || {}, LG = window.UI_LEGAL || {}, I18N = window.UI_I18N || {langs:[['zh-CN','中文']],'zh-CN':{}};
-var LANG = (function(){try{var v=localStorage.getItem('uihub.lang');if(v&&I18N[v])return v}catch(e){}
-  var n=(navigator.language||'zh-CN').toLowerCase(), m={zh:'zh-CN',en:'en',ja:'ja',ko:'ko',ms:'ms',es:'es',de:'de',fr:'fr'}[n.slice(0,2)];return m||'zh-CN'})();
-function t(k,v){var s=(I18N[LANG]&&I18N[LANG][k]!=null)?I18N[LANG][k]:(I18N['zh-CN'][k]!=null?I18N['zh-CN'][k]:k);if(v)Object.keys(v).forEach(function(x){s=s.split('{'+x+'}').join(v[x])});return s}
-function isZh(){return LANG==='zh-CN'}
+var LANG = (function(){try{var qp=(location.search.match(/[?&]lang=([\w-]+)/)||[])[1];qp={'zh-Hans':'zh-CN','zh-Hant':'zh-TW'}[qp]||qp;if(qp&&I18N[qp]){localStorage.setItem('uihub.lang',qp);return qp}}catch(e){} try{var v=localStorage.getItem('uihub.lang');if(v&&I18N[v])return v}catch(e){}
+  var n=(navigator.language||'zh-CN').toLowerCase(); if(/^zh-(tw|hk|mo|hant)/.test(n)&&I18N['zh-TW'])return 'zh-TW'; var m={zh:'zh-CN',en:'en',ja:'ja',ko:'ko',ms:'ms',es:'es',de:'de',fr:'fr',vi:'vi'}[n.slice(0,2)];return m||'zh-CN'})();
+function t(k,v){var s=(I18N[LANG]&&I18N[LANG][k]!=null)?I18N[LANG][k]:(LANG!=='zh-TW'&&LANG!=='zh-CN'&&I18N.en&&I18N.en[k]!=null?I18N.en[k]:(I18N['zh-CN'][k]!=null?I18N['zh-CN'][k]:k));if(v)Object.keys(v).forEach(function(x){s=s.split('{'+x+'}').join(v[x])});return s}
+function isZh(){return LANG==='zh-CN'||LANG==='zh-TW'}
 var ITEMS = D.items, BY = {};
 ITEMS.forEach(function(i){BY[i.id]=i});
 var TYPES = ['all','style','library','component','effect','skill','inspiration','template','generator','guide'];
@@ -18,8 +18,8 @@ var NOTES = window.UI_NOTES || {notes:{},why:{}}, CTO = window.UI_CT_ORDER || []
 // 组件样式卡：名称/说明按语言模板生成（组件类型 · 来源库）
 function styleName(i){return CTN(i.kind)+' · '+i.libName+(i.var?' · '+i.var:'')}
 function syncStyleNames(){ITEMS.forEach(function(i){if(i.type==='style')i.name=styleName(i)})}
-function noteOf(i){if(i.type==='style')return t('cs_note',{lib:i.libName,kind:CTN(i.kind)});var m=!isZh()&&NOTES.notes[LANG];return (m&&m[i.id])||shown(i.note)}
-function whyOf(p,g){var m=!isZh()&&NOTES.why[LANG];return (m&&m[p.id+'@'+g.id])||p.why}
+function noteOf(i){if(i.type==='style')return t('cs_note',{lib:i.libName,kind:CTN(i.kind)});var m=!isZh()&&(NOTES.notes[LANG]||NOTES.notes.en);return (m&&m[i.id])||(!isZh()&&i.noteEn)||shown(i.note)}
+function whyOf(p,g){var m=!isZh()&&(NOTES.why[LANG]||NOTES.why.en);return (m&&m[p.id+'@'+g.id])||p.why}
 function secOf(i){if(isZh())return i.sectionTitle;var n=SECO.indexOf(i.section);return n<0?i.sectionTitle:t('sec_'+n)}
 function CTN(k){return t('ct_'+k)}
 function TN(k){return t('t_'+k)}

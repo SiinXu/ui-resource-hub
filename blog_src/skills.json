@@ -1,0 +1,176 @@
+[
+ {
+  "id": "accessibility",
+  "description": "Audit and improve web accessibility following WCAG 2.2 guidelines. Use when asked to \"improve accessibility\", \"a11y audit\", \"WCAG compliance\", \"screen reader support\", \"keyboard navigation\", or \"make accessible\".",
+  "category": "design",
+  "upstream": null
+ },
+ {
+  "id": "api-design-principles",
+  "description": "Master REST and GraphQL API design principles to build intuitive, scalable, and maintainable APIs that delight developers. Use when designing new APIs, reviewing API specifications, or establishing API design standards.",
+  "category": "engineering",
+  "upstream": null
+ },
+ {
+  "id": "architecture-patterns",
+  "description": "Implement proven backend architecture patterns including Clean Architecture, Hexagonal Architecture, and Domain-Driven Design. Use this skill when designing clean architecture for a new microservice, when refactoring a monolith to use bounded contexts, when implementing hexagonal or onion architecture patterns, or when debugging dependency cycles between application layers.",
+  "category": "engineering",
+  "upstream": null
+ },
+ {
+  "id": "baseline-ui",
+  "description": "Quickly deslop UI code by fixing spacing, hierarchy, typography, and small layout issues. Use when the interface needs a fast cleanup or polish pass.",
+  "category": "design",
+  "upstream": null
+ },
+ {
+  "id": "composition-patterns",
+  "description": "React composition patterns that scale. Use when refactoring components with",
+  "category": "engineering-ui",
+  "upstream": null
+ },
+ {
+  "id": "deploy-to-vercel",
+  "description": "Deploy applications and websites to Vercel. Use when the user requests deployment actions like \"deploy my app\", \"deploy and give me the link\", \"push this live\", or \"create a preview deployment\".",
+  "category": "engineering",
+  "upstream": null
+ },
+ {
+  "id": "emil-design-eng",
+  "description": "This skill encodes Emil Kowalski's philosophy on UI polish, component design, animation decisions, and the invisible details that make software feel great.",
+  "category": "design",
+  "upstream": null
+ },
+ {
+  "id": "fastapi-templates",
+  "description": "Create production-ready FastAPI projects with async patterns, dependency injection, and comprehensive error handling. Use when building new FastAPI applications or setting up backend API projects.",
+  "category": "engineering",
+  "upstream": null
+ },
+ {
+  "id": "frontend-design",
+  "description": "Guidance for distinctive, intentional visual design when building new UI or reshaping an existing one. Helps with aesthetic direction, typography, and making choices that don't read as templated defaults.",
+  "category": "design",
+  "upstream": "https://github.com/anthropics/skills"
+ },
+ {
+  "id": "github-actions-templates",
+  "description": "Create production-ready GitHub Actions workflows for automated testing, building, and deploying applications. Use when setting up CI/CD with GitHub Actions, automating development workflows, or creating reusable workflow templates.",
+  "category": "engineering",
+  "upstream": null
+ },
+ {
+  "id": "impeccable",
+  "description": "Use when the user wants to design, redesign, shape, critique, audit, polish, clarify, distill, harden, optimize, adapt, animate, colorize, extract, or otherwise improve a frontend interface. Covers websites, landing pages, dashboards, product UI, app shells, components, forms, settings, onboarding, and empty states. Handles UX review, visual hierarchy, information architecture, cognitive load, acc",
+  "category": "design",
+  "upstream": "https://github.com/pbakaus/impeccable"
+ },
+ {
+  "id": "iterate-until-verified",
+  "description": "Apply a prompt-agnostic execution and verification loop to any substantial task while preserving the original request. Use when the user asks to fan out work, use subagents or independent reviewers, loop until done, benchmark against references, apply a harsh critic, compare candidates blind, improve an existing prompt with verification, or continue until explicit quality gates pass.",
+  "category": "engineering-ui",
+  "upstream": null
+ },
+ {
+  "id": "javascript-testing-patterns",
+  "description": "Implement comprehensive testing strategies using Jest, Vitest, and Testing Library for unit tests, integration tests, and end-to-end testing with mocking, fixtures, and test-driven development. Use when writing JavaScript/TypeScript tests, setting up test infrastructure, or implementing TDD/BDD workflows.",
+  "category": "engineering",
+  "upstream": null
+ },
+ {
+  "id": "mcp-builder",
+  "description": "Guide for creating high-quality MCP (Model Context Protocol) servers that enable LLMs to interact with external services through well-designed tools. Use when building MCP servers to integrate external APIs or services, whether in Python (FastMCP) or Node/TypeScript (MCP SDK).",
+  "category": "engineering",
+  "upstream": "https://github.com/anthropics/skills"
+ },
+ {
+  "id": "nodejs-backend-patterns",
+  "description": "Build production-ready Node.js backend services with Express/Fastify, implementing middleware patterns, error handling, authentication, database integration, and API design best practices. Use when creating Node.js servers, REST APIs, GraphQL backends, or microservices architectures.",
+  "category": "engineering",
+  "upstream": null
+ },
+ {
+  "id": "performance",
+  "description": "Optimize web performance for faster loading and better user experience. Use when asked to \"speed up my site\", \"optimize performance\", \"reduce load time\", \"fix slow loading\", \"improve page speed\", or \"performance audit\".",
+  "category": "engineering-ui",
+  "upstream": null
+ },
+ {
+  "id": "playwright-cli",
+  "description": "Automate browser interactions, test web pages and work with Playwright tests.",
+  "category": "engineering-ui",
+  "upstream": null
+ },
+ {
+  "id": "postgresql-table-design",
+  "description": "Use this skill when designing or reviewing a PostgreSQL-specific schema. Covers best-practices, data types, indexing, constraints, performance patterns, and advanced features",
+  "category": "engineering",
+  "upstream": null
+ },
+ {
+  "id": "rag-implementation",
+  "description": "Build Retrieval-Augmented Generation (RAG) systems for LLM applications with vector databases and semantic search. Use when implementing knowledge-grounded AI, building document Q&A systems, or integrating LLMs with external knowledge bases.",
+  "category": "engineering",
+  "upstream": null
+ },
+ {
+  "id": "react-best-practices",
+  "description": "React and Next.js performance optimization guidelines from Vercel Engineering. This skill should be used when writing, reviewing, or refactoring React/Next.js code to ensure optimal performance patterns. Triggers on tasks involving React components, Next.js pages, data fetching, bundle optimization, or performance improvements.",
+  "category": "engineering-ui",
+  "upstream": null
+ },
+ {
+  "id": "redesign-skill",
+  "description": "Upgrades existing websites and apps to premium quality. Audits current design, identifies generic AI patterns, and applies high-end design standards without breaking functionality. Works with any CSS framework or vanilla CSS.",
+  "category": "design",
+  "upstream": null
+ },
+ {
+  "id": "secrets-management",
+  "description": "Implement secure secrets management for CI/CD pipelines using Vault, AWS Secrets Manager, or native platform solutions. Use when handling sensitive credentials, rotating secrets, or securing CI/CD environments.",
+  "category": "engineering",
+  "upstream": null
+ },
+ {
+  "id": "stripe-integration",
+  "description": "Implement Stripe payment processing for robust, PCI-compliant payment flows including checkout, subscriptions, and webhooks. Use when integrating Stripe payments, building subscription systems, or implementing secure checkout flows.",
+  "category": "engineering",
+  "upstream": null
+ },
+ {
+  "id": "taste-skill",
+  "description": "Anti-slop frontend skill for landing pages, portfolios, and redesigns. The agent reads the brief, infers the right design direction, and ships interfaces that do not look templated. Real design systems when applicable, audit-first on redesigns, strict pre-flight check.",
+  "category": "design",
+  "upstream": "https://github.com/Leonxlnx/taste-skill"
+ },
+ {
+  "id": "typescript-advanced-types",
+  "description": "Master TypeScript's advanced type system including generics, conditional types, mapped types, template literals, and utility types for building type-safe applications. Use when implementing complex type logic, creating reusable type utilities, or ensuring compile-time type safety in TypeScript projects.",
+  "category": "engineering",
+  "upstream": null
+ },
+ {
+  "id": "web-design-guidelines",
+  "description": "Review UI code for Web Interface Guidelines compliance. Use when asked to \"review my UI\", \"check accessibility\", \"audit design\", \"review UX\", or \"check my site against best practices\".",
+  "category": "design",
+  "upstream": null
+ },
+ {
+  "id": "web-quality-audit",
+  "description": "Run an evidence-led web quality audit covering performance, accessibility, SEO, best practices, and agentic browsing. Use when asked to \"audit my site\", \"review web quality\", \"run lighthouse audit\", \"check page quality\", or \"optimize my website\".",
+  "category": "design",
+  "upstream": null
+ },
+ {
+  "id": "webapp-testing",
+  "description": "Toolkit for interacting with and testing local web applications using Playwright. Supports verifying frontend functionality, debugging UI behavior, capturing browser screenshots, and viewing browser logs.",
+  "category": "engineering-ui",
+  "upstream": "https://github.com/anthropics/skills"
+ },
+ {
+  "id": "workflow-ship-change",
+  "description": "Ship every change the way the user requires, with the guardrails. Take screenshots of the start, the key moment and the result; give the change its own changelog version with pictures; verify with tests; commit only your own files; merge with the latest main and push as a fast-forward; publish that exact main live; confirm each step; and report measured sizes, asking before any upload over 50 MB. ",
+  "category": "engineering",
+  "upstream": null
+ }
+]

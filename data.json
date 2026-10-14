@@ -1,6 +1,6 @@
 {
- "generated": "2026-10-10",
- "count": 2357,
+ "generated": "2026-10-14",
+ "count": 2376,
  "items": [
   {
    "id": "ued-figma-mcp-guide",
@@ -71413,6 +71413,575 @@
     "minimal",
     "enterprise"
    ]
+  },
+  {
+   "id": "lib-coss-origin",
+   "name": "Origin UI (coss.com/origin)",
+   "url": "https://coss.com/origin",
+   "note": "大量可直接复制的 shadcn 风格基础组件：输入框、按钮、选择器、日期、表格、时间线等，Tailwind + React，开源",
+   "type": "library",
+   "section": "开源组件库 · 2026-10 补全",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "开源"
+   ],
+   "ct": [
+    "input",
+    "button",
+    "select",
+    "table",
+    "form",
+    "nav"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "added": "2026-10-14",
+   "noteEn": "Huge set of copy-paste shadcn-style primitives: inputs, buttons, selects, dates, tables, timelines. Tailwind + React, open source."
+  },
+  {
+   "id": "lib-inspira-ui",
+   "name": "Inspira UI",
+   "url": "https://inspira-ui.com",
+   "note": "Vue / Nuxt 版本的动效组件集合，思路与 Aceternity、Magic UI 相近，免费开源",
+   "type": "library",
+   "section": "开源组件库 · 2026-10 补全",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "Vue",
+    "开源"
+   ],
+   "ct": [
+    "motion",
+    "background",
+    "card",
+    "button"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "motion"
+   ],
+   "added": "2026-10-14",
+   "noteEn": "Vue/Nuxt animated components in the spirit of Aceternity and Magic UI. Free and open source."
+  },
+  {
+   "id": "lib-tailark",
+   "name": "Tailark",
+   "url": "https://tailark.com",
+   "note": "shadcn 风格的营销页区块：Hero、特性、日志墙、CTA，免费区块可直接复制",
+   "type": "library",
+   "section": "开源组件库 · 2026-10 补全",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "freemium",
+   "tags": [
+    "React",
+    "shadcn"
+   ],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "added": "2026-10-14",
+   "noteEn": "shadcn-style marketing blocks: hero, features, testimonials, CTA. Free blocks are copy-paste."
+  },
+  {
+   "id": "lib-shadcn-studio",
+   "name": "shadcn/studio",
+   "url": "https://shadcnstudio.com",
+   "note": "shadcn 组件变体与主题生成器，按组件给出大量样式变体，可一键复制",
+   "type": "library",
+   "section": "开源组件库 · 2026-10 补全",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "freemium",
+   "tags": [
+    "React",
+    "开源",
+    "shadcn"
+   ],
+   "ct": [
+    "button",
+    "input",
+    "card",
+    "form"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "added": "2026-10-14",
+   "noteEn": "Variant gallery and theme generator for shadcn/ui components, copy any variant."
+  },
+  {
+   "id": "lib-zag",
+   "name": "Zag.js",
+   "url": "https://zagjs.com",
+   "note": "用状态机实现的无框架 UI 组件逻辑（Ark UI 的底层），React/Vue/Solid/Svelte 通用",
+   "type": "library",
+   "section": "开源组件库 · 2026-10 补全",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Vue",
+    "Svelte",
+    "开源"
+   ],
+   "ct": [
+    "dialog",
+    "menu",
+    "select",
+    "tabs"
+   ],
+   "rt": [
+    "component-library",
+    "a11y"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "added": "2026-10-14",
+   "noteEn": "Framework-agnostic UI component logic built on state machines (powers Ark UI). React/Vue/Solid/Svelte."
+  },
+  {
+   "id": "lib-ui-layouts",
+   "name": "UI Layouts",
+   "url": "https://www.ui-layouts.com",
+   "note": "React + Tailwind 的布局与动效组件：图片画廊、抽屉、轮播、滚动动效",
+   "type": "library",
+   "section": "开源组件库 · 2026-10 补全",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "开源"
+   ],
+   "ct": [
+    "layout",
+    "motion",
+    "dialog"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "motion"
+   ],
+   "added": "2026-10-14",
+   "noteEn": "React + Tailwind layout and motion components: galleries, drawers, carousels, scroll effects."
+  },
+  {
+   "id": "lib-cuicui",
+   "name": "Cuicui",
+   "url": "https://cuicui.day",
+   "note": "可复制粘贴的 React 组件与区块，按场景分类，带实时预览",
+   "type": "library",
+   "section": "开源组件库 · 2026-10 补全",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "开源"
+   ],
+   "ct": [
+    "button",
+    "card",
+    "layout",
+    "input"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "added": "2026-10-14",
+   "noteEn": "Copy-paste React components and blocks grouped by use case, with live previews."
+  },
+  {
+   "id": "lib-watermelon",
+   "name": "Watermelon UI",
+   "url": "https://www.watermelon.sh",
+   "note": "shadcn 风格的动效组件与区块，偏现代营销页",
+   "type": "library",
+   "section": "开源组件库 · 2026-10 补全",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "开源",
+    "shadcn"
+   ],
+   "ct": [
+    "motion",
+    "layout",
+    "card"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "motion"
+   ],
+   "added": "2026-10-14",
+   "noteEn": "Animated shadcn-style components and blocks for modern marketing pages."
+  },
+  {
+   "id": "lib-neobrutalism",
+   "name": "neobrutalism components",
+   "url": "https://www.neobrutalism.dev",
+   "note": "新粗野主义风格的 shadcn 组件：粗描边、硬阴影、高饱和色",
+   "type": "library",
+   "section": "开源组件库 · 2026-10 补全",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "开源",
+    "shadcn"
+   ],
+   "ct": [
+    "button",
+    "card",
+    "input"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "brutalist"
+   ],
+   "added": "2026-10-14",
+   "noteEn": "Neo-brutalist shadcn components: thick borders, hard shadows, saturated colours."
+  },
+  {
+   "id": "lib-retroui",
+   "name": "RetroUI",
+   "url": "https://www.retroui.dev",
+   "note": "复古/新粗野风 React 组件库，适合个性化落地页",
+   "type": "library",
+   "section": "开源组件库 · 2026-10 补全",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "开源"
+   ],
+   "ct": [
+    "button",
+    "card",
+    "input"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "brutalist"
+   ],
+   "added": "2026-10-14",
+   "noteEn": "Retro / neo-brutalist React component library for characterful landing pages."
+  },
+  {
+   "id": "lib-8bitcn",
+   "name": "8bitcn/ui",
+   "url": "https://8bitcn.com",
+   "note": "像素风 8-bit 版 shadcn 组件，游戏化与复古站点",
+   "type": "library",
+   "section": "开源组件库 · 2026-10 补全",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "开源",
+    "shadcn"
+   ],
+   "ct": [
+    "button",
+    "card",
+    "dialog"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "playful"
+   ],
+   "added": "2026-10-14",
+   "noteEn": "Pixel-art 8-bit take on shadcn components for games and retro sites."
+  },
+  {
+   "id": "lib-tweakcn",
+   "name": "tweakcn",
+   "url": "https://tweakcn.com",
+   "note": "shadcn/ui 主题可视化编辑器：调色、圆角、字体、阴影，导出 CSS 变量",
+   "type": "generator",
+   "section": "开源组件库 · 2026-10 补全",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "开源",
+    "shadcn",
+    "配色"
+   ],
+   "ct": [
+    "input"
+   ],
+   "rt": [
+    "generator",
+    "theme"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "added": "2026-10-14",
+   "noteEn": "Visual theme editor for shadcn/ui: colours, radius, fonts, shadows; exports CSS variables."
+  },
+  {
+   "id": "lib-jln-themes",
+   "name": "shadcn themes (ui.jln.dev)",
+   "url": "https://ui.jln.dev",
+   "note": "上万套 shadcn/ui 配色主题，可预览后复制 CSS 变量",
+   "type": "generator",
+   "section": "开源组件库 · 2026-10 补全",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "开源",
+    "shadcn",
+    "配色"
+   ],
+   "ct": [],
+   "rt": [
+    "generator",
+    "theme"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "added": "2026-10-14",
+   "noteEn": "Thousands of shadcn/ui colour themes to preview and copy as CSS variables."
+  },
+  {
+   "id": "lib-shadcn-io",
+   "name": "shadcn.io",
+   "url": "https://www.shadcn.io",
+   "note": "社区整理的 shadcn 组件、区块、图标与模板目录",
+   "type": "collection",
+   "section": "开源组件库 · 2026-10 补全",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "开源",
+    "shadcn"
+   ],
+   "ct": [
+    "layout",
+    "button"
+   ],
+   "rt": [
+    "directory"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "added": "2026-10-14",
+   "noteEn": "Community directory of shadcn components, blocks, icons and templates."
+  },
+  {
+   "id": "lib-tailwind-plus-blocks",
+   "name": "Tailwind Plus UI Blocks（含免费示例）",
+   "url": "https://www.tailwindcss.com/plus/ui-blocks",
+   "note": "Tailwind 官方区块库（原 Tailwind UI）。完整版付费，官网有部分免费预览",
+   "type": "library",
+   "section": "开源组件库 · 2026-10 补全",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "paid",
+   "tags": [
+    "React",
+    "Vue",
+    "HTML"
+   ],
+   "ct": [
+    "layout",
+    "form",
+    "nav",
+    "table"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "added": "2026-10-14",
+   "noteEn": "Official Tailwind blocks (formerly Tailwind UI). Full library is paid; some previews are free."
+  },
+  {
+   "id": "lib-aceternity-components",
+   "name": "Aceternity UI 全部组件",
+   "url": "https://ui.aceternity.com/components",
+   "note": "Aceternity 免费组件全列表：聚光灯、3D 卡片、背景光束、文字生成、浮动导航",
+   "type": "library",
+   "section": "开源组件库 · 2026-10 补全",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "开源"
+   ],
+   "ct": [
+    "motion",
+    "background",
+    "card",
+    "nav"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "motion"
+   ],
+   "added": "2026-10-14",
+   "noteEn": "Full list of free Aceternity components: spotlight, 3D cards, background beams, text effects, floating nav."
+  },
+  {
+   "id": "lib-magicui-components",
+   "name": "Magic UI 全部组件",
+   "url": "https://magicui.design/docs/components",
+   "note": "Magic UI 组件全列表：Marquee、Bento Grid、数字滚动、光束、粒子、Dock",
+   "type": "library",
+   "section": "开源组件库 · 2026-10 补全",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "开源",
+    "shadcn"
+   ],
+   "ct": [
+    "motion",
+    "background",
+    "card",
+    "layout"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "motion"
+   ],
+   "added": "2026-10-14",
+   "noteEn": "Full Magic UI component list: marquee, bento grid, number ticker, beams, particles, dock."
+  },
+  {
+   "id": "lib-hover-components",
+   "name": "Hover.dev 组件",
+   "url": "https://www.hover.dev/components",
+   "note": "Hover.dev 动画组件目录：按钮、导航、卡片、Hero；部分免费",
+   "type": "library",
+   "section": "开源组件库 · 2026-10 补全",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "freemium",
+   "tags": [
+    "React"
+   ],
+   "ct": [
+    "motion",
+    "button",
+    "nav",
+    "card"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "motion"
+   ],
+   "added": "2026-10-14",
+   "noteEn": "Hover.dev animated components: buttons, navs, cards, heroes; some free."
+  },
+  {
+   "id": "lib-flowbite-blocks",
+   "name": "Flowbite Blocks",
+   "url": "https://flowbite.com/blocks/",
+   "note": "Flowbite 的 Tailwind 区块：营销页、应用后台、电商；部分免费",
+   "type": "library",
+   "section": "开源组件库 · 2026-10 补全",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "freemium",
+   "tags": [
+    "HTML",
+    "React",
+    "开源"
+   ],
+   "ct": [
+    "layout",
+    "table",
+    "form"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "added": "2026-10-14",
+   "noteEn": "Flowbite Tailwind blocks for marketing, app dashboards and e-commerce; some free."
   }
  ],
  "guides": [
@@ -71614,5 +72183,6 @@
     }
    ]
   }
- ]
+ ],
+ "updatedAt": "2026-10-14T08:54Z"
 }

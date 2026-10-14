@@ -1,0 +1,664 @@
+# UI Hub
+
+> Curated, multilingual directory of 2376 public UI resources (component libraries, component style demos, effects, design systems, design skills for AI agents) plus original blog analysis of AI design techniques. Data updated 2026-10-14 08:54 UTC.
+
+Use the JSON endpoints, not the SPA, when acting as an agent. Every entry links to its original site; licenses belong to the original authors.
+
+## Machine-readable
+- [Resources JSON](https://siinxu.github.io/ui-resource-hub/api/resources.json): all items with type, ct (component kind), vs (visual style), pricing, url
+- [Skills JSON](https://siinxu.github.io/ui-resource-hub/api/skills.json): design + engineering agent skills and the recommended workflow
+- [Agent guide](https://siinxu.github.io/ui-resource-hub/agents/): how to search, pick, copy and verify
+- [AGENTS.md](https://siinxu.github.io/ui-resource-hub/AGENTS.md)
+- [Full text for LLMs](https://siinxu.github.io/ui-resource-hub/llms-full.txt)
+
+## Blog
+- [AI-assisted UI design: a workflow that keeps taste in the loop](https://siinxu.github.io/ui-resource-hub/blog/ai-assisted-ui-design-workflow/): Generators are fast but average. Split the job: humans set direction and constraints, AI explores variants, humans curate and polish.
+- [Prompting for UI: write specs, not wishes](https://siinxu.github.io/ui-resource-hub/blog/prompts-for-ui/): "Modern and clean" means nothing to a model. Name layout, tokens, states, content and what to avoid.
+- [Design-to-code with AI: map to your components, not to pixels](https://siinxu.github.io/ui-resource-hub/blog/design-to-code-with-ai/): Pixel-perfect export creates throwaway code. Give the agent your component registry and tokens via MCP so output reuses what you already ship.
+- [Teaching agents taste: how design skills de-slop AI interfaces](https://siinxu.github.io/ui-resource-hub/blog/taste-and-skills-for-agents/): Skills like frontend-design, taste-skill and impeccable package opinions as files agents load on demand. Here is how to combine them.
+- [Component composition: why headless + copy-paste won](https://siinxu.github.io/ui-resource-hub/blog/component-composition/): Radix behaviour, your styles, code you own. Compound components keep APIs small and make AI edits safer.
+- [Motion that feels right: purpose, duration, easing, restraint](https://siinxu.github.io/ui-resource-hub/blog/motion-that-feels-right/): Most UI motion should be under 300ms, ease-out, and skipped for frequent actions. Spectacle belongs on marketing pages, not in tools.
+- [Dark mode done right: tokens, elevation and contrast](https://siinxu.github.io/ui-resource-hub/blog/dark-mode-done-right/): Dark mode is a second palette, not an inverted one. Use semantic tokens, lighter surfaces for elevation, and desaturated accents.
+- [Accessibility in AI-generated UI: the checks models skip](https://siinxu.github.io/ui-resource-hub/blog/accessibility-in-ai-generated-ui/): Generated UIs look fine and fail keyboards and screen readers. Start from accessible primitives, then audit against WCAG 2.2.
+
+## Top component libraries
+- [Radix Primitives](https://www.radix-ui.com/primitives): 无样式、可访问的 React 底层组件：对话框、下拉菜单、选择器、Tabs、Tooltip 等，shadcn/ui 的地基
+- [Radix Themes](https://www.radix-ui.com/themes): Radix 官方带样式组件主题，开箱即用、配色体系完整
+- [Headless UI](https://headlessui.com/): Tailwind 团队出品的无样式组件：弹窗、菜单、列表框、开关、Tabs
+- [Ark UI](https://ark-ui.com/): Chakra 团队的无样式组件，45+ 组件，React / Vue / Solid / Svelte 通用
+- [Park UI](https://park-ui.com/): 基于 Ark UI 的带样式组件，Panda CSS / Tailwind 两套写法
+- [shadcn/ui Blocks](https://ui.shadcn.com/blocks): shadcn 官方区块：登录页、侧边栏、仪表盘、日历，可直接用 CLI 添加
+- [shadcn/ui Charts](https://ui.shadcn.com/charts): shadcn 官方图表：面积、柱状、折线、饼图、雷达，基于 Recharts
+- [shadcn Registry 目录](https://ui.shadcn.com/docs/directory): shadcn 官方收录的第三方组件注册表目录，一站找到各家兼容 shadcn 的组件
+- [daisyUI](https://daisyui.com/): 最流行的 Tailwind 组件类名插件，60+ 组件、30+ 主题
+- [Flowbite](https://flowbite.com/): Tailwind 组件库，开源版 50+ 组件；原站另有付费 Pro 区块
+- [HyperUI](https://www.hyperui.dev/): 免费 Tailwind 组件片段合集：营销页、电商、后台，复制即用
+- [Preline UI](https://preline.co/): Tailwind 组件与区块，开源部分免费；原站另有付费 Pro
+- [Meraki UI](https://merakiui.com/): Tailwind 组件，支持 RTL 和暗色模式
+- [Tailwind Plus](https://tailwindcss.com/plus): Tailwind 官方付费组件与模板（原 Tailwind UI），500+ 组件；本站只放链接
+- [Mantine](https://mantine.dev/): 100+ 组件和 70+ hooks，自带日期、图表、富文本、通知
+- [Chakra UI](https://chakra-ui.com/): 老牌 React 组件库，主题系统灵活，v3 基于 Ark UI
+- [MUI Material UI](https://mui.com/material-ui/): Material Design 的 React 实现，组件最全之一
+- [MUI X](https://mui.com/x/): 数据表格、日期选择、图表、树视图；基础版免费开源，Pro / Premium 付费
+- [Base UI](https://base-ui.com/): Radix / MUI / Floating UI 作者合作的无样式组件库
+- [React Aria](https://react-aria.adobe.com/): Adobe 出品，无障碍做得最细的无样式组件与 hooks
+- [Ant Design](https://ant.design/): 蚂蚁中后台组件库，60+ 组件，表格表单极强
+- [Ant Design Mobile](https://mobile.ant.design/): 蚂蚁移动端组件库
+- [AntV G2](https://g2.antv.antgroup.com/): 蚂蚁可视化语法，几十种图表
+- [TDesign](https://tdesign.tencent.com/): 腾讯企业级设计体系，React / Vue / 小程序 / 移动端全覆盖
+- [Arco Design](https://arco.design/): 字节中后台组件库，60+ 组件，带物料市场
+- [Semi Design](https://semi.design/): 抖音前端出品，设计到代码一体，组件细节好
+- [Naive UI](https://www.naiveui.com/): Vue 3 组件库，90+ 组件，主题可调
+- [Element Plus](https://element-plus.org/): 饿了么 Vue 3 组件库，国内后台最常用
+- [Vuetify](https://vuetifyjs.com/): Vue 的 Material 组件框架
+- [PrimeVue](https://primevue.org/): Vue 组件库，90+ 组件；原站另有付费模板
+- [PrimeReact](https://primereact.org/): React 版 Prime 组件库，90+ 组件；原站另有付费模板
+- [PrimeNG](https://primeng.org/): Angular 版 Prime 组件库；原站另有付费模板
+- [Nuxt UI](https://ui.nuxt.com/): Nuxt 官方组件库，基于 Reka UI + Tailwind
+- [Reka UI](https://reka-ui.com/): Vue 版 Radix（原 Radix Vue），无样式可访问组件
+- [shadcn-vue](https://www.shadcn-vue.com/): shadcn/ui 的 Vue 移植
+- [Quasar](https://quasar.dev/): Vue 全家桶框架，一套代码出网页 / 移动 / 桌面
+- [Vant](https://vant-ui.github.io/vant/): 有赞移动端 Vue 组件库
+- [shadcn-svelte](https://www.shadcn-svelte.com/): shadcn/ui 的 Svelte 移植
+- [Bits UI](https://bits-ui.com/): Svelte 无样式组件
+- [Melt UI](https://melt-ui.com/): Svelte 无样式组件构建器
+- [Skeleton](https://www.skeleton.dev/): Svelte / React 的 Tailwind 设计系统
+- [Kobalte](https://kobalte.dev/): SolidJS 无样式可访问组件
+- [Angular Material](https://material.angular.dev/): Angular 官方 Material 组件
+- [Spartan](https://www.spartan.ng/): Angular 版 shadcn 风格组件
+- [NG-ZORRO](https://ng.ant.design/): Ant Design 的 Angular 实现
+- [Fluent UI](https://react.fluentui.dev/): 微软 Fluent 2 设计体系的 React 组件
+- [Carbon Design System](https://carbondesignsystem.com/): IBM 设计体系，数据密集型界面优秀
+- [Primer](https://primer.style/): GitHub 设计体系的 React 组件
+- [Shoelace](https://shoelace.style/): Web Components 组件库，任何框架都能用
+- [Material Web](https://material-web.dev/): Google 官方 Material 3 Web Components
+- [Bootstrap](https://getbootstrap.com/): 经典 CSS 组件框架
+- [Bulma](https://bulma.io/): 纯 CSS 组件框架，无 JS
+- [Pico CSS](https://picocss.com/): 极简语义化 CSS，HTML 写完就好看
+- [Open Props](https://open-props.style/): CSS 变量设计令牌：颜色、阴影、渐变、缓动
+- [Tremor](https://tremor.so/): 仪表盘组件和图表，Tailwind + Recharts
+- [Recharts](https://recharts.org/): React 最常用的图表库
+- [Apache ECharts](https://echarts.apache.org/): 功能最全的开源图表库之一，示例画廊很大
+- [Chart.js](https://www.chartjs.org/): 轻量 Canvas 图表
+- [Nivo](https://nivo.rocks/): 好看的 React 数据可视化组件
+- [visx](https://airbnb.io/visx/): Airbnb 的底层可视化组件
+
+## FAQ
+- **What is UI Hub?** A free, curated directory of 2376 public UI resources: 119 component libraries, 1924 component style demos with light/dark screenshots, 68 design skills for AI agents, plus effects, templates, specs and tutorials. It links to original sites and never hosts paid source code.
+- **How do I find a component in a given style?** Load https://siinxu.github.io/ui-resource-hub/api/resources.json and filter by ct (component kind, e.g. "dialog") and vs (visual style, e.g. "minimal" or "motion"). type="style" entries are concrete component demos with a libName and page URL; type="library" entries are whole libraries with install info on the site.
+- **Which skills should an agent use for good UI?** One direction skill (frontend-design or taste-skill), emil-design-eng for motion and interaction polish, then impeccable, baseline-ui, web-design-guidelines and accessibility as an audit pass. See https://siinxu.github.io/ui-resource-hub/api/skills.json.
+- **Can I copy the code?** Open-source libraries can be used under their own licenses (MIT, Apache-2.0 etc.); the card shows the original link. Paid tiers (marked paid/freemium) must be bought from the original vendor.
+- **How often is it updated?** Daily via a GitHub Actions job that adds new UI repositories and tools from GitHub, awesome-shadcn-ui and Hacker News. Nothing is deleted. Last update: 2026-10-14 08:54 UTC.
+
+
+# Blog posts (full text, English)
+
+## AI-assisted UI design: a workflow that keeps taste in the loop
+
+Every AI UI generator converges on the statistical middle of its training data: centred hero, three feature cards, a purple gradient. That is not a bug, it is what "most likely next token" means. The practical consequence is that speed is free and taste is the scarce input.
+Split the job into four passes
+Direction (human). Write a one-paragraph brief: audience, one adjective you want and one you refuse, a reference product, density level. NN/g's testing of AI design tools found outputs were generic unless the prompt carried real context.
+Exploration (AI). Ask v0 or Claude for 4–6 deliberately different directions, not one "best" page. Diversity is where generators shine.
+Curation (human). Pick one, then name what is wrong in concrete terms: "line length over 80ch", "two accent colours competing".
+Polish (AI + human). Feed those notes back, or run a critique skill such as impeccable or baseline-ui, then do the last 10% by hand.
+Our take
+The biggest win is not generation but constraint files: a short DESIGN.md with tokens, spacing scale and banned patterns that every agent reads first. It turns one good decision into a hundred consistent screens. On UI Hub, filter by Skill to find ready-made ones.
+ChecklistBrief has a "never" listAsk for variants, not a pageCritique with named problemsLock decisions into tokens
+
+References:
+- Status Update: AI UX-Design Tools Are Not Ready for Primetime — Nielsen Norman Group: https://www.nngroup.com/articles/ai-design-tools-not-ready/
+- v0 Documentation — Vercel: https://v0.app/docs
+- Agent Skills repository — Anthropic: https://github.com/anthropics/skills
+- impeccable — Paul Bakaus: https://github.com/pbakaus/impeccable
+
+## Prompting for UI: write specs, not wishes
+
+A UI prompt is a tiny design spec. The model fills every gap with defaults, so each gap you leave becomes a cliché.
+The six-slot template
+Goal: pricing page for a dev tool, 3 tiers, annual toggle
+Layout: 12-col, max 1200px, tiers in a row ≥ 900px, stacked below
+Tokens: Geist, 14/20 body, radius 10, one accent #2563eb, neutral greys
+States: hover, focus-visible ring, selected tier, loading on CTA
+Content: real copy below (no lorem), prices 0 / 19 / 49
+Avoid: gradients on text, glassmorphism, emoji icons, centred everything
+Why it works
+Vercel's design guidelines and Rauno Freiberg's "Interfaces" both stress small, checkable rules: focus states, hit targets, tabular numbers. Turning those into explicit lines makes the output verifiable. Real content matters too; placeholder text hides overflow and hierarchy problems.
+Our takePut the "Avoid" line first when iterating. Models obey negative constraints better once they have seen the bad version. Keep a reusable prompt per component type; UI Hub's component cards include a copyable prompt you can start from.
+
+References:
+- Web Interface Guidelines — Vercel: https://vercel.com/design/guidelines
+- Web Interface Guidelines (interfaces.rauno.me) — Rauno Freiberg: https://interfaces.rauno.me
+- v0 Documentation — Vercel: https://v0.app/docs
+- Refactoring UI — Adam Wathan & Steve Schoger: https://www.refactoringui.com
+
+## Design-to-code with AI: map to your components, not to pixels
+
+Early design-to-code tools translated frames into absolutely positioned divs. They looked right and were unmaintainable. The current generation, Figma's Dev Mode MCP server and Builder.io's Visual Copilot among them, works differently: it reads structure and variables and maps them to code you already own.
+What to feed the agentTokens exported as CSS variables, so colours map to var(--accent) instead of hex.A component registry, for example a shadcn registry, so "button" means your Button.Auto-layout in the file. Frames without it force the model to guess flex rules.
+Our takeTreat generated code as a pull request from a junior: correct-looking, missing edge states. Always check empty, loading, error and long-text states, and run an a11y pass. Teams that publish a registry once get compounding returns from every later generation.
+
+References:
+- Introducing the Figma MCP server — Figma: https://www.figma.com/blog/introducing-figma-mcp-server/
+- Figma to code with Visual Copilot — Builder.io: https://www.builder.io/blog/figma-to-code-visual-copilot
+- shadcn/ui Registry — shadcn: https://ui.shadcn.com/docs/registry
+- Tailwind CSS dark mode docs — Tailwind Labs: https://tailwindcss.com/docs/dark-mode
+
+## Teaching agents taste: how design skills de-slop AI interfaces
+
+An agent skill is a folder with a SKILL.md the agent reads when the task matches its description. For design, that means opinions survive between sessions instead of living in one long prompt.
+A working stackDirection: frontend-design or taste-skill before writing code. They push a committed aesthetic and ban the usual tells.Craft: emil-design-eng for motion and micro-interaction judgement.Audit: impeccable, baseline-ui and web-design-guidelines after a draft exists.Redesign: redesign-skill when upgrading an existing site.
+Our takeDo not load everything at once. Overlapping skills give conflicting advice. Use one direction skill, one craft skill and one audit skill per task. Write project-specific "never" rules in AGENTS.md so they override generic taste.
+
+References:
+- Agent Skills repository — Anthropic: https://github.com/anthropics/skills
+- taste-skill — Leonxlnx: https://github.com/Leonxlnx/taste-skill
+- impeccable — Paul Bakaus: https://github.com/pbakaus/impeccable
+- AGENTS.md — agents.md: https://agents.md
+- Web Interface Guidelines — Vercel: https://vercel.com/design/guidelines
+
+## Component composition: why headless + copy-paste won
+
+The old model was a styled npm package you fought with overrides. shadcn/ui flipped it: behaviour and accessibility from Radix primitives, styling in Tailwind, and the source copied into your repo.
+Why it suits AICode in your repo is visible context, so the agent can read and edit it.Compound components (&lt;Dialog.Trigger&gt;, &lt;Dialog.Content&gt;) have small, predictable surfaces, which makes edits less error-prone than a 40-prop monolith.Registries let tools install the same component into any project.
+Our takeCompose from three layers: primitives (Radix, Ark, React Aria), your styled kit, and page blocks. Let AI work mainly at the block layer and keep primitives untouched. Atomic design's old atoms→organisms idea maps neatly onto this.
+
+References:
+- shadcn/ui docs — shadcn: https://ui.shadcn.com/docs
+- Radix Primitives introduction — WorkOS / Radix: https://www.radix-ui.com/primitives/docs/overview/introduction
+- Compound Pattern — patterns.dev (Lydia Hallie & Addy Osmani): https://www.patterns.dev/react/compound-pattern/
+- Atomic Design, chapter 2 — Brad Frost: https://atomicdesign.bradfrost.com/chapter-2/
+
+## Motion that feels right: purpose, duration, easing, restraint
+
+Emil Kowalski's rule of thumb is blunt: if a user triggers something a hundred times a day, do not animate it. Motion is for orientation (where did this come from?), feedback (it worked) and, sparingly, delight.
+Numbers to start fromSmall UI changes: 150–250ms; larger surfaces 300–400ms. Material 3's motion tokens sit in the same ranges.Enter with ease-out, so the element responds immediately; avoid ease-in for UI.Animate transform and opacity only for smooth 60fps.Respect prefers-reduced-motion: swap movement for fades.
+Our takeAceternity- and Magic UI-style effects (beams, spotlights, marquees) work as one hero moment per page. Stack three and the page looks like a template. Josh Comeau's transition guide is the best explanation of why easing curves matter.
+
+References:
+- Great animations — Emil Kowalski: https://emilkowal.ski/ui/great-animations
+- animations.dev — Emil Kowalski: https://animations.dev
+- Motion overview — Material 3 — Google: https://m3.material.io/styles/motion/overview
+- An Interactive Guide to CSS Transitions — Josh W. Comeau: https://www.joshwcomeau.com/animation/css-transitions/
+- prefers-reduced-motion — MDN: https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion
+- Motion docs — Motion: https://motion.dev/docs
+
+## Dark mode done right: tokens, elevation and contrast
+
+Inverting colours gives you pure black backgrounds, glowing saturated blues and shadows nobody can see. Apple's HIG and web.dev both describe dark mode as its own design pass.
+RulesSemantic tokens: --bg, --surface, --ink, --accent, swapped per theme with [data-theme] or prefers-color-scheme.Elevation by lightness: raised surfaces get slightly lighter, because shadows barely read on dark.Off-black, off-white: e.g. #06070b and #f3f5fb reduce halation.Desaturate accents and re-check 4.5:1 text contrast in both themes.Set color-scheme so form controls and scrollbars follow.
+Our takeNN/g's research shows preference is split, so ship both and remember the choice. Screenshots of previews need both themes too; UI Hub stores light and dark shots per component for exactly this reason.
+
+References:
+- Dark Mode — Human Interface Guidelines — Apple: https://developer.apple.com/design/human-interface-guidelines/dark-mode
+- prefers-color-scheme: Hello darkness, my old friend — web.dev (Thomas Steiner): https://web.dev/articles/prefers-color-scheme
+- Dark Mode vs. Light Mode: Which Is Better? — Nielsen Norman Group: https://www.nngroup.com/articles/dark-mode/
+- Dark mode — Tailwind CSS: https://tailwindcss.com/docs/dark-mode
+
+## Accessibility in AI-generated UI: the checks models skip
+
+Models optimise for what a screenshot shows. Focus order, accessible names and live regions do not show up in screenshots, so they are the first things to go missing.
+The checks models skip mostClickable divs instead of &lt;button&gt;. Prompt for semantic elements explicitly.Missing focus-visible styles, often removed with outline:none.Icon-only buttons without aria-label.Contrast of grey-on-grey secondary text (WCAG 1.4.3).Target size: at least 24×24 CSS px (WCAG 2.2, 2.5.8).Dialogs without focus trap and Escape. Use the ARIA APG patterns or Radix and React Aria.
+Our takeMake accessibility structural, not a final pass. Generate on top of accessible primitives and add an audit skill (accessibility, web-design-guidelines) to the agent's definition of done.
+
+References:
+- Web Content Accessibility Guidelines (WCAG) 2.2 — W3C: https://www.w3.org/TR/WCAG22/
+- ARIA Authoring Practices Guide — W3C WAI: https://www.w3.org/WAI/ARIA/apg/
+- Radix Primitives introduction — Radix: https://www.radix-ui.com/primitives/docs/overview/introduction
+- Web Interface Guidelines — Vercel: https://vercel.com/design/guidelines
+
+# All resources (name | type | url | note)
+
+- Figma MCP Server Guide（含官方 Skills） | skill | https://github.com/figma/mcp-server-guide | Figma 官方 MCP 配置指南，含 figma-create-design-system-rules 等 Skill，可为 CLAUDE.md、AGENTS.md、.cursor/rules 生成设计规范
+- Figma：为 MCP 写自定义 Skill | tutorial | https://developers.figma.com/docs/figma-mcp-server/create-skills/ | 教你写 Skill，让 Agent 先查组件库，再按你们的 Variables 命名和模式出稿
+- Figma：给 MCP 加自定义规则 | tutorial | https://developers.figma.com/docs/figma-mcp-server/add-custom-rules/ | 现成规则模板：get_design_context → 截图 → 用 token 实现 → 对照设计稿检查
+- Figma：设计师怎么用 Claude Code | tutorial | https://www.figma.com/resource-library/claude-code-for-designers/ | 设计师入门：连上 Figma、读组件和 token、把改动推回画布
+- Impeccable | skill | https://impeccable.style | 3 万多星的设计 Skill：20 多条设计命令，加 UI 审查和 AI slop 反模式检测；官网可在线看效果和命令说明
+- Taste Skill（13 个子 Skill 全集） | skill | https://github.com/Leonxlnx/taste-skill | 8 万多星的「反 AI 味」Skill 合集，共 13 个：管排版、留白、圆角、动效强度，还能审查已有页面；官网 tasteskill.dev
+- bencium Claude Code Design Skill | skill | https://github.com/bencium/bencium-claude-code-design-skill | 社区评价「最完整的 UX 设计 Skill 之一」，偏 UX 流程和可用性
+- Vercel agent-skills（web-design-guidelines） | skill | https://github.com/vercel-labs/agent-skills | Vercel 官方：按 100 多条界面规范审查 UI 代码，覆盖无障碍、焦点、表单、动效、排版、暗色、i18n
+- shadcn/ui 官方 Skill | skill | https://ui.shadcn.com/docs/skills | 读 components.json，按 shadcn 的组合规则和语义色写组件，减少 AI 乱拼
+- Ant Design for Agents（MCP + Skill） | skill | https://ant-design.antgroup.com/docs/react/for-agents | 蚂蚁官方：antd mcp、antd setup --client cursor/claude/codex，一条命令装好 MCP 和 Skill
+- Ant Design llms.txt / design.md | spec | https://ant.design/docs/react/llms | 有 llms.txt、llms-full.txt 和 design.md，把整套 antd 规范喂给 AI
+- GSAP 官方 Skills | skill | https://github.com/greensock/gsap-skills | GreenSock 官方动效 Skill：时间轴、ScrollTrigger、React 清理，Cursor / Claude / Codex 都能用
+- DESIGN.md 格式规范（Google） | spec | https://github.com/google-labs-code/design.md | Google 提出的 DESIGN.md 格式：YAML 写 token，Markdown 写设计意图
+- addyosmani/agent-skills | skill | https://github.com/addyosmani/agent-skills | Addy Osmani 的工程 Skill 集，含前端性能和质量类
+- openai/plugins | skill | https://github.com/openai/plugins | OpenAI 官方 Codex 插件和 Skill 仓库，里面有设计、Figma 相关插件
+- Oil Frontend（中文前端规范 Skill） | skill | https://github.com/oil-oil/oil-frontend | 中文作者写的前端规范 Skill：组件、函数、架构，加基础 UI/UX，适合不熟前端规范的人
+- dembrandt | tool | https://github.com/dembrandt/dembrandt | 输入网址，几秒提取整套设计系统（色、字、间距、阴影），能当 MCP 接进 Claude
+- skills.sh | collection | https://skills.sh | 跨 Agent 的 Skill 目录，用 npx skills add 安装
+- ui-skills.com | collection | https://www.ui-skills.com | 面向人和 Agent 的设计 playbook 合集（本站许多 Skill 卡片来自这里）
+- whichai.dev | collection | https://www.whichai.dev | 把各家模型「装 / 不装设计 Skill」做出的前端放一起对比，判断值不值得装
+- Taste Skill 13 个子 Skill 拆解（@shao__meng） | tutorial | https://x.com/i/status/2093148263621017886 | 中文长帖，逐个讲 Taste Skill 的 13 个子 Skill 管什么、什么时候用
+- Apple Human Interface Guidelines | system | https://developer.apple.com/design/human-interface-guidelines/ | iOS、macOS、visionOS 的权威规范，Liquid Glass 时代必读
+- Apple Design Resources | system | https://developer.apple.com/design/resources/ | 官方 Figma / Sketch 套件、SF 字体、SF Symbols
+- Material Design 3 | system | https://m3.material.io/ | Google M3 和 Expressive 的组件、颜色、动效、无障碍规范
+- Material Theme Builder | tool | https://material-foundation.github.io/material-theme-builder/ | 一个主色生成整套 M3 色彩 token，可以导出代码
+- Microsoft Fluent 2 | system | https://fluent2.microsoft.design/ | 微软跨平台设计语言，有 Web、iOS、Android、Windows 版本
+- Fusion Design（阿里） | system | https://fusion.design/ | 阿里中台设计系统
+- NutUI（京东） | system | https://nutui.jd.com/ | 京东移动端和小程序电商风组件规范
+- WeUI（微信） | system | https://github.com/Tencent/weui | 微信原生视觉规范组件
+- 微信小程序设计指南 | system | https://developers.weixin.qq.com/miniprogram/design/ | 小程序官方交互和视觉原则
+- HarmonyOS 设计（华为） | system | https://developer.huawei.com/consumer/cn/design/ | 鸿蒙官方设计规范和资源
+- Samsung One UI | system | https://developer.samsung.com/one-ui | 三星官方：布局、栅格、大屏和折叠屏规范
+- Shopify Polaris | system | https://polaris.shopify.com/ | Shopify 后台设计系统，现在以 Web Components 为主
+- Polaris Web Components 文档 | system | https://shopify.dev/docs/api/app-home/polaris-web-components | Polaris 新版组件 API
+- Salesforce Lightning（SLDS） | system | https://www.lightningdesignsystem.com/ | 企业 SaaS 规范，styling hooks 是 token 化主题的典型
+- Atlassian Design System | system | https://atlassian.design/ | Jira / Confluence 的规范，token 和写作规范都公开
+- Uber Base | system | https://base.uber.com/ | Uber 官方设计系统
+- Base Web（Uber React 实现） | component | https://baseweb.design/ | Base 的开源 React 组件
+- Adobe Spectrum | system | https://spectrum.adobe.com/ | Adobe 全家桶设计语言
+- Spectrum 2 | system | https://s2.spectrum.adobe.com/ | Spectrum 新一代视觉和组件
+- GOV.UK Design System | system | https://design-system.service.gov.uk/ | 公共服务规范，无障碍和表单模式是教科书级
+- Twilio Paste | system | https://paste.twilio.design/ | Twilio 的公开设计系统，组件文档写得很规范
+- Zendesk Garden | system | https://garden.zendesk.com/ | Zendesk 的公开设计系统，SaaS 组件参考
+- HashiCorp Helios | system | https://helios.hashicorp.design/ | HashiCorp 的公开设计系统，开发者工具类界面参考
+- Elastic EUI | system | https://eui.elastic.co/ | Elastic 的公开设计系统，数据密集型界面参考
+- Airbnb DLS（Karri Saarinen 复盘） | tutorial | https://karrisaarinen.com/dls/ | Airbnb DLS 不公开；主导者亲自讲怎么搭跨端组件体系
+- Spotify Encore（官方工程博客） | tutorial | https://engineering.atspotify.com/2023/5/multiple-layers-of-abstraction-in-design-systems | Encore「多个系统组成的系统」：组件的分层抽象和 slots
+- Netflix Hawkins 设计系统解读 | tutorial | https://learn.thedesignsystem.guide/p/how-netflix-builds-design-systems | Netflix 为什么做 Hawkins、怎么用 token 统一多端（原文在 Netflix 技术博客）
+- The Design System Guide | tutorial | https://thedesignsystem.guide | Romina Kavcic 写的从零搭设计系统全流程，带模板
+- Atomic Design（Brad Frost 免费全书） | tutorial | https://atomicdesign.bradfrost.com/ | 原子、分子、组织的组件分层方法论
+- Figma 官方 Variables 指南 | tutorial | https://help.figma.com/hc/en-us/articles/15339657135383-Guide-to-variables-in-Figma | 在 Figma 里落地 token 和模式（明暗、品牌）
+- Style Dictionary | tool | https://styledictionary.com/ | 一份 token 编译成 CSS、iOS、Android 的标准做法
+- Tokens Studio 文档 | tutorial | https://docs.tokens.studio/ | Figma 和代码之间同步 token 的完整教程
+- UXPin：Design Tokens 完整指南 | tutorial | https://www.uxpin.com/studio/blog/what-are-design-tokens/ | token 入门：原子、语义、组件三层
+- React Summit：Figma→TV 的 token 和 MCP 管线 | tutorial | https://gitnation.com/contents/from-figma-to-tv-and-beyond-scaling-react-ui-with-design-tokens-and-mcp | 实战：GitHub Actions 加 MCP，把 token 同步到 Web、移动端和电视
+- Refactoring UI | tutorial | https://www.refactoringui.com/ | Tailwind 作者写的「开发者也能做好看 UI」，讲间距、层级、颜色（付费书）
+- Practical Typography | tutorial | https://practicaltypography.com/ | 排版基本功：行长、行高、字号层级
+- Utopia（流体字号和间距） | tool | https://utopia.fyi/ | 用 clamp() 生成响应式字号和间距 scale
+- Type Scale | tool | https://typescale.com/ | 可视化选字号比例
+- 8pt Grid（spec.fm） | tutorial | https://spec.fm/specifics/8-pt-grid | 8 点栅格间距体系的经典讲解
+- Material 3 动效规范 | tutorial | https://m3.material.io/styles/motion/overview | 缓动、时长 token 和转场模式
+- Emil Kowalski：7 个动效实用技巧 | tutorial | https://emilkowal.ski/ui/7-practical-animation-tips | Sonner、Vaul 作者写的 UI 动效手感要点
+- animations.dev | tutorial | https://animations.dev | Emil 的网页动效系统课（付费）
+- Rauno：交互设计中看不见的细节 | tutorial | https://rauno.me/craft/interaction-design | Vercel 设计师讲交互细节和「手感」
+- web.dev Learn Design | tutorial | https://web.dev/learn/design | Google 免费课：响应式设计
+- web.dev Learn Accessibility | tutorial | https://web.dev/learn/accessibility | Google 免费课：无障碍
+- Inclusive Components | tutorial | https://inclusive-components.design/ | 逐个组件（开关、标签页、卡片、菜单）讲怎么做无障碍
+- W3C Design Tokens 社区组 | spec | https://www.designtokens.org/ | 跨工具 token 标准的官方来源
+- DTCG Format 2025.10 稳定版 | spec | https://www.designtokens.org/tr/2025.10/format/ | token JSON 格式正式规范，Figma、Tokens Studio、Style Dictionary 都在跟
+- Vercel Web Interface Guidelines | spec | https://vercel.com/design/guidelines | 很细的界面规范清单（焦点、表单、动效、排版），可以直接给 AI 当审查标准
+- web-interface-guidelines 仓库 | spec | https://github.com/vercel-labs/web-interface-guidelines | 上面这份规范的 Markdown 原文，可以放进 AGENTS.md
+- Material 3 Design Tokens | spec | https://m3.material.io/foundations/design-tokens/overview | M3 的 token 分层（ref → sys → comp）和命名
+- Material 3 颜色角色 | spec | https://m3.material.io/styles/color/roles | primary、on-primary、container 等语义色角色的标准答案
+- Fluent 2 Design Tokens | spec | https://fluent2.microsoft.design/design-tokens | 微软的全局 token 和别名 token 体系
+- Carbon 主题和 token | spec | https://carbondesignsystem.com/elements/themes/overview/ | IBM 四套主题，靠一组语义 token 切换
+- Atlassian Design Tokens | spec | https://atlassian.design/foundations/tokens/design-tokens | 语义 token 命名范例，例如 color.background.danger
+- Ant Design 定制主题（Seed → Map → Alias） | spec | https://ant.design/docs/react/customize-theme | 国内最常用的三层 token 算法模型
+- Primer Primitives | spec | https://primer.style/foundations/primitives | GitHub 的基础 token 和功能 token
+- Adobe Spectrum Design Data（tokens） | spec | https://github.com/adobe/spectrum-design-data | Spectrum 公开的 token 数据仓库（旧仓库是 adobe/spectrum-tokens）
+- Apple HIG Typography | spec | https://developer.apple.com/design/human-interface-guidelines/typography | Dynamic Type 字号层级和行高规范
+- WCAG 2.2 Quick Reference | spec | https://www.w3.org/WAI/WCAG22/quickref/ | 对比度、焦点、点击区域等硬性要求
+- WAI-ARIA Authoring Practices（APG） | spec | https://www.w3.org/WAI/ARIA/apg/ | 每种组件（下拉、标签页、对话框）的键盘和 ARIA 标准写法
+- Open UI | spec | https://open-ui.org/ | W3C 社区组，统一各大组件库的组件命名和结构
+- Radix Colors：12 级色阶用法 | spec | https://www.radix-ui.com/colors/docs/palette-composition/understanding-the-scale | 每一级颜色用在背景、边框还是文字，规则讲得很清楚
+- Adobe Leonardo | tool | https://leonardocolor.io/ | 按对比度生成无障碍色阶，Adobe 开源
+- Design System Checklist | collection | https://designsystemchecklist.com | 上线前逐项检查设计系统
+- Design Systems Surf | collection | https://designsystems.surf | 可搜索的设计系统大全
+- Componly Collection | collection | https://collection.componly.co | 设计系统组件对照
+- Goodcart | inspiration | https://goodcart.design | 电商 / 购物流程 UI 灵感
+- Shoot | inspiration | https://shoot.design | UI 截图灵感库
+- A/B Test Design | inspiration | https://abtest.design | 真实 A/B 测试前后对比，学「哪个版本赢了」
+- Morphin Inspirations | inspiration | https://morphin.dev/inspirations | 交互 / 动效灵感合集
+- Pushkeen | inspiration | https://pushkeen.ai | AI 产品界面灵感
+- Viewport UI | inspiration | https://viewportui.com | 免费 UI 灵感目录
+- Recent（原 Godly） | inspiration | https://recent.design | Godly 旧域名已跳到这里，每日精选网页、品牌、动效
+- Load More | inspiration | https://www.loadmo.re | 实验性、移动优先的前卫网页画廊
+- Design Spells | inspiration | https://designspells.com | 「像魔法一样」的微交互和彩蛋细节
+- Designspiration | inspiration | https://www.designspiration.com | 更干净的 Pinterest 式设计灵感
+- Muzli | inspiration | https://muz.li | 新标签页插件，每日推送设计灵感
+- Curated Design | inspiration | https://curated.design/inspiration/ | 按行业和区块（Hero、定价、页脚）筛网页
+- Cosmos | inspiration | https://www.cosmos.so | 视觉收藏、情绪板和视觉搜索
+- Layers | inspiration | https://layers.to | 设计师作品社区（SaaS、仪表盘、图标）
+- Minimal Gallery | inspiration | https://minimal.gallery | 2013 年起的极简网站画廊
+- Game UI Database | inspiration | https://www.gameuidatabase.com | 游戏 UI 截图库，做数据面板和座舱界面很有用
+- Interface In Game | inspiration | https://interfaceingame.com | 游戏界面截图和录屏合集
+- HUDS+GUIS | inspiration | https://www.hudsandguis.com | 科幻电影 HUD 和未来界面合集
+- Navbar Gallery | inspiration | https://www.navbar.gallery | 专收导航栏设计
+- Footer Design | inspiration | https://www.footer.design | 专收页脚设计
+- CTA Gallery | inspiration | https://www.cta.gallery | 专收行动号召（CTA）区块
+- 404s | inspiration | https://www.404s.design | 专收 404 页面
+- AppShot Gallery | inspiration | https://www.appshot.gallery | 真实移动端 App 截图
+- Pageflows | inspiration | https://pageflows.com | 完整用户流程录屏
+- Ripplix | inspiration | https://www.ripplix.com | 7000+ UI 动画参考
+- Kinetics | effect | https://kinetics.colorion.co | 150+ 动效，附 React 代码和可喂 AI 的提示词
+- CSS Text Effects | effect | https://text-effects.colorion.co | CSS 文字特效合集
+- Gradient Buttons | effect | https://gradientbuttons.colorion.co | 渐变按钮合集
+- MicroKit | component | https://microkit.co | 微交互组件
+- Liquid Glass（samasante） | effect | https://glass.samasante.com | 玻璃折射组件
+- Circle Loaders | effect | https://circleloaders.dominikakissi.com | SVG 环形加载动画
+- UIAble | component | https://uiable.com | shadcn 生态组件
+- mapcn | component | https://mapcn.dev | 可复制的 React 地图组件
+- Appica UI | component | https://appica.dev/ui | 注重无障碍的组件
+- Spectrum UI | component | https://ui.spectrumhq.in | Next.js 动效组件
+- Spell UI | component | https://spell.sh | 精致的 React 组件
+- Swift Pieces | component | https://swiftpieces.com | SwiftUI 动效组件
+- mcpcn | component | https://github.com/shadcn-labs/mcpcn | shadcn-labs 出的开源组件
+- Animated Icons | effect | https://animated-icons-nu.vercel.app | 207 个动画 React 图标
+- Fontshare | tool | https://fontshare.com | 免费商用字体
+- Hugeicons | tool | https://hugeicons.com | 大型图标库
+- Obsidian UI | component | https://obsidianui.dev | UI 组件库
+- Designeer | collection | https://designeer.xyz | 设计和 AI 工具目录
+- 3Dicons | tool | https://3dicons.co | 免费 3D 图标
+- Kitbitz | tool | https://kitbitz.art | 2000+ 手绘插画
+- Anime.js | effect | https://animejs.com | 轻量 JavaScript 动画库
+- Iconsax | tool | https://app.iconsax.io | 线性图标库
+- Desengs | collection | https://desengs.com | 设计 × 前端交叉资源站
+- Penpot | tool | https://github.com/penpot/penpot | 开源的 Figma 替代品
+- Claude Code /design、/design-sync | tool | https://code.claude.com/docs/en/commands | 终端里出多套可编辑设计稿，选一个再实现；/design-sync 同步自家 React 设计系统
+- Claude Design | generator | https://claude.com/product/design | Anthropic 的设计产品，已并入 Claude 对话，直接出 HTML 原型
+- Google Stitch CLI | tool | https://x.com/i/status/2105695155164741984 | npm i -g @google/stitch：Stitch 进终端，接 Claude Code / Cursor / Codex 生成页面和设计系统
+- google-labs-code/stitch-skills | skill | https://github.com/google-labs-code/stitch-skills | Stitch 官方 Agent Skills
+- awesome-design-md | collection | https://github.com/VoltAgent/awesome-design-md | Apple、Stripe、Linear、Notion 等大厂 DESIGN.md 合集，放进项目根目录让 Agent 照着做
+- Refero Styles | inspiration | https://styles.refero.design | 2000+ 真实产品风格，每个带 DESIGN.md、Tailwind v4 和 tokens
+- DESIGNmd | collection | https://designmd.ai | Markdown 写的设计系统合集
+- VibePrompt | collection | https://vibeprompts.dev | 仪表盘、落地页的视觉提示词
+- Jiro | collection | https://jiro.build | 1200+ 设计提示词
+- Kage | tool | https://kage.design | 把 UI 灵感转成提示词
+- Design Prompts | collection | https://www.designprompts.dev | 30+ 种风格提示词（新粗野、玻璃、杂志等）
+- MotionSites | collection | https://motionsites.ai | 落地页动效提示词
+- Scrolltide | template | https://scrolltide.co | 600+ 3D 和滚动叙事模板
+- Claude-Code-Frontend-Design-Toolkit | collection | https://github.com/wilwaldon/Claude-Code-Frontend-Design-Toolkit | 70+ Skill、插件、MCP 按任务分 10 类，含推荐组合（MIT）
+- Nothing Design Skill | skill | https://github.com/dominikmartn/nothing-design-skill | Nothing 风黑白工业感设计系统 Skill，支持 HTML / SwiftUI / React
+- no-slop-ui | skill | https://github.com/LeoStehlik/no-slop-ui | 设计规则 + UI 扫描器，防止玻璃拟态和渐变滥用
+- avoid-ai-design | skill | https://github.com/funboy322/avoid-ai-design | 避开 AI 模板化设计的规则集
+- anti-slop | skill | https://github.com/miqdadbadjuber/anti-slop | 反 AI slop 设计 Skill
+- Netxeo skill-file-design | skill | https://github.com/Netxeo/skill-file-design | 设计规则 Skill 文件模板
+- design-guide（GrubbyLee） | skill | https://github.com/GrubbyLee/design-guide | 给 Agent 用的设计指南
+- web-design-skills | skill | https://github.com/lotfb86/web-design-skills | 网页设计 Skill 集
+- huashu-design（花叔） | skill | https://github.com/alchaincyf/huashu-design | 花叔的 HTML 原生设计 Skill：原型、幻灯片、动效、导出 MP4
+- onlook | tool | https://github.com/onlook-dev/onlook | 可视化编辑 UI，AI 写代码
+- 21st-dev/magic-mcp | tool | https://github.com/21st-dev/magic-mcp | 在 Cursor 里调用 1 万+ React / Tailwind 组件（21st 的 MCP）
+- design-extract | tool | https://github.com/Manavarya09/design-extract | 一条命令提取任意网站的设计系统
+- screenshot-to-code | generator | https://github.com/abi/screenshot-to-code | 截图或录屏 → HTML / Tailwind / React / Vue
+- openai/apps-sdk-ui | component | https://github.com/openai/apps-sdk-ui | ChatGPT 应用内 UI 组件，跟随对话框主题
+- Gradually.ai Claude Code Skills 目录 | collection | https://gradually.ai/en/claude-code-skills | 400+ 精选 Claude Code Skills
+- Paper（+ Paper MCP） | tool | https://paper.design | 设计画布 + MCP；有人说比 Figma MCP 少一半 Prompt
+- AI × Design Weekly（Jason Cyr） | tutorial | https://jasoncyr.substack.com/p/ai-design-weekly-issue-005 | 每周 AI × 设计动态：Figma MCP、Codex ↔ Figma、设计系统 Skills
+- Interfaces 设计工程杂志（Jakub Krehel） | tutorial | https://interfaces.dev | 付费月刊：交互 demo 和代码，含 Agent Skills；3 期免费
+- Maven：AI Coding for Product Designers | tutorial | https://maven.com/button-school/coding-course | 6 周直播课，教产品设计师用 AI 写代码
+- Designlab：Vibe Coding Camp | tutorial | https://designlab.com/advanced/vibe-coding-course | 4 周：Claude Code + Figma MCP + Supabase + Vercel
+- HeyDesigner | tutorial | https://heydesigner.com | 每日设计工程链接精选
+- Dezi Gallery | collection | https://dezi.gallery | 设计工具目录
+- Jakub Krehel 博客 | tutorial | https://jakub.kr | 《Details that make interfaces feel better》《Using AI as a design engineer》、手势、OKLCH
+- Jakub Krehel Skills 的具体数值规则（@GitHub_Daily） | tutorial | https://x.com/i/status/2099287056929460296 | 嵌套圆角：外圈 = 内圈 + padding；按下缩到 0.96；图标切换用透明度 + 缩放 + 4px 模糊
+- Emil Kowalski Skills 中文全解（@pengchujin） | tutorial | https://x.com/i/status/2101578929786228924 | apple-design、animate、review-animations 各干什么，什么时候不该加动画
+- 设计工程师必会 7 个 UI Skill（@neropursue） | tutorial | https://x.com/i/status/2101613613949542838 | 新增 fixing-accessibility、react-doctor、playwright-cli（截图验收）
+- 10 个 UI Skills 实测 + 安全提醒（@Ryan95322865） | tutorial | https://x.com/i/status/2077328569219604814 | 动效控制在 300ms 内；约三分之一 Skills 有安全问题，装前先读 SKILL.md
+- 「先出设计方案再写代码」Prompt（@Voxyz_ai） | tutorial | https://x.com/i/status/2087178102505926740 | 受众/目标 → 4–6 个色 token → 字体 → ASCII 线框 → 1 个标志元素；完成后桌面 + 手机截图对照 DESIGN.md
+- Claude Design 设计师 Nate Parrott 的 6 条用法（@mylifcc） | tutorial | https://x.com/i/status/2104441471948496967 | 中文整理：大多数人一开始就用错了 Claude Design
+- Claude Design vs Figma MCP（@dotey 宝玉） | tutorial | https://x.com/i/status/2102509523684479377 | 直出 HTML 原型 vs 操作 Figma 文件；不是设计师优先选 Claude Design
+- 设计 Harness 与工程实践长文（@NiallxYoung） | tutorial | https://x.com/i/status/2095769528785617353 | 读 Atlassian、Vercel 设计工程文章后的实践，含 design.md 用在哪
+- AI slop 成因与破解（@dashiAIxz） | tutorial | https://x.com/i/status/2095715594368860421 | 约束不够就趋同；用随机数打破、给参考图、首尾帧生视频做 Landing
+- 我的 Claude Code 前端组合（@rwspatin） | tutorial | https://x.com/i/status/2106437552844444129 | frontend-design 出稿 → impeccable 审查打磨 → 一个 tokens 文件防止 Agent 乱发挥
+- 独立开发怎么搞定 UI（@LgyLight） | tutorial | https://x.com/i/status/2095694208132899108 | 找参考 → 定框架 → 抠细节（图标统一）三步，附图标库站
+- Design Engineer Stack 101（@SataEricUX） | tutorial | https://x.com/i/status/2094659988971261998 | 给设计师 / PM 讲清 React、Next、TS、Prisma 各管什么
+- 2026 产品设计师工作流（@dianne_alter） | tutorial | https://x.com/i/status/2088261777758851497 | 产品上下文 → Mobbin + Paper / Claude Code 原型 → Figma 组件进 Storybook → Agent 审查
+- 用 Claude Code 搭设计系统地基（@TheObiLeonard） | tutorial | https://x.com/i/status/2105630874171502870 | tokens、基础组件、变体、状态、响应式、无障碍
+- Beautiful UI | component | https://www.beautifului.dev/ | 精选的漂亮 AI 界面组件
+- BeUI | component | https://beui.dev | 漂亮的 React 组件
+- Rare UI | component | https://rareui.com | 少见、有设计感的组件
+- Transitions | effect | https://transitions.dev | 页面过渡和动效
+- shadcn/ui | component | https://ui.shadcn.com/ | 最主流的基础组件库，很多库都基于它
+- frontend-design（Anthropic） | skill | https://www.ui-skills.com/skills/anthropics/frontend-design | Anthropic 官方的前端设计技能
+- apple-design（Emil Kowalski） | skill | https://www.ui-skills.com/skills/emilkowalski/apple-design | 苹果风格设计
+- beautiful-shadows（Meng To） | skill | https://www.ui-skills.com/skills/mengto/beautiful-shadows | 好看的阴影
+- accessibility（Addy Osmani） | skill | https://www.ui-skills.com/skills/addyosmani/accessibility | 无障碍设计
+- design-review（superfuture） | skill | https://www.ui-skills.com/skills/superfuture/design-review | 设计走查
+- emil-design-eng（Emil Kowalski） | skill | https://www.ui-skills.com/skills/emilkowalski/emil-design-eng | 设计工程细节
+- shadcn（shadcn-ui） | skill | https://www.ui-skills.com/skills/shadcn-ui/shadcn | 正确使用 shadcn 组件
+- adapt（Paul Bakaus） | skill | https://www.ui-skills.com/skills/pbakaus/adapt | 响应式适配
+- better-interface（Jakub Krehel） | skill | https://www.ui-skills.com/skills/jakubkrehel/better-interface | 界面细节打磨
+- interaction-design（wshobson） | skill | https://www.ui-skills.com/skills/wshobson/interaction-design | 交互设计
+- prompt-kit | component | https://www.prompt-kit.com/ | AI 对话组件，风格干净
+- assistant-ui | component | https://www.assistant-ui.com/ | AI 助手界面组件，有仿 ChatGPT、Claude 的示例
+- AI Elements（Vercel） | component | https://ai-sdk.dev/elements | Vercel 官方 AI 组件
+- shadcn.io AI 组件 | component | https://www.shadcn.io/ai | 50 多个 AI 聊天组件，能拼出 Claude 风格界面
+- OpenAI ChatKit | component | https://openai.github.io/chatkit-js/ | OpenAI 官方聊天组件
+- ElevenLabs UI | component | https://ui.elevenlabs.io/ | 语音 AI 组件，声波动画好看
+- shadcn-chatbot-kit | component | https://shadcn-chatbot-kit.vercel.app/ | 基于 shadcn 的聊天机器人组件
+- Kibo UI | component | https://www.kibo-ui.com/ | shadcn 扩展组件，含 AI 类
+- Simple AI | component | https://www.simple-ai.dev/ | AI 组件和工作流节点画布
+- inference.sh UI | component | https://ui.inference.sh/ | AI 应用界面组件
+- llm-ui | component | https://llm-ui.com/ | 大模型输出的流式渲染
+- reachat | component | https://reachat.dev/ | 开源大模型聊天组件
+- Deep Chat | component | https://deepchat.dev/ | 一个组件嵌入完整 AI 聊天窗口
+- chatscope | component | https://chatscope.io/ | 传统聊天界面组件
+- 21st.dev AI 聊天组件合集 | component | https://21st.dev/community/components/s/ai-chat | 248 个以上社区组件
+- CopilotKit | component | https://www.copilotkit.ai/ | 应用内 AI 副驾驶界面
+- Tambo | component | https://tambo.co/ | AI 生成式界面
+- Thesys | component | https://www.thesys.dev/ | AI 生成式界面
+- Hashbrown | component | https://hashbrown.dev/ | 让 AI 调用你自己的组件生成界面
+- LangChain Agent Chat UI | component | https://github.com/langchain-ai/agent-chat-ui | 智能体聊天界面
+- LiveKit 智能体前端 | component | https://docs.livekit.io/agents/start/frontend/ | 实时语音和视频智能体界面
+- Stream AI Chat | component | https://getstream.io/chat/solutions/ai-integration/ | 商用级聊天组件
+- aicss | component | https://aicss.dev | AI 智能体聊天组件（@tranmautritam）
+- Beautiful UI 原语 | component | https://beautiful-ui-five.vercel.app | 给 AI 界面做的精致基础组件（@tranmautritam）
+- Thinking Orbs | effect | https://orbs.jakubantalik.com | AI 思考中的动态光球（@tranmautritam）
+- Ant Design X（蚂蚁） | component | https://x.ant.design/ | 专门做 AI 界面
+- LobeHub UI | component | https://ui.lobehub.com/ | LobeChat 背后的组件库
+- TDesign AI Chat（腾讯） | component | https://tdesign.tencent.com/chat | Vue 3 AI 对话组件
+- Motion+ | effect | https://motion.dev/plus | Motion 官方付费版，一次性买断，480 多个高级动效示例和 AI Kit
+- Paper Shaders 全集 | effect | https://shaders.paper.design/ | 零依赖的着色器特效合集，React 或 GLSL
+- Rive | effect | https://rive.app/ | 可交互的矢量动画，做会动的角色和按钮
+- Hover.dev | component | https://www.hover.dev/ | 偏交互感的现成组件和模板
+- Skiper UI | component | https://skiper-ui.com/ | 少见的 shadcn 组件
+- ShaderGradient | effect | https://www.shadergradient.co/ | 流动的 3D 渐变背景，支持 Framer、Figma、React
+- NEAT | effect | https://neat.firecms.co/ | 免费动态 3D 渐变背景生成器
+- Liquid Glass React | effect | https://github.com/rdev/liquid-glass-react | 苹果液态玻璃效果的 React 版
+- SmoothUI | component | https://smoothui.dev/ | 顺滑动效组件
+- Animata | component | https://animata.design/ | 数百个免费动效组件
+- Vengeance UI | component | https://www.vengenceui.com/ | 落地页动效组件
+- Lukacho UI | component | https://ui.lukacho.com/ | 动效组件和图表
+- Codrops | effect | https://tympanus.net/codrops/ | 前端特效教程和 Demo 老牌站
+- Libraries.dev | effect | https://libraries.dev/ | Jakub Antalik 的特效合集：液态金属、思考光球、流光边框、黏液融合、语音光效、AI 头像、图片生成加载。npm 包免费；原站另有 Pro 付费版，解锁 Studio 深度定制
+- Paper Shaders 液态金属 | effect | https://shaders.paper.design/liquid-metal | Paper 的液态金属着色器，可调参数后导出代码
+- React Bits 金属漆 | effect | https://reactbits.dev/animations/metallic-paint | 把 Logo 做成流动的金属质感
+- Unicorn Studio | generator | https://www.unicorn.studio/ | 无代码做 WebGL 特效
+- Magic UI | component | https://magicui.design/ | 
+- Aceternity UI | component | https://ui.aceternity.com/ | 
+- React Bits | component | https://reactbits.dev/ | 
+- Animate UI | component | https://animate-ui.com/ | 
+- Motion Primitives | component | https://motion-primitives.com/ | 
+- Kokonut UI | component | https://kokonutui.com/ | 
+- Cult UI | component | https://www.cult-ui.com/ | 
+- 21st.dev | component | https://21st.dev/ | 社区组件市场
+- HeroUI | component | https://www.heroui.com/ | 色彩鲜艳、主题丰富（@vikingmute 推荐）
+- COSS UI | component | https://coss.com/ui | 基于 Base UI，简洁考究、带 Skills、对 AI 友好（@vikingmute 最推荐，可替代 shadcn 默认样式）
+- Shadcnblocks | component | https://www.shadcnblocks.com/ | 现成页面区块
+- Uiverse | component | https://uiverse.io/ | 开源小组件
+- Origin Kit | component | https://originkit.dev | 免费动效组件库（@tranmautritam）
+- Canvas UI | effect | https://canvasui.dev | 在真实网页上叠 WebGL 特效（@tranmautritam）
+- Border Beam | effect | https://beam.jakubantalik.com | 动态流光边框（@tranmautritam）
+- Liquid Metal | effect | https://metal.jakubantalik.com | 液态金属质感按钮，React 可用、零依赖（@tranmautritam 重点推荐）
+- aiverse | inspiration | https://www.aiverse.design/ | 200 多个海外 AI 产品交互案例
+- The Shape of AI | inspiration | https://www.shapeof.ai/ | AI 交互模式库
+- agentic-design.ai | inspiration | https://agentic-design.ai/ | 智能体设计模式
+- Mobbin | inspiration | https://mobbin.com/ | 真实 App 截图库
+- Land-book | inspiration | https://land-book.com/ | 落地页灵感
+- Refero | inspiration | https://refero.design/ | 真实产品界面库（@neropursue）
+- 60fps | inspiration | https://60fps.design/ | 移动端界面动效（@neropursue）
+- Inspora | inspiration | https://inspora.design/ | 从 X 上收集的设计灵感（@neropursue）
+- Brand Guidelines | inspiration | https://brandguidelines.net/ | 品牌规范灵感（@neropursue）
+- Backgrounds Supply | inspiration | https://backgrounds.supply/ | 好看的设计背景素材（@neropursue）
+- Reelfolio | inspiration | https://reelfolio.io/ | 做漂亮的作品集（@neropursue）
+- Open WebUI | template | https://openwebui.com/ | 
+- LibreChat | template | https://www.librechat.ai/ | 
+- HuggingChat 源码 | template | https://github.com/huggingface/chat-ui | 
+- Chainlit | template | https://chainlit.io/ | Python
+- Gradio | template | https://www.gradio.app/ | Python
+- Vercel AI 聊天机器人模板 | template | https://vercel.com/templates/next.js/chatbot | 
+- assistant-ui 示例 | template | https://www.assistant-ui.com/examples | 
+- v0 模板库 | template | https://v0.app/templates | 
+- Agentation | generator | https://agentation.com/ | 在界面上直接标注问题，生成说明给编程 Agent（@tranmautritam）
+- UI 问题盘点可视化（@Linmiv） | guide | https://x.com/Linmiv/status/2106383164923060266 | 思路参考：把一个 App 所有页面的顶栏截图拼成画布，逐条标注不统一的地方和待定决策，适合做 UI 走查
+- Google Stitch | generator | https://stitch.withgoogle.com/ | 文字生成设计稿，可导出 Figma
+- Figma Make | generator | https://www.figma.com/make/ | AI 生成可交互原型
+- Magic Patterns | generator | https://www.magicpatterns.com/ | 给产品经理做原型
+- UX Pilot | generator | https://uxpilot.ai/ | 线框图和高保真稿
+- Relume | generator | https://www.relume.io/ | 站点地图和线框图
+- Lovable | generator | https://lovable.dev/ | 对话生成网页应用
+- Bolt | generator | https://bolt.new/ | 对话生成应用，可在线改代码
+- ibelick/ui-skills-root | skill | https://www.ui-skills.com/skills/ibelick/ui-skills-root | 总入口，按需求自动挑最合适的几个 UI 技能
+- ibelick/baseline-ui | skill | https://www.ui-skills.com/skills/ibelick/baseline-ui | 快速去掉 AI 味：修间距、层级、字体和小布局问题
+- ibelick/improve-ui | skill | https://www.ui-skills.com/skills/ibelick/improve-ui | 按产品自己的设计规范审查界面，写出修改方案
+- ibelick/create-design-md | skill | https://www.ui-skills.com/skills/ibelick/create-design-md | 从现有产品或网站提取设计规范，生成 DESIGN.md
+- pbakaus/impeccable | skill | https://www.ui-skills.com/skills/pbakaus/impeccable | Impeccable 主技能，做不千篇一律的高质量界面
+- pbakaus/polish | skill | https://www.ui-skills.com/skills/pbakaus/polish | 上线前最后一遍对齐、间距、一致性打磨
+- pbakaus/critique | skill | https://www.ui-skills.com/skills/pbakaus/critique | 给设计打分，按用户角色检查并给出修改建议
+- pbakaus/bolder | skill | https://www.ui-skills.com/skills/pbakaus/bolder | 界面太平淡时加强视觉冲击和个性
+- pbakaus/quieter | skill | https://www.ui-skills.com/skills/pbakaus/quieter | 界面太花时降噪，保留层级
+- pbakaus/delight | skill | https://www.ui-skills.com/skills/pbakaus/delight | 加有记忆点的小交互和情绪细节
+- pbakaus/harden | skill | https://www.ui-skills.com/skills/pbakaus/harden | 补齐空状态、报错、引导、多语言等边界情况
+- pbakaus/shape | skill | https://www.ui-skills.com/skills/pbakaus/shape | 写代码前先做设计访谈，产出设计简报（适合产品经理）
+- pbakaus/overdrive | skill | https://www.ui-skills.com/skills/pbakaus/overdrive | 往高冲击力走：高级动效、着色器
+- leonxlnx/taste-skill | skill | https://www.ui-skills.com/skills/leonxlnx/taste-skill | 资深 UI 审美约束，专门防 AI 套路化设计
+- leonxlnx/redesign-skill | skill | https://www.ui-skills.com/skills/leonxlnx/redesign-skill | 在不改功能的前提下把现有界面升级到高级感
+- leonxlnx/soft-skill | skill | https://www.ui-skills.com/skills/leonxlnx/soft-skill | 高端柔和风：字体、留白、层次、动效
+- leonxlnx/minimalist-skill | skill | https://www.ui-skills.com/skills/leonxlnx/minimalist-skill | 编辑感极简风，黑白配色
+- leonxlnx/stitch-skill | skill | https://www.ui-skills.com/skills/leonxlnx/stitch-skill | 配合 Google Stitch 生成不套路的设计
+- nextlevelbuilder/ui-ux-pro-max | skill | https://www.ui-skills.com/skills/nextlevelbuilder/ui-ux-pro-max | 50 多种风格、97 套配色、9 种技术栈的设计知识库
+- jakubkrehel/make-interfaces-feel-better | skill | https://www.ui-skills.com/skills/jakubkrehel/make-interfaces-feel-better | 让界面更精致：微交互、字体、细节
+- jakubkrehel/better-typography | skill | https://www.ui-skills.com/skills/jakubkrehel/better-typography | 字体选择、搭配、行距和换行
+- jakubkrehel/better-colors | skill | https://www.ui-skills.com/skills/jakubkrehel/better-colors | 用 OKLCH 生成配色、查对比度
+- emilkowalski/animate | skill | https://www.ui-skills.com/skills/emilkowalski/animate | 从零做动画，按正确顺序决定要不要动、怎么动
+- emilkowalski/review-animations | skill | https://www.ui-skills.com/skills/emilkowalski/review-animations | 审查动画的时机、节奏和一致性
+- raphaelsalaja/12-principles-of-animation | skill | https://www.ui-skills.com/skills/raphaelsalaja/12-principles-of-animation | 把迪士尼动画 12 原则用到网页上
+- raphaelsalaja/to-spring-or-not-to-spring | skill | https://www.ui-skills.com/skills/raphaelsalaja/to-spring-or-not-to-spring | 判断该用弹簧动画还是缓动曲线
+- raphaelsalaja/morphing-icons | skill | https://www.ui-skills.com/skills/raphaelsalaja/morphing-icons | 图标之间平滑变形
+- jakubantalik/transitions-dev | skill | https://www.ui-skills.com/skills/jakubantalik/transitions-dev | Transitions.dev 作者的过渡动效片段
+- jakubantalik/refine-live | skill | https://www.ui-skills.com/skills/jakubantalik/refine-live | 实时迭代打磨界面细节
+- 0xdesign/design-lab | skill | https://www.ui-skills.com/skills/0xdesign/design-lab | 设计探索流程：访谈、出多个方案、按反馈迭代
+- dammyjay93/interface-design | skill | https://www.ui-skills.com/skills/dammyjay93/interface-design | 专攻后台、仪表盘、SaaS 界面
+- rams/rams | skill | https://www.ui-skills.com/skills/rams/rams | 实时设计反馈：无障碍、间距、字体、对比度
+- vercel-labs/web-design-guidelines | skill | https://www.ui-skills.com/skills/vercel-labs/web-design-guidelines | 按 Vercel 的界面规范审查代码
+- anthropics/canvas-design | skill | https://www.ui-skills.com/skills/anthropics/canvas-design | Anthropic 官方，生成海报和视觉设计
+- zarazhangrui/frontend-slides | skill | https://www.ui-skills.com/skills/zarazhangrui/frontend-slides | 把 PPT 转成带动画的网页演示
+- jane-xiaoer/web-clone | skill | https://www.ui-skills.com/skills/jane-xiaoer/web-clone | 中文作者，复刻网站和 WebGL 特效的方法论
+- diffusionstudio/text-to-lottie | skill | https://www.ui-skills.com/skills/diffusionstudio/text-to-lottie | 用文字生成 Lottie 动画
+- Libraries.dev Skill | skill | https://libraries.dev/skill.html | 装上后能扫描项目、推荐放液态金属光球等特效的位置；原站另有 Pro 付费版，支持一句话调参数
+- Radix Primitives | library | https://www.radix-ui.com/primitives | 无样式、可访问的 React 底层组件：对话框、下拉菜单、选择器、Tabs、Tooltip 等，shadcn/ui 的地基
+- Radix Themes | library | https://www.radix-ui.com/themes | Radix 官方带样式组件主题，开箱即用、配色体系完整
+- Headless UI | library | https://headlessui.com/ | Tailwind 团队出品的无样式组件：弹窗、菜单、列表框、开关、Tabs
+- Ark UI | library | https://ark-ui.com/ | Chakra 团队的无样式组件，45+ 组件，React / Vue / Solid / Svelte 通用
+- Park UI | library | https://park-ui.com/ | 基于 Ark UI 的带样式组件，Panda CSS / Tailwind 两套写法
+- shadcn/ui Blocks | library | https://ui.shadcn.com/blocks | shadcn 官方区块：登录页、侧边栏、仪表盘、日历，可直接用 CLI 添加
+- shadcn/ui Charts | library | https://ui.shadcn.com/charts | shadcn 官方图表：面积、柱状、折线、饼图、雷达，基于 Recharts
+- shadcn Registry 目录 | library | https://ui.shadcn.com/docs/directory | shadcn 官方收录的第三方组件注册表目录，一站找到各家兼容 shadcn 的组件
+- daisyUI | library | https://daisyui.com/ | 最流行的 Tailwind 组件类名插件，60+ 组件、30+ 主题
+- Flowbite | library | https://flowbite.com/ | Tailwind 组件库，开源版 50+ 组件；原站另有付费 Pro 区块
+- HyperUI | library | https://www.hyperui.dev/ | 免费 Tailwind 组件片段合集：营销页、电商、后台，复制即用
+- Preline UI | library | https://preline.co/ | Tailwind 组件与区块，开源部分免费；原站另有付费 Pro
+- Meraki UI | library | https://merakiui.com/ | Tailwind 组件，支持 RTL 和暗色模式
+- Tailwind Plus | library | https://tailwindcss.com/plus | Tailwind 官方付费组件与模板（原 Tailwind UI），500+ 组件；本站只放链接
+- Mantine | library | https://mantine.dev/ | 100+ 组件和 70+ hooks，自带日期、图表、富文本、通知
+- Chakra UI | library | https://chakra-ui.com/ | 老牌 React 组件库，主题系统灵活，v3 基于 Ark UI
+- MUI Material UI | library | https://mui.com/material-ui/ | Material Design 的 React 实现，组件最全之一
+- MUI X | library | https://mui.com/x/ | 数据表格、日期选择、图表、树视图；基础版免费开源，Pro / Premium 付费
+- Base UI | library | https://base-ui.com/ | Radix / MUI / Floating UI 作者合作的无样式组件库
+- React Aria | library | https://react-aria.adobe.com/ | Adobe 出品，无障碍做得最细的无样式组件与 hooks
+- Ant Design | library | https://ant.design/ | 蚂蚁中后台组件库，60+ 组件，表格表单极强
+- Ant Design Mobile | library | https://mobile.ant.design/ | 蚂蚁移动端组件库
+- AntV G2 | library | https://g2.antv.antgroup.com/ | 蚂蚁可视化语法，几十种图表
+- TDesign | library | https://tdesign.tencent.com/ | 腾讯企业级设计体系，React / Vue / 小程序 / 移动端全覆盖
+- Arco Design | library | https://arco.design/ | 字节中后台组件库，60+ 组件，带物料市场
+- Semi Design | library | https://semi.design/ | 抖音前端出品，设计到代码一体，组件细节好
+- Naive UI | library | https://www.naiveui.com/ | Vue 3 组件库，90+ 组件，主题可调
+- Element Plus | library | https://element-plus.org/ | 饿了么 Vue 3 组件库，国内后台最常用
+- Vuetify | library | https://vuetifyjs.com/ | Vue 的 Material 组件框架
+- PrimeVue | library | https://primevue.org/ | Vue 组件库，90+ 组件；原站另有付费模板
+- PrimeReact | library | https://primereact.org/ | React 版 Prime 组件库，90+ 组件；原站另有付费模板
+- PrimeNG | library | https://primeng.org/ | Angular 版 Prime 组件库；原站另有付费模板
+- Nuxt UI | library | https://ui.nuxt.com/ | Nuxt 官方组件库，基于 Reka UI + Tailwind
+- Reka UI | library | https://reka-ui.com/ | Vue 版 Radix（原 Radix Vue），无样式可访问组件
+- shadcn-vue | library | https://www.shadcn-vue.com/ | shadcn/ui 的 Vue 移植
+- Quasar | library | https://quasar.dev/ | Vue 全家桶框架，一套代码出网页 / 移动 / 桌面
+- Vant | library | https://vant-ui.github.io/vant/ | 有赞移动端 Vue 组件库
+- shadcn-svelte | library | https://www.shadcn-svelte.com/ | shadcn/ui 的 Svelte 移植
+- Bits UI | library | https://bits-ui.com/ | Svelte 无样式组件
+- Melt UI | library | https://melt-ui.com/ | Svelte 无样式组件构建器
+- Skeleton | library | https://www.skeleton.dev/ | Svelte / React 的 Tailwind 设计系统
+- Kobalte | library | https://kobalte.dev/ | SolidJS 无样式可访问组件
+- Angular Material | library | https://material.angular.dev/ | Angular 官方 Material 组件
+- Spartan | library | https://www.spartan.ng/ | Angular 版 shadcn 风格组件
+- NG-ZORRO | library | https://ng.ant.design/ | Ant Design 的 Angular 实现
+- Fluent UI | library | https://react.fluentui.dev/ | 微软 Fluent 2 设计体系的 React 组件
+- Carbon Design System | library | https://carbondesignsystem.com/ | IBM 设计体系，数据密集型界面优秀
+- Primer | library | https://primer.style/ | GitHub 设计体系的 React 组件
+- Shoelace | library | https://shoelace.style/ | Web Components 组件库，任何框架都能用
+- Material Web | library | https://material-web.dev/ | Google 官方 Material 3 Web Components
+- Bootstrap | library | https://getbootstrap.com/ | 经典 CSS 组件框架
+- Bulma | library | https://bulma.io/ | 纯 CSS 组件框架，无 JS
+- Pico CSS | library | https://picocss.com/ | 极简语义化 CSS，HTML 写完就好看
+- Open Props | library | https://open-props.style/ | CSS 变量设计令牌：颜色、阴影、渐变、缓动
+- Tremor | library | https://tremor.so/ | 仪表盘组件和图表，Tailwind + Recharts
+- Recharts | library | https://recharts.org/ | React 最常用的图表库
+- Apache ECharts | library | https://echarts.apache.org/ | 功能最全的开源图表库之一，示例画廊很大
+- Chart.js | library | https://www.chartjs.org/ | 轻量 Canvas 图表
+- Nivo | library | https://nivo.rocks/ | 好看的 React 数据可视化组件
+- visx | library | https://airbnb.io/visx/ | Airbnb 的底层可视化组件
+- TanStack Table | library | https://tanstack.com/table | 无头表格引擎：排序、筛选、分页、虚拟滚动
+- AG Grid | library | https://www.ag-grid.com/ | 高性能数据表格；社区版免费开源，企业版付费
+- FullCalendar | library | https://fullcalendar.io/ | 日历排期组件；核心开源，部分高级插件付费
+- React DayPicker | library | https://daypicker.dev/ | 日期选择器，shadcn Calendar 用的就是它
+- Sonner | library | https://sonner.emilkowal.ski/ | Emil Kowalski 做的 Toast 通知，动效顺滑
+- react-hot-toast | library | https://react-hot-toast.com/ | 轻量好看的 Toast 通知
+- Vaul | library | https://vaul.emilkowal.ski/ | 移动端风格的底部抽屉
+- cmdk | library | https://github.com/dip/cmdk | ⌘K 命令面板组件
+- Floating UI | library | https://floating-ui.com/ | Tooltip / Popover / 下拉的定位引擎
+- input-otp | library | https://input-otp.rodz.dev/ | 验证码输入框
+- React Hook Form | library | https://react-hook-form.com/ | 高性能表单状态与校验
+- Embla Carousel | library | https://www.embla-carousel.com/ | 轻量轮播，手感顺滑
+- Swiper | library | https://swiperjs.com/ | 最常用的移动端轮播 / 滑动组件
+- dnd kit | library | https://dndkit.com/ | 拖拽排序工具包：列表、看板、网格
+- React Flow | library | https://reactflow.dev/ | 节点流程图 / 工作流画布；开源免费，原站另有付费 Pro 示例
+- Uppy | library | https://uppy.io/ | 文件上传组件：拖拽、进度、网盘导入
+- FilePond | library | https://pqina.nl/filepond/ | 顺滑的文件上传组件
+- Tiptap | library | https://tiptap.dev/ | 无头富文本编辑器；编辑器核心开源，原站另有付费云服务
+- Lexical | library | https://lexical.dev/ | Meta 出品的可扩展编辑器框架
+- BlockNote | library | https://www.blocknotejs.org/ | Notion 风格的块编辑器
+- Lucide | library | https://lucide.dev/ | 1500+ 线性图标，shadcn 默认图标
+- Heroicons | library | https://heroicons.com/ | Tailwind 团队的图标集
+- Tabler Icons | library | https://tabler.io/icons | 5000+ 免费线性图标
+- Phosphor Icons | library | https://phosphoricons.com/ | 灵活图标家族，六种粗细
+- Iconify | library | https://icon-sets.iconify.design/ | 20 万+ 开源图标统一入口；各图标集许可不同，请看原站标注
+- Motion | library | https://motion.dev/ | 原 Framer Motion，React / JS 动画库开源版
+- Motion 示例 | library | https://motion.dev/examples | Motion 官方示例画廊；部分示例属于付费 Motion+，本站只放链接
+- React Spring | library | https://www.react-spring.dev/ | 弹簧物理动画库
+- GSAP | library | https://gsap.com/ | 专业级 JS 动画平台，免费使用但为自有许可（非 MIT），本站只放链接
+- AutoAnimate | library | https://auto-animate.formkit.com/ | 一行代码给列表加进出场动画
+- Lottie Web | library | https://airbnb.io/lottie/ | 播放 AE 导出的 Lottie 动画
+- Lenis | library | https://lenis.darkroom.engineering/ | 丝滑滚动库，很多获奖网站在用
+- Animate.css | library | https://animate.style/ | 现成的 CSS 动画类，加个 class 就能动；许可以原仓库为准，本站只放链接
+- Three.js | library | https://threejs.org/ | 最主流的 WebGL 3D 库，示例画廊很大
+- React Three Fiber | library | https://r3f.docs.pmnd.rs/ | 用 React 写 Three.js
+- Drei | library | https://drei.docs.pmnd.rs/ | React Three Fiber 的现成 3D 组件集
+- Eldora UI | library | https://www.eldoraui.site/ | 动效组件与模板，shadcn 风格
+- Tamagui | library | https://tamagui.dev/ | React Native + Web 一套组件
+- gluestack-ui | library | https://gluestack.io/ | React Native 的可复制组件，类 shadcn
+- React Native Paper | library | https://reactnativepaper.com/ | React Native 的 Material 组件
+- React Native Reusables | library | https://reactnativereusables.com/ | shadcn/ui 的 React Native 版
+- Ionic | library | https://ionicframework.com/ | 跨平台移动端 UI 组件
+- Konsta UI | library | https://konstaui.com/ | iOS / Material 风格的 Tailwind 移动组件
+- The Component Gallery | inspiration | https://component.gallery/ | 按组件类型整理的真实设计体系案例库，同一种组件能看到各大公司的做法，适合对照找灵感
+- Origin UI (coss.com/origin) | library | https://coss.com/origin | Huge set of copy-paste shadcn-style primitives: inputs, buttons, selects, dates, tables, timelines. Tailwind + React, open source.
+- Inspira UI | library | https://inspira-ui.com | Vue/Nuxt animated components in the spirit of Aceternity and Magic UI. Free and open source.
+- Tailark | library | https://tailark.com | shadcn-style marketing blocks: hero, features, testimonials, CTA. Free blocks are copy-paste.
+- shadcn/studio | library | https://shadcnstudio.com | Variant gallery and theme generator for shadcn/ui components, copy any variant.
+- Zag.js | library | https://zagjs.com | Framework-agnostic UI component logic built on state machines (powers Ark UI). React/Vue/Solid/Svelte.
+- UI Layouts | library | https://www.ui-layouts.com | React + Tailwind layout and motion components: galleries, drawers, carousels, scroll effects.
+- Cuicui | library | https://cuicui.day | Copy-paste React components and blocks grouped by use case, with live previews.
+- Watermelon UI | library | https://www.watermelon.sh | Animated shadcn-style components and blocks for modern marketing pages.
+- neobrutalism components | library | https://www.neobrutalism.dev | Neo-brutalist shadcn components: thick borders, hard shadows, saturated colours.
+- RetroUI | library | https://www.retroui.dev | Retro / neo-brutalist React component library for characterful landing pages.
+- 8bitcn/ui | library | https://8bitcn.com | Pixel-art 8-bit take on shadcn components for games and retro sites.
+- tweakcn | generator | https://tweakcn.com | Visual theme editor for shadcn/ui: colours, radius, fonts, shadows; exports CSS variables.
+- shadcn themes (ui.jln.dev) | generator | https://ui.jln.dev | Thousands of shadcn/ui colour themes to preview and copy as CSS variables.
+- shadcn.io | collection | https://www.shadcn.io | Community directory of shadcn components, blocks, icons and templates.
+- Tailwind Plus UI Blocks（含免费示例） | library | https://www.tailwindcss.com/plus/ui-blocks | Official Tailwind blocks (formerly Tailwind UI). Full library is paid; some previews are free.
+- Aceternity UI 全部组件 | library | https://ui.aceternity.com/components | Full list of free Aceternity components: spotlight, 3D cards, background beams, text effects, floating nav.
+- Magic UI 全部组件 | library | https://magicui.design/docs/components | Full Magic UI component list: marquee, bento grid, number ticker, beams, particles, dock.
+- Hover.dev 组件 | library | https://www.hover.dev/components | Hover.dev animated components: buttons, navs, cards, heroes; some free.
+- Flowbite Blocks | library | https://flowbite.com/blocks/ | Flowbite Tailwind blocks for marketing, app dashboards and e-commerce; some free.
+
+# Component style demos: 1924 entries, see api/resources.json (type=style)

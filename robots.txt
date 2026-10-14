@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://siinxu.github.io/ui-resource-hub/sitemap.xml
+# LLM-friendly index: https://siinxu.github.io/ui-resource-hub/llms.txt

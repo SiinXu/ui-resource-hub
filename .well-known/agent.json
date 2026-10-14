@@ -1,0 +1,17 @@
+{
+ "name": "UI Hub",
+ "description": "Curated directory of UI component libraries, component style demos, design skills and AI design techniques.",
+ "url": "https://siinxu.github.io/ui-resource-hub/",
+ "documentation": "https://siinxu.github.io/ui-resource-hub/agents/",
+ "llms_txt": "https://siinxu.github.io/ui-resource-hub/llms.txt",
+ "llms_full_txt": "https://siinxu.github.io/ui-resource-hub/llms-full.txt",
+ "agents_md": "https://siinxu.github.io/ui-resource-hub/AGENTS.md",
+ "endpoints": {
+  "resources": "https://siinxu.github.io/ui-resource-hub/api/resources.json",
+  "skills": "https://siinxu.github.io/ui-resource-hub/api/skills.json",
+  "sitemap": "https://siinxu.github.io/ui-resource-hub/sitemap.xml"
+ },
+ "updated": "2026-10-14 08:54 UTC",
+ "auth": "none",
+ "rate_limit": "static files, be polite"
+}
