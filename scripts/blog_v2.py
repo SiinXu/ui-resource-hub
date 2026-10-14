@@ -27,6 +27,7 @@ S2 = {
  'none': dict(zh='没有匹配的文章',zht='沒有符合的文章',en='No matching posts',ja='該当する記事はありません',ko='일치하는 글이 없습니다',ms='Tiada artikel sepadan',vi='Không có bài phù hợp',fr='Aucun article correspondant',es='No hay artículos',de='Keine passenden Beiträge'),
  'related': dict(zh='相关文章',zht='相關文章',en='Related posts',ja='関連記事',ko='관련 글',ms='Artikel berkaitan',vi='Bài liên quan',fr='Articles liés',es='Artículos relacionados',de='Ähnliche Beiträge'),
  'inseries': dict(zh='本系列',zht='本系列',en='In this series',ja='このシリーズ',ko='이 시리즈',ms='Dalam siri ini',vi='Trong loạt bài',fr='Dans cette série',es='En esta serie',de='In dieser Serie'),
+ 'aff': dict(zh='含推荐链接',zht='含推薦連結',en='Referral link',ja='紹介リンクを含みます',ko='추천 링크 포함',ms='Mengandungi pautan rujukan',vi='Có liên kết giới thiệu',fr='Lien de parrainage',es='Enlace de referido',de='Empfehlungslink'),
  'rss': dict(zh='RSS 订阅',zht='RSS 訂閱',en='RSS feed',ja='RSSフィード',ko='RSS 피드',ms='Suapan RSS',vi='Nguồn RSS',fr='Flux RSS',es='Feed RSS',de='RSS-Feed'),
  'posts_n': dict(zh='篇文章',zht='篇文章',en='posts',ja='件の記事',ko='개의 글',ms='artikel',vi='bài viết',fr='articles',es='artículos',de='Beiträge'),
 }
@@ -83,7 +84,7 @@ q.addEventListener('input',run);cs.forEach(function(b){b.onclick=function(){cur=
 <h2 class="sh">{ml(S2['allposts'])}<small>{len(POSTS)}</small></h2><div class="posts" id="grid">{''.join(card(p) for p in order)}</div><p class="empty" id="empty">{ml(S2['none'])}</p></main>{foot('../')}{SCRIPT}{js}</body></html>""")
     # posts
     for p in POSTS:
-        refs = '<ol>'+''.join(f'<li><a href="{E(u)}" rel="noopener" target="_blank">{E(t)}</a> — {E(a)}</li>' for t,a,u in p['refs'])+'</ol>'
+        refs = '<ol>'+''.join((f'<li><a href="{E(u)}" rel="sponsored noopener" target="_blank">{E(t)}</a> — {E(a)} <small class="aff">({ml(S2["aff"])})</small></li>' if 'cello.so' in u else f'<li><a href="{E(u)}" rel="noopener" target="_blank">{E(t)}</a> — {E(a)}</li>') for t,a,u in p['refs'])+'</ol>'
         body = ''.join(f'<div data-l="{c}">' + (f'<p class="note">{E(L("body_note",k))}</p>' if L('body_note',k) else '') + with_figs(p['zh'] if k in ('zh','zht') else p['en'], p['slug'], k, '../../') + '</div>' for c,_,k in LANGS)
         snav = ''
         if p['series']:

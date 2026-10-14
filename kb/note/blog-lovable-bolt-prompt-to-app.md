@@ -27,6 +27,6 @@ Use these tools when you need a working prototype with real data paths fast. Use
 ## References
 - [Lovable changelog (8 Oct 2026)](https://docs.lovable.dev/changelog) — Lovable
 - [Lovable cut its pick-a-look step](https://artdirectiondaily.com/issues/2026-10-12-lovable-cut-pick-look-step.html) — Art Direction Daily
-- [Bolt.new](https://bolt.new/) — StackBlitz
+- [Bolt.new](https://bolt.cello.so/ByQ3siiRkMz) — StackBlitz
 - [WebContainers](https://webcontainers.io/) — StackBlitz
 - [Lovable Supabase integration](https://docs.lovable.dev/integrations/supabase) — Lovable

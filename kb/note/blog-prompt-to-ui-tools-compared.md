@@ -33,6 +33,6 @@ The 2026 trend across all five is the same: durable context (guideline files, de
 ## References
 - [v0](https://v0.app/) — Vercel
 - [Lovable docs](https://docs.lovable.dev/) — Lovable
-- [Bolt.new](https://bolt.new/) — StackBlitz
+- [Bolt.new](https://bolt.cello.so/ByQ3siiRkMz) — StackBlitz
 - [Figma Make](https://www.figma.com/make/) — Figma
 - [Magic Patterns](https://www.magicpatterns.com/) — Magic Patterns

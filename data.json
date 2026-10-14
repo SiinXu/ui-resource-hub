@@ -6902,7 +6902,7 @@
   {
    "id": "bolt-new",
    "name": "Bolt",
-   "url": "https://bolt.new/",
+   "url": "https://bolt.cello.so/ByQ3siiRkMz",
    "note": "对话生成应用，可在线改代码",
    "type": "generator",
    "section": "AI 生成界面",
@@ -6919,7 +6919,8 @@
    ],
    "vs": [
     "minimal"
-   ]
+   ],
+   "sponsored": true
   },
   {
    "id": "www-ui-skills-com-skills-ibelick-ui-skills-root",

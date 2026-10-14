@@ -268,7 +268,7 @@ Use these tools when you need a working prototype with real data paths fast. Use
 References:
 - Lovable changelog (8 Oct 2026) — Lovable: https://docs.lovable.dev/changelog
 - Lovable cut its pick-a-look step — Art Direction Daily: https://artdirectiondaily.com/issues/2026-10-12-lovable-cut-pick-look-step.html
-- Bolt.new — StackBlitz: https://bolt.new/
+- Bolt.new — StackBlitz: https://bolt.cello.so/ByQ3siiRkMz
 - WebContainers — StackBlitz: https://webcontainers.io/
 - Lovable Supabase integration — Lovable: https://docs.lovable.dev/integrations/supabase
 
@@ -328,7 +328,7 @@ The 2026 trend across all five is the same: durable context (guideline files, de
 References:
 - v0 — Vercel: https://v0.app/
 - Lovable docs — Lovable: https://docs.lovable.dev/
-- Bolt.new — StackBlitz: https://bolt.new/
+- Bolt.new — StackBlitz: https://bolt.cello.so/ByQ3siiRkMz
 - Figma Make — Figma: https://www.figma.com/make/
 - Magic Patterns — Magic Patterns: https://www.magicpatterns.com/
 
@@ -885,7 +885,7 @@ References:
 - UX Pilot | generator | https://uxpilot.ai/ | 线框图和高保真稿
 - Relume | generator | https://www.relume.io/ | 站点地图和线框图
 - Lovable | generator | https://lovable.dev/ | 对话生成网页应用
-- Bolt | generator | https://bolt.new/ | 对话生成应用，可在线改代码
+- Bolt | generator | https://bolt.cello.so/ByQ3siiRkMz | 对话生成应用，可在线改代码
 - ibelick/ui-skills-root | skill | https://www.ui-skills.com/skills/ibelick/ui-skills-root | 总入口，按需求自动挑最合适的几个 UI 技能
 - ibelick/baseline-ui | skill | https://www.ui-skills.com/skills/ibelick/baseline-ui | 快速去掉 AI 味：修间距、层级、字体和小布局问题
 - ibelick/improve-ui | skill | https://www.ui-skills.com/skills/ibelick/improve-ui | 按产品自己的设计规范审查界面，写出修改方案

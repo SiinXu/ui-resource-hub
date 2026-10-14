@@ -56,7 +56,7 @@ dict(slug='lovable-bolt-prompt-to-app', date=D, cat='tools', series='prompt-to-u
 <li>每做完一个功能，对照这个文件检查新页面；风格跑偏总是一页一页累积的。</li></ol>
 <h2>怎么选</h2>
 <p>需要快速做出接通真实数据的可用原型时，用这类工具。交付物是要放进现有代码库的精致界面时，用组件生成器（v0、Magic Patterns）或手写。很多团队两者并用：在应用生成器里跑通流程，再用自己的设计系统重做最终界面。</p>""",
- refs=[('Lovable changelog (8 Oct 2026)','Lovable','https://docs.lovable.dev/changelog'),('Lovable cut its pick-a-look step','Art Direction Daily','https://artdirectiondaily.com/issues/2026-10-12-lovable-cut-pick-look-step.html'),('Bolt.new','StackBlitz','https://bolt.new/'),('WebContainers','StackBlitz','https://webcontainers.io/'),('Lovable Supabase integration','Lovable','https://docs.lovable.dev/integrations/supabase')]),
+ refs=[('Lovable changelog (8 Oct 2026)','Lovable','https://docs.lovable.dev/changelog'),('Lovable cut its pick-a-look step','Art Direction Daily','https://artdirectiondaily.com/issues/2026-10-12-lovable-cut-pick-look-step.html'),('Bolt.new','StackBlitz','https://bolt.cello.so/ByQ3siiRkMz'),('WebContainers','StackBlitz','https://webcontainers.io/'),('Lovable Supabase integration','Lovable','https://docs.lovable.dev/integrations/supabase')]),
 
 dict(slug='figma-make-and-figma-agent', date=D, cat='tools', series='prompt-to-ui', tags=['Figma','Figma Make','agent'],
  t=T('Figma Make and the Figma agent: AI moves onto the canvas','Figma Make 与 Figma 智能体：AI 搬上画布','Figma Make 與 Figma 智慧體：AI 搬上畫布','Figma MakeとFigmaエージェント：AIがキャンバスへ','Figma Make와 Figma 에이전트: AI가 캔버스로','Figma Make dan ejen Figma: AI pindah ke kanvas','Figma Make và agent của Figma: AI lên canvas',"Figma Make et l'agent Figma : l'IA arrive sur le canevas",'Figma Make y el agente de Figma: la IA llega al lienzo','Figma Make und der Figma-Agent: KI zieht auf die Canvas'),
@@ -135,7 +135,7 @@ dict(slug='prompt-to-ui-tools-compared', date=D, cat='tools', series='prompt-to-
 <li>设计上下文放在哪里，每个队友的会话都能读到吗？</li></ol>
 <h2>我们的看法</h2>
 <p>2026 年这五个工具的趋势一致：持久的上下文（规范文件、设计系统、MCP）比花哨的提示词更重要。选上下文机制最适合你团队的那个，然后把功夫花在那份文件上。价格和额度经常变，请以各家当前官网为准，任何对比表（包括我们这张）都不如官网可靠。</p>""",
- refs=[('v0','Vercel','https://v0.app/'),('Lovable docs','Lovable','https://docs.lovable.dev/'),('Bolt.new','StackBlitz','https://bolt.new/'),('Figma Make','Figma','https://www.figma.com/make/'),('Magic Patterns','Magic Patterns','https://www.magicpatterns.com/')]),
+ refs=[('v0','Vercel','https://v0.app/'),('Lovable docs','Lovable','https://docs.lovable.dev/'),('Bolt.new','StackBlitz','https://bolt.cello.so/ByQ3siiRkMz'),('Figma Make','Figma','https://www.figma.com/make/'),('Magic Patterns','Magic Patterns','https://www.magicpatterns.com/')]),
 ]
 POSTS2 += [
 dict(slug='aceternity-ui-deep-dive', date=D, cat='components', series='library-deep-dive', featured=True, tags=['Aceternity UI','motion','components'],

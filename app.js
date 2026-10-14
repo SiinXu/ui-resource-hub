@@ -1,3 +1,4 @@
+function REL(i){return i&&i.sponsored?'sponsored noopener noreferrer':'noopener noreferrer';}
 (function(){
 'use strict';
 var D = window.UI_DATA || {items:[],guides:[]}, M = window.UI_MEDIA || {}, LG = window.UI_LEGAL || {}, I18N = window.UI_I18N || {langs:[['zh-CN','中文']],'zh-CN':{}};
@@ -113,7 +114,7 @@ function promptOld(i){
 function cardActs(i,cls){
   var c=codeOf(i), tip=codeTip(i);
   return '<div class="cacts'+(cls?' '+cls:'')+'">'+
-    '<a class="ab go" href="'+esc(i.url)+'" target="_blank" rel="noopener noreferrer" title="'+esc(t('btn_original'))+'">'+IC.ext+'<span>'+esc(t('btn_original'))+'</span></a>'+
+    '<a class="ab go" href="'+esc(i.url)+'" target="_blank" rel="'+REL(i)+'" title="'+esc(t('btn_original'))+'">'+IC.ext+'<span>'+esc(t('btn_original'))+'</span></a>'+
     '<button class="ab" data-cp="'+i.id+'" title="'+esc(t('btn_copy_prompt'))+'">'+IC.spark+'<span>Prompt</span></button>'+
     (c?'<button class="ab code" data-cc="'+i.id+'" title="'+esc(t('btn_copy_code'))+'">'+IC.code+'<span>'+esc(t('code_none_h'))+'</span></button>'
       :'<button class="ab off" aria-disabled="true" data-tip="'+esc(tip)+'" title="'+esc(tip)+'">'+IC.lock+'<span>'+esc(t('code_none_h'))+'</span></button>')+
@@ -140,7 +141,7 @@ function foot(i){return '<div class="cbar">'+copyRow(i)+'<span class="sp"></span
 function menuHTML(i){
   return '<div class="mh"><b>'+esc(shown(i.name))+'</b><small>'+esc(host(i.url))+'</small></div>'+
     (vis(i)?'<button class="mi" role="menuitem" data-play="'+i.id+'">'+IC.full+'<span>'+esc(canFrame(i)?t('btn_play'):t('btn_view'))+'</span></button>':'')+
-    '<a class="mi" role="menuitem" href="'+esc(i.url)+'" target="_blank" rel="noopener noreferrer">'+IC.ext+'<span>'+esc(t('btn_original'))+'</span></a>'+
+    '<a class="mi" role="menuitem" href="'+esc(i.url)+'" target="_blank" rel="'+REL(i)+'">'+IC.ext+'<span>'+esc(t('btn_original'))+'</span></a>'+
     '<button class="mi" role="menuitem" data-open="'+i.id+'">'+IC.info+'<span>'+esc(t('btn_details'))+'</span></button>';
 }
 var menuFor=null;
@@ -388,13 +389,13 @@ function openSheet(id){
   $('sheet').innerHTML = '<div class="grab"></div><button class="ib close" data-close aria-label="'+esc(t('close'))+'">'+IC.x+'</button>'+preview(i)+
    '<div class="sb"><div class="row">'+'<span class="tp">'+TN(i.type)+'</span>'+(PR(i.pricing)?'<span class="pill '+i.pricing+'">'+PR(i.pricing)+'</span>':'')+(l.lic?'<span class="pill oss">'+esc(l.lic)+'</span>':'')+(i.source?'<span class="src">'+esc(i.source)+'</span>':'')+'</div>'+
    '<h2>'+esc(shown(i.name))+'</h2>'+(noteOf(i)?'<p class="lead">'+esc(noteOf(i))+'</p>':'')+
-   '<div class="acts"><a class="b pri" href="'+esc(i.url)+'" target="_blank" rel="noopener noreferrer">'+esc(t('btn_original'))+IC.ext+'</a>'+
+   '<div class="acts"><a class="b pri" href="'+esc(i.url)+'" target="_blank" rel="'+REL(i)+'">'+esc(t('btn_original'))+IC.ext+'</a>'+
    (vis(i)?'<button class="b ghost" data-play="'+i.id+'">'+IC.full+esc(canFrame(i)?t('btn_play'):t('btn_view'))+'</button>':'')+
    '<button class="b ghost" data-copy="'+esc(i.url)+'" data-msg="'+esc(t('toast_link'))+'">'+IC.copy+esc(t('btn_copy_link'))+'</button>'+favBtn(i,'lg')+'</div>'+
    fwSibs(i)+
    promptBlock(i)+
    codeBlock(i)+
-   '<dl class="kv"><dt>'+esc(t('kv_url'))+'</dt><dd class="u"><a href="'+esc(i.url)+'" target="_blank" rel="noopener noreferrer">'+esc(i.url)+'</a></dd>'+
+   '<dl class="kv"><dt>'+esc(t('kv_url'))+'</dt><dd class="u"><a href="'+esc(i.url)+'" target="_blank" rel="'+REL(i)+'">'+esc(i.url)+'</a>'+(i.sponsored?' <small class="aff">('+esc(t('aff_note'))+')</small>':'')+'</dd>'+
    (l.lic?'<dt>'+esc(t('kv_license'))+'</dt><dd>'+esc(l.lic)+(links?'<span class="lk">'+links+'</span>':'')+'</dd>':'')+
    ((i.rt||[]).length?'<dt>'+esc(t('kv_rt'))+'</dt><dd class="fl">'+i.rt.map(function(k){return '<button class="tg lk" data-rt="'+k+'">'+esc(RTN(k))+'</button>'}).join('')+'</dd>':'')+
    ((i.vs||[]).length?'<dt>'+esc(t('kv_vs'))+'</dt><dd class="fl">'+i.vs.map(function(k){return '<button class="tg lk" data-vs="'+k+'"><i class="vsw vs-'+k+'"></i>'+esc(VSN(k))+'</button>'}).join('')+'</dd>':'')+
@@ -425,7 +426,7 @@ function playFull(id){
     $('play').innerHTML=bar('<span class="'+(f?'tag-lv':'tag-fr')+'">'+(f?t('tag_live'):t('tag_frame'))+'</span>',src)+'<iframe src="'+esc(src)+'" title="'+esc(shown(i.name))+'" style="color-scheme:'+curTheme()+'" allow="microphone; autoplay; clipboard-write" onload="window.UIHUB_postTheme&&UIHUB_postTheme(this)"></iframe>';
   }else{
     $('play').innerHTML=bar(srcTag(i),i.url)+'<div class="lb">'+(m.img?shotImg(m,'',''):'<div class="lbd">'+demo(i)+'</div>')+
-      '<p>'+esc(m.img?t('lb_hint'):t('pv_demo_d'))+'</p><div class="lba"><a class="b pri" href="'+esc(i.url)+'" target="_blank" rel="noopener noreferrer">'+esc(t('btn_original'))+IC.ext+'</a>'+cardActs(i,'lbc')+'</div></div>';
+      '<p>'+esc(m.img?t('lb_hint'):t('pv_demo_d'))+'</p><div class="lba"><a class="b pri" href="'+esc(i.url)+'" target="_blank" rel="'+REL(i)+'">'+esc(t('btn_original'))+IC.ext+'</a>'+cardActs(i,'lbc')+'</div></div>';
   }
   $('play').hidden=false; document.body.classList.add('lock');
 }

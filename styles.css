@@ -745,3 +745,4 @@ body::after{background-image:radial-gradient(var(--dots) 1px,transparent 1.2px);
 [data-theme=light] .d-notes i:nth-child(3){background:#fff}
 .demo,.demo *{transition:background .35s,color .35s,border-color .35s}
 @media(max-width:599px){.shot-t{width:18px;height:18px;right:6px;bottom:6px}.shot-t svg{width:10px;height:10px}}
+.aff{font-size:.78em;opacity:.7;margin-left:.3em;white-space:nowrap}
