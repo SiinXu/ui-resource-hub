@@ -71,22 +71,22 @@ curl -s https://siinxu.github.io/ui-resource-hub/api/resources.json | jq --arg d
 
 ## Worked examples
 ### Build a dark SaaS pricing page
-- **Filter:** type=library, pricing=free, ct ∋ card|button|layout, tags ∋ React; then type=style with vs ∋ dark-tech|minimal and ct ∋ card for the look.
-- **Choose:** shadcn/ui (+ shadcn/ui Blocks for the pricing section), Radix Primitives underneath, Magic UI number ticker for one accent moment.
-- **Tokens:** bg #06070b, surface #10131a, ink #f3f5fb, one accent #67e8f9, radius 12, Geist 14/20, tabular numbers for prices.
-- **Skills order:** taste-skill (direction) → emil-design-eng (toggle + hover motion ≤ 200ms ease-out) → impeccable + baseline-ui + accessibility.
-- **Verify:** monthly/annual toggle keyboard-operable · focus-visible on CTAs · 4.5:1 contrast on muted text · 375px stacks tiers · reduced motion disables ticker · light theme still works.
+- **Filter:** curl -s https://siinxu.github.io/ui-resource-hub/api/resources.json | jq '.items[] | select(.type=="library" and .pricing=="free" and (.tags|index("React")) and ((.ct//[]) | index("card") or index("button") or index("layout"))) | {name,url}'
+- **Choose:** shadcn/ui (base components); shadcn/ui Blocks (pricing section); Radix Primitives (underneath); Magic UI Number Ticker (the one accent moment)
+- **Tokens:** bg #06070b, surface #10131a, ink #f3f5fb, accent #67e8f9, radius 12px, font Geist 14/20, numbers tabular-nums
+- **Skills order:** taste-skill (set the direction), then emil-design-eng (toggle and hover motion, 200ms or less, ease-out), then impeccable + baseline-ui + accessibility (final audit)
+- **Verify:** Monthly / annual toggle works with the keyboard; Visible focus ring on every CTA; Muted text reaches 4.5:1 contrast; At 375px the tiers stack vertically; Reduced motion turns the ticker off; Light theme still looks right
 
-### Add a fancy-but-restrained landing hero
-- **Filter:** type ∈ effect|library, vs ∋ motion, ct ∋ background; pricing=free.
-- **Choose:** ONE effect: Aceternity spotlight or Magic UI beams; Motion for entrance; no second effect on the page.
-- **Skills order:** frontend-design → emil-design-eng → web-design-guidelines + performance.
-- **Verify:** LCP < 2.5s, effect paused under prefers-reduced-motion, text readable over effect in both themes.
+### Add a fancy but restrained landing hero
+- **Filter:** curl -s https://siinxu.github.io/ui-resource-hub/api/resources.json | jq '.items[] | select((.type=="effect" or .type=="library") and .pricing=="free" and ((.vs//[])|index("motion")) and ((.ct//[])|index("background"))) | {name,url}'
+- **Choose:** Aceternity Spotlight (pick one of these two); Magic UI Beams (or this one); Motion (entrance only)
+- **Skills order:** frontend-design (set the direction), then emil-design-eng (motion polish), then web-design-guidelines + performance (audit)
+- **Verify:** LCP under 2.5s; Effect pauses when reduced motion is on; Text stays readable over the effect in both themes
 
 ### Audit an existing admin dashboard
-- **Filter:** type=style, vs ∋ enterprise, ct ∋ table|nav|form to collect reference demos.
-- **Skills order:** redesign-skill → baseline-ui → accessibility → web-quality-audit.
-- **Verify:** table header sticky, row focus, empty/loading/error states, 24px targets, dark mode parity.
+- **Filter:** curl -s https://siinxu.github.io/ui-resource-hub/api/resources.json | jq '[.items[] | select(.type=="style" and ((.vs//[])|index("enterprise")) and ((.ct//[]) | index("table") or index("nav") or index("form")))] | .[:20] | map({name,libName,page})'
+- **Skills order:** redesign-skill (find the problems), then baseline-ui (fix the basics), then accessibility (accessibility pass), then web-quality-audit (final score)
+- **Verify:** Table header stays sticky; Rows can be focused with the keyboard; Empty, loading and error states exist; Click targets are at least 24px; Dark mode matches light mode
 
 ## Style decision table
 | Product | vs | Libraries | Key rules |

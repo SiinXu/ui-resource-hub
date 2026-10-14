@@ -31,21 +31,44 @@ def build(g):
           ('Count items per visual style', "curl -s %sapi/resources.json | jq '[.items[].vs[]?] | group_by(.) | map({(.[0]):length}) | add'" % BASE),
           ('fetch (JS): motion effects, free', "const r = await fetch('%sapi/resources.json').then(r => r.json());\nconst picks = r.items.filter(i => ['effect','library'].includes(i.type) && i.vs?.includes('motion') && i.pricing === 'free');" % BASE),
           ('New this week', "curl -s %sapi/resources.json | jq --arg d \"$(date -u -d '7 days ago' +%%F)\" '.items[] | select(.added and .added >= $d) | {name,url,added}'" % BASE)]
-    EX = [('Build a dark SaaS pricing page', [
-            ('Filter', 'type=library, pricing=free, ct ∋ card|button|layout, tags ∋ React; then type=style with vs ∋ dark-tech|minimal and ct ∋ card for the look.'),
-            ('Choose', 'shadcn/ui (+ shadcn/ui Blocks for the pricing section), Radix Primitives underneath, Magic UI number ticker for one accent moment.'),
-            ('Tokens', 'bg #06070b, surface #10131a, ink #f3f5fb, one accent #67e8f9, radius 12, Geist 14/20, tabular numbers for prices.'),
-            ('Skills order', 'taste-skill (direction) → emil-design-eng (toggle + hover motion ≤ 200ms ease-out) → impeccable + baseline-ui + accessibility.'),
-            ('Verify', 'monthly/annual toggle keyboard-operable · focus-visible on CTAs · 4.5:1 contrast on muted text · 375px stacks tiers · reduced motion disables ticker · light theme still works.')]),
-          ('Add a fancy-but-restrained landing hero', [
-            ('Filter', 'type ∈ effect|library, vs ∋ motion, ct ∋ background; pricing=free.'),
-            ('Choose', 'ONE effect: Aceternity spotlight or Magic UI beams; Motion for entrance; no second effect on the page.'),
-            ('Skills order', 'frontend-design → emil-design-eng → web-design-guidelines + performance.'),
-            ('Verify', 'LCP < 2.5s, effect paused under prefers-reduced-motion, text readable over effect in both themes.')]),
-          ('Audit an existing admin dashboard', [
-            ('Filter', 'type=style, vs ∋ enterprise, ct ∋ table|nav|form to collect reference demos.'),
-            ('Skills order', 'redesign-skill → baseline-ui → accessibility → web-quality-audit.'),
-            ('Verify', 'table header sticky, row focus, empty/loading/error states, 24px targets, dark mode parity.')])]
+    U.update({
+     'x_filter': H('Find references','查找参考','查找參考','参考を探す','레퍼런스 찾기','Cari rujukan','Tìm tham khảo','Trouver des références','Buscar referencias','Referenzen finden'),
+     'x_choose': H('Pick components','选用组件','選用元件','コンポーネントを選ぶ','컴포넌트 선택','Pilih komponen','Chọn thành phần','Choisir les composants','Elegir componentes','Komponenten wählen'),
+     'x_tokens': H('Design tokens','设计 token','設計 token','デザイントークン','디자인 토큰','Token reka bentuk','Design token','Tokens de design','Tokens de diseño','Design-Tokens'),
+     'x_skills': H('Skills, in order','按顺序加载 skill','依序載入 skill','スキルの順番','스킬 순서','Kemahiran, mengikut urutan','Skill theo thứ tự','Skills, dans l’ordre','Skills, en orden','Skills der Reihe nach'),
+     'x_verify': H('Check before shipping','上线前检查','上線前檢查','公開前チェック','출시 전 점검','Semak sebelum terbit','Kiểm tra trước khi phát hành','À vérifier avant de publier','Comprobar antes de publicar','Vor dem Livegang prüfen'),
+     'x_open': H('Open in encyclopedia','在百科里打开','在百科裡打開','百科で開く','백과에서 열기','Buka dalam ensiklopedia','Mở trong bách khoa','Ouvrir dans l’encyclopédie','Abrir en la enciclopedia','In der Enzyklopädie öffnen'),
+    })
+    import sys; sys.path.insert(0, os.path.dirname(__file__)); import agents_i18n as I
+    REV = {v['en']: v for v in list(I.X.values())+list(I.S.values())}
+    def T(en, zh=None, zht=None): return REV[en]
+    def LS(k, **kw): return {l: v.format(**kw) for l, v in I.S[k].items()}
+    EXS = [
+     dict(title=T('Build a dark SaaS pricing page','做一个深色 SaaS 定价页','做一個深色 SaaS 定價頁'), q='pricing',
+      jq="curl -s %sapi/resources.json | jq '.items[] | select(.type==\"library\" and .pricing==\"free\" and (.tags|index(\"React\")) and ((.ct//[]) | index(\"card\") or index(\"button\") or index(\"layout\"))) | {name,url}'" % BASE,
+      choose=[('shadcn/ui',T('base components','基础组件','基礎元件')),('shadcn/ui Blocks',T('pricing section','定价区块','定價區塊')),('Radix Primitives',T('underneath','底层交互','底層互動')),('Magic UI Number Ticker',T('the one accent moment','唯一的点睛动效','唯一的點睛動效'))],
+      tokens=[('bg','#06070b'),('surface','#10131a'),('ink','#f3f5fb'),('accent','#67e8f9'),('radius','12px'),('font','Geist 14/20'),('numbers','tabular-nums')],
+      skills=[('taste-skill',T('set the direction','定方向','定方向')),('emil-design-eng',T('toggle and hover motion, 200ms or less, ease-out','开关与悬停动效，不超过 200ms，ease-out','開關與懸停動效，不超過 200ms，ease-out')),('impeccable + baseline-ui + accessibility',T('final audit','最后审查','最後審查'))],
+      verify=[T('Monthly / annual toggle works with the keyboard','月付 / 年付切换能用键盘操作','月付 / 年付切換能用鍵盤操作'),T('Visible focus ring on every CTA','每个 CTA 都有可见的焦点框','每個 CTA 都有可見的焦點框'),T('Muted text reaches 4.5:1 contrast','次要文字对比度达到 4.5:1','次要文字對比度達到 4.5:1'),T('At 375px the tiers stack vertically','375px 手机宽度下价格档位纵向排列','375px 手機寬度下價格檔位縱向排列'),T('Reduced motion turns the ticker off','开启“减少动效”时数字滚动关闭','開啟「減少動效」時數字滾動關閉'),T('Light theme still looks right','亮色主题同样正常','亮色主題同樣正常')]),
+     dict(title=T('Add a fancy but restrained landing hero','做一个精致但克制的首屏','做一個精緻但克制的首屏'), q='hero',
+      jq="curl -s %sapi/resources.json | jq '.items[] | select((.type==\"effect\" or .type==\"library\") and .pricing==\"free\" and ((.vs//[])|index(\"motion\")) and ((.ct//[])|index(\"background\"))) | {name,url}'" % BASE,
+      choose=[('Aceternity Spotlight',T('pick one of these two','与下一项二选一','與下一項二選一')),('Magic UI Beams',T('or this one','或上一项','或上一項')),('Motion',T('entrance only','只做入场','只做入場'))],
+      tokens=[], note=T('Only one effect on the whole page.','整页只放一个特效。','整頁只放一個特效。'),
+      skills=[('frontend-design',T('set the direction','定方向','定方向')),('emil-design-eng',T('motion polish','打磨动效','打磨動效')),('web-design-guidelines + performance',T('audit','审查','審查'))],
+      verify=[T('LCP under 2.5s','LCP 小于 2.5 秒','LCP 小於 2.5 秒'),T('Effect pauses when reduced motion is on','系统开启减少动效时特效暂停','系統開啟減少動效時特效暫停'),T('Text stays readable over the effect in both themes','亮暗两种主题下文字都清晰可读','亮暗兩種主題下文字都清晰可讀')]),
+     dict(title=T('Audit an existing admin dashboard','审查一个现有的后台仪表盘','審查一個現有的後台儀表板'), q='dashboard',
+      jq="curl -s %sapi/resources.json | jq '[.items[] | select(.type==\"style\" and ((.vs//[])|index(\"enterprise\")) and ((.ct//[]) | index(\"table\") or index(\"nav\") or index(\"form\")))] | .[:20] | map({name,libName,page})'" % BASE,
+      choose=[], tokens=[],
+      skills=[('redesign-skill',T('find the problems','找问题','找問題')),('baseline-ui',T('fix the basics','补基础','補基礎')),('accessibility',T('accessibility pass','无障碍检查','無障礙檢查')),('web-quality-audit',T('final score','最终评分','最終評分'))],
+      verify=[T('Table header stays sticky','表头吸顶','表頭吸頂'),T('Rows can be focused with the keyboard','表格行可用键盘聚焦','表格列可用鍵盤聚焦'),T('Empty, loading and error states exist','有空状态、加载中和出错状态','有空狀態、載入中和出錯狀態'),T('Click targets are at least 24px','点击区域至少 24px','點擊區域至少 24px'),T('Dark mode matches light mode','暗色模式与亮色一致','暗色模式與亮色一致')])]
+    def _flat(x):
+        st=[('Filter', x['jq'])]
+        if x['choose']: st.append(('Choose', '; '.join(f"{n} ({d['en']})" for n,d in x['choose'])))
+        if x['tokens']: st.append(('Tokens', ', '.join(f'{k} {v}' for k,v in x['tokens'])))
+        st.append(('Skills order', ', then '.join(f"{n} ({d['en']})" for n,d in x['skills'])))
+        st.append(('Verify', '; '.join(v['en'] for v in x['verify'])))
+        return (x['title']['en'], st)
+    EX = [_flat(x) for x in EXS]
     TAB = [('Developer tool / SaaS','minimal · dark-tech','shadcn/ui, Radix, Origin UI','One accent, tabular numbers, dense tables'),
            ('Enterprise admin','enterprise','Ant Design, Mantine, MUI X, AG Grid','Density, keyboard, data states'),
            ('Consumer / playful','playful · soft','HeroUI, daisyUI, Animate UI','Rounded, warm colour, light motion'),
@@ -118,17 +141,31 @@ curl -s {BASE}kb/spec/motion.md
     INST = [('Claude Code','~/.claude/skills/ui-hub/SKILL.md','.claude/skills/ui-hub/ (per project)'),
             ('Cursor','~/.cursor/skills/ui-hub/SKILL.md','.cursor/skills/ui-hub/ (per project) · or put AGENTS.md in repo root'),
             ('Codex CLI','~/.codex/skills/ui-hub/SKILL.md','AGENTS.md in repo root is read automatically')]
-    inst = ''.join(f'<tr><td><b>{a}</b></td><td><code>{E(b)}</code></td><td>{E(c)}</td></tr>' for a,b,c in INST)
+    INK = ['in_claude','in_cursor','in_codex']
+    inst = ''.join(f'<tr><td><b>{a}</b></td><td><code>{E(b)}</code></td><td>{ml(I.S[INK[i]])}</td></tr>' for i,(a,b,c) in enumerate(INST))
     unzip = code('curl -L -o ui-hub-skill.zip %sui-hub-skill.zip\nunzip -o ui-hub-skill.zip -d ~/.claude/skills/   # or ~/.cursor/skills/ , ~/.codex/skills/' % BASE)
-    ex = ''.join('<div class="box ex"><h3>'+E(t)+'</h3><dl>'+''.join(f'<dt>{E(k)}</dt><dd>{E(v)}</dd>' for k,v in st)+'</dl></div>' for t,st in EX)
-    tab = '<div class="tw"><table><thead><tr><th>Product</th><th>vs</th><th>Libraries</th><th>Key rules</th></tr></thead><tbody>'+''.join(f'<tr><td>{E(a)}</td><td><code>{E(b)}</code></td><td>{E(c)}</td><td>{E(d)}</td></tr>' for a,b,c,d in TAB)+'</tbody></table></div>'
-    dodont = '<div class="grid2"><div class="box do"><h3>✓ Do</h3><ul>'+''.join(f'<li>{E(x)}</li>' for x in DO)+'</ul></div><div class="box dont"><h3>✕ Don’t</h3><ul>'+''.join(f'<li>{E(x)}</li>' for x in DONT)+'</ul></div></div>'
-    uses = '<div class="grid2">'+''.join(f'<div class="box"><h3>{E(a)}</h3><p>{E(b)}</p></div>' for a,b in USES)+'</div>'
-    snips = ''.join(f'<h3 class="sh">{E(t)}</h3>'+code(c) for t,c in JQ)
-    wf = code('\n'.join(f'{i+1}. {x}' for i,x in enumerate(['Fetch api/resources.json; filter by ct, vs, pricing=free','Pick ONE direction skill (frontend-design | taste-skill); lock tokens','type=library for code, type=style demos for the look; open original url','Start from the card prompt; add layout, states, real content, avoid-list','emil-design-eng for motion; audit: impeccable, baseline-ui, web-design-guidelines, accessibility','Verify: light/dark, 375px, keyboard, reduced motion; cite resources'])))
+    def sec(k, body): return f'<div class="xs"><div class="xl">{ml(k)}</div>{body}</div>'
+    def exhtml(x):
+        b = sec('x_filter', code(x['jq']) + f'<a class="xk" href="../kb/?q={x["q"]}">{ml("x_open")} · /kb/?q={x["q"]} →</a>')
+        if x['choose']: b += sec('x_choose', '<div class="chips">'+''.join(f'<span class="chip"><b>{E(n)}</b>{ml(d)}</span>' for n,d in x['choose'])+'</div>' + (f'<p class="xn">{ml(x["note"])}</p>' if x.get('note') else ''))
+        elif x.get('note'): b += f'<p class="xn">{ml(x["note"])}</p>'
+        if x['tokens']: b += sec('x_tokens', '<div class="toks">'+''.join(f'<span class="tok">'+(f'<i style="background:{v}"></i>' if v.startswith('#') else '')+f'<span>{E(k)}</span><code>{E(v)}</code></span>' for k,v in x['tokens'])+'</div>')
+        b += sec('x_skills', '<ol class="steps">'+''.join(f'<li><code>{E(n)}</code><span>{ml(d)}</span></li>' for n,d in x['skills'])+'</ol>')
+        b += sec('x_verify', '<ul class="chk">'+''.join(f'<li>{ml(v)}</li>' for v in x['verify'])+'</ul>')
+        return f'<article class="box ex"><h3>{ml(x["title"])}</h3>{b}</article>'
+    ex = ''.join(exhtml(x) for x in EXS)
+    tab = '<div class="tw"><table><thead><tr><th>'+ml(I.S['th_prod'])+'</th><th>'+ml(I.S['th_vs'])+'</th><th>'+ml(I.S['th_lib'])+'</th><th>'+ml(I.S['th_rule'])+'</th></tr></thead><tbody>'+''.join(f'<tr><td>{ml(I.S["t%da"%(i+1)])}</td><td><code>{E(b)}</code></td><td>{E(c)}</td><td>{ml(I.S["t%dd"%(i+1)])}</td></tr>' for i,(a,b,c,d) in enumerate(TAB))+'</tbody></table></div>'
+    dodont = '<div class="grid2"><div class="box do"><h3>✓ '+ml(I.S['do'])+'</h3><ul>'+''.join(f'<li>{ml(I.S["d%d"%(i+1)])}</li>' for i in range(len(DO)))+'</ul></div><div class="box dont"><h3>✕ '+ml(I.S['dont'])+'</h3><ul>'+''.join(f'<li>{ml(I.S["n%d"%(i+1)])}</li>' for i in range(len(DONT)))+'</ul></div></div>'
+    uses = '<div class="grid2">'+''.join(f'<div class="box"><h3>{ml(I.S["u%dt"%(i+1)])}</h3><p>{ml(LS("u%db"%(i+1), n=len(skills)))}</p></div>' for i in range(len(USES)))+'</div>'
+    snips = ''.join(f'<h3 class="sh">{ml(I.S["j%d"%(i+1)])}</h3>'+code(c) for i,(t,c) in enumerate(JQ))
+    wf = '<ol class="steps wf">'+''.join(f'<li><span>{ml(I.S["w%d"%k])}</span></li>' for k in range(1,7))+'</ol>'
     sk = ''.join(f'<div class="box"><h3>{E(s["id"])} <span class="note">· {E(s["category"])}</span></h3><p>{E(s["description"][:200])}</p></div>' for s in skills if s['category']!='engineering')
-    fq = ''.join(f'<details><summary>{E(q)}</summary><p>{E(a)}</p></details>' for q,a in FAQ)
-    one = f'<div class="one"><div class="oh"><span class="eb2">{ml("a_one")}</span><span class="sp"></span><div class="tabs2"><button type="button" data-p="zh" class="on">中文</button><button type="button" data-p="en">EN</button></div></div><div class="cb" data-pz><button class="cp" type="button">{ml("a_copy")}</button><pre class="pr"><code>{E(P_ZH)}</code></pre></div><div class="cb" data-pe hidden><button class="cp" type="button">{ml("a_copy")}</button><pre class="pr"><code>{E(P_EN)}</code></pre></div></div>'
+    tc = {}
+    for it in ITEMS: tc[it.get('type')] = tc.get(it.get('type'),0)+1
+    fkw = dict(n=N, lib=tc.get('library',0), sty=tc.get('style',0), sk=tc.get('skill',0), upd=UPD)
+    fq = ''.join(f'<details><summary>{ml(q)}</summary><p>{ml({l:v.format(**fkw) for l,v in a.items()})}</p></details>' for q,a in I.FAQI)
+    PL = LS('prompt', B=BASE)
+    one = f'<div class="one"><div class="oh"><span class="eb2">{ml("a_one")}</span><label class="tg"><input type="checkbox" id="pEn"> {ml(I.S["en_toggle"])}</label></div>' + ''.join(f'<div class="cb pl" data-l="{c}"><button class="cp" type="button">{ml("a_copy")}</button><pre class="pr"><code>{E(PL[k])}</code></pre></div>' for c,_,k in LANGS) + f'<div class="cb" id="pEnBox" hidden><button class="cp" type="button">{ml("a_copy")}</button><pre class="pr"><code>{E(PL["en"])}</code></pre></div></div>'
     acts = f'<div class="acts"><button class="btn pri" id="copyAll" type="button">{ml("a_copyall")}</button><a class="btn" href="../AGENTS.md" download="AGENTS.md">{ml("a_md")}</a><a class="btn" href="../ui-hub-skill.zip" download>{ml("a_skill")}</a><a class="btn" href="../ui-hub-skill/SKILL.md" download="SKILL.md">SKILL.md</a></div>'
     css = """<style>.one{margin:6px 0 18px;padding:18px;border-radius:18px;background:linear-gradient(var(--surf),var(--surf)) padding-box,linear-gradient(100deg,var(--g1),var(--g2),var(--g3)) border-box;border:1px solid transparent}
 .oh{display:flex;align-items:center;gap:10px;margin-bottom:10px}.eb2{font:600 15px var(--sans)}.tabs2{display:flex;gap:2px;background:var(--mat);padding:3px;border-radius:9px}.tabs2 button{font:inherit;font-size:12.5px;border:0;background:none;color:var(--ink2);padding:4px 10px;border-radius:7px;cursor:pointer}.tabs2 .on{background:var(--surf);color:var(--ink);box-shadow:0 0 0 1px var(--line2)}
@@ -136,25 +173,32 @@ curl -s {BASE}kb/spec/motion.md
 .cp{position:absolute;top:8px;right:8px;font:500 12px var(--sans);color:var(--ink);background:var(--surf);border:1px solid var(--line2);border-radius:7px;padding:4px 9px;cursor:pointer}.cp:hover{border-color:var(--acc)}.cp.ok{color:var(--acc)}
 .acts{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 8px}.btn{font:500 13.5px var(--sans);text-decoration:none;color:var(--ink);background:var(--surf);border:1px solid var(--line2);border-radius:10px;padding:8px 13px;cursor:pointer}.btn:hover{border-color:var(--acc)}.btn.pri{background:var(--ink);color:var(--bg);border-color:var(--ink)}
 .tw{overflow:auto;border:1px solid var(--line);border-radius:14px;background:var(--surf)}table{border-collapse:collapse;width:100%;font-size:13.5px}th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}th{font:500 12px var(--mono);color:var(--ink3);text-transform:uppercase;letter-spacing:.05em}tr:last-child td{border-bottom:0}td{color:var(--ink2)}
-.ex dl{display:grid;grid-template-columns:96px 1fr;gap:6px 12px;margin:10px 0 0;font-size:13.5px}.ex dt{font:500 12px var(--mono);color:var(--acc);padding-top:2px}.ex dd{margin:0;color:var(--ink2)}
+.exs{display:grid;grid-template-columns:1fr;gap:16px}@media(min-width:1100px){.exs{grid-template-columns:1fr 1fr}.exs .ex:first-child{grid-column:1/-1}}
+.ex{padding:20px 22px}.ex h3{font-size:17px;margin:0 0 4px}.xs{margin-top:16px;padding-top:14px;border-top:1px solid var(--line)}.xl{font:600 11.5px var(--sans);letter-spacing:.06em;text-transform:uppercase;color:var(--ink3);margin-bottom:8px}
+.ex .cb pre{margin:0 0 6px;font-size:12.5px}.xk{font-size:13px;color:var(--acc);text-decoration:none}.xk:hover{text-decoration:underline}.xn{margin:8px 0 0;font-size:13.5px;color:var(--ink2)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}.chip{display:inline-flex;align-items:baseline;gap:6px;padding:6px 11px;border:1px solid var(--line2);border-radius:999px;font-size:13px;color:var(--ink2);background:var(--mat)}.chip b{color:var(--ink);font-weight:600}
+.toks{display:flex;flex-wrap:wrap;gap:8px}.tok{display:inline-flex;align-items:center;gap:7px;padding:5px 10px;border:1px solid var(--line);border-radius:9px;font-size:12.5px;color:var(--ink3)}.tok i{width:14px;height:14px;border-radius:4px;box-shadow:inset 0 0 0 1px rgba(127,127,127,.35)}.tok code{color:var(--ink);font:12.5px var(--mono)}
+.steps{list-style:none;counter-reset:s;margin:0;padding:0;display:grid;gap:8px}.steps li{counter-increment:s;display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 10px;font-size:13.5px;color:var(--ink2)}.steps li:before{content:counter(s);flex:none;width:22px;height:22px;border-radius:50%;display:inline-grid;place-items:center;font:600 12px var(--sans);color:var(--bg);background:var(--ink)}.steps code{font:13px var(--mono);color:var(--ink)}
+.chk{list-style:none;margin:0;padding:0;display:grid;gap:6px;font-size:13.5px;color:var(--ink2)}@media(min-width:700px){.chk{grid-template-columns:1fr 1fr;gap:6px 18px}}.chk li{position:relative;padding-left:24px}.chk li:before{content:"";position:absolute;left:0;top:3px;width:14px;height:14px;border-radius:4px;border:1.5px solid var(--acc)}
 .do h3{color:var(--live,#34d399)}.dont h3{color:#fb7185}.box ul{margin:6px 0 0;padding-left:18px;color:var(--ink2);font-size:14px}.sh{font-size:14px;margin:16px 0 6px}.sec>p{color:var(--ink2)}
+.tg{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;color:var(--ink2);cursor:pointer;white-space:nowrap}.one .pl.off{display:none!important}.wf li:before{background:var(--acc)}
+h1,h2,h3,.lede{text-wrap:balance}:lang(ja) h1,:lang(ja) h2,:lang(ja) h3,:lang(zh) h1,:lang(zh) h2,:lang(ko) h1,:lang(ko) h2,:lang(ko) h3,:lang(ko) p,:lang(ko) li{word-break:keep-all;overflow-wrap:anywhere}
 .toast2{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:8px 14px;border-radius:10px;font-size:13px;opacity:0;transition:opacity .2s;pointer-events:none}.toast2.on{opacity:1}</style>"""
     js = """<div class="toast2" id="t2">✓</div><script>(function(){function cp(t,b){(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).catch(function(){var a=document.createElement('textarea');a.value=t;document.body.appendChild(a);a.select();document.execCommand('copy');a.remove()}).finally(function(){if(b){b.classList.add('ok');setTimeout(function(){b.classList.remove('ok')},1200)}var e=document.getElementById('t2');e.classList.add('on');setTimeout(function(){e.classList.remove('on')},1200)})}
 document.querySelectorAll('pre').forEach(function(p){if(p.parentNode.classList.contains('cb'))return;var w=document.createElement('div');w.className='cb';p.parentNode.insertBefore(w,p);w.appendChild(p);var b=document.querySelector('.cp').cloneNode(true);w.insertBefore(b,p)});
 document.querySelectorAll('.cp').forEach(function(b){b.addEventListener('click',function(){cp(b.parentNode.querySelector('pre').innerText,b)})});
 document.getElementById('copyAll').addEventListener('click',function(){var b=this;fetch('../AGENTS.md').then(function(r){return r.text()}).then(function(t){cp(t,b)})});
-document.querySelectorAll('.tabs2 button').forEach(function(b){b.addEventListener('click',function(){document.querySelectorAll('.tabs2 button').forEach(function(x){x.classList.toggle('on',x===b)});document.querySelector('[data-pz]').hidden=b.dataset.p!=='zh';document.querySelector('[data-pe]').hidden=b.dataset.p!=='en'})});
-var l=document.documentElement.lang;if(l&&l.indexOf('zh')!==0){var e=document.querySelector('.tabs2 [data-p=en]');e&&e.click()}})();</script>"""
+var t=document.getElementById('pEn');t.addEventListener('change',function(){document.getElementById('pEnBox').hidden=!t.checked;document.querySelectorAll('.one .pl').forEach(function(x){x.classList.toggle('off',t.checked)})});})();</script>"""
     ld = {'@context':'https://schema.org','@graph':[{'@type':'TechArticle','headline':'UI Hub guide for AI agents','url':BASE+'agents/','dateModified':UPD[:10]},
           {'@type':'FAQPage','mainEntity':[{'@type':'Question','name':q,'acceptedAnswer':{'@type':'Answer','text':a}} for q,a in FAQ]},
           {'@type':'HowTo','name':'Build a dark SaaS pricing page with UI Hub','step':[{'@type':'HowToStep','name':k,'text':v} for k,v in EX[0][1]]}]}
     w('agents/index.html', head('Guide for AI agents · UI Hub', U['ag_lede']['en'], 'agents/', ld, '../') + css + f"""<body>{topbar('../','agents')}<main class="wrap"><section class="hero" style="padding-bottom:18px"><p class="eb">Agents · GEO · Skill</p><h1>{ml('ag_title')}</h1><p class="lede">{ml('ag_lede')}</p></section>
 {one}{acts}
-<div class="grid2"><a class="box" href="../api/resources.json" style="text-decoration:none"><h3>/api/resources.json</h3><p>{N} items · type / ct / vs / pricing</p></a><a class="box" href="../api/skills.json" style="text-decoration:none"><h3>/api/skills.json</h3><p>{len(skills)} agent skills + workflow</p></a><a class="box" href="../llms.txt" style="text-decoration:none"><h3>/llms.txt</h3><p>llms-full.txt · AGENTS.md · .well-known/agent.json</p></a></div>
-<section class="sec"><h2>{ml('a_install')}</h2><div class="tw"><table><thead><tr><th>Tool</th><th>Global</th><th>Project / note</th></tr></thead><tbody>{inst}</tbody></table></div><div style="height:12px"></div>{unzip}</section>
+<div class="grid2"><a class="box" href="../api/resources.json" style="text-decoration:none"><h3>/api/resources.json</h3><p>{ml(LS('c_res', n=N))}</p></a><a class="box" href="../api/skills.json" style="text-decoration:none"><h3>/api/skills.json</h3><p>{ml(LS('c_sk', n=len(skills)))}</p></a><a class="box" href="../llms.txt" style="text-decoration:none"><h3>/llms.txt</h3><p>{ml(I.S['c_llms'])}</p></a></div>
+<section class="sec"><h2>{ml('a_install')}</h2><div class="tw"><table><thead><tr><th>{ml(I.S['th_tool'])}</th><th>{ml(I.S['th_global'])}</th><th>{ml(I.S['th_proj'])}</th></tr></thead><tbody>{inst}</tbody></table></div><div style="height:12px"></div>{unzip}</section>
 <section class="sec"><h2>{ml('a_for')}</h2>{uses}</section>
 <section class="sec"><h2>{ml('a_wf')}</h2>{wf}</section>
-<section class="sec"><h2>{ml('a_ex')}</h2><div class="grid2">{ex}</div></section>
+<section class="sec"><h2>{ml('a_ex')}</h2><div class="exs">{ex}</div></section>
 <section class="sec"><h2>{ml('a_snip')}</h2>{snips}</section>
 <section class="sec"><h2>{ml('a_tab')}</h2>{tab}</section>
 <section class="sec"><h2>{ml('a_do')}</h2>{dodont}</section>
