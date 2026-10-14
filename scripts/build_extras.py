@@ -119,22 +119,8 @@ def with_figs(body, slug, k, root):
     if len(F)>2:
         l = body.rfind('<h2>'); l = l if l>m else len(body); body = body[:l]+F[2]+body[l:]
     return body
-# ---------- blog ----------
-plist = []
-for n,p in enumerate(POSTS,1):
-    cards = f'<span class="no">{n:02d} · {p["date"]}</span><h2>{ml(p["t"],"span")}</h2><p>{ml(p["s"],"span")}</p><div class="tg">'+''.join(f'<span>{E(t)}</span>' for t in p['tags'])+'</div>'
-    plist.append(f'<a class="pc" href="{p["slug"]}/"><img class="cv" src="img/{p["slug"]}-cover.webp" alt="" loading="{"eager" if n<4 else "lazy"}" width="1200" height="630"><div class="pb">{cards}</div></a>')
-ld = {'@context':'https://schema.org','@graph':[{'@type':'Blog','name':U['blog_title']['en'],'url':BASE+'blog/','publisher':ORG,'inLanguage':[c for c,_,_ in LANGS]},
-      {'@type':'ItemList','itemListElement':[{'@type':'ListItem','position':i+1,'url':BASE+f'blog/{p["slug"]}/','name':p['t']['en'],'image':BASE+f'blog/img/{p["slug"]}-cover.webp'} for i,p in enumerate(POSTS)]}]}
-w('blog/index.html', head('AI Design Techniques Blog · UI Hub', U['blog_lede']['en'], 'blog/', ld, '../') + f"""<body>{topbar('../','blog')}<main class="wrap"><section class="hero"><p class="eb">Blog · {len(POSTS)} posts</p><h1>{ml('blog_title')}</h1><p class="lede">{ml('blog_lede')}</p></section>
-<div class="posts">{''.join(plist)}</div></main>{foot('../')}{SCRIPT}</body></html>""")
-for p in POSTS:
-    refs = '<ol>'+''.join(f'<li><a href="{E(u)}" rel="noopener" target="_blank">{E(t)}</a> — {E(a)}</li>' for t,a,u in p['refs'])+'</ol>'
-    body = ''.join(f'<div data-l="{c}">' + (f'<p class="note">{E(L("body_note",k))}</p>' if L('body_note',k) else '') + with_figs(p['zh'] if k in ('zh','zht') else p['en'], p['slug'], k, '../../') + '</div>' for c,_,k in LANGS)
-    ld = {'@context':'https://schema.org','@type':'BlogPosting','headline':p['t']['en'],'alternativeHeadline':p['t']['zh'],'description':p['s']['en'],'datePublished':p['date'],'dateModified':p['date'],
-          'inLanguage':['en','zh-Hans'],'author':ORG,'publisher':ORG,'mainEntityOfPage':BASE+f'blog/{p["slug"]}/','citation':[{'@type':'CreativeWork','name':t,'author':a,'url':u} for t,a,u in p['refs']],'keywords':', '.join(p['tags']),'image':BASE+f'blog/img/{p["slug"]}-cover.webp'}
-    w(f'blog/{p["slug"]}/index.html', head(p['t']['en']+' · UI Hub', p['s']['en'], f'blog/{p["slug"]}/', ld, '../../', f'blog/img/{p["slug"]}-cover.jpg') + f"""<body>{topbar('../../','blog')}<article><p class="meta"><a href="../">← {ml('back')}</a> · {p['date']}</p>
-<h1>{ml(p['t'])}</h1><p class="lede">{ml(p['s'])}</p><figure class="hc"><img src="../img/{p['slug']}-cover.webp" alt="{E(p['t']['en'])}" width="1200" height="630" fetchpriority="high"></figure>{body}<section class="refs"><h2>{ml('refs')}</h2>{refs}</section></article>{foot('../../')}{SCRIPT}</body></html>""")
+# ---------- blog (v2, see blog_v2.py) ----------
+import blog_v2; blog_v2.build(globals())
 
 # ---------- skills ----------
 SK = '/workspace/web-bot-skills'
@@ -200,6 +186,7 @@ Use the JSON endpoints, not the SPA, when acting as an agent. Every entry links 
 - [Full text for LLMs]({BASE}llms-full.txt)
 
 ## Blog
+- [Blog RSS feed]({BASE}blog/rss.xml) · [Blog JSON]({BASE}api/blog.json)
 {blog_lines}
 
 ## Top component libraries

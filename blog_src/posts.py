@@ -117,3 +117,6 @@ dict(slug='accessibility-in-ai-generated-ui', date='2026-10-14', tags=['accessib
 <h2>我们的看法</h2><p>让无障碍成为结构的一部分，而不是最后补一遍。在无障碍底层组件上生成，再把走查 skill（accessibility、web-design-guidelines）写进 Agent 的完成标准。</p>""",
  refs=[('Web Content Accessibility Guidelines (WCAG) 2.2','W3C','https://www.w3.org/TR/WCAG22/'),('ARIA Authoring Practices Guide','W3C WAI','https://www.w3.org/WAI/ARIA/apg/'),('Radix Primitives introduction','Radix','https://www.radix-ui.com/primitives/docs/overview/introduction'),('Web Interface Guidelines','Vercel','https://vercel.com/design/guidelines')]),
 ]
+
+from posts2 import POSTS2
+POSTS = POSTS + POSTS2

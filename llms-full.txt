@@ -19,6 +19,7 @@ Use the JSON endpoints, not the SPA, when acting as an agent. Every entry links 
 - [Full text for LLMs](https://siinxu.github.io/ui-resource-hub/llms-full.txt)
 
 ## Blog
+- [Blog RSS feed](https://siinxu.github.io/ui-resource-hub/blog/rss.xml) · [Blog JSON](https://siinxu.github.io/ui-resource-hub/api/blog.json)
 - [AI-assisted UI design: a workflow that keeps taste in the loop](https://siinxu.github.io/ui-resource-hub/blog/ai-assisted-ui-design-workflow/): Generators are fast but average. Split the job: humans set direction and constraints, AI explores variants, humans curate and polish.
 - [Prompting for UI: write specs, not wishes](https://siinxu.github.io/ui-resource-hub/blog/prompts-for-ui/): "Modern and clean" means nothing to a model. Name layout, tokens, states, content and what to avoid.
 - [Design-to-code with AI: map to your components, not to pixels](https://siinxu.github.io/ui-resource-hub/blog/design-to-code-with-ai/): Pixel-perfect export creates throwaway code. Give the agent your component registry and tokens via MCP so output reuses what you already ship.
@@ -27,6 +28,23 @@ Use the JSON endpoints, not the SPA, when acting as an agent. Every entry links 
 - [Motion that feels right: purpose, duration, easing, restraint](https://siinxu.github.io/ui-resource-hub/blog/motion-that-feels-right/): Most UI motion should be under 300ms, ease-out, and skipped for frequent actions. Spectacle belongs on marketing pages, not in tools.
 - [Dark mode done right: tokens, elevation and contrast](https://siinxu.github.io/ui-resource-hub/blog/dark-mode-done-right/): Dark mode is a second palette, not an inverted one. Use semantic tokens, lighter surfaces for elevation, and desaturated accents.
 - [Accessibility in AI-generated UI: the checks models skip](https://siinxu.github.io/ui-resource-hub/blog/accessibility-in-ai-generated-ui/): Generated UIs look fine and fail keyboards and screen readers. Start from accessible primitives, then audit against WCAG 2.2.
+- [v0 in practice: from a prompt to shadcn code you can keep](https://siinxu.github.io/ui-resource-hub/blog/v0-prompt-to-shadcn/): v0 is strongest when you treat it as a shadcn/Tailwind code generator, not a design oracle. Brief it like an engineer, then pull the code into your repo.
+- [Lovable and Bolt: when prompt-to-UI becomes prompt-to-app](https://siinxu.github.io/ui-resource-hub/blog/lovable-bolt-prompt-to-app/): Both tools build whole apps, so design quality now competes with data, auth and deploys for attention. How to keep the look from being an afterthought.
+- [Figma Make and the Figma agent: AI moves onto the canvas](https://siinxu.github.io/ui-resource-hub/blog/figma-make-and-figma-agent/): Figma Make turns prompts into working prototypes; the Figma agent, generally available since 6 Oct 2026, reads team guideline files. Why the guideline file matters most.
+- [MagicOS: Magic Patterns bets on an infinite canvas of AI threads](https://siinxu.github.io/ui-resource-hub/blog/magic-patterns-magicos/): Launched 13 Oct 2026: one coordinator chat spawns parallel design threads on a shared canvas. What it fixes (lost context) and when a single design is still better.
+- [Prompt-to-UI tools compared: v0, Lovable, Bolt, Figma Make, Magic Patterns](https://siinxu.github.io/ui-resource-hub/blog/prompt-to-ui-tools-compared/): Not a leaderboard: a decision guide by what you are shipping, where the output lives, and how much design control you need.
+- [Aceternity UI deep dive: spectacle, used sparingly](https://siinxu.github.io/ui-resource-hub/blog/aceternity-ui-deep-dive/): Copy-paste React + Tailwind + Motion effects that made the "fancy" landing look popular. Which pieces carry a page and which turn it into a demo reel.
+- [Magic UI deep dive: animated components that install like shadcn](https://siinxu.github.io/ui-resource-hub/blog/magic-ui-deep-dive/): An open-source (MIT) set of motion components distributed through the shadcn registry. Best picks for SaaS pages and how to keep them accessible.
+- [Cult UI deep dive: tactile components with personality](https://siinxu.github.io/ui-resource-hub/blog/cult-ui-deep-dive/): shadcn-compatible components that feel physical: dynamic islands, textured buttons, expandable cards. How to borrow personality without breaking consistency.
+- [shadcn blocks and registries: page sections as source code](https://siinxu.github.io/ui-resource-hub/blog/shadcn-blocks-deep-dive/): Blocks (dashboards, sidebars, login pages) install with one CLI command, and any team can publish its own registry. Why this is the best substrate for AI agents.
+- [Typography for AI-generated UI: the fastest way to look less generic](https://siinxu.github.io/ui-resource-hub/blog/typography-for-ai-generated-ui/): Generators default to one sans at three sizes. A type scale, a second typeface, tighter tracking on display sizes and real line lengths fix most of it.
+- [OKLCH colour systems: palettes that survive dark mode](https://siinxu.github.io/ui-resource-hub/blog/oklch-color-and-dark-mode/): OKLCH keeps perceived lightness consistent across hues, so you can generate scales and dark themes by math instead of eyeballing. Tailwind v4 uses it by default.
+- [Landing page teardown: what Linear and Vercel get right](https://siinxu.github.io/ui-resource-hub/blog/landing-page-teardown-linear-vercel/): Two widely copied developer-tool homepages, read as a list of decisions: one message, product as hero image, dark restraint, and proof placed right after the promise.
+- [Dashboard patterns that hold up: from KPI strip to drill-down table](https://siinxu.github.io/ui-resource-hub/blog/dashboard-design-patterns/): AI tools love to generate twelve charts. Good dashboards answer three questions in order: is it OK, what changed, why. A layout and a component list for each.
+- [Design tokens for agents: the file that makes AI output on-brand](https://siinxu.github.io/ui-resource-hub/blog/design-tokens-for-agents/): A machine-readable token file (the W3C DTCG format) plus a short usage note beats any adjective in a prompt. Structure, naming, and how to hand it to an agent.
+- [Design skills for Claude and Cursor: SKILL.md, rules and AGENTS.md](https://siinxu.github.io/ui-resource-hub/blog/claude-cursor-design-skills/): Three file formats, one idea: durable instructions an agent loads when relevant. How to write a design skill that changes output, with a template.
+- [Weekly roundup, 14 Oct 2026: guideline files go mainstream](https://siinxu.github.io/ui-resource-hub/blog/weekly-roundup-2026-w42/): Figma agent GA with team guidelines, Lovable drops its pick-a-look step, Magic Patterns launches MagicOS, Chrome iterates on HTML-in-Canvas. What it means for your workflow.
+- [Tutorial: have an agent build a landing page using UI Hub as context](https://siinxu.github.io/ui-resource-hub/blog/tutorial-agent-builds-landing-with-ui-hub/): Six steps from an empty folder to a verified page: load AGENTS.md, search the encyclopedia, pick components, load skills, build, verify in a browser.
 
 ## Top component libraries
 - [Radix Primitives](https://www.radix-ui.com/primitives): 无样式、可访问的 React 底层组件：对话框、下拉菜单、选择器、Tabs、Tooltip 等，shadcn/ui 的地基
@@ -212,6 +230,368 @@ References:
 - ARIA Authoring Practices Guide — W3C WAI: https://www.w3.org/WAI/ARIA/apg/
 - Radix Primitives introduction — Radix: https://www.radix-ui.com/primitives/docs/overview/introduction
 - Web Interface Guidelines — Vercel: https://vercel.com/design/guidelines
+
+## v0 in practice: from a prompt to shadcn code you can keep
+
+v0 by Vercel generates React components built on shadcn/ui and Tailwind CSS. That stack choice is the whole point: the output is ordinary, readable code using primitives many teams already ship, so the result can leave the tool. Treat v0 as a fast pair-programmer for UI, and judge it by whether you would merge its code.
+A brief that works
+Name the components. "Use Card, Tabs and a Table with a sticky header" beats "make a nice dashboard". v0 knows the shadcn vocabulary, so use it.
+Give tokens, not adjectives. Radius, one accent colour, font, density. "Modern" means nothing to a model; --radius: 0.5rem does.
+List the states. Empty, loading, error, long text. Generators default to the happy path.
+Paste real content. Lorem ipsum hides layout bugs; real names and prices expose them.
+Iterate in small, named steps
+Ask for one change per turn ("tighten the table to 40px rows; keep everything else"). Big rewrites tend to regress parts you already liked. When something is right, say so explicitly so it stays.
+Getting the code out
+v0 lets you add generated code to a project through the shadcn CLI or download it, and it deploys to Vercel. Whichever path you take, review it like a PR: check that colours come from CSS variables rather than hard-coded hex, that interactive elements are real buttons and links, and that focus styles exist.
+Our take
+v0's ceiling is your brief and your design system. Teams that already use shadcn get the most out of it because the output drops straight into their codebase. Pair it with a taste skill or the guidelines in our encyclopedia to avoid the generic "centred hero + three cards" result.
+
+References:
+- v0 by Vercel — Vercel: https://v0.app/
+- v0 documentation — Vercel: https://v0.app/docs
+- shadcn/ui — shadcn: https://ui.shadcn.com/
+- shadcn CLI docs — shadcn: https://ui.shadcn.com/docs/cli
+
+## Lovable and Bolt: when prompt-to-UI becomes prompt-to-app
+
+Lovable and Bolt (by StackBlitz) sit one step beyond component generators: you describe an app and they scaffold front end, routing and, through integrations such as Supabase, a backend. Bolt runs the dev environment in the browser on StackBlitz's WebContainers. The design question changes accordingly: the model is juggling schema, auth and deploys, so visual decisions get made by default unless you make them first.
+A notable change this month
+On 8 October 2026 Lovable's changelog removed the three "design directions" it used to show before the first build of a visually open-ended prompt. It now derives the look from your description and asks about colour, typography and layout only when the prompt leaves them open. In practice: your prompt is now the art brief. If you don't write one, you get the default.
+Front-load the look
+Open with a style paragraph before any feature list: palette, type, radius, density, one reference site.
+Ask for a static UI pass first, with fake data, and approve it before wiring the backend.
+Keep a design.md or similar guideline file in the project and tell the tool to follow it on every change.
+After each feature, check the new screens against that file; drift creeps in one screen at a time.
+When to pick which
+Use these tools when you need a working prototype with real data paths fast. Use a component generator (v0, Magic Patterns) or hand-built code when the deliverable is a polished interface inside an existing codebase. Many teams do both: prototype the flow in an app builder, rebuild the final UI with their own system.
+
+References:
+- Lovable changelog (8 Oct 2026) — Lovable: https://docs.lovable.dev/changelog
+- Lovable cut its pick-a-look step — Art Direction Daily: https://artdirectiondaily.com/issues/2026-10-12-lovable-cut-pick-look-step.html
+- Bolt.new — StackBlitz: https://bolt.new/
+- WebContainers — StackBlitz: https://webcontainers.io/
+- Lovable Supabase integration — Lovable: https://docs.lovable.dev/integrations/supabase
+
+## Figma Make and the Figma agent: AI moves onto the canvas
+
+Figma Make, introduced at Config 2025, generates interactive prototypes and simple apps from a prompt, and can start from an existing Figma frame. It answered the question designers kept asking about v0-style tools: "can I do this where my designs already live?"
+The agent goes GA
+On 6 October 2026 Figma made its product-design agent generally available, after a beta that began in May. Two additions stand out in the coverage: library owners can supply guidelines (markdown files) that the agent reads whenever that library is enabled, and teammates can watch the agent's activity live on the canvas.
+Why the guideline file is the real feature
+It moves art direction from a per-session prompt into a file the team maintains and reviews.
+It makes AI output consistent across people, not just across one person's sessions.
+It is the same pattern as SKILL.md, Cursor rules and Lovable project knowledge: durable, versioned design context.
+What to put in yours
+Token names and when to use each; spacing and type scales; component do/don't pairs; voice and tone for UI copy; a short "never" list (no text gradients, no emoji icons, no centred body text). Keep it short enough that a reviewer actually reads it, and link to examples rather than describing them. Our encyclopedia's spec digests are a reasonable starting template.
+
+References:
+- Figma Make — Figma: https://www.figma.com/make/
+- Figma's AI agent for product design is now generally available — The Verge: https://www.theverge.com/tech/1004953/figmas-ai-agent-for-product-design-is-now-generally-available
+- Figma release notes — Figma: https://www.figma.com/release-notes/
+- Lovable cut its pick-a-look step (Figma section) — Art Direction Daily: https://artdirectiondaily.com/issues/2026-10-12-lovable-cut-pick-look-step.html
+
+## MagicOS: Magic Patterns bets on an infinite canvas of AI threads
+
+Magic Patterns started as a prompt-to-UI tool aimed at product teams (it launched on Hacker News as YC W23, intentionally front-end only). On 13 October 2026 it introduced MagicOS, which reorganises the product around an infinite canvas rather than one chat and one preview.
+How it is structured
+Canvas: everything is a file on it: designs, documents, images, GitHub repos, notes.
+Coordinator: the chat you talk to. It answers small questions and turns real work into threads.
+Threads: each is an agent doing one piece of work; they run in parallel and report back.
+Sidebar: threads by status, so you see what is waiting on you.
+What problem it targets
+Anyone who has explored five directions in five chat tabs knows the pain: you repeat the brief in each, lose rejected options, and forget why you picked one. MagicOS keeps PRDs, references, variants and rejected directions side by side, and the coordinator reads the canvas so you explain less. It also offers real-time voice and an MCP server so Claude, Cursor or Codex can build from what is on the canvas.
+When not to use it
+Magic Patterns' own docs say a single design still fits better for one page or a quick prototype, and that some features (Plan Mode, Controls, forking, merging, inline comments) were single-design only at launch. Our take: use the canvas for exploration-heavy work, keep the single design for focused polish.
+
+References:
+- Introducing MagicOS — Magic Patterns: https://www.magicpatterns.com/blog/introducing-magicos
+- What is MagicOS — Magic Patterns docs: https://www.magicpatterns.com/docs/documentation/magic-os/overview
+- MagicOS vs. Designs — Magic Patterns docs: https://www.magicpatterns.com/docs/documentation/magic-os/when-to-use-magicos
+- Launch HN: Magic Patterns (YC W23) — Hacker News: https://news.ycombinator.com/item?id=43752176
+
+## Prompt-to-UI tools compared: v0, Lovable, Bolt, Figma Make, Magic Patterns
+
+All five tools turn words into interface, but they are built for different jobs. Comparing them on "which looks best" is unreliable because output depends mostly on your prompt. Compare them on what they produce and where it goes.
+By deliverable
+Components for an existing React codebase: v0 (shadcn/Tailwind output, CLI install).
+A working full-stack prototype: Lovable or Bolt (backend integrations, in-browser dev env for Bolt).
+Prototypes next to your design files: Figma Make; the Figma agent for edits on the canvas with team guidelines.
+Product-team exploration across many directions: Magic Patterns, now with the MagicOS canvas and an MCP server for coding agents.
+Questions that decide it
+Will engineers keep the code, or is this throwaway?
+Do you need to match an existing design system? (Check whether the tool can import components or guideline files.)
+Who iterates: a designer on a canvas, or a developer in a repo?
+Where does the design context live, and can every teammate's session read it?
+Our take
+The 2026 trend across all five is the same: durable context (guideline files, design systems, MCP) beats clever prompting. Pick the tool whose context mechanism fits your team, and invest in that file. Pricing and limits change often, so check each vendor's current page rather than any comparison table, including ours.
+
+References:
+- v0 — Vercel: https://v0.app/
+- Lovable docs — Lovable: https://docs.lovable.dev/
+- Bolt.new — StackBlitz: https://bolt.new/
+- Figma Make — Figma: https://www.figma.com/make/
+- Magic Patterns — Magic Patterns: https://www.magicpatterns.com/
+
+## Aceternity UI deep dive: spectacle, used sparingly
+
+Aceternity UI, created by Manu Arora, is a collection of copy-paste components built with React, Tailwind CSS and Motion (formerly Framer Motion). It is known for showpiece effects: spotlight and beam backgrounds, 3D cards, animated grids, parallax hero scrolls. Free components are open to copy; there is also a paid tier of templates and blocks.
+What works on real pages
+One ambient background behind the hero (grid, dots, a soft spotlight). It adds depth without competing with copy.
+Bento grids and feature sections with restrained hover motion.
+Text reveal or typewriter for a single headline, not for paragraphs.
+What to avoid
+Stacking three effects in one viewport, animating body text, and 3D tilt on cards that hold data. These read as a demo reel and cost performance on low-end phones. Always respect prefers-reduced-motion, which several effects do not handle by default, so wrap them yourself.
+How we use it in UI Hub
+Aceternity is one of the references behind the user's "restrained fancy" house style: borrow one signature effect per page, keep typography and spacing doing the heavy lifting. Search "aceternity" in the hub to see every Aceternity component we index with a live preview.
+
+References:
+- Aceternity UI — Manu Arora: https://ui.aceternity.com/
+- Aceternity UI components — Aceternity: https://ui.aceternity.com/components
+- Motion for React — Motion: https://motion.dev/
+- prefers-reduced-motion — MDN: https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion
+
+## Magic UI deep dive: animated components that install like shadcn
+
+Magic UI is an open-source library of animated components (MIT licence) designed as a companion to shadcn/ui. Components are added with the shadcn CLI from Magic UI's registry, so the source lands in your repo where you can edit it, rather than living in a dependency.
+Picks that earn their place
+Marquee for logo walls and testimonials: motion that carries information.
+Number ticker for a single headline metric.
+Animated beam / orbiting circles to show integrations, one per page.
+Shimmer or border-beam buttons for exactly one primary CTA.
+Accessibility and performance
+Continuous motion (marquees, orbits) should pause on hover and stop under prefers-reduced-motion; WCAG 2.2.2 asks for a way to pause anything that moves for more than five seconds. Prefer transform and opacity animations, which browsers can composite cheaply.
+Our take
+Magic UI is the easiest way to add motion to a shadcn project because it shares the install model and the token variables. The risk is the same as any effects library: use one or two components per page, and let the rest of the UI stay calm.
+
+References:
+- Magic UI — Magic UI: https://magicui.design/
+- magicuidesign/magicui (MIT) — GitHub: https://github.com/magicuidesign/magicui
+- Understanding SC 2.2.2: Pause, Stop, Hide — W3C: https://www.w3.org/WAI/WCAG22/Understanding/pause-stop-hide.html
+- shadcn registry docs — shadcn: https://ui.shadcn.com/docs/registry
+
+## Cult UI deep dive: tactile components with personality
+
+Cult UI is an open-source collection of shadcn-compatible components with a distinctly tactile feel: a dynamic-island style container, textured and "neumorphic-lite" buttons, expandable cards, and playful toolbars. Where Aceternity leans on spectacle, Cult UI leans on interaction feel: springs, squish and layout animation.
+Where it shines
+Small product surfaces (toolbars, popovers, status pills) that benefit from springy layout transitions.
+Portfolio and indie-product pages where personality is the point.
+Learning material: reading the source is a good way to learn layout animation with Motion.
+Keeping consistency
+Personality components drift from your system fast. Before adopting one, map its colours and radii onto your tokens, match its spring settings across components so motion feels like one family, and check keyboard support: custom toggles and islands need visible focus and proper roles.
+Our take
+Cult UI is a reference for the "Cult" in the house style list: tactile micro-interaction over loud backgrounds. Pick one signature interaction per product and let it recur, rather than mixing every clever component on one page.
+
+References:
+- Cult UI — Cult UI: https://www.cult-ui.com/
+- nolly-studio/cult-ui — GitHub: https://github.com/nolly-studio/cult-ui
+- Layout animations — Motion: https://motion.dev/docs/react-layout-animations
+- ARIA Authoring Practices Guide — W3C: https://www.w3.org/WAI/ARIA/apg/
+
+## shadcn blocks and registries: page sections as source code
+
+shadcn/ui is not a package you install; it is a set of components whose source you copy into your project. Blocks extend the idea to whole sections: dashboards, sidebars, login and signup pages, charts. Each is added with the CLI, for example npx shadcn@latest add dashboard-01, and lands as editable files.
+Registries: everyone can publish
+The shadcn registry format lets any team publish components, blocks, hooks and theme files as JSON that the CLI understands. Magic UI, Cult UI and many others distribute this way, and you can run a private registry for your own design system.
+npx shadcn@latest add https://your-registry.example/r/pricing-01.json
+Why agents love this model
+The code is local, so an agent can read and edit it like any file.
+Names are stable and documented, so prompts can reference them ("add sidebar-07").
+Theme lives in CSS variables, so one token change restyles everything the agent generated.
+Our take
+If you want AI-generated UI to stay consistent, give the agent a registry, not a style adjective. Start from official blocks, restyle via tokens, and publish your modified versions to a private registry so every future session builds from your system.
+
+References:
+- Blocks — shadcn/ui: https://ui.shadcn.com/blocks
+- Registry — shadcn/ui: https://ui.shadcn.com/docs/registry
+- CLI — shadcn/ui: https://ui.shadcn.com/docs/cli
+- Theming — shadcn/ui: https://ui.shadcn.com/docs/theming
+
+## Typography for AI-generated UI: the fastest way to look less generic
+
+Ask any generator for a landing page and you will usually get one sans-serif at body, heading and caption sizes. Typography is the cheapest lever to move a page away from that default, and it is easy to specify precisely in a prompt.
+Five rules to put in the brief
+Use a modular scale. Pick a ratio (1.2 for dense apps, 1.25–1.333 for marketing) and name the steps as tokens.
+Pair two typefaces with a job each. A display face for headlines (a serif such as Instrument Serif, or a tight grotesk) and a workhorse sans for UI.
+Tighten large text. Negative letter-spacing (around −0.02em) on display sizes; leave body text at default.
+Constrain line length. Roughly 45–75 characters for Latin body text; use max-width: 65ch.
+Fluid sizes. clamp() for headlines so mobile does not inherit desktop sizes.
+CJK needs its own settings
+For Chinese and Japanese, use a slightly larger line-height (about 1.7), avoid negative tracking, and use word-break: keep-all or text-wrap: balance on headings so short phrases are not orphaned, the fix we applied to our own Japanese headings.
+Our take
+If you only change one thing in AI output, change the type scale and the display face. It is a two-line token edit with a visible payoff.
+
+References:
+- Practical Typography: line length — Matthew Butterick: https://practicaltypography.com/line-length.html
+- text-wrap — MDN: https://developer.mozilla.org/en-US/docs/Web/CSS/text-wrap
+- clamp() — MDN: https://developer.mozilla.org/en-US/docs/Web/CSS/clamp
+- Utopia fluid type scale — Utopia: https://utopia.fyi/type/calculator/
+- Requirements for Chinese Text Layout — W3C: https://www.w3.org/TR/clreq/
+
+## OKLCH colour systems: palettes that survive dark mode
+
+OKLCH is a CSS colour space (CSS Color Level 4) defined by lightness, chroma and hue. Its lightness channel tracks perceived brightness far better than HSL's, so a yellow and a blue at the same L actually look similarly light. Tailwind CSS v4 switched its default palette to OKLCH, and all modern browsers support oklch().
+Building a scale
+--brand-50:  oklch(97% 0.02 250);
+--brand-500: oklch(62% 0.17 250);
+--brand-900: oklch(30% 0.09 250);
+Keep hue fixed, step lightness evenly, and reduce chroma at the extremes, where sRGB screens cannot display high chroma anyway.
+Dark mode by lightness, not inversion
+Surfaces: very low L (around 14–20%) with a hint of the brand hue instead of pure black.
+Text: high L but not 100%, to reduce glare.
+Accent: raise L and lower chroma slightly so it does not vibrate on dark backgrounds.
+Re-check contrast: equal OKLCH lightness differences do not guarantee WCAG ratios, so test with a contrast checker.
+Our take
+Give agents colour tokens in OKLCH with light and dark values side by side. It makes "make it darker" or "add a success colour" a predictable edit instead of a guess.
+
+References:
+- oklch() — MDN: https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/oklch
+- OKLCH in CSS: why we moved from RGB and HSL — Evil Martians: https://evilmartians.com/chronicles/oklch-in-css-why-quit-rgb-hsl
+- OKLCH Color Picker — oklch.com: https://oklch.com/
+- Tailwind CSS v4.0 — Tailwind Labs: https://tailwindcss.com/blog/tailwindcss-v4
+- WebAIM Contrast Checker — WebAIM: https://webaim.org/resources/contrastchecker/
+
+## Landing page teardown: what Linear and Vercel get right
+
+Linear's and Vercel's homepages are among the most imitated in software. Copying their gradients misses the point; what is worth copying is a set of decisions you can see by reading the pages carefully. Screenshots below were captured on 14 October 2026; both sites change often.
+Decisions worth stealing
+One sentence of positioning in the hero, large, with a short supporting line. No feature list above the fold.
+The product is the hero image. Real UI (or a faithful render of it) instead of an illustration, so the visitor sees what they would use.
+Restraint in colour. Mostly neutral surfaces; accent colour reserved for action and emphasis.
+Proof straight after the promise: customer logos or concrete product capabilities right below the hero.
+Sections with one idea each, each with a short heading and a visual that demonstrates it.
+What not to copy
+Their brand recognition: a minimal hero works when people already know the name; a new product may need a more explicit line.
+Heavy custom motion and 3D renders that took dedicated teams; a static, sharp product shot beats a mediocre animation.
+Checklist for your page
+Can a stranger say what you sell after five seconds? Is the first image your actual product? Is there exactly one primary CTA? Does every section prove one claim? If yes, the gradient is optional.
+
+References:
+- Linear homepage — Linear: https://linear.app/
+- Vercel homepage — Vercel: https://vercel.com/
+- The 5-second test — Nielsen Norman Group: https://www.nngroup.com/articles/first-impressions-human-automaticity/
+- Landing page design best practices — Nielsen Norman Group: https://www.nngroup.com/articles/homepage-design-principles/
+
+## Dashboard patterns that hold up: from KPI strip to drill-down table
+
+Ask a generator for an "analytics dashboard" and you will likely get a sidebar, four stat cards and a grid of charts of equal weight. It looks complete and answers nothing. A better structure follows the questions a user actually asks, in order.
+Three layers
+Is everything OK? A KPI strip of 3–5 numbers, each with the comparison period and a direction, not a sparkline zoo.
+What changed? One primary time-series chart with a range selector, annotated where something happened.
+Why? A sortable, filterable table that drills into detail. Tables are where people actually work.
+Details generators skip
+Tabular figures (font-variant-numeric: tabular-nums) so numbers align.
+Right-aligned numeric columns, left-aligned text.
+Empty, loading (skeleton) and error states for every widget.
+Units and time zone in labels; a "last updated" timestamp.
+Colour used for status only, with a non-colour cue (icon or text) for colour-blind users.
+Components to start from
+shadcn's dashboard blocks and its charts (built on Recharts) give you the scaffolding; Tremor offers dashboard-focused React components. Specify the three layers in your prompt and you get a page people can use, not just screenshot.
+
+References:
+- Dashboard blocks — shadcn/ui: https://ui.shadcn.com/blocks
+- Charts — shadcn/ui: https://ui.shadcn.com/charts
+- Tremor — Tremor: https://tremor.so/
+- Dashboards: making charts and graphs easier to understand — Nielsen Norman Group: https://www.nngroup.com/articles/dashboards-preattentive/
+- font-variant-numeric — MDN: https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant-numeric
+
+## Design tokens for agents: the file that makes AI output on-brand
+
+Agents follow concrete values far more reliably than descriptions. A design token file turns "clean, premium, a bit playful" into numbers the agent can apply everywhere. The W3C Design Tokens Community Group (DTCG) publishes a vendor-neutral JSON format for this, supported by tools such as Style Dictionary and Tokens Studio.
+A minimal structure
+{
+  "color": { "accent": { "$type": "color", "$value": "oklch(62% 0.17 250)" } },
+  "radius": { "md": { "$type": "dimension", "$value": "10px" } },
+  "space": { "4": { "$type": "dimension", "$value": "16px" } }
+}
+Three tiers of naming
+Primitive: raw values (blue-500, space-4).
+Semantic: intent (surface, text-muted, accent, danger). Agents should mostly use these.
+Component: optional overrides (button-radius).
+Handing it to an agent
+Export tokens to CSS variables and commit them; tell the agent "never hard-code colours or spacing, use these variables".
+Add a one-page usage note: which token for which job, plus three do/don't pairs.
+Reference both from your AGENTS.md, Cursor rules or skill so every session loads them.
+Verify: grep generated code for raw hex values as a cheap lint.
+Our encyclopedia's colour, spacing and type spec digests are written to be pasted into exactly this kind of usage note.
+
+References:
+- Design Tokens Community Group — W3C: https://www.w3.org/community/design-tokens/
+- Design Tokens Format Module — DTCG: https://www.designtokens.org/
+- Style Dictionary — Style Dictionary: https://styledictionary.com/
+- Tokens Studio — Tokens Studio: https://tokens.studio/
+
+## Design skills for Claude and Cursor: SKILL.md, rules and AGENTS.md
+
+Anthropic's Agent Skills are folders with a SKILL.md file: YAML front matter (a name and a description) followed by instructions, optionally with scripts and assets. The agent sees the descriptions and loads a skill's full body only when it is relevant. Cursor offers project rules in .cursor/rules, and many coding agents read an AGENTS.md at the repo root. Different files, same idea: durable, scoped instructions.
+What makes a design skill work
+A precise description, because it decides when the skill loads ("Use when building or restyling web UI").
+Bans before wishes. Models respond well to a short list of things never to do (text gradients, emoji icons, centred paragraphs, more than one accent).
+Concrete values: tokens, scales, a reference to the token file.
+A verification step: "render in a browser at 390px and 1440px, light and dark, before saying done".
+A template
+---
+name: house-ui
+description: Use when creating or restyling any web page or component.
+---
+1. Load tokens from styles/tokens.css. Never hard-code colour/spacing.
+2. Type: Instrument Serif display, Geist UI, scale 1.25.
+3. Never: text gradients, emoji icons, glassmorphism stacks.
+4. One signature effect per page (see /kb/ house style).
+5. Verify in a browser: 390/1440px, light/dark, keyboard focus.
+Where to find good ones
+Anthropic's public skills repository includes a frontend-design skill; community skills such as taste-skill and impeccable focus on aesthetics. Our encyclopedia indexes the ones we use, with full text where the licence allows.
+
+References:
+- Agent Skills overview — Anthropic: https://docs.anthropic.com/en/docs/agents-and-tools/agent-skills/overview
+- anthropics/skills — GitHub: https://github.com/anthropics/skills
+- Rules — Cursor docs: https://docs.cursor.com/context/rules
+- AGENTS.md — agents.md: https://agents.md/
+- taste-skill — GitHub: https://github.com/Leonxlnx/taste-skill
+
+## Weekly roundup, 14 Oct 2026: guideline files go mainstream
+
+This week's design-tool news shares one theme: the art brief is moving out of the chat box and into files and canvases that persist. Dates are from each vendor's own announcement.
+The news
+6 Oct · Figma: the product-design agent is generally available after a beta that began in May. Library owners can attach markdown guideline files the agent reads; teammates can watch agent activity on the canvas.
+8 Oct · Lovable: the three pre-build design directions are gone; the look now comes from your prompt, with clarifying questions only when it is open. Same day: nine new app and chat connectors (including Zendesk, Neon and Metabase) and a Loom chat connector.
+13 Oct · Magic Patterns: MagicOS, an infinite canvas with a coordinator chat that runs parallel design threads, real-time voice, and an MCP server for coding agents.
+Chrome: the team posted an update on the HTML-in-Canvas API, which lets canvas and WebGL draw real DOM and CSS; an origin trial is running.
+What to do with it
+Write (or tidy) your design guideline file now; three tools in one week started reading one.
+Put the style paragraph first in every app-builder prompt.
+If you explore many directions, try a canvas tool; if you polish one screen, stay in a single design.
+Next week's roundup will be generated from the hub's daily feed and posted here.
+
+References:
+- Figma's AI agent for product design is now generally available — The Verge: https://www.theverge.com/tech/1004953/figmas-ai-agent-for-product-design-is-now-generally-available
+- Lovable changelog — Lovable: https://docs.lovable.dev/changelog
+- Introducing MagicOS — Magic Patterns: https://www.magicpatterns.com/blog/introducing-magicos
+- Lovable cut its pick-a-look step (incl. HTML-in-Canvas) — Art Direction Daily: https://artdirectiondaily.com/issues/2026-10-12-lovable-cut-pick-look-step.html
+- HTML-in-Canvas explainer — WICG: https://github.com/WICG/html-in-canvas
+
+## Tutorial: have an agent build a landing page using UI Hub as context
+
+UI Hub is built to be read by agents: a JSON API, a design encyclopedia with raw Markdown per entry, and an AGENTS.md. This walkthrough shows the loop we use ourselves. Paste the prompts into Claude Code, Cursor, Codex or any agent that can fetch URLs.
+Six steps
+Load the guide. "Read https://siinxu.github.io/ui-resource-hub/AGENTS.md and follow it."
+Search the encyclopedia for the house style and the specs you need: /kb/?q=house style, /kb/?q=typography.
+Pick components from /api/resources.json, filtered by type and licence; prefer open-source libraries you can copy.
+Load skills in order: a taste or frontend-design skill first, then accessibility and quality checks.
+Build with tokens in CSS variables, one signature effect, real copy.
+Verify in a browser at 390px and 1440px, light and dark, and fix what you see before reporting done.
+A prompt you can copy
+Use UI Hub as design context: read /AGENTS.md, search /kb/ for
+"house style", "typography", "colour". Build a landing page for
+[product] with shadcn + one Aceternity background. Tokens in CSS
+variables, 10-language-ready copy, then screenshot 390/1440 light/dark.
+Why this works
+Each step replaces a vague instruction with a document the agent can read. The Agents guide has a one-click copy of this prompt in 10 languages, plus a downloadable skill bundle.
+
+References:
+- UI Hub AGENTS.md — UI Hub: https://siinxu.github.io/ui-resource-hub/AGENTS.md
+- UI Hub design encyclopedia — UI Hub: https://siinxu.github.io/ui-resource-hub/kb/
+- AGENTS.md convention — agents.md: https://agents.md/
+- anthropics/skills — GitHub: https://github.com/anthropics/skills
 
 # All resources (name | type | url | note)
 

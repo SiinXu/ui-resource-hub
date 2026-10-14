@@ -371,3 +371,20 @@ curl -s https://siinxu.github.io/ui-resource-hub/api/resources.json | jq --arg d
 - Motion that feels right: purpose, duration, easing, restraint — https://siinxu.github.io/ui-resource-hub/kb/note/blog-motion-that-feels-right.md
 - Dark mode done right: tokens, elevation and contrast — https://siinxu.github.io/ui-resource-hub/kb/note/blog-dark-mode-done-right.md
 - Accessibility in AI-generated UI: the checks models skip — https://siinxu.github.io/ui-resource-hub/kb/note/blog-accessibility-in-ai-generated-ui.md
+- v0 in practice: from a prompt to shadcn code you can keep — https://siinxu.github.io/ui-resource-hub/kb/note/blog-v0-prompt-to-shadcn.md
+- Lovable and Bolt: when prompt-to-UI becomes prompt-to-app — https://siinxu.github.io/ui-resource-hub/kb/note/blog-lovable-bolt-prompt-to-app.md
+- Figma Make and the Figma agent: AI moves onto the canvas — https://siinxu.github.io/ui-resource-hub/kb/note/blog-figma-make-and-figma-agent.md
+- MagicOS: Magic Patterns bets on an infinite canvas of AI threads — https://siinxu.github.io/ui-resource-hub/kb/note/blog-magic-patterns-magicos.md
+- Prompt-to-UI tools compared: v0, Lovable, Bolt, Figma Make, Magic Patterns — https://siinxu.github.io/ui-resource-hub/kb/note/blog-prompt-to-ui-tools-compared.md
+- Aceternity UI deep dive: spectacle, used sparingly — https://siinxu.github.io/ui-resource-hub/kb/note/blog-aceternity-ui-deep-dive.md
+- Magic UI deep dive: animated components that install like shadcn — https://siinxu.github.io/ui-resource-hub/kb/note/blog-magic-ui-deep-dive.md
+- Cult UI deep dive: tactile components with personality — https://siinxu.github.io/ui-resource-hub/kb/note/blog-cult-ui-deep-dive.md
+- shadcn blocks and registries: page sections as source code — https://siinxu.github.io/ui-resource-hub/kb/note/blog-shadcn-blocks-deep-dive.md
+- Typography for AI-generated UI: the fastest way to look less generic — https://siinxu.github.io/ui-resource-hub/kb/note/blog-typography-for-ai-generated-ui.md
+- OKLCH colour systems: palettes that survive dark mode — https://siinxu.github.io/ui-resource-hub/kb/note/blog-oklch-color-and-dark-mode.md
+- Landing page teardown: what Linear and Vercel get right — https://siinxu.github.io/ui-resource-hub/kb/note/blog-landing-page-teardown-linear-vercel.md
+- Dashboard patterns that hold up: from KPI strip to drill-down table — https://siinxu.github.io/ui-resource-hub/kb/note/blog-dashboard-design-patterns.md
+- Design tokens for agents: the file that makes AI output on-brand — https://siinxu.github.io/ui-resource-hub/kb/note/blog-design-tokens-for-agents.md
+- Design skills for Claude and Cursor: SKILL.md, rules and AGENTS.md — https://siinxu.github.io/ui-resource-hub/kb/note/blog-claude-cursor-design-skills.md
+- Weekly roundup, 14 Oct 2026: guideline files go mainstream — https://siinxu.github.io/ui-resource-hub/kb/note/blog-weekly-roundup-2026-w42.md
+- Tutorial: have an agent build a landing page using UI Hub as context — https://siinxu.github.io/ui-resource-hub/kb/note/blog-tutorial-agent-builds-landing-with-ui-hub.md

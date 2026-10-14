@@ -42,3 +42,6 @@ IMAGES = {
   S('https://www.w3.org/TR/WCAG22/','W3C','WCAG 2.2 specification','WCAG 2.2 规范'),
   S('https://www.w3.org/WAI/ARIA/apg/','W3C WAI','ARIA Authoring Practices Guide','ARIA 编写实践指南')]),
 }
+
+from images2 import IMAGES2
+IMAGES.update(IMAGES2)
