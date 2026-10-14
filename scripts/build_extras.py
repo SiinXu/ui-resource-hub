@@ -292,12 +292,12 @@ s = re.sub(r'\?v=5"', '?v=6"', s)
 open(ip,'w',encoding='utf-8').write(s)
 
 # CJK-friendly headings on agents + kb (keep-all + balanced wrap, phrase breaks)
-CJK_CSS = '<style>h1,h2,h3,.lede{text-wrap:balance}:lang(ja) :is(h1,h2,h3,.eb2),:lang(zh-Hans) :is(h1,h2,h3),:lang(zh-Hant) :is(h1,h2,h3),:lang(ko) :is(h1,h2,h3,p,li,summary){word-break:keep-all;line-break:strict}</style>'
+CJK_CSS = '<style>h1,h2,h3,.lede{text-wrap:balance}:lang(ja) :is(h1,h2,h3,.eb2),:lang(zh-Hans) :is(h1,h2,h3),:lang(zh-Hant) :is(h1,h2,h3),:lang(ko) :is(h1,h2,h3,p,li,summary){word-break:keep-all;line-break:strict}@media(max-width:560px){.cb pre{padding-right:14px!important;padding-top:44px!important}}</style>'
 for fp in ['agents/index.html','kb/index.html']:
     full = os.path.join(ROOT, fp)
     if not os.path.exists(full): continue
     t = open(full, encoding='utf-8').read()
-    t = t.replace('AIエージェント向けガイド</span>', 'AIエージェント向け<wbr>ガイド</span>').replace('UIデザイン百科</span>', 'UIデザイン<wbr>百科</span>')
+    t = t.replace('AIエージェント向けガイド</span>', 'AIエージェント<wbr>向けガイド</span>').replace('UIデザイン百科</span>', 'UIデザイン<wbr>百科</span>')
     if 'CJK-wrap' not in t: t = t.replace('</head>', '<!--CJK-wrap-->'+CJK_CSS+'</head>', 1)
     open(full,'w',encoding='utf-8').write(t)
 print('extras built:', len(POSTS), 'posts,', len(ITEMS), 'items,', len(skills), 'skills, updated', UPD)
