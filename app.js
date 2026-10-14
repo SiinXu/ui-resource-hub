@@ -81,12 +81,32 @@ function favBtn(i,cls){return '<button class="ib fav'+(favs[i.id]?' on':'')+(cls
 /* ---------- 许可 / 代码 / 提示词 ---------- */
 function lg(i){return LG[i.id]||(i.lib&&LG[i.lib])||{k:'unk'}}
 var O = window.UI_ORIG || {};
+/* v5：把构建时写死的中文包装行（安装/配置/示例标题、补充说明、SKILL.md 全文标题）换成当前语言；原文行一律不动 */
+function WL(s){if(!s)return s;var zh=isZh(),fp=function(x){return zh||LANG==='ja'?x:x.replace(/（/g,' (').replace(/）/g,')').replace(/，/g,', ').replace(/、/g,', ')};
+  var stp={'①':'w_s1','②':'w_s2','③':'w_s3','④':'w_s4'};
+  return s.split('\n').map(function(ln){var m;
+    if((m=ln.match(/^# 官方安装命令 Install(（README 原文）)?$/)))return '# '+t('w_install')+(m[1]?t('w_readme'):'');
+    if((m=ln.match(/^# (\S+) 全文 · (\S+) · License: ?(.*)$/)))return '# '+t('w_full',{name:m[1],url:m[2],lic:(!m[3]||m[3]==='仓库未声明许可')?t('w_nolic'):m[3]});
+    if((m=ln.match(/^# 仓库内 (\d+) 个 SKILL\.md（name \/ description 原文）· License: ?(.*)$/)))return '# '+t('w_idx',{n:m[1],lic:m[2]||t('w_nolic')});
+    if((m=ln.match(/^# 官网示例 Prompt（(.*)）· (\S+)$/)))return '# '+t('w_pp',{h:m[1],url:m[2]});
+    if((m=ln.match(/^(# |\/\/ |<!-- |\/\* )([①②③④]) (?:安装 Install|配置 Setup|引入 Import|示例 Example|配置)(.*) — (\S+)( -->| \*\/)?$/))){
+      var rest=m[3].replace(/（官方 (\S+?)，已去掉文档页外壳 ([^）]+)）/,function(_,x,y){return t('w_shell',{x:x,y:y})}).replace(/官方文档示例/g,t('w_docex'));
+      rest=rest.replace(/^ Setup\b/,'');
+      return m[1]+m[2]+' '+t(stp[m[2]])+fp(rest)+' — '+m[4]+(m[5]||'')}
+    if(ln==='# 聚合站补充 · Hub notes')return '# '+t('sup_h');
+    if((m=ln.match(/^# 原站文档 Docs: (\S+)$/)))return '# '+t('w_docs')+': '+m[1];
+    if((m=ln.match(/^# 许可 License: (.*?)(?: · 框架 Framework: (.*))?$/)))return '# '+t('w_lic')+': '+m[1]+(m[2]?' · '+t('w_fw')+': '+m[2]:'');
+    if(ln.indexOf('# 以上「原站原文」逐字来自')===0)return '# '+t('w_verb');
+    if(ln==='# 本站不提供任何付费模板 / Pro 组件源码。')return '# '+t('w_nopaid');
+    if((m=ln.match(/^# 不含付费部分：(.*)（请到原站购买）。$/)))return '# '+t('w_paid',{x:fp(m[1].replace('（-lts 版本为商业许可）',t('w_lts')).replace(/付费模板/g,t('w_tpl')).replace(/ 模板/g,' '+t('w_tpl2')).replace('Pro 预设和 Studio 导出',t('w_preset')))});
+    return ln}).join('\n')}
+function NCL(s){var m=s&&s.match(/^(.*?) 为商业许可，本站不提供代码/);return m?t('w_nc',{x:m[1]}):s}
 /* v3e：原站原文在前、原样保留；聚合站补充放后面并明确标注 */
 function codeParts(i){var l=lg(i),o=O[i.id]||{};if(l.k!=='oss'||o.nc)return {o:'',s:''};
-  var sup=o.sup||(!o.c?(l.code||''):'');return {o:o.c||'',os:o.cs||'',lic:o.cl||l.lic,s:(o.c&&sup&&o.c.indexOf(sup)>=0)?'':sup}}
+  var sup=o.sup||(!o.c?(l.code||''):'');return {o:WL(o.c||''),os:o.cs||'',lic:o.cl||l.lic,s:(o.c&&sup&&o.c.indexOf(sup)>=0)?'':WL(sup)}}
 function codeOf(i){var p=codeParts(i);if(!p.o)return p.s;return p.o+(p.s?'\n\n'+t('sup_mark')+'\n'+p.s:'')}
 function codeTip(i){
-  var l=lg(i);if((O[i.id]||{}).nc)return O[i.id].nc;
+  var l=lg(i);if((O[i.id]||{}).nc)return NCL(O[i.id].nc);
   if(l.k==='oss')return l.code?'':t('code_oss_nosnip',{lic:l.lic});
   if(l.k==='paid'||i.pricing==='paid')return t('code_paid');
   if(l.k==='lic')return t('code_lic',{lic:l.lic});
@@ -97,7 +117,7 @@ function codeTip(i){
 }
 function promptParts(i){
   var o=O[i.id]||{}, n=i.type==='style'?(i.libName+' · '+CTN(i.kind)+(i.var?' · '+i.var:'')):shown(i.name), orig='', src='';
-  if(o.p){orig=o.p;src=o.ps}
+  if(o.p){orig=WL(o.p);src=o.ps}
   else if(o.d){orig='\u201c'+o.d+'\u201d';src=o.ds}
   if(!orig)return {o:'',s:promptOld(i)};
   var c=codeParts(i), head=(o.p?t('p_orig_h',{url:src}):t('p_desc_h',{url:src}))+'\n'+orig;
