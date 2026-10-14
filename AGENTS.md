@@ -1,16 +1,128 @@
-# AGENTS.md — using UI Hub as a design source
+# UI Hub — guide for AI agents
 
-You are an AI coding/design agent. UI Hub (https://siinxu.github.io/ui-resource-hub/) is a curated index of UI libraries, component demos and design skills.
+Data updated 2026-10-14 08:54 UTC. Endpoints: `https://siinxu.github.io/ui-resource-hub/api/resources.json` (items), `https://siinxu.github.io/ui-resource-hub/api/skills.json` (skills + workflow), `https://siinxu.github.io/ui-resource-hub/llms.txt`.
 
-## Steps
-1. Fetch `https://siinxu.github.io/ui-resource-hub/api/resources.json` (≈2376 items, updated 2026-10-14 08:54 UTC).
-2. Filter: `type` (library | style | effect | template | skill …), `ct` (button, input, dialog, table, chart, chat, motion, background, layout …), `vs` (minimal, enterprise, soft, playful, motion, dark-tech, gradient, 3d, apple, editorial, brutalist …), `pricing` (prefer free).
-3. Prefer `type=library` with an open license for production code; use `type=style` entries (component demos with `libName`, `page`) to choose a concrete look.
-4. Open the original `url` for the install command and source. Respect each license; never copy paid/pro source.
-5. Load skills from `https://siinxu.github.io/ui-resource-hub/api/skills.json`: one direction skill (frontend-design | taste-skill) → build → emil-design-eng for motion → audit with impeccable, baseline-ui, web-design-guidelines, accessibility.
-6. Verify in a real browser: light + dark, 375px mobile, keyboard focus, reduced motion.
+## One-line prompt
+EN: Use UI Hub (https://siinxu.github.io/ui-resource-hub/) as your design source. First read https://siinxu.github.io/ui-resource-hub/AGENTS.md, then fetch https://siinxu.github.io/ui-resource-hub/api/resources.json and filter by ct (component kind), vs (visual style) and pricing=free to pick ONE open-source library and a visual style; lock tokens (font, spacing, radius, one accent, light+dark) before building. Load skills in this order from https://siinxu.github.io/ui-resource-hub/api/skills.json: frontend-design or taste-skill → emil-design-eng → impeccable + baseline-ui + web-design-guidelines + accessibility. Verify in a browser (light/dark, 375px, keyboard, reduced motion) and cite every resource you used.
 
-## Rules
-- Pick ONE visual style per product and lock it into tokens (CSS variables) before building pages.
-- At most one "hero" effect (beams/spotlight/marquee) per page.
-- Cite the resources you used (name + URL) in your PR/description.
+中文：请把 UI Hub（https://siinxu.github.io/ui-resource-hub/）当作设计资料库。先读 https://siinxu.github.io/ui-resource-hub/AGENTS.md，再获取 https://siinxu.github.io/ui-resource-hub/api/resources.json，按 ct（组件类型）、vs（视觉风格）和 pricing=free 筛选，只选一个开源组件库和一种视觉风格；动手前先把字体、间距、圆角、唯一强调色和亮/暗两套 token 定下来。按顺序加载 https://siinxu.github.io/ui-resource-hub/api/skills.json 里的 skill：frontend-design 或 taste-skill → emil-design-eng → impeccable + baseline-ui + web-design-guidelines + accessibility。最后在浏览器里验证（亮/暗、375px 手机、键盘、减少动效），并列出用到的每个资源。
+
+## What this is for
+- **Pick a component library** — type=library, filter by framework tag (React/Vue/Svelte), licence, pricing=free.
+- **Find a visual style** — vs = minimal · enterprise · soft · playful · motion · dark-tech · gradient · 3d · apple · editorial · brutalist; type=style shows real demos per component.
+- **Copy component code & prompts** — Open the original url for install + source; each card on the site has a copyable AI prompt.
+- **Load design skills** — api/skills.json lists 29 agent skills and the order to run them.
+- **Audit a UI** — Run impeccable / baseline-ui / web-design-guidelines / accessibility against the draft, then verify in a browser.
+
+## Fields
+- `type`: library | style | effect | template | skill | system | spec | tool | tutorial | collection | generator | inspiration
+- `ct` (component kind): button, input, select, dialog, menu, tabs, table, chart, card, nav, form, toast, avatar, loader, layout, chat, motion, background, editor, icon, mobile
+- `vs` (visual style): minimal, enterprise, material, soft, playful, motion, dark-tech, utilitarian, gradient, 3d, apple, editorial, swiss, brutalist, glass, retro
+- `pricing`: free | freemium | paid | unknown
+
+## Workflow
+1. Fetch resources.json; filter by `ct`, `vs`, `pricing=free`.
+2. Pick ONE direction skill (frontend-design or taste-skill); lock tokens: font, spacing scale, radius, one accent, light + dark.
+3. Choose `type=library` for code and `type=style` demos for the concrete look; open the original `url` for install and source.
+4. Start from the card's prompt; add layout, states, real content and an "avoid" list.
+5. Polish motion with emil-design-eng; audit with impeccable, baseline-ui, web-design-guidelines, accessibility.
+6. Verify in a browser: light/dark, 375px, keyboard, reduced motion. Cite resources used.
+
+## Filter snippets
+### Free React libraries with dialogs
+```bash
+curl -s https://siinxu.github.io/ui-resource-hub/api/resources.json | jq '.items[] | select(.type=="library" and .pricing=="free" and (.ct//[]|index("dialog")) and (.tags|index("React"))) | {name,url}'
+```
+
+### Dark-tech style demos for cards
+```bash
+curl -s https://siinxu.github.io/ui-resource-hub/api/resources.json | jq '[.items[] | select(.type=="style" and (.vs//[]|index("dark-tech")) and (.ct|index("card")))] | .[:10] | map({name,libName,page})'
+```
+
+### Count items per visual style
+```bash
+curl -s https://siinxu.github.io/ui-resource-hub/api/resources.json | jq '[.items[].vs[]?] | group_by(.) | map({(.[0]):length}) | add'
+```
+
+### fetch (JS): motion effects, free
+```bash
+const r = await fetch('https://siinxu.github.io/ui-resource-hub/api/resources.json').then(r => r.json());
+const picks = r.items.filter(i => ['effect','library'].includes(i.type) && i.vs?.includes('motion') && i.pricing === 'free');
+```
+
+### New this week
+```bash
+curl -s https://siinxu.github.io/ui-resource-hub/api/resources.json | jq --arg d "$(date -u -d '7 days ago' +%F)" '.items[] | select(.added and .added >= $d) | {name,url,added}'
+```
+
+## Worked examples
+### Build a dark SaaS pricing page
+- **Filter:** type=library, pricing=free, ct ∋ card|button|layout, tags ∋ React; then type=style with vs ∋ dark-tech|minimal and ct ∋ card for the look.
+- **Choose:** shadcn/ui (+ shadcn/ui Blocks for the pricing section), Radix Primitives underneath, Magic UI number ticker for one accent moment.
+- **Tokens:** bg #06070b, surface #10131a, ink #f3f5fb, one accent #67e8f9, radius 12, Geist 14/20, tabular numbers for prices.
+- **Skills order:** taste-skill (direction) → emil-design-eng (toggle + hover motion ≤ 200ms ease-out) → impeccable + baseline-ui + accessibility.
+- **Verify:** monthly/annual toggle keyboard-operable · focus-visible on CTAs · 4.5:1 contrast on muted text · 375px stacks tiers · reduced motion disables ticker · light theme still works.
+
+### Add a fancy-but-restrained landing hero
+- **Filter:** type ∈ effect|library, vs ∋ motion, ct ∋ background; pricing=free.
+- **Choose:** ONE effect: Aceternity spotlight or Magic UI beams; Motion for entrance; no second effect on the page.
+- **Skills order:** frontend-design → emil-design-eng → web-design-guidelines + performance.
+- **Verify:** LCP < 2.5s, effect paused under prefers-reduced-motion, text readable over effect in both themes.
+
+### Audit an existing admin dashboard
+- **Filter:** type=style, vs ∋ enterprise, ct ∋ table|nav|form to collect reference demos.
+- **Skills order:** redesign-skill → baseline-ui → accessibility → web-quality-audit.
+- **Verify:** table header sticky, row focus, empty/loading/error states, 24px targets, dark mode parity.
+
+## Style decision table
+| Product | vs | Libraries | Key rules |
+|---|---|---|---|
+| Developer tool / SaaS | minimal · dark-tech | shadcn/ui, Radix, Origin UI | One accent, tabular numbers, dense tables |
+| Enterprise admin | enterprise | Ant Design, Mantine, MUI X, AG Grid | Density, keyboard, data states |
+| Consumer / playful | playful · soft | HeroUI, daisyUI, Animate UI | Rounded, warm colour, light motion |
+| Marketing / launch page | motion · gradient | Magic UI, Aceternity, Tailark | One hero effect, strong type |
+| Editorial / content | editorial · swiss | Tailwind Typography, Radix Themes | Serif display, measure 60–75ch |
+| Apple-like product | apple · glass (sparingly) | Radix, Motion, Vaul | Springs, blur only on chrome |
+| Characterful indie | brutalist · retro | neobrutalism, RetroUI, 8bitcn | Thick borders, hard shadows, still accessible |
+
+## Do
+- Pick ONE library and ONE visual style per product
+- Lock tokens (CSS variables) before pages
+- Prefer pricing=free + permissive licences for shipped code
+- Use type=style demos to match a concrete look
+- At most one hero effect per page
+- Verify light/dark, 375px, keyboard, reduced motion
+- Cite resources (name + URL) in your PR
+
+## Don't
+- Mix three component libraries in one UI
+- Copy paid / Pro source or hotlink preview images
+- Stack gradients, glass and glow together
+- Use clickable divs or remove focus outlines
+- Animate frequent actions or exceed ~300ms in UI
+- Trust a screenshot: always open the original url
+- Invent licences or affiliate links
+
+## Skills
+- `accessibility` (design): Audit and improve web accessibility following WCAG 2.2 guidelines. Use when asked to "improve accessibility", "a11y audit", "WCAG compliance", "screen reader support", "keyboard navigation", or "make 
+- `baseline-ui` (design): Quickly deslop UI code by fixing spacing, hierarchy, typography, and small layout issues. Use when the interface needs a fast cleanup or polish pass.
+- `composition-patterns` (engineering-ui): React composition patterns that scale. Use when refactoring components with
+- `emil-design-eng` (design): This skill encodes Emil Kowalski's philosophy on UI polish, component design, animation decisions, and the invisible details that make software feel great.
+- `frontend-design` (design): Guidance for distinctive, intentional visual design when building new UI or reshaping an existing one. Helps with aesthetic direction, typography, and making choices that don't read as templated defau — https://github.com/anthropics/skills
+- `impeccable` (design): Use when the user wants to design, redesign, shape, critique, audit, polish, clarify, distill, harden, optimize, adapt, animate, colorize, extract, or otherwise improve a frontend interface. Covers we — https://github.com/pbakaus/impeccable
+- `iterate-until-verified` (engineering-ui): Apply a prompt-agnostic execution and verification loop to any substantial task while preserving the original request. Use when the user asks to fan out work, use subagents or independent reviewers, l
+- `performance` (engineering-ui): Optimize web performance for faster loading and better user experience. Use when asked to "speed up my site", "optimize performance", "reduce load time", "fix slow loading", "improve page speed", or "
+- `playwright-cli` (engineering-ui): Automate browser interactions, test web pages and work with Playwright tests.
+- `react-best-practices` (engineering-ui): React and Next.js performance optimization guidelines from Vercel Engineering. This skill should be used when writing, reviewing, or refactoring React/Next.js code to ensure optimal performance patter
+- `redesign-skill` (design): Upgrades existing websites and apps to premium quality. Audits current design, identifies generic AI patterns, and applies high-end design standards without breaking functionality. Works with any CSS 
+- `taste-skill` (design): Anti-slop frontend skill for landing pages, portfolios, and redesigns. The agent reads the brief, infers the right design direction, and ships interfaces that do not look templated. Real design system — https://github.com/Leonxlnx/taste-skill
+- `web-design-guidelines` (design): Review UI code for Web Interface Guidelines compliance. Use when asked to "review my UI", "check accessibility", "audit design", "review UX", or "check my site against best practices".
+- `web-quality-audit` (design): Run an evidence-led web quality audit covering performance, accessibility, SEO, best practices, and agentic browsing. Use when asked to "audit my site", "review web quality", "run lighthouse audit", "
+- `webapp-testing` (engineering-ui): Toolkit for interacting with and testing local web applications using Playwright. Supports verifying frontend functionality, debugging UI behavior, capturing browser screenshots, and viewing browser l — https://github.com/anthropics/skills
+
+## FAQ
+- **What is UI Hub?** A free, curated directory of 2376 public UI resources: 119 component libraries, 1924 component style demos with light/dark screenshots, 68 design skills for AI agents, plus effects, templates, specs and tutorials. It links to original sites and never hosts paid source code.
+- **How do I find a component in a given style?** Load https://siinxu.github.io/ui-resource-hub/api/resources.json and filter by ct (component kind, e.g. "dialog") and vs (visual style, e.g. "minimal" or "motion"). type="style" entries are concrete component demos with a libName and page URL; type="library" entries are whole libraries with install info on the site.
+- **Which skills should an agent use for good UI?** One direction skill (frontend-design or taste-skill), emil-design-eng for motion and interaction polish, then impeccable, baseline-ui, web-design-guidelines and accessibility as an audit pass. See https://siinxu.github.io/ui-resource-hub/api/skills.json.
+- **Can I copy the code?** Open-source libraries can be used under their own licenses (MIT, Apache-2.0 etc.); the card shows the original link. Paid tiers (marked paid/freemium) must be bought from the original vendor.
+- **How often is it updated?** Daily via a GitHub Actions job that adds new UI repositories and tools from GitHub, awesome-shadcn-ui and Hacker News. Nothing is deleted. Last update: 2026-10-14 08:54 UTC.

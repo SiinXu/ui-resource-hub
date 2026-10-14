@@ -5,6 +5,7 @@ import json, os, re, sys, html, datetime, glob
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, 'blog_src'))
 from posts import POSTS
+from images import IMAGES
 BASE = 'https://siinxu.github.io/ui-resource-hub/'
 LANGS = [('zh-Hans','简体中文','zh'),('zh-Hant','繁體中文','zht'),('en','English','en'),('ja','日本語','ja'),('ko','한국어','ko'),('ms','Bahasa Melayu','ms'),('vi','Tiếng Việt','vi'),('fr','Français','fr'),('es','Español','es'),('de','Deutsch','de')]
 D = json.load(open(os.path.join(ROOT,'data.json'), encoding='utf-8'))
@@ -47,8 +48,11 @@ nav.tb{display:flex;gap:2px;margin-left:8px}nav.tb a{padding:6px 10px;border-rad
 h1{font:400 clamp(36px,6vw,64px)/1.02 var(--serif);letter-spacing:-.02em;margin:14px 0 14px;max-width:18ch}h1 em{background:linear-gradient(100deg,var(--g1),var(--g2),var(--g3));-webkit-background-clip:text;background-clip:text;color:transparent}
 .lede{color:var(--ink2);max-width:62ch;font-size:16.5px;margin:0}
 .posts{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));padding:20px 0 60px}
-.pc{position:relative;display:flex;flex-direction:column;gap:10px;padding:22px;border-radius:16px;background:var(--surf);border:1px solid var(--line);text-decoration:none;transition:border-color .2s,transform .2s}
-.pc:hover{border-color:var(--line2);transform:translateY(-2px)}.pc:first-child{grid-column:1/-1}.pc:first-child h2{font-size:30px}
+.pc{position:relative;display:flex;flex-direction:column;overflow:hidden;padding:0;border-radius:16px;background:var(--surf);border:1px solid var(--line);text-decoration:none;transition:border-color .2s,transform .2s}
+.pc:hover{border-color:var(--line2);transform:translateY(-2px)}.pb{display:flex;flex-direction:column;gap:8px;padding:16px 18px 18px;flex:1}.cv{width:100%;height:auto;flex:none;aspect-ratio:1200/630;object-fit:cover;border-bottom:1px solid var(--line);background:#07080d}
+@media(min-width:900px){.pc:first-child{grid-column:1/-1;flex-direction:row;align-items:center}.pc:first-child .cv{width:58%;height:auto;flex:none;border-bottom:0;border-right:1px solid var(--line)}.pc:first-child .pb{justify-content:center;padding:28px}.pc:first-child h2{font-size:34px}}
+.posts{grid-template-columns:repeat(auto-fill,minmax(290px,1fr))!important}
+figure{margin:26px 0}figure img{width:100%;height:auto;border-radius:14px;border:1px solid var(--line2);background:#07080d;display:block}figcaption{font-size:12.5px;color:var(--ink3);margin-top:8px;line-height:1.5}figcaption a{color:var(--acc)}.hc{margin:22px 0 8px}
 .pc .no{font:500 12px var(--mono);color:var(--ink3)}.pc h2{font:400 23px/1.15 var(--serif);margin:0;letter-spacing:-.01em}.pc p{margin:0;color:var(--ink2);font-size:14px}
 .tg{display:flex;gap:6px;flex-wrap:wrap}.tg span{font:500 11px var(--mono);color:var(--ink3);border:1px solid var(--line);padding:2px 7px;border-radius:99px}
 article{max-width:720px;margin:0 auto;padding:48px 20px 72px}article h1{max-width:none;font-size:clamp(32px,5vw,50px)}
@@ -64,13 +68,13 @@ details{border-bottom:1px solid var(--line);padding:12px 0}summary{cursor:pointe
 [data-l]{display:none}
 @media(max-width:600px){.bar{gap:8px}.logo{font-size:0;gap:0}nav.tb{margin-left:0}nav.tb a{padding:6px 7px;font-size:13px;white-space:nowrap}select{max-width:92px}.hero{padding:40px 0 20px}}"""
 
-def head(title, desc, path, extra_ld, root):
+def head(title, desc, path, extra_ld, root, img='og.png'):
     url = BASE + path
     alt = ''.join(f'<link rel="alternate" hreflang="{c}" href="{url}?lang={c}">' for c,_,_ in LANGS) + f'<link rel="alternate" hreflang="x-default" href="{url}">'
     return f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{E(title)}</title><meta name="description" content="{E(desc)}"><link rel="canonical" href="{url}">{alt}
-<meta property="og:type" content="{'article' if 'blog/' in path and path!='blog/' else 'website'}"><meta property="og:site_name" content="UI Hub"><meta property="og:title" content="{E(title)}"><meta property="og:description" content="{E(desc)}"><meta property="og:url" content="{url}"><meta property="og:image" content="{BASE}og.png">
-<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{E(title)}"><meta name="twitter:description" content="{E(desc)}"><meta name="twitter:image" content="{BASE}og.png">
+<meta property="og:type" content="{'article' if 'blog/' in path and path!='blog/' else 'website'}"><meta property="og:site_name" content="UI Hub"><meta property="og:title" content="{E(title)}"><meta property="og:description" content="{E(desc)}"><meta property="og:url" content="{url}"><meta property="og:image" content="{BASE}{img}">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{E(title)}"><meta name="twitter:description" content="{E(desc)}"><meta name="twitter:image" content="{BASE}{img}">
 <link rel="alternate" type="text/plain" title="llms.txt" href="{BASE}llms.txt">
 <script>try{{document.documentElement.dataset.theme=localStorage.getItem('uihub.theme5')||(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark')}}catch(e){{document.documentElement.dataset.theme='dark'}}</script>
 <style>{CSS.replace('%(r)s', root)}</style>
@@ -97,22 +101,39 @@ def foot(root):
     return f'<footer class="foot wrap">{ml("upd")} {E(UPD)} · <a href="{root}llms.txt">llms.txt</a> · <a href="{root}api/resources.json">API</a> · <a href="{root}sitemap.xml">sitemap</a></footer>'
 
 ORG = {'@type':'Organization','name':'UI Hub','url':BASE}
+def fig(slug, n, im, k, root):
+    zh = k in ('zh','zht'); alt = im['alt']['zh' if zh else 'en']; src = f'{root}blog/img/{slug}-{n}.webp'
+    if im['type']=='shot':
+        host = im['url'].split('/')[2]
+        cap = (f'截图：{E(im["site"])}（<a href="{E(im["url"])}" rel="noopener" target="_blank">{E(host)}</a>），2026-10-14 截取，版权归原站所有' if zh else
+               f'Screenshot: {E(im["site"])} (<a href="{E(im["url"])}" rel="noopener" target="_blank">{E(host)}</a>), captured 2026-10-14. © the original site.')
+    else:
+        cap = ('示意图：UI Hub 原创，CC BY 4.0' if zh else 'Diagram: original by UI Hub, CC BY 4.0')
+    return f'<figure><img src="{src}" alt="{E(alt)}" loading="lazy" decoding="async" width="1200" height="675"><figcaption>{E(alt)} · {cap}</figcaption></figure>'
+def with_figs(body, slug, k, root):
+    ims = IMAGES[slug]['inline']; F = [fig(slug, i+1, im, k, root) for i, im in enumerate(ims)]
+    a = body.index('</p>')+4; body = body[:a]+F[0]+body[a:]
+    m = min([x for x in (body.find(t, a+len(F[0])) for t in ('</ol>','</ul>','</pre>')) if x>0]); m = body.index('>', m)+1
+    body = body[:m]+F[1]+body[m:]
+    if len(F)>2:
+        l = body.rfind('<h2>'); l = l if l>m else len(body); body = body[:l]+F[2]+body[l:]
+    return body
 # ---------- blog ----------
 plist = []
 for n,p in enumerate(POSTS,1):
     cards = f'<span class="no">{n:02d} · {p["date"]}</span><h2>{ml(p["t"],"span")}</h2><p>{ml(p["s"],"span")}</p><div class="tg">'+''.join(f'<span>{E(t)}</span>' for t in p['tags'])+'</div>'
-    plist.append(f'<a class="pc" href="{p["slug"]}/">{cards}</a>')
+    plist.append(f'<a class="pc" href="{p["slug"]}/"><img class="cv" src="img/{p["slug"]}-cover.webp" alt="" loading="{"eager" if n<4 else "lazy"}" width="1200" height="630"><div class="pb">{cards}</div></a>')
 ld = {'@context':'https://schema.org','@graph':[{'@type':'Blog','name':U['blog_title']['en'],'url':BASE+'blog/','publisher':ORG,'inLanguage':[c for c,_,_ in LANGS]},
-      {'@type':'ItemList','itemListElement':[{'@type':'ListItem','position':i+1,'url':BASE+f'blog/{p["slug"]}/','name':p['t']['en']} for i,p in enumerate(POSTS)]}]}
+      {'@type':'ItemList','itemListElement':[{'@type':'ListItem','position':i+1,'url':BASE+f'blog/{p["slug"]}/','name':p['t']['en'],'image':BASE+f'blog/img/{p["slug"]}-cover.webp'} for i,p in enumerate(POSTS)]}]}
 w('blog/index.html', head('AI Design Techniques Blog · UI Hub', U['blog_lede']['en'], 'blog/', ld, '../') + f"""<body>{topbar('../','blog')}<main class="wrap"><section class="hero"><p class="eb">Blog · {len(POSTS)} posts</p><h1>{ml('blog_title')}</h1><p class="lede">{ml('blog_lede')}</p></section>
 <div class="posts">{''.join(plist)}</div></main>{foot('../')}{SCRIPT}</body></html>""")
 for p in POSTS:
     refs = '<ol>'+''.join(f'<li><a href="{E(u)}" rel="noopener" target="_blank">{E(t)}</a> — {E(a)}</li>' for t,a,u in p['refs'])+'</ol>'
-    body = ''.join(f'<div data-l="{c}">' + (f'<p class="note">{E(L("body_note",k))}</p>' if L('body_note',k) else '') + (p['zh'] if k in ('zh','zht') else p['en']) + '</div>' for c,_,k in LANGS)
+    body = ''.join(f'<div data-l="{c}">' + (f'<p class="note">{E(L("body_note",k))}</p>' if L('body_note',k) else '') + with_figs(p['zh'] if k in ('zh','zht') else p['en'], p['slug'], k, '../../') + '</div>' for c,_,k in LANGS)
     ld = {'@context':'https://schema.org','@type':'BlogPosting','headline':p['t']['en'],'alternativeHeadline':p['t']['zh'],'description':p['s']['en'],'datePublished':p['date'],'dateModified':p['date'],
-          'inLanguage':['en','zh-Hans'],'author':ORG,'publisher':ORG,'mainEntityOfPage':BASE+f'blog/{p["slug"]}/','citation':[{'@type':'CreativeWork','name':t,'author':a,'url':u} for t,a,u in p['refs']],'keywords':', '.join(p['tags'])}
-    w(f'blog/{p["slug"]}/index.html', head(p['t']['en']+' · UI Hub', p['s']['en'], f'blog/{p["slug"]}/', ld, '../../') + f"""<body>{topbar('../../','blog')}<article><p class="meta"><a href="../">← {ml('back')}</a> · {p['date']}</p>
-<h1>{ml(p['t'])}</h1><p class="lede">{ml(p['s'])}</p>{body}<section class="refs"><h2>{ml('refs')}</h2>{refs}</section></article>{foot('../../')}{SCRIPT}</body></html>""")
+          'inLanguage':['en','zh-Hans'],'author':ORG,'publisher':ORG,'mainEntityOfPage':BASE+f'blog/{p["slug"]}/','citation':[{'@type':'CreativeWork','name':t,'author':a,'url':u} for t,a,u in p['refs']],'keywords':', '.join(p['tags']),'image':BASE+f'blog/img/{p["slug"]}-cover.webp'}
+    w(f'blog/{p["slug"]}/index.html', head(p['t']['en']+' · UI Hub', p['s']['en'], f'blog/{p["slug"]}/', ld, '../../', f'blog/img/{p["slug"]}-cover.jpg') + f"""<body>{topbar('../../','blog')}<article><p class="meta"><a href="../">← {ml('back')}</a> · {p['date']}</p>
+<h1>{ml(p['t'])}</h1><p class="lede">{ml(p['s'])}</p><figure class="hc"><img src="../img/{p['slug']}-cover.webp" alt="{E(p['t']['en'])}" width="1200" height="630" fetchpriority="high"></figure>{body}<section class="refs"><h2>{ml('refs')}</h2>{refs}</section></article>{foot('../../')}{SCRIPT}</body></html>""")
 
 # ---------- skills ----------
 SK = '/workspace/web-bot-skills'
@@ -218,6 +239,7 @@ r.items.filter(i =&gt; i.ct?.includes('dialog') &amp;&amp; i.vs?.includes('minim
 <section class="sec"><h2>Design &amp; UI engineering skills</h2><div class="grid2">{sk_html}</div></section>
 <section class="sec"><h2>FAQ</h2>{fq}</section></main>{foot('../')}{SCRIPT}</body></html>""")
 
+import agents_page; agents_page.build(globals())
 # ---------- sitemap / robots ----------
 urls = [('',UPD[:10]),('blog/',TODAY),('agents/',TODAY)] + [(f'blog/{p["slug"]}/',p['date']) for p in POSTS]
 sm = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n'
@@ -227,6 +249,7 @@ w('sitemap.xml', sm + '</urlset>\n')
 w('robots.txt', f'User-agent: *\nAllow: /\n\nSitemap: {BASE}sitemap.xml\n# LLM-friendly index: {BASE}llms.txt\n')
 w('.nojekyll', '')
 
+img = 'og.png'
 # ---------- index.html SEO head + nav ----------
 ip = os.path.join(ROOT,'index.html'); s = open(ip,encoding='utf-8').read()
 desc = f'UI Hub: curated directory of {len(ITEMS)} UI resources — {tc["library"]} component libraries, {tc["style"]} component style demos with light/dark previews, design skills for AI agents, and AI design technique articles. 10 languages, updated daily.'
@@ -236,8 +259,8 @@ ld = {'@context':'https://schema.org','@graph':[{'@type':'WebSite','name':'UI Hu
 alt = ''.join(f'<link rel="alternate" hreflang="{c}" href="{BASE}?lang={c}">' for c,_,_ in LANGS)
 seo = f"""<!--SEO-->
 <meta name="description" content="{E(desc)}"><link rel="canonical" href="{BASE}">{alt}<link rel="alternate" hreflang="x-default" href="{BASE}">
-<meta property="og:type" content="website"><meta property="og:site_name" content="UI Hub"><meta property="og:title" content="UI Hub — UI components, libraries &amp; design skills"><meta property="og:description" content="{E(desc)}"><meta property="og:url" content="{BASE}"><meta property="og:image" content="{BASE}og.png">
-<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="UI Hub — UI components, libraries &amp; design skills"><meta name="twitter:description" content="{E(desc)}"><meta name="twitter:image" content="{BASE}og.png">
+<meta property="og:type" content="website"><meta property="og:site_name" content="UI Hub"><meta property="og:title" content="UI Hub — UI components, libraries &amp; design skills"><meta property="og:description" content="{E(desc)}"><meta property="og:url" content="{BASE}"><meta property="og:image" content="{BASE}{img}">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="UI Hub — UI components, libraries &amp; design skills"><meta name="twitter:description" content="{E(desc)}"><meta name="twitter:image" content="{BASE}{img}">
 <link rel="alternate" type="text/plain" title="llms.txt" href="llms.txt"><link rel="sitemap" type="application/xml" href="sitemap.xml">
 <script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>
 <!--/SEO-->"""
