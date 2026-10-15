@@ -474,6 +474,7 @@ var inApp=false; window.addEventListener('hashchange',function(){inApp=true});
 function back(){if(inApp)history.back();else location.hash='#/'}
 function toast(x){var el=$('toast');el.textContent=x;el.classList.add('show');clearTimeout(toast.t);toast.t=setTimeout(function(){el.classList.remove('show')},x.length>30?3200:1600)}
 function copy(x,msg){
+  try{if(window.ievt){window.ievt('copy',{kind:/prompt|提示/i.test(String(msg||''))?'prompt':'code',len:String(x).length});window.ievt('convert',{goal:'copy'})}}catch(e){}
   function fb(){var a=document.createElement('textarea');a.value=x;a.setAttribute('readonly','');a.style.position='fixed';a.style.opacity='0';document.body.appendChild(a);a.select();a.setSelectionRange(0,x.length);try{document.execCommand('copy');toast(msg)}catch(e){prompt('',x)}document.body.removeChild(a)}
   if(navigator.clipboard&&window.isSecureContext)navigator.clipboard.writeText(x).then(function(){toast(msg)},fb);else fb();
 }
