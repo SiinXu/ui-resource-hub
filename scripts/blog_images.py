@@ -59,11 +59,12 @@ if __name__=='__main__':
         b=p.chromium.launch(executable_path='/usr/bin/google-chrome')
         ctx=b.new_context(viewport=dict(width=1200,height=675),device_scale_factor=1)
         for slug,spec in IMAGES.items():
+            if only and slug not in only and not any(o.startswith(slug+'-') for o in only): continue  # argv = slugs or image names; skip everything else
             pg=ctx.new_page(); pg.set_viewport_size(dict(width=1200,height=630)); pg.set_content(cover(slug,spec['cover'])); pg.wait_for_timeout(200)
             save(pg.screenshot(),f'{slug}-cover',1200); pg.close()
             for n,im in enumerate(spec['inline']):
                 name=f'{slug}-{n+1}'
-                if only and name not in only: continue
+                if only and slug not in only and name not in only: continue
                 pg=ctx.new_page()
                 try:
                     if im['type']=='shot':

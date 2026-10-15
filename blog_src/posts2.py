@@ -536,4 +536,83 @@ dict(slug='claude-design-everywhere', date=D, cat='tools', series=None, featured
 <li>导出路径：给干系人用 HTML / PDF / PPTX；下一步是生产界面时交给 Claude Code 或连接器（v0、Vercel、Lovable、Replit…）。</li>
 <li>像验证任何生成界面一样验收：真实内容、焦点环、亮/暗色、390px 与 1440px——不要只看画布预览。</li></ol>""",
  refs=[('Build live dashboards and animate explainers with Claude','Anthropic','https://claude.com/resources/articles/dashboards-and-motion'),('Claude Design product page','Anthropic','https://claude.com/product/design'),('Get started with Claude Design','Claude Help Center','https://support.claude.com/en/articles/14604416-get-started-with-claude-design'),('Claude Design admin guide for Team and Enterprise','Claude Help Center','https://support.claude.com/en/articles/14604406-claude-design-admin-guide-for-team-and-enterprise-plans'),('Claude Dashboards and Claude Motion: Anthropic’s new beta tools','Mad Robot','https://madrobot.blog/2026/10/08/claude-dashboards-motion-beta-docs-slides-design-free-plan/')]),
+dict(slug='figma-code-layers-and-specs', date='2026-10-15', cat='tools', series=None, featured=True, tags=['Figma','Code Layers','Specs','MCP','design systems'],
+ t=T('Figma code layers and Specs: the canvas becomes the shared context again','Figma 代码图层与 Specs：画布重新成为共享上下文','Figma 程式碼圖層與 Specs：畫布重新成為共享脈絡','Figmaのコードレイヤーと Specs：キャンバスが再び共有コンテキストに','Figma 코드 레이어와 Specs: 캔버스가 다시 공유 컨텍스트가 되다','Lapisan kod dan Specs Figma: kanvas kembali menjadi konteks bersama','Code layers và Specs của Figma: canvas lại là ngữ cảnh chung',"Code layers et Specs dans Figma : le canevas redevient le contexte partagé",'Code layers y Specs en Figma: el lienzo vuelve a ser el contexto compartido','Figma Code Layers und Specs: Die Canvas wird wieder zum gemeinsamen Kontext'),
+ s=T('At Config India (15 Oct 2026) Figma moved code layers into open beta, launched Specs as a Markdown home on the canvas, and let libraries carry guidelines and code sources. The lesson for UI builders: agents are short of constraint files, not generators.',
+     '在 Config India（2026-10-15）上，Figma 让代码图层进入公开测试，推出把 Markdown 放上画布的 Specs，并让组件库携带规范与代码源。给界面构建者的结论：智能体缺的不是生成器，而是约束文件。',
+     '在 Config India（2026-10-15）上，Figma 讓程式碼圖層進入公開測試，推出把 Markdown 放上畫布的 Specs，並讓元件庫攜帶規範與程式碼來源。給介面建構者的結論：智慧體缺的不是產生器，而是約束檔案。',
+     'Config India（2026-10-15）でFigmaはコードレイヤーをオープンベータにし、Markdownをキャンバスに置くSpecsを公開、ライブラリにガイドラインとコードソースを持たせた。UI制作者への教訓：エージェントに足りないのは生成器ではなく制約ファイルだ。',
+     'Config India(2026-10-15)에서 Figma는 코드 레이어를 오픈 베타로 전환하고, Markdown을 캔버스에 두는 Specs를 출시했으며, 라이브러리에 가이드라인과 코드 소스를 붙였다. UI 제작자에게 주는 교훈: 에이전트에게 부족한 것은 생성기가 아니라 제약 파일이다.',
+     'Di Config India (15 Okt 2026) Figma membawa lapisan kod ke beta terbuka, melancarkan Specs sebagai rumah Markdown di kanvas, dan membenarkan pustaka membawa garis panduan serta sumber kod. Pengajaran: ejen kekurangan fail kekangan, bukan penjana.',
+     'Tại Config India (15/10/2026), Figma đưa code layers vào beta mở, ra mắt Specs làm nơi đặt Markdown trên canvas, và cho thư viện mang theo guidelines cùng code sources. Bài học: agent thiếu file ràng buộc, không thiếu trình sinh.',
+     "À Config India (15 oct. 2026), Figma passe les code layers en bêta ouverte, lance Specs pour le Markdown sur le canevas et laisse les bibliothèques porter guidelines et sources de code. Leçon : les agents manquent de fichiers de contraintes, pas de générateurs.",
+     'En Config India (15 oct 2026) Figma llevó los code layers a beta abierta, lanzó Specs como hogar del Markdown en el lienzo y dejó que las bibliotecas lleven guidelines y fuentes de código. Lección: a los agentes les faltan archivos de restricciones, no generadores.',
+     'Auf der Config India (15. Okt. 2026) brachte Figma Code Layers in die offene Beta, startete Specs als Markdown-Ort auf der Canvas und ließ Bibliotheken Guidelines und Code-Quellen tragen. Die Lehre: Agenten fehlen Constraint-Dateien, nicht Generatoren.'),
+ en="""<p>On 15 October 2026, at Config India in Bengaluru, Figma shipped a set of updates that are easy to read as “more AI features” and more useful to read as a single idea: put the code, the written intent and the design-system rules on the same canvas, so people and agents work from one context instead of five tabs. Dylan Field’s recap post frames the problem bluntly. AI made code cheap, so teams “build to think”, but that vibe-coding loop is usually single-player; one customer is quoted describing it as “fast, fast, fast… then slow”.</p>
+<h2>What launched</h2>
+<ul><li><strong>Code layers, open beta on all plans.</strong> A code layer is a running, interactive prototype that sits on the canvas. You can start one from scratch (Code tool or <kbd>B</kbd>), convert selected frames with <em>Build selection</em>, clone a connected GitHub repo, upload a local folder, push a prototype in from your coding tool through the Figma MCP server, or capture a live page with the Chrome extension. Teammates can duplicate a layer to try another direction, comment and annotate it, edit the code, ask the agent to merge the best parts of two versions, pull screens back out with <em>Extract designs</em>, and push to a branch and open a pull request.</li>
+<li><strong>Specs, open beta on paid plans.</strong> A multiplayer Markdown container that lives as its own file or next to designs in Figma Design and FigJam (press <kbd>D</kbd>, or drop any <code>.md</code> file on the canvas). A spec can embed frames, FigJam boards and other canvas nodes, the Figma agent can read and reply to comments, and connectors such as GitHub and Hex can pull outside context in. Paste a spec link into a coding agent’s prompt and, according to Figma, the Markdown, frame references, diagrams, code layers and Code Connect snippets travel with it.</li>
+<li><strong>Design systems that carry rules and code.</strong> Guidelines attached to published libraries (open beta, Professional and above) are handed to the agent automatically whenever someone builds with that library. Code sources (closed beta) attach a GitHub repo or npm package to a library so code layers pull from real components. A centralised design-system space with a system map and a “system check” for gaps such as missing descriptions or interactive states is preview only.</li>
+<li><strong>Figma MCP.</strong> Figma says the server is now faster and uses fewer tokens; it can create code layers, read and write Specs, generate images and run Weave workflows, and adds tools such as <code>html_to_figma</code> and <code>generate_image</code>, plus 20 new partner integrations (OpenCode, Dia, Junie, Meta Muse and others).</li>
+<li><strong>Payload in Figma Make.</strong> Make now scaffolds a Payload backend (CMS, database, auth, APIs, admin panel) as its native backend; Supabase stays available as a third-party connection.</li></ul>
+<h2>Why it matters: three shifts</h2>
+<p><strong>Prototypes go back to multiplayer.</strong> The real cost of coding-agent prototypes has not been generation; it has been review. A link to a running demo shows the result but hides the alternatives and the reasoning. Putting several running versions side by side on a canvas, with comments pinned to them, restores the critique loop design teams already know. The branch-and-PR exit matters too: the prototype has a route into the repo rather than being rebuilt.</p>
+<p><strong>Markdown finally gets an address.</strong> Most teams working with agents already keep PRDs, <code>AGENTS.md</code> files and prompt notes in Markdown, scattered across laptops and repos with no link to the screens they describe. Specs is Figma’s bet that the brief should sit beside the frames, be editable by both humans and agents, and be passable to a coding agent by URL. Whether or not you adopt Specs, the pattern is right: one canonical brief, versioned with the work.</p>
+<p><strong>Design systems become agent-readable.</strong> Guidelines and code sources are the most consequential part of the launch and the least flashy. A library that ships its own do/don’t rules and points at the real npm package turns “please match our design system” from a hope into an input the agent receives every time.</p>
+<h2>Our take</h2>
+<p>The scarce input in AI-assisted UI is still the constraint file. Every tool this month, from Claude Design’s design systems to the Figma agent’s guideline files, has converged on the same lesson: generation is abundant, and quality comes from short, explicit rules about tokens, states and what never to do. Figma is now giving those rules a native place to live and an automatic route to the agent. Teams that already wrote a tight guideline file will see the benefit immediately; teams that skipped it will get faster, on-brand-looking noise.</p>
+<p>Two caveats. First, these are betas with staggered rollouts, so features may appear for one teammate before another. Second, cost: code layers use AI credits, free for creating and editing on paid plans only until 4 November 2026, and guidelines can make a prompt more expensive because they add context. Figma’s customer numbers (for example, Merkle reporting 30% faster iteration) are vendor-published snapshots, not independent benchmarks.</p>
+<h2>How to try it this week</h2>
+<ol><li><strong>Pick one flow, not a product.</strong> Convert a single real flow (sign-up, checkout, settings) into a code layer from existing frames or a lightweight prototype repo. Duplicate it once to compare two directions.</li>
+<li><strong>Write a short Spec next to it.</strong> Tokens to use, states that must exist, content rules and a never-list. Keep it to one screen of text so it is actually read.</li>
+<li><strong>Add guidelines to the library.</strong> Move your do/don’t pairs onto the published library so every agent prompt against it inherits them. If you are in the code-sources beta, attach the npm package your product really ships.</li>
+<li><strong>Wire MCP from your coding agent.</strong> Connect Claude Code, Cursor, Codex or similar to the Figma MCP server, paste the spec link into the prompt, and let the agent create or update the code layer.</li>
+<li><strong>Review on canvas like a pull request.</strong> Check empty, loading and error states, long text, keyboard focus and contrast, at 390px and 1440px, before anyone says “ship it”. Then push to a branch.</li></ol>
+<pre><code># Spec: Checkout v2
+## Tokens
+surface / text-muted / accent only; radius 10; Geist 14/20
+## States (must exist)
+empty cart · loading · card declined · success · long names
+## Content
+real prices, real error copy; sentence case
+## Never
+text gradients · emoji icons · placeholder-only labels · raw hex
+## Done when
+390 + 1440 · light + dark · focus visible · AA contrast</code></pre>
+<h2>Where UI Hub fits</h2>
+<p>If you are writing that guideline file or Spec from scratch, start from the design skills and agent guides already collected on UI Hub: filter the resource list by <em>skills</em> for SKILL.md-style rule files, and see the <a href="../../agents/">Agents guide</a> for the search, pick and verify loop that pairs well with an MCP-connected coding agent. The point is the same whichever canvas you use: give the agent the rules before you ask it for pixels.</p>""",
+ zh="""<p>2026 年 10 月 15 日，Figma 在班加罗尔的 Config India 上发布了一组更新。表面看是「又多了几个 AI 功能」，但更有用的读法是一个统一的思路：把代码、文字意图和设计系统规则放到同一张画布上，让人和智能体共用一份上下文，而不是在五个标签页之间来回切。Dylan Field 的汇总文章说得很直白：AI 让写代码变便宜，团队开始「边做边想」，但这种 vibe coding 往往是单人游戏——一位客户的原话是「快、快、快……然后变慢」。</p>
+<h2>发布了什么</h2>
+<ul><li><strong>代码图层（Code layers），所有套餐公开测试。</strong>代码图层是一段放在画布上、可交互、真正在运行的原型。可以从零开始（Code 工具或按 <kbd>B</kbd>），选中画框后点 <em>Build selection</em> 转换，克隆已连接的 GitHub 仓库，上传本地文件夹，通过 Figma MCP 服务器从编码工具推进来，或用 Chrome 扩展抓取线上页面。队友可以复制一层去试别的方向、评论和标注、直接改代码、让智能体合并两个版本的优点，用 <em>Extract designs</em> 把画面拆回可编辑图层，最后推到分支并开 Pull Request。</li>
+<li><strong>Specs，付费套餐公开测试。</strong>一个多人协作的 Markdown 容器，可以是独立文件，也可以放在 Figma Design 与 FigJam 的设计旁边（按 <kbd>D</kbd>，或把任意 <code>.md</code> 文件拖到画布上）。Spec 可嵌入画框、FigJam 白板和其他画布节点；Figma 智能体能读取并回复评论；GitHub、Hex 等连接器可以把外部上下文拉进来。按 Figma 的说法，把 Spec 链接粘进编码智能体的提示里，Markdown、画框引用、图表、代码图层和 Code Connect 片段都会一起带过去。</li>
+<li><strong>携带规则与代码的设计系统。</strong>挂在已发布组件库上的 Guidelines（公开测试，Professional 及以上）会在有人用该库构建时自动交给智能体。Code sources（封闭测试）把 GitHub 仓库或 npm 包挂到组件库上，让代码图层使用真实组件。集中式设计系统空间（含系统图谱，以及检查缺少描述、交互状态等缺口的 system check）目前仅为预览。</li>
+<li><strong>Figma MCP。</strong>Figma 称服务器更快、更省 Token；可以创建代码图层、读写 Specs、生成图片、运行 Weave 工作流，新增 <code>html_to_figma</code>、<code>generate_image</code> 等工具，并新增 20 个合作集成（OpenCode、Dia、Junie、Meta Muse 等）。</li>
+<li><strong>Figma Make 接入 Payload。</strong>Make 现在会把 Payload（CMS、数据库、认证、API、管理后台）作为原生后端脚手架；Supabase 继续作为第三方连接可用。</li></ul>
+<h2>为什么重要：三个转变</h2>
+<p><strong>原型回到多人协作。</strong>编码智能体做原型，真正的成本从来不是生成，而是评审。一个运行中的演示链接只给出结果，却藏起了备选方案和推理过程。把几个运行版本并排放在画布上、评论钉在旁边，就恢复了设计团队熟悉的评审循环。分支 + PR 的出口同样关键：原型有了进入代码仓库的路径，而不是推倒重写。</p>
+<p><strong>Markdown 终于有了地址。</strong>和智能体协作的团队，PRD、<code>AGENTS.md</code>、提示词笔记大多已经是 Markdown，却散落在各自电脑和仓库里，和它们描述的界面毫无关联。Specs 押注的是：需求应该挨着画框、人和智能体都能编辑、并能用一个 URL 交给编码智能体。不管你用不用 Specs，这个模式是对的——一份权威需求，与作品一起版本化。</p>
+<p><strong>设计系统变得「智能体可读」。</strong>Guidelines 和 Code sources 是这次发布里最不起眼、却影响最大的部分。一个自带该做/不该做规则、并指向真实 npm 包的组件库，会把「请符合我们的设计系统」从一句愿望变成智能体每次都会收到的输入。</p>
+<h2>我们的看法</h2>
+<p>AI 辅助界面里最稀缺的输入，仍然是约束文件。这个月的每个工具——从 Claude Design 的设计系统到 Figma 智能体的规范文件——都收敛到同一个结论：生成能力过剩，质量来自关于 Token、状态和「绝不做什么」的简短明确规则。Figma 现在给这些规则提供了原生的存放位置和自动送达智能体的通道。已经写好精炼规范文件的团队会立刻受益；跳过这一步的团队，只会得到更快、看起来很像品牌的噪声。</p>
+<p>两点提醒。第一，这些都是分批灰度的测试版，队友之间可能先后看到功能。第二，成本：代码图层消耗 AI 积分，付费套餐里创建和编辑仅在 2026 年 11 月 4 日前免费；Guidelines 会增加上下文，也可能让单次提示更贵。Figma 公布的客户数据（如 Merkle 称迭代快 30%）是厂商发布的案例快照，不是独立基准测试。</p>
+<h2>本周就能试的做法</h2>
+<ol><li><strong>选一条流程，而不是整个产品。</strong>把一条真实流程（注册、结账、设置）从现有画框或轻量原型仓库转成代码图层，再复制一份比较两个方向。</li>
+<li><strong>在旁边写一份短 Spec。</strong>写清要用的 Token、必须存在的状态、内容规则和禁止清单。控制在一屏以内，才会真的被读。</li>
+<li><strong>给组件库加 Guidelines。</strong>把该做/不该做的规则放到已发布组件库上，让所有基于它的智能体提示自动继承。如果你在 Code sources 测试里，挂上产品真正发布的 npm 包。</li>
+<li><strong>从编码智能体接入 MCP。</strong>把 Claude Code、Cursor、Codex 等连到 Figma MCP 服务器，把 Spec 链接粘进提示，让智能体创建或更新代码图层。</li>
+<li><strong>像审 Pull Request 一样在画布上验收。</strong>在任何人说「可以上线」之前，检查空状态、加载、报错、长文本、键盘焦点和对比度，分别看 390px 与 1440px。然后推到分支。</li></ol>
+<pre><code># Spec: 结账 v2
+## Token
+只用 surface / text-muted / accent；圆角 10；Geist 14/20
+## 必须存在的状态
+空购物车 · 加载中 · 卡被拒 · 成功 · 超长名称
+## 内容
+真实价格、真实报错文案；句首大写
+## 禁止
+文字渐变 · emoji 图标 · 只有占位符没有标签 · 裸 hex 色值
+## 完成标准
+390 + 1440 · 亮色 + 暗色 · 焦点可见 · AA 对比度</code></pre>
+<h2>UI Hub 能帮什么</h2>
+<p>如果你要从零写这份规范文件或 Spec，可以从 UI Hub 已收集的设计技能和智能体指南起步：在资源列表里按 <em>skills</em> 筛选 SKILL.md 风格的规则文件，再看 <a href="../../agents/">Agent 指南</a> 里「搜索、挑选、验证」的循环，它和接入 MCP 的编码智能体很搭。不管用哪张画布，道理都一样：先把规则交给智能体，再让它出像素。</p>""",
+ refs=[('Build by design: New workflows for new ways of building','Figma (Dylan Field)','https://www.figma.com/blog/build-by-design/'),('Design together with code layers on the canvas','Figma','https://www.figma.com/blog/design-together-with-code-layers/'),('Introducing Specs: Markdown as a medium','Figma','https://www.figma.com/blog/introducing-figma-specs/'),("What's new from Config India 2026",'Figma Help Center','https://help.figma.com/hc/en-us/articles/43663368947863-What-s-new-from-Config-India-2026'),('Code layers in Figma Design','Figma Help Center','https://help.figma.com/hc/en-us/articles/44193259600535-Code-layers-in-Figma-Design'),('Guide to Specs in Figma','Figma Help Center','https://help.figma.com/hc/en-us/articles/44049066011671-Guide-to-Specs-in-Figma'),('Guide to the Figma MCP server','Figma Help Center','https://help.figma.com/hc/en-us/articles/32132100833559-Guide-to-the-Figma-MCP-server'),("Here's everything from Config India 2026",'Figma Forum','https://forum.figma.com/product-updates-3/here-s-everything-from-config-india-2026-59008'),('Figma deepens investment in India with largest international Config yet','Figma','https://www.figma.com/blog/figma-deepens-investment-in-india/')]),
 ]

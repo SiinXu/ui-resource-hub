@@ -389,3 +389,4 @@ curl -s https://siinxu.github.io/ui-resource-hub/api/resources.json | jq --arg d
 - Weekly roundup, 14 Oct 2026: guideline files go mainstream — https://siinxu.github.io/ui-resource-hub/kb/note/blog-weekly-roundup-2026-w42.md
 - Tutorial: have an agent build a landing page using UI Hub as context — https://siinxu.github.io/ui-resource-hub/kb/note/blog-tutorial-agent-builds-landing-with-ui-hub.md
 - Claude Design everywhere: out of beta, into every chat — https://siinxu.github.io/ui-resource-hub/kb/note/blog-claude-design-everywhere.md
+- Figma code layers and Specs: the canvas becomes the shared context again — https://siinxu.github.io/ui-resource-hub/kb/note/blog-figma-code-layers-and-specs.md
