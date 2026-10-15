@@ -1,6 +1,6 @@
 {
  "generated": "2026-10-15",
- "count": 2390,
+ "count": 2395,
  "items": [
   {
    "id": "ued-figma-mcp-guide",
@@ -72384,6 +72384,173 @@
    ],
    "noteEn": "New GitHub UI repo: 1,435 free MIT icons in stroke, two-tone, duotone and fill, rounded or sharp: 11,480 SVGs on one 24×24 grid. Built for shadcn/ui. (★162, MIT, keyline-icons/keyline-icons)",
    "added": "2026-10-15"
+  },
+  {
+   "id": "cs2-magicui-design--background--flickering-grid--v0",
+   "type": "style",
+   "lib": "magicui-design",
+   "libName": "Magic UI",
+   "kind": "background",
+   "var": "Flickering Grid",
+   "name": "Background · Magic UI · Flickering Grid",
+   "url": "https://magicui.design/docs/components/flickering-grid",
+   "page": "https://magicui.design/docs/components/flickering-grid",
+   "shot": "magicui-design--background--flickering-grid--v0",
+   "note": "Magic UI 官方文档里的「背景」公开演示（Flickering Grid）。MIT。",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "Magic UI"
+   ],
+   "ct": [
+    "background"
+   ],
+   "rt": [
+    "component-demo",
+    "motion"
+   ],
+   "vs": [
+    "dark-tech",
+    "gradient",
+    "motion"
+   ],
+   "added": "2026-10-15"
+  },
+  {
+   "id": "cs2-www-cult-ui-com--tabs--direction-aware-tabs--v0",
+   "type": "style",
+   "lib": "www-cult-ui-com",
+   "libName": "Cult UI",
+   "kind": "tabs",
+   "var": "Direction Aware Tabs",
+   "name": "Tabs · Cult UI · Direction Aware Tabs",
+   "url": "https://www.cult-ui.com/docs/components/direction-aware-tabs",
+   "page": "https://www.cult-ui.com/docs/components/direction-aware-tabs",
+   "shot": "www-cult-ui-com--tabs--direction-aware-tabs--v0",
+   "note": "Cult UI 官方文档里的「标签页」公开演示（Direction Aware Tabs）。MIT。",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "Cult UI"
+   ],
+   "ct": [
+    "tabs"
+   ],
+   "rt": [
+    "component-demo",
+    "motion"
+   ],
+   "vs": [
+    "dark-tech",
+    "skeuomorphic",
+    "motion"
+   ],
+   "added": "2026-10-15"
+  },
+  {
+   "id": "cs2-www-cult-ui-com--card--minimal-card--v0",
+   "type": "style",
+   "lib": "www-cult-ui-com",
+   "libName": "Cult UI",
+   "kind": "card",
+   "var": "Minimal Card",
+   "name": "Card · Cult UI · Minimal Card",
+   "url": "https://www.cult-ui.com/docs/components/minimal-card",
+   "page": "https://www.cult-ui.com/docs/components/minimal-card",
+   "shot": "www-cult-ui-com--card--minimal-card--v0",
+   "note": "Cult UI 官方文档里的「卡片」公开演示（Minimal Card）。MIT。",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "Cult UI"
+   ],
+   "ct": [
+    "card"
+   ],
+   "rt": [
+    "component-demo"
+   ],
+   "vs": [
+    "dark-tech",
+    "skeuomorphic",
+    "motion"
+   ],
+   "added": "2026-10-15"
+  },
+  {
+   "id": "cs2-www-cult-ui-com--card--texture-card--v0",
+   "type": "style",
+   "lib": "www-cult-ui-com",
+   "libName": "Cult UI",
+   "kind": "card",
+   "var": "Texture Card",
+   "name": "Card · Cult UI · Texture Card",
+   "url": "https://www.cult-ui.com/docs/components/texture-card",
+   "page": "https://www.cult-ui.com/docs/components/texture-card",
+   "shot": "www-cult-ui-com--card--texture-card--v0",
+   "note": "Cult UI 官方文档里的「卡片」公开演示（Texture Card）。MIT。",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "Cult UI"
+   ],
+   "ct": [
+    "card"
+   ],
+   "rt": [
+    "component-demo"
+   ],
+   "vs": [
+    "dark-tech",
+    "skeuomorphic",
+    "motion"
+   ],
+   "added": "2026-10-15"
+  },
+  {
+   "id": "cs2-www-cult-ui-com--editor--code-block--v0",
+   "type": "style",
+   "lib": "www-cult-ui-com",
+   "libName": "Cult UI",
+   "kind": "editor",
+   "var": "Code Block",
+   "name": "Editor · Cult UI · Code Block",
+   "url": "https://www.cult-ui.com/docs/components/code-block",
+   "page": "https://www.cult-ui.com/docs/components/code-block",
+   "shot": "www-cult-ui-com--editor--code-block--v0",
+   "note": "Cult UI 官方文档里的「编辑器」公开演示（Code Block）。MIT。",
+   "section": "组件样式",
+   "sectionTitle": "组件样式（官方文档演示截图）",
+   "sectionDesc": "",
+   "source": "",
+   "pricing": "unknown",
+   "tags": [
+    "Cult UI"
+   ],
+   "ct": [
+    "editor"
+   ],
+   "rt": [
+    "component-demo"
+   ],
+   "vs": [
+    "dark-tech",
+    "skeuomorphic",
+    "motion"
+   ],
+   "added": "2026-10-15"
   }
  ],
  "guides": [
@@ -72586,5 +72753,5 @@
    ]
   }
  ],
- "updatedAt": "2026-10-15T04:35Z"
+ "updatedAt": "2026-10-15T15:17Z"
 }
