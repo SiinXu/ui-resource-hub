@@ -1,0 +1,454 @@
+0|Hướng dẫn cấu hình MCP chính thức của Figma, kèm các skill như figma-create-design-system-rules để ghi quy tắc thiết kế vào CLAUDE.md, AGENTS.md hoặc .cursor/rules
+1|Cách viết một skill để agent tra thư viện component của bạn trước, rồi làm theo cách đặt tên Variables và các mẫu thiết kế của bạn
+2|Mẫu quy tắc dùng ngay: get_design_context → chụp màn hình → dựng bằng token → đối chiếu lại với bản thiết kế
+3|Nhập môn cho designer: kết nối Figma, đọc component và token, đẩy thay đổi ngược lại canvas
+4|Skill thiết kế 30 nghìn sao: hơn 20 lệnh thiết kế, kèm review UI và phát hiện các kiểu "AI slop"; trang web có minh họa hiệu ứng và tài liệu
+5|Bộ skill chống "giao diện kiểu AI" 80 nghìn sao, gồm 13 skill về chữ, khoảng trắng, bo góc và cường độ chuyển động, cùng tính năng kiểm tra trang; trang chủ: tasteskill.dev
+6|Được cộng đồng gọi là "một trong những skill thiết kế UX đầy đủ nhất"; tập trung vào luồng UX và tính dễ dùng
+7|Skill chính thức của Vercel: kiểm tra mã UI theo hơn 100 quy tắc giao diện, gồm a11y, focus, biểu mẫu, chuyển động, chữ, chế độ tối và i18n
+8|Đọc components.json rồi viết component theo quy tắc kết hợp và màu ngữ nghĩa của shadcn, để AI thôi tự chế
+9|Chính thức từ Ant Group: antd mcp và antd setup --client cursor/claude/codex cài MCP và skill chỉ bằng một lệnh
+10|Cung cấp llms.txt, llms-full.txt và design.md để bạn đưa toàn bộ đặc tả antd cho AI
+11|Skill chuyển động chính thức của GreenSock: timeline, ScrollTrigger, dọn dẹp trong React; dùng được với Cursor, Claude và Codex
+12|Định dạng DESIGN.md của Google: token viết bằng YAML, ý đồ thiết kế viết bằng Markdown
+13|Bộ skill kỹ thuật của Addy Osmani, gồm hiệu năng và chất lượng frontend
+14|Kho plugin và skill Codex chính thức của OpenAI, có cả plugin thiết kế và Figma
+15|Skill quy chuẩn frontend do tác giả Trung Quốc viết, bao quát component, hàm, kiến trúc và UI/UX cơ bản
+16|Nhập URL là trích xuất hệ thống thiết kế của trang (màu, chữ, khoảng cách, đổ bóng) trong vài giây; cũng chạy được như một MCP cho Claude
+17|Danh mục skill dùng chung cho nhiều agent; cài bằng npx skills add
+18|Tuyển tập cẩm nang thiết kế cho cả người lẫn agent (nhiều thẻ skill ở đây lấy từ trang này)
+19|So sánh giao diện do các mô hình khác nhau dựng, có và không có skill thiết kế, để bạn tự đánh giá skill có đáng dùng không
+20|Một thread tiếng Trung giải thích từng skill trong 13 skill con của Taste Skill và khi nào nên dùng
+21|Bộ nguyên tắc chuẩn mực cho iOS, macOS và visionOS; tài liệu bắt buộc phải đọc trong thời Liquid Glass
+22|Bộ kit Figma/Sketch chính thức, font SF và SF Symbols
+23|Hướng dẫn M3 và Expressive của Google về component, màu sắc, chuyển động và khả năng tiếp cận
+24|Tạo trọn bộ token màu M3 từ một màu gốc rồi xuất ra mã
+25|Ngôn ngữ thiết kế đa nền tảng của Microsoft cho Web, iOS, Android và Windows
+26|Hệ thống thiết kế của Alibaba cho sản phẩm trung đài và trang quản trị
+27|Đặc tả component thương mại điện tử của JD.com cho web di động và mini-program
+28|Component theo đúng chuẩn thị giác gốc của WeChat
+29|Nguyên tắc tương tác và thị giác chính thức cho mini-program WeChat
+30|Nguyên tắc và tài nguyên thiết kế HarmonyOS chính thức của Huawei
+31|Hướng dẫn chính thức của Samsung về bố cục, lưới, màn hình lớn và thiết bị gập
+32|Hệ thống thiết kế trang quản trị của Shopify, nay chủ yếu xây trên Web Components
+33|Tài liệu API cho các component Polaris mới
+34|Hệ thống cho SaaS doanh nghiệp; styling hooks của nó là ví dụ mẫu mực về tạo theme bằng token
+35|Hệ thống đứng sau Jira và Confluence, có token và hướng dẫn nội dung công khai
+36|Hệ thống thiết kế chính thức của Uber
+37|Bộ component React mã nguồn mở cho Base
+38|Ngôn ngữ thiết kế xuyên suốt bộ sản phẩm Adobe
+39|Thế hệ tiếp theo của thị giác và component Spectrum
+40|Hệ thống thiết kế dịch vụ công; các mẫu về khả năng tiếp cận và biểu mẫu đạt chuẩn sách giáo khoa
+41|Hệ thống thiết kế công khai của Twilio, tài liệu component được tổ chức rất tốt
+42|Hệ thống thiết kế công khai của Zendesk; tham khảo tốt cho component SaaS
+43|Hệ thống thiết kế công khai của HashiCorp; tham khảo cho giao diện công cụ dành cho lập trình viên
+44|Hệ thống thiết kế công khai của Elastic; tham khảo cho giao diện dày đặc dữ liệu
+45|DLS của Airbnb không công khai; người phụ trách kể lại cách xây hệ thống component đa nền tảng
+46|Encore như một "hệ thống của các hệ thống": trừu tượng hóa component theo tầng và slot
+47|Vì sao Netflix xây Hawkins và token thống nhất các nền tảng ra sao (bài gốc trên Netflix Tech Blog)
+48|Hướng dẫn trọn vẹn của Romina Kavcic để xây hệ thống thiết kế từ con số 0, kèm template
+49|Phương pháp atom – molecule – organism để phân tầng component
+50|Áp dụng token và mode (sáng/tối, thương hiệu) vào thực tế trong Figma
+51|Cách tiêu chuẩn để biên dịch một nguồn token sang CSS, iOS và Android
+52|Hướng dẫn đầy đủ về đồng bộ token giữa Figma và mã nguồn
+53|Kiến thức nền về token: tầng nguyên thủy, ngữ nghĩa và component
+54|Thực chiến: GitHub Actions kết hợp MCP để đồng bộ token sang web, di động và TV
+55|Của chính đội ngũ tạo ra Tailwind: UI đẹp dành cho lập trình viên — khoảng cách, thứ bậc, màu sắc (sách trả phí)
+56|Kiến thức nền về typography: độ dài dòng, khoảng cách dòng, thang cỡ chữ
+57|Tạo thang cỡ chữ và khoảng cách co giãn bằng clamp()
+58|Chọn tỷ lệ thang cỡ chữ một cách trực quan
+59|Bài giải thích kinh điển về lưới khoảng cách 8 điểm
+60|Token easing và thời lượng, cùng các mẫu chuyển cảnh
+61|Mẹo tạo cảm giác cho animation từ tác giả của Sonner và Vaul
+62|Khóa học web animation trọn bộ của Emil (trả phí)
+63|Một designer của Vercel nói về những chi tiết tương tác vô hình và "cảm giác"
+64|Khóa học miễn phí của Google về thiết kế responsive
+65|Khóa học miễn phí của Google về khả năng tiếp cận
+66|Lần lượt từng component (toggle, tab, card, menu): làm sao để chúng dễ tiếp cận
+67|Ngôi nhà chính thức của chuẩn design token dùng chung giữa các công cụ
+68|Đặc tả JSON token chính thức mà Figma, Tokens Studio và Style Dictionary đều tuân theo
+69|Danh sách kiểm tra giao diện chi tiết (focus, biểu mẫu, chuyển động, chữ) có thể giao cho AI làm tiêu chí review
+70|Mã nguồn Markdown của bộ hướng dẫn trên, thả thẳng vào AGENTS.md là dùng được
+71|Các tầng token M3 (ref → sys → comp) và cách đặt tên
+72|Tài liệu tham chiếu cho các vai trò màu ngữ nghĩa như primary, on-primary và container
+73|Hệ thống token toàn cục và token bí danh của Microsoft
+74|Bốn theme của IBM, chuyển đổi qua cùng một bộ token ngữ nghĩa
+75|Ví dụ đặt tên token ngữ nghĩa như color.background.danger
+76|Mô hình thuật toán token ba tầng được dùng rất rộng rãi
+77|Token cơ sở và token chức năng của GitHub
+78|Kho dữ liệu token công khai của Spectrum (trước đây là adobe/spectrum-tokens)
+79|Quy tắc cỡ chữ Dynamic Type và khoảng cách dòng
+80|Các yêu cầu bắt buộc về độ tương phản, focus, kích thước vùng chạm và hơn thế nữa
+81|Mẫu bàn phím và ARIA chuẩn cho từng component (combobox, tabs, dialog…)
+82|Nhóm cộng đồng W3C thống nhất tên gọi và cấu trúc component giữa các thư viện
+83|Quy tắc rõ ràng: bậc nào trong 12 bậc dùng cho nền, viền hay chữ
+84|Tạo dải màu dễ tiếp cận theo độ tương phản mục tiêu; mã nguồn mở của Adobe
+85|Danh sách kiểm tra để rà soát hệ thống thiết kế trước khi ra mắt
+86|Danh mục hệ thống thiết kế có thể tìm kiếm
+87|So sánh song song component giữa các hệ thống thiết kế
+88|Cảm hứng UI cho thương mại điện tử và luồng thanh toán
+89|Thư viện ảnh chụp màn hình UI để lấy cảm hứng
+90|So sánh trước/sau từ các thử nghiệm A/B thật — xem phiên bản nào thắng
+91|Cảm hứng về tương tác và chuyển động
+92|Cảm hứng giao diện cho sản phẩm AI
+93|Danh mục cảm hứng UI miễn phí
+94|Tên miền cũ của Godly nay chuyển về đây: tuyển chọn hằng ngày các trang web, thương hiệu và chuyển động
+95|Bộ sưu tập các trang web thử nghiệm, tiên phong, ưu tiên di động
+96|Vi tương tác và chi tiết "trứng phục sinh" mang cảm giác như phép thuật
+97|Bảng cảm hứng thiết kế kiểu Pinterest, gọn gàng hơn
+98|Tiện ích tab mới mang cảm hứng thiết kế mỗi ngày
+99|Lọc website theo ngành và theo khu vực trang (hero, bảng giá, footer)
+100|Đánh dấu hình ảnh, mood board và tìm kiếm bằng hình ảnh
+101|Cộng đồng designer về SaaS, dashboard và icon
+102|Bộ sưu tập website tối giản từ năm 2013
+103|Cơ sở dữ liệu ảnh chụp UI game — rất hợp để tham khảo dashboard và giao diện buồng lái
+104|Bộ sưu tập ảnh và video giao diện trong game
+105|HUD trong phim khoa học viễn tưởng và giao diện tương lai
+106|Bộ sưu tập chuyên về thanh điều hướng
+107|Bộ sưu tập chuyên về footer website
+108|Bộ sưu tập các khu vực kêu gọi hành động (CTA)
+109|Bộ sưu tập trang 404
+110|Ảnh chụp màn hình ứng dụng di động thật
+111|Bản ghi trọn vẹn các luồng người dùng
+112|Hơn 7.000 mẫu tham khảo animation UI
+113|Hơn 150 animation kèm mã React và prompt sẵn cho AI
+114|Tuyển tập hiệu ứng chữ bằng CSS
+115|Tuyển tập nút gradient
+116|Component vi tương tác
+117|Component khúc xạ kính
+118|Loader hình tròn bằng SVG
+119|Component từ hệ sinh thái shadcn
+120|Component bản đồ React, sao chép và dán là dùng
+121|Component chú trọng khả năng tiếp cận
+122|Component có animation cho Next.js
+123|Component React tinh tế
+124|Component SwiftUI có animation
+125|Component mã nguồn mở từ shadcn-labs
+126|207 icon React có animation
+127|Font miễn phí dùng cho mục đích thương mại
+128|Thư viện icon cực lớn
+129|Thư viện component UI
+130|Danh mục công cụ thiết kế và AI
+131|Icon 3D miễn phí
+132|Hơn 2.000 hình minh họa vẽ tay
+133|Thư viện animation JavaScript gọn nhẹ
+134|Thư viện icon dạng nét
+135|Tài nguyên ở giao điểm giữa thiết kế và frontend
+136|Lựa chọn thay thế Figma mã nguồn mở
+137|Tạo nhiều artboard có thể chỉnh sửa ngay trong terminal, chọn một rồi dựng; /design-sync đồng bộ hệ thống thiết kế React của bạn
+138|Sản phẩm thiết kế của Anthropic, nay tích hợp sẵn trong khung chat Claude; xuất ra prototype HTML
+139|npm i -g @google/stitch đưa Stitch vào terminal để tạo trang và hệ thống thiết kế cùng Claude Code, Cursor hoặc Codex
+140|Skill agent chính thức cho Stitch
+141|File DESIGN.md của Apple, Stripe, Linear, Notion và nhiều nơi khác — thả một file vào repo là agent sẽ theo đúng phong cách đó
+142|Hơn 2.000 phong cách sản phẩm thật, mỗi phong cách có DESIGN.md, Tailwind v4 và token
+143|Hệ thống thiết kế viết dưới dạng Markdown
+144|Prompt trực quan cho dashboard và landing page
+145|Hơn 1.200 prompt thiết kế
+146|Biến cảm hứng UI thành prompt
+147|Hơn 30 prompt phong cách (neo-brutalism, kính, editorial…)
+148|Prompt chuyển động cho landing page
+149|Hơn 600 template 3D và kể chuyện bằng cuộn trang
+150|Hơn 70 skill, plugin và MCP chia theo 10 nhóm việc, kèm gợi ý kết hợp (MIT)
+151|Skill hệ thống thiết kế công nghiệp đơn sắc theo phong cách Nothing, dùng cho HTML, SwiftUI và React
+152|Quy tắc thiết kế kèm công cụ quét UI để chặn lạm dụng glassmorphism và gradient
+153|Bộ quy tắc giúp tránh thiết kế rập khuôn kiểu AI
+154|Skill thiết kế chống "AI slop"
+155|Template cho file skill quy tắc thiết kế
+156|Hướng dẫn thiết kế viết riêng cho agent
+157|Bộ skill thiết kế web
+158|Skill thiết kế thuần HTML của Huashu: prototype, slide, chuyển động, xuất MP4
+159|Chỉnh UI trực quan trong khi AI viết mã
+160|Dùng hơn 10.000 component React/Tailwind ngay trong Cursor (MCP của 21st)
+161|Trích xuất hệ thống thiết kế của bất kỳ website nào chỉ bằng một lệnh
+162|Ảnh chụp hoặc video quay màn hình → HTML/Tailwind/React/Vue
+163|Component UI cho ứng dụng ChatGPT, theo đúng theme của khung chat
+164|Hơn 400 skill Claude Code được tuyển chọn
+165|Canvas thiết kế có MCP; có người nói chỉ cần số prompt bằng một nửa so với Figma MCP
+166|Tin tức AI × thiết kế hằng tuần: Figma MCP, Codex ↔ Figma, skill cho hệ thống thiết kế
+167|Tạp chí trả phí hằng tháng: demo tương tác và mã nguồn, kèm skill cho agent; 3 số miễn phí
+168|Khóa học trực tuyến 6 tuần dạy product designer viết code cùng AI
+169|4 tuần: Claude Code + Figma MCP + Supabase + Vercel
+170|Tuyển chọn liên kết về kỹ thuật thiết kế mỗi ngày
+171|Danh mục công cụ thiết kế
+172|Các bài viết như "Details that make interfaces feel better" và "Using AI as a design engineer", cùng cử chỉ và OKLCH
+173|Bo góc lồng nhau: ngoài = trong + padding; thu nhỏ 0.96 khi nhấn; đổi icon bằng opacity + scale + blur 4px
+174|apple-design, animate và review-animations mỗi cái làm gì, và khi nào không nên dùng animation
+175|Bổ sung fixing-accessibility, react-doctor và playwright-cli (QA bằng ảnh chụp màn hình)
+176|Giữ chuyển động dưới 300ms; khoảng một phần ba skill có vấn đề bảo mật — hãy đọc SKILL.md trước khi cài
+177|Đối tượng/mục tiêu → 4–6 token màu → chữ → wireframe ASCII → một chi tiết đặc trưng; sau đó đối chiếu ảnh chụp desktop + mobile với DESIGN.md
+178|Bản tóm tắt tiếng Trung: phần lớn mọi người dùng sai Claude Design ngay từ đầu
+179|Prototype HTML so với chỉnh file Figma; người không phải designer nên chọn Claude Design trước
+180|Bài học từ các bài viết về kỹ thuật thiết kế của Atlassian và Vercel, gồm cả vị trí của design.md
+181|Ràng buộc quá ít sinh ra sự na ná; phá vỡ bằng yếu tố ngẫu nhiên, ảnh tham chiếu và video landing theo khung đầu/cuối
+182|frontend-design phác thảo → impeccable review và trau chuốt → một file token giữ agent đi đúng hướng
+183|Ba bước: tìm tham chiếu → chốt khung → trau chuốt chi tiết (icon nhất quán), kèm các trang icon
+184|Giải thích cho designer và PM: React, Next, TS và Prisma mỗi thứ làm gì
+185|Bối cảnh sản phẩm → Mobbin + prototype bằng Paper/Claude Code → component Figma vào Storybook → agent review
+186|Token, component cơ sở, biến thể, trạng thái, responsive và khả năng tiếp cận
+187|Bộ component giao diện AI đẹp được tuyển chọn
+188|Component React đẹp mắt
+189|Component hiếm gặp, có gu thiết kế thực sự
+190|Chuyển trang và chuyển động
+191|Thư viện component nền tảng phổ biến nhất; nhiều thư viện khác xây dựa trên nó
+192|Skill thiết kế frontend chính thức của Anthropic
+193|Phong cách thiết kế của Apple
+194|Đổ bóng đẹp
+195|Thiết kế dễ tiếp cận
+196|Review thiết kế
+197|Chi tiết kỹ thuật thiết kế
+198|Dùng component shadcn đúng cách
+199|Tùy biến responsive
+200|Trau chuốt chi tiết giao diện
+201|Thiết kế tương tác
+202|Component chat AI gọn gàng, tối giản
+203|Component UI cho trợ lý AI, có ví dụ phong cách ChatGPT và Claude
+204|Component AI chính thức của Vercel
+205|Hơn 50 component chat AI; đủ để lắp ráp một giao diện kiểu Claude
+206|Component chat chính thức của OpenAI
+207|Component AI giọng nói với animation sóng âm rất đẹp
+208|Bộ component chatbot xây trên shadcn
+209|Component mở rộng cho shadcn, có cả component AI
+210|Component AI kèm canvas nút workflow
+211|Component UI cho ứng dụng AI
+212|Hiển thị dạng streaming cho đầu ra LLM
+213|Component chat LLM mã nguồn mở
+214|Một component nhúng trọn cửa sổ chat AI
+215|Component UI chat kinh điển
+216|Hơn 248 component từ cộng đồng
+217|Giao diện copilot AI ngay trong ứng dụng
+218|UI tạo sinh (generative UI) cho AI
+219|UI tạo sinh (generative UI) cho AI
+220|Để AI gọi chính component của bạn để dựng UI
+221|Giao diện chat cho agent
+222|Giao diện agent giọng nói và video thời gian thực
+223|Component chat đạt chuẩn sản phẩm thực tế
+224|Component chat cho agent AI
+225|Component nền tảng tinh tế cho giao diện AI
+226|Quả cầu chuyển động cho thấy AI đang suy nghĩ
+227|Xây dựng riêng cho giao diện AI
+228|Thư viện component đứng sau LobeChat
+229|Component chat AI cho Vue 3
+230|Gói trả phí chính thức của Motion: mua một lần, hơn 480 ví dụ chuyển động cao cấp và một AI Kit
+231|Hiệu ứng shader không phụ thuộc thư viện, cho React hoặc GLSL
+232|Animation vector tương tác cho nhân vật và nút bấm sống động
+233|Component và template dựng sẵn, có cảm giác tương tác
+234|Component shadcn ít gặp
+235|Nền gradient 3D chuyển động mượt cho Framer, Figma và React
+236|Công cụ miễn phí tạo nền gradient 3D chuyển động
+237|Hiệu ứng Liquid Glass của Apple cho React
+238|Component chuyển động mượt mà
+239|Hàng trăm component chuyển động miễn phí
+240|Component chuyển động cho landing page
+241|Component chuyển động và biểu đồ
+242|Trang lâu năm chuyên hướng dẫn và demo hiệu ứng frontend
+243|Bộ hiệu ứng của Jakub Antalik: kim loại lỏng, quả cầu suy nghĩ, viền phát sáng, khối nhầy, ánh sáng giọng nói, avatar AI và hiệu ứng tải ảnh. Các gói npm miễn phí; nguồn gốc còn có bản Pro trả phí với tùy biến Studio chuyên sâu
+244|Shader kim loại lỏng của Paper: chỉnh tham số rồi xuất mã
+245|Biến logo thành kim loại chảy
+246|Tạo hiệu ứng WebGL không cần viết code
+247|Chợ component của cộng đồng
+248|Màu sắc rực rỡ, theme phong phú (được @vikingmute gợi ý)
+249|Xây trên Base UI: gọn gàng, chỉn chu, đi kèm Skills và thân thiện với AI (lựa chọn số một của @vikingmute; thay thế trực tiếp cho giao diện mặc định của shadcn)
+250|Khối trang dựng sẵn
+251|Component nhỏ mã nguồn mở
+252|Thư viện component chuyển động miễn phí
+253|Phủ hiệu ứng WebGL lên trang web thật
+254|Viền phát sáng có animation
+255|Nút kim loại lỏng cho React, không phụ thuộc thư viện
+256|Hơn 200 ví dụ tương tác từ các sản phẩm AI trên khắp thế giới
+257|Thư viện mẫu tương tác AI
+258|Mẫu thiết kế cho agent
+259|Thư viện ảnh chụp màn hình ứng dụng thật
+260|Cảm hứng landing page
+261|Thư viện giao diện sản phẩm thật
+262|Chuyển động UI trên di động
+263|Cảm hứng thiết kế sưu tầm từ X
+264|Cảm hứng về bộ nhận diện thương hiệu
+265|Tài nguyên hình nền đẹp cho thiết kế
+266|Dựng portfolio đẹp
+267|Python
+268|Python
+269|Chú thích vấn đề ngay trên UI và tạo chỉ dẫn cho coding agent
+270|Ý tưởng đáng học: ghép thanh trên cùng của mọi trang vào một canvas, rồi đánh dấu từng chỗ không nhất quán và từng quyết định còn bỏ ngỏ. Rất hợp để audit UI
+271|Biến văn bản thành bản thiết kế, xuất được sang Figma
+272|Prototype tương tác do AI tạo
+273|Làm prototype dành cho product manager
+274|Wireframe và mockup độ trung thực cao
+275|Sitemap và wireframe
+276|Dựng ứng dụng web bằng cách trò chuyện
+277|Dựng ứng dụng bằng cách trò chuyện, sửa mã ngay trên trình duyệt
+278|Điểm khởi đầu: tự chọn những UI skill phù hợp nhất với nhu cầu của bạn
+279|Nhanh chóng xóa "vẻ AI": sửa khoảng cách, thứ bậc, chữ và các lỗi bố cục nhỏ
+280|Review UI theo chính hệ thống thiết kế của sản phẩm và viết kế hoạch sửa
+281|Trích xuất hệ thống thiết kế từ sản phẩm hoặc website có sẵn thành DESIGN.md
+282|Skill chính của Impeccable, cho giao diện chất lượng cao và không na ná
+283|Lượt rà soát cuối trước khi ra mắt về căn chỉnh, khoảng cách và tính nhất quán
+284|Chấm điểm thiết kế, review theo từng chân dung người dùng và gợi ý cách sửa
+285|Thêm điểm nhấn thị giác và cá tính khi UI trông nhạt nhòa
+286|Làm dịu UI rối mắt mà vẫn giữ thứ bậc
+287|Thêm vi tương tác đáng nhớ và chi tiết cảm xúc
+288|Xử lý các trường hợp biên: trạng thái trống, lỗi, onboarding, bản địa hóa
+289|Phỏng vấn thiết kế trước khi code và xuất bản design brief (rất hợp với PM)
+290|Chơi lớn: chuyển động nâng cao và shader
+291|Ràng buộc về gu thẩm mỹ ở tầm senior, chặn thiết kế AI rập khuôn
+292|Nâng cấp UI hiện có cho cảm giác cao cấp mà không đổi tính năng
+293|Phong cách cao cấp mềm mại: chữ, khoảng trắng, chiều sâu và chuyển động
+294|Tối giản kiểu tạp chí với hai màu đen trắng
+295|Dùng cùng Google Stitch để có bản thiết kế tránh lối mòn
+296|Kho kiến thức thiết kế: hơn 50 phong cách, 97 bảng màu, 9 bộ công nghệ
+297|Làm UI tinh tế hơn: vi tương tác, chữ và chi tiết
+298|Chọn và phối font, khoảng cách dòng và ngắt dòng
+299|Tạo bảng màu bằng OKLCH và kiểm tra độ tương phản
+300|Làm animation từ đầu, quyết định đúng thứ tự: có nên chuyển động không và chuyển động thế nào
+301|Review thời lượng, nhịp điệu và tính nhất quán của animation
+302|Áp dụng 12 nguyên tắc hoạt hình của Disney cho web
+303|Chọn giữa animation lò xo (spring) và đường cong easing
+304|Chuyển hình mượt giữa các icon
+305|Đoạn mã chuyển cảnh từ tác giả của Transitions.dev
+306|Tinh chỉnh chi tiết UI trực tiếp
+307|Quy trình khám phá thiết kế: phỏng vấn, nhiều phương án, lặp lại theo góp ý
+308|Chuyên về trang quản trị, dashboard và giao diện SaaS
+309|Góp ý thiết kế trực tiếp: khả năng tiếp cận, khoảng cách, chữ và độ tương phản
+310|Review mã theo bộ hướng dẫn giao diện của Vercel
+311|Skill chính thức của Anthropic cho poster và thiết kế thị giác
+312|Biến bộ slide thành bài thuyết trình web có animation
+313|Phương pháp của một tác giả Trung Quốc để dựng lại website và hiệu ứng WebGL
+314|Tạo animation Lottie từ văn bản
+315|Quét dự án và gợi ý chỗ hợp với các hiệu ứng như quả cầu kim loại lỏng; nguồn gốc còn có bản Pro trả phí để chỉnh tham số chỉ bằng một câu
+316|Primitive React không kèm style, dễ tiếp cận (dialog, dropdown, select, tab, tooltip), là nền móng của shadcn/ui
+317|Theme có sẵn style chính thức của Radix, dùng ngay được với hệ màu đầy đủ
+318|Component không kèm style từ đội Tailwind: dialog, menu, listbox, switch, tab
+319|Component không kèm style từ đội Chakra, hơn 45 component cho React, Vue, Solid và Svelte
+320|Component có style xây trên Ark UI, có bản Panda CSS hoặc Tailwind
+321|Khối shadcn chính thức (trang đăng nhập, sidebar, dashboard, lịch), thêm vào bằng CLI
+322|Biểu đồ shadcn chính thức (vùng, cột, đường, tròn, radar), xây trên Recharts
+323|Danh mục chính thức các registry bên thứ ba của shadcn: tìm component tương thích shadcn ở một nơi
+324|Plugin class component phổ biến nhất cho Tailwind, hơn 60 component và hơn 30 theme
+325|Thư viện component Tailwind với hơn 50 component mã nguồn mở; nguồn gốc còn bán khối Pro
+326|Đoạn mã Tailwind miễn phí cho trang marketing, thương mại điện tử và quản trị; sao chép và dán
+327|Component và khối Tailwind, phần mã nguồn mở miễn phí; nguồn gốc còn bán bản Pro
+328|Component Tailwind hỗ trợ RTL và chế độ tối
+329|Component và template trả phí chính thức của Tailwind (trước là Tailwind UI), hơn 500 component; ở đây chỉ để liên kết
+330|Hơn 100 component và 70 hook, có sẵn ngày tháng, biểu đồ, rich text và thông báo
+331|Thư viện component React lâu đời với hệ theme linh hoạt; v3 xây trên Ark UI
+332|Bản React của Material Design, một trong những thư viện đầy đủ nhất
+333|Data grid, chọn ngày, biểu đồ và tree view; bản cơ bản miễn phí, mã nguồn mở, bản Pro/Premium trả phí
+334|Component không kèm style từ những người tạo ra Radix, MUI và Floating UI
+335|Component và hook không kèm style của Adobe, khả năng tiếp cận kỹ lưỡng nhất
+336|Thư viện component doanh nghiệp của Ant Group, hơn 60 component với bảng và biểu mẫu xuất sắc
+337|Thư viện component di động của Ant Group
+338|Ngữ pháp đồ họa của Ant Group, hàng chục loại biểu đồ
+339|Hệ thống thiết kế doanh nghiệp của Tencent, bao quát React, Vue, mini-program và di động
+340|Thư viện component doanh nghiệp của ByteDance, hơn 60 component cùng chợ tài nguyên
+341|Từ đội frontend của Douyin: quy trình từ thiết kế ra code và component được chăm chút kỹ
+342|Thư viện component Vue 3, hơn 90 component với theme tùy biến
+343|Thư viện component Vue 3 của Ele.me, lựa chọn phổ biến nhất cho trang quản trị tại Trung Quốc
+344|Framework component Material cho Vue
+345|Thư viện component Vue với hơn 90 component; nguồn gốc còn bán template
+346|Phiên bản React của Prime, hơn 90 component; nguồn gốc còn bán template
+347|Phiên bản Angular của Prime; nguồn gốc còn bán template
+348|Thư viện component chính thức của Nuxt, xây trên Reka UI và Tailwind
+349|Radix cho Vue (trước là Radix Vue): component không kèm style, dễ tiếp cận
+350|Bản chuyển thể shadcn/ui cho Vue
+351|Framework Vue trọn gói: một mã nguồn cho web, di động và desktop
+352|Thư viện component di động cho Vue của Youzan
+353|Bản chuyển thể shadcn/ui cho Svelte
+354|Component không kèm style cho Svelte
+355|Công cụ dựng component Svelte không kèm style
+356|Hệ thống thiết kế Tailwind cho Svelte và React
+357|Component không kèm style, dễ tiếp cận cho SolidJS
+358|Component Material chính thức của Angular
+359|Component phong cách shadcn cho Angular
+360|Bản hiện thực Ant Design cho Angular
+361|Component React cho hệ thống thiết kế Fluent 2 của Microsoft
+362|Hệ thống thiết kế của IBM, rất mạnh cho giao diện dày đặc dữ liệu
+363|Component React từ hệ thống thiết kế của GitHub
+364|Thư viện Web Components dùng được với mọi framework
+365|Web Components Material 3 chính thức của Google
+366|Framework component CSS kinh điển
+367|Framework component thuần CSS, không JavaScript
+368|CSS ngữ nghĩa tối giản: HTML thuần cũng đẹp ngay
+369|Design token dưới dạng biến CSS: màu, đổ bóng, gradient, easing
+370|Component và biểu đồ cho dashboard, Tailwind + Recharts
+371|Thư viện biểu đồ phổ biến nhất cho React
+372|Một trong những thư viện biểu đồ mã nguồn mở nhiều tính năng nhất, kho ví dụ khổng lồ
+373|Biểu đồ Canvas gọn nhẹ
+374|Component trực quan hóa dữ liệu đẹp cho React
+375|Component trực quan hóa cấp thấp của Airbnb
+376|Engine bảng headless: sắp xếp, lọc, phân trang, ảo hóa
+377|Data grid hiệu năng cao; bản Community miễn phí, mã nguồn mở, bản Enterprise trả phí
+378|Lịch và xếp lịch; phần lõi mã nguồn mở, một số plugin cao cấp trả phí
+379|Bộ chọn ngày đứng sau Calendar của shadcn
+380|Thông báo toast của Emil Kowalski, chuyển động mượt
+381|Thông báo toast gọn nhẹ, đẹp mắt
+382|Ngăn kéo đáy kiểu di động
+383|Component bảng lệnh ⌘K
+384|Engine định vị cho tooltip, popover và dropdown
+385|Ô nhập mã một lần (OTP)
+386|Quản lý trạng thái và kiểm tra biểu mẫu hiệu năng cao
+387|Carousel gọn nhẹ, cảm giác mượt
+388|Carousel và slider di động được dùng rộng rãi nhất
+389|Bộ công cụ kéo thả cho danh sách sắp xếp, bảng kanban và lưới
+390|Sơ đồ luồng dạng nút và canvas workflow; mã nguồn mở, miễn phí, nguồn gốc còn bán ví dụ Pro
+391|Tải tệp lên với kéo thả, thanh tiến trình và nhập từ ổ đĩa đám mây
+392|Component tải tệp lên mượt mà
+393|Trình soạn thảo rich text headless; phần lõi mã nguồn mở, nguồn gốc còn bán dịch vụ đám mây
+394|Framework trình soạn thảo mở rộng được của Meta
+395|Trình soạn thảo dạng khối kiểu Notion
+396|Hơn 1.500 icon nét, bộ icon mặc định của shadcn
+397|Bộ icon của đội Tailwind
+398|Hơn 5.000 icon nét miễn phí
+399|Họ icon linh hoạt với sáu độ đậm
+400|Một cổng vào hơn 200.000 icon mã nguồn mở; giấy phép khác nhau theo từng bộ, hãy kiểm tra nguồn gốc
+401|Trước là Framer Motion: thư viện animation mã nguồn mở cho React và JS
+402|Kho ví dụ chính thức của Motion; một số ví dụ thuộc Motion+ trả phí, ở đây chỉ để liên kết
+403|Thư viện animation theo vật lý lò xo
+404|Nền tảng animation JS chuyên nghiệp, dùng miễn phí nhưng theo giấy phép riêng (không phải MIT); ở đây chỉ để liên kết
+405|Thêm animation xuất hiện/biến mất cho danh sách chỉ bằng một dòng mã
+406|Phát animation Lottie xuất từ After Effects
+407|Cuộn trang mượt như bơ, được nhiều website đoạt giải sử dụng
+408|Class animation CSS dựng sẵn: thêm class là chuyển động. Giấy phép theo repo; ở đây chỉ để liên kết
+409|Thư viện WebGL 3D phổ biến nhất, kho ví dụ khổng lồ
+410|Viết Three.js bằng React
+411|Component 3D dựng sẵn cho React Three Fiber
+412|Component chuyển động và template theo phong cách shadcn
+413|Một bộ component dùng chung cho React Native và web
+414|Component sao chép–dán cho React Native, theo phong cách shadcn
+415|Component Material cho React Native
+416|shadcn/ui cho React Native
+417|Component UI di động đa nền tảng
+418|Component di động Tailwind theo phong cách iOS và Material
+419|Ví dụ hệ thống thiết kế thật, sắp xếp theo loại component: xem các công ty lớn dựng cùng một component ra sao
+420|Bộ primitive phong cách shadcn rất lớn, sao chép–dán là dùng: ô nhập, nút, select, ngày tháng, bảng, timeline. Tailwind + React, mã nguồn mở.
+421|Component có animation cho Vue/Nuxt theo tinh thần Aceternity và Magic UI. Miễn phí, mã nguồn mở.
+422|Khối marketing phong cách shadcn: hero, tính năng, lời chứng thực, CTA. Các khối miễn phí sao chép–dán được.
+423|Bộ sưu tập biến thể và công cụ tạo theme cho component shadcn/ui, sao chép bất kỳ biến thể nào.
+424|Logic component UI không phụ thuộc framework, xây trên máy trạng thái (nền của Ark UI). React/Vue/Solid/Svelte.
+425|Component bố cục và chuyển động React + Tailwind: gallery, ngăn kéo, carousel, hiệu ứng cuộn.
+426|Component và khối React sao chép–dán, nhóm theo tình huống sử dụng, có xem trước trực tiếp.
+427|Component và khối phong cách shadcn có animation cho trang marketing hiện đại.
+428|Component shadcn phong cách neo-brutalism: viền dày, đổ bóng cứng, màu bão hòa.
+429|Thư viện component React phong cách retro / neo-brutalism cho landing page có cá tính.
+430|Phiên bản pixel art 8-bit của component shadcn cho game và website hoài cổ.
+431|Trình chỉnh theme trực quan cho shadcn/ui: màu, bo góc, font, đổ bóng; xuất biến CSS.
+432|Hàng nghìn theme màu shadcn/ui để xem trước và sao chép dưới dạng biến CSS.
+433|Danh mục cộng đồng về component, khối, icon và template shadcn.
+434|Khối Tailwind chính thức (trước là Tailwind UI). Thư viện đầy đủ phải trả phí; một số bản xem trước miễn phí.
+435|Danh sách đầy đủ component miễn phí của Aceternity: spotlight, thẻ 3D, tia sáng nền, hiệu ứng chữ, thanh điều hướng nổi.
+436|Danh sách đầy đủ component Magic UI: marquee, bento grid, bộ đếm số, tia sáng, hạt, dock.
+437|Component có animation của Hover.dev: nút, điều hướng, thẻ, hero; một số miễn phí.
+438|Khối Tailwind của Flowbite cho marketing, dashboard ứng dụng và thương mại điện tử; một số miễn phí.
+439|Repo UI mới trên GitHub: danh mục cộng đồng ThreeUI mã nguồn mở, có component tương tác trực tiếp và toàn bộ mã nguồn Community. (★6622, MIT, MengTo/threeui)
+440|Repo UI mới trên GitHub: vi tương tác cho React, dành cho nửa giây ngay sau cú nhấp (★958, MIT, ddoemonn/interior)
+441|Repo UI mới trên GitHub: hệ thống thiết kế React cho giao diện agent. Mọi component BoardUI miễn phí đều có mã nguồn, trang chủ là một ứng dụng chat AI chạy bằng khóa mô hình của chính bạn. (★626, MIT, BoardUI/boardui)
+442|Repo UI mới trên GitHub: mdxcn là bộ callout, bước, terminal, biểu đồ và timeline miễn phí, mã nguồn mở cho mdx; sao chép bất kỳ component nào bằng shadcn cli. (★430, MIT, shadcn-labs/mdxcn)
+443|Repo UI mới trên GitHub: phân tích sâu và tái hiện độ trung thực cao giao diện desktop chính thức của Claude; 30 component React độc lập viết tay, 8 thuật toán vật lý tương tác, kèm sổ tay phân tích ngược hơn 3.000 dòng. (★315, MIT, Caho1/open-claude-ui)
+444|Repo UI mới trên GitHub: component kính lỏng (liquid glass) cho React (★294, MIT, CruxGarden/plasma-ui)
+445|Repo UI mới trên GitHub: khám phá giao diện chat kính lỏng với chân dung chuyển động, câu chuyện tương tác và khung soạn tin nổi. (★216, MIT, Appllama/liquid-glass-chat-ui)
+446|Repo UI mới trên GitHub: tầng component cho agent AI — các "hợp đồng" nắm rõ cách hiện thực để dựng component giao diện đúng chất dự án. (★198, MIT, kostja94/bricks)
+447|Repo UI mới trên GitHub: một phòng thí nghiệm nhỏ gồm những component dùng hằng ngày, được nghĩ lại để có cảm giác tốt hơn. Cần gì thì sao chép mã nguồn; ở lại để xem từng cái được dựng ra sao, kể cả những hướng đi bế tắc. (★171, MIT, moumen-soliman/lab)
+448|Repo UI mới trên GitHub: linter ưu tiên agent cho hệ thống thiết kế Tailwind. Viết quy tắc hệ thống thiết kế mà agent có thể tự kiểm chứng. (★3194, MIT, shadcn-ui/lint)
+449|Repo UI mới trên GitHub: component React Native và React hiệu năng cao. (★806, MIT, panel-ui/PanelUI)
+450|Repo UI mới trên GitHub: hệ thống thiết kế cho ứng dụng AI. Chất liệu, vật lý, xúc giác, kỹ thuật. (★724, MIT, deeplethe/solid-glass)
+451|Repo UI mới trên GitHub: audit UI mang tính tất định cho ứng dụng shadcn, dành cho terminal, CI và agent AI của bạn. (★553, MIT, TheOrcDev/shadscan)
+452|Repo UI mới trên GitHub: ứng dụng khách bên thứ ba đa nền tảng cho trang 禁漫天堂 (JMComic) (★388, MIT, ppxb/jm-boom)
+453|Repo UI mới trên GitHub: 1.435 icon MIT miễn phí với các kiểu nét, hai tông, duotone và tô đặc, bo tròn hoặc vuông: 11.480 SVG trên cùng lưới 24×24. Xây cho shadcn/ui. (★162, MIT, keyline-icons/keyline-icons)

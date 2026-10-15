@@ -1,0 +1,30 @@
+0|Ràng buộc lựa chọn thẩm mỹ của AI để tránh bố cục rập khuôn
+1|Hiệu quả nhanh nhất: sửa phần cơ bản như khoảng cách, thứ bậc và chữ trước
+2|Skill chính của Impeccable, sinh ra để giao diện không trông na ná
+3|Lựa chọn số một của @vikingmute; thay thẳng giao diện mặc định của shadcn
+4|Xem sản phẩm thật làm thế nào trước, rồi đưa cho AI làm tham chiếu
+5|Quyết định đúng thứ tự: có nên chuyển động không và chuyển động thế nào
+6|Chọn spring hay easing; phần lớn "cảm giác" nằm ở đây
+7|Khi đã có animation, rà soát nhịp điệu và tính nhất quán
+8|Chuyển trang và chuyển động dựng sẵn để tham khảo
+9|Nghiên cứu chuyển động di động thật để có cảm giác
+10|Tạo bảng màu bằng OKLCH và kiểm tra độ tương phản
+11|97 bảng màu dựng sẵn để chọn
+12|Làm dịu màu sắc rối mắt mà vẫn giữ thứ bậc
+13|Xem các thương hiệu trưởng thành định nghĩa quy chuẩn màu ra sao
+14|Muốn nền đẹp hơn, thay khối màu phẳng bằng gradient chuyển động
+15|Chuyên về tùy biến responsive
+16|Xử lý các trường hợp biên như trạng thái trống, lỗi và văn bản dài
+17|Trên điện thoại, cỡ chữ, khoảng cách dòng và ngắt dòng là thứ hỏng đầu tiên
+18|Ảnh chụp ứng dụng thật: xem người khác bố trí màn hình di động thế nào
+19|Kiểm tra trực tiếp khoảng cách, độ tương phản và khả năng tiếp cận
+20|Hơn 50 component chat AI; đủ để lắp ráp một giao diện kiểu Claude
+21|Ví dụ hoàn chỉnh theo phong cách ChatGPT và Claude
+22|Cách dễ nhất để có tương tác chuẩn kiểu ChatGPT
+23|Quả cầu suy nghĩ có animation, thêm chút sức sống
+24|Hơn 200 ví dụ tương tác từ sản phẩm AI để lấy cảm hứng
+25|Điểm khởi đầu: chọn đúng UI skill cho nhu cầu của bạn. Hãy cài cái này trước
+26|Skill thiết kế frontend chính thức của Anthropic, không thể thiếu
+27|Phỏng vấn thiết kế trước khi code; rất hợp với PM
+28|Skill miễn phí quét dự án và gợi ý chỗ hợp với hiệu ứng; nguồn gốc còn có bản Pro trả phí để chỉnh hiệu ứng chỉ bằng một câu
+29|Dùng cùng Google Stitch nếu bản nháp của bạn làm ở đó
