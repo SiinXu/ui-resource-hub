@@ -257,6 +257,9 @@ w('.nojekyll', '')
 img = 'og.png'
 # ---------- index.html SEO head + nav ----------
 ip = os.path.join(ROOT,'index.html'); s = open(ip,encoding='utf-8').read()
+# Impact affiliate site verification (must stay in the homepage <head>)
+IMPACT_META = "<meta name='impact-site-verification' value='15b17138-ddc6-446b-9829-a0aa087f726a'>"
+if '15b17138-ddc6-446b-9829-a0aa087f726a' not in s: s = s.replace('<head>', '<head>\n'+IMPACT_META, 1)
 desc = f'UI Hub: curated directory of {len(ITEMS)} UI resources — {tc["library"]} component libraries, {tc["style"]} component style demos with light/dark previews, design skills for AI agents, and AI design technique articles. 10 languages, updated daily.'
 ld = {'@context':'https://schema.org','@graph':[{'@type':'WebSite','name':'UI Hub','url':BASE,'inLanguage':[c for c,_,_ in LANGS],'description':desc},
  {'@type':'CollectionPage','name':'UI Hub — UI components, libraries & design skills','url':BASE,'dateModified':UPD[:10],'about':['UI components','design systems','AI design']},
