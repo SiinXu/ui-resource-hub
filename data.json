@@ -1,6 +1,6 @@
 {
- "generated": "2026-10-14",
- "count": 2376,
+ "generated": "2026-10-15",
+ "count": 2391,
  "items": [
   {
    "id": "ued-figma-mcp-guide",
@@ -71983,6 +71983,433 @@
    ],
    "added": "2026-10-14",
    "noteEn": "Flowbite Tailwind blocks for marketing, app dashboards and e-commerce; some free."
+  },
+  {
+   "id": "gh-mengto-threeui",
+   "name": "threeui",
+   "url": "https://threeui.com",
+   "note": "GitHub 新晋 UI 仓库：Open-source ThreeUI Community catalog with live interactive components and complete Community source.（GitHub ★6622，MIT 许可，仓库 MengTo/threeui）",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "GitHub",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "开源",
+    "自动收录"
+   ],
+   "ct": [
+    "background"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "New GitHub UI repo: Open-source ThreeUI Community catalog with live interactive components and complete Community source. (★6622, MIT, MengTo/threeui)",
+   "added": "2026-10-15"
+  },
+  {
+   "id": "gh-ddoemonn-interior",
+   "name": "interior",
+   "url": "https://interior.dev",
+   "note": "GitHub 新晋 UI 仓库：micro-interactions for react, built for the half-second after a click（GitHub ★958，MIT 许可，仓库 ddoemonn/interior）",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "GitHub",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "开源",
+    "自动收录"
+   ],
+   "ct": [
+    "motion"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "New GitHub UI repo: micro-interactions for react, built for the half-second after a click (★958, MIT, ddoemonn/interior)",
+   "added": "2026-10-15"
+  },
+  {
+   "id": "gh-boardui-boardui",
+   "name": "boardui",
+   "url": "https://www.boardui.com",
+   "note": "GitHub 新晋 UI 仓库：React design system for agentic interfaces. Every free BoardUI component as source, with a working AI chat app on your own model key as the homepage.（GitHub ★626，MIT 许可，仓库 BoardUI/boardui）",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "GitHub",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "HTML",
+    "开源",
+    "自动收录"
+   ],
+   "ct": [
+    "chat"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "New GitHub UI repo: React design system for agentic interfaces. Every free BoardUI component as source, with a working AI chat app on your own model key as the homepage. (★626, MIT, BoardUI/boardui)",
+   "added": "2026-10-15"
+  },
+  {
+   "id": "gh-shadcn-labs-mdxcn",
+   "name": "mdxcn",
+   "url": "https://mdxcn.dev",
+   "note": "GitHub 新晋 UI 仓库：mdxcn is a free, open-source set of callouts, steps, terminals, charts, and timelines for mdx. copy any component with the shadcn cli.（GitHub ★430，MIT 许可，仓库 shadcn-labs/mdxcn）",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "GitHub",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "开源",
+    "自动收录"
+   ],
+   "ct": [
+    "chart"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "New GitHub UI repo: mdxcn is a free, open-source set of callouts, steps, terminals, charts, and timelines for mdx. copy any component with the shadcn cli. (★430, MIT, shadcn-labs/mdxcn)",
+   "added": "2026-10-15"
+  },
+  {
+   "id": "gh-caho1-open-claude-ui",
+   "name": "open-claude-ui",
+   "url": "https://github.com/Caho1/open-claude-ui",
+   "note": "GitHub 新晋 UI 仓库：基于 REA 深度拆解并高保真还原 Claude 官方桌面端 UI。纯手写 30 个独立 React 组件与 8 项硬核交互物理算法，附带 3000+ 行逆向分析手册。（GitHub ★315，MIT 许可，仓库 Caho1/open-claude-ui）",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "GitHub",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "HTML",
+    "开源",
+    "自动收录"
+   ],
+   "ct": [
+    "chat",
+    "motion"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "New GitHub UI repo: 基于 REA 深度拆解并高保真还原 Claude 官方桌面端 UI。纯手写 30 个独立 React 组件与 8 项硬核交互物理算法，附带 3000+ 行逆向分析手册。 (★315, MIT, Caho1/open-claude-ui)",
+   "added": "2026-10-15"
+  },
+  {
+   "id": "gh-cruxgarden-plasma-ui",
+   "name": "plasma-ui",
+   "url": "https://cruxgarden.github.io/plasma-ui/",
+   "note": "GitHub 新晋 UI 仓库：Liquid glass components for React（GitHub ★294，MIT 许可，仓库 CruxGarden/plasma-ui）",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "GitHub",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "开源",
+    "自动收录"
+   ],
+   "ct": [
+    "motion",
+    "background"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "New GitHub UI repo: Liquid glass components for React (★294, MIT, CruxGarden/plasma-ui)",
+   "added": "2026-10-15"
+  },
+  {
+   "id": "gh-appllama-liquid-glass-chat-ui",
+   "name": "liquid-glass-chat-ui",
+   "url": "https://appllama.io",
+   "note": "GitHub 新晋 UI 仓库：Explore liquid-glass chat UIs with animated portraits, interactive stories, and floating composers.（GitHub ★216，MIT 许可，仓库 Appllama/liquid-glass-chat-ui）",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "GitHub",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "开源",
+    "自动收录"
+   ],
+   "ct": [
+    "chat",
+    "motion",
+    "background"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "New GitHub UI repo: Explore liquid-glass chat UIs with animated portraits, interactive stories, and floating composers. (★216, MIT, Appllama/liquid-glass-chat-ui)",
+   "added": "2026-10-15"
+  },
+  {
+   "id": "gh-kostja94-bricks",
+   "name": "bricks",
+   "url": "https://alignify.co/products/bricks",
+   "note": "GitHub 新晋 UI 仓库：Component layer for AI agents: implementation-aware contracts for building project-native interface components.（GitHub ★198，MIT 许可，仓库 kostja94/bricks）",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "GitHub",
+   "pricing": "free",
+   "tags": [
+    "HTML",
+    "开源",
+    "自动收录"
+   ],
+   "ct": [
+    "chat"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "New GitHub UI repo: Component layer for AI agents: implementation-aware contracts for building project-native interface components. (★198, MIT, kostja94/bricks)",
+   "added": "2026-10-15"
+  },
+  {
+   "id": "gh-moumen-soliman-lab",
+   "name": "lab",
+   "url": "https://lab.moumen.dev",
+   "note": "GitHub 新晋 UI 仓库：A small lab of the components we build every day, rethought for better feel. Copy the source if that’s all you need. Stay for how each one was built, dead ends included, written fo（GitHub ★171，MIT 许可，仓库 moumen-soliman/lab）",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "GitHub",
+   "pricing": "free",
+   "tags": [
+    "HTML",
+    "开源",
+    "自动收录"
+   ],
+   "ct": [],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "New GitHub UI repo: A small lab of the components we build every day, rethought for better feel. Copy the source if that’s all you need. Stay for how each one was built, dead ends included, written fo (★171, MIT, moumen-soliman/lab)",
+   "added": "2026-10-15"
+  },
+  {
+   "id": "gh-shadcn-ui-lint",
+   "name": "lint",
+   "url": "https://github.com/shadcn-ui/lint",
+   "note": "GitHub 新晋 UI 仓库：An agent-first linter for Tailwind design systems. Write design system rules that agents can verify.（GitHub ★3194，MIT 许可，仓库 shadcn-ui/lint）",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "GitHub",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "HTML",
+    "开源",
+    "自动收录"
+   ],
+   "ct": [
+    "chat"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "New GitHub UI repo: An agent-first linter for Tailwind design systems. Write design system rules that agents can verify. (★3194, MIT, shadcn-ui/lint)",
+   "added": "2026-10-15"
+  },
+  {
+   "id": "gh-panel-ui-panelui",
+   "name": "PanelUI",
+   "url": "https://www.panelui.dev/",
+   "note": "GitHub 新晋 UI 仓库：High-performance React Native  and React components .（GitHub ★806，MIT 许可，仓库 panel-ui/PanelUI）",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "GitHub",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "开源",
+    "自动收录"
+   ],
+   "ct": [
+    "form"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "New GitHub UI repo: High-performance React Native  and React components . (★806, MIT, panel-ui/PanelUI)",
+   "added": "2026-10-15"
+  },
+  {
+   "id": "gh-deeplethe-solid-glass",
+   "name": "solid-glass",
+   "url": "https://deeplethe.github.io/solid-glass",
+   "note": "GitHub 新晋 UI 仓库：A design system for AI applications. Material, physical, tactile, technical.（GitHub ★724，MIT 许可，仓库 deeplethe/solid-glass）",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "GitHub",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "HTML",
+    "开源",
+    "自动收录"
+   ],
+   "ct": [
+    "chat"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "New GitHub UI repo: A design system for AI applications. Material, physical, tactile, technical. (★724, MIT, deeplethe/solid-glass)",
+   "added": "2026-10-15"
+  },
+  {
+   "id": "gh-theorcdev-shadscan",
+   "name": "shadscan",
+   "url": "https://shadscan.com",
+   "note": "GitHub 新晋 UI 仓库：Deterministic UI audits for shadcn apps, built for your terminal, your CI, and your AI agent.（GitHub ★553，MIT 许可，仓库 TheOrcDev/shadscan）",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "GitHub",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "开源",
+    "自动收录"
+   ],
+   "ct": [
+    "chat"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "New GitHub UI repo: Deterministic UI audits for shadcn apps, built for your terminal, your CI, and your AI agent. (★553, MIT, TheOrcDev/shadscan)",
+   "added": "2026-10-15"
+  },
+  {
+   "id": "gh-ppxb-jm-boom",
+   "name": "jm-boom",
+   "url": "https://github.com/ppxb/jm-boom",
+   "note": "GitHub 新晋 UI 仓库：跨平台禁漫天堂第三方客户端（GitHub ★388，MIT 许可，仓库 ppxb/jm-boom）",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "GitHub",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "开源",
+    "自动收录"
+   ],
+   "ct": [],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "New GitHub UI repo: 跨平台禁漫天堂第三方客户端 (★388, MIT, ppxb/jm-boom)",
+   "added": "2026-10-15"
+  },
+  {
+   "id": "gh-keyline-icons-keyline-icons",
+   "name": "keyline-icons",
+   "url": "https://keylineicons.com/",
+   "note": "GitHub 新晋 UI 仓库：1,435 free MIT icons in stroke, two-tone, duotone and fill, rounded or sharp: 11,480 SVGs on one 24×24 grid. Built for shadcn/ui.（GitHub ★162，MIT 许可，仓库 keyline-icons/keyline-icons）",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "GitHub",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "HTML",
+    "开源",
+    "自动收录"
+   ],
+   "ct": [
+    "chat",
+    "table",
+    "icon"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "New GitHub UI repo: 1,435 free MIT icons in stroke, two-tone, duotone and fill, rounded or sharp: 11,480 SVGs on one 24×24 grid. Built for shadcn/ui. (★162, MIT, keyline-icons/keyline-icons)",
+   "added": "2026-10-15"
   }
  ],
  "guides": [
@@ -72185,5 +72612,5 @@
    ]
   }
  ],
- "updatedAt": "2026-10-14T08:54Z"
+ "updatedAt": "2026-10-15T04:35Z"
 }

@@ -1,6 +1,6 @@
 # UI Hub
 
-> Curated, multilingual directory of 2376 public UI resources (component libraries, component style demos, effects, design systems, design skills for AI agents) plus original blog analysis of AI design techniques. Data updated 2026-10-14 08:54 UTC.
+> Curated, multilingual directory of 2391 public UI resources (component libraries, component style demos, effects, design systems, design skills for AI agents) plus original blog analysis of AI design techniques. Data updated 2026-10-15 04:35 UTC.
 
 Use the JSON endpoints, not the SPA, when acting as an agent. Every entry links to its original site; licenses belong to the original authors.
 
@@ -110,11 +110,11 @@ Use the JSON endpoints, not the SPA, when acting as an agent. Every entry links 
 - [visx](https://airbnb.io/visx/): Airbnb 的底层可视化组件
 
 ## FAQ
-- **What is UI Hub?** A free, curated directory of 2376 public UI resources: 119 component libraries, 1924 component style demos with light/dark screenshots, 68 design skills for AI agents, plus effects, templates, specs and tutorials. It links to original sites and never hosts paid source code.
+- **What is UI Hub?** A free, curated directory of 2391 public UI resources: 134 component libraries, 1924 component style demos with light/dark screenshots, 68 design skills for AI agents, plus effects, templates, specs and tutorials. It links to original sites and never hosts paid source code.
 - **How do I find a component in a given style?** Load https://siinxu.github.io/ui-resource-hub/api/resources.json and filter by ct (component kind, e.g. "dialog") and vs (visual style, e.g. "minimal" or "motion"). type="style" entries are concrete component demos with a libName and page URL; type="library" entries are whole libraries with install info on the site.
 - **Which skills should an agent use for good UI?** One direction skill (frontend-design or taste-skill), emil-design-eng for motion and interaction polish, then impeccable, baseline-ui, web-design-guidelines and accessibility as an audit pass. See https://siinxu.github.io/ui-resource-hub/api/skills.json.
 - **Can I copy the code?** Open-source libraries can be used under their own licenses (MIT, Apache-2.0 etc.); the card shows the original link. Paid tiers (marked paid/freemium) must be bought from the original vendor.
-- **How often is it updated?** Daily via a GitHub Actions job that adds new UI repositories and tools from GitHub, awesome-shadcn-ui and Hacker News. Nothing is deleted. Last update: 2026-10-14 08:54 UTC.
+- **How often is it updated?** Daily via a GitHub Actions job that adds new UI repositories and tools from GitHub, awesome-shadcn-ui and Hacker News. Nothing is deleted. Last update: 2026-10-15 04:35 UTC.
 
 
 # Blog posts (full text, English)
@@ -1077,6 +1077,21 @@ References:
 - Magic UI 全部组件 | library | https://magicui.design/docs/components | Full Magic UI component list: marquee, bento grid, number ticker, beams, particles, dock.
 - Hover.dev 组件 | library | https://www.hover.dev/components | Hover.dev animated components: buttons, navs, cards, heroes; some free.
 - Flowbite Blocks | library | https://flowbite.com/blocks/ | Flowbite Tailwind blocks for marketing, app dashboards and e-commerce; some free.
+- threeui | library | https://threeui.com | New GitHub UI repo: Open-source ThreeUI Community catalog with live interactive components and complete Community source. (★6622, MIT, MengTo/threeui)
+- interior | library | https://interior.dev | New GitHub UI repo: micro-interactions for react, built for the half-second after a click (★958, MIT, ddoemonn/interior)
+- boardui | library | https://www.boardui.com | New GitHub UI repo: React design system for agentic interfaces. Every free BoardUI component as source, with a working AI chat app on your own model key as the 
+- mdxcn | library | https://mdxcn.dev | New GitHub UI repo: mdxcn is a free, open-source set of callouts, steps, terminals, charts, and timelines for mdx. copy any component with the shadcn cli. (★430
+- open-claude-ui | library | https://github.com/Caho1/open-claude-ui | New GitHub UI repo: 基于 REA 深度拆解并高保真还原 Claude 官方桌面端 UI。纯手写 30 个独立 React 组件与 8 项硬核交互物理算法，附带 3000+ 行逆向分析手册。 (★315, MIT, Caho1/open-claude-ui)
+- plasma-ui | library | https://cruxgarden.github.io/plasma-ui/ | New GitHub UI repo: Liquid glass components for React (★294, MIT, CruxGarden/plasma-ui)
+- liquid-glass-chat-ui | library | https://appllama.io | New GitHub UI repo: Explore liquid-glass chat UIs with animated portraits, interactive stories, and floating composers. (★216, MIT, Appllama/liquid-glass-chat-u
+- bricks | library | https://alignify.co/products/bricks | New GitHub UI repo: Component layer for AI agents: implementation-aware contracts for building project-native interface components. (★198, MIT, kostja94/bricks)
+- lab | library | https://lab.moumen.dev | New GitHub UI repo: A small lab of the components we build every day, rethought for better feel. Copy the source if that’s all you need. Stay for how each one w
+- lint | library | https://github.com/shadcn-ui/lint | New GitHub UI repo: An agent-first linter for Tailwind design systems. Write design system rules that agents can verify. (★3194, MIT, shadcn-ui/lint)
+- PanelUI | library | https://www.panelui.dev/ | New GitHub UI repo: High-performance React Native  and React components . (★806, MIT, panel-ui/PanelUI)
+- solid-glass | library | https://deeplethe.github.io/solid-glass | New GitHub UI repo: A design system for AI applications. Material, physical, tactile, technical. (★724, MIT, deeplethe/solid-glass)
+- shadscan | library | https://shadscan.com | New GitHub UI repo: Deterministic UI audits for shadcn apps, built for your terminal, your CI, and your AI agent. (★553, MIT, TheOrcDev/shadscan)
+- jm-boom | library | https://github.com/ppxb/jm-boom | New GitHub UI repo: 跨平台禁漫天堂第三方客户端 (★388, MIT, ppxb/jm-boom)
+- keyline-icons | library | https://keylineicons.com/ | New GitHub UI repo: 1,435 free MIT icons in stroke, two-tone, duotone and fill, rounded or sharp: 11,480 SVGs on one 24×24 grid. Built for shadcn/ui. (★162, MIT
 
 # Component style demos: 1924 entries, see api/resources.json (type=style)
 
