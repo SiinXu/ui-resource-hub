@@ -24,7 +24,7 @@ INTRO = {
 ALIAS = {'zh-Hans': ['zh-Hans', 'zh-CN', 'zh'], 'zh-Hant': ['zh-Hant', 'zh-TW']}
 css_show = ','.join(f'html[lang="{a}"] .geo-intro [data-gl="{c}"]' for c in LC for a in ALIAS.get(c, [c]))
 STYLE = ('<style id="ia-growth">.geo-intro{max-width:var(--max,1120px);margin:10px auto 0;padding:0 20px;font-size:12.5px;line-height:1.55;color:var(--ink3,#878da0)}@media(min-width:900px){.geo-intro{padding:0 40px}}'
-         '.geo-intro [data-gl]{display:none}' + css_show + '{display:inline}'
+         '.geo-intro{display:grid}.geo-intro [data-gl]{grid-area:1/1;visibility:hidden}' + css_show + '{visibility:visible}'
          '.sub-band{max-width:var(--max,1120px);margin:0 auto;padding:0 20px;--ie-acc:var(--acc,#2563eb);--ie-acc-ink:var(--bg,#fff)}@media(min-width:900px){.sub-band{padding:0 40px}}'
          + open(os.path.join(os.path.dirname(__file__), 'subscribe.css')).read().replace('\n', '') + '</style>')
 TOKEN = '41d8abdb6f1247c08f2412afcd5f2143'
