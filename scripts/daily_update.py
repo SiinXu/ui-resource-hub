@@ -6,6 +6,7 @@ Dedupes against data.json by normalised URL and id, appends max N items, then re
 import json, os, re, sys, datetime, urllib.request, urllib.parse
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from hub_lib import append, load, norm, lib_item
+from content_filter import blocked, purge
 MAX = int(os.environ.get('MAX_NEW', '15'))
 OK_LIC = {'MIT','Apache-2.0','BSD-3-Clause','BSD-2-Clause','ISC','MPL-2.0','0BSD','Unlicense','CC0-1.0'}
 TOK = os.environ.get('GITHUB_TOKEN') or os.environ.get('GH_TOKEN')
@@ -26,6 +27,8 @@ def from_repo(r, why):
     desc = r['description'].strip()[:180]
     if not re.search(r'\bui\b|component|design|tailwind|shadcn|css|interface|animation|theme', desc+' '+' '.join(r.get('topics',[])), re.I): return None
     hay = r['full_name']+' '+desc+' '+' '.join(r.get('topics',[]))
+    if blocked({'id':'gh-'+re.sub(r'[^a-z0-9]+','-',r['full_name'].lower()),'name':r['name'],'url':r['html_url'],'note':desc}, hay+' '+(r.get('homepage') or '')):
+        print('policy reject', r['full_name']); return None
     url = r.get('homepage') if (r.get('homepage') or '').startswith('https://') else r['html_url']
     return lib_item('gh-'+re.sub(r'[^a-z0-9]+','-',r['full_name'].lower()), r['name'], url,
         f"{why}：{desc}（GitHub ★{r['stargazers_count']}，{lic} 许可，仓库 {r['full_name']}）", cts(hay), fws(hay),
@@ -77,7 +80,12 @@ def producthunt():
     except Exception as e: print('ph fail', e)
     return out
 if __name__ == '__main__':
+    removed = purge()   # drop stored items that violate data/denylist.json (adult/NSFW/piracy/gambling)
+    if removed: print('policy purge', removed)
     cands = github() + hn() + awesome() + producthunt()
+    rej = [c for c in cands if blocked(c)]
+    for c in rej: print('policy reject', c['id'], blocked(c))
+    cands = [c for c in cands if not blocked(c)]
     have = {norm(i['url']) for i in load()['items']}
     fresh, seen = [], set()
     for c in cands:

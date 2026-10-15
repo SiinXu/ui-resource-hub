@@ -1,0 +1,10 @@
+{
+ "_doc": "Content policy for the daily auto-collection (scripts/daily_update.py via scripts/content_filter.py). Items whose id or URL is listed here, or whose name/description/topics/URL match a keyword, are never added and are purged from data.json on every run. Keep entries lowercase.",
+ "ids": [
+  {"id": "gh-ppxb-jm-boom", "url": "https://github.com/ppxb/jm-boom", "reason": "third-party client for an adult comics site (禁漫天堂); not a UI resource", "removed": "2026-10-15"}
+ ],
+ "keywords": {
+  "substring": ["禁漫", "18comic", "jmcomic", "jm-comic", "hentai", "nhentai", "pornhub", "xvideos", "onlyfans", "成人漫画", "成人视频", "成人影片", "成人内容", "色情", "黄色网站", "里番", "本子站", "av女优", "盗版", "破解版", "免费看片", "博彩", "赌博", "菠菜", "赌场", "六合彩", "百家乐", "老虎机", "棋牌", "外围"],
+  "word": ["nsfw", "porn", "porno", "pornography", "xxx", "r18", "r-18", "adult content", "adult comics", "adult video", "adult manga", "erotic", "erotica", "casino", "gambling", "betting", "sportsbook", "slot machine", "pirated", "piracy", "warez", "cracked", "keygen", "torrent", "torrents", "magnet link", "成人"]
+ }
+}

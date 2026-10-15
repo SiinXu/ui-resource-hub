@@ -1,6 +1,6 @@
 # UI Hub endpoints
 
-- Resources (live, 2391+ items): https://siinxu.github.io/ui-resource-hub/api/resources.json
+- Resources (live, 2390+ items): https://siinxu.github.io/ui-resource-hub/api/resources.json
 - Skills + workflow: https://siinxu.github.io/ui-resource-hub/api/skills.json
 - llms.txt: https://siinxu.github.io/ui-resource-hub/llms.txt
 - Full text: https://siinxu.github.io/ui-resource-hub/llms-full.txt

@@ -8,6 +8,10 @@ from posts import POSTS
 from images import IMAGES
 BASE = 'https://siinxu.github.io/ui-resource-hub/'
 LANGS = [('zh-Hans','简体中文','zh'),('zh-Hant','繁體中文','zht'),('en','English','en'),('ja','日本語','ja'),('ko','한국어','ko'),('ms','Bahasa Melayu','ms'),('vi','Tiếng Việt','vi'),('fr','Français','fr'),('es','Español','es'),('de','Deutsch','de')]
+sys.path.insert(0, os.path.join(ROOT, 'scripts'))
+from content_filter import purge as _policy_purge
+_pp = _policy_purge()   # content policy (data/denylist.json): never publish adult/NSFW/piracy/gambling items
+if _pp: print('policy purge', _pp)
 D = json.load(open(os.path.join(ROOT,'data.json'), encoding='utf-8'))
 ITEMS = D['items']; UPD_ISO = re.sub(r'T(\d\d:\d\d)Z$', r'T\1:00Z', D.get('updatedAt') or D['generated']); UPD = (D.get('updatedAt') or D['generated']).replace('T',' ').replace('Z',' UTC'); TODAY = D['generated']
 E = html.escape

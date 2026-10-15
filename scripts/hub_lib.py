@@ -16,7 +16,9 @@ def append(new_items, stamp=None):
     have_u = {norm(i['url']) for i in d['items'] if i.get('url')}
     have_id = {i['id'] for i in d['items']}
     added = []
+    from content_filter import blocked
     for it in new_items:
+        if blocked(it): continue   # content policy: data/denylist.json
         if norm(it['url']) in have_u or it['id'] in have_id: continue
         it.setdefault('added', datetime.date.today().isoformat())
         d['items'].append(it); have_u.add(norm(it['url'])); have_id.add(it['id']); added.append(it)

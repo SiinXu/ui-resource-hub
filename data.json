@@ -1,6 +1,6 @@
 {
  "generated": "2026-10-15",
- "count": 2391,
+ "count": 2390,
  "items": [
   {
    "id": "ued-figma-mcp-guide",
@@ -72352,32 +72352,6 @@
     "minimal"
    ],
    "noteEn": "New GitHub UI repo: Deterministic UI audits for shadcn apps, built for your terminal, your CI, and your AI agent. (★553, MIT, TheOrcDev/shadscan)",
-   "added": "2026-10-15"
-  },
-  {
-   "id": "gh-ppxb-jm-boom",
-   "name": "jm-boom",
-   "url": "https://github.com/ppxb/jm-boom",
-   "note": "GitHub 新晋 UI 仓库：跨平台禁漫天堂第三方客户端（GitHub ★388，MIT 许可，仓库 ppxb/jm-boom）",
-   "type": "library",
-   "section": "每日新收录",
-   "sectionTitle": "开源组件库与组件注册表 · 补全",
-   "sectionDesc": "",
-   "source": "GitHub",
-   "pricing": "free",
-   "tags": [
-    "React",
-    "开源",
-    "自动收录"
-   ],
-   "ct": [],
-   "rt": [
-    "component-library"
-   ],
-   "vs": [
-    "minimal"
-   ],
-   "noteEn": "New GitHub UI repo: 跨平台禁漫天堂第三方客户端 (★388, MIT, ppxb/jm-boom)",
    "added": "2026-10-15"
   },
   {
