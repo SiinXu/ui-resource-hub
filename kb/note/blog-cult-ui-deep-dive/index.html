@@ -53,30 +53,132 @@ details{border-bottom:1px solid var(--line);padding:12px 0}summary{cursor:pointe
 <p>shadcn-compatible components that feel physical: dynamic islands, textured buttons, expandable cards. How to borrow personality without breaking consistency.</p>
 </blockquote>
 
-<p>Cult UI is an open-source collection of shadcn-compatible components with a distinctly tactile feel: a dynamic-island style container, textured and "neumorphic-lite" buttons, expandable cards, and playful toolbars. Where Aceternity leans on spectacle, Cult UI leans on <strong>interaction feel</strong>: springs, squish and layout animation.</p>
+<p>Cult UI is an open-source collection of shadcn-compatible components with a distinctly tactile feel: a dynamic-island style container, textured buttons, expandable cards and playful toolbars. Where Aceternity leans on spectacle (beams, spotlights, backgrounds), Cult UI leans on <strong>interaction feel</strong>: springs, squish and layout animation. This deep dive covers what is in the collection, how to adopt a component without breaking your design system, a step-by-step integration, and where personality components go wrong.</p>
+<h2>What kind of library it is</h2>
+<p>Like shadcn/ui itself, Cult UI is not a package you import wholesale. You take individual components into your repository, either by copying the source from the documentation or with the shadcn CLI using the registry address shown on each component's page, and then you own the code. The components are written in React with Tailwind CSS, and most of the interesting ones use Motion for layout and spring animation.</p>
+<p>That model matters for AI work. Because the source lands in your repo, an agent can read how the dynamic island morphs between sizes and adapt it, instead of guessing at the props of a black box.</p>
 <h2>Where it shines</h2>
 <ul>
 <li>
-<p>Small product surfaces (toolbars, popovers, status pills) that benefit from springy layout transitions.</p>
+<p><strong>Small product surfaces</strong> that benefit from springy layout transitions: toolbars, popovers, status pills, a recording indicator that expands into controls.</p>
 </li>
 <li>
-<p>Portfolio and indie-product pages where personality is the point.</p>
+<p><strong>Portfolio and indie-product pages</strong> where personality is the point and one memorable interaction is worth more than a polished but generic hero.</p>
 </li>
 <li>
-<p>Learning material: reading the source is a good way to learn layout animation with Motion.</p>
+<p><strong>Learning material.</strong> Reading the source of an expanding card is one of the fastest ways to understand Motion's <code>layout</code> and shared-element transitions.</p>
 </li>
 </ul>
-<h2>Keeping consistency</h2>
-<p>Personality components drift from your system fast. Before adopting one, map its colours and radii onto your tokens, match its spring settings across components so motion feels like one family, and check keyboard support: custom toggles and islands need visible focus and proper roles.</p>
-<h2>Our take</h2>
-<p>Cult UI is a reference for the "Cult" in the house style list: tactile micro-interaction over loud backgrounds. Pick one signature interaction per product and let it recur, rather than mixing every clever component on one page.</p>
-<h2>References</h2>
+<h2>Where it does not</h2>
 <ul>
-<li><a href="https://www.cult-ui.com/">Cult UI</a> — Cult UI</li>
-<li><a href="https://github.com/nolly-studio/cult-ui">nolly-studio/cult-ui</a> — GitHub</li>
-<li><a href="https://motion.dev/docs/react-layout-animations">Layout animations</a> — Motion</li>
-<li><a href="https://www.w3.org/WAI/ARIA/apg/">ARIA Authoring Practices Guide</a> — W3C</li>
-</ul></article><footer class="foot wrap"><span data-l="zh-Hans">数据更新于</span><span data-l="zh-Hant">資料更新於</span><span data-l="en">Data updated</span><span data-l="ja">データ更新</span><span data-l="ko">데이터 업데이트</span><span data-l="ms">Data dikemas kini</span><span data-l="vi">Dữ liệu cập nhật</span><span data-l="fr">Données mises à jour</span><span data-l="es">Datos actualizados</span><span data-l="de">Daten aktualisiert</span> <time class="lt" datetime="2026-10-15T04:35:00Z">2026-10-15 04:35 UTC</time> · <a href="../../../llms.txt">llms.txt</a> · <a href="../../../api/resources.json">API</a> · <a href="../../../sitemap.xml">sitemap</a></footer><script>(function(){var M={'zh-cn':'zh-Hans','zh-sg':'zh-Hans','zh-tw':'zh-Hant','zh-hk':'zh-Hant','zh-mo':'zh-Hant'},A=['zh-Hans','zh-Hant','en','ja','ko','ms','vi','fr','es','de'],APP={'zh-Hans':'zh-CN','zh-Hant':'zh-TW'};
+<li>
+<p><strong>Dense, data-heavy tools.</strong> A squishy button in a table with 200 rows is noise.</p>
+</li>
+<li>
+<p><strong>Frequent actions.</strong> If a control is used dozens of times a day, the spring that delights on day one slows the user down by day ten.</p>
+</li>
+<li>
+<p><strong>Teams without a token system.</strong> Personality components bring their own colours, radii and shadows. Without tokens to map them onto, the product quickly looks like a collage.</p>
+</li>
+</ul>
+<h2>Step by step: adopting one component</h2>
+<p><strong>Step 1: choose one signature interaction.</strong> Decide which single interaction should carry the product's personality, for example "the status pill expands into a mini player". One is enough.</p>
+<p><strong>Step 2: install it into your kit folder.</strong> Bring the component in via its docs page or the shadcn CLI and put it next to your other kit components, not inside a feature folder, so there is exactly one copy.</p>
+<p><strong>Step 3: map its styling to your tokens.</strong> Replace hard-coded colours, radii and shadows with your variables:</p>
+<p>// before (as copied)</p>
+<div className=&quot;rounded-[28px] bg-black text-white shadow-2xl&quot;>
+
+// after (mapped to your system)
+<div className=&quot;rounded-[var(--radius-xl)] bg-[var(--raised)] text-[var(--ink)] border border-[var(--line)]&quot;>
+
+**Step 4: unify the motion.** Personality components often each ship their own spring. Pick one or two spring presets and use them everywhere, so all motion feels like one family:
+
+// motion.ts
+export const spring = {
+  snappy: { type: &quot;spring&quot;, stiffness: 500, damping: 40 },
+  soft:   { type: &quot;spring&quot;, stiffness: 260, damping: 30 },
+} as const;
+
+**Step 5: add accessibility the demo skipped.** Custom toggles and islands need a real `<button>` or the correct role, visible focus, keyboard support, and `aria-expanded` when they open. Announce state changes with a live region if content changes without focus moving.
+
+**Step 6: respect reduced motion.** Motion's `useReducedMotion` hook lets you swap springs for instant or fade transitions:
+
+import { motion, useReducedMotion } from &quot;motion/react&quot;;
+
+export function Island({ open }: { open: boolean }) {
+  const reduce = useReducedMotion();
+  return (
+    <motion.div
+      layout
+      transition={reduce ? { duration: 0 } : { type: &quot;spring&quot;, stiffness: 500, damping: 40 }}
+      aria-expanded={open}
+    />
+  );
+}
+
+## Measuring whether it helps
+
+A signature interaction should earn its place. After shipping, watch two things for a couple of weeks: whether people use the control more or less than the plain version it replaced, and whether support questions or bug reports mention it. Record the screen on a mid-range phone as well; spring animations that feel crisp on a laptop can drop frames on cheaper hardware. If the interaction slows people down or confuses them, simplify it rather than adding a second one to compensate. Personality that costs usability is a bad trade.
+
+## Pitfalls
+
+- **Mixing every clever component on one page.** Each one is charming; together they compete for attention.
+
+- **Keeping demo colours.** A component that looks great on the docs' black background can look out of place on your off-white surface.
+
+- **Different springs everywhere.** Ten different stiffness values make the interface feel inconsistent even if users cannot say why.
+
+- **Forgetting mobile.** Hover-driven reveals do nothing on touch screens; give them a tap or always-visible state.
+
+- **Not checking the licence and attribution.** Open-source does not mean no conditions; read the repository's licence before shipping.
+
+## How it compares
+
+Three shadcn-compatible collections cover different ends of the "fancy" range, and knowing which end you need saves a lot of trial and error:
+
+- **Aceternity UI** — spectacle: animated backgrounds, beams, spotlights, 3D cards. Best for a marketing hero.
+
+- **Magic UI** — polished marketing pieces: marquees, number tickers, animated borders, bento grids. Best for landing-page sections.
+
+- **Cult UI** — tactile product details: islands, expandable cards, springy toolbars. Best inside the product itself.
+
+A common and effective combination is one Aceternity- or Magic UI-style moment on the marketing site and one Cult UI interaction inside the app, both mapped onto the same tokens. What does not work is all three on the same page.
+
+## Questions we get
+
+**Will it work with our existing shadcn setup?** Generally yes, since the components follow shadcn conventions and use Tailwind and Motion. Check that your Tailwind version and Motion version match what the component expects before you start mapping styles.
+
+**Can an agent adapt a component to our product?** Yes, and it is a good use of an agent, because the source is local. Give it the component, your tokens and the spring presets, and ask for a diff rather than a rewrite.
+
+**How do we keep it from looking like the demo?** Change the content, colours and size to fit your product, and use the interaction for a real job: showing status, revealing controls, confirming an action.
+
+## Our take
+
+Cult UI is our reference for the "tactile" end of the house-style range: micro-interaction over loud backgrounds. It works best when you pick one signature interaction per product, map it onto your tokens and motion presets, and let it recur. Used that way it gives a product character; used as a grab bag it makes the product feel like a demo.
+
+## Checklist
+
+- One signature interaction chosen; others stay quiet
+
+- Component lives once, in the kit folder
+
+- Colours, radii and shadows mapped to tokens
+
+- Shared spring presets used across components
+
+- Real buttons/roles, focus, keyboard and aria-expanded added
+
+- Reduced-motion fallback in place; licence checked
+
+## References
+- [Cult UI](https://www.cult-ui.com/) — Cult UI
+- [nolly-studio/cult-ui](https://github.com/nolly-studio/cult-ui) — GitHub
+- [Layout animations](https://motion.dev/docs/react-layout-animations) — Motion
+- [ARIA Authoring Practices Guide](https://www.w3.org/WAI/ARIA/apg/) — W3C
+- [useReducedMotion](https://motion.dev/docs/react-use-reduced-motion) — Motion
+- [shadcn CLI](https://ui.shadcn.com/docs/cli) — shadcn
+- [prefers-reduced-motion](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@media/prefers-reduced-motion) — MDN
+- [Aceternity UI](https://ui.aceternity.com/) — Aceternity</article><footer class="foot wrap"><span data-l="zh-Hans">数据更新于</span><span data-l="zh-Hant">資料更新於</span><span data-l="en">Data updated</span><span data-l="ja">データ更新</span><span data-l="ko">데이터 업데이트</span><span data-l="ms">Data dikemas kini</span><span data-l="vi">Dữ liệu cập nhật</span><span data-l="fr">Données mises à jour</span><span data-l="es">Datos actualizados</span><span data-l="de">Daten aktualisiert</span> <time class="lt" datetime="2026-10-15T04:35:00Z">2026-10-15 04:35 UTC</time> · <a href="../../../llms.txt">llms.txt</a> · <a href="../../../api/resources.json">API</a> · <a href="../../../sitemap.xml">sitemap</a></footer><script>(function(){var M={'zh-cn':'zh-Hans','zh-sg':'zh-Hans','zh-tw':'zh-Hant','zh-hk':'zh-Hant','zh-mo':'zh-Hant'},A=['zh-Hans','zh-Hant','en','ja','ko','ms','vi','fr','es','de'],APP={'zh-Hans':'zh-CN','zh-Hant':'zh-TW'};
 function pick(){var q=(location.search.match(/[?&]lang=([\w-]+)/)||[])[1];if(q&&A.indexOf(q)>=0)return q;try{var s=localStorage.getItem('uihub.lang');if(s){s={'zh-CN':'zh-Hans','zh-TW':'zh-Hant'}[s]||s;if(A.indexOf(s)>=0)return s}}catch(e){}
 var n=(navigator.language||'en').toLowerCase();if(M[n])return M[n];if(/^zh-hant/.test(n))return 'zh-Hant';if(n.slice(0,2)==='zh')return 'zh-Hans';var b=n.slice(0,2);return A.indexOf(b)>=0?b:'en'}
 function set(l){document.documentElement.lang=l;var st=document.getElementById('lst');if(!st){st=document.createElement('style');st.id='lst';document.head.appendChild(st)}st.textContent='[data-l="'+l+'"]{display:revert}';document.getElementById('ls').value=l;try{localStorage.setItem('uihub.lang',APP[l]||l)}catch(e){}}

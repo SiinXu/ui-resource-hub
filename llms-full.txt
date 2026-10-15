@@ -139,41 +139,255 @@ References:
 
 ## Prompting for UI: write specs, not wishes
 
-A UI prompt is a tiny design spec. The model fills every gap with defaults, so each gap you leave becomes a cliché.
+A UI prompt is a tiny design spec. The model fills every gap you leave with its defaults, and defaults are clichés: a centred hero, three feature cards, a purple-to-blue gradient, emoji as icons. A prompt that says "modern and clean" leaves every gap open. This post shows how to close them with a fixed structure, how to iterate without starting over, and which mistakes waste the most rounds.
+Why "make it modern" fails
+Language models predict the most likely continuation. For UI, the most likely continuation is the average of thousands of landing pages. Adjectives like modern, clean or premium do not narrow that average, because every template on the web claims all three. What narrows it is information the model cannot guess: your audience, your content, your tokens, your states, and the things you refuse.
+Anthropic's prompt-engineering guide makes the same point in general terms: be clear and direct, give context, and say what the output is for. Vercel's v0 docs add the UI-specific version: describe the layout, name the components and give real content.
 The six-slot template
-Goal: pricing page for a dev tool, 3 tiers, annual toggle
-Layout: 12-col, max 1200px, tiers in a row ≥ 900px, stacked below
-Tokens: Geist, 14/20 body, radius 10, one accent #2563eb, neutral greys
-States: hover, focus-visible ring, selected tier, loading on CTA
-Content: real copy below (no lorem), prices 0 / 19 / 49
-Avoid: gradients on text, glassmorphism, emoji icons, centred everything
-Why it works
-Vercel's design guidelines and Rauno Freiberg's "Interfaces" both stress small, checkable rules: focus states, hit targets, tabular numbers. Turning those into explicit lines makes the output verifiable. Real content matters too; placeholder text hides overflow and hierarchy problems.
-Our takePut the "Avoid" line first when iterating. Models obey negative constraints better once they have seen the bad version. Keep a reusable prompt per component type; UI Hub's component cards include a copyable prompt you can start from.
+Goal: pricing page for a dev tool, 3 tiers, annual/monthly toggle
+Layout: 12-col grid, max 1200px; tiers in one row at &gt;= 900px, stacked below
+Tokens: Geist; body 14/20; radius 10; one accent #2563eb; neutral greys only
+States: hover, focus-visible ring, selected tier, loading on the CTA, disabled
+Content: use the copy below verbatim (no lorem); prices 0 / 19 / 49 USD
+Avoid: gradient text, glassmorphism, emoji icons, everything centred, drop shadows &gt; 8px
+
+Each slot answers one question the model would otherwise answer with a default:
+
+Goal — what the screen is for and the one thing it must do. Keep it to one line.
+Layout — grid, max width, breakpoints and what happens below them. "Responsive" is not a layout.
+Tokens — font, type scale, radius, colour. One accent colour is a constraint the model respects surprisingly well.
+States — hover, focus, selected, loading, empty, error, disabled. Screenshots never show states, so models skip them unless asked.
+Content — paste real copy. Placeholder text hides overflow, wrapping and hierarchy problems that real headlines expose immediately.
+Avoid — a short refuse-list. This is the slot that most changes the look.
+
+A worked example, step by step
+Step 1: write the brief. Before the six slots, write two sentences about the audience: "Solo developers comparing three plans on a phone during a commute. They care about the limits table more than the hero." This decides density and what goes above the fold.
+Step 2: ask for variants, not a page. The first message should ask for three deliberately different directions, for example "A: editorial, serif headings; B: dense table-first; C: card-based with a toggle". Diversity is cheap for the model and expensive for you to imagine.
+Step 3: pick one and critique in named problems. "Make it better" produces random change. Named problems produce targeted change:
+Keep variant B. Fix only these:
+1. Line length in the FAQ is ~95ch; cap at 68ch.
+2. Two accent colours compete (blue CTA, green badge). Use the accent for the CTA only.
+3. The selected tier has no visible focus ring when tabbing.
+4. Prices are not tabular; use font-variant-numeric: tabular-nums.
+Do not change anything else.
+
+Step 4: lock decisions. When a decision is good, move it out of the chat into a file the agent reads every time (a DESIGN.md or token file). Otherwise the next session starts from the average again.
+Pitfalls that waste the most rounds
+
+Stacking adjectives. "Sleek, minimal, bold, playful" is four conflicting instructions. Pick one adjective you want and one you refuse.
+Changing many things per round. If you ask for six changes, you cannot tell which one broke the layout. Two to four named fixes per round is a good rhythm.
+No negative examples. Models follow "avoid X" better after they have produced X once. Put the Avoid line first when iterating.
+Lorem ipsum. It always fits. Your German translation or 40-character product name will not.
+Forgetting the dark theme. Ask for both themes in the first round; retrofitting dark mode is where contrast bugs come from.
+Asking for "pixel perfect" from a screenshot. You get absolute positioning. Ask for your components and tokens instead.
+
+Slot values for three common screens
+The template stays the same; what changes is which slots carry the weight. Three examples we reuse:
+DATA TABLE
+Layout: full width inside a 1280px shell; sticky header; first column sticky on &lt; 768px
+Tokens: 13/18 table text; tabular-nums; row height 40; zebra off; 1px dividers
+States: sorted column, row hover, row selected (checkbox), loading skeleton rows, empty, error with retry
+Content: 8 real rows incl. one 60-char name and one negative number
+Avoid: cards on mobile (keep the table, scroll horizontally), icons in every cell
+
+EMPTY STATE
+Goal: first-run screen for a project list with zero projects
+Layout: centred block max 420px; illustration optional, max 160px tall
+Content: one-line headline, one sentence of help, one primary action, one docs link
+Avoid: three CTAs, jokes, stock 3D illustrations
+
+SETTINGS FORM
+Layout: label column 200px + field column at &gt;= 768px; single column below
+States: dirty (unsaved) bar, inline validation on blur, saving, saved toast, server error per field
+Avoid: modal dialogs for each setting, auto-save without feedback
+
+Notice that the data table spends its words on states and content, the empty state on content and restraint, and the form on states. When a prompt fails, check which slot that screen depends on and whether you left it to the default.
+How to tell if a prompt is done
+A useful test: hand the prompt to a colleague and ask them to sketch the screen in two minutes. If they ask "what colour?", "what happens on mobile?" or "what does the button say?", the model would have guessed too. Every question they ask is a slot you have not filled. A second test: could you reject the output using only the prompt? If "it looks off" is your only objection, the prompt has no checkable rules, and the next round will be a lottery.
+Keeping reusable prompts
+Keep one prompt per component type (pricing, settings form, data table, empty state) in your repo. Each one is the six slots with your tokens already filled in, so a new screen only needs Goal and Content. UI Hub's component cards include a copyable prompt you can start from, and the AI prompt block at the end of this post is a ready-made reviewer prompt.
+Checklist
+
+Two-sentence audience brief written
+All six slots filled; tokens are real values, not adjectives
+First round asks for 3 variants
+Critique lists 2–4 named problems and says "change nothing else"
+Good decisions moved into a file the agent reads every session
+Both themes and all interactive states requested
 
 References:
 - Web Interface Guidelines — Vercel: https://vercel.com/design/guidelines
 - Web Interface Guidelines (interfaces.rauno.me) — Rauno Freiberg: https://interfaces.rauno.me
 - v0 Documentation — Vercel: https://v0.app/docs
 - Refactoring UI — Adam Wathan & Steve Schoger: https://www.refactoringui.com
+- Prompt engineering overview — Anthropic: https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview
 
 ## Design-to-code with AI: map to your components, not to pixels
 
-Early design-to-code tools translated frames into absolutely positioned divs. They looked right and were unmaintainable. The current generation, Figma's Dev Mode MCP server and Builder.io's Visual Copilot among them, works differently: it reads structure and variables and maps them to code you already own.
-What to feed the agentTokens exported as CSS variables, so colours map to var(--accent) instead of hex.A component registry, for example a shadcn registry, so "button" means your Button.Auto-layout in the file. Frames without it force the model to guess flex rules.
-Our takeTreat generated code as a pull request from a junior: correct-looking, missing edge states. Always check empty, loading, error and long-text states, and run an a11y pass. Teams that publish a registry once get compounding returns from every later generation.
+Early design-to-code tools translated frames into absolutely positioned divs. The result looked right in one viewport and was unmaintainable everywhere else. The current generation works differently. Figma's MCP server, Builder.io's Visual Copilot and agents running inside Cursor or Claude Code read structure and variables and can map them to code you already own. Whether you get reusable code or throwaway markup now depends less on the tool and more on what you feed it.
+The core idea: map, don't trace
+A design file contains three kinds of information: structure (frames, auto-layout, nesting), decisions (variables for colour, spacing, radius, type) and components (instances of a button, an input, a card). Tracing copies the pixels. Mapping turns structure into flex and grid, decisions into your CSS variables, and component instances into your own &lt;Button&gt; and &lt;Input&gt;. Mapped output is a pull request you can merge. Traced output is a screenshot written in HTML.
+Step 1: make the design file readable
+Models can only map what is explicit. Before you connect any tool:
+
+Use auto-layout everywhere. A frame without it forces the model to guess flex direction, gap and alignment from coordinates. Guessed layouts break at the first resize.
+Bind styles to variables. A fill of #2563EB gives the model a hex code. A fill bound to color/accent gives it a name it can map to var(--accent).
+Use real component instances. A detached button is just a rectangle with text. An instance of your Button component tells the agent which code component to use.
+Name layers like code. "Frame 482" carries no meaning. PricingCard / Featured carries a lot.
+
+Step 2: export tokens as code
+Keep one source of truth for design decisions and generate CSS variables from it. The Design Tokens Community Group format is a JSON shape that tools like Style Dictionary can transform:
+{
+  &quot;color&quot;: {
+    &quot;accent&quot;:  { &quot;$type&quot;: &quot;color&quot;, &quot;$value&quot;: &quot;#2563eb&quot; },
+    &quot;surface&quot;: { &quot;$type&quot;: &quot;color&quot;, &quot;$value&quot;: &quot;#ffffff&quot; }
+  },
+  &quot;radius&quot;: { &quot;md&quot;: { &quot;$type&quot;: &quot;dimension&quot;, &quot;$value&quot;: &quot;10px&quot; } }
+}
+
+:root {
+  --color-accent: #2563eb;
+  --color-surface: #ffffff;
+  --radius-md: 10px;
+}
+[data-theme=&quot;dark&quot;] {
+  --color-surface: #0d0f15;
+}
+
+When the agent sees that color/accent in Figma and --color-accent in CSS share a name, it uses the variable instead of pasting hex values.
+Step 3: publish a component registry
+A registry tells tools which components exist in your codebase and how to install them. With shadcn/ui, a registry.json lists your items and the CLI builds them into installable JSON files:
+# build registry items from registry.json into public/r/
+npx shadcn@latest build
+
+# install one of your own components into another project
+npx shadcn@latest add https://your-domain.com/r/pricing-card.json
+
+Figma's Code Connect solves the same problem from the design side: it links a Figma component to the code component, so design context sent to an agent can say "this is &lt;Button variant="primary"&gt;" instead of describing a blue rectangle.
+Step 4: connect the bridge
+The Figma MCP server exposes the selected frame's structure, variables and component mappings to an MCP client such as Cursor, VS Code or Claude Code. The workflow is short:
+
+Select one frame, not the whole page. Smaller context gives better code.
+Ask the agent to fetch the design context for the selection and list which of your components it will use before writing code.
+Correct that list first. It is much cheaper to fix "use Card, not a div" before 200 lines exist.
+Let it generate, then review the diff like any other PR.
+
+Builder.io's Visual Copilot follows a similar path from a Figma plugin and can also map to your components. Whichever bridge you use, the quality ceiling is set by Steps 1–3.
+Step 5: review generated code like a junior's PR
+Generated UI is usually right in the default state and wrong at the edges. Review these every time:
+
+Empty, loading and error states. The design file usually shows only the happy path.
+Long content. Paste a 60-character name and a German translation; check wrapping and truncation.
+Responsive behaviour below the smallest frame in the file.
+Hard-coded values. Search the diff for hex colours and pixel sizes that should be tokens.
+Accessibility. Buttons are &lt;button&gt;, inputs have labels, focus is visible, dialogs trap focus.
+
+# quick checks on a generated diff
+git diff | grep -nE '#[0-9a-fA-F]{3,6}\b'      # raw hex colours
+git diff | grep -nE '\b[0-9]{2,}px\b'           # magic pixel values
+git diff | grep -n 'onClick' | grep -n '&lt;div'   # clickable divs
+
+Pitfalls
+
+Converting a whole page at once. The context gets huge and the model starts inventing structure. Go frame by frame.
+Detached instances. One detached component in a frame produces one-off markup that never updates with your library.
+Two sources of truth for tokens. If Figma variables and CSS variables drift, the agent will faithfully reproduce the drift.
+Skipping the plan step. Asking for code immediately means you review 300 lines instead of a 10-line component list.
+Pixel-perfect expectations. Mapped code will differ by a few pixels because it uses your spacing scale. That is the point.
+
+Questions we get
+Is it worth it for a small project? If you will build fewer than five screens, skip the registry and just give the agent your tokens file and a list of components. The full pipeline pays off when several people or several agents build screens over months.
+What if the design file is messy and we cannot fix it? Then do not convert from it directly. Ask the agent to describe the frame in words first (sections, components, content), correct that description, and generate from the description plus your kit. A clean description beats a messy file.
+Which bridge should we pick? Pick the one your designers already use and that can see your component mappings. The bridge matters less than whether variables, auto-layout and component instances exist in the file.
+How do we measure success? Count how much generated code survives review unchanged, and how many raw values reviewers had to replace with tokens. Both numbers should improve week over week as the registry grows.
+Our take
+Treat the registry and token pipeline as infrastructure, not a one-off. The first screen takes longer because you are setting up mappings; every later screen gets cheaper because the agent reuses them. Teams that skip this step get fast first drafts and slow maintenance forever.
+Checklist
+
+Frames use auto-layout; layers have meaningful names
+Fills, spacing and radii are bound to variables
+Tokens exported to CSS variables with the same names
+Components published in a registry or linked with Code Connect
+Agent lists components before generating code
+Diff reviewed for states, long content, hex values and a11y
 
 References:
 - Introducing the Figma MCP server — Figma: https://www.figma.com/blog/introducing-figma-mcp-server/
 - Figma to code with Visual Copilot — Builder.io: https://www.builder.io/blog/figma-to-code-visual-copilot
 - shadcn/ui Registry — shadcn: https://ui.shadcn.com/docs/registry
 - Tailwind CSS dark mode docs — Tailwind Labs: https://tailwindcss.com/docs/dark-mode
+- Guide to the Figma MCP server — Figma Help Center: https://help.figma.com/hc/en-us/articles/32132100833559-Guide-to-the-Figma-MCP-server
+- Code Connect — Figma Help Center: https://help.figma.com/hc/en-us/articles/23920389749655-Code-Connect
+- Design Tokens Community Group — W3C Community Group: https://www.designtokens.org/
+- Style Dictionary — Style Dictionary: https://styledictionary.com/
+- shadcn CLI — shadcn: https://ui.shadcn.com/docs/cli
 
 ## Teaching agents taste: how design skills de-slop AI interfaces
 
-An agent skill is a folder with a SKILL.md the agent reads when the task matches its description. For design, that means opinions survive between sessions instead of living in one long prompt.
-A working stackDirection: frontend-design or taste-skill before writing code. They push a committed aesthetic and ban the usual tells.Craft: emil-design-eng for motion and micro-interaction judgement.Audit: impeccable, baseline-ui and web-design-guidelines after a draft exists.Redesign: redesign-skill when upgrading an existing site.
-Our takeDo not load everything at once. Overlapping skills give conflicting advice. Use one direction skill, one craft skill and one audit skill per task. Write project-specific "never" rules in AGENTS.md so they override generic taste.
+An agent skill is a folder with a SKILL.md file that the agent reads when a task matches the skill's description. For design work this matters more than it sounds: opinions about spacing, motion and what never to ship survive between sessions, instead of living in one long prompt you paste every morning. This post explains how skills load, which kinds of design skill are worth having, how to combine them without conflicts, and how to write a small project skill of your own.
+How a skill is loaded
+A skill starts with a short YAML header, a name and a description, followed by instructions in Markdown. Agents that support skills, such as Claude Code, read only the name and description of every installed skill up front. The full body is loaded when the current task matches the description. Extra files in the folder (reference docs, scripts, examples) are read only when the body points to them.
+That design has two consequences for you:
+
+The description is the trigger. "Design helper" never fires at the right time. "Use when building or restyling a web page or component; enforces our type scale, spacing and banned patterns" does.
+Bodies can be long, but should be layered. Put the rules the agent always needs in SKILL.md, and move long references (the full token table, component examples) into separate files it can open on demand.
+
+---
+name: house-ui
+description: Use when creating or restyling any web page or UI component in this repo. Enforces tokens, spacing, motion limits and banned patterns.
+---
+# House UI rules
+1. Read tokens.css before writing styles. Never use raw hex colours.
+2. Spacing comes from the 4px scale: 4, 8, 12, 16, 24, 32, 48, 64.
+3. One accent colour per screen. Body text max 68ch.
+4. Motion: 150–250ms, ease-out, transform/opacity only; honour prefers-reduced-motion.
+5. Never: gradient text, glassmorphism cards, emoji icons, centred body copy.
+For component examples, open examples.md.
+
+Four jobs, four kinds of skill
+Design skills fall into four jobs. Mixing two skills that do the same job is where conflicts come from.
+
+Direction — runs before code. It commits to an aesthetic and bans the generic tells. Examples: frontend-design from Anthropic's skills repository, taste-skill.
+Craft — runs while building. It carries judgement about motion, micro-interaction and detail. Example: emil-design-eng.
+Audit — runs after a draft exists. It checks against named rules and reports problems. Examples: impeccable, baseline-ui, web-design-guidelines.
+Redesign — runs on an existing site. It inventories what is there before changing it. Example: redesign-skill.
+
+A working stack, step by step
+Step 1: install one skill per job. One direction, one craft, one audit skill per project is enough. Two direction skills will argue about whether the page should be editorial or brutalist, and the agent will average them into neither.
+Step 2: write project rules in AGENTS.md. Generic taste skills do not know your brand. AGENTS.md is a plain Markdown file at the repo root that coding agents read for project instructions. Put the hard rules there, and say explicitly that they win over any skill:
+## Design rules (override any installed skill)
+- Brand accent is #2563eb; do not introduce a second accent.
+- Headings use Instrument Serif; body uses Geist.
+- Light and dark themes are both required for every screen.
+- Max one animated &quot;hero moment&quot; per page.
+
+Step 3: run the direction skill first. Ask the agent to propose a direction in words before any code: palette, type pairing, layout idea, the one thing that will make the page memorable. Approve or correct it.
+Step 4: build with the craft skill active. Let it handle hover, focus and transition details, and keep your AGENTS.md limits on motion in force.
+Step 5: audit, then fix in named items. Run the audit skill on the result and ask for a numbered list of problems with file and line. Fix them in small batches, not all at once.
+Pitfalls
+
+Loading everything. Ten design skills means ten sets of advice competing for the same decisions. More skills is not more taste.
+Vague descriptions. If the description does not match how you phrase tasks, the skill never loads and you will think it does not work.
+Rules only in chat. A rule you typed once disappears next session. If you repeat it twice, it belongs in AGENTS.md or a skill.
+Audit before direction. Auditing a page with no committed direction produces a list of nitpicks on a generic layout.
+Copying a skill without reading it. Skills can run scripts. Read the files before you install one, the same way you would read a dependency.
+
+Questions we get
+Do skills replace a design system? No. A skill tells the agent how to use your design system and what to avoid. The tokens and components still have to exist; the skill points at them.
+How long should a project skill be? Short enough that you would read it yourself: 20–40 lines of rules in SKILL.md, with longer material in linked files. If the agent ignores a rule, the usual cause is that it was buried in a long list, not that the list was too short.
+How do we know a skill is working? Give the agent a task that should trigger it and ask it which skills it used. Then check the output against two or three rules from the skill. If the skill never fires, rewrite the description using the exact words you use for tasks.
+Can different agents share the same skills? Several coding agents now read skill folders or AGENTS.md. Keep the rules in plain Markdown with no tool-specific syntax, and the same files can serve more than one agent. Check each agent's documentation for where it looks.
+What about public skills that change? Pin the version you reviewed. Treat an update like a dependency upgrade: read the diff before you accept it.
+Our take
+Skills turn taste from a prompt into infrastructure. The most valuable one in most repos is not a famous public skill but a 30-line project skill that encodes your tokens and your "never" list. Start there, add one public skill per job, and remove any skill that you notice giving advice you keep overriding.
+Checklist
+
+Each skill has a description that matches how you phrase tasks
+One direction, one craft, one audit skill per project
+Project rules in AGENTS.md, marked as overriding skills
+Direction agreed in words before code
+Audit output is a numbered list with file and line
+Every installed skill has been read before use
 
 References:
 - Agent Skills repository — Anthropic: https://github.com/anthropics/skills
@@ -181,24 +395,199 @@ References:
 - impeccable — Paul Bakaus: https://github.com/pbakaus/impeccable
 - AGENTS.md — agents.md: https://agents.md
 - Web Interface Guidelines — Vercel: https://vercel.com/design/guidelines
+- Agent Skills overview — Anthropic: https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview
+- Skills in Claude Code — Anthropic: https://code.claude.com/docs/en/skills
 
 ## Component composition: why headless + copy-paste won
 
-The old model was a styled npm package you fought with overrides. shadcn/ui flipped it: behaviour and accessibility from Radix primitives, styling in Tailwind, and the source copied into your repo.
-Why it suits AICode in your repo is visible context, so the agent can read and edit it.Compound components (&lt;Dialog.Trigger&gt;, &lt;Dialog.Content&gt;) have small, predictable surfaces, which makes edits less error-prone than a 40-prop monolith.Registries let tools install the same component into any project.
-Our takeCompose from three layers: primitives (Radix, Ark, React Aria), your styled kit, and page blocks. Let AI work mainly at the block layer and keep primitives untouched. Atomic design's old atoms→organisms idea maps neatly onto this.
+The old model of a component library was a styled npm package: you installed it, then fought its styles with overrides and !important. shadcn/ui flipped that. Behaviour and accessibility come from headless primitives such as Radix, styling comes from Tailwind classes, and the component source is copied into your repository, where you own it. This post explains why that composition model suits AI agents unusually well, how to structure the layers, and the patterns that keep generated code maintainable.
+Three layers, three owners
+Think of your UI in three layers, each with a different rate of change and a different owner:
+
+Primitives — headless, accessible behaviour: focus management, keyboard handling, ARIA wiring, portals. Radix Primitives, React Aria and Ark UI live here. You rarely edit them.
+Your kit — styled components built on primitives: Button, Dialog, Select, Card. This is what shadcn/ui gives you as source. You edit it occasionally, when the design system changes.
+Blocks and pages — compositions of kit components: a pricing section, a settings form, a dashboard header. This changes every week.
+
+Brad Frost's atomic design described a similar split years ago (atoms, molecules, organisms, templates, pages). The practical rule for AI work is simple: let agents work mostly at the block layer, carefully at the kit layer, and almost never at the primitive layer.
+Why this suits agents
+
+Visible context. Code in your repo can be read. An agent asked to "add a destructive variant to Button" can open button.tsx, see the existing variants and follow the pattern. With a closed npm package it can only guess at props.
+Small surfaces. Compound components split one complex widget into parts with narrow responsibilities, so edits are local and predictable.
+Registries. A registry lets any project install the same component with one command, so an agent building a new app reuses your kit instead of writing a fresh one.
+
+Pattern 1: compound components
+A compound component exposes parts that share state through context, instead of one component with forty props. Compare:
+// monolith: every new need becomes another prop
+&lt;Dialog title=&quot;Delete project&quot; description=&quot;This cannot be undone.&quot;
+  confirmLabel=&quot;Delete&quot; cancelLabel=&quot;Cancel&quot; danger showClose
+  onConfirm={remove} footerAlign=&quot;end&quot; /&gt;
+
+// compound: parts you can rearrange, omit or extend
+&lt;Dialog&gt;
+  &lt;DialogTrigger asChild&gt;&lt;Button variant=&quot;outline&quot;&gt;Delete&lt;/Button&gt;&lt;/DialogTrigger&gt;
+  &lt;DialogContent&gt;
+    &lt;DialogHeader&gt;
+      &lt;DialogTitle&gt;Delete project&lt;/DialogTitle&gt;
+      &lt;DialogDescription&gt;This cannot be undone.&lt;/DialogDescription&gt;
+    &lt;/DialogHeader&gt;
+    &lt;DialogFooter&gt;
+      &lt;DialogClose asChild&gt;&lt;Button variant=&quot;ghost&quot;&gt;Cancel&lt;/Button&gt;&lt;/DialogClose&gt;
+      &lt;Button variant=&quot;destructive&quot; onClick={remove}&gt;Delete&lt;/Button&gt;
+    &lt;/DialogFooter&gt;
+  &lt;/DialogContent&gt;
+&lt;/Dialog&gt;
+
+The compound version is longer, but every part is obvious, and adding a checkbox ("also delete backups") means inserting one element, not designing a new prop.
+Pattern 2: asChild instead of wrapper soup
+Radix's asChild prop merges a primitive's behaviour into its child element instead of rendering an extra DOM node. &lt;DialogTrigger asChild&gt;&lt;Button/&gt;&lt;/DialogTrigger&gt; gives you one &lt;button&gt; with the trigger's ARIA attributes and event handlers, not a button nested inside another button. Nested interactive elements are one of the most common accessibility bugs in generated code, so tell your agent to use asChild whenever it wraps a kit component in a primitive part.
+Pattern 3: variants as data
+shadcn/ui components describe styling options with class-variance-authority. Variants become a small, readable table instead of conditional class strings scattered through JSX:
+const buttonVariants = cva(
+  &quot;inline-flex items-center justify-center rounded-md text-sm font-medium focus-visible:outline-none focus-visible:ring-2 disabled:opacity-50&quot;,
+  {
+    variants: {
+      variant: {
+        default: &quot;bg-primary text-primary-foreground hover:bg-primary/90&quot;,
+        outline: &quot;border border-input bg-background hover:bg-accent&quot;,
+        destructive: &quot;bg-destructive text-destructive-foreground hover:bg-destructive/90&quot;,
+      },
+      size: { sm: &quot;h-8 px-3&quot;, md: &quot;h-9 px-4&quot;, lg: &quot;h-10 px-6&quot; },
+    },
+    defaultVariants: { variant: &quot;default&quot;, size: &quot;md&quot; },
+  }
+);
+
+Agents edit tables like this reliably. Ask for a new variant and you get one new line, using your existing token classes.
+A step-by-step workflow for adding a block
+
+Inventory first. Ask the agent to list which kit components the new block needs and which are missing.
+Add missing kit pieces deliberately. Install them from the shadcn registry or your own, then review them once. Do not let a block quietly invent its own button.
+Compose the block only from kit components and layout utilities. No raw &lt;div onClick&gt;.
+Check states and keyboard. Tab through the block. Open and close every popover with the keyboard. Check focus returns to the trigger.
+Promote repeats. If the same composition appears in three blocks, promote it into the kit with a name.
+
+Pitfalls
+
+Editing primitives to fix styling. Styling belongs in the kit layer. Forking a primitive loses upstream accessibility fixes.
+Prop explosion in the kit. If Card has 15 boolean props, it wants to be a compound component.
+Duplicated kits. Agents happily generate a second Button in a feature folder. Search for duplicates in review.
+Mixing primitive libraries. Radix for dialogs and another library for popovers means two focus-management models. Pick one per project where possible.
+Losing the source of truth. Once copied, components drift from upstream. Keep a note of which upstream version you started from.
+
+Questions we get
+Should we use shadcn/ui or a packaged library like MUI? If you want agents to edit components and you care about owning the look, source-in-repo kits are easier. If you want upstream updates with no maintenance and accept the library's look, a packaged library is fine. Mixing both in one product is the expensive option.
+How do we stop agents from editing primitives? Say it in AGENTS.md, keep primitives in a clearly named folder, and add a CODEOWNERS rule or a CI check that flags changes there. Agents follow folder conventions well when they are written down.
+When should a block become a kit component? When it appears in three places, has a clear name, and its variations can be described as a short variants table. Before that, duplication is cheaper than the wrong abstraction.
+What about non-React stacks? The same three layers apply. Vue and Svelte have headless primitive libraries too, and the rule "agents compose blocks, carefully edit the kit, leave primitives alone" does not depend on the framework.
+Our take
+The composition model is the reason shadcn-style kits became the default target for AI UI tools: the source is local, the parts are small and the variants are data. Keep the three layers explicit in your folder structure, tell your agent which layer it is allowed to touch, and most "AI made a mess of my components" problems disappear.
+Checklist
+
+Folders reflect primitives / kit / blocks
+Agents compose blocks only from kit components
+Compound components instead of many-prop monoliths
+asChild used when a primitive part wraps a kit component
+Variants defined as data (cva or similar)
+Keyboard and focus checked on every new block
 
 References:
 - shadcn/ui docs — shadcn: https://ui.shadcn.com/docs
 - Radix Primitives introduction — WorkOS / Radix: https://www.radix-ui.com/primitives/docs/overview/introduction
 - Compound Pattern — patterns.dev (Lydia Hallie & Addy Osmani): https://www.patterns.dev/react/compound-pattern/
 - Atomic Design, chapter 2 — Brad Frost: https://atomicdesign.bradfrost.com/chapter-2/
+- Composition (asChild) — Radix: https://www.radix-ui.com/primitives/docs/guides/composition
+- React Aria — Adobe: https://react-aria.adobe.com/
+- Ark UI — Chakra Systems: https://ark-ui.com/
+- class-variance-authority — Joe Bell: https://cva.style/
 
 ## Motion that feels right: purpose, duration, easing, restraint
 
-Emil Kowalski's rule of thumb is blunt: if a user triggers something a hundred times a day, do not animate it. Motion is for orientation (where did this come from?), feedback (it worked) and, sparingly, delight.
-Numbers to start fromSmall UI changes: 150–250ms; larger surfaces 300–400ms. Material 3's motion tokens sit in the same ranges.Enter with ease-out, so the element responds immediately; avoid ease-in for UI.Animate transform and opacity only for smooth 60fps.Respect prefers-reduced-motion: swap movement for fades.
-Our takeAceternity- and Magic UI-style effects (beams, spotlights, marquees) work as one hero moment per page. Stack three and the page looks like a template. Josh Comeau's transition guide is the best explanation of why easing curves matter.
+Emil Kowalski's rule of thumb is blunt: if a user triggers something a hundred times a day, do not animate it. Motion in an interface has three legitimate jobs: orientation (where did this come from and where did it go?), feedback (your action worked) and, sparingly, delight. Everything else is decoration that costs time on every interaction. This post gives starting numbers, a step-by-step way to add motion to a component, code you can paste, and the mistakes that make AI-generated pages feel cheap.
+Decide the job before the animation
+Before writing a transition, write one sentence: "This animates so the user understands ___." If you cannot fill the blank, leave it static. Some examples:
+
+A dropdown scales from its trigger so the user sees which button opened it (orientation).
+A "Copied" check replaces the copy icon for 1.5 seconds (feedback).
+A hero illustration drifts slowly on first load of a marketing page (delight, once).
+
+A command palette that opens 50 times a day should appear almost instantly. Keep frequent surfaces fast and spend motion on rare moments.
+Numbers to start from
+
+Duration: 150–250ms for small UI changes (tooltips, dropdowns, toggles); 300–400ms for larger surfaces (drawers, modals, page sections). Material 3's motion tokens sit in the same ranges.
+Easing: enter and respond with ease-out, so the element moves immediately and settles. Avoid ease-in for UI responses; it feels like lag. Use ease-in-out for elements moving from one on-screen position to another.
+Distance: small. A dropdown needs 4–8px of travel or a scale from 0.96, not a slide from off-screen.
+Properties: animate transform and opacity. Animating width, height, top or box-shadow triggers layout or paint on every frame and stutters on mid-range phones.
+
+Step by step: a dropdown that feels right
+Step 1: set the origin. Scale from the trigger, not from the centre. Radix and similar libraries expose the transform origin as a CSS variable you can use.
+Step 2: write enter and exit separately. Exits should be faster than entries; the user has already decided to move on.
+.menu {
+  transform-origin: var(--radix-dropdown-menu-content-transform-origin, top left);
+}
+.menu[data-state=&quot;open&quot;] {
+  animation: menu-in 180ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+.menu[data-state=&quot;closed&quot;] {
+  animation: menu-out 120ms ease-in;
+}
+@keyframes menu-in {
+  from { opacity: 0; transform: scale(0.96) translateY(-4px); }
+  to   { opacity: 1; transform: none; }
+}
+@keyframes menu-out {
+  to { opacity: 0; transform: scale(0.98); }
+}
+
+Step 3: respect reduced motion. Some users get motion sickness from movement. Keep the opacity change, drop the movement:
+@media (prefers-reduced-motion: reduce) {
+  .menu[data-state=&quot;open&quot;],
+  .menu[data-state=&quot;closed&quot;] {
+    animation-name: fade;
+  }
+  @keyframes fade { from { opacity: 0; } to { opacity: 1; } }
+}
+
+Step 4: test at speed. Open and close it ten times quickly. If the animation ever blocks the next click, it is too long or not interruptible.
+Springs and layout animation
+For elements that move between positions (a reordered list item, an expanding card, a tab indicator), springs feel more natural than fixed curves because they respond to interruption. Motion (formerly Framer Motion) makes layout animation one prop:
+import { motion } from &quot;motion/react&quot;;
+
+&lt;motion.div
+  layout
+  transition={{ type: &quot;spring&quot;, stiffness: 500, damping: 40 }}
+  className=&quot;tab-indicator&quot;
+/&gt;
+
+Keep springs stiff and well damped for UI. A bouncy spring is fun once and annoying the twentieth time.
+One hero moment per page
+Aceternity- and Magic UI-style effects (beams, spotlights, meteor showers, marquees) are designed to impress. They work as one hero moment per page. Put a spotlight on the hero and a marquee on the logo strip and an animated gradient border on every card, and the page reads as a template. When an AI generator gives you three effects, keep the one closest to your story and make the rest static.
+A quick motion audit
+To review an existing page, list every animation in a table with four columns: element, trigger, duration and job. Anything without a job is deleted. Anything triggered often gets shortened to near-instant. Anything over 400ms needs a reason. Then record the screen at normal speed and watch it back at half speed: you will see easing problems, overlapping animations and elements that move in different directions at once, which are hard to notice live.
+Pitfalls
+
+Animating frequent actions. Toggling a sidebar, switching tabs or opening a command palette should feel instant.
+Ease-in on responses. The element seems to hesitate before reacting.
+Long exits. Users wait for a closing modal before they can click what is behind it.
+Layout properties. Height animations on accordions jank; animate a wrapper's transform or use the grid-rows 0fr to 1fr technique.
+Ignoring reduced motion. It is a single media query and it matters to real people.
+Scroll-jacking. Scroll-linked effects that change scroll speed break trackpads and screen readers.
+
+Questions we get
+CSS transitions or a JavaScript library? Use CSS for simple state changes (hover, open/close, fades): it is cheap and runs off the main thread for transform and opacity. Reach for a library like Motion when you need layout animation, shared-element transitions, gestures or interruptible springs.
+How do I find janky animations? Open the browser's performance panel, record while triggering the animation, and look for long frames and layout or paint work on every frame. On a real mid-range phone, jank you cannot see on a laptop becomes obvious.
+What about loading states? Skeletons with a subtle shimmer are fine, but the shimmer should be slow and low-contrast. Better still, show content as soon as it arrives instead of fading everything in together.
+Should marketing pages follow the same rules? Mostly. Marketing pages can afford one bigger moment because they are visited rarely, but the same limits on duration, easing and reduced motion still apply to buttons, menus and navigation on those pages.
+How do I brief an AI generator about motion? Give it the numbers: durations, the easing curve, "transform and opacity only", "one hero effect", and a reduced-motion requirement. Without numbers, generators default to slow, floaty transitions on everything.
+Our take
+Good motion is mostly invisible: users notice that the interface feels responsive, not that it animates. Start every component static, add motion only where you can name its job, keep it short and ease-out, and spend your one big effect where the story needs it. Josh Comeau's interactive guide to CSS transitions is the best explanation of why easing curves matter; read it once and you will see bad easing everywhere.
+Checklist
+
+Each animation has a named job: orientation, feedback or delight
+Small UI 150–250ms, large surfaces 300–400ms; exits faster than entries
+Ease-out for entering and responding
+Only transform and opacity animated
+prefers-reduced-motion handled
+At most one hero effect per page
 
 References:
 - Great animations — Emil Kowalski: https://emilkowal.ski/ui/great-animations
@@ -207,30 +596,174 @@ References:
 - An Interactive Guide to CSS Transitions — Josh W. Comeau: https://www.joshwcomeau.com/animation/css-transitions/
 - prefers-reduced-motion — MDN: https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion
 - Motion docs — Motion: https://motion.dev/docs
+- Animations guide — web.dev: https://web.dev/articles/animations-guide
+- Layout animations — Motion: https://motion.dev/docs/react-layout-animations
 
 ## Dark mode done right: tokens, elevation and contrast
 
-Inverting colours gives you pure black backgrounds, glowing saturated blues and shadows nobody can see. Apple's HIG and web.dev both describe dark mode as its own design pass.
-RulesSemantic tokens: --bg, --surface, --ink, --accent, swapped per theme with [data-theme] or prefers-color-scheme.Elevation by lightness: raised surfaces get slightly lighter, because shadows barely read on dark.Off-black, off-white: e.g. #06070b and #f3f5fb reduce halation.Desaturate accents and re-check 4.5:1 text contrast in both themes.Set color-scheme so form controls and scrollbars follow.
-Our takeNN/g's research shows preference is split, so ship both and remember the choice. Screenshots of previews need both themes too; UI Hub stores light and dark shots per component for exactly this reason.
+Inverting colours is the fastest way to ship a bad dark mode: pure black backgrounds, glowing saturated blues, borders that vanish and shadows nobody can see. Apple's Human Interface Guidelines and web.dev both treat dark mode as its own design pass, not a filter. This post covers the token structure that makes two themes cheap, the rules for surfaces, colour and contrast, a step-by-step implementation without the white flash, and what to check before you ship.
+Start from semantic tokens
+The single decision that makes dark mode manageable is naming colours by role, not by value. Components use --bg, --surface, --ink, --muted, --line and --accent. Each theme assigns values to those roles. A component never knows which theme it is in.
+:root, [data-theme=&quot;light&quot;] {
+  color-scheme: light;
+  --bg: #f5f6fa;  --surface: #ffffff;  --raised: #ffffff;
+  --ink: #0a0c14; --muted: #4a5164;    --line: rgb(10 12 20 / .10);
+  --accent: #2563eb;
+}
+[data-theme=&quot;dark&quot;] {
+  color-scheme: dark;
+  --bg: #06070b;  --surface: #0d0f15;  --raised: #151924;
+  --ink: #f3f5fb; --muted: #a6adbf;    --line: rgb(255 255 255 / .10);
+  --accent: #67e8f9;
+}
+.card { background: var(--surface); color: var(--ink); border: 1px solid var(--line); }
+
+If your codebase has #fff and text-gray-900 scattered through components, the first step of a dark mode project is replacing them with roles. Agents are good at this mechanical refactor when you give them the role table.
+Rules for surfaces and colour
+
+Off-black, not black. Pure #000 behind white text maximises halation (the glow around bright text) on many screens. A very dark blue-grey such as #06070b reads as black and is easier on the eyes.
+Off-white text. #f3f5fb instead of #ffffff for body text; reserve pure white for small emphasis if at all.
+Elevation by lightness. In light mode, shadows separate layers. In dark mode, shadows barely show, so raised surfaces get slightly lighter: background, then surface, then raised. Material's dark theme guidance uses the same idea.
+Desaturate and lighten accents. A saturated #2563eb that works on white vibrates on near-black. Pick a lighter, less saturated accent for dark, and check it as text and as a button fill separately.
+Borders carry more weight. With weak shadows, a 1px translucent line is often what separates cards from the background.
+Images and illustrations. Logos and diagrams with white backgrounds become glaring rectangles. Provide dark variants or put them on a neutral surface.
+
+Contrast in both themes
+WCAG asks for at least 4.5:1 contrast for normal text and 3:1 for large text and UI components. Check muted text, placeholder text, disabled states and links in both themes. The usual failure is muted grey that passes on white and fails on near-black, or the reverse.
+Step by step: implementing the switch
+Step 1: respect the system, remember the choice. Default to prefers-color-scheme, let the user override it, and store the override.
+Step 2: set the theme before first paint. A tiny inline script in &lt;head&gt; avoids the white flash on load:
+&lt;script&gt;
+  try {
+    const saved = localStorage.getItem(&quot;theme&quot;);
+    const sys = matchMedia(&quot;(prefers-color-scheme: dark)&quot;).matches ? &quot;dark&quot; : &quot;light&quot;;
+    document.documentElement.dataset.theme = saved || sys;
+  } catch (e) {
+    document.documentElement.dataset.theme = &quot;light&quot;;
+  }
+&lt;/script&gt;
+
+Step 3: set color-scheme. It tells the browser to render form controls, scrollbars and the default canvas in the right theme. Without it you get light scrollbars on a dark page.
+Step 4: consider light-dark(). Modern browsers support the CSS light-dark() function, which picks a value based on the active color-scheme. It is handy for one-off values: border-color: light-dark(#e5e7eb, #262a35);.
+Step 5: wire the toggle. Update data-theme, save the choice, and update aria-pressed or the label so screen-reader users know the current state.
+A five-minute dark-mode review
+Open the page in dark mode on a real phone at low brightness and on a laptop at full brightness. Look for four things: text that glows or blurs at the edges (too much contrast, often pure white on pure black), cards that disappear into the background (missing border or lightness step), accent colours that vibrate, and any white rectangle (an image, embed or code block that was never themed). Then switch themes with the toggle and reload: the page should come back in the theme you chose, without a flash.
+Pitfalls
+
+Inverting with a filter. filter: invert(1) flips photos and brand colours too.
+Forgetting third-party embeds. Code blocks, maps, charts and iframes often stay light. Theme them or frame them.
+Shadows as the only separator. They disappear in dark mode; add borders or lightness steps.
+Testing only one theme. Every screenshot review, visual test and design critique should include both.
+Theme flash. Setting the theme in a framework effect after hydration flashes the wrong theme on every load.
+
+Questions we get
+Should dark mode be the default? Follow the system setting by default. Users who prefer dark have usually already said so at the operating-system level, and the same goes for light. A manual toggle covers everyone else.
+Do we need a separate dark design in Figma? You need dark values for every role token and a review of key screens in dark. You do not need to redraw every screen if components use role tokens; the theme swap does the work.
+What about charts and data visualisation? Chart palettes need their own dark variants. Colours that are distinguishable on white can merge on near-black, so check categorical colours side by side in both themes, and never rely on colour alone to distinguish series.
+How do we keep the two themes from drifting? Run visual regression screenshots in both themes and fail the build on unexpected changes. Treat a component that looks wrong in one theme as a bug, not a polish item.
+Is "dim" or high-contrast a third theme? If users need it, yes, and the role-token structure makes it a third column of values. Respect prefers-contrast before inventing a custom option.
+Our take
+NN/g's research shows preference between dark and light is split and situational, so ship both and remember the choice. The cost of the second theme is almost entirely in the token structure: get roles right and dark mode is a second column of values. UI Hub stores light and dark preview screenshots for each component for exactly this reason; a component that only looks good in one theme is half finished.
+Checklist
+
+Components use role tokens only; no raw colours
+Off-black background, off-white text, lighter raised surfaces
+Dark-specific accent checked as text and as fill
+4.5:1 text contrast verified in both themes
+Theme set before first paint; color-scheme set
+System preference respected and user override remembered
 
 References:
 - Dark Mode — Human Interface Guidelines — Apple: https://developer.apple.com/design/human-interface-guidelines/dark-mode
 - prefers-color-scheme: Hello darkness, my old friend — web.dev (Thomas Steiner): https://web.dev/articles/prefers-color-scheme
 - Dark Mode vs. Light Mode: Which Is Better? — Nielsen Norman Group: https://www.nngroup.com/articles/dark-mode/
 - Dark mode — Tailwind CSS: https://tailwindcss.com/docs/dark-mode
+- color-scheme — MDN: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/color-scheme
+- light-dark() — MDN: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/color_value/light-dark
+- Understanding SC 1.4.3 Contrast (Minimum) — W3C WAI: https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html
+- Color system overview — Material 3 — Google: https://m3.material.io/styles/color/system/overview
+- prefers-contrast — MDN: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@media/prefers-contrast
 
 ## Accessibility in AI-generated UI: the checks models skip
 
-Models optimise for what a screenshot shows. Focus order, accessible names and live regions do not show up in screenshots, so they are the first things to go missing.
-The checks models skip mostClickable divs instead of &lt;button&gt;. Prompt for semantic elements explicitly.Missing focus-visible styles, often removed with outline:none.Icon-only buttons without aria-label.Contrast of grey-on-grey secondary text (WCAG 1.4.3).Target size: at least 24×24 CSS px (WCAG 2.2, 2.5.8).Dialogs without focus trap and Escape. Use the ARIA APG patterns or Radix and React Aria.
-Our takeMake accessibility structural, not a final pass. Generate on top of accessible primitives and add an audit skill (accessibility, web-design-guidelines) to the agent's definition of done.
+Models optimise for what a screenshot shows. Focus order, accessible names, keyboard behaviour and live regions do not show up in screenshots, so they are the first things to go missing from generated UI. The good news is that the failures are predictable. This post lists the checks models skip most often, gives the fix for each, and shows how to make accessibility part of the agent's definition of done instead of a final pass nobody has time for.
+Why generated UI fails in the same places
+A generator learns from millions of pages, and a large share of the web has accessibility problems. Automated audits of popular home pages keep finding the same short list: low-contrast text, missing alternative text, empty links and buttons, missing form labels. Those are exactly the patterns a model reproduces when nobody asks for anything else. The fix is not a smarter model; it is explicit constraints plus a check the agent runs itself.
+The checks models skip most
+1. Clickable divs. &lt;div onClick&gt; looks like a button and is not one: no focus, no Enter or Space, no role. Use &lt;button&gt; for actions and &lt;a href&gt; for navigation.
+&lt;!-- generated --&gt;
+&lt;div class=&quot;btn&quot; onclick=&quot;save()&quot;&gt;Save&lt;/div&gt;
+
+&lt;!-- fixed --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn&quot; onclick=&quot;save()&quot;&gt;Save&lt;/button&gt;
+
+2. Missing focus styles. Generators often add outline: none to remove the browser ring because it "looks messy" in screenshots. Replace it, don't remove it:
+:focus { outline: none; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+:focus-visible shows the ring for keyboard users and hides it for most mouse clicks, which is what designers usually wanted in the first place.
+3. Icon-only buttons with no name. A trash icon is obvious to sighted users and silent to a screen reader. Add aria-label="Delete project" or visually hidden text.
+4. Contrast of secondary text. Grey-on-grey captions, placeholders and disabled labels are the most common WCAG failure (success criterion 1.4.3 asks for 4.5:1 for normal text). Check both themes.
+5. Target size. WCAG 2.2 adds 2.5.8 Target Size (Minimum): interactive targets should be at least 24×24 CSS pixels, or have enough spacing. Tiny close buttons and dense icon toolbars fail it on phones.
+6. Dialogs without focus management. A modal must move focus inside when it opens, keep Tab inside while open, close on Escape and return focus to the trigger. The ARIA Authoring Practices Guide documents the pattern; Radix, React Aria and the native &lt;dialog&gt; element implement it.
+7. Forms without labels. Placeholder text is not a label; it disappears when you type. Every input needs a &lt;label for&gt; or aria-labelledby, and errors should be linked with aria-describedby.
+8. Dynamic updates nobody announces. "Saved", "3 results" and validation errors that appear without a page change need a live region (role="status" or aria-live="polite") to be heard.
+Step by step: build accessibility into the workflow
+Step 1: generate on accessible primitives. Ask the agent to use your kit built on Radix, React Aria or native elements. It is much easier to keep accessibility than to retrofit it.
+Step 2: put the rules in the prompt and in AGENTS.md. A short list beats a long one: semantic elements, visible focus, labels, 4.5:1 contrast, 24px targets, dialog focus management.
+Step 3: run an automated check. axe-core catches a meaningful share of issues automatically. With Playwright you can make it part of the test suite:
+import { test, expect } from &quot;@playwright/test&quot;;
+import AxeBuilder from &quot;@axe-core/playwright&quot;;
+
+test(&quot;pricing page has no detectable a11y violations&quot;, async ({ page }) =&gt; {
+  await page.goto(&quot;/pricing&quot;);
+  const results = await new AxeBuilder({ page })
+    .withTags([&quot;wcag2a&quot;, &quot;wcag2aa&quot;, &quot;wcag22aa&quot;])
+    .analyze();
+  expect(results.violations).toEqual([]);
+});
+
+Step 4: do a two-minute keyboard pass. Unplug the mouse. Tab through the page: can you see where you are, reach everything, open and close every menu, and never get trapped? Automated tools cannot judge focus order or whether a label makes sense.
+Step 5: listen once. Turn on VoiceOver or NVDA and read the main flow. Five minutes is enough to find unlabeled buttons and confusing headings.
+What to put in the pull-request template
+A short, repeated checklist does more than a long policy document nobody opens. Ours has five lines: keyboard pass done (yes/no), new interactive elements are native or use an accessible primitive, contrast checked in both themes, new images have alt text or are marked decorative, and axe test passes. When an agent opens the pull request, ask it to fill in the template honestly and to write NEEDS HUMAN where it could not check something itself, such as how the flow sounds in a screen reader.
+Pitfalls
+
+Treating automated scores as done. Automated tools find only part of the problems; keyboard and screen-reader checks find the rest.
+ARIA as decoration. role="button" on a div still needs keyboard handling. The first rule of ARIA is to prefer native elements.
+Hiding focus for aesthetics. Use :focus-visible instead.
+Motion without an off switch. Respect prefers-reduced-motion.
+Colour as the only signal. Red borders for errors need text too.
+
+Questions we get
+Which WCAG level should we aim for? WCAG 2.2 AA is the common target and what most accessibility laws and procurement rules refer to. Start there; individual AAA criteria are worth adopting where they are cheap, such as larger targets.
+Can the agent test with a screen reader itself? Not reliably. It can run axe, check the accessibility tree and reason about labels, but a short human pass with VoiceOver or NVDA still finds problems no tool reports, such as confusing reading order or redundant announcements.
+Does using Radix or React Aria make us compliant? It makes compliance much easier for the widgets they cover. You still own contrast, labels, headings, alt text, focus styles and the content itself.
+How do we stop regressions? Keep the axe test in CI, add a keyboard-only end-to-end test for the main flow, and include accessibility items in the pull-request template so reviewers check them every time.
+Our take
+Make accessibility structural, not a final pass. Generate on top of accessible primitives, keep the eight checks above in your prompts, run axe in CI and add an audit skill (accessibility, web-design-guidelines) to the agent's definition of done. Accessible UI is also better UI for everyone: keyboard power users, people on bright-sunlit phones, and the agent itself, which navigates pages through the same accessibility tree screen readers use.
+Checklist
+
+Actions are &lt;button&gt;, navigation is &lt;a href&gt;
+Visible :focus-visible style on every interactive element
+Icon-only controls have accessible names
+Text contrast ≥ 4.5:1 in both themes
+Targets ≥ 24×24 CSS px on mobile
+Dialogs trap focus, close on Escape, return focus
+Inputs have labels; errors linked with aria-describedby
+axe check in CI plus a manual keyboard pass
 
 References:
 - Web Content Accessibility Guidelines (WCAG) 2.2 — W3C: https://www.w3.org/TR/WCAG22/
 - ARIA Authoring Practices Guide — W3C WAI: https://www.w3.org/WAI/ARIA/apg/
 - Radix Primitives introduction — Radix: https://www.radix-ui.com/primitives/docs/overview/introduction
 - Web Interface Guidelines — Vercel: https://vercel.com/design/guidelines
+- Understanding SC 2.5.8 Target Size (Minimum) — W3C WAI: https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html
+- Dialog (Modal) pattern — W3C WAI APG: https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/
+- :focus-visible — MDN: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:focus-visible
+- axe-core — Deque: https://github.com/dequelabs/axe-core
+- Accessibility testing — Playwright: https://playwright.dev/docs/accessibility-testing
+- The WebAIM Million — WebAIM: https://webaim.org/projects/million/
 
 ## v0 in practice: from a prompt to shadcn code you can keep
 
@@ -372,21 +905,96 @@ References:
 
 ## Cult UI deep dive: tactile components with personality
 
-Cult UI is an open-source collection of shadcn-compatible components with a distinctly tactile feel: a dynamic-island style container, textured and "neumorphic-lite" buttons, expandable cards, and playful toolbars. Where Aceternity leans on spectacle, Cult UI leans on interaction feel: springs, squish and layout animation.
+Cult UI is an open-source collection of shadcn-compatible components with a distinctly tactile feel: a dynamic-island style container, textured buttons, expandable cards and playful toolbars. Where Aceternity leans on spectacle (beams, spotlights, backgrounds), Cult UI leans on interaction feel: springs, squish and layout animation. This deep dive covers what is in the collection, how to adopt a component without breaking your design system, a step-by-step integration, and where personality components go wrong.
+What kind of library it is
+Like shadcn/ui itself, Cult UI is not a package you import wholesale. You take individual components into your repository, either by copying the source from the documentation or with the shadcn CLI using the registry address shown on each component's page, and then you own the code. The components are written in React with Tailwind CSS, and most of the interesting ones use Motion for layout and spring animation.
+That model matters for AI work. Because the source lands in your repo, an agent can read how the dynamic island morphs between sizes and adapt it, instead of guessing at the props of a black box.
 Where it shines
-Small product surfaces (toolbars, popovers, status pills) that benefit from springy layout transitions.
-Portfolio and indie-product pages where personality is the point.
-Learning material: reading the source is a good way to learn layout animation with Motion.
-Keeping consistency
-Personality components drift from your system fast. Before adopting one, map its colours and radii onto your tokens, match its spring settings across components so motion feels like one family, and check keyboard support: custom toggles and islands need visible focus and proper roles.
+
+Small product surfaces that benefit from springy layout transitions: toolbars, popovers, status pills, a recording indicator that expands into controls.
+Portfolio and indie-product pages where personality is the point and one memorable interaction is worth more than a polished but generic hero.
+Learning material. Reading the source of an expanding card is one of the fastest ways to understand Motion's layout and shared-element transitions.
+
+Where it does not
+
+Dense, data-heavy tools. A squishy button in a table with 200 rows is noise.
+Frequent actions. If a control is used dozens of times a day, the spring that delights on day one slows the user down by day ten.
+Teams without a token system. Personality components bring their own colours, radii and shadows. Without tokens to map them onto, the product quickly looks like a collage.
+
+Step by step: adopting one component
+Step 1: choose one signature interaction. Decide which single interaction should carry the product's personality, for example "the status pill expands into a mini player". One is enough.
+Step 2: install it into your kit folder. Bring the component in via its docs page or the shadcn CLI and put it next to your other kit components, not inside a feature folder, so there is exactly one copy.
+Step 3: map its styling to your tokens. Replace hard-coded colours, radii and shadows with your variables:
+// before (as copied)
+&lt;div className=&quot;rounded-[28px] bg-black text-white shadow-2xl&quot;&gt;
+
+// after (mapped to your system)
+&lt;div className=&quot;rounded-[var(--radius-xl)] bg-[var(--raised)] text-[var(--ink)] border border-[var(--line)]&quot;&gt;
+
+Step 4: unify the motion. Personality components often each ship their own spring. Pick one or two spring presets and use them everywhere, so all motion feels like one family:
+// motion.ts
+export const spring = {
+  snappy: { type: &quot;spring&quot;, stiffness: 500, damping: 40 },
+  soft:   { type: &quot;spring&quot;, stiffness: 260, damping: 30 },
+} as const;
+
+Step 5: add accessibility the demo skipped. Custom toggles and islands need a real &lt;button&gt; or the correct role, visible focus, keyboard support, and aria-expanded when they open. Announce state changes with a live region if content changes without focus moving.
+Step 6: respect reduced motion. Motion's useReducedMotion hook lets you swap springs for instant or fade transitions:
+import { motion, useReducedMotion } from &quot;motion/react&quot;;
+
+export function Island({ open }: { open: boolean }) {
+  const reduce = useReducedMotion();
+  return (
+    &lt;motion.div
+      layout
+      transition={reduce ? { duration: 0 } : { type: &quot;spring&quot;, stiffness: 500, damping: 40 }}
+      aria-expanded={open}
+    /&gt;
+  );
+}
+
+Measuring whether it helps
+A signature interaction should earn its place. After shipping, watch two things for a couple of weeks: whether people use the control more or less than the plain version it replaced, and whether support questions or bug reports mention it. Record the screen on a mid-range phone as well; spring animations that feel crisp on a laptop can drop frames on cheaper hardware. If the interaction slows people down or confuses them, simplify it rather than adding a second one to compensate. Personality that costs usability is a bad trade.
+Pitfalls
+
+Mixing every clever component on one page. Each one is charming; together they compete for attention.
+Keeping demo colours. A component that looks great on the docs' black background can look out of place on your off-white surface.
+Different springs everywhere. Ten different stiffness values make the interface feel inconsistent even if users cannot say why.
+Forgetting mobile. Hover-driven reveals do nothing on touch screens; give them a tap or always-visible state.
+Not checking the licence and attribution. Open-source does not mean no conditions; read the repository's licence before shipping.
+
+How it compares
+Three shadcn-compatible collections cover different ends of the "fancy" range, and knowing which end you need saves a lot of trial and error:
+
+Aceternity UI — spectacle: animated backgrounds, beams, spotlights, 3D cards. Best for a marketing hero.
+Magic UI — polished marketing pieces: marquees, number tickers, animated borders, bento grids. Best for landing-page sections.
+Cult UI — tactile product details: islands, expandable cards, springy toolbars. Best inside the product itself.
+
+A common and effective combination is one Aceternity- or Magic UI-style moment on the marketing site and one Cult UI interaction inside the app, both mapped onto the same tokens. What does not work is all three on the same page.
+Questions we get
+Will it work with our existing shadcn setup? Generally yes, since the components follow shadcn conventions and use Tailwind and Motion. Check that your Tailwind version and Motion version match what the component expects before you start mapping styles.
+Can an agent adapt a component to our product? Yes, and it is a good use of an agent, because the source is local. Give it the component, your tokens and the spring presets, and ask for a diff rather than a rewrite.
+How do we keep it from looking like the demo? Change the content, colours and size to fit your product, and use the interaction for a real job: showing status, revealing controls, confirming an action.
 Our take
-Cult UI is a reference for the "Cult" in the house style list: tactile micro-interaction over loud backgrounds. Pick one signature interaction per product and let it recur, rather than mixing every clever component on one page.
+Cult UI is our reference for the "tactile" end of the house-style range: micro-interaction over loud backgrounds. It works best when you pick one signature interaction per product, map it onto your tokens and motion presets, and let it recur. Used that way it gives a product character; used as a grab bag it makes the product feel like a demo.
+Checklist
+
+One signature interaction chosen; others stay quiet
+Component lives once, in the kit folder
+Colours, radii and shadows mapped to tokens
+Shared spring presets used across components
+Real buttons/roles, focus, keyboard and aria-expanded added
+Reduced-motion fallback in place; licence checked
 
 References:
 - Cult UI — Cult UI: https://www.cult-ui.com/
 - nolly-studio/cult-ui — GitHub: https://github.com/nolly-studio/cult-ui
 - Layout animations — Motion: https://motion.dev/docs/react-layout-animations
 - ARIA Authoring Practices Guide — W3C: https://www.w3.org/WAI/ARIA/apg/
+- useReducedMotion — Motion: https://motion.dev/docs/react-use-reduced-motion
+- shadcn CLI — shadcn: https://ui.shadcn.com/docs/cli
+- prefers-reduced-motion — MDN: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@media/prefers-reduced-motion
+- Aceternity UI — Aceternity: https://ui.aceternity.com/
 
 ## shadcn blocks and registries: page sections as source code
 

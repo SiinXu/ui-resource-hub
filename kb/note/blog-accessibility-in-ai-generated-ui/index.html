@@ -53,24 +53,107 @@ details{border-bottom:1px solid var(--line);padding:12px 0}summary{cursor:pointe
 <p>Generated UIs look fine and fail keyboards and screen readers. Start from accessible primitives, then audit against WCAG 2.2.</p>
 </blockquote>
 
-<p>Models optimise for what a screenshot shows. Focus order, accessible names and live regions do not show up in screenshots, so they are the first things to go missing.</p>
+<p>Models optimise for what a screenshot shows. Focus order, accessible names, keyboard behaviour and live regions do not show up in screenshots, so they are the first things to go missing from generated UI. The good news is that the failures are predictable. This post lists the checks models skip most often, gives the fix for each, and shows how to make accessibility part of the agent's definition of done instead of a final pass nobody has time for.</p>
+<h2>Why generated UI fails in the same places</h2>
+<p>A generator learns from millions of pages, and a large share of the web has accessibility problems. Automated audits of popular home pages keep finding the same short list: low-contrast text, missing alternative text, empty links and buttons, missing form labels. Those are exactly the patterns a model reproduces when nobody asks for anything else. The fix is not a smarter model; it is explicit constraints plus a check the agent runs itself.</p>
 <h2>The checks models skip most</h2>
+<p><strong>1. Clickable divs.</strong> <code>&lt;div onClick&gt;</code> looks like a button and is not one: no focus, no Enter or Space, no role. Use <code>&lt;button&gt;</code> for actions and <code>&lt;a href&gt;</code> for navigation.</p>
+<!-- generated -->
+<div class=&quot;btn&quot; onclick=&quot;save()&quot;>Save</div>
+
+<!-- fixed -->
+<p><button type=&quot;button&quot; class=&quot;btn&quot; onclick=&quot;save()&quot;>Save</button></p>
+<p><strong>2. Missing focus styles.</strong> Generators often add <code>outline: none</code> to remove the browser ring because it "looks messy" in screenshots. Replace it, don't remove it:</p>
+<p>:focus { outline: none; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }</p>
+<p><code>:focus-visible</code> shows the ring for keyboard users and hides it for most mouse clicks, which is what designers usually wanted in the first place.</p>
+<p><strong>3. Icon-only buttons with no name.</strong> A trash icon is obvious to sighted users and silent to a screen reader. Add <code>aria-label="Delete project"</code> or visually hidden text.</p>
+<p><strong>4. Contrast of secondary text.</strong> Grey-on-grey captions, placeholders and disabled labels are the most common WCAG failure (success criterion 1.4.3 asks for 4.5:1 for normal text). Check both themes.</p>
+<p><strong>5. Target size.</strong> WCAG 2.2 adds 2.5.8 Target Size (Minimum): interactive targets should be at least 24×24 CSS pixels, or have enough spacing. Tiny close buttons and dense icon toolbars fail it on phones.</p>
+<p><strong>6. Dialogs without focus management.</strong> A modal must move focus inside when it opens, keep Tab inside while open, close on Escape and return focus to the trigger. The ARIA Authoring Practices Guide documents the pattern; Radix, React Aria and the native <code>&lt;dialog&gt;</code> element implement it.</p>
+<p><strong>7. Forms without labels.</strong> Placeholder text is not a label; it disappears when you type. Every input needs a <code>&lt;label for&gt;</code> or <code>aria-labelledby</code>, and errors should be linked with <code>aria-describedby</code>.</p>
+<p><strong>8. Dynamic updates nobody announces.</strong> "Saved", "3 results" and validation errors that appear without a page change need a live region (<code>role="status"</code> or <code>aria-live="polite"</code>) to be heard.</p>
+<h2>Step by step: build accessibility into the workflow</h2>
+<p><strong>Step 1: generate on accessible primitives.</strong> Ask the agent to use your kit built on Radix, React Aria or native elements. It is much easier to keep accessibility than to retrofit it.</p>
+<p><strong>Step 2: put the rules in the prompt and in AGENTS.md.</strong> A short list beats a long one: semantic elements, visible focus, labels, 4.5:1 contrast, 24px targets, dialog focus management.</p>
+<p><strong>Step 3: run an automated check.</strong> axe-core catches a meaningful share of issues automatically. With Playwright you can make it part of the test suite:</p>
+<p>import { test, expect } from &quot;@playwright/test&quot;;
+import AxeBuilder from &quot;@axe-core/playwright&quot;;</p>
+<p>test(&quot;pricing page has no detectable a11y violations&quot;, async ({ page }) =&gt; {
+  await page.goto(&quot;/pricing&quot;);
+  const results = await new AxeBuilder({ page })
+    .withTags([&quot;wcag2a&quot;, &quot;wcag2aa&quot;, &quot;wcag22aa&quot;])
+    .analyze();
+  expect(results.violations).toEqual([]);
+});</p>
+<p><strong>Step 4: do a two-minute keyboard pass.</strong> Unplug the mouse. Tab through the page: can you see where you are, reach everything, open and close every menu, and never get trapped? Automated tools cannot judge focus order or whether a label makes sense.</p>
+<p><strong>Step 5: listen once.</strong> Turn on VoiceOver or NVDA and read the main flow. Five minutes is enough to find unlabeled buttons and confusing headings.</p>
+<h2>What to put in the pull-request template</h2>
+<p>A short, repeated checklist does more than a long policy document nobody opens. Ours has five lines: keyboard pass done (yes/no), new interactive elements are native or use an accessible primitive, contrast checked in both themes, new images have alt text or are marked decorative, and axe test passes. When an agent opens the pull request, ask it to fill in the template honestly and to write NEEDS HUMAN where it could not check something itself, such as how the flow sounds in a screen reader.</p>
+<h2>Pitfalls</h2>
 <ul>
-<li><strong>Clickable divs</strong> instead of <code>&lt;button&gt;</code>. Prompt for semantic elements explicitly.</li>
-<li><strong>Missing focus-visible styles</strong>, often removed with <code>outline:none</code>.</li>
-<li><strong>Icon-only buttons</strong> without <code>aria-label</code>.</li>
-<li><strong>Contrast</strong> of grey-on-grey secondary text (WCAG 1.4.3).</li>
-<li><strong>Target size</strong>: at least 24×24 CSS px (WCAG 2.2, 2.5.8).</li>
-<li><strong>Dialogs</strong> without focus trap and Escape. Use the ARIA APG patterns or Radix and React Aria.</li>
+<li>
+<p><strong>Treating automated scores as done.</strong> Automated tools find only part of the problems; keyboard and screen-reader checks find the rest.</p>
+</li>
+<li>
+<p><strong>ARIA as decoration.</strong> <code>role="button"</code> on a div still needs keyboard handling. The first rule of ARIA is to prefer native elements.</p>
+</li>
+<li>
+<p><strong>Hiding focus for aesthetics.</strong> Use <code>:focus-visible</code> instead.</p>
+</li>
+<li>
+<p><strong>Motion without an off switch.</strong> Respect <code>prefers-reduced-motion</code>.</p>
+</li>
+<li>
+<p><strong>Colour as the only signal.</strong> Red borders for errors need text too.</p>
+</li>
 </ul>
+<h2>Questions we get</h2>
+<p><strong>Which WCAG level should we aim for?</strong> WCAG 2.2 AA is the common target and what most accessibility laws and procurement rules refer to. Start there; individual AAA criteria are worth adopting where they are cheap, such as larger targets.</p>
+<p><strong>Can the agent test with a screen reader itself?</strong> Not reliably. It can run axe, check the accessibility tree and reason about labels, but a short human pass with VoiceOver or NVDA still finds problems no tool reports, such as confusing reading order or redundant announcements.</p>
+<p><strong>Does using Radix or React Aria make us compliant?</strong> It makes compliance much easier for the widgets they cover. You still own contrast, labels, headings, alt text, focus styles and the content itself.</p>
+<p><strong>How do we stop regressions?</strong> Keep the axe test in CI, add a keyboard-only end-to-end test for the main flow, and include accessibility items in the pull-request template so reviewers check them every time.</p>
 <h2>Our take</h2>
-<p>Make accessibility structural, not a final pass. Generate on top of accessible primitives and add an audit skill (accessibility, web-design-guidelines) to the agent's definition of done.</p>
+<p>Make accessibility structural, not a final pass. Generate on top of accessible primitives, keep the eight checks above in your prompts, run axe in CI and add an audit skill (accessibility, web-design-guidelines) to the agent's definition of done. Accessible UI is also better UI for everyone: keyboard power users, people on bright-sunlit phones, and the agent itself, which navigates pages through the same accessibility tree screen readers use.</p>
+<h2>Checklist</h2>
+<ul>
+<li>
+<p>Actions are <code>&lt;button&gt;</code>, navigation is <code>&lt;a href&gt;</code></p>
+</li>
+<li>
+<p>Visible <code>:focus-visible</code> style on every interactive element</p>
+</li>
+<li>
+<p>Icon-only controls have accessible names</p>
+</li>
+<li>
+<p>Text contrast ≥ 4.5:1 in both themes</p>
+</li>
+<li>
+<p>Targets ≥ 24×24 CSS px on mobile</p>
+</li>
+<li>
+<p>Dialogs trap focus, close on Escape, return focus</p>
+</li>
+<li>
+<p>Inputs have labels; errors linked with aria-describedby</p>
+</li>
+<li>
+<p>axe check in CI plus a manual keyboard pass</p>
+</li>
+</ul>
 <h2>References</h2>
 <ul>
 <li><a href="https://www.w3.org/TR/WCAG22/">Web Content Accessibility Guidelines (WCAG) 2.2</a> — W3C</li>
 <li><a href="https://www.w3.org/WAI/ARIA/apg/">ARIA Authoring Practices Guide</a> — W3C WAI</li>
 <li><a href="https://www.radix-ui.com/primitives/docs/overview/introduction">Radix Primitives introduction</a> — Radix</li>
 <li><a href="https://vercel.com/design/guidelines">Web Interface Guidelines</a> — Vercel</li>
+<li><a href="https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html">Understanding SC 2.5.8 Target Size (Minimum)</a> — W3C WAI</li>
+<li><a href="https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/">Dialog (Modal) pattern</a> — W3C WAI APG</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:focus-visible">:focus-visible</a> — MDN</li>
+<li><a href="https://github.com/dequelabs/axe-core">axe-core</a> — Deque</li>
+<li><a href="https://playwright.dev/docs/accessibility-testing">Accessibility testing</a> — Playwright</li>
+<li><a href="https://webaim.org/projects/million/">The WebAIM Million</a> — WebAIM</li>
 </ul></article><footer class="foot wrap"><span data-l="zh-Hans">数据更新于</span><span data-l="zh-Hant">資料更新於</span><span data-l="en">Data updated</span><span data-l="ja">データ更新</span><span data-l="ko">데이터 업데이트</span><span data-l="ms">Data dikemas kini</span><span data-l="vi">Dữ liệu cập nhật</span><span data-l="fr">Données mises à jour</span><span data-l="es">Datos actualizados</span><span data-l="de">Daten aktualisiert</span> <time class="lt" datetime="2026-10-15T04:35:00Z">2026-10-15 04:35 UTC</time> · <a href="../../../llms.txt">llms.txt</a> · <a href="../../../api/resources.json">API</a> · <a href="../../../sitemap.xml">sitemap</a></footer><script>(function(){var M={'zh-cn':'zh-Hans','zh-sg':'zh-Hans','zh-tw':'zh-Hant','zh-hk':'zh-Hant','zh-mo':'zh-Hant'},A=['zh-Hans','zh-Hant','en','ja','ko','ms','vi','fr','es','de'],APP={'zh-Hans':'zh-CN','zh-Hant':'zh-TW'};
 function pick(){var q=(location.search.match(/[?&]lang=([\w-]+)/)||[])[1];if(q&&A.indexOf(q)>=0)return q;try{var s=localStorage.getItem('uihub.lang');if(s){s={'zh-CN':'zh-Hans','zh-TW':'zh-Hant'}[s]||s;if(A.indexOf(s)>=0)return s}}catch(e){}
 var n=(navigator.language||'en').toLowerCase();if(M[n])return M[n];if(/^zh-hant/.test(n))return 'zh-Hant';if(n.slice(0,2)==='zh')return 'zh-Hans';var b=n.slice(0,2);return A.indexOf(b)>=0?b:'en'}

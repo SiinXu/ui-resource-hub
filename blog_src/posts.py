@@ -120,3 +120,7 @@ dict(slug='accessibility-in-ai-generated-ui', date='2026-10-14', tags=['accessib
 
 from posts2 import POSTS2
 POSTS = POSTS + POSTS2
+
+# Deepened bodies + AI-prompt blocks (blog_src/deep/*.md). Daily posts appended to posts2.py are unaffected.
+from deep import apply as _deep_apply
+_deep_apply(POSTS)

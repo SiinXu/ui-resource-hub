@@ -53,16 +53,127 @@ details{border-bottom:1px solid var(--line);padding:12px 0}summary{cursor:pointe
 <p>Most UI motion should be under 300ms, ease-out, and skipped for frequent actions. Spectacle belongs on marketing pages, not in tools.</p>
 </blockquote>
 
-<p>Emil Kowalski's rule of thumb is blunt: if a user triggers something a hundred times a day, do not animate it. Motion is for orientation (where did this come from?), feedback (it worked) and, sparingly, delight.</p>
+<p>Emil Kowalski's rule of thumb is blunt: if a user triggers something a hundred times a day, do not animate it. Motion in an interface has three legitimate jobs: <strong>orientation</strong> (where did this come from and where did it go?), <strong>feedback</strong> (your action worked) and, sparingly, <strong>delight</strong>. Everything else is decoration that costs time on every interaction. This post gives starting numbers, a step-by-step way to add motion to a component, code you can paste, and the mistakes that make AI-generated pages feel cheap.</p>
+<h2>Decide the job before the animation</h2>
+<p>Before writing a transition, write one sentence: "This animates so the user understands ___." If you cannot fill the blank, leave it static. Some examples:</p>
+<ul>
+<li>
+<p>A dropdown scales from its trigger so the user sees which button opened it (orientation).</p>
+</li>
+<li>
+<p>A "Copied" check replaces the copy icon for 1.5 seconds (feedback).</p>
+</li>
+<li>
+<p>A hero illustration drifts slowly on first load of a marketing page (delight, once).</p>
+</li>
+</ul>
+<p>A command palette that opens 50 times a day should appear almost instantly. Keep frequent surfaces fast and spend motion on rare moments.</p>
 <h2>Numbers to start from</h2>
 <ul>
-<li>Small UI changes: 150–250ms; larger surfaces 300–400ms. Material 3's motion tokens sit in the same ranges.</li>
-<li>Enter with <strong>ease-out</strong>, so the element responds immediately; avoid ease-in for UI.</li>
-<li>Animate <code>transform</code> and <code>opacity</code> only for smooth 60fps.</li>
-<li>Respect <code>prefers-reduced-motion</code>: swap movement for fades.</li>
+<li>
+<p><strong>Duration:</strong> 150–250ms for small UI changes (tooltips, dropdowns, toggles); 300–400ms for larger surfaces (drawers, modals, page sections). Material 3's motion tokens sit in the same ranges.</p>
+</li>
+<li>
+<p><strong>Easing:</strong> enter and respond with <strong>ease-out</strong>, so the element moves immediately and settles. Avoid ease-in for UI responses; it feels like lag. Use ease-in-out for elements moving from one on-screen position to another.</p>
+</li>
+<li>
+<p><strong>Distance:</strong> small. A dropdown needs 4–8px of travel or a scale from 0.96, not a slide from off-screen.</p>
+</li>
+<li>
+<p><strong>Properties:</strong> animate <code>transform</code> and <code>opacity</code>. Animating <code>width</code>, <code>height</code>, <code>top</code> or <code>box-shadow</code> triggers layout or paint on every frame and stutters on mid-range phones.</p>
+</li>
 </ul>
+<h2>Step by step: a dropdown that feels right</h2>
+<p><strong>Step 1: set the origin.</strong> Scale from the trigger, not from the centre. Radix and similar libraries expose the transform origin as a CSS variable you can use.</p>
+<p><strong>Step 2: write enter and exit separately.</strong> Exits should be faster than entries; the user has already decided to move on.</p>
+<p>.menu {
+  transform-origin: var(--radix-dropdown-menu-content-transform-origin, top left);
+}
+.menu[data-state=&quot;open&quot;] {
+  animation: menu-in 180ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+.menu[data-state=&quot;closed&quot;] {
+  animation: menu-out 120ms ease-in;
+}
+@keyframes menu-in {
+  from { opacity: 0; transform: scale(0.96) translateY(-4px); }
+  to   { opacity: 1; transform: none; }
+}
+@keyframes menu-out {
+  to { opacity: 0; transform: scale(0.98); }
+}</p>
+<p><strong>Step 3: respect reduced motion.</strong> Some users get motion sickness from movement. Keep the opacity change, drop the movement:</p>
+<p>@media (prefers-reduced-motion: reduce) {
+  .menu[data-state=&quot;open&quot;],
+  .menu[data-state=&quot;closed&quot;] {
+    animation-name: fade;
+  }
+  @keyframes fade { from { opacity: 0; } to { opacity: 1; } }
+}</p>
+<p><strong>Step 4: test at speed.</strong> Open and close it ten times quickly. If the animation ever blocks the next click, it is too long or not interruptible.</p>
+<h2>Springs and layout animation</h2>
+<p>For elements that move between positions (a reordered list item, an expanding card, a tab indicator), springs feel more natural than fixed curves because they respond to interruption. Motion (formerly Framer Motion) makes layout animation one prop:</p>
+<p>import { motion } from &quot;motion/react&quot;;</p>
+<p><motion.div
+  layout
+  transition={{ type: &quot;spring&quot;, stiffness: 500, damping: 40 }}
+  className=&quot;tab-indicator&quot;
+/></p>
+<p>Keep springs stiff and well damped for UI. A bouncy spring is fun once and annoying the twentieth time.</p>
+<h2>One hero moment per page</h2>
+<p>Aceternity- and Magic UI-style effects (beams, spotlights, meteor showers, marquees) are designed to impress. They work as <strong>one hero moment per page</strong>. Put a spotlight on the hero and a marquee on the logo strip and an animated gradient border on every card, and the page reads as a template. When an AI generator gives you three effects, keep the one closest to your story and make the rest static.</p>
+<h2>A quick motion audit</h2>
+<p>To review an existing page, list every animation in a table with four columns: element, trigger, duration and job. Anything without a job is deleted. Anything triggered often gets shortened to near-instant. Anything over 400ms needs a reason. Then record the screen at normal speed and watch it back at half speed: you will see easing problems, overlapping animations and elements that move in different directions at once, which are hard to notice live.</p>
+<h2>Pitfalls</h2>
+<ul>
+<li>
+<p><strong>Animating frequent actions.</strong> Toggling a sidebar, switching tabs or opening a command palette should feel instant.</p>
+</li>
+<li>
+<p><strong>Ease-in on responses.</strong> The element seems to hesitate before reacting.</p>
+</li>
+<li>
+<p><strong>Long exits.</strong> Users wait for a closing modal before they can click what is behind it.</p>
+</li>
+<li>
+<p><strong>Layout properties.</strong> Height animations on accordions jank; animate a wrapper's transform or use the grid-rows <code>0fr</code> to <code>1fr</code> technique.</p>
+</li>
+<li>
+<p><strong>Ignoring reduced motion.</strong> It is a single media query and it matters to real people.</p>
+</li>
+<li>
+<p><strong>Scroll-jacking.</strong> Scroll-linked effects that change scroll speed break trackpads and screen readers.</p>
+</li>
+</ul>
+<h2>Questions we get</h2>
+<p><strong>CSS transitions or a JavaScript library?</strong> Use CSS for simple state changes (hover, open/close, fades): it is cheap and runs off the main thread for transform and opacity. Reach for a library like Motion when you need layout animation, shared-element transitions, gestures or interruptible springs.</p>
+<p><strong>How do I find janky animations?</strong> Open the browser's performance panel, record while triggering the animation, and look for long frames and layout or paint work on every frame. On a real mid-range phone, jank you cannot see on a laptop becomes obvious.</p>
+<p><strong>What about loading states?</strong> Skeletons with a subtle shimmer are fine, but the shimmer should be slow and low-contrast. Better still, show content as soon as it arrives instead of fading everything in together.</p>
+<p><strong>Should marketing pages follow the same rules?</strong> Mostly. Marketing pages can afford one bigger moment because they are visited rarely, but the same limits on duration, easing and reduced motion still apply to buttons, menus and navigation on those pages.</p>
+<p><strong>How do I brief an AI generator about motion?</strong> Give it the numbers: durations, the easing curve, "transform and opacity only", "one hero effect", and a reduced-motion requirement. Without numbers, generators default to slow, floaty transitions on everything.</p>
 <h2>Our take</h2>
-<p>Aceternity- and Magic UI-style effects (beams, spotlights, marquees) work as <strong>one hero moment per page</strong>. Stack three and the page looks like a template. Josh Comeau's transition guide is the best explanation of why easing curves matter.</p>
+<p>Good motion is mostly invisible: users notice that the interface feels responsive, not that it animates. Start every component static, add motion only where you can name its job, keep it short and ease-out, and spend your one big effect where the story needs it. Josh Comeau's interactive guide to CSS transitions is the best explanation of why easing curves matter; read it once and you will see bad easing everywhere.</p>
+<h2>Checklist</h2>
+<ul>
+<li>
+<p>Each animation has a named job: orientation, feedback or delight</p>
+</li>
+<li>
+<p>Small UI 150–250ms, large surfaces 300–400ms; exits faster than entries</p>
+</li>
+<li>
+<p>Ease-out for entering and responding</p>
+</li>
+<li>
+<p>Only transform and opacity animated</p>
+</li>
+<li>
+<p>prefers-reduced-motion handled</p>
+</li>
+<li>
+<p>At most one hero effect per page</p>
+</li>
+</ul>
 <h2>References</h2>
 <ul>
 <li><a href="https://emilkowal.ski/ui/great-animations">Great animations</a> — Emil Kowalski</li>
@@ -71,6 +182,8 @@ details{border-bottom:1px solid var(--line);padding:12px 0}summary{cursor:pointe
 <li><a href="https://www.joshwcomeau.com/animation/css-transitions/">An Interactive Guide to CSS Transitions</a> — Josh W. Comeau</li>
 <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion">prefers-reduced-motion</a> — MDN</li>
 <li><a href="https://motion.dev/docs">Motion docs</a> — Motion</li>
+<li><a href="https://web.dev/articles/animations-guide">Animations guide</a> — web.dev</li>
+<li><a href="https://motion.dev/docs/react-layout-animations">Layout animations</a> — Motion</li>
 </ul></article><footer class="foot wrap"><span data-l="zh-Hans">数据更新于</span><span data-l="zh-Hant">資料更新於</span><span data-l="en">Data updated</span><span data-l="ja">データ更新</span><span data-l="ko">데이터 업데이트</span><span data-l="ms">Data dikemas kini</span><span data-l="vi">Dữ liệu cập nhật</span><span data-l="fr">Données mises à jour</span><span data-l="es">Datos actualizados</span><span data-l="de">Daten aktualisiert</span> <time class="lt" datetime="2026-10-15T04:35:00Z">2026-10-15 04:35 UTC</time> · <a href="../../../llms.txt">llms.txt</a> · <a href="../../../api/resources.json">API</a> · <a href="../../../sitemap.xml">sitemap</a></footer><script>(function(){var M={'zh-cn':'zh-Hans','zh-sg':'zh-Hans','zh-tw':'zh-Hant','zh-hk':'zh-Hant','zh-mo':'zh-Hant'},A=['zh-Hans','zh-Hant','en','ja','ko','ms','vi','fr','es','de'],APP={'zh-Hans':'zh-CN','zh-Hant':'zh-TW'};
 function pick(){var q=(location.search.match(/[?&]lang=([\w-]+)/)||[])[1];if(q&&A.indexOf(q)>=0)return q;try{var s=localStorage.getItem('uihub.lang');if(s){s={'zh-CN':'zh-Hans','zh-TW':'zh-Hant'}[s]||s;if(A.indexOf(s)>=0)return s}}catch(e){}
 var n=(navigator.language||'en').toLowerCase();if(M[n])return M[n];if(/^zh-hant/.test(n))return 'zh-Hant';if(n.slice(0,2)==='zh')return 'zh-Hans';var b=n.slice(0,2);return A.indexOf(b)>=0?b:'en'}

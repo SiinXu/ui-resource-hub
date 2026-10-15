@@ -728,8 +728,8 @@
     "de": "shadcn-kompatible Komponenten mit physischem Gefühl."
    },
    "reading_minutes": {
-    "en": 2,
-    "zh": 2
+    "en": 6,
+    "zh": 8
    },
    "cover": "https://siinxu.github.io/ui-resource-hub/blog/img/cult-ui-deep-dive-cover.webp",
    "references": [
@@ -752,6 +752,26 @@
      "title": "ARIA Authoring Practices Guide",
      "by": "W3C",
      "url": "https://www.w3.org/WAI/ARIA/apg/"
+    },
+    {
+     "title": "useReducedMotion",
+     "by": "Motion",
+     "url": "https://motion.dev/docs/react-use-reduced-motion"
+    },
+    {
+     "title": "shadcn CLI",
+     "by": "shadcn",
+     "url": "https://ui.shadcn.com/docs/cli"
+    },
+    {
+     "title": "prefers-reduced-motion",
+     "by": "MDN",
+     "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@media/prefers-reduced-motion"
+    },
+    {
+     "title": "Aceternity UI",
+     "by": "Aceternity",
+     "url": "https://ui.aceternity.com/"
     }
    ]
   },
@@ -1251,8 +1271,8 @@
     "de": "Sieht gut aus, scheitert an Tastatur und Screenreader. Mit barrierefreien Primitives starten, nach WCAG 2.2 prüfen."
    },
    "reading_minutes": {
-    "en": 2,
-    "zh": 2
+    "en": 6,
+    "zh": 9
    },
    "cover": "https://siinxu.github.io/ui-resource-hub/blog/img/accessibility-in-ai-generated-ui-cover.webp",
    "references": [
@@ -1275,6 +1295,36 @@
      "title": "Web Interface Guidelines",
      "by": "Vercel",
      "url": "https://vercel.com/design/guidelines"
+    },
+    {
+     "title": "Understanding SC 2.5.8 Target Size (Minimum)",
+     "by": "W3C WAI",
+     "url": "https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html"
+    },
+    {
+     "title": "Dialog (Modal) pattern",
+     "by": "W3C WAI APG",
+     "url": "https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/"
+    },
+    {
+     "title": ":focus-visible",
+     "by": "MDN",
+     "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:focus-visible"
+    },
+    {
+     "title": "axe-core",
+     "by": "Deque",
+     "url": "https://github.com/dequelabs/axe-core"
+    },
+    {
+     "title": "Accessibility testing",
+     "by": "Playwright",
+     "url": "https://playwright.dev/docs/accessibility-testing"
+    },
+    {
+     "title": "The WebAIM Million",
+     "by": "WebAIM",
+     "url": "https://webaim.org/projects/million/"
     }
    ]
   },
@@ -1314,8 +1364,8 @@
     "de": "Eine zweite Palette, keine Invertierung. Semantische Tokens, hellere Flächen für Elevation."
    },
    "reading_minutes": {
-    "en": 2,
-    "zh": 2
+    "en": 6,
+    "zh": 8
    },
    "cover": "https://siinxu.github.io/ui-resource-hub/blog/img/dark-mode-done-right-cover.webp",
    "references": [
@@ -1338,6 +1388,31 @@
      "title": "Dark mode",
      "by": "Tailwind CSS",
      "url": "https://tailwindcss.com/docs/dark-mode"
+    },
+    {
+     "title": "color-scheme",
+     "by": "MDN",
+     "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/color-scheme"
+    },
+    {
+     "title": "light-dark()",
+     "by": "MDN",
+     "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/color_value/light-dark"
+    },
+    {
+     "title": "Understanding SC 1.4.3 Contrast (Minimum)",
+     "by": "W3C WAI",
+     "url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html"
+    },
+    {
+     "title": "Color system overview — Material 3",
+     "by": "Google",
+     "url": "https://m3.material.io/styles/color/system/overview"
+    },
+    {
+     "title": "prefers-contrast",
+     "by": "MDN",
+     "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@media/prefers-contrast"
     }
    ]
   },
@@ -1376,8 +1451,8 @@
     "de": "Unter 300 ms, ease-out, und keine Animation für häufige Aktionen."
    },
    "reading_minutes": {
-    "en": 2,
-    "zh": 2
+    "en": 6,
+    "zh": 8
    },
    "cover": "https://siinxu.github.io/ui-resource-hub/blog/img/motion-that-feels-right-cover.webp",
    "references": [
@@ -1410,6 +1485,16 @@
      "title": "Motion docs",
      "by": "Motion",
      "url": "https://motion.dev/docs"
+    },
+    {
+     "title": "Animations guide",
+     "by": "web.dev",
+     "url": "https://web.dev/articles/animations-guide"
+    },
+    {
+     "title": "Layout animations",
+     "by": "Motion",
+     "url": "https://motion.dev/docs/react-layout-animations"
     }
    ]
   },
@@ -1449,8 +1534,8 @@
     "de": "Radix-Verhalten, eigene Styles, eigener Code. Compound Components machen KI-Änderungen sicherer."
    },
    "reading_minutes": {
-    "en": 2,
-    "zh": 2
+    "en": 6,
+    "zh": 9
    },
    "cover": "https://siinxu.github.io/ui-resource-hub/blog/img/component-composition-cover.webp",
    "references": [
@@ -1473,6 +1558,26 @@
      "title": "Atomic Design, chapter 2",
      "by": "Brad Frost",
      "url": "https://atomicdesign.bradfrost.com/chapter-2/"
+    },
+    {
+     "title": "Composition (asChild)",
+     "by": "Radix",
+     "url": "https://www.radix-ui.com/primitives/docs/guides/composition"
+    },
+    {
+     "title": "React Aria",
+     "by": "Adobe",
+     "url": "https://react-aria.adobe.com/"
+    },
+    {
+     "title": "Ark UI",
+     "by": "Chakra Systems",
+     "url": "https://ark-ui.com/"
+    },
+    {
+     "title": "class-variance-authority",
+     "by": "Joe Bell",
+     "url": "https://cva.style/"
     }
    ]
   },
@@ -1512,8 +1617,8 @@
     "de": "frontend-design, taste-skill, impeccable: Design-Meinungen als Dateien. So kombiniert man sie."
    },
    "reading_minutes": {
-    "en": 2,
-    "zh": 2
+    "en": 6,
+    "zh": 7
    },
    "cover": "https://siinxu.github.io/ui-resource-hub/blog/img/taste-and-skills-for-agents-cover.webp",
    "references": [
@@ -1541,6 +1646,16 @@
      "title": "Web Interface Guidelines",
      "by": "Vercel",
      "url": "https://vercel.com/design/guidelines"
+    },
+    {
+     "title": "Agent Skills overview",
+     "by": "Anthropic",
+     "url": "https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview"
+    },
+    {
+     "title": "Skills in Claude Code",
+     "by": "Anthropic",
+     "url": "https://code.claude.com/docs/en/skills"
     }
    ]
   },
@@ -1580,8 +1695,8 @@
     "de": "Pixelgenauer Export erzeugt Wegwerfcode. Registry und Tokens per MCP übergeben."
    },
    "reading_minutes": {
-    "en": 2,
-    "zh": 2
+    "en": 6,
+    "zh": 8
    },
    "cover": "https://siinxu.github.io/ui-resource-hub/blog/img/design-to-code-with-ai-cover.webp",
    "references": [
@@ -1604,6 +1719,31 @@
      "title": "Tailwind CSS dark mode docs",
      "by": "Tailwind Labs",
      "url": "https://tailwindcss.com/docs/dark-mode"
+    },
+    {
+     "title": "Guide to the Figma MCP server",
+     "by": "Figma Help Center",
+     "url": "https://help.figma.com/hc/en-us/articles/32132100833559-Guide-to-the-Figma-MCP-server"
+    },
+    {
+     "title": "Code Connect",
+     "by": "Figma Help Center",
+     "url": "https://help.figma.com/hc/en-us/articles/23920389749655-Code-Connect"
+    },
+    {
+     "title": "Design Tokens Community Group",
+     "by": "W3C Community Group",
+     "url": "https://www.designtokens.org/"
+    },
+    {
+     "title": "Style Dictionary",
+     "by": "Style Dictionary",
+     "url": "https://styledictionary.com/"
+    },
+    {
+     "title": "shadcn CLI",
+     "by": "shadcn",
+     "url": "https://ui.shadcn.com/docs/cli"
     }
    ]
   },
@@ -1642,8 +1782,8 @@
     "de": "„Modern und clean“ sagt nichts. Nenne Layout, Tokens, Zustände, Inhalt und Verbote."
    },
    "reading_minutes": {
-    "en": 2,
-    "zh": 2
+    "en": 6,
+    "zh": 7
    },
    "cover": "https://siinxu.github.io/ui-resource-hub/blog/img/prompts-for-ui-cover.webp",
    "references": [
@@ -1666,6 +1806,11 @@
      "title": "Refactoring UI",
      "by": "Adam Wathan & Steve Schoger",
      "url": "https://www.refactoringui.com"
+    },
+    {
+     "title": "Prompt engineering overview",
+     "by": "Anthropic",
+     "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview"
     }
    ]
   },
