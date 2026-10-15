@@ -2,7 +2,7 @@
 
 > shadcn-compatible components that feel physical: dynamic islands, textured buttons, expandable cards. How to borrow personality without breaking consistency.
 
-Blog post: https://siinxu.github.io/ui-resource-hub/blog/cult-ui-deep-dive/
+Blog post: <https://siinxu.github.io/ui-resource-hub/blog/cult-ui-deep-dive/>
 
 Cult UI is an open-source collection of shadcn-compatible components with a distinctly tactile feel: a dynamic-island style container, textured and "neumorphic-lite" buttons, expandable cards, and playful toolbars. Where Aceternity leans on spectacle, Cult UI leans on **interaction feel**: springs, squish and layout animation.
 

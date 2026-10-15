@@ -2,7 +2,7 @@
 
 > Generators default to one sans at three sizes. A type scale, a second typeface, tighter tracking on display sizes and real line lengths fix most of it.
 
-Blog post: https://siinxu.github.io/ui-resource-hub/blog/typography-for-ai-generated-ui/
+Blog post: <https://siinxu.github.io/ui-resource-hub/blog/typography-for-ai-generated-ui/>
 
 Ask any generator for a landing page and you will usually get one sans-serif at body, heading and caption sizes. Typography is the cheapest lever to move a page away from that default, and it is easy to specify precisely in a prompt.
 

@@ -2,7 +2,7 @@
 
 > AI tools love to generate twelve charts. Good dashboards answer three questions in order: is it OK, what changed, why. A layout and a component list for each.
 
-Blog post: https://siinxu.github.io/ui-resource-hub/blog/dashboard-design-patterns/
+Blog post: <https://siinxu.github.io/ui-resource-hub/blog/dashboard-design-patterns/>
 
 Ask a generator for an "analytics dashboard" and you will likely get a sidebar, four stat cards and a grid of charts of equal weight. It looks complete and answers nothing. A better structure follows the questions a user actually asks, in order.
 

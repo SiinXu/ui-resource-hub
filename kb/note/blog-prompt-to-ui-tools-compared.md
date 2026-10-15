@@ -2,7 +2,7 @@
 
 > Not a leaderboard: a decision guide by what you are shipping, where the output lives, and how much design control you need.
 
-Blog post: https://siinxu.github.io/ui-resource-hub/blog/prompt-to-ui-tools-compared/
+Blog post: <https://siinxu.github.io/ui-resource-hub/blog/prompt-to-ui-tools-compared/>
 
 All five tools turn words into interface, but they are built for different jobs. Comparing them on "which looks best" is unreliable because output depends mostly on your prompt. Compare them on what they produce and where it goes.
 

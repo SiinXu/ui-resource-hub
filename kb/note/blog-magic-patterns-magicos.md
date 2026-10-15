@@ -2,7 +2,7 @@
 
 > Launched 13 Oct 2026: one coordinator chat spawns parallel design threads on a shared canvas. What it fixes (lost context) and when a single design is still better.
 
-Blog post: https://siinxu.github.io/ui-resource-hub/blog/magic-patterns-magicos/
+Blog post: <https://siinxu.github.io/ui-resource-hub/blog/magic-patterns-magicos/>
 
 Magic Patterns started as a prompt-to-UI tool aimed at product teams (it launched on Hacker News as YC W23, intentionally front-end only). On 13 October 2026 it introduced MagicOS, which reorganises the product around an infinite canvas rather than one chat and one preview.
 

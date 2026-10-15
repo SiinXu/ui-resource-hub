@@ -9,7 +9,7 @@ from images import IMAGES
 BASE = 'https://siinxu.github.io/ui-resource-hub/'
 LANGS = [('zh-Hans','简体中文','zh'),('zh-Hant','繁體中文','zht'),('en','English','en'),('ja','日本語','ja'),('ko','한국어','ko'),('ms','Bahasa Melayu','ms'),('vi','Tiếng Việt','vi'),('fr','Français','fr'),('es','Español','es'),('de','Deutsch','de')]
 D = json.load(open(os.path.join(ROOT,'data.json'), encoding='utf-8'))
-ITEMS = D['items']; UPD = (D.get('updatedAt') or D['generated']).replace('T',' ').replace('Z',' UTC'); TODAY = D['generated']
+ITEMS = D['items']; UPD_ISO = re.sub(r'T(\d\d:\d\d)Z$', r'T\1:00Z', D.get('updatedAt') or D['generated']); UPD = (D.get('updatedAt') or D['generated']).replace('T',' ').replace('Z',' UTC'); TODAY = D['generated']
 E = html.escape
 def w(path, s):
     p = os.path.join(ROOT, path); os.makedirs(os.path.dirname(p), exist_ok=True); open(p,'w',encoding='utf-8').write(s)
@@ -53,14 +53,14 @@ h1{font:400 clamp(36px,6vw,64px)/1.02 var(--serif);letter-spacing:-.02em;margin:
 .pc:hover{border-color:var(--line2);transform:translateY(-2px)}.pb{display:flex;flex-direction:column;gap:8px;padding:16px 18px 18px;flex:1}.cv{width:100%;height:auto;flex:none;aspect-ratio:1200/630;object-fit:cover;border-bottom:1px solid var(--line);background:#07080d}
 @media(min-width:900px){.pc:first-child{grid-column:1/-1;flex-direction:row;align-items:center}.pc:first-child .cv{width:58%;height:auto;flex:none;border-bottom:0;border-right:1px solid var(--line)}.pc:first-child .pb{justify-content:center;padding:28px}.pc:first-child h2{font-size:34px}}
 .posts{grid-template-columns:repeat(auto-fill,minmax(290px,1fr))!important}
-figure{margin:26px 0}figure img{width:100%;height:auto;border-radius:14px;border:1px solid var(--line2);background:#07080d;display:block}figcaption{font-size:12.5px;color:var(--ink3);margin-top:8px;line-height:1.5}figcaption a{color:var(--acc)}.hc{margin:22px 0 8px}
+figure{margin:26px 0}figure img{width:100%;height:auto;border-radius:14px;border:1px solid var(--line2);background:var(--mat);display:block}figcaption{font-size:12.5px;color:var(--ink3);margin-top:8px;line-height:1.5}figcaption a{color:var(--acc)}.hc{margin:22px 0 8px}
 .pc .no{font:500 12px var(--mono);color:var(--ink3)}.pc h2{font:400 23px/1.15 var(--serif);margin:0;letter-spacing:-.01em}.pc p{margin:0;color:var(--ink2);font-size:14px}
 .tg{display:flex;gap:6px;flex-wrap:wrap}.tg span{font:500 11px var(--mono);color:var(--ink3);border:1px solid var(--line);padding:2px 7px;border-radius:99px}
 article{max-width:720px;margin:0 auto;padding:48px 20px 72px}article h1{max-width:none;font-size:clamp(32px,5vw,50px)}
 article h2{font:400 26px/1.2 var(--serif);margin:36px 0 10px}article p,article li{color:var(--ink2)}article strong{color:var(--ink)}
 pre{background:var(--mat);border:1px solid var(--line);border-radius:12px;padding:14px 16px;overflow:auto;font:12.5px/1.6 var(--mono)}code{font-family:var(--mono);font-size:.9em}
 .refs{margin-top:40px;padding-top:18px;border-top:1px solid var(--line)}.refs li{margin:4px 0}.refs a{color:var(--acc)}
-.meta{font:500 12px var(--mono);color:var(--ink3);margin:0 0 6px}.note{font-size:13px;color:var(--ink3)}
+.meta{font:500 12px var(--mono);color:var(--ink3);margin:0 0 6px}.meta a{display:inline-block;padding:7px 0}@media(max-width:600px){.tg span{padding:5px 9px}}.note{font-size:13px;color:var(--ink3)}
 .grid2{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));margin:18px 0}
 .box{padding:20px;border-radius:16px;background:var(--surf);border:1px solid var(--line)}.box h3{margin:0 0 6px;font-size:16px}.box p{margin:0;color:var(--ink2);font-size:14px}
 .box code,.sec code{background:var(--mat);padding:1px 6px;border-radius:6px}.sec{padding:8px 0 30px}.sec h2{font:400 30px var(--serif);margin:26px 0 8px}
@@ -95,12 +95,15 @@ SCRIPT = """<script>(function(){var M={'zh-cn':'zh-Hans','zh-sg':'zh-Hans','zh-t
 function pick(){var q=(location.search.match(/[?&]lang=([\\w-]+)/)||[])[1];if(q&&A.indexOf(q)>=0)return q;try{var s=localStorage.getItem('uihub.lang');if(s){s={'zh-CN':'zh-Hans','zh-TW':'zh-Hant'}[s]||s;if(A.indexOf(s)>=0)return s}}catch(e){}
 var n=(navigator.language||'en').toLowerCase();if(M[n])return M[n];if(/^zh-hant/.test(n))return 'zh-Hant';if(n.slice(0,2)==='zh')return 'zh-Hans';var b=n.slice(0,2);return A.indexOf(b)>=0?b:'en'}
 function set(l){document.documentElement.lang=l;var st=document.getElementById('lst');if(!st){st=document.createElement('style');st.id='lst';document.head.appendChild(st)}st.textContent='[data-l="'+l+'"]{display:revert}';document.getElementById('ls').value=l;try{localStorage.setItem('uihub.lang',APP[l]||l)}catch(e){}}
-set(pick());document.getElementById('ls').onchange=function(){set(this.value)};
+function lt(){var L=document.documentElement.lang,loc=APP[L]||L;document.querySelectorAll('time.lt').forEach(function(t){var d=new Date(t.getAttribute('datetime'));if(isNaN(d))return;try{t.textContent=d.toLocaleString(loc,{year:'numeric',month:'short',day:'numeric',hour:'2-digit',minute:'2-digit',timeZoneName:'short'})}catch(e){}})}
+set(pick());lt();document.getElementById('ls').onchange=function(){set(this.value);lt();document.dispatchEvent(new Event('uihub:lang'))};
 document.getElementById('th').onclick=function(){var r=document.documentElement,n=r.dataset.theme==='dark'?'light':'dark';r.dataset.theme=n;try{localStorage.setItem('uihub.theme5',n)}catch(e){}}})();</script>"""
 
 def foot(root):
-    return f'<footer class="foot wrap">{ml("upd")} {E(UPD)} · <a href="{root}llms.txt">llms.txt</a> · <a href="{root}api/resources.json">API</a> · <a href="{root}sitemap.xml">sitemap</a></footer>'
+    return f'<footer class="foot wrap">{ml("upd")} <time class="lt" datetime="{E(UPD_ISO)}">{E(UPD)}</time> · <a href="{root}llms.txt">llms.txt</a> · <a href="{root}api/resources.json">API</a> · <a href="{root}sitemap.xml">sitemap</a></footer>'
 
+try: IMG_SIZES = json.load(open(os.path.join(ROOT,'blog_src','img_sizes.json')))
+except Exception: IMG_SIZES = {}
 ORG = {'@type':'Organization','name':'UI Hub','url':BASE}
 def fig(slug, n, im, k, root):
     zh = k in ('zh','zht'); alt = im['alt']['zh' if zh else 'en']; src = f'{root}blog/img/{slug}-{n}.webp'
@@ -110,7 +113,12 @@ def fig(slug, n, im, k, root):
                f'Screenshot: {E(im["site"])} (<a href="{E(im["url"])}" rel="noopener" target="_blank">{E(host)}</a>), captured 2026-10-14. © the original site.')
     else:
         cap = ('示意图：UI Hub 原创，CC BY 4.0' if zh else 'Diagram: original by UI Hub, CC BY 4.0')
-    return f'<figure><img src="{src}" alt="{E(alt)}" loading="lazy" decoding="async" width="1200" height="675"><figcaption>{E(alt)} · {cap}</figcaption></figure>'
+    iw, ih = IMG_SIZES.get(f'{slug}-{n}') or (None, None)
+    if not iw:
+        try:
+            from PIL import Image as _I; iw, ih = _I.open(os.path.join(ROOT,'blog','img',f'{slug}-{n}.webp')).size
+        except Exception: iw, ih = 1200, 675
+    return f'<figure><img src="{src}" alt="{E(alt)}" loading="lazy" decoding="async" width="{iw}" height="{ih}"><figcaption>{E(alt)} · {cap}</figcaption></figure>'
 def with_figs(body, slug, k, root):
     ims = IMAGES[slug]['inline']; F = [fig(slug, i+1, im, k, root) for i, im in enumerate(ims)]
     a = body.index('</p>')+4; body = body[:a]+F[0]+body[a:]
@@ -274,7 +282,8 @@ if 'id="upd"' not in s:
     pass
 if 'function updTxt' not in s:
     s = s.replace('<dl class="hstats" id="hstats"></dl>', '<dl class="hstats" id="hstats"></dl>\n      <p class="upd" id="upd" style="margin:14px 0 0;font:500 12px/1 var(--mono);color:var(--ink3)"></p>', 1)
-    s = s.replace('</script>\n</body>', "function updTxt(){var e=document.getElementById('upd');if(!e||!window.UI_DATA)return;var I=window.UI_I18N||{},l=document.documentElement.lang,d=I[l]||I.en||{};e.textContent=(d.updated||'Updated')+' '+(UI_DATA.updatedAt||UI_DATA.generated).replace('T',' ').replace('Z',' UTC')}updTxt();var _ls=document.getElementById('langSel');_ls&&_ls.addEventListener('change',function(){setTimeout(updTxt,0)});\n</script>\n</body>", 1)
+    s = s.replace('</script>\n</body>', "function updTxt(){var e=document.getElementById('upd');if(!e||!window.UI_DATA)return;var I=window.UI_I18N||{},l=document.documentElement.lang,d=I[l]||I.en||{};var r=UI_DATA.updatedAt||UI_DATA.generated,x=new Date(r.length===17&&r.slice(-1)==='Z'?r.slice(0,16)+':00Z':r),z={'zh-Hans':'zh-CN','zh-Hant':'zh-TW'}[l]||l,v=isNaN(x)?r:x.toLocaleString(z,{year:'numeric',month:'short',day:'numeric',hour:'2-digit',minute:'2-digit',timeZoneName:'short'});e.textContent=(d.updated||'Updated')+' '+v}updTxt();var _ls=document.getElementById('langSel');_ls&&_ls.addEventListener('change',function(){setTimeout(updTxt,0)});\n</script>\n</body>", 1)
+s = s.replace("e.textContent=(d.updated||'Updated')+' '+(UI_DATA.updatedAt||UI_DATA.generated).replace('T',' ').replace('Z',' UTC')}", "var r=UI_DATA.updatedAt||UI_DATA.generated,x=new Date(r.length===17&&r.slice(-1)==='Z'?r.slice(0,16)+':00Z':r),z={'zh-Hans':'zh-CN','zh-Hant':'zh-TW'}[l]||l,v=isNaN(x)?r:x.toLocaleString(z,{year:'numeric',month:'short',day:'numeric',hour:'2-digit',minute:'2-digit',timeZoneName:'short'});e.textContent=(d.updated||'Updated')+' '+v}")
 s = re.sub(r'\?v=5"', '?v=6"', s)
 open(ip,'w',encoding='utf-8').write(s)
 

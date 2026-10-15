@@ -2,7 +2,7 @@
 
 > Most UI motion should be under 300ms, ease-out, and skipped for frequent actions. Spectacle belongs on marketing pages, not in tools.
 
-Blog post: https://siinxu.github.io/ui-resource-hub/blog/motion-that-feels-right/
+Blog post: <https://siinxu.github.io/ui-resource-hub/blog/motion-that-feels-right/>
 
 Emil Kowalski's rule of thumb is blunt: if a user triggers something a hundred times a day, do not animate it. Motion is for orientation (where did this come from?), feedback (it worked) and, sparingly, delight.
 

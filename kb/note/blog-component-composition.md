@@ -2,7 +2,7 @@
 
 > Radix behaviour, your styles, code you own. Compound components keep APIs small and make AI edits safer.
 
-Blog post: https://siinxu.github.io/ui-resource-hub/blog/component-composition/
+Blog post: <https://siinxu.github.io/ui-resource-hub/blog/component-composition/>
 
 The old model was a styled npm package you fought with overrides. shadcn/ui flipped it: behaviour and accessibility from Radix primitives, styling in Tailwind, and the source copied into your repo.
 

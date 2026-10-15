@@ -1,0 +1,418 @@
+{
+"accessibility-in-ai-generated-ui-1": [
+1200,
+675
+],
+"accessibility-in-ai-generated-ui-2": [
+1280,
+800
+],
+"accessibility-in-ai-generated-ui-3": [
+1280,
+800
+],
+"accessibility-in-ai-generated-ui-cover": [
+1200,
+630
+],
+"aceternity-ui-deep-dive-1": [
+1280,
+800
+],
+"aceternity-ui-deep-dive-2": [
+1280,
+800
+],
+"aceternity-ui-deep-dive-3": [
+1200,
+675
+],
+"aceternity-ui-deep-dive-cover": [
+1200,
+630
+],
+"ai-assisted-ui-design-workflow-1": [
+1280,
+800
+],
+"ai-assisted-ui-design-workflow-2": [
+1200,
+675
+],
+"ai-assisted-ui-design-workflow-3": [
+1280,
+800
+],
+"ai-assisted-ui-design-workflow-cover": [
+1200,
+630
+],
+"claude-cursor-design-skills-1": [
+1280,
+800
+],
+"claude-cursor-design-skills-2": [
+1200,
+675
+],
+"claude-cursor-design-skills-3": [
+1280,
+800
+],
+"claude-cursor-design-skills-cover": [
+1200,
+630
+],
+"claude-design-everywhere-1": [
+1280,
+800
+],
+"claude-design-everywhere-2": [
+1200,
+675
+],
+"claude-design-everywhere-3": [
+1280,
+800
+],
+"claude-design-everywhere-cover": [
+1200,
+630
+],
+"component-composition-1": [
+1200,
+675
+],
+"component-composition-2": [
+1280,
+800
+],
+"component-composition-3": [
+1280,
+800
+],
+"component-composition-cover": [
+1200,
+630
+],
+"cult-ui-deep-dive-1": [
+1280,
+800
+],
+"cult-ui-deep-dive-2": [
+1200,
+675
+],
+"cult-ui-deep-dive-3": [
+1280,
+800
+],
+"cult-ui-deep-dive-cover": [
+1200,
+630
+],
+"dark-mode-done-right-1": [
+1200,
+675
+],
+"dark-mode-done-right-2": [
+1280,
+800
+],
+"dark-mode-done-right-3": [
+1280,
+800
+],
+"dark-mode-done-right-cover": [
+1200,
+630
+],
+"dashboard-design-patterns-1": [
+1200,
+675
+],
+"dashboard-design-patterns-2": [
+1280,
+800
+],
+"dashboard-design-patterns-3": [
+1280,
+800
+],
+"dashboard-design-patterns-cover": [
+1200,
+630
+],
+"design-to-code-with-ai-1": [
+1200,
+675
+],
+"design-to-code-with-ai-2": [
+1280,
+800
+],
+"design-to-code-with-ai-3": [
+1280,
+800
+],
+"design-to-code-with-ai-cover": [
+1200,
+630
+],
+"design-tokens-for-agents-1": [
+1200,
+675
+],
+"design-tokens-for-agents-2": [
+1280,
+800
+],
+"design-tokens-for-agents-3": [
+1280,
+800
+],
+"design-tokens-for-agents-cover": [
+1200,
+630
+],
+"figma-make-and-figma-agent-1": [
+1280,
+800
+],
+"figma-make-and-figma-agent-2": [
+1200,
+675
+],
+"figma-make-and-figma-agent-3": [
+1280,
+800
+],
+"figma-make-and-figma-agent-cover": [
+1200,
+630
+],
+"landing-page-teardown-linear-vercel-1": [
+1280,
+800
+],
+"landing-page-teardown-linear-vercel-2": [
+1280,
+800
+],
+"landing-page-teardown-linear-vercel-3": [
+1200,
+675
+],
+"landing-page-teardown-linear-vercel-cover": [
+1200,
+630
+],
+"lovable-bolt-prompt-to-app-1": [
+1280,
+800
+],
+"lovable-bolt-prompt-to-app-2": [
+1200,
+675
+],
+"lovable-bolt-prompt-to-app-3": [
+1280,
+800
+],
+"lovable-bolt-prompt-to-app-cover": [
+1200,
+630
+],
+"magic-patterns-magicos-1": [
+1280,
+800
+],
+"magic-patterns-magicos-2": [
+1200,
+675
+],
+"magic-patterns-magicos-3": [
+1280,
+800
+],
+"magic-patterns-magicos-cover": [
+1200,
+630
+],
+"magic-ui-deep-dive-1": [
+1280,
+800
+],
+"magic-ui-deep-dive-2": [
+1200,
+675
+],
+"magic-ui-deep-dive-3": [
+1280,
+800
+],
+"magic-ui-deep-dive-cover": [
+1200,
+630
+],
+"motion-that-feels-right-1": [
+1200,
+675
+],
+"motion-that-feels-right-2": [
+1280,
+800
+],
+"motion-that-feels-right-3": [
+1280,
+800
+],
+"motion-that-feels-right-cover": [
+1200,
+630
+],
+"oklch-color-and-dark-mode-1": [
+1280,
+800
+],
+"oklch-color-and-dark-mode-2": [
+1200,
+675
+],
+"oklch-color-and-dark-mode-3": [
+1280,
+800
+],
+"oklch-color-and-dark-mode-cover": [
+1200,
+630
+],
+"prompt-to-ui-tools-compared-1": [
+1200,
+675
+],
+"prompt-to-ui-tools-compared-2": [
+1200,
+675
+],
+"prompt-to-ui-tools-compared-3": [
+1280,
+800
+],
+"prompt-to-ui-tools-compared-cover": [
+1200,
+630
+],
+"prompts-for-ui-1": [
+1200,
+675
+],
+"prompts-for-ui-2": [
+1280,
+800
+],
+"prompts-for-ui-3": [
+1280,
+800
+],
+"prompts-for-ui-cover": [
+1200,
+630
+],
+"shadcn-blocks-deep-dive-1": [
+1280,
+800
+],
+"shadcn-blocks-deep-dive-2": [
+1200,
+675
+],
+"shadcn-blocks-deep-dive-3": [
+1280,
+800
+],
+"shadcn-blocks-deep-dive-cover": [
+1200,
+630
+],
+"taste-and-skills-for-agents-1": [
+1280,
+800
+],
+"taste-and-skills-for-agents-2": [
+1200,
+675
+],
+"taste-and-skills-for-agents-3": [
+1280,
+800
+],
+"taste-and-skills-for-agents-cover": [
+1200,
+630
+],
+"tutorial-agent-builds-landing-with-ui-hub-1": [
+1280,
+800
+],
+"tutorial-agent-builds-landing-with-ui-hub-2": [
+1200,
+675
+],
+"tutorial-agent-builds-landing-with-ui-hub-3": [
+1280,
+800
+],
+"tutorial-agent-builds-landing-with-ui-hub-cover": [
+1200,
+630
+],
+"typography-for-ai-generated-ui-1": [
+1200,
+675
+],
+"typography-for-ai-generated-ui-2": [
+1280,
+800
+],
+"typography-for-ai-generated-ui-3": [
+1280,
+800
+],
+"typography-for-ai-generated-ui-cover": [
+1200,
+630
+],
+"v0-prompt-to-shadcn-1": [
+1280,
+800
+],
+"v0-prompt-to-shadcn-2": [
+1200,
+675
+],
+"v0-prompt-to-shadcn-3": [
+1280,
+800
+],
+"v0-prompt-to-shadcn-cover": [
+1200,
+630
+],
+"weekly-roundup-2026-w42-1": [
+1280,
+800
+],
+"weekly-roundup-2026-w42-2": [
+1200,
+675
+],
+"weekly-roundup-2026-w42-3": [
+1280,
+800
+],
+"weekly-roundup-2026-w42-cover": [
+1200,
+630
+]
+}

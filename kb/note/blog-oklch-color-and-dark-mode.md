@@ -2,7 +2,7 @@
 
 > OKLCH keeps perceived lightness consistent across hues, so you can generate scales and dark themes by math instead of eyeballing. Tailwind v4 uses it by default.
 
-Blog post: https://siinxu.github.io/ui-resource-hub/blog/oklch-color-and-dark-mode/
+Blog post: <https://siinxu.github.io/ui-resource-hub/blog/oklch-color-and-dark-mode/>
 
 OKLCH is a CSS colour space (CSS Color Level 4) defined by lightness, chroma and hue. Its lightness channel tracks perceived brightness far better than HSL's, so a yellow and a blue at the same L actually look similarly light. Tailwind CSS v4 switched its default palette to OKLCH, and all modern browsers support `oklch()`.
 

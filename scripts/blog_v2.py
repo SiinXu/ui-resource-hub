@@ -46,7 +46,10 @@ EXTRA_CSS = """.tools{display:flex;flex-wrap:wrap;gap:10px;align-items:center;ma
 .feat .pc:first-child{grid-column:1/-1}@media(min-width:900px){.feat .pc:first-child{flex-direction:row;align-items:center}.feat .pc:first-child .cv{width:58%;border-bottom:0;border-right:1px solid var(--line)}.feat .pc:first-child h2{font-size:34px}.feat .pc:first-child .pb{padding:28px}}
 .empty{color:var(--ink3);padding:30px 0;display:none}
 .snav{margin:30px 0 0;padding:16px 18px;border-radius:14px;background:var(--surf);border:1px solid var(--line)}.snav h3{margin:0 0 6px;font:500 12px var(--mono);color:var(--ink3);text-transform:uppercase;letter-spacing:.06em}.snav ol{margin:0;padding-left:20px}.snav li{margin:3px 0;font-size:14px}.snav li.cur{color:var(--ink);font-weight:600}.snav a{color:var(--ink2)}
-.rel{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));margin-top:12px}.rel .pc h2{font-size:18px}.rel .pc p{display:none}"""
+.rel{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));margin-top:12px}.rel .pc h2{font-size:18px}.rel .pc p{display:none}
+@media(min-width:700px){.rel{grid-template-columns:repeat(3,1fr)}}.rel .pc:first-child{grid-column:auto!important;flex-direction:column!important}.rel .pc:first-child .cv{width:100%!important;border-right:0!important;border-bottom:1px solid var(--line)!important}.rel .pc:first-child h2{font-size:18px!important}.rel .pc:first-child .pb{padding:16px 18px 18px!important}
+article .hc{margin:18px 0 22px}article .hc img{aspect-ratio:1200/320;object-fit:cover;object-position:50% 100%;border-radius:14px}
+#pb>p:first-child{font-size:16px;color:var(--ink)}"""
 def build(G):
     POSTS, ml, E, w, head, topbar, foot, SCRIPT, BASE, LANGS, with_figs, U, L = (G[k] for k in 'POSTS ml E w head topbar foot SCRIPT BASE LANGS with_figs U L'.split())
     for p in POSTS:
@@ -78,14 +81,18 @@ q.addEventListener('input',run);cs.forEach(function(b){b.onclick=function(){cur=
     rsslink = f'<link rel="alternate" type="application/rss+xml" title="UI Hub Blog" href="{BASE}blog/rss.xml">'
     h = head('AI Design Techniques Blog · UI Hub', U['blog_lede']['en'], 'blog/', ld, '../').replace('</head>', rsslink+css+'</head>')
     w('blog/index.html', h + f"""<body>{topbar('../','blog')}<main class="wrap"><section class="hero"><p class="eb">Blog · {len(POSTS)} {ml(S2['posts_n'])}</p><h1>{ml('blog_title')}</h1><p class="lede">{ml('blog_lede')}</p></section>
-<div class="tools"><input id="q" class="q" type="search" aria-label="Search"><a class="rssb" href="rss.xml">RSS · {ml(S2['rss'])}</a></div><div class="chips">{chips}</div>
+<div class="tools"><input id="q" class="q" type="search" aria-label="Search"><a class="rssb" href="rss.xml">{ml(S2['rss'])}</a></div><div class="chips">{chips}</div>
 <div class="fx"><h2 class="sh">{ml(S2['featured'])}</h2><div class="feat">{''.join(card(p, eager=i<3) for i,p in enumerate(feat))}</div>
 <div class="ser">{ser}</div></div>
 <h2 class="sh">{ml(S2['allposts'])}<small>{len(POSTS)}</small></h2><div class="posts" id="grid">{''.join(card(p) for p in order)}</div><p class="empty" id="empty">{ml(S2['none'])}</p></main>{foot('../')}{SCRIPT}{js}</body></html>""")
     # posts
     for p in POSTS:
         refs = '<ol>'+''.join((f'<li><a href="{E(u)}" rel="sponsored noopener" target="_blank">{E(t)}</a> — {E(a)} <small class="aff">({ml(S2["aff"])})</small></li>' if 'cello.so' in u else f'<li><a href="{E(u)}" rel="noopener" target="_blank">{E(t)}</a> — {E(a)}</li>') for t,a,u in p['refs'])+'</ol>'
-        body = ''.join(f'<div data-l="{c}">' + (f'<p class="note">{E(L("body_note",k))}</p>' if L('body_note',k) else '') + with_figs(p['zh'] if k in ('zh','zht') else p['en'], p['slug'], k, '../../') + '</div>' for c,_,k in LANGS)
+        bz = with_figs(p['zh'], p['slug'], 'zh', '../../'); be = with_figs(p['en'], p['slug'], 'en', '../../')
+        note = ''.join(f'<p class="note" data-l="{c}">{E(L("body_note",k))}</p>' for c,_,k in LANGS if L('body_note',k))
+        body = (note + f'<div id="pb" data-k="en">{be}</div><template id="pb-zh">{bz}</template><template id="pb-en">{be}</template>'
+                '<script>(function(){function sw(){var l=document.documentElement.lang,k=/^zh/.test(l)?"zh":"en",b=document.getElementById("pb");if(b.dataset.k===k)return;b.innerHTML="";b.appendChild(document.getElementById("pb-"+k).content.cloneNode(true));b.dataset.k=k}sw();document.addEventListener("uihub:lang",sw)})();</script>')
+        body_html, body_js = body.split('<script>',1); body_js = '<script>'+body_js
         snav = ''
         if p['series']:
             sp = [x for x in POSTS if x['series']==p['series']]
@@ -98,7 +105,7 @@ q.addEventListener('input',run);cs.forEach(function(b){b.onclick=function(){cur=
               'citation':[{'@type':'CreativeWork','name':t,'author':a,'url':u} for t,a,u in p['refs']],'keywords':', '.join(p['tags']),'image':BASE+f'blog/img/{p["slug"]}-cover.webp'}
         h = head(p['t']['en']+' · UI Hub', p['s']['en'], f'blog/{p["slug"]}/', ld, '../../', f'blog/img/{p["slug"]}-cover.jpg').replace('</head>', rsslink+css+'</head>')
         w(f'blog/{p["slug"]}/index.html', h + f"""<body>{topbar('../../','blog')}<article><p class="meta"><a href="../">← {ml('back')}</a> · <a href="../?cat={p['cat']}">{ml(CATS[p['cat']])}</a> · {p['date']} · {rt(p)}</p>
-<h1>{ml(p['t'])}</h1><p class="lede">{ml(p['s'])}</p><figure class="hc"><img src="../img/{p['slug']}-cover.webp" alt="{E(p['t']['en'])}" width="1200" height="630" fetchpriority="high"></figure>{body}{snav}<section class="refs"><h2>{ml('refs')}</h2>{refs}</section>{relh}</article>{foot('../../')}{SCRIPT}</body></html>""")
+<h1>{ml(p['t'])}</h1><p class="lede">{ml(p['s'])}</p><figure class="hc"><img src="../img/{p['slug']}-cover.webp" alt="{E(p['t']['en'])}" width="1200" height="630" fetchpriority="high"></figure>{body_html}{snav}<section class="refs"><h2>{ml('refs')}</h2>{refs}</section>{relh}</article>{foot('../../')}{SCRIPT}{body_js}</body></html>""")
     w('api/blog.json', json.dumps({'count':len(POSTS),'rss':BASE+'blog/rss.xml','categories':{c:v['en'] for c,v in CATS.items() if c!='all'},'series':{c:v['en'] for c,v in SERIES.items()},
         'posts':[{'slug':p['slug'],'url':BASE+f'blog/{p["slug"]}/','date':p['date'],'category':p['cat'],'series':p['series'],'featured':p['featured'],'tags':p['tags'],'title':p['t'],'summary':p['s'],
                   'reading_minutes':{'en':p['mins_en'],'zh':p['mins_zh']},'cover':BASE+f'blog/img/{p["slug"]}-cover.webp','references':[{'title':t,'by':a,'url':u} for t,a,u in p['refs']]} for p in order]}, ensure_ascii=False, indent=1))

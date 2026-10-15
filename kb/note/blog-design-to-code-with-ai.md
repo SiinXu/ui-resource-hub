@@ -2,7 +2,7 @@
 
 > Pixel-perfect export creates throwaway code. Give the agent your component registry and tokens via MCP so output reuses what you already ship.
 
-Blog post: https://siinxu.github.io/ui-resource-hub/blog/design-to-code-with-ai/
+Blog post: <https://siinxu.github.io/ui-resource-hub/blog/design-to-code-with-ai/>
 
 Early design-to-code tools translated frames into absolutely positioned divs. They looked right and were unmaintainable. The current generation, Figma's Dev Mode MCP server and Builder.io's Visual Copilot among them, works differently: it reads 
 structure and variables

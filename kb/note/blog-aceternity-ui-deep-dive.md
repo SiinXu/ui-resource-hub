@@ -2,7 +2,7 @@
 
 > Copy-paste React + Tailwind + Motion effects that made the "fancy" landing look popular. Which pieces carry a page and which turn it into a demo reel.
 
-Blog post: https://siinxu.github.io/ui-resource-hub/blog/aceternity-ui-deep-dive/
+Blog post: <https://siinxu.github.io/ui-resource-hub/blog/aceternity-ui-deep-dive/>
 
 Aceternity UI, created by Manu Arora, is a collection of copy-paste components built with React, Tailwind CSS and Motion (formerly Framer Motion). It is known for showpiece effects: spotlight and beam backgrounds, 3D cards, animated grids, parallax hero scrolls. Free components are open to copy; there is also a paid tier of templates and blocks.
 

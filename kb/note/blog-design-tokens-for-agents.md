@@ -2,7 +2,7 @@
 
 > A machine-readable token file (the W3C DTCG format) plus a short usage note beats any adjective in a prompt. Structure, naming, and how to hand it to an agent.
 
-Blog post: https://siinxu.github.io/ui-resource-hub/blog/design-tokens-for-agents/
+Blog post: <https://siinxu.github.io/ui-resource-hub/blog/design-tokens-for-agents/>
 
 Agents follow concrete values far more reliably than descriptions. A design token file turns "clean, premium, a bit playful" into numbers the agent can apply everywhere. The W3C Design Tokens Community Group (DTCG) publishes a vendor-neutral JSON format for this, supported by tools such as Style Dictionary and Tokens Studio.
 

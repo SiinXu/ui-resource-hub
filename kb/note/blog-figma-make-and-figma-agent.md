@@ -2,7 +2,7 @@
 
 > Figma Make turns prompts into working prototypes; the Figma agent, generally available since 6 Oct 2026, reads team guideline files. Why the guideline file matters most.
 
-Blog post: https://siinxu.github.io/ui-resource-hub/blog/figma-make-and-figma-agent/
+Blog post: <https://siinxu.github.io/ui-resource-hub/blog/figma-make-and-figma-agent/>
 
 Figma Make, introduced at Config 2025, generates interactive prototypes and simple apps from a prompt, and can start from an existing Figma frame. It answered the question designers kept asking about v0-style tools: "can I do this where my designs already live?"
 

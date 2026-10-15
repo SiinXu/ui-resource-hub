@@ -2,7 +2,7 @@
 
 > Generated UIs look fine and fail keyboards and screen readers. Start from accessible primitives, then audit against WCAG 2.2.
 
-Blog post: https://siinxu.github.io/ui-resource-hub/blog/accessibility-in-ai-generated-ui/
+Blog post: <https://siinxu.github.io/ui-resource-hub/blog/accessibility-in-ai-generated-ui/>
 
 Models optimise for what a screenshot shows. Focus order, accessible names and live regions do not show up in screenshots, so they are the first things to go missing.
 

@@ -2,7 +2,7 @@
 
 > Both tools build whole apps, so design quality now competes with data, auth and deploys for attention. How to keep the look from being an afterthought.
 
-Blog post: https://siinxu.github.io/ui-resource-hub/blog/lovable-bolt-prompt-to-app/
+Blog post: <https://siinxu.github.io/ui-resource-hub/blog/lovable-bolt-prompt-to-app/>
 
 Lovable and Bolt (by StackBlitz) sit one step beyond component generators: you describe an app and they scaffold front end, routing and, through integrations such as Supabase, a backend. Bolt runs the dev environment in the browser on StackBlitz's WebContainers. The design question changes accordingly: the model is juggling schema, auth and deploys, so visual decisions get made by default unless you make them first.
 

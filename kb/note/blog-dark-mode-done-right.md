@@ -2,7 +2,7 @@
 
 > Dark mode is a second palette, not an inverted one. Use semantic tokens, lighter surfaces for elevation, and desaturated accents.
 
-Blog post: https://siinxu.github.io/ui-resource-hub/blog/dark-mode-done-right/
+Blog post: <https://siinxu.github.io/ui-resource-hub/blog/dark-mode-done-right/>
 
 Inverting colours gives you pure black backgrounds, glowing saturated blues and shadows nobody can see. Apple's HIG and web.dev both describe dark mode as its own design pass.
 

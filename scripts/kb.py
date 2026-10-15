@@ -50,7 +50,7 @@ def build(g):
         txt = re.sub(r'<h2>(.*?)</h2>', r'\n## \1\n', p['en']); txt = re.sub(r'<li>', '- ', txt); txt = re.sub(r'<pre><code>(.*?)</code></pre>', lambda m: '\n```\n'+m.group(1)+'\n```\n', txt, flags=re.S)
         txt = re.sub(r'<strong>(.*?)</strong>', r'**\1**', txt); txt = re.sub(r'<code>(.*?)</code>', r'`\1`', txt); txt = re.sub(r'<[^>]+>', '\n', txt)
         txt = re.sub(r'\n{3,}', '\n\n', txt).replace('&lt;','<').replace('&gt;','>').replace('&amp;','&').strip()
-        md = f"# {p['t']['en']}\n\n> {p['s']['en']}\n\nBlog post: {BASE}blog/{p['slug']}/\n\n{txt}\n\n## References\n" + '\n'.join(f'- [{t}]({u}) — {a}' for t,a,u in p['refs'])
+        md = f"# {p['t']['en']}\n\n> {p['s']['en']}\n\nBlog post: <{BASE}blog/{p['slug']}/>\n\n{txt}\n\n## References\n" + '\n'.join(f'- [{t}]({u}) — {a}' for t,a,u in p['refs'])
         entries.append(dict(type='note', slug='blog-'+p['slug'], title=p['t']['en'], summary=p['s']['en'], tags=['blog']+p['tags'], md=md))
     for e in entries:
         e['url'] = f"{BASE}kb/{e['type']}/{e['slug']}/"; e['raw'] = f"{BASE}kb/{e['type']}/{e['slug']}.md"
@@ -61,22 +61,34 @@ def build(g):
       'kb_bundle':dict(zh='复制上下文包',zht='複製上下文包',en='Copy context bundle',ja='コンテキスト一式をコピー',ko='컨텍스트 번들 복사',ms='Salin himpunan konteks',vi='Sao chép gói ngữ cảnh',fr='Copier le pack de contexte',es='Copiar paquete de contexto',de='Kontext-Paket kopieren'),
       'kb_dl':dict(zh='下载上下文包 .md',zht='下載上下文包 .md',en='Download context bundle .md',ja='コンテキスト一式 .md',ko='컨텍스트 번들 .md 다운로드',ms='Muat turun himpunan .md',vi='Tải gói ngữ cảnh .md',fr='Télécharger le pack .md',es='Descargar paquete .md',de='Kontext-Paket .md laden'),
       'kb_raw':dict(zh='原始 Markdown',zht='原始 Markdown',en='Raw Markdown',ja='生Markdown',ko='원본 Markdown',ms='Markdown mentah',vi='Markdown gốc',fr='Markdown brut',es='Markdown en bruto',de='Rohes Markdown'),
+      'kb_copy':dict(zh='复制 .md',zht='複製 .md',en='Copy .md',ja='.md をコピー',ko='.md 복사',ms='Salin .md',vi='Sao chép .md',fr='Copier le .md',es='Copiar .md',de='.md kopieren'),
+      'kb_en':dict(zh='本条目正文为英文，作为 AI Agent 上下文使用。',zht='本條目正文為英文，作為 AI Agent 上下文使用。',en='',ja='この項目の本文は英語です（AIエージェントの文脈用）。',ko='이 항목의 본문은 영어입니다(AI 에이전트 컨텍스트용).',ms='Kandungan entri ini dalam bahasa Inggeris (untuk konteks ejen AI).',vi='Nội dung mục này bằng tiếng Anh (dùng làm ngữ cảnh cho AI agent).',fr='Le contenu de cette entrée est en anglais (contexte pour agents IA).',es='El contenido de esta entrada está en inglés (contexto para agentes de IA).',de='Der Inhalt dieses Eintrags ist auf Englisch (Kontext für KI-Agents).'),
+      'kb_post':dict(zh='阅读博客原文',zht='閱讀部落格原文',en='Read the blog post',ja='ブログ記事を読む',ko='블로그 글 읽기',ms='Baca artikel blog',vi='Đọc bài blog',fr='Lire l’article',es='Leer el artículo',de='Blogbeitrag lesen'),
+      'ty_skill':dict(zh='Skill',zht='Skill',en='Skill',ja='スキル',ko='스킬',ms='Kemahiran',vi='Skill',fr='Skill',es='Skill',de='Skill'),
+      'ty_spec':dict(zh='设计规范',zht='設計規範',en='Spec',ja='仕様',ko='규범',ms='Spesifikasi',vi='Quy chuẩn',fr='Spécification',es='Especificación',de='Spezifikation'),
+      'ty_note':dict(zh='笔记',zht='筆記',en='Note',ja='ノート',ko='노트',ms='Nota',vi='Ghi chú',fr='Note',es='Nota',de='Notiz'),
       'kb_all':dict(zh='全部',zht='全部',en='All',ja='すべて',ko='전체',ms='Semua',vi='Tất cả',fr='Tout',es='Todo',de='Alle')})
     css = """<style>.kbs{display:flex;gap:8px;align-items:center;padding:12px 14px;border-radius:14px;background:var(--surf);border:1px solid var(--line2);margin:6px 0 10px}.kbs input{flex:1;font:inherit;font-size:16px;border:0;background:none;color:var(--ink);outline:none}
 .chips{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 14px}.chips button{font:500 12.5px var(--sans);color:var(--ink2);background:var(--surf);border:1px solid var(--line);border-radius:99px;padding:5px 11px;cursor:pointer}.chips button.on{color:var(--bg);background:var(--ink);border-color:var(--ink)}
 .res{display:grid;gap:10px;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));padding-bottom:30px}.r{display:flex;flex-direction:column;gap:6px;padding:14px 16px;border-radius:14px;background:var(--surf);border:1px solid var(--line);text-decoration:none}.r:hover{border-color:var(--acc)}
 .r .k{font:500 11px var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--acc)}.r b{font-size:15px}.r p{margin:0;color:var(--ink2);font-size:13px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.cnt{font:500 12px var(--mono);color:var(--ink3);margin:0 0 10px}
 .acts{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 14px}.btn{font:500 13.5px var(--sans);text-decoration:none;color:var(--ink);background:var(--surf);border:1px solid var(--line2);border-radius:10px;padding:8px 13px;cursor:pointer}.btn.pri{background:var(--ink);color:var(--bg)}
-.md table{border-collapse:collapse;width:100%;font-size:13.5px;display:block;overflow:auto}.md th,.md td{border:1px solid var(--line);padding:6px 9px;text-align:left}.md blockquote{margin:0;padding:2px 14px;border-left:3px solid var(--acc);color:var(--ink2)}.md a{color:var(--acc)}.md img{max-width:100%}</style>"""
+.md table{border-collapse:collapse;width:100%;font-size:13.5px;display:block;overflow:auto}.md th,.md td{border:1px solid var(--line);padding:6px 9px;text-align:left}.md blockquote{margin:0;padding:2px 14px;border-left:3px solid var(--acc);color:var(--ink2)}.md a{color:var(--acc)}.md img{max-width:100%}.kba{margin:4px 0 18px}.kba .btn{font-size:13px;padding:7px 12px}.kbn{font-size:13px;color:var(--ink3);margin:0 0 14px;padding:8px 12px;border-radius:10px;background:var(--mat)}</style>"""
     copyjs = """<script>function cpx(t,b){(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).catch(function(){var a=document.createElement('textarea');a.value=t;document.body.appendChild(a);a.select();document.execCommand('copy');a.remove()}).finally(function(){if(b){var o=b.innerHTML;b.textContent='✓';setTimeout(function(){b.innerHTML=o},1200)}})}</script>"""
     # entry pages
     for e in entries:
         p = f"kb/{e['type']}/{e['slug']}"
         w(p+'.md', e['md'])
         html_body = markdown.markdown(e['md'], extensions=['fenced_code','tables'])
+        h1m = re.match(r'\s*(<h1>.*?</h1>)', html_body, re.S); h1 = h1m.group(1) if h1m else ''; rest = html_body[h1m.end():] if h1m else html_body
+        if e['slug'].startswith('blog-'):
+            rest = re.sub(r'<p>Blog post: <a href="([^"]+)">[^<]*</a></p>', '', rest, count=1)
+            postlink = f'<a class="btn" href="../../../blog/{e["slug"][5:]}/">{ml("kb_post")} →</a>'
+        else: postlink = ''
+        note = ''.join(f'<p class="kbn" data-l="{c}">{E(U["kb_en"][k])}</p>' for c,_,k in g['LANGS'] if U['kb_en'][k])
         ld = {'@context':'https://schema.org','@type':'TechArticle','headline':e['title'],'description':e['summary'],'url':e['url'],'dateModified':UPD[:10],'isPartOf':{'@type':'CollectionPage','name':'UI Hub encyclopedia','url':BASE+'kb/'},'encoding':{'@type':'MediaObject','contentUrl':e['raw'],'encodingFormat':'text/markdown'}}
-        w(p+'/index.html', head(f"{e['title']} · UI Hub encyclopedia", e['summary'][:160] or e['title'], p+'/', ld, '../../../') + css + copyjs + f"""<body>{topbar('../../../','kb')}<article class="md"><p class="meta"><a href="../../">← {ml('kb')}</a> · {e['type']} · {' · '.join(E(t) for t in e['tags'])}</p>
-<div class="acts"><a class="btn" href="../{e['slug']}.md">{ml('kb_raw')}</a><button class="btn pri" type="button" onclick="fetch('../{e['slug']}.md').then(r=>r.text()).then(t=>cpx(t,this))">{ml('kb_bundle').split('>')[0] and 'Copy .md'}</button></div>{html_body}</article>{foot('../../../')}{SCRIPT}</body></html>""")
+        w(p+'/index.html', head(f"{e['title']} · UI Hub encyclopedia", e['summary'][:160] or e['title'], p+'/', ld, '../../../') + css + copyjs + f"""<body>{topbar('../../../','kb')}<article class="md"><p class="meta"><a href="../../">← {ml('kb')}</a> · {ml('ty_'+e['type'])} · {' · '.join(E(t) for t in e['tags'])}</p>
+{h1}<div class="acts kba">{postlink}<a class="btn" href="../{e['slug']}.md">{ml('kb_raw')}</a><button class="btn" type="button" onclick="fetch('../{e['slug']}.md').then(r=>r.text()).then(t=>cpx(t,this))">{ml('kb_copy')}</button></div>{note}{rest}</article>{foot('../../../')}{SCRIPT}</body></html>""")
     # api
     kbj = [{k:e.get(k) for k in ('type','slug','title','summary','tags','url','raw','license','upstream','md')} for e in entries]
     w('api/kb.json', json.dumps({'updated':UPD,'count':len(kbj),'types':['skill','spec','note'],'entries':kbj}, ensure_ascii=False))
