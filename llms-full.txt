@@ -1,6 +1,6 @@
 # UI Hub
 
-> Curated, multilingual directory of 2395 public UI resources (component libraries, component style demos, effects, design systems, design skills for AI agents) plus original blog analysis of AI design techniques. Data updated 2026-10-15 15:17 UTC.
+> Curated, multilingual directory of 2524 public UI resources (component libraries, component style demos, effects, design systems, design skills for AI agents) plus original blog analysis of AI design techniques. Data updated 2026-10-16 03:37 UTC.
 
 Use the JSON endpoints, not the SPA, when acting as an agent. Every entry links to its original site; licenses belong to the original authors.
 
@@ -111,11 +111,11 @@ Use the JSON endpoints, not the SPA, when acting as an agent. Every entry links 
 - [visx](https://airbnb.io/visx/): Airbnb 的底层可视化组件
 
 ## FAQ
-- **What is UI Hub?** A free, curated directory of 2395 public UI resources: 133 component libraries, 1929 component style demos with light/dark screenshots, 68 design skills for AI agents, plus effects, templates, specs and tutorials. It links to original sites and never hosts paid source code.
+- **What is UI Hub?** A free, curated directory of 2524 public UI resources: 138 component libraries, 1989 component style demos with light/dark screenshots, 70 design skills for AI agents, plus effects, templates, specs and tutorials. It links to original sites and never hosts paid source code.
 - **How do I find a component in a given style?** Load https://siinxu.github.io/ui-resource-hub/api/resources.json and filter by ct (component kind, e.g. "dialog") and vs (visual style, e.g. "minimal" or "motion"). type="style" entries are concrete component demos with a libName and page URL; type="library" entries are whole libraries with install info on the site.
 - **Which skills should an agent use for good UI?** One direction skill (frontend-design or taste-skill), emil-design-eng for motion and interaction polish, then impeccable, baseline-ui, web-design-guidelines and accessibility as an audit pass. See https://siinxu.github.io/ui-resource-hub/api/skills.json.
 - **Can I copy the code?** Open-source libraries can be used under their own licenses (MIT, Apache-2.0 etc.); the card shows the original link. Paid tiers (marked paid/freemium) must be bought from the original vendor.
-- **How often is it updated?** Daily via a GitHub Actions job that adds new UI repositories and tools from GitHub, awesome-shadcn-ui and Hacker News. Nothing is deleted. Last update: 2026-10-15 15:17 UTC.
+- **How often is it updated?** Daily via a GitHub Actions job that adds new UI repositories and tools from GitHub, awesome-shadcn-ui and Hacker News. Nothing is deleted. Last update: 2026-10-16 03:37 UTC.
 
 
 # Blog posts (full text, English)
@@ -1747,8 +1747,77 @@ References:
 - solid-glass | library | https://deeplethe.github.io/solid-glass | New GitHub UI repo: A design system for AI applications. Material, physical, tactile, technical. (★724, MIT, deeplethe/solid-glass)
 - shadscan | library | https://shadscan.com | New GitHub UI repo: Deterministic UI audits for shadcn apps, built for your terminal, your CI, and your AI agent. (★553, MIT, TheOrcDev/shadscan)
 - keyline-icons | library | https://keylineicons.com/ | New GitHub UI repo: 1,435 free MIT icons in stroke, two-tone, duotone and fill, rounded or sharp: 11,480 SVGs on one 24×24 grid. Built for shadcn/ui. (★162, MIT
+- Aceternity Hero Sections 区块 | template | https://ui.aceternity.com/blocks/hero-sections | 完整的首屏区块合集（含免费款），有排版、截图、CTA 的成品组合，可直接对照整页比例
+- Aceternity Pricing Sections 区块 | template | https://ui.aceternity.com/blocks/pricing-sections | 定价区块：月/年切换、推荐档高亮
+- Aceternity Text Animations 区块 | template | https://ui.aceternity.com/blocks/text-animations | 标题文字动画区块合集
+- Aceternity AI SaaS Template | template | https://ui.aceternity.com/templates/ai-saas-template | AI SaaS 整站模板（付费），可看完整首页的节奏与组件组合
+- Aceternity Simplistic SaaS Template | template | https://ui.aceternity.com/templates/simplistic-saas-template | 极简 SaaS 整站模板（付费），留白和字号很克制
+- Aceternity Design Studio Template | template | https://ui.aceternity.com/templates/design-development-studio-template | 设计工作室整站模板（付费），作品展示型布局
+- Aceternity Minimal Portfolio Template | template | https://ui.aceternity.com/templates/minimal-portfolio-template | 极简作品集模板（付费）
+- Aceternity Agenforce Marketing Template | template | https://ui.aceternity.com/templates/agenforce-marketing-template | AI Agent 营销站模板（付费）
+- shadcn Block · Dashboard 01 | template | https://ui.shadcn.com/view/new-york-v4/dashboard-01 | 官方仪表盘区块：侧栏+图表+数据表，克制的中性色
+- shadcn Block · Login 03 | template | https://ui.shadcn.com/view/new-york-v4/login-03 | 居中卡片式登录页
+- shadcn Block · Login 04 | template | https://ui.shadcn.com/view/new-york-v4/login-04 | 左表单右图片的登录页
+- Awwwards · Sites of the Day | inspiration | https://www.awwwards.com/websites/sites_of_the_day/ | Awwwards 每日最佳网站，评审打分，适合找高完成度整站
+- Framer Marketplace · Templates | inspiration | https://www.framer.com/marketplace/templates/ | Framer 官方模板市场，大量可直接预览的整站（多数付费）
+- Lapa Ninja | inspiration | https://www.lapa.ninja/ | 按行业分类的落地页截图库
+- SaaS Landing Page | inspiration | https://saaslandingpage.com/ | 只收 SaaS 落地页，可按区块（Hero/定价/FAQ）筛
+- One Page Love | inspiration | https://onepagelove.com/ | 单页网站精选，含模板
+- Siteinspire | inspiration | https://www.siteinspire.com/ | 偏编辑/瑞士风的网站精选，品味稳定
+- Dark Design | inspiration | https://www.dark.design/ | 只收暗色网站，做暗色主题必看
+- Mobbin MCP（2026） | tool | https://mobbin.com/mcp | 2026 新：Mobbin 的 MCP 服务，Agent 可直接检索 62 万+ 真实产品截图与流程（需 Pro）
+- Refero MCP（2026） | tool | https://doc.refero.design/mcp/getting-started | 2026 新：Refero 的 MCP，按风格/页面类型给 Agent 真实产品参考（付费）
+- Linear 官网 | inspiration | https://linear.app/ | 暗色产品站标杆：极少颜色、精确排版、真实界面截图
+- Stripe 官网 | inspiration | https://stripe.com/ | 渐变只用在首屏一块，其余是严谨的网格与排版
+- Vercel 官网 | inspiration | https://vercel.com/ | 黑白 + 几何插图，信息密度高而不乱
+- Raycast 官网 | inspiration | https://www.raycast.com/ | 暗色 + 一处 3D 光效 + 真实产品窗口
+- Resend 官网 | inspiration | https://resend.com/ | 衬线大标题 + 暗色，开发者产品里少见的编辑感
+- Cursor 官网 | inspiration | https://cursor.com/ | 浅色、产品截图为主角的 AI 工具站
+- Framer 官网 | inspiration | https://www.framer.com/ | 动效丰富但每屏只有一个重点
+- shadcn/ui · Trace + AI Elements（2026-10） | component | https://ui.shadcn.com/docs/changelog/2026-10-ai-elements | shadcn 新发布的 Trace 组件：把推理、工具调用、队列、子 Agent 统一成一种活动流，AI 产品界面直接可用（X 来源：@shadcn，4436 赞 / 2821 收藏，2026-10-14）
+- Loading（loading.dev） | component | https://loading.dev/ | Jakub Krehel 与 Paul Faivret 做的 React 加载指示器库，每个都很精致（X 来源：@jakubkrehel，1270 赞 / 1111 收藏，2026-09-22）
+- Emil Kowalski · skills | skill | https://github.com/emilkowalski/skills | Emil 的 Agent 技能仓库：/mobile-native（触屏去 hover 等原生感）、/break-ui（用长名字等极端数据找 UI 破绽）（X 来源：@emilkowalski，4601 赞 / 5138 收藏，2026-10-04）
+- Interface Cheat Sheet（interfaces.dev） | tutorial | https://interfaces.dev/cheat-sheet | 界面细节速查表，每条都配了示例：让网页“手感更好”的实践清单（X 来源：@jakubkrehel，1146 赞 / 1874 收藏，2026-09-17）
+- Jakub Krehel · skills（含 /state-machine） | skill | https://github.com/jakubkrehel/skills | Jakub 的 Agent 技能集，/state-machine 会把组件所有状态渲染在一页上供检查（X 来源：@jakubkrehel，977 赞 / 1246 收藏，2026-10-08）
+- The Invisible Side of Design Engineering | tutorial | https://jakub.kr/writing/the-invisible-side-of-design-engineering | 设计工程里“看不见”的部分：状态、边界、手感，长文（X 来源：@jakubkrehel，728 赞 / 779 收藏，2026-09-14）
+- Vibrant Design | inspiration | https://vibrant.design/ | Manu Arora（Aceternity 作者）推荐的灵感站，收录有动效的高完成度网站（X 来源：@mannupaaji，636 赞 / 1336 收藏，2026-10-01）
+- rauno.me · Notes 5（交互作品） | inspiration | https://rauno.me/notes/5 | Rauno Freiberg（Vercel 设计工程师）的交互实验，细腻的手势与过渡（X 来源：@raunofreiberg，613 赞 / 329 收藏，2026-09-11）
+- Rewamp UI | library | https://www.rewampui.com/ | 开源免费的动效组件集，70+ 组件（日本区高互动推荐）（X 来源：@aistarjp，611 赞 / 679 收藏，2026-09-22）
+- Interfere Design System | system | https://design.interfere.com/ | Interfere 公开的设计系统页：基础、字体、原语，排版极其克制（X 来源：@jakubkrehel，523 赞 / 560 收藏，2026-10-15）
+- Astryx（Meta 开源设计系统） | system | https://astryx.atmeta.com/ | Meta 开源的设计系统，150–170+ 组件、主题、暗色模式、面向 AI 的工具（X 来源：@neropursue，406 赞 / 457 收藏，2026-09-19）
+- How we built Interfere’s new website | tutorial | https://interfere.com/blog/how-we-built-interferes-new-website | Interfere 官网的搭建复盘，从设计到实现（X 来源：@jakubkrehel，321 赞 / 429 收藏，2026-09-25）
+- Dot Matrix（点阵加载器） | component | https://dotmatrix.zzzzshawn.cloud/ | 点阵风格的 React 加载动画，shadcn registry 安装（X 来源：@remvze，85 赞 / 95 收藏，2026-08-30）
+- Vue Bits | library | https://vue-bits.dev/ | React Bits 的 Vue 版本，含 33 个微交互组件（X 来源：@davidhaz，163 赞 / 123 收藏，2026-09-21）
+- Svelte Bits | library | https://sveltebits.xyz/ | React Bits 的 Svelte 版本（X 来源：@davidhaz，163 赞 / 123 收藏，2026-09-21）
+- Kobra | library | https://kobra.systems/ | 设计工程师推荐的组件集（X 来源：@kasuncfdo，108 赞 / 131 收藏，2026-09-29）
+- GetLayers | template | https://getlayers.ai/ | 300+ 动画 3D 场景与整站提示词（X 来源：@thedzianis，120 赞 / 174 收藏，2026-09-29）
+- ogimagecn | component | https://www.ogimagecn.com/ | shadcn CLI 安装的 OG 分享图模板（Satori），解决链接预览丑的问题（X 来源：@alaymanguy，189 赞 / 310 收藏，2026-08-31）
+- Origin UI（originui.com） | library | https://originui.com/ | Origin UI 主站（设计工程师常用清单第 2 名）（X 来源：@kasuncfdo，108 赞 / 131 收藏，2026-09-29）
+- Heron AI（Awwwards SOTD） | inspiration | https://heronaiapp.com/ | Awwwards「当日最佳网站」近期获奖作品，整站级视觉参考：看首屏构图、字号对比和图片使用。Awwwards 页：https://www.awwwards.com/sites/heron-ai
+- Huy Phan Vol.2（Awwwards SOTD） | inspiration | https://huyml.co/ | Awwwards「当日最佳网站」近期获奖作品，整站级视觉参考：看首屏构图、字号对比和图片使用。Awwwards 页：https://www.awwwards.com/sites/huy-phan-vol-2
+- LPAS（Awwwards SOTD） | inspiration | https://lpas.com/ | Awwwards「当日最佳网站」近期获奖作品，整站级视觉参考：看首屏构图、字号对比和图片使用。Awwwards 页：https://www.awwwards.com/sites/lpas
+- Maria Vasilyeva Portfolio（Awwwards SOTD） | inspiration | https://www.mariavasilyeva.com/ | Awwwards「当日最佳网站」近期获奖作品，整站级视觉参考：看首屏构图、字号对比和图片使用。Awwwards 页：https://www.awwwards.com/sites/maria-vasilyeva-portfolio
+- Neutomni（Awwwards SOTD） | inspiration | https://neutomni.com/ | Awwwards「当日最佳网站」近期获奖作品，整站级视觉参考：看首屏构图、字号对比和图片使用。Awwwards 页：https://www.awwwards.com/sites/neutomni
+- Nick Ho（Awwwards SOTD） | inspiration | https://nickho-motorsports.nl/ | Awwwards「当日最佳网站」近期获奖作品，整站级视觉参考：看首屏构图、字号对比和图片使用。Awwwards 页：https://www.awwwards.com/sites/nick-ho
+- Odyssée（Awwwards SOTD） | inspiration | https://www.odysseeclinic.com.au/ | Awwwards「当日最佳网站」近期获奖作品，整站级视觉参考：看首屏构图、字号对比和图片使用。Awwwards 页：https://www.awwwards.com/sites/odyssee
+- Tengile Malamala Collection（Awwwards SOTD） | inspiration | https://tengilemalamala.com/ | Awwwards「当日最佳网站」近期获奖作品，整站级视觉参考：看首屏构图、字号对比和图片使用。Awwwards 页：https://www.awwwards.com/sites/tengile-malamala-collection
+- twks（Awwwards SOTD） | inspiration | https://twks.ch/en | Awwwards「当日最佳网站」近期获奖作品，整站级视觉参考：看首屏构图、字号对比和图片使用。Awwwards 页：https://www.awwwards.com/sites/twks-1
+- Asher Vale（Framer 模板） | inspiration | https://www.framer.com/marketplace/templates/asher-vale/ | Framer 官方模板市场的整站模板，可在线预览完整页面；适合直接对照整页节奏（多数付费，链接到原站）
+- Conicorn（Framer 模板） | inspiration | https://www.framer.com/marketplace/templates/conicorn/ | Framer 官方模板市场的整站模板，可在线预览完整页面；适合直接对照整页节奏（多数付费，链接到原站）
+- CreatorCut（Framer 模板） | inspiration | https://www.framer.com/marketplace/templates/creatorcut/ | Framer 官方模板市场的整站模板，可在线预览完整页面；适合直接对照整页节奏（多数付费，链接到原站）
+- Ekon（Framer 模板） | inspiration | https://www.framer.com/marketplace/templates/ekon/ | Framer 官方模板市场的整站模板，可在线预览完整页面；适合直接对照整页节奏（多数付费，链接到原站）
+- Künstler（Framer 模板） | inspiration | https://www.framer.com/marketplace/templates/k-nstler/ | Framer 官方模板市场的整站模板，可在线预览完整页面；适合直接对照整页节奏（多数付费，链接到原站）
+- Kyma（Framer 模板） | inspiration | https://www.framer.com/marketplace/templates/kyma/ | Framer 官方模板市场的整站模板，可在线预览完整页面；适合直接对照整页节奏（多数付费，链接到原站）
+- Maxima（Framer 模板） | inspiration | https://www.framer.com/marketplace/templates/maxima/ | Framer 官方模板市场的整站模板，可在线预览完整页面；适合直接对照整页节奏（多数付费，链接到原站）
+- Neiden（Framer 模板） | inspiration | https://www.framer.com/marketplace/templates/neiden/ | Framer 官方模板市场的整站模板，可在线预览完整页面；适合直接对照整页节奏（多数付费，链接到原站）
+- Nudge（Framer 模板） | inspiration | https://www.framer.com/marketplace/templates/nudge/ | Framer 官方模板市场的整站模板，可在线预览完整页面；适合直接对照整页节奏（多数付费，链接到原站）
+- Overtake（Framer 模板） | inspiration | https://www.framer.com/marketplace/templates/overtake/ | Framer 官方模板市场的整站模板，可在线预览完整页面；适合直接对照整页节奏（多数付费，链接到原站）
+- Owen Studio（Framer 模板） | inspiration | https://www.framer.com/marketplace/templates/owen-studio/ | Framer 官方模板市场的整站模板，可在线预览完整页面；适合直接对照整页节奏（多数付费，链接到原站）
+- ProLab（Framer 模板） | inspiration | https://www.framer.com/marketplace/templates/prolab/ | Framer 官方模板市场的整站模板，可在线预览完整页面；适合直接对照整页节奏（多数付费，链接到原站）
+- Soren（Framer 模板） | inspiration | https://www.framer.com/marketplace/templates/soren/ | Framer 官方模板市场的整站模板，可在线预览完整页面；适合直接对照整页节奏（多数付费，链接到原站）
+- Spector（Framer 模板） | inspiration | https://www.framer.com/marketplace/templates/spector/ | Framer 官方模板市场的整站模板，可在线预览完整页面；适合直接对照整页节奏（多数付费，链接到原站）
 
-# Component style demos: 1929 entries, see api/resources.json (type=style)
+# Component style demos: 1989 entries, see api/resources.json (type=style)
 
 
 # Design encyclopedia entries (specs + notes, full; skills: see raw URLs)

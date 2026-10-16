@@ -157,9 +157,11 @@ def slim(i):
     o = {k:i[k] for k in ('id','name','url','type','pricing','tags','ct','vs','rt','section','libName','kind','page','added') if i.get(k) not in (None,'',[])}
     o['note'] = i.get('noteEn') or i['note']
     if i.get('noteEn'): o['note_zh'] = i['note']
+    for k in ('gold','why','flag','xsrc','source'):
+        if i.get(k): o[k] = i[k]
     return o
 w('api/resources.json', json.dumps({'name':'UI Hub resources','updated':UPD,'count':len(ITEMS),'license_note':'Links and metadata only; each resource keeps its own license. Preview images © original sites.',
-   'fields':{'type':'library|component|style|skill|effect|template|generator|inspiration|system|spec|tool|tutorial|collection|guide','ct':'component kind, e.g. button,input,dialog,chart,table,chat,motion,background,layout','vs':'visual style, e.g. minimal,enterprise,material,soft,playful,motion,dark-tech,gradient,3d,apple,editorial,brutalist,glass','pricing':'free|freemium|paid|unknown'},
+   'fields':{'type':'library|component|style|skill|effect|template|generator|inspiration|system|spec|tool|tutorial|collection|guide','ct':'component kind, e.g. button,input,dialog,chart,table,chat,motion,background,layout','vs':'visual style, e.g. minimal,enterprise,material,soft,playful,motion,dark-tech,gradient,3d,apple,editorial,brutalist,glass','pricing':'free|freemium|paid|unknown','gold':'true = curated 精选 tier (start here); why = reason','flag':'quality flags: blank-preview | dup-preview (avoid as visual reference)','xsrc':'X/Twitter source post, author and engagement'},
    'items':[slim(i) for i in ITEMS]}, ensure_ascii=False, separators=(',',':')))
 w('api/skills.json', json.dumps({'updated':UPD,'workflow':['Read the brief and pick ONE direction skill (frontend-design or taste-skill)','Search api/resources.json for components matching style (vs) and kind (ct)','Build with emil-design-eng for motion/interaction details','Audit with impeccable + baseline-ui + web-design-guidelines + accessibility','Verify in a real browser (playwright-cli / webapp-testing), light+dark, mobile'],
    'agent_skills':skills,'hub_skill_entries':hub_skills}, ensure_ascii=False, indent=1))

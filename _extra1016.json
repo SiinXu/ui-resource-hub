@@ -1,0 +1,280 @@
+[
+ {
+  "id": "x16-awwwards-edolus",
+  "name": "EDOLUS（Awwwards SOTD）",
+  "url": "https://edolus.com/",
+  "vs": [
+   "editorial",
+   "motion"
+  ],
+  "source": "Awwwards",
+  "note": "Awwwards「当日最佳网站」近期获奖作品，整站级视觉参考：看首屏构图、字号对比和图片使用。Awwwards 页：https://www.awwwards.com/sites/edolus"
+ },
+ {
+  "id": "x16-awwwards-heron-ai",
+  "name": "Heron AI（Awwwards SOTD）",
+  "url": "https://heronaiapp.com/",
+  "vs": [
+   "editorial",
+   "motion"
+  ],
+  "source": "Awwwards",
+  "note": "Awwwards「当日最佳网站」近期获奖作品，整站级视觉参考：看首屏构图、字号对比和图片使用。Awwwards 页：https://www.awwwards.com/sites/heron-ai"
+ },
+ {
+  "id": "x16-awwwards-huy-phan-vol-2",
+  "name": "Huy Phan Vol.2（Awwwards SOTD）",
+  "url": "https://huyml.co/",
+  "vs": [
+   "editorial",
+   "motion"
+  ],
+  "source": "Awwwards",
+  "note": "Awwwards「当日最佳网站」近期获奖作品，整站级视觉参考：看首屏构图、字号对比和图片使用。Awwwards 页：https://www.awwwards.com/sites/huy-phan-vol-2"
+ },
+ {
+  "id": "x16-awwwards-lpas",
+  "name": "LPAS（Awwwards SOTD）",
+  "url": "https://lpas.com/",
+  "vs": [
+   "editorial",
+   "motion"
+  ],
+  "source": "Awwwards",
+  "note": "Awwwards「当日最佳网站」近期获奖作品，整站级视觉参考：看首屏构图、字号对比和图片使用。Awwwards 页：https://www.awwwards.com/sites/lpas"
+ },
+ {
+  "id": "x16-awwwards-maria-vasilyeva-portfolio",
+  "name": "Maria Vasilyeva Portfolio（Awwwards SOTD）",
+  "url": "https://www.mariavasilyeva.com/",
+  "vs": [
+   "editorial",
+   "motion"
+  ],
+  "source": "Awwwards",
+  "note": "Awwwards「当日最佳网站」近期获奖作品，整站级视觉参考：看首屏构图、字号对比和图片使用。Awwwards 页：https://www.awwwards.com/sites/maria-vasilyeva-portfolio"
+ },
+ {
+  "id": "x16-awwwards-neutomni",
+  "name": "Neutomni（Awwwards SOTD）",
+  "url": "https://neutomni.com/",
+  "vs": [
+   "editorial",
+   "motion"
+  ],
+  "source": "Awwwards",
+  "note": "Awwwards「当日最佳网站」近期获奖作品，整站级视觉参考：看首屏构图、字号对比和图片使用。Awwwards 页：https://www.awwwards.com/sites/neutomni"
+ },
+ {
+  "id": "x16-awwwards-nick-ho",
+  "name": "Nick Ho（Awwwards SOTD）",
+  "url": "https://nickho-motorsports.nl/",
+  "vs": [
+   "editorial",
+   "motion"
+  ],
+  "source": "Awwwards",
+  "note": "Awwwards「当日最佳网站」近期获奖作品，整站级视觉参考：看首屏构图、字号对比和图片使用。Awwwards 页：https://www.awwwards.com/sites/nick-ho"
+ },
+ {
+  "id": "x16-awwwards-odyssee",
+  "name": "Odyssée（Awwwards SOTD）",
+  "url": "https://www.odysseeclinic.com.au/",
+  "vs": [
+   "editorial",
+   "motion"
+  ],
+  "source": "Awwwards",
+  "note": "Awwwards「当日最佳网站」近期获奖作品，整站级视觉参考：看首屏构图、字号对比和图片使用。Awwwards 页：https://www.awwwards.com/sites/odyssee"
+ },
+ {
+  "id": "x16-awwwards-tengile-malamala-collection",
+  "name": "Tengile Malamala Collection（Awwwards SOTD）",
+  "url": "https://tengilemalamala.com/",
+  "vs": [
+   "editorial",
+   "motion"
+  ],
+  "source": "Awwwards",
+  "note": "Awwwards「当日最佳网站」近期获奖作品，整站级视觉参考：看首屏构图、字号对比和图片使用。Awwwards 页：https://www.awwwards.com/sites/tengile-malamala-collection"
+ },
+ {
+  "id": "x16-awwwards-twks-1",
+  "name": "twks（Awwwards SOTD）",
+  "url": "https://twks.ch/en",
+  "vs": [
+   "editorial",
+   "motion"
+  ],
+  "source": "Awwwards",
+  "note": "Awwwards「当日最佳网站」近期获奖作品，整站级视觉参考：看首屏构图、字号对比和图片使用。Awwwards 页：https://www.awwwards.com/sites/twks-1"
+ },
+ {
+  "id": "x16-framer-asher-vale",
+  "name": "Asher Vale（Framer 模板）",
+  "url": "https://www.framer.com/marketplace/templates/asher-vale/",
+  "vs": [
+   "editorial",
+   "motion"
+  ],
+  "source": "Framer Marketplace",
+  "pricing": "freemium",
+  "note": "Framer 官方模板市场的整站模板，可在线预览完整页面；适合直接对照整页节奏（多数付费，链接到原站）"
+ },
+ {
+  "id": "x16-framer-conicorn",
+  "name": "Conicorn（Framer 模板）",
+  "url": "https://www.framer.com/marketplace/templates/conicorn/",
+  "vs": [
+   "editorial",
+   "motion"
+  ],
+  "source": "Framer Marketplace",
+  "pricing": "freemium",
+  "note": "Framer 官方模板市场的整站模板，可在线预览完整页面；适合直接对照整页节奏（多数付费，链接到原站）"
+ },
+ {
+  "id": "x16-framer-creatorcut",
+  "name": "CreatorCut（Framer 模板）",
+  "url": "https://www.framer.com/marketplace/templates/creatorcut/",
+  "vs": [
+   "editorial",
+   "motion"
+  ],
+  "source": "Framer Marketplace",
+  "pricing": "freemium",
+  "note": "Framer 官方模板市场的整站模板，可在线预览完整页面；适合直接对照整页节奏（多数付费，链接到原站）"
+ },
+ {
+  "id": "x16-framer-ekon",
+  "name": "Ekon（Framer 模板）",
+  "url": "https://www.framer.com/marketplace/templates/ekon/",
+  "vs": [
+   "editorial",
+   "motion"
+  ],
+  "source": "Framer Marketplace",
+  "pricing": "freemium",
+  "note": "Framer 官方模板市场的整站模板，可在线预览完整页面；适合直接对照整页节奏（多数付费，链接到原站）"
+ },
+ {
+  "id": "x16-framer-k-nstler",
+  "name": "Künstler（Framer 模板）",
+  "url": "https://www.framer.com/marketplace/templates/k-nstler/",
+  "vs": [
+   "editorial",
+   "motion"
+  ],
+  "source": "Framer Marketplace",
+  "pricing": "freemium",
+  "note": "Framer 官方模板市场的整站模板，可在线预览完整页面；适合直接对照整页节奏（多数付费，链接到原站）"
+ },
+ {
+  "id": "x16-framer-kyma",
+  "name": "Kyma（Framer 模板）",
+  "url": "https://www.framer.com/marketplace/templates/kyma/",
+  "vs": [
+   "editorial",
+   "motion"
+  ],
+  "source": "Framer Marketplace",
+  "pricing": "freemium",
+  "note": "Framer 官方模板市场的整站模板，可在线预览完整页面；适合直接对照整页节奏（多数付费，链接到原站）"
+ },
+ {
+  "id": "x16-framer-maxima",
+  "name": "Maxima（Framer 模板）",
+  "url": "https://www.framer.com/marketplace/templates/maxima/",
+  "vs": [
+   "editorial",
+   "motion"
+  ],
+  "source": "Framer Marketplace",
+  "pricing": "freemium",
+  "note": "Framer 官方模板市场的整站模板，可在线预览完整页面；适合直接对照整页节奏（多数付费，链接到原站）"
+ },
+ {
+  "id": "x16-framer-neiden",
+  "name": "Neiden（Framer 模板）",
+  "url": "https://www.framer.com/marketplace/templates/neiden/",
+  "vs": [
+   "editorial",
+   "motion"
+  ],
+  "source": "Framer Marketplace",
+  "pricing": "freemium",
+  "note": "Framer 官方模板市场的整站模板，可在线预览完整页面；适合直接对照整页节奏（多数付费，链接到原站）"
+ },
+ {
+  "id": "x16-framer-nudge",
+  "name": "Nudge（Framer 模板）",
+  "url": "https://www.framer.com/marketplace/templates/nudge/",
+  "vs": [
+   "editorial",
+   "motion"
+  ],
+  "source": "Framer Marketplace",
+  "pricing": "freemium",
+  "note": "Framer 官方模板市场的整站模板，可在线预览完整页面；适合直接对照整页节奏（多数付费，链接到原站）"
+ },
+ {
+  "id": "x16-framer-overtake",
+  "name": "Overtake（Framer 模板）",
+  "url": "https://www.framer.com/marketplace/templates/overtake/",
+  "vs": [
+   "editorial",
+   "motion"
+  ],
+  "source": "Framer Marketplace",
+  "pricing": "freemium",
+  "note": "Framer 官方模板市场的整站模板，可在线预览完整页面；适合直接对照整页节奏（多数付费，链接到原站）"
+ },
+ {
+  "id": "x16-framer-owen-studio",
+  "name": "Owen Studio（Framer 模板）",
+  "url": "https://www.framer.com/marketplace/templates/owen-studio/",
+  "vs": [
+   "editorial",
+   "motion"
+  ],
+  "source": "Framer Marketplace",
+  "pricing": "freemium",
+  "note": "Framer 官方模板市场的整站模板，可在线预览完整页面；适合直接对照整页节奏（多数付费，链接到原站）"
+ },
+ {
+  "id": "x16-framer-prolab",
+  "name": "ProLab（Framer 模板）",
+  "url": "https://www.framer.com/marketplace/templates/prolab/",
+  "vs": [
+   "editorial",
+   "motion"
+  ],
+  "source": "Framer Marketplace",
+  "pricing": "freemium",
+  "note": "Framer 官方模板市场的整站模板，可在线预览完整页面；适合直接对照整页节奏（多数付费，链接到原站）"
+ },
+ {
+  "id": "x16-framer-soren",
+  "name": "Soren（Framer 模板）",
+  "url": "https://www.framer.com/marketplace/templates/soren/",
+  "vs": [
+   "editorial",
+   "motion"
+  ],
+  "source": "Framer Marketplace",
+  "pricing": "freemium",
+  "note": "Framer 官方模板市场的整站模板，可在线预览完整页面；适合直接对照整页节奏（多数付费，链接到原站）"
+ },
+ {
+  "id": "x16-framer-spector",
+  "name": "Spector（Framer 模板）",
+  "url": "https://www.framer.com/marketplace/templates/spector/",
+  "vs": [
+   "editorial",
+   "motion"
+  ],
+  "source": "Framer Marketplace",
+  "pricing": "freemium",
+  "note": "Framer 官方模板市场的整站模板，可在线预览完整页面；适合直接对照整页节奏（多数付费，链接到原站）"
+ }
+]

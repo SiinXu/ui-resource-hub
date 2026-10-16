@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-15 15:17 UTC",
+ "updated": "2026-10-16 03:37 UTC",
  "workflow": [
   "Read the brief and pick ONE direction skill (frontend-design or taste-skill)",
   "Search api/resources.json for components matching style (vs) and kind (ct)",
@@ -591,6 +591,18 @@
    "name": "Libraries.dev Skill",
    "url": "https://libraries.dev/skill.html",
    "note": "装上后能扫描项目、推荐放液态金属光球等特效的位置；原站另有 Pro 付费版，支持一句话调参数"
+  },
+  {
+   "id": "x-emilkowalski-skills",
+   "name": "Emil Kowalski · skills",
+   "url": "https://github.com/emilkowalski/skills",
+   "note": "Emil 的 Agent 技能仓库：/mobile-native（触屏去 hover 等原生感）、/break-ui（用长名字等极端数据找 UI 破绽）（X 来源：@emilkowalski，4601 赞 / 5138 收藏，2026-10-04）"
+  },
+  {
+   "id": "x-jakubkrehel-skills",
+   "name": "Jakub Krehel · skills（含 /state-machine）",
+   "url": "https://github.com/jakubkrehel/skills",
+   "note": "Jakub 的 Agent 技能集，/state-machine 会把组件所有状态渲染在一页上供检查（X 来源：@jakubkrehel，977 赞 / 1246 收藏，2026-10-08）"
   }
  ]
 }

@@ -1,0 +1,1748 @@
+{
+ "x16-magicui-glyph-matrix": {
+  "url": "https://magicui.design/docs/components/glyph-matrix",
+  "status": 200,
+  "title": "Glyph Matrix | React Components & Templates",
+  "desc": "An animated grid of subtly shifting glyphs on a canvas, with a theme-aware color driven by the consumer.",
+  "mode": "element",
+  "content": 0.0492,
+  "size": [
+   774,
+   480
+  ],
+  "img": "previews/site/x16-magicui-glyph-matrix.webp"
+ },
+ "x16-magicui-backlight": {
+  "url": "https://magicui.design/docs/components/backlight",
+  "status": 200,
+  "title": "Backlight | React Components & Templates",
+  "desc": "A backlight glow effect for videos, images, and SVGs.",
+  "mode": "element",
+  "content": 0.4284,
+  "size": [
+   774,
+   450
+  ],
+  "img": "previews/site/x16-magicui-backlight.webp"
+ },
+ "x16-magicui-kinetic-text": {
+  "url": "https://magicui.design/docs/components/kinetic-text",
+  "status": 200,
+  "title": "Kinetic Text | React Components & Templates",
+  "desc": "A text component that animates font weight of characters on hover.",
+  "mode": "element",
+  "content": 0.0393,
+  "size": [
+   774,
+   450
+  ],
+  "img": "previews/site/x16-magicui-kinetic-text.webp"
+ },
+ "x16-magicui-smooth-cursor": {
+  "url": "https://magicui.design/docs/components/smooth-cursor",
+  "status": 200,
+  "title": "Smooth Cursor | React Components & Templates",
+  "desc": "A customizable, physics-based smooth cursor animation component for React applications.",
+  "mode": "element",
+  "content": 0.0054,
+  "size": [
+   774,
+   450
+  ],
+  "img": "previews/site/x16-magicui-smooth-cursor.webp"
+ },
+ "x16-magicui-highlighter": {
+  "url": "https://magicui.design/docs/components/highlighter",
+  "status": 200,
+  "title": "Text Highlighter | React Components & Templates",
+  "desc": "A text highlighter that mimics the effect of a human-drawn marker stroke.",
+  "mode": "element",
+  "content": 0.0227,
+  "size": [
+   774,
+   450
+  ],
+  "img": "previews/site/x16-magicui-highlighter.webp"
+ },
+ "x16-magicui-animated-theme-toggler": {
+  "url": "https://magicui.design/docs/components/animated-theme-toggler",
+  "status": 200,
+  "title": "Theme Toggler | React Components & Templates",
+  "desc": "Animated theme toggle using the View Transitions API with configurable clip-path shapes and origin.",
+  "mode": "element",
+  "content": 0.0013,
+  "size": [
+   774,
+   450
+  ],
+  "img": "previews/site/x16-magicui-animated-theme-toggler.webp"
+ },
+ "x16-magicui-hyper-text": {
+  "url": "https://magicui.design/docs/components/hyper-text",
+  "status": 200,
+  "title": "Hyper Text | React Components & Templates",
+  "desc": "A text animation that scrambles letters before revealing the final text.",
+  "mode": "element",
+  "content": 0.0119,
+  "size": [
+   774,
+   450
+  ],
+  "img": "previews/site/x16-magicui-hyper-text.webp"
+ },
+ "x16-magicui-noise-texture": {
+  "url": "https://magicui.design/docs/components/noise-texture",
+  "status": 200,
+  "title": "Noise Texture | React Components & Templates",
+  "desc": "An SVG fractal noise layer using feTurbulence for subtle texture overlays.",
+  "mode": "element",
+  "content": 0.6657,
+  "size": [
+   774,
+   580
+  ],
+  "img": "previews/site/x16-magicui-noise-texture.webp"
+ },
+ "x16-magicui-particles": {
+  "url": "https://magicui.design/docs/components/particles",
+  "status": 200,
+  "title": "Particles | React Components & Templates",
+  "desc": "Particles are a fun way to add some visual flair to your website. They can be used to create a sense of depth, movement, and interactivity.",
+  "mode": "element",
+  "content": 0.0416,
+  "size": [
+   774,
+   580
+  ],
+  "img": "previews/site/x16-magicui-particles.webp"
+ },
+ "x16-magicui-warp-background": {
+  "url": "https://magicui.design/docs/components/warp-background",
+  "status": 200,
+  "title": "Warp Background | React Components & Templates",
+  "desc": "A card with a time warping background effect.",
+  "mode": "element",
+  "content": 0.0475,
+  "size": [
+   774,
+   450
+  ],
+  "img": "previews/site/x16-magicui-warp-background.webp"
+ },
+ "x16-magicui-ripple": {
+  "url": "https://magicui.design/docs/components/ripple",
+  "status": 200,
+  "title": "Ripple | React Components & Templates",
+  "desc": "An animated ripple effect typically used behind elements to emphasize them.",
+  "mode": "element",
+  "content": 0.2516,
+  "size": [
+   774,
+   580
+  ],
+  "img": "previews/site/x16-magicui-ripple.webp"
+ },
+ "x16-magicui-pixel-image": {
+  "url": "https://magicui.design/docs/components/pixel-image",
+  "status": 200,
+  "title": "Pixel Image | React Components & Templates",
+  "desc": "A component that displays your image with a pixelated effect, enhancing the visual appeal of any image in your website.",
+  "mode": "element",
+  "content": 0.3017,
+  "size": [
+   774,
+   464
+  ],
+  "img": "previews/site/x16-magicui-pixel-image.webp"
+ },
+ "x16-magicui-terminal": {
+  "url": "https://magicui.design/docs/components/terminal",
+  "status": 200,
+  "title": "Terminal | React Components & Templates",
+  "desc": "An implementation of the MacOS terminal. Useful for showcasing a command line interface.",
+  "mode": "element",
+  "content": 0.0715,
+  "size": [
+   774,
+   463
+  ],
+  "img": "previews/site/x16-magicui-terminal.webp"
+ },
+ "x16-magicui-interactive-grid-pattern": {
+  "url": "https://magicui.design/docs/components/interactive-grid-pattern",
+  "status": 200,
+  "title": "Interactive Grid Pattern | React Components & Templates",
+  "desc": "A interactive background grid pattern made with SVGs, fully customizable using Tailwind CSS.",
+  "mode": "element",
+  "content": 0.0005,
+  "size": [
+   774,
+   580
+  ],
+  "img": "previews/site/x16-magicui-interactive-grid-pattern.webp"
+ },
+ "x16-cultui-prompt-composer": {
+  "url": "https://www.cult-ui.com/docs/components/prompt-composer",
+  "status": 200,
+  "title": "Prompt Composer · Cult UI",
+  "desc": "AI chat prompt input for React and shadcn/ui with a gradient rim, Warp shader avatar, loading line, and attach and send buttons.",
+  "mode": "element",
+  "content": 0.0891,
+  "size": [
+   800,
+   614
+  ],
+  "img": "previews/site/x16-cultui-prompt-composer.webp"
+ },
+ "x16-cultui-hero-dithering": {
+  "url": "https://www.cult-ui.com/docs/components/hero-dithering",
+  "status": 200,
+  "title": "Hero Dithering · Cult UI",
+  "desc": "Split-layout hero section for React and shadcn/ui with a Dithering WebGL shader, call-to-action buttons, and tech stack badges.",
+  "mode": "viewport",
+  "content": 0.2796,
+  "size": [
+   800,
+   500
+  ],
+  "img": "previews/site/x16-cultui-hero-dithering.webp"
+ },
+ "x16-magicui-avatar-circles": {
+  "url": "https://magicui.design/docs/components/avatar-circles",
+  "status": 200,
+  "title": "Avatar Circles | React Components & Templates",
+  "desc": "Overlapping circles of avatars.",
+  "mode": "element",
+  "content": 0.0176,
+  "size": [
+   774,
+   450
+  ],
+  "img": "previews/site/x16-magicui-avatar-circles.webp"
+ },
+ "x16-magicui-animated-grid-pattern": {
+  "url": "https://magicui.design/docs/components/animated-grid-pattern",
+  "status": 200,
+  "title": "Animated Grid Pattern | React Components & Templates",
+  "desc": "A animated background grid pattern made with SVGs, fully customizable using Tailwind CSS.",
+  "mode": "element",
+  "content": 0.0043,
+  "size": [
+   774,
+   580
+  ],
+  "img": "previews/site/x16-magicui-animated-grid-pattern.webp"
+ },
+ "x16-cultui-dynamic-island": {
+  "url": "https://www.cult-ui.com/docs/components/dynamic-island",
+  "status": 200,
+  "title": "Dynamic Island · Cult UI",
+  "desc": "Composable iPhone Dynamic Island for React and shadcn/ui that morphs between sizes with Motion, for notifications and media controls.",
+  "mode": "element",
+  "content": 0.1522,
+  "size": [
+   800,
+   659
+  ],
+  "img": "previews/site/x16-cultui-dynamic-island.webp"
+ },
+ "x16-cultui-hero-color-panels": {
+  "url": "https://www.cult-ui.com/docs/components/hero-color-panels",
+  "status": 200,
+  "title": "Hero Color Panels · Cult UI",
+  "desc": "Split-layout hero section for React and shadcn/ui with a ColorPanels WebGL shader, call-to-action buttons, and tech stack badges.",
+  "mode": "viewport",
+  "content": 0.2669,
+  "size": [
+   800,
+   500
+  ],
+  "img": "previews/site/x16-cultui-hero-color-panels.webp"
+ },
+ "x16-cultui-metal-button": {
+  "url": "https://www.cult-ui.com/docs/components/metal-button",
+  "status": 200,
+  "title": "Metal Button · Cult UI",
+  "desc": "shadcn/ui Button wrapped in an animated liquid metal ring for React, in text and icon variants, for standout calls to action.",
+  "mode": "element",
+  "content": 0.111,
+  "size": [
+   552,
+   800
+  ],
+  "img": "previews/site/x16-cultui-metal-button.webp"
+ },
+ "x16-cultui-texture-button": {
+  "url": "https://www.cult-ui.com/docs/components/texture-button",
+  "status": 200,
+  "title": "Texture Button · Cult UI",
+  "desc": "Tactile neumorphic button for React and shadcn/ui with layered borders and gradients, multiple variants and sizes, and asChild.",
+  "mode": "element",
+  "content": 0.0705,
+  "size": [
+   800,
+   659
+  ],
+  "img": "previews/site/x16-cultui-texture-button.webp"
+ },
+ "x16-cultui-folded-card": {
+  "url": "https://www.cult-ui.com/docs/components/folded-card",
+  "status": 200,
+  "title": "Folded Card · Cult UI",
+  "desc": "Composable folded-corner card for React and shadcn/ui with a linked preview, dashed grid, badge, and footer, for template galleries.",
+  "mode": "element",
+  "content": 0.1609,
+  "size": [
+   800,
+   659
+  ],
+  "img": "previews/site/x16-cultui-folded-card.webp"
+ },
+ "x16-cultui-shift-card": {
+  "url": "https://www.cult-ui.com/docs/components/shift-card",
+  "status": 200,
+  "title": "Shift Card · Cult UI",
+  "desc": "Hover reveal card for React and shadcn/ui that shifts its header to show extra content, for product grids and team pages.",
+  "mode": "element",
+  "content": 0.1466,
+  "size": [
+   800,
+   659
+  ],
+  "img": "previews/site/x16-cultui-shift-card.webp"
+ },
+ "x16-cultui-hero-heatmap": {
+  "url": "https://www.cult-ui.com/docs/components/hero-heatmap",
+  "status": 200,
+  "title": "Hero Heatmap · Cult UI",
+  "desc": "Split-layout hero section for React and shadcn/ui with a glowing Heatmap WebGL shader, call-to-action buttons, and badges.",
+  "mode": "viewport",
+  "content": 0.2607,
+  "size": [
+   800,
+   500
+  ],
+  "img": "previews/site/x16-cultui-hero-heatmap.webp"
+ },
+ "x16-cultui-family-drawer": {
+  "url": "https://www.cult-ui.com/docs/components/family-drawer",
+  "status": 200,
+  "title": "Family Drawer · Cult UI",
+  "desc": "Multi-view bottom sheet drawer for React and shadcn/ui built on Vaul and Motion that resizes smoothly as views change.",
+  "mode": "element",
+  "content": 0.0972,
+  "size": [
+   800,
+   742
+  ],
+  "img": "previews/site/x16-cultui-family-drawer.webp"
+ },
+ "x16-cultui-morph-surface": {
+  "url": "https://www.cult-ui.com/docs/components/morph-surface",
+  "status": 200,
+  "title": "Morph Surface · Cult UI",
+  "desc": "React component for shadcn/ui that morphs a button into a textarea panel with spring animations, for feedback and quick notes.",
+  "mode": "viewport",
+  "content": 0.1988,
+  "size": [
+   800,
+   500
+  ],
+  "img": "previews/site/x16-cultui-morph-surface.webp"
+ },
+ "x16-cultui-hero-liquid-metal": {
+  "url": "https://www.cult-ui.com/docs/components/hero-liquid-metal",
+  "status": 200,
+  "title": "Hero Liquid Metal · Cult UI",
+  "desc": "Split-layout hero section for React and shadcn/ui with a chrome-like LiquidMetal WebGL shader, CTA buttons, and badges.",
+  "mode": "viewport",
+  "content": 0.2346,
+  "size": [
+   800,
+   500
+  ],
+  "img": "previews/site/x16-cultui-hero-liquid-metal.webp"
+ },
+ "x16-cultui-three-d-carousel": {
+  "url": "https://www.cult-ui.com/docs/components/three-d-carousel",
+  "status": 200,
+  "title": "3D Carousel · Cult UI",
+  "desc": "3D image carousel for React and shadcn/ui that rotates cards around a cylinder with drag momentum and click to expand.",
+  "mode": "element",
+  "content": 0.155,
+  "size": [
+   800,
+   659
+  ],
+  "img": "previews/site/x16-cultui-three-d-carousel.webp"
+ },
+ "x16-cultui-expandable-screen": {
+  "url": "https://www.cult-ui.com/docs/components/expandable-screen",
+  "status": 200,
+  "title": "Expandable Screen · Cult UI",
+  "desc": "React component for shadcn/ui that morphs a card or button into a full-screen view using Motion shared layout animations.",
+  "mode": "element",
+  "content": 0.0681,
+  "size": [
+   659,
+   800
+  ],
+  "img": "previews/site/x16-cultui-expandable-screen.webp"
+ },
+ "x16-cultui-fluted-glass": {
+  "url": "https://www.cult-ui.com/docs/components/fluted-glass",
+  "status": 200,
+  "title": "Fluted Glass · Cult UI",
+  "desc": "Fluted glass image effect for React and shadcn/ui using the Paper Design WebGL shader, with ribbed distortion and tuned defaults.",
+  "mode": "element",
+  "content": 0.1704,
+  "size": [
+   676,
+   800
+  ],
+  "img": "previews/site/x16-cultui-fluted-glass.webp"
+ },
+ "x16-cultui-distorted-glass": {
+  "url": "https://www.cult-ui.com/docs/components/distorted-glass",
+  "status": 200,
+  "title": "Distorted Glass · Cult UI",
+  "desc": "Frosted glass divider for React and shadcn/ui using an SVG fractal noise displacement filter, for section transitions and headers.",
+  "mode": "element",
+  "content": 0.5652,
+  "size": [
+   659,
+   800
+  ],
+  "img": "previews/site/x16-cultui-distorted-glass.webp"
+ },
+ "x16-cultui-shader-lens-blur": {
+  "url": "https://www.cult-ui.com/docs/components/shader-lens-blur",
+  "status": 200,
+  "title": "Shader Lens Blur · Cult UI",
+  "desc": "Interactive WebGL lens blur shader for React and shadcn/ui built on Three.js, with pointer-reactive distortion and gradients.",
+  "mode": "element",
+  "content": 0.4603,
+  "size": [
+   680,
+   800
+  ],
+  "img": "previews/site/x16-cultui-shader-lens-blur.webp"
+ },
+ "x16-cultui-canvas-fractal-grid": {
+  "url": "https://www.cult-ui.com/docs/components/canvas-fractal-grid",
+  "status": 200,
+  "title": "Canvas Fractal Grid · Cult UI",
+  "desc": "Interactive canvas dot grid hero background for React and shadcn/ui with animated gradients, noise, glow, and performance presets.",
+  "mode": "element",
+  "content": 0.402,
+  "size": [
+   570,
+   800
+  ],
+  "img": "previews/site/x16-cultui-canvas-fractal-grid.webp"
+ },
+ "x16-cultui-illustration-globe-vercel": {
+  "url": "https://www.cult-ui.com/docs/components/illustration-globe-vercel",
+  "status": 200,
+  "title": "Illustration Globe Vercel · Cult UI",
+  "desc": "Animated globe illustration for React and shadcn/ui showing deployments with deploying, deployed, and error states.",
+  "mode": "element",
+  "content": 0.0339,
+  "size": [
+   659,
+   800
+  ],
+  "img": "previews/site/x16-cultui-illustration-globe-vercel.webp"
+ },
+ "x16-cultui-stripe-bg-guides": {
+  "url": "https://www.cult-ui.com/docs/components/stripe-bg-guides",
+  "status": 200,
+  "title": "Stripe Background Guides · Cult UI",
+  "desc": "Stripe-style animated grid line background for React and shadcn/ui with glowing highlights, column count, and direction options.",
+  "mode": "element",
+  "content": 0.0507,
+  "size": [
+   800,
+   659
+  ],
+  "img": "previews/site/x16-cultui-stripe-bg-guides.webp"
+ },
+ "x16-cultui-gradient-heading": {
+  "url": "https://www.cult-ui.com/docs/components/gradient-heading",
+  "status": 200,
+  "title": "Gradient Heading · Cult UI",
+  "desc": "Gradient text heading for React and shadcn/ui with CVA variants for color, size, and weight, plus asChild, for hero headlines.",
+  "mode": "viewport",
+  "content": 0.2047,
+  "size": [
+   800,
+   500
+  ],
+  "img": "previews/site/x16-cultui-gradient-heading.webp"
+ },
+ "x16-cultui-rolling-number": {
+  "url": "https://www.cult-ui.com/docs/components/rolling-number",
+  "status": 200,
+  "title": "Rolling Number · Cult UI",
+  "desc": "Animated number counter for React and shadcn/ui that rolls to new values with a Motion spring and custom formatting.",
+  "mode": "element",
+  "content": 0.3246,
+  "size": [
+   800,
+   659
+  ],
+  "img": "previews/site/x16-cultui-rolling-number.webp"
+ },
+ "x16-cultui-feature-carousel": {
+  "url": "https://www.cult-ui.com/docs/components/feature-carousel",
+  "status": 200,
+  "title": "Feature Carousel · Cult UI",
+  "desc": "Animated step-by-step feature carousel for React and shadcn/ui with light and dark screenshots, for landing pages and tours.",
+  "mode": "element",
+  "content": 0.4038,
+  "size": [
+   800,
+   659
+  ],
+  "img": "previews/site/x16-cultui-feature-carousel.webp"
+ },
+ "x16-cultui-logo-carousel": {
+  "url": "https://www.cult-ui.com/docs/components/logo-carousel",
+  "status": 200,
+  "title": "Logo Carousel · Cult UI",
+  "desc": "Animated logo carousel for React and shadcn/ui that cycles brand SVGs through staggered columns, for customer and partner logos.",
+  "mode": "element",
+  "content": 0.0747,
+  "size": [
+   800,
+   659
+  ],
+  "img": "previews/site/x16-cultui-logo-carousel.webp"
+ },
+ "x16-cultui-kanban-board": {
+  "url": "https://www.cult-ui.com/docs/components/kanban-board",
+  "status": 200,
+  "title": "Kanban Board · Cult UI",
+  "desc": "Kanban board for React and shadcn/ui with drag-and-drop cards between columns, tags, assignee avatars, and layout animations.",
+  "mode": "element",
+  "content": 0.1772,
+  "size": [
+   800,
+   614
+  ],
+  "img": "previews/site/x16-cultui-kanban-board.webp"
+ },
+ "x16-cultui-tweet-grid": {
+  "url": "https://www.cult-ui.com/docs/components/tweet-grid",
+  "status": 200,
+  "title": "Tweet Grid · Cult UI",
+  "desc": "Masonry grid of embedded tweets for React and shadcn/ui from a list of tweet IDs, for testimonial walls and social proof.",
+  "mode": "element",
+  "content": 0.6286,
+  "size": [
+   538,
+   800
+  ],
+  "img": "previews/site/x16-cultui-tweet-grid.webp"
+ },
+ "x16-motion-primitives-animated-background": {
+  "url": "https://motion-primitives.com/docs/animated-background",
+  "status": 200,
+  "title": "Animated background - Motion-Primitives",
+  "desc": "Visually highlights selected items by sliding a background into view when hovered over or clicked. This smooth transition helps users focus on the active item, making it ideal for interactive lists, menus, or navigations where clear selection feedback is important. Built for React, Next.js, and Tail",
+  "mode": "viewport",
+  "content": 0.0833,
+  "size": [
+   800,
+   500
+  ],
+  "img": "previews/site/x16-motion-primitives-animated-background.webp"
+ },
+ "x16-motion-primitives-border-trail": {
+  "url": "https://motion-primitives.com/docs/border-trail",
+  "status": 200,
+  "title": "Border Trail - Motion-Primitives",
+  "desc": "Animated border effect that moves along the edges of its parent container. Built for React, Next.js, and Tailwind CSS.",
+  "mode": "viewport",
+  "content": 0.1001,
+  "size": [
+   800,
+   500
+  ],
+  "img": "previews/site/x16-motion-primitives-border-trail.webp"
+ },
+ "x16-cultui-floating-panel": {
+  "url": "https://www.cult-ui.com/docs/components/floating-panel",
+  "status": 200,
+  "title": "Floating Panel · Cult UI",
+  "desc": "Composable floating panel popover for React and shadcn/ui that morphs from its trigger with Motion, with form and textarea parts.",
+  "mode": "element",
+  "content": 0.0561,
+  "size": [
+   800,
+   659
+  ],
+  "img": "previews/site/x16-cultui-floating-panel.webp"
+ },
+ "x16-cultui-halo-search": {
+  "url": "https://www.cult-ui.com/docs/components/halo-search",
+  "status": 200,
+  "title": "Halo Search · Cult UI",
+  "desc": "Search input for React and shadcn/ui with an animated gradient border, clear button, loading state, and a Warp shader avatar.",
+  "mode": "element",
+  "content": 0.0866,
+  "size": [
+   800,
+   614
+  ],
+  "img": "previews/site/x16-cultui-halo-search.webp"
+ },
+ "x16-cultui-pixel-heading-word": {
+  "url": "https://www.cult-ui.com/docs/components/pixel-heading-word",
+  "status": 200,
+  "title": "Pixel Heading (Word) · Cult UI",
+  "desc": "Pixel font heading for React and shadcn/ui that swaps whole words between Geist pixel fonts on hover, with no animation library.",
+  "mode": "element",
+  "content": 0.0631,
+  "size": [
+   800,
+   659
+  ],
+  "img": "previews/site/x16-cultui-pixel-heading-word.webp"
+ },
+ "x16-motion-primitives-glow-effect": {
+  "url": "https://motion-primitives.com/docs/glow-effect",
+  "status": 200,
+  "title": "Glow Effect - Motion-Primitives",
+  "desc": "A customizable glow effect with animation modes, colors, blur-sm, and transitions. Built for React, Next.js, and Tailwind CSS.",
+  "mode": "viewport",
+  "content": 0.1056,
+  "size": [
+   800,
+   500
+  ],
+  "img": "previews/site/x16-motion-primitives-glow-effect.webp"
+ },
+ "x16-motion-primitives-image-comparison": {
+  "url": "https://motion-primitives.com/docs/image-comparison",
+  "status": 200,
+  "title": "Image Comparison - Motion-Primitives",
+  "desc": "Interactively compare two images with a draggable slider to reveal differences. Built for React, Next.js, and Tailwind CSS.",
+  "mode": "viewport",
+  "content": 0.1817,
+  "size": [
+   800,
+   500
+  ],
+  "img": "previews/site/x16-motion-primitives-image-comparison.webp"
+ },
+ "x16-motion-primitives-infinite-slider": {
+  "url": "https://motion-primitives.com/docs/infinite-slider",
+  "status": 200,
+  "title": "Infinite Slider - Motion-Primitives",
+  "desc": "Infinite scrolling slider component that smoothly loops through its children. It supports both horizontal and vertical directions, with customizable speed and speed on hover. Ideal for creating continuous carousels, marquee displays, or dynamic content showcases. Built for React, Next.js, and Tailwi",
+  "mode": "viewport",
+  "content": 0.2588,
+  "size": [
+   800,
+   500
+  ],
+  "img": "previews/site/x16-motion-primitives-infinite-slider.webp"
+ },
+ "x16-motion-primitives-in-view": {
+  "url": "https://motion-primitives.com/docs/in-view",
+  "status": 200,
+  "title": "In view - Motion-Primitives",
+  "desc": "Easily animate elements when they come into view. You can apply animations to elements when they enter the viewport, or when they are fully visible. Built for React, Next.js, and Tailwind CSS.",
+  "mode": "viewport",
+  "content": 0.0624,
+  "size": [
+   800,
+   500
+  ],
+  "img": "previews/site/x16-motion-primitives-in-view.webp"
+ },
+ "x16-motion-primitives-progressive-blur": {
+  "url": "https://motion-primitives.com/docs/progressive-blur",
+  "status": 200,
+  "title": "Progressive blur - Motion-Primitives",
+  "desc": "A Progressive Blur component creates a layered blur effect using motion and gradient masks. It progressively blurs layers based on direction and intensity, adding visual depth. Built for React, Next.js, and Tailwind CSS.",
+  "mode": "viewport",
+  "content": 0.1454,
+  "size": [
+   800,
+   500
+  ],
+  "img": "previews/site/x16-motion-primitives-progressive-blur.webp"
+ },
+ "x16-motion-primitives-sliding-number": {
+  "url": "https://motion-primitives.com/docs/sliding-number",
+  "status": 200,
+  "title": "Sliding Number - Motion-Primitives",
+  "desc": "A component that slides numbers. Built for React, Next.js, and Tailwind CSS.",
+  "mode": "viewport",
+  "content": 0.0519,
+  "size": [
+   800,
+   500
+  ],
+  "img": "previews/site/x16-motion-primitives-sliding-number.webp"
+ },
+ "x16-motion-primitives-spotlight": {
+  "url": "https://motion-primitives.com/docs/spotlight",
+  "status": 200,
+  "title": "Spotlight - Motion-Primitives",
+  "desc": "A dynamic spotlight effect component that follows cursor movement. Built for React, Next.js, and Tailwind CSS.",
+  "mode": "viewport",
+  "content": 0.0684,
+  "size": [
+   800,
+   500
+  ],
+  "img": "previews/site/x16-motion-primitives-spotlight.webp"
+ },
+ "x16-motion-primitives-text-morph": {
+  "url": "https://motion-primitives.com/docs/text-morph",
+  "status": 200,
+  "title": "Text Morph - Motion-Primitives",
+  "desc": "Animates text by morphing shared letters between words, creating fluid transitions. Built for React, Next.js, and Tailwind CSS.",
+  "mode": "viewport",
+  "content": 0.0574,
+  "size": [
+   800,
+   500
+  ],
+  "img": "previews/site/x16-motion-primitives-text-morph.webp"
+ },
+ "x16-motion-primitives-text-scramble": {
+  "url": "https://motion-primitives.com/docs/text-scramble",
+  "status": 200,
+  "title": "Text Scramble - Motion-Primitives",
+  "desc": "Text animation that transforms text by randomly cycling through characters before settling on the final content, creating an engaging cryptographic effect. Built for React, Next.js, and Tailwind CSS.",
+  "mode": "viewport",
+  "content": 0.0791,
+  "size": [
+   800,
+   500
+  ],
+  "img": "previews/site/x16-motion-primitives-text-scramble.webp"
+ },
+ "x16-cultui-side-panel": {
+  "url": "https://www.cult-ui.com/docs/components/side-panel",
+  "status": 200,
+  "title": "Side Panel · Cult UI",
+  "desc": "Expanding side panel for React and shadcn/ui that animates open to reveal extra content or a video, with a custom toggle.",
+  "mode": "element",
+  "content": 0.0451,
+  "size": [
+   800,
+   659
+  ],
+  "img": "previews/site/x16-cultui-side-panel.webp"
+ },
+ "x16-motion-primitives-text-roll": {
+  "url": "https://motion-primitives.com/docs/text-roll",
+  "status": 200,
+  "title": "Text Roll - Motion-Primitives",
+  "desc": "A text roll component that rotates each character, fully customizable for nice text animations. Built for React, Next.js, and Tailwind CSS.",
+  "mode": "viewport",
+  "content": 0.0621,
+  "size": [
+   800,
+   500
+  ],
+  "img": "previews/site/x16-motion-primitives-text-roll.webp"
+ },
+ "x16-motion-primitives-transition-panel": {
+  "url": "https://motion-primitives.com/docs/transition-panel",
+  "status": 200,
+  "title": "Transition Panel - Motion-Primitives",
+  "desc": "Easy way to switch between different pieces of content with enter and exit animations. It's perfect for enhancing user experience in areas such as onboarding card, settings adjustments, or any interactive content that requires a visual transition between states. Built for React, Next.js, and Tailwin",
+  "mode": "viewport",
+  "content": 0.0905,
+  "size": [
+   800,
+   500
+  ],
+  "img": "previews/site/x16-motion-primitives-transition-panel.webp"
+ },
+ "x16-motion-primitives-toolbar-dynamic": {
+  "url": "https://motion-primitives.com/docs/toolbar-dynamic",
+  "status": 200,
+  "title": "Toolbar Dynamic - Motion-Primitives",
+  "desc": "Adjusts width dynamically to accommodate varying tool requirements. Starts small and expands to offer more tools as needed. Built for React, Next.js, and Tailwind CSS.",
+  "mode": "viewport",
+  "content": 0.0549,
+  "size": [
+   800,
+   500
+  ],
+  "img": "previews/site/x16-motion-primitives-toolbar-dynamic.webp"
+ },
+ "x16-motion-primitives-morphing-popover": {
+  "url": "https://motion-primitives.com/docs/morphing-popover",
+  "status": 200,
+  "title": "Morphing Popover - Motion-Primitives",
+  "desc": "A popover that transforms from its trigger into the content using layout animations. It visually morphs instead of appearing as a separate element. Built for React, Next.js, and Tailwind CSS.",
+  "mode": "viewport",
+  "content": 0.0829,
+  "size": [
+   800,
+   500
+  ],
+  "img": "previews/site/x16-motion-primitives-morphing-popover.webp"
+ },
+ "x16-motion-primitives-magnetic": {
+  "url": "https://motion-primitives.com/docs/magnetic",
+  "status": 200,
+  "title": "Magnetic - Motion-Primitives",
+  "desc": "A magnetic effect for elements that allows them to be attracted to the mouse cursor. Built for React, Next.js, and Tailwind CSS.",
+  "mode": "viewport",
+  "content": 0.0752,
+  "size": [
+   800,
+   500
+  ],
+  "img": "previews/site/x16-motion-primitives-magnetic.webp"
+ },
+ "x16-motion-primitives-spinning-text": {
+  "url": "https://motion-primitives.com/docs/spinning-text",
+  "status": 200,
+  "title": "Spinning Text - Motion-Primitives",
+  "desc": "Easily animate text circularly. Customize the animation with variants and transitions. Built for React, Next.js, and Tailwind CSS.",
+  "mode": "viewport",
+  "content": 0.0629,
+  "size": [
+   800,
+   500
+  ],
+  "img": "previews/site/x16-motion-primitives-spinning-text.webp"
+ },
+ "x16-motion-primitives-cursor": {
+  "url": "https://motion-primitives.com/docs/cursor",
+  "status": 200,
+  "title": "Cursor - Motion-Primitives",
+  "desc": "A custom cursor component with optional spring animations. It can be globally applied to the page or attached specifically to a parent element. Built for React, Next.js, and Tailwind CSS.",
+  "mode": "viewport",
+  "content": 0.0961,
+  "size": [
+   800,
+   500
+  ],
+  "img": "previews/site/x16-motion-primitives-cursor.webp"
+ },
+ "x16-motion-primitives-text-loop": {
+  "url": "https://motion-primitives.com/docs/text-loop",
+  "status": 200,
+  "title": "Text Loop - Motion-Primitives",
+  "desc": "Text animation that transitions between multiple items, creating an engaging looping effect. Built for React, Next.js, and Tailwind CSS.",
+  "mode": "viewport",
+  "content": 0.0824,
+  "size": [
+   800,
+   500
+  ],
+  "img": "previews/site/x16-motion-primitives-text-loop.webp"
+ },
+ "x16-motion-primitives-animated-number": {
+  "url": "https://motion-primitives.com/docs/animated-number",
+  "status": 200,
+  "title": "Animated Number - Motion-Primitives",
+  "desc": "Easily animate numbers. Built for React, Next.js, and Tailwind CSS.",
+  "mode": "viewport",
+  "content": 0.0506,
+  "size": [
+   800,
+   500
+  ],
+  "img": "previews/site/x16-motion-primitives-animated-number.webp"
+ },
+ "x16-shadcn-dashboard-01": {
+  "url": "https://ui.shadcn.com/view/new-york-v4/dashboard-01",
+  "status": 200,
+  "title": "dashboard-01 - shadcn/ui",
+  "desc": "A dashboard with sidebar, charts and data table.",
+  "mode": "viewport",
+  "content": 0.2462,
+  "size": [
+   800,
+   500
+  ],
+  "img": "previews/site/x16-shadcn-dashboard-01.webp"
+ },
+ "x16-shadcn-sidebar-07": {
+  "url": "https://ui.shadcn.com/view/new-york-v4/sidebar-07",
+  "status": 200,
+  "title": "sidebar-07 - shadcn/ui",
+  "desc": "A sidebar that collapses to icons.",
+  "mode": "viewport",
+  "content": 0.7186,
+  "size": [
+   800,
+   500
+  ],
+  "img": "previews/site/x16-shadcn-sidebar-07.webp"
+ },
+ "x16-shadcn-sidebar-03": {
+  "url": "https://ui.shadcn.com/view/new-york-v4/sidebar-03",
+  "status": 200,
+  "title": "sidebar-03 - shadcn/ui",
+  "desc": "A sidebar with submenus.",
+  "mode": "viewport",
+  "content": 0.7309,
+  "size": [
+   800,
+   500
+  ],
+  "img": "previews/site/x16-shadcn-sidebar-03.webp"
+ },
+ "x16-shadcn-login-03": {
+  "url": "https://ui.shadcn.com/view/new-york-v4/login-03",
+  "status": 200,
+  "title": "login-03 - shadcn/ui",
+  "desc": "A login page with a muted background color.",
+  "mode": "viewport",
+  "content": 0.1033,
+  "size": [
+   800,
+   500
+  ],
+  "img": "previews/site/x16-shadcn-login-03.webp"
+ },
+ "x16-shadcn-login-04": {
+  "url": "https://ui.shadcn.com/view/new-york-v4/login-04",
+  "status": 200,
+  "title": "login-04 - shadcn/ui",
+  "desc": "A login page with form and image.",
+  "mode": "viewport",
+  "content": 0.1252,
+  "size": [
+   800,
+   500
+  ],
+  "img": "previews/site/x16-shadcn-login-04.webp"
+ },
+ "x16-onepagelove": {
+  "url": "https://onepagelove.com/",
+  "status": 200,
+  "title": "One Page Love — One Page Website Inspiration and Templates",
+  "desc": "One Page Love is a One Page website design gallery showcasing the best Single Page websites, templates and resources.",
+  "mode": "viewport",
+  "content": 0.3901,
+  "size": [
+   800,
+   500
+  ],
+  "img": "previews/site/x16-onepagelove.webp"
+ },
+ "x16-saaslandingpage": {
+  "url": "https://saaslandingpage.com/",
+  "status": 200,
+  "title": "The Best Landing Page Examples For Design Inspiration - SaaS Landing Page",
+  "desc": "SaaS Landing Page showcases the best landing page examples created by top-class SaaS companies. Get ideas and inspirations for your next design project.",
+  "mode": "viewport",
+  "content": 0.3225,
+  "size": [
+   800,
+   500
+  ],
+  "img": "previews/site/x16-saaslandingpage.webp"
+ },
+ "x16-awwwards-sotd": {
+  "url": "https://www.awwwards.com/websites/sites_of_the_day/",
+  "status": 200,
+  "title": "Sites Of The Day - Awwwards",
+  "desc": "            Sites Of The Day on Awwwards, the awards that recognize the talent and effort of the best web designers, developers and agencies in the world.\n    ",
+  "mode": "viewport",
+  "content": 0.5099,
+  "size": [
+   800,
+   500
+  ],
+  "img": "previews/site/x16-awwwards-sotd.webp"
+ },
+ "x16-siteinspire": {
+  "url": "https://www.siteinspire.com/",
+  "status": 200,
+  "title": "Best Website Design Inspiration | Siteinspire",
+  "desc": "Discover the best website designs and web design inspiration. A curated showcase of creative websites, updated daily.",
+  "mode": "viewport",
+  "content": 0.4034,
+  "size": [
+   800,
+   500
+  ],
+  "img": "previews/site/x16-siteinspire.webp"
+ },
+ "x16-mobbin-mcp": {
+  "url": "https://mobbin.com/mcp",
+  "status": 200,
+  "title": "Mobbin MCP: The Design MCP Server for AI Agents",
+  "desc": "Mobbin MCP is the design MCP server that gives your AI agents 600,000+ real screens from shipped products. Set up in under a minute with Claude and Cursor.",
+  "mode": "viewport",
+  "content": 0.2579,
+  "size": [
+   800,
+   500
+  ],
+  "img": "previews/site/x16-mobbin-mcp.webp"
+ },
+ "x16-framer-marketplace-templates": {
+  "url": "https://www.framer.com/marketplace/templates/",
+  "status": 200,
+  "title": "Website Templates — Framer Marketplace",
+  "desc": "Free and premium website templates for Framer, from portfolio sites to ecommerce stores. Responsive, easy to customize, and ready to publish in minutes.",
+  "mode": "viewport",
+  "content": 0.3152,
+  "size": [
+   800,
+   500
+  ],
+  "img": "previews/site/x16-framer-marketplace-templates.webp"
+ },
+ "x16-lapa-ninja": {
+  "url": "https://www.lapa.ninja/",
+  "status": 200,
+  "title": "Landing Page Design Examples: 7,300+ Best Landing Pages | Lapa Ninja",
+  "desc": "Browse 7,300+ landing page designs from portfolios, agencies & startups. Find high-converting examples with screenshots & videos. SaaS, e-commerce & more.",
+  "mode": "viewport",
+  "content": 0.5487,
+  "size": [
+   800,
+   500
+  ],
+  "img": "previews/site/x16-lapa-ninja.webp"
+ },
+ "x16-dark-design": {
+  "url": "https://www.dark.design/",
+  "status": 200,
+  "title": "Dark Themed Web Design Inspiration",
+  "desc": "The best hand-picked dark themed websites on the internet. From designers for designers. Curated with love.",
+  "mode": "viewport",
+  "content": 0.3415,
+  "size": [
+   800,
+   500
+  ],
+  "img": "previews/site/x16-dark-design.webp"
+ },
+ "x16-bench-linear-app": {
+  "url": "https://linear.app/",
+  "status": 200,
+  "title": "Linear – The system for product development",
+  "desc": "Purpose-built for planning and building products with AI agents.",
+  "mode": "viewport",
+  "content": 0.3723,
+  "size": [
+   800,
+   500
+  ],
+  "img": "previews/site/x16-bench-linear-app.webp"
+ },
+ "x16-refero-mcp": {
+  "url": "https://doc.refero.design/mcp/getting-started",
+  "status": 200,
+  "title": "Getting Started - Refero",
+  "desc": "Install Refero in ChatGPT and Codex, or connect Refero MCP to another AI tool",
+  "mode": "viewport",
+  "content": 0.3057,
+  "size": [
+   800,
+   500
+  ],
+  "img": "previews/site/x16-refero-mcp.webp"
+ },
+ "x16-bench-vercel-com": {
+  "url": "https://vercel.com/",
+  "status": 200,
+  "title": "Agentic Infrastructure - Vercel",
+  "desc": "The autonomous stack for every app and agent.",
+  "mode": "viewport",
+  "content": 0.1695,
+  "size": [
+   800,
+   500
+  ],
+  "img": "previews/site/x16-bench-vercel-com.webp"
+ },
+ "x16-bench-stripe-com": {
+  "url": "https://stripe.com/",
+  "status": 200,
+  "title": "Stripe | 収益向上のための金融インフラ",
+  "desc": "Stripe は、あらゆる規模や業種のビジネスにおける決済の受け入れ、柔軟な請求モデルの構築、および資金移動の管理を支援する、金融サービスプラットフォームです。",
+  "mode": "viewport",
+  "content": 0.3659,
+  "size": [
+   800,
+   500
+  ],
+  "img": "previews/site/x16-bench-stripe-com.webp"
+ },
+ "x16-bench-cursor-com": {
+  "url": "https://cursor.com/",
+  "status": 200,
+  "title": "AI Coding Agent for Building Ambitious Software | Cursor",
+  "desc": "Built to make you extraordinarily productive, agents turn ideas into code. Accelerate development by handing off tasks to Cursor.",
+  "mode": "viewport",
+  "content": 0.2556,
+  "size": [
+   800,
+   500
+  ],
+  "img": "previews/site/x16-bench-cursor-com.webp"
+ },
+ "x16-bench-raycast-com": {
+  "url": "https://www.raycast.com/",
+  "status": 200,
+  "title": "Raycast - Your shortcut to everything",
+  "desc": "A collection of powerful productivity tools all within an extendable launcher.",
+  "mode": "viewport",
+  "content": 0.2727,
+  "size": [
+   800,
+   500
+  ],
+  "img": "previews/site/x16-bench-raycast-com.webp"
+ },
+ "x-shadcn-trace-ai-elements": {
+  "url": "https://ui.shadcn.com/docs/changelog/2026-10-ai-elements",
+  "status": 200,
+  "title": "October 2026 - Trace, Code Block and AI Elements - shadcn/ui",
+  "desc": "Two new components for the steps an agent takes and the code it writes, and AI Elements, patterns for agentic interfaces built from shadcn/ui components.",
+  "mode": "viewport",
+  "content": 0.1502,
+  "size": [
+   800,
+   500
+  ],
+  "img": "previews/site/x-shadcn-trace-ai-elements.webp"
+ },
+ "x-loading-dev": {
+  "url": "https://loading.dev/",
+  "status": 200,
+  "title": "loading.dev",
+  "desc": "A lightweight library full of beautiful loading indicators for React.",
+  "mode": "viewport",
+  "content": 0.0427,
+  "size": [
+   800,
+   500
+  ],
+  "img": "previews/site/x-loading-dev.webp"
+ },
+ "x16-bench-framer-com": {
+  "url": "https://www.framer.com/",
+  "status": 200,
+  "title": "Framer: AI design agent",
+  "desc": "Go from idea to launch with an agent that designs and builds on the canvas. Keep each change editable, with hosting, security, analytics, CMS, and SEO built in.",
+  "mode": "viewport",
+  "content": 0.2926,
+  "size": [
+   800,
+   500
+  ],
+  "img": "previews/site/x16-bench-framer-com.webp"
+ },
+ "x16-bench-resend-com": {
+  "url": "https://resend.com/",
+  "status": 200,
+  "title": "Resend · Email for developers",
+  "desc": "The best way to reach humans instead of spam folders. Deliver transactional and marketing emails at scale.",
+  "mode": "viewport",
+  "content": 0.2239,
+  "size": [
+   800,
+   500
+  ],
+  "img": "previews/site/x16-bench-resend-com.webp"
+ },
+ "x-emilkowalski-skills": {
+  "url": "https://github.com/emilkowalski/skills",
+  "status": 200,
+  "title": "GitHub - emilkowalski/skills: Skills for Designers and Engineers. · GitHub",
+  "desc": "Skills for Designers and Engineers. Contribute to emilkowalski/skills development by creating an account on GitHub.",
+  "mode": "viewport",
+  "content": 0.2028,
+  "size": [
+   800,
+   500
+  ],
+  "img": "previews/site/x-emilkowalski-skills.webp"
+ },
+ "x-jakubkrehel-skills": {
+  "url": "https://github.com/jakubkrehel/skills",
+  "status": 200,
+  "title": "GitHub - jakubkrehel/skills: A collection of agent skills that help you build great interfaces. · GitHub",
+  "desc": "A collection of agent skills that help you build great interfaces. - jakubkrehel/skills",
+  "mode": "viewport",
+  "content": 0.2097,
+  "size": [
+   800,
+   500
+  ],
+  "img": "previews/site/x-jakubkrehel-skills.webp"
+ },
+ "x-vibrant-design": {
+  "url": "https://vibrant.design/",
+  "status": 200,
+  "title": "Vibrant Design - Best of the Internet",
+  "desc": "Curated website, section, launch-video and UI design inspiration from the best of the internet.",
+  "mode": "viewport",
+  "content": 0.4497,
+  "size": [
+   800,
+   500
+  ],
+  "img": "previews/site/x-vibrant-design.webp"
+ },
+ "x-interfaces-cheat-sheet": {
+  "url": "https://interfaces.dev/cheat-sheet",
+  "status": 200,
+  "title": "Interfaces › Cheat Sheet",
+  "desc": "Practical tips for making your interfaces clearer, easier to use and more polished.",
+  "mode": "viewport",
+  "content": 0.0385,
+  "size": [
+   800,
+   500
+  ],
+  "img": "previews/site/x-interfaces-cheat-sheet.webp"
+ },
+ "x-jakub-invisible-design-eng": {
+  "url": "https://jakub.kr/writing/the-invisible-side-of-design-engineering",
+  "status": 200,
+  "title": "The invisible side of design engineering",
+  "desc": "A look at the invisible side of design engineering.",
+  "mode": "viewport",
+  "content": 0.0883,
+  "size": [
+   800,
+   500
+  ],
+  "img": "previews/site/x-jakub-invisible-design-eng.webp"
+ },
+ "x-rauno-notes-5": {
+  "url": "https://rauno.me/notes/5",
+  "status": 200,
+  "title": "5",
+  "desc": "",
+  "mode": "viewport",
+  "content": 0.1222,
+  "size": [
+   800,
+   500
+  ],
+  "img": "previews/site/x-rauno-notes-5.webp"
+ },
+ "x-rewamp-ui": {
+  "url": "https://www.rewampui.com/",
+  "status": 200,
+  "title": "RewampUI - Component Showcase Dashboard",
+  "desc": "",
+  "mode": "viewport",
+  "content": 0.0526,
+  "size": [
+   800,
+   500
+  ],
+  "img": "previews/site/x-rewamp-ui.webp"
+ },
+ "x-interfere-design-system": {
+  "url": "https://design.interfere.com/",
+  "status": 200,
+  "title": "Interfere Design System",
+  "desc": "Components, styles and guidelines for building Interfere products.",
+  "mode": "viewport",
+  "content": 0.12,
+  "size": [
+   800,
+   500
+  ],
+  "img": "previews/site/x-interfere-design-system.webp"
+ },
+ "x-astryx-meta": {
+  "url": "https://astryx.atmeta.com/",
+  "status": 200,
+  "title": "Astryx Design System",
+  "desc": "An open source design system that is fully customizable and agent ready.",
+  "mode": "viewport",
+  "content": 0.3239,
+  "size": [
+   800,
+   500
+  ],
+  "img": "previews/site/x-astryx-meta.webp"
+ },
+ "x-dot-matrix-loaders": {
+  "url": "https://dotmatrix.zzzzshawn.cloud/",
+  "status": 200,
+  "title": "Dot Matrix",
+  "desc": "Dot Matrix is a React component library of dot matrix loaders—expressive loading primitives you install via the shadcn registry and own as local code.",
+  "mode": "viewport",
+  "content": 0.1039,
+  "size": [
+   800,
+   500
+  ],
+  "img": "previews/site/x-dot-matrix-loaders.webp"
+ },
+ "x-interfere-how-built": {
+  "url": "https://interfere.com/blog/how-we-built-interferes-new-website",
+  "status": 200,
+  "title": "How we built Interfere’s new website › Interfere",
+  "desc": "A deep dive into how we built Interfere’s new website",
+  "mode": "viewport",
+  "content": 0.1217,
+  "size": [
+   800,
+   500
+  ],
+  "img": "previews/site/x-interfere-how-built.webp"
+ },
+ "x-svelte-bits": {
+  "url": "https://sveltebits.xyz/",
+  "status": 200,
+  "title": "Svelte Bits — Animated UI Components for Svelte",
+  "desc": "An open source collection of high quality, animated, interactive & fully customizable Svelte components for building stunning, memorable user interfaces.",
+  "mode": "viewport",
+  "content": 0.4202,
+  "size": [
+   800,
+   500
+  ],
+  "img": "previews/site/x-svelte-bits.webp"
+ },
+ "x-vue-bits": {
+  "url": "https://vue-bits.dev/",
+  "status": 200,
+  "title": "Vue Bits - Animated UI Components For Vue",
+  "desc": "An open source collection of high quality, animated, interactive & fully customizable Vue components for building stunning, memorable user interfaces.",
+  "mode": "viewport",
+  "content": 0.5053,
+  "size": [
+   800,
+   500
+  ],
+  "img": "previews/site/x-vue-bits.webp"
+ },
+ "x16-godly-website": {
+  "url": "https://godly.website/",
+  "err": "Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigating to \"https://godly.website/\", waiting until \"domcontentloaded\"\n"
+ },
+ "x-originui": {
+  "url": "https://originui.com/",
+  "status": 200,
+  "title": "A new, modern UI component library built on top of Base UI - coss ui",
+  "desc": "Built for developers and AI.",
+  "mode": "viewport",
+  "content": 0.2269,
+  "size": [
+   800,
+   500
+  ],
+  "img": "previews/site/x-originui.webp"
+ },
+ "x-kobra-systems": {
+  "url": "https://kobra.systems/",
+  "status": 200,
+  "title": "Kobra / React Input OTP component",
+  "desc": "A segmented one-time-code input, built on input-otp. Built with React and Tailwind, in light and dark, with every state designed.",
+  "mode": "viewport",
+  "content": 0.0867,
+  "size": [
+   800,
+   500
+  ],
+  "img": "previews/site/x-kobra-systems.webp"
+ },
+ "x-getlayers": {
+  "url": "https://getlayers.ai/",
+  "status": 200,
+  "title": "GetLayers AI — Cinematic AI sites, made easy",
+  "desc": "Your AI builds generic — we make it cinematic. A library of web templates, 3D WebGL scenes, animated backgrounds and gradients, each copyable as one prompt.",
+  "mode": "viewport",
+  "content": 0.3981,
+  "size": [
+   800,
+   500
+  ],
+  "img": "previews/site/x-getlayers.webp"
+ },
+ "x-ogimagecn": {
+  "url": "https://www.ogimagecn.com/",
+  "status": 200,
+  "title": "ogimagecn - Beautiful OG images, made simple",
+  "desc": "A collection of beautifully designed and customizable Open Graph image components. Built on Satori. Works with shadcn/ui.",
+  "mode": "viewport",
+  "content": 0.2354,
+  "size": [
+   800,
+   500
+  ],
+  "img": "previews/site/x-ogimagecn.webp"
+ },
+ "x16-awwwards-overworld-audio": {
+  "url": "https://www.awwwards.com/sites/overworld-audio",
+  "status": 200,
+  "title": "Overworld Audio - Awwwards SOTD",
+  "desc": "Portfolio website for Overworld Audio, a studio crafting sonic branding and immersive sound experiences, presented as an explorable map of their work.",
+  "mode": "viewport",
+  "content": 0.4368,
+  "size": [
+   800,
+   500
+  ],
+  "img": "previews/site/x16-awwwards-overworld-audio.webp"
+ },
+ "x16-awwwards-huy-phan-vol-2": {
+  "url": "https://www.awwwards.com/sites/huy-phan-vol-2",
+  "status": 200,
+  "title": "Huy Phan Vol.2 - Awwwards SOTD",
+  "desc": "Portfolio of Huy Phan (aka Huyml), an independent designer and art director, based in Ho Chi Minh city, Vietnam.",
+  "mode": "viewport",
+  "content": 0.4093,
+  "size": [
+   800,
+   500
+  ],
+  "img": "previews/site/x16-awwwards-huy-phan-vol-2.webp"
+ },
+ "x16-awwwards-heron-ai": {
+  "url": "https://www.awwwards.com/sites/heron-ai",
+  "status": 200,
+  "title": "Heron AI - Awwwards SOTD",
+  "desc": "Heron AI is an agent that works inside your design tools. It watches your model as you design, suggests fixes, and makes the edits itself once you approve....",
+  "mode": "viewport",
+  "content": 0.2637,
+  "size": [
+   800,
+   500
+  ],
+  "img": "previews/site/x16-awwwards-heron-ai.webp"
+ },
+ "x16-awwwards-neutomni": {
+  "url": "https://www.awwwards.com/sites/neutomni",
+  "status": 200,
+  "title": "Neutomni - Awwwards SOTD",
+  "desc": "A bold, editorial portfolio for Neutomni, a Digital Design & Webflow studio, blending striking typography with playful retro UI to showcase custom brand...",
+  "mode": "viewport",
+  "content": 0.4001,
+  "size": [
+   800,
+   500
+  ],
+  "img": "previews/site/x16-awwwards-neutomni.webp"
+ },
+ "x16-awwwards-nick-ho": {
+  "url": "https://www.awwwards.com/sites/nick-ho",
+  "status": 200,
+  "title": "Nick Ho - Awwwards SOTD",
+  "desc": "A digital home for Porsche Carrera Cup driver Nick Ho, where a scroll-driven 360° helmet viewer and precise GSAP motion capture the feeling of speed on...",
+  "mode": "viewport",
+  "content": 0.3989,
+  "size": [
+   800,
+   500
+  ],
+  "img": "previews/site/x16-awwwards-nick-ho.webp"
+ },
+ "x16-awwwards-lpas": {
+  "url": "https://www.awwwards.com/sites/lpas",
+  "status": 200,
+  "title": "LPAS - Awwwards SOTD",
+  "desc": "LPAS is a California-based process-driven architecture and interior design studio. \nClear process. Creative results. Human-centered. Always curious.",
+  "mode": "viewport",
+  "content": 0.3902,
+  "size": [
+   800,
+   500
+  ],
+  "img": "previews/site/x16-awwwards-lpas.webp"
+ },
+ "x16-awwwards-maria-vasilyeva-portfolio": {
+  "url": "https://www.awwwards.com/sites/maria-vasilyeva-portfolio",
+  "status": 200,
+  "title": "Maria Vasilyeva Portfolio - Awwwards SOTD",
+  "desc": "Interactive designer portfolio inspired by music and sound, where rhythm, typography, layout, interactions and animation come together to create a dynamic...",
+  "mode": "viewport",
+  "content": 0.3391,
+  "size": [
+   800,
+   500
+  ],
+  "img": "previews/site/x16-awwwards-maria-vasilyeva-portfolio.webp"
+ },
+ "x16-awwwards-odyssee": {
+  "url": "https://www.awwwards.com/sites/odyssee",
+  "status": 200,
+  "title": "Odyssée - Awwwards SOTD",
+  "desc": "Odyssée is founded upon a philosophy of integrity in our approach to aesthetic medicine. This manifests in evidence-based treatments, a timeless approach...",
+  "mode": "viewport",
+  "content": 0.4046,
+  "size": [
+   800,
+   500
+  ],
+  "img": "previews/site/x16-awwwards-odyssee.webp"
+ },
+ "x16-awwwards-twks-1": {
+  "url": "https://www.awwwards.com/sites/twks-1",
+  "status": 200,
+  "title": "twks - Awwwards SOTD",
+  "desc": "Independent creative  agency based in Geneva since 2011. We partner with local and international brands and institutions to build their brand, digital...",
+  "mode": "viewport",
+  "content": 0.3918,
+  "size": [
+   800,
+   500
+  ],
+  "img": "previews/site/x16-awwwards-twks-1.webp"
+ },
+ "x16-awwwards-lidar-drone-scanning": {
+  "url": "https://www.awwwards.com/sites/lidar-drone-scanning",
+  "status": 200,
+  "title": "Lidar Drone Scanning - Awwwards SOTD",
+  "desc": "A Riotters R&D experiment turning raw drone LIDAR scans into a real-time 3D point cloud, rendered live in the browser with WebGL.",
+  "mode": "viewport",
+  "content": 0.3234,
+  "size": [
+   800,
+   500
+  ],
+  "img": "previews/site/x16-awwwards-lidar-drone-scanning.webp"
+ },
+ "x16-awwwards-edolus": {
+  "url": "https://www.awwwards.com/sites/edolus",
+  "status": 200,
+  "title": "EDOLUS - Awwwards SOTD",
+  "desc": "A cinematic WebGL journey into AI infrastructure. Pushing the limits of real-time 3D, immersive UX, and dynamic sound design. Engineered by Vertex3D.",
+  "mode": "viewport",
+  "content": 0.4009,
+  "size": [
+   800,
+   500
+  ],
+  "img": "previews/site/x16-awwwards-edolus.webp"
+ },
+ "x16-awwwards-santioni-spirits": {
+  "url": "https://www.awwwards.com/sites/santioni-spirits",
+  "status": 200,
+  "title": "Santioni Spirits - Awwwards SOTD",
+  "desc": "\"The Notturno Experience\" invites visitors into the illustrated universe of Santioni Spirits. An immersive, comic book-inspired journey serving as the...",
+  "mode": "viewport",
+  "content": 0.4329,
+  "size": [
+   800,
+   500
+  ],
+  "img": "previews/site/x16-awwwards-santioni-spirits.webp"
+ },
+ "x16-awwwards-tengile-malamala-collection": {
+  "url": "https://www.awwwards.com/sites/tengile-malamala-collection",
+  "status": 200,
+  "title": "Tengile Malamala Collection - Awwwards SOTD",
+  "desc": "An immersive experience showcasing Tengile MalaMala's quiet luxury through cinematic storytelling and refined editorial design, bringing Africa's iconic...",
+  "mode": "viewport",
+  "content": 0.3508,
+  "size": [
+   800,
+   500
+  ],
+  "img": "previews/site/x16-awwwards-tengile-malamala-collection.webp"
+ },
+ "x16-awwwards-milledollars": {
+  "url": "https://www.awwwards.com/sites/milledollars",
+  "status": 200,
+  "title": "Milledollars - Awwwards SOTD",
+  "desc": "Milledollars is a creative bureau focused on high-end video production.",
+  "mode": "viewport",
+  "content": 0.4291,
+  "size": [
+   800,
+   500
+  ],
+  "img": "previews/site/x16-awwwards-milledollars.webp"
+ },
+ "x16-framer-overtake": {
+  "url": "https://www.framer.com/marketplace/templates/overtake/",
+  "status": 200,
+  "title": "Overtake — Free Website Template for Framer",
+  "desc": "Performance Marketing Agency — Overtake is a free Agency website template for Framer, on the Framer Marketplace. Build on it with Framer's agent, directly on the canvas.",
+  "mode": "viewport",
+  "content": 0.6337,
+  "size": [
+   800,
+   500
+  ],
+  "img": "previews/site/x16-framer-overtake.webp"
+ },
+ "x16-framer-spector": {
+  "url": "https://www.framer.com/marketplace/templates/spector/",
+  "status": 200,
+  "title": "Spector — Website Template for Framer",
+  "desc": "A Narrative Portfolio Template — Spector is a premium Portfolio website template for Framer, on the Framer Marketplace. Build on it with Framer's agent, directly on the canvas.",
+  "mode": "viewport",
+  "content": 0.5167,
+  "size": [
+   800,
+   500
+  ],
+  "img": "previews/site/x16-framer-spector.webp"
+ },
+ "x16-framer-neiden": {
+  "url": "https://www.framer.com/marketplace/templates/neiden/",
+  "status": 200,
+  "title": "Neiden — Website Template for Framer",
+  "desc": "Design & Creative Agency Template — Neiden is a premium Agency website template for Framer, on the Framer Marketplace. Build on it with Framer's agent, directly on the canvas.",
+  "mode": "viewport",
+  "content": 0.4308,
+  "size": [
+   800,
+   500
+  ],
+  "img": "previews/site/x16-framer-neiden.webp"
+ },
+ "x16-framer-prolab": {
+  "url": "https://www.framer.com/marketplace/templates/prolab/",
+  "status": 200,
+  "title": "ProLab — Free Website Template for Framer",
+  "desc": "Free Framer Portfolio Template — ProLab  is a free Portfolio website template for Framer, on the Framer Marketplace. Build on it with Framer's agent, directly on the canvas.",
+  "mode": "viewport",
+  "content": 0.5836,
+  "size": [
+   800,
+   500
+  ],
+  "img": "previews/site/x16-framer-prolab.webp"
+ },
+ "x16-framer-conicorn": {
+  "url": "https://www.framer.com/marketplace/templates/conicorn/",
+  "status": 200,
+  "title": "Conicorn — Free Website Template for Framer",
+  "desc": "SaaS & AI Agency Template — Conicorn is a free AI website template for Framer, on the Framer Marketplace. Build on it with Framer's agent, directly on the canvas.",
+  "mode": "viewport",
+  "content": 0.6357,
+  "size": [
+   800,
+   500
+  ],
+  "img": "previews/site/x16-framer-conicorn.webp"
+ },
+ "x16-framer-asher-vale": {
+  "url": "https://www.framer.com/marketplace/templates/asher-vale/",
+  "status": 200,
+  "title": "Asher Vale — Free Website Template for Framer",
+  "desc": "The Perfect Portfolio Template — Asher Vale is a free Portfolio website template for Framer, on the Framer Marketplace. Build on it with Framer's agent, directly on the canvas.",
+  "mode": "viewport",
+  "content": 0.652,
+  "size": [
+   800,
+   500
+  ],
+  "img": "previews/site/x16-framer-asher-vale.webp"
+ },
+ "x16-framer-soren": {
+  "url": "https://www.framer.com/marketplace/templates/soren/",
+  "status": 200,
+  "title": "Soren — Website Template for Framer",
+  "desc": "Clean Portfolio & Agency Template — Soren is a premium Portfolio website template for Framer, on the Framer Marketplace. Build on it with Framer's agent, directly on the canvas.",
+  "mode": "viewport",
+  "content": 0.6559,
+  "size": [
+   800,
+   500
+  ],
+  "img": "previews/site/x16-framer-soren.webp"
+ },
+ "x16-framer-k-nstler": {
+  "url": "https://www.framer.com/marketplace/templates/k-nstler/",
+  "status": 200,
+  "title": "Künstler — Free Website Template for Framer",
+  "desc": "Minimal artist portfolio & events — Künstler is a free Art & Design website template for Framer, on the Framer Marketplace. Build on it with Framer's agent, directly on the canvas.",
+  "mode": "viewport",
+  "content": 0.6454,
+  "size": [
+   800,
+   500
+  ],
+  "img": "previews/site/x16-framer-k-nstler.webp"
+ },
+ "x16-framer-maxima": {
+  "url": "https://www.framer.com/marketplace/templates/maxima/",
+  "status": 200,
+  "title": "Maxima — Free Website Template for Framer",
+  "desc": "Premium Personal Portfolio — Maxima is a free Portfolio website template for Framer, on the Framer Marketplace. Build on it with Framer's agent, directly on the canvas.",
+  "mode": "viewport",
+  "content": 0.5533,
+  "size": [
+   800,
+   500
+  ],
+  "img": "previews/site/x16-framer-maxima.webp"
+ },
+ "x16-framer-kyma": {
+  "url": "https://www.framer.com/marketplace/templates/kyma/",
+  "status": 200,
+  "title": "Kyma — Website Template for Framer",
+  "desc": "AI Agency Template — Kyma is a premium AI website template for Framer, on the Framer Marketplace. Build on it with Framer's agent, directly on the canvas.",
+  "mode": "viewport",
+  "content": 0.3325,
+  "size": [
+   800,
+   500
+  ],
+  "img": "previews/site/x16-framer-kyma.webp"
+ },
+ "x16-framer-nudge": {
+  "url": "https://www.framer.com/marketplace/templates/nudge/",
+  "status": 200,
+  "title": "Nudge — Website Template for Framer",
+  "desc": "Premium Portfolio Template — Nudge is a premium Portfolio website template for Framer, on the Framer Marketplace. Build on it with Framer's agent, directly on the canvas.",
+  "mode": "viewport",
+  "content": 0.6537,
+  "size": [
+   800,
+   500
+  ],
+  "img": "previews/site/x16-framer-nudge.webp"
+ },
+ "x16-framer-creatorcut": {
+  "url": "https://www.framer.com/marketplace/templates/creatorcut/",
+  "status": 200,
+  "title": "CreatorCut — Free Website Template for Framer",
+  "desc": "Video Editing Portfolio — CreatorCut is a free Portfolio website template for Framer, on the Framer Marketplace. Build on it with Framer's agent, directly on the canvas.",
+  "mode": "viewport",
+  "content": 0.3761,
+  "size": [
+   800,
+   500
+  ],
+  "img": "previews/site/x16-framer-creatorcut.webp"
+ },
+ "x16-framer-ekon": {
+  "url": "https://www.framer.com/marketplace/templates/ekon/",
+  "status": 200,
+  "title": "Ekon — Free Website Template for Framer",
+  "desc": "Portfolio & Agency Template — Ekon is a free Portfolio website template for Framer, on the Framer Marketplace. Build on it with Framer's agent, directly on the canvas.",
+  "mode": "viewport",
+  "content": 0.5891,
+  "size": [
+   800,
+   500
+  ],
+  "img": "previews/site/x16-framer-ekon.webp"
+ },
+ "x16-framer-owen-studio": {
+  "url": "https://www.framer.com/marketplace/templates/owen-studio/",
+  "status": 200,
+  "title": "Owen Studio — Free Website Template for Framer",
+  "desc": "Free Editorial Portfolio Template — Owen Studio is a free Portfolio website template for Framer, on the Framer Marketplace. Build on it with Framer's agent, directly on the canvas.",
+  "mode": "viewport",
+  "content": 0.5793,
+  "size": [
+   800,
+   500
+  ],
+  "img": "previews/site/x16-framer-owen-studio.webp"
+ }
+}

@@ -19,7 +19,7 @@ var NOTES = window.UI_NOTES || {notes:{},why:{}}, CTO = window.UI_CT_ORDER || []
 // 组件样式卡：名称/说明按语言模板生成（组件类型 · 来源库）
 function styleName(i){return CTN(i.kind)+' · '+i.libName+(i.var?' · '+i.var:'')}
 function syncStyleNames(){ITEMS.forEach(function(i){if(i.type==='style')i.name=styleName(i)})}
-function noteOf(i){if(i.type==='style')return t('cs_note',{lib:i.libName,kind:CTN(i.kind)});var m=!isZh()&&(NOTES.notes[LANG]||NOTES.notes.en);return (m&&m[i.id])||(!isZh()&&i.noteEn)||shown(i.note)}
+function noteOf(i){if(i.cur&&isZh())return shown(i.note);if(i.type==='style')return t('cs_note',{lib:i.libName,kind:CTN(i.kind)});var m=!isZh()&&(NOTES.notes[LANG]||NOTES.notes.en);return (m&&m[i.id])||(!isZh()&&i.noteEn)||shown(i.note)}
 function whyOf(p,g){var m=!isZh()&&(NOTES.why[LANG]||NOTES.why.en);return (m&&m[p.id+'@'+g.id])||p.why}
 function secOf(i){if(isZh())return i.sectionTitle;var n=SECO.indexOf(i.section);return n<0?i.sectionTitle:t('sec_'+n)}
 function CTN(k){return t('ct_'+k)}
@@ -52,7 +52,10 @@ var LS = {
   set:function(k,v){try{localStorage.setItem('uihub.'+k,JSON.stringify(v))}catch(e){}}
 };
 var favs = LS.get('favs',{}), utags = LS.get('tags',{});
-var state = {type:'all', rt:'', vs:'', ct:'', q:'', tag:'', view:'home'};
+var state = {type:'all', rt:'', vs:'', ct:'', q:'', tag:'', view:'home', gold:false};
+function GOLDL(){return isZh()?'精选':(LANG==='ja'?'厳選':'Gold')}
+function FLAGL(f){var z=isZh();return f==='dead-link'?(z?'链接失效':'Dead link'):f==='blank-preview'?(z?'预览信息太少':'Low-info preview'):f==='doc-preview'?(z?'预览是文档页':'Docs-page preview'):(z?'预览重复':'Duplicate preview')}
+function gbadge(i){var b='';if(i.gold)b+='<span class="tag-gold" title="'+esc(i.why||'')+'">★ '+esc(GOLDL())+'</span>';if(i.flag&&i.flag.length)b+='<span class="tag-flag">⚠ '+esc(FLAGL(i.flag[0]))+'</span>';return b}
 var $ = function(id){return document.getElementById(id)};
 function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})}
 function host(u){try{return new URL(u).hostname.replace(/^www\./,'')}catch(e){return u}}
@@ -85,12 +88,12 @@ var O = window.UI_ORIG || {};
 var ORIG_Q=null;
 function loadOrig(cb){
   if(window.UI_ORIG){O=window.UI_ORIG;cb&&cb();return}
-  if(!ORIG_Q){ORIG_Q=[];var s=document.createElement('script');s.src='orig.js?v=6';s.async=true;
+  if(!ORIG_Q){ORIG_Q=[];var s=document.createElement('script');s.src='orig.js?v=7';s.async=true;
     var done=function(){O=window.UI_ORIG||O;var q=ORIG_Q;ORIG_Q=[];q.forEach(function(f){try{f()}catch(e){}})};
     s.onload=done;s.onerror=function(){ORIG_Q.forEach(function(f){try{f()}catch(e){}});ORIG_Q=null};document.head.appendChild(s)}
   if(cb)ORIG_Q.push(cb);
 }
-(function(){function pf(){var l=document.createElement('link');l.rel='prefetch';l.as='script';l.href='orig.js?v=6';document.head.appendChild(l)}var ri=window.requestIdleCallback||function(f){setTimeout(f,3000)};if(document.readyState==='complete')ri(pf,{timeout:8000});else addEventListener('load',function(){ri(pf,{timeout:8000})})})();
+(function(){function pf(){var l=document.createElement('link');l.rel='prefetch';l.as='script';l.href='orig.js?v=7';document.head.appendChild(l)}var ri=window.requestIdleCallback||function(f){setTimeout(f,3000)};if(document.readyState==='complete')ri(pf,{timeout:8000});else addEventListener('load',function(){ri(pf,{timeout:8000})})})();
 ['pointerdown','keydown','touchstart'].forEach(function(ev){addEventListener(ev,function h(){removeEventListener(ev,h,true);loadOrig()},{capture:true,passive:true})});
 /* v5：把构建时写死的中文包装行（安装/配置/示例标题、补充说明、SKILL.md 全文标题）换成当前语言；原文行一律不动 */
 function WL(s){if(!s)return s;var zh=isZh(),fp=function(x){return zh||LANG==='ja'?x:x.replace(/（/g,' (').replace(/）/g,')').replace(/，/g,', ').replace(/、/g,', ')};
@@ -258,13 +261,15 @@ function card(i){
       '<div class="cb"><h3>'+esc(nm)+'</h3>'+metaLine(i)+'<p class="note">'+esc(noteOf(i)||host(i.url))+'</p>'+foot(i)+'</div></article>';
   }
   var tag = live?'<span class="tag-lv">'+t('tag_live')+'</span>':(m.frame?'<span class="tag-fr">'+t('tag_frame')+'</span>':'');
-  if(i.type==='style')return '<article class="card cs" data-open="'+i.id+'"><div class="cm"><div class="th">'+thumb(i)+'</div></div>'+
+  if(i.type==='style')return '<article class="card cs'+(i.gold?' gold':'')+'" data-open="'+i.id+'"><div class="cm"><div class="th">'+thumb(i)+'</div>'+(gbadge(i)?'<div class="ctop">'+gbadge(i)+'</div>':'')+'</div>'+
     '<div class="cb"><h3>'+esc(CTN(i.kind))+'<span class="csl">'+esc(i.libName)+(i.var?' · '+esc(i.var):'')+'</span></h3>'+metaLine(i,1)+'<p class="note">'+esc(noteOf(i))+'</p>'+foot(i)+'</div></article>';
-  return '<article class="card" data-open="'+i.id+'"><div class="cm"><div class="th">'+thumb(i)+'</div>'+(tag?'<div class="ctop">'+tag+'</div>':'')+'</div>'+
+  tag=gbadge(i)+tag;
+  return '<article class="card'+(i.gold?' gold':'')+'" data-open="'+i.id+'"><div class="cm"><div class="th">'+thumb(i)+'</div>'+(tag?'<div class="ctop">'+tag+'</div>':'')+'</div>'+
     '<div class="cb"><h3>'+esc(nm)+'</h3>'+metaLine(i)+'<p class="note">'+esc(noteOf(i)||host(i.url))+'</p>'+foot(i)+'</div></article>';
 }
 function match(i){
   if(state.view==='fav'&&!favs[i.id])return false;
+  if(state.gold&&!i.gold)return false;
   if(state.type!=='all'&&i.type!==state.type)return false;
   if(state.rt&&(i.rt||[]).indexOf(state.rt)<0)return false;
   if(state.vs&&(i.vs||[]).indexOf(state.vs)<0)return false;
@@ -278,6 +283,7 @@ function renderChips(){
   // 分面计数：每一行的数字 = 满足其它筛选条件时该项的数量
   var base = ITEMS.filter(function(i){return state.view!=='fav'||favs[i.id]});
   function ok(i,skip){
+    if(state.gold&&!i.gold)return false;
     if(skip!=='rt'&&state.rt&&(i.rt||[]).indexOf(state.rt)<0)return false;
     if(skip!=='vs'&&state.vs&&(i.vs||[]).indexOf(state.vs)<0)return false;
     if(skip!=='ct'&&state.ct&&(i.ct||[]).indexOf(state.ct)<0)return false;
@@ -287,7 +293,8 @@ function renderChips(){
   var rc=cnt('rt','rt');
   function lab(id,k){var p=$(id).parentNode;p.dataset.label=t(k)}
   lab('chips','rt_h');lab('vsChips','vs_h');lab('ctChips','ct_h');lab('tagChips','tags_h');
-  var html = '<button class="chip'+(state.rt?'':' on')+'" data-rt="">'+esc(t('rt_all'))+'<small>'+rc._n+'</small></button>'+
+  var gn=ITEMS.filter(function(i){return i.gold}).length;
+  var html = '<button class="chip gold'+(state.gold?' on':'')+'" data-gold="1">★ '+esc(GOLDL())+'<small>'+gn+'</small></button>'+'<button class="chip'+(state.rt?'':' on')+'" data-rt="">'+esc(t('rt_all'))+'<small>'+rc._n+'</small></button>'+
     RTO.filter(function(k){return rc[k]||state.rt===k}).map(function(k){return '<button class="chip'+(state.rt===k?' on':'')+'" data-rt="'+k+'">'+esc(RTN(k))+'<small>'+(rc[k]||0)+'</small></button>'}).join('');
   var tc={}; base.forEach(function(i){if(ok(i,'tag'))tagsOf(i).forEach(function(x){tc[x]=(tc[x]||0)+1})});
   var top=Object.keys(tc).sort(function(a,b){return tc[b]-tc[a]}).slice(0,12);
@@ -307,7 +314,7 @@ function moreGrid(){var n=Math.min(GL.length,GN+(GN?160:96));if(n>GN)$('grid').i
 function initMore(){var s=$('gridMore');if(!s||GIO||!('IntersectionObserver' in window))return;GIO=new IntersectionObserver(function(es){if(es[0].isIntersecting)moreGrid()},{rootMargin:'1200px 0px'});GIO.observe(s)}
 function renderGrid(){initMore();
   var list = ITEMS.filter(match);
-  list = list.map(function(i,k){return [i.type==='style'?-1:vis(i)?(M[i.id]&&M[i.id].img||LIVE[i.id]?0:1):2,k,i]}).sort(function(a,b){return a[0]-b[0]||a[1]-b[1]}).map(function(a){return a[2]});
+  list = list.map(function(i,k){return [i.gold?-3:(i.flag&&i.flag.length?3:(i.type==='style'?-1:vis(i)?(M[i.id]&&M[i.id].img||LIVE[i.id]?0:1):2)),k,i]}).sort(function(a,b){return a[0]-b[0]||a[1]-b[1]}).map(function(a){return a[2]});
   GL=list; GN=0; $('grid').innerHTML=''; moreGrid();
   var fc=Object.keys(favs).length; $('favCnt').textContent=fc||'';
   var isFav=state.view==='fav';
@@ -503,6 +510,7 @@ function route(){
   var h=location.hash.replace(/^#\/?/,'');
   if(h.indexOf('r/')===0){if(state.view==='guides')setView('home');openSheet(decodeURIComponent(h.slice(2)));return}
   closeSheet();
+  if(h==='gold'){state.gold=true;if(state.view!=='home')setView('home');refresh();setTimeout(function(){$('catalog').scrollIntoView()},80);return}
   if(h==='guides'){setView('guides');scrollTo(0,0)}else if(h==='fav'){state.type='all';state.rt='';state.vs='';setView('fav');scrollTo(0,0)}else if(state.view!=='home')setView('home');
 }
 function focusSearch(){if(state.view!=='home')location.hash='#/';setTimeout(function(){var q=$('q');q.scrollIntoView({behavior:'smooth',block:'center'});q.focus({preventScroll:true})},60)}
@@ -521,6 +529,7 @@ document.addEventListener('click',function(e){
   if(el.dataset.cco){e.preventDefault();copy(codeParts(BY[el.dataset.cco]).o,t('toast_code'));return}
   if(el.dataset.tip){e.preventDefault();toast(el.dataset.tip);return}
   if(el.dataset.fav){e.preventDefault();e.stopPropagation();toggleFav(el.dataset.fav);return}
+  if(el.dataset.gold!=null&&el.classList.contains('chip')){state.gold=!state.gold;refresh();return}
   if(el.dataset.type){state.type=el.dataset.type;refresh();return}
   if(el.dataset.rt!=null&&el.classList.contains('chip')){state.rt=state.rt===el.dataset.rt?'':el.dataset.rt;refresh();return}
   if(el.dataset.vs!=null&&el.classList.contains('chip')){state.vs=state.vs===el.dataset.vs?'':el.dataset.vs;refresh();return}

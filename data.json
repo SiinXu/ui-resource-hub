@@ -1,6 +1,6 @@
 {
- "generated": "2026-10-15",
- "count": 2395,
+ "generated": "2026-10-16",
+ "count": 2524,
  "items": [
   {
    "id": "ued-figma-mcp-guide",
@@ -1023,7 +1023,10 @@
     "soft",
     "minimal"
    ],
-   "batch": "ued"
+   "batch": "ued",
+   "flag": [
+    "dup-preview"
+   ]
   },
   {
    "id": "ued-govuk-ds",
@@ -1437,7 +1440,9 @@
    "vs": [
     "editorial"
    ],
-   "batch": "ued"
+   "batch": "ued",
+   "gold": true,
+   "why": "经典书籍排版，正文可读性的标准"
   },
   {
    "id": "ued-utopia-fyi",
@@ -1463,7 +1468,9 @@
     "swiss",
     "minimal"
    ],
-   "batch": "ued"
+   "batch": "ued",
+   "gold": true,
+   "why": "藏蓝 + 奶白，清晰的编辑字号阶梯"
   },
   {
    "id": "ued-typescale",
@@ -2388,7 +2395,9 @@
     "playful",
     "motion"
    ],
-   "batch": "ued"
+   "batch": "ued",
+   "gold": true,
+   "why": "纸感底 + 优雅衬线标题，策展式陈列"
   },
   {
    "id": "ued-designspiration",
@@ -4590,7 +4599,9 @@
    "vs": [
     "motion",
     "minimal"
-   ]
+   ],
+   "gold": true,
+   "why": "页面过渡的高质量合集"
   },
   {
    "id": "ui-shadcn-com",
@@ -4612,7 +4623,9 @@
    ],
    "vs": [
     "minimal"
-   ]
+   ],
+   "gold": true,
+   "why": "所有现代 React 组件的底座，中性、可定制"
   },
   {
    "id": "www-ui-skills-com-skills-anthropics-frontend-design",
@@ -5377,6 +5390,9 @@
    "vs": [
     "minimal",
     "soft"
+   ],
+   "flag": [
+    "dup-preview"
    ]
   },
   {
@@ -5598,7 +5614,9 @@
    "vs": [
     "dark-tech",
     "motion"
-   ]
+   ],
+   "gold": true,
+   "why": "超大压缩无衬线标题，大胆而留白"
   },
   {
    "id": "www-shadergradient-co",
@@ -5626,7 +5644,9 @@
    "vs": [
     "gradient",
     "3d"
-   ]
+   ],
+   "gold": true,
+   "why": "颗粒暖渐变 + 细衬线，电影感单色场"
   },
   {
    "id": "neat-firecms-co",
@@ -5786,7 +5806,9 @@
    "vs": [
     "dark-tech",
     "motion"
-   ]
+   ],
+   "gold": true,
+   "why": "超大黑色无衬线 + 一条虹彩丝带，“一处惊艳”的典型"
   },
   {
    "id": "tympanus-net-codrops",
@@ -5863,7 +5885,9 @@
    "vs": [
     "skeuomorphic",
     "3d"
-   ]
+   ],
+   "gold": true,
+   "why": "着色器做主视觉的高级样本：单一材质、光感细腻"
   },
   {
    "id": "reactbits-dev-animations-metallic-paint",
@@ -6242,7 +6266,9 @@
    "vs": [
     "3d",
     "gradient"
-   ]
+   ],
+   "gold": true,
+   "why": "雾面玻璃 + 颗粒 + 大数字，安静但有氛围"
   },
   {
    "id": "beam-jakubantalik-com",
@@ -6510,7 +6536,9 @@
    "vs": [
     "gradient",
     "3d"
-   ]
+   ],
+   "gold": true,
+   "why": "无衬线 + 衬线斜体混排、只一块粉色，克制的配色范本"
   },
   {
    "id": "reelfolio-io",
@@ -7651,6 +7679,9 @@
    "vs": [
     "industrial",
     "minimal"
+   ],
+   "flag": [
+    "dead-link"
    ]
   },
   {
@@ -9318,6 +9349,9 @@
    "vs": [
     "minimal",
     "enterprise"
+   ],
+   "flag": [
+    "dup-preview"
    ]
   },
   {
@@ -10360,7 +10394,9 @@
    ],
    "vs": [
     "motion"
-   ]
+   ],
+   "gold": true,
+   "why": "整块高饱和黄 + 黑色等宽字，瑞士海报的能量"
   },
   {
    "id": "lib-motion-dev-examples",
@@ -10438,7 +10474,9 @@
    ],
    "vs": [
     "motion"
-   ]
+   ],
+   "gold": true,
+   "why": "字体主导的品牌页：近黑 + 骨白 + 一个荧光绿"
   },
   {
    "id": "lib-auto-animate-formkit-com",
@@ -10520,7 +10558,9 @@
    ],
    "vs": [
     "motion"
-   ]
+   ],
+   "gold": true,
+   "why": "海报式哥特字标题，极具记忆点的排版"
   },
   {
    "id": "lib-animate-style",
@@ -10871,7 +10911,9 @@
    ],
    "vs": [
     "minimal"
-   ]
+   ],
+   "gold": true,
+   "why": "大衬线标题 + 纸感，信息型站点也能有品味"
   },
   {
    "id": "cs-ui-aceternity-com-background",
@@ -11496,6 +11538,9 @@
    "vs": [
     "playful",
     "soft"
+   ],
+   "flag": [
+    "dup-preview"
    ]
   },
   {
@@ -11675,6 +11720,9 @@
    "vs": [
     "apple",
     "minimal"
+   ],
+   "flag": [
+    "dup-preview"
    ]
   },
   {
@@ -14524,6 +14572,9 @@
    ],
    "vs": [
     "minimal"
+   ],
+   "flag": [
+    "blank-preview"
    ]
   },
   {
@@ -15659,6 +15710,9 @@
    "vs": [
     "playful",
     "gradient"
+   ],
+   "flag": [
+    "blank-preview"
    ]
   },
   {
@@ -15987,6 +16041,9 @@
    ],
    "vs": [
     "minimal"
+   ],
+   "flag": [
+    "dup-preview"
    ]
   },
   {
@@ -16111,6 +16168,9 @@
    "vs": [
     "minimal",
     "enterprise"
+   ],
+   "flag": [
+    "dup-preview"
    ]
   },
   {
@@ -16982,6 +17042,9 @@
    "vs": [
     "minimal",
     "motion"
+   ],
+   "flag": [
+    "dup-preview"
    ]
   },
   {
@@ -17946,6 +18009,9 @@
    "vs": [
     "minimal",
     "enterprise"
+   ],
+   "flag": [
+    "blank-preview"
    ]
   },
   {
@@ -18041,6 +18107,9 @@
    ],
    "vs": [
     "minimal"
+   ],
+   "flag": [
+    "dup-preview"
    ]
   },
   {
@@ -18386,6 +18455,9 @@
    ],
    "vs": [
     "minimal"
+   ],
+   "flag": [
+    "blank-preview"
    ]
   },
   {
@@ -18632,6 +18704,9 @@
    "vs": [
     "minimal",
     "motion"
+   ],
+   "flag": [
+    "dup-preview"
    ]
   },
   {
@@ -19091,6 +19166,9 @@
    "vs": [
     "playful",
     "gradient"
+   ],
+   "flag": [
+    "dup-preview"
    ]
   },
   {
@@ -19273,6 +19351,10 @@
    ],
    "vs": [
     "minimal"
+   ],
+   "flag": [
+    "blank-preview",
+    "dup-preview"
    ]
   },
   {
@@ -19425,6 +19507,9 @@
    ],
    "vs": [
     "minimal"
+   ],
+   "flag": [
+    "dup-preview"
    ]
   },
   {
@@ -19515,6 +19600,9 @@
    "vs": [
     "minimal",
     "enterprise"
+   ],
+   "flag": [
+    "dup-preview"
    ]
   },
   {
@@ -19705,6 +19793,9 @@
    ],
    "vs": [
     "minimal"
+   ],
+   "flag": [
+    "dup-preview"
    ]
   },
   {
@@ -20050,6 +20141,9 @@
    ],
    "vs": [
     "minimal"
+   ],
+   "flag": [
+    "dup-preview"
    ]
   },
   {
@@ -20108,6 +20202,9 @@
    ],
    "vs": [
     "minimal"
+   ],
+   "flag": [
+    "dup-preview"
    ]
   },
   {
@@ -20203,6 +20300,9 @@
    ],
    "vs": [
     "enterprise"
+   ],
+   "flag": [
+    "blank-preview"
    ]
   },
   {
@@ -20632,6 +20732,9 @@
    ],
    "vs": [
     "minimal"
+   ],
+   "flag": [
+    "dup-preview"
    ]
   },
   {
@@ -20785,6 +20888,9 @@
    ],
    "vs": [
     "enterprise"
+   ],
+   "flag": [
+    "blank-preview"
    ]
   },
   {
@@ -21028,6 +21134,9 @@
    ],
    "vs": [
     "minimal"
+   ],
+   "flag": [
+    "dup-preview"
    ]
   },
   {
@@ -21059,6 +21168,9 @@
    ],
    "vs": [
     "enterprise"
+   ],
+   "flag": [
+    "blank-preview"
    ]
   },
   {
@@ -21120,6 +21232,9 @@
    "vs": [
     "minimal",
     "enterprise"
+   ],
+   "flag": [
+    "dup-preview"
    ]
   },
   {
@@ -21565,6 +21680,9 @@
    ],
    "vs": [
     "minimal"
+   ],
+   "flag": [
+    "blank-preview"
    ]
   },
   {
@@ -21688,6 +21806,9 @@
    "vs": [
     "minimal",
     "utilitarian"
+   ],
+   "flag": [
+    "dup-preview"
    ]
   },
   {
@@ -22211,6 +22332,9 @@
    ],
    "vs": [
     "minimal"
+   ],
+   "flag": [
+    "dup-preview"
    ]
   },
   {
@@ -22457,6 +22581,9 @@
    "vs": [
     "soft",
     "minimal"
+   ],
+   "flag": [
+    "blank-preview"
    ]
   },
   {
@@ -22488,6 +22615,9 @@
    ],
    "vs": [
     "minimal"
+   ],
+   "flag": [
+    "blank-preview"
    ]
   },
   {
@@ -22612,6 +22742,9 @@
    ],
    "vs": [
     "enterprise"
+   ],
+   "flag": [
+    "dup-preview"
    ]
   },
   {
@@ -22642,6 +22775,9 @@
    ],
    "vs": [
     "enterprise"
+   ],
+   "flag": [
+    "dup-preview"
    ]
   },
   {
@@ -23339,6 +23475,9 @@
    ],
    "vs": [
     "minimal"
+   ],
+   "flag": [
+    "dup-preview"
    ]
   },
   {
@@ -23492,6 +23631,9 @@
    ],
    "vs": [
     "minimal"
+   ],
+   "flag": [
+    "dup-preview"
    ]
   },
   {
@@ -23860,6 +24002,9 @@
    ],
    "vs": [
     "minimal"
+   ],
+   "flag": [
+    "dup-preview"
    ]
   },
   {
@@ -23984,6 +24129,9 @@
    ],
    "vs": [
     "enterprise"
+   ],
+   "flag": [
+    "dup-preview"
    ]
   },
   {
@@ -24016,6 +24164,9 @@
    ],
    "vs": [
     "enterprise"
+   ],
+   "flag": [
+    "blank-preview"
    ]
   },
   {
@@ -24208,6 +24359,9 @@
    "vs": [
     "minimal",
     "utilitarian"
+   ],
+   "flag": [
+    "dup-preview"
    ]
   },
   {
@@ -24807,6 +24961,9 @@
    ],
    "vs": [
     "minimal"
+   ],
+   "flag": [
+    "dup-preview"
    ]
   },
   {
@@ -25243,6 +25400,9 @@
    ],
    "vs": [
     "enterprise"
+   ],
+   "flag": [
+    "dup-preview"
    ]
   },
   {
@@ -25434,7 +25594,9 @@
     "dark-tech",
     "motion",
     "3d"
-   ]
+   ],
+   "gold": true,
+   "why": "黑白纪实照片瀑布流，编辑感"
   },
   {
    "id": "cs2-lib-bulma-io--nav--components-navbar--v0",
@@ -25752,6 +25914,9 @@
    "vs": [
     "minimal",
     "motion"
+   ],
+   "flag": [
+    "dup-preview"
    ]
   },
   {
@@ -26032,6 +26197,9 @@
    ],
    "vs": [
     "minimal"
+   ],
+   "flag": [
+    "dup-preview"
    ]
   },
   {
@@ -26157,6 +26325,9 @@
    ],
    "vs": [
     "enterprise"
+   ],
+   "flag": [
+    "blank-preview"
    ]
   },
   {
@@ -26251,6 +26422,9 @@
    ],
    "vs": [
     "enterprise"
+   ],
+   "flag": [
+    "dup-preview"
    ]
   },
   {
@@ -26439,6 +26613,9 @@
    ],
    "vs": [
     "enterprise"
+   ],
+   "flag": [
+    "dup-preview"
    ]
   },
   {
@@ -26888,6 +27065,9 @@
    "vs": [
     "minimal",
     "motion"
+   ],
+   "flag": [
+    "blank-preview"
    ]
   },
   {
@@ -27012,6 +27192,9 @@
    ],
    "vs": [
     "material"
+   ],
+   "flag": [
+    "dup-preview"
    ]
   },
   {
@@ -27232,6 +27415,9 @@
    ],
    "vs": [
     "minimal"
+   ],
+   "flag": [
+    "blank-preview"
    ]
   },
   {
@@ -27263,6 +27449,9 @@
    ],
    "vs": [
     "enterprise"
+   ],
+   "flag": [
+    "blank-preview"
    ]
   },
   {
@@ -27641,6 +27830,9 @@
    ],
    "vs": [
     "minimal"
+   ],
+   "flag": [
+    "blank-preview"
    ]
   },
   {
@@ -27739,6 +27931,9 @@
    "vs": [
     "minimal",
     "utilitarian"
+   ],
+   "flag": [
+    "blank-preview"
    ]
   },
   {
@@ -28245,6 +28440,9 @@
    ],
    "vs": [
     "minimal"
+   ],
+   "flag": [
+    "blank-preview"
    ]
   },
   {
@@ -28371,6 +28569,9 @@
    ],
    "vs": [
     "enterprise"
+   ],
+   "flag": [
+    "blank-preview"
    ]
   },
   {
@@ -28561,6 +28762,9 @@
    ],
    "vs": [
     "minimal"
+   ],
+   "flag": [
+    "dup-preview"
    ]
   },
   {
@@ -28915,6 +29119,9 @@
    ],
    "vs": [
     "minimal"
+   ],
+   "flag": [
+    "dup-preview"
    ]
   },
   {
@@ -29105,6 +29312,9 @@
    "vs": [
     "minimal",
     "utilitarian"
+   ],
+   "flag": [
+    "blank-preview"
    ]
   },
   {
@@ -29166,6 +29376,9 @@
    ],
    "vs": [
     "minimal"
+   ],
+   "flag": [
+    "blank-preview"
    ]
   },
   {
@@ -29638,6 +29851,9 @@
    ],
    "vs": [
     "minimal"
+   ],
+   "flag": [
+    "dup-preview"
    ]
   },
   {
@@ -29731,6 +29947,9 @@
    ],
    "vs": [
     "enterprise"
+   ],
+   "flag": [
+    "dup-preview"
    ]
   },
   {
@@ -29958,6 +30177,9 @@
    ],
    "vs": [
     "minimal"
+   ],
+   "flag": [
+    "dup-preview"
    ]
   },
   {
@@ -30117,6 +30339,9 @@
    "vs": [
     "minimal",
     "utilitarian"
+   ],
+   "flag": [
+    "blank-preview"
    ]
   },
   {
@@ -30619,6 +30844,9 @@
    ],
    "vs": [
     "minimal"
+   ],
+   "flag": [
+    "dup-preview"
    ]
   },
   {
@@ -30712,6 +30940,9 @@
    ],
    "vs": [
     "enterprise"
+   ],
+   "flag": [
+    "blank-preview"
    ]
   },
   {
@@ -31099,6 +31330,9 @@
    "vs": [
     "minimal",
     "utilitarian"
+   ],
+   "flag": [
+    "dup-preview"
    ]
   },
   {
@@ -31794,7 +32028,9 @@
     "dark-tech",
     "motion",
     "3d"
-   ]
+   ],
+   "gold": true,
+   "why": "黑底白色细线流场，优雅的单色动态背景"
   },
   {
    "id": "cs2-ui-aceternity-com--carousel--apple-cards-carousel--v0",
@@ -31923,6 +32159,9 @@
    ],
    "vs": [
     "material"
+   ],
+   "flag": [
+    "dup-preview"
    ]
   },
   {
@@ -32526,6 +32765,9 @@
    ],
    "vs": [
     "enterprise"
+   ],
+   "flag": [
+    "blank-preview"
    ]
   },
   {
@@ -32946,6 +33188,9 @@
    "vs": [
     "apple",
     "minimal"
+   ],
+   "flag": [
+    "dup-preview"
    ]
   },
   {
@@ -33958,6 +34203,9 @@
    ],
    "vs": [
     "enterprise"
+   ],
+   "flag": [
+    "dup-preview"
    ]
   },
   {
@@ -35171,6 +35419,9 @@
    ],
    "vs": [
     "enterprise"
+   ],
+   "flag": [
+    "dup-preview"
    ]
   },
   {
@@ -35391,6 +35642,9 @@
    ],
    "vs": [
     "enterprise"
+   ],
+   "flag": [
+    "blank-preview"
    ]
   },
   {
@@ -37461,7 +37715,9 @@
     "dark-tech",
     "motion",
     "3d"
-   ]
+   ],
+   "gold": true,
+   "why": "单色液态金属流动，戏剧性强"
   },
   {
    "id": "cs2-lib-flowbite-com--breadcrumb--components-breadcrumb--v3",
@@ -37589,6 +37845,9 @@
    "vs": [
     "minimal",
     "utilitarian"
+   ],
+   "flag": [
+    "dup-preview"
    ]
   },
   {
@@ -37652,6 +37911,9 @@
    ],
    "vs": [
     "minimal"
+   ],
+   "flag": [
+    "blank-preview"
    ]
   },
   {
@@ -37780,6 +38042,9 @@
    ],
    "vs": [
     "minimal"
+   ],
+   "flag": [
+    "dup-preview"
    ]
   },
   {
@@ -38032,6 +38297,9 @@
    ],
    "vs": [
     "enterprise"
+   ],
+   "flag": [
+    "dup-preview"
    ]
   },
   {
@@ -38162,6 +38430,9 @@
    ],
    "vs": [
     "minimal"
+   ],
+   "flag": [
+    "blank-preview"
    ]
   },
   {
@@ -38256,6 +38527,9 @@
    "vs": [
     "minimal",
     "utilitarian"
+   ],
+   "flag": [
+    "dup-preview"
    ]
   },
   {
@@ -39335,6 +39609,9 @@
    ],
    "vs": [
     "enterprise"
+   ],
+   "flag": [
+    "blank-preview"
    ]
   },
   {
@@ -39750,6 +40027,9 @@
    "vs": [
     "apple",
     "minimal"
+   ],
+   "flag": [
+    "dup-preview"
    ]
   },
   {
@@ -39781,6 +40061,9 @@
    ],
    "vs": [
     "minimal"
+   ],
+   "flag": [
+    "dup-preview"
    ]
   },
   {
@@ -40449,6 +40732,9 @@
    ],
    "vs": [
     "minimal"
+   ],
+   "flag": [
+    "dup-preview"
    ]
   },
   {
@@ -40733,6 +41019,9 @@
    ],
    "vs": [
     "enterprise"
+   ],
+   "flag": [
+    "dup-preview"
    ]
   },
   {
@@ -41209,6 +41498,9 @@
    "vs": [
     "soft",
     "minimal"
+   ],
+   "flag": [
+    "blank-preview"
    ]
   },
   {
@@ -41935,6 +42227,9 @@
    ],
    "vs": [
     "enterprise"
+   ],
+   "flag": [
+    "dup-preview"
    ]
   },
   {
@@ -42695,6 +42990,9 @@
    "vs": [
     "minimal",
     "utilitarian"
+   ],
+   "flag": [
+    "dup-preview"
    ]
   },
   {
@@ -43325,6 +43623,9 @@
    ],
    "vs": [
     "minimal"
+   ],
+   "flag": [
+    "blank-preview"
    ]
   },
   {
@@ -43892,6 +44193,9 @@
    ],
    "vs": [
     "minimal"
+   ],
+   "flag": [
+    "dup-preview"
    ]
   },
   {
@@ -44017,6 +44321,9 @@
    ],
    "vs": [
     "enterprise"
+   ],
+   "flag": [
+    "blank-preview"
    ]
   },
   {
@@ -44459,6 +44766,9 @@
    ],
    "vs": [
     "minimal"
+   ],
+   "flag": [
+    "dup-preview"
    ]
   },
   {
@@ -45277,6 +45587,9 @@
    ],
    "vs": [
     "enterprise"
+   ],
+   "flag": [
+    "blank-preview"
    ]
   },
   {
@@ -45342,6 +45655,9 @@
    ],
    "vs": [
     "minimal"
+   ],
+   "flag": [
+    "blank-preview"
    ]
   },
   {
@@ -45405,6 +45721,9 @@
    ],
    "vs": [
     "material"
+   ],
+   "flag": [
+    "dup-preview"
    ]
   },
   {
@@ -45437,6 +45756,9 @@
    "vs": [
     "minimal",
     "utilitarian"
+   ],
+   "flag": [
+    "dup-preview"
    ]
   },
   {
@@ -46099,6 +46421,9 @@
    ],
    "vs": [
     "enterprise"
+   ],
+   "flag": [
+    "blank-preview"
    ]
   },
   {
@@ -46130,6 +46455,9 @@
    ],
    "vs": [
     "enterprise"
+   ],
+   "flag": [
+    "blank-preview"
    ]
   },
   {
@@ -47300,6 +47628,9 @@
    ],
    "vs": [
     "enterprise"
+   ],
+   "flag": [
+    "dup-preview"
    ]
   },
   {
@@ -47365,6 +47696,9 @@
    ],
    "vs": [
     "minimal"
+   ],
+   "flag": [
+    "blank-preview"
    ]
   },
   {
@@ -47806,6 +48140,9 @@
    ],
    "vs": [
     "enterprise"
+   ],
+   "flag": [
+    "dup-preview"
    ]
   },
   {
@@ -47997,6 +48334,9 @@
    "vs": [
     "minimal",
     "enterprise"
+   ],
+   "flag": [
+    "dup-preview"
    ]
   },
   {
@@ -48376,6 +48716,9 @@
    ],
    "vs": [
     "minimal"
+   ],
+   "flag": [
+    "blank-preview"
    ]
   },
   {
@@ -48470,6 +48813,9 @@
    "vs": [
     "minimal",
     "utilitarian"
+   ],
+   "flag": [
+    "blank-preview"
    ]
   },
   {
@@ -48943,6 +49289,9 @@
    "vs": [
     "minimal",
     "utilitarian"
+   ],
+   "flag": [
+    "blank-preview"
    ]
   },
   {
@@ -50651,6 +51000,9 @@
    ],
    "vs": [
     "minimal"
+   ],
+   "flag": [
+    "dup-preview"
    ]
   },
   {
@@ -52421,6 +52773,9 @@
    ],
    "vs": [
     "minimal"
+   ],
+   "flag": [
+    "blank-preview"
    ]
   },
   {
@@ -53305,6 +53660,9 @@
    ],
    "vs": [
     "minimal"
+   ],
+   "flag": [
+    "blank-preview"
    ]
   },
   {
@@ -53842,6 +54200,9 @@
    "vs": [
     "minimal",
     "enterprise"
+   ],
+   "flag": [
+    "blank-preview"
    ]
   },
   {
@@ -53936,6 +54297,9 @@
    ],
    "vs": [
     "enterprise"
+   ],
+   "flag": [
+    "blank-preview"
    ]
   },
   {
@@ -54758,6 +55122,9 @@
    ],
    "vs": [
     "enterprise"
+   ],
+   "flag": [
+    "blank-preview"
    ]
   },
   {
@@ -55106,6 +55473,9 @@
    "vs": [
     "playful",
     "soft"
+   ],
+   "flag": [
+    "dup-preview"
    ]
   },
   {
@@ -55325,6 +55695,9 @@
    ],
    "vs": [
     "enterprise"
+   ],
+   "flag": [
+    "dup-preview"
    ]
   },
   {
@@ -55453,6 +55826,9 @@
    ],
    "vs": [
     "material"
+   ],
+   "flag": [
+    "blank-preview"
    ]
   },
   {
@@ -55579,6 +55955,9 @@
    ],
    "vs": [
     "enterprise"
+   ],
+   "flag": [
+    "blank-preview"
    ]
   },
   {
@@ -55736,6 +56115,9 @@
    ],
    "vs": [
     "enterprise"
+   ],
+   "flag": [
+    "dup-preview"
    ]
   },
   {
@@ -55864,6 +56246,9 @@
    ],
    "vs": [
     "material"
+   ],
+   "flag": [
+    "blank-preview"
    ]
   },
   {
@@ -55990,6 +56375,9 @@
    ],
    "vs": [
     "enterprise"
+   ],
+   "flag": [
+    "blank-preview"
    ]
   },
   {
@@ -56340,6 +56728,9 @@
    "vs": [
     "playful",
     "soft"
+   ],
+   "flag": [
+    "blank-preview"
    ]
   },
   {
@@ -56970,6 +57361,9 @@
    ],
    "vs": [
     "enterprise"
+   ],
+   "flag": [
+    "dup-preview"
    ]
   },
   {
@@ -57823,6 +58217,9 @@
    ],
    "vs": [
     "minimal"
+   ],
+   "flag": [
+    "dup-preview"
    ]
   },
   {
@@ -59651,6 +60048,9 @@
    ],
    "vs": [
     "enterprise"
+   ],
+   "flag": [
+    "dup-preview"
    ]
   },
   {
@@ -59998,6 +60398,9 @@
    ],
    "vs": [
     "enterprise"
+   ],
+   "flag": [
+    "dup-preview"
    ]
   },
   {
@@ -60345,6 +60748,9 @@
    ],
    "vs": [
     "enterprise"
+   ],
+   "flag": [
+    "dup-preview"
    ]
   },
   {
@@ -60661,6 +61067,9 @@
    ],
    "vs": [
     "material"
+   ],
+   "flag": [
+    "dup-preview"
    ]
   },
   {
@@ -60692,6 +61101,9 @@
    ],
    "vs": [
     "enterprise"
+   ],
+   "flag": [
+    "dup-preview"
    ]
   },
   {
@@ -60757,6 +61169,9 @@
    ],
    "vs": [
     "minimal"
+   ],
+   "flag": [
+    "dup-preview"
    ]
   },
   {
@@ -61801,6 +62216,9 @@
    ],
    "vs": [
     "minimal"
+   ],
+   "flag": [
+    "blank-preview"
    ]
   },
   {
@@ -62117,6 +62535,9 @@
    ],
    "vs": [
     "minimal"
+   ],
+   "flag": [
+    "blank-preview"
    ]
   },
   {
@@ -62179,6 +62600,9 @@
    ],
    "vs": [
     "material"
+   ],
+   "flag": [
+    "dup-preview"
    ]
   },
   {
@@ -64590,6 +65014,9 @@
    ],
    "vs": [
     "minimal"
+   ],
+   "flag": [
+    "dup-preview"
    ]
   },
   {
@@ -64716,6 +65143,9 @@
    ],
    "vs": [
     "enterprise"
+   ],
+   "flag": [
+    "dup-preview"
    ]
   },
   {
@@ -64845,6 +65275,9 @@
    ],
    "vs": [
     "minimal"
+   ],
+   "flag": [
+    "dup-preview"
    ]
   },
   {
@@ -64971,6 +65404,9 @@
    ],
    "vs": [
     "enterprise"
+   ],
+   "flag": [
+    "dup-preview"
    ]
   },
   {
@@ -65449,6 +65885,9 @@
    "vs": [
     "playful",
     "soft"
+   ],
+   "flag": [
+    "dup-preview"
    ]
   },
   {
@@ -66569,6 +67008,9 @@
    "vs": [
     "playful",
     "soft"
+   ],
+   "flag": [
+    "blank-preview"
    ]
   },
   {
@@ -67590,6 +68032,9 @@
    ],
    "vs": [
     "material"
+   ],
+   "flag": [
+    "dup-preview"
    ]
   },
   {
@@ -67751,6 +68196,9 @@
    ],
    "vs": [
     "minimal"
+   ],
+   "flag": [
+    "blank-preview"
    ]
   },
   {
@@ -68909,6 +69357,9 @@
    ],
    "vs": [
     "minimal"
+   ],
+   "flag": [
+    "dup-preview"
    ]
   },
   {
@@ -69680,6 +70131,9 @@
    ],
    "vs": [
     "enterprise"
+   ],
+   "flag": [
+    "dup-preview"
    ]
   },
   {
@@ -70391,6 +70845,9 @@
    ],
    "vs": [
     "minimal"
+   ],
+   "flag": [
+    "blank-preview"
    ]
   },
   {
@@ -72551,6 +73008,4015 @@
     "motion"
    ],
    "added": "2026-10-15"
+  },
+  {
+   "id": "x16-aceternity-spotlight-new",
+   "type": "style",
+   "lib": "ui-aceternity-com",
+   "libName": "Aceternity UI",
+   "kind": "background",
+   "var": "Spotlight New",
+   "name": "background · Aceternity UI · Spotlight New",
+   "url": "https://ui.aceternity.com/components/spotlight-new",
+   "page": "https://ui.aceternity.com/components/spotlight-new",
+   "note": "黑底上两束柔和聚光缓慢扫过，只用一种光，适合产品首屏，克制又有电影感",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Aceternity UI",
+   "pricing": "free",
+   "tags": [
+    "Aceternity UI",
+    "2026-10 新增"
+   ],
+   "ct": [
+    "background"
+   ],
+   "rt": [
+    "component-demo"
+   ],
+   "vs": [
+    "dark-tech",
+    "motion"
+   ],
+   "gold": true,
+   "why": "首屏一种光效的标准答案：单色、慢速、不抢字",
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-aceternity-lamp-effect",
+   "type": "style",
+   "lib": "ui-aceternity-com",
+   "libName": "Aceternity UI",
+   "kind": "background",
+   "var": "Lamp Effect",
+   "name": "background · Aceternity UI · Lamp Effect",
+   "url": "https://ui.aceternity.com/components/lamp-effect",
+   "page": "https://ui.aceternity.com/components/lamp-effect",
+   "note": "灯管从上方点亮标题的入场，戏剧性强但元素极少",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Aceternity UI",
+   "pricing": "free",
+   "tags": [
+    "Aceternity UI",
+    "2026-10 新增"
+   ],
+   "ct": [
+    "background"
+   ],
+   "rt": [
+    "component-demo"
+   ],
+   "vs": [
+    "dark-tech",
+    "motion"
+   ],
+   "gold": true,
+   "why": "一次性“亮场”入场，只要一个动作就有记忆点",
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-aceternity-background-beams-with-collision",
+   "type": "style",
+   "lib": "ui-aceternity-com",
+   "libName": "Aceternity UI",
+   "kind": "background",
+   "var": "Background Beams With Collision",
+   "name": "background · Aceternity UI · Background Beams With Collision",
+   "url": "https://ui.aceternity.com/components/background-beams-with-collision",
+   "page": "https://ui.aceternity.com/components/background-beams-with-collision",
+   "note": "光束下落撞到底部爆散，适合活动页/发布页的首屏",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Aceternity UI",
+   "pricing": "free",
+   "tags": [
+    "Aceternity UI",
+    "2026-10 新增"
+   ],
+   "ct": [
+    "background"
+   ],
+   "rt": [
+    "component-demo"
+   ],
+   "vs": [
+    "dark-tech",
+    "motion"
+   ],
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-aceternity-glowing-effect",
+   "type": "style",
+   "lib": "ui-aceternity-com",
+   "libName": "Aceternity UI",
+   "kind": "card",
+   "var": "Glowing Effect",
+   "name": "card · Aceternity UI · Glowing Effect",
+   "url": "https://ui.aceternity.com/components/glowing-effect",
+   "page": "https://ui.aceternity.com/components/glowing-effect",
+   "note": "鼠标靠近时卡片边缘才亮起的描边光，bento 网格很好用",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Aceternity UI",
+   "pricing": "free",
+   "tags": [
+    "Aceternity UI",
+    "2026-10 新增"
+   ],
+   "ct": [
+    "card"
+   ],
+   "rt": [
+    "component-demo"
+   ],
+   "vs": [
+    "dark-tech",
+    "motion"
+   ],
+   "gold": true,
+   "why": "把“发光”限制在交互瞬间，静止时是干净的卡片",
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-aceternity-container-scroll-animation",
+   "type": "style",
+   "lib": "ui-aceternity-com",
+   "libName": "Aceternity UI",
+   "kind": "motion",
+   "var": "Container Scroll Animation",
+   "name": "motion · Aceternity UI · Container Scroll Animation",
+   "url": "https://ui.aceternity.com/components/container-scroll-animation",
+   "page": "https://ui.aceternity.com/components/container-scroll-animation",
+   "note": "滚动时产品画面从倾斜翻转到正面，产品展示的经典做法",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Aceternity UI",
+   "pricing": "free",
+   "tags": [
+    "Aceternity UI",
+    "2026-10 新增"
+   ],
+   "ct": [
+    "motion"
+   ],
+   "rt": [
+    "component-demo"
+   ],
+   "vs": [
+    "motion",
+    "3d"
+   ],
+   "gold": true,
+   "why": "滚动讲产品的最佳范式：一个画面、一个动作",
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-aceternity-sticky-scroll-reveal",
+   "type": "style",
+   "lib": "ui-aceternity-com",
+   "libName": "Aceternity UI",
+   "kind": "layout",
+   "var": "Sticky Scroll Reveal",
+   "name": "layout · Aceternity UI · Sticky Scroll Reveal",
+   "url": "https://ui.aceternity.com/components/sticky-scroll-reveal",
+   "page": "https://ui.aceternity.com/components/sticky-scroll-reveal",
+   "note": "左侧文字滚动、右侧画面粘住切换，讲功能步骤很清楚",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Aceternity UI",
+   "pricing": "free",
+   "tags": [
+    "Aceternity UI",
+    "2026-10 新增"
+   ],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "component-demo"
+   ],
+   "vs": [
+    "motion",
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-aceternity-infinite-moving-cards",
+   "type": "style",
+   "lib": "ui-aceternity-com",
+   "libName": "Aceternity UI",
+   "kind": "carousel",
+   "var": "Infinite Moving Cards",
+   "name": "carousel · Aceternity UI · Infinite Moving Cards",
+   "url": "https://ui.aceternity.com/components/infinite-moving-cards",
+   "page": "https://ui.aceternity.com/components/infinite-moving-cards",
+   "note": "无限横向滚动的评价卡片，低调的社会证明",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Aceternity UI",
+   "pricing": "free",
+   "tags": [
+    "Aceternity UI",
+    "2026-10 新增"
+   ],
+   "ct": [
+    "carousel"
+   ],
+   "rt": [
+    "component-demo"
+   ],
+   "vs": [
+    "minimal",
+    "motion"
+   ],
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-aceternity-3d-marquee",
+   "type": "style",
+   "lib": "ui-aceternity-com",
+   "libName": "Aceternity UI",
+   "kind": "layout",
+   "var": "3D Marquee",
+   "name": "layout · Aceternity UI · 3D Marquee",
+   "url": "https://ui.aceternity.com/components/3d-marquee",
+   "page": "https://ui.aceternity.com/components/3d-marquee",
+   "note": "倾斜的截图墙缓慢滚动，展示大量作品又不乱",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Aceternity UI",
+   "pricing": "free",
+   "tags": [
+    "Aceternity UI",
+    "2026-10 新增"
+   ],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "component-demo"
+   ],
+   "vs": [
+    "3d",
+    "motion"
+   ],
+   "gold": true,
+   "why": "“很多作品”的高级呈现：统一倾角 + 慢速，不是截图堆砌",
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-aceternity-background-ripple-effect",
+   "type": "style",
+   "lib": "ui-aceternity-com",
+   "libName": "Aceternity UI",
+   "kind": "background",
+   "var": "Background Ripple Effect",
+   "name": "background · Aceternity UI · Background Ripple Effect",
+   "url": "https://ui.aceternity.com/components/background-ripple-effect",
+   "page": "https://ui.aceternity.com/components/background-ripple-effect",
+   "note": "点击格子产生水波扩散的网格背景",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Aceternity UI",
+   "pricing": "free",
+   "tags": [
+    "Aceternity UI",
+    "2026-10 新增"
+   ],
+   "ct": [
+    "background"
+   ],
+   "rt": [
+    "component-demo"
+   ],
+   "vs": [
+    "minimal",
+    "motion"
+   ],
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-aceternity-dither-shader",
+   "type": "style",
+   "lib": "ui-aceternity-com",
+   "libName": "Aceternity UI",
+   "kind": "background",
+   "var": "Dither Shader",
+   "name": "background · Aceternity UI · Dither Shader",
+   "url": "https://ui.aceternity.com/components/dither-shader",
+   "page": "https://ui.aceternity.com/components/dither-shader",
+   "note": "抖动像素着色器，复古印刷质感",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Aceternity UI",
+   "pricing": "free",
+   "tags": [
+    "Aceternity UI",
+    "2026-10 新增"
+   ],
+   "ct": [
+    "background"
+   ],
+   "rt": [
+    "component-demo"
+   ],
+   "vs": [
+    "retro",
+    "motion"
+   ],
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-aceternity-github-globe",
+   "type": "style",
+   "lib": "ui-aceternity-com",
+   "libName": "Aceternity UI",
+   "kind": "chart",
+   "var": "GitHub Globe",
+   "name": "chart · Aceternity UI · GitHub Globe",
+   "url": "https://ui.aceternity.com/components/github-globe",
+   "page": "https://ui.aceternity.com/components/github-globe",
+   "note": "仿 GitHub 首页的 3D 地球与飞线，全球化叙事",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Aceternity UI",
+   "pricing": "free",
+   "tags": [
+    "Aceternity UI",
+    "2026-10 新增"
+   ],
+   "ct": [
+    "chart"
+   ],
+   "rt": [
+    "component-demo"
+   ],
+   "vs": [
+    "dark-tech",
+    "3d"
+   ],
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-aceternity-animated-testimonials",
+   "type": "style",
+   "lib": "ui-aceternity-com",
+   "libName": "Aceternity UI",
+   "kind": "carousel",
+   "var": "Animated Testimonials",
+   "name": "carousel · Aceternity UI · Animated Testimonials",
+   "url": "https://ui.aceternity.com/components/animated-testimonials",
+   "page": "https://ui.aceternity.com/components/animated-testimonials",
+   "note": "头像叠放切换 + 文字逐词出现的评价组件",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Aceternity UI",
+   "pricing": "free",
+   "tags": [
+    "Aceternity UI",
+    "2026-10 新增"
+   ],
+   "ct": [
+    "carousel"
+   ],
+   "rt": [
+    "component-demo"
+   ],
+   "vs": [
+    "minimal",
+    "motion"
+   ],
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-aceternity-expandable-card",
+   "type": "style",
+   "lib": "ui-aceternity-com",
+   "libName": "Aceternity UI",
+   "kind": "card",
+   "var": "Expandable Card",
+   "name": "card · Aceternity UI · Expandable Card",
+   "url": "https://ui.aceternity.com/components/expandable-card",
+   "page": "https://ui.aceternity.com/components/expandable-card",
+   "note": "列表项点开平滑展开为详情卡（共享布局动画）",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Aceternity UI",
+   "pricing": "free",
+   "tags": [
+    "Aceternity UI",
+    "2026-10 新增"
+   ],
+   "ct": [
+    "card"
+   ],
+   "rt": [
+    "component-demo"
+   ],
+   "vs": [
+    "minimal",
+    "motion"
+   ],
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-aceternity-focus-cards",
+   "type": "style",
+   "lib": "ui-aceternity-com",
+   "libName": "Aceternity UI",
+   "kind": "card",
+   "var": "Focus Cards",
+   "name": "card · Aceternity UI · Focus Cards",
+   "url": "https://ui.aceternity.com/components/focus-cards",
+   "page": "https://ui.aceternity.com/components/focus-cards",
+   "note": "悬停一张、其余模糊变暗，图片网格聚焦",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Aceternity UI",
+   "pricing": "free",
+   "tags": [
+    "Aceternity UI",
+    "2026-10 新增"
+   ],
+   "ct": [
+    "card"
+   ],
+   "rt": [
+    "component-demo"
+   ],
+   "vs": [
+    "minimal",
+    "motion"
+   ],
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-aceternity-3d-pin",
+   "type": "style",
+   "lib": "ui-aceternity-com",
+   "libName": "Aceternity UI",
+   "kind": "card",
+   "var": "3D Pin",
+   "name": "card · Aceternity UI · 3D Pin",
+   "url": "https://ui.aceternity.com/components/3d-pin",
+   "page": "https://ui.aceternity.com/components/3d-pin",
+   "note": "悬停时卡片立起并出现定位针光柱",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Aceternity UI",
+   "pricing": "free",
+   "tags": [
+    "Aceternity UI",
+    "2026-10 新增"
+   ],
+   "ct": [
+    "card"
+   ],
+   "rt": [
+    "component-demo"
+   ],
+   "vs": [
+    "3d",
+    "motion"
+   ],
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-aceternity-world-map",
+   "type": "style",
+   "lib": "ui-aceternity-com",
+   "libName": "Aceternity UI",
+   "kind": "chart",
+   "var": "World Map",
+   "name": "chart · Aceternity UI · World Map",
+   "url": "https://ui.aceternity.com/components/world-map",
+   "page": "https://ui.aceternity.com/components/world-map",
+   "note": "点阵世界地图 + 连线动画，展示全球用户/节点",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Aceternity UI",
+   "pricing": "free",
+   "tags": [
+    "Aceternity UI",
+    "2026-10 新增"
+   ],
+   "ct": [
+    "chart"
+   ],
+   "rt": [
+    "component-demo"
+   ],
+   "vs": [
+    "minimal",
+    "dark-tech"
+   ],
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-aceternity-cloud-shader",
+   "type": "style",
+   "lib": "ui-aceternity-com",
+   "libName": "Aceternity UI",
+   "kind": "background",
+   "var": "Cloud Shader",
+   "name": "background · Aceternity UI · Cloud Shader",
+   "url": "https://ui.aceternity.com/components/cloud-shader",
+   "page": "https://ui.aceternity.com/components/cloud-shader",
+   "note": "柔和云雾着色器背景",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Aceternity UI",
+   "pricing": "free",
+   "tags": [
+    "Aceternity UI",
+    "2026-10 新增"
+   ],
+   "ct": [
+    "background"
+   ],
+   "rt": [
+    "component-demo"
+   ],
+   "vs": [
+    "soft",
+    "motion"
+   ],
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-aceternity-keyboard",
+   "type": "style",
+   "lib": "ui-aceternity-com",
+   "libName": "Aceternity UI",
+   "kind": "motion",
+   "var": "Keyboard",
+   "name": "motion · Aceternity UI · Keyboard",
+   "url": "https://ui.aceternity.com/components/keyboard",
+   "page": "https://ui.aceternity.com/components/keyboard",
+   "note": "可交互的 macOS 键盘组件，快捷键/开发工具页用",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Aceternity UI",
+   "pricing": "free",
+   "tags": [
+    "Aceternity UI",
+    "2026-10 新增"
+   ],
+   "ct": [
+    "motion"
+   ],
+   "rt": [
+    "component-demo"
+   ],
+   "vs": [
+    "3d",
+    "apple"
+   ],
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-magicui-globe",
+   "type": "style",
+   "lib": "magicui-design",
+   "libName": "Magic UI",
+   "kind": "chart",
+   "var": "Globe",
+   "name": "chart · Magic UI · Globe",
+   "url": "https://magicui.design/docs/components/globe",
+   "page": "https://magicui.design/docs/components/globe",
+   "note": "可拖拽的点阵 3D 地球，白底也很干净",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Magic UI",
+   "pricing": "free",
+   "tags": [
+    "Magic UI",
+    "2026-10 新增"
+   ],
+   "ct": [
+    "chart"
+   ],
+   "rt": [
+    "component-demo"
+   ],
+   "vs": [
+    "minimal",
+    "3d"
+   ],
+   "gold": true,
+   "why": "白底也成立的 3D 元素，颜色可收成单色",
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-magicui-dock",
+   "type": "style",
+   "lib": "magicui-design",
+   "libName": "Magic UI",
+   "kind": "nav",
+   "var": "Dock",
+   "name": "nav · Magic UI · Dock",
+   "url": "https://magicui.design/docs/components/dock",
+   "page": "https://magicui.design/docs/components/dock",
+   "note": "macOS 风格放大 Dock",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Magic UI",
+   "pricing": "free",
+   "tags": [
+    "Magic UI",
+    "2026-10 新增"
+   ],
+   "ct": [
+    "nav"
+   ],
+   "rt": [
+    "component-demo"
+   ],
+   "vs": [
+    "apple",
+    "motion"
+   ],
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-magicui-animated-list",
+   "type": "style",
+   "lib": "magicui-design",
+   "libName": "Magic UI",
+   "kind": "list",
+   "var": "Animated List",
+   "name": "list · Magic UI · Animated List",
+   "url": "https://magicui.design/docs/components/animated-list",
+   "page": "https://magicui.design/docs/components/animated-list",
+   "note": "通知逐条弹入的列表，适合展示“自动化在发生”",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Magic UI",
+   "pricing": "free",
+   "tags": [
+    "Magic UI",
+    "2026-10 新增"
+   ],
+   "ct": [
+    "list"
+   ],
+   "rt": [
+    "component-demo"
+   ],
+   "vs": [
+    "minimal",
+    "motion"
+   ],
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-magicui-light-rays",
+   "type": "style",
+   "lib": "magicui-design",
+   "libName": "Magic UI",
+   "kind": "background",
+   "var": "Light Rays",
+   "name": "background · Magic UI · Light Rays",
+   "url": "https://magicui.design/docs/components/light-rays",
+   "page": "https://magicui.design/docs/components/light-rays",
+   "note": "从顶部洒下的柔和光线背景",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Magic UI",
+   "pricing": "free",
+   "tags": [
+    "Magic UI",
+    "2026-10 新增"
+   ],
+   "ct": [
+    "background"
+   ],
+   "rt": [
+    "component-demo"
+   ],
+   "vs": [
+    "soft",
+    "motion"
+   ],
+   "gold": true,
+   "why": "一层柔光就够：不加网格、不加粒子",
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-magicui-floating-3d-particles",
+   "type": "style",
+   "lib": "magicui-design",
+   "libName": "Magic UI",
+   "kind": "background",
+   "var": "Floating 3D Particles",
+   "name": "background · Magic UI · Floating 3D Particles",
+   "url": "https://magicui.design/docs/components/floating-3d-particles",
+   "page": "https://magicui.design/docs/components/floating-3d-particles",
+   "note": "2026 新组件：漂浮 3D 粒子背景",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Magic UI",
+   "pricing": "free",
+   "tags": [
+    "Magic UI",
+    "2026-10 新增"
+   ],
+   "ct": [
+    "background"
+   ],
+   "rt": [
+    "component-demo"
+   ],
+   "vs": [
+    "3d",
+    "motion"
+   ],
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-magicui-video-text",
+   "type": "style",
+   "lib": "magicui-design",
+   "libName": "Magic UI",
+   "kind": "motion",
+   "var": "Video Text",
+   "name": "motion · Magic UI · Video Text",
+   "url": "https://magicui.design/docs/components/video-text",
+   "page": "https://magicui.design/docs/components/video-text",
+   "note": "视频透过大字镂空播放",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Magic UI",
+   "pricing": "free",
+   "tags": [
+    "Magic UI",
+    "2026-10 新增"
+   ],
+   "ct": [
+    "motion"
+   ],
+   "rt": [
+    "component-demo"
+   ],
+   "vs": [
+    "editorial",
+    "motion"
+   ],
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-magicui-morphing-text",
+   "type": "style",
+   "lib": "magicui-design",
+   "libName": "Magic UI",
+   "kind": "motion",
+   "var": "Morphing Text",
+   "name": "motion · Magic UI · Morphing Text",
+   "url": "https://magicui.design/docs/components/morphing-text",
+   "page": "https://magicui.design/docs/components/morphing-text",
+   "note": "大字之间液态变形切换",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Magic UI",
+   "pricing": "free",
+   "tags": [
+    "Magic UI",
+    "2026-10 新增"
+   ],
+   "ct": [
+    "motion"
+   ],
+   "rt": [
+    "component-demo"
+   ],
+   "vs": [
+    "minimal",
+    "motion"
+   ],
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-magicui-aurora-text",
+   "type": "style",
+   "lib": "magicui-design",
+   "libName": "Magic UI",
+   "kind": "motion",
+   "var": "Aurora Text",
+   "name": "motion · Magic UI · Aurora Text",
+   "url": "https://magicui.design/docs/components/aurora-text",
+   "page": "https://magicui.design/docs/components/aurora-text",
+   "note": "单词内流动极光渐变（只用在一个词上）",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Magic UI",
+   "pricing": "free",
+   "tags": [
+    "Magic UI",
+    "2026-10 新增"
+   ],
+   "ct": [
+    "motion"
+   ],
+   "rt": [
+    "component-demo"
+   ],
+   "vs": [
+    "gradient"
+   ],
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-magicui-scroll-based-velocity",
+   "type": "style",
+   "lib": "magicui-design",
+   "libName": "Magic UI",
+   "kind": "motion",
+   "var": "Scroll Based Velocity",
+   "name": "motion · Magic UI · Scroll Based Velocity",
+   "url": "https://magicui.design/docs/components/scroll-based-velocity",
+   "page": "https://magicui.design/docs/components/scroll-based-velocity",
+   "note": "随滚动速度加速的大字跑马灯",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Magic UI",
+   "pricing": "free",
+   "tags": [
+    "Magic UI",
+    "2026-10 新增"
+   ],
+   "ct": [
+    "motion"
+   ],
+   "rt": [
+    "component-demo"
+   ],
+   "vs": [
+    "editorial",
+    "motion"
+   ],
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-magicui-backlight",
+   "type": "style",
+   "lib": "magicui-design",
+   "libName": "Magic UI",
+   "kind": "background",
+   "var": "Backlight",
+   "name": "background · Magic UI · Backlight",
+   "url": "https://magicui.design/docs/components/backlight",
+   "page": "https://magicui.design/docs/components/backlight",
+   "note": "图片/视频背后的环境背光",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Magic UI",
+   "pricing": "free",
+   "tags": [
+    "Magic UI",
+    "2026-10 新增"
+   ],
+   "ct": [
+    "background"
+   ],
+   "rt": [
+    "component-demo"
+   ],
+   "vs": [
+    "dark-tech"
+   ],
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-magicui-kinetic-text",
+   "type": "style",
+   "lib": "magicui-design",
+   "libName": "Magic UI",
+   "kind": "motion",
+   "var": "Kinetic Text",
+   "name": "motion · Magic UI · Kinetic Text",
+   "url": "https://magicui.design/docs/components/kinetic-text",
+   "page": "https://magicui.design/docs/components/kinetic-text",
+   "note": "动态排版文字效果",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Magic UI",
+   "pricing": "free",
+   "tags": [
+    "Magic UI",
+    "2026-10 新增"
+   ],
+   "ct": [
+    "motion"
+   ],
+   "rt": [
+    "component-demo"
+   ],
+   "vs": [
+    "editorial",
+    "motion"
+   ],
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-magicui-warp-background",
+   "type": "style",
+   "lib": "magicui-design",
+   "libName": "Magic UI",
+   "kind": "background",
+   "var": "Warp Background",
+   "name": "background · Magic UI · Warp Background",
+   "url": "https://magicui.design/docs/components/warp-background",
+   "page": "https://magicui.design/docs/components/warp-background",
+   "note": "透视隧道网格背景，适合突出单张卡片",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Magic UI",
+   "pricing": "free",
+   "tags": [
+    "Magic UI",
+    "2026-10 新增"
+   ],
+   "ct": [
+    "background"
+   ],
+   "rt": [
+    "component-demo"
+   ],
+   "vs": [
+    "3d",
+    "motion"
+   ],
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-magicui-pixel-image",
+   "type": "style",
+   "lib": "magicui-design",
+   "libName": "Magic UI",
+   "kind": "motion",
+   "var": "Pixel Image",
+   "name": "motion · Magic UI · Pixel Image",
+   "url": "https://magicui.design/docs/components/pixel-image",
+   "page": "https://magicui.design/docs/components/pixel-image",
+   "note": "图片从像素块逐步显现",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Magic UI",
+   "pricing": "free",
+   "tags": [
+    "Magic UI",
+    "2026-10 新增"
+   ],
+   "ct": [
+    "motion"
+   ],
+   "rt": [
+    "component-demo"
+   ],
+   "vs": [
+    "retro",
+    "motion"
+   ],
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-magicui-ripple",
+   "type": "style",
+   "lib": "magicui-design",
+   "libName": "Magic UI",
+   "kind": "background",
+   "var": "Ripple",
+   "name": "background · Magic UI · Ripple",
+   "url": "https://magicui.design/docs/components/ripple",
+   "page": "https://magicui.design/docs/components/ripple",
+   "note": "同心圆水波扩散背景，安静",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Magic UI",
+   "pricing": "free",
+   "tags": [
+    "Magic UI",
+    "2026-10 新增"
+   ],
+   "ct": [
+    "background"
+   ],
+   "rt": [
+    "component-demo"
+   ],
+   "vs": [
+    "minimal",
+    "motion"
+   ],
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-magicui-particles",
+   "type": "style",
+   "lib": "magicui-design",
+   "libName": "Magic UI",
+   "kind": "background",
+   "var": "Particles",
+   "name": "background · Magic UI · Particles",
+   "url": "https://magicui.design/docs/components/particles",
+   "page": "https://magicui.design/docs/components/particles",
+   "note": "跟随鼠标的稀疏粒子背景",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Magic UI",
+   "pricing": "free",
+   "tags": [
+    "Magic UI",
+    "2026-10 新增"
+   ],
+   "ct": [
+    "background"
+   ],
+   "rt": [
+    "component-demo"
+   ],
+   "vs": [
+    "minimal",
+    "motion"
+   ],
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-magicui-terminal",
+   "type": "style",
+   "lib": "magicui-design",
+   "libName": "Magic UI",
+   "kind": "editor",
+   "var": "Terminal",
+   "name": "editor · Magic UI · Terminal",
+   "url": "https://magicui.design/docs/components/terminal",
+   "page": "https://magicui.design/docs/components/terminal",
+   "note": "逐行打出命令的终端动画，开发者工具首屏常用",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Magic UI",
+   "pricing": "free",
+   "tags": [
+    "Magic UI",
+    "2026-10 新增"
+   ],
+   "ct": [
+    "editor"
+   ],
+   "rt": [
+    "component-demo"
+   ],
+   "vs": [
+    "dark-tech",
+    "minimal"
+   ],
+   "gold": true,
+   "why": "开发者产品首屏最可信的“演示”：真实命令逐行出现",
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-cultui-dynamic-island",
+   "type": "style",
+   "lib": "www-cult-ui-com",
+   "libName": "Cult UI",
+   "kind": "motion",
+   "var": "Dynamic Island",
+   "name": "motion · Cult UI · Dynamic Island",
+   "url": "https://www.cult-ui.com/docs/components/dynamic-island",
+   "page": "https://www.cult-ui.com/docs/components/dynamic-island",
+   "note": "仿 iPhone 灵动岛的形变容器，状态切换很顺",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Cult UI",
+   "pricing": "free",
+   "tags": [
+    "Cult UI",
+    "2026-10 新增"
+   ],
+   "ct": [
+    "motion"
+   ],
+   "rt": [
+    "component-demo"
+   ],
+   "vs": [
+    "apple",
+    "motion"
+   ],
+   "gold": true,
+   "why": "形变动画的教科书：一个容器承载多个状态",
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-cultui-prompt-composer",
+   "type": "style",
+   "lib": "www-cult-ui-com",
+   "libName": "Cult UI",
+   "kind": "chat",
+   "var": "Prompt Composer",
+   "name": "chat · Cult UI · Prompt Composer",
+   "url": "https://www.cult-ui.com/docs/components/prompt-composer",
+   "page": "https://www.cult-ui.com/docs/components/prompt-composer",
+   "note": "AI 提示词输入框：附件、模型选择、发送状态",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Cult UI",
+   "pricing": "free",
+   "tags": [
+    "Cult UI",
+    "2026-10 新增"
+   ],
+   "ct": [
+    "chat"
+   ],
+   "rt": [
+    "component-demo"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-cultui-hero-dithering",
+   "type": "style",
+   "lib": "www-cult-ui-com",
+   "libName": "Cult UI",
+   "kind": "background",
+   "var": "Hero Dithering",
+   "name": "background · Cult UI · Hero Dithering",
+   "url": "https://www.cult-ui.com/docs/components/hero-dithering",
+   "page": "https://www.cult-ui.com/docs/components/hero-dithering",
+   "note": "抖动着色器首屏背景，印刷颗粒感",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Cult UI",
+   "pricing": "free",
+   "tags": [
+    "Cult UI",
+    "2026-10 新增"
+   ],
+   "ct": [
+    "background"
+   ],
+   "rt": [
+    "component-demo"
+   ],
+   "vs": [
+    "retro",
+    "motion"
+   ],
+   "gold": true,
+   "why": "2026 流行的抖动/颗粒质感，比渐变更有个性",
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-cultui-hero-liquid-metal",
+   "type": "style",
+   "lib": "www-cult-ui-com",
+   "libName": "Cult UI",
+   "kind": "background",
+   "var": "Hero Liquid Metal",
+   "name": "background · Cult UI · Hero Liquid Metal",
+   "url": "https://www.cult-ui.com/docs/components/hero-liquid-metal",
+   "page": "https://www.cult-ui.com/docs/components/hero-liquid-metal",
+   "note": "液态金属着色器首屏",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Cult UI",
+   "pricing": "free",
+   "tags": [
+    "Cult UI",
+    "2026-10 新增"
+   ],
+   "ct": [
+    "background"
+   ],
+   "rt": [
+    "component-demo"
+   ],
+   "vs": [
+    "3d",
+    "motion"
+   ],
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-cultui-hero-color-panels",
+   "type": "style",
+   "lib": "www-cult-ui-com",
+   "libName": "Cult UI",
+   "kind": "background",
+   "var": "Hero Color Panels",
+   "name": "background · Cult UI · Hero Color Panels",
+   "url": "https://www.cult-ui.com/docs/components/hero-color-panels",
+   "page": "https://www.cult-ui.com/docs/components/hero-color-panels",
+   "note": "彩色竖条面板流动首屏",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Cult UI",
+   "pricing": "free",
+   "tags": [
+    "Cult UI",
+    "2026-10 新增"
+   ],
+   "ct": [
+    "background"
+   ],
+   "rt": [
+    "component-demo"
+   ],
+   "vs": [
+    "gradient",
+    "motion"
+   ],
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-cultui-hero-heatmap",
+   "type": "style",
+   "lib": "www-cult-ui-com",
+   "libName": "Cult UI",
+   "kind": "background",
+   "var": "Hero Heatmap",
+   "name": "background · Cult UI · Hero Heatmap",
+   "url": "https://www.cult-ui.com/docs/components/hero-heatmap",
+   "page": "https://www.cult-ui.com/docs/components/hero-heatmap",
+   "note": "热力图着色器首屏",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Cult UI",
+   "pricing": "free",
+   "tags": [
+    "Cult UI",
+    "2026-10 新增"
+   ],
+   "ct": [
+    "background"
+   ],
+   "rt": [
+    "component-demo"
+   ],
+   "vs": [
+    "gradient",
+    "motion"
+   ],
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-cultui-texture-button",
+   "type": "style",
+   "lib": "www-cult-ui-com",
+   "libName": "Cult UI",
+   "kind": "button",
+   "var": "Texture Button",
+   "name": "button · Cult UI · Texture Button",
+   "url": "https://www.cult-ui.com/docs/components/texture-button",
+   "page": "https://www.cult-ui.com/docs/components/texture-button",
+   "note": "带细微纹理和内阴影的按钮，质感但不浮夸",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Cult UI",
+   "pricing": "free",
+   "tags": [
+    "Cult UI",
+    "2026-10 新增"
+   ],
+   "ct": [
+    "button"
+   ],
+   "rt": [
+    "component-demo"
+   ],
+   "vs": [
+    "skeuomorphic",
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-cultui-shift-card",
+   "type": "style",
+   "lib": "www-cult-ui-com",
+   "libName": "Cult UI",
+   "kind": "card",
+   "var": "Shift Card",
+   "name": "card · Cult UI · Shift Card",
+   "url": "https://www.cult-ui.com/docs/components/shift-card",
+   "page": "https://www.cult-ui.com/docs/components/shift-card",
+   "note": "悬停时内容层错位移动的卡片",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Cult UI",
+   "pricing": "free",
+   "tags": [
+    "Cult UI",
+    "2026-10 新增"
+   ],
+   "ct": [
+    "card"
+   ],
+   "rt": [
+    "component-demo"
+   ],
+   "vs": [
+    "minimal",
+    "motion"
+   ],
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-cultui-expandable-screen",
+   "type": "style",
+   "lib": "www-cult-ui-com",
+   "libName": "Cult UI",
+   "kind": "motion",
+   "var": "Expandable Screen",
+   "name": "motion · Cult UI · Expandable Screen",
+   "url": "https://www.cult-ui.com/docs/components/expandable-screen",
+   "page": "https://www.cult-ui.com/docs/components/expandable-screen",
+   "note": "卡片放大展开为全屏",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Cult UI",
+   "pricing": "free",
+   "tags": [
+    "Cult UI",
+    "2026-10 新增"
+   ],
+   "ct": [
+    "motion"
+   ],
+   "rt": [
+    "component-demo"
+   ],
+   "vs": [
+    "minimal",
+    "motion"
+   ],
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-cultui-three-d-carousel",
+   "type": "style",
+   "lib": "www-cult-ui-com",
+   "libName": "Cult UI",
+   "kind": "carousel",
+   "var": "3D Carousel",
+   "name": "carousel · Cult UI · 3D Carousel",
+   "url": "https://www.cult-ui.com/docs/components/three-d-carousel",
+   "page": "https://www.cult-ui.com/docs/components/three-d-carousel",
+   "note": "3D 圆柱旋转图片轮播",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Cult UI",
+   "pricing": "free",
+   "tags": [
+    "Cult UI",
+    "2026-10 新增"
+   ],
+   "ct": [
+    "carousel"
+   ],
+   "rt": [
+    "component-demo"
+   ],
+   "vs": [
+    "3d",
+    "motion"
+   ],
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-cultui-distorted-glass",
+   "type": "style",
+   "lib": "www-cult-ui-com",
+   "libName": "Cult UI",
+   "kind": "background",
+   "var": "Distorted Glass",
+   "name": "background · Cult UI · Distorted Glass",
+   "url": "https://www.cult-ui.com/docs/components/distorted-glass",
+   "page": "https://www.cult-ui.com/docs/components/distorted-glass",
+   "note": "扭曲玻璃折射背景",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Cult UI",
+   "pricing": "free",
+   "tags": [
+    "Cult UI",
+    "2026-10 新增"
+   ],
+   "ct": [
+    "background"
+   ],
+   "rt": [
+    "component-demo"
+   ],
+   "vs": [
+    "glass"
+   ],
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-cultui-fluted-glass",
+   "type": "style",
+   "lib": "www-cult-ui-com",
+   "libName": "Cult UI",
+   "kind": "background",
+   "var": "Fluted Glass",
+   "name": "background · Cult UI · Fluted Glass",
+   "url": "https://www.cult-ui.com/docs/components/fluted-glass",
+   "page": "https://www.cult-ui.com/docs/components/fluted-glass",
+   "note": "长虹玻璃（竖棱）折射效果，用在图片上很高级",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Cult UI",
+   "pricing": "free",
+   "tags": [
+    "Cult UI",
+    "2026-10 新增"
+   ],
+   "ct": [
+    "background"
+   ],
+   "rt": [
+    "component-demo"
+   ],
+   "vs": [
+    "glass",
+    "editorial"
+   ],
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-cultui-shader-lens-blur",
+   "type": "style",
+   "lib": "www-cult-ui-com",
+   "libName": "Cult UI",
+   "kind": "background",
+   "var": "Shader Lens Blur",
+   "name": "background · Cult UI · Shader Lens Blur",
+   "url": "https://www.cult-ui.com/docs/components/shader-lens-blur",
+   "page": "https://www.cult-ui.com/docs/components/shader-lens-blur",
+   "note": "镜头虚化着色器",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Cult UI",
+   "pricing": "free",
+   "tags": [
+    "Cult UI",
+    "2026-10 新增"
+   ],
+   "ct": [
+    "background"
+   ],
+   "rt": [
+    "component-demo"
+   ],
+   "vs": [
+    "soft"
+   ],
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-cultui-illustration-globe-vercel",
+   "type": "style",
+   "lib": "www-cult-ui-com",
+   "libName": "Cult UI",
+   "kind": "chart",
+   "var": "Illustration Globe (Vercel 风)",
+   "name": "chart · Cult UI · Illustration Globe (Vercel 风)",
+   "url": "https://www.cult-ui.com/docs/components/illustration-globe-vercel",
+   "page": "https://www.cult-ui.com/docs/components/illustration-globe-vercel",
+   "note": "Vercel 风格的线框地球插图",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Cult UI",
+   "pricing": "free",
+   "tags": [
+    "Cult UI",
+    "2026-10 新增"
+   ],
+   "ct": [
+    "chart"
+   ],
+   "rt": [
+    "component-demo"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-cultui-rolling-number",
+   "type": "style",
+   "lib": "www-cult-ui-com",
+   "libName": "Cult UI",
+   "kind": "data",
+   "var": "Rolling Number",
+   "name": "data · Cult UI · Rolling Number",
+   "url": "https://www.cult-ui.com/docs/components/rolling-number",
+   "page": "https://www.cult-ui.com/docs/components/rolling-number",
+   "note": "数字逐位滚动",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Cult UI",
+   "pricing": "free",
+   "tags": [
+    "Cult UI",
+    "2026-10 新增"
+   ],
+   "ct": [
+    "data"
+   ],
+   "rt": [
+    "component-demo"
+   ],
+   "vs": [
+    "minimal",
+    "motion"
+   ],
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-cultui-feature-carousel",
+   "type": "style",
+   "lib": "www-cult-ui-com",
+   "libName": "Cult UI",
+   "kind": "carousel",
+   "var": "Feature Carousel",
+   "name": "carousel · Cult UI · Feature Carousel",
+   "url": "https://www.cult-ui.com/docs/components/feature-carousel",
+   "page": "https://www.cult-ui.com/docs/components/feature-carousel",
+   "note": "特性介绍轮播，带步骤标签",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Cult UI",
+   "pricing": "free",
+   "tags": [
+    "Cult UI",
+    "2026-10 新增"
+   ],
+   "ct": [
+    "carousel"
+   ],
+   "rt": [
+    "component-demo"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-cultui-logo-carousel",
+   "type": "style",
+   "lib": "www-cult-ui-com",
+   "libName": "Cult UI",
+   "kind": "carousel",
+   "var": "Logo Carousel",
+   "name": "carousel · Cult UI · Logo Carousel",
+   "url": "https://www.cult-ui.com/docs/components/logo-carousel",
+   "page": "https://www.cult-ui.com/docs/components/logo-carousel",
+   "note": "客户 Logo 分组轮换",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Cult UI",
+   "pricing": "free",
+   "tags": [
+    "Cult UI",
+    "2026-10 新增"
+   ],
+   "ct": [
+    "carousel"
+   ],
+   "rt": [
+    "component-demo"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-cultui-tweet-grid",
+   "type": "style",
+   "lib": "www-cult-ui-com",
+   "libName": "Cult UI",
+   "kind": "layout",
+   "var": "Tweet Grid",
+   "name": "layout · Cult UI · Tweet Grid",
+   "url": "https://www.cult-ui.com/docs/components/tweet-grid",
+   "page": "https://www.cult-ui.com/docs/components/tweet-grid",
+   "note": "推文瀑布墙",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Cult UI",
+   "pricing": "free",
+   "tags": [
+    "Cult UI",
+    "2026-10 新增"
+   ],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "component-demo"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-cultui-kanban-board",
+   "type": "style",
+   "lib": "www-cult-ui-com",
+   "libName": "Cult UI",
+   "kind": "table",
+   "var": "Kanban Board",
+   "name": "table · Cult UI · Kanban Board",
+   "url": "https://www.cult-ui.com/docs/components/kanban-board",
+   "page": "https://www.cult-ui.com/docs/components/kanban-board",
+   "note": "可拖拽看板",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Cult UI",
+   "pricing": "free",
+   "tags": [
+    "Cult UI",
+    "2026-10 新增"
+   ],
+   "ct": [
+    "table"
+   ],
+   "rt": [
+    "component-demo"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-cultui-halo-search",
+   "type": "style",
+   "lib": "www-cult-ui-com",
+   "libName": "Cult UI",
+   "kind": "input",
+   "var": "Halo Search",
+   "name": "input · Cult UI · Halo Search",
+   "url": "https://www.cult-ui.com/docs/components/halo-search",
+   "page": "https://www.cult-ui.com/docs/components/halo-search",
+   "note": "带光晕的搜索框",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Cult UI",
+   "pricing": "free",
+   "tags": [
+    "Cult UI",
+    "2026-10 新增"
+   ],
+   "ct": [
+    "input"
+   ],
+   "rt": [
+    "component-demo"
+   ],
+   "vs": [
+    "dark-tech"
+   ],
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-cultui-pixel-heading-word",
+   "type": "style",
+   "lib": "www-cult-ui-com",
+   "libName": "Cult UI",
+   "kind": "motion",
+   "var": "Pixel Heading",
+   "name": "motion · Cult UI · Pixel Heading",
+   "url": "https://www.cult-ui.com/docs/components/pixel-heading-word",
+   "page": "https://www.cult-ui.com/docs/components/pixel-heading-word",
+   "note": "像素字逐词出现的标题",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Cult UI",
+   "pricing": "free",
+   "tags": [
+    "Cult UI",
+    "2026-10 新增"
+   ],
+   "ct": [
+    "motion"
+   ],
+   "rt": [
+    "component-demo"
+   ],
+   "vs": [
+    "retro"
+   ],
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-motion-primitives-glow-effect",
+   "type": "style",
+   "lib": "motion-primitives-com",
+   "libName": "Motion Primitives",
+   "kind": "background",
+   "var": "Glow Effect",
+   "name": "background · Motion Primitives · Glow Effect",
+   "url": "https://motion-primitives.com/docs/glow-effect",
+   "page": "https://motion-primitives.com/docs/glow-effect",
+   "note": "可控的柔光层（适合放在单个 CTA 后面）",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Motion Primitives",
+   "pricing": "free",
+   "tags": [
+    "Motion Primitives",
+    "2026-10 新增"
+   ],
+   "ct": [
+    "background"
+   ],
+   "rt": [
+    "component-demo"
+   ],
+   "vs": [
+    "gradient",
+    "motion"
+   ],
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-motion-primitives-image-comparison",
+   "type": "style",
+   "lib": "motion-primitives-com",
+   "libName": "Motion Primitives",
+   "kind": "carousel",
+   "var": "Image Comparison",
+   "name": "carousel · Motion Primitives · Image Comparison",
+   "url": "https://motion-primitives.com/docs/image-comparison",
+   "page": "https://motion-primitives.com/docs/image-comparison",
+   "note": "前后对比滑块",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Motion Primitives",
+   "pricing": "free",
+   "tags": [
+    "Motion Primitives",
+    "2026-10 新增"
+   ],
+   "ct": [
+    "carousel"
+   ],
+   "rt": [
+    "component-demo"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-motion-primitives-infinite-slider",
+   "type": "style",
+   "lib": "motion-primitives-com",
+   "libName": "Motion Primitives",
+   "kind": "carousel",
+   "var": "Infinite Slider",
+   "name": "carousel · Motion Primitives · Infinite Slider",
+   "url": "https://motion-primitives.com/docs/infinite-slider",
+   "page": "https://motion-primitives.com/docs/infinite-slider",
+   "note": "无限滚动 Logo/卡片条，可悬停减速",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Motion Primitives",
+   "pricing": "free",
+   "tags": [
+    "Motion Primitives",
+    "2026-10 新增"
+   ],
+   "ct": [
+    "carousel"
+   ],
+   "rt": [
+    "component-demo"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-motion-primitives-progressive-blur",
+   "type": "style",
+   "lib": "motion-primitives-com",
+   "libName": "Motion Primitives",
+   "kind": "background",
+   "var": "Progressive Blur",
+   "name": "background · Motion Primitives · Progressive Blur",
+   "url": "https://motion-primitives.com/docs/progressive-blur",
+   "page": "https://motion-primitives.com/docs/progressive-blur",
+   "note": "渐进模糊",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Motion Primitives",
+   "pricing": "free",
+   "tags": [
+    "Motion Primitives",
+    "2026-10 新增"
+   ],
+   "ct": [
+    "background"
+   ],
+   "rt": [
+    "component-demo"
+   ],
+   "vs": [
+    "apple"
+   ],
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-motion-primitives-transition-panel",
+   "type": "style",
+   "lib": "motion-primitives-com",
+   "libName": "Motion Primitives",
+   "kind": "tabs",
+   "var": "Transition Panel",
+   "name": "tabs · Motion Primitives · Transition Panel",
+   "url": "https://motion-primitives.com/docs/transition-panel",
+   "page": "https://motion-primitives.com/docs/transition-panel",
+   "note": "面板内容切换的方向感过渡",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Motion Primitives",
+   "pricing": "free",
+   "tags": [
+    "Motion Primitives",
+    "2026-10 新增"
+   ],
+   "ct": [
+    "tabs"
+   ],
+   "rt": [
+    "component-demo"
+   ],
+   "vs": [
+    "minimal",
+    "motion"
+   ],
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-aceternity-blocks-hero-sections",
+   "name": "Aceternity Hero Sections 区块",
+   "url": "https://ui.aceternity.com/blocks/hero-sections",
+   "note": "完整的首屏区块合集（含免费款），有排版、截图、CTA 的成品组合，可直接对照整页比例",
+   "type": "template",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Aceternity UI",
+   "pricing": "freemium",
+   "tags": [
+    "2026-10 新增"
+   ],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "template"
+   ],
+   "vs": [
+    "dark-tech",
+    "motion"
+   ],
+   "gold": true,
+   "why": "整页参考而不是单个特效：看标题字号、留白、截图比例怎么配",
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-aceternity-blocks-pricing-sections",
+   "name": "Aceternity Pricing Sections 区块",
+   "url": "https://ui.aceternity.com/blocks/pricing-sections",
+   "note": "定价区块：月/年切换、推荐档高亮",
+   "type": "template",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Aceternity UI",
+   "pricing": "freemium",
+   "tags": [
+    "2026-10 新增"
+   ],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "template"
+   ],
+   "vs": [
+    "dark-tech",
+    "motion"
+   ],
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-aceternity-blocks-text-animations",
+   "name": "Aceternity Text Animations 区块",
+   "url": "https://ui.aceternity.com/blocks/text-animations",
+   "note": "标题文字动画区块合集",
+   "type": "template",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Aceternity UI",
+   "pricing": "freemium",
+   "tags": [
+    "2026-10 新增"
+   ],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "template"
+   ],
+   "vs": [
+    "dark-tech",
+    "motion"
+   ],
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-aceternity-tpl-ai-saas-template",
+   "name": "Aceternity AI SaaS Template",
+   "url": "https://ui.aceternity.com/templates/ai-saas-template",
+   "note": "AI SaaS 整站模板（付费），可看完整首页的节奏与组件组合",
+   "type": "template",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Aceternity UI",
+   "pricing": "paid",
+   "tags": [
+    "2026-10 新增"
+   ],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "template"
+   ],
+   "vs": [
+    "dark-tech",
+    "minimal"
+   ],
+   "gold": true,
+   "why": "整站级参照：首屏-证明-特性-定价的完整节奏",
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-aceternity-tpl-simplistic-saas-template",
+   "name": "Aceternity Simplistic SaaS Template",
+   "url": "https://ui.aceternity.com/templates/simplistic-saas-template",
+   "note": "极简 SaaS 整站模板（付费），留白和字号很克制",
+   "type": "template",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Aceternity UI",
+   "pricing": "paid",
+   "tags": [
+    "2026-10 新增"
+   ],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "template"
+   ],
+   "vs": [
+    "dark-tech",
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-aceternity-tpl-design-development-studio-template",
+   "name": "Aceternity Design Studio Template",
+   "url": "https://ui.aceternity.com/templates/design-development-studio-template",
+   "note": "设计工作室整站模板（付费），作品展示型布局",
+   "type": "template",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Aceternity UI",
+   "pricing": "paid",
+   "tags": [
+    "2026-10 新增"
+   ],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "template"
+   ],
+   "vs": [
+    "dark-tech",
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-aceternity-tpl-minimal-portfolio-template",
+   "name": "Aceternity Minimal Portfolio Template",
+   "url": "https://ui.aceternity.com/templates/minimal-portfolio-template",
+   "note": "极简作品集模板（付费）",
+   "type": "template",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Aceternity UI",
+   "pricing": "paid",
+   "tags": [
+    "2026-10 新增"
+   ],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "template"
+   ],
+   "vs": [
+    "dark-tech",
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-aceternity-tpl-agenforce-marketing-template",
+   "name": "Aceternity Agenforce Marketing Template",
+   "url": "https://ui.aceternity.com/templates/agenforce-marketing-template",
+   "note": "AI Agent 营销站模板（付费）",
+   "type": "template",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Aceternity UI",
+   "pricing": "paid",
+   "tags": [
+    "2026-10 新增"
+   ],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "template"
+   ],
+   "vs": [
+    "dark-tech",
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-shadcn-dashboard-01",
+   "name": "shadcn Block · Dashboard 01",
+   "url": "https://ui.shadcn.com/view/new-york-v4/dashboard-01",
+   "note": "官方仪表盘区块：侧栏+图表+数据表，克制的中性色",
+   "type": "template",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "shadcn/ui",
+   "pricing": "free",
+   "tags": [
+    "2026-10 新增"
+   ],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "template"
+   ],
+   "vs": [
+    "minimal",
+    "enterprise"
+   ],
+   "gold": true,
+   "why": "后台类页面的基准线：中性色、密度、层级都对",
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-shadcn-login-03",
+   "name": "shadcn Block · Login 03",
+   "url": "https://ui.shadcn.com/view/new-york-v4/login-03",
+   "note": "居中卡片式登录页",
+   "type": "template",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "shadcn/ui",
+   "pricing": "free",
+   "tags": [
+    "2026-10 新增"
+   ],
+   "ct": [
+    "form"
+   ],
+   "rt": [
+    "template"
+   ],
+   "vs": [
+    "minimal",
+    "enterprise"
+   ],
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-shadcn-login-04",
+   "name": "shadcn Block · Login 04",
+   "url": "https://ui.shadcn.com/view/new-york-v4/login-04",
+   "note": "左表单右图片的登录页",
+   "type": "template",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "shadcn/ui",
+   "pricing": "free",
+   "tags": [
+    "2026-10 新增"
+   ],
+   "ct": [
+    "form"
+   ],
+   "rt": [
+    "template"
+   ],
+   "vs": [
+    "minimal",
+    "enterprise"
+   ],
+   "gold": true,
+   "why": "登录页图文分栏的干净做法",
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-awwwards-sotd",
+   "name": "Awwwards · Sites of the Day",
+   "url": "https://www.awwwards.com/websites/sites_of_the_day/",
+   "note": "Awwwards 每日最佳网站，评审打分，适合找高完成度整站",
+   "type": "inspiration",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "awwwards.com",
+   "pricing": "free",
+   "tags": [
+    "2026-10 新增"
+   ],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "motion",
+    "editorial"
+   ],
+   "gold": true,
+   "why": "每天一个经评审的整站，学结构不学特效",
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-framer-marketplace-templates",
+   "name": "Framer Marketplace · Templates",
+   "url": "https://www.framer.com/marketplace/templates/",
+   "note": "Framer 官方模板市场，大量可直接预览的整站（多数付费）",
+   "type": "inspiration",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "framer.com",
+   "pricing": "free",
+   "tags": [
+    "2026-10 新增"
+   ],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal",
+    "motion"
+   ],
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-lapa-ninja",
+   "name": "Lapa Ninja",
+   "url": "https://www.lapa.ninja/",
+   "note": "按行业分类的落地页截图库",
+   "type": "inspiration",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "lapa.ninja",
+   "pricing": "free",
+   "tags": [
+    "2026-10 新增"
+   ],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-saaslandingpage",
+   "name": "SaaS Landing Page",
+   "url": "https://saaslandingpage.com/",
+   "note": "只收 SaaS 落地页，可按区块（Hero/定价/FAQ）筛",
+   "type": "inspiration",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "saaslandingpage.com",
+   "pricing": "free",
+   "tags": [
+    "2026-10 新增"
+   ],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-onepagelove",
+   "name": "One Page Love",
+   "url": "https://onepagelove.com/",
+   "note": "单页网站精选，含模板",
+   "type": "inspiration",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "onepagelove.com",
+   "pricing": "free",
+   "tags": [
+    "2026-10 新增"
+   ],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal",
+    "editorial"
+   ],
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-siteinspire",
+   "name": "Siteinspire",
+   "url": "https://www.siteinspire.com/",
+   "note": "偏编辑/瑞士风的网站精选，品味稳定",
+   "type": "inspiration",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "siteinspire.com",
+   "pricing": "free",
+   "tags": [
+    "2026-10 新增"
+   ],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "swiss"
+   ],
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-dark-design",
+   "name": "Dark Design",
+   "url": "https://www.dark.design/",
+   "note": "只收暗色网站，做暗色主题必看",
+   "type": "inspiration",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "dark.design",
+   "pricing": "free",
+   "tags": [
+    "2026-10 新增"
+   ],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "dark-tech"
+   ],
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-mobbin-mcp",
+   "name": "Mobbin MCP（2026）",
+   "url": "https://mobbin.com/mcp",
+   "note": "2026 新：Mobbin 的 MCP 服务，Agent 可直接检索 62 万+ 真实产品截图与流程（需 Pro）",
+   "type": "tool",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "mobbin.com",
+   "pricing": "freemium",
+   "tags": [
+    "2026-10 新增"
+   ],
+   "ct": [],
+   "rt": [
+    "mcp",
+    "tool"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-refero-mcp",
+   "name": "Refero MCP（2026）",
+   "url": "https://doc.refero.design/mcp/getting-started",
+   "note": "2026 新：Refero 的 MCP，按风格/页面类型给 Agent 真实产品参考（付费）",
+   "type": "tool",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "doc.refero.design",
+   "pricing": "freemium",
+   "tags": [
+    "2026-10 新增"
+   ],
+   "ct": [],
+   "rt": [
+    "mcp",
+    "tool"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-bench-linear-app",
+   "name": "Linear 官网",
+   "url": "https://linear.app/",
+   "note": "暗色产品站标杆：极少颜色、精确排版、真实界面截图",
+   "type": "inspiration",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "标杆站点",
+   "pricing": "free",
+   "tags": [
+    "2026-10 新增"
+   ],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "dark-tech",
+    "minimal"
+   ],
+   "gold": true,
+   "why": "“高级但克制”的头号参照：一个强调色、真实产品画面",
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-bench-stripe-com",
+   "name": "Stripe 官网",
+   "url": "https://stripe.com/",
+   "note": "渐变只用在首屏一块，其余是严谨的网格与排版",
+   "type": "inspiration",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "标杆站点",
+   "pricing": "free",
+   "tags": [
+    "2026-10 新增"
+   ],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "gradient",
+    "editorial"
+   ],
+   "gold": true,
+   "why": "渐变的正确用法：只在一处，其它全靠排版",
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-bench-vercel-com",
+   "name": "Vercel 官网",
+   "url": "https://vercel.com/",
+   "note": "黑白 + 几何插图，信息密度高而不乱",
+   "type": "inspiration",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "标杆站点",
+   "pricing": "free",
+   "tags": [
+    "2026-10 新增"
+   ],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal",
+    "dark-tech"
+   ],
+   "gold": true,
+   "why": "黑白极简 + 高密度信息的范本",
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-bench-raycast-com",
+   "name": "Raycast 官网",
+   "url": "https://www.raycast.com/",
+   "note": "暗色 + 一处 3D 光效 + 真实产品窗口",
+   "type": "inspiration",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "标杆站点",
+   "pricing": "free",
+   "tags": [
+    "2026-10 新增"
+   ],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "dark-tech",
+    "3d"
+   ],
+   "gold": true,
+   "why": "一个 3D 主视觉 + 真实界面，不堆特效",
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-bench-resend-com",
+   "name": "Resend 官网",
+   "url": "https://resend.com/",
+   "note": "衬线大标题 + 暗色，开发者产品里少见的编辑感",
+   "type": "inspiration",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "标杆站点",
+   "pricing": "free",
+   "tags": [
+    "2026-10 新增"
+   ],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "dark-tech",
+    "editorial"
+   ],
+   "gold": true,
+   "why": "衬线 + 暗色做出“贵”的开发者品牌",
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-bench-cursor-com",
+   "name": "Cursor 官网",
+   "url": "https://cursor.com/",
+   "note": "浅色、产品截图为主角的 AI 工具站",
+   "type": "inspiration",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "标杆站点",
+   "pricing": "free",
+   "tags": [
+    "2026-10 新增"
+   ],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-bench-framer-com",
+   "name": "Framer 官网",
+   "url": "https://www.framer.com/",
+   "note": "动效丰富但每屏只有一个重点",
+   "type": "inspiration",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "标杆站点",
+   "pricing": "free",
+   "tags": [
+    "2026-10 新增"
+   ],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "dark-tech",
+    "motion"
+   ],
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x-shadcn-trace-ai-elements",
+   "name": "shadcn/ui · Trace + AI Elements（2026-10）",
+   "url": "https://ui.shadcn.com/docs/changelog/2026-10-ai-elements",
+   "note": "shadcn 新发布的 Trace 组件：把推理、工具调用、队列、子 Agent 统一成一种活动流，AI 产品界面直接可用（X 来源：@shadcn，4436 赞 / 2821 收藏，2026-10-14）",
+   "type": "component",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "X",
+   "pricing": "free",
+   "tags": [
+    "2026-10 新增"
+   ],
+   "ct": [
+    "chat"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "xsrc": {
+    "post": "https://x.com/shadcn/status/2110410655165779985",
+    "author": "@shadcn",
+    "likes": 4436,
+    "bookmarks": 2821,
+    "reposts": 140,
+    "impressions": 164066,
+    "date": "2026-10-14"
+   },
+   "gold": true,
+   "why": "AI 产品界面的新基准，官方、MIT、刚发布",
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x-loading-dev",
+   "name": "Loading（loading.dev）",
+   "url": "https://loading.dev/",
+   "note": "Jakub Krehel 与 Paul Faivret 做的 React 加载指示器库，每个都很精致（X 来源：@jakubkrehel，1270 赞 / 1111 收藏，2026-09-22）",
+   "type": "component",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "X",
+   "pricing": "free",
+   "tags": [
+    "2026-10 新增"
+   ],
+   "ct": [
+    "loader"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal",
+    "motion"
+   ],
+   "xsrc": {
+    "post": "https://x.com/jakubkrehel/status/2102422222967095544",
+    "author": "@jakubkrehel",
+    "likes": 1270,
+    "bookmarks": 1111,
+    "reposts": 55,
+    "impressions": 50985,
+    "date": "2026-09-22"
+   },
+   "gold": true,
+   "why": "加载态也能有质感：小而精的专注型库",
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x-emilkowalski-skills",
+   "name": "Emil Kowalski · skills",
+   "url": "https://github.com/emilkowalski/skills",
+   "note": "Emil 的 Agent 技能仓库：/mobile-native（触屏去 hover 等原生感）、/break-ui（用长名字等极端数据找 UI 破绽）（X 来源：@emilkowalski，4601 赞 / 5138 收藏，2026-10-04）",
+   "type": "skill",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "X",
+   "pricing": "free",
+   "tags": [
+    "2026-10 新增"
+   ],
+   "ct": [],
+   "rt": [
+    "skill"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "xsrc": {
+    "post": "https://x.com/emilkowalski/status/2106752670405099523",
+    "author": "@emilkowalski",
+    "likes": 4601,
+    "bookmarks": 5138,
+    "reposts": 164,
+    "impressions": 167256,
+    "date": "2026-10-04"
+   },
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x-interfaces-cheat-sheet",
+   "name": "Interface Cheat Sheet（interfaces.dev）",
+   "url": "https://interfaces.dev/cheat-sheet",
+   "note": "界面细节速查表，每条都配了示例：让网页“手感更好”的实践清单（X 来源：@jakubkrehel，1146 赞 / 1874 收藏，2026-09-17）",
+   "type": "tutorial",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "X",
+   "pricing": "free",
+   "tags": [
+    "2026-10 新增"
+   ],
+   "ct": [],
+   "rt": [
+    "tutorial"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "xsrc": {
+    "post": "https://x.com/jakubkrehel/status/2100605819238621632",
+    "author": "@jakubkrehel",
+    "likes": 1146,
+    "bookmarks": 1874,
+    "reposts": 74,
+    "impressions": 94414,
+    "date": "2026-09-17"
+   },
+   "gold": true,
+   "why": "细节清单：做完页面逐条对照，最直接提升质感",
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x-jakubkrehel-skills",
+   "name": "Jakub Krehel · skills（含 /state-machine）",
+   "url": "https://github.com/jakubkrehel/skills",
+   "note": "Jakub 的 Agent 技能集，/state-machine 会把组件所有状态渲染在一页上供检查（X 来源：@jakubkrehel，977 赞 / 1246 收藏，2026-10-08）",
+   "type": "skill",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "X",
+   "pricing": "free",
+   "tags": [
+    "2026-10 新增"
+   ],
+   "ct": [],
+   "rt": [
+    "skill"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "xsrc": {
+    "post": "https://x.com/jakubkrehel/status/2108217939556233615",
+    "author": "@jakubkrehel",
+    "likes": 977,
+    "bookmarks": 1246,
+    "reposts": 27,
+    "impressions": 73659,
+    "date": "2026-10-08"
+   },
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x-jakub-invisible-design-eng",
+   "name": "The Invisible Side of Design Engineering",
+   "url": "https://jakub.kr/writing/the-invisible-side-of-design-engineering",
+   "note": "设计工程里“看不见”的部分：状态、边界、手感，长文（X 来源：@jakubkrehel，728 赞 / 779 收藏，2026-09-14）",
+   "type": "tutorial",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "X",
+   "pricing": "free",
+   "tags": [
+    "2026-10 新增"
+   ],
+   "ct": [],
+   "rt": [
+    "tutorial"
+   ],
+   "vs": [
+    "editorial"
+   ],
+   "xsrc": {
+    "post": "https://x.com/jakubkrehel/status/2099514159826096310",
+    "author": "@jakubkrehel",
+    "likes": 728,
+    "bookmarks": 779,
+    "reposts": 44,
+    "impressions": 32017,
+    "date": "2026-09-14"
+   },
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x-vibrant-design",
+   "name": "Vibrant Design",
+   "url": "https://vibrant.design/",
+   "note": "Manu Arora（Aceternity 作者）推荐的灵感站，收录有动效的高完成度网站（X 来源：@mannupaaji，636 赞 / 1336 收藏，2026-10-01）",
+   "type": "inspiration",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "X",
+   "pricing": "free",
+   "tags": [
+    "2026-10 新增"
+   ],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "motion",
+    "editorial"
+   ],
+   "xsrc": {
+    "post": "https://x.com/mannupaaji/status/2105651272414322876",
+    "author": "@mannupaaji",
+    "likes": 636,
+    "bookmarks": 1336,
+    "reposts": 20,
+    "impressions": 68697,
+    "date": "2026-10-01"
+   },
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x-rauno-notes-5",
+   "name": "rauno.me · Notes 5（交互作品）",
+   "url": "https://rauno.me/notes/5",
+   "note": "Rauno Freiberg（Vercel 设计工程师）的交互实验，细腻的手势与过渡（X 来源：@raunofreiberg，613 赞 / 329 收藏，2026-09-11）",
+   "type": "inspiration",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "X",
+   "pricing": "free",
+   "tags": [
+    "2026-10 新增"
+   ],
+   "ct": [
+    "motion"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal",
+    "motion"
+   ],
+   "xsrc": {
+    "post": "https://x.com/raunofreiberg/status/2098476550635085917",
+    "author": "@raunofreiberg",
+    "likes": 613,
+    "bookmarks": 329,
+    "reposts": 11,
+    "impressions": 22578,
+    "date": "2026-09-11"
+   },
+   "gold": true,
+   "why": "顶级设计工程师的交互手感样本",
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x-rewamp-ui",
+   "name": "Rewamp UI",
+   "url": "https://www.rewampui.com/",
+   "note": "开源免费的动效组件集，70+ 组件（日本区高互动推荐）（X 来源：@aistarjp，611 赞 / 679 收藏，2026-09-22）",
+   "type": "library",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "X",
+   "pricing": "free",
+   "tags": [
+    "2026-10 新增"
+   ],
+   "ct": [
+    "motion",
+    "card"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "motion"
+   ],
+   "xsrc": {
+    "post": "https://x.com/aistarjp/status/2102350717021515957",
+    "author": "@aistarjp",
+    "likes": 611,
+    "bookmarks": 679,
+    "reposts": 75,
+    "impressions": 39825,
+    "date": "2026-09-22"
+   },
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x-interfere-design-system",
+   "name": "Interfere Design System",
+   "url": "https://design.interfere.com/",
+   "note": "Interfere 公开的设计系统页：基础、字体、原语，排版极其克制（X 来源：@jakubkrehel，523 赞 / 560 收藏，2026-10-15）",
+   "type": "system",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "X",
+   "pricing": "free",
+   "tags": [
+    "2026-10 新增"
+   ],
+   "ct": [],
+   "rt": [
+    "design-system"
+   ],
+   "vs": [
+    "minimal",
+    "editorial"
+   ],
+   "xsrc": {
+    "post": "https://x.com/jakubkrehel/status/2110776157344035229",
+    "author": "@jakubkrehel",
+    "likes": 523,
+    "bookmarks": 560,
+    "reposts": 9,
+    "impressions": 15377,
+    "date": "2026-10-15"
+   },
+   "gold": true,
+   "why": "小团队设计系统的范本：少即是多",
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x-astryx-meta",
+   "name": "Astryx（Meta 开源设计系统）",
+   "url": "https://astryx.atmeta.com/",
+   "note": "Meta 开源的设计系统，150–170+ 组件、主题、暗色模式、面向 AI 的工具（X 来源：@neropursue，406 赞 / 457 收藏，2026-09-19）",
+   "type": "system",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "X",
+   "pricing": "free",
+   "tags": [
+    "2026-10 新增"
+   ],
+   "ct": [
+    "button",
+    "input",
+    "table"
+   ],
+   "rt": [
+    "design-system"
+   ],
+   "vs": [
+    "minimal",
+    "enterprise"
+   ],
+   "xsrc": {
+    "post": "https://x.com/neropursue/status/2101227484775625018",
+    "author": "@neropursue",
+    "likes": 406,
+    "bookmarks": 457,
+    "reposts": 41,
+    "impressions": 20383,
+    "date": "2026-09-19"
+   },
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x-interfere-how-built",
+   "name": "How we built Interfere’s new website",
+   "url": "https://interfere.com/blog/how-we-built-interferes-new-website",
+   "note": "Interfere 官网的搭建复盘，从设计到实现（X 来源：@jakubkrehel，321 赞 / 429 收藏，2026-09-25）",
+   "type": "tutorial",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "X",
+   "pricing": "free",
+   "tags": [
+    "2026-10 新增"
+   ],
+   "ct": [],
+   "rt": [
+    "tutorial"
+   ],
+   "vs": [
+    "editorial"
+   ],
+   "xsrc": {
+    "post": "https://x.com/jakubkrehel/status/2103499210330943948",
+    "author": "@jakubkrehel",
+    "likes": 321,
+    "bookmarks": 429,
+    "reposts": 15,
+    "impressions": 25325,
+    "date": "2026-09-25"
+   },
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x-dot-matrix-loaders",
+   "name": "Dot Matrix（点阵加载器）",
+   "url": "https://dotmatrix.zzzzshawn.cloud/",
+   "note": "点阵风格的 React 加载动画，shadcn registry 安装（X 来源：@remvze，85 赞 / 95 收藏，2026-08-30）",
+   "type": "component",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "X",
+   "pricing": "free",
+   "tags": [
+    "2026-10 新增"
+   ],
+   "ct": [
+    "loader"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "retro",
+    "motion"
+   ],
+   "xsrc": {
+    "post": "https://x.com/remvze/status/2094156836244988336",
+    "author": "@remvze",
+    "likes": 85,
+    "bookmarks": 95,
+    "reposts": 1,
+    "impressions": 5098,
+    "date": "2026-08-30"
+   },
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x-vue-bits",
+   "name": "Vue Bits",
+   "url": "https://vue-bits.dev/",
+   "note": "React Bits 的 Vue 版本，含 33 个微交互组件（X 来源：@davidhaz，163 赞 / 123 收藏，2026-09-21）",
+   "type": "library",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "X",
+   "pricing": "free",
+   "tags": [
+    "2026-10 新增"
+   ],
+   "ct": [
+    "motion",
+    "background"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "motion"
+   ],
+   "xsrc": {
+    "post": "https://x.com/davidhaz/status/2102001875406970964",
+    "author": "@davidhaz",
+    "likes": 163,
+    "bookmarks": 123,
+    "reposts": 9,
+    "impressions": 13526,
+    "date": "2026-09-21"
+   },
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x-svelte-bits",
+   "name": "Svelte Bits",
+   "url": "https://sveltebits.xyz/",
+   "note": "React Bits 的 Svelte 版本（X 来源：@davidhaz，163 赞 / 123 收藏，2026-09-21）",
+   "type": "library",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "X",
+   "pricing": "free",
+   "tags": [
+    "2026-10 新增"
+   ],
+   "ct": [
+    "motion",
+    "background"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "motion"
+   ],
+   "xsrc": {
+    "post": "https://x.com/davidhaz/status/2102001875406970964",
+    "author": "@davidhaz",
+    "likes": 163,
+    "bookmarks": 123,
+    "reposts": 9,
+    "impressions": 13526,
+    "date": "2026-09-21"
+   },
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x-kobra-systems",
+   "name": "Kobra",
+   "url": "https://kobra.systems/",
+   "note": "设计工程师推荐的组件集（X 来源：@kasuncfdo，108 赞 / 131 收藏，2026-09-29）",
+   "type": "library",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "X",
+   "pricing": "free",
+   "tags": [
+    "2026-10 新增"
+   ],
+   "ct": [
+    "button",
+    "card"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "xsrc": {
+    "post": "https://x.com/kasuncfdo/status/2104812668284715238",
+    "author": "@kasuncfdo",
+    "likes": 108,
+    "bookmarks": 131,
+    "reposts": 10,
+    "impressions": 3884,
+    "date": "2026-09-29"
+   },
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x-getlayers",
+   "name": "GetLayers",
+   "url": "https://getlayers.ai/",
+   "note": "300+ 动画 3D 场景与整站提示词（X 来源：@thedzianis，120 赞 / 174 收藏，2026-09-29）",
+   "type": "template",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "X",
+   "pricing": "free",
+   "tags": [
+    "2026-10 新增"
+   ],
+   "ct": [
+    "background"
+   ],
+   "rt": [
+    "template"
+   ],
+   "vs": [
+    "3d",
+    "motion"
+   ],
+   "xsrc": {
+    "post": "https://x.com/thedzianis/status/2104876112446881823",
+    "author": "@thedzianis",
+    "likes": 120,
+    "bookmarks": 174,
+    "reposts": 23,
+    "impressions": 7154,
+    "date": "2026-09-29"
+   },
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x-ogimagecn",
+   "name": "ogimagecn",
+   "url": "https://www.ogimagecn.com/",
+   "note": "shadcn CLI 安装的 OG 分享图模板（Satori），解决链接预览丑的问题（X 来源：@alaymanguy，189 赞 / 310 收藏，2026-08-31）",
+   "type": "component",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "X",
+   "pricing": "free",
+   "tags": [
+    "2026-10 新增"
+   ],
+   "ct": [
+    "card"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "xsrc": {
+    "post": "https://x.com/alaymanguy/status/2094406143611416942",
+    "author": "@alaymanguy",
+    "likes": 189,
+    "bookmarks": 310,
+    "reposts": 4,
+    "impressions": 14002,
+    "date": "2026-08-31"
+   },
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x-originui",
+   "name": "Origin UI（originui.com）",
+   "url": "https://originui.com/",
+   "note": "Origin UI 主站（设计工程师常用清单第 2 名）（X 来源：@kasuncfdo，108 赞 / 131 收藏，2026-09-29）",
+   "type": "library",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "X",
+   "pricing": "free",
+   "tags": [
+    "2026-10 新增"
+   ],
+   "ct": [
+    "input",
+    "button",
+    "select"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "xsrc": {
+    "post": "https://x.com/kasuncfdo/status/2104812668284715238",
+    "author": "@kasuncfdo",
+    "likes": 108,
+    "bookmarks": 131,
+    "reposts": 10,
+    "impressions": 3884,
+    "date": "2026-09-29"
+   },
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-awwwards-heron-ai",
+   "name": "Heron AI（Awwwards SOTD）",
+   "url": "https://heronaiapp.com/",
+   "note": "Awwwards「当日最佳网站」近期获奖作品，整站级视觉参考：看首屏构图、字号对比和图片使用。Awwwards 页：https://www.awwwards.com/sites/heron-ai",
+   "type": "inspiration",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Awwwards",
+   "pricing": "free",
+   "tags": [
+    "2026-10 新增"
+   ],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "motion"
+   ],
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-awwwards-huy-phan-vol-2",
+   "name": "Huy Phan Vol.2（Awwwards SOTD）",
+   "url": "https://huyml.co/",
+   "note": "Awwwards「当日最佳网站」近期获奖作品，整站级视觉参考：看首屏构图、字号对比和图片使用。Awwwards 页：https://www.awwwards.com/sites/huy-phan-vol-2",
+   "type": "inspiration",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Awwwards",
+   "pricing": "free",
+   "tags": [
+    "2026-10 新增"
+   ],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "motion"
+   ],
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-awwwards-lpas",
+   "name": "LPAS（Awwwards SOTD）",
+   "url": "https://lpas.com/",
+   "note": "Awwwards「当日最佳网站」近期获奖作品，整站级视觉参考：看首屏构图、字号对比和图片使用。Awwwards 页：https://www.awwwards.com/sites/lpas",
+   "type": "inspiration",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Awwwards",
+   "pricing": "free",
+   "tags": [
+    "2026-10 新增"
+   ],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "motion"
+   ],
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-awwwards-maria-vasilyeva-portfolio",
+   "name": "Maria Vasilyeva Portfolio（Awwwards SOTD）",
+   "url": "https://www.mariavasilyeva.com/",
+   "note": "Awwwards「当日最佳网站」近期获奖作品，整站级视觉参考：看首屏构图、字号对比和图片使用。Awwwards 页：https://www.awwwards.com/sites/maria-vasilyeva-portfolio",
+   "type": "inspiration",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Awwwards",
+   "pricing": "free",
+   "tags": [
+    "2026-10 新增"
+   ],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "motion"
+   ],
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-awwwards-neutomni",
+   "name": "Neutomni（Awwwards SOTD）",
+   "url": "https://neutomni.com/",
+   "note": "Awwwards「当日最佳网站」近期获奖作品，整站级视觉参考：看首屏构图、字号对比和图片使用。Awwwards 页：https://www.awwwards.com/sites/neutomni",
+   "type": "inspiration",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Awwwards",
+   "pricing": "free",
+   "tags": [
+    "2026-10 新增"
+   ],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "motion"
+   ],
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-awwwards-nick-ho",
+   "name": "Nick Ho（Awwwards SOTD）",
+   "url": "https://nickho-motorsports.nl/",
+   "note": "Awwwards「当日最佳网站」近期获奖作品，整站级视觉参考：看首屏构图、字号对比和图片使用。Awwwards 页：https://www.awwwards.com/sites/nick-ho",
+   "type": "inspiration",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Awwwards",
+   "pricing": "free",
+   "tags": [
+    "2026-10 新增"
+   ],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "motion"
+   ],
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-awwwards-odyssee",
+   "name": "Odyssée（Awwwards SOTD）",
+   "url": "https://www.odysseeclinic.com.au/",
+   "note": "Awwwards「当日最佳网站」近期获奖作品，整站级视觉参考：看首屏构图、字号对比和图片使用。Awwwards 页：https://www.awwwards.com/sites/odyssee",
+   "type": "inspiration",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Awwwards",
+   "pricing": "free",
+   "tags": [
+    "2026-10 新增"
+   ],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "motion"
+   ],
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-awwwards-tengile-malamala-collection",
+   "name": "Tengile Malamala Collection（Awwwards SOTD）",
+   "url": "https://tengilemalamala.com/",
+   "note": "Awwwards「当日最佳网站」近期获奖作品，整站级视觉参考：看首屏构图、字号对比和图片使用。Awwwards 页：https://www.awwwards.com/sites/tengile-malamala-collection",
+   "type": "inspiration",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Awwwards",
+   "pricing": "free",
+   "tags": [
+    "2026-10 新增"
+   ],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "motion"
+   ],
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-awwwards-twks-1",
+   "name": "twks（Awwwards SOTD）",
+   "url": "https://twks.ch/en",
+   "note": "Awwwards「当日最佳网站」近期获奖作品，整站级视觉参考：看首屏构图、字号对比和图片使用。Awwwards 页：https://www.awwwards.com/sites/twks-1",
+   "type": "inspiration",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Awwwards",
+   "pricing": "free",
+   "tags": [
+    "2026-10 新增"
+   ],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "motion"
+   ],
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-framer-asher-vale",
+   "name": "Asher Vale（Framer 模板）",
+   "url": "https://www.framer.com/marketplace/templates/asher-vale/",
+   "note": "Framer 官方模板市场的整站模板，可在线预览完整页面；适合直接对照整页节奏（多数付费，链接到原站）",
+   "type": "inspiration",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Framer Marketplace",
+   "pricing": "freemium",
+   "tags": [
+    "2026-10 新增"
+   ],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "motion"
+   ],
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-framer-conicorn",
+   "name": "Conicorn（Framer 模板）",
+   "url": "https://www.framer.com/marketplace/templates/conicorn/",
+   "note": "Framer 官方模板市场的整站模板，可在线预览完整页面；适合直接对照整页节奏（多数付费，链接到原站）",
+   "type": "inspiration",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Framer Marketplace",
+   "pricing": "freemium",
+   "tags": [
+    "2026-10 新增"
+   ],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "motion"
+   ],
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-framer-creatorcut",
+   "name": "CreatorCut（Framer 模板）",
+   "url": "https://www.framer.com/marketplace/templates/creatorcut/",
+   "note": "Framer 官方模板市场的整站模板，可在线预览完整页面；适合直接对照整页节奏（多数付费，链接到原站）",
+   "type": "inspiration",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Framer Marketplace",
+   "pricing": "freemium",
+   "tags": [
+    "2026-10 新增"
+   ],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "motion"
+   ],
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-framer-ekon",
+   "name": "Ekon（Framer 模板）",
+   "url": "https://www.framer.com/marketplace/templates/ekon/",
+   "note": "Framer 官方模板市场的整站模板，可在线预览完整页面；适合直接对照整页节奏（多数付费，链接到原站）",
+   "type": "inspiration",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Framer Marketplace",
+   "pricing": "freemium",
+   "tags": [
+    "2026-10 新增"
+   ],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "motion"
+   ],
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-framer-k-nstler",
+   "name": "Künstler（Framer 模板）",
+   "url": "https://www.framer.com/marketplace/templates/k-nstler/",
+   "note": "Framer 官方模板市场的整站模板，可在线预览完整页面；适合直接对照整页节奏（多数付费，链接到原站）",
+   "type": "inspiration",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Framer Marketplace",
+   "pricing": "freemium",
+   "tags": [
+    "2026-10 新增"
+   ],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "motion"
+   ],
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-framer-kyma",
+   "name": "Kyma（Framer 模板）",
+   "url": "https://www.framer.com/marketplace/templates/kyma/",
+   "note": "Framer 官方模板市场的整站模板，可在线预览完整页面；适合直接对照整页节奏（多数付费，链接到原站）",
+   "type": "inspiration",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Framer Marketplace",
+   "pricing": "freemium",
+   "tags": [
+    "2026-10 新增"
+   ],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "motion"
+   ],
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-framer-maxima",
+   "name": "Maxima（Framer 模板）",
+   "url": "https://www.framer.com/marketplace/templates/maxima/",
+   "note": "Framer 官方模板市场的整站模板，可在线预览完整页面；适合直接对照整页节奏（多数付费，链接到原站）",
+   "type": "inspiration",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Framer Marketplace",
+   "pricing": "freemium",
+   "tags": [
+    "2026-10 新增"
+   ],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "motion"
+   ],
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-framer-neiden",
+   "name": "Neiden（Framer 模板）",
+   "url": "https://www.framer.com/marketplace/templates/neiden/",
+   "note": "Framer 官方模板市场的整站模板，可在线预览完整页面；适合直接对照整页节奏（多数付费，链接到原站）",
+   "type": "inspiration",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Framer Marketplace",
+   "pricing": "freemium",
+   "tags": [
+    "2026-10 新增"
+   ],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "motion"
+   ],
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-framer-nudge",
+   "name": "Nudge（Framer 模板）",
+   "url": "https://www.framer.com/marketplace/templates/nudge/",
+   "note": "Framer 官方模板市场的整站模板，可在线预览完整页面；适合直接对照整页节奏（多数付费，链接到原站）",
+   "type": "inspiration",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Framer Marketplace",
+   "pricing": "freemium",
+   "tags": [
+    "2026-10 新增"
+   ],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "motion"
+   ],
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-framer-overtake",
+   "name": "Overtake（Framer 模板）",
+   "url": "https://www.framer.com/marketplace/templates/overtake/",
+   "note": "Framer 官方模板市场的整站模板，可在线预览完整页面；适合直接对照整页节奏（多数付费，链接到原站）",
+   "type": "inspiration",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Framer Marketplace",
+   "pricing": "freemium",
+   "tags": [
+    "2026-10 新增"
+   ],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "motion"
+   ],
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-framer-owen-studio",
+   "name": "Owen Studio（Framer 模板）",
+   "url": "https://www.framer.com/marketplace/templates/owen-studio/",
+   "note": "Framer 官方模板市场的整站模板，可在线预览完整页面；适合直接对照整页节奏（多数付费，链接到原站）",
+   "type": "inspiration",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Framer Marketplace",
+   "pricing": "freemium",
+   "tags": [
+    "2026-10 新增"
+   ],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "motion"
+   ],
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-framer-prolab",
+   "name": "ProLab（Framer 模板）",
+   "url": "https://www.framer.com/marketplace/templates/prolab/",
+   "note": "Framer 官方模板市场的整站模板，可在线预览完整页面；适合直接对照整页节奏（多数付费，链接到原站）",
+   "type": "inspiration",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Framer Marketplace",
+   "pricing": "freemium",
+   "tags": [
+    "2026-10 新增"
+   ],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "motion"
+   ],
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-framer-soren",
+   "name": "Soren（Framer 模板）",
+   "url": "https://www.framer.com/marketplace/templates/soren/",
+   "note": "Framer 官方模板市场的整站模板，可在线预览完整页面；适合直接对照整页节奏（多数付费，链接到原站）",
+   "type": "inspiration",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Framer Marketplace",
+   "pricing": "freemium",
+   "tags": [
+    "2026-10 新增"
+   ],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "motion"
+   ],
+   "added": "2026-10-16",
+   "cur": 1
+  },
+  {
+   "id": "x16-framer-spector",
+   "name": "Spector（Framer 模板）",
+   "url": "https://www.framer.com/marketplace/templates/spector/",
+   "note": "Framer 官方模板市场的整站模板，可在线预览完整页面；适合直接对照整页节奏（多数付费，链接到原站）",
+   "type": "inspiration",
+   "section": "精选扩充 · 2026-10-16",
+   "sectionTitle": "精选扩充（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Framer Marketplace",
+   "pricing": "freemium",
+   "tags": [
+    "2026-10 新增"
+   ],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "motion"
+   ],
+   "added": "2026-10-16",
+   "cur": 1
   }
  ],
  "guides": [
@@ -72753,5 +77219,5 @@
    ]
   }
  ],
- "updatedAt": "2026-10-15T15:17Z"
+ "updatedAt": "2026-10-16T03:37Z"
 }

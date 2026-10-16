@@ -113,7 +113,7 @@ curl -s {BASE}kb/spec/motion.md
 - `pricing`: free | freemium | paid | unknown
 
 ## Workflow
-1. Fetch resources.json; filter by `ct`, `vs`, `pricing=free`.
+1. Fetch resources.json; start from `gold==true` (curated 精选 tier), skip items with `flag`; then filter by `ct`, `vs`, `pricing=free`. Pick ONE primary page-level reference (gold) + at most TWO supporting component references, and match the primary closely.
 2. Pick ONE direction skill (frontend-design or taste-skill); lock tokens: font, spacing scale, radius, one accent, light + dark.
 3. Choose `type=library` for code and `type=style` demos for the concrete look; open the original `url` for install and source.
 4. Start from the card's prompt; add layout, states, real content and an "avoid" list.
