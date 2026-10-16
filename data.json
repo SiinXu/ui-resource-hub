@@ -1,6 +1,6 @@
 {
  "generated": "2026-10-16",
- "count": 2539,
+ "count": 2783,
  "items": [
   {
    "id": "ued-figma-mcp-guide",
@@ -77243,6 +77243,6380 @@
    ],
    "noteEn": "New GitHub UI repo: 🎚️ Accessible React slider for single values, ranges, marks, and editable handles. (★3084, MIT, react-component/slider)",
    "added": "2026-10-16"
+  },
+  {
+   "id": "w16-1367studio-com",
+   "name": "1367 Studio",
+   "url": "https://www.1367studio.com/",
+   "note": "深色工作室首页，一个发光主视觉压住整屏，导航极简，适合学“单一焦点”的首屏（收录自 CSS Design Awards）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "CSS Design Awards",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "dark-tech",
+    "motion"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.cssdesignawards.com/wotd-award-winners"
+  },
+  {
+   "id": "w16-leeholmes-uk",
+   "name": "Lee Holmes",
+   "url": "https://www.leeholmes.uk/",
+   "note": "米白纸底 + 手绘感压缩大字标题，配一张剪影照片，独立工作室气质很足（收录自 CSS Design Awards）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "CSS Design Awards",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.cssdesignawards.com/wotd-award-winners",
+   "look": "画廊线描·近似"
+  },
+  {
+   "id": "w16-wonder-vision-com",
+   "name": "Wonder Vision®",
+   "url": "https://www.wonder-vision.com/",
+   "note": "CGI 工作室：一句大号无衬线宣言 + 流体渲染，信息和视觉各占一半，干净利落（收录自 CSS Design Awards）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "CSS Design Awards",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "3d",
+    "motion"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.cssdesignawards.com/wotd-award-winners"
+  },
+  {
+   "id": "w16-noth-in",
+   "name": "Nothin'",
+   "url": "https://noth.in/",
+   "note": "黑色超大字标“NOTHIN'”占满首屏，留白极多，品牌感靠字体一招完成（收录自 CSS Design Awards）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "CSS Design Awards",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal",
+    "editorial"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.cssdesignawards.com/wotd-award-winners"
+  },
+  {
+   "id": "w16-larevoltosa-es",
+   "name": "La Revoltosa",
+   "url": "https://larevoltosa.es/",
+   "note": "整屏番茄红 + 复古衬线字标，西班牙小酒馆的热烈，配色只用两色（收录自 CSS Design Awards）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "CSS Design Awards",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "playful",
+    "editorial"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.cssdesignawards.com/wotd-award-winners"
+  },
+  {
+   "id": "w16-pipdot-app",
+   "name": "Pip",
+   "url": "https://pipdot.app/",
+   "note": "奶白底 + 一个橙色小角色 + 超大黑字，极少元素的亲和力范本（收录自 Land-book）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Land-book",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "playful",
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "via": "https://land-book.com/"
+  },
+  {
+   "id": "w16-seasats-com",
+   "name": "Seasats",
+   "url": "https://www.seasats.com/",
+   "note": "海面摄影铺满 + 细体大字标题，海洋机器人公司的沉静叙事（收录自 Awwwards）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Awwwards",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal",
+    "editorial"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.awwwards.com/websites/sites_of_the_day/?page=2"
+  },
+  {
+   "id": "w16-aspensearch-com",
+   "name": "Aspen Search",
+   "url": "https://www.aspensearch.com/",
+   "note": "网格切分 + 半调网点图形 + 大号 Aspen 字标，瑞士风金融猎头站（收录自 Awwwards）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Awwwards",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "swiss",
+    "editorial"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.awwwards.com/websites/sites_of_the_day/?page=2"
+  },
+  {
+   "id": "w16-warmnfuzzy-tv",
+   "name": "Warm & Fuzzy",
+   "url": "https://www.warmnfuzzy.tv/",
+   "note": "高饱和美食摄影 + 超粗斜切字，创意公司首屏的能量感（收录自 Awwwards）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Awwwards",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "playful",
+    "editorial"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.awwwards.com/websites/sites_of_the_day/?page=2"
+  },
+  {
+   "id": "w16-white-desert-com",
+   "name": "White Desert",
+   "url": "https://white-desert.com/",
+   "note": "南极冰川摄影 + 超大宽体标题，奢旅品牌的大片式首屏（收录自 Awwwards）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Awwwards",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "motion"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.awwwards.com/websites/sites_of_the_day/?page=2"
+  },
+  {
+   "id": "w16-illoca-unseen-co",
+   "name": "illoca",
+   "url": "https://illoca.unseen.co/",
+   "note": "奶白底 + 蓝色线稿插画（人物在桌前），建筑 AI 工具的“画廊线描”式首屏（收录自 Awwwards）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Awwwards",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.awwwards.com/websites/sites_of_the_day/?page=2",
+   "look": "画廊线描·近似"
+  },
+  {
+   "id": "w16-aardvarkbookclub-com",
+   "name": "Aardvark Book Club",
+   "url": "https://aardvarkbookclub.com/",
+   "note": "粉黄撞色 + 粗衬线大字 + 一本书的插画，读书会订阅站的俏皮版式（收录自 Awwwards）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Awwwards",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "playful",
+    "editorial"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.awwwards.com/websites/sites_of_the_day/?page=2"
+  },
+  {
+   "id": "w16-stateofaidesign-com",
+   "name": "AI in Design Report 2026",
+   "url": "https://stateofaidesign.com/",
+   "note": "年度报告站：彩色抽象拼贴 + 编辑式排版，报告类页面的好参考（收录自 Awwwards）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Awwwards",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "gradient"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.awwwards.com/websites/sites_of_the_day/?page=2"
+  },
+  {
+   "id": "w16-trevornoah-com",
+   "name": "Trevor Noah",
+   "url": "https://www.trevornoah.com/",
+   "note": "人物剪贴 + 彩色道具拼贴，名人官网的杂志封面式首屏（收录自 Awwwards）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Awwwards",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "playful",
+    "editorial"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.awwwards.com/websites/sites_of_the_day/?page=2"
+  },
+  {
+   "id": "w16-cipher-tv",
+   "name": "CIPHER",
+   "url": "https://cipher.tv/",
+   "note": "黑底上散落的影像碎片拼贴，影视品牌的“暗场拼贴”做法（收录自 Awwwards）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Awwwards",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "dark-tech",
+    "editorial"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.awwwards.com/websites/sites_of_the_day/?page=2",
+   "look": "黑白拼贴",
+   "gold": true,
+   "why": "黑白拼贴的代表样本"
+  },
+  {
+   "id": "w16-otsuka-air-jp",
+   "name": "/zeroz（ゼロズ）公式サイト",
+   "url": "https://otsuka-air.jp/",
+   "note": "白底时尚摄影 + 超大斜杠字标 /zeroz，日系品牌的留白与锐利（收录自 Awwwards）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Awwwards",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal",
+    "editorial"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.awwwards.com/websites/sites_of_the_day/?page=2"
+  },
+  {
+   "id": "w16-mosbyfiles-com",
+   "name": "Mosby’s Files—American Modernist Architecture",
+   "url": "https://www.mosbyfiles.com/",
+   "note": "黑底 + 彩色条带的中世纪现代主义海报排版，建筑档案站很有记忆点（收录自 Awwwards）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Awwwards",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "retro",
+    "swiss"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.awwwards.com/websites/sites_of_the_day/?page=2"
+  },
+  {
+   "id": "w16-k95-it",
+   "name": "Studio K95",
+   "url": "https://k95.it/",
+   "note": "克莱因蓝底上漂浮的卡片阵列，工作室作品墙的立体化陈列（收录自 Awwwards）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Awwwards",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "playful",
+    "3d"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.awwwards.com/websites/sites_of_the_day/?page=2"
+  },
+  {
+   "id": "w16-noartmusic-com",
+   "name": "No Art",
+   "url": "https://www.noartmusic.com/",
+   "note": "满屏人群纪实照片 + 极小文字，音乐品牌用摄影本身做视觉（收录自 Awwwards）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Awwwards",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.awwwards.com/websites/sites_of_the_day/?page=2",
+   "look": "黑白拼贴·近似"
+  },
+  {
+   "id": "w16-verostudio-com",
+   "name": "Vero",
+   "url": "https://verostudio.com/",
+   "note": "大幅人像特写 + 小字标，工作室官网用一张照片撑起氛围（收录自 Awwwards）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Awwwards",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.awwwards.com/websites/sites_of_the_day/?page=2"
+  },
+  {
+   "id": "w16-produx-design",
+   "name": "PRODUX",
+   "url": "https://www.produx.design/",
+   "note": "黑底超细宽体字标 PRØDUX，品牌工作室的极简黑白（收录自 Awwwards）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Awwwards",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "dark-tech",
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.awwwards.com/websites/sites_of_the_day/?page=2"
+  },
+  {
+   "id": "w16-2xa-studio",
+   "name": "2xA",
+   "url": "https://2xa.studio/",
+   "note": "黑底手写体标语，像在纸上写字的“手绘线条”气质（收录自 Awwwards）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Awwwards",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal",
+    "editorial"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.awwwards.com/websites/sites_of_the_day/?page=2",
+   "look": "画廊线描·近似"
+  },
+  {
+   "id": "w16-glitchandgrit-com",
+   "name": "Glitch&Grit",
+   "url": "https://glitchandgrit.com/",
+   "note": "黑底作品缩略图网格 + 绿色手绘描边字，暗场拼贴里加一点涂鸦（收录自 Awwwards）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Awwwards",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "dark-tech",
+    "playful"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.awwwards.com/websites/sites_of_the_day/?page=2",
+   "look": "黑白拼贴·近似"
+  },
+  {
+   "id": "w16-dragonfly2-studiofreight-dev",
+   "name": "Dragonfly",
+   "url": "https://dragonfly2.studiofreight.dev/",
+   "note": "黑底橙色线框大字 DRAGONFLY，Studio Freight 的克制动效 Demo（收录自 Awwwards）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Awwwards",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "dark-tech",
+    "motion"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.awwwards.com/websites/sites_of_the_day/?page=2"
+  },
+  {
+   "id": "w16-offforum-com",
+   "name": "OFFF Forum Montréal",
+   "url": "https://www.offforum.com/",
+   "note": "OFFF 设计节：黑底作品方块拼贴 + 白色衬线字，节展站的暗场陈列（收录自 Awwwards）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Awwwards",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "dark-tech",
+    "editorial"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.awwwards.com/websites/sites_of_the_day/",
+   "look": "黑白拼贴·近似"
+  },
+  {
+   "id": "w16-coloniazacamil-com",
+   "name": "Colonia Zacamil",
+   "url": "https://coloniazacamil.com/",
+   "note": "米色底 + 航拍长条图 + 大字 FLY TO，社区项目的编辑式叙事（收录自 Awwwards）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Awwwards",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "playful"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.awwwards.com/websites/sites_of_the_day/"
+  },
+  {
+   "id": "w16-bleibtgleich-dev",
+   "name": "bleibtgleich",
+   "url": "https://bleibtgleich.dev/",
+   "note": "左对齐瑞士网格 + 大字姓名，设计师作品集的标准好样（收录自 Awwwards）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Awwwards",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "swiss",
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.awwwards.com/websites/sites_of_the_day/"
+  },
+  {
+   "id": "w16-lxlcreative-co-uk",
+   "name": "LxL Creative",
+   "url": "https://www.lxlcreative.co.uk/",
+   "note": "人像 + 红色手写字标，创意代理的海报式首屏（收录自 Awwwards）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Awwwards",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "playful"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.awwwards.com/websites/sites_of_the_day/"
+  },
+  {
+   "id": "w16-pensatori-irrazionali-com",
+   "name": "Pensatori Irrazionali",
+   "url": "https://pensatori-irrazionali.com/",
+   "note": "黑底线框地球 + 等宽小字，“非理性思想家”主题的实验排版（收录自 Awwwards）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Awwwards",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "dark-tech",
+    "editorial"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.awwwards.com/websites/sites_of_the_day/"
+  },
+  {
+   "id": "w16-noho-ink",
+   "name": "Noho",
+   "url": "https://noho.ink/",
+   "note": "米白底 + 彩色家具剪影网格，家具品牌的轻松陈列（收录自 Awwwards）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Awwwards",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "playful",
+    "editorial"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.awwwards.com/websites/sites_of_the_day/"
+  },
+  {
+   "id": "w16-sondaven-com-en",
+   "name": "Son Daven",
+   "url": "https://sondaven.com/en",
+   "note": "暗棕底 + 一头羊的摄影 + 超宽像素字标，度假酒店的独特气质（收录自 Awwwards）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Awwwards",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "retro"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.awwwards.com/websites/sites_of_the_month/"
+  },
+  {
+   "id": "w16-siena-film",
+   "name": "Siena Film Foundation",
+   "url": "https://siena.film/",
+   "note": "纯黑底白色窄体字标，电影基金会的极简开场（收录自 Awwwards）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Awwwards",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "dark-tech",
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.awwwards.com/websites/sites_of_the_month/"
+  },
+  {
+   "id": "w16-thelinestudio-com",
+   "name": "THE LINE Studio",
+   "url": "https://thelinestudio.com/",
+   "note": "黑红颗粒影像 + 巨型 THE LINE 字标，动画工作室的冲击力（收录自 Awwwards）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Awwwards",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "dark-tech",
+    "editorial"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.awwwards.com/websites/sites_of_the_month/"
+  },
+  {
+   "id": "w16-watson-la",
+   "name": "Watson ‒ Los Angeles",
+   "url": "https://watson.la/",
+   "note": "白底超大衬线字 + 行内小图，娱乐工作室的杂志式排版（收录自 Awwwards）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Awwwards",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.awwwards.com/websites/sites_of_the_month/",
+   "look": "画廊线描·近似"
+  },
+  {
+   "id": "w16-aim-obys-agency",
+   "name": "AIM— AI Modernism Of Kharkiv",
+   "url": "https://aim.obys.agency/",
+   "note": "黑白几何块 + 大写字标 AIM，Obys 的现代主义致敬（收录自 Awwwards）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Awwwards",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "swiss",
+    "editorial"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.awwwards.com/websites/sites_of_the_month/"
+  },
+  {
+   "id": "w16-akaru-fr",
+   "name": "Akaru",
+   "url": "https://akaru.fr/",
+   "note": "粗黑字标 + 建筑照片拼接，法国代理的瑞士网格（收录自 Awwwards）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Awwwards",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "swiss",
+    "editorial"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.awwwards.com/websites/sites_of_the_month/"
+  },
+  {
+   "id": "w16-gehry-getty-edu",
+   "name": "Frank Gehry and the Walt Disney Concert Hall",
+   "url": "https://gehry.getty.edu/",
+   "note": "橙底上的手绘线稿（盖里音乐厅草图），“画廊线描”气质的博物馆叙事站（收录自 Awwwards）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Awwwards",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "playful"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.awwwards.com/websites/sites_of_the_month/",
+   "look": "画廊线描·近似"
+  },
+  {
+   "id": "w16-synchrodogs-com",
+   "name": "Synchrodogs",
+   "url": "https://synchrodogs.com/",
+   "note": "对称镜像摄影 + 大字标，摄影工作室的视觉实验（收录自 Awwwards）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Awwwards",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "playful"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.awwwards.com/websites/sites_of_the_month/"
+  },
+  {
+   "id": "w16-pasqua-it",
+   "name": "Pasqua Wines",
+   "url": "https://pasqua.it/",
+   "note": "油画质感的葡萄园插画 + 衬线标题，酒庄品牌的古典画廊气质（收录自 Awwwards）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Awwwards",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "retro"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.awwwards.com/websites/sites_of_the_month/",
+   "look": "画廊线描·近似"
+  },
+  {
+   "id": "w16-niccolomiranda-com",
+   "name": "Miranda",
+   "url": "https://niccolomiranda.com/",
+   "note": "米纸底 + 报纸式衬线排版 + 超大 MIRANDA，“纸感作品集”的标杆（收录自 Awwwards）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Awwwards",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "retro"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.awwwards.com/websites/sites_of_the_month/",
+   "look": "画廊线描·近似"
+  },
+  {
+   "id": "w16-magische-spiegelungen-de",
+   "name": "Magical Reflections: a virtual art experience",
+   "url": "https://www.magische-spiegelungen.de/",
+   "note": "黑白古典画廊 3D 场景 + 大号衬线竖排，虚拟艺术展（收录自 Awwwards）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Awwwards",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "3d"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.awwwards.com/websites/sites_of_the_month/",
+   "look": "黑白拼贴·近似"
+  },
+  {
+   "id": "w16-taradash-me",
+   "name": "Artem Taradash",
+   "url": "https://taradash.me/",
+   "note": "白底 + 黑白摄影拼贴 + 大段衬线文字，个人作品集的编辑感（收录自 One Page Love）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "One Page Love",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "via": "https://onepagelove.com/",
+   "look": "黑白拼贴·近似"
+  },
+  {
+   "id": "w16-birdtab-app",
+   "name": "BirdTab",
+   "url": "https://birdtab.app/",
+   "note": "奶白底 + 衬线标题 + 鸟类插画，浏览器插件落地页的纸感版（收录自 Landingfolio）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Landingfolio",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.landingfolio.com/",
+   "look": "画廊线描",
+   "gold": true,
+   "why": "画廊线描的代表样本"
+  },
+  {
+   "id": "w16-fibery-io",
+   "name": "Fibery",
+   "url": "https://fibery.io/",
+   "note": "米黄纸底 + 衬线标题 + 手绘线条插图，Fibery 的书卷气 SaaS 首屏（收录自 Landingfolio）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Landingfolio",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "retro"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.landingfolio.com/",
+   "look": "画廊线描·近似"
+  },
+  {
+   "id": "w16-wisprflow-ai",
+   "name": "Wispr Flow",
+   "url": "https://wisprflow.ai/",
+   "note": "米白底 + 衬线斜体“Don't type, just speak” + 手绘线条，Wispr Flow 的纸感首屏（收录自 Landingfolio）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Landingfolio",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.landingfolio.com/",
+   "look": "画廊线描",
+   "gold": true,
+   "why": "画廊线描的代表样本"
+  },
+  {
+   "id": "w16-wschupfer-com",
+   "name": "Walter Schupfer Management",
+   "url": "https://wschupfer.com/",
+   "note": "白底黑白时尚摄影错落拼贴，模特经纪的画廊式陈列（收录自 Siteinspire）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Siteinspire",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.siteinspire.com/",
+   "look": "黑白拼贴·近似"
+  },
+  {
+   "id": "w16-fume-studio-com",
+   "name": "FUME",
+   "url": "https://fume-studio.com/",
+   "note": "暖色室内摄影满屏 + 细字标，工作室的安静奢华（收录自 Siteinspire）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Siteinspire",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.siteinspire.com/"
+  },
+  {
+   "id": "w16-carrierescene-ca",
+   "name": "Carrière scène",
+   "url": "https://carrierescene.ca/",
+   "note": "粗野主义海报字 + 黑白粉撞色，演艺职业站的街头感（收录自 Siteinspire）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Siteinspire",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "brutalist",
+    "editorial"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.siteinspire.com/"
+  },
+  {
+   "id": "w16-vivmgmt-com",
+   "name": "ViV Management",
+   "url": "https://vivmgmt.com/",
+   "note": "白底黑白人像拼贴 + 大字标 ViV，摄影经纪的编辑式网格（收录自 Siteinspire）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Siteinspire",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.siteinspire.com/",
+   "look": "黑白拼贴·近似"
+  },
+  {
+   "id": "w16-cactusdigitale-com",
+   "name": "CACTUS DIGITALE",
+   "url": "https://cactusdigitale.com/",
+   "note": "白底时尚单品棋盘式拼贴，数字工作室的作品墙（收录自 Siteinspire）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Siteinspire",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "playful"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.siteinspire.com/",
+   "look": "黑白拼贴·近似"
+  },
+  {
+   "id": "w16-iwonderu-se",
+   "name": "IWONDERU STUDIOS",
+   "url": "https://www.iwonderu.se/",
+   "note": "大字标 + 人像局部，修图工作室的极简黑白（收录自 Siteinspire）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Siteinspire",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.siteinspire.com/"
+  },
+  {
+   "id": "w16-lifestories-org",
+   "name": "Life Stories",
+   "url": "https://lifestories.org/",
+   "note": "黑白历史人物肖像满屏 + 细字，口述历史站的庄重（收录自 Siteinspire）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Siteinspire",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "dark-tech"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.siteinspire.com/",
+   "look": "黑白拼贴·近似"
+  },
+  {
+   "id": "w16-aliciadubuis-com",
+   "name": "Alicia Dubuis",
+   "url": "https://aliciadubuis.com/",
+   "note": "黑底 + 白衣人像居中，个人作品集的画廊式留白（收录自 Siteinspire）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Siteinspire",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal",
+    "editorial"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.siteinspire.com/"
+  },
+  {
+   "id": "w16-archives-surfersjournal-com",
+   "name": "The Surfer's Journal Archives",
+   "url": "https://archives.surfersjournal.com/",
+   "note": "薄荷底 + 一张海浪照片 + 期号，杂志档案站的克制（收录自 Siteinspire）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Siteinspire",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal",
+    "editorial"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.siteinspire.com/"
+  },
+  {
+   "id": "w16-maisonlesgrandschenes-com",
+   "name": "Maison Les Grands Chênes",
+   "url": "https://www.maisonlesgrandschenes.com/",
+   "note": "米白底 + 衬线大字 + 建筑摄影，酒店官网的纸感（收录自 Siteinspire）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Siteinspire",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.siteinspire.com/",
+   "look": "画廊线描·近似"
+  },
+  {
+   "id": "w16-jakobsencopenhagen-com",
+   "name": "Jakobsen Copenhagen",
+   "url": "https://jakobsencopenhagen.com/",
+   "note": "暗调手部摄影 + 细衬线字标，家具品牌的触感叙事（收录自 Siteinspire）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Siteinspire",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "dark-tech",
+    "editorial"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.siteinspire.com/"
+  },
+  {
+   "id": "w16-ol-studio",
+   "name": "Studio OL",
+   "url": "https://ol.studio/",
+   "note": "米黄纸底 + 衬线文字 + 小幅照片，Studio OL 的书页式排版（收录自 Siteinspire）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Siteinspire",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.siteinspire.com/",
+   "look": "画廊线描·近似"
+  },
+  {
+   "id": "w16-thefutureinblack-com",
+   "name": "The Future in Black™",
+   "url": "https://www.thefutureinblack.com/",
+   "note": "黑白人像 + 超粗大字，文化研究工作室的杂志封面（收录自 Siteinspire）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Siteinspire",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.siteinspire.com/",
+   "look": "黑白拼贴·近似"
+  },
+  {
+   "id": "w16-taylorhare-com",
+   "name": "TaylorHare Architects",
+   "url": "https://taylorhare.com/",
+   "note": "米白底 + 衬线大字 + 草原建筑照片，建筑事务所的安静叙事（收录自 Siteinspire）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Siteinspire",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.siteinspire.com/",
+   "look": "画廊线描·近似"
+  },
+  {
+   "id": "w16-specs-com",
+   "name": "SPECS",
+   "url": "https://www.specs.com/",
+   "note": "黑底黑白人像特写 + 细字导航，眼镜品牌的暗调画廊（收录自 Lapa Ninja）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Lapa Ninja",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "dark-tech"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.lapa.ninja/",
+   "look": "黑白拼贴·近似"
+  },
+  {
+   "id": "w16-pressedobjects-com",
+   "name": "Pressed Objects",
+   "url": "https://www.pressedobjects.com/",
+   "note": "米色织物摄影 + 手写衬线大字，手工纺织品牌的纸感（收录自 Lapa Ninja）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Lapa Ninja",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "retro"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.lapa.ninja/",
+   "look": "画廊线描·近似"
+  },
+  {
+   "id": "w16-neuemontreal-com",
+   "name": "PP Neue Montreal",
+   "url": "https://neuemontreal.com/",
+   "note": "红底 + 超大 Neue Montreal 字样，字体发布页的海报式排版（收录自 Lapa Ninja）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Lapa Ninja",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "playful"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.lapa.ninja/"
+  },
+  {
+   "id": "w16-zero-university",
+   "name": "Zero",
+   "url": "https://www.zero.university/",
+   "note": "纸面手写“4 years. In debt.”+ 绿色切割垫，教育站的手作质感（收录自 Lapa Ninja）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Lapa Ninja",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "playful"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.lapa.ninja/",
+   "look": "画廊线描·近似"
+  },
+  {
+   "id": "w16-componine-com",
+   "name": "Componine",
+   "url": "https://www.componine.com/",
+   "note": "暗调古典雕塑摄影 + 大字，创意伙伴的戏剧性首屏（收录自 Lapa Ninja）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Lapa Ninja",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "dark-tech",
+    "editorial"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.lapa.ninja/"
+  },
+  {
+   "id": "w16-wastetide-ai",
+   "name": "Wastetide",
+   "url": "https://www.wastetide.ai/",
+   "note": "黑白照片拼贴 + 超粗 TRASH IS CASH，环保 AI 的黑白拼贴海报（收录自 Lapa Ninja）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Lapa Ninja",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "brutalist"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.lapa.ninja/",
+   "look": "黑白拼贴·近似"
+  },
+  {
+   "id": "w16-exemplarfromsweden-com",
+   "name": "Exemplar",
+   "url": "https://exemplarfromsweden.com/",
+   "note": "灰调光影摄影 + 细衬线大字，字体发布页的静谧（收录自 Siteinspire）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Siteinspire",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.siteinspire.com/"
+  },
+  {
+   "id": "w16-signal-a-studio",
+   "name": "Signal-A Studio",
+   "url": "https://signal-a.studio/",
+   "note": "白底黑色大写长句 + 数字编号，工作室的瑞士排版（收录自 Lapa Ninja）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Lapa Ninja",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "swiss",
+    "editorial"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.lapa.ninja/"
+  },
+  {
+   "id": "w16-drasa-uk",
+   "name": "DRĄSA",
+   "url": "https://drasa.uk/",
+   "note": "荧光粉底 + 黑色复古粗衬线大字，研究工作室的个性（收录自 Minimal Gallery）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Minimal Gallery",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "playful",
+    "editorial"
+   ],
+   "added": "2026-10-16",
+   "via": "https://minimal.gallery/"
+  },
+  {
+   "id": "w16-davidfiz-com",
+   "name": "David Fiz",
+   "url": "https://www.davidfiz.com/",
+   "note": "黑底照片与海报碎片拼贴 + 白色衬线大字，暗场拼贴范例（收录自 Minimal Gallery）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Minimal Gallery",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "dark-tech",
+    "editorial"
+   ],
+   "added": "2026-10-16",
+   "via": "https://minimal.gallery/",
+   "look": "黑白拼贴·近似"
+  },
+  {
+   "id": "w16-grndwrk-studio",
+   "name": "GRNDWRK STUDIO",
+   "url": "https://grndwrk.studio/",
+   "note": "黑白照片网格 + 大写字标，工作室的编辑式陈列（收录自 Minimal Gallery）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Minimal Gallery",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "via": "https://minimal.gallery/",
+   "look": "黑白拼贴·近似"
+  },
+  {
+   "id": "w16-xanvierallison-com",
+   "name": "Xanvier Allison",
+   "url": "https://xanvierallison.com/",
+   "note": "黑白人像特写满屏 + 细衬线姓名，摄影/导演个人站的暗调（收录自 Minimal Gallery）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Minimal Gallery",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "dark-tech",
+    "editorial"
+   ],
+   "added": "2026-10-16",
+   "via": "https://minimal.gallery/",
+   "look": "黑白拼贴·近似"
+  },
+  {
+   "id": "w16-wearebou-com",
+   "name": "Bou",
+   "url": "https://wearebou.com/",
+   "note": "黑白摄影网格拼贴 + 细字，品牌公司的暗场作品墙（收录自 Minimal Gallery）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Minimal Gallery",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "dark-tech",
+    "editorial"
+   ],
+   "added": "2026-10-16",
+   "via": "https://minimal.gallery/",
+   "look": "黑白拼贴·近似"
+  },
+  {
+   "id": "w16-makingsoftware-com",
+   "name": "Making Software",
+   "url": "https://www.makingsoftware.com/",
+   "note": "白底蓝色等距线稿插画 + 长文排版，“画廊线描”式的教育长文站（收录自 Httpster）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Httpster",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal",
+    "editorial"
+   ],
+   "added": "2026-10-16",
+   "via": "https://httpster.net/",
+   "look": "画廊线描·近似"
+  },
+  {
+   "id": "w16-jackywinter-gallery",
+   "name": "Jacky Winter Gallery",
+   "url": "https://www.jackywinter.gallery/",
+   "note": "白底大块手绘彩色插画拼贴，插画画廊的展陈感（收录自 Httpster）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Httpster",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "playful",
+    "editorial"
+   ],
+   "added": "2026-10-16",
+   "via": "https://httpster.net/"
+  },
+  {
+   "id": "w16-developments-media",
+   "name": "Developments",
+   "url": "https://developments.media/",
+   "note": "米白底 + 大衬线数字与标题，设计工作室的书刊式排版（收录自 Httpster）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Httpster",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "via": "https://httpster.net/",
+   "look": "画廊线描·近似"
+  },
+  {
+   "id": "w16-benvenusa-com",
+   "name": "Benvenusa Italian Wines",
+   "url": "https://benvenusa.com/",
+   "note": "紫底 + 黑色压缩大字 + 地名排版，葡萄酒品牌的海报感（收录自 Httpster）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Httpster",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "playful"
+   ],
+   "added": "2026-10-16",
+   "via": "https://httpster.net/"
+  },
+  {
+   "id": "w16-snohetta-com",
+   "name": "Snøhetta",
+   "url": "https://www.snohetta.com/",
+   "note": "白底建筑照片拼贴 + 小字，Snøhetta 的克制作品集（收录自 Httpster）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Httpster",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "via": "https://httpster.net/"
+  },
+  {
+   "id": "w16-vivienscreative-com-au",
+   "name": "Vivien’s Creative",
+   "url": "https://vivienscreative.com.au/",
+   "note": "灰白摄影 + 超大字 VIVIEN'S，艺人经纪的黑白高级（收录自 Httpster）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Httpster",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "via": "https://httpster.net/",
+   "look": "黑白拼贴·近似"
+  },
+  {
+   "id": "w16-uncut-wtf",
+   "name": "Welcome to UNCUT.wtf",
+   "url": "https://uncut.wtf/",
+   "note": "米白底 + 超粗手绘感字标 UNCUT + 字体列表，字体站的复古（收录自 Httpster）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Httpster",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "retro",
+    "editorial"
+   ],
+   "added": "2026-10-16",
+   "via": "https://httpster.net/"
+  },
+  {
+   "id": "w16-counter-forms-com",
+   "name": "Counter Forms",
+   "url": "https://counter-forms.com/",
+   "note": "米白纸底 + 衬线标题 + 手绘线描插画与文字，“画廊线描”的典型样本（收录自 Httpster）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Httpster",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "retro"
+   ],
+   "added": "2026-10-16",
+   "via": "https://httpster.net/",
+   "look": "画廊线描",
+   "gold": true,
+   "why": "画廊线描的代表样本"
+  },
+  {
+   "id": "w16-careofchan-com",
+   "name": "Care of Chan",
+   "url": "https://www.careofchan.com/",
+   "note": "户外野餐摄影 + 白色手绘线条，餐饮品牌的手作感（收录自 Httpster）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Httpster",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "playful"
+   ],
+   "added": "2026-10-16",
+   "via": "https://httpster.net/"
+  },
+  {
+   "id": "w16-this-design",
+   "name": "This Design",
+   "url": "https://this.design/",
+   "note": "黑底大字宣言 + 斜体关键词 + 作品缩略，设计工作室的暗场（收录自 Siteinspire）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Siteinspire",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "dark-tech",
+    "editorial"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.siteinspire.com/websites?categories=portfolio"
+  },
+  {
+   "id": "w16-macmoss-studio",
+   "name": "macmoss.studio",
+   "url": "https://macmoss.studio/",
+   "note": "白底黑白 Logo 与图形网格，品牌工作室的黑白陈列（收录自 Siteinspire）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Siteinspire",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal",
+    "editorial"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.siteinspire.com/websites?categories=portfolio",
+   "look": "黑白拼贴·近似"
+  },
+  {
+   "id": "w16-yuriroga-com",
+   "name": "Yuri Roga",
+   "url": "https://yuriroga.com/",
+   "note": "黑白人像与雕塑摄影网格，摄影师的画廊式首屏（收录自 Siteinspire）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Siteinspire",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.siteinspire.com/websites?categories=portfolio",
+   "look": "黑白拼贴·近似"
+  },
+  {
+   "id": "w16-smorgasbord-studio",
+   "name": "Smörgåsbord",
+   "url": "https://smorgasbord.studio/",
+   "note": "灰底黑白雕塑 + 超大白字 AJAX，工作室的黑白冲击（收录自 Siteinspire）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Siteinspire",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal",
+    "editorial"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.siteinspire.com/websites?categories=portfolio",
+   "look": "黑白拼贴·近似"
+  },
+  {
+   "id": "w16-viktorhor-com",
+   "name": "Enroute",
+   "url": "https://viktorhor.com/",
+   "note": "黑底黑白 3D 字母与粗字标，品牌设计的强对比黑白（收录自 Siteinspire）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Siteinspire",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "dark-tech",
+    "editorial"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.siteinspire.com/websites?categories=portfolio",
+   "look": "黑白拼贴·近似"
+  },
+  {
+   "id": "w16-pigeon3dvisuals-com",
+   "name": "Filip 3D",
+   "url": "https://pigeon3dvisuals.com/",
+   "note": "3D 动画师作品站：深色场景 + 超大白字 FILIP 3D，用一帧渲染做首屏（X 来源：@filip_animation，19 赞 / 11 收藏，2026-09-21）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "X",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "3d",
+    "dark-tech"
+   ],
+   "added": "2026-10-16",
+   "via": "https://x.com/filip_animation/status/2102032908651213215",
+   "xsrc": {
+    "post": "https://x.com/filip_animation/status/2102032908651213215",
+    "author": "@filip_animation",
+    "likes": 19,
+    "bookmarks": 11,
+    "reposts": 1,
+    "impressions": 1039,
+    "date": "2026-09-21"
+   }
+  },
+  {
+   "id": "w16-experiments-p5aholic-me",
+   "name": "Web Graphic Experiments",
+   "url": "https://experiments.p5aholic.me/",
+   "note": "黑底白色倾斜长文字流，p5aholic 的生成式排版实验，黑白动势极强（X 来源：@orpetron，3 赞 / 0 收藏，2026-07-03）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "X",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "dark-tech",
+    "editorial"
+   ],
+   "added": "2026-10-16",
+   "via": "https://x.com/orpetron/status/2072947072903307522",
+   "look": "黑白拼贴·近似",
+   "xsrc": {
+    "post": "https://x.com/orpetron/status/2072947072903307522",
+    "author": "@orpetron",
+    "likes": 3,
+    "bookmarks": 0,
+    "reposts": 0,
+    "impressions": 94,
+    "date": "2026-07-03"
+   }
+  },
+  {
+   "id": "w16-visheshmahendru-com",
+   "name": "Vishesh Mahendru",
+   "url": "https://www.visheshmahendru.com/",
+   "note": "白底大字姓名 + 作品卡片阵列，品牌设计师作品集的清爽网格（X 来源：@vishafterdark，2 赞 / 0 收藏，2026-09-26）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "X",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "swiss",
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "via": "https://x.com/vishafterdark/status/2103851592063885348",
+   "xsrc": {
+    "post": "https://x.com/vishafterdark/status/2103851592063885348",
+    "author": "@vishafterdark",
+    "likes": 2,
+    "bookmarks": 0,
+    "reposts": 0,
+    "impressions": 176,
+    "date": "2026-09-26"
+   }
+  },
+  {
+   "id": "w16-sophiedallamore-com",
+   "name": "Sophie Dallamore",
+   "url": "https://sophiedallamore.com/",
+   "note": "暗调时装照片网格拼贴，造型师作品站的“暗场拼贴”（X 来源：@orpetron，1 赞 / 0 收藏，2026-08-11）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "X",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "dark-tech"
+   ],
+   "added": "2026-10-16",
+   "via": "https://x.com/orpetron/status/2087151965608255583",
+   "look": "黑白拼贴·近似",
+   "xsrc": {
+    "post": "https://x.com/orpetron/status/2087151965608255583",
+    "author": "@orpetron",
+    "likes": 1,
+    "bookmarks": 0,
+    "reposts": 0,
+    "impressions": 66,
+    "date": "2026-08-11"
+   }
+  },
+  {
+   "id": "w16-kathememorial-com",
+   "name": "Käthe Kollwitz Memorial",
+   "url": "https://kathememorial.com/",
+   "note": "黑底灰调纹理 + 细衬线姓名，纪念馆站的庄重黑白（X 来源：@orpetron，2 赞 / 0 收藏，2026-08-07）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "X",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "dark-tech",
+    "editorial"
+   ],
+   "added": "2026-10-16",
+   "via": "https://x.com/orpetron/status/2085632394955047092",
+   "look": "黑白拼贴·近似",
+   "xsrc": {
+    "post": "https://x.com/orpetron/status/2085632394955047092",
+    "author": "@orpetron",
+    "likes": 2,
+    "bookmarks": 0,
+    "reposts": 0,
+    "impressions": 98,
+    "date": "2026-08-07"
+   }
+  },
+  {
+   "id": "w16-marfala-com",
+   "name": "Marfala",
+   "url": "https://marfala.com/",
+   "note": "橄榄绿底 + 巨型压缩字 marfala，工作室的单色海报感（X 来源：@orpetron，2 赞 / 0 收藏，2026-08-28）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "X",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "playful"
+   ],
+   "added": "2026-10-16",
+   "via": "https://x.com/orpetron/status/2093368110279520376",
+   "xsrc": {
+    "post": "https://x.com/orpetron/status/2093368110279520376",
+    "author": "@orpetron",
+    "likes": 2,
+    "bookmarks": 0,
+    "reposts": 0,
+    "impressions": 114,
+    "date": "2026-08-28"
+   }
+  },
+  {
+   "id": "w16-moun-team",
+   "name": "MOUNTEAM",
+   "url": "https://moun.team/",
+   "note": "森林摄影满屏 + 白色大写标题，户外活动品牌的沉浸感（X 来源：@orpetron，1 赞 / 0 收藏，2026-09-04）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "X",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "via": "https://x.com/orpetron/status/2095923183077531649",
+   "xsrc": {
+    "post": "https://x.com/orpetron/status/2095923183077531649",
+    "author": "@orpetron",
+    "likes": 1,
+    "bookmarks": 0,
+    "reposts": 0,
+    "impressions": 87,
+    "date": "2026-09-04"
+   }
+  },
+  {
+   "id": "w16-localmind-framer-website",
+   "name": "LocalMind",
+   "url": "https://localmind.framer.website/",
+   "note": "蓝底 + 像素蝴蝶插画，本地 AI 工具的可爱落地页（X 来源：@tarikjsohan，1 赞 / 0 收藏，2026-08-13）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "X",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "playful",
+    "gradient"
+   ],
+   "added": "2026-10-16",
+   "via": "https://x.com/tarikjsohan/status/2087941325668880479",
+   "xsrc": {
+    "post": "https://x.com/tarikjsohan/status/2087941325668880479",
+    "author": "@tarikjsohan",
+    "likes": 1,
+    "bookmarks": 0,
+    "reposts": 0,
+    "impressions": 57,
+    "date": "2026-08-13"
+   }
+  },
+  {
+   "id": "w16-welinterieurs-nl",
+   "name": "Wel Interieurs",
+   "url": "https://welinterieurs.nl/",
+   "note": "奶白底 + 超大细字 Wel + 小段衬线文字，室内品牌的纸感留白（X 来源：@orpetron，1 赞 / 0 收藏，2026-07-28）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "X",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "via": "https://x.com/orpetron/status/2082004595488727411",
+   "look": "画廊线描·近似",
+   "xsrc": {
+    "post": "https://x.com/orpetron/status/2082004595488727411",
+    "author": "@orpetron",
+    "likes": 1,
+    "bookmarks": 0,
+    "reposts": 0,
+    "impressions": 77,
+    "date": "2026-07-28"
+   }
+  },
+  {
+   "id": "w16-vermillion-jewelry-com",
+   "name": "VERMILLION（ヴァーミリオン）公式",
+   "url": "https://vermillion-jewelry.com/",
+   "note": "深蓝底珠宝静物摄影 + 衬线字标，日系珠宝的高级感（X 来源：@orpetron，1 赞 / 0 收藏，2026-07-29）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "X",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "via": "https://x.com/orpetron/status/2082403427221463441",
+   "xsrc": {
+    "post": "https://x.com/orpetron/status/2082403427221463441",
+    "author": "@orpetron",
+    "likes": 1,
+    "bookmarks": 0,
+    "reposts": 0,
+    "impressions": 102,
+    "date": "2026-07-29"
+   }
+  },
+  {
+   "id": "w16-achmedesser-com",
+   "name": "Achmed Esser",
+   "url": "https://achmedesser.com/",
+   "note": "新闻式暗色版面 + 照片，数据观察站的报刊感（X 来源：@orpetron，1 赞 / 0 收藏，2026-08-19）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "X",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "dark-tech"
+   ],
+   "added": "2026-10-16",
+   "via": "https://x.com/orpetron/status/2090104179620520159",
+   "xsrc": {
+    "post": "https://x.com/orpetron/status/2090104179620520159",
+    "author": "@orpetron",
+    "likes": 1,
+    "bookmarks": 0,
+    "reposts": 0,
+    "impressions": 53,
+    "date": "2026-08-19"
+   }
+  },
+  {
+   "id": "w16-pluspro-framer-website",
+   "name": "Pluspro",
+   "url": "https://pluspro.framer.website/",
+   "note": "天蓝渐变 + 理财 App 截图，金融产品的干净首屏（X 来源：@airzonagency，0 赞 / 0 收藏，2026-08-21）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "X",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "gradient",
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "via": "https://x.com/airzonagency/status/2090769177099583877",
+   "xsrc": {
+    "post": "https://x.com/airzonagency/status/2090769177099583877",
+    "author": "@airzonagency",
+    "likes": 0,
+    "bookmarks": 0,
+    "reposts": 0,
+    "impressions": 32,
+    "date": "2026-08-21"
+   }
+  },
+  {
+   "id": "w16-zoraai-framer-ai",
+   "name": "ZoraAi",
+   "url": "https://zoraai.framer.ai/",
+   "note": "黑底 + 手机渲染 + 柔光，AI 助手落地页的暗场模板（X 来源：@airzonagency，0 赞 / 0 收藏，2026-08-24）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "X",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "dark-tech",
+    "gradient"
+   ],
+   "added": "2026-10-16",
+   "via": "https://x.com/airzonagency/status/2091836402661240900",
+   "xsrc": {
+    "post": "https://x.com/airzonagency/status/2091836402661240900",
+    "author": "@airzonagency",
+    "likes": 0,
+    "bookmarks": 0,
+    "reposts": 0,
+    "impressions": 60,
+    "date": "2026-08-24"
+   }
+  },
+  {
+   "id": "w16-cerno-framer-website",
+   "name": "Cerno",
+   "url": "https://cerno.framer.website/",
+   "note": "黑底山峦渲染 + 大字 CERNO，伦敦工作室模板的电影感（收录自 Framer Marketplace）",
+   "type": "template",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Framer Marketplace",
+   "pricing": "paid",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "template"
+   ],
+   "vs": [
+    "dark-tech",
+    "3d"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.framer.com/marketplace/templates/cerno/"
+  },
+  {
+   "id": "w16-baristi-framer-website",
+   "name": "Baristi",
+   "url": "https://baristi.framer.website/",
+   "note": "奶白底 + 粗衬线大字 + 斜贴彩带，烘焙品牌模板的活泼复古（收录自 Framer Marketplace）",
+   "type": "template",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Framer Marketplace",
+   "pricing": "unknown",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "template"
+   ],
+   "vs": [
+    "playful",
+    "retro"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.framer.com/marketplace/templates/baristi/"
+  },
+  {
+   "id": "w16-monod-framer-website",
+   "name": "Mōno™",
+   "url": "https://monod.framer.website/",
+   "note": "纯白底 + 超大细字 Mōno Studio，极简工作室模板（收录自 Framer Marketplace）",
+   "type": "template",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Framer Marketplace",
+   "pricing": "paid",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "template"
+   ],
+   "vs": [
+    "minimal",
+    "swiss"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.framer.com/marketplace/templates/mono-x/"
+  },
+  {
+   "id": "w16-sudio-sunday-framer-website",
+   "name": "Studio Sunday",
+   "url": "https://sudio-sunday.framer.website/",
+   "note": "宝蓝底 + 巨型白字 SUNDAY，免费创意代理模板的海报感（收录自 Framer Marketplace）",
+   "type": "template",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Framer Marketplace",
+   "pricing": "unknown",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "template"
+   ],
+   "vs": [
+    "playful",
+    "editorial"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.framer.com/marketplace/templates/studio-sunday/"
+  },
+  {
+   "id": "w16-galerie-holm-wbs-framer-website",
+   "name": "Galerie Holm",
+   "url": "https://galerie-holm-wbs.framer.website/",
+   "note": "奶白底 + 衬线大字“Quiet rooms, loud work.” + 散落小幅作品，画廊模板的纸感陈列（收录自 Framer Marketplace）",
+   "type": "template",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Framer Marketplace",
+   "pricing": "unknown",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "template"
+   ],
+   "vs": [
+    "editorial",
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.framer.com/marketplace/templates/galerie-holm/",
+   "look": "画廊线描·近似"
+  },
+  {
+   "id": "w16-picco-template-framer-website",
+   "name": "Picco",
+   "url": "https://picco-template.framer.website/",
+   "note": "大块扁平彩色插画满屏，插画师作品集模板（收录自 Framer Marketplace）",
+   "type": "template",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Framer Marketplace",
+   "pricing": "paid",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "template"
+   ],
+   "vs": [
+    "playful",
+    "editorial"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.framer.com/marketplace/templates/picco/"
+  },
+  {
+   "id": "w16-asterbloom-framer-website",
+   "name": "Aster Bloom",
+   "url": "https://asterbloom.framer.website/",
+   "note": "黑底彩色作品沿弧线排列，艺术总监模板的画廊式滚动（收录自 Framer Marketplace）",
+   "type": "template",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Framer Marketplace",
+   "pricing": "unknown",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "template"
+   ],
+   "vs": [
+    "dark-tech",
+    "editorial"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.framer.com/marketplace/templates/aster-bloom/"
+  },
+  {
+   "id": "w16-foyer-framer-website",
+   "name": "Foyer",
+   "url": "https://foyer.framer.website/",
+   "note": "奶白底 + 人像 + 红色晕染，等候页模板的海报感（收录自 Framer Marketplace）",
+   "type": "template",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Framer Marketplace",
+   "pricing": "unknown",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "template"
+   ],
+   "vs": [
+    "editorial",
+    "playful"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.framer.com/marketplace/templates/foyer/"
+  },
+  {
+   "id": "w16-nordframe-framer-website",
+   "name": "Nordframe®",
+   "url": "https://nordframe.framer.website/",
+   "note": "黑白人像网格 + 巨型 NORDFRAME 字标，摄影模板的黑白拼贴（收录自 Framer Marketplace）",
+   "type": "template",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Framer Marketplace",
+   "pricing": "unknown",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "template"
+   ],
+   "vs": [
+    "editorial",
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.framer.com/marketplace/templates/nordframe/",
+   "look": "黑白拼贴·近似"
+  },
+  {
+   "id": "w16-mondragon-framer-website",
+   "name": "Mondragon 1",
+   "url": "https://mondragon.framer.website/",
+   "note": "彩色立体缎带 + 巨型 MONDRAGON，数字代理模板的冲击力（收录自 Framer Marketplace）",
+   "type": "template",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Framer Marketplace",
+   "pricing": "unknown",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "template"
+   ],
+   "vs": [
+    "3d",
+    "editorial"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.framer.com/marketplace/templates/mondragon/"
+  },
+  {
+   "id": "w16-lucamori-framer-website",
+   "name": "Luca Mori",
+   "url": "https://lucamori.framer.website/",
+   "note": "黑底黑白人像 + 白色手写衬线大字 Luca Mori，摄影师模板的暗调黑白（收录自 Framer Marketplace）",
+   "type": "template",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Framer Marketplace",
+   "pricing": "unknown",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "template"
+   ],
+   "vs": [
+    "dark-tech",
+    "editorial"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.framer.com/marketplace/templates/luca-mori/",
+   "look": "黑白拼贴·近似"
+  },
+  {
+   "id": "w16-visual-frame-framer-website",
+   "name": "Visual Frame",
+   "url": "https://visual-frame.framer.website/",
+   "note": "黑底视频帧网格拼贴 + 大字 Visual Frame Studio，剪辑师模板的暗场拼贴（收录自 Framer Marketplace）",
+   "type": "template",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Framer Marketplace",
+   "pricing": "paid",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "template"
+   ],
+   "vs": [
+    "dark-tech",
+    "editorial"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.framer.com/marketplace/templates/visual-frame/",
+   "look": "黑白拼贴·近似"
+  },
+  {
+   "id": "w16-genstudio-framer-media",
+   "name": "Gen Studio",
+   "url": "https://genstudio.framer.media/",
+   "note": "红发人像 + 斜体衬线 GENERATIVE CREATIVE STUDIO，AI 工作室模板（收录自 Framer Marketplace）",
+   "type": "template",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Framer Marketplace",
+   "pricing": "paid",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "template"
+   ],
+   "vs": [
+    "editorial",
+    "playful"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.framer.com/marketplace/templates/gen-studio/"
+  },
+  {
+   "id": "w16-zara-miller-framer-website",
+   "name": "Zara Miller",
+   "url": "https://zara-miller.framer.website/",
+   "note": "米白纸底 + 红色衬线斜体 + 行内小图标，交互设计师模板的纸感排版（收录自 Framer Marketplace）",
+   "type": "template",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Framer Marketplace",
+   "pricing": "paid",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "template"
+   ],
+   "vs": [
+    "editorial",
+    "playful"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.framer.com/marketplace/templates/zara-miller/",
+   "look": "画廊线描·近似"
+  },
+  {
+   "id": "w16-gojett-framer-website",
+   "name": "Cole Navarro",
+   "url": "https://gojett.framer.website/",
+   "note": "橙红人像剪影 + 超粗大字，摄影/导演模板的海报冲击（收录自 Framer Marketplace）",
+   "type": "template",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Framer Marketplace",
+   "pricing": "unknown",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "template"
+   ],
+   "vs": [
+    "editorial",
+    "playful"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.framer.com/marketplace/templates/jett/"
+  },
+  {
+   "id": "w16-kaix-framer-website",
+   "name": "Kai X",
+   "url": "https://kaix.framer.website/",
+   "note": "宝蓝大字 KAI FOX + 黑白头像，个人模板的强对比（收录自 Framer Marketplace）",
+   "type": "template",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Framer Marketplace",
+   "pricing": "unknown",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "template"
+   ],
+   "vs": [
+    "editorial",
+    "playful"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.framer.com/marketplace/templates/fox-x/",
+   "look": "黑白拼贴·近似"
+  },
+  {
+   "id": "w16-ovo-campione-framer-website",
+   "name": "Campione",
+   "url": "https://ovo-campione.framer.website/",
+   "note": "黑底照片错落拼贴 + 橙色人像，个人作品集模板的暗场拼贴（收录自 Framer Marketplace）",
+   "type": "template",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Framer Marketplace",
+   "pricing": "unknown",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "template"
+   ],
+   "vs": [
+    "dark-tech",
+    "editorial"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.framer.com/marketplace/templates/campione/",
+   "look": "黑白拼贴·近似"
+  },
+  {
+   "id": "w16-dexharlan-framer-website",
+   "name": "Dex Harlan",
+   "url": "https://dexharlan.framer.website/",
+   "note": "白底红色巨型 DEX HARLAN，品牌设计师模板的海报字（收录自 Framer Marketplace）",
+   "type": "template",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Framer Marketplace",
+   "pricing": "unknown",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "template"
+   ],
+   "vs": [
+    "editorial",
+    "playful"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.framer.com/marketplace/templates/dex-harlan/"
+  },
+  {
+   "id": "w16-allintitarvl-framer-website",
+   "name": "All In®",
+   "url": "https://allintitarvl.framer.website/",
+   "note": "白底黑白产品静物格子 + 大字标题，品牌手册模板（收录自 Framer Marketplace）",
+   "type": "template",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Framer Marketplace",
+   "pricing": "paid",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "template"
+   ],
+   "vs": [
+    "editorial",
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.framer.com/marketplace/templates/all-in/",
+   "look": "黑白拼贴·近似"
+  },
+  {
+   "id": "w16-nikastern-framer-media",
+   "name": "Nika Stern",
+   "url": "https://nikastern.framer.media/",
+   "note": "红底 + 巨型 NIKA STERN + 人像，时尚艺术总监模板（收录自 Framer Marketplace）",
+   "type": "template",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Framer Marketplace",
+   "pricing": "unknown",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "template"
+   ],
+   "vs": [
+    "editorial",
+    "playful"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.framer.com/marketplace/templates/nika-stern/"
+  },
+  {
+   "id": "w16-owen-gray-framer-website",
+   "name": "Owen Gray",
+   "url": "https://owen-gray.framer.website/",
+   "note": "黑底白色压缩大字 OWEN GRAY + 黑白人像，作品集模板的黑白冲击（收录自 Framer Marketplace）",
+   "type": "template",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Framer Marketplace",
+   "pricing": "unknown",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "template"
+   ],
+   "vs": [
+    "dark-tech",
+    "editorial"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.framer.com/marketplace/templates/owen-gray/",
+   "look": "黑白拼贴·近似"
+  },
+  {
+   "id": "w16-lue-studio",
+   "name": "Lué Studio®",
+   "url": "https://lue.studio/",
+   "note": "云层摄影 + 柔和衬线大字 Lué Studio，梦幻但克制的工作室首屏（收录自 Curated.design）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Curated.design",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "gradient"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.curated.design/"
+  },
+  {
+   "id": "w16-raulvbrito-com",
+   "name": "Raul Brito",
+   "url": "https://raulvbrito.com/",
+   "note": "米白底 + 大字姓名 + 海报作品拼贴，创意技术人作品集（收录自 Curated.design）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Curated.design",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "playful"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.curated.design/"
+  },
+  {
+   "id": "w16-loaf-agency",
+   "name": "Loaf",
+   "url": "https://loaf.agency/",
+   "note": "黑底一朵橙色花的微距摄影 + 小字标题，品牌代理用一张图定调（收录自 Curated.design）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Curated.design",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "dark-tech"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.curated.design/"
+  },
+  {
+   "id": "w16-pablomiguez-dev",
+   "name": "Pablo Miguez",
+   "url": "https://www.pablomiguez.dev/",
+   "note": "黑白人像 + 底部大字 Frontend · Motion · Creative，开发者作品集的暗调黑白（收录自 Curated.design）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Curated.design",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "dark-tech",
+    "editorial"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.curated.design/",
+   "look": "黑白拼贴·近似"
+  },
+  {
+   "id": "w16-beirne-websites-vercel-app",
+   "name": "Beirne Studios",
+   "url": "https://beirne-websites.vercel.app/",
+   "note": "黑底白色线描大树 + 小字，暗色版的“线描”气质，极简而有诗意（收录自 Curated.design）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Curated.design",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "dark-tech",
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.curated.design/",
+   "look": "画廊线描·近似"
+  },
+  {
+   "id": "w16-elyx-design",
+   "name": "Elyx",
+   "url": "https://elyx.design/",
+   "note": "米白纸底 + 衬线大字 + 红色手绘下划线与线稿涂鸦，设计工具思考站的纸感范本（收录自 Best Website Gallery）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Best Website Gallery",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "via": "https://bestwebsite.gallery/",
+   "look": "画廊线描",
+   "gold": true,
+   "why": "画廊线描的代表样本"
+  },
+  {
+   "id": "w16-buffmotion-com",
+   "name": "Buff Motion",
+   "url": "https://www.buffmotion.com/",
+   "note": "米色底 + 衬线斜体混排大标题 + 手绘线条，动态设计工作室的温柔首屏（收录自 Best Website Gallery）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Best Website Gallery",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "motion"
+   ],
+   "added": "2026-10-16",
+   "via": "https://bestwebsite.gallery/",
+   "look": "画廊线描·近似"
+  },
+  {
+   "id": "w16-btay-ca",
+   "name": "Brittany Taylor",
+   "url": "https://www.btay.ca/",
+   "note": "整屏扁平彩色插画，网页设计师个人站的童趣与高完成度（收录自 One Page Love）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "One Page Love",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "playful",
+    "editorial"
+   ],
+   "added": "2026-10-16",
+   "via": "https://onepagelove.com/style/editorial"
+  },
+  {
+   "id": "w16-secretgardenstresa-com",
+   "name": "Secret Garden Stresa",
+   "url": "https://secretgardenstresa.com/",
+   "note": "暗绿庭院摄影 + 金色衬线字标 Secret Garden，精品酒店的低调奢华（收录自 One Page Love）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "One Page Love",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "dark-tech",
+    "editorial"
+   ],
+   "added": "2026-10-16",
+   "via": "https://onepagelove.com/style/editorial"
+  },
+  {
+   "id": "w16-aprilleihuanani-com",
+   "name": "April Leihuanani Evangelista",
+   "url": "https://aprilleihuanani.com/",
+   "note": "黑底拍立得照片与纸片拼贴 + 细字姓名，个人站的暗场拼贴（收录自 One Page Love）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "One Page Love",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "dark-tech",
+    "editorial"
+   ],
+   "added": "2026-10-16",
+   "via": "https://onepagelove.com/style/editorial",
+   "look": "黑白拼贴·近似"
+  },
+  {
+   "id": "w16-tenztan-in",
+   "name": "Tenztan",
+   "url": "https://www.tenztan.in/",
+   "note": "日系动漫插画满屏 + 汉字标题，插画工作室的视觉冲击（收录自 One Page Love）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "One Page Love",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "playful",
+    "editorial"
+   ],
+   "added": "2026-10-16",
+   "via": "https://onepagelove.com/style/editorial"
+  },
+  {
+   "id": "w16-monakadesign-online",
+   "name": "鳥獣戯間",
+   "url": "https://monakadesign.online/",
+   "note": "米白宣纸底 + 水墨线描鸟兽 + 汉字衬线标题“鳥獣戯間”，东方版“画廊线描”（收录自 One Page Love）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "One Page Love",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "via": "https://onepagelove.com/style/editorial",
+   "look": "画廊线描",
+   "gold": true,
+   "why": "画廊线描的代表样本"
+  },
+  {
+   "id": "w16-dailydispatch-app",
+   "name": "The Daily Dispatch",
+   "url": "https://www.dailydispatch.app/",
+   "note": "米黄报纸底 + 衬线大字 DAILY BRIEFINGS + 版画插图，资讯 App 的报刊式落地页（收录自 One Page Love）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "One Page Love",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "retro"
+   ],
+   "added": "2026-10-16",
+   "via": "https://onepagelove.com/style/editorial",
+   "look": "画廊线描",
+   "gold": true,
+   "why": "画廊线描的代表样本"
+  },
+  {
+   "id": "w16-isadeburgh-com",
+   "name": "Isa de Burgh",
+   "url": "https://isadeburgh.com/",
+   "note": "白底大字姓名 + 黑白人像，创意总监个人站的黑白克制（收录自 One Page Love）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "One Page Love",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "via": "https://onepagelove.com/style/editorial",
+   "look": "黑白拼贴·近似"
+  },
+  {
+   "id": "w16-vestris-ai",
+   "name": "Vestris",
+   "url": "https://vestris.ai/",
+   "note": "米白底 + 衬线大字“The file manages itself” + 细线插图，AI 地产工具的纸感首屏（收录自 One Page Love）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "One Page Love",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "via": "https://onepagelove.com/style/illustrative",
+   "look": "画廊线描",
+   "gold": true,
+   "why": "画廊线描的代表样本"
+  },
+  {
+   "id": "w16-zperinatal-com",
+   "name": "Zara Webb",
+   "url": "https://zperinatal.com/",
+   "note": "奶白底 + 衬线标题 + 手绘线稿（钢琴与人物）+ 照片，母婴护理站的温柔纸感（收录自 One Page Love）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "One Page Love",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "via": "https://onepagelove.com/style/illustrative",
+   "look": "画廊线描",
+   "gold": true,
+   "why": "画廊线描的代表样本"
+  },
+  {
+   "id": "w16-safestep-org-uk",
+   "name": "SafeStep",
+   "url": "https://safestep.org.uk/",
+   "note": "米白底 + 衬线标题 + 手绘线描人物与城市天际线，戒酒支持 App 的安静叙事（收录自 One Page Love）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "One Page Love",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "via": "https://onepagelove.com/style/illustrative",
+   "look": "画廊线描·近似"
+  },
+  {
+   "id": "w16-peeeeps-vercel-app",
+   "name": "Peeeeps Pop",
+   "url": "https://peeeeps.vercel.app/",
+   "note": "黑白手绘人群线描铺满全屏，纯线条插画的强记忆点（收录自 One Page Love）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "One Page Love",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "playful",
+    "editorial"
+   ],
+   "added": "2026-10-16",
+   "via": "https://onepagelove.com/style/illustrative",
+   "look": "画廊线描·近似"
+  },
+  {
+   "id": "w16-swapsmore-com",
+   "name": "Swapsmore",
+   "url": "https://swapsmore.com/",
+   "note": "米白底 + 手绘线条小图标散落 + 衬线标题，礼物交换 App 的手作感（收录自 One Page Love）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "One Page Love",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "playful",
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "via": "https://onepagelove.com/style/illustrative",
+   "look": "画廊线描",
+   "gold": true,
+   "why": "画廊线描的代表样本"
+  },
+  {
+   "id": "w16-thecozyhollow-ca",
+   "name": "The Cozy Hollow",
+   "url": "https://thecozyhollow.ca/",
+   "note": "森林插画 + 复古徽章字标，自然主题游乐空间的童话感（收录自 One Page Love）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "One Page Love",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "playful",
+    "editorial"
+   ],
+   "added": "2026-10-16",
+   "via": "https://onepagelove.com/style/illustrative"
+  },
+  {
+   "id": "w16-creativesouth-com",
+   "name": "Creative South 2026",
+   "url": "https://www.creativesouth.com/",
+   "note": "复古海报插画 + 撞色字标，设计大会站的南方热情（收录自 One Page Love）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "One Page Love",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "playful",
+    "retro"
+   ],
+   "added": "2026-10-16",
+   "via": "https://onepagelove.com/style/illustrative"
+  },
+  {
+   "id": "w16-realfood-gov",
+   "name": "Eat Real Food",
+   "url": "https://realfood.gov/",
+   "note": "黑底黑白人像局部 + 白色粗体 Real Food Wins，政府健康宣传站的黑白冲击（收录自 One Page Love）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "One Page Love",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "dark-tech",
+    "editorial"
+   ],
+   "added": "2026-10-16",
+   "via": "https://onepagelove.com/style/illustrative",
+   "look": "黑白拼贴·近似"
+  },
+  {
+   "id": "w16-brikken-co",
+   "name": "Brikken+Co",
+   "url": "https://www.brikken.co/",
+   "note": "浅灰底 + 立体几何 + 大字 Brikken+Co，策略设计工作室的克制（收录自 One Page Love）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "One Page Love",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal",
+    "3d"
+   ],
+   "added": "2026-10-16",
+   "via": "https://onepagelove.com/style/scroll-effects"
+  },
+  {
+   "id": "w16-lilguy-net",
+   "name": "starboy – CREATURE",
+   "url": "https://lilguy.net/",
+   "note": "黄色机械 3D + 超大黑字标语，生物/潮玩站的大胆版式（收录自 One Page Love）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "One Page Love",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "3d",
+    "playful"
+   ],
+   "added": "2026-10-16",
+   "via": "https://onepagelove.com/style/scroll-effects"
+  },
+  {
+   "id": "w16-thenewindustrials-com",
+   "name": "The New Industrials by Raw Materials",
+   "url": "https://thenewindustrials.com/",
+   "note": "橙底 + 黑色复古压缩衬线大字 THE NEW INDUSTRIALS，工业品牌的海报感（收录自 One Page Love）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "One Page Love",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "retro",
+    "editorial"
+   ],
+   "added": "2026-10-16",
+   "via": "https://onepagelove.com/style/scroll-effects"
+  },
+  {
+   "id": "w16-sananes-co",
+   "name": "Aaron Sananes",
+   "url": "https://www.sananes.co/",
+   "note": "白底黑白故障人像 + 分栏大字 Design Engineer / Product Designer，作品集的黑白冲击（收录自 One Page Love）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "One Page Love",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "via": "https://onepagelove.com/style/futuristic",
+   "look": "黑白拼贴·近似"
+  },
+  {
+   "id": "w16-miltontextiles-com",
+   "name": "Milton Textiles",
+   "url": "https://www.miltontextiles.com/",
+   "note": "格纹织物摄影 + 超大细衬线 MILTON，纺织品牌的质感（收录自 Httpster）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Httpster",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "via": "https://httpster.net/style/typographic/"
+  },
+  {
+   "id": "w16-theatre-cite-com",
+   "name": "Théâtre de la Cité",
+   "url": "https://theatre-cite.com/",
+   "note": "白底剧场照片网格 + 衬线字标，剧院官网的编辑式日程（收录自 Httpster）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Httpster",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "swiss"
+   ],
+   "added": "2026-10-16",
+   "via": "https://httpster.net/style/typographic/"
+  },
+  {
+   "id": "w16-huxleyparlour-com",
+   "name": "Huxley-Parlour Gallery",
+   "url": "https://huxleyparlour.com/",
+   "note": "白色展厅摄影 + 大字展名，画廊官网的极简陈列（收录自 Httpster）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Httpster",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal",
+    "editorial"
+   ],
+   "added": "2026-10-16",
+   "via": "https://httpster.net/style/typographic/"
+  },
+  {
+   "id": "w16-lalucealpina-ch",
+   "name": "La luce alpina",
+   "url": "https://www.lalucealpina.ch/",
+   "note": "白底大幅模糊影像 + 衬线标题，艺术项目站的诗意（收录自 Httpster）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Httpster",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "via": "https://httpster.net/style/typographic/"
+  },
+  {
+   "id": "w16-artworld-agency",
+   "name": "Artworld",
+   "url": "https://artworld.agency/",
+   "note": "衬线艺术家名单排版 + 巨型 ARTWORLD，艺术代理的字体主导（收录自 Httpster）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Httpster",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "swiss"
+   ],
+   "added": "2026-10-16",
+   "via": "https://httpster.net/style/typographic/"
+  },
+  {
+   "id": "w16-verrevertglass-com",
+   "name": "Verre Vert Glass",
+   "url": "https://www.verrevertglass.com/",
+   "note": "米白底 + 衬线大字 + 酒瓶摄影 + 线条图标，包装品牌的纸感（收录自 Httpster）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Httpster",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "via": "https://httpster.net/style/typographic/",
+   "look": "画廊线描·近似"
+  },
+  {
+   "id": "w16-hotelpeterandpaul-com",
+   "name": "Hotel Peter & Paul",
+   "url": "https://hotelpeterandpaul.com/",
+   "note": "暗调教堂走廊摄影 + 衬线字标，精品酒店的电影感（收录自 Httpster）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Httpster",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "dark-tech",
+    "editorial"
+   ],
+   "added": "2026-10-16",
+   "via": "https://httpster.net/style/typographic/"
+  },
+  {
+   "id": "w16-studiobrophy-com",
+   "name": "Studio Brophy",
+   "url": "https://studiobrophy.com/",
+   "note": "暗调木凳摄影 + 巨型字标，家具工作室的高级感（收录自 Httpster）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Httpster",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "dark-tech",
+    "editorial"
+   ],
+   "added": "2026-10-16",
+   "via": "https://httpster.net/style/dark/"
+  },
+  {
+   "id": "w16-gras-co",
+   "name": "GRAS",
+   "url": "https://gras.co/",
+   "note": "黑底建筑与室内照片网格，GRAS 的暗场作品墙（收录自 Httpster）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Httpster",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "dark-tech",
+    "editorial"
+   ],
+   "added": "2026-10-16",
+   "via": "https://httpster.net/style/dark/",
+   "look": "黑白拼贴·近似"
+  },
+  {
+   "id": "w16-typeby-com",
+   "name": "TYPE BY",
+   "url": "https://www.typeby.com/",
+   "note": "深蓝底 + 紫色大衬线“Talent borrows. Genius steels.”，字体厂牌的态度（收录自 Httpster）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Httpster",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "dark-tech"
+   ],
+   "added": "2026-10-16",
+   "via": "https://httpster.net/style/dark/"
+  },
+  {
+   "id": "w16-global-studio-eu",
+   "name": "Global",
+   "url": "https://global-studio.eu/",
+   "note": "黑底黑白人像特写 + 彩色标签点缀，工作室的暗调视觉（收录自 Httpster）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Httpster",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "dark-tech",
+    "editorial"
+   ],
+   "added": "2026-10-16",
+   "via": "https://httpster.net/style/dark/",
+   "look": "黑白拼贴·近似"
+  },
+  {
+   "id": "w16-murmure-me",
+   "name": "Murmure",
+   "url": "https://murmure.me/",
+   "note": "黑底超大白字 MURMURE + 作品碎片拼贴，艺术指导工作室（收录自 Httpster）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Httpster",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "playful"
+   ],
+   "added": "2026-10-16",
+   "via": "https://httpster.net/style/dark/"
+  },
+  {
+   "id": "w16-zero-nyc",
+   "name": "Zero Studios",
+   "url": "https://zero.nyc/",
+   "note": "黑底白色巨型圆点 + ZERO 字标，工作室的极简符号感（收录自 Httpster）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Httpster",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal",
+    "swiss"
+   ],
+   "added": "2026-10-16",
+   "via": "https://httpster.net/style/dark/"
+  },
+  {
+   "id": "w16-ohnotype-co",
+   "name": "OH no Type Company",
+   "url": "https://ohnotype.co/",
+   "note": "白底黑白海报字体拼贴，字体厂牌的黑白展陈（收录自 Httpster）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Httpster",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "brutalist"
+   ],
+   "added": "2026-10-16",
+   "via": "https://httpster.net/style/monotone/",
+   "look": "黑白拼贴·近似"
+  },
+  {
+   "id": "w16-bureau-va-com",
+   "name": "Bureau for Visual Affairs",
+   "url": "https://bureau-va.com/",
+   "note": "浅底大字 + 人眼特写，视觉事务所的冷静（收录自 Httpster）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Httpster",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal",
+    "editorial"
+   ],
+   "added": "2026-10-16",
+   "via": "https://httpster.net/style/photographic/"
+  },
+  {
+   "id": "w16-choreograffiti-com",
+   "name": "Choreograffiti",
+   "url": "https://choreograffiti.com/",
+   "note": "黄绿底 + 超粗压缩大字 + 人像，舞蹈项目站的海报张力（收录自 Httpster）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Httpster",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "brutalist",
+    "editorial"
+   ],
+   "added": "2026-10-16",
+   "via": "https://httpster.net/style/photographic/"
+  },
+  {
+   "id": "w16-pierreyovanovitch-com",
+   "name": "Pierre Yovanovitch",
+   "url": "https://www.pierreyovanovitch.com/",
+   "note": "鼠尾草绿底 + 线描植物纹样 + 衬线字标，室内建筑师的手绘画廊感（收录自 Httpster）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Httpster",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "via": "https://httpster.net/style/photographic/",
+   "look": "画廊线描",
+   "gold": true,
+   "why": "画廊线描的代表样本"
+  },
+  {
+   "id": "w16-thyme-co-uk",
+   "name": "Thyme",
+   "url": "https://www.thyme.co.uk/",
+   "note": "晨雾田野摄影 + 衬线字标 THYME，乡村酒店的诗意（收录自 Httpster）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Httpster",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "via": "https://httpster.net/style/photographic/",
+   "look": "画廊线描·近似"
+  },
+  {
+   "id": "w16-posthuman-studio",
+   "name": "POSTHUMAN",
+   "url": "https://posthuman.studio/",
+   "note": "暗场雕塑与材质摄影拼贴，后人类工作室的高级暗调（收录自 Httpster）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Httpster",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "dark-tech",
+    "3d"
+   ],
+   "added": "2026-10-16",
+   "via": "https://httpster.net/style/photographic/"
+  },
+  {
+   "id": "w16-juliajohnson-com",
+   "name": "Julia Johnson",
+   "url": "https://www.juliajohnson.com/",
+   "note": "白底彩色时尚照片错落拼贴 + 大字 Julia，摄影师作品集（收录自 Httpster）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Httpster",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "playful"
+   ],
+   "added": "2026-10-16",
+   "via": "https://httpster.net/style/photographic/"
+  },
+  {
+   "id": "w16-outofthevalley-co-uk",
+   "name": "Out of the Valley",
+   "url": "https://outofthevalley.co.uk/",
+   "note": "暮色中的桑拿小屋摄影 + 细字，户外品牌的安静氛围（收录自 Httpster）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Httpster",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "dark-tech",
+    "editorial"
+   ],
+   "added": "2026-10-16",
+   "via": "https://httpster.net/style/photographic/"
+  },
+  {
+   "id": "w16-madethought-com",
+   "name": "Made Thought",
+   "url": "https://www.madethought.com/",
+   "note": "白底黑色细衬线 MADE THOUGHT，顶级代理的极简纸感（收录自 Httpster）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Httpster",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "via": "https://httpster.net/style/photographic/",
+   "look": "画廊线描·近似"
+  },
+  {
+   "id": "w16-toteme-studio-com",
+   "name": "TOTEME",
+   "url": "https://toteme-studio.com/",
+   "note": "灰调黑白人物群像，时装品牌的冷峻编辑感（收录自 Httpster）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Httpster",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "dark-tech"
+   ],
+   "added": "2026-10-16",
+   "via": "https://httpster.net/style/photographic/",
+   "look": "黑白拼贴·近似"
+  },
+  {
+   "id": "w16-howmanyplants-com",
+   "name": "How Many Plants",
+   "url": "https://howmanyplants.com/",
+   "note": "米黄纸底 + 线描植物插画 + 衬线大字 HOW MANY PLANTS，“画廊线描”的教科书（收录自 Httpster）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Httpster",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "retro"
+   ],
+   "added": "2026-10-16",
+   "via": "https://httpster.net/style/illustrative/",
+   "look": "画廊线描",
+   "gold": true,
+   "why": "画廊线描的代表样本"
+  },
+  {
+   "id": "w16-graza-co",
+   "name": "GRAZA",
+   "url": "https://www.graza.co/",
+   "note": "饼干俯拍摄影 + 衬线大字，橄榄油品牌的生活感（收录自 Httpster）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Httpster",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "via": "https://httpster.net/style/illustrative/"
+  },
+  {
+   "id": "w16-grandmatter-com",
+   "name": "Grand Matter",
+   "url": "https://grandmatter.com/",
+   "note": "粉色人像 + 白色衬线大字，创意公司的时尚感（收录自 Httpster）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Httpster",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "playful"
+   ],
+   "added": "2026-10-16",
+   "via": "https://httpster.net/style/illustrative/"
+  },
+  {
+   "id": "w16-abbotsfordconvent-com-au",
+   "name": "Abbotsford Convent",
+   "url": "https://abbotsfordconvent.com.au/",
+   "note": "米色底 + 衬线文字 + 建筑线描插画，艺术社区站的纸感（收录自 Httpster）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Httpster",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "via": "https://httpster.net/style/illustrative/",
+   "look": "画廊线描·近似"
+  },
+  {
+   "id": "w16-nottinghamcontemporary-org",
+   "name": "Nottingham Contemporary",
+   "url": "https://www.nottinghamcontemporary.org/",
+   "note": "彩色展讯拼贴 + 圆形标签，当代美术馆的活泼编辑感（收录自 Httpster）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Httpster",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "playful"
+   ],
+   "added": "2026-10-16",
+   "via": "https://httpster.net/style/illustrative/"
+  },
+  {
+   "id": "w16-workingfrom-thehoxton-com",
+   "name": "Working From_ (The Hoxton)",
+   "url": "https://workingfrom.thehoxton.com/",
+   "note": "米白底 + 衬线标题 + 手绘线条涂鸦，联合办公空间的温暖纸感（收录自 Httpster）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Httpster",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "via": "https://httpster.net/style/illustrative/",
+   "look": "画廊线描",
+   "gold": true,
+   "why": "画廊线描的代表样本"
+  },
+  {
+   "id": "w16-pittoridicinema-it",
+   "name": "Pittori di cinema",
+   "url": "https://www.pittoridicinema.it/",
+   "note": "黄底 + 黑色复古电影海报字，电影手绘海报站的个性（收录自 Httpster）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Httpster",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "playful",
+    "retro"
+   ],
+   "added": "2026-10-16",
+   "via": "https://httpster.net/style/illustrative/"
+  },
+  {
+   "id": "w16-portalkandydata-pw-edu-pl",
+   "name": "Politechnika Warszawska",
+   "url": "https://www.portalkandydata.pw.edu.pl/",
+   "note": "黄底 + 建筑线描插画 + 衬线标题，大学数据门户的线描气质（收录自 Httpster）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Httpster",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "via": "https://httpster.net/style/illustrative/",
+   "look": "画廊线描·近似"
+  },
+  {
+   "id": "w16-theoutline-com",
+   "name": "The Outline",
+   "url": "https://theoutline.com/",
+   "note": "墨蓝底 + 植物拼贴 + 衬线大字 The Saddening，杂志站的大胆编辑（收录自 Httpster）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Httpster",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "playful"
+   ],
+   "added": "2026-10-16",
+   "via": "https://httpster.net/style/illustrative/"
+  },
+  {
+   "id": "w16-shotoniphone-lorenzobocchi-com",
+   "name": "Shot on iPhone in B&W",
+   "url": "https://shotoniphone.lorenzobocchi.com/",
+   "note": "黑底黑白街拍照片错落拼贴 + 巨型 PHOTOS 字，“黑白拼贴”的标准答案（收录自 Minimal Gallery）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Minimal Gallery",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "dark-tech",
+    "editorial"
+   ],
+   "added": "2026-10-16",
+   "via": "https://minimal.gallery/tag/photography/",
+   "look": "黑白拼贴",
+   "gold": true,
+   "why": "黑白拼贴的代表样本"
+  },
+  {
+   "id": "w16-lostmemories-space",
+   "name": "LOST MEMORIES",
+   "url": "https://lostmemories.space/",
+   "note": "旧照片（黑白/棕调）方格拼贴 + 小字标题，记忆档案站的画廊感（收录自 Minimal Gallery）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Minimal Gallery",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "retro"
+   ],
+   "added": "2026-10-16",
+   "via": "https://minimal.gallery/tag/photography/",
+   "look": "黑白拼贴·近似"
+  },
+  {
+   "id": "w16-joshuabaker-com",
+   "name": "Joshua Baker",
+   "url": "https://www.joshuabaker.com/",
+   "note": "黑底散落的照片卡片 + 小字简介，工程师个人站的暗场拼贴（收录自 Minimal Gallery）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Minimal Gallery",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "dark-tech",
+    "editorial"
+   ],
+   "added": "2026-10-16",
+   "via": "https://minimal.gallery/tag/portfolio/",
+   "look": "黑白拼贴·近似"
+  },
+  {
+   "id": "w16-jasonbergh-com",
+   "name": "Jason Bergh",
+   "url": "https://www.jasonbergh.com/",
+   "note": "暗调影像 + 细衬线姓名，导演作品集的电影感（收录自 Minimal Gallery）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Minimal Gallery",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "dark-tech",
+    "editorial"
+   ],
+   "added": "2026-10-16",
+   "via": "https://minimal.gallery/tag/portfolio/"
+  },
+  {
+   "id": "w16-hugoahlberg-com",
+   "name": "Hugo Ahlberg",
+   "url": "https://hugoahlberg.com/",
+   "note": "人像照片 + 超大白字 Opal，摄影师作品集的冲击（收录自 Minimal Gallery）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Minimal Gallery",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "via": "https://minimal.gallery/tag/photography/"
+  },
+  {
+   "id": "w16-honest-fi",
+   "name": "Samuel Räikkönen",
+   "url": "https://honest.fi/",
+   "note": "深蓝水纹 + 细衬线长句，创意总监个人站的诗意（收录自 Minimal Gallery）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Minimal Gallery",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "dark-tech",
+    "editorial"
+   ],
+   "added": "2026-10-16",
+   "via": "https://minimal.gallery/tag/portfolio/"
+  },
+  {
+   "id": "w16-vangoghmuseum-nl-en",
+   "name": "Van Gogh Museum",
+   "url": "https://www.vangoghmuseum.nl/en",
+   "note": "黄底 + 梵高向日葵 + 粗体标题，美术馆官网的大胆配色（收录自 Minimal Gallery）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Minimal Gallery",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "playful",
+    "editorial"
+   ],
+   "added": "2026-10-16",
+   "via": "https://minimal.gallery/tag/museum-gallery/"
+  },
+  {
+   "id": "w16-eirdis-com",
+   "name": "Eirdís Ragnarsdóttir",
+   "url": "https://www.eirdis.com/",
+   "note": "彩色油画满屏 + 衬线姓名，画家个人站的画廊感（收录自 Minimal Gallery）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Minimal Gallery",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "playful"
+   ],
+   "added": "2026-10-16",
+   "via": "https://minimal.gallery/tag/art/"
+  },
+  {
+   "id": "w16-giolabs-lu",
+   "name": "GIOLABS / Immersive Experiences",
+   "url": "https://giolabs.lu/",
+   "note": "沉浸式展览现场照片 + 大字，沉浸体验公司（收录自 Minimal Gallery）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Minimal Gallery",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "playful"
+   ],
+   "added": "2026-10-16",
+   "via": "https://minimal.gallery/tag/museum-gallery/"
+  },
+  {
+   "id": "w16-brainstormgame-ru-en",
+   "name": "BRAINSTORM on Roblox",
+   "url": "https://brainstormgame.ru/en",
+   "note": "白底黑白手绘线稿人物 + 大字，游戏站的线描插画风（收录自 Lapa Ninja）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Lapa Ninja",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "playful",
+    "editorial"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.lapa.ninja/category/illustration/",
+   "look": "画廊线描·近似"
+  },
+  {
+   "id": "w16-sutera-ch",
+   "name": "Sutéra",
+   "url": "https://www.sutera.ch/",
+   "note": "白底 + 手绘标注线 + 岩石植物拼贴，建筑科技的“标本式”线描陈列（收录自 Lapa Ninja）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Lapa Ninja",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal",
+    "editorial"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.lapa.ninja/category/illustration/",
+   "look": "画廊线描·近似"
+  },
+  {
+   "id": "w16-innovationendeavors-com",
+   "name": "Innovation Endeavors",
+   "url": "https://www.innovationendeavors.com/",
+   "note": "米白底 + 衬线斜体标题 + 一只线描纸飞机，风投机构的极简纸感（收录自 Lapa Ninja）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Lapa Ninja",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.lapa.ninja/category/illustration/",
+   "look": "画廊线描",
+   "gold": true,
+   "why": "画廊线描的代表样本"
+  },
+  {
+   "id": "w16-hilos-sh",
+   "name": "hilos",
+   "url": "https://hilos.sh/?r=",
+   "note": "黑白手绘人群线描满屏 + 中间对话框，团队聊天工具的线描插画（收录自 Lapa Ninja）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Lapa Ninja",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "playful",
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.lapa.ninja/category/illustration/",
+   "look": "画廊线描·近似"
+  },
+  {
+   "id": "w16-creative-inc",
+   "name": "Creative Intelligence Company",
+   "url": "https://www.creative.inc/",
+   "note": "米白底 + 衬线大字“A camera for their story” + 线描相机，硬件公司的纸感叙事（收录自 Lapa Ninja）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Lapa Ninja",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "playful"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.lapa.ninja/category/illustration/",
+   "look": "画廊线描",
+   "gold": true,
+   "why": "画廊线描的代表样本"
+  },
+  {
+   "id": "w16-primary-paper-com",
+   "name": "PRIMARY PAPER",
+   "url": "https://www.primary-paper.com/",
+   "note": "水上人物摄影 + 细字，纸品品牌的诗意（收录自 Lapa Ninja）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Lapa Ninja",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.lapa.ninja/category/photography/"
+  },
+  {
+   "id": "w16-aloneinnewyork-com",
+   "name": "Alone in New York",
+   "url": "https://aloneinnewyork.com/",
+   "note": "人像 + 超大黑字 Alone in New York，纪录片站的海报感（收录自 Lapa Ninja）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Lapa Ninja",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "playful"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.lapa.ninja/category/photography/"
+  },
+  {
+   "id": "w16-benandmartin-com",
+   "name": "BAM Photographers",
+   "url": "https://benandmartin.com/",
+   "note": "黑底黑白人像 + 白色大字 bam selected，摄影二人组的黑白冲击（收录自 Lapa Ninja）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Lapa Ninja",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "dark-tech",
+    "editorial"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.lapa.ninja/category/photography/",
+   "look": "黑白拼贴·近似"
+  },
+  {
+   "id": "w16-yolantabirkhane-com",
+   "name": "Yolanta Birkhane Studio",
+   "url": "https://www.yolantabirkhane.com/",
+   "note": "黑底黑白婚纱/人像照片错落瀑布流，“黑白拼贴”的高质量样本（收录自 Lapa Ninja）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Lapa Ninja",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "dark-tech",
+    "editorial"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.lapa.ninja/category/photography/",
+   "look": "黑白拼贴",
+   "gold": true,
+   "why": "黑白拼贴的代表样本"
+  },
+  {
+   "id": "w16-moneyincheck-org",
+   "name": "Money in Check",
+   "url": "https://moneyincheck.org/",
+   "note": "米白底 + 绿色衬线大字 MONEY IN CHECK + 版画式国际象棋，小说站的书卷气（收录自 Lapa Ninja）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Lapa Ninja",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "retro"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.lapa.ninja/category/illustration/",
+   "look": "画廊线描",
+   "gold": true,
+   "why": "画廊线描的代表样本"
+  },
+  {
+   "id": "w16-cristinagomezruiz-com",
+   "name": "Cristina Gómez",
+   "url": "https://cristinagomezruiz.com/",
+   "note": "白底黑白人像 + 大号细衬线姓名，独立摄影师的画廊式留白（收录自 Lapa Ninja）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Lapa Ninja",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.lapa.ninja/category/photography/",
+   "look": "黑白拼贴·近似"
+  },
+  {
+   "id": "w16-sarah-bassett-com",
+   "name": "Sarah Bassett",
+   "url": "https://www.sarah-bassett.com/",
+   "note": "白底黑白人像照片拼贴，摄影师作品集的编辑网格（收录自 Lapa Ninja）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Lapa Ninja",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.lapa.ninja/category/photography/",
+   "look": "黑白拼贴·近似"
+  },
+  {
+   "id": "w16-alovehatestory-com",
+   "name": "A Love Story",
+   "url": "https://alovehatestory.com/",
+   "note": "红底 + 白色超粗大字 A LOVE STORY，品牌代理的海报感（收录自 Lapa Ninja）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Lapa Ninja",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "playful",
+    "editorial"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.lapa.ninja/category/portfolio/"
+  },
+  {
+   "id": "w16-axelvanhessche-com",
+   "name": "Axel Vanhessche",
+   "url": "https://axelvanhessche.com/",
+   "note": "白底巨型压缩字 AXEL VANHESSCHE + 照片，摄影师作品集（收录自 Lapa Ninja）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Lapa Ninja",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.lapa.ninja/category/photography/"
+  },
+  {
+   "id": "w16-glcpatti-com",
+   "name": "Gianluca Patti",
+   "url": "https://glcpatti.com/",
+   "note": "白底手绘线稿插画（人物与电脑），插画师作品集的线描风（收录自 Lapa Ninja）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Lapa Ninja",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "playful",
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.lapa.ninja/category/portfolio/",
+   "look": "画廊线描·近似"
+  },
+  {
+   "id": "w16-greptile-com",
+   "name": "Greptile",
+   "url": "https://www.greptile.com/",
+   "note": "白底衬线标题 + 手绘线描恐龙，AI 代码审查的“线描”式首屏（收录自 Lapa Ninja）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Lapa Ninja",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.lapa.ninja/category/saas/",
+   "look": "画廊线描·近似"
+  },
+  {
+   "id": "w16-granola-ai",
+   "name": "Granola",
+   "url": "https://www.granola.ai/",
+   "note": "米白底 + 衬线标题 + 产品截图，Granola 的温和纸感（收录自 Lapa Ninja）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Lapa Ninja",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.lapa.ninja/category/saas/"
+  },
+  {
+   "id": "w16-ajournalon-co",
+   "name": "A Journal On How to Wow People",
+   "url": "https://www.ajournalon.co/",
+   "note": "黑底翻开的画册 3D + 衬线小字，期刊站的展陈感（收录自 Minimal Gallery）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Minimal Gallery",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "dark-tech",
+    "editorial"
+   ],
+   "added": "2026-10-16",
+   "via": "https://minimal.gallery/tag/editorial/"
+  },
+  {
+   "id": "w16-editorialnew-com",
+   "name": "Editorial New",
+   "url": "https://editorialnew.com/",
+   "note": "灰底报纸版面 + 衬线字，Editorial New 字体页的编辑感（收录自 Minimal Gallery）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Minimal Gallery",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "via": "https://minimal.gallery/tag/editorial/"
+  },
+  {
+   "id": "w16-stephenkentjohnson-com",
+   "name": "Stephen Kent Johnson",
+   "url": "https://stephenkentjohnson.com/",
+   "note": "密集室内摄影瀑布流，摄影师作品集的拼贴墙（收录自 Siteinspire）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Siteinspire",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.siteinspire.com/websites/category/photography",
+   "look": "黑白拼贴·近似"
+  },
+  {
+   "id": "w16-heurebleue-studio",
+   "name": "Heure Bleue",
+   "url": "https://heurebleue.studio/",
+   "note": "湖面黄昏摄影 + 大号衬线 Heure Bleue，摄影师站的诗意（收录自 Siteinspire）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Siteinspire",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.siteinspire.com/websites/category/photography"
+  },
+  {
+   "id": "w16-brickstudio-nyc",
+   "name": "BRICK",
+   "url": "https://www.brickstudio.nyc/",
+   "note": "暗红人像 + 黑底摄影棚，摄影工作室的电影感（收录自 Siteinspire）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Siteinspire",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "dark-tech",
+    "editorial"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.siteinspire.com/websites/category/photography"
+  },
+  {
+   "id": "w16-dsgn-dept-com",
+   "name": "DSGN Dept.",
+   "url": "https://www.dsgn-dept.com/",
+   "note": "米白底 + 衬线大字“Design for Art and Culture” + 书本摄影，文化设计机构的纸感（收录自 Siteinspire）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Siteinspire",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.siteinspire.com/websites/category/art",
+   "look": "画廊线描·近似"
+  },
+  {
+   "id": "w16-museumdepartment-com",
+   "name": "Museum Department",
+   "url": "https://museumdepartment.com/",
+   "note": "白底粗黑大字 CURATING CONTEMPORARY CULTURE + 展陈照片，博物馆设计公司（收录自 Siteinspire）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Siteinspire",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "swiss",
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.siteinspire.com/websites/category/art"
+  },
+  {
+   "id": "w16-headless-horse",
+   "name": "HEADLESS HORSE",
+   "url": "https://headless.horse/",
+   "note": "黑底散落的黑白照片与纸片，艺术机构的暗场拼贴（收录自 Siteinspire）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Siteinspire",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "dark-tech",
+    "editorial"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.siteinspire.com/websites/category/art",
+   "look": "黑白拼贴",
+   "gold": true,
+   "why": "黑白拼贴的代表样本"
+  },
+  {
+   "id": "w16-oliverjeffers-com",
+   "name": "Oliver Jeffers",
+   "url": "https://oliverjeffers.com/",
+   "note": "工作室照片 + 黄色手写大字 THE WORLD OF OLIVER JEFFERS，插画家官网（收录自 Siteinspire）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Siteinspire",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "playful",
+    "editorial"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.siteinspire.com/websites/category/art"
+  },
+  {
+   "id": "w16-public-work",
+   "name": "Public Work by Cosmos",
+   "url": "https://public.work/",
+   "note": "米白底 + 线描植物版画与手稿网格，Cosmos 的“画廊线描”式陈列（收录自 Siteinspire）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Siteinspire",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "retro"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.siteinspire.com/websites/category/art",
+   "look": "画廊线描",
+   "gold": true,
+   "why": "画廊线描的代表样本"
+  },
+  {
+   "id": "w16-southernguild-com",
+   "name": "Southern Guild",
+   "url": "https://southernguild.com/",
+   "note": "灰白展厅 + 黑白作品，当代画廊的冷静（收录自 Siteinspire）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Siteinspire",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal",
+    "editorial"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.siteinspire.com/websites/category/art",
+   "look": "黑白拼贴·近似"
+  },
+  {
+   "id": "w16-thereseoflisieux-co-nz",
+   "name": "Thérèse of Lisieux",
+   "url": "https://thereseoflisieux.co.nz/",
+   "note": "红底 + 白色衬线大字 Chapel of Saint Thérèse + 建筑照片，宗教建筑站的海报感（收录自 Siteinspire）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Siteinspire",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "playful"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.siteinspire.com/websites/category/typographic"
+  },
+  {
+   "id": "w16-hardholy-com",
+   "name": "Hardholy",
+   "url": "https://www.hardholy.com/",
+   "note": "灰调黑白手绘与照片拼贴，Hardholy 的黑白编辑感（收录自 Siteinspire）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Siteinspire",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "retro"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.siteinspire.com/websites/category/typographic",
+   "look": "黑白拼贴·近似"
+  },
+  {
+   "id": "w16-designmill-in",
+   "name": "designmill®",
+   "url": "https://www.designmill.in/",
+   "note": "米白底 + 衬线斜体 + 人像摄影，设计工作室的纸感（收录自 Siteinspire）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Siteinspire",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.siteinspire.com/websites/category/typographic",
+   "look": "画廊线描·近似"
+  },
+  {
+   "id": "w16-perfectdays-movie-jp",
+   "name": "PERFECT DAYS",
+   "url": "https://perfectdays-movie.jp/",
+   "note": "夜景城市摄影 + 白色粗体 PERFECT DAYS，电影官网（收录自 Siteinspire）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Siteinspire",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "dark-tech"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.siteinspire.com/websites/category/typographic"
+  },
+  {
+   "id": "w16-lift-type-fr",
+   "name": "Lift Type",
+   "url": "https://www.lift-type.fr/",
+   "note": "黑白超粗手绘字 LIFTTYPE + 彩色块，字体厂牌的复古（收录自 Siteinspire）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Siteinspire",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "retro",
+    "playful"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.siteinspire.com/websites/category/typographic"
+  },
+  {
+   "id": "w16-21hrs-space",
+   "name": "21 Hours on the Moon",
+   "url": "https://www.21hrs.space/",
+   "note": "黑底月面渲染 + 银色大字 MOON，太空主题的克制动效（收录自 Awwwards）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Awwwards",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "dark-tech",
+    "3d"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.awwwards.com/websites/sites_of_the_day/?page=3"
+  },
+  {
+   "id": "w16-hildenkaira-fi",
+   "name": "Hildén & Kaira",
+   "url": "https://www.hildenkaira.fi/",
+   "note": "白底细衬线大字 hildén & kaira + 小幅照片，品牌工作室的纸感（收录自 Awwwards）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Awwwards",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.awwwards.com/websites/sites_of_the_day/?page=3"
+  },
+  {
+   "id": "w16-meech213-com",
+   "name": "Meech213",
+   "url": "https://www.meech213.com/",
+   "note": "白底时尚杂志与照片错落，摄影师作品集的编辑拼贴（收录自 Awwwards）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Awwwards",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "playful"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.awwwards.com/websites/sites_of_the_day/?page=3"
+  },
+  {
+   "id": "w16-sakazuki-io",
+   "name": "SAKAZUKI",
+   "url": "https://sakazuki.io/",
+   "note": "暖橙流体光 + 细字 sakazuki，日本文旅的柔和动效（收录自 Awwwards）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Awwwards",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "gradient",
+    "motion"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.awwwards.com/websites/sites_of_the_day/?page=3"
+  },
+  {
+   "id": "w16-tresmarescapital-com",
+   "name": "Tres Mares Capital",
+   "url": "https://www.tresmarescapital.com/",
+   "note": "白底细线雪山线描 + 衬线大字 Drive to grow，资本公司的“线描”克制（收录自 Awwwards）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Awwwards",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal",
+    "editorial"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.awwwards.com/websites/sites_of_the_day/?page=3",
+   "look": "画廊线描·近似"
+  },
+  {
+   "id": "w16-foxvaluations-com-au",
+   "name": "Fox Valuations",
+   "url": "https://foxvaluations.com.au/",
+   "note": "米白底 + 一笔画的线描沙发，房产估值站的极简线描（收录自 Awwwards）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Awwwards",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal",
+    "editorial"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.awwwards.com/websites/illustration/",
+   "look": "画廊线描",
+   "gold": true,
+   "why": "画廊线描的代表样本"
+  },
+  {
+   "id": "w16-fps-hu",
+   "name": "fps ecosystem agency",
+   "url": "https://www.fps.hu/",
+   "note": "米白底 + 衬线斜体“Empathic design & flexible thinking” + 几何插画，代理公司的纸感（收录自 Awwwards）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Awwwards",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "playful"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.awwwards.com/websites/illustration/",
+   "look": "画廊线描·近似"
+  },
+  {
+   "id": "w16-the-family-rice-tray-vercel-app",
+   "name": "Mâm Cơm",
+   "url": "https://the-family-rice-tray.vercel.app/",
+   "note": "暗红底 + 金色龙纹插画 + 衬线标题，越南家宴主题站（收录自 Awwwards）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Awwwards",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "retro"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.awwwards.com/websites/illustration/"
+  },
+  {
+   "id": "w16-dontlookup-app",
+   "name": "Don't Look Up",
+   "url": "https://www.dontlookup.app/",
+   "note": "白底手绘线条人物 + 粗字 DON'T LOOK UP，游戏站的线描插画（收录自 Awwwards）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Awwwards",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "playful",
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.awwwards.com/websites/illustration/",
+   "look": "画廊线描·近似"
+  },
+  {
+   "id": "w16-deadnorth-io",
+   "name": "Dead North",
+   "url": "https://deadnorth.io/",
+   "note": "米黄报纸底 + 复古压缩衬线大字 DEAD NORTH，Web 工作室的报刊式首屏（收录自 Awwwards）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Awwwards",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "retro"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.awwwards.com/websites/illustration/"
+  },
+  {
+   "id": "w16-aralesk-es",
+   "name": "Aralesk",
+   "url": "https://www.aralesk.es/",
+   "note": "棕底上黑白人像拼贴方阵，拼贴艺术家的画廊式陈列（收录自 Awwwards）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Awwwards",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "retro"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.awwwards.com/websites/illustration/",
+   "look": "黑白拼贴·近似"
+  },
+  {
+   "id": "w16-to-top-ch-en",
+   "name": "TO TOP",
+   "url": "https://to-top.ch/en",
+   "note": "墨绿底 + 衬线斜体大字 + 线条山丘与太阳插画，咨询机构的温和叙事（收录自 Awwwards）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Awwwards",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.awwwards.com/websites/illustration/",
+   "look": "画廊线描·近似"
+  },
+  {
+   "id": "w16-sleutelaar-xyz",
+   "name": "Hans Sleutelaar",
+   "url": "https://sleutelaar.xyz/",
+   "note": "白底黑色重复大字铺满屏幕，个人官网的纯字体冲击（收录自 Awwwards）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Awwwards",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "swiss",
+    "brutalist"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.awwwards.com/websites/photography/"
+  },
+  {
+   "id": "w16-almirakho-com",
+   "name": "Almira Kho",
+   "url": "https://almirakho.com/",
+   "note": "白底黑白人像 + 粗体小字说明，摄影导演作品集的黑白编辑感（收录自 Awwwards）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Awwwards",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.awwwards.com/websites/photography/",
+   "look": "黑白拼贴·近似"
+  },
+  {
+   "id": "w16-wndws-space",
+   "name": "wndws · windows",
+   "url": "https://wndws.space/",
+   "note": "深色底上密集的窗景照片方格瀑布流，“黑白拼贴”式的照片墙（收录自 Awwwards）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Awwwards",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "dark-tech",
+    "editorial"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.awwwards.com/websites/photography/",
+   "look": "黑白拼贴·近似"
+  },
+  {
+   "id": "w16-velourproductions-com",
+   "name": "Velour Productions",
+   "url": "https://velourproductions.com/",
+   "note": "黑底白色超粗大字 WE GIVE YOU A POINT OF VIEW + 照片，影像公司的海报感（收录自 Awwwards）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Awwwards",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "brutalist"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.awwwards.com/websites/photography/"
+  },
+  {
+   "id": "w16-kaviengcreative-com",
+   "name": "Kavieng Cheng",
+   "url": "https://www.kaviengcreative.com/",
+   "note": "黑底散落的黑白照片 + 白色细衬线姓名，艺术总监作品集的暗场拼贴（收录自 Awwwards）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Awwwards",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "dark-tech",
+    "editorial"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.awwwards.com/websites/photography/",
+   "look": "黑白拼贴",
+   "gold": true,
+   "why": "黑白拼贴的代表样本"
+  },
+  {
+   "id": "w16-andriimur-com",
+   "name": "Andrii Mur",
+   "url": "https://www.andriimur.com/",
+   "note": "黑底黑白汽车/风景摄影 + 小字 Monochrome，摄影师站的纯黑白（收录自 Awwwards）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Awwwards",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "dark-tech",
+    "editorial"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.awwwards.com/websites/photography/",
+   "look": "黑白拼贴·近似"
+  },
+  {
+   "id": "w16-christoph-nagel-dev",
+   "name": "Christoph Nagel",
+   "url": "https://christoph-nagel.dev/",
+   "note": "黑底黑白人像 + 白色粗体 Code.，开发者兼摄影师的黑白冲击（收录自 Awwwards）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Awwwards",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "dark-tech",
+    "editorial"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.awwwards.com/websites/photography/",
+   "look": "黑白拼贴·近似"
+  },
+  {
+   "id": "w16-seemecreative-com",
+   "name": "SEE ME Creative",
+   "url": "https://seemecreative.com/",
+   "note": "黑白摄影 + 衬线斜体“Where your vision goes to grow”，创意公司的黑白编辑感（收录自 Awwwards）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Awwwards",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.awwwards.com/websites/photography/",
+   "look": "黑白拼贴·近似"
+  },
+  {
+   "id": "w16-davidspaeth-com",
+   "name": "David Spaeth Photography",
+   "url": "https://davidspaeth.com/",
+   "note": "白底红色人像与粗野建筑并置，摄影师作品集的对比拼贴（收录自 Awwwards）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Awwwards",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "swiss"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.awwwards.com/websites/photography/"
+  },
+  {
+   "id": "w16-eladiodieste-com",
+   "name": "Eladio Dieste",
+   "url": "https://www.eladiodieste.com/",
+   "note": "砖拱建筑摄影 + 巨型细字 Eladio Dieste，建筑师档案站的大气（收录自 Awwwards）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Awwwards",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.awwwards.com/websites/photography/"
+  },
+  {
+   "id": "w16-rosshalfin-com",
+   "name": "Ross Halfin Photography",
+   "url": "https://www.rosshalfin.com/",
+   "note": "黑底黑白演唱会照片 + 细字导航，摇滚摄影师的暗调画廊（收录自 Awwwards）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Awwwards",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "dark-tech",
+    "editorial"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.awwwards.com/websites/photography/",
+   "look": "黑白拼贴·近似"
+  },
+  {
+   "id": "w16-schemeengine-com",
+   "name": "Scheme Engine",
+   "url": "https://www.schemeengine.com/",
+   "note": "黑白影像帧 + 粗体标语，文化营销公司的暗调（收录自 Awwwards）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Awwwards",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "dark-tech",
+    "editorial"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.awwwards.com/websites/photography/",
+   "look": "黑白拼贴·近似"
   }
  ],
  "guides": [
@@ -77445,5 +83819,5 @@
    ]
   }
  ],
- "updatedAt": "2026-10-16T04:29Z"
+ "updatedAt": "2026-10-16T08:38Z"
 }

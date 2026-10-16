@@ -1,6 +1,6 @@
 # UI Hub
 
-> Curated, multilingual directory of 2539 public UI resources (component libraries, component style demos, effects, design systems, design skills for AI agents) plus original blog analysis of AI design techniques. Data updated 2026-10-16 04:29 UTC.
+> Curated, multilingual directory of 2783 public UI resources (component libraries, component style demos, effects, design systems, design skills for AI agents) plus original blog analysis of AI design techniques. Data updated 2026-10-16 08:38 UTC.
 
 Use the JSON endpoints, not the SPA, when acting as an agent. Every entry links to its original site; licenses belong to the original authors.
 
@@ -111,11 +111,11 @@ Use the JSON endpoints, not the SPA, when acting as an agent. Every entry links 
 - [visx](https://airbnb.io/visx/): Airbnb 的底层可视化组件
 
 ## FAQ
-- **What is UI Hub?** A free, curated directory of 2539 public UI resources: 153 component libraries, 1989 component style demos with light/dark screenshots, 70 design skills for AI agents, plus effects, templates, specs and tutorials. It links to original sites and never hosts paid source code.
+- **What is UI Hub?** A free, curated directory of 2783 public UI resources: 153 component libraries, 1989 component style demos with light/dark screenshots, 70 design skills for AI agents, plus effects, templates, specs and tutorials. It links to original sites and never hosts paid source code.
 - **How do I find a component in a given style?** Load https://siinxu.github.io/ui-resource-hub/api/resources.json and filter by ct (component kind, e.g. "dialog") and vs (visual style, e.g. "minimal" or "motion"). type="style" entries are concrete component demos with a libName and page URL; type="library" entries are whole libraries with install info on the site.
 - **Which skills should an agent use for good UI?** One direction skill (frontend-design or taste-skill), emil-design-eng for motion and interaction polish, then impeccable, baseline-ui, web-design-guidelines and accessibility as an audit pass. See https://siinxu.github.io/ui-resource-hub/api/skills.json.
 - **Can I copy the code?** Open-source libraries can be used under their own licenses (MIT, Apache-2.0 etc.); the card shows the original link. Paid tiers (marked paid/freemium) must be bought from the original vendor.
-- **How often is it updated?** Daily via a GitHub Actions job that adds new UI repositories and tools from GitHub, awesome-shadcn-ui and Hacker News. Nothing is deleted. Last update: 2026-10-16 04:29 UTC.
+- **How often is it updated?** Daily via a GitHub Actions job that adds new UI repositories and tools from GitHub, awesome-shadcn-ui and Hacker News. Nothing is deleted. Last update: 2026-10-16 08:38 UTC.
 
 
 # Blog posts (full text, English)
@@ -1831,6 +1831,250 @@ References:
 - reactivesearch | library | https://opensource.reactivesearch.io/ | New GitHub UI repo: Search UI components for React and Vue (★4918, Apache-2.0, appbaseio/reactivesearch)
 - reui | library | https://reui.io | New GitHub UI repo: Design-forward shadcn kit for interfaces that stand out. 1000+ free patterns! (★3692, MIT, keenthemes/reui)
 - slider | library | https://react-component.github.io/slider | New GitHub UI repo: 🎚️ Accessible React slider for single values, ranges, marks, and editable handles. (★3084, MIT, react-component/slider)
+- 1367 Studio | inspiration | https://www.1367studio.com/ | 深色工作室首页，一个发光主视觉压住整屏，导航极简，适合学“单一焦点”的首屏（收录自 CSS Design Awards）
+- Lee Holmes | inspiration | https://www.leeholmes.uk/ | 米白纸底 + 手绘感压缩大字标题，配一张剪影照片，独立工作室气质很足（收录自 CSS Design Awards）
+- Wonder Vision® | inspiration | https://www.wonder-vision.com/ | CGI 工作室：一句大号无衬线宣言 + 流体渲染，信息和视觉各占一半，干净利落（收录自 CSS Design Awards）
+- Nothin' | inspiration | https://noth.in/ | 黑色超大字标“NOTHIN'”占满首屏，留白极多，品牌感靠字体一招完成（收录自 CSS Design Awards）
+- La Revoltosa | inspiration | https://larevoltosa.es/ | 整屏番茄红 + 复古衬线字标，西班牙小酒馆的热烈，配色只用两色（收录自 CSS Design Awards）
+- Pip | inspiration | https://pipdot.app/ | 奶白底 + 一个橙色小角色 + 超大黑字，极少元素的亲和力范本（收录自 Land-book）
+- Seasats | inspiration | https://www.seasats.com/ | 海面摄影铺满 + 细体大字标题，海洋机器人公司的沉静叙事（收录自 Awwwards）
+- Aspen Search | inspiration | https://www.aspensearch.com/ | 网格切分 + 半调网点图形 + 大号 Aspen 字标，瑞士风金融猎头站（收录自 Awwwards）
+- Warm & Fuzzy | inspiration | https://www.warmnfuzzy.tv/ | 高饱和美食摄影 + 超粗斜切字，创意公司首屏的能量感（收录自 Awwwards）
+- White Desert | inspiration | https://white-desert.com/ | 南极冰川摄影 + 超大宽体标题，奢旅品牌的大片式首屏（收录自 Awwwards）
+- illoca | inspiration | https://illoca.unseen.co/ | 奶白底 + 蓝色线稿插画（人物在桌前），建筑 AI 工具的“画廊线描”式首屏（收录自 Awwwards）
+- Aardvark Book Club | inspiration | https://aardvarkbookclub.com/ | 粉黄撞色 + 粗衬线大字 + 一本书的插画，读书会订阅站的俏皮版式（收录自 Awwwards）
+- AI in Design Report 2026 | inspiration | https://stateofaidesign.com/ | 年度报告站：彩色抽象拼贴 + 编辑式排版，报告类页面的好参考（收录自 Awwwards）
+- Trevor Noah | inspiration | https://www.trevornoah.com/ | 人物剪贴 + 彩色道具拼贴，名人官网的杂志封面式首屏（收录自 Awwwards）
+- CIPHER | inspiration | https://cipher.tv/ | 黑底上散落的影像碎片拼贴，影视品牌的“暗场拼贴”做法（收录自 Awwwards）
+- /zeroz（ゼロズ）公式サイト | inspiration | https://otsuka-air.jp/ | 白底时尚摄影 + 超大斜杠字标 /zeroz，日系品牌的留白与锐利（收录自 Awwwards）
+- Mosby’s Files—American Modernist Architecture | inspiration | https://www.mosbyfiles.com/ | 黑底 + 彩色条带的中世纪现代主义海报排版，建筑档案站很有记忆点（收录自 Awwwards）
+- Studio K95 | inspiration | https://k95.it/ | 克莱因蓝底上漂浮的卡片阵列，工作室作品墙的立体化陈列（收录自 Awwwards）
+- No Art | inspiration | https://www.noartmusic.com/ | 满屏人群纪实照片 + 极小文字，音乐品牌用摄影本身做视觉（收录自 Awwwards）
+- Vero | inspiration | https://verostudio.com/ | 大幅人像特写 + 小字标，工作室官网用一张照片撑起氛围（收录自 Awwwards）
+- PRODUX | inspiration | https://www.produx.design/ | 黑底超细宽体字标 PRØDUX，品牌工作室的极简黑白（收录自 Awwwards）
+- 2xA | inspiration | https://2xa.studio/ | 黑底手写体标语，像在纸上写字的“手绘线条”气质（收录自 Awwwards）
+- Glitch&Grit | inspiration | https://glitchandgrit.com/ | 黑底作品缩略图网格 + 绿色手绘描边字，暗场拼贴里加一点涂鸦（收录自 Awwwards）
+- Dragonfly | inspiration | https://dragonfly2.studiofreight.dev/ | 黑底橙色线框大字 DRAGONFLY，Studio Freight 的克制动效 Demo（收录自 Awwwards）
+- OFFF Forum Montréal | inspiration | https://www.offforum.com/ | OFFF 设计节：黑底作品方块拼贴 + 白色衬线字，节展站的暗场陈列（收录自 Awwwards）
+- Colonia Zacamil | inspiration | https://coloniazacamil.com/ | 米色底 + 航拍长条图 + 大字 FLY TO，社区项目的编辑式叙事（收录自 Awwwards）
+- bleibtgleich | inspiration | https://bleibtgleich.dev/ | 左对齐瑞士网格 + 大字姓名，设计师作品集的标准好样（收录自 Awwwards）
+- LxL Creative | inspiration | https://www.lxlcreative.co.uk/ | 人像 + 红色手写字标，创意代理的海报式首屏（收录自 Awwwards）
+- Pensatori Irrazionali | inspiration | https://pensatori-irrazionali.com/ | 黑底线框地球 + 等宽小字，“非理性思想家”主题的实验排版（收录自 Awwwards）
+- Noho | inspiration | https://noho.ink/ | 米白底 + 彩色家具剪影网格，家具品牌的轻松陈列（收录自 Awwwards）
+- Son Daven | inspiration | https://sondaven.com/en | 暗棕底 + 一头羊的摄影 + 超宽像素字标，度假酒店的独特气质（收录自 Awwwards）
+- Siena Film Foundation | inspiration | https://siena.film/ | 纯黑底白色窄体字标，电影基金会的极简开场（收录自 Awwwards）
+- THE LINE Studio | inspiration | https://thelinestudio.com/ | 黑红颗粒影像 + 巨型 THE LINE 字标，动画工作室的冲击力（收录自 Awwwards）
+- Watson ‒ Los Angeles | inspiration | https://watson.la/ | 白底超大衬线字 + 行内小图，娱乐工作室的杂志式排版（收录自 Awwwards）
+- AIM— AI Modernism Of Kharkiv | inspiration | https://aim.obys.agency/ | 黑白几何块 + 大写字标 AIM，Obys 的现代主义致敬（收录自 Awwwards）
+- Akaru | inspiration | https://akaru.fr/ | 粗黑字标 + 建筑照片拼接，法国代理的瑞士网格（收录自 Awwwards）
+- Frank Gehry and the Walt Disney Concert Hall | inspiration | https://gehry.getty.edu/ | 橙底上的手绘线稿（盖里音乐厅草图），“画廊线描”气质的博物馆叙事站（收录自 Awwwards）
+- Synchrodogs | inspiration | https://synchrodogs.com/ | 对称镜像摄影 + 大字标，摄影工作室的视觉实验（收录自 Awwwards）
+- Pasqua Wines | inspiration | https://pasqua.it/ | 油画质感的葡萄园插画 + 衬线标题，酒庄品牌的古典画廊气质（收录自 Awwwards）
+- Miranda | inspiration | https://niccolomiranda.com/ | 米纸底 + 报纸式衬线排版 + 超大 MIRANDA，“纸感作品集”的标杆（收录自 Awwwards）
+- Magical Reflections: a virtual art experience | inspiration | https://www.magische-spiegelungen.de/ | 黑白古典画廊 3D 场景 + 大号衬线竖排，虚拟艺术展（收录自 Awwwards）
+- Artem Taradash | inspiration | https://taradash.me/ | 白底 + 黑白摄影拼贴 + 大段衬线文字，个人作品集的编辑感（收录自 One Page Love）
+- BirdTab | inspiration | https://birdtab.app/ | 奶白底 + 衬线标题 + 鸟类插画，浏览器插件落地页的纸感版（收录自 Landingfolio）
+- Fibery | inspiration | https://fibery.io/ | 米黄纸底 + 衬线标题 + 手绘线条插图，Fibery 的书卷气 SaaS 首屏（收录自 Landingfolio）
+- Wispr Flow | inspiration | https://wisprflow.ai/ | 米白底 + 衬线斜体“Don't type, just speak” + 手绘线条，Wispr Flow 的纸感首屏（收录自 Landingfolio）
+- Walter Schupfer Management | inspiration | https://wschupfer.com/ | 白底黑白时尚摄影错落拼贴，模特经纪的画廊式陈列（收录自 Siteinspire）
+- FUME | inspiration | https://fume-studio.com/ | 暖色室内摄影满屏 + 细字标，工作室的安静奢华（收录自 Siteinspire）
+- Carrière scène | inspiration | https://carrierescene.ca/ | 粗野主义海报字 + 黑白粉撞色，演艺职业站的街头感（收录自 Siteinspire）
+- ViV Management | inspiration | https://vivmgmt.com/ | 白底黑白人像拼贴 + 大字标 ViV，摄影经纪的编辑式网格（收录自 Siteinspire）
+- CACTUS DIGITALE | inspiration | https://cactusdigitale.com/ | 白底时尚单品棋盘式拼贴，数字工作室的作品墙（收录自 Siteinspire）
+- IWONDERU STUDIOS | inspiration | https://www.iwonderu.se/ | 大字标 + 人像局部，修图工作室的极简黑白（收录自 Siteinspire）
+- Life Stories | inspiration | https://lifestories.org/ | 黑白历史人物肖像满屏 + 细字，口述历史站的庄重（收录自 Siteinspire）
+- Alicia Dubuis | inspiration | https://aliciadubuis.com/ | 黑底 + 白衣人像居中，个人作品集的画廊式留白（收录自 Siteinspire）
+- The Surfer's Journal Archives | inspiration | https://archives.surfersjournal.com/ | 薄荷底 + 一张海浪照片 + 期号，杂志档案站的克制（收录自 Siteinspire）
+- Maison Les Grands Chênes | inspiration | https://www.maisonlesgrandschenes.com/ | 米白底 + 衬线大字 + 建筑摄影，酒店官网的纸感（收录自 Siteinspire）
+- Jakobsen Copenhagen | inspiration | https://jakobsencopenhagen.com/ | 暗调手部摄影 + 细衬线字标，家具品牌的触感叙事（收录自 Siteinspire）
+- Studio OL | inspiration | https://ol.studio/ | 米黄纸底 + 衬线文字 + 小幅照片，Studio OL 的书页式排版（收录自 Siteinspire）
+- The Future in Black™ | inspiration | https://www.thefutureinblack.com/ | 黑白人像 + 超粗大字，文化研究工作室的杂志封面（收录自 Siteinspire）
+- TaylorHare Architects | inspiration | https://taylorhare.com/ | 米白底 + 衬线大字 + 草原建筑照片，建筑事务所的安静叙事（收录自 Siteinspire）
+- SPECS | inspiration | https://www.specs.com/ | 黑底黑白人像特写 + 细字导航，眼镜品牌的暗调画廊（收录自 Lapa Ninja）
+- Pressed Objects | inspiration | https://www.pressedobjects.com/ | 米色织物摄影 + 手写衬线大字，手工纺织品牌的纸感（收录自 Lapa Ninja）
+- PP Neue Montreal | inspiration | https://neuemontreal.com/ | 红底 + 超大 Neue Montreal 字样，字体发布页的海报式排版（收录自 Lapa Ninja）
+- Zero | inspiration | https://www.zero.university/ | 纸面手写“4 years. In debt.”+ 绿色切割垫，教育站的手作质感（收录自 Lapa Ninja）
+- Componine | inspiration | https://www.componine.com/ | 暗调古典雕塑摄影 + 大字，创意伙伴的戏剧性首屏（收录自 Lapa Ninja）
+- Wastetide | inspiration | https://www.wastetide.ai/ | 黑白照片拼贴 + 超粗 TRASH IS CASH，环保 AI 的黑白拼贴海报（收录自 Lapa Ninja）
+- Exemplar | inspiration | https://exemplarfromsweden.com/ | 灰调光影摄影 + 细衬线大字，字体发布页的静谧（收录自 Siteinspire）
+- Signal-A Studio | inspiration | https://signal-a.studio/ | 白底黑色大写长句 + 数字编号，工作室的瑞士排版（收录自 Lapa Ninja）
+- DRĄSA | inspiration | https://drasa.uk/ | 荧光粉底 + 黑色复古粗衬线大字，研究工作室的个性（收录自 Minimal Gallery）
+- David Fiz | inspiration | https://www.davidfiz.com/ | 黑底照片与海报碎片拼贴 + 白色衬线大字，暗场拼贴范例（收录自 Minimal Gallery）
+- GRNDWRK STUDIO | inspiration | https://grndwrk.studio/ | 黑白照片网格 + 大写字标，工作室的编辑式陈列（收录自 Minimal Gallery）
+- Xanvier Allison | inspiration | https://xanvierallison.com/ | 黑白人像特写满屏 + 细衬线姓名，摄影/导演个人站的暗调（收录自 Minimal Gallery）
+- Bou | inspiration | https://wearebou.com/ | 黑白摄影网格拼贴 + 细字，品牌公司的暗场作品墙（收录自 Minimal Gallery）
+- Making Software | inspiration | https://www.makingsoftware.com/ | 白底蓝色等距线稿插画 + 长文排版，“画廊线描”式的教育长文站（收录自 Httpster）
+- Jacky Winter Gallery | inspiration | https://www.jackywinter.gallery/ | 白底大块手绘彩色插画拼贴，插画画廊的展陈感（收录自 Httpster）
+- Developments | inspiration | https://developments.media/ | 米白底 + 大衬线数字与标题，设计工作室的书刊式排版（收录自 Httpster）
+- Benvenusa Italian Wines | inspiration | https://benvenusa.com/ | 紫底 + 黑色压缩大字 + 地名排版，葡萄酒品牌的海报感（收录自 Httpster）
+- Snøhetta | inspiration | https://www.snohetta.com/ | 白底建筑照片拼贴 + 小字，Snøhetta 的克制作品集（收录自 Httpster）
+- Vivien’s Creative | inspiration | https://vivienscreative.com.au/ | 灰白摄影 + 超大字 VIVIEN'S，艺人经纪的黑白高级（收录自 Httpster）
+- Welcome to UNCUT.wtf | inspiration | https://uncut.wtf/ | 米白底 + 超粗手绘感字标 UNCUT + 字体列表，字体站的复古（收录自 Httpster）
+- Counter Forms | inspiration | https://counter-forms.com/ | 米白纸底 + 衬线标题 + 手绘线描插画与文字，“画廊线描”的典型样本（收录自 Httpster）
+- Care of Chan | inspiration | https://www.careofchan.com/ | 户外野餐摄影 + 白色手绘线条，餐饮品牌的手作感（收录自 Httpster）
+- This Design | inspiration | https://this.design/ | 黑底大字宣言 + 斜体关键词 + 作品缩略，设计工作室的暗场（收录自 Siteinspire）
+- macmoss.studio | inspiration | https://macmoss.studio/ | 白底黑白 Logo 与图形网格，品牌工作室的黑白陈列（收录自 Siteinspire）
+- Yuri Roga | inspiration | https://yuriroga.com/ | 黑白人像与雕塑摄影网格，摄影师的画廊式首屏（收录自 Siteinspire）
+- Smörgåsbord | inspiration | https://smorgasbord.studio/ | 灰底黑白雕塑 + 超大白字 AJAX，工作室的黑白冲击（收录自 Siteinspire）
+- Enroute | inspiration | https://viktorhor.com/ | 黑底黑白 3D 字母与粗字标，品牌设计的强对比黑白（收录自 Siteinspire）
+- Filip 3D | inspiration | https://pigeon3dvisuals.com/ | 3D 动画师作品站：深色场景 + 超大白字 FILIP 3D，用一帧渲染做首屏（X 来源：@filip_animation，19 赞 / 11 收藏，2026-09-21）
+- Web Graphic Experiments | inspiration | https://experiments.p5aholic.me/ | 黑底白色倾斜长文字流，p5aholic 的生成式排版实验，黑白动势极强（X 来源：@orpetron，3 赞 / 0 收藏，2026-07-03）
+- Vishesh Mahendru | inspiration | https://www.visheshmahendru.com/ | 白底大字姓名 + 作品卡片阵列，品牌设计师作品集的清爽网格（X 来源：@vishafterdark，2 赞 / 0 收藏，2026-09-26）
+- Sophie Dallamore | inspiration | https://sophiedallamore.com/ | 暗调时装照片网格拼贴，造型师作品站的“暗场拼贴”（X 来源：@orpetron，1 赞 / 0 收藏，2026-08-11）
+- Käthe Kollwitz Memorial | inspiration | https://kathememorial.com/ | 黑底灰调纹理 + 细衬线姓名，纪念馆站的庄重黑白（X 来源：@orpetron，2 赞 / 0 收藏，2026-08-07）
+- Marfala | inspiration | https://marfala.com/ | 橄榄绿底 + 巨型压缩字 marfala，工作室的单色海报感（X 来源：@orpetron，2 赞 / 0 收藏，2026-08-28）
+- MOUNTEAM | inspiration | https://moun.team/ | 森林摄影满屏 + 白色大写标题，户外活动品牌的沉浸感（X 来源：@orpetron，1 赞 / 0 收藏，2026-09-04）
+- LocalMind | inspiration | https://localmind.framer.website/ | 蓝底 + 像素蝴蝶插画，本地 AI 工具的可爱落地页（X 来源：@tarikjsohan，1 赞 / 0 收藏，2026-08-13）
+- Wel Interieurs | inspiration | https://welinterieurs.nl/ | 奶白底 + 超大细字 Wel + 小段衬线文字，室内品牌的纸感留白（X 来源：@orpetron，1 赞 / 0 收藏，2026-07-28）
+- VERMILLION（ヴァーミリオン）公式 | inspiration | https://vermillion-jewelry.com/ | 深蓝底珠宝静物摄影 + 衬线字标，日系珠宝的高级感（X 来源：@orpetron，1 赞 / 0 收藏，2026-07-29）
+- Achmed Esser | inspiration | https://achmedesser.com/ | 新闻式暗色版面 + 照片，数据观察站的报刊感（X 来源：@orpetron，1 赞 / 0 收藏，2026-08-19）
+- Pluspro | inspiration | https://pluspro.framer.website/ | 天蓝渐变 + 理财 App 截图，金融产品的干净首屏（X 来源：@airzonagency，0 赞 / 0 收藏，2026-08-21）
+- ZoraAi | inspiration | https://zoraai.framer.ai/ | 黑底 + 手机渲染 + 柔光，AI 助手落地页的暗场模板（X 来源：@airzonagency，0 赞 / 0 收藏，2026-08-24）
+- Cerno | template | https://cerno.framer.website/ | 黑底山峦渲染 + 大字 CERNO，伦敦工作室模板的电影感（收录自 Framer Marketplace）
+- Baristi | template | https://baristi.framer.website/ | 奶白底 + 粗衬线大字 + 斜贴彩带，烘焙品牌模板的活泼复古（收录自 Framer Marketplace）
+- Mōno™ | template | https://monod.framer.website/ | 纯白底 + 超大细字 Mōno Studio，极简工作室模板（收录自 Framer Marketplace）
+- Studio Sunday | template | https://sudio-sunday.framer.website/ | 宝蓝底 + 巨型白字 SUNDAY，免费创意代理模板的海报感（收录自 Framer Marketplace）
+- Galerie Holm | template | https://galerie-holm-wbs.framer.website/ | 奶白底 + 衬线大字“Quiet rooms, loud work.” + 散落小幅作品，画廊模板的纸感陈列（收录自 Framer Marketplace）
+- Picco | template | https://picco-template.framer.website/ | 大块扁平彩色插画满屏，插画师作品集模板（收录自 Framer Marketplace）
+- Aster Bloom | template | https://asterbloom.framer.website/ | 黑底彩色作品沿弧线排列，艺术总监模板的画廊式滚动（收录自 Framer Marketplace）
+- Foyer | template | https://foyer.framer.website/ | 奶白底 + 人像 + 红色晕染，等候页模板的海报感（收录自 Framer Marketplace）
+- Nordframe® | template | https://nordframe.framer.website/ | 黑白人像网格 + 巨型 NORDFRAME 字标，摄影模板的黑白拼贴（收录自 Framer Marketplace）
+- Mondragon 1 | template | https://mondragon.framer.website/ | 彩色立体缎带 + 巨型 MONDRAGON，数字代理模板的冲击力（收录自 Framer Marketplace）
+- Luca Mori | template | https://lucamori.framer.website/ | 黑底黑白人像 + 白色手写衬线大字 Luca Mori，摄影师模板的暗调黑白（收录自 Framer Marketplace）
+- Visual Frame | template | https://visual-frame.framer.website/ | 黑底视频帧网格拼贴 + 大字 Visual Frame Studio，剪辑师模板的暗场拼贴（收录自 Framer Marketplace）
+- Gen Studio | template | https://genstudio.framer.media/ | 红发人像 + 斜体衬线 GENERATIVE CREATIVE STUDIO，AI 工作室模板（收录自 Framer Marketplace）
+- Zara Miller | template | https://zara-miller.framer.website/ | 米白纸底 + 红色衬线斜体 + 行内小图标，交互设计师模板的纸感排版（收录自 Framer Marketplace）
+- Cole Navarro | template | https://gojett.framer.website/ | 橙红人像剪影 + 超粗大字，摄影/导演模板的海报冲击（收录自 Framer Marketplace）
+- Kai X | template | https://kaix.framer.website/ | 宝蓝大字 KAI FOX + 黑白头像，个人模板的强对比（收录自 Framer Marketplace）
+- Campione | template | https://ovo-campione.framer.website/ | 黑底照片错落拼贴 + 橙色人像，个人作品集模板的暗场拼贴（收录自 Framer Marketplace）
+- Dex Harlan | template | https://dexharlan.framer.website/ | 白底红色巨型 DEX HARLAN，品牌设计师模板的海报字（收录自 Framer Marketplace）
+- All In® | template | https://allintitarvl.framer.website/ | 白底黑白产品静物格子 + 大字标题，品牌手册模板（收录自 Framer Marketplace）
+- Nika Stern | template | https://nikastern.framer.media/ | 红底 + 巨型 NIKA STERN + 人像，时尚艺术总监模板（收录自 Framer Marketplace）
+- Owen Gray | template | https://owen-gray.framer.website/ | 黑底白色压缩大字 OWEN GRAY + 黑白人像，作品集模板的黑白冲击（收录自 Framer Marketplace）
+- Lué Studio® | inspiration | https://lue.studio/ | 云层摄影 + 柔和衬线大字 Lué Studio，梦幻但克制的工作室首屏（收录自 Curated.design）
+- Raul Brito | inspiration | https://raulvbrito.com/ | 米白底 + 大字姓名 + 海报作品拼贴，创意技术人作品集（收录自 Curated.design）
+- Loaf | inspiration | https://loaf.agency/ | 黑底一朵橙色花的微距摄影 + 小字标题，品牌代理用一张图定调（收录自 Curated.design）
+- Pablo Miguez | inspiration | https://www.pablomiguez.dev/ | 黑白人像 + 底部大字 Frontend · Motion · Creative，开发者作品集的暗调黑白（收录自 Curated.design）
+- Beirne Studios | inspiration | https://beirne-websites.vercel.app/ | 黑底白色线描大树 + 小字，暗色版的“线描”气质，极简而有诗意（收录自 Curated.design）
+- Elyx | inspiration | https://elyx.design/ | 米白纸底 + 衬线大字 + 红色手绘下划线与线稿涂鸦，设计工具思考站的纸感范本（收录自 Best Website Gallery）
+- Buff Motion | inspiration | https://www.buffmotion.com/ | 米色底 + 衬线斜体混排大标题 + 手绘线条，动态设计工作室的温柔首屏（收录自 Best Website Gallery）
+- Brittany Taylor | inspiration | https://www.btay.ca/ | 整屏扁平彩色插画，网页设计师个人站的童趣与高完成度（收录自 One Page Love）
+- Secret Garden Stresa | inspiration | https://secretgardenstresa.com/ | 暗绿庭院摄影 + 金色衬线字标 Secret Garden，精品酒店的低调奢华（收录自 One Page Love）
+- April Leihuanani Evangelista | inspiration | https://aprilleihuanani.com/ | 黑底拍立得照片与纸片拼贴 + 细字姓名，个人站的暗场拼贴（收录自 One Page Love）
+- Tenztan | inspiration | https://www.tenztan.in/ | 日系动漫插画满屏 + 汉字标题，插画工作室的视觉冲击（收录自 One Page Love）
+- 鳥獣戯間 | inspiration | https://monakadesign.online/ | 米白宣纸底 + 水墨线描鸟兽 + 汉字衬线标题“鳥獣戯間”，东方版“画廊线描”（收录自 One Page Love）
+- The Daily Dispatch | inspiration | https://www.dailydispatch.app/ | 米黄报纸底 + 衬线大字 DAILY BRIEFINGS + 版画插图，资讯 App 的报刊式落地页（收录自 One Page Love）
+- Isa de Burgh | inspiration | https://isadeburgh.com/ | 白底大字姓名 + 黑白人像，创意总监个人站的黑白克制（收录自 One Page Love）
+- Vestris | inspiration | https://vestris.ai/ | 米白底 + 衬线大字“The file manages itself” + 细线插图，AI 地产工具的纸感首屏（收录自 One Page Love）
+- Zara Webb | inspiration | https://zperinatal.com/ | 奶白底 + 衬线标题 + 手绘线稿（钢琴与人物）+ 照片，母婴护理站的温柔纸感（收录自 One Page Love）
+- SafeStep | inspiration | https://safestep.org.uk/ | 米白底 + 衬线标题 + 手绘线描人物与城市天际线，戒酒支持 App 的安静叙事（收录自 One Page Love）
+- Peeeeps Pop | inspiration | https://peeeeps.vercel.app/ | 黑白手绘人群线描铺满全屏，纯线条插画的强记忆点（收录自 One Page Love）
+- Swapsmore | inspiration | https://swapsmore.com/ | 米白底 + 手绘线条小图标散落 + 衬线标题，礼物交换 App 的手作感（收录自 One Page Love）
+- The Cozy Hollow | inspiration | https://thecozyhollow.ca/ | 森林插画 + 复古徽章字标，自然主题游乐空间的童话感（收录自 One Page Love）
+- Creative South 2026 | inspiration | https://www.creativesouth.com/ | 复古海报插画 + 撞色字标，设计大会站的南方热情（收录自 One Page Love）
+- Eat Real Food | inspiration | https://realfood.gov/ | 黑底黑白人像局部 + 白色粗体 Real Food Wins，政府健康宣传站的黑白冲击（收录自 One Page Love）
+- Brikken+Co | inspiration | https://www.brikken.co/ | 浅灰底 + 立体几何 + 大字 Brikken+Co，策略设计工作室的克制（收录自 One Page Love）
+- starboy – CREATURE | inspiration | https://lilguy.net/ | 黄色机械 3D + 超大黑字标语，生物/潮玩站的大胆版式（收录自 One Page Love）
+- The New Industrials by Raw Materials | inspiration | https://thenewindustrials.com/ | 橙底 + 黑色复古压缩衬线大字 THE NEW INDUSTRIALS，工业品牌的海报感（收录自 One Page Love）
+- Aaron Sananes | inspiration | https://www.sananes.co/ | 白底黑白故障人像 + 分栏大字 Design Engineer / Product Designer，作品集的黑白冲击（收录自 One Page Love）
+- Milton Textiles | inspiration | https://www.miltontextiles.com/ | 格纹织物摄影 + 超大细衬线 MILTON，纺织品牌的质感（收录自 Httpster）
+- Théâtre de la Cité | inspiration | https://theatre-cite.com/ | 白底剧场照片网格 + 衬线字标，剧院官网的编辑式日程（收录自 Httpster）
+- Huxley-Parlour Gallery | inspiration | https://huxleyparlour.com/ | 白色展厅摄影 + 大字展名，画廊官网的极简陈列（收录自 Httpster）
+- La luce alpina | inspiration | https://www.lalucealpina.ch/ | 白底大幅模糊影像 + 衬线标题，艺术项目站的诗意（收录自 Httpster）
+- Artworld | inspiration | https://artworld.agency/ | 衬线艺术家名单排版 + 巨型 ARTWORLD，艺术代理的字体主导（收录自 Httpster）
+- Verre Vert Glass | inspiration | https://www.verrevertglass.com/ | 米白底 + 衬线大字 + 酒瓶摄影 + 线条图标，包装品牌的纸感（收录自 Httpster）
+- Hotel Peter & Paul | inspiration | https://hotelpeterandpaul.com/ | 暗调教堂走廊摄影 + 衬线字标，精品酒店的电影感（收录自 Httpster）
+- Studio Brophy | inspiration | https://studiobrophy.com/ | 暗调木凳摄影 + 巨型字标，家具工作室的高级感（收录自 Httpster）
+- GRAS | inspiration | https://gras.co/ | 黑底建筑与室内照片网格，GRAS 的暗场作品墙（收录自 Httpster）
+- TYPE BY | inspiration | https://www.typeby.com/ | 深蓝底 + 紫色大衬线“Talent borrows. Genius steels.”，字体厂牌的态度（收录自 Httpster）
+- Global | inspiration | https://global-studio.eu/ | 黑底黑白人像特写 + 彩色标签点缀，工作室的暗调视觉（收录自 Httpster）
+- Murmure | inspiration | https://murmure.me/ | 黑底超大白字 MURMURE + 作品碎片拼贴，艺术指导工作室（收录自 Httpster）
+- Zero Studios | inspiration | https://zero.nyc/ | 黑底白色巨型圆点 + ZERO 字标，工作室的极简符号感（收录自 Httpster）
+- OH no Type Company | inspiration | https://ohnotype.co/ | 白底黑白海报字体拼贴，字体厂牌的黑白展陈（收录自 Httpster）
+- Bureau for Visual Affairs | inspiration | https://bureau-va.com/ | 浅底大字 + 人眼特写，视觉事务所的冷静（收录自 Httpster）
+- Choreograffiti | inspiration | https://choreograffiti.com/ | 黄绿底 + 超粗压缩大字 + 人像，舞蹈项目站的海报张力（收录自 Httpster）
+- Pierre Yovanovitch | inspiration | https://www.pierreyovanovitch.com/ | 鼠尾草绿底 + 线描植物纹样 + 衬线字标，室内建筑师的手绘画廊感（收录自 Httpster）
+- Thyme | inspiration | https://www.thyme.co.uk/ | 晨雾田野摄影 + 衬线字标 THYME，乡村酒店的诗意（收录自 Httpster）
+- POSTHUMAN | inspiration | https://posthuman.studio/ | 暗场雕塑与材质摄影拼贴，后人类工作室的高级暗调（收录自 Httpster）
+- Julia Johnson | inspiration | https://www.juliajohnson.com/ | 白底彩色时尚照片错落拼贴 + 大字 Julia，摄影师作品集（收录自 Httpster）
+- Out of the Valley | inspiration | https://outofthevalley.co.uk/ | 暮色中的桑拿小屋摄影 + 细字，户外品牌的安静氛围（收录自 Httpster）
+- Made Thought | inspiration | https://www.madethought.com/ | 白底黑色细衬线 MADE THOUGHT，顶级代理的极简纸感（收录自 Httpster）
+- TOTEME | inspiration | https://toteme-studio.com/ | 灰调黑白人物群像，时装品牌的冷峻编辑感（收录自 Httpster）
+- How Many Plants | inspiration | https://howmanyplants.com/ | 米黄纸底 + 线描植物插画 + 衬线大字 HOW MANY PLANTS，“画廊线描”的教科书（收录自 Httpster）
+- GRAZA | inspiration | https://www.graza.co/ | 饼干俯拍摄影 + 衬线大字，橄榄油品牌的生活感（收录自 Httpster）
+- Grand Matter | inspiration | https://grandmatter.com/ | 粉色人像 + 白色衬线大字，创意公司的时尚感（收录自 Httpster）
+- Abbotsford Convent | inspiration | https://abbotsfordconvent.com.au/ | 米色底 + 衬线文字 + 建筑线描插画，艺术社区站的纸感（收录自 Httpster）
+- Nottingham Contemporary | inspiration | https://www.nottinghamcontemporary.org/ | 彩色展讯拼贴 + 圆形标签，当代美术馆的活泼编辑感（收录自 Httpster）
+- Working From_ (The Hoxton) | inspiration | https://workingfrom.thehoxton.com/ | 米白底 + 衬线标题 + 手绘线条涂鸦，联合办公空间的温暖纸感（收录自 Httpster）
+- Pittori di cinema | inspiration | https://www.pittoridicinema.it/ | 黄底 + 黑色复古电影海报字，电影手绘海报站的个性（收录自 Httpster）
+- Politechnika Warszawska | inspiration | https://www.portalkandydata.pw.edu.pl/ | 黄底 + 建筑线描插画 + 衬线标题，大学数据门户的线描气质（收录自 Httpster）
+- The Outline | inspiration | https://theoutline.com/ | 墨蓝底 + 植物拼贴 + 衬线大字 The Saddening，杂志站的大胆编辑（收录自 Httpster）
+- Shot on iPhone in B&W | inspiration | https://shotoniphone.lorenzobocchi.com/ | 黑底黑白街拍照片错落拼贴 + 巨型 PHOTOS 字，“黑白拼贴”的标准答案（收录自 Minimal Gallery）
+- LOST MEMORIES | inspiration | https://lostmemories.space/ | 旧照片（黑白/棕调）方格拼贴 + 小字标题，记忆档案站的画廊感（收录自 Minimal Gallery）
+- Joshua Baker | inspiration | https://www.joshuabaker.com/ | 黑底散落的照片卡片 + 小字简介，工程师个人站的暗场拼贴（收录自 Minimal Gallery）
+- Jason Bergh | inspiration | https://www.jasonbergh.com/ | 暗调影像 + 细衬线姓名，导演作品集的电影感（收录自 Minimal Gallery）
+- Hugo Ahlberg | inspiration | https://hugoahlberg.com/ | 人像照片 + 超大白字 Opal，摄影师作品集的冲击（收录自 Minimal Gallery）
+- Samuel Räikkönen | inspiration | https://honest.fi/ | 深蓝水纹 + 细衬线长句，创意总监个人站的诗意（收录自 Minimal Gallery）
+- Van Gogh Museum | inspiration | https://www.vangoghmuseum.nl/en | 黄底 + 梵高向日葵 + 粗体标题，美术馆官网的大胆配色（收录自 Minimal Gallery）
+- Eirdís Ragnarsdóttir | inspiration | https://www.eirdis.com/ | 彩色油画满屏 + 衬线姓名，画家个人站的画廊感（收录自 Minimal Gallery）
+- GIOLABS / Immersive Experiences | inspiration | https://giolabs.lu/ | 沉浸式展览现场照片 + 大字，沉浸体验公司（收录自 Minimal Gallery）
+- BRAINSTORM on Roblox | inspiration | https://brainstormgame.ru/en | 白底黑白手绘线稿人物 + 大字，游戏站的线描插画风（收录自 Lapa Ninja）
+- Sutéra | inspiration | https://www.sutera.ch/ | 白底 + 手绘标注线 + 岩石植物拼贴，建筑科技的“标本式”线描陈列（收录自 Lapa Ninja）
+- Innovation Endeavors | inspiration | https://www.innovationendeavors.com/ | 米白底 + 衬线斜体标题 + 一只线描纸飞机，风投机构的极简纸感（收录自 Lapa Ninja）
+- hilos | inspiration | https://hilos.sh/?r= | 黑白手绘人群线描满屏 + 中间对话框，团队聊天工具的线描插画（收录自 Lapa Ninja）
+- Creative Intelligence Company | inspiration | https://www.creative.inc/ | 米白底 + 衬线大字“A camera for their story” + 线描相机，硬件公司的纸感叙事（收录自 Lapa Ninja）
+- PRIMARY PAPER | inspiration | https://www.primary-paper.com/ | 水上人物摄影 + 细字，纸品品牌的诗意（收录自 Lapa Ninja）
+- Alone in New York | inspiration | https://aloneinnewyork.com/ | 人像 + 超大黑字 Alone in New York，纪录片站的海报感（收录自 Lapa Ninja）
+- BAM Photographers | inspiration | https://benandmartin.com/ | 黑底黑白人像 + 白色大字 bam selected，摄影二人组的黑白冲击（收录自 Lapa Ninja）
+- Yolanta Birkhane Studio | inspiration | https://www.yolantabirkhane.com/ | 黑底黑白婚纱/人像照片错落瀑布流，“黑白拼贴”的高质量样本（收录自 Lapa Ninja）
+- Money in Check | inspiration | https://moneyincheck.org/ | 米白底 + 绿色衬线大字 MONEY IN CHECK + 版画式国际象棋，小说站的书卷气（收录自 Lapa Ninja）
+- Cristina Gómez | inspiration | https://cristinagomezruiz.com/ | 白底黑白人像 + 大号细衬线姓名，独立摄影师的画廊式留白（收录自 Lapa Ninja）
+- Sarah Bassett | inspiration | https://www.sarah-bassett.com/ | 白底黑白人像照片拼贴，摄影师作品集的编辑网格（收录自 Lapa Ninja）
+- A Love Story | inspiration | https://alovehatestory.com/ | 红底 + 白色超粗大字 A LOVE STORY，品牌代理的海报感（收录自 Lapa Ninja）
+- Axel Vanhessche | inspiration | https://axelvanhessche.com/ | 白底巨型压缩字 AXEL VANHESSCHE + 照片，摄影师作品集（收录自 Lapa Ninja）
+- Gianluca Patti | inspiration | https://glcpatti.com/ | 白底手绘线稿插画（人物与电脑），插画师作品集的线描风（收录自 Lapa Ninja）
+- Greptile | inspiration | https://www.greptile.com/ | 白底衬线标题 + 手绘线描恐龙，AI 代码审查的“线描”式首屏（收录自 Lapa Ninja）
+- Granola | inspiration | https://www.granola.ai/ | 米白底 + 衬线标题 + 产品截图，Granola 的温和纸感（收录自 Lapa Ninja）
+- A Journal On How to Wow People | inspiration | https://www.ajournalon.co/ | 黑底翻开的画册 3D + 衬线小字，期刊站的展陈感（收录自 Minimal Gallery）
+- Editorial New | inspiration | https://editorialnew.com/ | 灰底报纸版面 + 衬线字，Editorial New 字体页的编辑感（收录自 Minimal Gallery）
+- Stephen Kent Johnson | inspiration | https://stephenkentjohnson.com/ | 密集室内摄影瀑布流，摄影师作品集的拼贴墙（收录自 Siteinspire）
+- Heure Bleue | inspiration | https://heurebleue.studio/ | 湖面黄昏摄影 + 大号衬线 Heure Bleue，摄影师站的诗意（收录自 Siteinspire）
+- BRICK | inspiration | https://www.brickstudio.nyc/ | 暗红人像 + 黑底摄影棚，摄影工作室的电影感（收录自 Siteinspire）
+- DSGN Dept. | inspiration | https://www.dsgn-dept.com/ | 米白底 + 衬线大字“Design for Art and Culture” + 书本摄影，文化设计机构的纸感（收录自 Siteinspire）
+- Museum Department | inspiration | https://museumdepartment.com/ | 白底粗黑大字 CURATING CONTEMPORARY CULTURE + 展陈照片，博物馆设计公司（收录自 Siteinspire）
+- HEADLESS HORSE | inspiration | https://headless.horse/ | 黑底散落的黑白照片与纸片，艺术机构的暗场拼贴（收录自 Siteinspire）
+- Oliver Jeffers | inspiration | https://oliverjeffers.com/ | 工作室照片 + 黄色手写大字 THE WORLD OF OLIVER JEFFERS，插画家官网（收录自 Siteinspire）
+- Public Work by Cosmos | inspiration | https://public.work/ | 米白底 + 线描植物版画与手稿网格，Cosmos 的“画廊线描”式陈列（收录自 Siteinspire）
+- Southern Guild | inspiration | https://southernguild.com/ | 灰白展厅 + 黑白作品，当代画廊的冷静（收录自 Siteinspire）
+- Thérèse of Lisieux | inspiration | https://thereseoflisieux.co.nz/ | 红底 + 白色衬线大字 Chapel of Saint Thérèse + 建筑照片，宗教建筑站的海报感（收录自 Siteinspire）
+- Hardholy | inspiration | https://www.hardholy.com/ | 灰调黑白手绘与照片拼贴，Hardholy 的黑白编辑感（收录自 Siteinspire）
+- designmill® | inspiration | https://www.designmill.in/ | 米白底 + 衬线斜体 + 人像摄影，设计工作室的纸感（收录自 Siteinspire）
+- PERFECT DAYS | inspiration | https://perfectdays-movie.jp/ | 夜景城市摄影 + 白色粗体 PERFECT DAYS，电影官网（收录自 Siteinspire）
+- Lift Type | inspiration | https://www.lift-type.fr/ | 黑白超粗手绘字 LIFTTYPE + 彩色块，字体厂牌的复古（收录自 Siteinspire）
+- 21 Hours on the Moon | inspiration | https://www.21hrs.space/ | 黑底月面渲染 + 银色大字 MOON，太空主题的克制动效（收录自 Awwwards）
+- Hildén & Kaira | inspiration | https://www.hildenkaira.fi/ | 白底细衬线大字 hildén & kaira + 小幅照片，品牌工作室的纸感（收录自 Awwwards）
+- Meech213 | inspiration | https://www.meech213.com/ | 白底时尚杂志与照片错落，摄影师作品集的编辑拼贴（收录自 Awwwards）
+- SAKAZUKI | inspiration | https://sakazuki.io/ | 暖橙流体光 + 细字 sakazuki，日本文旅的柔和动效（收录自 Awwwards）
+- Tres Mares Capital | inspiration | https://www.tresmarescapital.com/ | 白底细线雪山线描 + 衬线大字 Drive to grow，资本公司的“线描”克制（收录自 Awwwards）
+- Fox Valuations | inspiration | https://foxvaluations.com.au/ | 米白底 + 一笔画的线描沙发，房产估值站的极简线描（收录自 Awwwards）
+- fps ecosystem agency | inspiration | https://www.fps.hu/ | 米白底 + 衬线斜体“Empathic design & flexible thinking” + 几何插画，代理公司的纸感（收录自 Awwwards）
+- Mâm Cơm | inspiration | https://the-family-rice-tray.vercel.app/ | 暗红底 + 金色龙纹插画 + 衬线标题，越南家宴主题站（收录自 Awwwards）
+- Don't Look Up | inspiration | https://www.dontlookup.app/ | 白底手绘线条人物 + 粗字 DON'T LOOK UP，游戏站的线描插画（收录自 Awwwards）
+- Dead North | inspiration | https://deadnorth.io/ | 米黄报纸底 + 复古压缩衬线大字 DEAD NORTH，Web 工作室的报刊式首屏（收录自 Awwwards）
+- Aralesk | inspiration | https://www.aralesk.es/ | 棕底上黑白人像拼贴方阵，拼贴艺术家的画廊式陈列（收录自 Awwwards）
+- TO TOP | inspiration | https://to-top.ch/en | 墨绿底 + 衬线斜体大字 + 线条山丘与太阳插画，咨询机构的温和叙事（收录自 Awwwards）
+- Hans Sleutelaar | inspiration | https://sleutelaar.xyz/ | 白底黑色重复大字铺满屏幕，个人官网的纯字体冲击（收录自 Awwwards）
+- Almira Kho | inspiration | https://almirakho.com/ | 白底黑白人像 + 粗体小字说明，摄影导演作品集的黑白编辑感（收录自 Awwwards）
+- wndws · windows | inspiration | https://wndws.space/ | 深色底上密集的窗景照片方格瀑布流，“黑白拼贴”式的照片墙（收录自 Awwwards）
+- Velour Productions | inspiration | https://velourproductions.com/ | 黑底白色超粗大字 WE GIVE YOU A POINT OF VIEW + 照片，影像公司的海报感（收录自 Awwwards）
+- Kavieng Cheng | inspiration | https://www.kaviengcreative.com/ | 黑底散落的黑白照片 + 白色细衬线姓名，艺术总监作品集的暗场拼贴（收录自 Awwwards）
+- Andrii Mur | inspiration | https://www.andriimur.com/ | 黑底黑白汽车/风景摄影 + 小字 Monochrome，摄影师站的纯黑白（收录自 Awwwards）
+- Christoph Nagel | inspiration | https://christoph-nagel.dev/ | 黑底黑白人像 + 白色粗体 Code.，开发者兼摄影师的黑白冲击（收录自 Awwwards）
+- SEE ME Creative | inspiration | https://seemecreative.com/ | 黑白摄影 + 衬线斜体“Where your vision goes to grow”，创意公司的黑白编辑感（收录自 Awwwards）
+- David Spaeth Photography | inspiration | https://davidspaeth.com/ | 白底红色人像与粗野建筑并置，摄影师作品集的对比拼贴（收录自 Awwwards）
+- Eladio Dieste | inspiration | https://www.eladiodieste.com/ | 砖拱建筑摄影 + 巨型细字 Eladio Dieste，建筑师档案站的大气（收录自 Awwwards）
+- Ross Halfin Photography | inspiration | https://www.rosshalfin.com/ | 黑底黑白演唱会照片 + 细字导航，摇滚摄影师的暗调画廊（收录自 Awwwards）
+- Scheme Engine | inspiration | https://www.schemeengine.com/ | 黑白影像帧 + 粗体标语，文化营销公司的暗调（收录自 Awwwards）
 
 # Component style demos: 1989 entries, see api/resources.json (type=style)
 
