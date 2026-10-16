@@ -1,6 +1,6 @@
 # UI Hub
 
-> Curated, multilingual directory of 2524 public UI resources (component libraries, component style demos, effects, design systems, design skills for AI agents) plus original blog analysis of AI design techniques. Data updated 2026-10-16 03:37 UTC.
+> Curated, multilingual directory of 2539 public UI resources (component libraries, component style demos, effects, design systems, design skills for AI agents) plus original blog analysis of AI design techniques. Data updated 2026-10-16 04:29 UTC.
 
 Use the JSON endpoints, not the SPA, when acting as an agent. Every entry links to its original site; licenses belong to the original authors.
 
@@ -111,11 +111,11 @@ Use the JSON endpoints, not the SPA, when acting as an agent. Every entry links 
 - [visx](https://airbnb.io/visx/): Airbnb 的底层可视化组件
 
 ## FAQ
-- **What is UI Hub?** A free, curated directory of 2524 public UI resources: 138 component libraries, 1989 component style demos with light/dark screenshots, 70 design skills for AI agents, plus effects, templates, specs and tutorials. It links to original sites and never hosts paid source code.
+- **What is UI Hub?** A free, curated directory of 2539 public UI resources: 153 component libraries, 1989 component style demos with light/dark screenshots, 70 design skills for AI agents, plus effects, templates, specs and tutorials. It links to original sites and never hosts paid source code.
 - **How do I find a component in a given style?** Load https://siinxu.github.io/ui-resource-hub/api/resources.json and filter by ct (component kind, e.g. "dialog") and vs (visual style, e.g. "minimal" or "motion"). type="style" entries are concrete component demos with a libName and page URL; type="library" entries are whole libraries with install info on the site.
 - **Which skills should an agent use for good UI?** One direction skill (frontend-design or taste-skill), emil-design-eng for motion and interaction polish, then impeccable, baseline-ui, web-design-guidelines and accessibility as an audit pass. See https://siinxu.github.io/ui-resource-hub/api/skills.json.
 - **Can I copy the code?** Open-source libraries can be used under their own licenses (MIT, Apache-2.0 etc.); the card shows the original link. Paid tiers (marked paid/freemium) must be bought from the original vendor.
-- **How often is it updated?** Daily via a GitHub Actions job that adds new UI repositories and tools from GitHub, awesome-shadcn-ui and Hacker News. Nothing is deleted. Last update: 2026-10-16 03:37 UTC.
+- **How often is it updated?** Daily via a GitHub Actions job that adds new UI repositories and tools from GitHub, awesome-shadcn-ui and Hacker News. Nothing is deleted. Last update: 2026-10-16 04:29 UTC.
 
 
 # Blog posts (full text, English)
@@ -1816,6 +1816,21 @@ References:
 - ProLab（Framer 模板） | inspiration | https://www.framer.com/marketplace/templates/prolab/ | Framer 官方模板市场的整站模板，可在线预览完整页面；适合直接对照整页节奏（多数付费，链接到原站）
 - Soren（Framer 模板） | inspiration | https://www.framer.com/marketplace/templates/soren/ | Framer 官方模板市场的整站模板，可在线预览完整页面；适合直接对照整页节奏（多数付费，链接到原站）
 - Spector（Framer 模板） | inspiration | https://www.framer.com/marketplace/templates/spector/ | Framer 官方模板市场的整站模板，可在线预览完整页面；适合直接对照整页节奏（多数付费，链接到原站）
+- vibestart | library | https://vibestart.net | New GitHub UI repo: Compose a full-stack TypeScript stack and get a cutting-edge, verified project made for AI coding agents, with type safety, lint, and tests 
+- scroll-craft | library | https://github.com/nateherkai/scroll-craft | New GitHub UI repo: An agent skill for building premium, immersive, scroll-driven websites. Works with Codex, Claude Code, and other coding agents. Also availab
+- appllama-skills | library | https://appllama.io/mcp | New GitHub UI repo: A builder, not just a researcher. Agent skills that turn top-grossing app patterns into native-quality mobile screens. (★2870, MIT, Appllama
+- codex-slides | library | https://github.com/nexu-io/codex-slides#readme | New GitHub UI repo: 🎨 Open-source AI slide studio inside Codex: image-native decks, every slide a full visual canvas. ⚡ 10+ high-quality slides in ~4–5 minutes 
+- arc-library | library | https://uiarc.dev | New GitHub UI repo: Arc Library: free, open source React components with calm motion. Copy the code or install with the shadcn CLI. (★786, MIT, kuratlielia/arc-
+- official-design-md | library | https://getdesign.md/ | New GitHub UI repo: Official DESIGN.md files published by companies themselves. First-party design systems that AI agents read to generate consistent UI. (★523,
+- game-ui-design-workflow | library | https://github.com/guiguiyan930-source/game-ui-design-workflow | New GitHub UI repo: 一套面向游戏 UI 设计的 Cursor Agent Skills 工作流，覆盖原型视觉生成、风格切换、页面延展与组件拆解，并通过 Spec-Kit 文档、视觉契约和资源清单保证多页面一致性与可交付性。 (★312, MIT, guiguiyan930-source/game-u
+- react-bootstrap | library | https://react-bootstrap.github.io/ | New GitHub UI repo: Bootstrap components built with React (★22608, MIT, react-bootstrap/react-bootstrap)
+- react-native-web | library | https://necolas.github.io/react-native-web | New GitHub UI repo: Cross-platform React UI packages (★22145, MIT, necolas/react-native-web)
+- react-spectrum | library | https://react-spectrum.adobe.com | New GitHub UI repo: A collection of libraries and tools that help you build adaptive, accessible, and robust user experiences. (★15951, Apache-2.0, adobe/react-
+- rsuite | library | https://rsuitejs.com | New GitHub UI repo: 🧱 A suite of React components . (★8694, MIT, rsuite/rsuite)
+- js-lingui | library | https://lingui.dev | New GitHub UI repo: 🌍 📖 A readable, automated, and optimized (2 kb) internationalization for JavaScript (★5914, MIT, lingui/js-lingui)
+- reactivesearch | library | https://opensource.reactivesearch.io/ | New GitHub UI repo: Search UI components for React and Vue (★4918, Apache-2.0, appbaseio/reactivesearch)
+- reui | library | https://reui.io | New GitHub UI repo: Design-forward shadcn kit for interfaces that stand out. 1000+ free patterns! (★3692, MIT, keenthemes/reui)
+- slider | library | https://react-component.github.io/slider | New GitHub UI repo: 🎚️ Accessible React slider for single values, ranges, marks, and editable handles. (★3084, MIT, react-component/slider)
 
 # Component style demos: 1989 entries, see api/resources.json (type=style)
 

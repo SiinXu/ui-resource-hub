@@ -1,6 +1,6 @@
 {
  "generated": "2026-10-16",
- "count": 2524,
+ "count": 2539,
  "items": [
   {
    "id": "ued-figma-mcp-guide",
@@ -76819,6 +76819,430 @@
    ],
    "added": "2026-10-16",
    "cur": 1
+  },
+  {
+   "id": "gh-vinkydev-vibestart",
+   "name": "vibestart",
+   "url": "https://vibestart.net",
+   "note": "GitHub 新晋 UI 仓库：Compose a full-stack TypeScript stack and get a cutting-edge, verified project made for AI coding agents, with type safety, lint, and tests built in. | 自由组合全栈 TypeScript 技术栈，得到一个前沿（GitHub ★163，MIT 许可，仓库 VinkyDev/vibestart）",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "GitHub",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "HTML",
+    "开源",
+    "自动收录"
+   ],
+   "ct": [
+    "chat"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "New GitHub UI repo: Compose a full-stack TypeScript stack and get a cutting-edge, verified project made for AI coding agents, with type safety, lint, and tests built in. | 自由组合全栈 TypeScript 技术栈，得到一个前沿 (★163, MIT, VinkyDev/vibestart)",
+   "added": "2026-10-16"
+  },
+  {
+   "id": "gh-nateherkai-scroll-craft",
+   "name": "scroll-craft",
+   "url": "https://github.com/nateherkai/scroll-craft",
+   "note": "GitHub 新晋 UI 仓库：An agent skill for building premium, immersive, scroll-driven websites. Works with Codex, Claude Code, and other coding agents. Also available as a Claude Code plugin.（GitHub ★3510，MIT 许可，仓库 nateherkai/scroll-craft）",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "GitHub",
+   "pricing": "free",
+   "tags": [
+    "HTML",
+    "开源",
+    "自动收录"
+   ],
+   "ct": [
+    "chat",
+    "motion",
+    "chart",
+    "layout"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "New GitHub UI repo: An agent skill for building premium, immersive, scroll-driven websites. Works with Codex, Claude Code, and other coding agents. Also available as a Claude Code plugin. (★3510, MIT, nateherkai/scroll-craft)",
+   "added": "2026-10-16"
+  },
+  {
+   "id": "gh-appllama-appllama-skills",
+   "name": "appllama-skills",
+   "url": "https://appllama.io/mcp",
+   "note": "GitHub 新晋 UI 仓库：A builder, not just a researcher. Agent skills that turn top-grossing app patterns into native-quality mobile screens.（GitHub ★2870，MIT 许可，仓库 Appllama/appllama-skills）",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "GitHub",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "开源",
+    "自动收录"
+   ],
+   "ct": [
+    "chat"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "New GitHub UI repo: A builder, not just a researcher. Agent skills that turn top-grossing app patterns into native-quality mobile screens. (★2870, MIT, Appllama/appllama-skills)",
+   "added": "2026-10-16"
+  },
+  {
+   "id": "gh-nexu-io-codex-slides",
+   "name": "codex-slides",
+   "url": "https://github.com/nexu-io/codex-slides#readme",
+   "note": "GitHub 新晋 UI 仓库：🎨 Open-source AI slide studio inside Codex: image-native decks, every slide a full visual canvas. ⚡ 10+ high-quality slides in ~4–5 minutes — Fast mode renders every page in parall（GitHub ★938，MIT 许可，仓库 nexu-io/codex-slides）",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "GitHub",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "开源",
+    "自动收录"
+   ],
+   "ct": [
+    "chat"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "New GitHub UI repo: 🎨 Open-source AI slide studio inside Codex: image-native decks, every slide a full visual canvas. ⚡ 10+ high-quality slides in ~4–5 minutes — Fast mode renders every page in parall (★938, MIT, nexu-io/codex-slides)",
+   "added": "2026-10-16"
+  },
+  {
+   "id": "gh-kuratlielia-arc-library",
+   "name": "arc-library",
+   "url": "https://uiarc.dev",
+   "note": "GitHub 新晋 UI 仓库：Arc Library: free, open source React components with calm motion. Copy the code or install with the shadcn CLI.（GitHub ★786，MIT 许可，仓库 kuratlielia/arc-library）",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "GitHub",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "开源",
+    "自动收录"
+   ],
+   "ct": [
+    "motion"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "New GitHub UI repo: Arc Library: free, open source React components with calm motion. Copy the code or install with the shadcn CLI. (★786, MIT, kuratlielia/arc-library)",
+   "added": "2026-10-16"
+  },
+  {
+   "id": "gh-voltagent-official-design-md",
+   "name": "official-design-md",
+   "url": "https://getdesign.md/",
+   "note": "GitHub 新晋 UI 仓库：Official DESIGN.md files published by companies themselves. First-party design systems that AI agents read to generate consistent UI.（GitHub ★523，MIT 许可，仓库 VoltAgent/official-design-md）",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "GitHub",
+   "pricing": "free",
+   "tags": [
+    "HTML",
+    "开源",
+    "自动收录"
+   ],
+   "ct": [
+    "chat"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "New GitHub UI repo: Official DESIGN.md files published by companies themselves. First-party design systems that AI agents read to generate consistent UI. (★523, MIT, VoltAgent/official-design-md)",
+   "added": "2026-10-16"
+  },
+  {
+   "id": "gh-guiguiyan930-source-game-ui-design-workflow",
+   "name": "game-ui-design-workflow",
+   "url": "https://github.com/guiguiyan930-source/game-ui-design-workflow",
+   "note": "GitHub 新晋 UI 仓库：一套面向游戏 UI 设计的 Cursor Agent Skills 工作流，覆盖原型视觉生成、风格切换、页面延展与组件拆解，并通过 Spec-Kit 文档、视觉契约和资源清单保证多页面一致性与可交付性。（GitHub ★312，MIT 许可，仓库 guiguiyan930-source/game-ui-design-workflow）",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "GitHub",
+   "pricing": "free",
+   "tags": [
+    "HTML",
+    "开源",
+    "自动收录"
+   ],
+   "ct": [
+    "chat"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "New GitHub UI repo: 一套面向游戏 UI 设计的 Cursor Agent Skills 工作流，覆盖原型视觉生成、风格切换、页面延展与组件拆解，并通过 Spec-Kit 文档、视觉契约和资源清单保证多页面一致性与可交付性。 (★312, MIT, guiguiyan930-source/game-ui-design-workflow)",
+   "added": "2026-10-16"
+  },
+  {
+   "id": "gh-react-bootstrap-react-bootstrap",
+   "name": "react-bootstrap",
+   "url": "https://react-bootstrap.github.io/",
+   "note": "GitHub 新晋 UI 仓库：Bootstrap components built with React（GitHub ★22608，MIT 许可，仓库 react-bootstrap/react-bootstrap）",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "GitHub",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "开源",
+    "自动收录"
+   ],
+   "ct": [],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "New GitHub UI repo: Bootstrap components built with React (★22608, MIT, react-bootstrap/react-bootstrap)",
+   "added": "2026-10-16"
+  },
+  {
+   "id": "gh-necolas-react-native-web",
+   "name": "react-native-web",
+   "url": "https://necolas.github.io/react-native-web",
+   "note": "GitHub 新晋 UI 仓库：Cross-platform React UI packages（GitHub ★22145，MIT 许可，仓库 necolas/react-native-web）",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "GitHub",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "HTML",
+    "开源",
+    "自动收录"
+   ],
+   "ct": [
+    "form"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "New GitHub UI repo: Cross-platform React UI packages (★22145, MIT, necolas/react-native-web)",
+   "added": "2026-10-16"
+  },
+  {
+   "id": "gh-adobe-react-spectrum",
+   "name": "react-spectrum",
+   "url": "https://react-spectrum.adobe.com",
+   "note": "GitHub 新晋 UI 仓库：A collection of libraries and tools that help you build adaptive, accessible, and robust user experiences.（GitHub ★15951，Apache-2.0 许可，仓库 adobe/react-spectrum）",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "GitHub",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "开源",
+    "自动收录"
+   ],
+   "ct": [
+    "chat"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "New GitHub UI repo: A collection of libraries and tools that help you build adaptive, accessible, and robust user experiences. (★15951, Apache-2.0, adobe/react-spectrum)",
+   "added": "2026-10-16"
+  },
+  {
+   "id": "gh-rsuite-rsuite",
+   "name": "rsuite",
+   "url": "https://rsuitejs.com",
+   "note": "GitHub 新晋 UI 仓库：🧱 A suite of React components .（GitHub ★8694，MIT 许可，仓库 rsuite/rsuite）",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "GitHub",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "开源",
+    "自动收录"
+   ],
+   "ct": [],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "New GitHub UI repo: 🧱 A suite of React components . (★8694, MIT, rsuite/rsuite)",
+   "added": "2026-10-16"
+  },
+  {
+   "id": "gh-lingui-js-lingui",
+   "name": "js-lingui",
+   "url": "https://lingui.dev",
+   "note": "GitHub 新晋 UI 仓库：🌍 📖 A readable, automated, and optimized (2 kb) internationalization for JavaScript（GitHub ★5914，MIT 许可，仓库 lingui/js-lingui）",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "GitHub",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Vue",
+    "开源",
+    "自动收录"
+   ],
+   "ct": [
+    "form"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "New GitHub UI repo: 🌍 📖 A readable, automated, and optimized (2 kb) internationalization for JavaScript (★5914, MIT, lingui/js-lingui)",
+   "added": "2026-10-16"
+  },
+  {
+   "id": "gh-appbaseio-reactivesearch",
+   "name": "reactivesearch",
+   "url": "https://opensource.reactivesearch.io/",
+   "note": "GitHub 新晋 UI 仓库：Search UI components for React and Vue（GitHub ★4918，Apache-2.0 许可，仓库 appbaseio/reactivesearch）",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "GitHub",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Vue",
+    "开源",
+    "自动收录"
+   ],
+   "ct": [],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "New GitHub UI repo: Search UI components for React and Vue (★4918, Apache-2.0, appbaseio/reactivesearch)",
+   "added": "2026-10-16"
+  },
+  {
+   "id": "gh-keenthemes-reui",
+   "name": "reui",
+   "url": "https://reui.io",
+   "note": "GitHub 新晋 UI 仓库：Design-forward shadcn kit for interfaces that stand out. 1000+ free patterns!（GitHub ★3692，MIT 许可，仓库 keenthemes/reui）",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "GitHub",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "HTML",
+    "开源",
+    "自动收录"
+   ],
+   "ct": [
+    "chat",
+    "table",
+    "layout"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "New GitHub UI repo: Design-forward shadcn kit for interfaces that stand out. 1000+ free patterns! (★3692, MIT, keenthemes/reui)",
+   "added": "2026-10-16"
+  },
+  {
+   "id": "gh-react-component-slider",
+   "name": "slider",
+   "url": "https://react-component.github.io/slider",
+   "note": "GitHub 新晋 UI 仓库：🎚️ Accessible React slider for single values, ranges, marks, and editable handles.（GitHub ★3084，MIT 许可，仓库 react-component/slider）",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "GitHub",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "开源",
+    "自动收录"
+   ],
+   "ct": [
+    "table"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "New GitHub UI repo: 🎚️ Accessible React slider for single values, ranges, marks, and editable handles. (★3084, MIT, react-component/slider)",
+   "added": "2026-10-16"
   }
  ],
  "guides": [
@@ -77021,5 +77445,5 @@
    ]
   }
  ],
- "updatedAt": "2026-10-16T03:37Z"
+ "updatedAt": "2026-10-16T04:29Z"
 }
