@@ -1,6 +1,6 @@
 # UI Hub
 
-> Curated, multilingual directory of 3873 public UI resources (component libraries, component style demos, effects, design systems, design skills for AI agents) plus original blog analysis of AI design techniques. Data updated 2026-10-16 12:04 UTC.
+> Curated, multilingual directory of 3873 public UI resources (component libraries, component style demos, effects, design systems, design skills for AI agents) plus original blog analysis of AI design techniques. Data updated 2026-10-16 12:06 UTC.
 
 Use the JSON endpoints, not the SPA, when acting as an agent. Every entry links to its original site; licenses belong to the original authors.
 
@@ -115,7 +115,7 @@ Use the JSON endpoints, not the SPA, when acting as an agent. Every entry links 
 - **How do I find a component in a given style?** Load https://siinxu.github.io/ui-resource-hub/api/resources.json and filter by ct (component kind, e.g. "dialog") and vs (visual style, e.g. "minimal" or "motion"). type="style" entries are concrete component demos with a libName and page URL; type="library" entries are whole libraries with install info on the site.
 - **Which skills should an agent use for good UI?** One direction skill (frontend-design or taste-skill), emil-design-eng for motion and interaction polish, then impeccable, baseline-ui, web-design-guidelines and accessibility as an audit pass. See https://siinxu.github.io/ui-resource-hub/api/skills.json.
 - **Can I copy the code?** Open-source libraries can be used under their own licenses (MIT, Apache-2.0 etc.); the card shows the original link. Paid tiers (marked paid/freemium) must be bought from the original vendor.
-- **How often is it updated?** Daily via a GitHub Actions job that adds new UI repositories and tools from GitHub, awesome-shadcn-ui and Hacker News. Nothing is deleted. Last update: 2026-10-16 12:04 UTC.
+- **How often is it updated?** Daily via a GitHub Actions job that adds new UI repositories and tools from GitHub, awesome-shadcn-ui and Hacker News. Nothing is deleted. Last update: 2026-10-16 12:06 UTC.
 
 
 # Blog posts (full text, English)
@@ -2095,9 +2095,6 @@ References:
 - Andrey Krauzov | inspiration | https://andreykrauzov.com/ | Copperplate badge on black with a thin serif name: dark classical look for a photographer portfolio (via Minimal Gallery)
 - Contra Labs | inspiration | https://contralabs.com/ | Classical oil-painting figure on off-white with a serif headline: gallery character for a creative platform (via Lapa Ninja)
 - Interlude | inspiration | https://interludeapp.net/ | Black and white copperplate hands on white (an homage to the Creation) with a colorful phone: classical line art for an app landing page (via Lapa Ninja)
-- Agent Sleep Toggle | inspiration | https://x.com/MichaelFilipiuk/status/2110749049049796915 | An agent card for Scout toggles off, transforming its blue hexagon mascot into a gray sleeping face with floating Z's, then snapping back to active when re-enab
-- X Subscription Modal | inspiration | https://x.com/HamzaInstantly/status/2110392051074511159 | Screen recording of the X Premium upsell modal announcing a unified subscription plan covering X, Grok, and Cursor with three feature highlight cards.
-- Personal Portfolio Site | inspiration | https://iamnoman.com | A personal site built around a navigable isometric outline-art mancave with themed rooms including F1, arcade games, and gym, plus a portfolio of UI work.
 - Halloween Like Button | inspiration | https://x.com/marmobs/status/2109951246564278592 | A like button microinteraction where clicking bursts into Halloween characters including a ghost, pumpkin, Frankenstein, mummy and devil cat orbiting the filled
 - Cosmic Curiosity | inspiration | https://x.com/apostraphi/status/2109786939620815067 | Animated illustration of a glowing silhouetted figure gazing into a shifting cosmic nebula, with a bookshelf framing the scene to evoke curiosity and infinite k
 - Beside Icon Set | inspiration | https://x.com/_eugrl/status/2109709276004655361 | 490 hand-drawn outline icons animate onto a white canvas, gradually assembling into the Beside logo silhouette before resolving into the final wordmark.
@@ -3165,6 +3162,9 @@ References:
 - Helm for App Store Connect | inspiration | https://apps.apple.com/us/app/helm-for-app-store-connect/id6479357934 | An App Store Connect companion for developers, shown with a glossy blue icon featuring a white ship wheel and polished 3D finish.
 - Family | inspiration | https://apps.apple.com/us/app/family-crypto-wallet/id1606779267 | A self-custody Ethereum wallet for everyday use, with a clean teal app icon, soft gradient, and rounded white geometric frame.
 - Duolingo | inspiration | https://apps.apple.com/us/app/duolingo-language-lessons/id570060128 | A bright, playful Duolingo icon that turns the owl mascot into a simple, instantly recognizable app mark for its language-learning app and bite-sized lessons in
+- Agent Sleep Toggle | inspiration | https://x.com/MichaelFilipiuk/status/2110749049049796915 | An agent card for Scout toggles off, transforming its blue hexagon mascot into a gray sleeping face with floating Z's, then snapping back to active when re-enab
+- X Subscription Modal | inspiration | https://x.com/HamzaInstantly/status/2110392051074511159 | Screen recording of the X Premium upsell modal announcing a unified subscription plan covering X, Grok, and Cursor with three feature highlight cards.
+- Personal Portfolio Site | inspiration | https://iamnoman.com | A personal site built around a navigable isometric outline-art mancave with themed rooms including F1, arcade games, and gym, plus a portfolio of UI work.
 
 # Component style demos: 1989 entries, see api/resources.json (type=style)
 

@@ -4526,7 +4526,19 @@
 "https://recent.design/i/92myeg6-mymind": {
 "status": "dup",
 "url": "https://apps.apple.com/us/app/mymind-extend-your-mind/id1520332347"
+},
+"https://recent.design/i/zslnemt-agent-sleep-state-toggle": {
+"status": "added",
+"id": "rd-zslnemt-agent-sleep-state-toggle"
+},
+"https://recent.design/i/fb1nk1p-x-subscription-modal": {
+"status": "added",
+"id": "rd-fb1nk1p-x-subscription-modal"
+},
+"https://recent.design/i/z8hjzvs-interactive-personal-portfolio-site": {
+"status": "added",
+"id": "rd-z8hjzvs-interactive-personal-portfolio-site"
 }
 },
-"updated": "2026-10-16T12:04Z"
+"updated": "2026-10-16T12:06Z"
 }
