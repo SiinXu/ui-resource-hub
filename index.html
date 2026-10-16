@@ -16,7 +16,7 @@
 <link rel="preload" href="fonts/geist.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="fonts/instrument-serif.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%277%27 fill=%27%2306070b%27/%3E%3Crect x=%278%27 y=%278%27 width=%277%27 height=%277%27 rx=%271.5%27 fill=%27%23fff%27/%3E%3Crect x=%2717%27 y=%2717%27 width=%277%27 height=%277%27 rx=%271.5%27 fill=%27%2367e8f9%27/%3E%3C/svg%3E">
-<link rel="stylesheet" href="styles.css?v=8">
+<link rel="stylesheet" href="styles.css?v=9">
 <link rel="preload" as="image" href="previews/live-metal.webp" fetchpriority="high">
 <script>/* perf: resolve UI language before first paint (mirrors app.js LANG) so the geo intro + hero copy never swap late */(function(){var P=['zh-CN','zh-TW','en','ja','ko','ms','vi','fr','es','de'],L;try{var q=(location.search.match(/[?&]lang=([\w-]+)/)||[])[1];q={'zh-Hans':'zh-CN','zh-Hant':'zh-TW'}[q]||q;if(q&&P.indexOf(q)>-1)L=q;if(!L){var v=localStorage.getItem('uihub.lang');if(v&&P.indexOf(v)>-1)L=v}}catch(e){}if(!L){var n=(navigator.language||'zh-CN').toLowerCase();L=/^zh-(tw|hk|mo|hant)/.test(n)?'zh-TW':({zh:'zh-CN',en:'en',ja:'ja',ko:'ko',ms:'ms',es:'es',de:'de',fr:'fr',vi:'vi'}[n.slice(0,2)]||'zh-CN')}window.__uhL=L;document.documentElement.lang=L})();</script>
 <script>try{document.documentElement.dataset.theme=localStorage.getItem('uihub.theme5')||'dark'}catch(e){document.documentElement.dataset.theme='dark'}</script>
@@ -83,7 +83,7 @@
 <div class="toast" id="toast"></div>
 
 <script>/* perf: paint the static shell first, then fetch the ~2.5 MB data/app bundle in order (async=false keeps execution order) */
-(function(){var q=['data.js?v=8','media.js?v=7','legal.js?v=7','notes.js?v=8','i18n.js?v=8','app.js?v=9'];
+(function(){var q=['data.js?v=8','media.js?v=7','legal.js?v=7','notes.js?v=8','i18n.js?v=8','app.js?v=10'];
 function go(){q.forEach(function(u,i){var e=document.createElement('script');e.src=u;e.async=false;if(i===q.length-1)e.onload=function(){window.updTxt&&updTxt()};document.body.appendChild(e)})}
 var raf=window.requestAnimationFrame||function(f){setTimeout(f,16)};function after(){raf(function(){raf(function(){setTimeout(go,0)})})}
 if(document.readyState==='complete')after();else addEventListener('load',after)})();</script>
