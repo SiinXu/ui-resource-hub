@@ -3,6 +3,7 @@
 - Organization (Incidental AI) + BreadcrumbList JSON-LD, GEO intro (what / who / numbers) in 10 languages, inline newsletter block
 - robots.txt with AI crawlers, sitemap index + per-locale sitemaps"""
 import os, re, json, glob
+HAN = re.compile(r'[\u4e00-\u9fff\u3400-\u4dbf]')
 from collections import Counter
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE = 'https://siinxu.github.io/ui-resource-hub/'
@@ -22,13 +23,13 @@ INTRO = {
  'es': f'UI Hub es un directorio gratuito de recursos de UI, actualizado a diario, para diseñadores, desarrolladores front-end y agentes de IA que construyen interfaces: {f(N)} recursos, incluidas {f(LIB)} bibliotecas de componentes y {f(STY)} demos de estilos con vista clara/oscura, además de skills de diseño y artículos de diseño con IA.',
  'de': f'UI Hub ist ein kostenloses, täglich aktualisiertes Verzeichnis von UI-Ressourcen für Designer, Frontend-Entwickler und KI-Agents, die Oberflächen bauen: {f(N)} Ressourcen, darunter {f(LIB)} Komponentenbibliotheken und {f(STY)} Komponenten-Stildemos mit Hell/Dunkel-Vorschau, dazu Design-Skills und Artikel zu KI-Design.'}
 ALIAS = {'zh-Hans': ['zh-Hans', 'zh-CN', 'zh'], 'zh-Hant': ['zh-Hant', 'zh-TW']}
-css_show = ','.join(f'html[lang="{a}"] .geo-intro [data-gl="{c}"]' for c in LC for a in ALIAS.get(c, [c]))
+css_show = ','.join(f'html[lang="{a}"] .geo-intro [data-gl="{c}"]' for c in LC for a in ALIAS.get(c, [c]) if not c.startswith('zh'))
 STYLE = ('<style id="ia-growth">.geo-intro{max-width:var(--max,1120px);margin:10px auto 0;padding:0 20px;font-size:12.5px;line-height:1.55;color:var(--ink3,#878da0)}@media(min-width:900px){.geo-intro{padding:0 40px}}'
          '.geo-intro{display:grid}.geo-intro [data-gl]{grid-area:1/1;visibility:hidden}' + css_show + '{visibility:visible}'
          '.sub-band{max-width:var(--max,1120px);margin:0 auto;padding:0 20px;--ie-acc:var(--acc,#2563eb);--ie-acc-ink:var(--bg,#fff)}@media(min-width:900px){.sub-band{padding:0 40px}}'
          + open(os.path.join(os.path.dirname(__file__), 'subscribe.css')).read().replace('\n', '') + '</style>')
 TOKEN = '41d8abdb6f1247c08f2412afcd5f2143'
-ORG = {'@type': 'Organization', '@id': 'https://incidental.site/#org', 'name': 'Incidental AI', 'alternateName': '偶然 AI', 'url': 'https://incidental.site/'}
+ORG = {'@type': 'Organization', '@id': 'https://incidental.site/#org', 'name': 'Incidental AI', 'url': 'https://incidental.site/'}  # seo-kit rule: no Chinese alternateName on a single-page multilingual site
 SEC = {'blog': 'Blog', 'kb': 'Encyclopedia', 'agents': 'For agents'}
 def crumbs(rel, title):
     if not rel: return None
@@ -48,7 +49,8 @@ def inject(path):
             f'<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon=\'{{"token":"{TOKEN}"}}\'></script>'
             '<script defer src="https://stats.incidental.site/events.js" data-site="ui-hub" data-goal="copy"></script><script defer src="https://stats.incidental.site/subscribe.js"></script><!--/IA-->')
     s = s.replace('</head>', head + '</head>', 1)
-    intro = '<!--IA--><p class="geo-intro">' + ''.join(f'<span data-gl="{k}" lang="{k}">{v}</span>' for k, v in INTRO.items()) + '</p><!--/IA-->'
+    # seo-kit rule: the static source is served to every locale, so only intros without Han characters are embedded (zh / ja intros are not)
+    intro = '<!--IA--><p class="geo-intro">' + ''.join(f'<span data-gl="{k}" lang="{k}">{v}</span>' for k, v in INTRO.items() if not k.startswith('zh') and not HAN.search(v)) + '</p><!--/IA-->'
     s = s.replace('</header>', '</header>' + intro, 1)
     sub = f'<!--IA--><aside class="sub-band" aria-label="Newsletter"><div data-ie-sub data-site="ui-hub" data-source="{rel or "home"}"></div></aside><!--/IA-->'
     s = s.replace('<footer', sub + '<footer', 1) if '<footer' in s else s.replace('</body>', sub + '</body>', 1)

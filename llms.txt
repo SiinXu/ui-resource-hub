@@ -49,66 +49,66 @@ Use the JSON endpoints, not the SPA, when acting as an agent. Every entry links 
 - [Figma code layers and Specs: the canvas becomes the shared context again](https://siinxu.github.io/ui-resource-hub/blog/figma-code-layers-and-specs/): At Config India (15 Oct 2026) Figma moved code layers into open beta, launched Specs as a Markdown home on the canvas, and let libraries carry guidelines and code sources. The lesson for UI builders: agents are short of constraint files, not generators.
 
 ## Top component libraries
-- [Radix Primitives](https://www.radix-ui.com/primitives): 无样式、可访问的 React 底层组件：对话框、下拉菜单、选择器、Tabs、Tooltip 等，shadcn/ui 的地基
-- [Radix Themes](https://www.radix-ui.com/themes): Radix 官方带样式组件主题，开箱即用、配色体系完整
-- [Headless UI](https://headlessui.com/): Tailwind 团队出品的无样式组件：弹窗、菜单、列表框、开关、Tabs
-- [Ark UI](https://ark-ui.com/): Chakra 团队的无样式组件，45+ 组件，React / Vue / Solid / Svelte 通用
-- [Park UI](https://park-ui.com/): 基于 Ark UI 的带样式组件，Panda CSS / Tailwind 两套写法
-- [shadcn/ui Blocks](https://ui.shadcn.com/blocks): shadcn 官方区块：登录页、侧边栏、仪表盘、日历，可直接用 CLI 添加
-- [shadcn/ui Charts](https://ui.shadcn.com/charts): shadcn 官方图表：面积、柱状、折线、饼图、雷达，基于 Recharts
-- [shadcn Registry 目录](https://ui.shadcn.com/docs/directory): shadcn 官方收录的第三方组件注册表目录，一站找到各家兼容 shadcn 的组件
-- [daisyUI](https://daisyui.com/): 最流行的 Tailwind 组件类名插件，60+ 组件、30+ 主题
-- [Flowbite](https://flowbite.com/): Tailwind 组件库，开源版 50+ 组件；原站另有付费 Pro 区块
-- [HyperUI](https://www.hyperui.dev/): 免费 Tailwind 组件片段合集：营销页、电商、后台，复制即用
-- [Preline UI](https://preline.co/): Tailwind 组件与区块，开源部分免费；原站另有付费 Pro
-- [Meraki UI](https://merakiui.com/): Tailwind 组件，支持 RTL 和暗色模式
-- [Tailwind Plus](https://tailwindcss.com/plus): Tailwind 官方付费组件与模板（原 Tailwind UI），500+ 组件；本站只放链接
-- [Mantine](https://mantine.dev/): 100+ 组件和 70+ hooks，自带日期、图表、富文本、通知
-- [Chakra UI](https://chakra-ui.com/): 老牌 React 组件库，主题系统灵活，v3 基于 Ark UI
-- [MUI Material UI](https://mui.com/material-ui/): Material Design 的 React 实现，组件最全之一
-- [MUI X](https://mui.com/x/): 数据表格、日期选择、图表、树视图；基础版免费开源，Pro / Premium 付费
-- [Base UI](https://base-ui.com/): Radix / MUI / Floating UI 作者合作的无样式组件库
-- [React Aria](https://react-aria.adobe.com/): Adobe 出品，无障碍做得最细的无样式组件与 hooks
-- [Ant Design](https://ant.design/): 蚂蚁中后台组件库，60+ 组件，表格表单极强
-- [Ant Design Mobile](https://mobile.ant.design/): 蚂蚁移动端组件库
-- [AntV G2](https://g2.antv.antgroup.com/): 蚂蚁可视化语法，几十种图表
-- [TDesign](https://tdesign.tencent.com/): 腾讯企业级设计体系，React / Vue / 小程序 / 移动端全覆盖
-- [Arco Design](https://arco.design/): 字节中后台组件库，60+ 组件，带物料市场
-- [Semi Design](https://semi.design/): 抖音前端出品，设计到代码一体，组件细节好
-- [Naive UI](https://www.naiveui.com/): Vue 3 组件库，90+ 组件，主题可调
-- [Element Plus](https://element-plus.org/): 饿了么 Vue 3 组件库，国内后台最常用
-- [Vuetify](https://vuetifyjs.com/): Vue 的 Material 组件框架
-- [PrimeVue](https://primevue.org/): Vue 组件库，90+ 组件；原站另有付费模板
-- [PrimeReact](https://primereact.org/): React 版 Prime 组件库，90+ 组件；原站另有付费模板
-- [PrimeNG](https://primeng.org/): Angular 版 Prime 组件库；原站另有付费模板
-- [Nuxt UI](https://ui.nuxt.com/): Nuxt 官方组件库，基于 Reka UI + Tailwind
-- [Reka UI](https://reka-ui.com/): Vue 版 Radix（原 Radix Vue），无样式可访问组件
-- [shadcn-vue](https://www.shadcn-vue.com/): shadcn/ui 的 Vue 移植
-- [Quasar](https://quasar.dev/): Vue 全家桶框架，一套代码出网页 / 移动 / 桌面
-- [Vant](https://vant-ui.github.io/vant/): 有赞移动端 Vue 组件库
-- [shadcn-svelte](https://www.shadcn-svelte.com/): shadcn/ui 的 Svelte 移植
-- [Bits UI](https://bits-ui.com/): Svelte 无样式组件
-- [Melt UI](https://melt-ui.com/): Svelte 无样式组件构建器
-- [Skeleton](https://www.skeleton.dev/): Svelte / React 的 Tailwind 设计系统
-- [Kobalte](https://kobalte.dev/): SolidJS 无样式可访问组件
-- [Angular Material](https://material.angular.dev/): Angular 官方 Material 组件
-- [Spartan](https://www.spartan.ng/): Angular 版 shadcn 风格组件
-- [NG-ZORRO](https://ng.ant.design/): Ant Design 的 Angular 实现
-- [Fluent UI](https://react.fluentui.dev/): 微软 Fluent 2 设计体系的 React 组件
-- [Carbon Design System](https://carbondesignsystem.com/): IBM 设计体系，数据密集型界面优秀
-- [Primer](https://primer.style/): GitHub 设计体系的 React 组件
-- [Shoelace](https://shoelace.style/): Web Components 组件库，任何框架都能用
-- [Material Web](https://material-web.dev/): Google 官方 Material 3 Web Components
-- [Bootstrap](https://getbootstrap.com/): 经典 CSS 组件框架
-- [Bulma](https://bulma.io/): 纯 CSS 组件框架，无 JS
-- [Pico CSS](https://picocss.com/): 极简语义化 CSS，HTML 写完就好看
-- [Open Props](https://open-props.style/): CSS 变量设计令牌：颜色、阴影、渐变、缓动
-- [Tremor](https://tremor.so/): 仪表盘组件和图表，Tailwind + Recharts
-- [Recharts](https://recharts.org/): React 最常用的图表库
-- [Apache ECharts](https://echarts.apache.org/): 功能最全的开源图表库之一，示例画廊很大
-- [Chart.js](https://www.chartjs.org/): 轻量 Canvas 图表
-- [Nivo](https://nivo.rocks/): 好看的 React 数据可视化组件
-- [visx](https://airbnb.io/visx/): Airbnb 的底层可视化组件
+- [Radix Primitives](https://www.radix-ui.com/primitives): Unstyled, accessible React primitives (dialogs, dropdowns, selects, tabs, tooltips) and the foundation of shadcn/ui
+- [Radix Themes](https://www.radix-ui.com/themes): Radix's official styled theme, usable out of the box with a complete color system
+- [Headless UI](https://headlessui.com/): Unstyled components from the Tailwind team: dialogs, menus, listboxes, switches, tabs
+- [Ark UI](https://ark-ui.com/): Unstyled components from the Chakra team, 45+ components for React, Vue, Solid and Svelte
+- [Park UI](https://park-ui.com/): Styled components built on Ark UI, in Panda CSS or Tailwind flavors
+- [shadcn/ui Blocks](https://ui.shadcn.com/blocks): Official shadcn blocks (login pages, sidebars, dashboards, calendars), addable via the CLI
+- [shadcn/ui Charts](https://ui.shadcn.com/charts): Official shadcn charts (area, bar, line, pie, radar), built on Recharts
+- [shadcn Registry directory](https://ui.shadcn.com/docs/directory): shadcn's official directory of third-party registries: find shadcn-compatible components in one place
+- [daisyUI](https://daisyui.com/): The most popular Tailwind component-class plugin, 60+ components and 30+ themes
+- [Flowbite](https://flowbite.com/): Tailwind component library with 50+ open-source components; the source also sells Pro blocks
+- [HyperUI](https://www.hyperui.dev/): Free Tailwind snippets for marketing, e-commerce and admin pages; copy and paste
+- [Preline UI](https://preline.co/): Tailwind components and blocks, open-source part free; the source also sells a Pro tier
+- [Meraki UI](https://merakiui.com/): Tailwind components with RTL and dark mode support
+- [Tailwind Plus](https://tailwindcss.com/plus): Tailwind's official paid components and templates (formerly Tailwind UI), 500+ components; link only here
+- [Mantine](https://mantine.dev/): 100+ components and 70+ hooks, with dates, charts, rich text and notifications built in
+- [Chakra UI](https://chakra-ui.com/): A veteran React component library with a flexible theme system; v3 is built on Ark UI
+- [MUI Material UI](https://mui.com/material-ui/): The React implementation of Material Design, one of the most complete libraries
+- [MUI X](https://mui.com/x/): Data grid, date pickers, charts and tree view; the base version is free and open source, Pro/Premium are paid
+- [Base UI](https://base-ui.com/): Unstyled components from the creators of Radix, MUI and Floating UI
+- [React Aria](https://react-aria.adobe.com/): Adobe's unstyled components and hooks, with the most thorough accessibility
+- [Ant Design](https://ant.design/): Ant Group's enterprise component library, 60+ components with excellent tables and forms
+- [Ant Design Mobile](https://mobile.ant.design/): Ant Group's mobile component library
+- [AntV G2](https://g2.antv.antgroup.com/): Ant Group's grammar of graphics, with dozens of chart types
+- [TDesign](https://tdesign.tencent.com/): Tencent's enterprise design system covering React, Vue, mini-programs and mobile
+- [Arco Design](https://arco.design/): ByteDance's enterprise component library, 60+ components plus a materials market
+- [Semi Design](https://semi.design/): From Douyin's frontend team: design-to-code workflow and well-crafted components
+- [Naive UI](https://www.naiveui.com/): Vue 3 component library, 90+ components with customizable themes
+- [Element Plus](https://element-plus.org/): Ele.me's Vue 3 component library, the most common choice for admin panels in China
+- [Vuetify](https://vuetifyjs.com/): Material component framework for Vue
+- [PrimeVue](https://primevue.org/): Vue component library with 90+ components; the source also sells templates
+- [PrimeReact](https://primereact.org/): The React version of Prime, 90+ components; the source also sells templates
+- [PrimeNG](https://primeng.org/): The Angular version of Prime; the source also sells templates
+- [Nuxt UI](https://ui.nuxt.com/): Nuxt's official component library, built on Reka UI and Tailwind
+- [Reka UI](https://reka-ui.com/): Radix for Vue (formerly Radix Vue): unstyled, accessible components
+- [shadcn-vue](https://www.shadcn-vue.com/): A Vue port of shadcn/ui
+- [Quasar](https://quasar.dev/): A full Vue framework: one codebase for web, mobile and desktop
+- [Vant](https://vant-ui.github.io/vant/): Youzan's mobile component library for Vue
+- [shadcn-svelte](https://www.shadcn-svelte.com/): A Svelte port of shadcn/ui
+- [Bits UI](https://bits-ui.com/): Unstyled components for Svelte
+- [Melt UI](https://melt-ui.com/): A builder for unstyled Svelte components
+- [Skeleton](https://www.skeleton.dev/): A Tailwind design system for Svelte and React
+- [Kobalte](https://kobalte.dev/): Unstyled, accessible components for SolidJS
+- [Angular Material](https://material.angular.dev/): Angular's official Material components
+- [Spartan](https://www.spartan.ng/): shadcn-style components for Angular
+- [NG-ZORRO](https://ng.ant.design/): The Angular implementation of Ant Design
+- [Fluent UI](https://react.fluentui.dev/): React components for Microsoft's Fluent 2 design system
+- [Carbon Design System](https://carbondesignsystem.com/): IBM's design system, excellent for data-dense interfaces
+- [Primer](https://primer.style/): React components from GitHub's design system
+- [Shoelace](https://shoelace.style/): A Web Components library that works with any framework
+- [Material Web](https://material-web.dev/): Google's official Material 3 Web Components
+- [Bootstrap](https://getbootstrap.com/): The classic CSS component framework
+- [Bulma](https://bulma.io/): A pure-CSS component framework, no JavaScript
+- [Pico CSS](https://picocss.com/): Minimal semantic CSS: plain HTML looks good right away
+- [Open Props](https://open-props.style/): Design tokens as CSS variables: colors, shadows, gradients, easings
+- [Tremor](https://tremor.so/): Dashboard components and charts, Tailwind + Recharts
+- [Recharts](https://recharts.org/): The most widely used charting library for React
+- [Apache ECharts](https://echarts.apache.org/): One of the most feature-rich open-source charting libraries, with a huge example gallery
+- [Chart.js](https://www.chartjs.org/): Lightweight Canvas charts
+- [Nivo](https://nivo.rocks/): Beautiful data-visualization components for React
+- [visx](https://airbnb.io/visx/): Airbnb's low-level visualization components
 
 ## FAQ
 - **What is UI Hub?** A free, curated directory of 2803 public UI resources: 153 component libraries, 1989 component style demos with light/dark screenshots, 70 design skills for AI agents, plus effects, templates, specs and tutorials. It links to original sites and never hosts paid source code.

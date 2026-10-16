@@ -169,6 +169,25 @@ w('.well-known/agent.json', json.dumps({'name':'UI Hub','description':'Curated d
    'documentation':BASE+'agents/','llms_txt':BASE+'llms.txt','llms_full_txt':BASE+'llms-full.txt','agents_md':BASE+'AGENTS.md',
    'endpoints':{'resources':BASE+'api/resources.json','skills':BASE+'api/skills.json','sitemap':BASE+'sitemap.xml'},'updated':UPD,'auth':'none','rate_limit':'static files, be polite'}, indent=1))
 
+
+# ---------- English-only display helpers (llms / JSON-LD are served to every locale: no Chinese) ----------
+_HAN = re.compile(r'[\u3400-\u9fff\uf900-\ufaff]')
+def _jsobj(fn, var):
+    try:
+        t = open(os.path.join(ROOT, fn), encoding='utf-8').read(); t = t[t.index(var + '=') + len(var) + 1:].strip().rstrip(';')
+        return json.JSONDecoder().raw_decode(t)[0]
+    except Exception: return {}
+_UI_EN = _jsobj('names_en.js', 'window.UI_EN'); _UI_NOTES = _jsobj('notes.js', 'window.UI_NOTES')
+def _strip_cjk(s):
+    s = re.sub(r'[（(][^（）()]*[\u3400-\u9fff][^（）()]*[）)]', '', s)
+    s = re.sub(r'[\u3400-\u9fff\uf900-\ufaff\u3000-\u303f\uff01\uff0c\uff1a\uff1b\uff1f「」『』【】]+', ' ', s)
+    return re.sub(r'\s{2,}', ' ', re.sub(r'^[\s·|,:—-]+|[\s·|,:—-]+$', '', s)).strip()
+def en_name(i):
+    n = i.get('name') or ''
+    return n if not _HAN.search(n) else (_UI_EN.get('name', {}).get(n) or _strip_cjk(n) or i.get('url', ''))
+def en_note(i):
+    v = (_UI_NOTES.get('notes', {}).get('en', {}) or {}).get(i.get('id')) or _UI_EN.get('note', {}).get(i.get('id')) or i.get('noteEn') or ''
+    return '' if _HAN.search(v) else v
 # ---------- llms.txt / AGENTS.md ----------
 from collections import Counter
 tc = Counter(i['type'] for i in ITEMS)
@@ -204,10 +223,10 @@ Use the JSON endpoints, not the SPA, when acting as an agent. Every entry links 
 {blog_lines}
 
 ## Top component libraries
-""" + '\n'.join(f'- [{i["name"]}]({i["url"]}): {i.get("noteEn") or i["note"]}' for i in libs[:60]) + "\n\n## FAQ\n" + '\n'.join(f'- **{q}** {a}' for q,a in FAQ) + "\n"
+""" + '\n'.join(f'- [{en_name(i)}]({i["url"]})' + (f': {en_note(i)}' if en_note(i) else '') for i in libs[:60]) + "\n\n## FAQ\n" + '\n'.join(f'- **{q}** {a}' for q,a in FAQ) + "\n"
 w('llms.txt', llms)
 full = llms + "\n\n# Blog posts (full text, English)\n\n" + '\n\n'.join(f"## {p['t']['en']}\n\n{re.sub(r'<[^>]+>','',p['en']).strip()}\n\nReferences:\n"+'\n'.join(f'- {t} — {a}: {u}' for t,a,u in p['refs']) for p in POSTS)
-full += "\n\n# All resources (name | type | url | note)\n\n" + '\n'.join(f"- {i['name']} | {i['type']} | {i['url']} | {(i.get('noteEn') or i['note'])[:160]}" for i in ITEMS if i['type']!='style')
+full += "\n\n# All resources (name | type | url | note)\n\n" + '\n'.join(f"- {en_name(i)} | {i['type']} | {i['url']} | {en_note(i)[:160]}" for i in ITEMS if i['type']!='style')
 full += "\n\n# Component style demos: %d entries, see api/resources.json (type=style)\n" % tc['style']
 full_holder=[full]
 AG = f"""# AGENTS.md — using UI Hub as a design source
@@ -269,7 +288,7 @@ if '15b17138-ddc6-446b-9829-a0aa087f726a' not in s: s = s.replace('<head>', '<he
 desc = f'UI Hub: curated directory of {len(ITEMS)} UI resources — {tc["library"]} component libraries, {tc["style"]} component style demos with light/dark previews, design skills for AI agents, and AI design technique articles. 10 languages, updated daily.'
 ld = {'@context':'https://schema.org','@graph':[{'@type':'WebSite','name':'UI Hub','url':BASE,'inLanguage':[c for c,_,_ in LANGS],'description':desc},
  {'@type':'CollectionPage','name':'UI Hub — UI components, libraries & design skills','url':BASE,'dateModified':UPD[:10],'about':['UI components','design systems','AI design']},
- {'@type':'ItemList','name':'Component libraries','numberOfItems':len(libs),'itemListElement':[{'@type':'ListItem','position':n+1,'name':i['name'],'url':i['url']} for n,i in enumerate(libs[:50])]}]}
+ {'@type':'ItemList','name':'Component libraries','numberOfItems':len(libs),'itemListElement':[{'@type':'ListItem','position':n+1,'name':en_name(i),'url':i['url']} for n,i in enumerate(libs[:50])]}]}
 alt = ''.join(f'<link rel="alternate" hreflang="{c}" href="{BASE}?lang={c}">' for c,_,_ in LANGS)
 seo = f"""<!--SEO-->
 <meta name="description" content="{E(desc)}"><link rel="canonical" href="{BASE}">{alt}<link rel="alternate" hreflang="x-default" href="{BASE}">
