@@ -1,0 +1,35 @@
+<p>2026 年 10 月 14 日，shadcn 发布了 <strong>Trace</strong>——一个专门展示智能体活动的组件，同时发布的还有 <strong>Code Block</strong> 和 <strong>AI Elements</strong>：一组完全用 shadcn/ui 组件拼成的智能体界面模式。这条公告在 X 上两天内超过 4500 个赞，第二天 shadcn-svelte 也上线了自己的 AI Elements。真正值得关注的不是「又多了几个组件」，而是背后的设计主张：推理、工具调用、来源、计划、子智能体运行，本质上是同一种形状，所以它们应该长得一样、用起来也一样。</p><figure><img src="../../blog/img/shadcn-trace-and-ai-elements-1.webp" alt="shadcn/ui 更新日志：Trace、Code Block 与 AI Elements，附 Trace 实时演示" loading="lazy" decoding="async" width="1280" height="800"><figcaption>shadcn/ui 更新日志：Trace、Code Block 与 AI Elements，附 Trace 实时演示 · 截图：shadcn/ui（<a href="https://ui.shadcn.com/docs/changelog/2026-10-ai-elements" rel="noopener" target="_blank">ui.shadcn.com</a>），2026-10-16 截取，版权归原站所有</figcaption></figure>
+<h2>发布了什么</h2>
+<ul><li><strong>Trace。</strong>一列「行」，每行是智能体走的一步。shadcn 团队说它是研究了数百个智能体界面里的组件后提炼出来的。每行有图标、标题、可选描述和状态（<code>running</code>、<code>error</code>、<code>pending</code>，运行中会有微光动效）。一行可以展开、链接到页面，或打开对话框、侧边面板、抽屉、气泡；行还能嵌套——摘要展开成步骤，步骤再展开成输出。它直接读取 AI SDK 流式输出的 reasoning、tool、source 等消息片段。</li>
+<li><strong>Code Block。</strong>展示代码、终端输出、日志和 diff，带标题与操作按钮的页头、行号、换行、高亮行和 diff 行，还有专为 Trace 里工具输出准备的小尺寸（<code>size="sm"</code>）。</li>
+<li><strong>AI Elements，21 个模式。</strong>Chat、Prompt Input、Reasoning、Tool、Plan、Subagent、Confirmation、Context、Sources、File Tree、Terminal、Test Results 等。没有 npm 包：每个模式都是一段组合代码，复制进你的仓库就归你；每个文档页还有 Markdown 版本，编码智能体可以直接读。</li>
+<li><strong>覆盖所有底层与风格。</strong>Trace 和 Code Block 支持 Base UI、React Aria、Radix 三种底层，以及 shadcn/ui 全部八种风格；它们和 6 月发布的聊天组件（Message Scroller、Message、Bubble、Marker、Attachment、Questionnaire）配套使用。</li>
+<li><strong>AI SDK Elements 将被弃用。</strong>你已经从 elements.ai-sdk.dev 复制的代码照常可用。每个模式页都附有迁移提示词，会在 <code>components/ai-elements</code> 里用新组件重建封装，同时保留所有导出名和 props。少数使用率低的元素（artifact、音频播放器、React Flow 画布相关组件、JSX 预览、语音和麦克风选择器）没有重做，文档列出了可以用哪些现有组件自己拼。</li></ul><figure><img src="../../blog/img/shadcn-trace-and-ai-elements-2.webp" alt="示意图：Message Scroller 承载各轮，Message 包含 Bubble 与 Trace，Trace 行内放 Code Block 输出，Confirmation 位于 Trace 之外" loading="lazy" decoding="async" width="1200" height="675"><figcaption>示意图：Message Scroller 承载各轮，Message 包含 Bubble 与 Trace，Trace 行内放 Code Block 输出，Confirmation 位于 Trace 之外 · 示意图：UI Hub 原创，CC BY 4.0</figcaption></figure>
+<h2>为什么重要：智能体界面有了「语法」</h2>
+<p>此前大多数智能体界面都是按片段类型一块块拼的：这里一个推理折叠面板，那里一张工具调用卡片，别处再来一个来源气泡，各自的间距、图标逻辑和加载状态都不一样。结果就是熟悉的「调试日志」观感——每一轮回复都是一堆互不相干的小部件。Trace 用一套统一的行语法取代了它：一次思考、一条命令、一个子智能体之间，变化的只有图标、标题，以及点开这一行之后发生什么。</p>
+<p>这套语法还逼着你把文案写好。它的无障碍说明写得非常具体：图标对辅助技术隐藏，所以标题就是可访问名称，应该写成一句说明发生了什么的话（「已编辑 trace.tsx」，而不是「trace.tsx」）。状态靠颜色和动效表达，所以也要写进文字里：运行时写「正在运行 pnpm build」，失败时写「pnpm build 运行失败」。偏好减少动效的用户看不到微光；放在 Message Scroller 里时，每新增一行只会被朗读一次。</p>
+<p>Confirmation 模式还给出了一条很实用的规则：等待批准是一个「提问」，不是「活动」，所以它放在 Trace 之外，是一个带「拒绝 / 批准」按钮的条目；用户回答之后，它才变成一行 Tool 记录。「问」和「做」在视觉上是两回事。</p>
+<h2>我们的看法</h2>
+<p>这和本月整个行业的动作是一致的——从 Figma Specs 到 Claude Design：真正有用的单位不是生成器，而是一个人和智能体都能遵循的、共享且明确的形状。对智能体界面来说，Trace 就是这个形状。做 Copilot、编码智能体或研究工具的团队，即使不装这个组件，也应该采用这套语法，因为用户判断能不能信任智能体，靠的是能否按顺序看到它做了什么、状态是否诚实。</p>
+<p>三点提醒。第一，这些模式是围绕 AI SDK 的消息片段写的；如果你用别的 SDK 做流式输出，映射得自己写。第二，发布才几天，API 和示例还会变，而复制进来的代码不会自己更新。第三，展示原始推理过程既是设计问题也是产品决策：shadcn 的 Reasoning 示例在步骤结束后会把内容收起成「Thought for 5s」，这是个合理的默认。</p>
+<h2>本周就能用上的做法</h2>
+<ol><li><strong>列出智能体会输出的每一种步骤。</strong>推理、工具调用、来源、计划、子智能体、报错、审批。如果某种步骤套不进「图标 + 标题 + 状态 + 可选详情」，先质疑它，再考虑设计新部件。</li>
+<li><strong>标题写成完整的句子。</strong>运行中用进行时，完成后用完成时，失败要用文字说出来。这一条就能解决大部分读屏和快速浏览的问题。</li>
+<li><strong>运行时展开，完成后收起。</strong>示例里步骤流式输出时自动展开，结束后折叠，用户仍可手动展开。</li>
+<li><strong>输出放进小号 Code Block，别塞进句子里。</strong>命令、日志、diff 都放在这一行的展开内容里，用 <code>size="sm"</code>。</li>
+<li><strong>审批不要放进 Trace。</strong>用明确的「拒绝 / 批准」条目来问，决定之后再记成普通的一行。</li>
+<li><strong>测状态，而不只测顺利路径。</strong>运行中、报错、等待、嵌套、超长标题、纯键盘、减少动效、亮色和暗色。</li></ol>
+<pre><code># 安装
+pnpm dlx shadcn@latest add trace
+pnpm dlx shadcn@latest add code-block
+
+# 让编码智能体直接读模式文档
+Add the Reasoning pattern from https://ui.shadcn.com/docs/ai-elements/base/reasoning.md to my chat.
+
+# 消息片段 → 行
+reasoning  → 「思考中」/「思考了 5 秒」，可折叠
+tool call  → 「正在运行 &lt;命令&gt;」/「已运行」/「运行失败」，输出放 Code Block sm
+source     → 链接行，sr-only 文本注明「在新标签页打开」
+approval   → Trace 之外的 Confirmation 条目，回答后变成 Tool 行</code></pre>
+<figure><img src="../../blog/img/shadcn-trace-and-ai-elements-3.webp" alt="AI Elements 目录：从 Chain of Thought 到 Tool 的 21 个可复制模式" loading="lazy" decoding="async" width="1280" height="800"><figcaption>AI Elements 目录：从 Chain of Thought 到 Tool 的 21 个可复制模式 · 截图：shadcn/ui（<a href="https://ui.shadcn.com/docs/ai-elements" rel="noopener" target="_blank">ui.shadcn.com</a>），2026-10-16 截取，版权归原站所有</figcaption></figure><h2>UI Hub 能帮什么</h2>
+<p>Trace 和 Code Block 解决的是一轮回复「内部」的活动展示，页面其余部分仍然需要一个视觉方向。可以在 UI Hub 资源列表里按 <em>chat</em> 组件类型筛选，对比其他智能体与聊天组件库，再参考我们的 <a href="../shadcn-blocks-deep-dive/">shadcn Blocks 深读</a> 里的克制风格。如果你的智能体还要改你的设计系统：同一周 shadcndesign 把 DS Manager 做成了 MCP 服务器，编码智能体可以在遵守锁定值的前提下修改 shadcn 主题。</p>

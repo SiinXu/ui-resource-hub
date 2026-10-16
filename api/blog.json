@@ -1,5 +1,5 @@
 {
- "count": 27,
+ "count": 28,
  "rss": "https://siinxu.github.io/ui-resource-hub/blog/rss.xml",
  "categories": {
   "tools": "Tools",
@@ -18,6 +18,112 @@
   "weekly": "Series: Weekly roundup"
  },
  "posts": [
+  {
+   "slug": "shadcn-trace-and-ai-elements",
+   "url": "https://siinxu.github.io/ui-resource-hub/blog/shadcn-trace-and-ai-elements/",
+   "date": "2026-10-16",
+   "category": "components",
+   "series": "library-deep-dive",
+   "featured": true,
+   "tags": [
+    "shadcn/ui",
+    "Trace",
+    "AI Elements",
+    "agent UI",
+    "AI SDK"
+   ],
+   "title": {
+    "en": "shadcn Trace and AI Elements: one shape for every step an agent takes",
+    "zh": "shadcn 的 Trace 与 AI Elements：让智能体的每一步都长一个样",
+    "zht": "shadcn 的 Trace 與 AI Elements：讓智慧體的每一步都長一個樣",
+    "ja": "shadcn の Trace と AI Elements：エージェントのすべてのステップを同じ形に",
+    "ko": "shadcn Trace와 AI Elements: 에이전트의 모든 단계를 같은 모양으로",
+    "ms": "Trace dan AI Elements shadcn: satu bentuk untuk setiap langkah ejen",
+    "vi": "Trace và AI Elements của shadcn: một hình dạng cho mọi bước của agent",
+    "fr": "Trace et AI Elements de shadcn : une seule forme pour chaque étape d’un agent",
+    "es": "Trace y AI Elements de shadcn: una sola forma para cada paso de un agente",
+    "de": "shadcn Trace und AI Elements: eine Form für jeden Schritt eines Agenten"
+   },
+   "summary": {
+    "en": "On 14 Oct 2026 shadcn/ui shipped Trace, Code Block and 21 copy-in AI Elements patterns that replace AI SDK Elements. The design lesson: reasoning, tool calls, sources and subagents are all one line with an icon, a title and a status, so agent UIs stop looking like debug logs.",
+    "zh": "2026 年 10 月 14 日，shadcn/ui 发布 Trace、Code Block 和 21 个可直接复制的 AI Elements 模式，取代 AI SDK Elements。设计上的启发：推理、工具调用、来源和子智能体都是同一种「一行」——图标、标题加状态，智能体界面从此不再像调试日志。",
+    "zht": "2026 年 10 月 14 日，shadcn/ui 發布 Trace、Code Block 和 21 個可直接複製的 AI Elements 模式，取代 AI SDK Elements。設計上的啟發：推理、工具呼叫、來源和子智慧體都是同一種「一行」——圖示、標題加狀態，智慧體介面從此不再像除錯日誌。",
+    "ja": "2026年10月14日、shadcn/ui は Trace、Code Block、そしてコピーして使う21の AI Elements パターンを公開し、AI SDK Elements を置き換えた。デザイン上の教訓：推論、ツール呼び出し、ソース、サブエージェントはすべて「アイコン・タイトル・状態」を持つ1行であり、エージェントUIはもうデバッグログのように見える必要はない。",
+    "ko": "2026년 10월 14일 shadcn/ui는 Trace, Code Block, 그리고 복사해서 쓰는 21개의 AI Elements 패턴을 공개해 AI SDK Elements를 대체했다. 디자인 교훈: 추론, 도구 호출, 출처, 서브에이전트는 모두 아이콘·제목·상태를 가진 한 줄이며, 에이전트 UI가 더 이상 디버그 로그처럼 보일 필요가 없다.",
+    "ms": "Pada 14 Okt 2026 shadcn/ui melancarkan Trace, Code Block dan 21 corak AI Elements yang disalin terus ke projek, menggantikan AI SDK Elements. Pengajaran reka bentuk: penaakulan, panggilan alat, sumber dan subejen semuanya satu baris dengan ikon, tajuk dan status, jadi UI ejen tidak lagi kelihatan seperti log nyahpepijat.",
+    "vi": "Ngày 14/10/2026, shadcn/ui ra mắt Trace, Code Block và 21 mẫu AI Elements sao chép thẳng vào dự án, thay thế AI SDK Elements. Bài học thiết kế: suy luận, gọi công cụ, nguồn và subagent đều là một dòng có biểu tượng, tiêu đề và trạng thái, nên giao diện agent không còn trông như log gỡ lỗi.",
+    "fr": "Le 14 oct. 2026, shadcn/ui a publié Trace, Code Block et 21 patterns AI Elements à copier dans le projet, qui remplacent AI SDK Elements. Leçon de design : raisonnement, appels d’outils, sources et sous-agents sont tous une ligne avec icône, titre et statut, et les interfaces d’agents cessent de ressembler à des logs de débogage.",
+    "es": "El 14 oct 2026 shadcn/ui lanzó Trace, Code Block y 21 patrones de AI Elements que se copian al proyecto y sustituyen a AI SDK Elements. La lección de diseño: razonamiento, llamadas a herramientas, fuentes y subagentes son todos una línea con icono, título y estado, y las interfaces de agentes dejan de parecer logs de depuración.",
+    "de": "Am 14. Okt. 2026 veröffentlichte shadcn/ui Trace, Code Block und 21 kopierbare AI-Elements-Patterns, die AI SDK Elements ablösen. Die Designlehre: Reasoning, Tool-Calls, Quellen und Subagenten sind alle eine Zeile mit Icon, Titel und Status, und Agenten-UIs sehen nicht mehr wie Debug-Logs aus."
+   },
+   "reading_minutes": {
+    "en": 5,
+    "zh": 7
+   },
+   "cover": "https://siinxu.github.io/ui-resource-hub/blog/img/shadcn-trace-and-ai-elements-cover.webp",
+   "references": [
+    {
+     "title": "October 2026 - Trace, Code Block and AI Elements",
+     "by": "shadcn/ui changelog",
+     "url": "https://ui.shadcn.com/docs/changelog/2026-10-ai-elements"
+    },
+    {
+     "title": "AI Elements: patterns for agentic interfaces",
+     "by": "shadcn/ui docs",
+     "url": "https://ui.shadcn.com/docs/ai-elements"
+    },
+    {
+     "title": "Trace",
+     "by": "shadcn/ui docs",
+     "url": "https://ui.shadcn.com/docs/components/base/trace"
+    },
+    {
+     "title": "Code Block",
+     "by": "shadcn/ui docs",
+     "url": "https://ui.shadcn.com/docs/components/base/code-block"
+    },
+    {
+     "title": "Confirmation pattern",
+     "by": "shadcn/ui docs",
+     "url": "https://ui.shadcn.com/docs/ai-elements/base/confirmation"
+    },
+    {
+     "title": "Reasoning pattern (Markdown for coding agents)",
+     "by": "shadcn/ui docs",
+     "url": "https://ui.shadcn.com/docs/ai-elements/base/reasoning.md"
+    },
+    {
+     "title": "“I just published Trace, a new component for agent activity”",
+     "by": "shadcn on X",
+     "url": "https://x.com/shadcn/status/2110410655165779985"
+    },
+    {
+     "title": "AI Elements for Svelte",
+     "by": "shadcn-svelte docs",
+     "url": "https://shadcn-svelte.com/docs/ai-elements"
+    },
+    {
+     "title": "AI SDK Elements (being deprecated)",
+     "by": "Vercel",
+     "url": "https://elements.ai-sdk.dev/"
+    },
+    {
+     "title": "Chatbot: message parts with useChat",
+     "by": "AI SDK docs",
+     "url": "https://ai-sdk.dev/docs/ai-sdk-ui/chatbot"
+    },
+    {
+     "title": "shadcn chatbot template",
+     "by": "shadcn-ui on GitHub",
+     "url": "https://github.com/shadcn-ui/chatbot-template"
+    },
+    {
+     "title": "Connect your coding agent to your design system",
+     "by": "shadcndesign (Matt Wierzbicki)",
+     "url": "https://www.shadcndesign.com/blog/ds-manager-mcp-server"
+    }
+   ]
+  },
   {
    "slug": "figma-code-layers-and-specs",
    "url": "https://siinxu.github.io/ui-resource-hub/blog/figma-code-layers-and-specs/",

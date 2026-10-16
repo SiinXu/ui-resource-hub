@@ -170,8 +170,8 @@ def fig(slug, n, im, k, root):
     zh = k in ('zh','zht'); alt = im['alt']['zh' if zh else 'en']; src = f'{root}blog/img/{slug}-{n}.webp'
     if im['type']=='shot':
         host = im['url'].split('/')[2]
-        cap = (f'截图：{E(im["site"])}（<a href="{E(im["url"])}" rel="noopener" target="_blank">{E(host)}</a>），2026-10-14 截取，版权归原站所有' if zh else
-               f'Screenshot: {E(im["site"])} (<a href="{E(im["url"])}" rel="noopener" target="_blank">{E(host)}</a>), captured 2026-10-14. © the original site.')
+        cap = (f'截图：{E(im["site"])}（<a href="{E(im["url"])}" rel="noopener" target="_blank">{E(host)}</a>），{im.get("captured","2026-10-14")} 截取，版权归原站所有' if zh else
+               f'Screenshot: {E(im["site"])} (<a href="{E(im["url"])}" rel="noopener" target="_blank">{E(host)}</a>), captured {im.get("captured","2026-10-14")}. © the original site.')
     else:
         cap = ('示意图：UI Hub 原创，CC BY 4.0' if zh else 'Diagram: original by UI Hub, CC BY 4.0')
     iw, ih = IMG_SIZES.get(f'{slug}-{n}') or (None, None)

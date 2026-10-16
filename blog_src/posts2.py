@@ -615,4 +615,87 @@ text gradients · emoji icons · placeholder-only labels · raw hex
 <h2>UI Hub 能帮什么</h2>
 <p>如果你要从零写这份规范文件或 Spec，可以从 UI Hub 已收集的设计技能和智能体指南起步：在资源列表里按 <em>skills</em> 筛选 SKILL.md 风格的规则文件，再看 <a href="../../agents/">Agent 指南</a> 里「搜索、挑选、验证」的循环，它和接入 MCP 的编码智能体很搭。不管用哪张画布，道理都一样：先把规则交给智能体，再让它出像素。</p>""",
  refs=[('Build by design: New workflows for new ways of building','Figma (Dylan Field)','https://www.figma.com/blog/build-by-design/'),('Design together with code layers on the canvas','Figma','https://www.figma.com/blog/design-together-with-code-layers/'),('Introducing Specs: Markdown as a medium','Figma','https://www.figma.com/blog/introducing-figma-specs/'),("What's new from Config India 2026",'Figma Help Center','https://help.figma.com/hc/en-us/articles/43663368947863-What-s-new-from-Config-India-2026'),('Code layers in Figma Design','Figma Help Center','https://help.figma.com/hc/en-us/articles/44193259600535-Code-layers-in-Figma-Design'),('Guide to Specs in Figma','Figma Help Center','https://help.figma.com/hc/en-us/articles/44049066011671-Guide-to-Specs-in-Figma'),('Guide to the Figma MCP server','Figma Help Center','https://help.figma.com/hc/en-us/articles/32132100833559-Guide-to-the-Figma-MCP-server'),("Here's everything from Config India 2026",'Figma Forum','https://forum.figma.com/product-updates-3/here-s-everything-from-config-india-2026-59008'),('Figma deepens investment in India with largest international Config yet','Figma','https://www.figma.com/blog/figma-deepens-investment-in-india/')]),
+dict(slug='shadcn-trace-and-ai-elements', date='2026-10-16', cat='components', series='library-deep-dive', featured=True, tags=['shadcn/ui','Trace','AI Elements','agent UI','AI SDK'],
+ t=T('shadcn Trace and AI Elements: one shape for every step an agent takes','shadcn 的 Trace 与 AI Elements：让智能体的每一步都长一个样','shadcn 的 Trace 與 AI Elements：讓智慧體的每一步都長一個樣','shadcn の Trace と AI Elements：エージェントのすべてのステップを同じ形に','shadcn Trace와 AI Elements: 에이전트의 모든 단계를 같은 모양으로','Trace dan AI Elements shadcn: satu bentuk untuk setiap langkah ejen','Trace và AI Elements của shadcn: một hình dạng cho mọi bước của agent',"Trace et AI Elements de shadcn : une seule forme pour chaque étape d’un agent",'Trace y AI Elements de shadcn: una sola forma para cada paso de un agente','shadcn Trace und AI Elements: eine Form für jeden Schritt eines Agenten'),
+ s=T('On 14 Oct 2026 shadcn/ui shipped Trace, Code Block and 21 copy-in AI Elements patterns that replace AI SDK Elements. The design lesson: reasoning, tool calls, sources and subagents are all one line with an icon, a title and a status, so agent UIs stop looking like debug logs.',
+     '2026 年 10 月 14 日，shadcn/ui 发布 Trace、Code Block 和 21 个可直接复制的 AI Elements 模式，取代 AI SDK Elements。设计上的启发：推理、工具调用、来源和子智能体都是同一种「一行」——图标、标题加状态，智能体界面从此不再像调试日志。',
+     '2026 年 10 月 14 日，shadcn/ui 發布 Trace、Code Block 和 21 個可直接複製的 AI Elements 模式，取代 AI SDK Elements。設計上的啟發：推理、工具呼叫、來源和子智慧體都是同一種「一行」——圖示、標題加狀態，智慧體介面從此不再像除錯日誌。',
+     '2026年10月14日、shadcn/ui は Trace、Code Block、そしてコピーして使う21の AI Elements パターンを公開し、AI SDK Elements を置き換えた。デザイン上の教訓：推論、ツール呼び出し、ソース、サブエージェントはすべて「アイコン・タイトル・状態」を持つ1行であり、エージェントUIはもうデバッグログのように見える必要はない。',
+     '2026년 10월 14일 shadcn/ui는 Trace, Code Block, 그리고 복사해서 쓰는 21개의 AI Elements 패턴을 공개해 AI SDK Elements를 대체했다. 디자인 교훈: 추론, 도구 호출, 출처, 서브에이전트는 모두 아이콘·제목·상태를 가진 한 줄이며, 에이전트 UI가 더 이상 디버그 로그처럼 보일 필요가 없다.',
+     'Pada 14 Okt 2026 shadcn/ui melancarkan Trace, Code Block dan 21 corak AI Elements yang disalin terus ke projek, menggantikan AI SDK Elements. Pengajaran reka bentuk: penaakulan, panggilan alat, sumber dan subejen semuanya satu baris dengan ikon, tajuk dan status, jadi UI ejen tidak lagi kelihatan seperti log nyahpepijat.',
+     'Ngày 14/10/2026, shadcn/ui ra mắt Trace, Code Block và 21 mẫu AI Elements sao chép thẳng vào dự án, thay thế AI SDK Elements. Bài học thiết kế: suy luận, gọi công cụ, nguồn và subagent đều là một dòng có biểu tượng, tiêu đề và trạng thái, nên giao diện agent không còn trông như log gỡ lỗi.',
+     "Le 14 oct. 2026, shadcn/ui a publié Trace, Code Block et 21 patterns AI Elements à copier dans le projet, qui remplacent AI SDK Elements. Leçon de design : raisonnement, appels d’outils, sources et sous-agents sont tous une ligne avec icône, titre et statut, et les interfaces d’agents cessent de ressembler à des logs de débogage.",
+     'El 14 oct 2026 shadcn/ui lanzó Trace, Code Block y 21 patrones de AI Elements que se copian al proyecto y sustituyen a AI SDK Elements. La lección de diseño: razonamiento, llamadas a herramientas, fuentes y subagentes son todos una línea con icono, título y estado, y las interfaces de agentes dejan de parecer logs de depuración.',
+     'Am 14. Okt. 2026 veröffentlichte shadcn/ui Trace, Code Block und 21 kopierbare AI-Elements-Patterns, die AI SDK Elements ablösen. Die Designlehre: Reasoning, Tool-Calls, Quellen und Subagenten sind alle eine Zeile mit Icon, Titel und Status, und Agenten-UIs sehen nicht mehr wie Debug-Logs aus.'),
+ en="""<p>On 14 October 2026 shadcn published <strong>Trace</strong>, a component for agent activity, together with <strong>Code Block</strong> and <strong>AI Elements</strong>, a set of patterns for agentic interfaces built entirely from shadcn/ui components. The announcement post passed 4,500 likes on X within two days, and shadcn-svelte followed with its own AI Elements a day later. The interesting part is not that there are new components. It is the design claim underneath them: reasoning, tool calls, sources, plans and subagent runs all have the same shape, so they should look and behave the same.</p>
+<h2>What shipped</h2>
+<ul><li><strong>Trace.</strong> A list of lines for the steps an agent takes. The shadcn team says it was distilled from studying hundreds of components in agentic interfaces. Each line has an icon, a title, an optional description and a status (<code>running</code>, <code>error</code> or <code>pending</code>, with a shimmer while a step runs). A line can expand, link to a page, or open a dialog, sheet, drawer or popover, and lines can nest, so a summary opens into steps and a step into its output. It reads the reasoning, tool and source parts that the AI SDK streams.</li>
+<li><strong>Code Block.</strong> Displays code, terminal output, logs and diffs, with a header for a title and actions, line numbers, wrapping, highlighted and diff lines, and a small size (<code>size="sm"</code>) meant for tool output inside a Trace.</li>
+<li><strong>AI Elements, 21 patterns.</strong> Chat, Prompt Input, Reasoning, Tool, Plan, Subagent, Confirmation, Context, Sources, File Tree, Terminal, Test Results and more. There is no package: each pattern is a composition you copy into your repo, and every docs page also exists as Markdown so a coding agent can read it directly.</li>
+<li><strong>Every base and style.</strong> Trace and Code Block are available for Base UI, React Aria and Radix across all eight shadcn/ui styles, and they join the chat components released in June: Message Scroller, Message, Bubble, Marker, Attachment and Questionnaire.</li>
+<li><strong>AI SDK Elements is being deprecated.</strong> Code you already copied from elements.ai-sdk.dev keeps working. Each pattern page has a migration prompt that rebuilds the wrapper in <code>components/ai-elements</code> on the new components while keeping every export and its props. A few low-usage elements (artifact, audio player, the React Flow canvas pieces, JSX preview, voice and mic selectors) were not rebuilt; the docs list which existing components to compose them from.</li></ul>
+<h2>Why it matters: agent UIs get a grammar</h2>
+<p>Until now most agent interfaces have been assembled one part type at a time: a reasoning accordion here, a tool-call card there, a sources popover somewhere else, each with its own spacing, icon logic and loading state. The result is the familiar “debug log” look, where every turn is a pile of unrelated widgets. Trace replaces that with one row grammar. What changes between a thought, a shell command and a subagent is only the icon, the title and what happens when you open the line.</p>
+<p>That grammar also forces good copy. The accessibility notes are unusually specific: the icon is hidden from assistive tech, so the title is the accessible name and should be a sentence that says what happened (“Edited trace.tsx”, not “trace.tsx”). Because status is shown with colour and motion, it also belongs in the words: “Running pnpm build” while it runs, “Failed to run pnpm build” when it errors. The shimmer stops for readers who prefer reduced motion, and inside a Message Scroller each new line is announced once.</p>
+<p>The Confirmation pattern adds one more useful rule. A pending approval is a prompt, not activity, so it sits outside the Trace as an item with Deny and Approve buttons, and only becomes a Tool line once the person answers. Asking and doing are visually different things.</p>
+<h2>Our take</h2>
+<p>This is the same move the whole field made this month, from Figma Specs to Claude Design: the useful unit is not a generator but a shared, explicit shape that people and agents can both follow. For agent UIs, Trace is that shape. Teams building copilots, coding agents or research tools should adopt the grammar even if they never install the component, because users judge trust from whether they can see what the agent did, in order, with honest status.</p>
+<p>Three caveats. The patterns are written around AI SDK message parts; if you stream from another SDK you will write the mapping yourself. The release is days old, so expect APIs and examples to move, and remember that copied code does not update on its own. And showing raw reasoning is a product decision as well as a design one: the shadcn Reasoning demo collapses the text into “Thought for 5s” once the step finishes, which is a sensible default.</p>
+<h2>How to adopt it this week</h2>
+<ol><li><strong>List every step type your agent emits.</strong> Reasoning, tool calls, sources, plans, subagents, errors, approvals. If one does not fit “icon + title + status + optional detail”, question it before designing a new widget.</li>
+<li><strong>Write titles as past-tense sentences.</strong> Present tense while running, past tense when done, and say the failure in words. That one rule fixes most screen-reader and scanning problems.</li>
+<li><strong>Open while running, collapse when done.</strong> The demos open a line while the step streams and fold it afterwards; the person can still expand it.</li>
+<li><strong>Put output in a small Code Block, never in the sentence.</strong> Commands, logs and diffs go inside the line’s expanded content at <code>size="sm"</code>.</li>
+<li><strong>Keep approvals out of the trace.</strong> Ask with an explicit Deny / Approve item; record the decision as a normal line afterwards.</li>
+<li><strong>Test the states, not just the happy path.</strong> Running, error, pending, nested, a very long title, keyboard-only, reduced motion, light and dark.</li></ol>
+<pre><code># install
+pnpm dlx shadcn@latest add trace
+pnpm dlx shadcn@latest add code-block
+
+# let your coding agent read the pattern
+Add the Reasoning pattern from https://ui.shadcn.com/docs/ai-elements/base/reasoning.md to my chat.
+
+# map message parts to lines
+reasoning  → "Thinking" / "Thought for 5s", collapsible
+tool call  → "Running &lt;cmd&gt;" / "Ran &lt;cmd&gt;" / "Failed to run &lt;cmd&gt;", output in Code Block sm
+source     → link line, "(opens in a new tab)" in sr-only text
+approval   → Confirmation item outside Trace, then a Tool line</code></pre>
+<h2>Where UI Hub fits</h2>
+<p>Trace and Code Block cover the activity inside a turn; the rest of the page still needs a direction. Browse the <em>chat</em> component kind in the UI Hub resource list for other agent and chat libraries to compare against, and pair them with the restrained look in our <a href="../shadcn-blocks-deep-dive/">shadcn Blocks deep dive</a>. If your agent also restyles your system, the same week shadcndesign turned its DS Manager into an MCP server, so a coding agent can change a shadcn theme while respecting locked values.</p>""",
+ zh="""<p>2026 年 10 月 14 日，shadcn 发布了 <strong>Trace</strong>——一个专门展示智能体活动的组件，同时发布的还有 <strong>Code Block</strong> 和 <strong>AI Elements</strong>：一组完全用 shadcn/ui 组件拼成的智能体界面模式。这条公告在 X 上两天内超过 4500 个赞，第二天 shadcn-svelte 也上线了自己的 AI Elements。真正值得关注的不是「又多了几个组件」，而是背后的设计主张：推理、工具调用、来源、计划、子智能体运行，本质上是同一种形状，所以它们应该长得一样、用起来也一样。</p>
+<h2>发布了什么</h2>
+<ul><li><strong>Trace。</strong>一列「行」，每行是智能体走的一步。shadcn 团队说它是研究了数百个智能体界面里的组件后提炼出来的。每行有图标、标题、可选描述和状态（<code>running</code>、<code>error</code>、<code>pending</code>，运行中会有微光动效）。一行可以展开、链接到页面，或打开对话框、侧边面板、抽屉、气泡；行还能嵌套——摘要展开成步骤，步骤再展开成输出。它直接读取 AI SDK 流式输出的 reasoning、tool、source 等消息片段。</li>
+<li><strong>Code Block。</strong>展示代码、终端输出、日志和 diff，带标题与操作按钮的页头、行号、换行、高亮行和 diff 行，还有专为 Trace 里工具输出准备的小尺寸（<code>size="sm"</code>）。</li>
+<li><strong>AI Elements，21 个模式。</strong>Chat、Prompt Input、Reasoning、Tool、Plan、Subagent、Confirmation、Context、Sources、File Tree、Terminal、Test Results 等。没有 npm 包：每个模式都是一段组合代码，复制进你的仓库就归你；每个文档页还有 Markdown 版本，编码智能体可以直接读。</li>
+<li><strong>覆盖所有底层与风格。</strong>Trace 和 Code Block 支持 Base UI、React Aria、Radix 三种底层，以及 shadcn/ui 全部八种风格；它们和 6 月发布的聊天组件（Message Scroller、Message、Bubble、Marker、Attachment、Questionnaire）配套使用。</li>
+<li><strong>AI SDK Elements 将被弃用。</strong>你已经从 elements.ai-sdk.dev 复制的代码照常可用。每个模式页都附有迁移提示词，会在 <code>components/ai-elements</code> 里用新组件重建封装，同时保留所有导出名和 props。少数使用率低的元素（artifact、音频播放器、React Flow 画布相关组件、JSX 预览、语音和麦克风选择器）没有重做，文档列出了可以用哪些现有组件自己拼。</li></ul>
+<h2>为什么重要：智能体界面有了「语法」</h2>
+<p>此前大多数智能体界面都是按片段类型一块块拼的：这里一个推理折叠面板，那里一张工具调用卡片，别处再来一个来源气泡，各自的间距、图标逻辑和加载状态都不一样。结果就是熟悉的「调试日志」观感——每一轮回复都是一堆互不相干的小部件。Trace 用一套统一的行语法取代了它：一次思考、一条命令、一个子智能体之间，变化的只有图标、标题，以及点开这一行之后发生什么。</p>
+<p>这套语法还逼着你把文案写好。它的无障碍说明写得非常具体：图标对辅助技术隐藏，所以标题就是可访问名称，应该写成一句说明发生了什么的话（「已编辑 trace.tsx」，而不是「trace.tsx」）。状态靠颜色和动效表达，所以也要写进文字里：运行时写「正在运行 pnpm build」，失败时写「pnpm build 运行失败」。偏好减少动效的用户看不到微光；放在 Message Scroller 里时，每新增一行只会被朗读一次。</p>
+<p>Confirmation 模式还给出了一条很实用的规则：等待批准是一个「提问」，不是「活动」，所以它放在 Trace 之外，是一个带「拒绝 / 批准」按钮的条目；用户回答之后，它才变成一行 Tool 记录。「问」和「做」在视觉上是两回事。</p>
+<h2>我们的看法</h2>
+<p>这和本月整个行业的动作是一致的——从 Figma Specs 到 Claude Design：真正有用的单位不是生成器，而是一个人和智能体都能遵循的、共享且明确的形状。对智能体界面来说，Trace 就是这个形状。做 Copilot、编码智能体或研究工具的团队，即使不装这个组件，也应该采用这套语法，因为用户判断能不能信任智能体，靠的是能否按顺序看到它做了什么、状态是否诚实。</p>
+<p>三点提醒。第一，这些模式是围绕 AI SDK 的消息片段写的；如果你用别的 SDK 做流式输出，映射得自己写。第二，发布才几天，API 和示例还会变，而复制进来的代码不会自己更新。第三，展示原始推理过程既是设计问题也是产品决策：shadcn 的 Reasoning 示例在步骤结束后会把内容收起成「Thought for 5s」，这是个合理的默认。</p>
+<h2>本周就能用上的做法</h2>
+<ol><li><strong>列出智能体会输出的每一种步骤。</strong>推理、工具调用、来源、计划、子智能体、报错、审批。如果某种步骤套不进「图标 + 标题 + 状态 + 可选详情」，先质疑它，再考虑设计新部件。</li>
+<li><strong>标题写成完整的句子。</strong>运行中用进行时，完成后用完成时，失败要用文字说出来。这一条就能解决大部分读屏和快速浏览的问题。</li>
+<li><strong>运行时展开，完成后收起。</strong>示例里步骤流式输出时自动展开，结束后折叠，用户仍可手动展开。</li>
+<li><strong>输出放进小号 Code Block，别塞进句子里。</strong>命令、日志、diff 都放在这一行的展开内容里，用 <code>size="sm"</code>。</li>
+<li><strong>审批不要放进 Trace。</strong>用明确的「拒绝 / 批准」条目来问，决定之后再记成普通的一行。</li>
+<li><strong>测状态，而不只测顺利路径。</strong>运行中、报错、等待、嵌套、超长标题、纯键盘、减少动效、亮色和暗色。</li></ol>
+<pre><code># 安装
+pnpm dlx shadcn@latest add trace
+pnpm dlx shadcn@latest add code-block
+
+# 让编码智能体直接读模式文档
+Add the Reasoning pattern from https://ui.shadcn.com/docs/ai-elements/base/reasoning.md to my chat.
+
+# 消息片段 → 行
+reasoning  → 「思考中」/「思考了 5 秒」，可折叠
+tool call  → 「正在运行 &lt;命令&gt;」/「已运行」/「运行失败」，输出放 Code Block sm
+source     → 链接行，sr-only 文本注明「在新标签页打开」
+approval   → Trace 之外的 Confirmation 条目，回答后变成 Tool 行</code></pre>
+<h2>UI Hub 能帮什么</h2>
+<p>Trace 和 Code Block 解决的是一轮回复「内部」的活动展示，页面其余部分仍然需要一个视觉方向。可以在 UI Hub 资源列表里按 <em>chat</em> 组件类型筛选，对比其他智能体与聊天组件库，再参考我们的 <a href="../shadcn-blocks-deep-dive/">shadcn Blocks 深读</a> 里的克制风格。如果你的智能体还要改你的设计系统：同一周 shadcndesign 把 DS Manager 做成了 MCP 服务器，编码智能体可以在遵守锁定值的前提下修改 shadcn 主题。</p>""",
+ refs=[('October 2026 - Trace, Code Block and AI Elements','shadcn/ui changelog','https://ui.shadcn.com/docs/changelog/2026-10-ai-elements'),('AI Elements: patterns for agentic interfaces','shadcn/ui docs','https://ui.shadcn.com/docs/ai-elements'),('Trace','shadcn/ui docs','https://ui.shadcn.com/docs/components/base/trace'),('Code Block','shadcn/ui docs','https://ui.shadcn.com/docs/components/base/code-block'),('Confirmation pattern','shadcn/ui docs','https://ui.shadcn.com/docs/ai-elements/base/confirmation'),('Reasoning pattern (Markdown for coding agents)','shadcn/ui docs','https://ui.shadcn.com/docs/ai-elements/base/reasoning.md'),('“I just published Trace, a new component for agent activity”','shadcn on X','https://x.com/shadcn/status/2110410655165779985'),('AI Elements for Svelte','shadcn-svelte docs','https://shadcn-svelte.com/docs/ai-elements'),('AI SDK Elements (being deprecated)','Vercel','https://elements.ai-sdk.dev/'),('Chatbot: message parts with useChat','AI SDK docs','https://ai-sdk.dev/docs/ai-sdk-ui/chatbot'),('shadcn chatbot template','shadcn-ui on GitHub','https://github.com/shadcn-ui/chatbot-template'),('Connect your coding agent to your design system','shadcndesign (Matt Wierzbicki)','https://www.shadcndesign.com/blog/ds-manager-mcp-server')]),
 ]

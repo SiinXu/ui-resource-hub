@@ -390,3 +390,4 @@ curl -s https://siinxu.github.io/ui-resource-hub/api/resources.json | jq --arg d
 - Tutorial: have an agent build a landing page using UI Hub as context — https://siinxu.github.io/ui-resource-hub/kb/note/blog-tutorial-agent-builds-landing-with-ui-hub.md
 - Claude Design everywhere: out of beta, into every chat — https://siinxu.github.io/ui-resource-hub/kb/note/blog-claude-design-everywhere.md
 - Figma code layers and Specs: the canvas becomes the shared context again — https://siinxu.github.io/ui-resource-hub/kb/note/blog-figma-code-layers-and-specs.md
+- shadcn Trace and AI Elements: one shape for every step an agent takes — https://siinxu.github.io/ui-resource-hub/kb/note/blog-shadcn-trace-and-ai-elements.md
