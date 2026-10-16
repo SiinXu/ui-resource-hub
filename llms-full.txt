@@ -1,6 +1,6 @@
 # UI Hub
 
-> Curated, multilingual directory of 2783 public UI resources (component libraries, component style demos, effects, design systems, design skills for AI agents) plus original blog analysis of AI design techniques. Data updated 2026-10-16 08:38 UTC.
+> Curated, multilingual directory of 2803 public UI resources (component libraries, component style demos, effects, design systems, design skills for AI agents) plus original blog analysis of AI design techniques. Data updated 2026-10-16 08:52 UTC.
 
 Use the JSON endpoints, not the SPA, when acting as an agent. Every entry links to its original site; licenses belong to the original authors.
 
@@ -111,11 +111,11 @@ Use the JSON endpoints, not the SPA, when acting as an agent. Every entry links 
 - [visx](https://airbnb.io/visx/): Airbnb 的底层可视化组件
 
 ## FAQ
-- **What is UI Hub?** A free, curated directory of 2783 public UI resources: 153 component libraries, 1989 component style demos with light/dark screenshots, 70 design skills for AI agents, plus effects, templates, specs and tutorials. It links to original sites and never hosts paid source code.
+- **What is UI Hub?** A free, curated directory of 2803 public UI resources: 153 component libraries, 1989 component style demos with light/dark screenshots, 70 design skills for AI agents, plus effects, templates, specs and tutorials. It links to original sites and never hosts paid source code.
 - **How do I find a component in a given style?** Load https://siinxu.github.io/ui-resource-hub/api/resources.json and filter by ct (component kind, e.g. "dialog") and vs (visual style, e.g. "minimal" or "motion"). type="style" entries are concrete component demos with a libName and page URL; type="library" entries are whole libraries with install info on the site.
 - **Which skills should an agent use for good UI?** One direction skill (frontend-design or taste-skill), emil-design-eng for motion and interaction polish, then impeccable, baseline-ui, web-design-guidelines and accessibility as an audit pass. See https://siinxu.github.io/ui-resource-hub/api/skills.json.
 - **Can I copy the code?** Open-source libraries can be used under their own licenses (MIT, Apache-2.0 etc.); the card shows the original link. Paid tiers (marked paid/freemium) must be bought from the original vendor.
-- **How often is it updated?** Daily via a GitHub Actions job that adds new UI repositories and tools from GitHub, awesome-shadcn-ui and Hacker News. Nothing is deleted. Last update: 2026-10-16 08:38 UTC.
+- **How often is it updated?** Daily via a GitHub Actions job that adds new UI repositories and tools from GitHub, awesome-shadcn-ui and Hacker News. Nothing is deleted. Last update: 2026-10-16 08:52 UTC.
 
 
 # Blog posts (full text, English)
@@ -2075,6 +2075,26 @@ References:
 - Eladio Dieste | inspiration | https://www.eladiodieste.com/ | 砖拱建筑摄影 + 巨型细字 Eladio Dieste，建筑师档案站的大气（收录自 Awwwards）
 - Ross Halfin Photography | inspiration | https://www.rosshalfin.com/ | 黑底黑白演唱会照片 + 细字导航，摇滚摄影师的暗调画廊（收录自 Awwwards）
 - Scheme Engine | inspiration | https://www.schemeengine.com/ | 黑白影像帧 + 粗体标语，文化营销公司的暗调（收录自 Awwwards）
+- Repeat | inspiration | https://repeat.studiofreight.dev/ | 米白底 + 手绘线稿插画 + 粗体标题，Studio Freight 做的 CPG 补货工具，纸感与线描的 SaaS 版（收录自 Awwwards）
+- Ellusion Creative | inspiration | https://ellusioncreative.com/ | 旧纸纹理底 + 手绘铅笔字 DREAMS ARE DRAWN FIRST，“想法从纸上开始”的手绘纸感首屏（收录自 Awwwards）
+- Samuel Regan | inspiration | https://www.samuelregan.com/ | 白底黑白人像与作品照片错落拼贴，艺术家个人站的画廊式陈列（收录自 Awwwards）
+- Project Aperture | inspiration | https://www.project-aperture.com/ | 黑底竖条黑白旅行照片并排，摄影项目站的暗场黑白拼贴（收录自 Awwwards）
+- Traveler's Collage | inspiration | https://travelers-collage.netlify.app/ | 米白底 + 线描世界地图 + 旅行照片拼贴，旅行拼贴项目的手作感（收录自 Awwwards）
+- Collage Department | inspiration | https://collagedepartment.com/ | 白底手写线条 + 大号细体标题，拼贴艺术家站的轻盈线描（收录自 Awwwards）
+- History of collage | inspiration | https://historyofcollage.site/ | 米色底 + 衬线斜体“History of Collage” + 拼贴图像，讲拼贴史的编辑式长页（收录自 Awwwards）
+- Henry From Online | inspiration | https://henry.codes/ | 白纸底黑白铜版画插图 + 报纸式衬线大标题，个人站的“画廊线描 × 报刊”范本（收录自 Awwwards）
+- O Positive Films | inspiration | https://opos.buzzworthystudio.com/ | 黑底导演作品画面网格 + 白色超粗 DIRECTORS，制片公司的暗场拼贴（收录自 Awwwards）
+- White Label IQ | inspiration | https://www.whitelabeliq.com/ | 白底 + 一座手绘线描冰山 + 粗体标题，开发代理的线描隐喻（收录自 Awwwards）
+- Las manos que cosen | inspiration | https://lasmanosquecosen.com/ | 米黄纸底 + 衬线大标题 LAS MANOS QUE COSEN + 线描插图，手作纪录项目的纸感画廊（收录自 Awwwards）
+- Phamilia | inspiration | https://phamilia.co/ | 黑底黑白人物剪影照片 + 细字导航，创意家族工作室的暗调黑白（收录自 Httpster）
+- Staffan Sundström | inspiration | https://staffansundstrom.com/ | 米白底黑白人像摄影 + 细字文本栏，摄影师作品集的编辑排版（收录自 Httpster）
+- Dor Sharaby | inspiration | https://pamidordesign.co/ | 白底黑白人像 + 大号姓名，产品设计师作品集的黑白克制（收录自 Awwwards）
+- Théâtre Rude Ingénierie | inspiration | https://www.rudeingenierie.com/ | 黑底散落的剧场照片与红色色块，多学科剧团的暗场拼贴（收录自 Awwwards）
+- Letter Club | inspiration | https://letterclub.org/ | 浅底手绘线条插画（人物、自行车）+ 信件排版，写信俱乐部的手作感（收录自 One Page Love）
+- Braindrop | inspiration | https://braindrop.app/ | 白底衬线标题 + 大片手绘线描涂鸦插画，Mac 笔记 App 的“线描”首屏（收录自 One Page Love）
+- Andrey Krauzov | inspiration | https://andreykrauzov.com/ | 黑底铜版画徽章 + 细衬线姓名，摄影师作品集的暗调古典（收录自 Minimal Gallery）
+- Contra Labs | inspiration | https://contralabs.com/ | 米白底古典油画人物 + 衬线标题，创意平台的画廊气质（收录自 Lapa Ninja）
+- Interlude | inspiration | https://interludeapp.net/ | 白底黑白铜版画双手（致敬创世纪）+ 彩色手机，App 落地页的线描古典（收录自 Lapa Ninja）
 
 # Component style demos: 1989 entries, see api/resources.json (type=style)
 

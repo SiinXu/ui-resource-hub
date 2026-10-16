@@ -1,6 +1,6 @@
 {
  "generated": "2026-10-16",
- "count": 2783,
+ "count": 2803,
  "items": [
   {
    "id": "ued-figma-mcp-guide",
@@ -83617,6 +83617,538 @@
    "added": "2026-10-16",
    "via": "https://www.awwwards.com/websites/photography/",
    "look": "黑白拼贴·近似"
+  },
+  {
+   "id": "w16-repeat-studiofreight-dev",
+   "name": "Repeat",
+   "url": "https://repeat.studiofreight.dev/",
+   "note": "米白底 + 手绘线稿插画 + 粗体标题，Studio Freight 做的 CPG 补货工具，纸感与线描的 SaaS 版（收录自 Awwwards）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Awwwards",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.awwwards.com/websites/black/",
+   "look": "画廊线描·近似"
+  },
+  {
+   "id": "w16-ellusioncreative-com",
+   "name": "Ellusion Creative",
+   "url": "https://ellusioncreative.com/",
+   "note": "旧纸纹理底 + 手绘铅笔字 DREAMS ARE DRAWN FIRST，“想法从纸上开始”的手绘纸感首屏（收录自 Awwwards）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Awwwards",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "retro"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.awwwards.com/websites/illustration/?page=2",
+   "look": "画廊线描",
+   "gold": true,
+   "why": "画廊线描的代表样本"
+  },
+  {
+   "id": "w16-samuelregan-com",
+   "name": "Samuel Regan",
+   "url": "https://www.samuelregan.com/",
+   "note": "白底黑白人像与作品照片错落拼贴，艺术家个人站的画廊式陈列（收录自 Awwwards）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Awwwards",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.awwwards.com/websites/photography/?page=2",
+   "look": "黑白拼贴·近似"
+  },
+  {
+   "id": "w16-project-aperture-com",
+   "name": "Project Aperture",
+   "url": "https://www.project-aperture.com/",
+   "note": "黑底竖条黑白旅行照片并排，摄影项目站的暗场黑白拼贴（收录自 Awwwards）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Awwwards",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "dark-tech",
+    "editorial"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.awwwards.com/websites/photography/?page=2",
+   "look": "黑白拼贴",
+   "gold": true,
+   "why": "黑白拼贴的代表样本"
+  },
+  {
+   "id": "w16-travelers-collage-netlify-app",
+   "name": "Traveler's Collage",
+   "url": "https://travelers-collage.netlify.app/",
+   "note": "米白底 + 线描世界地图 + 旅行照片拼贴，旅行拼贴项目的手作感（收录自 Awwwards）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Awwwards",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "playful"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.awwwards.com/websites/collage/",
+   "look": "画廊线描·近似"
+  },
+  {
+   "id": "w16-collagedepartment-com",
+   "name": "Collage Department",
+   "url": "https://collagedepartment.com/",
+   "note": "白底手写线条 + 大号细体标题，拼贴艺术家站的轻盈线描（收录自 Awwwards）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Awwwards",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.awwwards.com/websites/collage/",
+   "look": "画廊线描·近似"
+  },
+  {
+   "id": "w16-historyofcollage-site",
+   "name": "History of collage",
+   "url": "https://historyofcollage.site/",
+   "note": "米色底 + 衬线斜体“History of Collage” + 拼贴图像，讲拼贴史的编辑式长页（收录自 Awwwards）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Awwwards",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "retro"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.awwwards.com/websites/collage/",
+   "look": "画廊线描·近似"
+  },
+  {
+   "id": "w16-henry-codes",
+   "name": "Henry From Online",
+   "url": "https://henry.codes/",
+   "note": "白纸底黑白铜版画插图 + 报纸式衬线大标题，个人站的“画廊线描 × 报刊”范本（收录自 Awwwards）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Awwwards",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "retro"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.awwwards.com/websites/black-white/",
+   "look": "画廊线描",
+   "gold": true,
+   "why": "画廊线描的代表样本"
+  },
+  {
+   "id": "w16-opos-buzzworthystudio-com",
+   "name": "O Positive Films",
+   "url": "https://opos.buzzworthystudio.com/",
+   "note": "黑底导演作品画面网格 + 白色超粗 DIRECTORS，制片公司的暗场拼贴（收录自 Awwwards）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Awwwards",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "dark-tech",
+    "editorial"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.awwwards.com/websites/black-white/",
+   "look": "黑白拼贴·近似"
+  },
+  {
+   "id": "w16-whitelabeliq-com",
+   "name": "White Label IQ",
+   "url": "https://www.whitelabeliq.com/",
+   "note": "白底 + 一座手绘线描冰山 + 粗体标题，开发代理的线描隐喻（收录自 Awwwards）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Awwwards",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal",
+    "editorial"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.awwwards.com/websites/black-white/",
+   "look": "画廊线描·近似"
+  },
+  {
+   "id": "w16-lasmanosquecosen-com",
+   "name": "Las manos que cosen",
+   "url": "https://lasmanosquecosen.com/",
+   "note": "米黄纸底 + 衬线大标题 LAS MANOS QUE COSEN + 线描插图，手作纪录项目的纸感画廊（收录自 Awwwards）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Awwwards",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "retro"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.awwwards.com/websites/hand-drawn/",
+   "look": "画廊线描",
+   "gold": true,
+   "why": "画廊线描的代表样本"
+  },
+  {
+   "id": "w16-phamilia-co",
+   "name": "Phamilia",
+   "url": "https://phamilia.co/",
+   "note": "黑底黑白人物剪影照片 + 细字导航，创意家族工作室的暗调黑白（收录自 Httpster）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Httpster",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "dark-tech",
+    "editorial"
+   ],
+   "added": "2026-10-16",
+   "via": "https://httpster.net/style/photographic/page/2/",
+   "look": "黑白拼贴",
+   "gold": true,
+   "why": "黑白拼贴的代表样本"
+  },
+  {
+   "id": "w16-staffansundstrom-com",
+   "name": "Staffan Sundström",
+   "url": "https://staffansundstrom.com/",
+   "note": "米白底黑白人像摄影 + 细字文本栏，摄影师作品集的编辑排版（收录自 Httpster）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Httpster",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "via": "https://httpster.net/style/photographic/page/2/",
+   "look": "黑白拼贴·近似"
+  },
+  {
+   "id": "w16-pamidordesign-co",
+   "name": "Dor Sharaby",
+   "url": "https://pamidordesign.co/",
+   "note": "白底黑白人像 + 大号姓名，产品设计师作品集的黑白克制（收录自 Awwwards）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Awwwards",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.awwwards.com/websites/gallery/",
+   "look": "黑白拼贴·近似"
+  },
+  {
+   "id": "w16-rudeingenierie-com",
+   "name": "Théâtre Rude Ingénierie",
+   "url": "https://www.rudeingenierie.com/",
+   "note": "黑底散落的剧场照片与红色色块，多学科剧团的暗场拼贴（收录自 Awwwards）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Awwwards",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "dark-tech",
+    "editorial"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.awwwards.com/websites/gallery/",
+   "look": "黑白拼贴·近似"
+  },
+  {
+   "id": "w16-letterclub-org",
+   "name": "Letter Club",
+   "url": "https://letterclub.org/",
+   "note": "浅底手绘线条插画（人物、自行车）+ 信件排版，写信俱乐部的手作感（收录自 One Page Love）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "One Page Love",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "playful",
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "via": "https://onepagelove.com/style/illustrative/page/2",
+   "look": "画廊线描·近似"
+  },
+  {
+   "id": "w16-braindrop-app",
+   "name": "Braindrop",
+   "url": "https://braindrop.app/",
+   "note": "白底衬线标题 + 大片手绘线描涂鸦插画，Mac 笔记 App 的“线描”首屏（收录自 One Page Love）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "One Page Love",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "playful",
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "via": "https://onepagelove.com/style/illustrative/page/2",
+   "look": "画廊线描",
+   "gold": true,
+   "why": "画廊线描的代表样本"
+  },
+  {
+   "id": "w16-andreykrauzov-com",
+   "name": "Andrey Krauzov",
+   "url": "https://andreykrauzov.com/",
+   "note": "黑底铜版画徽章 + 细衬线姓名，摄影师作品集的暗调古典（收录自 Minimal Gallery）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Minimal Gallery",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "dark-tech",
+    "editorial"
+   ],
+   "added": "2026-10-16",
+   "via": "https://minimal.gallery/tag/photography/page/2/",
+   "look": "黑白拼贴·近似"
+  },
+  {
+   "id": "w16-contralabs-com",
+   "name": "Contra Labs",
+   "url": "https://contralabs.com/",
+   "note": "米白底古典油画人物 + 衬线标题，创意平台的画廊气质（收录自 Lapa Ninja）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Lapa Ninja",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial",
+    "minimal"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.lapa.ninja/category/illustration/page/2/",
+   "look": "画廊线描·近似"
+  },
+  {
+   "id": "w16-interludeapp-net",
+   "name": "Interlude",
+   "url": "https://interludeapp.net/",
+   "note": "白底黑白铜版画双手（致敬创世纪）+ 彩色手机，App 落地页的线描古典（收录自 Lapa Ninja）",
+   "type": "inspiration",
+   "section": "整站灵感 · 2026-10-16",
+   "sectionTitle": "整站灵感（2026-10-16）",
+   "sectionDesc": "",
+   "source": "Lapa Ninja",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal",
+    "playful"
+   ],
+   "added": "2026-10-16",
+   "via": "https://www.lapa.ninja/category/illustration/page/2/",
+   "look": "画廊线描·近似"
   }
  ],
  "guides": [
@@ -83819,5 +84351,5 @@
    ]
   }
  ],
- "updatedAt": "2026-10-16T08:38Z"
+ "updatedAt": "2026-10-16T08:52Z"
 }
