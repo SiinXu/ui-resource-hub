@@ -354,3 +354,18 @@ es:{src_h:"Fuente",src_all:"Todas las fuentes",src_x:"Posts de X",src_github:"Gi
 de:{src_h:"Quelle",src_all:"Alle Quellen",src_x:"X-Posts",src_github:"GitHub",src_site:"Websites & Sonstiges",kv_author:"Urheber",kv_xpost:"X-Post",kv_official:"Offizielle Website",kv_via:"Entdeckt über",sec_rd:"Design-Inspiration · Originalwerke"}};
 var SO=window.UI_SEC_ORDER=window.UI_SEC_ORDER||[],n=SO.indexOf('设计灵感 · 原作');if(n<0)n=SO.push('设计灵感 · 原作')-1;
 Object.keys(A).forEach(function(l){var d=window.UI_I18N[l];if(!d)return;for(var k in A[l])if(d[k]==null)d[k]=A[l][k];if(d['sec_'+n]==null)d['sec_'+n]=A[l].sec_rd})})();
+
+/* source filter: Awwwards (Site of the Day winners discovered via the Awwwards Archive) + award names */
+(function(){var A={
+'zh-CN':{src_awwwards:"Awwwards 获奖",aw_site_of_the_day:"每日最佳网站",aw_developer_award:"开发者奖",aw_site_of_the_month:"月度最佳网站",aw_site_of_the_year:"年度最佳网站",sec_aw:"整站灵感 · Awwwards 每日最佳"},
+'zh-TW':{src_awwwards:"Awwwards 得獎",aw_site_of_the_day:"每日最佳網站",aw_developer_award:"開發者獎",aw_site_of_the_month:"月度最佳網站",aw_site_of_the_year:"年度最佳網站",sec_aw:"整站靈感 · Awwwards 每日最佳"},
+en:{src_awwwards:"Awwwards winners",aw_site_of_the_day:"Site of the Day",aw_developer_award:"Developer Award",aw_site_of_the_month:"Site of the Month",aw_site_of_the_year:"Site of the Year",sec_aw:"Website inspiration · Awwwards Site of the Day"},
+ja:{src_awwwards:"Awwwards 受賞",aw_site_of_the_day:"Site of the Day",aw_developer_award:"Developer Award",aw_site_of_the_month:"Site of the Month",aw_site_of_the_year:"Site of the Year",sec_aw:"サイトのインスピレーション · Awwwards Site of the Day"},
+ko:{src_awwwards:"Awwwards 수상작",aw_site_of_the_day:"오늘의 사이트",aw_developer_award:"개발자 상",aw_site_of_the_month:"이달의 사이트",aw_site_of_the_year:"올해의 사이트",sec_aw:"웹사이트 영감 · Awwwards 오늘의 사이트"},
+ms:{src_awwwards:"Pemenang Awwwards",aw_site_of_the_day:"Laman Hari Ini",aw_developer_award:"Anugerah Pembangun",aw_site_of_the_month:"Laman Bulan Ini",aw_site_of_the_year:"Laman Tahun Ini",sec_aw:"Inspirasi laman web · Awwwards Laman Hari Ini"},
+vi:{src_awwwards:"Đoạt giải Awwwards",aw_site_of_the_day:"Trang web của ngày",aw_developer_award:"Giải nhà phát triển",aw_site_of_the_month:"Trang web của tháng",aw_site_of_the_year:"Trang web của năm",sec_aw:"Cảm hứng website · Awwwards Trang web của ngày"},
+fr:{src_awwwards:"Lauréats Awwwards",aw_site_of_the_day:"Site du jour",aw_developer_award:"Prix développeur",aw_site_of_the_month:"Site du mois",aw_site_of_the_year:"Site de l’année",sec_aw:"Inspiration de sites · Awwwards Site du jour"},
+es:{src_awwwards:"Ganadores de Awwwards",aw_site_of_the_day:"Sitio del día",aw_developer_award:"Premio al desarrollo",aw_site_of_the_month:"Sitio del mes",aw_site_of_the_year:"Sitio del año",sec_aw:"Inspiración web · Awwwards Sitio del día"},
+de:{src_awwwards:"Awwwards-Gewinner",aw_site_of_the_day:"Site of the Day",aw_developer_award:"Developer Award",aw_site_of_the_month:"Site of the Month",aw_site_of_the_year:"Site of the Year",sec_aw:"Website-Inspiration · Awwwards Site of the Day"}};
+var SO=window.UI_SEC_ORDER=window.UI_SEC_ORDER||[],K='整站灵感 · Awwwards 每日最佳',n=SO.indexOf(K);if(n<0)n=SO.push(K)-1;
+Object.keys(A).forEach(function(l){var d=window.UI_I18N[l];if(!d)return;for(var k in A[l])if(d[k]==null)d[k]=A[l][k];if(d['sec_'+n]==null)d['sec_'+n]=A[l].sec_aw})})();

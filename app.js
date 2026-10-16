@@ -59,10 +59,11 @@ var LS = {
 var favs = LS.get('favs',{}), utags = LS.get('tags',{});
 var state = {type:'all', rt:'', vs:'', ct:'', q:'', tag:'', src:'', view:'home'};
 /* source filter: discovery channel (recent.design) + origin of the resource (X / GitHub / website). ?src= keeps it shareable */
-var SRCO=['recent.design','x','github','site'];
+var SRCO=['recent.design','awwwards','x','github','site'];
 function ORG(i){if(i.origin)return i.origin==='X'?'x':i.origin==='GitHub'?'github':'site';if(i.xsrc||i.source==='X'||/^@/.test(i.source||''))return 'x';return /^https?:\/\/(www\.)?github\.com\//.test(i.url||'')?'github':'site'}
-function srcOk(i,k){return k==='recent.design'?i.discovered_via==='recent.design':ORG(i)===k}
+function srcOk(i,k){return k==='recent.design'?i.discovered_via==='recent.design':k==='awwwards'?i.discovered_via==='awwwards.withseismic.com':ORG(i)===k}
 function SRN(k){return k==='recent.design'?'recent.design':t('src_'+k)}
+function awRow(i){var a=i.awwwards;if(!a)return '';return '<dt>Awwwards</dt><dd>'+(a.page?'<a href="'+esc(a.page)+'" target="_blank" rel="noopener noreferrer">':'')+esc((a.awards||[]).map(function(x){return t('aw_'+x.replace(/ /g,'_').toLowerCase())}).join(' · ')||'Awwwards')+(a.date?' · '+esc(a.date):'')+(a.page?'</a>':'')+'</dd>'}
 (function(){var m=(location.search.match(/[?&]src=([\w.-]+)/)||[])[1];if(m&&SRCO.indexOf(m)>=0)state.src=m})();
 function syncSrcUrl(){try{var u=new URL(location.href);if(state.src)u.searchParams.set('src',state.src);else u.searchParams.delete('src');history.replaceState(history.state,'',u.pathname+u.search+u.hash)}catch(e){}}
 var $ = function(id){return document.getElementById(id)};
@@ -456,6 +457,7 @@ function openSheet(id){
    (i.author?'<dt>'+esc(t('kv_author'))+'</dt><dd>'+(i.author.url?'<a href="'+esc(i.author.url)+'" target="_blank" rel="noopener noreferrer">':'')+esc(lat(i.author.name||i.author.handle))+(i.author.handle&&i.author.name?' <small>'+esc(i.author.handle)+'</small>':'')+(i.author.url?'</a>':'')+'</dd>':'')+
    (i.x_post?'<dt>'+esc(t('kv_xpost'))+'</dt><dd class="u"><a href="'+esc(i.x_post)+'" target="_blank" rel="noopener noreferrer">'+esc(i.x_post.replace(/^https:\/\//,''))+'</a></dd>':'')+
    (i.official&&i.official!==i.url?'<dt>'+esc(t('kv_official'))+'</dt><dd class="u"><a href="'+esc(i.official)+'" target="_blank" rel="noopener noreferrer">'+esc(host(i.official))+'</a></dd>':'')+
+   awRow(i)+
    (i.discovered_via?'<dt>'+esc(t('kv_via'))+'</dt><dd>'+(i.via?'<a href="'+esc(i.via)+'" target="_blank" rel="noopener noreferrer">'+esc(i.discovered_via)+'</a>':esc(i.discovered_via))+'</dd>':'')+
    '<dt>'+esc(t('kv_group'))+'</dt><dd>'+esc(secOf(i))+(i.sectionDesc&&isZh()?'<span>'+esc(i.sectionDesc)+'</span>':'')+'</dd>'+
    (gs.length?'<dt>'+esc(t('kv_guide'))+'</dt><dd>'+gs.map(function(g){return '<a href="#/guides" data-g="'+g.id+'">'+g.emoji+' '+esc(t(gk(g,'t')))+'</a>'}).join('')+'</dd>':'')+'</dl>'+
