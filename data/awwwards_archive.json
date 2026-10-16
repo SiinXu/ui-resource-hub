@@ -3511,7 +3511,19 @@
 "https://awwwards.withseismic.com/author/clou#clou-agency-portfolio": {
 "status": "added",
 "id": "awd-clou-agency-portfolio"
+},
+"https://awwwards.withseismic.com/author/dashdigital#tengile-malamala-collection": {
+"status": "dup",
+"url": "https://tengilemalamala.com/"
+},
+"https://awwwards.withseismic.com/author/magnetism#milledollars": {
+"status": "added",
+"id": "awd-milledollars"
+},
+"https://awwwards.withseismic.com/author/merci-michel#the-tie-break": {
+"status": "added",
+"id": "awd-the-tie-break"
 }
 },
-"updated": "2026-10-16T13:08Z"
+"updated": "2026-10-16T13:09Z"
 }

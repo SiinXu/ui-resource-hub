@@ -1,6 +1,6 @@
 # UI Hub
 
-> Curated, multilingual directory of 4694 public UI resources (component libraries, component style demos, effects, design systems, design skills for AI agents) plus original blog analysis of AI design techniques. Data updated 2026-10-16 13:08 UTC.
+> Curated, multilingual directory of 4694 public UI resources (component libraries, component style demos, effects, design systems, design skills for AI agents) plus original blog analysis of AI design techniques. Data updated 2026-10-16 13:09 UTC.
 
 Use the JSON endpoints, not the SPA, when acting as an agent. Every entry links to its original site; licenses belong to the original authors.
 
@@ -115,7 +115,7 @@ Use the JSON endpoints, not the SPA, when acting as an agent. Every entry links 
 - **How do I find a component in a given style?** Load https://siinxu.github.io/ui-resource-hub/api/resources.json and filter by ct (component kind, e.g. "dialog") and vs (visual style, e.g. "minimal" or "motion"). type="style" entries are concrete component demos with a libName and page URL; type="library" entries are whole libraries with install info on the site.
 - **Which skills should an agent use for good UI?** One direction skill (frontend-design or taste-skill), emil-design-eng for motion and interaction polish, then impeccable, baseline-ui, web-design-guidelines and accessibility as an audit pass. See https://siinxu.github.io/ui-resource-hub/api/skills.json.
 - **Can I copy the code?** Open-source libraries can be used under their own licenses (MIT, Apache-2.0 etc.); the card shows the original link. Paid tiers (marked paid/freemium) must be bought from the original vendor.
-- **How often is it updated?** Daily via a GitHub Actions job that adds new UI repositories and tools from GitHub, awesome-shadcn-ui and Hacker News. Nothing is deleted. Last update: 2026-10-16 13:08 UTC.
+- **How often is it updated?** Daily via a GitHub Actions job that adds new UI repositories and tools from GitHub, awesome-shadcn-ui and Hacker News. Nothing is deleted. Last update: 2026-10-16 13:09 UTC.
 
 
 # Blog posts (full text, English)
@@ -3165,8 +3165,6 @@ References:
 - Agent Sleep Toggle | inspiration | https://x.com/MichaelFilipiuk/status/2110749049049796915 | An agent card for Scout toggles off, transforming its blue hexagon mascot into a gray sleeping face with floating Z's, then snapping back to active when re-enab
 - X Subscription Modal | inspiration | https://x.com/HamzaInstantly/status/2110392051074511159 | Screen recording of the X Premium upsell modal announcing a unified subscription plan covering X, Grok, and Cursor with three feature highlight cards.
 - Personal Portfolio Site | inspiration | https://iamnoman.com | A personal site built around a navigable isometric outline-art mancave with themed rooms including F1, arcade games, and gym, plus a portfolio of UI work.
-- Milledollars | inspiration | https://milledollars.fr/ | Milledollars is a creative bureau focused on high-end video production.
-- The Tie-break | inspiration | https://thetiebreak.merci-michel.com/ | Play and explore the new New Balance x Miu Miu collection with Coco Gauff.
 - The Tuscan Journey Begins | inspiration | https://weekend-mm-2026-pasticcino-bag-master.monogrid.io/en/ | MONOGRID created an interactive journey for Weekend Max Mara, transforming Italian craftsmanship into an immersive digital experience.
 - Overworld Audio | inspiration | https://overworldaudio.com/ | Portfolio website for Overworld Audio, a studio crafting sonic branding and immersive sound experiences, presented as an explorable map of their work.
 - Paul Kalkbrenner | inspiration | https://www.paulkalkbrenner.net/ | Branding and website work for the German musician, Paul Kalkbrenner. Designed to present his music, tour dates, and personal journey through a clean and...
@@ -3989,6 +3987,8 @@ Get Hyped. Get Noticed. Get Results.
 - Death Chef | inspiration | https://lunchbox.studiofreight.com/game | Play as Anthony Bourdain’s skeleton to defend your kitchen from the dark forces of Midtown finance bros, pool sharks and steers with mad-cow disease.
 - Studio D | inspiration | https://studiod.nu/en | Studio D is a design agency, specializing in innovative urban and landscape design to create impactful environments for a better world.
 - Clou – Agency Portfolio | inspiration | https://www.clou.ch/ | A purpose-driven digital identity for Clou, a creative agency specializing in branding and websites, blending bold aesthetics with strategic clarity.
+- Milledollars | inspiration | https://milledollars.fr/ | Awwwards Site of the Day + Developer Award (2026-10-02) by Magnetism.
+- The Tie-break | inspiration | https://thetiebreak.merci-michel.com/ | Awwwards Site of the Day + Developer Award (2026-09-25) by Merci Michel.
 
 # Component style demos: 1989 entries, see api/resources.json (type=style)
 

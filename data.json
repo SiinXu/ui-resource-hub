@@ -1,6 +1,6 @@
 {
  "generated": "2026-10-16",
- "count": 4692,
+ "count": 4694,
  "items": [
   {
    "id": "ued-figma-mcp-guide",
@@ -177234,6 +177234,84 @@
    },
    "pub": "2025-09-05",
    "added": "2026-10-16"
+  },
+  {
+   "id": "awd-milledollars",
+   "name": "Milledollars",
+   "url": "https://milledollars.fr/",
+   "note": "Awwwards Site of the Day + Developer Award (2026-10-02) by Magnetism.",
+   "noteEn": "Awwwards Site of the Day + Developer Award (2026-10-02) by Magnetism.",
+   "type": "inspiration",
+   "section": "整站灵感 · Awwwards 每日最佳",
+   "sectionTitle": "整站灵感 · Awwwards 每日最佳",
+   "sectionDesc": "",
+   "source": "Magnetism",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "site",
+   "discovered_via": "awwwards.withseismic.com",
+   "via": "https://awwwards.withseismic.com/author/magnetism#milledollars",
+   "author": {
+    "name": "Magnetism",
+    "url": "https://www.awwwards.com/Magnetism/"
+   },
+   "awwwards": {
+    "awards": [
+     "Site of the Day",
+     "Developer Award"
+    ],
+    "date": "2026-10-02"
+   },
+   "pub": "2026-10-02",
+   "added": "2026-10-16"
+  },
+  {
+   "id": "awd-the-tie-break",
+   "name": "The Tie-break",
+   "url": "https://thetiebreak.merci-michel.com/",
+   "note": "Awwwards Site of the Day + Developer Award (2026-09-25) by Merci Michel.",
+   "noteEn": "Awwwards Site of the Day + Developer Award (2026-09-25) by Merci Michel.",
+   "type": "inspiration",
+   "section": "整站灵感 · Awwwards 每日最佳",
+   "sectionTitle": "整站灵感 · Awwwards 每日最佳",
+   "sectionDesc": "",
+   "source": "Merci Michel",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "site",
+   "discovered_via": "awwwards.withseismic.com",
+   "via": "https://awwwards.withseismic.com/author/merci-michel#the-tie-break",
+   "author": {
+    "name": "Merci Michel",
+    "url": "https://www.awwwards.com/Merci-Michel/"
+   },
+   "awwwards": {
+    "awards": [
+     "Site of the Day",
+     "Developer Award"
+    ],
+    "date": "2026-09-25"
+   },
+   "pub": "2026-09-25",
+   "added": "2026-10-16"
   }
  ],
  "guides": [
@@ -177436,5 +177514,5 @@
    ]
   }
  ],
- "updatedAt": "2026-10-16T13:08Z"
+ "updatedAt": "2026-10-16T13:09Z"
 }
