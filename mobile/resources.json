@@ -60,10 +60,10 @@
 "lic": "Weather"
 },
 {
-"id": "app-the-outsiders-fitness-tracker",
+"id": "app-the-outsiders",
 "cat": "app",
 "plat": "ios",
-"name": "The Outsiders Fitness Tracker",
+"name": "The Outsiders",
 "url": "https://apps.apple.com/us/app/the-outsiders-fitness-tracker/id6751584800",
 "zh": "Apple 设计大奖 2026 入围 · 2026 苹果设计奖入围：漂亮的训练准备度数据可视化",
 "en": "Apple Design Awards 2026 finalist · 2026 ADA finalist: beautiful training-readiness data viz",
@@ -230,20 +230,20 @@
 "lic": "Health & Fitness"
 },
 {
-"id": "app-fantastical-calendar",
+"id": "app-fantastical",
 "cat": "app",
 "plat": "ios",
-"name": "Fantastical Calendar",
+"name": "Fantastical",
 "url": "https://apps.apple.com/us/app/fantastical-calendar/id718043190",
 "zh": "日历 App 标杆",
 "en": "The benchmark calendar app",
 "lic": "Productivity"
 },
 {
-"id": "app-ivory-for-mastodon-by-tapbots",
+"id": "app-ivory",
 "cat": "app",
 "plat": "ios",
-"name": "Ivory for Mastodon by Tapbots",
+"name": "Ivory",
 "url": "https://apps.apple.com/us/app/ivory-for-mastodon-by-tapbots/id6444602274",
 "zh": "Tapbots 出品，动效与手感一流",
 "en": "From Tapbots, first-class motion and feel",
@@ -300,10 +300,10 @@
 "lic": "Finance"
 },
 {
-"id": "app-monzo-bank",
+"id": "app-monzo",
 "cat": "app",
 "plat": "ios",
-"name": "Monzo Bank",
+"name": "Monzo",
 "url": "https://apps.apple.com/us/app/monzo-bank-mobile-banking/id1052238659",
 "zh": "辨识度极高的银行 App 配色",
 "en": "A bank app with a highly recognizable palette",
@@ -540,10 +540,10 @@
 "lic": "Productivity"
 },
 {
-"id": "app-ticktick-to-do-list-calendar",
+"id": "app-ticktick",
 "cat": "app",
 "plat": "ios",
-"name": "TickTick:To-Do List & Calendar",
+"name": "TickTick",
 "url": "https://apps.apple.com/us/app/ticktick-to-do-list-calendar/id626144601",
 "zh": "功能密集仍清晰的任务 App",
 "en": "Dense yet clear task app",
@@ -640,10 +640,10 @@
 "lic": "Productivity"
 },
 {
-"id": "app-claude-by-anthropic",
+"id": "app-claude",
 "cat": "app",
 "plat": "ios",
-"name": "Claude by Anthropic",
+"name": "Claude",
 "url": "https://apps.apple.com/us/app/claude-by-anthropic/id6473753684",
 "zh": "温暖克制的 AI 对话界面",
 "en": "A warm, restrained AI chat interface",
@@ -680,10 +680,10 @@
 "lic": "Productivity"
 },
 {
-"id": "app-telegram-messenger",
+"id": "app-telegram",
 "cat": "app",
 "plat": "ios",
-"name": "Telegram Messenger",
+"name": "Telegram",
 "url": "https://apps.apple.com/us/app/telegram-messenger/id686449807",
 "zh": "动效与主题系统丰富的聊天 App",
 "en": "Chat app with rich motion and theming",
@@ -700,10 +700,10 @@
 "lic": "Social Networking"
 },
 {
-"id": "app-locket-widget",
+"id": "app-locket",
 "cat": "app",
 "plat": "ios",
-"name": "Locket Widget",
+"name": "Locket",
 "url": "https://apps.apple.com/us/app/locket-widget/id1600525061",
 "zh": "桌面小组件社交",
 "en": "Home-screen widget social app",
@@ -750,10 +750,10 @@
 "lic": "News"
 },
 {
-"id": "app-session-pomodoro-focus-timer",
+"id": "app-session",
 "cat": "app",
 "plat": "ios",
-"name": "Session Pomodoro Focus Timer",
+"name": "Session",
 "url": "https://apps.apple.com/us/app/session-pomodoro-focus-timer/id1521432881",
 "zh": "番茄钟与专注统计设计",
 "en": "Pomodoro and focus stats design",
@@ -830,10 +830,10 @@
 "lic": "Shopping"
 },
 {
-"id": "app-gentler-streak-workout-tracker",
+"id": "app-gentler-streak",
 "cat": "app",
 "plat": "ios",
-"name": "Gentler Streak Workout Tracker",
+"name": "Gentler Streak",
 "url": "https://apps.apple.com/us/app/gentler-streak-workout-tracker/id1576857102",
 "zh": "温和插画与数据可视化的健身 App",
 "en": "Fitness app with gentle illustrations and data viz",
@@ -940,10 +940,10 @@
 "lic": "Education"
 },
 {
-"id": "app-any-distance-running-tracker",
+"id": "app-any-distance",
 "cat": "app",
 "plat": "ios",
-"name": "Any Distance Running Tracker",
+"name": "Any Distance",
 "url": "https://apps.apple.com/us/app/any-distance-running-tracker/id1545233932",
 "zh": "3D 路线与精美活动卡片",
 "en": "3D routes and beautiful activity cards",
@@ -968,6 +968,506 @@
 "zh": "苹果设计奖得主，手机上搭网站",
 "en": "ADA winner: build websites on your phone",
 "lic": "Productivity"
+},
+{
+"id": "app-timepage",
+"cat": "app",
+"plat": "ios",
+"name": "Timepage",
+"url": "https://apps.apple.com/us/app/timepage-calendar-planner/id989178902",
+"zh": "日历与天气融为一体的极简排版",
+"en": "Calendar and weather in one minimal typographic layout",
+"lic": "Productivity"
+},
+{
+"id": "app-tot",
+"cat": "app",
+"plat": "ios",
+"name": "Tot",
+"url": "https://apps.apple.com/us/app/tot-pocket/id1498235191",
+"zh": "七个彩色点位的极简便签",
+"en": "A minimal note pad with seven colorful dots",
+"lic": "Productivity"
+},
+{
+"id": "app-drafts",
+"cat": "app",
+"plat": "ios",
+"name": "Drafts",
+"url": "https://apps.apple.com/us/app/drafts/id1236254471",
+"zh": "打开即写的文本收集工具",
+"en": "Open-and-type text capture",
+"lic": "Productivity"
+},
+{
+"id": "app-due",
+"cat": "app",
+"plat": "ios",
+"name": "Due",
+"url": "https://apps.apple.com/us/app/due-reminders-timers/id390017969",
+"zh": "大按钮的提醒与计时器",
+"en": "Reminders and timers with big tappable controls",
+"lic": "Productivity"
+},
+{
+"id": "app-ice-cubes",
+"cat": "app",
+"plat": "ios",
+"name": "Ice Cubes",
+"url": "https://apps.apple.com/us/app/ice-cubes-for-mastodon/id6444915884",
+"zh": "SwiftUI 打造的开源 Mastodon 客户端",
+"en": "An open-source Mastodon client built in SwiftUI",
+"lic": "Social Networking"
+},
+{
+"id": "app-denim",
+"cat": "app",
+"plat": "ios",
+"name": "Denim",
+"url": "https://apps.apple.com/us/app/denim-playlist-cover-maker/id1532250420",
+"zh": "为播放列表生成封面的小工具",
+"en": "Makes cover art for your playlists",
+"lic": "Music"
+},
+{
+"id": "app-hevy",
+"cat": "app",
+"plat": "ios",
+"name": "Hevy",
+"url": "https://apps.apple.com/us/app/hevy-workout-tracker-gym-log/id1458862350",
+"zh": "清爽的健身记录与动作库",
+"en": "Clean workout logging with an exercise library",
+"lic": "Health & Fitness"
+},
+{
+"id": "app-bend",
+"cat": "app",
+"plat": "ios",
+"name": "Bend",
+"url": "https://apps.apple.com/us/app/bend-stretching-flexibility/id1513988468",
+"zh": "插画动作指引的拉伸 App",
+"en": "Stretching routines with illustrated guides",
+"lic": "Health & Fitness"
+},
+{
+"id": "app-slopes",
+"cat": "app",
+"plat": "ios",
+"name": "Slopes",
+"url": "https://apps.apple.com/us/app/slopes-ski-snowboard/id643351983",
+"zh": "滑雪轨迹与数据可视化",
+"en": "Ski tracking with rich data visualization",
+"lic": "Sports"
+},
+{
+"id": "app-yuka",
+"cat": "app",
+"plat": "ios",
+"name": "Yuka",
+"url": "https://apps.apple.com/us/app/yuka-food-cosmetic-scanner/id1092799236",
+"zh": "扫码看食品评分，配色直观",
+"en": "Scan food for a clear color-coded score",
+"lic": "Health & Fitness"
+},
+{
+"id": "app-sleep-cycle",
+"cat": "app",
+"plat": "ios",
+"name": "Sleep Cycle",
+"url": "https://apps.apple.com/us/app/sleep-cycle-tracker-sounds/id320606217",
+"zh": "睡眠分析图表与闹钟",
+"en": "Sleep analysis charts and a smart alarm",
+"lic": "Health & Fitness"
+},
+{
+"id": "app-pillow",
+"cat": "app",
+"plat": "ios",
+"name": "Pillow",
+"url": "https://apps.apple.com/us/app/pillow-sleep-tracker/id878691772",
+"zh": "睡眠记录与健康数据卡片",
+"en": "Sleep tracking with health data cards",
+"lic": "Health & Fitness"
+},
+{
+"id": "app-gyroscope",
+"cat": "app",
+"plat": "ios",
+"name": "Gyroscope",
+"url": "https://apps.apple.com/us/app/gyroscope/id1104085053",
+"zh": "个人健康数据仪表盘",
+"en": "A personal health dashboard",
+"lic": "Health & Fitness"
+},
+{
+"id": "app-zero",
+"cat": "app",
+"plat": "ios",
+"name": "Zero",
+"url": "https://apps.apple.com/us/app/zero-fasting-food-tracker/id1168348542",
+"zh": "断食计时环与进度设计",
+"en": "Fasting timer rings and progress design",
+"lic": "Health & Fitness"
+},
+{
+"id": "app-stardust",
+"cat": "app",
+"plat": "ios",
+"name": "Stardust",
+"url": "https://apps.apple.com/us/app/stardust-period-tracker/id1495829322",
+"zh": "隐私优先、插画风的经期记录",
+"en": "Privacy-first period tracker with illustrations",
+"lic": "Health & Fitness"
+},
+{
+"id": "app-bereal",
+"cat": "app",
+"plat": "ios",
+"name": "BeReal",
+"url": "https://apps.apple.com/us/app/bereal-photos-friends-daily/id1459645446",
+"zh": "双摄像头的即时分享社交",
+"en": "Dual-camera, in-the-moment social sharing",
+"lic": "Social Networking"
+},
+{
+"id": "app-mymind",
+"cat": "app",
+"plat": "ios",
+"name": "mymind",
+"url": "https://apps.apple.com/us/app/mymind-extend-your-mind/id1520332347",
+"zh": "以图片为主的私人收藏夹",
+"en": "An image-first private bookmark space",
+"lic": "Productivity"
+},
+{
+"id": "app-readwise-reader",
+"cat": "app",
+"plat": "ios",
+"name": "Readwise Reader",
+"url": "https://apps.apple.com/us/app/readwise-reader/id1567599761",
+"zh": "稍后读与高亮笔记",
+"en": "Read-later with highlights and notes",
+"lic": "Productivity"
+},
+{
+"id": "app-matter",
+"cat": "app",
+"plat": "ios",
+"name": "Matter",
+"url": "https://apps.apple.com/us/app/matter-reading-app/id1501592184",
+"zh": "排版考究的稍后读 App",
+"en": "A beautifully typeset read-later app",
+"lic": "News"
+},
+{
+"id": "app-fabulous",
+"cat": "app",
+"plat": "ios",
+"name": "Fabulous",
+"url": "https://apps.apple.com/us/app/fabulous-daily-habit-tracker/id1203637303",
+"zh": "插画丰富的习惯养成 App",
+"en": "Habit building with rich illustration",
+"lic": "Health & Fitness"
+},
+{
+"id": "app-elevate",
+"cat": "app",
+"plat": "ios",
+"name": "Elevate",
+"url": "https://apps.apple.com/us/app/elevate-brain-training-games/id875063456",
+"zh": "动效细腻的大脑训练",
+"en": "Brain training with polished motion",
+"lic": "Education"
+},
+{
+"id": "app-brilliant",
+"cat": "app",
+"plat": "ios",
+"name": "Brilliant",
+"url": "https://apps.apple.com/us/app/brilliant-learn-math-coding/id913335252",
+"zh": "交互式数理学习",
+"en": "Interactive math and science lessons",
+"lic": "Education"
+},
+{
+"id": "app-mimo",
+"cat": "app",
+"plat": "ios",
+"name": "Mimo",
+"url": "https://apps.apple.com/us/app/mimo-learn-coding-programming/id1133960732",
+"zh": "游戏化的编程学习",
+"en": "Gamified coding lessons",
+"lic": "Education"
+},
+{
+"id": "app-speak",
+"cat": "app",
+"plat": "ios",
+"name": "Speak",
+"url": "https://apps.apple.com/us/app/speak-language-learning/id1286609883",
+"zh": "AI 口语练习，界面活泼",
+"en": "AI speaking practice with a playful UI",
+"lic": "Education"
+},
+{
+"id": "app-tripsy",
+"cat": "app",
+"plat": "ios",
+"name": "Tripsy",
+"url": "https://apps.apple.com/us/app/tripsy-travel-planner/id1429967544",
+"zh": "行程时间线与地图",
+"en": "Trip timelines with maps",
+"lic": "Travel"
+},
+{
+"id": "app-wealthfront",
+"cat": "app",
+"plat": "ios",
+"name": "Wealthfront",
+"url": "https://apps.apple.com/us/app/wealthfront-save-and-invest/id816020992",
+"zh": "简洁的投资与储蓄",
+"en": "Clean investing and savings",
+"lic": "Finance"
+},
+{
+"id": "app-venmo",
+"cat": "app",
+"plat": "ios",
+"name": "Venmo",
+"url": "https://apps.apple.com/us/app/venmo/id351727428",
+"zh": "社交化的转账",
+"en": "Social payments",
+"lic": "Finance"
+},
+{
+"id": "app-splitwise",
+"cat": "app",
+"plat": "ios",
+"name": "Splitwise",
+"url": "https://apps.apple.com/us/app/splitwise/id458023433",
+"zh": "多人记账分摊",
+"en": "Shared expense splitting",
+"lic": "Finance"
+},
+{
+"id": "app-tricount",
+"cat": "app",
+"plat": "ios",
+"name": "tricount",
+"url": "https://apps.apple.com/us/app/tricount-split-settle-bills/id349866256",
+"zh": "旅行分账，卡片清晰",
+"en": "Group expense splitting with clear cards",
+"lic": "Finance"
+},
+{
+"id": "app-snapseed",
+"cat": "app",
+"plat": "ios",
+"name": "Snapseed",
+"url": "https://apps.apple.com/us/app/snapseed-photo-editor/id439438619",
+"zh": "手势调参的修图工具",
+"en": "Photo editing with gesture-driven controls",
+"lic": "Photo & Video"
+},
+{
+"id": "app-shazam",
+"cat": "app",
+"plat": "ios",
+"name": "Shazam",
+"url": "https://apps.apple.com/us/app/shazam-find-music-concerts/id284993459",
+"zh": "一键识曲与沉浸式歌曲页",
+"en": "One-tap song ID with immersive track pages",
+"lic": "Music"
+},
+{
+"id": "app-tidal",
+"cat": "app",
+"plat": "ios",
+"name": "Tidal",
+"url": "https://apps.apple.com/us/app/tidal-music-hifi-sound/id913943275",
+"zh": "深色高质感的音乐 App",
+"en": "A dark, premium music app",
+"lic": "Music"
+},
+{
+"id": "app-dark-noise",
+"cat": "app",
+"plat": "ios",
+"name": "Dark Noise",
+"url": "https://apps.apple.com/us/app/dark-noise-ambient-sounds/id1465439395",
+"zh": "动态图标与环境声",
+"en": "Ambient sounds with animated icons",
+"lic": "Health & Fitness"
+},
+{
+"id": "app-portal",
+"cat": "app",
+"plat": "ios",
+"name": "Portal",
+"url": "https://apps.apple.com/us/app/portal-escape-into-nature/id1436994560",
+"zh": "沉浸式自然环境声",
+"en": "Immersive nature soundscapes",
+"lic": "Health & Fitness"
+},
+{
+"id": "app-obsidian",
+"cat": "app",
+"plat": "ios",
+"name": "Obsidian",
+"url": "https://apps.apple.com/us/app/obsidian-connected-notes/id1557175442",
+"zh": "本地 Markdown 笔记",
+"en": "Local-first Markdown notes",
+"lic": "Productivity"
+},
+{
+"id": "app-sunsama",
+"cat": "app",
+"plat": "ios",
+"name": "Sunsama",
+"url": "https://apps.apple.com/us/app/sunsama/id1475755747",
+"zh": "每日计划仪式感设计",
+"en": "Daily planning with a calm ritual",
+"lic": "Productivity"
+},
+{
+"id": "app-bluesky",
+"cat": "app",
+"plat": "ios",
+"name": "Bluesky",
+"url": "https://apps.apple.com/us/app/bluesky-social/id6444370199",
+"zh": "简洁的去中心化社交",
+"en": "A clean decentralized social app",
+"lic": "Social Networking"
+},
+{
+"id": "app-pinterest",
+"cat": "app",
+"plat": "ios",
+"name": "Pinterest",
+"url": "https://apps.apple.com/us/app/pinterest/id429047995",
+"zh": "瀑布流图片灵感",
+"en": "Masonry-grid visual inspiration",
+"lic": "Lifestyle"
+},
+{
+"id": "app-letterboxd",
+"cat": "app",
+"plat": "ios",
+"name": "Letterboxd",
+"url": "https://apps.apple.com/us/app/letterboxd/id1054271011",
+"zh": "电影日记与海报墙",
+"en": "Film diary with poster grids",
+"lic": "Social Networking"
+},
+{
+"id": "app-vinted",
+"cat": "app",
+"plat": "ios",
+"name": "Vinted",
+"url": "https://apps.apple.com/us/app/vinted-pre-loved-marketplace/id632064380",
+"zh": "二手服饰交易",
+"en": "Second-hand fashion marketplace",
+"lic": "Shopping"
+},
+{
+"id": "app-goat",
+"cat": "app",
+"plat": "ios",
+"name": "GOAT",
+"url": "https://apps.apple.com/us/app/goat-sneakers-apparel/id966758561",
+"zh": "球鞋电商的大图展示",
+"en": "Sneaker commerce with big imagery",
+"lic": "Shopping"
+},
+{
+"id": "app-shop",
+"cat": "app",
+"plat": "ios",
+"name": "Shop",
+"url": "https://apps.apple.com/us/app/shop-track-pay-discover/id1223471316",
+"zh": "Shopify 的购物与物流追踪",
+"en": "Shopify's shopping and order tracking",
+"lic": "Shopping"
+},
+{
+"id": "app-too-good-to-go",
+"cat": "app",
+"plat": "ios",
+"name": "Too Good To Go",
+"url": "https://apps.apple.com/us/app/too-good-to-go-end-food-waste/id1060683933",
+"zh": "拯救剩余食物的地图与卡片",
+"en": "Surplus food rescue with maps and cards",
+"lic": "Food & Drink"
+},
+{
+"id": "app-waze",
+"cat": "app",
+"plat": "ios",
+"name": "Waze",
+"url": "https://apps.apple.com/us/app/waze-navigation-live-traffic/id323229106",
+"zh": "社区驱动的导航",
+"en": "Community-driven navigation",
+"lic": "Navigation"
+},
+{
+"id": "app-bolt",
+"cat": "app",
+"plat": "ios",
+"name": "Bolt",
+"url": "https://apps.apple.com/us/app/bolt-request-a-ride/id675033630",
+"zh": "出行与外卖一体",
+"en": "Rides and delivery in one app",
+"lic": "Travel"
+},
+{
+"id": "app-capcut",
+"cat": "app",
+"plat": "ios",
+"name": "CapCut",
+"url": "https://apps.apple.com/us/app/capcut-photo-video-editor/id1500855883",
+"zh": "模板丰富的视频剪辑",
+"en": "Video editing with rich templates",
+"lic": "Photo & Video"
+},
+{
+"id": "app-splice",
+"cat": "app",
+"plat": "ios",
+"name": "Splice",
+"url": "https://apps.apple.com/us/app/splice-video-editor-maker/id409838725",
+"zh": "手机上的视频剪辑时间线",
+"en": "A mobile video editing timeline",
+"lic": "Photo & Video"
+},
+{
+"id": "app-bezel",
+"cat": "app",
+"plat": "ios",
+"name": "Bezel",
+"url": "https://apps.apple.com/us/app/bezel-authenticated-watches/id1586195658",
+"zh": "名表交易的高质感界面",
+"en": "A premium watch marketplace",
+"lic": "Shopping"
+},
+{
+"id": "app-fable",
+"cat": "app",
+"plat": "ios",
+"name": "Fable",
+"url": "https://apps.apple.com/us/app/fable-track-discuss-books/id1488170618",
+"zh": "读书社群与书单",
+"en": "Book clubs and reading lists",
+"lic": "Book"
+},
+{
+"id": "app-weathergraph",
+"cat": "app",
+"plat": "ios",
+"name": "Weathergraph",
+"url": "https://apps.apple.com/us/app/weathergraph-weather-widget/id1501958576",
+"zh": "图表化的天气预报",
+"en": "Chart-first weather forecasts",
+"lic": "Weather"
 },
 {
 "id": "apple-design-awards",
@@ -1277,6 +1777,415 @@
 "zh": "股票行情 iOS App",
 "en": "Stock market iOS app",
 "lic": "Dribbble · Milkinside"
+},
+{
+"id": "dr-food-tracking-mobile-app-ui-with-ai-scan",
+"cat": "shot",
+"plat": "cross",
+"name": "Food Tracking Mobile App UI with AI Scan",
+"url": "https://dribbble.com/shots/27377874-Food-Tracking-Mobile-App-UI-with-AI-Scan",
+"zh": "AI 拍照识别食物的饮食记录，卡片与圆环清晰",
+"en": "Food tracking with AI photo scan, clear cards and rings",
+"lic": "Dribbble · Nixtio"
+},
+{
+"id": "dr-jewelry-mobile-app-elegant-product-showcase",
+"cat": "shot",
+"plat": "cross",
+"name": "Jewelry Mobile App — Elegant Product Showcase",
+"url": "https://dribbble.com/shots/26929242-Jewelry-Mobile-App-Elegant-Product-Showcase",
+"zh": "珠宝电商，大图与留白营造高级感",
+"en": "Jewelry commerce with large imagery and generous whitespace",
+"lic": "Dribbble · Nixtio"
+},
+{
+"id": "dr-formula-1-mobile-app-concept",
+"cat": "shot",
+"plat": "cross",
+"name": "Formula 1 Mobile App Concept",
+"url": "https://dribbble.com/shots/26929486-Formula-1-Mobile-App-Concept",
+"zh": "F1 赛车 App 概念，数据与人物海报混排",
+"en": "A Formula 1 app concept mixing stats and driver posters",
+"lic": "Dribbble · Nixtio"
+},
+{
+"id": "dr-skincare-app-ui-design-product-page-ux",
+"cat": "shot",
+"plat": "cross",
+"name": "Skincare App UI Design — Product Page UX",
+"url": "https://dribbble.com/shots/26996942-Skincare-App-UI-Design-Product-Page-UX",
+"zh": "护肤品详情页，产品图与成分信息层次分明",
+"en": "Skincare product page with clear hierarchy",
+"lic": "Dribbble · Nixtio"
+},
+{
+"id": "dr-team-analytics-mobile-app-ui",
+"cat": "shot",
+"plat": "cross",
+"name": "Team Analytics Mobile App UI",
+"url": "https://dribbble.com/shots/27323841-Team-Analytics-Mobile-App-UI",
+"zh": "团队数据分析，渐变紫色图表",
+"en": "Team analytics with purple gradient charts",
+"lic": "Dribbble · Nixtio"
+},
+{
+"id": "dr-finance-mobile-app-digital-wallet-ui",
+"cat": "shot",
+"plat": "cross",
+"name": "Finance Mobile App — Digital Wallet UI",
+"url": "https://dribbble.com/shots/27186662-Finance-Mobile-App-Digital-Wallet-UI",
+"zh": "数字钱包，暖橙渐变卡片",
+"en": "A digital wallet with warm orange gradient cards",
+"lic": "Dribbble · Nixtio"
+},
+{
+"id": "dr-crypto-wallet-app-onboarding",
+"cat": "shot",
+"plat": "cross",
+"name": "Crypto Wallet App Onboarding",
+"url": "https://dribbble.com/shots/26943888-Crypto-Wallet-App-Onboarding",
+"zh": "加密钱包引导页，柔和渐变",
+"en": "Crypto wallet onboarding in soft gradients",
+"lic": "Dribbble · Nixtio"
+},
+{
+"id": "dr-social-map-local-events-mobile-app",
+"cat": "shot",
+"plat": "cross",
+"name": "Social Map & Local Events Mobile App",
+"url": "https://dribbble.com/shots/27756702-Social-Map-Local-Events-Mobile-App",
+"zh": "社交地图与本地活动，可折叠屏展示",
+"en": "Social map and local events, shown on a foldable",
+"lic": "Dribbble · Nixtio"
+},
+{
+"id": "dr-bike-rental-app-map-navigation",
+"cat": "shot",
+"plat": "cross",
+"name": "Bike Rental App - Map Navigation",
+"url": "https://dribbble.com/shots/27809413-Bike-Rental-App-Map-Navigation",
+"zh": "共享单车地图导航",
+"en": "Bike rental with map navigation",
+"lic": "Dribbble · Nixtio"
+},
+{
+"id": "dr-online-meat-shop-mobile-app",
+"cat": "shot",
+"plat": "cross",
+"name": "Online Meat Shop Mobile App",
+"url": "https://dribbble.com/shots/27744922-Online-Meat-Shop-Mobile-App",
+"zh": "生鲜肉铺电商，大胆排版",
+"en": "An online meat shop with bold typography",
+"lic": "Dribbble · Nixtio"
+},
+{
+"id": "dr-dog-walking-app-mobile-ios-app-design",
+"cat": "shot",
+"plat": "ios",
+"name": "Dog Walking App Mobile iOS App Design",
+"url": "https://dribbble.com/shots/27640540-Dog-Walking-App-Mobile-iOS-App-Design",
+"zh": "遛狗 App，路线地图与数据卡",
+"en": "Dog walking with route maps and stat cards",
+"lic": "Dribbble · Purrweb UI/UX Agency"
+},
+{
+"id": "dr-flight-tracker-app-mobile-ios-app-design",
+"cat": "shot",
+"plat": "ios",
+"name": "Flight Tracker App Mobile iOS App Design",
+"url": "https://dribbble.com/shots/27630369-Flight-Tracker-App-Mobile-iOS-App-Design",
+"zh": "航班追踪，大号数字与时间轴",
+"en": "Flight tracking with big numerals and a timeline",
+"lic": "Dribbble · Purrweb UI/UX Agency"
+},
+{
+"id": "dr-car-rental-app-mobile-ios-app-design",
+"cat": "shot",
+"plat": "ios",
+"name": "Car Rental App Mobile iOS App Design",
+"url": "https://dribbble.com/shots/27643620-Car-Rental-App-Mobile-iOS-App-Design",
+"zh": "租车 App，地图与滑动解锁",
+"en": "Car rental with maps and swipe-to-unlock",
+"lic": "Dribbble · Purrweb UI/UX Agency"
+},
+{
+"id": "dr-period-tracker-app-mobile-ios-app-design",
+"cat": "shot",
+"plat": "ios",
+"name": "Period Tracker App Mobile iOS App Design",
+"url": "https://dribbble.com/shots/27726050-Period-Tracker-App-Mobile-iOS-App-Design",
+"zh": "经期记录，圆环日历",
+"en": "Period tracking with a ring calendar",
+"lic": "Dribbble · Purrweb UI/UX Agency"
+},
+{
+"id": "dr-reading-tracker-mobile-ios-app-design",
+"cat": "shot",
+"plat": "ios",
+"name": "Reading Tracker Mobile iOS App Design",
+"url": "https://dribbble.com/shots/27653130-Reading-Tracker-Mobile-iOS-App-Design",
+"zh": "阅读记录，纸感排版",
+"en": "Reading tracker with paper-like typography",
+"lic": "Dribbble · Purrweb UI/UX Agency"
+},
+{
+"id": "dr-calorie-counter-app-mobile-ios-app-design",
+"cat": "shot",
+"plat": "ios",
+"name": "Calorie Counter App Mobile iOS App Design",
+"url": "https://dribbble.com/shots/27706804-Calorie-Counter-App-Mobile-iOS-App-Design",
+"zh": "卡路里计数，荧光黄配色",
+"en": "Calorie counter in neon yellow",
+"lic": "Dribbble · Purrweb UI/UX Agency"
+},
+{
+"id": "dr-smart-parking-mobile-ios-app-design",
+"cat": "shot",
+"plat": "ios",
+"name": "Smart Parking Mobile iOS App Design",
+"url": "https://dribbble.com/shots/27646739-Smart-Parking-Mobile-iOS-App-Design",
+"zh": "智能停车，深色与紫色强调",
+"en": "Smart parking with dark UI and purple accents",
+"lic": "Dribbble · Purrweb UI/UX Agency"
+},
+{
+"id": "dr-ev-charging-app-mobile-ios-app-design",
+"cat": "shot",
+"plat": "ios",
+"name": "EV Charging App Mobile iOS App Design",
+"url": "https://dribbble.com/shots/27675806-EV-Charging-App-Mobile-iOS-App-Design",
+"zh": "电动车充电，大数字进度",
+"en": "EV charging with big-number progress",
+"lic": "Dribbble · Purrweb UI/UX Agency"
+},
+{
+"id": "dr-cycling-app-mobile-ios-app-design",
+"cat": "shot",
+"plat": "ios",
+"name": "Cycling App Mobile iOS App Design",
+"url": "https://dribbble.com/shots/27666042-Cycling-App-Mobile-iOS-App-Design",
+"zh": "骑行数据，紫粉渐变图表",
+"en": "Cycling stats with purple-pink charts",
+"lic": "Dribbble · Purrweb UI/UX Agency"
+},
+{
+"id": "dr-hearing-aid-app-mobile-ios-app-design",
+"cat": "shot",
+"plat": "ios",
+"name": "Hearing Aid App Mobile iOS App Design",
+"url": "https://dribbble.com/shots/27670673-Hearing-Aid-App-Mobile-iOS-App-Design",
+"zh": "助听器控制，拟物旋钮",
+"en": "Hearing-aid control with a tactile dial",
+"lic": "Dribbble · Purrweb UI/UX Agency"
+},
+{
+"id": "dr-insurance-mobile-app-interaction",
+"cat": "shot",
+"plat": "cross",
+"name": "Insurance Mobile App Interaction",
+"url": "https://dribbble.com/shots/26910466-Insurance-Mobile-App-Interaction",
+"zh": "保险 App 交互动效",
+"en": "Insurance app interaction design",
+"lic": "Dribbble · Paperpillar"
+},
+{
+"id": "dr-insurance-mobile-app-ui-design",
+"cat": "shot",
+"plat": "cross",
+"name": "Insurance Mobile App UI Design",
+"url": "https://dribbble.com/shots/26673273-Insurance-Mobile-App-UI-Design",
+"zh": "保险 App 整套界面",
+"en": "A full insurance app UI",
+"lic": "Dribbble · Paperpillar"
+},
+{
+"id": "dr-doctor-appointment-mobile-app-design-docspot",
+"cat": "shot",
+"plat": "cross",
+"name": "Doctor Appointment Mobile App Design - DocSpot",
+"url": "https://dribbble.com/shots/26901317-Doctor-Appointment-Mobile-App-Design-DocSpot",
+"zh": "医生预约 App，轻量卡片",
+"en": "Doctor appointments with light cards",
+"lic": "Dribbble · Phenomenon Studio"
+},
+{
+"id": "dr-smart-home-mobile-app-design-sentry",
+"cat": "shot",
+"plat": "cross",
+"name": "Smart Home Mobile App Design – Sentry",
+"url": "https://dribbble.com/shots/26781374-Smart-Home-Mobile-App-Design-Sentry",
+"zh": "智能家居控制，深色玻璃质感",
+"en": "Smart home control with dark glassy UI",
+"lic": "Dribbble · Phenomenon Studio"
+},
+{
+"id": "dr-ai-car-maintenance-mobile-app-design-evocare",
+"cat": "shot",
+"plat": "cross",
+"name": "AI Car Maintenance Mobile App Design – EvoCare",
+"url": "https://dribbble.com/shots/27545403-AI-Car-Maintenance-Mobile-App-Design-EvoCare",
+"zh": "AI 汽车保养助手",
+"en": "An AI car maintenance assistant",
+"lic": "Dribbble · Phenomenon Studio"
+},
+{
+"id": "dr-ai-driven-fitness-app-home-stats-chatbot-screens",
+"cat": "shot",
+"plat": "cross",
+"name": "AI-Driven Fitness App – Home, Stats & Chatbot Screens",
+"url": "https://dribbble.com/shots/26682350-AI-Driven-Fitness-App-Home-Stats-Chatbot-Screens",
+"zh": "AI 健身 App，首页、数据与聊天界面",
+"en": "AI fitness app: home, stats and chat screens",
+"lic": "Dribbble · Paperpillar"
+},
+{
+"id": "dr-fintech-app",
+"cat": "shot",
+"plat": "cross",
+"name": "Fintech app",
+"url": "https://dribbble.com/shots/27803580-Fintech-app",
+"zh": "金融 App，干净的数字排版",
+"en": "A fintech app with clean numeric type",
+"lic": "Dribbble · Taras Migulko"
+},
+{
+"id": "dr-finance-mobile-app-design-finora",
+"cat": "shot",
+"plat": "cross",
+"name": "Finance Mobile App Design - Finora",
+"url": "https://dribbble.com/shots/27795220-Finance-Mobile-App-Design-Finora",
+"zh": "个人理财 Finora，蓝色数据卡",
+"en": "Finora personal finance with blue data cards",
+"lic": "Dribbble · One Week Wonders"
+},
+{
+"id": "dr-zyro-app",
+"cat": "shot",
+"plat": "cross",
+"name": "Zyro app",
+"url": "https://dribbble.com/shots/27789425-Zyro-app",
+"zh": "Zyro 输入与卡片交互",
+"en": "Zyro input and card interactions",
+"lic": "Dribbble · Taras Migulko"
+},
+{
+"id": "dr-salesflare",
+"cat": "shot",
+"plat": "cross",
+"name": "Salesflare",
+"url": "https://dribbble.com/shots/27748589-Salesflare",
+"zh": "Salesflare 销售数据卡片",
+"en": "Salesflare sales data cards",
+"lic": "Dribbble · Taras Migulko"
+},
+{
+"id": "dr-taleo-ai-interactive-storytelling-app-for-kids",
+"cat": "shot",
+"plat": "cross",
+"name": "Taleo — AI Interactive Storytelling App for Kids",
+"url": "https://dribbble.com/shots/27798182-Taleo-AI-Interactive-Storytelling-App-for-Kids",
+"zh": "儿童 AI 互动故事 App，插画角色",
+"en": "An AI storytelling app for kids with illustrated characters",
+"lic": "Dribbble · Phenomenon Studio"
+},
+{
+"id": "dr-fuzz-app",
+"cat": "shot",
+"plat": "cross",
+"name": "Fuzz app",
+"url": "https://dribbble.com/shots/27777630-Fuzz-app",
+"zh": "Fuzz 深色金融界面",
+"en": "Fuzz dark finance UI",
+"lic": "Dribbble · Taras Migulko"
+},
+{
+"id": "dr-finance-dashboard-fintech-mobile-app",
+"cat": "shot",
+"plat": "cross",
+"name": "Finance Dashboard - Fintech Mobile App",
+"url": "https://dribbble.com/shots/27732059-Finance-Dashboard-Fintech-Mobile-App",
+"zh": "金融仪表盘，多彩卡片",
+"en": "A finance dashboard with colorful cards",
+"lic": "Dribbble · Ronas IT | UI/UX Team"
+},
+{
+"id": "dr-cashly-ios-app",
+"cat": "shot",
+"plat": "ios",
+"name": "Cashly iOS app",
+"url": "https://dribbble.com/shots/27761278-Cashly-iOS-app",
+"zh": "Cashly iOS 记账 App",
+"en": "Cashly iOS money app",
+"lic": "Dribbble · Taras Migulko"
+},
+{
+"id": "dr-healthcare-management-app",
+"cat": "shot",
+"plat": "cross",
+"name": "Healthcare Management App",
+"url": "https://dribbble.com/shots/27775124-Healthcare-Management-App",
+"zh": "医疗管理 App，清爽绿色",
+"en": "Healthcare management in fresh green",
+"lic": "Dribbble · Awe Mobile App"
+},
+{
+"id": "dr-bidstitch-mobile-app",
+"cat": "shot",
+"plat": "cross",
+"name": "BidStitch mobile app",
+"url": "https://dribbble.com/shots/27775559-BidStitch-mobile-app",
+"zh": "BidStitch 竞拍电商",
+"en": "BidStitch auction commerce",
+"lic": "Dribbble · Layo"
+},
+{
+"id": "dr-modern-learning-education-app",
+"cat": "shot",
+"plat": "cross",
+"name": "Modern Learning & Education App",
+"url": "https://dribbble.com/shots/27770922-Modern-Learning-Education-App",
+"zh": "学习教育 App，柔和卡片",
+"en": "A learning app with soft cards",
+"lic": "Dribbble · Awe Mobile App"
+},
+{
+"id": "dr-personal-finance-ios-app",
+"cat": "shot",
+"plat": "ios",
+"name": "Personal Finance iOS App",
+"url": "https://dribbble.com/shots/24622160-Personal-Finance-iOS-App",
+"zh": "个人理财 iOS App，荧光绿强调",
+"en": "Personal finance on iOS with neon-green accents",
+"lic": "Dribbble · Fireart Studio"
+},
+{
+"id": "dr-quiz-ios-app-animation",
+"cat": "shot",
+"plat": "ios",
+"name": "Quiz iOS app / Animation",
+"url": "https://dribbble.com/shots/5836646-Quiz-iOS-app-Animation",
+"zh": "问答 iOS App 动效",
+"en": "Quiz iOS app animation",
+"lic": "Dribbble · Mike | Creative Mints"
+},
+{
+"id": "dr-vital-card-ios-app-design-by-milkinside",
+"cat": "shot",
+"plat": "ios",
+"name": "Vital Card iOS app design by milkinside",
+"url": "https://dribbble.com/shots/22988595-Vital-Card-iOS-app-design-by-milkinside",
+"zh": "Vital Card 健康卡片设计",
+"en": "Vital Card health app design",
+"lic": "Dribbble · Gleb Kuznetsov ✈"
+},
+{
+"id": "layers-to",
+"cat": "pattern",
+"plat": "cross",
+"name": "Layers",
+"url": "https://layers.to/",
+"zh": "设计师社区，大量移动端作品与动效",
+"en": "A designer community with lots of mobile work and motion"
 },
 {
 "id": "fig-apple-ios-ui-kit-figma-variables",
@@ -3151,6 +4060,20 @@
 "handle": "jenidesignns",
 "likes": 151,
 "reposts": 8
+}
+},
+{
+"id": "x-dannylimanseta-145933",
+"cat": "inspo",
+"plat": "cross",
+"name": "@DannyLimanseta · Creature-battle mobile game prototype",
+"url": "https://x.com/DannyLimanseta/status/2050946294794145933",
+"zh": "和孩子一起构思的宠物对战手游原型，插画与 HUD 精致",
+"en": "A creature-battle mobile game prototype made with his kids, with polished art and HUD",
+"x": {
+"handle": "DannyLimanseta",
+"likes": 339,
+"reposts": 18
 }
 },
 {
