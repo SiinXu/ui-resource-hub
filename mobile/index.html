@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>移动端设计专题 · UI Hub</title>
+<meta name="description" content="UI Hub mobile design collection: app screen libraries, HIG and Material 3 guidelines, Figma kits, React Native / SwiftUI / Flutter libraries, motion, onboarding and paywalls, store screenshots, free assets and AI agent skills.">
+<link rel="canonical" href="https://ui.incidental.site/mobile/">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#06070b">
+<link rel="preload" href="../fonts/geist.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../fonts/instrument-serif.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%277%27 fill=%27%2306070b%27/%3E%3C/svg%3E">
+<link rel="stylesheet" href="../styles.css?v=9">
+<script>(function(){var P=['zh-CN','zh-TW','en','ja','ko','ms','vi','fr','es','de'],L;try{var q=(location.search.match(/[?&]lang=([\w-]+)/)||[])[1];q={'zh-Hans':'zh-CN','zh-Hant':'zh-TW'}[q]||q;if(q&&P.indexOf(q)>-1)L=q;if(!L){var v=localStorage.getItem('uihub.lang');if(v&&P.indexOf(v)>-1)L=v}}catch(e){}if(!L){var n=(navigator.language||'zh-CN').toLowerCase();L=/^zh-(tw|hk|mo|hant)/.test(n)?'zh-TW':({zh:'zh-CN',en:'en',ja:'ja',ko:'ko',ms:'ms',es:'es',de:'de',fr:'fr',vi:'vi'}[n.slice(0,2)]||'zh-CN')}window.__uhL=L;document.documentElement.lang=L})();</script>
+<script>try{document.documentElement.dataset.theme=localStorage.getItem('uihub.theme5')||'dark'}catch(e){document.documentElement.dataset.theme='dark'}</script>
+</head>
+<body>
+<header class="top" id="top">
+  <div class="bar wrap">
+    <a class="logo" href="../"><span class="mark" aria-hidden="true"><i></i><i></i></span><span class="wm">UI Hub</span></a>
+    <nav class="tabs" id="tabsTop"><a href="../" data-t="home"></a><a href="./" class="on" data-t="h1"></a></nav>
+    <label class="langw" data-ta="lang"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.5 3 14.5 0 18M12 3c-3 3.5-3 14.5 0 18"/></svg><select id="langSel"></select></label>
+    <button class="icon" id="themeBtn" data-ta="theme"><svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 9 9 7 7 0 0 1-9-9z"/></svg></button>
+  </div>
+</header>
+<main id="main">
+  <section id="home" class="view">
+    <div class="hero wrap" id="hero">
+      <p class="eyebrow"><span class="dot"></span><span data-t="eyebrow"></span></p>
+      <h1><span data-t="h1"></span> <em data-t="em"></em></h1>
+      <p class="lede" id="lede"></p>
+      <label class="hsearch"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="q" type="search" autocomplete="off" enterkeyhint="search"><kbd>/</kbd></label>
+      <dl class="hstats" id="hstats"></dl>
+    </div>
+    <div class="sec-h wrap cat-h" id="catalog"><h2><span class="no">01</span><span data-t="sec"></span></h2><p class="meta" id="meta"></p></div>
+    <div class="filters wrap" id="chipsBar"><div class="frow"><div class="chips rtrow" id="chips"></div></div><div class="frow clip"><div class="chips" id="platChips"></div></div></div>
+    <div class="grid wrap" id="grid"></div>
+    <div class="wrap gmw"><button class="gmore" id="gridMore" hidden>…</button></div>
+    <p class="empty wrap" id="empty" hidden></p>
+  </section>
+</main>
+<footer class="foot wrap"><p class="legal" data-t="foot"></p></footer>
+<script src="i18n.js?v=1"></script>
+<script src="data.js?v=1"></script>
+<script src="app.js?v=1"></script>
+</body>
+</html>

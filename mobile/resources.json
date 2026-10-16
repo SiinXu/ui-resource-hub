@@ -1,0 +1,4305 @@
+[
+ {
+  "id": "apple-hig-designing-for-ios",
+  "cat": "guide",
+  "plat": "ios",
+  "name": "Apple HIG · Designing for iOS",
+  "url": "https://developer.apple.com/design/human-interface-guidelines/designing-for-ios",
+  "zh": "iOS 设计总纲：交互方式、屏幕尺寸与系统能力一页讲清",
+  "en": "The starting point for iOS: interaction model, screen sizes and system capabilities"
+ },
+ {
+  "id": "apple-hig-layout",
+  "cat": "guide",
+  "plat": "ios",
+  "name": "Apple HIG · Layout",
+  "url": "https://developer.apple.com/design/human-interface-guidelines/layout",
+  "zh": "安全区、边距、尺寸类别的官方规则，排版不再拍脑袋",
+  "en": "Official rules for safe areas, margins and size classes"
+ },
+ {
+  "id": "apple-hig-typography",
+  "cat": "guide",
+  "plat": "ios",
+  "name": "Apple HIG · Typography",
+  "url": "https://developer.apple.com/design/human-interface-guidelines/typography",
+  "zh": "动态字体字号表与 SF Pro 用法，移动端字号的标准答案",
+  "en": "Dynamic Type size tables and SF Pro usage"
+ },
+ {
+  "id": "apple-hig-color",
+  "cat": "guide",
+  "plat": "ios",
+  "name": "Apple HIG · Color",
+  "url": "https://developer.apple.com/design/human-interface-guidelines/color",
+  "zh": "系统色、语义色与对比度要求，明暗模式都能用",
+  "en": "System and semantic colors plus contrast rules for light and dark"
+ },
+ {
+  "id": "apple-hig-dark-mode",
+  "cat": "guide",
+  "plat": "ios",
+  "name": "Apple HIG · Dark Mode",
+  "url": "https://developer.apple.com/design/human-interface-guidelines/dark-mode",
+  "zh": "深色模式的层级、材质与配色原则",
+  "en": "Elevation, materials and color principles for Dark Mode"
+ },
+ {
+  "id": "apple-hig-materials-liquid-glass",
+  "cat": "guide",
+  "plat": "ios",
+  "name": "Apple HIG · Materials (Liquid Glass)",
+  "url": "https://developer.apple.com/design/human-interface-guidelines/materials",
+  "zh": "Liquid Glass 与模糊材质的官方用法，iOS 26 新视觉的核心",
+  "en": "Official guidance on Liquid Glass and blur materials, the core of iOS 26"
+ },
+ {
+  "id": "apple-hig-tab-bars",
+  "cat": "guide",
+  "plat": "ios",
+  "name": "Apple HIG · Tab bars",
+  "url": "https://developer.apple.com/design/human-interface-guidelines/tab-bars",
+  "zh": "底部标签栏数量、图标与行为规范",
+  "en": "Tab bar count, icons and behavior rules"
+ },
+ {
+  "id": "apple-hig-navigation-bars",
+  "cat": "guide",
+  "plat": "ios",
+  "name": "Apple HIG · Navigation bars",
+  "url": "https://developer.apple.com/design/human-interface-guidelines/navigation-and-search",
+  "zh": "导航层级、大标题与搜索的组织方式",
+  "en": "How to structure navigation hierarchy, large titles and search"
+ },
+ {
+  "id": "apple-hig-sheets",
+  "cat": "guide",
+  "plat": "ios",
+  "name": "Apple HIG · Sheets",
+  "url": "https://developer.apple.com/design/human-interface-guidelines/sheets",
+  "zh": "半屏/全屏 Sheet 的高度档位与关闭方式",
+  "en": "Sheet detents, sizing and dismissal behavior"
+ },
+ {
+  "id": "apple-hig-buttons",
+  "cat": "guide",
+  "plat": "ios",
+  "name": "Apple HIG · Buttons",
+  "url": "https://developer.apple.com/design/human-interface-guidelines/buttons",
+  "zh": "按钮样式、尺寸与点击区域的标准",
+  "en": "Button styles, sizes and hit-target standards"
+ },
+ {
+  "id": "apple-hig-lists-and-tables",
+  "cat": "guide",
+  "plat": "ios",
+  "name": "Apple HIG · Lists and tables",
+  "url": "https://developer.apple.com/design/human-interface-guidelines/lists-and-tables",
+  "zh": "列表与分组表格，设置页的根基",
+  "en": "Lists and grouped tables, the backbone of settings screens"
+ },
+ {
+  "id": "apple-hig-onboarding",
+  "cat": "guide",
+  "plat": "ios",
+  "name": "Apple HIG · Onboarding",
+  "url": "https://developer.apple.com/design/human-interface-guidelines/onboarding",
+  "zh": "首启引导要短、可跳过、边用边教",
+  "en": "Keep onboarding short, skippable and teach in context"
+ },
+ {
+  "id": "apple-hig-launching",
+  "cat": "guide",
+  "plat": "ios",
+  "name": "Apple HIG · Launching",
+  "url": "https://developer.apple.com/design/human-interface-guidelines/launching",
+  "zh": "启动画面与首屏体验的要求",
+  "en": "Launch screen and first-run experience requirements"
+ },
+ {
+  "id": "apple-hig-widgets",
+  "cat": "guide",
+  "plat": "ios",
+  "name": "Apple HIG · Widgets",
+  "url": "https://developer.apple.com/design/human-interface-guidelines/widgets",
+  "zh": "桌面小组件尺寸、信息密度与刷新策略",
+  "en": "Widget sizes, information density and refresh strategy"
+ },
+ {
+  "id": "apple-hig-live-activities",
+  "cat": "guide",
+  "plat": "ios",
+  "name": "Apple HIG · Live Activities",
+  "url": "https://developer.apple.com/design/human-interface-guidelines/live-activities",
+  "zh": "灵动岛与锁屏实时活动的布局规范",
+  "en": "Layout rules for Dynamic Island and Lock Screen Live Activities"
+ },
+ {
+  "id": "apple-hig-gestures",
+  "cat": "guide",
+  "plat": "ios",
+  "name": "Apple HIG · Gestures",
+  "url": "https://developer.apple.com/design/human-interface-guidelines/gestures",
+  "zh": "系统手势与自定义手势的边界",
+  "en": "System gestures and where custom gestures fit"
+ },
+ {
+  "id": "apple-hig-playing-haptics",
+  "cat": "guide",
+  "plat": "ios",
+  "name": "Apple HIG · Playing haptics",
+  "url": "https://developer.apple.com/design/human-interface-guidelines/playing-haptics",
+  "zh": "触感反馈的类型与使用时机",
+  "en": "Haptic feedback types and when to use them"
+ },
+ {
+  "id": "apple-hig-motion",
+  "cat": "guide",
+  "plat": "ios",
+  "name": "Apple HIG · Motion",
+  "url": "https://developer.apple.com/design/human-interface-guidelines/motion",
+  "zh": "动效要有目的、可减弱，官方动效原则",
+  "en": "Purposeful, reducible motion — Apple's motion principles"
+ },
+ {
+  "id": "apple-hig-accessibility",
+  "cat": "guide",
+  "plat": "ios",
+  "name": "Apple HIG · Accessibility",
+  "url": "https://developer.apple.com/design/human-interface-guidelines/accessibility",
+  "zh": "VoiceOver、对比度与点击区域的无障碍清单",
+  "en": "Accessibility checklist: VoiceOver, contrast and hit targets"
+ },
+ {
+  "id": "apple-hig-app-icons",
+  "cat": "guide",
+  "plat": "ios",
+  "name": "Apple HIG · App icons",
+  "url": "https://developer.apple.com/design/human-interface-guidelines/app-icons",
+  "zh": "App 图标网格、分层与深色/着色变体",
+  "en": "App icon grid, layers and dark/tinted variants"
+ },
+ {
+  "id": "apple-hig-sf-symbols",
+  "cat": "guide",
+  "plat": "ios",
+  "name": "Apple HIG · SF Symbols",
+  "url": "https://developer.apple.com/design/human-interface-guidelines/sf-symbols",
+  "zh": "SF Symbols 的粗细、渲染模式与动画",
+  "en": "SF Symbols weights, rendering modes and animations"
+ },
+ {
+  "id": "apple-hig-in-app-purchase",
+  "cat": "guide",
+  "plat": "ios",
+  "name": "Apple HIG · In-app purchase",
+  "url": "https://developer.apple.com/design/human-interface-guidelines/in-app-purchase",
+  "zh": "内购与订阅页面的合规设计要求",
+  "en": "Compliant design requirements for in-app purchase and subscriptions"
+ },
+ {
+  "id": "apple-hig-notifications",
+  "cat": "guide",
+  "plat": "ios",
+  "name": "Apple HIG · Notifications",
+  "url": "https://developer.apple.com/design/human-interface-guidelines/notifications",
+  "zh": "通知文案、分组与打扰程度的规范",
+  "en": "Notification copy, grouping and interruption levels"
+ },
+ {
+  "id": "apple-hig-text-fields",
+  "cat": "guide",
+  "plat": "ios",
+  "name": "Apple HIG · Text fields",
+  "url": "https://developer.apple.com/design/human-interface-guidelines/text-fields",
+  "zh": "输入框、键盘类型与占位文字",
+  "en": "Text fields, keyboard types and placeholder text"
+ },
+ {
+  "id": "apple-hig-alerts",
+  "cat": "guide",
+  "plat": "ios",
+  "name": "Apple HIG · Alerts",
+  "url": "https://developer.apple.com/design/human-interface-guidelines/alerts",
+  "zh": "何时用弹窗、按钮怎么排",
+  "en": "When to use alerts and how to order buttons"
+ },
+ {
+  "id": "apple-hig-writing",
+  "cat": "guide",
+  "plat": "ios",
+  "name": "Apple HIG · Writing",
+  "url": "https://developer.apple.com/design/human-interface-guidelines/writing",
+  "zh": "界面文案的语气与写法",
+  "en": "Voice and tone for interface copy"
+ },
+ {
+  "id": "apple-hig-privacy",
+  "cat": "guide",
+  "plat": "ios",
+  "name": "Apple HIG · Privacy",
+  "url": "https://developer.apple.com/design/human-interface-guidelines/privacy",
+  "zh": "权限请求的时机与说明文案",
+  "en": "When and how to ask for permissions"
+ },
+ {
+  "id": "material-3-color-system",
+  "cat": "guide",
+  "plat": "android",
+  "name": "Material 3 · Color system",
+  "url": "https://m3.material.io/styles/color/system/overview",
+  "zh": "动态取色与色彩角色，一套色板适配明暗",
+  "en": "Dynamic color and color roles that work in light and dark"
+ },
+ {
+  "id": "material-3-typography",
+  "cat": "guide",
+  "plat": "android",
+  "name": "Material 3 · Typography",
+  "url": "https://m3.material.io/styles/typography/overview",
+  "zh": "M3 字体层级与可变字体用法",
+  "en": "M3 type scale and variable font usage"
+ },
+ {
+  "id": "material-3-motion",
+  "cat": "guide",
+  "plat": "android",
+  "name": "Material 3 · Motion",
+  "url": "https://m3.material.io/styles/motion/overview",
+  "zh": "缓动、时长与转场模式的官方规范",
+  "en": "Official easing, duration and transition patterns"
+ },
+ {
+  "id": "material-3-elevation",
+  "cat": "guide",
+  "plat": "android",
+  "name": "Material 3 · Elevation",
+  "url": "https://m3.material.io/styles/elevation/overview",
+  "zh": "层级与色调表面，告别重阴影",
+  "en": "Elevation with tonal surfaces instead of heavy shadows"
+ },
+ {
+  "id": "material-3-icons",
+  "cat": "guide",
+  "plat": "android",
+  "name": "Material 3 · Icons",
+  "url": "https://m3.material.io/styles/icons/overview",
+  "zh": "图标尺寸、可变轴与使用规范",
+  "en": "Icon sizes, variable axes and usage rules"
+ },
+ {
+  "id": "material-3-buttons",
+  "cat": "guide",
+  "plat": "android",
+  "name": "Material 3 · Buttons",
+  "url": "https://m3.material.io/components/buttons/overview",
+  "zh": "五种按钮的层级与选择方式",
+  "en": "Five button types and how to choose between them"
+ },
+ {
+  "id": "material-3-navigation-bar",
+  "cat": "guide",
+  "plat": "android",
+  "name": "Material 3 · Navigation bar",
+  "url": "https://m3.material.io/components/navigation-bar/overview",
+  "zh": "底部导航的数量、标签与激活态",
+  "en": "Bottom navigation count, labels and active state"
+ },
+ {
+  "id": "material-3-bottom-sheets",
+  "cat": "guide",
+  "plat": "android",
+  "name": "Material 3 · Bottom sheets",
+  "url": "https://m3.material.io/components/bottom-sheets/overview",
+  "zh": "底部面板的模态与非模态用法",
+  "en": "Modal and standard bottom sheets"
+ },
+ {
+  "id": "material-3-cards",
+  "cat": "guide",
+  "plat": "android",
+  "name": "Material 3 · Cards",
+  "url": "https://m3.material.io/components/cards/overview",
+  "zh": "卡片三种样式与信息组织",
+  "en": "Three card styles and content structure"
+ },
+ {
+  "id": "material-3-dialogs",
+  "cat": "guide",
+  "plat": "android",
+  "name": "Material 3 · Dialogs",
+  "url": "https://m3.material.io/components/dialogs/overview",
+  "zh": "基础与全屏对话框的使用场景",
+  "en": "Basic and full-screen dialog use cases"
+ },
+ {
+  "id": "material-3-top-app-bar",
+  "cat": "guide",
+  "plat": "android",
+  "name": "Material 3 · Top app bar",
+  "url": "https://m3.material.io/components/app-bars/overview",
+  "zh": "顶部栏的尺寸与滚动行为",
+  "en": "Top app bar sizes and scroll behavior"
+ },
+ {
+  "id": "material-3-fab",
+  "cat": "guide",
+  "plat": "android",
+  "name": "Material 3 · FAB",
+  "url": "https://m3.material.io/components/floating-action-button/overview",
+  "zh": "悬浮按钮的位置与尺寸",
+  "en": "Floating action button placement and sizes"
+ },
+ {
+  "id": "material-3-lists",
+  "cat": "guide",
+  "plat": "android",
+  "name": "Material 3 · Lists",
+  "url": "https://m3.material.io/components/lists/overview",
+  "zh": "列表行高、前后缀元素规范",
+  "en": "List item heights and leading/trailing elements"
+ },
+ {
+  "id": "material-3-search",
+  "cat": "guide",
+  "plat": "android",
+  "name": "Material 3 · Search",
+  "url": "https://m3.material.io/components/search/overview",
+  "zh": "搜索栏与搜索视图的展开方式",
+  "en": "Search bar and search view behavior"
+ },
+ {
+  "id": "material-3-snackbar",
+  "cat": "guide",
+  "plat": "android",
+  "name": "Material 3 · Snackbar",
+  "url": "https://m3.material.io/components/snackbar/overview",
+  "zh": "轻提示的时长与操作按钮",
+  "en": "Snackbar duration and actions"
+ },
+ {
+  "id": "material-3-chips",
+  "cat": "guide",
+  "plat": "android",
+  "name": "Material 3 · Chips",
+  "url": "https://m3.material.io/components/chips/overview",
+  "zh": "筛选、输入、建议四类标签",
+  "en": "Assist, filter, input and suggestion chips"
+ },
+ {
+  "id": "material-3-text-fields",
+  "cat": "guide",
+  "plat": "android",
+  "name": "Material 3 · Text fields",
+  "url": "https://m3.material.io/components/text-fields/overview",
+  "zh": "填充与描边输入框、错误状态",
+  "en": "Filled and outlined text fields with error states"
+ },
+ {
+  "id": "material-3-navigation-rail",
+  "cat": "guide",
+  "plat": "android",
+  "name": "Material 3 · Navigation rail",
+  "url": "https://m3.material.io/components/navigation-rail/overview",
+  "zh": "平板与折叠屏上的侧边导航",
+  "en": "Side navigation for tablets and foldables"
+ },
+ {
+  "id": "material-3-tabs",
+  "cat": "guide",
+  "plat": "android",
+  "name": "Material 3 · Tabs",
+  "url": "https://m3.material.io/components/tabs/overview",
+  "zh": "主次标签页的样式与滑动",
+  "en": "Primary and secondary tabs"
+ },
+ {
+  "id": "material-3-date-pickers",
+  "cat": "guide",
+  "plat": "android",
+  "name": "Material 3 · Date pickers",
+  "url": "https://m3.material.io/components/date-pickers/overview",
+  "zh": "日期选择器的三种形态",
+  "en": "Three date picker forms"
+ },
+ {
+  "id": "material-3-gestures",
+  "cat": "guide",
+  "plat": "android",
+  "name": "Material 3 · Gestures",
+  "url": "https://m3.material.io/foundations/interaction/gestures",
+  "zh": "滑动、长按、拖拽等手势规范",
+  "en": "Swipe, long-press and drag gesture guidance"
+ },
+ {
+  "id": "material-3-accessible-design",
+  "cat": "guide",
+  "plat": "android",
+  "name": "Material 3 · Accessible design",
+  "url": "https://m3.material.io/foundations/designing/overview",
+  "zh": "无障碍设计的原则与检查点",
+  "en": "Accessible design principles and checkpoints"
+ },
+ {
+  "id": "material-3-expressive",
+  "cat": "guide",
+  "plat": "android",
+  "name": "Material 3 Expressive",
+  "url": "https://m3.material.io/blog/building-with-m3-expressive",
+  "zh": "M3 Expressive 新视觉：更大胆的形状、颜色与动效",
+  "en": "M3 Expressive: bolder shapes, color and motion"
+ },
+ {
+  "id": "android-mobile-ui-design",
+  "cat": "guide",
+  "plat": "android",
+  "name": "Android · Mobile UI design",
+  "url": "https://developer.android.com/design/ui/mobile",
+  "zh": "Android 官方移动端设计总入口",
+  "en": "Android's official mobile UI design hub"
+ },
+ {
+  "id": "android-edge-to-edge",
+  "cat": "guide",
+  "plat": "android",
+  "name": "Android · Edge-to-edge",
+  "url": "https://developer.android.com/design/ui/mobile/guides/layout-and-content/edge-to-edge",
+  "zh": "全面屏沉浸式布局与系统栏处理",
+  "en": "Edge-to-edge layouts and system bar handling"
+ },
+ {
+  "id": "android-large-screens-foldables",
+  "cat": "guide",
+  "plat": "android",
+  "name": "Android · Large screens & foldables",
+  "url": "https://developer.android.com/design/ui/large-screens",
+  "zh": "平板和折叠屏的自适应设计",
+  "en": "Adaptive design for tablets and foldables"
+ },
+ {
+  "id": "android-widgets-design",
+  "cat": "guide",
+  "plat": "android",
+  "name": "Android · Widgets design",
+  "url": "https://developer.android.com/design/ui/mobile/guides/widgets",
+  "zh": "Android 桌面小部件的设计规范",
+  "en": "Design guidance for Android home-screen widgets"
+ },
+ {
+  "id": "fluent-2-design-system",
+  "cat": "guide",
+  "plat": "cross",
+  "name": "Fluent 2 Design System",
+  "url": "https://fluent2.microsoft.design/",
+  "zh": "微软 Fluent 2，含 iOS/Android 组件规范",
+  "en": "Microsoft Fluent 2 with iOS and Android component specs"
+ },
+ {
+  "id": "samsung-one-ui-design",
+  "cat": "guide",
+  "plat": "android",
+  "name": "Samsung One UI design",
+  "url": "https://developer.samsung.com/one-ui",
+  "zh": "三星 One UI 设计原则：单手可达的布局",
+  "en": "Samsung One UI principles for one-handed reach"
+ },
+ {
+  "id": "harmonyos-design",
+  "cat": "guide",
+  "plat": "cross",
+  "name": "HarmonyOS design",
+  "url": "https://developer.huawei.com/consumer/en/design/",
+  "zh": "鸿蒙设计规范，覆盖多设备布局",
+  "en": "HarmonyOS design guidelines for multi-device layouts"
+ },
+ {
+  "id": "laws-of-ux",
+  "cat": "guide",
+  "plat": "cross",
+  "name": "Laws of UX",
+  "url": "https://lawsofux.com/",
+  "zh": "菲茨定律、希克定律等 UX 法则的可视化合集",
+  "en": "Fitts's, Hick's and other UX laws, beautifully explained"
+ },
+ {
+  "id": "baymard-mobile-e-commerce-ux",
+  "cat": "guide",
+  "plat": "cross",
+  "name": "Baymard · Mobile e-commerce UX",
+  "url": "https://baymard.com/research/mcommerce-usability",
+  "zh": "移动电商可用性研究，结账页必读",
+  "en": "Mobile e-commerce usability research, essential for checkout"
+ },
+ {
+  "id": "smashing-the-thumb-zone",
+  "cat": "guide",
+  "plat": "cross",
+  "name": "Smashing · The Thumb Zone",
+  "url": "https://www.smashingmagazine.com/2016/09/the-thumb-zone-designing-for-mobile-users/",
+  "zh": "拇指热区经典文章，决定按钮放哪",
+  "en": "The classic thumb-zone article on where to place actions"
+ },
+ {
+  "id": "web-dev-learn-responsive-design",
+  "cat": "guide",
+  "plat": "web",
+  "name": "web.dev · Learn Responsive Design",
+  "url": "https://web.dev/learn/design",
+  "zh": "Google 出品的响应式设计完整课程",
+  "en": "Google's complete responsive design course"
+ },
+ {
+  "id": "mdn-responsive-design",
+  "cat": "guide",
+  "plat": "web",
+  "name": "MDN · Responsive design",
+  "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Responsive_Design",
+  "zh": "MDN 响应式布局基础教程",
+  "en": "MDN's responsive design fundamentals"
+ },
+ {
+  "id": "apple-design-wwdc-sessions",
+  "cat": "guide",
+  "plat": "cross",
+  "name": "Apple Design · WWDC sessions",
+  "url": "https://developer.apple.com/design/",
+  "zh": "苹果设计主页：WWDC 设计讲座与新规范",
+  "en": "Apple Design hub with WWDC design talks and updates"
+ },
+ {
+  "id": "android-compose-material-3",
+  "cat": "guide",
+  "plat": "android",
+  "name": "Android · Compose Material 3",
+  "url": "https://developer.android.com/develop/ui/compose/designsystems/material3",
+  "zh": "在 Jetpack Compose 里落地 M3 主题",
+  "en": "Implementing Material 3 theming in Jetpack Compose"
+ },
+ {
+  "id": "mobbin",
+  "cat": "pattern",
+  "plat": "cross",
+  "name": "Mobbin",
+  "url": "https://mobbin.com/",
+  "zh": "最大的真实 App 截图与流程库，按页面和组件搜索",
+  "en": "The largest library of real app screens and flows, searchable by screen and element"
+ },
+ {
+  "id": "refero",
+  "cat": "pattern",
+  "plat": "cross",
+  "name": "Refero",
+  "url": "https://refero.design/",
+  "zh": "高质量真实产品截图库，按页面类型和组件检索",
+  "en": "High-quality real product screens indexed by page type and component"
+ },
+ {
+  "id": "pttrns",
+  "cat": "pattern",
+  "plat": "ios",
+  "name": "Pttrns",
+  "url": "https://www.pttrns.com/",
+  "zh": "老牌 iOS 界面模式库，按模式分类",
+  "en": "Long-running iOS pattern library organized by pattern"
+ },
+ {
+  "id": "page-flows",
+  "cat": "pattern",
+  "plat": "cross",
+  "name": "Page Flows",
+  "url": "https://pageflows.com/",
+  "zh": "完整用户流程录屏：注册、引导、付费一步不落",
+  "en": "Full user-flow recordings: signup, onboarding, checkout"
+ },
+ {
+  "id": "mobbin-glossary",
+  "cat": "pattern",
+  "plat": "cross",
+  "name": "Mobbin · Glossary",
+  "url": "https://mobbin.com/glossary",
+  "zh": "移动端 UI 元素术语表，带真实示例",
+  "en": "Glossary of mobile UI elements with real examples"
+ },
+ {
+  "id": "screensdesign",
+  "cat": "pattern",
+  "plat": "cross",
+  "name": "ScreensDesign",
+  "url": "https://screensdesign.com/",
+  "zh": "App 截图+录屏+营收数据，看好看的也看赚钱的",
+  "en": "App screens and videos alongside revenue data"
+ },
+ {
+  "id": "ui-patterns",
+  "cat": "pattern",
+  "plat": "cross",
+  "name": "UI Patterns",
+  "url": "https://ui-patterns.com/patterns",
+  "zh": "常见界面问题的模式解法合集",
+  "en": "Pattern solutions to common interface problems"
+ },
+ {
+  "id": "collect-ui",
+  "cat": "pattern",
+  "plat": "cross",
+  "name": "Collect UI",
+  "url": "https://collectui.com/",
+  "zh": "按组件类型整理的 Dribbble 精选",
+  "en": "Dribbble picks organized by component type"
+ },
+ {
+  "id": "scrnshts",
+  "cat": "pattern",
+  "plat": "ios",
+  "name": "Scrnshts",
+  "url": "https://scrnshts.club/",
+  "zh": "App Store 截图设计灵感库",
+  "en": "Inspiration library of App Store screenshot designs"
+ },
+ {
+  "id": "nicely-done",
+  "cat": "pattern",
+  "plat": "cross",
+  "name": "Nicely Done",
+  "url": "https://nicelydone.club/",
+  "zh": "产品界面与流程截图，含移动端",
+  "en": "Product UI and flow screenshots including mobile"
+ },
+ {
+  "id": "land-book-app",
+  "cat": "pattern",
+  "plat": "cross",
+  "name": "Land-book · App",
+  "url": "https://land-book.com/?category=app",
+  "zh": "App 产品官网设计灵感",
+  "en": "Website inspiration for app products"
+ },
+ {
+  "id": "growth-design-case-studies",
+  "cat": "pattern",
+  "plat": "cross",
+  "name": "Growth.Design case studies",
+  "url": "https://growth.design/case-studies",
+  "zh": "漫画式拆解真实 App 的引导与留存",
+  "en": "Comic-style teardowns of real app onboarding and retention"
+ },
+ {
+  "id": "appshots",
+  "cat": "pattern",
+  "plat": "cross",
+  "name": "Appshots",
+  "url": "https://appshots.design/",
+  "zh": "App 截图与官网灵感合集",
+  "en": "App screenshots and landing page inspiration"
+ },
+ {
+  "id": "revenuecat-paywalls",
+  "cat": "flow",
+  "plat": "cross",
+  "name": "RevenueCat Paywalls",
+  "url": "https://www.revenuecat.com/docs/tools/paywalls",
+  "zh": "可远程配置的原生付费墙模板",
+  "en": "Remotely configurable native paywall templates"
+ },
+ {
+  "id": "revenuecat-paywall-examples-blog",
+  "cat": "flow",
+  "plat": "cross",
+  "name": "RevenueCat · Paywall examples blog",
+  "url": "https://www.revenuecat.com/blog/growth/guide-to-mobile-paywalls-subscription-apps/",
+  "zh": "订阅付费墙设计指南与大量真实例子",
+  "en": "Guide to subscription paywalls with many real examples"
+ },
+ {
+  "id": "superwall-paywall-templates",
+  "cat": "flow",
+  "plat": "cross",
+  "name": "Superwall · Paywall templates",
+  "url": "https://superwall.com/templates",
+  "zh": "付费墙模板库，可直接改用",
+  "en": "Library of paywall templates you can adapt"
+ },
+ {
+  "id": "superwall-blog-paywall-teardowns",
+  "cat": "flow",
+  "plat": "cross",
+  "name": "Superwall blog · Paywall teardowns",
+  "url": "https://superwall.com/blog",
+  "zh": "高营收 App 付费墙拆解",
+  "en": "Teardowns of paywalls from top-grossing apps"
+ },
+ {
+  "id": "adapty-paywall-library",
+  "cat": "flow",
+  "plat": "cross",
+  "name": "Adapty · Paywall library",
+  "url": "https://adapty.io/paywall-library/",
+  "zh": "按品类收录的真实付费墙截图",
+  "en": "Real paywall screenshots grouped by category"
+ },
+ {
+  "id": "page-flows-onboarding",
+  "cat": "flow",
+  "plat": "cross",
+  "name": "Page Flows · Onboarding",
+  "url": "https://pageflows.com/onboarding/",
+  "zh": "引导流程录屏合集",
+  "en": "Onboarding flow recordings"
+ },
+ {
+  "id": "useronboard",
+  "cat": "flow",
+  "plat": "cross",
+  "name": "UserOnboard",
+  "url": "https://www.useronboard.com/user-onboarding-teardowns/",
+  "zh": "经典引导流程逐屏点评",
+  "en": "Classic screen-by-screen onboarding teardowns"
+ },
+ {
+  "id": "nn-g-mobile-onboarding",
+  "cat": "flow",
+  "plat": "cross",
+  "name": "NN/g · Mobile onboarding",
+  "url": "https://www.nngroup.com/articles/mobile-app-onboarding/",
+  "zh": "什么时候该做引导，什么时候别做",
+  "en": "When onboarding helps and when to skip it"
+ },
+ {
+  "id": "smashing-mobile-form-design",
+  "cat": "flow",
+  "plat": "cross",
+  "name": "Smashing · Mobile form design",
+  "url": "https://www.smashingmagazine.com/2018/08/best-practices-for-mobile-form-design/",
+  "zh": "移动端表单设计最佳实践",
+  "en": "Best practices for mobile form design"
+ },
+ {
+  "id": "apple-app-store-subscription-guidance",
+  "cat": "flow",
+  "plat": "ios",
+  "name": "Apple · App Store subscription guidance",
+  "url": "https://developer.apple.com/app-store/subscriptions/",
+  "zh": "苹果订阅规则与付费页要求",
+  "en": "Apple's subscription rules and paywall requirements"
+ },
+ {
+  "id": "mobbin-empty-states",
+  "cat": "flow",
+  "plat": "cross",
+  "name": "Mobbin · Empty states",
+  "url": "https://mobbin.com/explore/mobile/screens/empty-state",
+  "zh": "空状态设计真实案例",
+  "en": "Real-world empty state designs"
+ },
+ {
+  "id": "mobbin-login-screens",
+  "cat": "flow",
+  "plat": "cross",
+  "name": "Mobbin · Login screens",
+  "url": "https://mobbin.com/explore/mobile/screens/login",
+  "zh": "登录页真实案例",
+  "en": "Real-world login screens"
+ },
+ {
+  "id": "applaunchpad",
+  "cat": "store",
+  "plat": "cross",
+  "name": "AppLaunchpad",
+  "url": "https://theapplaunchpad.com/",
+  "zh": "在线做 App Store/Google Play 截图，模板多",
+  "en": "Online App Store and Google Play screenshot maker with templates"
+ },
+ {
+  "id": "previewed",
+  "cat": "store",
+  "plat": "cross",
+  "name": "Previewed",
+  "url": "https://previewed.app/",
+  "zh": "3D 设备样机与商店截图生成",
+  "en": "3D device mockups and store screenshot generator"
+ },
+ {
+  "id": "appmockup-studio",
+  "cat": "store",
+  "plat": "cross",
+  "name": "AppMockUp Studio",
+  "url": "https://app-mockup.com/",
+  "zh": "免费商店截图编辑器，支持多尺寸导出",
+  "en": "Free store screenshot editor with multi-size export"
+ },
+ {
+  "id": "screenshots-pro",
+  "cat": "store",
+  "plat": "cross",
+  "name": "Screenshots.pro",
+  "url": "https://screenshots.pro/",
+  "zh": "批量生成多语言商店截图",
+  "en": "Batch multi-language store screenshots"
+ },
+ {
+  "id": "rotato",
+  "cat": "store",
+  "plat": "cross",
+  "name": "Rotato",
+  "url": "https://rotato.app/",
+  "zh": "Mac 上的 3D 设备动画样机",
+  "en": "3D device mockup animations on Mac"
+ },
+ {
+  "id": "shots-so",
+  "cat": "store",
+  "plat": "cross",
+  "name": "Shots.so",
+  "url": "https://shots.so/",
+  "zh": "快速做好看的设备样机图",
+  "en": "Fast, good-looking device mockups"
+ },
+ {
+  "id": "appscreens",
+  "cat": "store",
+  "plat": "cross",
+  "name": "AppScreens",
+  "url": "https://appscreens.com/",
+  "zh": "商店截图设计与本地化",
+  "en": "Store screenshot design and localization"
+ },
+ {
+  "id": "aso-app-store-screenshot-guide-splitmetrics",
+  "cat": "store",
+  "plat": "cross",
+  "name": "ASO · App Store screenshot guide (SplitMetrics)",
+  "url": "https://splitmetrics.com/blog/app-store-screenshots-aso-guide/",
+  "zh": "商店截图 ASO 的测试结论",
+  "en": "ASO lessons on store screenshots from A/B tests"
+ },
+ {
+  "id": "apple-product-page-screenshot-specs",
+  "cat": "store",
+  "plat": "cross",
+  "name": "Apple · Product page screenshot specs",
+  "url": "https://developer.apple.com/help/app-store-connect/reference/screenshot-specifications",
+  "zh": "官方截图尺寸规格表",
+  "en": "Official screenshot size specifications"
+ },
+ {
+  "id": "google-play-preview-assets",
+  "cat": "store",
+  "plat": "android",
+  "name": "Google Play · Preview assets",
+  "url": "https://support.google.com/googleplay/android-developer/answer/9866151",
+  "zh": "Google Play 图片素材要求",
+  "en": "Google Play preview asset requirements"
+ },
+ {
+  "id": "mockuuups-studio",
+  "cat": "store",
+  "plat": "cross",
+  "name": "Mockuuups Studio",
+  "url": "https://mockuuups.studio/",
+  "zh": "拖拽生成真实场景设备样机",
+  "en": "Drag-and-drop real-world device mockups"
+ },
+ {
+  "id": "nativewind",
+  "cat": "comp",
+  "plat": "rn",
+  "name": "NativeWind",
+  "url": "https://www.nativewind.dev/",
+  "zh": "在 React Native 里写 Tailwind，样式与 Web 一致",
+  "en": "Tailwind CSS for React Native, consistent with the web",
+  "lic": "MIT"
+ },
+ {
+  "id": "tamagui",
+  "cat": "comp",
+  "plat": "rn",
+  "name": "Tamagui",
+  "url": "https://tamagui.dev/",
+  "zh": "跨 RN 与 Web 的高性能 UI 套件和编译器",
+  "en": "High-performance UI kit and compiler for React Native and web",
+  "lic": "MIT"
+ },
+ {
+  "id": "gluestack-ui",
+  "cat": "comp",
+  "plat": "rn",
+  "name": "gluestack-ui",
+  "url": "https://gluestack.io/",
+  "zh": "可复制粘贴的通用组件，支持 NativeWind",
+  "en": "Copy-paste universal components with NativeWind styling",
+  "lic": "MIT"
+ },
+ {
+  "id": "react-native-reusables",
+  "cat": "comp",
+  "plat": "rn",
+  "name": "React Native Reusables",
+  "url": "https://reactnativereusables.com/",
+  "zh": "shadcn/ui 风格的 RN 组件，直接复制进项目",
+  "en": "shadcn/ui-style components for React Native you copy into your app",
+  "lic": "MIT"
+ },
+ {
+  "id": "react-native-paper",
+  "cat": "comp",
+  "plat": "rn",
+  "name": "React Native Paper",
+  "url": "https://github.com/callstack/react-native-paper",
+  "zh": "Material Design 3 的 RN 实现",
+  "en": "Material Design 3 implemented for React Native",
+  "lic": "MIT"
+ },
+ {
+  "id": "react-native-elements",
+  "cat": "comp",
+  "plat": "rn",
+  "name": "React Native Elements",
+  "url": "https://reactnativeelements.com/",
+  "zh": "老牌跨平台 RN 组件库",
+  "en": "Long-standing cross-platform React Native UI toolkit",
+  "lic": "MIT"
+ },
+ {
+  "id": "ui-kitten",
+  "cat": "comp",
+  "plat": "rn",
+  "name": "UI Kitten",
+  "url": "https://akveo.github.io/react-native-ui-kitten/",
+  "zh": "基于 Eva 设计系统、可换主题的 RN 组件",
+  "en": "Themeable React Native components based on Eva Design",
+  "lic": "MIT"
+ },
+ {
+  "id": "tamagui-takeout-starter",
+  "cat": "comp",
+  "plat": "rn",
+  "name": "Tamagui Takeout starter",
+  "url": "https://tamagui.dev/takeout",
+  "zh": "Tamagui 官方全栈启动模板（付费）",
+  "en": "Tamagui's full-stack starter kit (paid)"
+ },
+ {
+  "id": "heroui-native",
+  "cat": "comp",
+  "plat": "rn",
+  "name": "HeroUI Native",
+  "url": "https://www.heroui.com/docs/native/getting-started",
+  "zh": "HeroUI 的原生移动端组件",
+  "en": "HeroUI's native mobile components",
+  "lic": "MIT"
+ },
+ {
+  "id": "unistyles",
+  "cat": "comp",
+  "plat": "rn",
+  "name": "Unistyles",
+  "url": "https://www.unistyl.es/",
+  "zh": "带主题和断点的 RN 样式库，性能好",
+  "en": "Fast React Native styling with themes and breakpoints",
+  "lic": "MIT"
+ },
+ {
+  "id": "restyle-shopify",
+  "cat": "comp",
+  "plat": "rn",
+  "name": "Restyle (Shopify)",
+  "url": "https://github.com/Shopify/restyle",
+  "zh": "Shopify 的类型安全主题化样式系统",
+  "en": "Shopify's type-safe theming system for React Native",
+  "lic": "MIT"
+ },
+ {
+  "id": "dripsy",
+  "cat": "comp",
+  "plat": "rn",
+  "name": "Dripsy",
+  "url": "https://www.dripsy.xyz/",
+  "zh": "响应式、可主题化的 RN 样式原语",
+  "en": "Responsive, themeable style primitives for React Native",
+  "lic": "MIT"
+ },
+ {
+  "id": "expo-router",
+  "cat": "comp",
+  "plat": "rn",
+  "name": "Expo Router",
+  "url": "https://docs.expo.dev/router/introduction/",
+  "zh": "基于文件的 RN 路由，原生导航体验",
+  "en": "File-based routing with native navigation for React Native",
+  "lic": "MIT"
+ },
+ {
+  "id": "expo-ui",
+  "cat": "comp",
+  "plat": "rn",
+  "name": "Expo UI",
+  "url": "https://docs.expo.dev/versions/latest/sdk/ui/",
+  "zh": "在 RN 里直接用 SwiftUI 和 Jetpack Compose 原生组件",
+  "en": "Use native SwiftUI and Jetpack Compose views from React Native",
+  "lic": "MIT"
+ },
+ {
+  "id": "react-navigation",
+  "cat": "comp",
+  "plat": "rn",
+  "name": "React Navigation",
+  "url": "https://reactnavigation.org/",
+  "zh": "RN 最常用的导航库",
+  "en": "The most widely used navigation library for React Native",
+  "lic": "MIT"
+ },
+ {
+  "id": "gorhom-bottom-sheet",
+  "cat": "comp",
+  "plat": "rn",
+  "name": "Gorhom Bottom Sheet",
+  "url": "https://gorhom.dev/react-native-bottom-sheet/",
+  "zh": "顺滑可拖拽的底部面板",
+  "en": "Smooth, gesture-driven bottom sheets",
+  "lic": "MIT"
+ },
+ {
+  "id": "flashlist-shopify",
+  "cat": "comp",
+  "plat": "rn",
+  "name": "FlashList (Shopify)",
+  "url": "https://shopify.github.io/flash-list/",
+  "zh": "比 FlatList 快很多的长列表",
+  "en": "A much faster drop-in replacement for FlatList",
+  "lic": "MIT"
+ },
+ {
+  "id": "zeego",
+  "cat": "comp",
+  "plat": "rn",
+  "name": "Zeego",
+  "url": "https://zeego.dev/",
+  "zh": "原生菜单与上下文菜单，跨平台",
+  "en": "Native dropdown and context menus across platforms",
+  "lic": "MIT"
+ },
+ {
+  "id": "burnt",
+  "cat": "comp",
+  "plat": "rn",
+  "name": "Burnt",
+  "url": "https://github.com/nandorojo/burnt",
+  "zh": "调用系统原生 Toast 与提示",
+  "en": "Native toasts and alerts using system UI",
+  "lic": "MIT"
+ },
+ {
+  "id": "sonner-native",
+  "cat": "comp",
+  "plat": "rn",
+  "name": "Sonner Native",
+  "url": "https://github.com/gunnartorfis/sonner-native",
+  "zh": "Sonner 风格的 RN 轻提示",
+  "en": "Sonner-style toasts for React Native",
+  "lic": "MIT"
+ },
+ {
+  "id": "react-native-gesture-handler",
+  "cat": "comp",
+  "plat": "rn",
+  "name": "React Native Gesture Handler",
+  "url": "https://docs.swmansion.com/react-native-gesture-handler/",
+  "zh": "原生手势系统，动效交互的基础",
+  "en": "Native gesture system, the foundation for interactive motion",
+  "lic": "MIT"
+ },
+ {
+  "id": "react-native-screens",
+  "cat": "comp",
+  "plat": "rn",
+  "name": "React Native Screens",
+  "url": "https://github.com/software-mansion/react-native-screens",
+  "zh": "原生页面容器与转场",
+  "en": "Native screen containers and transitions",
+  "lic": "MIT"
+ },
+ {
+  "id": "react-native-skia",
+  "cat": "comp",
+  "plat": "rn",
+  "name": "React Native Skia",
+  "url": "https://shopify.github.io/react-native-skia/",
+  "zh": "在 RN 里用 Skia 画高性能图形",
+  "en": "High-performance 2D graphics with Skia in React Native",
+  "lic": "MIT"
+ },
+ {
+  "id": "victory-native-xl",
+  "cat": "comp",
+  "plat": "rn",
+  "name": "Victory Native XL",
+  "url": "https://nearform.com/open-source/victory-native/",
+  "zh": "基于 Skia 的 RN 图表",
+  "en": "Skia-powered charts for React Native",
+  "lic": "MIT"
+ },
+ {
+  "id": "react-native-svg",
+  "cat": "comp",
+  "plat": "rn",
+  "name": "React Native SVG",
+  "url": "https://github.com/software-mansion/react-native-svg",
+  "zh": "RN 里渲染 SVG 的标准库",
+  "en": "The standard way to render SVG in React Native",
+  "lic": "MIT"
+ },
+ {
+  "id": "expo-image",
+  "cat": "comp",
+  "plat": "rn",
+  "name": "Expo Image",
+  "url": "https://docs.expo.dev/versions/latest/sdk/image/",
+  "zh": "带缓存和模糊占位的高性能图片组件",
+  "en": "Fast image component with caching and blurhash placeholders",
+  "lic": "MIT"
+ },
+ {
+  "id": "expo-blur",
+  "cat": "comp",
+  "plat": "rn",
+  "name": "Expo Blur",
+  "url": "https://docs.expo.dev/versions/latest/sdk/blur-view/",
+  "zh": "原生毛玻璃效果",
+  "en": "Native blur views",
+  "lic": "MIT"
+ },
+ {
+  "id": "expo-glass-effect",
+  "cat": "comp",
+  "plat": "rn",
+  "name": "Expo Glass Effect",
+  "url": "https://docs.expo.dev/versions/latest/sdk/glass-effect/",
+  "zh": "在 RN 里用 iOS 26 Liquid Glass",
+  "en": "Use iOS 26 Liquid Glass from React Native",
+  "lic": "MIT"
+ },
+ {
+  "id": "expo-haptics",
+  "cat": "comp",
+  "plat": "rn",
+  "name": "Expo Haptics",
+  "url": "https://docs.expo.dev/versions/latest/sdk/haptics/",
+  "zh": "触感反馈 API",
+  "en": "Haptic feedback API",
+  "lic": "MIT"
+ },
+ {
+  "id": "react-native-keyboard-controller",
+  "cat": "comp",
+  "plat": "rn",
+  "name": "React Native Keyboard Controller",
+  "url": "https://kirillzyusko.github.io/react-native-keyboard-controller/",
+  "zh": "键盘与输入框的顺滑联动",
+  "en": "Smooth keyboard and input coordination",
+  "lic": "MIT"
+ },
+ {
+  "id": "ignite-infinite-red",
+  "cat": "comp",
+  "plat": "rn",
+  "name": "Ignite (Infinite Red)",
+  "url": "https://github.com/infinitered/ignite",
+  "zh": "久经实战的 RN 项目模板",
+  "en": "Battle-tested React Native boilerplate",
+  "lic": "MIT"
+ },
+ {
+  "id": "expo-create-app-templates",
+  "cat": "comp",
+  "plat": "rn",
+  "name": "Expo · Create app templates",
+  "url": "https://docs.expo.dev/more/create-expo/",
+  "zh": "Expo 官方项目模板",
+  "en": "Official Expo project templates",
+  "lic": "MIT"
+ },
+ {
+  "id": "react-native-directory",
+  "cat": "comp",
+  "plat": "rn",
+  "name": "React Native Directory",
+  "url": "https://reactnative.directory/",
+  "zh": "RN 库检索，可看新架构兼容性",
+  "en": "Searchable directory of React Native libraries with New Architecture status"
+ },
+ {
+  "id": "callstack-react-native-bottom-tabs",
+  "cat": "comp",
+  "plat": "rn",
+  "name": "Callstack · React Native Bottom Tabs",
+  "url": "https://github.com/callstackincubator/react-native-bottom-tabs",
+  "zh": "用系统原生标签栏，支持 Liquid Glass",
+  "en": "Native platform tab bars, Liquid Glass ready",
+  "lic": "MIT"
+ },
+ {
+  "id": "rn-primitives",
+  "cat": "comp",
+  "plat": "rn",
+  "name": "rn-primitives",
+  "url": "https://rnprimitives.com/",
+  "zh": "Radix 风格的 RN 无样式原语",
+  "en": "Radix-style unstyled primitives for React Native",
+  "lic": "MIT"
+ },
+ {
+  "id": "tamagui-bento",
+  "cat": "comp",
+  "plat": "rn",
+  "name": "Tamagui Bento",
+  "url": "https://tamagui.dev/bento",
+  "zh": "Tamagui 付费组件块合集",
+  "en": "Tamagui's paid collection of component blocks"
+ },
+ {
+  "id": "lottie-react-native",
+  "cat": "comp",
+  "plat": "rn",
+  "name": "Lottie React Native",
+  "url": "https://github.com/lottie-react-native/lottie-react-native",
+  "zh": "在 RN 播放 Lottie 动画",
+  "en": "Play Lottie animations in React Native",
+  "lic": "Apache-2.0"
+ },
+ {
+  "id": "rive-react-native",
+  "cat": "comp",
+  "plat": "rn",
+  "name": "Rive React Native",
+  "url": "https://rive.app/docs/runtimes/react-native/react-native",
+  "zh": "在 RN 运行 Rive 交互动画",
+  "en": "Run Rive interactive animations in React Native",
+  "lic": "MIT"
+ },
+ {
+  "id": "swiftui-apple-tutorials",
+  "cat": "comp",
+  "plat": "ios",
+  "name": "SwiftUI · Apple tutorials",
+  "url": "https://developer.apple.com/tutorials/swiftui",
+  "zh": "苹果官方 SwiftUI 教程，带完整示例",
+  "en": "Apple's official SwiftUI tutorials with complete samples"
+ },
+ {
+  "id": "swiftuix",
+  "cat": "comp",
+  "plat": "ios",
+  "name": "SwiftUIX",
+  "url": "https://github.com/SwiftUIX/SwiftUIX",
+  "zh": "补齐 SwiftUI 缺失组件的扩展库",
+  "en": "Fills the gaps in SwiftUI's component set",
+  "lic": "MIT"
+ },
+ {
+  "id": "pow-emergetools",
+  "cat": "comp",
+  "plat": "ios",
+  "name": "Pow (EmergeTools)",
+  "url": "https://movingparts.io/pow",
+  "zh": "SwiftUI 精美转场与反馈特效",
+  "en": "Delightful SwiftUI transitions and feedback effects",
+  "lic": "MIT"
+ },
+ {
+  "id": "vortex-twostraws",
+  "cat": "comp",
+  "plat": "ios",
+  "name": "Vortex (twostraws)",
+  "url": "https://github.com/twostraws/Vortex",
+  "zh": "SwiftUI 高性能粒子特效",
+  "en": "High-performance particle effects for SwiftUI",
+  "lic": "MIT"
+ },
+ {
+  "id": "inferno-twostraws",
+  "cat": "comp",
+  "plat": "ios",
+  "name": "Inferno (twostraws)",
+  "url": "https://github.com/twostraws/Inferno",
+  "zh": "SwiftUI 的 Metal 着色器特效合集",
+  "en": "Metal shader effects for SwiftUI",
+  "lic": "MIT"
+ },
+ {
+  "id": "hacking-with-swift-swiftui-by-example",
+  "cat": "comp",
+  "plat": "ios",
+  "name": "Hacking with Swift · SwiftUI by Example",
+  "url": "https://www.hackingwithswift.com/quick-start/swiftui",
+  "zh": "SwiftUI 各组件最全的示例手册",
+  "en": "The most complete SwiftUI example handbook"
+ },
+ {
+  "id": "swift-package-index-ui",
+  "cat": "comp",
+  "plat": "ios",
+  "name": "Swift Package Index · UI",
+  "url": "https://swiftpackageindex.com/keywords/swiftui",
+  "zh": "SwiftUI 开源包检索",
+  "en": "Search open-source SwiftUI packages"
+ },
+ {
+  "id": "kingfisher",
+  "cat": "comp",
+  "plat": "ios",
+  "name": "Kingfisher",
+  "url": "https://github.com/onevcat/Kingfisher",
+  "zh": "iOS 图片下载与缓存标准库",
+  "en": "The go-to iOS image downloading and caching library",
+  "lic": "MIT"
+ },
+ {
+  "id": "swiftui-introspect",
+  "cat": "comp",
+  "plat": "ios",
+  "name": "SwiftUI Introspect",
+  "url": "https://github.com/siteline/swiftui-introspect",
+  "zh": "访问 SwiftUI 底层 UIKit 视图",
+  "en": "Reach the underlying UIKit views from SwiftUI",
+  "lic": "MIT"
+ },
+ {
+  "id": "lottie-ios",
+  "cat": "comp",
+  "plat": "ios",
+  "name": "Lottie iOS",
+  "url": "https://github.com/airbnb/lottie-ios",
+  "zh": "Airbnb 的 iOS 动画播放库",
+  "en": "Airbnb's animation library for iOS",
+  "lic": "Apache-2.0"
+ },
+ {
+  "id": "swift-charts",
+  "cat": "comp",
+  "plat": "ios",
+  "name": "Swift Charts",
+  "url": "https://developer.apple.com/documentation/charts",
+  "zh": "苹果原生图表框架",
+  "en": "Apple's native charting framework"
+ },
+ {
+  "id": "jetpack-compose",
+  "cat": "comp",
+  "plat": "android",
+  "name": "Jetpack Compose",
+  "url": "https://developer.android.com/compose",
+  "zh": "Android 官方声明式 UI",
+  "en": "Android's official declarative UI toolkit",
+  "lic": "Apache-2.0"
+ },
+ {
+  "id": "compose-material-3-components",
+  "cat": "comp",
+  "plat": "android",
+  "name": "Compose Material 3 components",
+  "url": "https://developer.android.com/develop/ui/compose/components",
+  "zh": "Compose 里的 M3 组件用法",
+  "en": "Material 3 components in Jetpack Compose",
+  "lic": "Apache-2.0"
+ },
+ {
+  "id": "compose-multiplatform",
+  "cat": "comp",
+  "plat": "android",
+  "name": "Compose Multiplatform",
+  "url": "https://www.jetbrains.com/compose-multiplatform/",
+  "zh": "一套 Compose UI 跑 iOS 和 Android",
+  "en": "Share Compose UI across iOS and Android",
+  "lic": "Apache-2.0"
+ },
+ {
+  "id": "now-in-android-sample-app",
+  "cat": "comp",
+  "plat": "android",
+  "name": "Now in Android (sample app)",
+  "url": "https://github.com/android/nowinandroid",
+  "zh": "官方样板 App，Compose 最佳实践",
+  "en": "Google's reference app for Compose best practices",
+  "lic": "Apache-2.0"
+ },
+ {
+  "id": "compose-samples",
+  "cat": "comp",
+  "plat": "android",
+  "name": "Compose samples",
+  "url": "https://github.com/android/compose-samples",
+  "zh": "官方 Compose 示例 App 合集",
+  "en": "Official Compose sample apps",
+  "lic": "Apache-2.0"
+ },
+ {
+  "id": "coil",
+  "cat": "comp",
+  "plat": "android",
+  "name": "Coil",
+  "url": "https://coil-kt.github.io/coil/",
+  "zh": "Kotlin 协程图片加载库",
+  "en": "Coroutine-based image loading for Android",
+  "lic": "Apache-2.0"
+ },
+ {
+  "id": "haze",
+  "cat": "comp",
+  "plat": "android",
+  "name": "Haze",
+  "url": "https://chrisbanes.github.io/haze/",
+  "zh": "Compose 的毛玻璃模糊效果",
+  "en": "Glassmorphism blur for Compose",
+  "lic": "Apache-2.0"
+ },
+ {
+  "id": "compose-unstyled",
+  "cat": "comp",
+  "plat": "android",
+  "name": "Compose Unstyled",
+  "url": "https://composeunstyled.com/",
+  "zh": "Compose 无样式组件，自定义设计系统用",
+  "en": "Unstyled Compose components for custom design systems",
+  "lic": "MIT"
+ },
+ {
+  "id": "ionic-framework",
+  "cat": "comp",
+  "plat": "web",
+  "name": "Ionic Framework",
+  "url": "https://ionicframework.com/",
+  "zh": "Web 技术做原生风格移动 App",
+  "en": "Native-style mobile apps with web tech",
+  "lic": "MIT"
+ },
+ {
+  "id": "konsta-ui",
+  "cat": "comp",
+  "plat": "web",
+  "name": "Konsta UI",
+  "url": "https://konstaui.com/",
+  "zh": "Tailwind 写 iOS/Material 风格移动组件",
+  "en": "iOS and Material mobile components built with Tailwind",
+  "lic": "MIT"
+ },
+ {
+  "id": "framework7",
+  "cat": "comp",
+  "plat": "web",
+  "name": "Framework7",
+  "url": "https://framework7.io/",
+  "zh": "全功能 iOS/Android 风格 Web App 框架",
+  "en": "Full-featured framework for iOS/Android-style web apps",
+  "lic": "MIT"
+ },
+ {
+  "id": "ant-design-mobile",
+  "cat": "comp",
+  "plat": "web",
+  "name": "Ant Design Mobile",
+  "url": "https://mobile.ant.design/",
+  "zh": "蚂蚁出品的移动端 React 组件库",
+  "en": "Ant Group's mobile React component library",
+  "lic": "MIT"
+ },
+ {
+  "id": "vant",
+  "cat": "comp",
+  "plat": "web",
+  "name": "Vant",
+  "url": "https://vant-ui.github.io/vant/",
+  "zh": "轻量的移动端 Vue 组件库",
+  "en": "Lightweight mobile Vue components",
+  "lic": "MIT"
+ },
+ {
+  "id": "nutui",
+  "cat": "comp",
+  "plat": "web",
+  "name": "NutUI",
+  "url": "https://nutui.jd.com/",
+  "zh": "京东风格移动端组件库",
+  "en": "JD-style mobile component library",
+  "lic": "MIT"
+ },
+ {
+  "id": "capacitor",
+  "cat": "comp",
+  "plat": "web",
+  "name": "Capacitor",
+  "url": "https://capacitorjs.com/",
+  "zh": "把 Web App 打包成原生 App",
+  "en": "Turn web apps into native apps",
+  "lic": "MIT"
+ },
+ {
+  "id": "lynx",
+  "cat": "comp",
+  "plat": "cross",
+  "name": "Lynx",
+  "url": "https://lynxjs.org/",
+  "zh": "字节开源的跨端原生渲染框架",
+  "en": "ByteDance's open-source cross-platform native renderer",
+  "lic": "Apache-2.0"
+ },
+ {
+  "id": "flutter-widget-catalog",
+  "cat": "comp",
+  "plat": "flutter",
+  "name": "Flutter · Widget catalog",
+  "url": "https://docs.flutter.dev/ui/widgets",
+  "zh": "Flutter 官方组件目录，含 Material 与 Cupertino",
+  "en": "Official Flutter widget catalog, Material and Cupertino",
+  "lic": "BSD-3-Clause"
+ },
+ {
+  "id": "flutter-cupertino-widgets",
+  "cat": "comp",
+  "plat": "flutter",
+  "name": "Flutter · Cupertino widgets",
+  "url": "https://docs.flutter.dev/ui/widgets/cupertino",
+  "zh": "iOS 风格组件",
+  "en": "iOS-style widgets",
+  "lic": "BSD-3-Clause"
+ },
+ {
+  "id": "flutter-samples",
+  "cat": "comp",
+  "plat": "flutter",
+  "name": "Flutter samples",
+  "url": "https://flutter.github.io/samples/",
+  "zh": "官方示例 App 画廊",
+  "en": "Official sample apps gallery",
+  "lic": "BSD-3-Clause"
+ },
+ {
+  "id": "shadcn-flutter",
+  "cat": "comp",
+  "plat": "flutter",
+  "name": "shadcn_flutter",
+  "url": "https://sunarya-thito.github.io/shadcn_flutter/",
+  "zh": "shadcn/ui 风格的 Flutter 组件",
+  "en": "shadcn/ui-style components for Flutter",
+  "lic": "BSD-3-Clause"
+ },
+ {
+  "id": "shadcn-ui-flutter",
+  "cat": "comp",
+  "plat": "flutter",
+  "name": "shadcn_ui (Flutter)",
+  "url": "https://flutter-shadcn-ui.mariuti.com/",
+  "zh": "另一套 shadcn 风格 Flutter 组件",
+  "en": "Another shadcn-inspired Flutter component set",
+  "lic": "MIT"
+ },
+ {
+  "id": "forui",
+  "cat": "comp",
+  "plat": "flutter",
+  "name": "Forui",
+  "url": "https://forui.dev/",
+  "zh": "极简风格的 Flutter 组件库",
+  "en": "Minimalistic Flutter UI library",
+  "lic": "MIT"
+ },
+ {
+  "id": "flutter-animate",
+  "cat": "comp",
+  "plat": "flutter",
+  "name": "flutter_animate",
+  "url": "https://pub.dev/packages/flutter_animate",
+  "zh": "一行链式写法给 Flutter 加动效",
+  "en": "Chainable, one-line animations for Flutter",
+  "lic": "BSD-3-Clause"
+ },
+ {
+  "id": "rive-flutter",
+  "cat": "comp",
+  "plat": "flutter",
+  "name": "Rive (Flutter)",
+  "url": "https://pub.dev/packages/rive",
+  "zh": "Flutter 里运行 Rive 交互动画",
+  "en": "Run Rive interactive animations in Flutter",
+  "lic": "MIT"
+ },
+ {
+  "id": "lottie-flutter",
+  "cat": "comp",
+  "plat": "flutter",
+  "name": "Lottie (Flutter)",
+  "url": "https://pub.dev/packages/lottie",
+  "zh": "Flutter 播放 Lottie 动画",
+  "en": "Play Lottie animations in Flutter",
+  "lic": "MIT"
+ },
+ {
+  "id": "fluent-ui",
+  "cat": "comp",
+  "plat": "flutter",
+  "name": "fluent_ui",
+  "url": "https://bdlukaa.github.io/fluent_ui/",
+  "zh": "Fluent 风格的 Flutter 组件",
+  "en": "Fluent-style Flutter widgets",
+  "lic": "BSD-3-Clause"
+ },
+ {
+  "id": "macos-ui",
+  "cat": "comp",
+  "plat": "flutter",
+  "name": "macos_ui",
+  "url": "https://pub.dev/packages/macos_ui",
+  "zh": "macOS 风格 Flutter 组件",
+  "en": "macOS-style Flutter widgets",
+  "lic": "MIT"
+ },
+ {
+  "id": "moon-design-flutter",
+  "cat": "comp",
+  "plat": "flutter",
+  "name": "Moon Design (Flutter)",
+  "url": "https://flutter.moon.io/",
+  "zh": "完整设计系统的 Flutter 实现",
+  "en": "A complete design system implemented in Flutter",
+  "lic": "MIT"
+ },
+ {
+  "id": "flexcolorscheme",
+  "cat": "comp",
+  "plat": "flutter",
+  "name": "FlexColorScheme",
+  "url": "https://docs.flexcolorscheme.com/",
+  "zh": "Flutter 主题配色生成器",
+  "en": "Flutter theming and color scheme generator",
+  "lic": "BSD-3-Clause"
+ },
+ {
+  "id": "flutter-gems",
+  "cat": "comp",
+  "plat": "flutter",
+  "name": "Flutter Gems",
+  "url": "https://fluttergems.dev/",
+  "zh": "按类别整理的 Flutter 包目录",
+  "en": "Curated Flutter package directory by category"
+ },
+ {
+  "id": "go-router",
+  "cat": "comp",
+  "plat": "flutter",
+  "name": "go_router",
+  "url": "https://pub.dev/packages/go_router",
+  "zh": "官方声明式路由",
+  "en": "Official declarative routing package",
+  "lic": "BSD-3-Clause"
+ },
+ {
+  "id": "smooth-page-indicator",
+  "cat": "comp",
+  "plat": "flutter",
+  "name": "smooth_page_indicator",
+  "url": "https://pub.dev/packages/smooth_page_indicator",
+  "zh": "引导页圆点指示器动效",
+  "en": "Animated page indicators for onboarding",
+  "lic": "MIT"
+ },
+ {
+  "id": "modal-bottom-sheet",
+  "cat": "comp",
+  "plat": "flutter",
+  "name": "modal_bottom_sheet",
+  "url": "https://pub.dev/packages/modal_bottom_sheet",
+  "zh": "iOS 风格的模态底部面板",
+  "en": "iOS-style modal bottom sheets",
+  "lic": "MIT"
+ },
+ {
+  "id": "liquid-glass-renderer",
+  "cat": "comp",
+  "plat": "flutter",
+  "name": "liquid_glass_renderer",
+  "url": "https://pub.dev/packages/liquid_glass_renderer",
+  "zh": "Flutter 里的 Liquid Glass 效果",
+  "en": "Liquid Glass effect for Flutter",
+  "lic": "MIT"
+ },
+ {
+  "id": "fl-chart",
+  "cat": "comp",
+  "plat": "flutter",
+  "name": "fl_chart",
+  "url": "https://pub.dev/packages/fl_chart",
+  "zh": "好看的 Flutter 图表",
+  "en": "Beautiful charts for Flutter",
+  "lic": "MIT"
+ },
+ {
+  "id": "widgetbook",
+  "cat": "comp",
+  "plat": "flutter",
+  "name": "Widgetbook",
+  "url": "https://www.widgetbook.io/",
+  "zh": "Flutter 组件的 Storybook",
+  "en": "Storybook-style workshop for Flutter widgets",
+  "lic": "MIT"
+ },
+ {
+  "id": "flutterflow-marketplace",
+  "cat": "comp",
+  "plat": "flutter",
+  "name": "FlutterFlow Marketplace",
+  "url": "https://marketplace.flutterflow.io/",
+  "zh": "Flutter 页面与组件模板市场",
+  "en": "Marketplace of Flutter screens and component templates"
+ },
+ {
+  "id": "flutter-awesome",
+  "cat": "comp",
+  "plat": "flutter",
+  "name": "Flutter Awesome",
+  "url": "https://flutterawesome.com/",
+  "zh": "Flutter UI 开源项目精选",
+  "en": "Curated open-source Flutter UI projects"
+ },
+ {
+  "id": "material-theme-builder",
+  "cat": "comp",
+  "plat": "flutter",
+  "name": "Material Theme Builder",
+  "url": "https://material-foundation.github.io/material-theme-builder/",
+  "zh": "生成 M3 主题，可导出 Flutter/Compose 代码",
+  "en": "Generate Material 3 themes and export Flutter/Compose code",
+  "lic": "Apache-2.0"
+ },
+ {
+  "id": "reanimated-docs-examples",
+  "cat": "motion",
+  "plat": "rn",
+  "name": "Reanimated docs & examples",
+  "url": "https://docs.swmansion.com/react-native-reanimated/",
+  "zh": "RN 动效标准库，文档里有可交互示例",
+  "en": "React Native's standard animation library with live examples",
+  "lic": "MIT"
+ },
+ {
+  "id": "moti",
+  "cat": "motion",
+  "plat": "rn",
+  "name": "Moti",
+  "url": "https://moti.fyi/",
+  "zh": "声明式写法的 RN 动效，基于 Reanimated",
+  "en": "Declarative React Native animations on top of Reanimated",
+  "lic": "MIT"
+ },
+ {
+  "id": "can-it-be-done-in-react-native",
+  "cat": "motion",
+  "plat": "rn",
+  "name": "Can it be done in React Native?",
+  "url": "https://www.youtube.com/@wcandillon",
+  "zh": "William Candillon 复刻高难度原生动效的教程频道",
+  "en": "William Candillon's channel recreating hard native animations"
+ },
+ {
+  "id": "reanimated-layout-animations",
+  "cat": "motion",
+  "plat": "rn",
+  "name": "Reanimated · Layout animations",
+  "url": "https://docs.swmansion.com/react-native-reanimated/docs/layout-animations/entering-exiting-animations/",
+  "zh": "进入、退出与布局变化动效",
+  "en": "Entering, exiting and layout-change animations",
+  "lic": "MIT"
+ },
+ {
+  "id": "reanimated-shared-element-transitions",
+  "cat": "motion",
+  "plat": "rn",
+  "name": "Reanimated · Shared element transitions",
+  "url": "https://docs.swmansion.com/react-native-reanimated/docs/shared-element-transitions/overview/",
+  "zh": "页面间共享元素转场",
+  "en": "Shared element transitions between screens",
+  "lic": "MIT"
+ },
+ {
+  "id": "react-native-ease",
+  "cat": "motion",
+  "plat": "rn",
+  "name": "React Native Ease",
+  "url": "https://github.com/AppAndFlow/react-native-ease",
+  "zh": "用原生平台动画驱动的轻量 RN 动效",
+  "en": "Lightweight React Native animations driven by native platform APIs",
+  "lic": "MIT"
+ },
+ {
+  "id": "animatereactnative",
+  "cat": "motion",
+  "plat": "rn",
+  "name": "AnimateReactNative",
+  "url": "https://www.animatereactnative.com/",
+  "zh": "大量可直接复用的 RN 动效组件（部分付费）",
+  "en": "Large set of reusable React Native animations (some paid)"
+ },
+ {
+  "id": "expo-animation-examples",
+  "cat": "motion",
+  "plat": "rn",
+  "name": "Expo · Animation examples",
+  "url": "https://docs.expo.dev/develop/user-interface/animation/",
+  "zh": "Expo 里做动画的官方指南",
+  "en": "Expo's official animation guide",
+  "lic": "MIT"
+ },
+ {
+  "id": "swiftui-animations-apple-docs",
+  "cat": "motion",
+  "plat": "ios",
+  "name": "SwiftUI Animations · Apple docs",
+  "url": "https://developer.apple.com/documentation/swiftui/animations",
+  "zh": "SwiftUI 动画、过渡与相位动画官方文档",
+  "en": "Official docs for SwiftUI animations, transitions and phase animators"
+ },
+ {
+  "id": "swiftui-lab",
+  "cat": "motion",
+  "plat": "ios",
+  "name": "SwiftUI Lab",
+  "url": "https://swiftui-lab.com/",
+  "zh": "深入讲 SwiftUI 动画与布局的进阶博客",
+  "en": "Advanced blog on SwiftUI animation and layout"
+ },
+ {
+  "id": "design-code-swiftui-animations",
+  "cat": "motion",
+  "plat": "ios",
+  "name": "Design+Code · SwiftUI animations",
+  "url": "https://designcode.io/swiftui-handbook",
+  "zh": "Meng To 的 SwiftUI 动效手册",
+  "en": "Meng To's SwiftUI animation handbook"
+ },
+ {
+  "id": "wwdc-animate-with-springs",
+  "cat": "motion",
+  "plat": "ios",
+  "name": "WWDC · Animate with springs",
+  "url": "https://developer.apple.com/videos/play/wwdc2023/10158/",
+  "zh": "苹果讲弹簧动画的经典讲座",
+  "en": "Apple's classic session on spring animations"
+ },
+ {
+  "id": "compose-animation",
+  "cat": "motion",
+  "plat": "android",
+  "name": "Compose · Animation",
+  "url": "https://developer.android.com/develop/ui/compose/animation/introduction",
+  "zh": "Compose 动画 API 全景",
+  "en": "Overview of Compose animation APIs",
+  "lic": "Apache-2.0"
+ },
+ {
+  "id": "material-3-motion-transitions",
+  "cat": "motion",
+  "plat": "android",
+  "name": "Material 3 · Motion transitions",
+  "url": "https://m3.material.io/styles/motion/transitions/transition-patterns",
+  "zh": "M3 转场模式：容器变换、共享轴",
+  "en": "M3 transition patterns: container transform and shared axis"
+ },
+ {
+  "id": "compose-shared-elements",
+  "cat": "motion",
+  "plat": "android",
+  "name": "Compose · Shared elements",
+  "url": "https://developer.android.com/develop/ui/compose/animation/shared-elements",
+  "zh": "Compose 共享元素转场",
+  "en": "Shared element transitions in Compose",
+  "lic": "Apache-2.0"
+ },
+ {
+  "id": "lottiefiles",
+  "cat": "motion",
+  "plat": "cross",
+  "name": "LottieFiles",
+  "url": "https://lottiefiles.com/",
+  "zh": "海量免费 Lottie 动画，可直接用在 App",
+  "en": "Huge library of free Lottie animations for apps"
+ },
+ {
+  "id": "rive",
+  "cat": "motion",
+  "plat": "cross",
+  "name": "Rive",
+  "url": "https://rive.app/",
+  "zh": "可交互的状态机动画，做按钮和角色都好用",
+  "en": "Interactive state-machine animations for UI and characters"
+ },
+ {
+  "id": "rive-community",
+  "cat": "motion",
+  "plat": "cross",
+  "name": "Rive Community",
+  "url": "https://rive.app/community/files/",
+  "zh": "社区共享的 Rive 动画文件",
+  "en": "Community-shared Rive animation files"
+ },
+ {
+  "id": "emil-kowalski-animations-on-the-web",
+  "cat": "motion",
+  "plat": "cross",
+  "name": "Emil Kowalski · Animations on the web",
+  "url": "https://animations.dev/",
+  "zh": "讲透交互动效手感的课程（付费）",
+  "en": "Course on making interactions feel right (paid)"
+ },
+ {
+  "id": "easings-net",
+  "cat": "motion",
+  "plat": "cross",
+  "name": "Easings.net",
+  "url": "https://easings.net/",
+  "zh": "缓动曲线速查表",
+  "en": "Easing curve cheat sheet"
+ },
+ {
+  "id": "cubic-bezier-com",
+  "cat": "motion",
+  "plat": "cross",
+  "name": "Cubic-bezier.com",
+  "url": "https://cubic-bezier.com/",
+  "zh": "可视化调贝塞尔曲线",
+  "en": "Visual cubic-bezier editor"
+ },
+ {
+  "id": "motion-framer-motion",
+  "cat": "motion",
+  "plat": "web",
+  "name": "Motion (Framer Motion)",
+  "url": "https://motion.dev/",
+  "zh": "Web 动效库，做移动网页手势动效很顺",
+  "en": "Web animation library great for mobile-web gestures",
+  "lic": "MIT"
+ },
+ {
+  "id": "jitter",
+  "cat": "motion",
+  "plat": "cross",
+  "name": "Jitter",
+  "url": "https://jitter.video/",
+  "zh": "在线做 UI 动效并导出 Lottie/视频",
+  "en": "Make UI motion online and export Lottie or video"
+ },
+ {
+  "id": "protopie",
+  "cat": "motion",
+  "plat": "cross",
+  "name": "ProtoPie",
+  "url": "https://www.protopie.io/",
+  "zh": "高保真移动端交互原型工具",
+  "en": "High-fidelity mobile interaction prototyping"
+ },
+ {
+  "id": "origami-studio",
+  "cat": "motion",
+  "plat": "cross",
+  "name": "Origami Studio",
+  "url": "https://origami.design/",
+  "zh": "Meta 的移动端交互原型工具（免费）",
+  "en": "Meta's free mobile interaction prototyping tool"
+ },
+ {
+  "id": "apple-design-resources",
+  "cat": "kit",
+  "plat": "ios",
+  "name": "Apple Design Resources",
+  "url": "https://developer.apple.com/design/resources/",
+  "zh": "苹果官方 iOS 26 Figma/Sketch 套件、模板与图标",
+  "en": "Apple's official iOS 26 Figma/Sketch kits, templates and icons"
+ },
+ {
+  "id": "apple-ios-26-ui-kit-figma",
+  "cat": "kit",
+  "plat": "ios",
+  "name": "Apple · iOS 26 UI Kit (Figma)",
+  "url": "https://www.figma.com/community/file/1527721578857867021",
+  "zh": "苹果官方 iOS/iPadOS 26 Figma 组件库",
+  "en": "Apple's official iOS and iPadOS 26 Figma library"
+ },
+ {
+  "id": "apple-ios-18-ui-kit-figma",
+  "cat": "kit",
+  "plat": "ios",
+  "name": "Apple · iOS 18 UI Kit (Figma)",
+  "url": "https://www.figma.com/community/file/1385659531316001292",
+  "zh": "苹果官方 iOS 18 Figma 套件",
+  "en": "Apple's official iOS 18 Figma kit"
+ },
+ {
+  "id": "material-3-design-kit-figma",
+  "cat": "kit",
+  "plat": "android",
+  "name": "Material 3 Design Kit (Figma)",
+  "url": "https://www.figma.com/community/file/1035203688168086460",
+  "zh": "Google 官方 M3 Figma 套件，带变量和主题",
+  "en": "Google's official Material 3 Figma kit with variables and themes"
+ },
+ {
+  "id": "apple-on-figma-community",
+  "cat": "kit",
+  "plat": "ios",
+  "name": "Apple on Figma Community",
+  "url": "https://www.figma.com/@apple",
+  "zh": "苹果在 Figma 社区发布的全部官方文件",
+  "en": "All official files Apple publishes on Figma Community"
+ },
+ {
+  "id": "untitled-ui",
+  "cat": "kit",
+  "plat": "cross",
+  "name": "Untitled UI",
+  "url": "https://www.untitledui.com/",
+  "zh": "最大的 Figma UI 套件之一，含移动端（免费版+付费）",
+  "en": "One of the largest Figma UI kits, including mobile (free + paid)"
+ },
+ {
+  "id": "setproduct-mobile-ui-kits",
+  "cat": "kit",
+  "plat": "cross",
+  "name": "Setproduct · Mobile UI kits",
+  "url": "https://www.setproduct.com/mobile",
+  "zh": "移动端 Figma 套件（付费），组件系统完整",
+  "en": "Mobile Figma kits (paid) with complete component systems"
+ },
+ {
+  "id": "ui8-mobile-kits",
+  "cat": "kit",
+  "plat": "cross",
+  "name": "UI8 · Mobile kits",
+  "url": "https://ui8.net/categories/ui-kits",
+  "zh": "设计师市场里的高质量 App 套件（付费）",
+  "en": "Premium app UI kits on a designer marketplace (paid)"
+ },
+ {
+  "id": "figma-mobile-ui-kits",
+  "cat": "kit",
+  "plat": "cross",
+  "name": "Figma · Mobile UI kits",
+  "url": "https://www.figma.com/community/mobile-apps",
+  "zh": "Figma 社区的移动 App 资源分区",
+  "en": "Figma Community's mobile app resources section"
+ },
+ {
+  "id": "shadcn-ui-kit-figma",
+  "cat": "kit",
+  "plat": "cross",
+  "name": "Shadcn UI kit (Figma)",
+  "url": "https://www.shadcndesign.com/",
+  "zh": "shadcn 风格 Figma 套件，适配移动断点（付费）",
+  "en": "shadcn-style Figma kit with mobile breakpoints (paid)"
+ },
+ {
+  "id": "ios-design-kit-pixels",
+  "cat": "kit",
+  "plat": "ios",
+  "name": "iOS Design Kit (Pixels)",
+  "url": "https://iosdesignkit.io/",
+  "zh": "iOS 设计教程与 Figma 套件",
+  "en": "iOS design guides and Figma kits"
+ },
+ {
+  "id": "learn-ui-ios-design-guidelines",
+  "cat": "kit",
+  "plat": "ios",
+  "name": "Learn UI · iOS design guidelines",
+  "url": "https://www.learnui.design/blog/ios-design-guidelines-templates.html",
+  "zh": "iOS 设计规范一页图解，附模板",
+  "en": "Illustrated iOS design guidelines with templates"
+ },
+ {
+  "id": "design-code-figma-handbook",
+  "cat": "kit",
+  "plat": "cross",
+  "name": "Design+Code · Figma handbook",
+  "url": "https://designcode.io/figma-handbook",
+  "zh": "Figma 做移动端界面的系统教程",
+  "en": "Systematic tutorial on designing mobile UI in Figma"
+ },
+ {
+  "id": "figma-simple-design-system",
+  "cat": "kit",
+  "plat": "cross",
+  "name": "Figma · Simple Design System",
+  "url": "https://www.figma.com/community/file/1380235722331273046",
+  "zh": "Figma 官方示例设计系统，带代码对照",
+  "en": "Figma's official sample design system with matching code",
+  "lic": "MIT"
+ },
+ {
+  "id": "sf-symbols",
+  "cat": "asset",
+  "plat": "ios",
+  "name": "SF Symbols",
+  "url": "https://developer.apple.com/sf-symbols/",
+  "zh": "iOS 原生图标集，App 内免费使用（限苹果平台）",
+  "en": "Apple's native icon set, free within Apple platforms"
+ },
+ {
+  "id": "material-symbols",
+  "cat": "asset",
+  "plat": "android",
+  "name": "Material Symbols",
+  "url": "https://fonts.google.com/icons",
+  "zh": "Google 可变图标，三种风格四个可调轴",
+  "en": "Google's variable icons with three styles and four axes",
+  "lic": "Apache-2.0"
+ },
+ {
+  "id": "phosphor-icons",
+  "cat": "asset",
+  "plat": "cross",
+  "name": "Phosphor Icons",
+  "url": "https://phosphoricons.com/",
+  "zh": "6 种粗细的灵活图标，有 RN/Flutter 版本",
+  "en": "Flexible icons in six weights, with RN and Flutter packages",
+  "lic": "MIT"
+ },
+ {
+  "id": "lucide",
+  "cat": "asset",
+  "plat": "cross",
+  "name": "Lucide",
+  "url": "https://lucide.dev/",
+  "zh": "干净一致的线性图标，含 RN 包",
+  "en": "Clean, consistent line icons including a React Native package",
+  "lic": "ISC"
+ },
+ {
+  "id": "tabler-icons",
+  "cat": "asset",
+  "plat": "cross",
+  "name": "Tabler Icons",
+  "url": "https://tabler.io/icons",
+  "zh": "5000+ 免费线性图标",
+  "en": "5,000+ free line icons",
+  "lic": "MIT"
+ },
+ {
+  "id": "iconoir",
+  "cat": "asset",
+  "plat": "cross",
+  "name": "Iconoir",
+  "url": "https://iconoir.com/",
+  "zh": "简洁开源图标，带 RN 与 Flutter 包",
+  "en": "Simple open-source icons with RN and Flutter packages",
+  "lic": "MIT"
+ },
+ {
+  "id": "heroicons",
+  "cat": "asset",
+  "plat": "cross",
+  "name": "Heroicons",
+  "url": "https://heroicons.com/",
+  "zh": "Tailwind 团队的精致图标",
+  "en": "Polished icons from the Tailwind team",
+  "lic": "MIT"
+ },
+ {
+  "id": "hugeicons",
+  "cat": "asset",
+  "plat": "cross",
+  "name": "Hugeicons",
+  "url": "https://hugeicons.com/",
+  "zh": "大规模图标库，免费版可商用",
+  "en": "Huge icon library with a free commercial tier"
+ },
+ {
+  "id": "solar-icons",
+  "cat": "asset",
+  "plat": "cross",
+  "name": "Solar Icons",
+  "url": "https://www.figma.com/community/file/1166831539721848736",
+  "zh": "多风格的 Solar 图标集（Figma）",
+  "en": "Solar icon set in multiple styles (Figma)",
+  "lic": "CC-BY-4.0"
+ },
+ {
+  "id": "ionicons",
+  "cat": "asset",
+  "plat": "cross",
+  "name": "Ionicons",
+  "url": "https://ionic.io/ionicons",
+  "zh": "兼顾 iOS 与 Material 风格的图标",
+  "en": "Icons designed for both iOS and Material styles",
+  "lic": "MIT"
+ },
+ {
+  "id": "fluent-ui-system-icons",
+  "cat": "asset",
+  "plat": "cross",
+  "name": "Fluent UI System Icons",
+  "url": "https://github.com/microsoft/fluentui-system-icons",
+  "zh": "微软 Fluent 图标，移动端尺寸齐全",
+  "en": "Microsoft Fluent icons in mobile-ready sizes",
+  "lic": "MIT"
+ },
+ {
+  "id": "remix-icon",
+  "cat": "asset",
+  "plat": "cross",
+  "name": "Remix Icon",
+  "url": "https://remixicon.com/",
+  "zh": "线性+填充成对的中性图标",
+  "en": "Neutral icons in paired line and fill styles",
+  "lic": "Apache-2.0"
+ },
+ {
+  "id": "expo-vector-icons-directory",
+  "cat": "asset",
+  "plat": "cross",
+  "name": "Expo Vector Icons directory",
+  "url": "https://icons.expo.fyi/",
+  "zh": "在 Expo 里可直接用的图标检索",
+  "en": "Search icons available out of the box in Expo"
+ },
+ {
+  "id": "undraw",
+  "cat": "asset",
+  "plat": "cross",
+  "name": "unDraw",
+  "url": "https://undraw.co/illustrations",
+  "zh": "可改主色的免费扁平插画",
+  "en": "Free flat illustrations with customizable color"
+ },
+ {
+  "id": "open-peeps",
+  "cat": "asset",
+  "plat": "cross",
+  "name": "Open Peeps",
+  "url": "https://www.openpeeps.com/",
+  "zh": "手绘人物插画，可自由组合",
+  "en": "Hand-drawn people illustrations you can mix and match",
+  "lic": "CC0-1.0"
+ },
+ {
+  "id": "humaaans",
+  "cat": "asset",
+  "plat": "cross",
+  "name": "Humaaans",
+  "url": "https://www.humaaans.com/",
+  "zh": "可拼装的人物插画",
+  "en": "Mix-and-match people illustrations",
+  "lic": "CC-BY-4.0"
+ },
+ {
+  "id": "storyset",
+  "cat": "asset",
+  "plat": "cross",
+  "name": "Storyset",
+  "url": "https://storyset.com/",
+  "zh": "可在线改色和加动效的插画",
+  "en": "Illustrations you can recolor and animate online"
+ },
+ {
+  "id": "blush",
+  "cat": "asset",
+  "plat": "cross",
+  "name": "Blush",
+  "url": "https://blush.design/",
+  "zh": "多位插画师的可定制插画集",
+  "en": "Customizable illustrations from many artists"
+ },
+ {
+  "id": "ira-design",
+  "cat": "asset",
+  "plat": "cross",
+  "name": "IRA Design",
+  "url": "https://iradesign.io/",
+  "zh": "渐变风格的可定制插画",
+  "en": "Customizable gradient-style illustrations"
+ },
+ {
+  "id": "drawkit",
+  "cat": "asset",
+  "plat": "cross",
+  "name": "DrawKit",
+  "url": "https://www.drawkit.com/",
+  "zh": "免费+付费的高质量插画包",
+  "en": "Free and premium illustration packs"
+ },
+ {
+  "id": "manypixels-gallery",
+  "cat": "asset",
+  "plat": "cross",
+  "name": "ManyPixels Gallery",
+  "url": "https://www.manypixels.co/gallery",
+  "zh": "免费商用插画库",
+  "en": "Free illustrations for commercial use"
+ },
+ {
+  "id": "3dicons",
+  "cat": "asset",
+  "plat": "cross",
+  "name": "3dicons",
+  "url": "https://3dicons.co/",
+  "zh": "开源 3D 图标，适合引导页和空状态",
+  "en": "Open-source 3D icons for onboarding and empty states",
+  "lic": "CC0-1.0"
+ },
+ {
+  "id": "mockup-world",
+  "cat": "asset",
+  "plat": "cross",
+  "name": "Mockup World",
+  "url": "https://www.mockupworld.co/all-mockups/?s=iphone",
+  "zh": "免费 iPhone 与安卓样机 PSD",
+  "en": "Free iPhone and Android mockup PSDs"
+ },
+ {
+  "id": "device-shots",
+  "cat": "asset",
+  "plat": "cross",
+  "name": "Device Shots",
+  "url": "https://deviceshots.com/",
+  "zh": "在线把截图套进设备外框",
+  "en": "Put screenshots into device frames online"
+ },
+ {
+  "id": "mockrocket",
+  "cat": "asset",
+  "plat": "cross",
+  "name": "MockRocket",
+  "url": "https://mockrocket.io/",
+  "zh": "3D 设备样机在线生成",
+  "en": "Online 3D device mockup generator"
+ },
+ {
+  "id": "sf-pro-sf-compact-fonts",
+  "cat": "asset",
+  "plat": "ios",
+  "name": "SF Pro & SF Compact fonts",
+  "url": "https://developer.apple.com/fonts/",
+  "zh": "苹果系统字体下载（用于苹果平台设计）",
+  "en": "Apple system fonts for designing for Apple platforms"
+ },
+ {
+  "id": "inter",
+  "cat": "asset",
+  "plat": "cross",
+  "name": "Inter",
+  "url": "https://rsms.me/inter/",
+  "zh": "为屏幕设计的开源字体，移动端很耐看",
+  "en": "Open-source typeface built for screens, great on mobile",
+  "lic": "OFL-1.1"
+ },
+ {
+  "id": "roboto-flex",
+  "cat": "asset",
+  "plat": "android",
+  "name": "Roboto Flex",
+  "url": "https://fonts.google.com/specimen/Roboto+Flex",
+  "zh": "Android 系统字体的可变版本",
+  "en": "Variable version of Android's system typeface",
+  "lic": "OFL-1.1"
+ },
+ {
+  "id": "geist",
+  "cat": "asset",
+  "plat": "cross",
+  "name": "Geist",
+  "url": "https://vercel.com/font",
+  "zh": "Vercel 的现代无衬线与等宽字体",
+  "en": "Vercel's modern sans and mono typefaces",
+  "lic": "OFL-1.1"
+ },
+ {
+  "id": "plus-jakarta-sans",
+  "cat": "asset",
+  "plat": "cross",
+  "name": "Plus Jakarta Sans",
+  "url": "https://fonts.google.com/specimen/Plus+Jakarta+Sans",
+  "zh": "圆润现代，适合 App 标题",
+  "en": "Rounded and modern, great for app headings",
+  "lic": "OFL-1.1"
+ },
+ {
+  "id": "manrope",
+  "cat": "asset",
+  "plat": "cross",
+  "name": "Manrope",
+  "url": "https://fonts.google.com/specimen/Manrope",
+  "zh": "几何无衬线，小字号也清楚",
+  "en": "Geometric sans that stays legible at small sizes",
+  "lic": "OFL-1.1"
+ },
+ {
+  "id": "dm-sans",
+  "cat": "asset",
+  "plat": "cross",
+  "name": "DM Sans",
+  "url": "https://fonts.google.com/specimen/DM+Sans",
+  "zh": "低对比几何字体，适合界面",
+  "en": "Low-contrast geometric sans for interfaces",
+  "lic": "OFL-1.1"
+ },
+ {
+  "id": "noto-sans-sc",
+  "cat": "asset",
+  "plat": "cross",
+  "name": "Noto Sans SC",
+  "url": "https://fonts.google.com/noto/specimen/Noto+Sans+SC",
+  "zh": "中文 App 的开源黑体首选",
+  "en": "The go-to open-source Chinese sans for apps",
+  "lic": "OFL-1.1"
+ },
+ {
+  "id": "misans",
+  "cat": "asset",
+  "plat": "cross",
+  "name": "MiSans",
+  "url": "https://hyperos.mi.com/font/en/",
+  "zh": "小米开源的中英文界面字体，可免费商用",
+  "en": "Xiaomi's free-for-commercial-use UI typeface for CJK and Latin"
+ },
+ {
+  "id": "harmonyos-sans",
+  "cat": "asset",
+  "plat": "cross",
+  "name": "HarmonyOS Sans",
+  "url": "https://developer.huawei.com/consumer/en/design/resource/",
+  "zh": "鸿蒙系统字体，免费商用",
+  "en": "HarmonyOS system typeface, free for commercial use"
+ },
+ {
+  "id": "coolors",
+  "cat": "asset",
+  "plat": "cross",
+  "name": "Coolors",
+  "url": "https://coolors.co/",
+  "zh": "快速生成 App 配色",
+  "en": "Generate app color palettes fast"
+ },
+ {
+  "id": "realtime-colors",
+  "cat": "asset",
+  "plat": "cross",
+  "name": "Realtime Colors",
+  "url": "https://www.realtimecolors.com/",
+  "zh": "在真实界面上预览配色",
+  "en": "Preview palettes on a real interface"
+ },
+ {
+  "id": "blurhash",
+  "cat": "asset",
+  "plat": "cross",
+  "name": "Blurhash",
+  "url": "https://blurha.sh/",
+  "zh": "图片加载前的模糊占位方案",
+  "en": "Blurry image placeholders while loading",
+  "lic": "MIT"
+ },
+ {
+  "id": "app-icon-generator-appicon-co",
+  "cat": "asset",
+  "plat": "cross",
+  "name": "App icon generator (appicon.co)",
+  "url": "https://www.appicon.co/",
+  "zh": "一键导出 iOS/Android 全尺寸图标",
+  "en": "Export every iOS and Android app icon size in one go"
+ },
+ {
+  "id": "icon-composer-apple",
+  "cat": "asset",
+  "plat": "ios",
+  "name": "Icon Composer (Apple)",
+  "url": "https://developer.apple.com/icon-composer/",
+  "zh": "苹果做分层 Liquid Glass 图标的工具",
+  "en": "Apple's tool for layered Liquid Glass app icons"
+ },
+ {
+  "id": "expo-agent-skills-official",
+  "cat": "skill",
+  "plat": "rn",
+  "name": "Expo · Agent skills (official)",
+  "url": "https://github.com/expo/skills",
+  "zh": "Expo 官方 Agent Skills：路由、原生 UI、EAS 发布一套全",
+  "en": "Expo's official agent skills: routing, native UI and EAS release",
+  "lic": "MIT"
+ },
+ {
+  "id": "expo-skill-expo-ui",
+  "cat": "skill",
+  "plat": "rn",
+  "name": "Expo skill · expo-ui",
+  "url": "https://github.com/expo/skills/blob/main/plugins/expo/skills/expo-ui/SKILL.md",
+  "zh": "教 AI 在 Expo 里用 SwiftUI/Compose 原生组件",
+  "en": "Teaches agents to use native SwiftUI and Compose views in Expo",
+  "lic": "MIT"
+ },
+ {
+  "id": "expo-skill-expo-native-ui",
+  "cat": "skill",
+  "plat": "rn",
+  "name": "Expo skill · expo-native-ui",
+  "url": "https://github.com/expo/skills/blob/main/plugins/expo/skills/expo-native-ui/SKILL.md",
+  "zh": "让 AI 写出原生手感的 Expo 界面",
+  "en": "Helps agents build native-feeling Expo interfaces",
+  "lic": "MIT"
+ },
+ {
+  "id": "expo-skill-expo-design-system",
+  "cat": "skill",
+  "plat": "rn",
+  "name": "Expo skill · expo-design-system",
+  "url": "https://github.com/expo/skills/blob/main/plugins/expo/skills/expo-design-system/SKILL.md",
+  "zh": "在 Expo 项目里搭设计系统的 skill",
+  "en": "Skill for setting up a design system in Expo apps",
+  "lic": "MIT"
+ },
+ {
+  "id": "expo-skill-expo-animation",
+  "cat": "skill",
+  "plat": "rn",
+  "name": "Expo skill · expo-animation",
+  "url": "https://github.com/expo/skills/blob/main/plugins/expo/skills/expo-animation/SKILL.md",
+  "zh": "Expo 动效写法与性能要点",
+  "en": "Expo animation patterns and performance tips",
+  "lic": "MIT"
+ },
+ {
+  "id": "expo-skill-expo-router",
+  "cat": "skill",
+  "plat": "rn",
+  "name": "Expo skill · expo-router",
+  "url": "https://github.com/expo/skills/blob/main/plugins/expo/skills/expo-router/SKILL.md",
+  "zh": "Expo Router 导航结构的 skill",
+  "en": "Skill for Expo Router navigation structure",
+  "lic": "MIT"
+ },
+ {
+  "id": "expo-skill-expo-web-to-native",
+  "cat": "skill",
+  "plat": "rn",
+  "name": "Expo skill · expo-web-to-native",
+  "url": "https://github.com/expo/skills/blob/main/plugins/expo/skills/expo-web-to-native/SKILL.md",
+  "zh": "把 Web 页面改造成原生 App 体验",
+  "en": "Turn web screens into native app experiences",
+  "lic": "MIT"
+ },
+ {
+  "id": "expo-skill-eas-app-stores",
+  "cat": "skill",
+  "plat": "rn",
+  "name": "Expo skill · eas-app-stores",
+  "url": "https://github.com/expo/skills/blob/main/plugins/expo/skills/eas-app-stores/SKILL.md",
+  "zh": "让 AI 帮你走完上架流程",
+  "en": "Lets agents walk through app store submission",
+  "lic": "MIT"
+ },
+ {
+  "id": "callstack-react-native-agent-skills",
+  "cat": "skill",
+  "plat": "rn",
+  "name": "Callstack · React Native agent skills",
+  "url": "https://github.com/callstackincubator/agent-skills",
+  "zh": "Callstack 出品的 RN 专家级 skills",
+  "en": "Expert React Native skills from Callstack",
+  "lic": "MIT"
+ },
+ {
+  "id": "callstack-skill-react-native-best-practices",
+  "cat": "skill",
+  "plat": "rn",
+  "name": "Callstack skill · react-native-best-practices",
+  "url": "https://github.com/callstackincubator/agent-skills/blob/main/skills/react-native-best-practices/SKILL.md",
+  "zh": "RN 性能与结构最佳实践",
+  "en": "React Native performance and structure best practices",
+  "lic": "MIT"
+ },
+ {
+  "id": "callstack-skill-react-navigation",
+  "cat": "skill",
+  "plat": "rn",
+  "name": "Callstack skill · react-navigation",
+  "url": "https://github.com/callstackincubator/agent-skills/blob/main/skills/react-navigation/SKILL.md",
+  "zh": "React Navigation 用法 skill",
+  "en": "Skill for using React Navigation correctly",
+  "lic": "MIT"
+ },
+ {
+  "id": "callstack-skill-upgrading-react-native",
+  "cat": "skill",
+  "plat": "rn",
+  "name": "Callstack skill · upgrading-react-native",
+  "url": "https://github.com/callstackincubator/agent-skills/blob/main/skills/upgrading-react-native/SKILL.md",
+  "zh": "让 AI 安全升级 RN 版本",
+  "en": "Lets agents upgrade React Native safely",
+  "lic": "MIT"
+ },
+ {
+  "id": "vercel-skill-react-native-skills",
+  "cat": "skill",
+  "plat": "rn",
+  "name": "Vercel skill · react-native-skills",
+  "url": "https://github.com/vercel-labs/agent-skills/tree/main/skills/react-native-skills",
+  "zh": "Vercel 的 RN 规则集，含列表、动效、图片要点",
+  "en": "Vercel's React Native rule set covering lists, motion and images"
+ },
+ {
+  "id": "vercel-skill-web-design-guidelines",
+  "cat": "skill",
+  "plat": "web",
+  "name": "Vercel skill · web-design-guidelines",
+  "url": "https://github.com/vercel-labs/agent-skills/tree/main/skills/web-design-guidelines",
+  "zh": "界面审查 skill，可用于移动网页设计评审",
+  "en": "Interface review skill, useful for mobile-web design reviews"
+ },
+ {
+  "id": "margelo-react-native-skills",
+  "cat": "skill",
+  "plat": "rn",
+  "name": "Margelo · React Native skills",
+  "url": "https://github.com/margelo/react-native-skills",
+  "zh": "Margelo 团队的 RN 性能与原生模块 skills",
+  "en": "Margelo's React Native performance and native-module skills"
+ },
+ {
+  "id": "swiftui-agent-skill-paul-hudson",
+  "cat": "skill",
+  "plat": "ios",
+  "name": "SwiftUI Agent Skill (Paul Hudson)",
+  "url": "https://github.com/twostraws/SwiftUI-Agent-Skill",
+  "zh": "Hacking with Swift 作者写的 SwiftUI skill，纠正 AI 常犯错误",
+  "en": "SwiftUI skill by Paul Hudson that fixes common AI mistakes",
+  "lic": "MIT"
+ },
+ {
+  "id": "swiftui-agent-skill-antoine-van-der-lee",
+  "cat": "skill",
+  "plat": "ios",
+  "name": "SwiftUI Agent Skill (Antoine van der Lee)",
+  "url": "https://github.com/AvdLee/SwiftUI-Agent-Skill",
+  "zh": "SwiftUI 最佳实践 skill，含布局与状态管理",
+  "en": "SwiftUI best-practice skill covering layout and state",
+  "lic": "MIT"
+ },
+ {
+  "id": "swift-agent-skills-directory",
+  "cat": "skill",
+  "plat": "ios",
+  "name": "Swift Agent Skills directory",
+  "url": "https://github.com/twostraws/Swift-Agent-Skills",
+  "zh": "Swift/苹果平台 skills 精选目录",
+  "en": "Curated directory of Swift and Apple-platform skills",
+  "lic": "MIT"
+ },
+ {
+  "id": "dimillian-skills",
+  "cat": "skill",
+  "plat": "ios",
+  "name": "Dimillian · Skills",
+  "url": "https://github.com/Dimillian/Skills",
+  "zh": "Ice Cubes 作者的 iOS/SwiftUI Codex skills",
+  "en": "iOS and SwiftUI Codex skills from the author of Ice Cubes",
+  "lic": "MIT"
+ },
+ {
+  "id": "swiftagents-twostraws",
+  "cat": "skill",
+  "plat": "ios",
+  "name": "SwiftAgents (twostraws)",
+  "url": "https://github.com/twostraws/SwiftAgents",
+  "zh": "给 Swift 项目用的 AGENTS.md 模板",
+  "en": "AGENTS.md template for Swift projects"
+ },
+ {
+  "id": "swift-concurrency-agent-skill",
+  "cat": "skill",
+  "plat": "ios",
+  "name": "Swift Concurrency Agent Skill",
+  "url": "https://github.com/AvdLee/Swift-Concurrency-Agent-Skill",
+  "zh": "Swift 并发写法 skill，避免界面卡顿",
+  "en": "Swift Concurrency skill to keep UI responsive",
+  "lic": "MIT"
+ },
+ {
+  "id": "ios-accessibility-agent-skill",
+  "cat": "skill",
+  "plat": "ios",
+  "name": "iOS Accessibility Agent Skill",
+  "url": "https://github.com/dadederk/iOS-Accessibility-Agent-Skill",
+  "zh": "让 AI 写出 VoiceOver 友好的界面",
+  "en": "Helps agents build VoiceOver-friendly interfaces",
+  "lic": "MIT"
+ },
+ {
+  "id": "apple-accessibility-skills",
+  "cat": "skill",
+  "plat": "ios",
+  "name": "Apple accessibility skills",
+  "url": "https://github.com/rgmez/apple-accessibility-skills",
+  "zh": "苹果平台无障碍审查 skills",
+  "en": "Accessibility review skills for Apple platforms",
+  "lic": "MIT"
+ },
+ {
+  "id": "swiftui-design-principles-skill",
+  "cat": "skill",
+  "plat": "ios",
+  "name": "SwiftUI design principles skill",
+  "url": "https://github.com/arjitj2/swiftui-design-principles",
+  "zh": "SwiftUI 设计原则与间距、字号规范 skill",
+  "en": "Skill encoding SwiftUI spacing, type and design principles",
+  "lic": "MIT"
+ },
+ {
+  "id": "figma-to-swiftui-skill",
+  "cat": "skill",
+  "plat": "ios",
+  "name": "Figma to SwiftUI skill",
+  "url": "https://github.com/daetojemax/figma-to-swiftui-skill",
+  "zh": "把 Figma 设计稿转成 SwiftUI 的 skill",
+  "en": "Skill for turning Figma designs into SwiftUI"
+ },
+ {
+  "id": "ios-simulator-skill",
+  "cat": "skill",
+  "plat": "ios",
+  "name": "iOS Simulator skill",
+  "url": "https://github.com/conorluddy/ios-simulator-skill",
+  "zh": "让 AI 操作模拟器截图、点按、验收界面",
+  "en": "Lets agents drive the iOS Simulator to screenshot and verify UI",
+  "lic": "MIT"
+ },
+ {
+  "id": "app-store-aso-skill",
+  "cat": "skill",
+  "plat": "ios",
+  "name": "App Store ASO skill",
+  "url": "https://github.com/TimBroddin/app-store-aso-skill",
+  "zh": "商店标题、关键词与截图文案优化 skill",
+  "en": "Skill for store titles, keywords and screenshot copy",
+  "lic": "MIT"
+ },
+ {
+  "id": "app-store-connect-cli-skills",
+  "cat": "skill",
+  "plat": "ios",
+  "name": "App Store Connect CLI skills",
+  "url": "https://github.com/rorkai/app-store-connect-cli-skills",
+  "zh": "让 AI 管理 App Store Connect 上架",
+  "en": "Lets agents manage App Store Connect releases",
+  "lic": "MIT"
+ },
+ {
+  "id": "widgets-agent-skill",
+  "cat": "skill",
+  "plat": "ios",
+  "name": "Widgets Agent Skill",
+  "url": "https://github.com/n0an/Widgets-Agent-Skill",
+  "zh": "WidgetKit 小组件开发 skill",
+  "en": "Skill for building WidgetKit widgets",
+  "lic": "MIT"
+ },
+ {
+  "id": "xcode-system-prompts",
+  "cat": "skill",
+  "plat": "ios",
+  "name": "Xcode system prompts",
+  "url": "https://github.com/artemnovichkov/xcode-27-system-prompts",
+  "zh": "Xcode 内置 AI 的系统提示词，可学 SwiftUI 写法",
+  "en": "Xcode's built-in AI system prompts, a SwiftUI style reference"
+ },
+ {
+  "id": "swift-architecture-skill",
+  "cat": "skill",
+  "plat": "ios",
+  "name": "Swift architecture skill",
+  "url": "https://github.com/efremidze/swift-architecture-skill",
+  "zh": "iOS 架构选型与分层 skill",
+  "en": "iOS architecture and layering skill",
+  "lic": "MIT"
+ },
+ {
+  "id": "awesome-ios-ai",
+  "cat": "skill",
+  "plat": "ios",
+  "name": "Awesome iOS AI",
+  "url": "https://github.com/Techopolis/awesome-ios-ai",
+  "zh": "iOS + AI 开发资源合集",
+  "en": "Curated iOS + AI development resources",
+  "lic": "CC0-1.0"
+ },
+ {
+  "id": "android-agent-skills-official",
+  "cat": "skill",
+  "plat": "android",
+  "name": "Android · Agent skills (official)",
+  "url": "https://github.com/android/skills",
+  "zh": "Google Android 官方 skills：Compose、自适应、性能",
+  "en": "Official Android skills: Compose, adaptive layouts, performance",
+  "lic": "Apache-2.0"
+ },
+ {
+  "id": "android-skill-compose-adaptive",
+  "cat": "skill",
+  "plat": "android",
+  "name": "Android skill · Compose adaptive",
+  "url": "https://github.com/android/skills/tree/main/jetpack-compose/adaptive",
+  "zh": "教 AI 做平板/折叠屏自适应布局",
+  "en": "Teaches agents adaptive layouts for tablets and foldables",
+  "lic": "Apache-2.0"
+ },
+ {
+  "id": "android-skill-compose-theming",
+  "cat": "skill",
+  "plat": "android",
+  "name": "Android skill · Compose theming",
+  "url": "https://github.com/android/skills/tree/main/jetpack-compose/theming",
+  "zh": "Compose M3 主题与动态色 skill",
+  "en": "Compose Material 3 theming and dynamic color skill",
+  "lic": "Apache-2.0"
+ },
+ {
+  "id": "android-skill-compose-performance",
+  "cat": "skill",
+  "plat": "android",
+  "name": "Android skill · Compose performance",
+  "url": "https://github.com/android/skills/tree/main/jetpack-compose/jetpack-compose-performance",
+  "zh": "Compose 重组与性能优化 skill",
+  "en": "Compose recomposition and performance skill",
+  "lic": "Apache-2.0"
+ },
+ {
+  "id": "jetpack-compose-agent-skill",
+  "cat": "skill",
+  "plat": "android",
+  "name": "Jetpack Compose Agent Skill",
+  "url": "https://github.com/aldefy/compose-skill",
+  "zh": "基于 androidx 源码的 Compose 指导 skill",
+  "en": "Compose guidance skill grounded in androidx source"
+ },
+ {
+  "id": "flutter-agent-plugins-official",
+  "cat": "skill",
+  "plat": "flutter",
+  "name": "Flutter · Agent plugins (official)",
+  "url": "https://github.com/flutter/agent-plugins",
+  "zh": "Flutter 官方 skills 与规则",
+  "en": "Official Flutter skills and rules",
+  "lic": "BSD-3-Clause"
+ },
+ {
+  "id": "flutter-skill-build-responsive-layout",
+  "cat": "skill",
+  "plat": "flutter",
+  "name": "Flutter skill · build responsive layout",
+  "url": "https://github.com/flutter/agent-plugins/tree/main/skills/flutter-build-responsive-layout",
+  "zh": "让 AI 写出手机到平板都好看的布局",
+  "en": "Lets agents build layouts that work from phone to tablet",
+  "lic": "BSD-3-Clause"
+ },
+ {
+  "id": "flutter-skill-fix-layout-issues",
+  "cat": "skill",
+  "plat": "flutter",
+  "name": "Flutter skill · fix layout issues",
+  "url": "https://github.com/flutter/agent-plugins/tree/main/skills/flutter-fix-layout-issues",
+  "zh": "排查溢出、约束错误等布局问题",
+  "en": "Diagnose overflow and constraint layout issues",
+  "lic": "BSD-3-Clause"
+ },
+ {
+  "id": "flutter-skill-architecture-best-practices",
+  "cat": "skill",
+  "plat": "flutter",
+  "name": "Flutter skill · architecture best practices",
+  "url": "https://github.com/flutter/agent-plugins/tree/main/skills/flutter-apply-architecture-best-practices",
+  "zh": "Flutter 官方推荐架构 skill",
+  "en": "Flutter's recommended architecture as a skill",
+  "lic": "BSD-3-Clause"
+ },
+ {
+  "id": "flutter-skill-widget-previews",
+  "cat": "skill",
+  "plat": "flutter",
+  "name": "Flutter skill · widget previews",
+  "url": "https://github.com/flutter/agent-plugins/tree/main/skills/flutter-add-widget-preview",
+  "zh": "给组件加预览，方便 AI 看效果",
+  "en": "Add widget previews so agents can check visuals",
+  "lic": "BSD-3-Clause"
+ },
+ {
+  "id": "flutter-ai-rules",
+  "cat": "skill",
+  "plat": "flutter",
+  "name": "Flutter · AI rules",
+  "url": "https://docs.flutter.dev/ai/ai-rules",
+  "zh": "Flutter 官方给 AI 工具的规则文件",
+  "en": "Flutter's official rules file for AI tools",
+  "lic": "BSD-3-Clause"
+ },
+ {
+  "id": "platform-design-skills-hig-m3-wcag",
+  "cat": "skill",
+  "plat": "cross",
+  "name": "Platform design skills (HIG + M3 + WCAG)",
+  "url": "https://github.com/ehmo/platform-design-skills",
+  "zh": "300+ 条 HIG、Material 3、WCAG 规则做成审查 skill",
+  "en": "300+ HIG, Material 3 and WCAG rules packaged as review skills",
+  "lic": "MIT"
+ },
+ {
+  "id": "anthropic-agent-skills",
+  "cat": "skill",
+  "plat": "cross",
+  "name": "Anthropic · Agent Skills",
+  "url": "https://github.com/anthropics/skills",
+  "zh": "Anthropic 官方 skills 仓库与规范",
+  "en": "Anthropic's official skills repo and spec"
+ },
+ {
+  "id": "anthropic-skill-frontend-design",
+  "cat": "skill",
+  "plat": "cross",
+  "name": "Anthropic skill · frontend-design",
+  "url": "https://github.com/anthropics/skills/blob/main/skills/frontend-design/SKILL.md",
+  "zh": "让 AI 做出不俗气界面的设计 skill，移动网页同样适用",
+  "en": "Design skill that steers agents away from generic UI, works for mobile web too"
+ },
+ {
+  "id": "anthropic-skill-theme-factory",
+  "cat": "skill",
+  "plat": "cross",
+  "name": "Anthropic skill · theme-factory",
+  "url": "https://github.com/anthropics/skills/blob/main/skills/theme-factory/SKILL.md",
+  "zh": "一键套用配色字体主题的 skill",
+  "en": "Skill for applying cohesive color and font themes"
+ },
+ {
+  "id": "anthropic-skill-skill-creator",
+  "cat": "skill",
+  "plat": "cross",
+  "name": "Anthropic skill · skill-creator",
+  "url": "https://github.com/anthropics/skills/blob/main/skills/skill-creator/SKILL.md",
+  "zh": "自己写移动端设计 skill 的官方模板",
+  "en": "Official template for writing your own mobile design skills"
+ },
+ {
+  "id": "figma-mcp-server-guide",
+  "cat": "skill",
+  "plat": "cross",
+  "name": "Figma MCP server guide",
+  "url": "https://github.com/figma/mcp-server-guide",
+  "zh": "Figma 官方 MCP 指南：让 AI 读设计稿生成代码",
+  "en": "Figma's official MCP guide for design-to-code agents"
+ },
+ {
+  "id": "figma-react-native",
+  "cat": "skill",
+  "plat": "rn",
+  "name": "Figma → React Native",
+  "url": "https://github.com/kat-tax/figma-to-react-native",
+  "zh": "Figma 插件：设计稿直接转 RN 组件",
+  "en": "Figma plugin that converts designs to React Native components"
+ },
+ {
+  "id": "awesome-agent-skills-voltagent",
+  "cat": "skill",
+  "plat": "cross",
+  "name": "Awesome Agent Skills (VoltAgent)",
+  "url": "https://github.com/VoltAgent/awesome-agent-skills",
+  "zh": "1000+ skills 合集，含移动端分类",
+  "en": "1,000+ skills including a mobile section",
+  "lic": "MIT"
+ },
+ {
+  "id": "awesome-claude-skills-composio",
+  "cat": "skill",
+  "plat": "cross",
+  "name": "Awesome Claude Skills (Composio)",
+  "url": "https://github.com/ComposioHQ/awesome-claude-skills",
+  "zh": "Claude skills 精选列表",
+  "en": "Curated list of Claude skills"
+ },
+ {
+  "id": "awesome-cursorrules",
+  "cat": "skill",
+  "plat": "cross",
+  "name": "awesome-cursorrules",
+  "url": "https://github.com/PatrickJS/awesome-cursorrules",
+  "zh": "最全的 Cursor 规则仓库",
+  "en": "The biggest collection of Cursor rules",
+  "lic": "CC0-1.0"
+ },
+ {
+  "id": "cursor-rule-react-native-expo",
+  "cat": "skill",
+  "plat": "rn",
+  "name": "Cursor rule · React Native + Expo",
+  "url": "https://github.com/PatrickJS/awesome-cursorrules/blob/main/rules/react-native-expo-cursorrules-prompt-file.mdc",
+  "zh": "RN + Expo 开发规则",
+  "en": "Rules for React Native with Expo",
+  "lic": "CC0-1.0"
+ },
+ {
+  "id": "cursor-rule-expo-router-typescript",
+  "cat": "skill",
+  "plat": "rn",
+  "name": "Cursor rule · Expo Router + TypeScript",
+  "url": "https://github.com/PatrickJS/awesome-cursorrules/blob/main/rules/react-native-expo-router-typescript-windows-cursorrules-prompt-file.mdc",
+  "zh": "Expo Router + TS 规则",
+  "en": "Rules for Expo Router with TypeScript",
+  "lic": "CC0-1.0"
+ },
+ {
+  "id": "cursor-rule-expo-jest-detox",
+  "cat": "skill",
+  "plat": "rn",
+  "name": "Cursor rule · Expo + Jest + Detox",
+  "url": "https://github.com/PatrickJS/awesome-cursorrules/blob/main/rules/typescript-expo-jest-detox-cursorrules-prompt-file.mdc",
+  "zh": "Expo 测试规则",
+  "en": "Testing rules for Expo apps",
+  "lic": "CC0-1.0"
+ },
+ {
+  "id": "cursor-rule-swiftui-guidelines",
+  "cat": "skill",
+  "plat": "ios",
+  "name": "Cursor rule · SwiftUI guidelines",
+  "url": "https://github.com/PatrickJS/awesome-cursorrules/blob/main/rules/swiftui-guidelines-cursorrules-prompt-file.mdc",
+  "zh": "SwiftUI 写法规则",
+  "en": "SwiftUI coding rules",
+  "lic": "CC0-1.0"
+ },
+ {
+  "id": "cursor-rule-swift-uikit",
+  "cat": "skill",
+  "plat": "ios",
+  "name": "Cursor rule · Swift UIKit",
+  "url": "https://github.com/PatrickJS/awesome-cursorrules/blob/main/rules/swift-uikit-cursorrules-prompt-file.mdc",
+  "zh": "UIKit 开发规则",
+  "en": "UIKit development rules",
+  "lic": "CC0-1.0"
+ },
+ {
+  "id": "cursor-rule-flutter-app-expert",
+  "cat": "skill",
+  "plat": "flutter",
+  "name": "Cursor rule · Flutter app expert",
+  "url": "https://github.com/PatrickJS/awesome-cursorrules/blob/main/rules/flutter-app-expert-cursorrules-prompt-file.mdc",
+  "zh": "Flutter 专家规则",
+  "en": "Flutter expert rules",
+  "lic": "CC0-1.0"
+ },
+ {
+  "id": "cursor-rule-flutter-riverpod",
+  "cat": "skill",
+  "plat": "flutter",
+  "name": "Cursor rule · Flutter + Riverpod",
+  "url": "https://github.com/PatrickJS/awesome-cursorrules/blob/main/rules/flutter-riverpod-cursorrules-prompt-file.mdc",
+  "zh": "Flutter + Riverpod 规则",
+  "en": "Flutter with Riverpod rules",
+  "lic": "CC0-1.0"
+ },
+ {
+  "id": "cursor-rule-jetpack-compose",
+  "cat": "skill",
+  "plat": "android",
+  "name": "Cursor rule · Jetpack Compose",
+  "url": "https://github.com/PatrickJS/awesome-cursorrules/blob/main/rules/android-jetpack-compose-cursorrules-prompt-file.mdc",
+  "zh": "Compose 开发规则",
+  "en": "Jetpack Compose rules",
+  "lic": "CC0-1.0"
+ },
+ {
+  "id": "flutter-cursor-rules-khalidwar",
+  "cat": "skill",
+  "plat": "flutter",
+  "name": "Flutter cursor rules (KhalidWar)",
+  "url": "https://github.com/KhalidWar/flutter_cursor_rules",
+  "zh": "持续维护的 Flutter/Dart Cursor 规则",
+  "en": "Actively maintained Flutter/Dart Cursor rules"
+ },
+ {
+  "id": "llms-txt-expo-docs",
+  "cat": "skill",
+  "plat": "rn",
+  "name": "llms.txt · Expo docs",
+  "url": "https://docs.expo.dev/llms.txt",
+  "zh": "Expo 文档的 llms.txt，给 AI 当上下文",
+  "en": "Expo docs llms.txt for agent context"
+ },
+ {
+  "id": "llms-txt-react-native",
+  "cat": "skill",
+  "plat": "rn",
+  "name": "llms.txt · React Native",
+  "url": "https://reactnative.dev/llms.txt",
+  "zh": "React Native 官方 llms.txt",
+  "en": "Official React Native llms.txt"
+ },
+ {
+  "id": "llms-txt-flutter-docs",
+  "cat": "skill",
+  "plat": "flutter",
+  "name": "llms.txt · Flutter docs",
+  "url": "https://docs.flutter.dev/llms.txt",
+  "zh": "Flutter 文档 llms.txt",
+  "en": "Flutter docs llms.txt"
+ },
+ {
+  "id": "llms-txt-reanimated",
+  "cat": "skill",
+  "plat": "rn",
+  "name": "llms.txt · Reanimated",
+  "url": "https://docs.swmansion.com/react-native-reanimated/llms.txt",
+  "zh": "Reanimated 动效文档 llms.txt",
+  "en": "Reanimated docs llms.txt"
+ },
+ {
+  "id": "llms-txt-gesture-handler",
+  "cat": "skill",
+  "plat": "rn",
+  "name": "llms.txt · Gesture Handler",
+  "url": "https://docs.swmansion.com/react-native-gesture-handler/llms.txt",
+  "zh": "Gesture Handler 文档 llms.txt",
+  "en": "Gesture Handler docs llms.txt"
+ },
+ {
+  "id": "llms-txt-nativewind",
+  "cat": "skill",
+  "plat": "rn",
+  "name": "llms.txt · NativeWind",
+  "url": "https://www.nativewind.dev/llms.txt",
+  "zh": "NativeWind 文档 llms.txt",
+  "en": "NativeWind docs llms.txt"
+ },
+ {
+  "id": "llms-txt-tamagui",
+  "cat": "skill",
+  "plat": "rn",
+  "name": "llms.txt · Tamagui",
+  "url": "https://tamagui.dev/llms.txt",
+  "zh": "Tamagui 文档 llms.txt",
+  "en": "Tamagui docs llms.txt"
+ },
+ {
+  "id": "llms-txt-gluestack-ui",
+  "cat": "skill",
+  "plat": "rn",
+  "name": "llms.txt · gluestack-ui",
+  "url": "https://gluestack.io/llms.txt",
+  "zh": "gluestack 文档 llms.txt",
+  "en": "gluestack docs llms.txt"
+ },
+ {
+  "id": "llms-txt-react-navigation",
+  "cat": "skill",
+  "plat": "rn",
+  "name": "llms.txt · React Navigation",
+  "url": "https://reactnavigation.org/llms.txt",
+  "zh": "React Navigation 文档 llms.txt",
+  "en": "React Navigation docs llms.txt"
+ },
+ {
+  "id": "llms-txt-unistyles",
+  "cat": "skill",
+  "plat": "rn",
+  "name": "llms.txt · Unistyles",
+  "url": "https://www.unistyl.es/llms.txt",
+  "zh": "Unistyles 文档 llms.txt",
+  "en": "Unistyles docs llms.txt"
+ },
+ {
+  "id": "nater02-universal-bottom-sheets-in-expo-ui",
+  "cat": "inspo",
+  "plat": "rn",
+  "name": "@nater02 · Universal bottom sheets in Expo UI",
+  "url": "https://x.com/nater02/status/2087879434384683200",
+  "zh": "一个组件同时用 SwiftUI 和 Compose 原生渲染底部面板，附代码",
+  "en": "One bottom-sheet component rendered natively with SwiftUI and Compose, code included",
+  "x": {
+   "handle": "nater02",
+   "likes": 728,
+   "reposts": 31
+  }
+ },
+ {
+  "id": "mudassar6969-ninety-nine-a-game-built-with-rn-skia",
+  "cat": "inspo",
+  "plat": "rn",
+  "name": "@mudassar6969 · Ninety-Nine, a game built with RN + Skia",
+  "url": "https://x.com/mudassar6969/status/2106844042172809567",
+  "zh": "不用游戏引擎，用 RN、Skia、Reanimated 做出的手游界面",
+  "en": "A mobile game UI built with React Native, Skia and Reanimated, no game engine",
+  "x": {
+   "handle": "mudassar6969",
+   "likes": 415,
+   "reposts": 35
+  }
+ },
+ {
+  "id": "nater02-native-compose-carousels-from-expo-ui",
+  "cat": "inspo",
+  "plat": "android",
+  "name": "@nater02 · Native Compose carousels from Expo UI",
+  "url": "https://x.com/nater02/status/2103122568886489290",
+  "zh": "在 Expo 里直接用 Jetpack Compose 原生轮播",
+  "en": "Native Jetpack Compose carousels used straight from Expo",
+  "x": {
+   "handle": "nater02",
+   "likes": 246,
+   "reposts": 18
+  }
+ },
+ {
+  "id": "reactnativerwd-pinch-to-zoom-done-right",
+  "cat": "inspo",
+  "plat": "rn",
+  "name": "@ReactNativeRwd · Pinch-to-zoom done right",
+  "url": "https://x.com/ReactNativeRwd/status/2092874018223194451",
+  "zh": "讲清楚捏合缩放该有的手感，附 RN 实现",
+  "en": "What good pinch-to-zoom should feel like, with a React Native build",
+  "x": {
+   "handle": "ReactNativeRwd",
+   "likes": 232,
+   "reposts": 13
+  }
+ },
+ {
+  "id": "baconbrix-dave-s-hot-chicken-app-teardown",
+  "cat": "inspo",
+  "plat": "ios",
+  "name": "@Baconbrix · Dave's Hot Chicken app teardown",
+  "url": "https://x.com/Baconbrix/status/2110603724486013197",
+  "zh": "Expo 负责人拆解知名餐饮 App 的技术栈",
+  "en": "Expo's Evan Bacon reveals what a popular restaurant app is built with",
+  "x": {
+   "handle": "Baconbrix",
+   "likes": 216,
+   "reposts": 4
+  }
+ },
+ {
+  "id": "stachbial-nano-icons-for-native-tab-bars",
+  "cat": "inspo",
+  "plat": "rn",
+  "name": "@stachbial · Nano Icons for native tab bars",
+  "url": "https://x.com/stachbial/status/2109650296443916549",
+  "zh": "用同一份 SVG 生成原生标签栏图标（SF Symbol 等）",
+  "en": "Generate native tab bar icons (SF Symbols and more) from the same SVGs",
+  "x": {
+   "handle": "stachbial",
+   "likes": 148,
+   "reposts": 4
+  }
+ },
+ {
+  "id": "paulnguyenjs-dynamic-island-ufo",
+  "cat": "inspo",
+  "plat": "rn",
+  "name": "@paulNguyenJS · Dynamic Island UFO",
+  "url": "https://x.com/paulNguyenJS/status/2107498036767387903",
+  "zh": "用 Skia + WebGPU + Reanimated 4 玩灵动岛动效",
+  "en": "Dynamic Island effect built with Skia, WebGPU and Reanimated 4",
+  "x": {
+   "handle": "paulNguyenJS",
+   "likes": 131,
+   "reposts": 15
+  }
+ },
+ {
+  "id": "romankhrupa-agent-to-ui-renderer-for-compose",
+  "cat": "inspo",
+  "plat": "android",
+  "name": "@romankhrupa · Agent-to-UI renderer for Compose",
+  "url": "https://x.com/romankhrupa/status/2103066804771844437",
+  "zh": "AI 在 App 内动态生成 Compose 界面（A2UI）",
+  "en": "AI dynamically building Compose UI inside the app (A2UI)",
+  "x": {
+   "handle": "romankhrupa",
+   "likes": 127,
+   "reposts": 14
+  }
+ },
+ {
+  "id": "ngocdevv-273-000-particles-at-60-fps",
+  "cat": "inspo",
+  "plat": "rn",
+  "name": "@ngocdevv · 273,000 particles at 60 FPS",
+  "url": "https://x.com/ngocdevv/status/2096146146460880943",
+  "zh": "RN 里 60 帧渲染 27 万粒子的视觉实验",
+  "en": "Visual experiment rendering 273k particles at 60 FPS in React Native",
+  "x": {
+   "handle": "ngocdevv",
+   "likes": 117,
+   "reposts": 8
+  }
+ },
+ {
+  "id": "maazscript-real-ios-26-liquid-glass-tab-bar-in-expo",
+  "cat": "inspo",
+  "plat": "ios",
+  "name": "@maazscript · Real iOS 26 Liquid Glass tab bar in Expo",
+  "url": "https://x.com/maazscript/status/2084697737472139349",
+  "zh": "把自定义标签栏换成系统原生 Liquid Glass",
+  "en": "Swapping a custom tab bar for the real native Liquid Glass one",
+  "x": {
+   "handle": "maazscript",
+   "likes": 108,
+   "reposts": 12
+  }
+ },
+ {
+  "id": "trninhhuy1-choose-ball-3d-selection",
+  "cat": "inspo",
+  "plat": "ios",
+  "name": "@TrninhHuy1 · Choose Ball 3D selection",
+  "url": "https://x.com/TrninhHuy1/status/2084748199903011268",
+  "zh": "每个选项都是可交互 3D 动画的选择界面",
+  "en": "A selection screen where every option is an interactive 3D animation",
+  "x": {
+   "handle": "TrninhHuy1",
+   "likes": 65,
+   "reposts": 8
+  }
+ },
+ {
+  "id": "ngocdevv-apple-icloud-sign-in-animation-rebuilt",
+  "cat": "inspo",
+  "plat": "ios",
+  "name": "@ngocdevv · Apple iCloud sign-in animation rebuilt",
+  "url": "https://x.com/ngocdevv/status/2090868951714865338",
+  "zh": "用 Expo + Skia 复刻苹果 iCloud 登录动画",
+  "en": "Apple's iCloud sign-in animation rebuilt with Expo and Skia",
+  "x": {
+   "handle": "ngocdevv",
+   "likes": 48,
+   "reposts": 2
+  }
+ },
+ {
+  "id": "ramssuthar-native-collapsible-tabs",
+  "cat": "inspo",
+  "plat": "rn",
+  "name": "@ramssuthar · Native collapsible tabs",
+  "url": "https://x.com/ramssuthar/status/2095143875547746794",
+  "zh": "折叠标签页完全跑在原生层，滚动很顺",
+  "en": "Collapsible tabs that run fully in native code for smooth scrolling",
+  "x": {
+   "handle": "ramssuthar",
+   "likes": 36,
+   "reposts": 2
+  }
+ },
+ {
+  "id": "bidah-expo-ui-blur-reanimated-dismiss",
+  "cat": "inspo",
+  "plat": "ios",
+  "name": "@bidah · Expo UI blur + Reanimated dismiss",
+  "url": "https://x.com/bidah/status/2092741000494256485",
+  "zh": "模糊与缩放在关闭页面时同步的细节",
+  "en": "Blur and scale synced on screen dismiss",
+  "x": {
+   "handle": "bidah",
+   "likes": 32,
+   "reposts": 1
+  }
+ },
+ {
+  "id": "jaydwivedi-devotional-app-onboarding-flow",
+  "cat": "inspo",
+  "plat": "cross",
+  "name": "@jaydwivedi_ · Devotional app onboarding flow",
+  "url": "https://x.com/jaydwivedi_/status/2106063154862309767",
+  "zh": "前 30 秒决定留存：一套完整的引导流程设计",
+  "en": "The first 30 seconds decide retention: a complete onboarding flow",
+  "x": {
+   "handle": "jaydwivedi_",
+   "likes": 260,
+   "reposts": 8
+  }
+ },
+ {
+  "id": "siron93-calz-onboarding-before-after",
+  "cat": "inspo",
+  "plat": "cross",
+  "name": "@Siron93 · Calz onboarding before/after",
+  "url": "https://x.com/Siron93/status/2085772402298892324",
+  "zh": "引导改版前后对比，附营收变化",
+  "en": "Before/after onboarding redesign with revenue impact",
+  "x": {
+   "handle": "Siron93",
+   "likes": 170,
+   "reposts": 12
+  }
+ },
+ {
+  "id": "abdul-uxui-onboarding-flow-concept",
+  "cat": "inspo",
+  "plat": "cross",
+  "name": "@abdul_uxui · Onboarding flow concept",
+  "url": "https://x.com/abdul_uxui/status/2104141877855375495",
+  "zh": "Figma 设计、Claude 实现的引导动效概念",
+  "en": "Onboarding concept designed in Figma and built with Claude",
+  "x": {
+   "handle": "abdul_uxui",
+   "likes": 50,
+   "reposts": 7
+  }
+ },
+ {
+  "id": "korotharjun-liquid-glass-icon-pack",
+  "cat": "inspo",
+  "plat": "ios",
+  "name": "@KorothArjun · Liquid Glass icon pack",
+  "url": "https://x.com/KorothArjun/status/2085438142849454105",
+  "zh": "Liquid Glass 风格图标包与壁纸视差",
+  "en": "Liquid Glass icon pack with wallpaper parallax",
+  "x": {
+   "handle": "KorothArjun",
+   "likes": 47,
+   "reposts": 3
+  }
+ },
+ {
+  "id": "vivekdotdev-swiftui-timer-with-liquid-glass",
+  "cat": "inspo",
+  "plat": "ios",
+  "name": "@vivekdotdev · SwiftUI timer with Liquid Glass",
+  "url": "https://x.com/vivekdotdev/status/2098267792491561150",
+  "zh": "SwiftUI 小计时器，顺带讨论玻璃材质的可读性",
+  "en": "A small SwiftUI timer, with notes on Liquid Glass readability",
+  "x": {
+   "handle": "vivekdotdev",
+   "likes": 41,
+   "reposts": 2
+  }
+ },
+ {
+  "id": "megaprivacy-mega-ios-adopts-liquid-glass",
+  "cat": "inspo",
+  "plat": "ios",
+  "name": "@MEGAprivacy · MEGA iOS adopts Liquid Glass",
+  "url": "https://x.com/MEGAprivacy/status/2088192654559371536",
+  "zh": "大型 App 落地 Liquid Glass 的改版细节",
+  "en": "How a large app rolled out Liquid Glass",
+  "x": {
+   "handle": "MEGAprivacy",
+   "likes": 36,
+   "reposts": 5
+  }
+ },
+ {
+  "id": "xburak-paywall-from-a-screenshot-via-adapty-cli",
+  "cat": "inspo",
+  "plat": "cross",
+  "name": "@xburak · Paywall from a screenshot via Adapty CLI",
+  "url": "https://x.com/xburak/status/2106054621722558762",
+  "zh": "贴一张付费墙截图就能生成可用页面",
+  "en": "Generate a working paywall from a screenshot",
+  "x": {
+   "handle": "xburak",
+   "likes": 29,
+   "reposts": 0
+  }
+ },
+ {
+  "id": "heyrikin-liquid-glass-for-android-prototype",
+  "cat": "inspo",
+  "plat": "android",
+  "name": "@heyrikin · Liquid Glass for Android prototype",
+  "url": "https://x.com/heyrikin/status/2088498449562169476",
+  "zh": "在 Android 上做玻璃质感的原型实验",
+  "en": "Prototype bringing a glass effect to Android",
+  "x": {
+   "handle": "heyrikin",
+   "likes": 20,
+   "reposts": 1
+  }
+ },
+ {
+  "id": "expo-doodraw-built-with-expo",
+  "cat": "inspo",
+  "plat": "rn",
+  "name": "@expo · Doodraw, built with Expo",
+  "url": "https://x.com/expo/status/2108984724756533424",
+  "zh": "画一条线就会动的绘画 App，8.6 万安装",
+  "en": "A drawing app where lines come alive, 86k installs",
+  "x": {
+   "handle": "expo",
+   "likes": 39,
+   "reposts": 0
+  }
+ },
+ {
+  "id": "mobbin-build-with-ramp-design",
+  "cat": "inspo",
+  "plat": "cross",
+  "name": "@mobbin · Build with Ramp Design",
+  "url": "https://x.com/mobbin/status/2110708005134348655",
+  "zh": "Mobbin 收录 Ramp 设计系统",
+  "en": "Mobbin features the Ramp design system",
+  "x": {
+   "handle": "mobbin",
+   "likes": 67,
+   "reposts": 2
+  }
+ },
+ {
+  "id": "sleek-agent-skills-mobile-app-design",
+  "cat": "skill",
+  "plat": "cross",
+  "name": "Sleek · Agent skills (mobile app design)",
+  "url": "https://github.com/sleekdotdesign/agent-skills",
+  "zh": "Sleek 官方移动端设计 skill：让 AI 生成和编辑 App 设计稿",
+  "en": "Official Sleek skill for generating and editing mobile app designs"
+ },
+ {
+  "id": "notegoyard-mobile-design-skill-split-into-6-jobs",
+  "cat": "skill",
+  "plat": "cross",
+  "name": "@notEgoyard · Mobile design skill split into 6 jobs",
+  "url": "https://x.com/notEgoyard/status/2101632487776493627",
+  "zh": "把\"做好看\"拆成 6 个具体任务的移动端设计 skill",
+  "en": "A mobile design skill that splits \"make it look good\" into six concrete jobs",
+  "x": {
+   "handle": "notEgoyard",
+   "likes": 50,
+   "reposts": 2
+  }
+ },
+ {
+  "id": "things-3",
+  "cat": "web",
+  "plat": "ios",
+  "name": "Things 3",
+  "url": "https://culturedcode.com/things/",
+  "zh": "苹果设计奖常客，官网移动端排版干净",
+  "en": "Apple Design Award favorite with a clean mobile site"
+ },
+ {
+  "id": "halide",
+  "cat": "web",
+  "plat": "ios",
+  "name": "Halide",
+  "url": "https://halide.cam/",
+  "zh": "专业相机 App，官网和 App 都极有质感",
+  "en": "Pro camera app with a beautifully crafted site and UI"
+ },
+ {
+  "id": "flighty",
+  "cat": "web",
+  "plat": "ios",
+  "name": "Flighty",
+  "url": "https://flighty.com/",
+  "zh": "航班追踪 App，信息密度高但很清爽",
+  "en": "Flight tracker with dense yet calm information design"
+ },
+ {
+  "id": "copilot-money",
+  "cat": "web",
+  "plat": "ios",
+  "name": "Copilot Money",
+  "url": "https://www.copilot.money/",
+  "zh": "理财 App，图表与配色很讲究",
+  "en": "Finance app with refined charts and color"
+ },
+ {
+  "id": "opal",
+  "cat": "web",
+  "plat": "cross",
+  "name": "Opal",
+  "url": "https://www.opal.so/",
+  "zh": "专注 App，深色渐变视觉出众",
+  "en": "Focus app with standout dark gradient visuals"
+ },
+ {
+  "id": "structured",
+  "cat": "web",
+  "plat": "cross",
+  "name": "Structured",
+  "url": "https://structured.app/",
+  "zh": "日程 App，时间轴设计清晰",
+  "en": "Day planner with a clear timeline design"
+ },
+ {
+  "id": "bear",
+  "cat": "web",
+  "plat": "cross",
+  "name": "Bear",
+  "url": "https://bear.app/",
+  "zh": "写作 App，排版与主题都很精致",
+  "en": "Writing app with refined typography and themes"
+ },
+ {
+  "id": "craft",
+  "cat": "web",
+  "plat": "cross",
+  "name": "Craft",
+  "url": "https://www.craft.do/",
+  "zh": "文档 App，移动端卡片式编辑体验",
+  "en": "Docs app with card-based mobile editing"
+ },
+ {
+  "id": "gentler-streak",
+  "cat": "web",
+  "plat": "ios",
+  "name": "Gentler Streak",
+  "url": "https://gentler.app/",
+  "zh": "健身 App，插画与数据可视化温和友好",
+  "en": "Fitness app with gentle illustrations and data viz"
+ },
+ {
+  "id": "carrot-weather",
+  "cat": "web",
+  "plat": "ios",
+  "name": "Carrot Weather",
+  "url": "https://www.meetcarrot.com/weather/",
+  "zh": "天气 App，个性文案与高度可定制界面",
+  "en": "Weather app with witty copy and a highly customizable UI"
+ },
+ {
+  "id": "not-boring-apps",
+  "cat": "web",
+  "plat": "ios",
+  "name": "Not Boring Apps",
+  "url": "https://andy.works/",
+  "zh": "3D 质感的极简工具 App 系列",
+  "en": "Minimal utility apps with tactile 3D design"
+ },
+ {
+  "id": "fantastical",
+  "cat": "web",
+  "plat": "ios",
+  "name": "Fantastical",
+  "url": "https://flexibits.com/fantastical",
+  "zh": "日历 App 标杆，自然语言输入",
+  "en": "Benchmark calendar app with natural language input"
+ },
+ {
+  "id": "ivory",
+  "cat": "web",
+  "plat": "ios",
+  "name": "Ivory",
+  "url": "https://tapbots.com/ivory/",
+  "zh": "Tapbots 出品，动效和手感一流",
+  "en": "From Tapbots, with first-class motion and feel"
+ },
+ {
+  "id": "duolingo",
+  "cat": "web",
+  "plat": "cross",
+  "name": "Duolingo",
+  "url": "https://www.duolingo.com/",
+  "zh": "游戏化与角色动效的教科书",
+  "en": "The textbook for gamification and character motion"
+ },
+ {
+  "id": "headspace",
+  "cat": "web",
+  "plat": "cross",
+  "name": "Headspace",
+  "url": "https://www.headspace.com/",
+  "zh": "插画与柔和配色打造的冥想体验",
+  "en": "Meditation app with signature illustration and soft color"
+ },
+ {
+  "id": "partiful",
+  "cat": "web",
+  "plat": "cross",
+  "name": "Partiful",
+  "url": "https://partiful.com/",
+  "zh": "派对邀请 App，年轻化视觉风格",
+  "en": "Party invite app with a playful youthful style"
+ },
+ {
+  "id": "retro",
+  "cat": "web",
+  "plat": "cross",
+  "name": "Retro",
+  "url": "https://retro.app/",
+  "zh": "私密朋友圈 App，照片流设计",
+  "en": "Private photo-sharing app with great feed design"
+ },
+ {
+  "id": "revolut",
+  "cat": "web",
+  "plat": "cross",
+  "name": "Revolut",
+  "url": "https://www.revolut.com/",
+  "zh": "金融超级 App，移动端官网动效丰富",
+  "en": "Finance super-app with a motion-rich mobile site"
+ },
+ {
+  "id": "monzo",
+  "cat": "web",
+  "plat": "cross",
+  "name": "Monzo",
+  "url": "https://monzo.com/",
+  "zh": "银行 App，配色与插画辨识度高",
+  "en": "Bank app with distinctive color and illustration"
+ },
+ {
+  "id": "wise",
+  "cat": "web",
+  "plat": "cross",
+  "name": "Wise",
+  "url": "https://wise.com/",
+  "zh": "跨境汇款，移动端信息层级清楚",
+  "en": "Money transfer with clear mobile information hierarchy"
+ },
+ {
+  "id": "cash-app",
+  "cat": "web",
+  "plat": "cross",
+  "name": "Cash App",
+  "url": "https://cash.app/",
+  "zh": "大胆的品牌色与极简流程",
+  "en": "Bold brand color and minimal flows"
+ },
+ {
+  "id": "robinhood",
+  "cat": "web",
+  "plat": "cross",
+  "name": "Robinhood",
+  "url": "https://robinhood.com/us/en/",
+  "zh": "投资 App，图表与品牌视觉很强",
+  "en": "Investing app with strong charts and brand visuals"
+ },
+ {
+  "id": "airbnb",
+  "cat": "web",
+  "plat": "cross",
+  "name": "Airbnb",
+  "url": "https://www.airbnb.com/",
+  "zh": "移动端搜索与卡片设计的参考标杆",
+  "en": "Benchmark for mobile search and card design"
+ },
+ {
+  "id": "overcast",
+  "cat": "web",
+  "plat": "ios",
+  "name": "Overcast",
+  "url": "https://overcast.fm/",
+  "zh": "播客 App，简洁实用的典范",
+  "en": "Podcast app that is a model of simple utility"
+ },
+ {
+  "id": "mela",
+  "cat": "web",
+  "plat": "ios",
+  "name": "Mela",
+  "url": "https://mela.recipes/",
+  "zh": "菜谱 App，苹果平台原生设计范例",
+  "en": "Recipe app that is a model of native Apple design"
+ },
+ {
+  "id": "crouton",
+  "cat": "web",
+  "plat": "ios",
+  "name": "Crouton",
+  "url": "https://crouton.app/",
+  "zh": "菜谱 App，苹果设计奖入围",
+  "en": "Recipe app and Apple Design Award finalist"
+ },
+ {
+  "id": "amie",
+  "cat": "web",
+  "plat": "cross",
+  "name": "Amie",
+  "url": "https://amie.so/",
+  "zh": "日历+待办，趣味动效与配色",
+  "en": "Calendar and to-dos with playful motion and color"
+ },
+ {
+  "id": "notion-calendar",
+  "cat": "web",
+  "plat": "cross",
+  "name": "Notion Calendar",
+  "url": "https://www.notion.com/product/calendar",
+  "zh": "日历 App，干净的移动端排期界面",
+  "en": "Calendar app with a clean mobile scheduling UI"
+ },
+ {
+  "id": "linear-mobile",
+  "cat": "web",
+  "plat": "cross",
+  "name": "Linear Mobile",
+  "url": "https://linear.app/mobile",
+  "zh": "Linear 移动端，键盘外的高效交互",
+  "en": "Linear's mobile app with efficient touch interactions"
+ },
+ {
+  "id": "raycast-for-ios",
+  "cat": "web",
+  "plat": "cross",
+  "name": "Raycast for iOS",
+  "url": "https://www.raycast.com/ios",
+  "zh": "Raycast 移动版，深色质感界面",
+  "en": "Raycast on iOS with a polished dark UI"
+ },
+ {
+  "id": "spotify",
+  "cat": "web",
+  "plat": "cross",
+  "name": "Spotify",
+  "url": "https://www.spotify.com/",
+  "zh": "播放器与发现页的移动端标杆",
+  "en": "Mobile benchmark for player and discovery screens"
+ },
+ {
+  "id": "apple-design-awards",
+  "cat": "web",
+  "plat": "ios",
+  "name": "Apple Design Awards",
+  "url": "https://developer.apple.com/design/awards/",
+  "zh": "苹果设计奖获奖与入围 App 全名单",
+  "en": "Full list of Apple Design Award winners and finalists"
+ },
+ {
+  "id": "dribbble-mobile-app",
+  "cat": "web",
+  "plat": "cross",
+  "name": "Dribbble · Mobile app",
+  "url": "https://dribbble.com/tags/mobile-app",
+  "zh": "Dribbble 移动端作品精选（注意挑选可落地的）",
+  "en": "Dribbble mobile shots — pick the buildable ones"
+ },
+ {
+  "id": "dribbble-ios-app",
+  "cat": "web",
+  "plat": "cross",
+  "name": "Dribbble · iOS app",
+  "url": "https://dribbble.com/tags/ios-app",
+  "zh": "Dribbble iOS 界面作品",
+  "en": "Dribbble iOS app shots"
+ },
+ {
+  "id": "muzli-mobile-inspiration",
+  "cat": "web",
+  "plat": "cross",
+  "name": "Muzli · Mobile inspiration",
+  "url": "https://muz.li/inspiration/mobile-app-design-inspiration/",
+  "zh": "Muzli 每期精选移动端设计",
+  "en": "Muzli's curated mobile design picks"
+ },
+ {
+  "id": "css-design-awards-mobile",
+  "cat": "web",
+  "plat": "cross",
+  "name": "CSS Design Awards · Mobile",
+  "url": "https://www.cssdesignawards.com/",
+  "zh": "网站奖项，可筛选移动端出色作品",
+  "en": "Web awards with standout mobile work"
+ },
+ {
+  "id": "material-3-corner-radius-scale",
+  "cat": "guide",
+  "plat": "android",
+  "name": "Material 3 · Corner radius scale",
+  "url": "https://m3.material.io/styles/shape/corner-radius-scale",
+  "zh": "M3 圆角刻度表",
+  "en": "The M3 corner radius scale"
+ },
+ {
+  "id": "nn-g-mobile-and-tablet-design",
+  "cat": "guide",
+  "plat": "cross",
+  "name": "NN/g · Mobile and tablet design",
+  "url": "https://www.nngroup.com/topic/mobile-and-tablet-design/",
+  "zh": "尼尔森诺曼的移动端研究文章合集",
+  "en": "Nielsen Norman Group research on mobile and tablet UX"
+ },
+ {
+  "id": "apple-hig-toolbars",
+  "cat": "guide",
+  "plat": "ios",
+  "name": "Apple HIG · Toolbars",
+  "url": "https://developer.apple.com/design/human-interface-guidelines/toolbars",
+  "zh": "工具栏按钮分组与 Liquid Glass 下的新样式",
+  "en": "Toolbar grouping and the new Liquid Glass styling"
+ },
+ {
+  "id": "apple-hig-search-fields",
+  "cat": "guide",
+  "plat": "ios",
+  "name": "Apple HIG · Search fields",
+  "url": "https://developer.apple.com/design/human-interface-guidelines/search-fields",
+  "zh": "搜索框位置与搜索建议",
+  "en": "Search field placement and suggestions"
+ },
+ {
+  "id": "apple-hig-menus",
+  "cat": "guide",
+  "plat": "ios",
+  "name": "Apple HIG · Menus",
+  "url": "https://developer.apple.com/design/human-interface-guidelines/menus",
+  "zh": "菜单与上下文菜单的组织",
+  "en": "Organizing menus and context menus"
+ },
+ {
+  "id": "apple-hig-segmented-controls",
+  "cat": "guide",
+  "plat": "ios",
+  "name": "Apple HIG · Segmented controls",
+  "url": "https://developer.apple.com/design/human-interface-guidelines/segmented-controls",
+  "zh": "分段控件的段数与文案",
+  "en": "Segment count and labels for segmented controls"
+ },
+ {
+  "id": "apple-hig-toggles",
+  "cat": "guide",
+  "plat": "ios",
+  "name": "Apple HIG · Toggles",
+  "url": "https://developer.apple.com/design/human-interface-guidelines/toggles",
+  "zh": "开关的使用场景，设置页常用",
+  "en": "When to use toggles, a settings-screen staple"
+ },
+ {
+  "id": "apple-hig-pickers",
+  "cat": "guide",
+  "plat": "ios",
+  "name": "Apple HIG · Pickers",
+  "url": "https://developer.apple.com/design/human-interface-guidelines/pickers",
+  "zh": "滚轮与日期选择器",
+  "en": "Wheel and date pickers"
+ },
+ {
+  "id": "apple-hig-charts",
+  "cat": "guide",
+  "plat": "ios",
+  "name": "Apple HIG · Charts",
+  "url": "https://developer.apple.com/design/human-interface-guidelines/charts",
+  "zh": "移动端图表的设计原则",
+  "en": "Design principles for charts on mobile"
+ },
+ {
+  "id": "apple-hig-collections",
+  "cat": "guide",
+  "plat": "ios",
+  "name": "Apple HIG · Collections",
+  "url": "https://developer.apple.com/design/human-interface-guidelines/collections",
+  "zh": "网格与集合视图布局",
+  "en": "Grid and collection layouts"
+ },
+ {
+  "id": "apple-hig-progress-indicators",
+  "cat": "guide",
+  "plat": "ios",
+  "name": "Apple HIG · Progress indicators",
+  "url": "https://developer.apple.com/design/human-interface-guidelines/progress-indicators",
+  "zh": "加载与进度的表达方式",
+  "en": "How to show loading and progress"
+ },
+ {
+  "id": "apple-hig-page-controls",
+  "cat": "guide",
+  "plat": "ios",
+  "name": "Apple HIG · Page controls",
+  "url": "https://developer.apple.com/design/human-interface-guidelines/page-controls",
+  "zh": "分页圆点，引导页常用",
+  "en": "Page dots, common in onboarding"
+ },
+ {
+  "id": "apple-hig-loading",
+  "cat": "guide",
+  "plat": "ios",
+  "name": "Apple HIG · Loading",
+  "url": "https://developer.apple.com/design/human-interface-guidelines/loading",
+  "zh": "加载状态的处理方式",
+  "en": "How to handle loading states"
+ },
+ {
+  "id": "material-3-progress-indicators",
+  "cat": "guide",
+  "plat": "android",
+  "name": "Material 3 · Progress indicators",
+  "url": "https://m3.material.io/components/progress-indicators/overview",
+  "zh": "进度条与环形进度",
+  "en": "Linear and circular progress indicators"
+ },
+ {
+  "id": "material-3-menus",
+  "cat": "guide",
+  "plat": "android",
+  "name": "Material 3 · Menus",
+  "url": "https://m3.material.io/components/menus/overview",
+  "zh": "菜单的位置与样式",
+  "en": "Menu placement and styling"
+ },
+ {
+  "id": "material-3-switch",
+  "cat": "guide",
+  "plat": "android",
+  "name": "Material 3 · Switch",
+  "url": "https://m3.material.io/components/switch/overview",
+  "zh": "开关组件规范",
+  "en": "Switch component guidance"
+ },
+ {
+  "id": "material-3-badges",
+  "cat": "guide",
+  "plat": "android",
+  "name": "Material 3 · Badges",
+  "url": "https://m3.material.io/components/badges/overview",
+  "zh": "徽标数字与小红点",
+  "en": "Badges and notification dots"
+ },
+ {
+  "id": "material-3-carousel",
+  "cat": "guide",
+  "plat": "android",
+  "name": "Material 3 · Carousel",
+  "url": "https://m3.material.io/components/carousel/overview",
+  "zh": "多种轮播布局",
+  "en": "Carousel layouts"
+ },
+ {
+  "id": "material-3-segmented-buttons",
+  "cat": "guide",
+  "plat": "android",
+  "name": "Material 3 · Segmented buttons",
+  "url": "https://m3.material.io/components/segmented-buttons/overview",
+  "zh": "分段按钮",
+  "en": "Segmented buttons"
+ },
+ {
+  "id": "material-3-sliders",
+  "cat": "guide",
+  "plat": "android",
+  "name": "Material 3 · Sliders",
+  "url": "https://m3.material.io/components/sliders/overview",
+  "zh": "滑块的交互与样式",
+  "en": "Slider interaction and style"
+ },
+ {
+  "id": "material-3-navigation-drawer",
+  "cat": "guide",
+  "plat": "android",
+  "name": "Material 3 · Navigation drawer",
+  "url": "https://m3.material.io/components/navigation-drawer/overview",
+  "zh": "侧边抽屉导航",
+  "en": "Navigation drawer"
+ },
+ {
+  "id": "material-3-loading-indicator",
+  "cat": "guide",
+  "plat": "android",
+  "name": "Material 3 · Loading indicator",
+  "url": "https://m3.material.io/components/loading-indicator/overview",
+  "zh": "M3 Expressive 新的形变加载动画",
+  "en": "M3 Expressive's new shape-morphing loading indicator"
+ },
+ {
+  "id": "react-native-ui-lib-wix",
+  "cat": "comp",
+  "plat": "rn",
+  "name": "React Native UI Lib (Wix)",
+  "url": "https://wix.github.io/react-native-ui-lib/",
+  "zh": "Wix 出品的大型 RN 组件库",
+  "en": "Wix's large React Native component library",
+  "lic": "MIT"
+ },
+ {
+  "id": "expo-router-native-tabs",
+  "cat": "comp",
+  "plat": "rn",
+  "name": "Expo Router · Native tabs",
+  "url": "https://docs.expo.dev/router/advanced/native-tabs/",
+  "zh": "用系统原生标签栏，自动获得 Liquid Glass",
+  "en": "Native platform tabs with Liquid Glass for free",
+  "lic": "MIT"
+ },
+ {
+  "id": "legend-list",
+  "cat": "comp",
+  "plat": "rn",
+  "name": "Legend List",
+  "url": "https://legendapp.com/open-source/list/",
+  "zh": "高性能列表，聊天界面也顺滑",
+  "en": "High-performance lists, smooth even for chat",
+  "lic": "MIT"
+ },
+ {
+  "id": "swiftui-applying-liquid-glass",
+  "cat": "comp",
+  "plat": "ios",
+  "name": "SwiftUI · Applying Liquid Glass",
+  "url": "https://developer.apple.com/documentation/swiftui/applying-liquid-glass-to-custom-views",
+  "zh": "给自定义视图加 Liquid Glass 的官方文档",
+  "en": "Official docs for applying Liquid Glass to custom views"
+ },
+ {
+  "id": "sample-landmarks-with-liquid-glass",
+  "cat": "comp",
+  "plat": "ios",
+  "name": "Sample · Landmarks with Liquid Glass",
+  "url": "https://developer.apple.com/documentation/swiftui/landmarks-building-an-app-with-liquid-glass",
+  "zh": "苹果官方 Liquid Glass 示例 App",
+  "en": "Apple's official Liquid Glass sample app"
+ },
+ {
+  "id": "swift-with-majid",
+  "cat": "comp",
+  "plat": "ios",
+  "name": "Swift with Majid",
+  "url": "https://swiftwithmajid.com/",
+  "zh": "每周 SwiftUI 技巧文章",
+  "en": "Weekly SwiftUI technique articles"
+ },
+ {
+  "id": "sarunw",
+  "cat": "comp",
+  "plat": "ios",
+  "name": "Sarunw",
+  "url": "https://sarunw.com/",
+  "zh": "SwiftUI/UIKit 实用技巧博客",
+  "en": "Practical SwiftUI and UIKit tips"
+ },
+ {
+  "id": "kavsoft",
+  "cat": "comp",
+  "plat": "ios",
+  "name": "Kavsoft",
+  "url": "https://www.youtube.com/@Kavsoft",
+  "zh": "复刻精美 SwiftUI 界面和动效的频道",
+  "en": "Channel recreating beautiful SwiftUI UIs and animations"
+ },
+ {
+  "id": "fatbobman-s-swift-weekly",
+  "cat": "comp",
+  "plat": "ios",
+  "name": "Fatbobman's Swift Weekly",
+  "url": "https://fatbobman.com/en/",
+  "zh": "深入 SwiftUI 的中英双语博客",
+  "en": "In-depth SwiftUI blog"
+ },
+ {
+  "id": "iconify",
+  "cat": "asset",
+  "plat": "cross",
+  "name": "Iconify",
+  "url": "https://icon-sets.iconify.design/",
+  "zh": "20 万+ 开源图标统一检索",
+  "en": "Search 200k+ open-source icons in one place",
+  "lic": "MIT"
+ },
+ {
+  "id": "feather-icons",
+  "cat": "asset",
+  "plat": "cross",
+  "name": "Feather Icons",
+  "url": "https://feathericons.com/",
+  "zh": "轻量线性图标经典款",
+  "en": "Classic lightweight line icons",
+  "lic": "MIT"
+ },
+ {
+  "id": "lordicon",
+  "cat": "asset",
+  "plat": "cross",
+  "name": "Lordicon",
+  "url": "https://lordicon.com/",
+  "zh": "带动效的图标，有 Lottie 格式",
+  "en": "Animated icons available as Lottie"
+ },
+ {
+  "id": "useanimations",
+  "cat": "asset",
+  "plat": "cross",
+  "name": "useAnimations",
+  "url": "https://useanimations.com/",
+  "zh": "免费微交互动画图标",
+  "en": "Free micro-interaction animated icons"
+ },
+ {
+  "id": "haikei",
+  "cat": "asset",
+  "plat": "cross",
+  "name": "Haikei",
+  "url": "https://haikei.app/",
+  "zh": "生成波浪、斑点等 SVG 背景",
+  "en": "Generate wave, blob and other SVG backgrounds"
+ },
+ {
+  "id": "open-doodles",
+  "cat": "asset",
+  "plat": "cross",
+  "name": "Open Doodles",
+  "url": "https://www.opendoodles.com/",
+  "zh": "手绘涂鸦插画，可商用",
+  "en": "Hand-drawn doodle illustrations, free to use",
+  "lic": "CC0-1.0"
+ },
+ {
+  "id": "absurd-design",
+  "cat": "asset",
+  "plat": "cross",
+  "name": "Absurd Design",
+  "url": "https://absurd.design/",
+  "zh": "超现实风格免费插画",
+  "en": "Surreal free illustrations"
+ },
+ {
+  "id": "ls-graphics-free-mockups",
+  "cat": "asset",
+  "plat": "cross",
+  "name": "LS Graphics · Free mockups",
+  "url": "https://www.ls.graphics/free",
+  "zh": "高质量免费设备样机",
+  "en": "High-quality free device mockups"
+ },
+ {
+  "id": "lottie-airbnb",
+  "cat": "motion",
+  "plat": "cross",
+  "name": "Lottie (Airbnb)",
+  "url": "https://airbnb.io/lottie/",
+  "zh": "Lottie 官方文档，跨 iOS/Android/Web",
+  "en": "Official Lottie docs for iOS, Android and web",
+  "lic": "Apache-2.0"
+ },
+ {
+  "id": "lottielab",
+  "cat": "motion",
+  "plat": "cross",
+  "name": "Lottielab",
+  "url": "https://www.lottielab.com/",
+  "zh": "在线做 Lottie 动画",
+  "en": "Create Lottie animations online"
+ },
+ {
+  "id": "principle",
+  "cat": "motion",
+  "plat": "cross",
+  "name": "Principle",
+  "url": "https://principleformac.com/",
+  "zh": "Mac 上快速做交互动效原型",
+  "en": "Quick interaction prototypes on Mac"
+ },
+ {
+  "id": "built-for-mars",
+  "cat": "pattern",
+  "plat": "cross",
+  "name": "Built for Mars",
+  "url": "https://builtformars.com/",
+  "zh": "移动端产品 UX 深度拆解，银行类尤其多",
+  "en": "Deep UX teardowns of mobile products, many in banking"
+ },
+ {
+  "id": "retention-blog",
+  "cat": "pattern",
+  "plat": "cross",
+  "name": "Retention.blog",
+  "url": "https://www.retention.blog/",
+  "zh": "移动 App 留存与引导案例",
+  "en": "Mobile app retention and onboarding cases"
+ },
+ {
+  "id": "swift-testing-agent-skill",
+  "cat": "skill",
+  "plat": "ios",
+  "name": "Swift Testing Agent Skill",
+  "url": "https://github.com/AvdLee/Swift-Testing-Agent-Skill",
+  "zh": "让 AI 写 Swift Testing 测试，界面改动更安心",
+  "en": "Lets agents write Swift Testing tests so UI changes stay safe",
+  "lic": "MIT"
+ }
+]
