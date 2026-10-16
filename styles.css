@@ -754,3 +754,15 @@ body::after{background-image:radial-gradient(var(--dots) 1px,transparent 1.2px);
 @media(min-width:600px){#hstats:empty{min-height:72px}}
 @media(min-width:900px){#feat:empty{min-height:calc(42.6vw + 834px)}}
 @media(min-width:1100px){#hstats:empty{min-height:195px}}
+
+/* ---------- detail view: centered modal on desktop (no side drawer); bottom sheet on mobile stays as is ---------- */
+@media(min-width:900px){
+.sheet{top:50%;left:50%;right:auto;bottom:auto;width:min(760px,calc(100vw - 48px));max-height:85vh;border:1px solid var(--line2);border-radius:var(--r3);transform:translate(-50%,-47%) scale(.98);opacity:0;transition:transform .26s var(--ease),opacity .2s var(--ease),visibility 0s linear .26s}
+.sheet.open{transform:translate(-50%,-50%);opacity:1;transition:transform .26s var(--ease),opacity .2s var(--ease),visibility 0s}
+.sheet::before{border-radius:var(--r3) var(--r3) 0 0}
+}
+@media(prefers-reduced-motion:reduce){.sheet,.sheet.open{transition:none}}
+.sheet:focus{outline:none}
+/* X post embed: scroll inside the preview instead of cutting long posts */
+.pvw.xem{aspect-ratio:auto;background:none;max-height:min(70vh,720px);overflow-y:auto;overscroll-behavior:contain}
+.pvw.xem iframe{display:block;width:100%;max-width:550px;min-height:320px;margin:0 auto;border:0}

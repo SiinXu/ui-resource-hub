@@ -268,14 +268,14 @@ function card(i){
   var m=M[i.id]||{}, live=LIVE[i.id], nm=shown(i.name);
   if(!vis(i)){
     var parts=nm.split('/');
-    return '<article class="card tx" data-open="'+i.id+'"><div class="cm"><div class="th cover"><span class="cl">'+esc(i.type==='skill'?'SKILL.md':TN(i.type))+'</span>'+
+    return '<article class="card tx" data-open="'+i.id+'" tabindex="0"><div class="cm"><div class="th cover"><span class="cl">'+esc(i.type==='skill'?'SKILL.md':TN(i.type))+'</span>'+
       '<b>'+esc(parts[parts.length-1])+'</b><small>'+esc(parts.length>1?parts[0]:host(i.url))+'</small></div></div>'+
       '<div class="cb"><h3>'+esc(nm)+'</h3>'+metaLine(i)+'<p class="note">'+esc(noteOf(i)||host(i.url))+'</p>'+foot(i)+'</div></article>';
   }
   var tag = live?'<span class="tag-lv">'+t('tag_live')+'</span>':(m.frame?'<span class="tag-fr">'+t('tag_frame')+'</span>':'');
-  if(i.type==='style')return '<article class="card cs" data-open="'+i.id+'"><div class="cm"><div class="th">'+thumb(i)+'</div></div>'+
+  if(i.type==='style')return '<article class="card cs" data-open="'+i.id+'" tabindex="0"><div class="cm"><div class="th">'+thumb(i)+'</div></div>'+
     '<div class="cb"><h3>'+esc(CTN(i.kind))+'<span class="csl">'+esc(i.libName)+(i.var?' · '+esc(lat(i.var)):'')+'</span></h3>'+metaLine(i,1)+'<p class="note">'+esc(noteOf(i))+'</p>'+foot(i)+'</div></article>';
-  return '<article class="card" data-open="'+i.id+'"><div class="cm"><div class="th">'+thumb(i)+'</div>'+(tag?'<div class="ctop">'+tag+'</div>':'')+'</div>'+
+  return '<article class="card" data-open="'+i.id+'" tabindex="0"><div class="cm"><div class="th">'+thumb(i)+'</div>'+(tag?'<div class="ctop">'+tag+'</div>':'')+'</div>'+
     '<div class="cb"><h3>'+esc(nm)+'</h3>'+metaLine(i)+'<p class="note">'+esc(noteOf(i)||host(i.url))+'</p>'+foot(i)+'</div></article>';
 }
 function match(i){
@@ -401,7 +401,7 @@ function preview(i){
     '<div class="pvtag">'+srcTag(i)+shotNote(m)+'<span>'+esc(t('pv_frame_d'))+'</span></div></div>';
   if(m.img)return '<div class="pvw big">'+tsw(m)+shotImg(m,'poster','data-play="'+i.id+'"')+'<div class="pvtag">'+srcTag(i)+shotNote(m)+'<span>'+esc(t('pv_noframe_d'))+'</span></div></div>';
   var xid=i.x_post&&(i.x_post.match(/\/status\/(\d+)/)||[])[1];
-  if(xid)return '<div class="pvw xem" style="aspect-ratio:auto;background:none"><iframe src="https://platform.twitter.com/embed/Tweet.html?dnt=true&id='+xid+'&theme='+curTheme()+'&lang='+(isZh()?(LANG==='zh-TW'?'zh-tw':'zh-cn'):LANG)+'" title="X" loading="lazy" style="display:block;width:100%;max-width:550px;height:640px;margin:0 auto;border:0" referrerpolicy="no-referrer"></iframe></div>';
+  if(xid)return '<div class="pvw xem"><iframe src="https://platform.twitter.com/embed/Tweet.html?dnt=true&id='+xid+'&theme='+curTheme()+'&lang='+(isZh()?(LANG==='zh-TW'?'zh-tw':'zh-cn'):LANG)+'" title="X" style="height:640px" referrerpolicy="no-referrer"></iframe></div>';
   if(vis(i))return '<div class="pvw big">'+demo(i)+'<div class="pvtag">'+srcTag(i)+'<span>'+esc(t('pv_demo_d'))+'</span></div></div>';
   var parts=shown(i.name).split('/');
   return '<div class="pvw sk"><div class="term"><i></i><i></i><i></i><span>'+esc(i.type==='skill'?'SKILL.md':host(i.url))+'</span></div><div class="skn"><small>'+esc(parts.length>1?parts[0]+' /':TN(i.type))+'</small><b>'+esc(parts[parts.length-1])+'</b></div></div>';
@@ -465,15 +465,35 @@ function openSheet(id){
    '<h3>'+esc(t('related_h'))+'</h3><div class="rel">'+related(i).map(function(x){var m=M[x.id]||{},lv=LIVE[x.id];return '<button data-open="'+x.id+'">'+(m.img||lv?'<img src="'+(lv?lv.poster:m.img)+'" alt="" loading="lazy">':'<span class="rm">'+esc(shown(x.name).split('/').pop().slice(0,2))+'</span>')+'<b>'+esc(shown(x.name))+'</b></button>'}).join('')+'</div>'+
    '<p class="legal-s">'+esc(t('legal'))+'</p></div>';
   $('sheet').dataset.id=i.id;
+  if(!$('sheet').classList.contains('open')){var ae=document.activeElement;openSheet._ret=(ae&&ae!==document.body)?ae:(document.querySelector('[data-open="'+i.id+'"]'));try{window.ievt&&window.ievt('preview_open',{id:i.id,src:i.discovered_via||ORG(i)})}catch(_){}}
+  $('sheet').setAttribute('aria-label',shown(i.name));$('sheet').tabIndex=-1;
   $('scrim').hidden=false; $('sheet').classList.add('open'); $('sheet').setAttribute('aria-hidden','false'); $('sheet').scrollTop=0;
   document.body.classList.add('lock');
+  setTimeout(function(){var c=$('sheet').querySelector('[data-close]');(c||$('sheet')).focus({preventScroll:true})},30);
   requestAnimationFrame(function(){var b=$('sheet').querySelector('.live');if(b){track($('sheet'));setTimeout(function(){loadLive(b)},280)}});
 }
 function closeSheet(){openSheet._p=null;
   var s=$('sheet'); if(!s.classList.contains('open'))return;
   s.classList.remove('open'); $('scrim').hidden=true; s.setAttribute('aria-hidden','true'); document.body.classList.remove('lock');
   setTimeout(function(){if(!s.classList.contains('open'))s.innerHTML=''},350);
+  var r=openSheet._ret;openSheet._ret=null;if(r&&document.contains(r))try{r.focus({preventScroll:true})}catch(_){}
 }
+/* modal: focus trap, Enter/Space opens a focused card, X embed height follows X's resize messages */
+document.addEventListener('keydown',function(e){
+  var s=$('sheet');
+  if(e.key==='Tab'&&s.classList.contains('open')&&$('play').hidden){
+    var f=[].filter.call(s.querySelectorAll('a[href],button:not([disabled]),input,select,textarea,iframe,[tabindex]:not([tabindex="-1"])'),function(x){return x.offsetParent!==null});
+    if(!f.length){e.preventDefault();s.focus();return}
+    var a=f[0],z=f[f.length-1];
+    if(!s.contains(document.activeElement)){e.preventDefault();a.focus();return}
+    if(e.shiftKey&&(document.activeElement===a||document.activeElement===s)){e.preventDefault();z.focus()}
+    else if(!e.shiftKey&&document.activeElement===z){e.preventDefault();a.focus()}
+  }
+  if((e.key==='Enter'||e.key===' ')&&e.target&&e.target.matches&&e.target.matches('article[data-open]')){e.preventDefault();location.hash='#/r/'+e.target.dataset.open}
+});
+addEventListener('message',function(e){if(e.origin!=='https://platform.twitter.com')return;var d=e.data;try{if(typeof d==='string')d=JSON.parse(d)}catch(_){return}
+  var m=d&&d['twttr.embed'];if(!m||!/resize/.test(m.method||''))return;var h=m.params&&m.params[0]&&m.params[0].height;if(!h)return;
+  document.querySelectorAll('.pvw.xem iframe').forEach(function(fr){if(fr.contentWindow===e.source)fr.style.height=Math.ceil(h)+'px'})});
 // 全屏：真实预览 → 裁剪页；可嵌入 → 整页原站；否则 → 原站公开图片 / 自制示意大图
 function playFull(id){
   var i=BY[id], f=LIVE[id], m=M[id]||{}; if(!i)return;
