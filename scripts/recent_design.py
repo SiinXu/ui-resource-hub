@@ -70,6 +70,13 @@ def xpost(url):
         if dead and '404' in str(e): return {'dead': True, 'post': url}
     return {'post': url, 'handle': h, 'name': '', 'text': '', 'links': []}
 
+def img_ok(u):   # hotlinked preview must actually load (skip 404 / non-image og:image)
+    try:
+        r = urllib.request.urlopen(urllib.request.Request(u, headers={'User-Agent': UA, 'Range': 'bytes=0-1023'}), timeout=20)
+        return r.status in (200, 206) and (r.headers.get('content-type', '').startswith('image/') or bool(re.search(r'\.(png|jpe?g|webp|gif|avif)(\?|$)', u, re.I)))
+    except Exception:
+        return False
+
 def og_image(url):
     try:
         h, final = get(url, timeout=15, limit=400000)
@@ -80,7 +87,7 @@ def og_image(url):
         m = re.search(p, h, re.I)
         if m:
             u = urllib.parse.urljoin(final, html.unescape(m.group(1)).strip())
-            if u.startswith('https://') and 'recent.design' not in u: return u
+            if u.startswith('https://') and 'recent.design' not in u and img_ok(u): return u
     return None
 
 CT = {'Motion': ['motion'], 'Web': ['layout'], 'Mobile': ['mobile'], 'App Icons': ['icon'], 'Icons': ['icon'], 'Branding': [], 'Illustration': [], 'AI': ['chat']}
