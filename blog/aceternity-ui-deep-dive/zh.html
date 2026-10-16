@@ -1,0 +1,9 @@
+<p>Aceternity UI 由 Manu Arora 创建，是一套用 React、Tailwind CSS 和 Motion（原 Framer Motion）写的可复制组件。它以炫目的特效出名：聚光灯和光束背景、3D 卡片、动态网格、视差滚动首屏。免费组件可以直接复制，另有付费的模板和区块。</p><figure><img src="../../blog/img/aceternity-ui-deep-dive-1.webp" alt="Aceternity UI 首页" loading="lazy" decoding="async" width="1280" height="800"><figcaption>Aceternity UI 首页 · 截图：Aceternity UI（<a href="https://ui.aceternity.com/" rel="noopener" target="_blank">ui.aceternity.com</a>），2026-10-14 截取，版权归原站所有</figcaption></figure>
+<h2>在真实页面上好用的部分</h2>
+<ul><li><strong>首屏后面放一个氛围背景</strong>（网格、点阵、柔和聚光灯）。增加层次，又不和文案抢戏。</li>
+<li><strong>Bento 网格和功能区块</strong>，配克制的悬停动效。</li>
+<li><strong>文字渐显或打字机效果</strong>只用在一句主标题上，不要用在段落上。</li></ul><figure><img src="../../blog/img/aceternity-ui-deep-dive-2.webp" alt="Aceternity 组件目录" loading="lazy" decoding="async" width="1280" height="800"><figcaption>Aceternity 组件目录 · 截图：Aceternity UI（<a href="https://ui.aceternity.com/components" rel="noopener" target="_blank">ui.aceternity.com</a>），2026-10-14 截取，版权归原站所有</figcaption></figure>
+<h2>要避免的用法</h2>
+<p>一屏叠三个特效、给正文加动画、给装数据的卡片加 3D 倾斜。这样看起来像特效合集，在低端手机上也很耗性能。一定要尊重 <code>prefers-reduced-motion</code>，有些特效默认不处理，需要自己包一层。</p>
+<figure><img src="../../blog/img/aceternity-ui-deep-dive-3.webp" alt="特效组件的该做与避免" loading="lazy" decoding="async" width="1200" height="675"><figcaption>特效组件的该做与避免 · 示意图：UI Hub 原创，CC BY 4.0</figcaption></figure><h2>UI Hub 怎么用它</h2>
+<p>Aceternity 是「克制的 fancy」这一风格的参考之一：每页借一个标志性特效，排版和间距承担主要工作。在本站搜索「aceternity」，可以看到我们收录的所有 Aceternity 组件及实时预览。</p>

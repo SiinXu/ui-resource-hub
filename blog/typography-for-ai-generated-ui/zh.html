@@ -1,0 +1,11 @@
+<p>让任何生成器做一个落地页，你通常会得到一种无衬线字体，分成正文、标题和说明三个字号。字体排印是把页面拉离默认样式最便宜的杠杆，而且在提示里很容易说精确。</p><figure><img src="../../blog/img/typography-for-ai-generated-ui-1.webp" alt="从说明文字到展示标题的字号阶梯" loading="lazy" decoding="async" width="1200" height="675"><figcaption>从说明文字到展示标题的字号阶梯 · 示意图：UI Hub 原创，CC BY 4.0</figcaption></figure>
+<h2>写进需求的五条规则</h2>
+<ol><li><strong>用模数字号阶梯。</strong>选一个比例（紧凑应用 1.2，营销页 1.25–1.333），每一级起个 Token 名。</li>
+<li><strong>两种字体，各司其职。</strong>标题用展示字体（Instrument Serif 这类衬线，或紧凑的怪诞体），界面用耐用的无衬线。</li>
+<li><strong>大字收紧字距。</strong>展示字号用负字距（约 −0.02em），正文保持默认。</li>
+<li><strong>限制行长。</strong>拉丁文正文大约每行 45–75 个字符，用 <code>max-width: 65ch</code>。</li>
+<li><strong>流式字号。</strong>标题用 <code>clamp()</code>，别让手机继承桌面字号。</li></ol><figure><img src="../../blog/img/typography-for-ai-generated-ui-2.webp" alt="Utopia 流式字号计算器" loading="lazy" decoding="async" width="1280" height="800"><figcaption>Utopia 流式字号计算器 · 截图：Utopia（<a href="https://utopia.fyi/type/calculator/" rel="noopener" target="_blank">utopia.fyi</a>），2026-10-14 截取，版权归原站所有</figcaption></figure>
+<h2>中日韩文字要单独设置</h2>
+<p>中文和日文的行高要稍大（约 1.7），不要用负字距；标题用 <code>word-break: keep-all</code> 或 <code>text-wrap: balance</code>，避免短语被拆到下一行孤零零一个字。我们自己的日语标题就是这样修好的。</p>
+<figure><img src="../../blog/img/typography-for-ai-generated-ui-3.webp" alt="Practical Typography 关于行长的章节" loading="lazy" decoding="async" width="1280" height="800"><figcaption>Practical Typography 关于行长的章节 · 截图：Practical Typography（<a href="https://practicaltypography.com/line-length.html" rel="noopener" target="_blank">practicaltypography.com</a>），2026-10-14 截取，版权归原站所有</figcaption></figure><h2>我们的看法</h2>
+<p>如果 AI 产出只改一处，就改字号阶梯和展示字体。两行 Token 的改动，效果立竿见影。</p>

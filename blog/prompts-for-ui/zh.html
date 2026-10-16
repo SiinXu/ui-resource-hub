@@ -1,0 +1,76 @@
+<p>UI 提示词就是一份迷你设计规格。你留下的每个空白，模型都会用默认值填上，而默认值就是套路：居中大标题、三张特性卡、紫蓝渐变、emoji 当图标。一句"现代、简洁"等于所有空白都没填。这篇讲三件事：怎么用固定结构把空白填满，怎么迭代而不推倒重来，以及哪些错误最浪费轮次。</p><figure><img src="../../blog/img/prompts-for-ui-1.webp" alt="六格 UI 提示词模板：目标、布局、Token、状态、内容、禁止" loading="lazy" decoding="async" width="1200" height="675"><figcaption>六格 UI 提示词模板：目标、布局、Token、状态、内容、禁止 · 示意图：UI Hub 原创，CC BY 4.0</figcaption></figure>
+<h2>为什么"做得现代一点"没用</h2>
+<p>语言模型预测的是最可能的下一段内容。放到界面上，最可能的就是成千上万个落地页的平均值。"现代""简洁""高级"这类形容词收窄不了这个平均值，因为网上每个模板都自称这三样。真正能收窄的，是模型猜不到的信息：你的用户、你的内容、你的 token、你的交互状态，以及你明确拒绝的东西。</p>
+<p>Anthropic 的提示工程指南讲的是同一个道理：清楚直接、给足上下文、说明产出用来做什么。Vercel 的 v0 文档给出了界面版的说法：描述布局、点名组件、给真实内容。</p>
+<h2>六格模板</h2>
+<pre><code class="language-text">目标：开发者工具定价页，3 档，年付/月付切换
+布局：12 栏网格，最大 1200px；≥900px 三档并排，以下堆叠
+Token：Geist 字体；正文 14/20；圆角 10；唯一强调色 #2563eb；只用中性灰
+状态：hover、focus-visible 描边、选中档、按钮加载态、禁用态
+内容：原样使用下面的文案（不要 lorem）；价格 0 / 19 / 49 美元
+禁止：文字渐变、玻璃拟态、emoji 图标、全部居中、超过 8px 的投影
+</code></pre><figure><img src="../../blog/img/prompts-for-ui-2.webp" alt="Vercel 的 Web Interface Guidelines 页面" loading="lazy" decoding="async" width="1280" height="800"><figcaption>Vercel 的 Web Interface Guidelines 页面 · 截图：Vercel（<a href="https://vercel.com/design/guidelines" rel="noopener" target="_blank">vercel.com</a>），2026-10-14 截取，版权归原站所有</figcaption></figure>
+<p>每一格回答一个模型本来会用默认值回答的问题：</p>
+<ol>
+<li><strong>目标</strong>：这个页面干什么、必须做到的那一件事。一行写完。</li>
+<li><strong>布局</strong>：网格、最大宽度、断点，以及断点以下怎么变。"响应式"不算布局。</li>
+<li><strong>Token</strong>：字体、字号阶梯、圆角、颜色。"只有一个强调色"这种约束，模型执行得出奇地好。</li>
+<li><strong>状态</strong>：hover、焦点、选中、加载、空、错误、禁用。截图里看不到状态，不写模型就会跳过。</li>
+<li><strong>内容</strong>：贴真实文案。占位文字会掩盖溢出、换行和层级问题，真实标题一放进去就暴露了。</li>
+<li><strong>禁止</strong>：一份短的拒绝清单。这一格对最终观感影响最大。</li>
+</ol>
+<h2>一个完整例子，按步骤来</h2>
+<p><strong>第 1 步：写简报。</strong> 在六格之前，先用两句话写清用户："独立开发者在通勤路上用手机比较三个套餐，他们更在意额度对比表，而不是首屏大图。"这决定了信息密度和首屏放什么。</p>
+<p><strong>第 2 步：要变体，不要单页。</strong> 第一条消息让模型给三个刻意不同的方向，比如"A：杂志风，衬线标题；B：表格优先，高密度；C：卡片加切换器"。多样性对模型很便宜，对你来说却很难凭空想出来。</p>
+<p><strong>第 3 步：选一个，用具体问题点评。</strong> "再好看一点"只会带来随机改动，点名问题才能带来定向修改：</p>
+<pre><code class="language-text">保留方案 B，只修这几处：
+1. FAQ 行宽约 95 字符，限制到 68ch。
+2. 两个强调色在打架（蓝色按钮、绿色徽章），强调色只给按钮用。
+3. Tab 键切换时，选中档没有可见的焦点描边。
+4. 价格数字不等宽，使用 font-variant-numeric: tabular-nums。
+其他地方一律不要动。
+</code></pre>
+<p><strong>第 4 步：把决定固化下来。</strong> 某个决定好了，就把它从聊天里挪进 Agent 每次都会读的文件（<code>DESIGN.md</code> 或 token 文件）。否则下一次会话又从平均值开始。</p>
+<h2>最浪费轮次的坑</h2>
+<ul>
+<li><strong>堆形容词。</strong>"简约、大胆、俏皮、高级"是四条互相打架的指令。选一个想要的、一个拒绝的就够了。</li>
+<li><strong>一轮改太多。</strong> 一次提六个修改，布局坏了也不知道是哪条导致的。每轮 2 到 4 条最合适。</li>
+<li><strong>没有反例。</strong> 模型自己生成过一次 X 之后，"不要 X"执行得更好。迭代时把"禁止"一行放到最前面。</li>
+<li><strong>用 lorem ipsum。</strong> 它永远放得下，你的德语翻译和 40 个字符的产品名可放不下。</li>
+<li><strong>忘了深色主题。</strong> 第一轮就要求两套主题。事后补深色模式，正是对比度问题的来源。</li>
+<li><strong>对着截图要"像素级还原"。</strong> 得到的是一堆绝对定位。应该要求用你的组件和 token。</li>
+</ul>
+<h2>三类常见页面的六格写法</h2>
+<p>模板不变，变的是哪几格最吃重。下面是我们常用的三个例子：</p>
+<pre><code class="language-text">数据表格
+布局：在 1280px 外框内占满宽度；表头吸顶；&lt;768px 时首列固定
+Token：表格文字 13/18；等宽数字；行高 40；不用斑马纹；1px 分隔线
+状态：排序列、行 hover、行选中（复选框）、加载骨架行、空、带重试的错误
+内容：8 行真实数据，其中一行名称 60 个字符，一行是负数
+禁止：手机上改成卡片（保留表格，横向滚动），每个单元格都加图标
+</code></pre>
+<pre><code class="language-text">空状态
+目标：项目列表首次进入、项目数为零时的页面
+布局：居中区块，最大 420px；插图可选，高度不超过 160px
+内容：一句标题、一句帮助说明、一个主操作、一个文档链接
+禁止：三个按钮、讲段子、库存 3D 插图
+</code></pre>
+<pre><code class="language-text">设置表单
+布局：≥768px 时标签列 200px 加字段列；以下单列
+状态：有未保存修改时的提示条、失焦时行内校验、保存中、保存成功提示、按字段显示服务端错误
+禁止：每项设置弹一个对话框、静默自动保存没有任何反馈
+</code></pre>
+<p>可以看到：表格把字数花在<strong>状态和内容</strong>上，空状态花在<strong>内容和克制</strong>上，表单花在<strong>状态</strong>上。提示词效果不好时，先看这个页面最依赖哪一格，是不是被你留给了默认值。</p>
+<h2>怎么判断提示词写完了</h2>
+<p>一个好用的测试：把提示词交给同事，请他两分钟内画出页面草图。如果他问"什么颜色？""手机上怎么办？""按钮写什么？"，模型也一样只能猜。他问的每个问题，都是一格没填的空白。第二个测试：只凭这份提示词，你能不能判定产出不合格？如果你唯一的意见是"感觉不对"，说明提示词里没有可检查的规则，下一轮就只能碰运气。</p>
+<h2>积累可复用的提示词</h2>
+<p>每类组件留一份提示词放进仓库：定价、设置表单、数据表格、空状态等。每份都是填好你 token 的六格模板，做新页面时只需要改"目标"和"内容"。UI Hub 的组件卡都带可复制的 Prompt，可以直接起步；本文末尾的 AI 提示词也是一份现成的走查提示词。</p>
+<figure><img src="../../blog/img/prompts-for-ui-3.webp" alt="Rauno Freiberg 的界面规范页面" loading="lazy" decoding="async" width="1280" height="800"><figcaption>Rauno Freiberg 的界面规范页面 · 截图：Rauno Freiberg（<a href="https://interfaces.rauno.me" rel="noopener" target="_blank">interfaces.rauno.me</a>），2026-10-14 截取，版权归原站所有</figcaption></figure><h2>清单</h2>
+<ul>
+<li>写了两句话的用户简报</li>
+<li>六格全部填满，token 是具体数值而不是形容词</li>
+<li>第一轮要求 3 个变体</li>
+<li>点评只列 2 到 4 个具体问题，并注明"其他不要动"</li>
+<li>好的决定已经写进 Agent 每次都读的文件</li>
+<li>要求了两套主题和全部交互状态</li>
+</ul>

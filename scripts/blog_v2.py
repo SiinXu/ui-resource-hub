@@ -79,7 +79,7 @@ def build(G):
     def rt(p):  # reading time, localized
         return ''.join(f'<span data-l="{c}">{p["mins_zh"] if k in ("zh","zht") else p["mins_en"]} {E(S2["min"].get(k) or S2["min"]["en"])}</span>' for c,_,k in LANGS)
     def card(p, root='', eager=False):
-        txt = ' '.join([p['t'][k] for k in p['t']] + [p['s']['en'], p['s']['zh']] + p['tags'] + [p['cat']]).lower()
+        txt = ' '.join(x for x in [p['t'][k] for k in p['t'] if k not in ('zh','zht')] + [p['s']['en']] + p['tags'] + [p['cat']] if not re.search(r'[\u3400-\u9fff]', x)).lower()  # Chinese is matched via the card's own (zh-only) text
         return (f'<a class="pc" href="{root}{p["slug"]}/" data-cat="{p["cat"]}" data-q="{E(txt)}"><img class="cv" src="{root}img/{p["slug"]}-cover.webp" alt="" loading="{"eager" if eager else "lazy"}" width="1200" height="630">'
                 f'<div class="pb"><div class="mt"><span class="ct">{ml(CATS[p["cat"]])}</span><span>{p["date"]}</span><span>{rt(p)}</span></div><h2>{ml(p["t"])}</h2><p>{ml(p["s"])}</p><div class="tg">'+''.join(f'<span>{E(t)}</span>' for t in p['tags'])+'</div></div></a>')
     order = sorted(POSTS, key=lambda p:(p['date'], POSTS.index(p)), reverse=True)
@@ -92,7 +92,7 @@ def build(G):
 function ph(){q.placeholder=PH[document.documentElement.lang]||PH.en}ph();document.getElementById('ls').addEventListener('change',ph);
 var u=new URLSearchParams(location.search);if(u.get('q'))q.value=u.get('q');if(u.get('cat'))cur=u.get('cat');
 function run(){var t=q.value.trim().toLowerCase(),n=0,f=!t&&cur==='all';document.querySelectorAll('.fx').forEach(function(e){e.style.display=f?'':'none'});
-cards.forEach(function(c){var ok=(cur==='all'||c.dataset.cat===cur)&&(!t||t.split(/\\s+/).every(function(w){return c.dataset.q.indexOf(w)>=0}));c.style.display=ok?'':'none';if(ok)n++});
+cards.forEach(function(c){var ok=(cur==='all'||c.dataset.cat===cur)&&(!t||t.split(/\\s+/).every(function(w){return (c.dataset.q+' '+c.textContent.toLowerCase()).indexOf(w)>=0}));c.style.display=ok?'':'none';if(ok)n++});
 em.style.display=n?'none':'block';cs.forEach(function(b){b.classList.toggle('on',b.dataset.c===cur)})}
 q.addEventListener('input',run);cs.forEach(function(b){b.onclick=function(){cur=b.dataset.c;run()}});run()})();</script>""" % ph
     ld = {'@context':'https://schema.org','@graph':[{'@type':'Blog','name':U['blog_title']['en'],'url':BASE+'blog/','inLanguage':[c for c,_,_ in LANGS]},
@@ -110,7 +110,7 @@ q.addEventListener('input',run);cs.forEach(function(b){b.onclick=function(){cur=
         bz = with_figs(p['zh'], p['slug'], 'zh', '../../'); be = with_figs(p['en'], p['slug'], 'en', '../../')
         note = ''.join(f'<p class="note" data-l="{c}">{E(L("body_note",k))}</p>' for c,_,k in LANGS if L('body_note',k))
         body = (note + f'<div id="pb" data-k="en">{be}</div><template id="pb-zh">{bz}</template><template id="pb-en">{be}</template>'
-                '<script>(function(){function sw(){var l=document.documentElement.lang,k=/^zh/.test(l)?"zh":"en",b=document.getElementById("pb");if(b.dataset.k===k)return;b.innerHTML="";b.appendChild(document.getElementById("pb-"+k).content.cloneNode(true));b.dataset.k=k}sw();document.addEventListener("uihub:lang",sw)})();</script>')
+                '<script>(function(){function sw(){var l=document.documentElement.lang,k=/^zh/.test(l)?"zh":"en",b=document.getElementById("pb"),tp=document.getElementById("pb-"+k);if(b.dataset.k===k||!tp.content.childNodes.length)return;b.innerHTML="";b.appendChild(document.getElementById("pb-"+k).content.cloneNode(true));b.dataset.k=k}sw();document.addEventListener("uihub:lang",sw)})();</script>')
         body_html, body_js = body.split('<script>',1); body_js = '<script>'+body_js
         P = p.get('prompt')
         def ptxt(k):
@@ -131,7 +131,7 @@ q.addEventListener('input',run);cs.forEach(function(b){b.onclick=function(){cur=
         score = lambda x: (x['cat']==p['cat'])*2 + len(set(t.lower() for t in x['tags']) & set(t.lower() for t in p['tags'])) + (x['series']==p['series'] and p['series'] is not None)
         rel = sorted([x for x in POSTS if x is not p], key=lambda x:-score(x))[:3]
         relh = f'<section class="refs"><h2>{ml(S2["related"])}</h2><div class="rel">'+''.join(card(x,'../').replace('src="../img/','src="../img/') for x in rel)+'</div></section>'
-        ld = {'@context':'https://schema.org','@type':'BlogPosting','headline':p['t']['en'],'alternativeHeadline':p['t']['zh'],'description':p['s']['en'],'datePublished':p['date'],'dateModified':p['date'],
+        ld = {'@context':'https://schema.org','@type':'BlogPosting','headline':p['t']['en'],'description':p['s']['en'],'datePublished':p['date'],'dateModified':p['date'],
               'inLanguage':['en','zh-Hans'],'author':{'@type':'Organization','name':'UI Hub','url':BASE},'publisher':{'@type':'Organization','name':'UI Hub','url':BASE},'mainEntityOfPage':BASE+f'blog/{p["slug"]}/','articleSection':CATS[p['cat']]['en'],'timeRequired':f'PT{p["mins_en"]}M',
               'citation':[{'@type':'CreativeWork','name':t,'author':a,'url':u} for t,a,u in p['refs']],'keywords':', '.join(p['tags']),'image':BASE+f'blog/img/{p["slug"]}-cover.webp'}
         h = head(p['t']['en']+' · UI Hub', p['s']['en'], f'blog/{p["slug"]}/', ld, '../../', f'blog/img/{p["slug"]}-cover.jpg').replace('</head>', rsslink+css+'</head>')

@@ -1,0 +1,12 @@
+<p>Vercel 的 v0 生成的是基于 shadcn/ui 和 Tailwind CSS 的 React 组件。这个技术栈选择就是它的核心价值：产出是普通、可读的代码，用的是很多团队本来就在用的组件，所以结果能离开这个工具。把 v0 当作写界面的快速结对程序员，评判标准只有一个：这段代码你愿不愿意合并。</p><figure><img src="../../blog/img/v0-prompt-to-shadcn-1.webp" alt="v0 首页与提示输入框" loading="lazy" decoding="async" width="1280" height="800"><figcaption>v0 首页与提示输入框 · 截图：v0 by Vercel（<a href="https://v0.app/" rel="noopener" target="_blank">v0.app</a>），2026-10-14 截取，版权归原站所有</figcaption></figure>
+<h2>好用的提示怎么写</h2>
+<ul><li><strong>直接点名组件。</strong>「用 Card、Tabs，表格表头吸顶」比「做个好看的仪表盘」有效得多。v0 懂 shadcn 的词汇，就用这些词。</li>
+<li><strong>给 Token，不给形容词。</strong>圆角、一个强调色、字体、密度。「现代感」对模型毫无意义，<code>--radius: 0.5rem</code> 才有。</li>
+<li><strong>列出状态。</strong>空、加载中、出错、超长文本。生成器默认只做一切顺利的情况。</li>
+<li><strong>贴真实内容。</strong>假文会掩盖排版问题，真实的人名和价格会把问题暴露出来。</li></ul><figure><img src="../../blog/img/v0-prompt-to-shadcn-2.webp" alt="有效的 v0 提示模板：组件、Token、状态、内容" loading="lazy" decoding="async" width="1200" height="675"><figcaption>有效的 v0 提示模板：组件、Token、状态、内容 · 示意图：UI Hub 原创，CC BY 4.0</figcaption></figure>
+<h2>小步、明确地迭代</h2>
+<p>每轮只提一个改动（「表格行高收到 40px，其他不动」）。大改容易把你已经满意的部分改坏。某处对了，要明确说出来让它保留。</p>
+<h2>把代码拿出来</h2>
+<p>v0 支持通过 shadcn CLI 把生成的代码加进项目，也可以下载，或者直接部署到 Vercel。无论走哪条路，都要像审 PR 一样审：颜色是否来自 CSS 变量而不是写死的十六进制，可交互元素是不是真正的 button 和链接，焦点样式有没有。</p>
+<figure><img src="../../blog/img/v0-prompt-to-shadcn-3.webp" alt="shadcn/ui 首页，v0 生成代码所用的组件层" loading="lazy" decoding="async" width="1280" height="800"><figcaption>shadcn/ui 首页，v0 生成代码所用的组件层 · 截图：shadcn/ui（<a href="https://ui.shadcn.com/" rel="noopener" target="_blank">ui.shadcn.com</a>），2026-10-14 截取，版权归原站所有</figcaption></figure><h2>我们的看法</h2>
+<p>v0 的上限取决于你的需求描述和设计系统。已经在用 shadcn 的团队收益最大，因为产出能直接放进代码库。配合审美 skill 或本站百科里的规范使用，才能避开「居中大标题 + 三张卡片」的平庸结果。</p>

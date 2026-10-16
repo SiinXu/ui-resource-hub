@@ -1,0 +1,18 @@
+<p>Anthropic 的 Agent Skills 是带 <code>SKILL.md</code> 文件的文件夹：开头是 YAML 元数据（名称和描述），后面是指令，可以附带脚本和素材。智能体先看到所有描述，只有相关时才加载完整内容。Cursor 提供放在 <code>.cursor/rules</code> 里的项目规则，很多编程智能体会读取仓库根目录的 <code>AGENTS.md</code>。文件不同，思路一样：持久、有作用范围的指令。</p><figure><img src="../../blog/img/claude-cursor-design-skills-1.webp" alt="anthropics/skills 仓库" loading="lazy" decoding="async" width="1280" height="800"><figcaption>anthropics/skills 仓库 · 截图：GitHub（<a href="https://github.com/anthropics/skills" rel="noopener" target="_blank">github.com</a>），2026-10-14 截取，版权归原站所有</figcaption></figure>
+<h2>好的设计技能有什么特点</h2>
+<ul><li><strong>描述要精确</strong>，因为它决定什么时候加载（「在构建或改造网页界面时使用」）。</li>
+<li><strong>先写禁令，再写愿望。</strong>模型对简短的「绝不做」清单反应很好（渐变文字、emoji 图标、段落居中、多于一个强调色）。</li>
+<li><strong>具体数值：</strong>Token、阶梯、指向 Token 文件的引用。</li>
+<li><strong>验证步骤：</strong>「宣布完成前，在浏览器里以 390px 和 1440px、亮色和暗色渲染检查」。</li></ul><figure><img src="../../blog/img/claude-cursor-design-skills-2.webp" alt="SKILL.md 模板：元数据、Token、禁令、验证" loading="lazy" decoding="async" width="1200" height="675"><figcaption>SKILL.md 模板：元数据、Token、禁令、验证 · 示意图：UI Hub 原创，CC BY 4.0</figcaption></figure>
+<h2>模板</h2>
+<pre><code>---
+name: house-ui
+description: Use when creating or restyling any web page or component.
+---
+1. Load tokens from styles/tokens.css. Never hard-code colour/spacing.
+2. Type: Instrument Serif display, Geist UI, scale 1.25.
+3. Never: text gradients, emoji icons, glassmorphism stacks.
+4. One signature effect per page (see /kb/ house style).
+5. Verify in a browser: 390/1440px, light/dark, keyboard focus.</code></pre>
+<figure><img src="../../blog/img/claude-cursor-design-skills-3.webp" alt="AGENTS.md 约定网站" loading="lazy" decoding="async" width="1280" height="800"><figcaption>AGENTS.md 约定网站 · 截图：agents.md（<a href="https://agents.md/" rel="noopener" target="_blank">agents.md</a>），2026-10-14 截取，版权归原站所有</figcaption></figure><h2>去哪找好的技能</h2>
+<p>Anthropic 的公开 skills 仓库里有 frontend-design 技能；社区的 taste-skill、impeccable 等专注审美。本站百科收录了我们在用的技能，许可证允许的附全文。</p>

@@ -1,0 +1,33 @@
+<p>2026 年 10 月 15 日，Figma 在班加罗尔的 Config India 上发布了一组更新。表面看是「又多了几个 AI 功能」，但更有用的读法是一个统一的思路：把代码、文字意图和设计系统规则放到同一张画布上，让人和智能体共用一份上下文，而不是在五个标签页之间来回切。Dylan Field 的汇总文章说得很直白：AI 让写代码变便宜，团队开始「边做边想」，但这种 vibe coding 往往是单人游戏——一位客户的原话是「快、快、快……然后变慢」。</p><figure><img src="../../blog/img/figma-code-layers-and-specs-1.webp" alt="Figma 博客：Build by design，Config India 2026 发布汇总" loading="lazy" decoding="async" width="1280" height="800"><figcaption>Figma 博客：Build by design，Config India 2026 发布汇总 · 截图：Figma（<a href="https://www.figma.com/blog/build-by-design/" rel="noopener" target="_blank">www.figma.com</a>），2026-10-14 截取，版权归原站所有</figcaption></figure>
+<h2>发布了什么</h2>
+<ul><li><strong>代码图层（Code layers），所有套餐公开测试。</strong>代码图层是一段放在画布上、可交互、真正在运行的原型。可以从零开始（Code 工具或按 <kbd>B</kbd>），选中画框后点 <em>Build selection</em> 转换，克隆已连接的 GitHub 仓库，上传本地文件夹，通过 Figma MCP 服务器从编码工具推进来，或用 Chrome 扩展抓取线上页面。队友可以复制一层去试别的方向、评论和标注、直接改代码、让智能体合并两个版本的优点，用 <em>Extract designs</em> 把画面拆回可编辑图层，最后推到分支并开 Pull Request。</li>
+<li><strong>Specs，付费套餐公开测试。</strong>一个多人协作的 Markdown 容器，可以是独立文件，也可以放在 Figma Design 与 FigJam 的设计旁边（按 <kbd>D</kbd>，或把任意 <code>.md</code> 文件拖到画布上）。Spec 可嵌入画框、FigJam 白板和其他画布节点；Figma 智能体能读取并回复评论；GitHub、Hex 等连接器可以把外部上下文拉进来。按 Figma 的说法，把 Spec 链接粘进编码智能体的提示里，Markdown、画框引用、图表、代码图层和 Code Connect 片段都会一起带过去。</li>
+<li><strong>携带规则与代码的设计系统。</strong>挂在已发布组件库上的 Guidelines（公开测试，Professional 及以上）会在有人用该库构建时自动交给智能体。Code sources（封闭测试）把 GitHub 仓库或 npm 包挂到组件库上，让代码图层使用真实组件。集中式设计系统空间（含系统图谱，以及检查缺少描述、交互状态等缺口的 system check）目前仅为预览。</li>
+<li><strong>Figma MCP。</strong>Figma 称服务器更快、更省 Token；可以创建代码图层、读写 Specs、生成图片、运行 Weave 工作流，新增 <code>html_to_figma</code>、<code>generate_image</code> 等工具，并新增 20 个合作集成（OpenCode、Dia、Junie、Meta Muse 等）。</li>
+<li><strong>Figma Make 接入 Payload。</strong>Make 现在会把 Payload（CMS、数据库、认证、API、管理后台）作为原生后端脚手架；Supabase 继续作为第三方连接可用。</li></ul><figure><img src="../../blog/img/figma-code-layers-and-specs-2.webp" alt="Figma 的 Specs 公告：为什么 Markdown 需要一个共享的多人协作位置" loading="lazy" decoding="async" width="1280" height="800"><figcaption>Figma 的 Specs 公告：为什么 Markdown 需要一个共享的多人协作位置 · 截图：Figma（<a href="https://www.figma.com/blog/introducing-figma-specs/" rel="noopener" target="_blank">www.figma.com</a>），2026-10-14 截取，版权归原站所有</figcaption></figure>
+<h2>为什么重要：三个转变</h2>
+<p><strong>原型回到多人协作。</strong>编码智能体做原型，真正的成本从来不是生成，而是评审。一个运行中的演示链接只给出结果，却藏起了备选方案和推理过程。把几个运行版本并排放在画布上、评论钉在旁边，就恢复了设计团队熟悉的评审循环。分支 + PR 的出口同样关键：原型有了进入代码仓库的路径，而不是推倒重写。</p>
+<p><strong>Markdown 终于有了地址。</strong>和智能体协作的团队，PRD、<code>AGENTS.md</code>、提示词笔记大多已经是 Markdown，却散落在各自电脑和仓库里，和它们描述的界面毫无关联。Specs 押注的是：需求应该挨着画框、人和智能体都能编辑、并能用一个 URL 交给编码智能体。不管你用不用 Specs，这个模式是对的——一份权威需求，与作品一起版本化。</p>
+<p><strong>设计系统变得「智能体可读」。</strong>Guidelines 和 Code sources 是这次发布里最不起眼、却影响最大的部分。一个自带该做/不该做规则、并指向真实 npm 包的组件库，会把「请符合我们的设计系统」从一句愿望变成智能体每次都会收到的输入。</p>
+<h2>我们的看法</h2>
+<p>AI 辅助界面里最稀缺的输入，仍然是约束文件。这个月的每个工具——从 Claude Design 的设计系统到 Figma 智能体的规范文件——都收敛到同一个结论：生成能力过剩，质量来自关于 Token、状态和「绝不做什么」的简短明确规则。Figma 现在给这些规则提供了原生的存放位置和自动送达智能体的通道。已经写好精炼规范文件的团队会立刻受益；跳过这一步的团队，只会得到更快、看起来很像品牌的噪声。</p>
+<p>两点提醒。第一，这些都是分批灰度的测试版，队友之间可能先后看到功能。第二，成本：代码图层消耗 AI 积分，付费套餐里创建和编辑仅在 2026 年 11 月 4 日前免费；Guidelines 会增加上下文，也可能让单次提示更贵。Figma 公布的客户数据（如 Merkle 称迭代快 30%）是厂商发布的案例快照，不是独立基准测试。</p>
+<h2>本周就能试的做法</h2>
+<ol><li><strong>选一条流程，而不是整个产品。</strong>把一条真实流程（注册、结账、设置）从现有画框或轻量原型仓库转成代码图层，再复制一份比较两个方向。</li>
+<li><strong>在旁边写一份短 Spec。</strong>写清要用的 Token、必须存在的状态、内容规则和禁止清单。控制在一屏以内，才会真的被读。</li>
+<li><strong>给组件库加 Guidelines。</strong>把该做/不该做的规则放到已发布组件库上，让所有基于它的智能体提示自动继承。如果你在 Code sources 测试里，挂上产品真正发布的 npm 包。</li>
+<li><strong>从编码智能体接入 MCP。</strong>把 Claude Code、Cursor、Codex 等连到 Figma MCP 服务器，把 Spec 链接粘进提示，让智能体创建或更新代码图层。</li>
+<li><strong>像审 Pull Request 一样在画布上验收。</strong>在任何人说「可以上线」之前，检查空状态、加载、报错、长文本、键盘焦点和对比度，分别看 390px 与 1440px。然后推到分支。</li></ol>
+<pre><code># Spec: 结账 v2
+## Token
+只用 surface / text-muted / accent；圆角 10；Geist 14/20
+## 必须存在的状态
+空购物车 · 加载中 · 卡被拒 · 成功 · 超长名称
+## 内容
+真实价格、真实报错文案；句首大写
+## 禁止
+文字渐变 · emoji 图标 · 只有占位符没有标签 · 裸 hex 色值
+## 完成标准
+390 + 1440 · 亮色 + 暗色 · 焦点可见 · AA 对比度</code></pre>
+<figure><img src="../../blog/img/figma-code-layers-and-specs-3.webp" alt="流程：写 Spec、给组件库挂规范、经 MCP 生成代码图层、在画布上验收" loading="lazy" decoding="async" width="1200" height="675"><figcaption>流程：写 Spec、给组件库挂规范、经 MCP 生成代码图层、在画布上验收 · 示意图：UI Hub 原创，CC BY 4.0</figcaption></figure><h2>UI Hub 能帮什么</h2>
+<p>如果你要从零写这份规范文件或 Spec，可以从 UI Hub 已收集的设计技能和智能体指南起步：在资源列表里按 <em>skills</em> 筛选 SKILL.md 风格的规则文件，再看 <a href="../../agents/">Agent 指南</a> 里「搜索、挑选、验证」的循环，它和接入 MCP 的编码智能体很搭。不管用哪张画布，道理都一样：先把规则交给智能体，再让它出像素。</p>

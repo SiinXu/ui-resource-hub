@@ -1,0 +1,13 @@
+<p>OKLCH 是 CSS Color Level 4 里的色彩空间，由亮度（L）、彩度（C）和色相（H）定义。它的亮度通道比 HSL 更贴近人眼感知，同样 L 值的黄色和蓝色看起来亮度确实接近。Tailwind CSS v4 已把默认调色板换成 OKLCH，所有现代浏览器都支持 <code>oklch()</code>。</p><figure><img src="../../blog/img/oklch-color-and-dark-mode-1.webp" alt="OKLCH 颜色选择器" loading="lazy" decoding="async" width="1280" height="800"><figcaption>OKLCH 颜色选择器 · 截图：oklch.com（<a href="https://oklch.com/" rel="noopener" target="_blank">oklch.com</a>），2026-10-14 截取，版权归原站所有</figcaption></figure>
+<h2>做一套色阶</h2>
+<pre><code>--brand-50:  oklch(97% 0.02 250);
+--brand-500: oklch(62% 0.17 250);
+--brand-900: oklch(30% 0.09 250);</code></pre><figure><img src="../../blog/img/oklch-color-and-dark-mode-2.webp" alt="亮色与暗色主题 Token 色块" loading="lazy" decoding="async" width="1200" height="675"><figcaption>亮色与暗色主题 Token 色块 · 示意图：UI Hub 原创，CC BY 4.0</figcaption></figure>
+<p>固定色相，亮度均匀递进，两端降低彩度，反正 sRGB 屏幕在两端也显示不出高彩度。</p>
+<h2>暗色模式靠调亮度，不靠反色</h2>
+<ul><li>背景：很低的 L（约 14–20%），带一点品牌色相，而不是纯黑。</li>
+<li>文字：高 L 但不到 100%，减少刺眼。</li>
+<li>强调色：L 稍升、彩度稍降，避免在深色背景上「发颤」。</li>
+<li>重新检查对比度：OKLCH 亮度差相等并不保证符合 WCAG 对比度，要用对比度工具实测。</li></ul>
+<figure><img src="../../blog/img/oklch-color-and-dark-mode-3.webp" alt="Evil Martians 关于 CSS 中 OKLCH 的文章" loading="lazy" decoding="async" width="1280" height="800"><figcaption>Evil Martians 关于 CSS 中 OKLCH 的文章 · 截图：Evil Martians（<a href="https://evilmartians.com/chronicles/oklch-in-css-why-quit-rgb-hsl" rel="noopener" target="_blank">evilmartians.com</a>），2026-10-14 截取，版权归原站所有</figcaption></figure><h2>我们的看法</h2>
+<p>给智能体的颜色 Token 用 OKLCH，亮色和暗色值并排写。这样「再暗一点」「加一个成功色」就成了可预期的改动，而不是瞎猜。</p>

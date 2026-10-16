@@ -1,0 +1,13 @@
+<p>让生成器做一个「数据分析仪表盘」，大概率得到一个侧栏、四张数字卡和一堆同样大小的图表。看起来很完整，却什么也没回答。更好的结构是按用户真正会问的问题依次排布。</p><figure><img src="../../blog/img/dashboard-design-patterns-1.webp" alt="仪表盘三层：指标条、主图、下钻表格" loading="lazy" decoding="async" width="1200" height="675"><figcaption>仪表盘三层：指标条、主图、下钻表格 · 示意图：UI Hub 原创，CC BY 4.0</figcaption></figure>
+<h2>三个层次</h2>
+<ol><li><strong>一切正常吗？</strong>3–5 个数字组成的指标条，每个带对比周期和涨跌方向，而不是一堆迷你折线图。</li>
+<li><strong>变了什么？</strong>一张主时序图配时间范围选择，在发生事情的地方加标注。</li>
+<li><strong>为什么？</strong>可排序、可筛选、能下钻的表格。表格才是用户真正干活的地方。</li></ol><figure><img src="../../blog/img/dashboard-design-patterns-2.webp" alt="shadcn/ui 图表页（基于 Recharts）" loading="lazy" decoding="async" width="1280" height="800"><figcaption>shadcn/ui 图表页（基于 Recharts） · 截图：shadcn/ui（<a href="https://ui.shadcn.com/charts" rel="noopener" target="_blank">ui.shadcn.com</a>），2026-10-14 截取，版权归原站所有</figcaption></figure>
+<h2>生成器常漏掉的细节</h2>
+<ul><li>等宽数字（<code>font-variant-numeric: tabular-nums</code>），让数字对齐。</li>
+<li>数字列右对齐，文字列左对齐。</li>
+<li>每个组件都有空状态、加载骨架和错误状态。</li>
+<li>标签里写单位和时区，再加一个「最后更新时间」。</li>
+<li>颜色只表示状态，同时配非颜色提示（图标或文字），照顾色弱用户。</li></ul>
+<figure><img src="../../blog/img/dashboard-design-patterns-3.webp" alt="Tremor 仪表盘组件网站" loading="lazy" decoding="async" width="1280" height="800"><figcaption>Tremor 仪表盘组件网站 · 截图：Tremor（<a href="https://tremor.so/" rel="noopener" target="_blank">tremor.so</a>），2026-10-14 截取，版权归原站所有</figcaption></figure><h2>从哪些组件起步</h2>
+<p>shadcn 的仪表盘区块和图表（基于 Recharts）提供骨架；Tremor 提供专为仪表盘设计的 React 组件。在提示里写明这三个层次，你得到的就是能用的页面，而不只是好截图。</p>

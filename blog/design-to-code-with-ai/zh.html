@@ -1,0 +1,87 @@
+<p>早期的设计转代码工具把画板翻译成一堆绝对定位的 div。在一个视口里看着没问题，换个尺寸就没法维护。新一代工具的思路不一样：Figma 的 MCP Server、Builder.io 的 Visual Copilot，以及跑在 Cursor 或 Claude Code 里的 Agent，读取的是<em>结构和变量</em>，并且能映射到你已有的代码。最后得到的是可复用代码还是一次性标记，现在更多取决于你喂给它什么，而不是用哪个工具。</p><figure><img src="../../blog/img/design-to-code-with-ai-1.webp" alt="示意：设计稿与 Token 经 MCP 和组件注册表变成可复用代码" loading="lazy" decoding="async" width="1200" height="675"><figcaption>示意：设计稿与 Token 经 MCP 和组件注册表变成可复用代码 · 示意图：UI Hub 原创，CC BY 4.0</figcaption></figure>
+<h2>核心思路：映射，而不是描摹</h2>
+<p>设计稿里有三类信息：<strong>结构</strong>（画板、自动布局、嵌套）、<strong>决定</strong>（颜色、间距、圆角、字体变量）和<strong>组件</strong>（按钮、输入框、卡片的实例）。描摹是照抄像素；映射则把结构变成 flex 和 grid，把决定变成你的 CSS 变量，把组件实例变成你自己的 <code>&lt;Button&gt;</code> 和 <code>&lt;Input&gt;</code>。映射出来的是能合并的 PR，描摹出来的只是一张用 HTML 写的截图。</p>
+<h2>第 1 步：让设计稿可读</h2>
+<p>模型只能映射明确写出来的东西。接入任何工具之前，先做这几件事：</p>
+<ol>
+<li><strong>全部使用自动布局。</strong> 没有自动布局的画板，模型只能根据坐标去猜 flex 方向、间距和对齐。猜出来的布局一缩放就坏。</li>
+<li><strong>样式绑定到变量。</strong> 填充色写死 <code>#2563EB</code>，模型拿到的只是色值；绑定到 <code>color/accent</code>，它就拿到一个可以映射成 <code>var(--accent)</code> 的名字。</li>
+<li><strong>使用真正的组件实例。</strong> 被分离（detach）的按钮只是一个带文字的矩形；Button 组件的实例才能告诉 Agent 该用哪个代码组件。</li>
+<li><strong>按代码习惯命名图层。</strong> "Frame 482"毫无信息；<code>PricingCard / Featured</code> 信息量很大。</li>
+</ol><figure><img src="../../blog/img/design-to-code-with-ai-2.webp" alt="Builder.io Visual Copilot 介绍页" loading="lazy" decoding="async" width="1280" height="800"><figcaption>Builder.io Visual Copilot 介绍页 · 截图：Builder.io（<a href="https://www.builder.io/blog/figma-to-code-visual-copilot" rel="noopener" target="_blank">www.builder.io</a>），2026-10-14 截取，版权归原站所有</figcaption></figure>
+<h2>第 2 步：把 token 导出成代码</h2>
+<p>设计决定只保留一个来源，再从它生成 CSS 变量。Design Tokens Community Group 定义了一种 JSON 格式，Style Dictionary 这类工具可以把它转换出来：</p>
+<pre><code class="language-json">{
+  &quot;color&quot;: {
+    &quot;accent&quot;:  { &quot;$type&quot;: &quot;color&quot;, &quot;$value&quot;: &quot;#2563eb&quot; },
+    &quot;surface&quot;: { &quot;$type&quot;: &quot;color&quot;, &quot;$value&quot;: &quot;#ffffff&quot; }
+  },
+  &quot;radius&quot;: { &quot;md&quot;: { &quot;$type&quot;: &quot;dimension&quot;, &quot;$value&quot;: &quot;10px&quot; } }
+}
+</code></pre>
+<pre><code class="language-css">:root {
+  --color-accent: #2563eb;
+  --color-surface: #ffffff;
+  --radius-md: 10px;
+}
+[data-theme=&quot;dark&quot;] {
+  --color-surface: #0d0f15;
+}
+</code></pre>
+<p>Agent 看到 Figma 里的 <code>color/accent</code> 和 CSS 里的 <code>--color-accent</code> 同名，就会用变量，而不是粘贴色值。</p>
+<h2>第 3 步：发布组件注册表</h2>
+<p>注册表告诉工具：你的代码库里有哪些组件、怎么安装。以 shadcn/ui 为例，<code>registry.json</code> 列出你的组件，CLI 会把它们构建成可安装的 JSON 文件：</p>
+<pre><code class="language-bash"># 根据 registry.json 构建组件到 public/r/
+npx shadcn@latest build
+
+# 把你自己的组件安装到另一个项目
+npx shadcn@latest add https://your-domain.com/r/pricing-card.json
+</code></pre>
+<p>Figma 的 Code Connect 从设计端解决同一个问题：它把 Figma 组件和代码组件关联起来，这样发给 Agent 的设计上下文可以直接说"这是 <code>&lt;Button variant="primary"&gt;</code>"，而不是描述一个蓝色矩形。</p>
+<h2>第 4 步：接上桥梁</h2>
+<p>Figma MCP Server 会把选中画板的结构、变量和组件映射，提供给 Cursor、VS Code、Claude Code 这类 MCP 客户端。流程很短：</p>
+<ol>
+<li>只选一个画板，不要选整页。上下文越小，代码越好。</li>
+<li>让 Agent 读取选区的设计上下文，并在写代码之前先列出它打算用你的哪些组件。</li>
+<li>先修正这份清单。在 200 行代码出现之前改一句"用 <code>Card</code>，不要用 div"，成本低得多。</li>
+<li>再让它生成，然后像审普通 PR 一样审 diff。</li>
+</ol>
+<p>Builder.io 的 Visual Copilot 从 Figma 插件出发，走的是类似的路，也能映射到你的组件。无论用哪座桥，质量上限都由前 3 步决定。</p>
+<h2>第 5 步：像审新人的 PR 一样审生成代码</h2>
+<p>生成的界面通常默认状态是对的，边界情况是错的。每次都要检查：</p>
+<ul>
+<li><strong>空、加载、错误状态。</strong> 设计稿通常只画了顺利的那条路。</li>
+<li><strong>长内容。</strong> 贴一个 60 字符的名称和一段德语翻译，看换行和截断。</li>
+<li><strong>比设计稿最小画板更窄时</strong>的响应式表现。</li>
+<li><strong>写死的数值。</strong> 在 diff 里搜应该是 token 的色值和像素值。</li>
+<li><strong>无障碍。</strong> 按钮是 <code>&lt;button&gt;</code>，输入框有标签，焦点可见，对话框会锁定焦点。</li>
+</ul>
+<pre><code class="language-bash"># 对生成的 diff 做快速检查
+git diff | grep -nE '#[0-9a-fA-F]{3,6}\b'      # 裸色值
+git diff | grep -nE '\b[0-9]{2,}px\b'           # 魔法像素值
+git diff | grep -n 'onClick' | grep -n '&lt;div'   # 可点击的 div
+</code></pre>
+<h2>常见坑</h2>
+<ul>
+<li><strong>一次转整页。</strong> 上下文过大，模型开始自己编结构。应该一个画板一个画板地来。</li>
+<li><strong>分离的实例。</strong> 画板里只要有一个被分离的组件，就会产出一段永远不会随组件库更新的一次性代码。</li>
+<li><strong>token 有两个来源。</strong> Figma 变量和 CSS 变量一旦不一致，Agent 会忠实地复现这种不一致。</li>
+<li><strong>跳过"先列清单"这一步。</strong> 直接要代码，你就得审 300 行，而不是 10 行的组件清单。</li>
+<li><strong>期待像素级一致。</strong> 映射出的代码会差几个像素，因为它用的是你的间距刻度。这恰恰是目的。</li>
+</ul>
+<h2>常见问题</h2>
+<p><strong>小项目值得这么做吗？</strong> 如果总共不到五个页面，可以跳过注册表，直接把 token 文件和组件清单给 Agent。整套流水线的回报，出现在多人或多个 Agent 持续几个月做页面的时候。</p>
+<p><strong>设计稿很乱又改不了怎么办？</strong> 那就别直接从设计稿转。先让 Agent 用文字描述画板（分区、组件、内容），你修正这份描述，再根据描述和你的组件库生成。一份干净的描述胜过一个混乱的文件。</p>
+<p><strong>该选哪座桥？</strong> 选设计师已经在用、并且能读到你组件映射的那一个。桥本身没那么重要，重要的是设计稿里有没有变量、自动布局和组件实例。</p>
+<p><strong>怎么衡量效果？</strong> 统计生成代码有多少能原样通过评审，以及评审者需要把多少裸数值换成 token。随着注册表变大，这两个数字应该每周都在改善。</p>
+<h2>我们的看法</h2>
+<p>把注册表和 token 流水线当作基础设施，而不是一次性工作。第一个页面会慢一些，因为你在建立映射；之后每个页面都更便宜，因为 Agent 会复用它们。跳过这一步的团队，得到的是很快的初稿和永远很慢的维护。</p>
+<figure><img src="../../blog/img/design-to-code-with-ai-3.webp" alt="shadcn/ui 注册表文档" loading="lazy" decoding="async" width="1280" height="800"><figcaption>shadcn/ui 注册表文档 · 截图：shadcn（<a href="https://ui.shadcn.com/docs/registry" rel="noopener" target="_blank">ui.shadcn.com</a>），2026-10-14 截取，版权归原站所有</figcaption></figure><h2>清单</h2>
+<ul>
+<li>画板使用自动布局，图层命名有意义</li>
+<li>填充、间距、圆角都绑定到变量</li>
+<li>token 已导出为同名 CSS 变量</li>
+<li>组件已发布到注册表，或用 Code Connect 关联</li>
+<li>Agent 先列组件清单，再生成代码</li>
+<li>diff 检查了状态、长内容、色值和无障碍</li>
+</ul>

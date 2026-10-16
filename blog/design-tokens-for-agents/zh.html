@@ -1,0 +1,17 @@
+<p>智能体遵循具体数值远比遵循描述可靠。设计 Token 文件把「干净、高级、带点俏皮」变成智能体能处处套用的数字。W3C 设计 Token 社区组（DTCG）为此发布了一种与厂商无关的 JSON 格式，Style Dictionary、Tokens Studio 等工具都支持。</p><figure><img src="../../blog/img/design-tokens-for-agents-1.webp" alt="Token 三层：基础、语义、组件" loading="lazy" decoding="async" width="1200" height="675"><figcaption>Token 三层：基础、语义、组件 · 示意图：UI Hub 原创，CC BY 4.0</figcaption></figure>
+<h2>最小结构</h2>
+<pre><code>{
+  "color": { "accent": { "$type": "color", "$value": "oklch(62% 0.17 250)" } },
+  "radius": { "md": { "$type": "dimension", "$value": "10px" } },
+  "space": { "4": { "$type": "dimension", "$value": "16px" } }
+}</code></pre><figure><img src="../../blog/img/design-tokens-for-agents-2.webp" alt="设计 Token 社区组网站" loading="lazy" decoding="async" width="1280" height="800"><figcaption>设计 Token 社区组网站 · 截图：Design Tokens Community Group（<a href="https://www.designtokens.org/" rel="noopener" target="_blank">www.designtokens.org</a>），2026-10-14 截取，版权归原站所有</figcaption></figure>
+<h2>三层命名</h2>
+<ul><li><strong>基础层：</strong>原始值（<code>blue-500</code>、<code>space-4</code>）。</li>
+<li><strong>语义层：</strong>表达意图（<code>surface</code>、<code>text-muted</code>、<code>accent</code>、<code>danger</code>）。智能体应主要用这一层。</li>
+<li><strong>组件层：</strong>可选的覆盖值（<code>button-radius</code>）。</li></ul>
+<figure><img src="../../blog/img/design-tokens-for-agents-3.webp" alt="Style Dictionary 网站" loading="lazy" decoding="async" width="1280" height="800"><figcaption>Style Dictionary 网站 · 截图：Style Dictionary（<a href="https://styledictionary.com/" rel="noopener" target="_blank">styledictionary.com</a>），2026-10-14 截取，版权归原站所有</figcaption></figure><h2>交给智能体</h2>
+<ol><li>把 Token 导出成 CSS 变量并提交；告诉智能体「颜色和间距一律不许写死，用这些变量」。</li>
+<li>附一页用法说明：哪个 Token 用在哪里，再加三组该做/不该做。</li>
+<li>在 AGENTS.md、Cursor rules 或 skill 里引用这两份文件，让每次会话都加载。</li>
+<li>验证：在生成的代码里搜索裸十六进制色值，这是最便宜的检查。</li></ol>
+<p>本站百科里的颜色、间距、字体规范摘要，就是按能直接贴进这类用法说明的格式写的。</p>

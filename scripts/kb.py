@@ -93,9 +93,19 @@ def build(g):
     kbj = [{k:e.get(k) for k in ('type','slug','title','summary','tags','url','raw','license','upstream','md')} for e in entries]
     w('api/kb.json', json.dumps({'updated':UPD,'count':len(kbj),'types':['skill','spec','note'],'entries':kbj}, ensure_ascii=False))
     idx = [{'t':e['title'],'k':e['type'],'u':f"kb/{e['type']}/{e['slug']}/",'r':f"kb/{e['type']}/{e['slug']}.md",'d':e['summary'][:200],'g':e['tags']} for e in entries]
+    _han = re.compile(r'[\u3400-\u9fff\uf900-\ufaff]')
+    for o in idx:  # kb entries: Chinese titles/summaries stay for zh pages only
+        if _han.search(o['t']+o['d']): o['tz'], o['dz'], o['t'], o['d'] = o['t'], o['d'], g['_strip_cjk'](o['t']) or o['u'], g['_strip_cjk'](o['d'])
     for i in ITEMS:
-        idx.append({'t':i['name'],'k':'component' if i['type']=='style' else 'resource','u':i['url'],'d':(i.get('noteEn') or i.get('note') or '')[:160],'g':(i.get('ct') or [])+(i.get('vs') or [])+[i['type']]})
-    w('api/search-index.json', json.dumps({'updated':UPD,'fields':{'t':'title','k':'kind: skill|spec|note|resource|component','u':'url (relative = on this site)','r':'raw markdown (kb only)','d':'description','g':'tags'},'items':idx}, ensure_ascii=False, separators=(',',':')))
+        # t/d are English (shown on every non-zh locale); tz/dz keep the Chinese original for zh-Hans / zh-Hant only
+        zt, zd = i['name'], (i.get('note') or i.get('noteEn') or '')[:160]
+        ne = i.get('noteEn') or ''
+        et, ed = g['en_name'](i), (g['en_note'](i) or ('' if _han.search(ne) else ne))[:160]
+        o = {'t':et,'k':'component' if i['type']=='style' else 'resource','u':i['url'],'d':ed,'g':(i.get('ct') or [])+(i.get('vs') or [])+[i['type']]}
+        if zt != et and _han.search(zt): o['tz'] = zt
+        if zd and zd != ed and _han.search(zd): o['dz'] = zd
+        idx.append(o)
+    w('api/search-index.json', json.dumps({'updated':UPD,'fields':{'t':'title','k':'kind: skill|spec|note|resource|component','u':'url (relative = on this site)','r':'raw markdown (kb only)','d':'description (English)','tz':'Chinese title (zh pages only)','dz':'Chinese description (zh pages only)','g':'tags'},'items':idx}, ensure_ascii=False, separators=(',',':')))
     # context bundle
     agents = open(os.path.join(ROOT,'AGENTS.md'),encoding='utf-8').read()
     bundle = f"# UI Hub context bundle ({UPD})\n\nSource: {BASE}kb/ · Full skills: {BASE}api/kb.json\n\n" + agents + "\n\n---\n\n# Design specs\n\n" + '\n\n'.join(e['md'] for e in entries if e['type']=='spec') + \
@@ -115,11 +125,11 @@ def build(g):
 <div class="acts"><button class="btn pri" type="button" id="cb">{ml('kb_bundle')}</button><a class="btn" href="../context-bundle.md" download="ui-hub-context.md">{ml('kb_dl')}</a><a class="btn" href="../api/kb.json">api/kb.json</a><a class="btn" href="../api/search-index.json">api/search-index.json</a></div>
 <label class="kbs"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="q" type="search" autocomplete="off">{''.join(f'<span data-l="{c}" hidden></span>' for c,_,_ in g['LANGS'])}</label>
 <div class="chips" id="chips">{chips}</div><p class="cnt" id="cnt"></p><div class="res" id="res">{static}</div></main>{foot('../')}{SCRIPT}
-<script>(function(){{var PH={json.dumps(U['kb_ph'],ensure_ascii=False)},M={{'zh-Hans':'zh','zh-Hant':'zht'}};function ph(){{var l=document.documentElement.lang;q.placeholder=PH[M[l]||l]||PH.en}}var q=document.getElementById('q'),res=document.getElementById('res'),cnt=document.getElementById('cnt'),K='',D=null;ph();document.getElementById('ls').addEventListener('change',ph);
+<script>(function(){{var PH={json.dumps(U['kb_ph'],ensure_ascii=False)},M={{'zh-Hans':'zh','zh-Hant':'zht'}};function ph(){{var l=document.documentElement.lang;q.placeholder=PH[M[l]||l]||PH.en}}var q=document.getElementById('q'),res=document.getElementById('res'),cnt=document.getElementById('cnt'),K='',D=null;ph();document.getElementById('ls').addEventListener('change',function(){{ph();setTimeout(run,0)}});
 var p=new URLSearchParams(location.search);if(p.get('q'))q.value=p.get('q');
 function esc(s){{return String(s).replace(/[&<>"]/g,function(c){{return{{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}}[c]}})}}
-function run(){{if(!D)return;var t=q.value.trim().toLowerCase().split(/\\s+/).filter(Boolean),out=[];for(var i=0;i<D.length;i++){{var x=D[i];if(K&&x.k!==K)continue;var h=(x.t+' '+x.d+' '+(x.g||[]).join(' ')).toLowerCase(),ok=true,s=0;for(var j=0;j<t.length;j++){{var at=h.indexOf(t[j]);if(at<0){{ok=false;break}}s+=x.t.toLowerCase().indexOf(t[j])>=0?3:1}}if(ok)out.push([s+(x.r?2:0),x])}}
-out.sort(function(a,b){{return b[0]-a[0]}});cnt.textContent=out.length+' results';res.innerHTML=out.slice(0,120).map(function(o){{var x=o[1],ext=!x.r&&/^https?:/.test(x.u);return '<a class="r" href="'+esc(x.r?'../'+x.u:x.u)+'"'+(ext?' target="_blank" rel="noopener"':'')+'><span class="k">'+x.k+(x.r?' · md':'')+'</span><b>'+esc(x.t)+'</b><p>'+esc(x.d)+'</p></a>'}}).join('')}}
+function run(){{if(!D)return;var t=q.value.trim().toLowerCase().split(/\\s+/).filter(Boolean),out=[];for(var i=0;i<D.length;i++){{var x=D[i];if(K&&x.k!==K)continue;var h=(x.t+' '+x.d+' '+(x.tz||'')+' '+(x.dz||'')+' '+(x.g||[]).join(' ')).toLowerCase(),ok=true,s=0;for(var j=0;j<t.length;j++){{var at=h.indexOf(t[j]);if(at<0){{ok=false;break}}s+=x.t.toLowerCase().indexOf(t[j])>=0?3:1}}if(ok)out.push([s+(x.r?2:0),x])}}
+var Z=/^zh/.test(document.documentElement.lang);out.sort(function(a,b){{return b[0]-a[0]}});cnt.textContent=out.length+' results';res.innerHTML=out.slice(0,120).map(function(o){{var x=o[1],ext=!x.r&&/^https?:/.test(x.u);return '<a class="r" href="'+esc(x.r?'../'+x.u:x.u)+'"'+(ext?' target="_blank" rel="noopener"':'')+'><span class="k">'+x.k+(x.r?' · md':'')+'</span><b>'+esc(Z&&x.tz||x.t)+'</b><p>'+esc(Z&&x.dz||x.d)+'</p></a>'}}).join('')}}
 fetch('../api/search-index.json').then(function(r){{return r.json()}}).then(function(j){{D=j.items;run()}});q.addEventListener('input',run);
 document.querySelectorAll('#chips button').forEach(function(b){{b.addEventListener('click',function(){{K=b.dataset.k;document.querySelectorAll('#chips button').forEach(function(x){{x.classList.toggle('on',x===b)}});run()}})}});
 document.getElementById('cb').addEventListener('click',function(){{var b=this;fetch('../context-bundle.md').then(function(r){{return r.text()}}).then(function(t){{cpx(t,b)}})}})}})();</script></body></html>""")

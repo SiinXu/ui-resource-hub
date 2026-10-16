@@ -1,0 +1,81 @@
+<p>Cult UI 是一套开源的、兼容 shadcn 的组件集合，带着明显的"触感"：灵动岛式容器、有质感的按钮、可展开卡片和俏皮的工具栏。Aceternity 偏重视觉奇观（光束、聚光灯、背景特效），Cult UI 偏重<strong>交互手感</strong>：弹簧、挤压和布局动画。这篇深读讲清楚：这套集合里有什么、怎么引入组件而不破坏你的设计系统、分步接入流程，以及"个性组件"容易出错的地方。</p><figure><img src="../../blog/img/cult-ui-deep-dive-1.webp" alt="Cult UI 首页" loading="lazy" decoding="async" width="1280" height="800"><figcaption>Cult UI 首页 · 截图：Cult UI（<a href="https://www.cult-ui.com/" rel="noopener" target="_blank">www.cult-ui.com</a>），2026-10-14 截取，版权归原站所有</figcaption></figure>
+<h2>它是什么样的库</h2>
+<p>和 shadcn/ui 一样，Cult UI 不是整包导入的 npm 库。你把单个组件拿进自己的仓库：要么从文档页复制源码，要么用 shadcn CLI 加上每个组件页面给出的注册表地址安装，之后代码就归你所有。组件用 React 和 Tailwind CSS 编写，其中最有意思的那些大多用 Motion 做布局动画和弹簧动画。</p>
+<p>这种模式对 AI 协作很重要。源码进了你的仓库，Agent 就能读到灵动岛如何在不同尺寸之间变形，再据此改写，而不是去猜一个黑盒的属性。</p>
+<h2>适合的场景</h2>
+<ul>
+<li><strong>小的产品界面</strong>，适合有弹性的布局过渡：工具栏、弹出层、状态胶囊、展开成控制面板的录音指示器。</li>
+<li><strong>作品集和独立产品页面</strong>，个性本身就是重点，一个让人记住的交互比一个精致但普通的首屏更有价值。</li>
+<li><strong>学习材料。</strong> 读一个可展开卡片的源码，是理解 Motion 的 <code>layout</code> 和共享元素过渡最快的方法之一。</li>
+</ul><figure><img src="../../blog/img/cult-ui-deep-dive-2.webp" alt="采用个性组件前的检查清单" loading="lazy" decoding="async" width="1200" height="675"><figcaption>采用个性组件前的检查清单 · 示意图：UI Hub 原创，CC BY 4.0</figcaption></figure>
+<h2>不适合的场景</h2>
+<ul>
+<li><strong>高密度、数据密集的工具。</strong> 200 行表格里的"果冻按钮"只是噪音。</li>
+<li><strong>高频操作。</strong> 一个控件一天要用几十次，第一天让人惊喜的弹簧，到第十天就在拖慢用户。</li>
+<li><strong>没有 token 体系的团队。</strong> 个性组件自带颜色、圆角和阴影。没有 token 可映射，产品很快就会像一张拼贴画。</li>
+</ul>
+<h2>分步引入一个组件</h2>
+<p><strong>第 1 步：选定一个标志性交互。</strong> 决定由哪一个交互承载产品个性，比如"状态胶囊展开成迷你播放器"。一个就够了。</p>
+<p><strong>第 2 步：装进组件目录。</strong> 通过文档页或 shadcn CLI 引入组件，放在其他组件旁边，而不是某个功能目录里，保证全仓库只有一份。</p>
+<p><strong>第 3 步：把样式映射到你的 token。</strong> 把写死的颜色、圆角和阴影替换成你的变量：</p>
+<pre><code class="language-tsx">// 修改前（原样复制）
+&lt;div className=&quot;rounded-[28px] bg-black text-white shadow-2xl&quot;&gt;
+
+// 修改后（映射到你的设计系统）
+&lt;div className=&quot;rounded-[var(--radius-xl)] bg-[var(--raised)] text-[var(--ink)] border border-[var(--line)]&quot;&gt;
+</code></pre>
+<p><strong>第 4 步：统一动效。</strong> 个性组件往往各自带一套弹簧参数。选一到两个弹簧预设并全局使用，让所有动效像一家人：</p>
+<pre><code class="language-ts">// motion.ts
+export const spring = {
+  snappy: { type: &quot;spring&quot;, stiffness: 500, damping: 40 },
+  soft:   { type: &quot;spring&quot;, stiffness: 260, damping: 30 },
+} as const;
+</code></pre>
+<p><strong>第 5 步：补上演示里省略的无障碍。</strong> 自定义开关和灵动岛需要真正的 <code>&lt;button&gt;</code> 或正确的角色、可见焦点、键盘支持，展开时要有 <code>aria-expanded</code>。如果内容变化而焦点没有移动，用实时区域播报状态变化。</p>
+<p><strong>第 6 步：尊重减少动态效果设置。</strong> Motion 的 <code>useReducedMotion</code> hook 可以把弹簧换成瞬间切换或淡入淡出：</p>
+<pre><code class="language-tsx">import { motion, useReducedMotion } from &quot;motion/react&quot;;
+
+export function Island({ open }: { open: boolean }) {
+  const reduce = useReducedMotion();
+  return (
+    &lt;motion.div
+      layout
+      transition={reduce ? { duration: 0 } : { type: &quot;spring&quot;, stiffness: 500, damping: 40 }}
+      aria-expanded={open}
+    /&gt;
+  );
+}
+</code></pre>
+<h2>怎么判断它有没有帮助</h2>
+<p>标志性交互要证明自己值得存在。上线后观察两周：用户使用这个控件的频率，比被它替换的普通版本高还是低；客服问题和 bug 报告里有没有提到它。再用中端手机录一段屏幕，在笔记本上很利落的弹簧动画，在便宜的硬件上可能掉帧。如果这个交互拖慢了用户或让人困惑，就简化它，而不是再加一个来弥补。以可用性为代价换来的个性，是笔亏本买卖。</p>
+<h2>常见坑</h2>
+<ul>
+<li><strong>把所有巧妙组件放在同一页。</strong> 单个都很可爱，放在一起就互相抢注意力。</li>
+<li><strong>保留演示配色。</strong> 在文档黑底上很好看的组件，放到你的近白底色上可能格格不入。</li>
+<li><strong>到处是不同的弹簧。</strong> 十种不同的刚度值，会让界面感觉不一致，即使用户说不出原因。</li>
+<li><strong>忘了手机。</strong> 依赖 hover 才显示的内容在触屏上不起作用；给它一个点击状态或常显状态。</li>
+<li><strong>不看许可证和署名要求。</strong> 开源不等于没有条件，上线前先读仓库的许可证。</li>
+</ul>
+<h2>横向对比</h2>
+<p>三套兼容 shadcn 的组件集合，分别覆盖"炫"的不同一端。知道自己需要哪一端，能省下大量试错：</p>
+<ul>
+<li><strong>Aceternity UI</strong>：视觉奇观，比如动态背景、光束、聚光灯、3D 卡片。最适合营销页首屏。</li>
+<li><strong>Magic UI</strong>：打磨好的营销组件，比如跑马灯、数字滚动、动态边框、便当盒网格。最适合落地页的各个区块。</li>
+<li><strong>Cult UI</strong>：有触感的产品细节，比如灵动岛、可展开卡片、有弹性的工具栏。最适合用在产品内部。</li>
+</ul>
+<p>一种常见且有效的组合是：营销站上一个 Aceternity 或 Magic UI 风格的高光时刻，应用内一个 Cult UI 交互，两者都映射到同一套 token。行不通的是把三者放在同一页。</p>
+<h2>常见问题</h2>
+<p><strong>能和我们现有的 shadcn 配置一起用吗？</strong> 一般可以，组件遵循 shadcn 的约定，使用 Tailwind 和 Motion。开始映射样式之前，先确认你的 Tailwind 版本和 Motion 版本与组件的要求一致。</p>
+<p><strong>Agent 能把组件改造成适合我们产品的样子吗？</strong> 能，而且这正适合交给 Agent，因为源码在本地。把组件、你的 token 和弹簧预设交给它，要求输出 diff 而不是重写。</p>
+<p><strong>怎么避免看起来像演示页？</strong> 按你的产品改内容、颜色和尺寸，并让这个交互承担真实的任务：显示状态、展开控件、确认操作。</p>
+<h2>我们的看法</h2>
+<p>Cult UI 是我们风格谱系里"触感"一端的参考：用微交互取代喧闹的背景。最好的用法是每个产品选一个标志性交互，映射到你的 token 和动效预设，然后让它反复出现。这样用，它给产品带来性格；当成百宝箱乱用，产品就会像一个 demo。</p>
+<figure><img src="../../blog/img/cult-ui-deep-dive-3.webp" alt="Cult UI 的 GitHub 仓库" loading="lazy" decoding="async" width="1280" height="800"><figcaption>Cult UI 的 GitHub 仓库 · 截图：GitHub（<a href="https://github.com/nolly-studio/cult-ui" rel="noopener" target="_blank">github.com</a>），2026-10-14 截取，版权归原站所有</figcaption></figure><h2>清单</h2>
+<ul>
+<li>选定一个标志性交互，其余保持安静</li>
+<li>组件只有一份，放在组件目录</li>
+<li>颜色、圆角、阴影已映射到 token</li>
+<li>各组件共用弹簧预设</li>
+<li>补上了真正的按钮/角色、焦点、键盘和 aria-expanded</li>
+<li>有减少动态效果的降级方案，已检查许可证</li>
+</ul>

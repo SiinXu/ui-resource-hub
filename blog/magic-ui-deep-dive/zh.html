@@ -1,0 +1,10 @@
+<p>Magic UI 是一套开源（MIT 许可）的动效组件库，定位是 shadcn/ui 的搭档。组件用 shadcn CLI 从 Magic UI 的 registry 添加，源码直接落在你的仓库里可以随便改，而不是藏在依赖包里。</p><figure><img src="../../blog/img/magic-ui-deep-dive-1.webp" alt="Magic UI 首页" loading="lazy" decoding="async" width="1280" height="800"><figcaption>Magic UI 首页 · 截图：Magic UI（<a href="https://magicui.design/" rel="noopener" target="_blank">magicui.design</a>），2026-10-14 截取，版权归原站所有</figcaption></figure>
+<h2>值得用的几个</h2>
+<ul><li><strong>Marquee 跑马灯</strong>用于 Logo 墙和用户评价：动效本身在传递信息。</li>
+<li><strong>Number ticker 数字滚动</strong>只用于一个核心指标。</li>
+<li><strong>Animated beam / Orbiting circles</strong>展示集成关系，每页一个。</li>
+<li><strong>Shimmer 或 border-beam 按钮</strong>只给唯一的主 CTA。</li></ul><figure><img src="../../blog/img/magic-ui-deep-dive-2.webp" alt="用 shadcn CLI 添加 Magic UI 组件的命令" loading="lazy" decoding="async" width="1200" height="675"><figcaption>用 shadcn CLI 添加 Magic UI 组件的命令 · 示意图：UI Hub 原创，CC BY 4.0</figcaption></figure>
+<h2>无障碍与性能</h2>
+<p>持续运动的元素（跑马灯、环绕动画）应在悬停时暂停，并在 <code>prefers-reduced-motion</code> 下停止；WCAG 2.2.2 要求超过五秒的运动内容必须能暂停。优先用 transform 和 opacity 做动画，浏览器可以低成本合成。</p>
+<figure><img src="../../blog/img/magic-ui-deep-dive-3.webp" alt="Magic UI 的 GitHub 仓库（MIT 许可）" loading="lazy" decoding="async" width="1280" height="800"><figcaption>Magic UI 的 GitHub 仓库（MIT 许可） · 截图：GitHub（<a href="https://github.com/magicuidesign/magicui" rel="noopener" target="_blank">github.com</a>），2026-10-14 截取，版权归原站所有</figcaption></figure><h2>我们的看法</h2>
+<p>给 shadcn 项目加动效，Magic UI 是最省事的，因为安装方式和 Token 变量都一致。风险和所有特效库一样：每页用一两个，其他部分保持安静。</p>

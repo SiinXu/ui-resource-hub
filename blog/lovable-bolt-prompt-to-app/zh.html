@@ -1,0 +1,10 @@
+<p>Lovable 和 StackBlitz 的 Bolt 比组件生成器更进一步：你描述一个应用，它们会搭出前端、路由，并通过 Supabase 等集成搭出后端。Bolt 借助 StackBlitz 的 WebContainers 在浏览器里运行开发环境。设计问题也随之改变：模型同时在处理数据结构、登录和部署，你不先做视觉决定，它就会按默认值替你做。</p><figure><img src="../../blog/img/lovable-bolt-prompt-to-app-1.webp" alt="Bolt.new 首页" loading="lazy" decoding="async" width="1280" height="800"><figcaption>Bolt.new 首页 · 截图：Bolt by StackBlitz（<a href="https://bolt.new/" rel="noopener" target="_blank">bolt.new</a>），2026-10-14 截取，版权归原站所有</figcaption></figure>
+<h2>本月一个值得注意的变化</h2>
+<p>2026 年 10 月 8 日，Lovable 的更新日志写明：对视觉要求开放的提示，首次构建前不再给出三个「设计方向」供选择。现在它直接从你的描述推导外观，只有在提示没说清颜色、字体和布局时才会追问。换句话说：<strong>你的提示词现在就是美术需求</strong>，不写就是默认样式。</p>
+<h2>把视觉要求放在最前面</h2>
+<ol><li>功能列表之前先写一段风格说明：配色、字体、圆角、密度、一个参考网站。</li>
+<li>先要一版只有假数据的静态界面，确认后再接后端。</li>
+<li>在项目里放一个 <code>design.md</code> 之类的规范文件，要求每次改动都遵守。</li>
+<li>每做完一个功能，对照这个文件检查新页面；风格跑偏总是一页一页累积的。</li></ol><figure><img src="../../blog/img/lovable-bolt-prompt-to-app-2.webp" alt="流程：风格段落、静态界面、接后端、跑偏检查" loading="lazy" decoding="async" width="1200" height="675"><figcaption>流程：风格段落、静态界面、接后端、跑偏检查 · 示意图：UI Hub 原创，CC BY 4.0</figcaption></figure>
+<figure><img src="../../blog/img/lovable-bolt-prompt-to-app-3.webp" alt="WebContainers 页面：在浏览器里运行 Node.js" loading="lazy" decoding="async" width="1280" height="800"><figcaption>WebContainers 页面：在浏览器里运行 Node.js · 截图：StackBlitz WebContainers（<a href="https://webcontainers.io/" rel="noopener" target="_blank">webcontainers.io</a>），2026-10-14 截取，版权归原站所有</figcaption></figure><h2>怎么选</h2>
+<p>需要快速做出接通真实数据的可用原型时，用这类工具。交付物是要放进现有代码库的精致界面时，用组件生成器（v0、Magic Patterns）或手写。很多团队两者并用：在应用生成器里跑通流程，再用自己的设计系统重做最终界面。</p>

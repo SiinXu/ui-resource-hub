@@ -1,0 +1,10 @@
+<p>shadcn/ui 不是一个要安装的依赖包，而是一套你把源码复制进项目的组件。Blocks 把这个思路扩展到整个区块：仪表盘、侧栏、登录注册页、图表。每个都用 CLI 添加，例如 <code>npx shadcn@latest add dashboard-01</code>，落地为可编辑的文件。</p><figure><img src="../../blog/img/shadcn-blocks-deep-dive-1.webp" alt="shadcn/ui Blocks 页面" loading="lazy" decoding="async" width="1280" height="800"><figcaption>shadcn/ui Blocks 页面 · 截图：shadcn/ui（<a href="https://ui.shadcn.com/blocks" rel="noopener" target="_blank">ui.shadcn.com</a>），2026-10-14 截取，版权归原站所有</figcaption></figure>
+<h2>Registry：人人都能发布</h2>
+<p>shadcn 的 registry 格式让任何团队都能把组件、区块、hooks 和主题文件发布成 CLI 能读的 JSON。Magic UI、Cult UI 等很多库都这样分发，你也可以给自己的设计系统搭一个私有 registry。</p>
+<pre><code>npx shadcn@latest add https://your-registry.example/r/pricing-01.json</code></pre><figure><img src="../../blog/img/shadcn-blocks-deep-dive-2.webp" alt="示意图：registry JSON → CLI → 本地源码 → Token" loading="lazy" decoding="async" width="1200" height="675"><figcaption>示意图：registry JSON → CLI → 本地源码 → Token · 示意图：UI Hub 原创，CC BY 4.0</figcaption></figure>
+<h2>为什么智能体喜欢这种模式</h2>
+<ul><li>代码在本地，智能体可以像读写普通文件一样读写它。</li>
+<li>名字稳定且有文档，提示里可以直接引用（「加上 sidebar-07」）。</li>
+<li>主题放在 CSS 变量里，改一个 Token 就能给智能体生成的所有界面换装。</li></ul>
+<figure><img src="../../blog/img/shadcn-blocks-deep-dive-3.webp" alt="shadcn registry 文档" loading="lazy" decoding="async" width="1280" height="800"><figcaption>shadcn registry 文档 · 截图：shadcn/ui（<a href="https://ui.shadcn.com/docs/registry" rel="noopener" target="_blank">ui.shadcn.com</a>），2026-10-14 截取，版权归原站所有</figcaption></figure><h2>我们的看法</h2>
+<p>想让 AI 生成的界面保持一致，就给智能体一个 registry，而不是一个风格形容词。从官方 blocks 起步，用 Token 换风格，再把改过的版本发布到私有 registry，之后每次会话都从你的系统出发。</p>

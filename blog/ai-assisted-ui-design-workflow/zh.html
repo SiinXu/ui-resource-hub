@@ -1,0 +1,9 @@
+<p>所有 AI 界面生成器都会收敛到训练数据的"平均值"：居中大标题、三张特性卡、一道紫色渐变。这不是 bug，而是"最可能的下一个词"的本义。结论很直接：<strong>速度已经免费，稀缺的是审美输入</strong>。</p><figure><img src="../../blog/img/ai-assisted-ui-design-workflow-1.webp" alt="v0 首页：用于生成界面的提示输入框" loading="lazy" decoding="async" width="1280" height="800"><figcaption>v0 首页：用于生成界面的提示输入框 · 截图：v0 by Vercel（<a href="https://v0.app/" rel="noopener" target="_blank">v0.app</a>），2026-10-14 截取，版权归原站所有</figcaption></figure>
+<h2>把活拆成四遍</h2>
+<ol><li><strong>定方向（人）</strong>：写一段话的简报——给谁用、想要的一个形容词和拒绝的一个形容词、一个参考产品、信息密度。NN/g 对 AI 设计工具的测试显示，提示里没有真实上下文时，产出几乎都是通用模板。</li>
+<li><strong>铺变体（AI）</strong>：让 v0 或 Claude 一次给 4–6 个刻意不同的方向，而不是一个"最好"的页面。多样性才是生成器的长处。</li>
+<li><strong>挑选（人）</strong>：选定一个，再用具体语言指出问题，比如"行宽超过 80 字符""两个强调色在打架"。</li>
+<li><strong>打磨（AI + 人）</strong>：把意见喂回去，或者跑 <em>impeccable</em>、<em>baseline-ui</em> 这类走查 skill，最后 10% 手工收尾。</li></ol><figure><img src="../../blog/img/ai-assisted-ui-design-workflow-2.webp" alt="四遍工作流示意：定方向、铺变体、挑选、打磨" loading="lazy" decoding="async" width="1200" height="675"><figcaption>四遍工作流示意：定方向、铺变体、挑选、打磨 · 示意图：UI Hub 原创，CC BY 4.0</figcaption></figure>
+<h2>我们的看法</h2>
+<p>最大的收益不在生成，而在<strong>约束文件</strong>：一份简短的 DESIGN.md，写清 token、间距刻度和禁用样式，让每个 Agent 先读它。一次好决定就能变成一百个一致的页面。在 UI Hub 里筛选「Skill」就能找到现成的。</p>
+<figure><img src="../../blog/img/ai-assisted-ui-design-workflow-3.webp" alt="NN/g 关于 AI 设计工具现状的文章" loading="lazy" decoding="async" width="1280" height="800"><figcaption>NN/g 关于 AI 设计工具现状的文章 · 截图：Nielsen Norman Group（<a href="https://www.nngroup.com/articles/ai-design-tools-not-ready/" rel="noopener" target="_blank">www.nngroup.com</a>），2026-10-14 截取，版权归原站所有</figcaption></figure><h2>清单</h2><ul><li>简报里有"禁止"清单</li><li>要变体，不要单页</li><li>点名具体问题</li><li>把决定固化成 token</li></ul>

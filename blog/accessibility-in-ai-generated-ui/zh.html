@@ -1,0 +1,67 @@
+<p>模型优化的是截图里看得到的东西。焦点顺序、可访问名称、键盘操作和实时播报区域在截图里都看不到，所以它们总是生成界面里最先缺失的部分。好消息是，这些问题非常可预测。这篇列出模型最常漏掉的检查项、每一项的修法，以及怎么把无障碍变成 Agent "完成标准"的一部分，而不是一个永远没时间做的收尾环节。</p><figure><img src="../../blog/img/accessibility-in-ai-generated-ui-1.webp" alt="AI 生成界面常漏的六项无障碍检查" loading="lazy" decoding="async" width="1200" height="675"><figcaption>AI 生成界面常漏的六项无障碍检查 · 示意图：UI Hub 原创，CC BY 4.0</figcaption></figure>
+<h2>为什么生成界面总在同样的地方出错</h2>
+<p>生成器从海量网页中学习，而网上相当大比例的页面本身就有无障碍问题。对热门网站首页的自动化审查，反复发现的总是那几项：文字对比度低、图片缺替代文本、空链接和空按钮、表单缺标签。没人提额外要求时，模型复现的正是这些模式。解决办法不是更聪明的模型，而是明确的约束，加上一个 Agent 自己会跑的检查。</p>
+<h2>模型最常漏掉的检查项</h2>
+<p><strong>1. 可点击的 div。</strong> <code>&lt;div onClick&gt;</code> 看起来像按钮，但不是按钮：没有焦点、不响应 Enter 和空格、没有角色。操作用 <code>&lt;button&gt;</code>，跳转用 <code>&lt;a href&gt;</code>。</p>
+<pre><code class="language-html">&lt;!-- 生成的 --&gt;
+&lt;div class=&quot;btn&quot; onclick=&quot;save()&quot;&gt;保存&lt;/div&gt;
+
+&lt;!-- 修正后 --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn&quot; onclick=&quot;save()&quot;&gt;保存&lt;/button&gt;
+</code></pre><figure><img src="../../blog/img/accessibility-in-ai-generated-ui-2.webp" alt="WCAG 2.2 规范" loading="lazy" decoding="async" width="1280" height="800"><figcaption>WCAG 2.2 规范 · 截图：W3C（<a href="https://www.w3.org/TR/WCAG22/" rel="noopener" target="_blank">www.w3.org</a>），2026-10-14 截取，版权归原站所有</figcaption></figure>
+<p><strong>2. 没有焦点样式。</strong> 生成器经常加 <code>outline: none</code> 去掉浏览器的焦点框，因为它在截图里"看着乱"。要替换，而不是删除：</p>
+<pre><code class="language-css">:focus { outline: none; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+</code></pre>
+<p><code>:focus-visible</code> 会对键盘用户显示焦点框，对大多数鼠标点击隐藏，这通常正是设计师最初想要的效果。</p>
+<p><strong>3. 只有图标、没有名称的按钮。</strong> 垃圾桶图标对明眼用户很直观，对读屏器却是一片沉默。加上 <code>aria-label="删除项目"</code> 或视觉隐藏的文字。</p>
+<p><strong>4. 次要文字对比度。</strong> 灰底灰字的说明、占位文字、禁用标签，是最常见的 WCAG 不合格项（成功准则 1.4.3 要求普通文字 4.5:1）。两套主题都要查。</p>
+<p><strong>5. 点击区域大小。</strong> WCAG 2.2 新增了 2.5.8"目标尺寸（最低）"：可交互目标至少 24×24 CSS 像素，或者周围留够间距。小小的关闭按钮和密集的图标工具栏在手机上都过不了。</p>
+<p><strong>6. 对话框没有焦点管理。</strong> 弹窗打开时焦点要移进去，打开期间 Tab 不能跑出去，按 Escape 能关闭，关闭后焦点回到触发按钮。ARIA Authoring Practices Guide 写清了这个模式；Radix、React Aria 和原生 <code>&lt;dialog&gt;</code> 元素都实现了它。</p>
+<p><strong>7. 表单没有标签。</strong> 占位文字不是标签，一输入就消失了。每个输入框都需要 <code>&lt;label for&gt;</code> 或 <code>aria-labelledby</code>，错误信息用 <code>aria-describedby</code> 关联。</p>
+<p><strong>8. 动态更新没人播报。</strong>"已保存""找到 3 条结果"和校验错误，如果出现时页面没有跳转，就需要实时区域（<code>role="status"</code> 或 <code>aria-live="polite"</code>）才能被听到。</p>
+<h2>分步把无障碍嵌进工作流</h2>
+<p><strong>第 1 步：在可访问的原语上生成。</strong> 让 Agent 使用基于 Radix、React Aria 或原生元素的组件。保持无障碍比事后补救容易得多。</p>
+<p><strong>第 2 步：把规则写进提示词和 AGENTS.md。</strong> 短清单比长清单好用：语义元素、可见焦点、标签、4.5:1 对比度、24px 点击区域、对话框焦点管理。</p>
+<p><strong>第 3 步：跑自动化检查。</strong> axe-core 能自动发现相当一部分问题。配合 Playwright，可以把它变成测试的一部分：</p>
+<pre><code class="language-ts">import { test, expect } from &quot;@playwright/test&quot;;
+import AxeBuilder from &quot;@axe-core/playwright&quot;;
+
+test(&quot;定价页没有可检测到的无障碍问题&quot;, async ({ page }) =&gt; {
+  await page.goto(&quot;/pricing&quot;);
+  const results = await new AxeBuilder({ page })
+    .withTags([&quot;wcag2a&quot;, &quot;wcag2aa&quot;, &quot;wcag22aa&quot;])
+    .analyze();
+  expect(results.violations).toEqual([]);
+});
+</code></pre>
+<p><strong>第 4 步：两分钟键盘测试。</strong> 拔掉鼠标，用 Tab 走一遍页面：能不能看清当前位置、能不能到达所有元素、能不能打开和关闭每个菜单、会不会被困住？自动化工具判断不了焦点顺序，也判断不了标签写得是否合理。</p>
+<p><strong>第 5 步：听一遍。</strong> 打开 VoiceOver 或 NVDA，把主流程读一遍。五分钟就足以发现没有名称的按钮和令人困惑的标题。</p>
+<h2>PR 模板里写什么</h2>
+<p>一份简短、每次都会看到的清单，比一份没人打开的长篇规范更有用。我们的模板只有五行：做过键盘测试（是/否）、新增的可交互元素是原生元素或基于可访问原语、两套主题都查过对比度、新图片有替代文本或已标记为装饰、axe 测试通过。由 Agent 提交 PR 时，要求它如实填写模板，对于自己无法检查的项（比如这个流程在读屏器里听起来怎样），写上「需人工」。</p>
+<h2>常见坑</h2>
+<ul>
+<li><strong>把自动化分数当成完成。</strong> 自动化工具只能发现一部分问题，其余要靠键盘和读屏测试。</li>
+<li><strong>把 ARIA 当装饰。</strong> 给 div 加 <code>role="button"</code> 仍然需要自己处理键盘。ARIA 第一原则是优先用原生元素。</li>
+<li><strong>为了好看隐藏焦点。</strong> 改用 <code>:focus-visible</code>。</li>
+<li><strong>动效没有关闭途径。</strong> 遵守 <code>prefers-reduced-motion</code>。</li>
+<li><strong>只用颜色传达信息。</strong> 错误状态的红框还需要配文字。</li>
+</ul>
+<h2>常见问题</h2>
+<p><strong>应该达到 WCAG 哪个等级？</strong> 通常以 WCAG 2.2 AA 为目标，大多数无障碍法规和采购要求引用的也是它。先做到 AA；个别 AAA 条款在成本很低时值得采用，比如更大的点击区域。</p>
+<p><strong>Agent 能自己用读屏器测试吗？</strong> 不太可靠。它可以跑 axe、检查无障碍树、推理标签是否合理，但人用 VoiceOver 或 NVDA 简单过一遍，仍能发现工具报告不了的问题，比如混乱的朗读顺序或重复播报。</p>
+<p><strong>用了 Radix 或 React Aria 就合规了吗？</strong> 对它们覆盖的控件来说，合规会容易很多。但对比度、标签、标题、替代文本、焦点样式和内容本身，仍然是你的责任。</p>
+<p><strong>怎么防止退步？</strong> 在 CI 里保留 axe 测试，为主流程加一个只用键盘的端到端测试，并在 PR 模板里加入无障碍检查项，让评审者每次都过一遍。</p>
+<h2>我们的看法</h2>
+<p>让无障碍成为结构，而不是收尾。在可访问的原语上生成，把上面八项检查写进提示词，在 CI 里跑 axe，再把走查 skill（accessibility、web-design-guidelines）加进 Agent 的完成标准。无障碍的界面对所有人都更好：键盘重度用户、在阳光下看手机的人，还有 Agent 自己，它浏览网页时用的正是读屏器使用的那棵无障碍树。</p>
+<figure><img src="../../blog/img/accessibility-in-ai-generated-ui-3.webp" alt="ARIA 编写实践指南" loading="lazy" decoding="async" width="1280" height="800"><figcaption>ARIA 编写实践指南 · 截图：W3C WAI（<a href="https://www.w3.org/WAI/ARIA/apg/" rel="noopener" target="_blank">www.w3.org</a>），2026-10-14 截取，版权归原站所有</figcaption></figure><h2>清单</h2>
+<ul>
+<li>操作用 <code>&lt;button&gt;</code>，跳转用 <code>&lt;a href&gt;</code></li>
+<li>每个可交互元素都有可见的 <code>:focus-visible</code> 样式</li>
+<li>纯图标控件有可访问名称</li>
+<li>两套主题下文字对比度 ≥ 4.5:1</li>
+<li>手机上点击区域 ≥ 24×24 CSS 像素</li>
+<li>对话框锁定焦点、Escape 关闭、焦点回归</li>
+<li>输入框有标签，错误用 aria-describedby 关联</li>
+<li>CI 里跑 axe，并做一次手动键盘测试</li>
+</ul>

@@ -15,8 +15,45 @@ if _pp: print('policy purge', _pp)
 D = json.load(open(os.path.join(ROOT,'data.json'), encoding='utf-8'))
 ITEMS = D['items']; UPD_ISO = re.sub(r'T(\d\d:\d\d)Z$', r'T\1:00Z', D.get('updatedAt') or D['generated']); UPD = (D.get('updatedAt') or D['generated']).replace('T',' ').replace('Z',' UTC'); TODAY = D['generated']
 E = html.escape
+# zh-Hans / zh-Hant labels are not shipped in the HTML (non-zh pages carry no Chinese, even hidden):
+# each <x data-l="zh-Han*">…</x> is emptied and its content stored in api/l10n-zh.json (key = data-z);
+# a blog post's Chinese body goes to <page>/zh.html. SCRIPT fetches both only when the reader picks zh.
+ZH_DICT = {}
+_ZTAG = re.compile(r'<(\w+)((?:\s[^>]*?)?\sdata-l="zh-Han[st]"[^>]*)>')
+def _zh_out(path, s):
+    import hashlib
+    out, i = [], 0
+    while True:
+        m = _ZTAG.search(s, i)
+        if not m: out.append(s[i:]); break
+        tag = m.group(1); j = m.end(); depth = 1
+        rx = re.compile(r'<(/?)' + tag + r'\b[^>]*>')
+        while depth:
+            n = rx.search(s, j)
+            if not n: break
+            depth += -1 if n.group(1) else 1; j = n.end()
+        if depth: out.append(s[i:m.end()]); i = m.end(); continue
+        inner = s[m.end():n.start()]
+        if not _HAN.search(inner): out.append(s[i:j]); i = j; continue
+        k = hashlib.sha1(inner.encode()).hexdigest()[:10]; ZH_DICT[k] = inner
+        out.append(s[i:m.start()] + f'<{tag}{m.group(2)} data-z="{k}"></{tag}>'); i = j
+    s = ''.join(out)
+    def tpl(m):
+        open(os.path.join(ROOT, os.path.dirname(path), 'zh.html'), 'w', encoding='utf-8').write(m.group(1))
+        return '<template id="pb-zh" data-zsrc="zh.html"></template>'
+    s = re.sub(r'<template id="pb-zh">([\s\S]*?)</template>', tpl, s)
+    # inline script string tables (placeholders, copy labels): Han as \\uXXXX escapes, same strings at runtime
+    return re.sub(r'(<script(?![^>]*ld\+json)[^>]*>)([\s\S]*?)(</script>)', lambda m: m.group(1) + re.sub(r'[\u3400-\u9fff\uf900-\ufaff]', lambda c: '\\u%04x' % ord(c.group(0)), m.group(2)) + m.group(3), s)
 def w(path, s):
-    p = os.path.join(ROOT, path); os.makedirs(os.path.dirname(p), exist_ok=True); open(p,'w',encoding='utf-8').write(s)
+    p = os.path.join(ROOT, path); os.makedirs(os.path.dirname(p), exist_ok=True)
+    if path.endswith('.html') and not path.endswith('/zh.html'): s = _zh_out(path, s)
+    open(p,'w',encoding='utf-8').write(s)
+def write_zh_dict():
+    f = os.path.join(ROOT, 'api', 'l10n-zh.json')
+    try: old = json.load(open(f, encoding='utf-8'))
+    except Exception: old = {}
+    old.update(ZH_DICT); os.makedirs(os.path.dirname(f), exist_ok=True)
+    json.dump(old, open(f, 'w', encoding='utf-8'), ensure_ascii=False, separators=(',', ':'), sort_keys=True)
 
 # ---------- English-only display helpers (llms / JSON-LD are served to every locale: no Chinese) ----------
 _HAN = re.compile(r'[\u3400-\u9fff\uf900-\ufaff]')
@@ -117,7 +154,8 @@ def topbar(root, on):
 SCRIPT = """<script>(function(){var M={'zh-cn':'zh-Hans','zh-sg':'zh-Hans','zh-tw':'zh-Hant','zh-hk':'zh-Hant','zh-mo':'zh-Hant'},A=['zh-Hans','zh-Hant','en','ja','ko','ms','vi','fr','es','de'],APP={'zh-Hans':'zh-CN','zh-Hant':'zh-TW'};
 function pick(){var q=(location.search.match(/[?&]lang=([\\w-]+)/)||[])[1];if(q&&A.indexOf(q)>=0)return q;try{var s=localStorage.getItem('uihub.lang');if(s){s={'zh-CN':'zh-Hans','zh-TW':'zh-Hant'}[s]||s;if(A.indexOf(s)>=0)return s}}catch(e){}
 var n=(navigator.language||'en').toLowerCase();if(M[n])return M[n];if(/^zh-hant/.test(n))return 'zh-Hant';if(n.slice(0,2)==='zh')return 'zh-Hans';var b=n.slice(0,2);return A.indexOf(b)>=0?b:'en'}
-function set(l){document.documentElement.lang=l;var st=document.getElementById('lst');if(!st){st=document.createElement('style');st.id='lst';document.head.appendChild(st)}st.textContent='[data-l="'+l+'"]{display:revert}';document.getElementById('ls').value=l;try{localStorage.setItem('uihub.lang',APP[l]||l)}catch(e){}}
+var ZL=0;function zh(){if(ZL)return;ZL=1;var g=document.querySelector('a.logo'),b=g?g.href:'/',t=document.querySelector('template[data-zsrc]'),ev=function(){document.dispatchEvent(new Event('uihub:lang'))};if(document.querySelector('[data-z]'))fetch(b+'api/l10n-zh.json').then(function(r){return r.json()}).then(function(D){document.querySelectorAll('[data-z]').forEach(function(e){if(D[e.dataset.z]!=null)e.innerHTML=D[e.dataset.z]});ev()},function(){});if(t)fetch(t.dataset.zsrc).then(function(r){return r.text()}).then(function(x){t.innerHTML=x;ev()},function(){})}
+function set(l){if(/^zh/.test(l))zh();document.documentElement.lang=l;var st=document.getElementById('lst');if(!st){st=document.createElement('style');st.id='lst';document.head.appendChild(st)}st.textContent='[data-l="'+l+'"]{display:revert}';document.getElementById('ls').value=l;try{localStorage.setItem('uihub.lang',APP[l]||l)}catch(e){}}
 function lt(){var L=document.documentElement.lang,loc=APP[L]||L;document.querySelectorAll('time.lt').forEach(function(t){var d=new Date(t.getAttribute('datetime'));if(isNaN(d))return;try{t.textContent=d.toLocaleString(loc,{year:'numeric',month:'short',day:'numeric',hour:'2-digit',minute:'2-digit',timeZoneName:'short'})}catch(e){}})}
 set(pick());lt();document.getElementById('ls').onchange=function(){set(this.value);lt();document.dispatchEvent(new Event('uihub:lang'))};
 document.getElementById('th').onclick=function(){var r=document.documentElement,n=r.dataset.theme==='dark'?'light':'dark';r.dataset.theme=n;try{localStorage.setItem('uihub.theme5',n)}catch(e){}}})();</script>"""
@@ -327,4 +365,5 @@ for fp in ['agents/index.html','kb/index.html']:
     open(full,'w',encoding='utf-8').write(t)
 import importlib.util as _u
 _sp=_u.spec_from_file_location('growth', os.path.join(os.path.dirname(os.path.abspath(__file__)),'growth.py'));_g=_u.module_from_spec(_sp);_sp.loader.exec_module(_g);_g.run()
+write_zh_dict()
 print('extras built:', len(POSTS), 'posts,', len(ITEMS), 'items,', len(skills), 'skills, updated', UPD)

@@ -1,0 +1,15 @@
+<p>UI Hub 本来就是为智能体阅读而建的：有 JSON API、每条都有原始 Markdown 的设计百科，还有 AGENTS.md。下面是我们自己在用的流程。把提示贴进 Claude Code、Cursor、Codex 或任何能抓取网址的智能体即可。</p><figure><img src="../../blog/img/tutorial-agent-builds-landing-with-ui-hub-1.webp" alt="UI Hub 的 Agent 指南页" loading="lazy" decoding="async" width="1280" height="800"><figcaption>UI Hub 的 Agent 指南页 · 截图：UI Hub（<a href="https://siinxu.github.io/ui-resource-hub/agents/" rel="noopener" target="_blank">siinxu.github.io</a>），2026-10-14 截取，版权归原站所有</figcaption></figure>
+<h2>六步</h2>
+<ol><li><strong>加载指南。</strong>「阅读 https://siinxu.github.io/ui-resource-hub/AGENTS.md 并照做。」</li>
+<li><strong>搜索百科，</strong>找到风格要求和需要的规范：<code>/kb/?q=house style</code>、<code>/kb/?q=typography</code>。</li>
+<li><strong>挑组件：</strong>从 <code>/api/resources.json</code> 按类型和许可证筛选；优先可复制的开源库。</li>
+<li><strong>按顺序加载技能：</strong>先审美或 frontend-design 技能，再加无障碍和质量检查。</li>
+<li><strong>构建：</strong>Token 放在 CSS 变量里，一个标志性特效，真实文案。</li>
+<li><strong>浏览器验证：</strong>390px 和 1440px、亮色和暗色都看一遍，发现问题先修好再报告完成。</li></ol><figure><img src="../../blog/img/tutorial-agent-builds-landing-with-ui-hub-2.webp" alt="六步循环：指南、搜索、挑选、技能、构建、验证" loading="lazy" decoding="async" width="1200" height="675"><figcaption>六步循环：指南、搜索、挑选、技能、构建、验证 · 示意图：UI Hub 原创，CC BY 4.0</figcaption></figure>
+<h2>可直接复制的提示</h2>
+<pre><code>Use UI Hub as design context: read /AGENTS.md, search /kb/ for
+"house style", "typography", "colour". Build a landing page for
+[product] with shadcn + one Aceternity background. Tokens in CSS
+variables, 10-language-ready copy, then screenshot 390/1440 light/dark.</code></pre>
+<figure><img src="../../blog/img/tutorial-agent-builds-landing-with-ui-hub-3.webp" alt="UI Hub 设计百科" loading="lazy" decoding="async" width="1280" height="800"><figcaption>UI Hub 设计百科 · 截图：UI Hub（<a href="https://siinxu.github.io/ui-resource-hub/kb/" rel="noopener" target="_blank">siinxu.github.io</a>），2026-10-14 截取，版权归原站所有</figcaption></figure><h2>为什么有效</h2>
+<p>每一步都把一句模糊的指令换成智能体能读的文档。<a href="../../agents/">Agent 指南</a>里有这段提示的 10 种语言一键复制版，以及可下载的技能包。</p>

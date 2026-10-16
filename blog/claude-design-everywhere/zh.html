@@ -1,0 +1,19 @@
+<p>2026 年 10 月 8 日，Anthropic 发了一则对「设计 + 代码」工作流比标题工具更要紧的产品更新：Claude Dashboards 与 Claude Motion 进入测试；Claude Docs、Slides、Design 退出测试，并在包括免费版在内的所有 Claude 套餐可用。同一篇文章写明，独立站点 claude.ai/design 只开放到 2026 年 12 月 14 日，之后设计工作落在普通对话、Claude Code 和 Artifacts 页签里。</p><figure><img src="../../blog/img/claude-design-everywhere-1.webp" alt="Claude Design 产品页：在每场 Claude 对话里做设计" loading="lazy" decoding="async" width="1280" height="800"><figcaption>Claude Design 产品页：在每场 Claude 对话里做设计 · 截图：Anthropic（<a href="https://claude.com/product/design" rel="noopener" target="_blank">claude.com</a>），2026-10-14 截取，版权归原站所有</figcaption></figure>
+<h2>到底上线了什么</h2>
+<ul><li><strong>每场对话里的 Design。</strong>产品页与帮助中心把 Claude Design 描述成一种 Artifact 模板：描述视觉效果，对话旁出现画布，再用聊天、行内评论和画布编辑迭代。Claude Code 里可用 <code>/design</code> 与 <code>/design-sync</code>；移动端可查看和编辑（分享设置仍在网页/桌面）。</li>
+<li><strong>设计系统跟着走。</strong>可从 GitHub、设计文件或本地代码库导入。用过独立站点的团队可在 Artifacts 页点击「Migrate team design systems」；Anthropic 提示迁移后的系统可能需要「Let Claude clean it up」。</li>
+<li><strong>Dashboards（测试版，付费）。</strong>连接 Redshift、BigQuery、ClickHouse、Databricks、Snowflake 或 Salesforce 类连接器，用自然语言提问，得到会随数据更新的仪表盘。每个数字可查看背后的查询与刷新时间；更深分析可送到 Amplitude、Grafana、Hex、Mixpanel、Omni、Perplexity、PostHog、Sigma 等。</li>
+<li><strong>Motion（测试版，Team/Enterprise）。</strong>Claude 写代码来动画化你自己的文字、图表、形状与图片，导出 MP4。Anthropic 明确说它不用视频生成模型，也不捏造镜头或人物。</li>
+<li><strong>企业默认。</strong>Docs、Slides、Design 于 2026 年 10 月 15 日默认开启（HIPAA 组织除外）。Dashboards 与 Motion 需管理员在 Organization settings → Artifacts 打开。</li></ul><figure><img src="../../blog/img/claude-design-everywhere-2.webp" alt="流程：迁移系统、对话写需求、画布打磨、交接" loading="lazy" decoding="async" width="1200" height="675"><figcaption>流程：迁移系统、对话写需求、画布打磨、交接 · 示意图：UI Hub 原创，CC BY 4.0</figcaption></figure>
+<h2>对界面构建者为什么重要</h2>
+<p>真正有用的变化不是「又一个 AI 画图玩具」，而是简报、设计系统和编码智能体共享同一对话面。原型可以紧挨需求线程开始，经 <code>/design-sync</code> 继承组件，再交给 Claude Code，少做截图考古。产品页列出的连接器（Adobe、Canva、Gamma、Lovable、Miro、Replit、Vercel、Wix 等）把同一份产物推进你本来就在用的发布工具。</p>
+<p>官方公告称，这些模板进入每场对话以来，已有超过 4500 万份文档、幻灯片与设计。把它当作用量信号，而不是质量保证：上限仍取决于你的 Token、禁止清单，以及管理员是否锁定了唯一批准的系统。</p>
+<h2>我们的看法</h2>
+<p>在 12 月独立 URL 失效前迁移设计系统，不要拖到最后一天。企业团队应把 10 月 15 日当成 Design 对所有能打开 Claude 的人「默认存在」的日子——先锁定发布权限与默认系统，否则只会得到又快又像品牌的噪声。故事是你自己的数据与文案时用 Motion；需要实拍场景时再用专用视频模型。探索性问题、且希望看见 SQL 以建立信任时用 Dashboards；受治理的报表仍留给 BI 栈。</p>
+<figure><img src="../../blog/img/claude-design-everywhere-3.webp" alt="Anthropic 公告：Dashboards 与 Motion 测试版，Design 退出测试" loading="lazy" decoding="async" width="1280" height="800"><figcaption>Anthropic 公告：Dashboards 与 Motion 测试版，Design 退出测试 · 截图：Anthropic（<a href="https://claude.com/resources/articles/dashboards-and-motion" rel="noopener" target="_blank">claude.com</a>），2026-10-14 截取，版权归原站所有</figcaption></figure><h2>实操清单</h2>
+<ol><li>打开 Artifacts → 迁移团队设计系统；对每个系统跑清理。</li>
+<li>在 Claude Code 对拥有 Token 与组件的仓库执行 <code>/design-sync</code>。</li>
+<li>写一份短的家规（Token、字号阶梯、禁止清单），写法同给 Figma 智能体或 SKILL.md——Claude Design 同样需要可读的约束文件。</li>
+<li>企业管理员：在 10 月 15 日前决定 Docs/Slides/Design 是否保持默认开启；审过数据连接器后再开 Dashboards/Motion。</li>
+<li>导出路径：给干系人用 HTML / PDF / PPTX；下一步是生产界面时交给 Claude Code 或连接器（v0、Vercel、Lovable、Replit…）。</li>
+<li>像验证任何生成界面一样验收：真实内容、焦点环、亮/暗色、390px 与 1440px——不要只看画布预览。</li></ol>
