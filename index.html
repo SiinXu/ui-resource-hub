@@ -27,7 +27,7 @@
   <div class="bar wrap">
     <a class="logo" href="#/"><span class="mark" aria-hidden="true"><i></i><i></i></span><span class="wm">UI Hub</span></a>
     <nav class="tabs" id="tabsTop">
-      <a href="#/" data-v="home" data-i18n="nav_discover">发现</a><a href="#/guides" data-v="guides" data-i18n="nav_guides">指南</a><a href="kb/" data-i18n="nav_kb">Encyclopedia</a><a href="blog/" data-i18n="nav_blog">Blog</a><a href="agents/" data-i18n="nav_agents">Agents</a><a href="#/fav" data-v="fav"><span data-i18n="nav_fav">收藏</span><span class="cnt" id="favCnt"></span></a>
+      <a href="#/" data-v="home" data-i18n="nav_discover">发现</a><a href="#/guides" data-v="guides" data-i18n="nav_guides">指南</a><a href="kb/" data-i18n="nav_kb">Encyclopedia</a><a href="blog/" data-i18n="nav_blog">Blog</a><a href="agents/" data-i18n="nav_agents">Agents</a><a href="mobile/" data-i18n="nav_mobile">移动端</a><a href="#/fav" data-v="fav"><span data-i18n="nav_fav">收藏</span><span class="cnt" id="favCnt"></span></a>
     </nav>
     <button class="sbtn" id="searchOpen" data-i18n-aria="search"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span data-i18n="search">搜索</span><kbd>/</kbd></button>
     <label class="langw" data-i18n-aria="lang"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.5 3 14.5 0 18M12 3c-3 3.5-3 14.5 0 18"/></svg><select id="langSel"></select></label>
@@ -83,7 +83,7 @@
 <div class="toast" id="toast"></div>
 
 <script>/* perf: paint the static shell first, then fetch the ~2.5 MB data/app bundle in order (async=false keeps execution order) */
-(function(){var q=['data.js?v=11','media.js?v=9','legal.js?v=7','notes.js?v=8','i18n.js?v=8','app.js?v=10'];
+(function(){var q=['data.js?v=11','media.js?v=9','legal.js?v=7','notes.js?v=8','i18n.js?v=9','app.js?v=10'];
 function go(){q.forEach(function(u,i){var e=document.createElement('script');e.src=u;e.async=false;if(i===q.length-1)e.onload=function(){window.updTxt&&updTxt()};document.body.appendChild(e)})}
 var raf=window.requestAnimationFrame||function(f){setTimeout(f,16)};function after(){raf(function(){raf(function(){setTimeout(go,0)})})}
 if(document.readyState==='complete')after();else addEventListener('load',after)})();</script>
