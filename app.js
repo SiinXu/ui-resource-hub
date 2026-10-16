@@ -90,6 +90,7 @@ function loadOrig(cb){
     s.onload=done;s.onerror=function(){ORIG_Q.forEach(function(f){try{f()}catch(e){}});ORIG_Q=null};document.head.appendChild(s)}
   if(cb)ORIG_Q.push(cb);
 }
+(function(){function pf(){var l=document.createElement('link');l.rel='prefetch';l.as='script';l.href='orig.js?v=6';document.head.appendChild(l)}var ri=window.requestIdleCallback||function(f){setTimeout(f,3000)};if(document.readyState==='complete')ri(pf,{timeout:8000});else addEventListener('load',function(){ri(pf,{timeout:8000})})})();
 ['pointerdown','keydown','touchstart'].forEach(function(ev){addEventListener(ev,function h(){removeEventListener(ev,h,true);loadOrig()},{capture:true,passive:true})});
 /* v5：把构建时写死的中文包装行（安装/配置/示例标题、补充说明、SKILL.md 全文标题）换成当前语言；原文行一律不动 */
 function WL(s){if(!s)return s;var zh=isZh(),fp=function(x){return zh||LANG==='ja'?x:x.replace(/（/g,' (').replace(/）/g,')').replace(/，/g,', ').replace(/、/g,', ')};
