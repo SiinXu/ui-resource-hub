@@ -56,7 +56,7 @@ def style(cid,lib,libName,slug,title,kind,vs,note,why,url,source,legal=None,code
     cid_of[url]=cid
     it=dict(id=cid,type='style',lib=lib,libName=libName,kind=kind,var=title,name=f'{kind} · {libName} · {title}',url=url,page=url,note=note,
             section='精选扩充 · 2026-10-16',sectionTitle='精选扩充（2026-10-16）',sectionDesc='',source=source,pricing=pricing,
-            tags=[libName,'2026-10 新增'],ct=[kind],rt=['component-demo'],vs=vs)
+            tags=[libName],ct=[kind],rt=['component-demo'],vs=vs)
     gold(it,why); add(it,'previews/site/'+cid+'.webp',legal,code)
 GH={'magicui-design':'https://github.com/magicuidesign/magicui','www-cult-ui-com':'https://github.com/nolly-studio/cult-ui','motion-primitives-com':'https://github.com/ibelick/motion-primitives','ui-shadcn-com':'https://github.com/shadcn-ui/ui'}
 def mit(lib,cmd,url): return {'k':'oss','lic':'MIT','code':cmd,'gh':GH[lib]}, f'# ① 安装 Install — {url}\n{cmd}'
@@ -75,7 +75,7 @@ for s,t,k,vs,n,w in MP:
 def simple(cid,name,url,typ,vs,ct,note,why,source,pricing='free',rt=None,extra=None,legal=None,code=None):
     cid_of[url]=cid
     it=dict(id=cid,name=name,url=url,note=note,type=typ,section='精选扩充 · 2026-10-16',sectionTitle='精选扩充（2026-10-16）',sectionDesc='',
-            source=source,pricing=pricing,tags=['2026-10 新增'],ct=ct,rt=rt or {'inspiration':['inspiration'],'template':['template'],'tool':['tool'],'skill':['skill'],'tutorial':['tutorial'],'system':['design-system'],'library':['component-library'],'component':['component-library']}.get(typ,['tool']),vs=vs)
+            source=source,pricing=pricing,tags=[],ct=ct,rt=rt or {'inspiration':['inspiration'],'template':['template'],'tool':['tool'],'skill':['skill'],'tutorial':['tutorial'],'system':['design-system'],'library':['component-library'],'component':['component-library']}.get(typ,['tool']),vs=vs)
     if extra: it.update(extra)
     gold(it,why); add(it,'previews/site/'+cid+'.webp',legal,code)
 for s,t,n,w in ACE_BLOCKS: simple('x16-aceternity-blocks-'+s,t,'https://ui.aceternity.com/blocks/'+s,'template',['dark-tech','motion'],['layout'],n,w,'Aceternity UI','freemium')
