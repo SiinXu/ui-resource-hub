@@ -1,6 +1,6 @@
 {
  "generated": "2026-10-16",
- "count": 4694,
+ "count": 4692,
  "items": [
   {
    "id": "ued-figma-mcp-guide",
@@ -135336,106 +135336,6 @@
    },
    "official": "https://iamnoman.com",
    "pub": "2026-10-15",
-   "added": "2026-10-16"
-  },
-  {
-   "id": "awd-milledollars",
-   "name": "Milledollars",
-   "url": "https://milledollars.fr/",
-   "note": "Milledollars is a creative bureau focused on high-end video production.",
-   "noteEn": "Milledollars is a creative bureau focused on high-end video production.",
-   "type": "inspiration",
-   "section": "整站灵感 · Awwwards 每日最佳",
-   "sectionTitle": "整站灵感 · Awwwards 每日最佳",
-   "sectionDesc": "",
-   "source": "Magnetism",
-   "pricing": "free",
-   "tags": [],
-   "ct": [
-    "layout",
-    "motion"
-   ],
-   "rt": [
-    "inspiration"
-   ],
-   "vs": [
-    "motion"
-   ],
-   "origin": "site",
-   "discovered_via": "awwwards.withseismic.com",
-   "via": "https://awwwards.withseismic.com/author/magnetism#milledollars",
-   "author": {
-    "name": "Magnetism",
-    "url": "https://www.awwwards.com/Magnetism/"
-   },
-   "awwwards": {
-    "page": "https://www.awwwards.com/sites/milledollars",
-    "awards": [
-     "Site of the Day",
-     "Developer Award"
-    ],
-    "date": "2026-10-02",
-    "tags": [
-     "animation",
-     "contentful",
-     "film-tv",
-     "gsap",
-     "ui-design",
-     "vue-js"
-    ]
-   },
-   "pub": "2026-10-02",
-   "added": "2026-10-16"
-  },
-  {
-   "id": "awd-the-tie-break",
-   "name": "The Tie-break",
-   "url": "https://thetiebreak.merci-michel.com/",
-   "note": "Play and explore the new New Balance x Miu Miu collection with Coco Gauff.",
-   "noteEn": "Play and explore the new New Balance x Miu Miu collection with Coco Gauff.",
-   "type": "inspiration",
-   "section": "整站灵感 · Awwwards 每日最佳",
-   "sectionTitle": "整站灵感 · Awwwards 每日最佳",
-   "sectionDesc": "",
-   "source": "Merci Michel",
-   "pricing": "free",
-   "tags": [],
-   "ct": [
-    "layout"
-   ],
-   "rt": [
-    "inspiration"
-   ],
-   "vs": [
-    "playful",
-    "3d"
-   ],
-   "origin": "site",
-   "discovered_via": "awwwards.withseismic.com",
-   "via": "https://awwwards.withseismic.com/author/merci-michel#the-tie-break",
-   "author": {
-    "name": "Merci Michel",
-    "url": "https://www.awwwards.com/Merci-Michel/"
-   },
-   "awwwards": {
-    "page": "https://www.awwwards.com/sites/the-tie-break",
-    "awards": [
-     "Site of the Day",
-     "Developer Award"
-    ],
-    "date": "2026-09-25",
-    "tags": [
-     "colorful",
-     "experimental",
-     "fashion",
-     "fullscreen",
-     "games-entertainment",
-     "photo-video",
-     "three-js",
-     "webgl"
-    ]
-   },
-   "pub": "2026-09-25",
    "added": "2026-10-16"
   },
   {

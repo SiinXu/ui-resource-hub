@@ -248,10 +248,6 @@
 "status": "added",
 "id": "awd-icg-galleries"
 },
-"https://awwwards.withseismic.com/author/merci-michel#the-tie-break": {
-"status": "added",
-"id": "awd-the-tie-break"
-},
 "https://awwwards.withseismic.com/author/adoratorio.studio#the-blue-desert": {
 "status": "added",
 "id": "awd-the-blue-desert"
@@ -923,10 +919,6 @@
 "https://awwwards.withseismic.com/author/studiofreight#sharplink": {
 "status": "added",
 "id": "awd-sharplink"
-},
-"https://awwwards.withseismic.com/author/dashdigital#tengile-malamala-collection": {
-"status": "dup",
-"url": "https://tengilemalamala.com/"
 },
 "https://awwwards.withseismic.com/author/dashdigital#gavin-schneider-productions": {
 "status": "added",
@@ -2055,10 +2047,6 @@
 "https://awwwards.withseismic.com/author/gilhuybrecht#better-off-r": {
 "status": "added",
 "id": "awd-better-off-r"
-},
-"https://awwwards.withseismic.com/author/magnetism#milledollars": {
-"status": "added",
-"id": "awd-milledollars"
 },
 "https://awwwards.withseismic.com/author/magnetism#cipher": {
 "status": "dup",
