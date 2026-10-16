@@ -1,10 +1,10 @@
-# UI Hub context bundle (2026-10-16 12:06 UTC)
+# UI Hub context bundle (2026-10-16 13:06 UTC)
 
 Source: https://siinxu.github.io/ui-resource-hub/kb/ · Full skills: https://siinxu.github.io/ui-resource-hub/api/kb.json
 
 # UI Hub — guide for AI agents
 
-Data updated 2026-10-16 12:06 UTC. Endpoints: `https://siinxu.github.io/ui-resource-hub/api/resources.json` (items), `https://siinxu.github.io/ui-resource-hub/api/skills.json` (skills + workflow), `https://siinxu.github.io/ui-resource-hub/llms.txt`.
+Data updated 2026-10-16 13:06 UTC. Endpoints: `https://siinxu.github.io/ui-resource-hub/api/resources.json` (items), `https://siinxu.github.io/ui-resource-hub/api/skills.json` (skills + workflow), `https://siinxu.github.io/ui-resource-hub/llms.txt`.
 
 ## One-line prompt
 EN: Use UI Hub (https://siinxu.github.io/ui-resource-hub/) as your design source. First read https://siinxu.github.io/ui-resource-hub/AGENTS.md, then fetch https://siinxu.github.io/ui-resource-hub/api/resources.json and filter by ct (component kind), vs (visual style) and pricing=free to pick ONE open-source library and a visual style; lock tokens (font, spacing, radius, one accent, light+dark) before building. Load skills in this order from https://siinxu.github.io/ui-resource-hub/api/skills.json: frontend-design or taste-skill → emil-design-eng → impeccable + baseline-ui + web-design-guidelines + accessibility. Verify in a browser (light/dark, 375px, keyboard, reduced motion) and cite every resource you used.
@@ -135,11 +135,11 @@ curl -s https://siinxu.github.io/ui-resource-hub/api/resources.json | jq --arg d
 - `webapp-testing` (engineering-ui): Toolkit for interacting with and testing local web applications using Playwright. Supports verifying frontend functionality, debugging UI behavior, capturing browser screenshots, and viewing browser l — https://github.com/anthropics/skills
 
 ## FAQ
-- **What is UI Hub?** A free, curated directory of 3873 public UI resources: 153 component libraries, 1989 component style demos with light/dark screenshots, 70 design skills for AI agents, plus effects, templates, specs and tutorials. It links to original sites and never hosts paid source code.
+- **What is UI Hub?** A free, curated directory of 4694 public UI resources: 153 component libraries, 1989 component style demos with light/dark screenshots, 70 design skills for AI agents, plus effects, templates, specs and tutorials. It links to original sites and never hosts paid source code.
 - **How do I find a component in a given style?** Load https://siinxu.github.io/ui-resource-hub/api/resources.json and filter by ct (component kind, e.g. "dialog") and vs (visual style, e.g. "minimal" or "motion"). type="style" entries are concrete component demos with a libName and page URL; type="library" entries are whole libraries with install info on the site.
 - **Which skills should an agent use for good UI?** One direction skill (frontend-design or taste-skill), emil-design-eng for motion and interaction polish, then impeccable, baseline-ui, web-design-guidelines and accessibility as an audit pass. See https://siinxu.github.io/ui-resource-hub/api/skills.json.
 - **Can I copy the code?** Open-source libraries can be used under their own licenses (MIT, Apache-2.0 etc.); the card shows the original link. Paid tiers (marked paid/freemium) must be bought from the original vendor.
-- **How often is it updated?** Daily via a GitHub Actions job that adds new UI repositories and tools from GitHub, awesome-shadcn-ui and Hacker News. Nothing is deleted. Last update: 2026-10-16 12:06 UTC.
+- **How often is it updated?** Daily via a GitHub Actions job that adds new UI repositories and tools from GitHub, awesome-shadcn-ui and Hacker News. Nothing is deleted. Last update: 2026-10-16 13:06 UTC.
 
 
 ---
