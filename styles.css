@@ -766,3 +766,10 @@ body::after{background-image:radial-gradient(var(--dots) 1px,transparent 1.2px);
 /* X post embed: scroll inside the preview instead of cutting long posts */
 .pvw.xem{aspect-ratio:auto;background:none;max-height:min(70vh,720px);overflow-y:auto;overscroll-behavior:contain}
 .pvw.xem iframe{display:block;width:100%;max-width:550px;min-height:320px;margin:0 auto;border:0}
+
+/* detail modal, larger (desktop only; mobile bottom sheet unchanged) */
+@media(min-width:900px){
+.sheet{width:min(1100px,92vw);max-height:92vh}
+.sheet .pvw.big{aspect-ratio:auto;height:min(62vh,640px)}
+.pvw.xem{max-height:80vh}
+}
