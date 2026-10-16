@@ -1,6 +1,6 @@
 {
  "generated": "2026-10-16",
- "count": 4694,
+ "count": 4695,
  "items": [
   {
    "id": "ued-figma-mcp-guide",
@@ -177359,6 +177359,56 @@
    },
    "pub": "2026-09-25",
    "added": "2026-10-16"
+  },
+  {
+   "id": "rd-6h05y5p-design-office-portfolio-site",
+   "name": "The Design Office",
+   "url": "https://dmcg.co",
+   "note": "Portfolio website for a brand and software design studio, scrolling through client projects spanning identity, web, and app work with a restrained white layout.",
+   "noteEn": "Portfolio website for a brand and software design studio, scrolling through client projects spanning identity, web, and app work with a restrained white layout.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@dmcgco",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "site",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/6h05y5p-design-office-portfolio-site",
+   "rdkind": "Design",
+   "rdcat": "Web",
+   "rdstyle": [
+    "Minimal",
+    "Light"
+   ],
+   "author": {
+    "name": "David McGillivray",
+    "handle": "@dmcgco",
+    "url": "https://x.com/dmcgco"
+   },
+   "x_post": "https://x.com/dmcgco/status/2110780662399602912",
+   "xsrc": {
+    "post": "https://x.com/dmcgco/status/2110780662399602912",
+    "author": "@dmcgco",
+    "likes": 550,
+    "bookmarks": 561,
+    "reposts": 19,
+    "impressions": 38301,
+    "date": "2026-10-15"
+   },
+   "official": "https://dmcg.co",
+   "pub": "2026-10-16",
+   "added": "2026-10-16"
   }
  ],
  "guides": [
@@ -177561,5 +177611,5 @@
    ]
   }
  ],
- "updatedAt": "2026-10-16T13:09Z"
+ "updatedAt": "2026-10-16T17:40Z"
 }
