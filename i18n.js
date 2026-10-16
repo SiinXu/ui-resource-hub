@@ -339,3 +339,18 @@ Object.assign(window.UI_I18N.vi,{"thm_dark_only": "Demo chỉ có nền tối", 
 
 /* nav: entry tab to the /mobile/ topic page */
 ['zh-CN','zh-TW','en','ja','ko','ms','vi','fr','es','de'].forEach(function(l){var d=window.UI_I18N[l];if(d&&!d.nav_mobile)d.nav_mobile={'zh-CN':'移动端','zh-TW':'行動端',en:'Mobile',ja:'モバイル',ko:'모바일',ms:'Mudah alih',vi:'Di động',fr:'Mobile',es:'Móvil',de:'Mobil'}[l]});
+
+/* source filter (discovery channel + origin) and original-source attribution rows; section for works traced from recent.design */
+(function(){var A={
+'zh-CN':{src_h:"来源",src_all:"全部来源",src_x:"X 原帖",src_github:"GitHub",src_site:"官网 / 其他",kv_author:"原作者",kv_xpost:"X 原帖",kv_official:"官网",kv_via:"发现渠道",sec_rd:"设计灵感 · 原作"},
+'zh-TW':{src_h:"來源",src_all:"全部來源",src_x:"X 原文",src_github:"GitHub",src_site:"官網 / 其他",kv_author:"原作者",kv_xpost:"X 原文",kv_official:"官網",kv_via:"發現管道",sec_rd:"設計靈感 · 原作"},
+en:{src_h:"Source",src_all:"All sources",src_x:"X posts",src_github:"GitHub",src_site:"Websites & other",kv_author:"Creator",kv_xpost:"X post",kv_official:"Official site",kv_via:"Discovered via",sec_rd:"Design inspiration · original work"},
+ja:{src_h:"ソース",src_all:"すべてのソース",src_x:"X の投稿",src_github:"GitHub",src_site:"公式サイト・その他",kv_author:"制作者",kv_xpost:"X の投稿",kv_official:"公式サイト",kv_via:"発見元",sec_rd:"デザインインスピレーション · オリジナル作品"},
+ko:{src_h:"출처",src_all:"모든 출처",src_x:"X 게시물",src_github:"GitHub",src_site:"웹사이트 및 기타",kv_author:"제작자",kv_xpost:"X 게시물",kv_official:"공식 사이트",kv_via:"발견 경로",sec_rd:"디자인 영감 · 원작"},
+ms:{src_h:"Sumber",src_all:"Semua sumber",src_x:"Siaran X",src_github:"GitHub",src_site:"Laman web & lain-lain",kv_author:"Pencipta",kv_xpost:"Siaran X",kv_official:"Laman rasmi",kv_via:"Ditemui melalui",sec_rd:"Inspirasi reka bentuk · karya asal"},
+vi:{src_h:"Nguồn",src_all:"Tất cả nguồn",src_x:"Bài đăng X",src_github:"GitHub",src_site:"Trang web & khác",kv_author:"Tác giả",kv_xpost:"Bài đăng X",kv_official:"Trang chính thức",kv_via:"Phát hiện qua",sec_rd:"Cảm hứng thiết kế · tác phẩm gốc"},
+fr:{src_h:"Source",src_all:"Toutes les sources",src_x:"Posts X",src_github:"GitHub",src_site:"Sites web et autres",kv_author:"Créateur",kv_xpost:"Post X",kv_official:"Site officiel",kv_via:"Découvert via",sec_rd:"Inspiration design · œuvres originales"},
+es:{src_h:"Fuente",src_all:"Todas las fuentes",src_x:"Posts de X",src_github:"GitHub",src_site:"Sitios web y otros",kv_author:"Creador",kv_xpost:"Post de X",kv_official:"Sitio oficial",kv_via:"Descubierto en",sec_rd:"Inspiración de diseño · obra original"},
+de:{src_h:"Quelle",src_all:"Alle Quellen",src_x:"X-Posts",src_github:"GitHub",src_site:"Websites & Sonstiges",kv_author:"Urheber",kv_xpost:"X-Post",kv_official:"Offizielle Website",kv_via:"Entdeckt über",sec_rd:"Design-Inspiration · Originalwerke"}};
+var SO=window.UI_SEC_ORDER=window.UI_SEC_ORDER||[],n=SO.indexOf('设计灵感 · 原作');if(n<0)n=SO.push('设计灵感 · 原作')-1;
+Object.keys(A).forEach(function(l){var d=window.UI_I18N[l];if(!d)return;for(var k in A[l])if(d[k]==null)d[k]=A[l][k];if(d['sec_'+n]==null)d['sec_'+n]=A[l].sec_rd})})();

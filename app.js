@@ -57,7 +57,14 @@ var LS = {
   set:function(k,v){try{localStorage.setItem('uihub.'+k,JSON.stringify(v))}catch(e){}}
 };
 var favs = LS.get('favs',{}), utags = LS.get('tags',{});
-var state = {type:'all', rt:'', vs:'', ct:'', q:'', tag:'', view:'home'};
+var state = {type:'all', rt:'', vs:'', ct:'', q:'', tag:'', src:'', view:'home'};
+/* source filter: discovery channel (recent.design) + origin of the resource (X / GitHub / website). ?src= keeps it shareable */
+var SRCO=['recent.design','x','github','site'];
+function ORG(i){if(i.origin)return i.origin==='X'?'x':i.origin==='GitHub'?'github':'site';if(i.xsrc||i.source==='X'||/^@/.test(i.source||''))return 'x';return /^https?:\/\/(www\.)?github\.com\//.test(i.url||'')?'github':'site'}
+function srcOk(i,k){return k==='recent.design'?i.discovered_via==='recent.design':ORG(i)===k}
+function SRN(k){return k==='recent.design'?'recent.design':t('src_'+k)}
+(function(){var m=(location.search.match(/[?&]src=([\w.-]+)/)||[])[1];if(m&&SRCO.indexOf(m)>=0)state.src=m})();
+function syncSrcUrl(){try{var u=new URL(location.href);if(state.src)u.searchParams.set('src',state.src);else u.searchParams.delete('src');history.replaceState(history.state,'',u.pathname+u.search+u.hash)}catch(e){}}
 var $ = function(id){return document.getElementById(id)};
 function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})}
 function host(u){try{return new URL(u).hostname.replace(/^www\./,'')}catch(e){return u}}
@@ -278,6 +285,7 @@ function match(i){
   if(state.vs&&(i.vs||[]).indexOf(state.vs)<0)return false;
   if(state.ct&&(i.ct||[]).indexOf(state.ct)<0)return false;
   if(state.tag&&tagsOf(i).indexOf(state.tag)<0)return false;
+  if(state.src&&!srcOk(i,state.src))return false;
   if(!state.q)return true;
   var l=lg(i), hay=(i.name+' '+(i.libName||'')+' '+(i.kind||'')+' '+i.note+' '+noteOf(i)+' '+i.url+' '+i.source+' '+i.section+' '+TN(i.type)+' '+i.type+' '+(l.lic||'')+' '+tagsOf(i).join(' ')+' '+(i.ct||[]).map(function(c){return c+' '+CTN(c)}).join(' ')+' '+(i.rt||[]).map(function(c){return c+' '+RTN(c)}).join(' ')+' '+(i.vs||[]).map(function(c){return c+' '+VSN(c)}).join(' ')).toLowerCase();
   return state.q.toLowerCase().split(/\s+/).every(function(w){return hay.indexOf(w)>=0});
@@ -290,11 +298,12 @@ function renderChips(){
     if(skip!=='vs'&&state.vs&&(i.vs||[]).indexOf(state.vs)<0)return false;
     if(skip!=='ct'&&state.ct&&(i.ct||[]).indexOf(state.ct)<0)return false;
     if(skip!=='tag'&&state.tag&&tagsOf(i).indexOf(state.tag)<0)return false;
+    if(skip!=='src'&&state.src&&!srcOk(i,state.src))return false;
     return true}
   function cnt(skip,f){var c={},n=0;base.forEach(function(i){if(!ok(i,skip))return;n++;(i[f]||[]).forEach(function(x){c[x]=(c[x]||0)+1})});c._n=n;return c}
   var rc=cnt('rt','rt');
   function lab(id,k){var p=$(id).parentNode;p.dataset.label=t(k)}
-  lab('chips','rt_h');lab('vsChips','vs_h');lab('ctChips','ct_h');lab('tagChips','tags_h');
+  lab('chips','rt_h');lab('srcChips','src_h');lab('vsChips','vs_h');lab('ctChips','ct_h');lab('tagChips','tags_h');
   var html = '<button class="chip'+(state.rt?'':' on')+'" data-rt="">'+esc(t('rt_all'))+'<small>'+rc._n+'</small></button>'+
     RTO.filter(function(k){return rc[k]||state.rt===k}).map(function(k){return '<button class="chip'+(state.rt===k?' on':'')+'" data-rt="'+k+'">'+esc(RTN(k))+'<small>'+(rc[k]||0)+'</small></button>'}).join('');
   var tc={}; base.forEach(function(i){if(ok(i,'tag'))tagsOf(i).forEach(function(x){tc[x]=(tc[x]||0)+1})});
@@ -302,6 +311,9 @@ function renderChips(){
   if(state.tag&&top.indexOf(state.tag)<0)top.unshift(state.tag);
   $('tagChips').innerHTML = top.map(function(x){return '<button class="chip t'+(state.tag===x?' on':'')+'" data-tag="'+esc(x)+'">#'+esc(TG(x))+'</button>'}).join('');
   $('chips').innerHTML = html;
+  var sc={},sn=0;base.forEach(function(i){if(!ok(i,'src'))return;sn++;SRCO.forEach(function(k){if(srcOk(i,k))sc[k]=(sc[k]||0)+1})});
+  $('srcChips').innerHTML='<button class="chip c'+(state.src?'':' on')+'" data-src="">'+esc(t('src_all'))+'<small>'+sn+'</small></button>'+
+    SRCO.filter(function(k){return sc[k]||state.src===k}).map(function(k){return '<button class="chip c'+(state.src===k?' on':'')+'" data-src="'+k+'">'+esc(SRN(k))+'<small>'+(sc[k]||0)+'</small></button>'}).join('');
   var vc=cnt('vs','vs');
   $('vsChips').innerHTML = '<button class="chip c'+(state.vs?'':' on')+'" data-vs="">'+esc(t('vs_all'))+'</button>'+
     VSO.filter(function(k){return vc[k]||state.vs===k}).map(function(k){return '<button class="chip c v'+(state.vs===k?' on':'')+'" data-vs="'+k+'"><i class="vsw vs-'+k+'"></i>'+esc(VSN(k))+'<small>'+(vc[k]||0)+'</small></button>'}).join('');
@@ -388,6 +400,8 @@ function preview(i){
     '<button class="loadsite" data-site-load="'+esc(i.url)+'">'+IC.play+'<span>'+esc(t('pv_frame_btn'))+'<small>'+esc(t('pv_frame_sub'))+'</small></span></button></div>'+
     '<div class="pvtag">'+srcTag(i)+shotNote(m)+'<span>'+esc(t('pv_frame_d'))+'</span></div></div>';
   if(m.img)return '<div class="pvw big">'+tsw(m)+shotImg(m,'poster','data-play="'+i.id+'"')+'<div class="pvtag">'+srcTag(i)+shotNote(m)+'<span>'+esc(t('pv_noframe_d'))+'</span></div></div>';
+  var xid=i.x_post&&(i.x_post.match(/\/status\/(\d+)/)||[])[1];
+  if(xid)return '<div class="pvw xem" style="aspect-ratio:auto;background:none"><iframe src="https://platform.twitter.com/embed/Tweet.html?dnt=true&id='+xid+'&theme='+curTheme()+'&lang='+(isZh()?(LANG==='zh-TW'?'zh-tw':'zh-cn'):LANG)+'" title="X" loading="lazy" style="display:block;width:100%;max-width:550px;height:640px;margin:0 auto;border:0" referrerpolicy="no-referrer"></iframe></div>';
   if(vis(i))return '<div class="pvw big">'+demo(i)+'<div class="pvtag">'+srcTag(i)+'<span>'+esc(t('pv_demo_d'))+'</span></div></div>';
   var parts=shown(i.name).split('/');
   return '<div class="pvw sk"><div class="term"><i></i><i></i><i></i><span>'+esc(i.type==='skill'?'SKILL.md':host(i.url))+'</span></div><div class="skn"><small>'+esc(parts.length>1?parts[0]+' /':TN(i.type))+'</small><b>'+esc(parts[parts.length-1])+'</b></div></div>';
@@ -439,6 +453,10 @@ function openSheet(id){
    (l.lic?'<dt>'+esc(t('kv_license'))+'</dt><dd>'+esc(l.lic)+(links?'<span class="lk">'+links+'</span>':'')+'</dd>':'')+
    ((i.rt||[]).length?'<dt>'+esc(t('kv_rt'))+'</dt><dd class="fl">'+i.rt.map(function(k){return '<button class="tg lk" data-rt="'+k+'">'+esc(RTN(k))+'</button>'}).join('')+'</dd>':'')+
    ((i.vs||[]).length?'<dt>'+esc(t('kv_vs'))+'</dt><dd class="fl">'+i.vs.map(function(k){return '<button class="tg lk" data-vs="'+k+'"><i class="vsw vs-'+k+'"></i>'+esc(VSN(k))+'</button>'}).join('')+'</dd>':'')+
+   (i.author?'<dt>'+esc(t('kv_author'))+'</dt><dd>'+(i.author.url?'<a href="'+esc(i.author.url)+'" target="_blank" rel="noopener noreferrer">':'')+esc(lat(i.author.name||i.author.handle))+(i.author.handle&&i.author.name?' <small>'+esc(i.author.handle)+'</small>':'')+(i.author.url?'</a>':'')+'</dd>':'')+
+   (i.x_post?'<dt>'+esc(t('kv_xpost'))+'</dt><dd class="u"><a href="'+esc(i.x_post)+'" target="_blank" rel="noopener noreferrer">'+esc(i.x_post.replace(/^https:\/\//,''))+'</a></dd>':'')+
+   (i.official&&i.official!==i.url?'<dt>'+esc(t('kv_official'))+'</dt><dd class="u"><a href="'+esc(i.official)+'" target="_blank" rel="noopener noreferrer">'+esc(host(i.official))+'</a></dd>':'')+
+   (i.discovered_via?'<dt>'+esc(t('kv_via'))+'</dt><dd>'+(i.via?'<a href="'+esc(i.via)+'" target="_blank" rel="noopener noreferrer">'+esc(i.discovered_via)+'</a>':esc(i.discovered_via))+'</dd>':'')+
    '<dt>'+esc(t('kv_group'))+'</dt><dd>'+esc(secOf(i))+(i.sectionDesc&&isZh()?'<span>'+esc(i.sectionDesc)+'</span>':'')+'</dd>'+
    (gs.length?'<dt>'+esc(t('kv_guide'))+'</dt><dd>'+gs.map(function(g){return '<a href="#/guides" data-g="'+g.id+'">'+g.emoji+' '+esc(t(gk(g,'t')))+'</a>'}).join('')+'</dd>':'')+'</dl>'+
    '<h3>'+esc(t('tags_h'))+'</h3><div class="tagrow">'+i.tags.map(function(x){return '<span class="tg">'+esc(TG(x))+'</span>'}).join('')+
@@ -518,7 +536,7 @@ function focusSearch(){if(state.view!=='home')location.hash='#/';setTimeout(func
 document.addEventListener('click',function(e){
   var mb=e.target.closest('[data-more]'); if(mb){e.preventDefault();e.stopPropagation();openMenu(mb.dataset.more,mb);return}
   if(!$('menu').hidden&&(!e.target.closest('#menu')||e.target.closest('.mi')))closeMenu();
-  var el=e.target.closest('#gridMore,[data-copy],[data-cp],[data-cc],[data-cpo],[data-cco],[data-tip],[data-fav],[data-type],[data-rt],[data-vs],[data-ct],[data-tag],[data-close],[data-closeplay],[data-rmtag],[data-g],[data-play],[data-lib],[data-site-load],[data-ts],[data-open],a');
+  var el=e.target.closest('#gridMore,[data-copy],[data-cp],[data-cc],[data-cpo],[data-cco],[data-tip],[data-fav],[data-type],[data-rt],[data-vs],[data-src],[data-ct],[data-tag],[data-close],[data-closeplay],[data-rmtag],[data-g],[data-play],[data-lib],[data-site-load],[data-ts],[data-open],a');
   if(!el)return;
   if(el.tagName==='A'&&!el.dataset.g){e.stopPropagation();return}
   if(el.dataset.copy){e.preventDefault();copy(el.dataset.copy,el.dataset.msg||t('toast_link'));return}
@@ -533,6 +551,7 @@ document.addEventListener('click',function(e){
   if(el.dataset.rt!=null&&el.classList.contains('chip')){state.rt=state.rt===el.dataset.rt?'':el.dataset.rt;refresh();return}
   if(el.dataset.vs!=null&&el.classList.contains('chip')){state.vs=state.vs===el.dataset.vs?'':el.dataset.vs;refresh();return}
   if(el.dataset.rt!=null||el.dataset.vs!=null){e.preventDefault();closeSheet();state.rt=el.dataset.rt||'';state.vs=el.dataset.vs||'';state.ct='';state.tag='';location.hash='#/';refresh();setTimeout(function(){$('catalog').scrollIntoView({behavior:'smooth'})},120);return}
+  if(el.dataset.src!=null&&el.classList.contains('chip')){state.src=state.src===el.dataset.src?'':el.dataset.src;syncSrcUrl();try{window.ievt&&window.ievt('filter',{src:state.src||'all'})}catch(_){}refresh();return}
   if(el.dataset.ct!=null&&el.classList.contains('chip')){state.ct=state.ct===el.dataset.ct?'':el.dataset.ct;refresh();return}
   if(el.dataset.tag!=null&&el.classList.contains('chip')){state.tag=state.tag===el.dataset.tag?'':el.dataset.tag;refresh();return}
   if(el.hasAttribute('data-close')){back();return}
