@@ -141195,8 +141195,8 @@
    "id": "awd-mersi",
    "name": "MERSI",
    "url": "https://www.mersi-architecture.com",
-   "note": "Awwwards Site of the Day (2026-04-10) by FLOT NOIR.",
-   "noteEn": "Awwwards Site of the Day (2026-04-10) by FLOT NOIR.",
+   "note": "Mersi is a multidisciplinary architecture firmfounded by a creative entrepreneurand an architect, based in Paris.",
+   "noteEn": "Mersi is a multidisciplinary architecture firmfounded by a creative entrepreneurand an architect, based in Paris.",
    "type": "inspiration",
    "section": "整站灵感 · Awwwards 每日最佳",
    "sectionTitle": "整站灵感 · Awwwards 每日最佳",
@@ -141224,7 +141224,22 @@
     "awards": [
      "Site of the Day"
     ],
-    "date": "2026-04-10"
+    "date": "2026-04-10",
+    "page": "https://www.awwwards.com/sites/mersi",
+    "tags": [
+     "animation",
+     "architecture",
+     "contact-page",
+     "figma",
+     "footer-design",
+     "gsap",
+     "horizontal-layout",
+     "luxury",
+     "portfolio",
+     "real-estate",
+     "transitions",
+     "webflow"
+    ]
    },
    "pub": "2026-04-10",
    "added": "2026-10-16"
@@ -177051,8 +177066,8 @@
    "id": "awd-poor-charlies-almanack",
    "name": "Poor Charlie's Almanack",
    "url": "https://www.stripe.press/poor-charlies-almanack",
-   "note": "Awwwards Site of the Day (2024-01-04) by Devin Jacoviello.",
-   "noteEn": "Awwwards Site of the Day (2024-01-04) by Devin Jacoviello.",
+   "note": "A digital edition of Poor Charlie's Almanack by Stripe Press, a beloved book that shares the wit and wisdom of Berkshire Hathaway's enigmatic vice chairman...",
+   "noteEn": "A digital edition of Poor Charlie's Almanack by Stripe Press, a beloved book that shares the wit and wisdom of Berkshire Hathaway's enigmatic vice chairman...",
    "type": "inspiration",
    "section": "整站灵感 · Awwwards 每日最佳",
    "sectionTitle": "整站灵感 · Awwwards 每日最佳",
@@ -177080,7 +177095,19 @@
     "awards": [
      "Site of the Day"
     ],
-    "date": "2024-01-04"
+    "date": "2024-01-04",
+    "page": "https://www.awwwards.com/sites/poor-charlies-almanack",
+    "tags": [
+     "3d",
+     "culture-education",
+     "experimental",
+     "graphic-design",
+     "microinteractions",
+     "navigation",
+     "transitions",
+     "typography",
+     "web-interactive"
+    ]
    },
    "pub": "2024-01-04",
    "added": "2026-10-16"
@@ -177239,8 +177266,8 @@
    "id": "awd-milledollars",
    "name": "Milledollars",
    "url": "https://milledollars.fr/",
-   "note": "Awwwards Site of the Day + Developer Award (2026-10-02) by Magnetism.",
-   "noteEn": "Awwwards Site of the Day + Developer Award (2026-10-02) by Magnetism.",
+   "note": "Milledollars is a creative bureau focused on high-end video production.",
+   "noteEn": "Milledollars is a creative bureau focused on high-end video production.",
    "type": "inspiration",
    "section": "整站灵感 · Awwwards 每日最佳",
    "sectionTitle": "整站灵感 · Awwwards 每日最佳",
@@ -177269,7 +177296,16 @@
      "Site of the Day",
      "Developer Award"
     ],
-    "date": "2026-10-02"
+    "date": "2026-10-02",
+    "page": "https://www.awwwards.com/sites/milledollars",
+    "tags": [
+     "animation",
+     "contentful",
+     "film-tv",
+     "gsap",
+     "ui-design",
+     "vue-js"
+    ]
    },
    "pub": "2026-10-02",
    "added": "2026-10-16"
@@ -177278,8 +177314,8 @@
    "id": "awd-the-tie-break",
    "name": "The Tie-break",
    "url": "https://thetiebreak.merci-michel.com/",
-   "note": "Awwwards Site of the Day + Developer Award (2026-09-25) by Merci Michel.",
-   "noteEn": "Awwwards Site of the Day + Developer Award (2026-09-25) by Merci Michel.",
+   "note": "Play and explore the new New Balance x Miu Miu collection with Coco Gauff.",
+   "noteEn": "Play and explore the new New Balance x Miu Miu collection with Coco Gauff.",
    "type": "inspiration",
    "section": "整站灵感 · Awwwards 每日最佳",
    "sectionTitle": "整站灵感 · Awwwards 每日最佳",
@@ -177308,7 +177344,18 @@
      "Site of the Day",
      "Developer Award"
     ],
-    "date": "2026-09-25"
+    "date": "2026-09-25",
+    "page": "https://www.awwwards.com/sites/the-tie-break",
+    "tags": [
+     "colorful",
+     "experimental",
+     "fashion",
+     "fullscreen",
+     "games-entertainment",
+     "photo-video",
+     "three-js",
+     "webgl"
+    ]
    },
    "pub": "2026-09-25",
    "added": "2026-10-16"

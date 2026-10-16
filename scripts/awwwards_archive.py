@@ -8,7 +8,7 @@ validated to load; Awwwards/withseismic thumbnails are never used or copied.
 Scope: Awwwards Site of the Day winners since AW_SINCE (default 2024-01-01). Honorable Mentions and the template
 marketplace (/author/webflow--…, framer--…) are out of scope.
 Modes: default = feed.xml (latest winners, used by the scheduled job); AW_INITIAL=1 = all studio pages updated since AW_SINCE."""
-import json, os, re, sys, time, html, datetime, urllib.request, urllib.parse
+import json, os, re, sys, time, html, datetime, urllib.request, urllib.parse, urllib.error
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from hub_lib import append, load, norm, ROOT
 from content_filter import blocked
@@ -46,10 +46,14 @@ def studio_page(url):
     return {'name': name, 'profile': me.get('url') or '', 'page': url, 'works': works}
 
 def awwwards_page(slug):
+    u = 'https://www.awwwards.com/sites/' + urllib.parse.quote(slug)
     try:
-        h, final = get('https://www.awwwards.com/sites/' + urllib.parse.quote(slug), ua=BUA)
+        h, final = get(u, ua=BUA, timeout=15)
+    except urllib.error.HTTPError as e:
+        # 404 = no such Awwwards page; anything else (403 bot wall / 5xx) = unreachable from this network, keep the canonical link unverified
+        return None if e.code in (404, 410) else {'url': u, 'desc': '', 'tags': [], 'unverified': True}
     except Exception:
-        return None
+        return {'url': u, 'desc': '', 'tags': [], 'unverified': True}
     g = lambda p: (re.search(p, h) or [None, None])[1]
     desc = html.unescape(g(r'<meta property="og:description" content="([^"]*)"') or '').strip()
     tags = sorted(set(t.strip('/') for t in re.findall(r'href="/websites/([a-z0-9-]+/)"', h)) - {'nominees', 'sites_of_the_day', 'sites_of_the_month', 'sites_of_the_year', 'honorable'})
@@ -89,7 +93,7 @@ def build(w, st):
               sectionDesc='', source=st['name'], pricing='free', tags=[], ct=ct, rt=['inspiration'], vs=vs,
               origin='site', discovered_via='awwwards.withseismic.com', via=st['page'] + '#' + slug,
               author={k: v for k, v in {'name': st['name'], 'url': st['profile'] or ''}.items() if v},
-              awwwards={k: v for k, v in {'page': (aw or {}).get('url'), 'awards': awards, 'date': w['date'], 'tags': tags}.items() if v})
+              awwwards={k: v for k, v in {'page': (aw or {}).get('url'), 'unverified': (aw or {}).get('unverified'), 'awards': awards, 'date': w['date'], 'tags': tags}.items() if v})
     it['pub'] = w['date']
     return it
 
@@ -113,6 +117,25 @@ def jsload(f):
     s = open(os.path.join(ROOT, f), encoding='utf-8').read(); m = re.match(r'\s*(window\.\w+)\s*=\s*', s)
     return m.group(1), json.loads(s[m.end():].rstrip().rstrip(';'))
 
+def repair():
+    """Re-check Awwwards pages that could not be verified (e.g. bot wall on CI runners); fills note/tags when reachable."""
+    d = load(); n = 0
+    for it in d['items']:
+        a = it.get('awwwards')
+        if it.get('discovered_via') != 'awwwards.withseismic.com' or not a or (a.get('page') and not a.get('unverified')): continue
+        aw = awwwards_page(it['id'][4:]); time.sleep(PAUSE)
+        if aw is None: a.pop('page', None); a.pop('unverified', None); n += 1; continue
+        if aw.get('unverified'): continue
+        a['page'] = aw['url']; a.pop('unverified', None); a['tags'] = aw['tags'] or a.get('tags', [])
+        if aw['desc'] and it['note'].startswith('Awwwards '): it['note'] = it['noteEn'] = aw['desc']
+        n += 1
+    if n:
+        json.dump(d, open(os.path.join(ROOT, 'data.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+        open(os.path.join(ROOT, 'data.js'), 'w', encoding='utf-8').write('window.UI_DATA=' + json.dumps(d, ensure_ascii=False) + ';\n')
+    print('repaired', n)
+
+if __name__ == '__main__' and os.environ.get('AW_REPAIR') == '1':
+    repair(); sys.exit(0)
 if __name__ == '__main__':
     st_all = json.load(open(STATE)) if os.path.exists(STATE) else {'seen': {}}
     seen = st_all['seen']
