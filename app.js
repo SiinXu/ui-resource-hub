@@ -81,6 +81,16 @@ function favBtn(i,cls){return '<button class="ib fav'+(favs[i.id]?' on':'')+(cls
 /* ---------- 许可 / 代码 / 提示词 ---------- */
 function lg(i){return LG[i.id]||(i.lib&&LG[i.lib])||{k:'unk'}}
 var O = window.UI_ORIG || {};
+/* perf: orig.js (~5 MB) is no longer render-blocking. It loads on first interaction or before a detail sheet opens; O is rebound when it arrives. */
+var ORIG_Q=null;
+function loadOrig(cb){
+  if(window.UI_ORIG){O=window.UI_ORIG;cb&&cb();return}
+  if(!ORIG_Q){ORIG_Q=[];var s=document.createElement('script');s.src='orig.js?v=6';s.async=true;
+    var done=function(){O=window.UI_ORIG||O;var q=ORIG_Q;ORIG_Q=[];q.forEach(function(f){try{f()}catch(e){}})};
+    s.onload=done;s.onerror=function(){ORIG_Q.forEach(function(f){try{f()}catch(e){}});ORIG_Q=null};document.head.appendChild(s)}
+  if(cb)ORIG_Q.push(cb);
+}
+['pointerdown','keydown','touchstart'].forEach(function(ev){addEventListener(ev,function h(){removeEventListener(ev,h,true);loadOrig()},{capture:true,passive:true})});
 /* v5：把构建时写死的中文包装行（安装/配置/示例标题、补充说明、SKILL.md 全文标题）换成当前语言；原文行一律不动 */
 function WL(s){if(!s)return s;var zh=isZh(),fp=function(x){return zh||LANG==='ja'?x:x.replace(/（/g,' (').replace(/）/g,')').replace(/，/g,', ').replace(/、/g,', ')};
   var stp={'①':'w_s1','②':'w_s2','③':'w_s3','④':'w_s4'};
@@ -205,7 +215,7 @@ function liveBox(f,opts){
   opts=opts||{};
   var L=f.live;
   return '<div class="live" data-live="'+esc(L.src)+'" data-w="'+L.w+'" data-top="'+L.top+'" data-view="'+L.view+'"'+(opts.eager?' data-eager="1"':'')+'>'+
-    '<img class="poster" src="'+f.poster+'" alt="" loading="lazy">'+
+    (opts.first?'<img class="poster" src="'+f.poster+'" alt="" width="600" height="486" loading="eager" fetchpriority="high" decoding="async">':'<img class="poster" src="'+f.poster+'" alt="" loading="lazy">')+
     '<div class="ifw"></div><div class="shield" data-play="'+f.id+'"><span class="tap">'+IC.play+esc(t('btn_tryit'))+'</span></div>'+
     '<span class="ld"><i></i>'+esc(t('loading_live'))+'</span></div>';
 }
@@ -223,7 +233,7 @@ function thumb(i){var m=M[i.id]||{},lv=LIVE[i.id];return lv?'<img src="'+lv.post
 function featCard(f,k){
   var i=BY[f.id]; if(!i)return '';
   var m=M[i.id]||{}, live=!!f.live;
-  var media = live ? liveBox(f) : (m.img?shotImg(m,'poster','loading="'+(k<8?'eager':'lazy')+'"')+shotTag(m):demo(i));
+  var media = live ? liveBox(f,{first:k===0}) : (m.img?shotImg(m,'poster','loading="'+(k<8?'eager':'lazy')+'"')+shotTag(m):demo(i));
   var title=isZh()?(f.title||shown(i.name)):shown(i.name), sub=isZh()?(f.sub||noteOf(i)||host(i.url)):(noteOf(i)||host(i.url));
   return '<article class="fc'+(f.big?' big':'')+(f.wide?' wide':'')+(live?' is-live':'')+'" style="--i:'+k+'">'+
     '<div class="fm" '+(live?'':'data-open="'+i.id+'"')+'>'+media+'<div class="ftop">'+(live?srcTag(i,live)+thmTag(f.live.scheme==='dark'?'dark':''):'')+'</div></div>'+
@@ -404,6 +414,7 @@ function fwSibs(i){
 }
 function openSheet(id){
   var i=BY[id]; if(!i)return;
+  if(!window.UI_ORIG){openSheet._p=id;document.documentElement.style.cursor='progress';loadOrig(function(){document.documentElement.style.cursor='';if(openSheet._p===id){openSheet._p=null;window.UI_ORIG=window.UI_ORIG||{};openSheet(id)}});return}
   var ut=utags[i.id]||[], gs=guidesFor(i), pr=promptFor(i), l=lg(i);
   var links=(l.npm?'<a href="'+esc(l.npm)+'" target="_blank" rel="noopener noreferrer">npm</a>':'')+(l.gh?'<a href="'+esc(l.gh)+'" target="_blank" rel="noopener noreferrer">GitHub</a>':'');
   $('sheet').innerHTML = '<div class="grab"></div><button class="ib close" data-close aria-label="'+esc(t('close'))+'">'+IC.x+'</button>'+preview(i)+
@@ -431,7 +442,7 @@ function openSheet(id){
   document.body.classList.add('lock');
   requestAnimationFrame(function(){var b=$('sheet').querySelector('.live');if(b){track($('sheet'));setTimeout(function(){loadLive(b)},280)}});
 }
-function closeSheet(){
+function closeSheet(){openSheet._p=null;
   var s=$('sheet'); if(!s.classList.contains('open'))return;
   s.classList.remove('open'); $('scrim').hidden=true; s.setAttribute('aria-hidden','true'); document.body.classList.remove('lock');
   setTimeout(function(){if(!s.classList.contains('open'))s.innerHTML=''},350);
@@ -455,7 +466,7 @@ function closePlay(){$('play').hidden=true;$('play').innerHTML='';if(!$('sheet')
 /* ---------- 语言 ---------- */
 function applyStatic(){
   document.documentElement.lang=LANG;
-  document.querySelectorAll('[data-i18n]').forEach(function(el){el.textContent=t(el.dataset.i18n,{n:ITEMS.length})});
+  document.querySelectorAll('[data-i18n]').forEach(function(el){var v=t(el.dataset.i18n,{n:ITEMS.length});if(el.textContent!==v)el.textContent=v});
   document.querySelectorAll('[data-i18n-ph]').forEach(function(el){el.placeholder=t(el.dataset.i18nPh)});
   document.querySelectorAll('[data-i18n-aria]').forEach(function(el){el.setAttribute('aria-label',t(el.dataset.i18nAria));el.title=t(el.dataset.i18nAria)});
   var hs=$('hstats'); if(hs){var u=function(f){var s={};ITEMS.forEach(function(i){(i[f]||[]).forEach(function(x){s[x]=1})});return Object.keys(s).length};

@@ -746,3 +746,11 @@ body::after{background-image:radial-gradient(var(--dots) 1px,transparent 1.2px);
 .demo,.demo *{transition:background .35s,color .35s,border-color .35s}
 @media(max-width:599px){.shot-t{width:18px;height:18px;right:6px;bottom:6px}.shot-t svg{width:10px;height:10px}}
 .aff{font-size:.78em;opacity:.7;margin-left:.3em;white-space:nowrap}
+
+/* perf 2026-10-16: reserve the JS-filled hero/featured blocks until the deferred bundle renders (CLS on #featWrap) */
+#hstats:empty{min-height:143px}
+#upd:empty{min-height:12px}
+#feat:empty{min-height:calc((100vw - 2 * var(--gut, 20px)) * .5125 + 130px)}
+@media(min-width:600px){#hstats:empty{min-height:72px}}
+@media(min-width:900px){#feat:empty{min-height:calc(42.6vw + 834px)}}
+@media(min-width:1100px){#hstats:empty{min-height:195px}}
