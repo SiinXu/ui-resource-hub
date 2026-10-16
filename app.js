@@ -4,8 +4,13 @@ function REL(i){return i&&i.sponsored?'sponsored noopener noreferrer':'noopener 
 var D = window.UI_DATA || {items:[],guides:[]}, M = window.UI_MEDIA || {}, LG = window.UI_LEGAL || {}, I18N = window.UI_I18N || {langs:[['zh-CN','中文']],'zh-CN':{}};
 var LANG = (function(){try{var qp=(location.search.match(/[?&]lang=([\w-]+)/)||[])[1];qp={'zh-Hans':'zh-CN','zh-Hant':'zh-TW'}[qp]||qp;if(qp&&I18N[qp]){localStorage.setItem('uihub.lang',qp);return qp}}catch(e){} try{var v=localStorage.getItem('uihub.lang');if(v&&I18N[v])return v}catch(e){}
   var n=(navigator.language||'zh-CN').toLowerCase(); if(/^zh-(tw|hk|mo|hant)/.test(n)&&I18N['zh-TW'])return 'zh-TW'; var m={zh:'zh-CN',en:'en',ja:'ja',ko:'ko',ms:'ms',es:'es',de:'de',fr:'fr',vi:'vi'}[n.slice(0,2)];return m||'zh-CN'})();
-function t(k,v){var s=(I18N[LANG]&&I18N[LANG][k]!=null)?I18N[LANG][k]:(LANG!=='zh-TW'&&LANG!=='zh-CN'&&I18N.en&&I18N.en[k]!=null?I18N.en[k]:(I18N['zh-CN'][k]!=null?I18N['zh-CN'][k]:k));if(v)Object.keys(v).forEach(function(x){s=s.split('{'+x+'}').join(v[x])});return s}
+function t(k,v){var s=(I18N[LANG]&&I18N[LANG][k]!=null)?I18N[LANG][k]:(LANG!=='zh-TW'&&LANG!=='zh-CN'&&I18N.en&&I18N.en[k]!=null?I18N.en[k]:(I18N['zh-CN'][k]!=null?I18N['zh-CN'][k]:k));if(v)Object.keys(v).forEach(function(x){var y=v[x];if(typeof y==='string'&&!isZh()&&/^https?:\/\//.test(y))y=y.replace(/[\u3400-\u9fff]+/g,encodeURIComponent);s=s.split('{'+x+'}').join(y)});return s}
 function isZh(){return LANG==='zh-CN'||LANG==='zh-TW'}
+/* Non-Chinese locales show no Chinese: translated names/variants/notes/tags from names_en.js, then a strip fallback for anything new. */
+var EN=window.UI_EN||{name:{},var:{},note:{},tag:{},misc:{}}, CJK=/[\u3400-\u9fff\uf900-\ufaff]/;
+function stripCJK(s){return s.replace(/[（(][^（）()]*[\u3400-\u9fff][^（）()]*[）)]/g,'').replace(/[\u3400-\u9fff\uf900-\ufaff\u3000-\u303f\uff01\uff0c\uff1a\uff1b\uff1f「」『』【】]+/g,' ').replace(/\s*([·|,:：—-]\s*)+$/,'').replace(/^\s*([·|,:—-]\s*)+/,'').replace(/\(\s*\)/g,'').replace(/\s{2,}/g,' ').trim()}
+function lat(s){if(isZh()||!s||!CJK.test(s))return s;return EN.misc[s]||EN.name[s]||EN.var[s]||stripCJK(s)}
+function TG(x){return isZh()?x:((EN.tag[LANG]||EN.tag.en||{})[x]||lat(x))}
 var ITEMS = D.items, BY = {};
 ITEMS.forEach(function(i){BY[i.id]=i});
 var TYPES = ['all','style','library','component','effect','skill','inspiration','template','generator','guide'];
@@ -17,11 +22,11 @@ function VSN(k){return t('vs_'+k)}
 var NOTES = window.UI_NOTES || {notes:{},why:{}}, CTO = window.UI_CT_ORDER || [], SECO = window.UI_SEC_ORDER || [];
 // 资源说明随界面语言切换：非中文用人工撰写的译文，缺失时回落到中文原文
 // 组件样式卡：名称/说明按语言模板生成（组件类型 · 来源库）
-function styleName(i){return CTN(i.kind)+' · '+i.libName+(i.var?' · '+i.var:'')}
+function styleName(i){return CTN(i.kind)+' · '+i.libName+(i.var?' · '+lat(i.var):'')}
 function syncStyleNames(){ITEMS.forEach(function(i){if(i.type==='style')i.name=styleName(i)})}
-function noteOf(i){if(i.type==='style')return t('cs_note',{lib:i.libName,kind:CTN(i.kind)});var m=!isZh()&&(NOTES.notes[LANG]||NOTES.notes.en);return (m&&m[i.id])||(!isZh()&&i.noteEn)||shown(i.note)}
-function whyOf(p,g){var m=!isZh()&&(NOTES.why[LANG]||NOTES.why.en);return (m&&m[p.id+'@'+g.id])||p.why}
-function secOf(i){if(isZh())return i.sectionTitle;var n=SECO.indexOf(i.section);return n<0?i.sectionTitle:t('sec_'+n)}
+function noteOf(i){if(i.type==='style')return t('cs_note',{lib:i.libName,kind:CTN(i.kind)});var m=!isZh()&&(NOTES.notes[LANG]||NOTES.notes.en);if(m&&m[i.id])return m[i.id];if(isZh())return shown(i.note);var v=EN.note[i.id]||i.noteEn||i.note||'';return CJK.test(v)?'':v}
+function whyOf(p,g){var m=!isZh()&&(NOTES.why[LANG]||NOTES.why.en);var v=(m&&m[p.id+'@'+g.id])||p.why;return (!isZh()&&!(m&&m[p.id+'@'+g.id])&&CJK.test(v||''))?'':v}
+function secOf(i){if(isZh())return i.sectionTitle;var n=SECO.indexOf(i.section);return n<0?lat(i.sectionTitle):t('sec_'+n)}
 function CTN(k){return t('ct_'+k)}
 function TN(k){return t('t_'+k)}
 function PR(k){return {free:1,paid:1,freemium:1}[k]?t('price_'+k):''}
@@ -58,7 +63,7 @@ function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){retur
 function host(u){try{return new URL(u).hostname.replace(/^www\./,'')}catch(e){return u}}
 function hash(s){var h=0;for(var i=0;i<s.length;i++)h=(h*31+s.charCodeAt(i))|0;return Math.abs(h)}
 function tagsOf(i){return i.tags.concat(utags[i.id]||[])}
-function shown(n){return (n||'').replace(/（@[A-Za-z0-9_]+）$/,'')}
+function shown(n){var f=n||'';if(!isZh()&&CJK.test(f)){var e=EN.name[f]||EN.var[f]||EN.misc[f];if(e)return e.replace(/ \(@[A-Za-z0-9_]+\)$/,'')}return lat(f.replace(/（@[A-Za-z0-9_]+）$/,''))}
 function canFrame(i){return !!(LIVE[i.id]||(M[i.id]&&M[i.id].frame))}
 var IC = {
   sun:'<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>',
@@ -79,7 +84,7 @@ var IC = {
 function favBtn(i,cls){return '<button class="ib fav'+(favs[i.id]?' on':'')+(cls?' '+cls:'')+'" data-fav="'+i.id+'" aria-label="'+esc(t('fav'))+'">'+IC.star+'</button>'}
 
 /* ---------- 许可 / 代码 / 提示词 ---------- */
-function lg(i){return LG[i.id]||(i.lib&&LG[i.lib])||{k:'unk'}}
+function lg(i){var r=LG[i.id]||(i.lib&&LG[i.lib])||{k:'unk'};if(isZh()||!(CJK.test(r.lic||'')||CJK.test(r.pro||'')))return r;var c={};for(var k in r)c[k]=r[k];c.lic=lat(r.lic);c.pro=lat(r.pro);return c}
 var O = window.UI_ORIG || {};
 /* perf: orig.js (~5 MB) is no longer render-blocking. It loads on first interaction or before a detail sheet opens; O is rebound when it arrives. */
 var ORIG_Q=null;
@@ -93,7 +98,8 @@ function loadOrig(cb){
 (function(){function pf(){var l=document.createElement('link');l.rel='prefetch';l.as='script';l.href='orig.js?v=7';document.head.appendChild(l)}var ri=window.requestIdleCallback||function(f){setTimeout(f,3000)};if(document.readyState==='complete')ri(pf,{timeout:8000});else addEventListener('load',function(){ri(pf,{timeout:8000})})})();
 ['pointerdown','keydown','touchstart'].forEach(function(ev){addEventListener(ev,function h(){removeEventListener(ev,h,true);loadOrig()},{capture:true,passive:true})});
 /* v5：把构建时写死的中文包装行（安装/配置/示例标题、补充说明、SKILL.md 全文标题）换成当前语言；原文行一律不动 */
-function WL(s){if(!s)return s;var zh=isZh(),fp=function(x){return zh||LANG==='ja'?x:x.replace(/（/g,' (').replace(/）/g,')').replace(/，/g,', ').replace(/、/g,', ')};
+function WL(s){var r=WL0(s);if(!r||isZh()||!CJK.test(r))return r;return r.split('\n').map(function(ln){return /^\s*(#|\/\/|<!--|\/\*|\*)/.test(ln)&&CJK.test(ln)?ln.replace(/[\u3400-\u9fff\uf900-\ufaff，。、：；（）「」]+/g,' ').replace(/(#|\/\/)\s+[·|]\s*/,'$1 ').replace(/\s{2,}/g,' ').replace(/\s+$/,''):ln}).join('\n')}
+function WL0(s){if(!s)return s;var zh=isZh(),fp=function(x){return zh||LANG==='ja'?x:x.replace(/（/g,' (').replace(/）/g,')').replace(/，/g,', ').replace(/、/g,', ')};
   var stp={'①':'w_s1','②':'w_s2','③':'w_s3','④':'w_s4'};
   return s.split('\n').map(function(ln){var m;
     if((m=ln.match(/^# 官方安装命令 Install(（README 原文）)?$/)))return '# '+t('w_install')+(m[1]?t('w_readme'):'');
@@ -114,6 +120,8 @@ function WL(s){if(!s)return s;var zh=isZh(),fp=function(x){return zh||LANG==='ja
 function NCL(s){var m=s&&s.match(/^(.*?) 为商业许可，本站不提供代码/);return m?t('w_nc',{x:m[1]}):s}
 /* v3e：原站原文在前、原样保留；聚合站补充放后面并明确标注 */
 function codeParts(i){var l=lg(i),o=O[i.id]||{};if(l.k!=='oss'||o.nc)return {o:'',s:''};
+  /* non-Chinese locales: verbatim demo code that carries Chinese demo text stays on the original site */
+  if(!isZh()&&o.c&&CJK.test(WL(o.c)))return {o:'',s:''};
   var sup=o.sup||(!o.c?(l.code||''):'');return {o:WL(o.c||''),os:o.cs||'',lic:o.cl||l.lic,s:(o.c&&sup&&o.c.indexOf(sup)>=0)?'':WL(sup)}}
 function codeOf(i){var p=codeParts(i);if(!p.o)return p.s;return p.o+(p.s?'\n\n'+t('sup_mark')+'\n'+p.s:'')}
 function codeTip(i){
@@ -127,9 +135,9 @@ function codeTip(i){
   return i.pricing==='freemium'?t('code_paid'):t('code_unk');
 }
 function promptParts(i){
-  var o=O[i.id]||{}, n=i.type==='style'?(i.libName+' · '+CTN(i.kind)+(i.var?' · '+i.var:'')):shown(i.name), orig='', src='';
-  if(o.p){orig=WL(o.p);src=o.ps}
-  else if(o.d){orig='\u201c'+o.d+'\u201d';src=o.ds}
+  var o=O[i.id]||{}, n=i.type==='style'?(i.libName+' · '+CTN(i.kind)+(i.var?' · '+lat(i.var):'')):shown(i.name), orig='', src='';
+  if(o.p&&(isZh()||!CJK.test(WL(o.p)))){orig=WL(o.p);src=o.ps}
+  else if(o.d&&(isZh()||!CJK.test(o.d))){orig='\u201c'+o.d+'\u201d';src=o.ds}
   if(!orig)return {o:'',s:promptOld(i)};
   var c=codeParts(i), head=(o.p?t('p_orig_h',{url:src}):t('p_desc_h',{url:src}))+'\n'+orig;
   if(i.type==='style'||src!==i.url)head+='\n'+t('p_demo',{url:i.url});
@@ -259,7 +267,7 @@ function card(i){
   }
   var tag = live?'<span class="tag-lv">'+t('tag_live')+'</span>':(m.frame?'<span class="tag-fr">'+t('tag_frame')+'</span>':'');
   if(i.type==='style')return '<article class="card cs" data-open="'+i.id+'"><div class="cm"><div class="th">'+thumb(i)+'</div></div>'+
-    '<div class="cb"><h3>'+esc(CTN(i.kind))+'<span class="csl">'+esc(i.libName)+(i.var?' · '+esc(i.var):'')+'</span></h3>'+metaLine(i,1)+'<p class="note">'+esc(noteOf(i))+'</p>'+foot(i)+'</div></article>';
+    '<div class="cb"><h3>'+esc(CTN(i.kind))+'<span class="csl">'+esc(i.libName)+(i.var?' · '+esc(lat(i.var)):'')+'</span></h3>'+metaLine(i,1)+'<p class="note">'+esc(noteOf(i))+'</p>'+foot(i)+'</div></article>';
   return '<article class="card" data-open="'+i.id+'"><div class="cm"><div class="th">'+thumb(i)+'</div>'+(tag?'<div class="ctop">'+tag+'</div>':'')+'</div>'+
     '<div class="cb"><h3>'+esc(nm)+'</h3>'+metaLine(i)+'<p class="note">'+esc(noteOf(i)||host(i.url))+'</p>'+foot(i)+'</div></article>';
 }
@@ -292,7 +300,7 @@ function renderChips(){
   var tc={}; base.forEach(function(i){if(ok(i,'tag'))tagsOf(i).forEach(function(x){tc[x]=(tc[x]||0)+1})});
   var top=Object.keys(tc).sort(function(a,b){return tc[b]-tc[a]}).slice(0,12);
   if(state.tag&&top.indexOf(state.tag)<0)top.unshift(state.tag);
-  $('tagChips').innerHTML = top.map(function(x){return '<button class="chip t'+(state.tag===x?' on':'')+'" data-tag="'+esc(x)+'">#'+esc(x)+'</button>'}).join('');
+  $('tagChips').innerHTML = top.map(function(x){return '<button class="chip t'+(state.tag===x?' on':'')+'" data-tag="'+esc(x)+'">#'+esc(TG(x))+'</button>'}).join('');
   $('chips').innerHTML = html;
   var vc=cnt('vs','vs');
   $('vsChips').innerHTML = '<button class="chip c'+(state.vs?'':' on')+'" data-vs="">'+esc(t('vs_all'))+'</button>'+
@@ -419,7 +427,7 @@ function openSheet(id){
   var ut=utags[i.id]||[], gs=guidesFor(i), pr=promptFor(i), l=lg(i);
   var links=(l.npm?'<a href="'+esc(l.npm)+'" target="_blank" rel="noopener noreferrer">npm</a>':'')+(l.gh?'<a href="'+esc(l.gh)+'" target="_blank" rel="noopener noreferrer">GitHub</a>':'');
   $('sheet').innerHTML = '<div class="grab"></div><button class="ib close" data-close aria-label="'+esc(t('close'))+'">'+IC.x+'</button>'+preview(i)+
-   '<div class="sb"><div class="row">'+'<span class="tp">'+TN(i.type)+'</span>'+(PR(i.pricing)?'<span class="pill '+i.pricing+'">'+PR(i.pricing)+'</span>':'')+(l.lic?'<span class="pill oss">'+esc(l.lic)+'</span>':'')+(i.source?'<span class="src">'+esc(i.source)+'</span>':'')+'</div>'+
+   '<div class="sb"><div class="row">'+'<span class="tp">'+TN(i.type)+'</span>'+(PR(i.pricing)?'<span class="pill '+i.pricing+'">'+PR(i.pricing)+'</span>':'')+(l.lic?'<span class="pill oss">'+esc(l.lic)+'</span>':'')+(i.source?'<span class="src">'+esc(lat(i.source))+'</span>':'')+'</div>'+
    '<h2>'+esc(shown(i.name))+'</h2>'+(noteOf(i)?'<p class="lead">'+esc(noteOf(i))+'</p>':'')+
    '<div class="acts"><a class="b pri" href="'+esc(i.url)+'" target="_blank" rel="'+REL(i)+'">'+esc(t('btn_original'))+IC.ext+'</a>'+
    (vis(i)?'<button class="b ghost" data-play="'+i.id+'">'+IC.full+esc(canFrame(i)?t('btn_play'):t('btn_view'))+'</button>':'')+
@@ -427,13 +435,13 @@ function openSheet(id){
    fwSibs(i)+
    promptBlock(i)+
    codeBlock(i)+
-   '<dl class="kv"><dt>'+esc(t('kv_url'))+'</dt><dd class="u"><a href="'+esc(i.url)+'" target="_blank" rel="'+REL(i)+'">'+esc(i.url)+'</a>'+(i.sponsored?' <small class="aff">('+esc(t('aff_note'))+')</small>':'')+'</dd>'+
+   '<dl class="kv"><dt>'+esc(t('kv_url'))+'</dt><dd class="u"><a href="'+esc(i.url)+'" target="_blank" rel="'+REL(i)+'">'+esc(isZh()?i.url:i.url.replace(/[\u3400-\u9fff]+/g,encodeURIComponent))+'</a>'+(i.sponsored?' <small class="aff">('+esc(t('aff_note'))+')</small>':'')+'</dd>'+
    (l.lic?'<dt>'+esc(t('kv_license'))+'</dt><dd>'+esc(l.lic)+(links?'<span class="lk">'+links+'</span>':'')+'</dd>':'')+
    ((i.rt||[]).length?'<dt>'+esc(t('kv_rt'))+'</dt><dd class="fl">'+i.rt.map(function(k){return '<button class="tg lk" data-rt="'+k+'">'+esc(RTN(k))+'</button>'}).join('')+'</dd>':'')+
    ((i.vs||[]).length?'<dt>'+esc(t('kv_vs'))+'</dt><dd class="fl">'+i.vs.map(function(k){return '<button class="tg lk" data-vs="'+k+'"><i class="vsw vs-'+k+'"></i>'+esc(VSN(k))+'</button>'}).join('')+'</dd>':'')+
    '<dt>'+esc(t('kv_group'))+'</dt><dd>'+esc(secOf(i))+(i.sectionDesc&&isZh()?'<span>'+esc(i.sectionDesc)+'</span>':'')+'</dd>'+
    (gs.length?'<dt>'+esc(t('kv_guide'))+'</dt><dd>'+gs.map(function(g){return '<a href="#/guides" data-g="'+g.id+'">'+g.emoji+' '+esc(t(gk(g,'t')))+'</a>'}).join('')+'</dd>':'')+'</dl>'+
-   '<h3>'+esc(t('tags_h'))+'</h3><div class="tagrow">'+i.tags.map(function(x){return '<span class="tg">'+esc(x)+'</span>'}).join('')+
+   '<h3>'+esc(t('tags_h'))+'</h3><div class="tagrow">'+i.tags.map(function(x){return '<span class="tg">'+esc(TG(x))+'</span>'}).join('')+
      ut.map(function(x,k){return '<span class="tg u">'+esc(x)+'<b data-rmtag="'+k+'">×</b></span>'}).join('')+'</div>'+
    '<form class="addtag" data-addtag="'+i.id+'"><input name="t" maxlength="16" placeholder="'+esc(t('tag_ph'))+'"><button class="b ghost sm">'+esc(t('btn_add'))+'</button></form>'+
    '<h3>'+esc(t('related_h'))+'</h3><div class="rel">'+related(i).map(function(x){var m=M[x.id]||{},lv=LIVE[x.id];return '<button data-open="'+x.id+'">'+(m.img||lv?'<img src="'+(lv?lv.poster:m.img)+'" alt="" loading="lazy">':'<span class="rm">'+esc(shown(x.name).split('/').pop().slice(0,2))+'</span>')+'<b>'+esc(shown(x.name))+'</b></button>'}).join('')+'</div>'+

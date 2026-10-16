@@ -83,7 +83,7 @@
 <div class="toast" id="toast"></div>
 
 <script>/* perf: paint the static shell first, then fetch the ~2.5 MB data/app bundle in order (async=false keeps execution order) */
-(function(){var q=['data.js?v=11','media.js?v=9','legal.js?v=7','notes.js?v=8','i18n.js?v=10','app.js?v=10'];
+(function(){var q=['data.js?v=11','media.js?v=9','legal.js?v=7','notes.js?v=8','i18n.js?v=10','names_en.js?v=1','app.js?v=11'];
 function go(){q.forEach(function(u,i){var e=document.createElement('script');e.src=u;e.async=false;if(i===q.length-1)e.onload=function(){window.updTxt&&updTxt()};document.body.appendChild(e)})}
 var raf=window.requestAnimationFrame||function(f){setTimeout(f,16)};function after(){raf(function(){raf(function(){setTimeout(go,0)})})}
 if(document.readyState==='complete')after();else addEventListener('load',after)})();</script>
