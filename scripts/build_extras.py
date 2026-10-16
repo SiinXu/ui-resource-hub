@@ -18,6 +18,25 @@ E = html.escape
 def w(path, s):
     p = os.path.join(ROOT, path); os.makedirs(os.path.dirname(p), exist_ok=True); open(p,'w',encoding='utf-8').write(s)
 
+# ---------- English-only display helpers (llms / JSON-LD are served to every locale: no Chinese) ----------
+_HAN = re.compile(r'[\u3400-\u9fff\uf900-\ufaff]')
+def _jsobj(fn, var):
+    try:
+        t = open(os.path.join(ROOT, fn), encoding='utf-8').read(); t = t[t.index(var + '=') + len(var) + 1:].strip().rstrip(';')
+        return json.JSONDecoder().raw_decode(t)[0]
+    except Exception: return {}
+_UI_EN = _jsobj('names_en.js', 'window.UI_EN'); _UI_NOTES = _jsobj('notes.js', 'window.UI_NOTES')
+def _strip_cjk(s):
+    s = re.sub(r'[（(][^（）()]*[\u3400-\u9fff][^（）()]*[）)]', '', s)
+    s = re.sub(r'[\u3400-\u9fff\uf900-\ufaff\u3000-\u303f\uff01\uff0c\uff1a\uff1b\uff1f「」『』【】]+', ' ', s)
+    return re.sub(r'\s{2,}', ' ', re.sub(r'^[\s·|,:—-]+|[\s·|,:—-]+$', '', s)).strip()
+def en_name(i):
+    n = i.get('name') or ''
+    return n if not _HAN.search(n) else (_UI_EN.get('name', {}).get(n) or _strip_cjk(n) or i.get('url', ''))
+def en_note(i):
+    v = (_UI_NOTES.get('notes', {}).get('en', {}) or {}).get(i.get('id')) or _UI_EN.get('note', {}).get(i.get('id')) or i.get('noteEn') or ''
+    return '' if _HAN.search(v) else v
+
 # ---------- UI strings for extras pages (10 langs) ----------
 U = {
  'blog_title': dict(zh='AI 设计技巧博客',zht='AI 設計技巧部落格',en='AI Design Techniques Blog',ja='AIデザインテクニック ブログ',ko='AI 디자인 기법 블로그',ms='Blog Teknik Reka Bentuk AI',vi='Blog kỹ thuật thiết kế AI',fr='Blog des techniques de design IA',es='Blog de técnicas de diseño con IA',de='Blog: KI-Designtechniken'),
@@ -161,8 +180,8 @@ def slim(i):
         if i.get(k): o[k] = i[k]
     return o
 w('api/resources.json', json.dumps({'name':'UI Hub resources','updated':UPD,'count':len(ITEMS),'license_note':'Links and metadata only; each resource keeps its own license. Preview images © original sites.',
-   'fields':{'type':'library|component|style|skill|effect|template|generator|inspiration|system|spec|tool|tutorial|collection|guide','ct':'component kind, e.g. button,input,dialog,chart,table,chat,motion,background,layout','vs':'visual style, e.g. minimal,enterprise,material,soft,playful,motion,dark-tech,gradient,3d,apple,editorial,brutalist,glass','pricing':'free|freemium|paid|unknown','gold':'true = curated 精选 tier (start here); why = reason','flag':'quality flags: blank-preview | dup-preview (avoid as visual reference)','xsrc':'X/Twitter source post, author and engagement'},
-   'items':[slim(i) for i in ITEMS]}, ensure_ascii=False, separators=(',',':')))
+   'fields':{'type':'library|component|style|skill|effect|template|generator|inspiration|system|spec|tool|tutorial|collection|guide','ct':'component kind, e.g. button,input,dialog,chart,table,chat,motion,background,layout','vs':'visual style, e.g. minimal,enterprise,material,soft,playful,motion,dark-tech,gradient,3d,apple,editorial,brutalist,glass','pricing':'free|freemium|paid|unknown','gold':'true = curated 精选 tier (start here); why = reason','flag':'quality flags: blank-preview | dup-preview (avoid as visual reference)','xsrc':'X/Twitter source post, author and engagement','name_en':'English display name (no Chinese)','note_en':'English note, empty when no human translation exists'},
+   'items':[dict(slim(i), name_en=en_name(i), note_en=en_note(i)) if i['type']!='style' else slim(i) for i in ITEMS]}, ensure_ascii=False, separators=(',',':')))
 w('api/skills.json', json.dumps({'updated':UPD,'workflow':['Read the brief and pick ONE direction skill (frontend-design or taste-skill)','Search api/resources.json for components matching style (vs) and kind (ct)','Build with emil-design-eng for motion/interaction details','Audit with impeccable + baseline-ui + web-design-guidelines + accessibility','Verify in a real browser (playwright-cli / webapp-testing), light+dark, mobile'],
    'agent_skills':skills,'hub_skill_entries':hub_skills}, ensure_ascii=False, indent=1))
 w('.well-known/agent.json', json.dumps({'name':'UI Hub','description':'Curated directory of UI component libraries, component style demos, design skills and AI design techniques.','url':BASE,
@@ -170,24 +189,6 @@ w('.well-known/agent.json', json.dumps({'name':'UI Hub','description':'Curated d
    'endpoints':{'resources':BASE+'api/resources.json','skills':BASE+'api/skills.json','sitemap':BASE+'sitemap.xml'},'updated':UPD,'auth':'none','rate_limit':'static files, be polite'}, indent=1))
 
 
-# ---------- English-only display helpers (llms / JSON-LD are served to every locale: no Chinese) ----------
-_HAN = re.compile(r'[\u3400-\u9fff\uf900-\ufaff]')
-def _jsobj(fn, var):
-    try:
-        t = open(os.path.join(ROOT, fn), encoding='utf-8').read(); t = t[t.index(var + '=') + len(var) + 1:].strip().rstrip(';')
-        return json.JSONDecoder().raw_decode(t)[0]
-    except Exception: return {}
-_UI_EN = _jsobj('names_en.js', 'window.UI_EN'); _UI_NOTES = _jsobj('notes.js', 'window.UI_NOTES')
-def _strip_cjk(s):
-    s = re.sub(r'[（(][^（）()]*[\u3400-\u9fff][^（）()]*[）)]', '', s)
-    s = re.sub(r'[\u3400-\u9fff\uf900-\ufaff\u3000-\u303f\uff01\uff0c\uff1a\uff1b\uff1f「」『』【】]+', ' ', s)
-    return re.sub(r'\s{2,}', ' ', re.sub(r'^[\s·|,:—-]+|[\s·|,:—-]+$', '', s)).strip()
-def en_name(i):
-    n = i.get('name') or ''
-    return n if not _HAN.search(n) else (_UI_EN.get('name', {}).get(n) or _strip_cjk(n) or i.get('url', ''))
-def en_note(i):
-    v = (_UI_NOTES.get('notes', {}).get('en', {}) or {}).get(i.get('id')) or _UI_EN.get('note', {}).get(i.get('id')) or i.get('noteEn') or ''
-    return '' if _HAN.search(v) else v
 # ---------- llms.txt / AGENTS.md ----------
 from collections import Counter
 tc = Counter(i['type'] for i in ITEMS)
