@@ -1,6 +1,6 @@
 # UI Hub
 
-> Curated, multilingual directory of 4695 public UI resources (component libraries, component style demos, effects, design systems, design skills for AI agents) plus original blog analysis of AI design techniques. Data updated 2026-10-16 17:40 UTC.
+> Curated, multilingual directory of 4710 public UI resources (component libraries, component style demos, effects, design systems, design skills for AI agents) plus original blog analysis of AI design techniques. Data updated 2026-10-17 04:22 UTC.
 
 Use the JSON endpoints, not the SPA, when acting as an agent. Every entry links to its original site; licenses belong to the original authors.
 
@@ -112,11 +112,11 @@ Use the JSON endpoints, not the SPA, when acting as an agent. Every entry links 
 - [visx](https://airbnb.io/visx/): Airbnb's low-level visualization components
 
 ## FAQ
-- **What is UI Hub?** A free, curated directory of 4695 public UI resources: 153 component libraries, 1989 component style demos with light/dark screenshots, 70 design skills for AI agents, plus effects, templates, specs and tutorials. It links to original sites and never hosts paid source code.
+- **What is UI Hub?** A free, curated directory of 4710 public UI resources: 158 component libraries, 1989 component style demos with light/dark screenshots, 70 design skills for AI agents, plus effects, templates, specs and tutorials. It links to original sites and never hosts paid source code.
 - **How do I find a component in a given style?** Load https://siinxu.github.io/ui-resource-hub/api/resources.json and filter by ct (component kind, e.g. "dialog") and vs (visual style, e.g. "minimal" or "motion"). type="style" entries are concrete component demos with a libName and page URL; type="library" entries are whole libraries with install info on the site.
 - **Which skills should an agent use for good UI?** One direction skill (frontend-design or taste-skill), emil-design-eng for motion and interaction polish, then impeccable, baseline-ui, web-design-guidelines and accessibility as an audit pass. See https://siinxu.github.io/ui-resource-hub/api/skills.json.
 - **Can I copy the code?** Open-source libraries can be used under their own licenses (MIT, Apache-2.0 etc.); the card shows the original link. Paid tiers (marked paid/freemium) must be bought from the original vendor.
-- **How often is it updated?** Daily via a GitHub Actions job that adds new UI repositories and tools from GitHub, awesome-shadcn-ui and Hacker News. Nothing is deleted. Last update: 2026-10-16 17:40 UTC.
+- **How often is it updated?** Daily via a GitHub Actions job that adds new UI repositories and tools from GitHub, awesome-shadcn-ui and Hacker News. Nothing is deleted. Last update: 2026-10-17 04:22 UTC.
 
 
 # Blog posts (full text, English)
@@ -4043,6 +4043,21 @@ Get Hyped. Get Noticed. Get Results.
 - Milledollars | inspiration | https://milledollars.fr/ | Milledollars is a creative bureau focused on high-end video production.
 - The Tie-break | inspiration | https://thetiebreak.merci-michel.com/ | Play and explore the new New Balance x Miu Miu collection with Coco Gauff.
 - The Design Office | inspiration | https://dmcg.co | Portfolio website for a brand and software design studio, scrolling through client projects spanning identity, web, and app work with a restrained white layout.
+- lucian-uxui-prompt | library | https://lucianlabs.dev/uxui-prompt/ | New GitHub UI repo: 400 interactive UI elements you can try live, then copy as an AI prompt or working code: 200 interface parts and 200 website sections and an
+- video-react | library | https://video-react.js.org | New GitHub UI repo: Deprecated in favour of Video.js 10; security fixes only. A web video player built for the HTML5 world using React library. (★2723, MIT, vid
+- reshaped | library | https://reshaped.so | New GitHub UI repo: Reshaped provides accessible React and Figma components for building beautiful products or starting your own design system (★2248, MIT, resh
+- react-data-table-component | library | https://reactdatatable.com | New GitHub UI repo: A responsive table library with built-in sorting, pagination, selection, expandable rows, and customizable styling. (★2236, Apache-2.0, jbet
+- colorshot | collection | https://orshot.com/open-source/colorshot | Listed in awesome-shadcn-ui: Color and gradient picker for React and Vue that themes with your shadcn/ui tokens.
+- pie-menu | collection | https://piemenu.jpmarqu.es | Listed in awesome-shadcn-ui: A radial pie menu component for shadcn/ui: press, drag toward an item, and release, with full keyboard support and a headless primi
+- babelize-elements | collection | https://elements.babelize.co | Listed in awesome-shadcn-ui: MIT-licensed shadcn registry of React localization components, including language switchers, locale-aware number and relative-time 
+- creance | collection | https://creance.pages.dev | Listed in awesome-shadcn-ui: React components for supervising AI agents, such as approval prompts, tool-call timelines, diff review and a kill switch, installed
+- dashboardblocks | library | https://github.com/LGLabGreg/dashboardblocks | Listed in awesome-shadcn-ui: Open-source dashboard blocks for shadcn/ui, including KPIs, charts, tables and full dashboards installed with the shadcn CLI for Ra
+- diarmuradi | collection | https://www.diarmuradi.com/ | Listed in awesome-shadcn-ui: shadcn/ui registry of UI blocks and templates with a free block collection and paid Core and Complete plans.
+- facade-ui | collection | https://facadeui.dev | Listed in awesome-shadcn-ui: Open-source registry of accessible sections and page templates for marketing websites — heroes, pricing tables, FAQs, footers and c
+- liquikit | collection | https://liquikit.dev/ | Listed in awesome-shadcn-ui: MIT-licensed shadcn registry of 32 liquid glass React components built on Base UI, with physically based refraction that works in C
+- logoforge | collection | https://logoforge.terravidhal.me | Listed in awesome-shadcn-ui: Open-source shadcn registry of 900+ brand logos as typed React components with automatic dark mode and mono variants, plus a logo c
+- nasaq | collection | https://nasaqui.com | Listed in awesome-shadcn-ui: Open-source shadcn registry of React components, themes and page templates with Arabic and right-to-left layout built in, plus an M
+- pastaui | collection | https://pastaui.com | Listed in awesome-shadcn-ui: MIT-licensed shadcn registry of 50+ React components for AI and agent interfaces, from prompt inputs and model pickers to file diff
 
 # Component style demos: 1989 entries, see api/resources.json (type=style)
 

@@ -1,6 +1,6 @@
 {
- "generated": "2026-10-16",
- "count": 4695,
+ "generated": "2026-10-17",
+ "count": 4710,
  "items": [
   {
    "id": "ued-figma-mcp-guide",
@@ -177409,6 +177409,426 @@
    "official": "https://dmcg.co",
    "pub": "2026-10-16",
    "added": "2026-10-16"
+  },
+  {
+   "id": "gh-seokwoooo-lucian-uxui-prompt",
+   "name": "lucian-uxui-prompt",
+   "url": "https://lucianlabs.dev/uxui-prompt/",
+   "note": "GitHub 新晋 UI 仓库：400 interactive UI elements you can try live, then copy as an AI prompt or working code: 200 interface parts and 200 website sections and animations. Light/dark, MIT.（GitHub ★160，MIT 许可，仓库 Seokwoooo/lucian-uxui-prompt）",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "GitHub",
+   "pricing": "free",
+   "tags": [
+    "HTML",
+    "开源",
+    "自动收录"
+   ],
+   "ct": [
+    "chat",
+    "motion",
+    "layout"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "New GitHub UI repo: 400 interactive UI elements you can try live, then copy as an AI prompt or working code: 200 interface parts and 200 website sections and animations. Light/dark, MIT. (★160, MIT, Seokwoooo/lucian-uxui-prompt)",
+   "added": "2026-10-17"
+  },
+  {
+   "id": "gh-video-react-video-react",
+   "name": "video-react",
+   "url": "https://video-react.js.org",
+   "note": "GitHub 新晋 UI 仓库：Deprecated in favour of Video.js 10; security fixes only. A web video player built for the HTML5 world using React library.（GitHub ★2723，MIT 许可，仓库 video-react/video-react）",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "GitHub",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "开源",
+    "自动收录"
+   ],
+   "ct": [],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "New GitHub UI repo: Deprecated in favour of Video.js 10; security fixes only. A web video player built for the HTML5 world using React library. (★2723, MIT, video-react/video-react)",
+   "added": "2026-10-17"
+  },
+  {
+   "id": "gh-reshaped-ui-reshaped",
+   "name": "reshaped",
+   "url": "https://reshaped.so",
+   "note": "GitHub 新晋 UI 仓库：Reshaped provides accessible React and Figma components for building beautiful products or starting your own design system（GitHub ★2248，MIT 许可，仓库 reshaped-ui/reshaped）",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "GitHub",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "开源",
+    "自动收录"
+   ],
+   "ct": [],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "New GitHub UI repo: Reshaped provides accessible React and Figma components for building beautiful products or starting your own design system (★2248, MIT, reshaped-ui/reshaped)",
+   "added": "2026-10-17"
+  },
+  {
+   "id": "gh-jbetancur-react-data-table-component",
+   "name": "react-data-table-component",
+   "url": "https://reactdatatable.com",
+   "note": "GitHub 新晋 UI 仓库：A responsive table library with built-in sorting, pagination, selection, expandable rows, and customizable styling.（GitHub ★2236，Apache-2.0 许可，仓库 jbetancur/react-data-table-component）",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "GitHub",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "开源",
+    "自动收录"
+   ],
+   "ct": [
+    "table"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "New GitHub UI repo: A responsive table library with built-in sorting, pagination, selection, expandable rows, and customizable styling. (★2236, Apache-2.0, jbetancur/react-data-table-component)",
+   "added": "2026-10-17"
+  },
+  {
+   "id": "aw-orshot-com-open-source-colorshot",
+   "name": "colorshot",
+   "url": "https://orshot.com/open-source/colorshot",
+   "note": "awesome-shadcn-ui 收录：Color and gradient picker for React and Vue that themes with your shadcn/ui tokens.",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "background"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Color and gradient picker for React and Vue that themes with your shadcn/ui tokens.",
+   "added": "2026-10-17"
+  },
+  {
+   "id": "aw-piemenu-jpmarqu-es",
+   "name": "pie-menu",
+   "url": "https://piemenu.jpmarqu.es",
+   "note": "awesome-shadcn-ui 收录：A radial pie menu component for shadcn/ui: press, drag toward an item, and release, with full keyboard support and a headless primitive.",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: A radial pie menu component for shadcn/ui: press, drag toward an item, and release, with full keyboard support and a headless primitive.",
+   "added": "2026-10-17"
+  },
+  {
+   "id": "aw-elements-babelize-co",
+   "name": "babelize-elements",
+   "url": "https://elements.babelize.co",
+   "note": "awesome-shadcn-ui 收录：MIT-licensed shadcn registry of React localization components, including language switchers, locale-aware number and relative-time formatters, a phone input, a localized navbar and a translation widge",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "form"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: MIT-licensed shadcn registry of React localization components, including language switchers, locale-aware number and relative-time formatters, a phone input, a localized navbar and a translation widge",
+   "added": "2026-10-17"
+  },
+  {
+   "id": "aw-creance-pages-dev",
+   "name": "creance",
+   "url": "https://creance.pages.dev",
+   "note": "awesome-shadcn-ui 收录：React components for supervising AI agents, such as approval prompts, tool-call timelines, diff review and a kill switch, installed as editable source from their own shadcn registry.",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat",
+    "table"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: React components for supervising AI agents, such as approval prompts, tool-call timelines, diff review and a kill switch, installed as editable source from their own shadcn registry.",
+   "added": "2026-10-17"
+  },
+  {
+   "id": "aw-github-com-lglabgreg-dashboardblocks",
+   "name": "dashboardblocks",
+   "url": "https://github.com/LGLabGreg/dashboardblocks",
+   "note": "awesome-shadcn-ui 收录：Open-source dashboard blocks for shadcn/ui, including KPIs, charts, tables and full dashboards installed with the shadcn CLI for Radix UI, Base UI and React Aria.",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chart",
+    "table",
+    "layout"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Open-source dashboard blocks for shadcn/ui, including KPIs, charts, tables and full dashboards installed with the shadcn CLI for Radix UI, Base UI and React Aria.",
+   "added": "2026-10-17"
+  },
+  {
+   "id": "aw-diarmuradi-com",
+   "name": "diarmuradi",
+   "url": "https://www.diarmuradi.com/",
+   "note": "awesome-shadcn-ui 收录：shadcn/ui registry of UI blocks and templates with a free block collection and paid Core and Complete plans.",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat",
+    "layout"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: shadcn/ui registry of UI blocks and templates with a free block collection and paid Core and Complete plans.",
+   "added": "2026-10-17"
+  },
+  {
+   "id": "aw-facadeui-dev",
+   "name": "facade-ui",
+   "url": "https://facadeui.dev",
+   "note": "awesome-shadcn-ui 收录：Open-source registry of accessible sections and page templates for marketing websites — heroes, pricing tables, FAQs, footers and complete landing pages — built on Base UI and Tailwind CSS v4 and inst",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat",
+    "table",
+    "layout"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Open-source registry of accessible sections and page templates for marketing websites — heroes, pricing tables, FAQs, footers and complete landing pages — built on Base UI and Tailwind CSS v4 and inst",
+   "added": "2026-10-17"
+  },
+  {
+   "id": "aw-liquikit-dev",
+   "name": "liquikit",
+   "url": "https://liquikit.dev/",
+   "note": "awesome-shadcn-ui 收录：MIT-licensed shadcn registry of 32 liquid glass React components built on Base UI, with physically based refraction that works in Chrome, Safari and Firefox.",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: MIT-licensed shadcn registry of 32 liquid glass React components built on Base UI, with physically based refraction that works in Chrome, Safari and Firefox.",
+   "added": "2026-10-17"
+  },
+  {
+   "id": "aw-logoforge-terravidhal-me",
+   "name": "logoforge",
+   "url": "https://logoforge.terravidhal.me",
+   "note": "awesome-shadcn-ui 收录：Open-source shadcn registry of 900+ brand logos as typed React components with automatic dark mode and mono variants, plus a logo cloud builder and African brands, installable with the shadcn CLI.",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Open-source shadcn registry of 900+ brand logos as typed React components with automatic dark mode and mono variants, plus a logo cloud builder and African brands, installable with the shadcn CLI.",
+   "added": "2026-10-17"
+  },
+  {
+   "id": "aw-nasaqui-com",
+   "name": "nasaq",
+   "url": "https://nasaqui.com",
+   "note": "awesome-shadcn-ui 收录：Open-source shadcn registry of React components, themes and page templates with Arabic and right-to-left layout built in, plus an MCP server.",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Open-source shadcn registry of React components, themes and page templates with Arabic and right-to-left layout built in, plus an MCP server.",
+   "added": "2026-10-17"
+  },
+  {
+   "id": "aw-pastaui-com",
+   "name": "pastaui",
+   "url": "https://pastaui.com",
+   "note": "awesome-shadcn-ui 收录：MIT-licensed shadcn registry of 50+ React components for AI and agent interfaces, from prompt inputs and model pickers to file diffs and approval cards, with a paid Pro tier of full-page blocks.",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat",
+    "form",
+    "layout"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: MIT-licensed shadcn registry of 50+ React components for AI and agent interfaces, from prompt inputs and model pickers to file diffs and approval cards, with a paid Pro tier of full-page blocks.",
+   "added": "2026-10-17"
   }
  ],
  "guides": [
@@ -177611,5 +178031,5 @@
    ]
   }
  ],
- "updatedAt": "2026-10-16T17:40Z"
+ "updatedAt": "2026-10-17T04:22Z"
 }
