@@ -1,6 +1,6 @@
 {
  "generated": "2026-10-17",
- "count": 4725,
+ "count": 4727,
  "items": [
   {
    "id": "ued-figma-mcp-guide",
@@ -178251,6 +178251,105 @@
    ],
    "noteEn": "Listed in awesome-shadcn-ui: MIT-licensed shadcn registry of file upload components and 58 blocks, with resumable S3, R2 and Cloudinary uploads, installable in every shadcn style.",
    "added": "2026-10-17"
+  },
+  {
+   "id": "rd-oyqwazd-vercel-store-shader-effect",
+   "name": "Vercel Store Shader Effect",
+   "url": "https://vercel.com/store",
+   "note": "A WebGL shader on the Vercel x Shopify store hero dissolves the right half of a racing jacket photo into an animated white dot-matrix pattern that pulses across the image.",
+   "noteEn": "A WebGL shader on the Vercel x Shopify store hero dissolves the right half of a racing jacket photo into an animated white dot-matrix pattern that pulses across the image.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@logan_liffick",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "site",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/oyqwazd-vercel-store-shader-effect",
+   "rdkind": "Design",
+   "rdcat": "Web",
+   "rdstyle": [
+    "Experimental",
+    "Dark",
+    "Monochrome"
+   ],
+   "author": {
+    "name": "Logan Liffick",
+    "handle": "@logan_liffick",
+    "url": "https://x.com/logan_liffick"
+   },
+   "x_post": "https://x.com/logan_liffick/status/2110822273615573461",
+   "xsrc": {
+    "post": "https://x.com/logan_liffick/status/2110822273615573461",
+    "author": "@logan_liffick",
+    "likes": 239,
+    "bookmarks": 98,
+    "reposts": 8,
+    "impressions": 10832,
+    "date": "2026-10-15"
+   },
+   "official": "https://vercel.com/store",
+   "pub": "2026-10-17",
+   "added": "2026-10-17"
+  },
+  {
+   "id": "rd-qnirxwz-action-wheel-interaction",
+   "name": "Action Wheel Interaction",
+   "url": "https://x.com/withAnimationUI/status/2110643020890849625",
+   "note": "A neumorphic action wheel where clicking a central plus button fans out five circular icon actions radially, then collapses on dismiss.",
+   "noteEn": "A neumorphic action wheel where clicking a central plus button fans out five circular icon actions radially, then collapses on dismiss.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@withanimationui",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/qnirxwz-action-wheel-interaction",
+   "rdkind": "Design",
+   "rdcat": "Interface",
+   "rdstyle": [
+    "Minimal",
+    "Soft UI",
+    "Light"
+   ],
+   "author": {
+    "name": "withAnimation",
+    "handle": "@withanimationui",
+    "url": "https://x.com/withanimationui"
+   },
+   "x_post": "https://x.com/withAnimationUI/status/2110643020890849625",
+   "xsrc": {
+    "post": "https://x.com/withAnimationUI/status/2110643020890849625",
+    "author": "@withAnimationUI",
+    "likes": 268,
+    "bookmarks": 153,
+    "reposts": 18,
+    "impressions": 5732,
+    "date": "2026-10-15"
+   },
+   "pub": "2026-10-17",
+   "added": "2026-10-17"
   }
  ],
  "guides": [
@@ -178453,5 +178552,5 @@
    ]
   }
  ],
- "updatedAt": "2026-10-17T07:56Z"
+ "updatedAt": "2026-10-17T16:38Z"
 }
