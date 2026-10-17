@@ -524,9 +524,13 @@ function applyStatic(){
   document.title='UI Hub · '+t('hero_title');
 }
 function setLang(l){
-  if(!I18N[l])return; LANG=l; try{localStorage.setItem('uihub.lang',l)}catch(e){}
+  if(!I18N[l])return;
+  /* perf: zh pages skip notes.js + names_en.js; fetch them before rendering any non-Chinese locale */
+  if(l!=='zh-CN'&&l!=='zh-TW'&&!(window.UI_EN&&window.UI_NOTES)&&window.__uhEN){window.__uhEN(function(){window.UI_EN=window.UI_EN||EN;window.UI_NOTES=window.UI_NOTES||NOTES;EN=window.UI_EN;NOTES=window.UI_NOTES;setLang(l)});return}
+  LANG=l; try{localStorage.setItem('uihub.lang',l)}catch(e){}
   syncStyleNames(); applyStatic(); renderFeat(); renderGuides(); refresh();
   var id=$('sheet').classList.contains('open')&&$('sheet').dataset.id; if(id)openSheet(id);
+  try{window.updTxt&&window.updTxt()}catch(e){}
 }
 
 /* ---------- 通用 ---------- */
@@ -616,4 +620,5 @@ addEventListener('resize',closeMenu);
 addEventListener('scroll',function(){$('top').classList.toggle('scrolled',scrollY>8)},{passive:true});
 window.addEventListener('hashchange',route);
 syncStyleNames(); applyStatic(); renderFeat(); renderGuides(); setView("home"); route();
+if(!isZh()&&!(window.UI_EN&&window.UI_NOTES))setLang(LANG);
 })();
