@@ -585,6 +585,8 @@ function setLang(l){
   if(!I18N[l]){if(HL(l))loadLang(l,function(){setLang(l)});return}
   /* perf: zh pages skip notes.js + names_en.js; fetch them before rendering any non-Chinese locale */
   if(l!=='zh-CN'&&l!=='zh-TW'&&!(window.UI_EN&&window.UI_NOTES)&&window.__uhEN){window.__uhEN(function(){window.UI_EN=window.UI_EN||EN;window.UI_NOTES=window.UI_NOTES||NOTES;EN=window.UI_EN;NOTES=window.UI_NOTES;setLang(l)});return}
+  /* notes.js/names_en.js may have executed (core prefetch) before coreReady() adopts them: use them now so a switch never renders the first-screen subset */
+  if(window.UI_EN)EN=window.UI_EN; if(window.UI_NOTES)NOTES=window.UI_NOTES;
   LANG=l; try{localStorage.setItem('uihub.lang',l)}catch(e){}
   syncStyleNames(); applyStatic(); renderFeat(); renderGuides(); refresh();
   var id=$('sheet').classList.contains('open')&&$('sheet').dataset.id; if(id)openSheet(id);

@@ -90,7 +90,7 @@
    NOTE: syntax-check inline scripts before pushing (python3 scripts/check_inline_js.py) — a parse error here leaves the whole page without data. */
 (function(){var V=window.__uhV=/*UHV*/{"first":"9242de336a","core":"09080b768a","detail":"2c64f4bf27","i18n":"62a227705b","media":"699770ef33","legal":"7a77c80203","notes":"2a5931352b","en":"674ce65ec3","orig":"0e9785a5bd"}/*/UHV*/;function vu(f,k){return f+'?h='+(V[k]||'0')}
 var EN=[vu('notes.js','notes'),vu('names_en.js','en')],L=window.__uhL||'zh-CN';
-var q=[vu('split/first-'+L+'.js','first'),vu('split/i18n-'+L+'.js','i18n'),'app.js?v=20'];
+var q=[vu('split/first-'+L+'.js','first'),vu('split/i18n-'+L+'.js','i18n'),'app.js?v=21'];
 function add(u,cb){var e=document.createElement('script');e.src=u;e.async=false;if(cb)e.onload=e.onerror=cb;document.body.appendChild(e)}
 window.__uhEN=function(cb){if(window.UI_EN&&window.UI_NOTES)return cb();var n=0;EN.forEach(function(u){add(u,function(){if(++n===EN.length)cb()})})};
 var pre=0;function preload(){if(pre++)return;q.forEach(function(u){var l=document.createElement('link');l.rel='preload';l.as='script';l.href=u;l.setAttribute('fetchpriority','low');document.head.appendChild(l)})}try{document.fonts.ready.then(preload)}catch(e){preload()}addEventListener('load',preload);function go(){q.forEach(function(u,i){add(u,i===q.length-1?function(){window.updTxt&&updTxt()}:null)})}var raf=window.requestAnimationFrame||function(f){setTimeout(f,16)};function after(){raf(function(){raf(function(){setTimeout(go,0)})})}if(document.readyState==='complete')after();else addEventListener('load',after)})();</script>

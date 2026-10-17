@@ -1,8 +1,8 @@
 name: Split data guard
 # Regenerates split/*.js + the index.html hash map whenever canonical data changes on main from anywhere
 # (box routines, manual edits, one-off merge scripts). The data workflows also run split_data.py themselves;
-# i18n.js edits regenerate split/i18n-<lang>.js (node is preinstalled on ubuntu-latest; split_data.py evaluates i18n.js with it).
 # their GITHUB_TOKEN pushes do not re-trigger this workflow, so there is no loop.
+# i18n.js edits regenerate split/i18n-<lang>.js (node is preinstalled on ubuntu-latest; split_data.py evaluates i18n.js with it).
 on:
   push:
     branches: [main]
