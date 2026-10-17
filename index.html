@@ -86,10 +86,11 @@
    zh-CN/zh-TW skip notes.js + names_en.js (non-Chinese display layer, ~127 KB br); app.js lazy-loads them via window.__uhEN on a switch to another language.
    perf 2026-10-17c: data is split (scripts/split_data.py). First screen = split/first-<lang>.js (~10 KB br: Featured + first grid page + facet counts, incl. the names/notes those cards need on non-zh). app.js lazy-loads split/core.js, media.js, legal.js (+ notes.js/names_en.js) after the first screen, split/detail.js before a detail sheet.
    The UHV map holds content hashes and is rewritten by split_data.py in every data workflow, so daily data changes get new URLs. Do not edit it by hand.
+   perf 2026-10-17d: UI strings are split too: split/i18n-<lang>.js holds only the current locale (resolved through t()'s fallbacks) + all 10 autonyms; app.js loads another locale's file on a language switch. i18n.js stays canonical (mobile/ uses it).
    NOTE: syntax-check inline scripts before pushing (python3 scripts/check_inline_js.py) — a parse error here leaves the whole page without data. */
-(function(){var V=window.__uhV=/*UHV*/{"first":"9242de336a","core":"09080b768a","detail":"2c64f4bf27","media":"699770ef33","legal":"7a77c80203","notes":"2a5931352b","en":"674ce65ec3","orig":"0e9785a5bd"}/*/UHV*/;function vu(f,k){return f+'?h='+(V[k]||'0')}
+(function(){var V=window.__uhV=/*UHV*/{"first":"9242de336a","core":"09080b768a","detail":"2c64f4bf27","i18n":"62a227705b","media":"699770ef33","legal":"7a77c80203","notes":"2a5931352b","en":"674ce65ec3","orig":"0e9785a5bd"}/*/UHV*/;function vu(f,k){return f+'?h='+(V[k]||'0')}
 var EN=[vu('notes.js','notes'),vu('names_en.js','en')],L=window.__uhL||'zh-CN';
-var q=[vu('split/first-'+L+'.js','first'),'i18n.js?v=12','app.js?v=19'];
+var q=[vu('split/first-'+L+'.js','first'),vu('split/i18n-'+L+'.js','i18n'),'app.js?v=20'];
 function add(u,cb){var e=document.createElement('script');e.src=u;e.async=false;if(cb)e.onload=e.onerror=cb;document.body.appendChild(e)}
 window.__uhEN=function(cb){if(window.UI_EN&&window.UI_NOTES)return cb();var n=0;EN.forEach(function(u){add(u,function(){if(++n===EN.length)cb()})})};
 var pre=0;function preload(){if(pre++)return;q.forEach(function(u){var l=document.createElement('link');l.rel='preload';l.as='script';l.href=u;l.setAttribute('fetchpriority','low');document.head.appendChild(l)})}try{document.fonts.ready.then(preload)}catch(e){preload()}addEventListener('load',preload);function go(){q.forEach(function(u,i){add(u,i===q.length-1?function(){window.updTxt&&updTxt()}:null)})}var raf=window.requestAnimationFrame||function(f){setTimeout(f,16)};function after(){raf(function(){raf(function(){setTimeout(go,0)})})}if(document.readyState==='complete')after();else addEventListener('load',after)})();</script>
