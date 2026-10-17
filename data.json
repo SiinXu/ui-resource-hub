@@ -1,6 +1,6 @@
 {
  "generated": "2026-10-17",
- "count": 4710,
+ "count": 4725,
  "items": [
   {
    "id": "ued-figma-mcp-guide",
@@ -177829,6 +177829,428 @@
    ],
    "noteEn": "Listed in awesome-shadcn-ui: MIT-licensed shadcn registry of 50+ React components for AI and agent interfaces, from prompt inputs and model pickers to file diffs and approval cards, with a paid Pro tier of full-page blocks.",
    "added": "2026-10-17"
+  },
+  {
+   "id": "aw-signoff-ui-vercel-app",
+   "name": "signoff-ui",
+   "url": "https://signoff-ui.vercel.app",
+   "note": "awesome-shadcn-ui 收录：React components to review what an agent changed and approve what it may do, installable from its own shadcn registry or npm: multi-file diff review with per-hunk decisions and line comments, rule-bas",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: React components to review what an agent changed and approve what it may do, installable from its own shadcn registry or npm: multi-file diff review with per-hunk decisions and line comments, rule-bas",
+   "added": "2026-10-17"
+  },
+  {
+   "id": "aw-skrewww-com",
+   "name": "skrewww",
+   "url": "https://skrewww.com",
+   "note": "awesome-shadcn-ui 收录：Open-source React and TypeScript design system with a shadcn-compatible registry, token-driven Shape/Surface modes, and machine-readable contracts for coding agents; the paired Figma library is free,",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Open-source React and TypeScript design system with a shadcn-compatible registry, token-driven Shape/Surface modes, and machine-readable contracts for coding agents; the paired Figma library is free,",
+   "added": "2026-10-17"
+  },
+  {
+   "id": "aw-registry-soldevelo-com",
+   "name": "soldevelo",
+   "url": "https://registry.soldevelo.com",
+   "note": "awesome-shadcn-ui 收录：MIT-licensed shadcn registry of components, blocks and page templates from the open-source projects SolDevelo builds, starting with OpenLMIS, built on Base UI.",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: MIT-licensed shadcn registry of components, blocks and page templates from the open-source projects SolDevelo builds, starting with OpenLMIS, built on Base UI.",
+   "added": "2026-10-17"
+  },
+  {
+   "id": "aw-sureui-com",
+   "name": "sureui",
+   "url": "https://sureui.com",
+   "note": "awesome-shadcn-ui 收录：MIT-licensed shadcn registry of confirmation components built on Base UI, covering undo, hold to confirm, type to confirm, confirm dialogs and AI tool-call approval, installed as editable source with",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat",
+    "table",
+    "dialog"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: MIT-licensed shadcn registry of confirmation components built on Base UI, covering undo, hold to confirm, type to confirm, confirm dialogs and AI tool-call approval, installed as editable source with",
+   "added": "2026-10-17"
+  },
+  {
+   "id": "aw-upfork-dev",
+   "name": "upfork",
+   "url": "https://upfork.dev",
+   "note": "awesome-shadcn-ui 收录：shadcn registry of animated React and Tailwind CSS components and landing pages (WebGL heroes, 3D carousels, bento grids) with live previews and an MCP server; a few are free under MIT, most of the ca",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat",
+    "motion",
+    "table",
+    "layout"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: shadcn registry of animated React and Tailwind CSS components and landing pages (WebGL heroes, 3D carousels, bento grids) with live previews and an MCP server; a few are free under MIT, most of the ca",
+   "added": "2026-10-17"
+  },
+  {
+   "id": "aw-github-com-sopo-shadcn-animated",
+   "name": "shadcn-animated",
+   "url": "https://github.com/sopo/shadcn-animated",
+   "note": "awesome-shadcn-ui 收录：Collection of animated shadcn/ui components with live examples and installation documentation.",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "motion"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Collection of animated shadcn/ui components with live examples and installation documentation.",
+   "added": "2026-10-17"
+  },
+  {
+   "id": "aw-github-com-viberdy-dev-ui",
+   "name": "viberdy",
+   "url": "https://github.com/viberdy-dev/ui",
+   "note": "awesome-shadcn-ui 收录：Free shadcn registry of 161 animated React components in 14 design styles, from glassmorphism and aurora to kinetic type and dither, installable from GitHub with the shadcn CLI and each paired with an",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat",
+    "motion"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Free shadcn registry of 161 animated React components in 14 design styles, from glassmorphism and aurora to kinetic type and dither, installable from GitHub with the shadcn CLI and each paired with an",
+   "added": "2026-10-17"
+  },
+  {
+   "id": "aw-github-com-dgesteves-onsystem",
+   "name": "onsystem",
+   "url": "https://github.com/dgesteves/onsystem",
+   "note": "awesome-shadcn-ui 收录：Keeps coding agents on a shadcn/ui project's design system with zero config: an MCP server with its components, cva variants, tokens and docs, plus a linter that flags hex colors, off-scale spacing, i",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Keeps coding agents on a shadcn/ui project's design system with zero config: an MCP server with its components, cva variants, tokens and docs, plus a linter that flags hex colors, off-scale spacing, i",
+   "added": "2026-10-17"
+  },
+  {
+   "id": "aw-codeotter-io",
+   "name": "codeotter",
+   "url": "https://codeotter.io",
+   "note": "awesome-shadcn-ui 收录：Open-source, self-hosted AI pull request reviewer for GitHub, Forgejo and Gitea that scores PRs and enforces merge gates, with a React dashboard built on shadcn/ui.",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Open-source, self-hosted AI pull request reviewer for GitHub, Forgejo and Gitea that scores PRs and enforces merge gates, with a React dashboard built on shadcn/ui.",
+   "added": "2026-10-17"
+  },
+  {
+   "id": "aw-github-com-leancodebox-gooseforum",
+   "name": "gooseforum",
+   "url": "https://github.com/leancodebox/GooseForum",
+   "note": "awesome-shadcn-ui 收录：Self-hosted forum with shadcn/ui-based discussion pages, an admin console, and a light/dark theme workbench, deployed as a single Go executable.",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "table"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Self-hosted forum with shadcn/ui-based discussion pages, an admin console, and a light/dark theme workbench, deployed as a single Go executable.",
+   "added": "2026-10-17"
+  },
+  {
+   "id": "aw-github-com-7ovr-shadcn-next-starter",
+   "name": "7ovr-landing-starter",
+   "url": "https://github.com/7ovr/shadcn-next-starter",
+   "note": "awesome-shadcn-ui 收录：Free Next.js landing page starter whose conventions and lint rules guide coding agents, with shadcn/ui preset theming and SEO checks.",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Free Next.js landing page starter whose conventions and lint rules guide coding agents, with shadcn/ui preset theming and SEO checks.",
+   "added": "2026-10-17"
+  },
+  {
+   "id": "aw-github-com-coremvp-hikari",
+   "name": "hikari",
+   "url": "https://github.com/coremvp/Hikari",
+   "note": "awesome-shadcn-ui 收录：Free Next.js starter for individual accounts, with a shadcn/ui dashboard, Supabase authentication and Stripe recurring billing.",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Free Next.js starter for individual accounts, with a shadcn/ui dashboard, Supabase authentication and Stripe recurring billing.",
+   "added": "2026-10-17"
+  },
+  {
+   "id": "aw-github-com-studiogridpro-saas-dashboard-starter",
+   "name": "saas-dashboard-starter",
+   "url": "https://github.com/studiogridpro/saas-dashboard-starter",
+   "note": "awesome-shadcn-ui 收录：Free Next.js 16 SaaS dashboard starter with shadcn/ui (Base UI), Tailwind CSS 4, Recharts and light/dark themes.",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat",
+    "chart"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Free Next.js 16 SaaS dashboard starter with shadcn/ui (Base UI), Tailwind CSS 4, Recharts and light/dark themes.",
+   "added": "2026-10-17"
+  },
+  {
+   "id": "aw-github-com-7ovr-shadcn-vite-starter",
+   "name": "shadcn-vite-starter",
+   "url": "https://github.com/7ovr/shadcn-vite-starter",
+   "note": "awesome-shadcn-ui 收录：Vite and React starter whose conventions, agent skills and shadcn/ui lint rules keep coding agents on pattern, with routing, data fetching, forms and tables already wired on shadcn/ui and Base UI.",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "table",
+    "form"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Vite and React starter whose conventions, agent skills and shadcn/ui lint rules keep coding agents on pattern, with routing, data fetching, forms and tables already wired on shadcn/ui and Base UI.",
+   "added": "2026-10-17"
+  },
+  {
+   "id": "aw-uploadcn-dev",
+   "name": "uploadcn",
+   "url": "https://uploadcn.dev",
+   "note": "awesome-shadcn-ui 收录：MIT-licensed shadcn registry of file upload components and 58 blocks, with resumable S3, R2 and Cloudinary uploads, installable in every shadcn style.",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: MIT-licensed shadcn registry of file upload components and 58 blocks, with resumable S3, R2 and Cloudinary uploads, installable in every shadcn style.",
+   "added": "2026-10-17"
   }
  ],
  "guides": [
@@ -178031,5 +178453,5 @@
    ]
   }
  ],
- "updatedAt": "2026-10-17T04:22Z"
+ "updatedAt": "2026-10-17T04:28Z"
 }
