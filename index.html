@@ -88,7 +88,7 @@
    The UHV map holds content hashes and is rewritten by split_data.py in every data workflow, so daily data changes get new URLs. Do not edit it by hand.
    perf 2026-10-17d: UI strings are split too: split/i18n-<lang>.js holds only the current locale (resolved through t()'s fallbacks) + all 10 autonyms; app.js loads another locale's file on a language switch. i18n.js stays canonical (mobile/ uses it).
    NOTE: syntax-check inline scripts before pushing (python3 scripts/check_inline_js.py) — a parse error here leaves the whole page without data. */
-(function(){var V=window.__uhV=/*UHV*/{"first":"9242de336a","core":"09080b768a","detail":"2c64f4bf27","i18n":"62a227705b","media":"699770ef33","legal":"7a77c80203","notes":"2a5931352b","en":"674ce65ec3","orig":"0e9785a5bd"}/*/UHV*/;function vu(f,k){return f+'?h='+(V[k]||'0')}
+(function(){var V=window.__uhV=/*UHV*/{"first":"03c13160d9","core":"894ec443ac","detail":"2c64f4bf27","i18n":"62a227705b","media":"699770ef33","legal":"7a77c80203","notes":"2a5931352b","en":"674ce65ec3","orig":"0e9785a5bd"}/*/UHV*/;function vu(f,k){return f+'?h='+(V[k]||'0')}
 var EN=[vu('notes.js','notes'),vu('names_en.js','en')],L=window.__uhL||'zh-CN';
 var q=[vu('split/first-'+L+'.js','first'),vu('split/i18n-'+L+'.js','i18n'),'app.js?v=21'];
 function add(u,cb){var e=document.createElement('script');e.src=u;e.async=false;if(cb)e.onload=e.onerror=cb;document.body.appendChild(e)}
