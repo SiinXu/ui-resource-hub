@@ -158,3 +158,7 @@ rep={'before':before,'after':len(items),'new':len(new),'new_by_source':dict(src)
      'pruned':pruned,'flagged':collections.Counter(f for v in flags.values() for f in set(v)),'flagged_items':len(flags),'magicui_install_fixed':fixed,'skipped':skipped}
 json.dump(rep,open('/workspace/reports/ui-hub-audit/merge-result.json','w'),ensure_ascii=False,indent=1,default=dict)
 print(json.dumps({k:v for k,v in rep.items() if k!='skipped'},ensure_ascii=False,default=dict)); print('skipped',len(skipped),skipped[:40])
+
+# perf: regenerate split/ first-screen + lazy data files and the index.html hash map from the canonical data (deterministic)
+import subprocess as _sp2, sys as _sys2
+_sp2.run([_sys2.executable, __import__('os').path.join(__import__('os').path.dirname(__import__('os').path.abspath(__file__)), 'split_data.py')], check=True)

@@ -65,3 +65,5 @@ if __name__ == '__main__':
     for h in hits: print(*h, sep=' | ')
     print(len(hits), 'hits of', len(d['items']))
     if '--purge' in sys.argv: print('purged', purge())
+    if '--purge' in sys.argv:
+        import subprocess; subprocess.run([sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), 'split_data.py')], check=True)

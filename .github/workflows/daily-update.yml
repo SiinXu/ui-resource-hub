@@ -19,9 +19,11 @@ jobs:
           PH_TOKEN: ${{ secrets.PH_TOKEN }}
           MAX_NEW: '15'
         run: pip install -q markdown && python3 scripts/daily_update.py
+      - name: Split data for the first screen (split/*.js + index.html hash map)
+        run: python3 scripts/split_data.py
       - name: Commit
         run: |
           git config user.name "ui-hub-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A data.json data.js notes.js notes_src data api llms.txt llms-full.txt sitemap.xml index.html AGENTS.md agents blog .well-known robots.txt ui-hub-skill ui-hub-skill.zip kb context-bundle.md
+          git add -A split data.json data.js notes.js notes_src data api llms.txt llms-full.txt sitemap.xml index.html AGENTS.md agents blog .well-known robots.txt ui-hub-skill ui-hub-skill.zip kb context-bundle.md
           git diff --cached --quiet && echo "no changes" || (git commit -m "chore: daily UI resource update $(date -u +%F)" && git push)

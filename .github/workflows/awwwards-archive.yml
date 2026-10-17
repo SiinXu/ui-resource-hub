@@ -24,11 +24,13 @@ jobs:
         env:
           AW_MAX_NEW: ${{ github.event.inputs.max_new || '40' }}
         run: pip install -q markdown && python3 scripts/awwwards_archive.py
+      - name: Split data for the first screen (split/*.js + index.html hash map)
+        run: python3 scripts/split_data.py
       - name: Commit
         run: |
           git config user.name "ui-hub-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A data.json data.js media.js data api llms.txt llms-full.txt sitemap*.xml index.html AGENTS.md agents blog .well-known robots.txt ui-hub-skill ui-hub-skill.zip kb context-bundle.md
+          git add -A split data.json data.js media.js data api llms.txt llms-full.txt sitemap*.xml index.html AGENTS.md agents blog .well-known robots.txt ui-hub-skill ui-hub-skill.zip kb context-bundle.md
           if git diff --cached --quiet; then echo "no changes"; exit 0; fi
           git commit -m "chore: awwwards archive discovery $(date -u +%F' '%H:%M) (original sources)"
           for i in 1 2 3; do
@@ -36,7 +38,8 @@ jobs:
             # data files conflicted with a concurrent push: start from the new main and regenerate (script is idempotent)
             git rebase --abort || true; git reset -q --hard origin/main
             python3 scripts/awwwards_archive.py
-            git add -A data.json data.js media.js data api llms.txt llms-full.txt sitemap*.xml index.html AGENTS.md agents blog .well-known robots.txt ui-hub-skill ui-hub-skill.zip kb context-bundle.md
+            python3 scripts/split_data.py
+            git add -A split data.json data.js media.js data api llms.txt llms-full.txt sitemap*.xml index.html AGENTS.md agents blog .well-known robots.txt ui-hub-skill ui-hub-skill.zip kb context-bundle.md
             git diff --cached --quiet && exit 0
             git commit -m "chore: awwwards archive discovery $(date -u +%F' '%H:%M) (original sources)"
           done; exit 1
