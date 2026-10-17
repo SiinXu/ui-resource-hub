@@ -40,3 +40,9 @@ No libraries; inline CSS < 7 KB, JS < 1.5 KB; 12 thumbs 400px webp q60, width/he
 
 ## Avoid
 Purple tint/glow, rainbow, murky green, column auto-scroll marquee (extra motion), 3D, studio-portfolio look, drawers, CJK on non-zh.
+
+## Revision 2026-10-17 00:22 EDT — user: no blue/purple anywhere
+- No accent colour: `--acc`/`--g1..3` = ink (#f2f2f2 dark / #0b0b0b light), greys only. #183 stage #120e16 (violet tint) stays neutralised to #0b0b0b.
+- Whole page retheme (resource area too, layout untouched): `styles.hx.css` = main `styles.css` through `_hero_preview/decolor.py`
+  (hue 170–300° literals → pure grey of same lightness, saturated → `var(--acc)`) + `tokens-b.css`; `.demo` sketches and `.vsw` swatches grayscale; favicon accent → #f2f2f2.
+- Colour only appears inside real resource covers (grayscale by default, colour on hover = Masonry colour shift).
