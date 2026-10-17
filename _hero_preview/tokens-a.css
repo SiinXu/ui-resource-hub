@@ -1,0 +1,11 @@
+/* Preview A page tokens — The Component Gallery real tokens (component.gallery CSS: --color-bg-primary #f7f5f2/#343232, bg-secondary #e2dfdb/#4a4846, text #4a4846/#ccc9c5, border #ccc9c5/#8b8885) + its only warm accent #d95151. No blue/purple. */
+[data-theme=dark]{color-scheme:dark;--bg:#292827;--surf:#343232;--mat:#3a3838;--mat2:#4a4846;--stage:#1f1d1d;--ink:#f7f5f2;--ink2:#ccc9c5;--ink3:#a09d9a;
+ --acc:#e27a72;--g1:#e27a72;--g2:#ccc9c5;--g3:#e27a72;--line:rgba(247,245,242,.08);--line2:rgba(247,245,242,.14);--line3:rgba(247,245,242,.26);
+ --hi:inset 0 1px 0 rgba(247,245,242,.05);--ring:0 0 0 1px rgba(247,245,242,.09),0 1px 2px rgba(0,0,0,.35);--ring-h:0 0 0 1px rgba(247,245,242,.2),0 18px 40px -16px rgba(0,0,0,.8);
+ --float:0 0 0 1px rgba(247,245,242,.1),0 30px 80px -20px rgba(0,0,0,.9);--hdr:rgba(41,40,39,.78);--glow1:rgba(226,122,114,.07);--glow2:rgba(204,201,197,.05);--glow3:transparent;--dots:rgba(247,245,242,.05)}
+[data-theme=light]{color-scheme:light;--bg:#f7f5f2;--surf:#fff;--mat:#eceae6;--mat2:#e2dfdb;--stage:#1f1d1d;--ink:#1f1d1d;--ink2:#4a4846;--ink3:#726f6d;
+ --acc:#b8423f;--g1:#b8423f;--g2:#4a4846;--g3:#b8423f;--line:rgba(31,29,29,.08);--line2:rgba(31,29,29,.14);--line3:rgba(31,29,29,.28);
+ --hi:inset 0 1px 0 rgba(255,255,255,.9);--ring:0 0 0 1px rgba(31,29,29,.09),0 1px 2px rgba(31,29,29,.05);--ring-h:0 0 0 1px rgba(31,29,29,.18),0 18px 40px -16px rgba(74,72,70,.3);
+ --float:0 0 0 1px rgba(31,29,29,.1),0 30px 80px -20px rgba(74,72,70,.35);--hdr:rgba(247,245,242,.8);--glow1:rgba(217,81,81,.06);--glow2:rgba(139,136,133,.08);--glow3:transparent;--dots:rgba(31,29,29,.06)}
+:root{--sheen:linear-gradient(100deg,var(--ink),var(--ink2) 55%,var(--acc))}
+.demo{filter:grayscale(1) sepia(.18)}.vsw{filter:grayscale(1)}
