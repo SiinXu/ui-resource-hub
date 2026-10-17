@@ -45,3 +45,13 @@ Motion Primitives Tilt (same effect, spring values only).
 
 ## Avoid
 Purple glow glass, rainbow gradients, murky green, 3D demo scenes, studio-portfolio hero, side drawers, CJK on non-zh pages, new copy without 10-locale strings.
+
+## Revision 2026-10-17 00:22 EDT — user: no blue/purple anywhere
+- The #327 illustration fill (#c4d2df, hue ~208°) is **dropped**. Tokens now follow component.gallery's own CSS variables
+  (fetched from https://component.gallery/ CSS): bg-primary #f7f5f2 / #343232, bg-secondary #e2dfdb / #4a4846, border #ccc9c5 / #8b8885,
+  text #4a4846 / #ccc9c5, highlight #1f1d1d. Offset shadow = #e2dfdb (light) / #4a4846 (dark).
+- One warm accent = **#d95151**, the only warm colour in component.gallery's CSS (used for the eyebrow dot, active-chip tick, print hover/focus shadow).
+  Text-level accent (links, `--acc`) darkened to #b8423f (light) / lightened to #e27a72 (dark) for 4.5:1.
+- Whole page retheme (resource area too, layout untouched): `styles.hx.css` = main `styles.css` passed through `_hero_preview/decolor.py`
+  (every colour literal with hue 170–300° → warm neutral of the same lightness, saturated ones → `var(--acc)`) + `tokens-a.css`.
+  `.demo` sketches (hsl(var(--h)) rainbow) → grayscale+light sepia; `.vsw` swatches → grayscale. Favicon accent → #d95151.
