@@ -87,7 +87,7 @@
    perf 2026-10-17c: data is split (scripts/split_data.py). First screen = split/first-<lang>.js (~10 KB br: Featured + first grid page + facet counts, incl. the names/notes those cards need on non-zh). app.js lazy-loads split/core.js, media.js, legal.js (+ notes.js/names_en.js) after the first screen, split/detail.js before a detail sheet.
    The UHV map holds content hashes and is rewritten by split_data.py in every data workflow, so daily data changes get new URLs. Do not edit it by hand.
    NOTE: syntax-check inline scripts before pushing (python3 scripts/check_inline_js.py) — a parse error here leaves the whole page without data. */
-(function(){var V=window.__uhV=/*UHV*/{"first":"69b91a68f2","core":"d56d85b5b3","detail":"2c64f4bf27","media":"699770ef33","legal":"7a77c80203","notes":"2a5931352b","en":"674ce65ec3","orig":"0e9785a5bd"}/*/UHV*/;function vu(f,k){return f+'?h='+(V[k]||'0')}
+(function(){var V=window.__uhV=/*UHV*/{"first":"9242de336a","core":"09080b768a","detail":"2c64f4bf27","media":"699770ef33","legal":"7a77c80203","notes":"2a5931352b","en":"674ce65ec3","orig":"0e9785a5bd"}/*/UHV*/;function vu(f,k){return f+'?h='+(V[k]||'0')}
 var EN=[vu('notes.js','notes'),vu('names_en.js','en')],L=window.__uhL||'zh-CN';
 var q=[vu('split/first-'+L+'.js','first'),'i18n.js?v=12','app.js?v=19'];
 function add(u,cb){var e=document.createElement('script');e.src=u;e.async=false;if(cb)e.onload=e.onerror=cb;document.body.appendChild(e)}
