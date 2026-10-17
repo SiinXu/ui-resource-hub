@@ -141,9 +141,9 @@ kbd{font:500 11px/1 var(--mono);color:var(--ink3);padding:3px 5px;border-radius:
   .feat{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:36px 20px;overflow:visible}
   .fc{width:auto}
   .fc.big{grid-column:span 2;grid-row:span 2}
-  .fc.big .fm{aspect-ratio:auto;flex:1;min-height:0}
+  .fc.big .fm{aspect-ratio:16/11;flex:1;min-height:240px}
   .fc.wide{grid-column:span 2}
-  .fc.wide .fm{aspect-ratio:auto;flex:1;min-height:200px}
+  .fc.wide .fm{aspect-ratio:16/10;flex:1;min-height:200px}
   .fc.big .fb h3{font-size:16px}
 }
 .more.wrap{display:flex;flex-direction:column;gap:10px;padding-top:32px;padding-bottom:56px}
