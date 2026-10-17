@@ -519,7 +519,7 @@ function applyStatic(){
   document.querySelectorAll('[data-i18n-ph]').forEach(function(el){el.placeholder=t(el.dataset.i18nPh)});
   document.querySelectorAll('[data-i18n-aria]').forEach(function(el){el.setAttribute('aria-label',t(el.dataset.i18nAria));el.title=t(el.dataset.i18nAria)});
   var hs=$('hstats'); if(hs){var u=function(f){var s={};ITEMS.forEach(function(i){(i[f]||[]).forEach(function(x){s[x]=1})});return Object.keys(s).length};
-    hs.innerHTML=[[ITEMS.length,t('cat_all')],[u('rt'),t('rt_h')],[u('vs'),t('vs_h')],[(I18N.langs||[]).length,t('lang')]].map(function(r){return '<div><dt>'+r[0]+'</dt><dd>'+esc(r[1])+'</dd></div>'}).join('')}
+    var html=[[ITEMS.length,t('cat_all')],[u('rt'),t('rt_h')],[u('vs'),t('vs_h')],[(I18N.langs||[]).length,t('lang')]].map(function(r){return '<div><dt>'+r[0]+'</dt><dd>'+esc(r[1])+'</dd></div>'}).join('');if(hs.innerHTML!==html)hs.innerHTML=html}
   var sel=$('langSel'); if(sel){sel.value=LANG}
   document.title='UI Hub · '+t('hero_title');
 }
