@@ -1,0 +1,37 @@
+name: Split data guard
+# Regenerates split/*.js + the index.html hash map whenever canonical data changes on main from anywhere
+# (box routines, manual edits, one-off merge scripts). The data workflows also run split_data.py themselves;
+# their GITHUB_TOKEN pushes do not re-trigger this workflow, so there is no loop.
+on:
+  push:
+    branches: [main]
+    paths: ['data.js', 'data.json', 'media.js', 'legal.js', 'notes.js', 'names_en.js', 'orig.js', 'app.js', 'index.html', 'scripts/split_data.py']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency: { group: daily-update, cancel-in-progress: false }
+jobs:
+  split:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - name: Split data
+        run: python3 scripts/split_data.py
+      - name: Commit if stale
+        run: |
+          git config user.name "ui-hub-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A split index.html
+          if git diff --cached --quiet; then echo "split files up to date"; exit 0; fi
+          git commit -m "chore: regenerate split data files"
+          for i in 1 2 3; do
+            git pull --rebase origin main && git push && exit 0
+            git rebase --abort || true; git reset -q --hard origin/main
+            python3 scripts/split_data.py
+            git add -A split index.html
+            git diff --cached --quiet && exit 0
+            git commit -m "chore: regenerate split data files"
+          done; exit 1

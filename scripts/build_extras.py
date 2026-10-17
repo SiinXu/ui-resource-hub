@@ -367,3 +367,7 @@ import importlib.util as _u
 _sp=_u.spec_from_file_location('growth', os.path.join(os.path.dirname(os.path.abspath(__file__)),'growth.py'));_g=_u.module_from_spec(_sp);_sp.loader.exec_module(_g);_g.run()
 write_zh_dict()
 print('extras built:', len(POSTS), 'posts,', len(ITEMS), 'items,', len(skills), 'skills, updated', UPD)
+
+# perf: regenerate split/ first-screen + lazy data files and the index.html hash map from the canonical data (deterministic)
+import subprocess as _sp2, sys as _sys2
+_sp2.run([_sys2.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), 'split_data.py')], check=True)

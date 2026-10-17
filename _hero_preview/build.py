@@ -2,7 +2,8 @@
 import json, re, sys, html as H
 key = sys.argv[1]
 ROOT = f'/workspace/uihub-hero/{key}'
-base = open('/workspace/ui-hub-pages/index.html', encoding='utf-8').read()  # main @ 4f0dcd2
+import subprocess
+base = subprocess.run(['git','-C',ROOT,'show','origin/main:index.html'],capture_output=True,text=True,check=True).stdout  # always rebuild on top of current main
 wall = json.load(open('/workspace/uihub-hero/wall.json'))[key]
 css = open(f'/workspace/uihub-hero/src/{key}.css', encoding='utf-8').read()
 css = re.sub(r'/\*.*?\*/', '', css, flags=re.S)
@@ -15,7 +16,7 @@ import sys as _s; _s.path.insert(0,'/workspace/uihub-hero/src'); from decolor im
 WH, WS = (35, 0.06) if key == 'a' else (0, 0.0)
 import decolor as _d; _d.FAV = 'd95151' if key == 'a' else 'f2f2f2'
 tok = open(f'/workspace/uihub-hero/src/tokens-{key}.css', encoding='utf-8').read()
-st = decolor(open('/workspace/ui-hub-pages/styles.css', encoding='utf-8').read(), WH, WS) + '\n' + tok
+st = decolor(subprocess.run(['git','-C',ROOT,'show','origin/main:styles.css'],capture_output=True,text=True,check=True).stdout, WH, WS) + '\n' + tok
 open(f'{ROOT}/styles.hx.css', 'w', encoding='utf-8').write(st)
 h = h.replace('<link rel="stylesheet" href="styles.css?v=15">', '<link rel="stylesheet" href="styles.hx.css?v=2">\n<style id="hx-css">' + css + '</style>', 1)
 # 2) cut existing hero + chipsBar

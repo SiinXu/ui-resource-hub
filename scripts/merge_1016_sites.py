@@ -59,3 +59,7 @@ rep={'before':before,'after':len(items),'new':len(new),'by_source':collections.C
      'look':collections.Counter(i.get('look','') for i in new),'x':sum(1 for i in new if i['source']=='X'),'skipped':skipped}
 json.dump(rep,open('/workspace/harvest/merge_sites_result.json','w'),ensure_ascii=False,indent=1)
 print(json.dumps(rep,ensure_ascii=False))
+
+# perf: regenerate split/ first-screen + lazy data files and the index.html hash map from the canonical data (deterministic)
+import subprocess as _sp2, sys as _sys2
+_sp2.run([_sys2.executable, __import__('os').path.join(__import__('os').path.dirname(__import__('os').path.abspath(__file__)), 'split_data.py')], check=True)
