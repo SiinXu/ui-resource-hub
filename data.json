@@ -1,6 +1,6 @@
 {
  "generated": "2026-10-18",
- "count": 4742,
+ "count": 4743,
  "items": [
   {
    "id": "ued-figma-mcp-guide",
@@ -178783,6 +178783,55 @@
    ],
    "noteEn": "Listed in awesome-shadcn-ui: React component library built on Base UI with three themes (atmospheric dark, dense, and light) sharing one token set, installable from its shadcn registry or npm.",
    "added": "2026-10-18"
+  },
+  {
+   "id": "rd-s21xh1n-x-com",
+   "name": "Year in Logos",
+   "url": "https://x.com/thenickpattison/status/2111490729101111518",
+   "note": "A collection of logo designs spanning twelve brands, each shown with its wordmark and icon across varied backgrounds from vibrant gradients to dark minimal fields.",
+   "noteEn": "A collection of logo designs spanning twelve brands, each shown with its wordmark and icon across varied backgrounds from vibrant gradients to dark minimal fields.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@thenickpattison",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/s21xh1n-x-com",
+   "rdkind": "Design",
+   "rdcat": "Branding",
+   "rdstyle": [
+    "Geometric",
+    "Minimal",
+    "Dark",
+    "Vibrant"
+   ],
+   "author": {
+    "name": "Nick Pattison",
+    "handle": "@thenickpattison",
+    "url": "https://x.com/thenickpattison"
+   },
+   "x_post": "https://x.com/thenickpattison/status/2111490729101111518",
+   "xsrc": {
+    "post": "https://x.com/thenickpattison/status/2111490729101111518",
+    "author": "@thenickpattison",
+    "likes": 863,
+    "bookmarks": 376,
+    "reposts": 17,
+    "impressions": 22576,
+    "date": "2026-10-17"
+   },
+   "pub": "2026-10-17",
+   "added": "2026-10-18"
   }
  ],
  "guides": [
@@ -178985,5 +179034,5 @@
    ]
   }
  ],
- "updatedAt": "2026-10-18T04:29Z"
+ "updatedAt": "2026-10-18T06:33Z"
 }
