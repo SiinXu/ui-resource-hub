@@ -1,6 +1,6 @@
 {
- "generated": "2026-10-17",
- "count": 4727,
+ "generated": "2026-10-18",
+ "count": 4742,
  "items": [
   {
    "id": "ued-figma-mcp-guide",
@@ -178350,6 +178350,439 @@
    },
    "pub": "2026-10-17",
    "added": "2026-10-17"
+  },
+  {
+   "id": "aw-audiocn-dev",
+   "name": "audiocn",
+   "url": "https://audiocn.dev",
+   "note": "awesome-shadcn-ui 收录：Audio components for React, built the shadcn way: level meters, visualizers, faders, knobs, channel strips, a complete mixer, players and sound pads. Copy, paste, make them yours.",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chart"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Audio components for React, built the shadcn way: level meters, visualizers, faders, knobs, channel strips, a complete mixer, players and sound pads. Copy, paste, make them yours.",
+   "added": "2026-10-18"
+  },
+  {
+   "id": "aw-hugeicons-animated-com",
+   "name": "hugeicons-animated",
+   "url": "https://hugeicons-animated.com",
+   "note": "awesome-shadcn-ui 收录：Open-source shadcn registry of hand-animated Hugeicons for React, built with Motion and installed icon by icon as editable source with the shadcn CLI.",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "motion",
+    "table",
+    "icon"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Open-source shadcn registry of hand-animated Hugeicons for React, built with Motion and installed icon by icon as editable source with the shadcn CLI.",
+   "added": "2026-10-18"
+  },
+  {
+   "id": "aw-cojeev-com-ui",
+   "name": "000h",
+   "url": "https://cojeev.com/ui/",
+   "note": "awesome-shadcn-ui 收录：MIT-licensed shadcn registry of React components with organic shapes and adjustable motion, covering core UI, charts, drawers, text effects, animated backgrounds and WebGL sculptures.",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "motion",
+    "background",
+    "chart",
+    "table",
+    "dialog"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: MIT-licensed shadcn registry of React components with organic shapes and adjustable motion, covering core UI, charts, drawers, text effects, animated backgrounds and WebGL sculptures.",
+   "added": "2026-10-18"
+  },
+  {
+   "id": "aw-8bit-cnlibs-com",
+   "name": "8bit-cnlibs",
+   "url": "https://8bit.cnlibs.com/",
+   "note": "awesome-shadcn-ui 收录：Retro pixel-style take on the shadcn/ui components with notched pixel corners and borders, built on Base UI and installable from its own shadcn registry along with 40+ themes.",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Retro pixel-style take on the shadcn/ui components with notched pixel corners and borders, built on Base UI and installable from its own shadcn registry along with 40+ themes.",
+   "added": "2026-10-18"
+  },
+  {
+   "id": "aw-ascii-cnlibs-com",
+   "name": "ascii-cnlibs",
+   "url": "https://ascii.cnlibs.com/",
+   "note": "awesome-shadcn-ui 收录：The shadcn/ui components redrawn as monospace text, with frames made of ASCII characters on a single grid, built on Base UI and installable from its own shadcn registry.",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "table"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: The shadcn/ui components redrawn as monospace text, with frames made of ASCII characters on a single grid, built on Base UI and installable from its own shadcn registry.",
+   "added": "2026-10-18"
+  },
+  {
+   "id": "aw-ui-beste-co",
+   "name": "beste-ui",
+   "url": "https://ui.beste.co/",
+   "note": "awesome-shadcn-ui 收录：shadcn/ui registry of blocks, pieces and components installable with the shadcn CLI or over MCP; pieces, components and some blocks are free under MIT, while most blocks and full pages require a paid",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat",
+    "layout"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: shadcn/ui registry of blocks, pieces and components installable with the shadcn CLI or over MCP; pieces, components and some blocks are free under MIT, while most blocks and full pages require a paid",
+   "added": "2026-10-18"
+  },
+  {
+   "id": "aw-better-design-com",
+   "name": "better-design",
+   "url": "https://better-design.com",
+   "note": "awesome-shadcn-ui 收录：A shadcn registry of complete design systems, each installable with its own tokens and 200+ components, plus an MCP server that helps coding agents pick and install one; free, with a paid Pro plan for",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: A shadcn registry of complete design systems, each installable with its own tokens and 200+ components, plus an MCP server that helps coding agents pick and install one; free, with a paid Pro plan for",
+   "added": "2026-10-18"
+  },
+  {
+   "id": "aw-blode-co-ui",
+   "name": "blode-ui",
+   "url": "https://blode.co/ui",
+   "note": "awesome-shadcn-ui 收录：An open-source registry of accessible React components built on Base UI and Tailwind CSS v4, installable with the shadcn CLI.",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: An open-source registry of accessible React components built on Base UI and Tailwind CSS v4, installable with the shadcn CLI.",
+   "added": "2026-10-18"
+  },
+  {
+   "id": "aw-github-com-openstatushq-data-table-filters",
+   "name": "data-table-filters",
+   "url": "https://github.com/openstatusHQ/data-table-filters",
+   "note": "awesome-shadcn-ui 收录：Data table blocks for shadcn/ui with faceted filters, sorting, infinite scroll and a row detail sheet, installed as editable source with the shadcn CLI.",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat",
+    "table",
+    "layout"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Data table blocks for shadcn/ui with faceted filters, sorting, infinite scroll and a row detail sheet, installed as editable source with the shadcn CLI.",
+   "added": "2026-10-18"
+  },
+  {
+   "id": "aw-evex-sh",
+   "name": "evex",
+   "url": "https://evex.sh",
+   "note": "awesome-shadcn-ui 收录：Open-source shadcn registry of AI agents for Vercel's Eve framework, installable into an Eve app with the shadcn CLI.",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Open-source shadcn registry of AI agents for Vercel's Eve framework, installable into an Eve app with the shadcn CLI.",
+   "added": "2026-10-18"
+  },
+  {
+   "id": "aw-ui-tinkererslabs-com",
+   "name": "mischief-ui",
+   "url": "https://ui.tinkererslabs.com",
+   "note": "awesome-shadcn-ui 收录：A playful, high-utility shadcn registry: PDF, DOCX and JSON viewers, redaction and bounding boxes, agent chat with tool calls, data tables, command palettes, OTP inputs, and shader fields.",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat",
+    "background",
+    "table",
+    "form"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: A playful, high-utility shadcn registry: PDF, DOCX and JSON viewers, redaction and bounding boxes, agent chat with tool calls, data tables, command palettes, OTP inputs, and shader fields.",
+   "added": "2026-10-18"
+  },
+  {
+   "id": "aw-design-helpmarq-com",
+   "name": "ns-ui",
+   "url": "https://design.helpmarq.com",
+   "note": "awesome-shadcn-ui 收录：Open-source registry of React components, each built around a single interaction, from heroes and animated backgrounds to charts, loaders and form controls, installable by URL with the shadcn CLI.",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "motion",
+    "background",
+    "chart",
+    "form"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Open-source registry of React components, each built around a single interaction, from heroes and animated backgrounds to charts, loaders and form controls, installable by URL with the shadcn CLI.",
+   "added": "2026-10-18"
+  },
+  {
+   "id": "aw-paceui-com",
+   "name": "paceui",
+   "url": "https://paceui.com/",
+   "note": "awesome-shadcn-ui 收录：shadcn registry of React blocks, motion components, and templates for Next.js and TanStack Start, with free blocks and components and paid Basic and Pro licenses for the full catalog.",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat",
+    "motion",
+    "layout"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: shadcn registry of React blocks, motion components, and templates for Next.js and TanStack Start, with free blocks and components and paid Basic and Pro licenses for the full catalog.",
+   "added": "2026-10-18"
+  },
+  {
+   "id": "aw-shadcn-rjsf-form-builder-noowah-dev",
+   "name": "shadcn-rjsf-form-builder",
+   "url": "https://shadcn-rjsf-form-builder.noowah.dev/",
+   "note": "awesome-shadcn-ui 收录：A shadcn/ui registry for react-jsonschema-form with a themed JSON Schema form renderer and a drag-and-drop visual form builder with live preview.",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "form"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: A shadcn/ui registry for react-jsonschema-form with a themed JSON Schema form renderer and a drag-and-drop visual form builder with live preview.",
+   "added": "2026-10-18"
+  },
+  {
+   "id": "aw-usva-build",
+   "name": "usva",
+   "url": "https://usva.build/",
+   "note": "awesome-shadcn-ui 收录：React component library built on Base UI with three themes (atmospheric dark, dense, and light) sharing one token set, installable from its shadcn registry or npm.",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: React component library built on Base UI with three themes (atmospheric dark, dense, and light) sharing one token set, installable from its shadcn registry or npm.",
+   "added": "2026-10-18"
   }
  ],
  "guides": [
@@ -178552,5 +178985,5 @@
    ]
   }
  ],
- "updatedAt": "2026-10-17T16:38Z"
+ "updatedAt": "2026-10-18T04:29Z"
 }

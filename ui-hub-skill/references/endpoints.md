@@ -1,9 +1,9 @@
 # UI Hub endpoints
 
-- Resources (live, 4727+ items): https://siinxu.github.io/ui-resource-hub/api/resources.json
+- Resources (live, 4742+ items): https://siinxu.github.io/ui-resource-hub/api/resources.json
 - Skills + workflow: https://siinxu.github.io/ui-resource-hub/api/skills.json
 - llms.txt: https://siinxu.github.io/ui-resource-hub/llms.txt
 - Full text: https://siinxu.github.io/ui-resource-hub/llms-full.txt
 - Human guide: https://siinxu.github.io/ui-resource-hub/agents/
 
-Always fetch the live JSON; the bundled copy below is a snapshot (2026-10-17 16:38 UTC).
+Always fetch the live JSON; the bundled copy below is a snapshot (2026-10-18 04:29 UTC).

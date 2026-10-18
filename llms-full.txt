@@ -1,6 +1,6 @@
 # UI Hub
 
-> Curated, multilingual directory of 4727 public UI resources (component libraries, component style demos, effects, design systems, design skills for AI agents) plus original blog analysis of AI design techniques. Data updated 2026-10-17 16:38 UTC.
+> Curated, multilingual directory of 4742 public UI resources (component libraries, component style demos, effects, design systems, design skills for AI agents) plus original blog analysis of AI design techniques. Data updated 2026-10-18 04:29 UTC.
 
 Use the JSON endpoints, not the SPA, when acting as an agent. Every entry links to its original site; licenses belong to the original authors.
 
@@ -112,11 +112,11 @@ Use the JSON endpoints, not the SPA, when acting as an agent. Every entry links 
 - [visx](https://airbnb.io/visx/): Airbnb's low-level visualization components
 
 ## FAQ
-- **What is UI Hub?** A free, curated directory of 4727 public UI resources: 166 component libraries, 1989 component style demos with light/dark screenshots, 70 design skills for AI agents, plus effects, templates, specs and tutorials. It links to original sites and never hosts paid source code.
+- **What is UI Hub?** A free, curated directory of 4742 public UI resources: 167 component libraries, 1989 component style demos with light/dark screenshots, 70 design skills for AI agents, plus effects, templates, specs and tutorials. It links to original sites and never hosts paid source code.
 - **How do I find a component in a given style?** Load https://siinxu.github.io/ui-resource-hub/api/resources.json and filter by ct (component kind, e.g. "dialog") and vs (visual style, e.g. "minimal" or "motion"). type="style" entries are concrete component demos with a libName and page URL; type="library" entries are whole libraries with install info on the site.
 - **Which skills should an agent use for good UI?** One direction skill (frontend-design or taste-skill), emil-design-eng for motion and interaction polish, then impeccable, baseline-ui, web-design-guidelines and accessibility as an audit pass. See https://siinxu.github.io/ui-resource-hub/api/skills.json.
 - **Can I copy the code?** Open-source libraries can be used under their own licenses (MIT, Apache-2.0 etc.); the card shows the original link. Paid tiers (marked paid/freemium) must be bought from the original vendor.
-- **How often is it updated?** Daily via a GitHub Actions job that adds new UI repositories and tools from GitHub, awesome-shadcn-ui and Hacker News. Nothing is deleted. Last update: 2026-10-17 16:38 UTC.
+- **How often is it updated?** Daily via a GitHub Actions job that adds new UI repositories and tools from GitHub, awesome-shadcn-ui and Hacker News. Nothing is deleted. Last update: 2026-10-18 04:29 UTC.
 
 
 # Blog posts (full text, English)
@@ -4075,6 +4075,21 @@ Get Hyped. Get Noticed. Get Results.
 - uploadcn | collection | https://uploadcn.dev | Listed in awesome-shadcn-ui: MIT-licensed shadcn registry of file upload components and 58 blocks, with resumable S3, R2 and Cloudinary uploads, installable in 
 - Vercel Store Shader Effect | inspiration | https://vercel.com/store | A WebGL shader on the Vercel x Shopify store hero dissolves the right half of a racing jacket photo into an animated white dot-matrix pattern that pulses across
 - Action Wheel Interaction | inspiration | https://x.com/withAnimationUI/status/2110643020890849625 | A neumorphic action wheel where clicking a central plus button fans out five circular icon actions radially, then collapses on dismiss.
+- audiocn | collection | https://audiocn.dev | Listed in awesome-shadcn-ui: Audio components for React, built the shadcn way: level meters, visualizers, faders, knobs, channel strips, a complete mixer, playe
+- hugeicons-animated | collection | https://hugeicons-animated.com | Listed in awesome-shadcn-ui: Open-source shadcn registry of hand-animated Hugeicons for React, built with Motion and installed icon by icon as editable source w
+- 000h | collection | https://cojeev.com/ui/ | Listed in awesome-shadcn-ui: MIT-licensed shadcn registry of React components with organic shapes and adjustable motion, covering core UI, charts, drawers, text
+- 8bit-cnlibs | collection | https://8bit.cnlibs.com/ | Listed in awesome-shadcn-ui: Retro pixel-style take on the shadcn/ui components with notched pixel corners and borders, built on Base UI and installable from it
+- ascii-cnlibs | collection | https://ascii.cnlibs.com/ | Listed in awesome-shadcn-ui: The shadcn/ui components redrawn as monospace text, with frames made of ASCII characters on a single grid, built on Base UI and ins
+- beste-ui | collection | https://ui.beste.co/ | Listed in awesome-shadcn-ui: shadcn/ui registry of blocks, pieces and components installable with the shadcn CLI or over MCP; pieces, components and some blocks
+- better-design | collection | https://better-design.com | Listed in awesome-shadcn-ui: A shadcn registry of complete design systems, each installable with its own tokens and 200+ components, plus an MCP server that hel
+- blode-ui | collection | https://blode.co/ui | Listed in awesome-shadcn-ui: An open-source registry of accessible React components built on Base UI and Tailwind CSS v4, installable with the shadcn CLI.
+- data-table-filters | library | https://github.com/openstatusHQ/data-table-filters | Listed in awesome-shadcn-ui: Data table blocks for shadcn/ui with faceted filters, sorting, infinite scroll and a row detail sheet, installed as editable source
+- evex | collection | https://evex.sh | Listed in awesome-shadcn-ui: Open-source shadcn registry of AI agents for Vercel's Eve framework, installable into an Eve app with the shadcn CLI.
+- mischief-ui | collection | https://ui.tinkererslabs.com | Listed in awesome-shadcn-ui: A playful, high-utility shadcn registry: PDF, DOCX and JSON viewers, redaction and bounding boxes, agent chat with tool calls, data
+- ns-ui | collection | https://design.helpmarq.com | Listed in awesome-shadcn-ui: Open-source registry of React components, each built around a single interaction, from heroes and animated backgrounds to charts, l
+- paceui | collection | https://paceui.com/ | Listed in awesome-shadcn-ui: shadcn registry of React blocks, motion components, and templates for Next.js and TanStack Start, with free blocks and components a
+- shadcn-rjsf-form-builder | collection | https://shadcn-rjsf-form-builder.noowah.dev/ | Listed in awesome-shadcn-ui: A shadcn/ui registry for react-jsonschema-form with a themed JSON Schema form renderer and a drag-and-drop visual form builder with
+- usva | collection | https://usva.build/ | Listed in awesome-shadcn-ui: React component library built on Base UI with three themes (atmospheric dark, dense, and light) sharing one token set, installable 
 
 # Component style demos: 1989 entries, see api/resources.json (type=style)
 
