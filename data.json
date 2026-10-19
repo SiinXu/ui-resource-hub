@@ -1,6 +1,6 @@
 {
  "generated": "2026-10-19",
- "count": 4758,
+ "count": 4767,
  "items": [
   {
    "id": "ued-figma-mcp-guide",
@@ -179262,6 +179262,445 @@
    ],
    "noteEn": "Listed in awesome-shadcn-ui: Open-source components for sports apps",
    "added": "2026-10-19"
+  },
+  {
+   "id": "rd-i9dkez3-geometric-light-animation",
+   "name": "Geometric Light Animation",
+   "url": "https://x.com/zachlieberman/status/2111325518335262791",
+   "note": "Glowing wireframe shapes morph and rotate against a dark ground, each vertex radiating prismatic halos of chromatic light in a continuous generative animation study.",
+   "noteEn": "Glowing wireframe shapes morph and rotate against a dark ground, each vertex radiating prismatic halos of chromatic light in a continuous generative animation study.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@zachlieberman",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "motion"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/i9dkez3-geometric-light-animation",
+   "rdkind": "Design",
+   "rdcat": "Motion",
+   "rdstyle": [
+    "Geometric",
+    "Abstract",
+    "Experimental",
+    "Dark",
+    "Vibrant"
+   ],
+   "author": {
+    "name": "zach lieberman",
+    "handle": "@zachlieberman",
+    "url": "https://x.com/zachlieberman"
+   },
+   "x_post": "https://x.com/zachlieberman/status/2111325518335262791",
+   "xsrc": {
+    "post": "https://x.com/zachlieberman/status/2111325518335262791",
+    "author": "@zachlieberman",
+    "likes": 1899,
+    "bookmarks": 423,
+    "reposts": 169,
+    "impressions": 28201,
+    "date": "2026-10-17"
+   },
+   "pub": "2026-10-18",
+   "added": "2026-10-19"
+  },
+  {
+   "id": "rd-v9ei7uc-editorial-poetry-posters",
+   "name": "Editorial Poetry Posters",
+   "url": "https://x.com/AarzooAly/status/2111503257722089973",
+   "note": "A series of expressive editorial layouts pairing oversized bold grotesque type with French literary quotes and small surrealist painting inserts on a pale background.",
+   "noteEn": "A series of expressive editorial layouts pairing oversized bold grotesque type with French literary quotes and small surrealist painting inserts on a pale background.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@aarzooaly",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/v9ei7uc-editorial-poetry-posters",
+   "rdkind": "Design",
+   "rdcat": "Posters",
+   "rdstyle": [
+    "Typographic",
+    "Editorial",
+    "Black & White",
+    "Light"
+   ],
+   "author": {
+    "name": "Aarzoo",
+    "handle": "@aarzooaly",
+    "url": "https://x.com/aarzooaly"
+   },
+   "x_post": "https://x.com/AarzooAly/status/2111503257722089973",
+   "xsrc": {
+    "post": "https://x.com/AarzooAly/status/2111503257722089973",
+    "author": "@AarzooAly",
+    "likes": 625,
+    "bookmarks": 231,
+    "reposts": 29,
+    "impressions": 10783,
+    "date": "2026-10-17"
+   },
+   "pub": "2026-10-18",
+   "added": "2026-10-19"
+  },
+  {
+   "id": "rd-1s5fpnx-tessel-brand-poster-series",
+   "name": "Tessel Poster Series",
+   "url": "https://x.com/roktim___/status/2111141670549143748",
+   "note": "A campaign poster series for Tessel, an AI tool that builds working apps from a single sentence, with each poster pairing a classical mythological image with a built-in feature.",
+   "noteEn": "A campaign poster series for Tessel, an AI tool that builds working apps from a single sentence, with each poster pairing a classical mythological image with a built-in feature.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@roktim___",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/1s5fpnx-tessel-brand-poster-series",
+   "rdkind": "Design",
+   "rdcat": "Posters",
+   "rdstyle": [
+    "Illustrative",
+    "Editorial",
+    "Textured",
+    "Light",
+    "Muted"
+   ],
+   "author": {
+    "name": "Roktimm",
+    "handle": "@roktim___",
+    "url": "https://x.com/roktim___"
+   },
+   "x_post": "https://x.com/roktim___/status/2111141670549143748",
+   "xsrc": {
+    "post": "https://x.com/roktim___/status/2111141670549143748",
+    "author": "@roktim___",
+    "likes": 261,
+    "bookmarks": 144,
+    "reposts": 6,
+    "impressions": 4402,
+    "date": "2026-10-16"
+   },
+   "pub": "2026-10-18",
+   "added": "2026-10-19"
+  },
+  {
+   "id": "rd-qbsvs1j-spacing-visualization-dashboard",
+   "name": "Spacing Tips",
+   "url": "https://x.com/MichaelFilipiuk/status/2111383736243859714",
+   "note": "An interactive wireframe dashboard that color-codes spacing zones one by one, showing how adjusting padding and gaps reshapes the overall layout feel.",
+   "noteEn": "An interactive wireframe dashboard that color-codes spacing zones one by one, showing how adjusting padding and gaps reshapes the overall layout feel.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@michaelfilipiuk",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/qbsvs1j-spacing-visualization-dashboard",
+   "rdkind": "Design",
+   "rdcat": "Interface",
+   "rdstyle": [
+    "Minimal",
+    "Light"
+   ],
+   "author": {
+    "name": "Michael · Design Partner",
+    "handle": "@michaelfilipiuk",
+    "url": "https://x.com/michaelfilipiuk"
+   },
+   "x_post": "https://x.com/MichaelFilipiuk/status/2111383736243859714",
+   "xsrc": {
+    "post": "https://x.com/MichaelFilipiuk/status/2111383736243859714",
+    "author": "@MichaelFilipiuk",
+    "likes": 4938,
+    "bookmarks": 3892,
+    "reposts": 212,
+    "impressions": 191107,
+    "date": "2026-10-17"
+   },
+   "pub": "2026-10-18",
+   "added": "2026-10-19"
+  },
+  {
+   "id": "rd-40g4zdp-dachshund-password-strength",
+   "name": "Dachshund Password Strength",
+   "url": "https://x.com/RaminNasibov/status/2111194691303596460",
+   "note": "A password reset screen where an illustrated dachshund physically stretches longer as the user types more characters, its expression shifting from grumpy to smiling as strength improves.",
+   "noteEn": "A password reset screen where an illustrated dachshund physically stretches longer as the user types more characters, its expression shifting from grumpy to smiling as strength improves.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@raminnasibov",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "playful"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/40g4zdp-dachshund-password-strength",
+   "rdkind": "Design",
+   "rdcat": "Interface",
+   "rdstyle": [
+    "Playful",
+    "Illustrative",
+    "Light"
+   ],
+   "author": {
+    "name": "Ramin Nasibov",
+    "handle": "@raminnasibov",
+    "url": "https://x.com/raminnasibov"
+   },
+   "x_post": "https://x.com/RaminNasibov/status/2111194691303596460",
+   "xsrc": {
+    "post": "https://x.com/RaminNasibov/status/2111194691303596460",
+    "author": "@RaminNasibov",
+    "likes": 4838,
+    "bookmarks": 1265,
+    "reposts": 311,
+    "impressions": 551895,
+    "date": "2026-10-16"
+   },
+   "pub": "2026-10-18",
+   "added": "2026-10-19"
+  },
+  {
+   "id": "rd-rvuo97c-berkeley-mono-typeface",
+   "name": "Berkeley Mono Typeface",
+   "url": "https://x.com/FonsMans/status/2111747430081609749",
+   "note": "Berkeley Mono shown across varied specimen frames including code, tabular data, isolated glyphs and directory listings, all white on black.",
+   "noteEn": "Berkeley Mono shown across varied specimen frames including code, tabular data, isolated glyphs and directory listings, all white on black.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@usgraphics",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/rvuo97c-berkeley-mono-typeface",
+   "rdkind": "Design",
+   "rdcat": "Illustration",
+   "rdstyle": [
+    "Typographic",
+    "Minimal",
+    "Black & White"
+   ],
+   "author": {
+    "name": "Fons Mans",
+    "handle": "@usgraphics",
+    "url": "https://x.com/usgraphics"
+   },
+   "x_post": "https://x.com/FonsMans/status/2111747430081609749",
+   "xsrc": {
+    "post": "https://x.com/FonsMans/status/2111747430081609749",
+    "author": "@FonsMans",
+    "likes": 1327,
+    "bookmarks": 812,
+    "reposts": 34,
+    "impressions": 27642,
+    "date": "2026-10-18"
+   },
+   "pub": "2026-10-18",
+   "added": "2026-10-19"
+  },
+  {
+   "id": "rd-66jng7z-garden-slider",
+   "name": "Garden Slider",
+   "url": "https://x.com/aleksksaa/status/2111107877473603928",
+   "note": "A slider component where dragging a bee handle along the track grows a pastel flower garden, with blooms appearing and petals scattering as the value changes.",
+   "noteEn": "A slider component where dragging a bee handle along the track grows a pastel flower garden, with blooms appearing and petals scattering as the value changes.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@aleksksaa",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "playful"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/66jng7z-garden-slider",
+   "rdkind": "Design",
+   "rdcat": "Interface",
+   "rdstyle": [
+    "Playful",
+    "Illustrative",
+    "Dark",
+    "Pastel"
+   ],
+   "author": {
+    "name": "Sasha ༊·˚",
+    "handle": "@aleksksaa",
+    "url": "https://x.com/aleksksaa"
+   },
+   "x_post": "https://x.com/aleksksaa/status/2111107877473603928",
+   "xsrc": {
+    "post": "https://x.com/aleksksaa/status/2111107877473603928",
+    "author": "@aleksksaa",
+    "likes": 1124,
+    "bookmarks": 367,
+    "reposts": 88,
+    "impressions": 28802,
+    "date": "2026-10-16"
+   },
+   "pub": "2026-10-18",
+   "added": "2026-10-19"
+  },
+  {
+   "id": "rd-lbf05x5-pixel-basketball-court",
+   "name": "Pixel Basketball Court",
+   "url": "https://x.com/zzzzshawn/status/2111546123546661289",
+   "note": "Looping isometric pixel art animation of a street basketball court where three players move, pass, and shoot across an ~19-second cycle.",
+   "noteEn": "Looping isometric pixel art animation of a street basketball court where three players move, pass, and shoot across an ~19-second cycle.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@zzzzshawn",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "motion"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/lbf05x5-pixel-basketball-court",
+   "rdkind": "Design",
+   "rdcat": "Motion",
+   "rdstyle": [
+    "Illustrative",
+    "Light"
+   ],
+   "author": {
+    "name": "shawn.",
+    "handle": "@zzzzshawn",
+    "url": "https://x.com/zzzzshawn"
+   },
+   "x_post": "https://x.com/zzzzshawn/status/2111546123546661289",
+   "xsrc": {
+    "post": "https://x.com/zzzzshawn/status/2111546123546661289",
+    "author": "@zzzzshawn",
+    "likes": 1791,
+    "bookmarks": 580,
+    "reposts": 74,
+    "impressions": 40226,
+    "date": "2026-10-17"
+   },
+   "pub": "2026-10-18",
+   "added": "2026-10-19"
+  },
+  {
+   "id": "rd-qsi4mth-x-com",
+   "name": "iOS Gesture Studies",
+   "url": "https://x.com/shedsgns/status/2111683692716302340",
+   "note": "Six animated wireframe panels demonstrate iOS gesture physics including swipe-to-dismiss, pull-to-refresh, and bottom sheet detents, with spring momentum visible on release.",
+   "noteEn": "Six animated wireframe panels demonstrate iOS gesture physics including swipe-to-dismiss, pull-to-refresh, and bottom sheet detents, with spring momentum visible on release.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@shedsgns",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/qsi4mth-x-com",
+   "rdkind": "Design",
+   "rdcat": "Interface",
+   "rdstyle": [
+    "Minimal",
+    "Light"
+   ],
+   "author": {
+    "name": "Juliette",
+    "handle": "@shedsgns",
+    "url": "https://x.com/shedsgns"
+   },
+   "x_post": "https://x.com/shedsgns/status/2111683692716302340",
+   "xsrc": {
+    "post": "https://x.com/shedsgns/status/2111683692716302340",
+    "author": "@shedsgns",
+    "likes": 903,
+    "bookmarks": 936,
+    "reposts": 44,
+    "impressions": 26946,
+    "date": "2026-10-18"
+   },
+   "pub": "2026-10-18",
+   "added": "2026-10-19"
   }
  ],
  "guides": [
@@ -179464,5 +179903,5 @@
    ]
   }
  ],
- "updatedAt": "2026-10-19T04:37Z"
+ "updatedAt": "2026-10-19T06:45Z"
 }
