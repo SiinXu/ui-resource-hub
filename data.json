@@ -1,6 +1,6 @@
 {
  "generated": "2026-10-19",
- "count": 4767,
+ "count": 4771,
  "items": [
   {
    "id": "ued-figma-mcp-guide",
@@ -179701,6 +179701,207 @@
    },
    "pub": "2026-10-18",
    "added": "2026-10-19"
+  },
+  {
+   "id": "rd-db6ez9r-pumpkin-bot-animation",
+   "name": "Pumpkin Bot",
+   "url": "https://x.com/benjitaylor/status/2112218561091661922",
+   "note": "A flat orange pumpkin character animates on a black background, its eye-holes and body morphing through expressive poses in a looping motion study.",
+   "noteEn": "A flat orange pumpkin character animates on a black background, its eye-holes and body morphing through expressive poses in a looping motion study.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@benjitaylor",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "motion"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "playful"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/db6ez9r-pumpkin-bot-animation",
+   "rdkind": "Design",
+   "rdcat": "Motion",
+   "rdstyle": [
+    "Playful",
+    "Illustrative",
+    "Dark"
+   ],
+   "author": {
+    "name": "Benji Taylor",
+    "handle": "@benjitaylor",
+    "url": "https://x.com/benjitaylor"
+   },
+   "x_post": "https://x.com/benjitaylor/status/2112218561091661922",
+   "xsrc": {
+    "post": "https://x.com/benjitaylor/status/2112218561091661922",
+    "author": "@benjitaylor",
+    "likes": 2794,
+    "bookmarks": 126,
+    "reposts": 112,
+    "impressions": 57808,
+    "date": "2026-10-19"
+   },
+   "pub": "2026-10-19",
+   "added": "2026-10-19"
+  },
+  {
+   "id": "rd-hu3ssq1-frosted-glass-folder-icon",
+   "name": "Frosted Glass Folder",
+   "url": "https://x.com/alex_barashkov/status/2112171007465103548",
+   "note": "A rendered folder icon cycles between closed and open states in Blender, with the body shifting from flat to a frosted, progressively blurred glass material.",
+   "noteEn": "A rendered folder icon cycles between closed and open states in Blender, with the body shifting from flat to a frosted, progressively blurred glass material.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@alex_barashkov",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "motion"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "3d",
+    "glass"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/hu3ssq1-frosted-glass-folder-icon",
+   "rdkind": "Design",
+   "rdcat": "Motion",
+   "rdstyle": [
+    "3D",
+    "Glassmorphism",
+    "Soft UI",
+    "Light"
+   ],
+   "author": {
+    "name": "Alex Barashkov",
+    "handle": "@alex_barashkov",
+    "url": "https://x.com/alex_barashkov"
+   },
+   "x_post": "https://x.com/alex_barashkov/status/2112171007465103548",
+   "xsrc": {
+    "post": "https://x.com/alex_barashkov/status/2112171007465103548",
+    "author": "@alex_barashkov",
+    "likes": 541,
+    "bookmarks": 190,
+    "reposts": 9,
+    "impressions": 9129,
+    "date": "2026-10-19"
+   },
+   "pub": "2026-10-19",
+   "added": "2026-10-19"
+  },
+  {
+   "id": "rd-oucqtio-aikido-security-campaign",
+   "name": "Aikido Security Campaign",
+   "url": "https://x.com/ayushsoni_io/status/2112165051260182891",
+   "note": "Three campaign posters for Aikido security use dense fields of @ symbol particles radiating from brand icons and bold typographic headlines across light and dark backgrounds.",
+   "noteEn": "Three campaign posters for Aikido security use dense fields of @ symbol particles radiating from brand icons and bold typographic headlines across light and dark backgrounds.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@ayushsoni_io",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/oucqtio-aikido-security-campaign",
+   "rdkind": "Design",
+   "rdcat": "Posters",
+   "rdstyle": [
+    "Typographic",
+    "Geometric",
+    "Experimental",
+    "Vibrant"
+   ],
+   "author": {
+    "name": "Ayush Soni",
+    "handle": "@ayushsoni_io",
+    "url": "https://x.com/ayushsoni_io"
+   },
+   "x_post": "https://x.com/ayushsoni_io/status/2112165051260182891",
+   "xsrc": {
+    "post": "https://x.com/ayushsoni_io/status/2112165051260182891",
+    "author": "@ayushsoni_io",
+    "likes": 89,
+    "bookmarks": 22,
+    "reposts": 1,
+    "impressions": 2623,
+    "date": "2026-10-19"
+   },
+   "pub": "2026-10-19",
+   "added": "2026-10-19"
+  },
+  {
+   "id": "rd-96clvkf-animated-footer-letterforms",
+   "name": "Animated Footer Logo",
+   "url": "https://x.com/creativestefan/status/2112087657421435073",
+   "note": "Website footer where hovering each letter of the oversized 'ascend' wordmark illuminates it in neon green and reveals its bezier path nodes.",
+   "noteEn": "Website footer where hovering each letter of the oversized 'ascend' wordmark illuminates it in neon green and reveals its bezier path nodes.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@creativestefan",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/96clvkf-animated-footer-letterforms",
+   "rdkind": "Design",
+   "rdcat": "Web",
+   "rdstyle": [
+    "Typographic",
+    "Dark",
+    "Neon"
+   ],
+   "author": {
+    "name": "Stefan",
+    "handle": "@creativestefan",
+    "url": "https://x.com/creativestefan"
+   },
+   "x_post": "https://x.com/creativestefan/status/2112087657421435073",
+   "xsrc": {
+    "post": "https://x.com/creativestefan/status/2112087657421435073",
+    "author": "@creativestefan",
+    "likes": 214,
+    "bookmarks": 73,
+    "reposts": 12,
+    "impressions": 4115,
+    "date": "2026-10-19"
+   },
+   "pub": "2026-10-19",
+   "added": "2026-10-19"
   }
  ],
  "guides": [
@@ -179903,5 +180104,5 @@
    ]
   }
  ],
- "updatedAt": "2026-10-19T09:08Z"
+ "updatedAt": "2026-10-19T19:27Z"
 }

@@ -1,6 +1,6 @@
 # UI Hub
 
-> Curated, multilingual directory of 4767 public UI resources (component libraries, component style demos, effects, design systems, design skills for AI agents) plus original blog analysis of AI design techniques. Data updated 2026-10-19 09:08 UTC.
+> Curated, multilingual directory of 4771 public UI resources (component libraries, component style demos, effects, design systems, design skills for AI agents) plus original blog analysis of AI design techniques. Data updated 2026-10-19 19:27 UTC.
 
 Use the JSON endpoints, not the SPA, when acting as an agent. Every entry links to its original site; licenses belong to the original authors.
 
@@ -112,11 +112,11 @@ Use the JSON endpoints, not the SPA, when acting as an agent. Every entry links 
 - [visx](https://airbnb.io/visx/): Airbnb's low-level visualization components
 
 ## FAQ
-- **What is UI Hub?** A free, curated directory of 4767 public UI resources: 173 component libraries, 1989 component style demos with light/dark screenshots, 70 design skills for AI agents, plus effects, templates, specs and tutorials. It links to original sites and never hosts paid source code.
+- **What is UI Hub?** A free, curated directory of 4771 public UI resources: 173 component libraries, 1989 component style demos with light/dark screenshots, 70 design skills for AI agents, plus effects, templates, specs and tutorials. It links to original sites and never hosts paid source code.
 - **How do I find a component in a given style?** Load https://siinxu.github.io/ui-resource-hub/api/resources.json and filter by ct (component kind, e.g. "dialog") and vs (visual style, e.g. "minimal" or "motion"). type="style" entries are concrete component demos with a libName and page URL; type="library" entries are whole libraries with install info on the site.
 - **Which skills should an agent use for good UI?** One direction skill (frontend-design or taste-skill), emil-design-eng for motion and interaction polish, then impeccable, baseline-ui, web-design-guidelines and accessibility as an audit pass. See https://siinxu.github.io/ui-resource-hub/api/skills.json.
 - **Can I copy the code?** Open-source libraries can be used under their own licenses (MIT, Apache-2.0 etc.); the card shows the original link. Paid tiers (marked paid/freemium) must be bought from the original vendor.
-- **How often is it updated?** Daily via a GitHub Actions job that adds new UI repositories and tools from GitHub, awesome-shadcn-ui and Hacker News. Nothing is deleted. Last update: 2026-10-19 09:08 UTC.
+- **How often is it updated?** Daily via a GitHub Actions job that adds new UI repositories and tools from GitHub, awesome-shadcn-ui and Hacker News. Nothing is deleted. Last update: 2026-10-19 19:27 UTC.
 
 
 # Blog posts (full text, English)
@@ -4115,6 +4115,10 @@ Get Hyped. Get Noticed. Get Results.
 - Garden Slider | inspiration | https://x.com/aleksksaa/status/2111107877473603928 | A slider component where dragging a bee handle along the track grows a pastel flower garden, with blooms appearing and petals scattering as the value changes.
 - Pixel Basketball Court | inspiration | https://x.com/zzzzshawn/status/2111546123546661289 | Looping isometric pixel art animation of a street basketball court where three players move, pass, and shoot across an ~19-second cycle.
 - iOS Gesture Studies | inspiration | https://x.com/shedsgns/status/2111683692716302340 | Six animated wireframe panels demonstrate iOS gesture physics including swipe-to-dismiss, pull-to-refresh, and bottom sheet detents, with spring momentum visibl
+- Pumpkin Bot | inspiration | https://x.com/benjitaylor/status/2112218561091661922 | A flat orange pumpkin character animates on a black background, its eye-holes and body morphing through expressive poses in a looping motion study.
+- Frosted Glass Folder | inspiration | https://x.com/alex_barashkov/status/2112171007465103548 | A rendered folder icon cycles between closed and open states in Blender, with the body shifting from flat to a frosted, progressively blurred glass material.
+- Aikido Security Campaign | inspiration | https://x.com/ayushsoni_io/status/2112165051260182891 | Three campaign posters for Aikido security use dense fields of @ symbol particles radiating from brand icons and bold typographic headlines across light and dar
+- Animated Footer Logo | inspiration | https://x.com/creativestefan/status/2112087657421435073 | Website footer where hovering each letter of the oversized 'ascend' wordmark illuminates it in neon green and reveals its bezier path nodes.
 
 # Component style demos: 1989 entries, see api/resources.json (type=style)
 
