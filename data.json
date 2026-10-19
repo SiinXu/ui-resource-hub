@@ -1,6 +1,6 @@
 {
- "generated": "2026-10-18",
- "count": 4743,
+ "generated": "2026-10-19",
+ "count": 4758,
  "items": [
   {
    "id": "ued-figma-mcp-guide",
@@ -178832,6 +178832,436 @@
    },
    "pub": "2026-10-17",
    "added": "2026-10-18"
+  },
+  {
+   "id": "gh-bvaughn-react-virtualized",
+   "name": "react-virtualized",
+   "url": "https://react-virtualized-docs.vercel.app",
+   "note": "GitHub 新晋 UI 仓库：React components for efficiently rendering large lists and tabular data（GitHub ★27067，MIT 许可，仓库 bvaughn/react-virtualized）",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "GitHub",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "开源",
+    "自动收录"
+   ],
+   "ct": [
+    "table",
+    "form"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "New GitHub UI repo: React components for efficiently rendering large lists and tabular data (★27067, MIT, bvaughn/react-virtualized)",
+   "added": "2026-10-19"
+  },
+  {
+   "id": "aw-warren-eduard3v-com",
+   "name": "warren-ui",
+   "url": "https://warren.eduard3v.com",
+   "note": "awesome-shadcn-ui 收录：Data-dense instrument-panel components for ops and monitoring dashboards, such as panels, sparklines, heatmaps, ledgers and incident timelines.",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Data-dense instrument-panel components for ops and monitoring dashboards, such as panels, sparklines, heatmaps, ledgers and incident timelines.",
+   "added": "2026-10-19"
+  },
+  {
+   "id": "aw-ui-wensity-com",
+   "name": "wensity",
+   "url": "https://ui.wensity.com",
+   "note": "awesome-shadcn-ui 收录：Free, MIT-licensed React UI primitives, components, and motion for Next.js and Tailwind CSS v4, themeable from one design token contract; a paid Pro catalog is also available.",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat",
+    "motion"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Free, MIT-licensed React UI primitives, components, and motion for Next.js and Tailwind CSS v4, themeable from one design token contract; a paid Pro catalog is also available.",
+   "added": "2026-10-19"
+  },
+  {
+   "id": "aw-identityforge-io-kits",
+   "name": "identity-forge",
+   "url": "https://identityforge.io/kits",
+   "note": "awesome-shadcn-ui 收录：Registry of shadcn/ui theme kits that install with the shadcn CLI, each setting a font pairing plus light and dark color tokens, with most kits free and premium kits on a paid Pro plan.",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Registry of shadcn/ui theme kits that install with the shadcn CLI, each setting a font pairing plus light and dark color tokens, with most kits free and premium kits on a paid Pro plan.",
+   "added": "2026-10-19"
+  },
+  {
+   "id": "aw-github-com-sebas-dv-shadcn-theme-editor",
+   "name": "sebas-dv-shadcn-theme-editor",
+   "url": "https://github.com/Sebas-DV/shadcn-theme-editor",
+   "note": "awesome-shadcn-ui 收录：In-app overlay that edits shadcn (Tailwind v4 / OKLCH) theme tokens live and writes changes straight back to your globals.css via PostCSS, with OKLCH sliders and live WCAG contrast checks.",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat",
+    "editor"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: In-app overlay that edits shadcn (Tailwind v4 / OKLCH) theme tokens live and writes changes straight back to your globals.css via PostCSS, with OKLCH sliders and live WCAG contrast checks.",
+   "added": "2026-10-19"
+  },
+  {
+   "id": "aw-aicanvas-me",
+   "name": "aicanvas",
+   "url": "https://aicanvas.me",
+   "note": "awesome-shadcn-ui 收录：Animated React and Tailwind components and blocks installable via the shadcn CLI, with an MIT-licensed free library (CLI installs need a free account) and a paid Premium tier for design systems and te",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat",
+    "motion",
+    "layout"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Animated React and Tailwind components and blocks installable via the shadcn CLI, with an MIT-licensed free library (CLI installs need a free account) and a paid Premium tier for design systems and te",
+   "added": "2026-10-19"
+  },
+  {
+   "id": "aw-crafterui-com",
+   "name": "crafterui",
+   "url": "https://crafterui.com",
+   "note": "awesome-shadcn-ui 收录：Motion and interaction components for React and Tailwind — 3D carousels, scroll letter reveals, a Dynamic Island, cursor hit-testing and rolling countdowns — installed with the shadcn CLI and owned as",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat",
+    "motion"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Motion and interaction components for React and Tailwind — 3D carousels, scroll letter reveals, a Dynamic Island, cursor hit-testing and rolling countdowns — installed with the shadcn CLI and owned as",
+   "added": "2026-10-19"
+  },
+  {
+   "id": "aw-github-com-amanshakya0018-forgeui",
+   "name": "forgeui",
+   "url": "https://github.com/AmanShakya0018/forgeui",
+   "note": "awesome-shadcn-ui 收录：Animation-first shadcn/ui registry with free motion components and WebGL backgrounds, plus a paid Pro tier that unlocks blocks, templates, and the rest of the catalog.",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat",
+    "motion",
+    "background",
+    "layout"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Animation-first shadcn/ui registry with free motion components and WebGL backgrounds, plus a paid Pro tier that unlocks blocks, templates, and the rest of the catalog.",
+   "added": "2026-10-19"
+  },
+  {
+   "id": "aw-motion-lexicon-pages-dev-en",
+   "name": "motion-lexicon",
+   "url": "https://motion-lexicon.pages.dev/en/",
+   "note": "awesome-shadcn-ui 收录：Open-source shadcn registry of animated React components, page blocks, and motion primitives, each with a live preview and reduced-motion support.",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "motion",
+    "layout",
+    "icon"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Open-source shadcn registry of animated React components, page blocks, and motion primitives, each with a live preview and reduced-motion support.",
+   "added": "2026-10-19"
+  },
+  {
+   "id": "aw-useplanes-com",
+   "name": "planes",
+   "url": "https://useplanes.com",
+   "note": "awesome-shadcn-ui 收录：Registry of animated React components built with Motion and Tailwind, with a small free set of controls, text effects and physics interactions and a paid Pro license for most of the catalog.",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat",
+    "motion"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Registry of animated React components built with Motion and Tailwind, with a small free set of controls, text effects and physics interactions and a paid Pro license for most of the catalog.",
+   "added": "2026-10-19"
+  },
+  {
+   "id": "aw-blockdex-thecompound-tech",
+   "name": "blockdex",
+   "url": "https://blockdex.thecompound.tech",
+   "note": "awesome-shadcn-ui 收录：Item-level search across public shadcn/ui registries that shows each component's install command, dependencies, and whether it is free, paid, or no longer available.",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat",
+    "layout"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Item-level search across public shadcn/ui registries that shows each component's install command, dependencies, and whether it is free, paid, or no longer available.",
+   "added": "2026-10-19"
+  },
+  {
+   "id": "aw-compify-app",
+   "name": "compify",
+   "url": "https://compify.app",
+   "note": "awesome-shadcn-ui 收录：Open-source CLI that packages selected React Storybook stories into reviewable shadcn registry items, with a public component registry and a hosted editor that offers paid credit-based plans.",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat",
+    "editor"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Open-source CLI that packages selected React Storybook stories into reviewable shadcn registry items, with a public component registry and a hosted editor that offers paid credit-based plans.",
+   "added": "2026-10-19"
+  },
+  {
+   "id": "aw-github-com-extension-js-examples-tree-main-examples-sidebar-",
+   "name": "extension-js-sidebar-shadcn",
+   "url": "https://github.com/extension-js/examples/tree/main/examples/sidebar-shadcn",
+   "note": "awesome-shadcn-ui 收录：Browser extension side panel starter for Chrome, Edge, and Firefox from a single manifest, built with shadcn/ui, Tailwind, and Radix primitives.",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Browser extension side panel starter for Chrome, Edge, and Firefox from a single manifest, built with shadcn/ui, Tailwind, and Radix primitives.",
+   "added": "2026-10-19"
+  },
+  {
+   "id": "aw-github-com-bettertyped-hype-stack",
+   "name": "hype-stack",
+   "url": "https://github.com/BetterTyped/hype-stack",
+   "note": "awesome-shadcn-ui 收录：MIT-licensed full-stack monorepo starter whose web, desktop, admin and extension apps are built on shadcn/ui over a typed Hono backend, with optional paid feature packs.",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: MIT-licensed full-stack monorepo starter whose web, desktop, admin and extension apps are built on shadcn/ui over a typed Hono backend, with optional paid feature packs.",
+   "added": "2026-10-19"
+  },
+  {
+   "id": "aw-github-com-mrdogeco-docs",
+   "name": "mrdoge-ui",
+   "url": "https://github.com/mrdogeco/docs",
+   "note": "awesome-shadcn-ui 收录：Open-source components for sports apps",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Open-source components for sports apps",
+   "added": "2026-10-19"
   }
  ],
  "guides": [
@@ -179034,5 +179464,5 @@
    ]
   }
  ],
- "updatedAt": "2026-10-18T08:11Z"
+ "updatedAt": "2026-10-19T04:37Z"
 }
