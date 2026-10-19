@@ -6,4 +6,4 @@
 - Full text: https://siinxu.github.io/ui-resource-hub/llms-full.txt
 - Human guide: https://siinxu.github.io/ui-resource-hub/agents/
 
-Always fetch the live JSON; the bundled copy below is a snapshot (2026-10-19 06:45 UTC).
+Always fetch the live JSON; the bundled copy below is a snapshot (2026-10-19 09:08 UTC).
