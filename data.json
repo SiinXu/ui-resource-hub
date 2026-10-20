@@ -1,6 +1,6 @@
 {
  "generated": "2026-10-20",
- "count": 4786,
+ "count": 4787,
  "items": [
   {
    "id": "ued-figma-mcp-guide",
@@ -180323,6 +180323,56 @@
    ],
    "noteEn": "Listed in awesome-shadcn-ui: Accelerate your development with a sleek, open-source admin dashboard and landing page built on Vite-React, Next.js, Tailwind CSS, and Shadcn/UI which is fully customizable and production-ready",
    "added": "2026-10-20"
+  },
+  {
+   "id": "rd-9nil9bs-first-of-kind-s3-identity",
+   "name": "First of Kind S3",
+   "url": "https://x.com/oliverhamrin/status/2112253989982965965",
+   "note": "Exploration drafts for the First of Kind Season 3 visual identity, cycling through poster concepts with duotone portraits, glitch effects, geometric overlays, and vibrant color treatments.",
+   "noteEn": "Exploration drafts for the First of Kind Season 3 visual identity, cycling through poster concepts with duotone portraits, glitch effects, geometric overlays, and vibrant color treatments.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@oliverhamrin",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/9nil9bs-first-of-kind-s3-identity",
+   "rdkind": "Design",
+   "rdcat": "Branding",
+   "rdstyle": [
+    "Typographic",
+    "Experimental",
+    "Illustrative",
+    "Dark",
+    "Vibrant"
+   ],
+   "author": {
+    "name": "Oliver",
+    "handle": "@oliverhamrin",
+    "url": "https://x.com/oliverhamrin"
+   },
+   "x_post": "https://x.com/oliverhamrin/status/2112253989982965965",
+   "xsrc": {
+    "post": "https://x.com/oliverhamrin/status/2112253989982965965",
+    "author": "@oliverhamrin",
+    "likes": 299,
+    "bookmarks": 120,
+    "reposts": 9,
+    "impressions": 11205,
+    "date": "2026-10-19"
+   },
+   "pub": "2026-10-20",
+   "added": "2026-10-20"
   }
  ],
  "guides": [
@@ -180525,5 +180575,5 @@
    ]
   }
  ],
- "updatedAt": "2026-10-20T04:46Z"
+ "updatedAt": "2026-10-20T06:32Z"
 }
