@@ -1,6 +1,6 @@
 {
- "generated": "2026-10-19",
- "count": 4771,
+ "generated": "2026-10-20",
+ "count": 4786,
  "items": [
   {
    "id": "ued-figma-mcp-guide",
@@ -179902,6 +179902,427 @@
    },
    "pub": "2026-10-19",
    "added": "2026-10-19"
+  },
+  {
+   "id": "aw-github-com-w3cproject-rivelle-ui",
+   "name": "rivelle-ui",
+   "url": "https://github.com/w3cproject/rivelle-ui",
+   "note": "awesome-shadcn-ui 收录：Rivelle is an open-source UI library for React and Next.js with editable components, interactive effects, reusable blocks, and complete templates. Install only what you need and fully own the source.",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "table",
+    "layout"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Rivelle is an open-source UI library for React and Next.js with editable components, interactive effects, reusable blocks, and complete templates. Install only what you need and fully own the source.",
+   "added": "2026-10-20"
+  },
+  {
+   "id": "aw-snapcn-dev",
+   "name": "snapcn",
+   "url": "https://snapcn.dev",
+   "note": "awesome-shadcn-ui 收录：Video components that look like software, for Remotion. AI answer streams, terminal sessions, device frames, captions and full scenes.",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat",
+    "motion"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Video components that look like software, for Remotion. AI answer streams, terminal sessions, device frames, captions and full scenes.",
+   "added": "2026-10-20"
+  },
+  {
+   "id": "aw-1st-pouf-worksonmy-dev",
+   "name": "1st-pouf",
+   "url": "https://1st-pouf.worksonmy.dev",
+   "note": "awesome-shadcn-ui 收录：An open-source claymorphism UI kit and shadcn-style registry for React, with reusable components, blocks, and templates built for Tailwind CSS 4.",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat",
+    "layout"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: An open-source claymorphism UI kit and shadcn-style registry for React, with reusable components, blocks, and templates built for Tailwind CSS 4.",
+   "added": "2026-10-20"
+  },
+  {
+   "id": "aw-ds-interlace-tools",
+   "name": "interlace-ui",
+   "url": "https://ds.interlace.tools",
+   "note": "awesome-shadcn-ui 收录：Design-system registry for the Interlace docs sites: theme baseline, layout and accessibility primitives, and MDX components. Installable with the shadcn CLI.",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Design-system registry for the Interlace docs sites: theme baseline, layout and accessibility primitives, and MDX components. Installable with the shadcn CLI.",
+   "added": "2026-10-20"
+  },
+  {
+   "id": "aw-shadcnstore-com",
+   "name": "shadcn-store",
+   "url": "https://shadcnstore.com",
+   "note": "awesome-shadcn-ui 收录：A growing collection of shadcn/ui components, blocks, and templates for building modern web apps based on Base UI.",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: A growing collection of shadcn/ui components, blocks, and templates for building modern web apps based on Base UI.",
+   "added": "2026-10-20"
+  },
+  {
+   "id": "aw-ui-meta-cloud-api-site",
+   "name": "wa-ui",
+   "url": "https://ui.meta-cloud-api.site",
+   "note": "awesome-shadcn-ui 收录：A registry of WhatsApp Web chat components — chat bubbles, message input, voice and media bubbles, and Meta Business message templates — built on WhatsApp's WDS design tokens with light and dark modes",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat",
+    "form",
+    "layout"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: A registry of WhatsApp Web chat components — chat bubbles, message input, voice and media bubbles, and Meta Business message templates — built on WhatsApp's WDS design tokens with light and dark modes",
+   "added": "2026-10-20"
+  },
+  {
+   "id": "aw-github-com-whatisjery-atelier-ui",
+   "name": "atelier-ui",
+   "url": "https://github.com/whatisjery/atelier-ui",
+   "note": "awesome-shadcn-ui 收录：A React Three Fiber and Motion component system for React and Next.js. WebGL galleries, interactive cursors, smooth scroll effects and page transitions, built on one shared canvas and one scroll loop.",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "motion"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: A React Three Fiber and Motion component system for React and Next.js. WebGL galleries, interactive cursors, smooth scroll effects and page transitions, built on one shared canvas and one scroll loop.",
+   "added": "2026-10-20"
+  },
+  {
+   "id": "aw-github-com-rmahammad-motiq",
+   "name": "motiq",
+   "url": "https://github.com/RMahammad/motiq",
+   "note": "awesome-shadcn-ui 收录：Accessible, state-driven animated React components and workflow blocks for shadcn/ui, installed as editable source.",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "motion",
+    "table",
+    "layout"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Accessible, state-driven animated React components and workflow blocks for shadcn/ui, installed as editable source.",
+   "added": "2026-10-20"
+  },
+  {
+   "id": "aw-ui-soralabs-studio",
+   "name": "sora-ui",
+   "url": "https://ui.soralabs.studio/",
+   "note": "awesome-shadcn-ui 收录：Motion-first React component registry on the shadcn model. Install @soralabs/* primitives via the CLI, own the code in your repo. Includes scroll reveals, text effects, magnetic UI, and more, powered",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "motion"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Motion-first React component registry on the shadcn model. Install @soralabs/* primitives via the CLI, own the code in your repo. Includes scroll reveals, text effects, magnetic UI, and more, powered",
+   "added": "2026-10-20"
+  },
+  {
+   "id": "aw-github-com-axadrn-shadcn-templ",
+   "name": "go-shadcn-templ",
+   "url": "https://github.com/axadrn/shadcn-templ",
+   "note": "awesome-shadcn-ui 收录：Go and templ port of shadcn/ui.",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Go and templ port of shadcn/ui.",
+   "added": "2026-10-20"
+  },
+  {
+   "id": "aw-github-com-shadcndashboard-shadcndashboard",
+   "name": "shadcndashboard",
+   "url": "https://github.com/shadcndashboard/shadcndashboard",
+   "note": "awesome-shadcn-ui 收录：Build admin panel faster with the open source complete shadcn dashboard kit",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Build admin panel faster with the open source complete shadcn dashboard kit",
+   "added": "2026-10-20"
+  },
+  {
+   "id": "aw-github-com-harshjdhv-componentry",
+   "name": "componentry",
+   "url": "https://github.com/harshjdhv/componentry",
+   "note": "awesome-shadcn-ui 收录：Beautiful Animated UI Components for React Effortlessly add polished, production-ready interactions to your projects, with the styling and animations already handled. Browse components",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "motion"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Beautiful Animated UI Components for React Effortlessly add polished, production-ready interactions to your projects, with the styling and animations already handled. Browse components",
+   "added": "2026-10-20"
+  },
+  {
+   "id": "aw-github-com-codedthemes-uiable",
+   "name": "uiable",
+   "url": "https://github.com/codedthemes/uiable",
+   "note": "awesome-shadcn-ui 收录：UIAble is a free, open-source UI system that extends shadcn/ui with a vivid design system, reusable React components, and complete code ownership.",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: UIAble is a free, open-source UI system that extends shadcn/ui with a vivid design system, reusable React components, and complete code ownership.",
+   "added": "2026-10-20"
+  },
+  {
+   "id": "aw-localmode-ai",
+   "name": "localmode",
+   "url": "https://localmode.ai",
+   "note": "awesome-shadcn-ui 收录：Local-first AI UI registry with 107 copy-owned primitives and 36 composed blocks (chat, RAG, Whisper transcription, CLIP image search) that run entirely in the browser, no servers or API keys. Install",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat",
+    "layout"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Local-first AI UI registry with 107 copy-owned primitives and 36 composed blocks (chat, RAG, Whisper transcription, CLIP image search) that run entirely in the browser, no servers or API keys. Install",
+   "added": "2026-10-20"
+  },
+  {
+   "id": "aw-github-com-shadcnstore-shadcn-dashboard-landing-template",
+   "name": "shadcn-dashboard-landing-template",
+   "url": "https://github.com/shadcnstore/shadcn-dashboard-landing-template",
+   "note": "awesome-shadcn-ui 收录：Accelerate your development with a sleek, open-source admin dashboard and landing page built on Vite-React, Next.js, Tailwind CSS, and Shadcn/UI which is fully customizable and production-ready",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat",
+    "layout"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Accelerate your development with a sleek, open-source admin dashboard and landing page built on Vite-React, Next.js, Tailwind CSS, and Shadcn/UI which is fully customizable and production-ready",
+   "added": "2026-10-20"
   }
  ],
  "guides": [
@@ -180104,5 +180525,5 @@
    ]
   }
  ],
- "updatedAt": "2026-10-19T19:27Z"
+ "updatedAt": "2026-10-20T04:46Z"
 }

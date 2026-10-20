@@ -1,6 +1,6 @@
 # UI Hub
 
-> Curated, multilingual directory of 4771 public UI resources (component libraries, component style demos, effects, design systems, design skills for AI agents) plus original blog analysis of AI design techniques. Data updated 2026-10-19 19:27 UTC.
+> Curated, multilingual directory of 4786 public UI resources (component libraries, component style demos, effects, design systems, design skills for AI agents) plus original blog analysis of AI design techniques. Data updated 2026-10-20 04:46 UTC.
 
 Use the JSON endpoints, not the SPA, when acting as an agent. Every entry links to its original site; licenses belong to the original authors.
 
@@ -112,11 +112,11 @@ Use the JSON endpoints, not the SPA, when acting as an agent. Every entry links 
 - [visx](https://airbnb.io/visx/): Airbnb's low-level visualization components
 
 ## FAQ
-- **What is UI Hub?** A free, curated directory of 4771 public UI resources: 173 component libraries, 1989 component style demos with light/dark screenshots, 70 design skills for AI agents, plus effects, templates, specs and tutorials. It links to original sites and never hosts paid source code.
+- **What is UI Hub?** A free, curated directory of 4786 public UI resources: 181 component libraries, 1989 component style demos with light/dark screenshots, 70 design skills for AI agents, plus effects, templates, specs and tutorials. It links to original sites and never hosts paid source code.
 - **How do I find a component in a given style?** Load https://siinxu.github.io/ui-resource-hub/api/resources.json and filter by ct (component kind, e.g. "dialog") and vs (visual style, e.g. "minimal" or "motion"). type="style" entries are concrete component demos with a libName and page URL; type="library" entries are whole libraries with install info on the site.
 - **Which skills should an agent use for good UI?** One direction skill (frontend-design or taste-skill), emil-design-eng for motion and interaction polish, then impeccable, baseline-ui, web-design-guidelines and accessibility as an audit pass. See https://siinxu.github.io/ui-resource-hub/api/skills.json.
 - **Can I copy the code?** Open-source libraries can be used under their own licenses (MIT, Apache-2.0 etc.); the card shows the original link. Paid tiers (marked paid/freemium) must be bought from the original vendor.
-- **How often is it updated?** Daily via a GitHub Actions job that adds new UI repositories and tools from GitHub, awesome-shadcn-ui and Hacker News. Nothing is deleted. Last update: 2026-10-19 19:27 UTC.
+- **How often is it updated?** Daily via a GitHub Actions job that adds new UI repositories and tools from GitHub, awesome-shadcn-ui and Hacker News. Nothing is deleted. Last update: 2026-10-20 04:46 UTC.
 
 
 # Blog posts (full text, English)
@@ -4119,6 +4119,21 @@ Get Hyped. Get Noticed. Get Results.
 - Frosted Glass Folder | inspiration | https://x.com/alex_barashkov/status/2112171007465103548 | A rendered folder icon cycles between closed and open states in Blender, with the body shifting from flat to a frosted, progressively blurred glass material.
 - Aikido Security Campaign | inspiration | https://x.com/ayushsoni_io/status/2112165051260182891 | Three campaign posters for Aikido security use dense fields of @ symbol particles radiating from brand icons and bold typographic headlines across light and dar
 - Animated Footer Logo | inspiration | https://x.com/creativestefan/status/2112087657421435073 | Website footer where hovering each letter of the oversized 'ascend' wordmark illuminates it in neon green and reveals its bezier path nodes.
+- rivelle-ui | library | https://github.com/w3cproject/rivelle-ui | Listed in awesome-shadcn-ui: Rivelle is an open-source UI library for React and Next.js with editable components, interactive effects, reusable blocks, and comp
+- snapcn | collection | https://snapcn.dev | Listed in awesome-shadcn-ui: Video components that look like software, for Remotion. AI answer streams, terminal sessions, device frames, captions and full scen
+- 1st-pouf | collection | https://1st-pouf.worksonmy.dev | Listed in awesome-shadcn-ui: An open-source claymorphism UI kit and shadcn-style registry for React, with reusable components, blocks, and templates built for T
+- interlace-ui | collection | https://ds.interlace.tools | Listed in awesome-shadcn-ui: Design-system registry for the Interlace docs sites: theme baseline, layout and accessibility primitives, and MDX components. Insta
+- shadcn-store | collection | https://shadcnstore.com | Listed in awesome-shadcn-ui: A growing collection of shadcn/ui components, blocks, and templates for building modern web apps based on Base UI.
+- wa-ui | collection | https://ui.meta-cloud-api.site | Listed in awesome-shadcn-ui: A registry of WhatsApp Web chat components — chat bubbles, message input, voice and media bubbles, and Meta Business message templa
+- atelier-ui | library | https://github.com/whatisjery/atelier-ui | Listed in awesome-shadcn-ui: A React Three Fiber and Motion component system for React and Next.js. WebGL galleries, interactive cursors, smooth scroll effects 
+- motiq | library | https://github.com/RMahammad/motiq | Listed in awesome-shadcn-ui: Accessible, state-driven animated React components and workflow blocks for shadcn/ui, installed as editable source.
+- sora-ui | collection | https://ui.soralabs.studio/ | Listed in awesome-shadcn-ui: Motion-first React component registry on the shadcn model. Install @soralabs/* primitives via the CLI, own the code in your repo. I
+- go-shadcn-templ | library | https://github.com/axadrn/shadcn-templ | Listed in awesome-shadcn-ui: Go and templ port of shadcn/ui.
+- shadcndashboard | library | https://github.com/shadcndashboard/shadcndashboard | Listed in awesome-shadcn-ui: Build admin panel faster with the open source complete shadcn dashboard kit
+- componentry | library | https://github.com/harshjdhv/componentry | Listed in awesome-shadcn-ui: Beautiful Animated UI Components for React Effortlessly add polished, production-ready interactions to your projects, with the styl
+- uiable | library | https://github.com/codedthemes/uiable | Listed in awesome-shadcn-ui: UIAble is a free, open-source UI system that extends shadcn/ui with a vivid design system, reusable React components, and complete 
+- localmode | collection | https://localmode.ai | Listed in awesome-shadcn-ui: Local-first AI UI registry with 107 copy-owned primitives and 36 composed blocks (chat, RAG, Whisper transcription, CLIP image sear
+- shadcn-dashboard-landing-template | library | https://github.com/shadcnstore/shadcn-dashboard-landing-template | Listed in awesome-shadcn-ui: Accelerate your development with a sleek, open-source admin dashboard and landing page built on Vite-React, Next.js, Tailwind CSS, 
 
 # Component style demos: 1989 entries, see api/resources.json (type=style)
 
