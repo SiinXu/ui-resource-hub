@@ -698,4 +698,71 @@ approval   → Trace 之外的 Confirmation 条目，回答后变成 Tool 行</c
 <h2>UI Hub 能帮什么</h2>
 <p>Trace 和 Code Block 解决的是一轮回复「内部」的活动展示，页面其余部分仍然需要一个视觉方向。可以在 UI Hub 资源列表里按 <em>chat</em> 组件类型筛选，对比其他智能体与聊天组件库，再参考我们的 <a href="../shadcn-blocks-deep-dive/">shadcn Blocks 深读</a> 里的克制风格。如果你的智能体还要改你的设计系统：同一周 shadcndesign 把 DS Manager 做成了 MCP 服务器，编码智能体可以在遵守锁定值的前提下修改 shadcn 主题。</p>""",
  refs=[('October 2026 - Trace, Code Block and AI Elements','shadcn/ui changelog','https://ui.shadcn.com/docs/changelog/2026-10-ai-elements'),('AI Elements: patterns for agentic interfaces','shadcn/ui docs','https://ui.shadcn.com/docs/ai-elements'),('Trace','shadcn/ui docs','https://ui.shadcn.com/docs/components/base/trace'),('Code Block','shadcn/ui docs','https://ui.shadcn.com/docs/components/base/code-block'),('Confirmation pattern','shadcn/ui docs','https://ui.shadcn.com/docs/ai-elements/base/confirmation'),('Reasoning pattern (Markdown for coding agents)','shadcn/ui docs','https://ui.shadcn.com/docs/ai-elements/base/reasoning.md'),('“I just published Trace, a new component for agent activity”','shadcn on X','https://x.com/shadcn/status/2110410655165779985'),('AI Elements for Svelte','shadcn-svelte docs','https://shadcn-svelte.com/docs/ai-elements'),('AI SDK Elements (being deprecated)','Vercel','https://elements.ai-sdk.dev/'),('Chatbot: message parts with useChat','AI SDK docs','https://ai-sdk.dev/docs/ai-sdk-ui/chatbot'),('shadcn chatbot template','shadcn-ui on GitHub','https://github.com/shadcn-ui/chatbot-template'),('Connect your coding agent to your design system','shadcndesign (Matt Wierzbicki)','https://www.shadcndesign.com/blog/ds-manager-mcp-server')]),
+dict(slug='lovart-arti-design-agent-memory', date='2026-10-20', cat='agents', series=None, featured=True, tags=['Lovart','Arti','design agents','memory','review'],
+ t=T('Lovart 2.0 and Arti: design agents learn to remember, run and review','Lovart 2.0 与 Arti：设计智能体学会了记忆、代跑和自查','Lovart 2.0 與 Arti：設計智慧體學會了記憶、代跑和自查','Lovart 2.0 と Arti：デザインエージェントが記憶し、任され、自ら見直す','Lovart 2.0과 Arti: 디자인 에이전트가 기억하고, 맡아서 하고, 스스로 검토한다','Lovart 2.0 dan Arti: ejen reka bentuk belajar mengingat, menjalankan dan menyemak','Lovart 2.0 và Arti: agent thiết kế biết ghi nhớ, tự chạy và tự rà soát',"Lovart 2.0 et Arti : les agents de design apprennent à se souvenir, à travailler seuls et à se relire",'Lovart 2.0 y Arti: los agentes de diseño aprenden a recordar, ejecutar y revisar','Lovart 2.0 und Arti: Design-Agenten lernen erinnern, selbst arbeiten und prüfen'),
+ s=T('Lovart 2.0 adds an editable taste memory, scheduled design delegation and a background consistency check. Read alongside two other launches from 19 Oct, it shows where design agents are heading, and what you should write down before you hand one the work.',
+     'Lovart 2.0 加入了可编辑的审美记忆、可定时的设计委托和后台一致性检查。和 10 月 19 日另外两项发布放在一起看，能看出设计智能体的走向，也能看出把活交出去之前你该先写清楚什么。',
+     'Lovart 2.0 加入了可編輯的審美記憶、可排程的設計委託和背景一致性檢查。和 10 月 19 日另外兩項發布放在一起看，能看出設計智慧體的走向，也能看出把工作交出去之前你該先寫清楚什麼。',
+     'Lovart 2.0は編集可能な好みの記憶、定期実行できるデザイン委任、バックグラウンドの一貫性チェックを追加。10月19日の他の2つの発表と並べると、デザインエージェントの方向性と、任せる前に書き出すべきことが見えてくる。',
+     'Lovart 2.0은 편집 가능한 취향 메모리, 예약 가능한 디자인 위임, 백그라운드 일관성 검사를 추가했다. 10월 19일의 다른 두 발표와 함께 보면 디자인 에이전트의 방향과, 일을 맡기기 전에 적어 둘 것이 보인다.',
+     'Lovart 2.0 menambah memori citarasa yang boleh disunting, delegasi reka bentuk berjadual dan semakan konsistensi di latar. Dibaca bersama dua pelancaran lain pada 19 Okt, ia menunjukkan hala tuju ejen reka bentuk.',
+     'Lovart 2.0 thêm bộ nhớ gu thẩm mỹ chỉnh sửa được, giao việc thiết kế theo lịch và kiểm tra nhất quán chạy nền. Đặt cạnh hai bản phát hành khác ngày 19/10, ta thấy hướng đi của agent thiết kế.',
+     "Lovart 2.0 ajoute une mémoire de goût modifiable, une délégation planifiée et une vérification de cohérence en arrière-plan. Lu avec deux autres lancements du 19 octobre, il montre où vont les agents de design.",
+     'Lovart 2.0 añade una memoria de gusto editable, delegación programada y una revisión de coherencia en segundo plano. Junto a otros dos lanzamientos del 19 de octubre, muestra hacia dónde van los agentes de diseño.',
+     'Lovart 2.0 bringt ein editierbares Geschmacksgedächtnis, geplante Design-Delegation und eine Konsistenzprüfung im Hintergrund. Zusammen mit zwei weiteren Launches vom 19. Oktober zeigt es, wohin Design-Agenten gehen.'),
+ en="""<p>On 19 October Lovart shipped version 2.0 of its design agent, built around a new personal agent called Arti. The pitch is not a better image model. Lovart already routes to several third-party image and video models. The change is everything around generation: Arti keeps a memory of how you work, takes whole jobs on a schedule, researches before you start and checks the canvas while you work. It is a useful snapshot of where design agents are going, and of what you have to write down before you can trust one with real work.</p>
+<h2>What actually shipped</h2>
+<ul><li><strong>Memory you can read and edit.</strong> Lovart splits memory into four groups: basic information, collaboration style, aesthetic preferences and frequently used assets. Each entry can be viewed, edited or deleted, you choose whether it applies across projects, and you can seed it by chatting, from past projects, or by uploading a portfolio or a Markdown or memory file from another AI tool.</li>
+<li><strong>Design delegation.</strong> Instead of a chain of prompts you write a brief (what to make, what to watch for, what done looks like), pick the target project, then run it once or daily, weekly or monthly. Each run has a credit limit, there is a Test run before you commit, and results land on a new canvas page. Lovart's own example: 168 product images for 42 SKUs in four sizes, run overnight after a four-SKU test.</li>
+<li><strong>Design Research and Design Review.</strong> Research gathers references from sources such as Google, Pinterest and Behance into a report with a mood board. Review checks the canvas against the project's constraints in the background and only changes anything after you confirm. Lovart's example is a hand-drawn storyboard with one oil-paint frame that slipped through.</li>
+<li><strong>Self-evolving skills.</strong> When you repeat the same workflow across projects more than three times, Lovart offers to save it as a reusable skill. You can switch this off.</li></ul>
+<h2>The same week, the same idea elsewhere</h2>
+<p>Two smaller launches on the same day point the same way. Gemini Notebook added a Review toggle so you can read and edit the outline or producer notes for slides and video overviews <em>before</em> anything renders. Automo's design engine now has a creative-director judge that looks at several rendered candidates and keeps the strongest, and its thumbs-up and thumbs-down now attach to the exact design you rated. Put together, the pattern is clear. The value is moving from "generate" to three other steps: remember what the person likes, show the plan before spending compute, and judge the output against something other than the average of the training data.</p>
+<h2>Our take</h2>
+<p>Memory is only as good as what is in it. A vague "I like clean, modern design" in memory produces the same generic result as a vague prompt, now on every project. The strongest line in Lovart's announcement is its own example memory: show three clearly different directions first, then build out the one I pick. That is a process rule, and process rules are what agents follow well. Treat the memory panel the way we treat a guideline file: short, specific and testable. The Review step is promising for the same reason. A consistency check needs explicit constraints to check against, so write them down at the start of the project rather than hoping the agent infers them.</p>
+<p>Delegation is where the real risk is. A weekly job that quietly drifts off-brand is worse than no job. Lovart's guardrails (test run, credit limit, results on a separate canvas page, run history, pause) are the right shape, and you should use all of them.</p>
+<h2>Checklist: before you hand a design agent the work</h2>
+<ol><li><strong>Write the taste memory by hand.</strong> Three to six lines: palette in named values, type pairing, density, two or three references, and a never-list. Upload it as Markdown instead of letting the agent guess from old projects.</li>
+<li><strong>Add one process rule.</strong> For example "three distinct directions first, then build out the chosen one", or "always show the outline before rendering".</li>
+<li><strong>State constraints the reviewer can check.</strong> Style, aspect ratios, logo clear space, text-on-image contrast. If it is not written, no background check can catch it.</li>
+<li><strong>Test before you schedule.</strong> Run a small batch (Lovart's own example used 4 of 42 SKUs), read every output, then set the schedule and a credit cap.</li>
+<li><strong>Read the memory panel monthly.</strong> Delete anything stale or wrong. Learned preferences are guesses until you confirm them.</li>
+<li><strong>Keep the final call.</strong> Accept fixes one by one, the way Lovart's Review asks you to, and never let a scheduled run publish straight to a live channel.</li></ol>
+<pre><code># taste.md (upload as memory)
+palette: cream #f6f1e7 · ink #1d1a16 · one accent, warm brown #8a5a3b
+type: serif headlines + neutral sans body; no more than two weights
+density: generous white space; one focal image per layout
+process: show 3 clearly different directions first, then build the chosen one
+never: neon gradients · stock 3D blobs · emoji as icons · text over busy photos
+check: same illustration style on every frame · logo clear space ≥ 1× cap height</code></pre>
+<h2>How UI Hub helps</h2>
+<p>If you are writing that taste file from scratch, start from the house-style notes and specs in the <a href="../../kb/">UI Hub encyclopedia</a>, and our earlier piece on <a href="../taste-and-skills-for-agents/">teaching agents taste</a>. The format is the same whether the agent is Lovart, Claude, Cursor or Figma's: short rules first, pixels second.</p>""",
+ zh="""<p>10 月 19 日，Lovart 发布了设计智能体 2.0 版本，核心是一个叫 Arti 的个人设计智能体。卖点不是更强的出图模型，Lovart 本来就接入了多家第三方的图像和视频模型。变化在生成之外：Arti 会记住你的工作方式，能按计划接下整件活，开工前先做调研，干活时在后台检查画布。它很好地说明了设计智能体正在往哪走，也说明了要放心把真活交给它之前，你得先写清楚什么。</p>
+<h2>这次到底发布了什么</h2>
+<ul><li><strong>能看、能改的记忆。</strong>Lovart 把记忆分成四组：基本信息、协作方式、审美偏好和常用素材。每一条都能查看、修改或删除，由你决定是否跨项目使用；可以通过对话告诉它，可以让它从过去的项目里学，也可以上传作品集、Markdown 文档或其他 AI 工具导出的记忆文件。</li>
+<li><strong>设计委托。</strong>不再是一串提示词，而是写一份需求（做什么、注意什么、做成什么样算完成），选好结果放进哪个项目，然后选择只跑一次，或者按天、周、月定时跑。每次运行有积分上限，正式创建前可以先试跑，结果落在新的画布页里。Lovart 自己举的例子：主视觉定稿后，先用 4 个 SKU 试跑，再通宵跑完 42 个 SKU、4 种尺寸共 168 张图。</li>
+<li><strong>设计调研与设计检查。</strong>调研会从 Google、Pinterest、Behance 等来源收集参考，整理成带情绪板的报告。检查会在后台对照项目约束扫一遍画布，只有你确认后才会改动。Lovart 的例子是：一组本该统一手绘动画风格的分镜里，混进了一帧油画质感，被检查出来了。</li>
+<li><strong>自我进化的技能。</strong>同一套流程在不同项目里用了三次以上，Lovart 会提议把它存成可复用的技能。这个功能可以关掉。</li></ul>
+<h2>同一天，别处也在做同一件事</h2>
+<p>同一天还有两项较小的发布，方向一致。Gemini Notebook 给幻灯片和视频概览加了一个 Review 开关，可以在任何内容渲染<em>之前</em>先看、先改大纲或制作说明。Automo 的设计引擎加入了一个「创意总监」评审，会看多个渲染好的候选稿，只留下最强的那张；你的点赞和点踩也会精确对应到你评价的那一稿。放在一起看，规律很清楚：价值正在从「生成」转向另外三步——记住这个人喜欢什么，在花算力之前先给出方案，用训练数据平均值以外的标准来评判结果。</p>
+<h2>我们的看法</h2>
+<p>记忆的质量取决于里面写了什么。如果记忆里只有一句模糊的「我喜欢简洁现代」，结果就和模糊的提示一样平庸，而且会出现在每一个项目里。Lovart 公告里最有用的一句，其实是它自己举的记忆示例：先给三个明显不同的方向，等我选定一个再做全套。这是一条流程规则，而流程规则恰恰是智能体最能遵守的。对待记忆面板，就像对待规范文件一样：短、具体、可检验。设计检查值得期待也是同样的道理：一致性检查需要明确的约束才能对照，所以要在项目一开始就写下来，而不是指望智能体自己猜。</p>
+<p>真正的风险在委托。一个每周悄悄跑偏品牌的定时任务，比没有任务更糟。Lovart 给的护栏（试跑、积分上限、结果放在单独的画布页、运行历史、随时暂停）方向是对的，每一项都应该用上。</p>
+<h2>清单：把活交给设计智能体之前</h2>
+<ol><li><strong>亲手写审美记忆。</strong>三到六行：用具体色值写配色、字体搭配、疏密、两三个参考，加一份禁止清单。以 Markdown 上传，不要让智能体从旧项目里猜。</li>
+<li><strong>加一条流程规则。</strong>比如「先给三个不同方向，再把选中的做完整」，或者「渲染前一定先给大纲」。</li>
+<li><strong>写出检查得了的约束。</strong>风格、画幅比例、Logo 安全区、图上文字的对比度。没写下来的，任何后台检查都抓不到。</li>
+<li><strong>先试跑再定时。</strong>先跑一小批（Lovart 的例子是 42 个 SKU 里先跑 4 个），每一张都看过，再设定计划和积分上限。</li>
+<li><strong>每月看一次记忆面板。</strong>删掉过时或错误的条目。学来的偏好在你确认之前都只是猜测。</li>
+<li><strong>最终决定留在自己手里。</strong>像 Lovart 的检查流程要求的那样逐条确认修改，绝不让定时任务直接发布到线上渠道。</li></ol>
+<pre><code># taste.md（作为记忆上传）
+配色：奶油白 #f6f1e7 · 墨色 #1d1a16 · 只有一个强调色，暖棕 #8a5a3b
+字体：衬线标题 + 中性无衬线正文；最多两种字重
+疏密：留白充足；每个版面只有一个视觉焦点
+流程：先给 3 个明显不同的方向，再把选中的做完整
+禁止：霓虹渐变 · 图库 3D 软泡 · 用 emoji 当图标 · 文字压在杂乱照片上
+检查：每一帧插画风格一致 · Logo 安全区 ≥ 1 倍大写字母高度</code></pre>
+<h2>UI Hub 能帮什么</h2>
+<p>如果要从零写这份审美文件，可以从 <a href="../../kb/">UI Hub 设计百科</a> 里的风格笔记和规范起步，再看我们之前那篇<a href="../taste-and-skills-for-agents/">教智能体审美</a>。无论智能体是 Lovart、Claude、Cursor 还是 Figma 的，格式都一样：先写短规则，再出像素。</p>""",
+ refs=[('Lovart 2.0: Meet Arti, your personal design agent','Lovart','https://www.lovart.ai/news/lovart-2-0-arti'),('Lovart','Lovart','https://www.lovart.ai/'),('How to shape your slides and videos with Gemini Notebook','Google (Viraj Doshi, Shan Wang)','https://blog.google/innovation-and-ai/products/gemini-notebook/co-create-slides-videos/'),('Designs chosen by taste, not just by rule','Automo.ai','https://automo.ai/releases/designs-chosen-by-taste-not-just-by-rule'),('Teaching agents taste: how design skills de-slop AI interfaces','UI Hub','https://siinxu.github.io/ui-resource-hub/blog/taste-and-skills-for-agents/')]),
 ]

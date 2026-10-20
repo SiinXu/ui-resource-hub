@@ -1,5 +1,5 @@
 {
- "count": 28,
+ "count": 29,
  "rss": "https://siinxu.github.io/ui-resource-hub/blog/rss.xml",
  "categories": {
   "tools": "Tools",
@@ -18,6 +18,77 @@
   "weekly": "Series: Weekly roundup"
  },
  "posts": [
+  {
+   "slug": "lovart-arti-design-agent-memory",
+   "url": "https://siinxu.github.io/ui-resource-hub/blog/lovart-arti-design-agent-memory/",
+   "date": "2026-10-20",
+   "category": "agents",
+   "series": null,
+   "featured": true,
+   "tags": [
+    "Lovart",
+    "Arti",
+    "design agents",
+    "memory",
+    "review"
+   ],
+   "title": {
+    "en": "Lovart 2.0 and Arti: design agents learn to remember, run and review",
+    "zh": "Lovart 2.0 与 Arti：设计智能体学会了记忆、代跑和自查",
+    "zht": "Lovart 2.0 與 Arti：設計智慧體學會了記憶、代跑和自查",
+    "ja": "Lovart 2.0 と Arti：デザインエージェントが記憶し、任され、自ら見直す",
+    "ko": "Lovart 2.0과 Arti: 디자인 에이전트가 기억하고, 맡아서 하고, 스스로 검토한다",
+    "ms": "Lovart 2.0 dan Arti: ejen reka bentuk belajar mengingat, menjalankan dan menyemak",
+    "vi": "Lovart 2.0 và Arti: agent thiết kế biết ghi nhớ, tự chạy và tự rà soát",
+    "fr": "Lovart 2.0 et Arti : les agents de design apprennent à se souvenir, à travailler seuls et à se relire",
+    "es": "Lovart 2.0 y Arti: los agentes de diseño aprenden a recordar, ejecutar y revisar",
+    "de": "Lovart 2.0 und Arti: Design-Agenten lernen erinnern, selbst arbeiten und prüfen"
+   },
+   "summary": {
+    "en": "Lovart 2.0 adds an editable taste memory, scheduled design delegation and a background consistency check. Read alongside two other launches from 19 Oct, it shows where design agents are heading, and what you should write down before you hand one the work.",
+    "zh": "Lovart 2.0 加入了可编辑的审美记忆、可定时的设计委托和后台一致性检查。和 10 月 19 日另外两项发布放在一起看，能看出设计智能体的走向，也能看出把活交出去之前你该先写清楚什么。",
+    "zht": "Lovart 2.0 加入了可編輯的審美記憶、可排程的設計委託和背景一致性檢查。和 10 月 19 日另外兩項發布放在一起看，能看出設計智慧體的走向，也能看出把工作交出去之前你該先寫清楚什麼。",
+    "ja": "Lovart 2.0は編集可能な好みの記憶、定期実行できるデザイン委任、バックグラウンドの一貫性チェックを追加。10月19日の他の2つの発表と並べると、デザインエージェントの方向性と、任せる前に書き出すべきことが見えてくる。",
+    "ko": "Lovart 2.0은 편집 가능한 취향 메모리, 예약 가능한 디자인 위임, 백그라운드 일관성 검사를 추가했다. 10월 19일의 다른 두 발표와 함께 보면 디자인 에이전트의 방향과, 일을 맡기기 전에 적어 둘 것이 보인다.",
+    "ms": "Lovart 2.0 menambah memori citarasa yang boleh disunting, delegasi reka bentuk berjadual dan semakan konsistensi di latar. Dibaca bersama dua pelancaran lain pada 19 Okt, ia menunjukkan hala tuju ejen reka bentuk.",
+    "vi": "Lovart 2.0 thêm bộ nhớ gu thẩm mỹ chỉnh sửa được, giao việc thiết kế theo lịch và kiểm tra nhất quán chạy nền. Đặt cạnh hai bản phát hành khác ngày 19/10, ta thấy hướng đi của agent thiết kế.",
+    "fr": "Lovart 2.0 ajoute une mémoire de goût modifiable, une délégation planifiée et une vérification de cohérence en arrière-plan. Lu avec deux autres lancements du 19 octobre, il montre où vont les agents de design.",
+    "es": "Lovart 2.0 añade una memoria de gusto editable, delegación programada y una revisión de coherencia en segundo plano. Junto a otros dos lanzamientos del 19 de octubre, muestra hacia dónde van los agentes de diseño.",
+    "de": "Lovart 2.0 bringt ein editierbares Geschmacksgedächtnis, geplante Design-Delegation und eine Konsistenzprüfung im Hintergrund. Zusammen mit zwei weiteren Launches vom 19. Oktober zeigt es, wohin Design-Agenten gehen."
+   },
+   "reading_minutes": {
+    "en": 4,
+    "zh": 5
+   },
+   "cover": "https://siinxu.github.io/ui-resource-hub/blog/img/lovart-arti-design-agent-memory-cover.webp",
+   "references": [
+    {
+     "title": "Lovart 2.0: Meet Arti, your personal design agent",
+     "by": "Lovart",
+     "url": "https://www.lovart.ai/news/lovart-2-0-arti"
+    },
+    {
+     "title": "Lovart",
+     "by": "Lovart",
+     "url": "https://www.lovart.ai/"
+    },
+    {
+     "title": "How to shape your slides and videos with Gemini Notebook",
+     "by": "Google (Viraj Doshi, Shan Wang)",
+     "url": "https://blog.google/innovation-and-ai/products/gemini-notebook/co-create-slides-videos/"
+    },
+    {
+     "title": "Designs chosen by taste, not just by rule",
+     "by": "Automo.ai",
+     "url": "https://automo.ai/releases/designs-chosen-by-taste-not-just-by-rule"
+    },
+    {
+     "title": "Teaching agents taste: how design skills de-slop AI interfaces",
+     "by": "UI Hub",
+     "url": "https://siinxu.github.io/ui-resource-hub/blog/taste-and-skills-for-agents/"
+    }
+   ]
+  },
   {
    "slug": "shadcn-trace-and-ai-elements",
    "url": "https://siinxu.github.io/ui-resource-hub/blog/shadcn-trace-and-ai-elements/",

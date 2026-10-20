@@ -391,3 +391,4 @@ curl -s https://siinxu.github.io/ui-resource-hub/api/resources.json | jq --arg d
 - Claude Design everywhere: out of beta, into every chat — https://siinxu.github.io/ui-resource-hub/kb/note/blog-claude-design-everywhere.md
 - Figma code layers and Specs: the canvas becomes the shared context again — https://siinxu.github.io/ui-resource-hub/kb/note/blog-figma-code-layers-and-specs.md
 - shadcn Trace and AI Elements: one shape for every step an agent takes — https://siinxu.github.io/ui-resource-hub/kb/note/blog-shadcn-trace-and-ai-elements.md
+- Lovart 2.0 and Arti: design agents learn to remember, run and review — https://siinxu.github.io/ui-resource-hub/kb/note/blog-lovart-arti-design-agent-memory.md
