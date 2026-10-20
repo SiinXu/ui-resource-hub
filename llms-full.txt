@@ -1,6 +1,6 @@
 # UI Hub
 
-> Curated, multilingual directory of 4787 public UI resources (component libraries, component style demos, effects, design systems, design skills for AI agents) plus original blog analysis of AI design techniques. Data updated 2026-10-20 08:43 UTC.
+> Curated, multilingual directory of 4813 public UI resources (component libraries, component style demos, effects, design systems, design skills for AI agents) plus original blog analysis of AI design techniques. Data updated 2026-10-20 18:06 UTC.
 
 Use the JSON endpoints, not the SPA, when acting as an agent. Every entry links to its original site; licenses belong to the original authors.
 
@@ -113,11 +113,11 @@ Use the JSON endpoints, not the SPA, when acting as an agent. Every entry links 
 - [visx](https://airbnb.io/visx/): Airbnb's low-level visualization components
 
 ## FAQ
-- **What is UI Hub?** A free, curated directory of 4787 public UI resources: 181 component libraries, 1989 component style demos with light/dark screenshots, 70 design skills for AI agents, plus effects, templates, specs and tutorials. It links to original sites and never hosts paid source code.
+- **What is UI Hub?** A free, curated directory of 4813 public UI resources: 181 component libraries, 1989 component style demos with light/dark screenshots, 70 design skills for AI agents, plus effects, templates, specs and tutorials. It links to original sites and never hosts paid source code.
 - **How do I find a component in a given style?** Load https://siinxu.github.io/ui-resource-hub/api/resources.json and filter by ct (component kind, e.g. "dialog") and vs (visual style, e.g. "minimal" or "motion"). type="style" entries are concrete component demos with a libName and page URL; type="library" entries are whole libraries with install info on the site.
 - **Which skills should an agent use for good UI?** One direction skill (frontend-design or taste-skill), emil-design-eng for motion and interaction polish, then impeccable, baseline-ui, web-design-guidelines and accessibility as an audit pass. See https://siinxu.github.io/ui-resource-hub/api/skills.json.
 - **Can I copy the code?** Open-source libraries can be used under their own licenses (MIT, Apache-2.0 etc.); the card shows the original link. Paid tiers (marked paid/freemium) must be bought from the original vendor.
-- **How often is it updated?** Daily via a GitHub Actions job that adds new UI repositories and tools from GitHub, awesome-shadcn-ui and Hacker News. Nothing is deleted. Last update: 2026-10-20 08:43 UTC.
+- **How often is it updated?** Daily via a GitHub Actions job that adds new UI repositories and tools from GitHub, awesome-shadcn-ui and Hacker News. Nothing is deleted. Last update: 2026-10-20 18:06 UTC.
 
 
 # Blog posts (full text, English)
@@ -4173,6 +4173,32 @@ Get Hyped. Get Noticed. Get Results.
 - localmode | collection | https://localmode.ai | Listed in awesome-shadcn-ui: Local-first AI UI registry with 107 copy-owned primitives and 36 composed blocks (chat, RAG, Whisper transcription, CLIP image sear
 - shadcn-dashboard-landing-template | library | https://github.com/shadcnstore/shadcn-dashboard-landing-template | Listed in awesome-shadcn-ui: Accelerate your development with a sleek, open-source admin dashboard and landing page built on Vite-React, Next.js, Tailwind CSS, 
 - First of Kind S3 | inspiration | https://x.com/oliverhamrin/status/2112253989982965965 | Exploration drafts for the First of Kind Season 3 visual identity, cycling through poster concepts with duotone portraits, glitch effects, geometric overlays, a
+- Strata Brand Micrographics | inspiration | https://x.com/kraigdesigns/status/2102342319102124137 | A set of compact brand identity elements for Strata, featuring technical label panels, layered circle marks, stripe motifs, and utilitarian typography across li
+- Core Pack | inspiration | https://x.com/24QWapp/status/2112507370496741468 | A widget app's in-app store screen styled as a kawaii candy pack, where tapping opens a purchase flow offering bundles of home screen widgets.
+- Black Hole | inspiration | https://x.com/buildwithsid/status/2112492064336388249 | Dense columns of repeating prose text animate and warp to form the silhouette of a black hole, with characters scattering and reorganizing across a white field 
+- ElevenLabs Brand Identity | inspiration | https://x.com/marinaanddesign/status/2112581175415803975 | Work-in-progress brand identity system for ElevenLabs showing the new logomark, app icon, event collateral, out-of-home applications and brand deck layouts acro
+- Magnetic UI | inspiration | https://x.com/Jakubantalik/status/2112572046505087424 | The Libraries.dev website shifts its navigation tags in real time as a physical magnet is held near the iPhone, using the device magnetometer to drive live UI m
+- Access Grid Homepage | inspiration | https://x.com/jamesm/status/2112596398395077034 | Scrolling homepage for Access Grid showing how businesses can issue and manage NFC mobile wallet credentials for Apple and Google Wallet via API.
+- Prekesh Chavda Portfolio | inspiration | https://www.prekesh.design/ | A portfolio showreel presenting past work through animated 3D CRT monitors and floating icons, paired with a kinetic title sequence cycling through the creator'
+- Procedural Grass Shader | inspiration | https://x.com/MSchwaibold/status/2112573858754494746 | An iPhone app cycles through AI-generated procedural grass shader views including color relief and topographical maps, with a Wind slider that animates the gras
+- Wizard Frog | inspiration | https://x.com/pizzaboy/status/2112563867054399920 | Hand-drawn character illustration of a green frog dressed as a wizard, clutching a purple potion with colorful bubbles drifting up.
+- Compliance Badge Stamps | inspiration | https://x.com/formintern/status/2056568207994171824 | A set of rubber-stamp-style compliance badges for SOC2, GDPR, ISO 27001 and HIPAA, rendered with ink texture on paper in blue, red and sepia colorways.
+- Step Tracker App | inspiration | https://x.com/heysatya_/status/2109536310973378573 | A fitness app screen animates from blank to fully loaded, with a blue arc gauge counting up to 19,538 steps and a weekly streak calendar populating above it.
+- Animation In Code | inspiration | https://x.com/spoonyvu/status/2108663551015440665 | A code-driven motion study of the Ownit brand symbol cycling through scan-line, object detection, LiDAR point cloud, blueprint, and skeleton-tracking treatments
+- Krea Agent Onboarding | inspiration | https://x.com/dsgn_aleksei/status/2112558512362418250 | Krea Agent's onboarding modal walks through connecting tools like Notion and Slack, uploading brand assets, and prompting the AI to plan and execute creative wo
+- Krea Image Generation | inspiration | https://x.com/dsgn_aleksei/status/2109764946766803385 | Krea's chat interface progressively reveals an AI-generated porcelain samurai portrait through staged status labels and a progress bar, from dotted placeholder 
+- Geometric Logo | inspiration | https://x.com/WesleyBancroft/status/2112293157518061822 | A white radial floral logomark set against a flowing, textured deep-blue background with sweeping light streaks as part of a large-scale brand identity.
+- Thinking... | inspiration | https://x.com/nonzeroexitcode/status/2105042956583670154 | A looping kinetic type experiment where the word 'Thinking...' cycles between plain black letters and letterforms filled with clusters of colorful illustrated f
+- Fallengrey Studio | inspiration | https://fallengrey.com | Design studio portfolio site with two browsing modes: a rotating halo of orbiting project cards and a flat gallery carousel, each revealing past client work.
+- Gaussian Splat Portal Jumping | inspiration | https://x.com/XRarchitect/status/2112207444101541962 | Real-time WebGPU demo where glowing portals tear open between gaussian splat worlds, transporting the viewer from a bedroom to a cyberpunk room, Japanese temple
+- Agent-first Billing | inspiration | https://polar.sh/field-guide | Polar's landing page for its agent-first metering and billing engine, featuring an animated geometric logo assembling on a dark background above a ten-feature g
+- Cloudflare Customer Story Cards | inspiration | https://x.com/oguzyagizkara/status/2112524525917143529 | Web page cards with animated vertical bar backgrounds cycle through brand stories, while a cursor resizes and repositions card elements using draggable handles 
+- Art Gallery Flip Cards | inspiration | https://x.com/gabriell_lab/status/2112520073378488501 | Hanging shaped frames flip on hover to reveal classic paintings, with artist name and year appearing below each piece.
+- James Clements Personal Site | inspiration | https://jm.sv | Personal site with a scallop-edged stamp avatar cycling through hand-drawn illustrations, long-form writing, and a name-to-domain collapse animation on a minima
+- Crumpled Paper Unfold | inspiration | https://x.com/Matthias_Oel/status/2112182514286825716 | A Framer component that animates any image or document from a crumpled paper ball into a flat, crease-retaining sheet on click.
+- Processing State Cards | inspiration | https://x.com/ddynmcs/status/2112306911173353905 | Stacked mobile UI cards showing agent task states including a translucent amber processing panel with a cube icon and a teal step-progress indicator.
+- LCD Face Morph | inspiration | https://x.com/ingi_erlingsson/status/2112355677205123413 | A surreal animated loop where a rainbow-haired head morphs through wildly distorted expressions and impossible shapes, with glitch pixel artifacts punctuating e
+- Bouncing Bot | inspiration | https://x.com/alexabraham/status/2112274106276344106 | A looping motion study where a small icon character bounces across a black screen, morphing through different geometric shapes and vibrant colors with each pass
 
 # Component style demos: 1989 entries, see api/resources.json (type=style)
 

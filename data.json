@@ -1,6 +1,6 @@
 {
  "generated": "2026-10-20",
- "count": 4787,
+ "count": 4813,
  "items": [
   {
    "id": "ued-figma-mcp-guide",
@@ -180373,6 +180373,1285 @@
    },
    "pub": "2026-10-20",
    "added": "2026-10-20"
+  },
+  {
+   "id": "rd-nzug47f-strata-brand-micrographics",
+   "name": "Strata Brand Micrographics",
+   "url": "https://x.com/kraigdesigns/status/2102342319102124137",
+   "note": "A set of compact brand identity elements for Strata, featuring technical label panels, layered circle marks, stripe motifs, and utilitarian typography across light and dark compositions.",
+   "noteEn": "A set of compact brand identity elements for Strata, featuring technical label panels, layered circle marks, stripe motifs, and utilitarian typography across light and dark compositions.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@kraigdesigns",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/nzug47f-strata-brand-micrographics",
+   "rdkind": "Design",
+   "rdcat": "Branding",
+   "rdstyle": [
+    "Typographic",
+    "Geometric",
+    "Minimal",
+    "High Contrast"
+   ],
+   "author": {
+    "name": "KraiG",
+    "handle": "@kraigdesigns",
+    "url": "https://x.com/kraigdesigns"
+   },
+   "x_post": "https://x.com/kraigdesigns/status/2102342319102124137",
+   "xsrc": {
+    "post": "https://x.com/kraigdesigns/status/2102342319102124137",
+    "author": "@kraigdesigns",
+    "likes": 975,
+    "bookmarks": 561,
+    "reposts": 35,
+    "impressions": 24719,
+    "date": "2026-09-22"
+   },
+   "pub": "2026-10-20",
+   "added": "2026-10-20"
+  },
+  {
+   "id": "rd-gtvrrld-core-pack-widget-store",
+   "name": "Core Pack",
+   "url": "https://x.com/24QWapp/status/2112507370496741468",
+   "note": "A widget app's in-app store screen styled as a kawaii candy pack, where tapping opens a purchase flow offering bundles of home screen widgets.",
+   "noteEn": "A widget app's in-app store screen styled as a kawaii candy pack, where tapping opens a purchase flow offering bundles of home screen widgets.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@24qwapp",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "playful"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/gtvrrld-core-pack-widget-store",
+   "rdkind": "Design",
+   "rdcat": "Interface",
+   "rdstyle": [
+    "Playful",
+    "Illustrative",
+    "Y2K",
+    "Vibrant",
+    "Light"
+   ],
+   "author": {
+    "name": "24:QW ✧ cute widget app",
+    "handle": "@24qwapp",
+    "url": "https://x.com/24qwapp"
+   },
+   "x_post": "https://x.com/24QWapp/status/2112507370496741468",
+   "xsrc": {
+    "post": "https://x.com/24QWapp/status/2112507370496741468",
+    "author": "@24QWapp",
+    "likes": 93,
+    "bookmarks": 48,
+    "reposts": 5,
+    "impressions": 2995,
+    "date": "2026-10-20"
+   },
+   "pub": "2026-10-20",
+   "added": "2026-10-20"
+  },
+  {
+   "id": "rd-77bdpts-black-hole-typography",
+   "name": "Black Hole",
+   "url": "https://x.com/buildwithsid/status/2112492064336388249",
+   "note": "Dense columns of repeating prose text animate and warp to form the silhouette of a black hole, with characters scattering and reorganizing across a white field over 48 seconds.",
+   "noteEn": "Dense columns of repeating prose text animate and warp to form the silhouette of a black hole, with characters scattering and reorganizing across a white field over 48 seconds.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@buildwithsid",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/77bdpts-black-hole-typography",
+   "rdkind": "Design",
+   "rdcat": "Web",
+   "rdstyle": [
+    "Typographic",
+    "Abstract",
+    "Experimental",
+    "Black & White"
+   ],
+   "author": {
+    "name": "siddharth",
+    "handle": "@buildwithsid",
+    "url": "https://x.com/buildwithsid"
+   },
+   "x_post": "https://x.com/buildwithsid/status/2112492064336388249",
+   "xsrc": {
+    "post": "https://x.com/buildwithsid/status/2112492064336388249",
+    "author": "@buildwithsid",
+    "likes": 1034,
+    "bookmarks": 236,
+    "reposts": 45,
+    "impressions": 15345,
+    "date": "2026-10-20"
+   },
+   "pub": "2026-10-20",
+   "added": "2026-10-20"
+  },
+  {
+   "id": "rd-p35y20j-elevenlabs-brand-identity",
+   "name": "ElevenLabs Brand Identity",
+   "url": "https://x.com/marinaanddesign/status/2112581175415803975",
+   "note": "Work-in-progress brand identity system for ElevenLabs showing the new logomark, app icon, event collateral, out-of-home applications and brand deck layouts across multiple touchpoints.",
+   "noteEn": "Work-in-progress brand identity system for ElevenLabs showing the new logomark, app icon, event collateral, out-of-home applications and brand deck layouts across multiple touchpoints.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@marinaanddesign",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/p35y20j-elevenlabs-brand-identity",
+   "rdkind": "Design",
+   "rdcat": "Branding",
+   "rdstyle": [
+    "Typographic",
+    "Minimal",
+    "Dark",
+    "Black & White",
+    "Light"
+   ],
+   "author": {
+    "name": "Marina Kondratenko",
+    "handle": "@marinaanddesign",
+    "url": "https://x.com/marinaanddesign"
+   },
+   "x_post": "https://x.com/marinaanddesign/status/2112581175415803975",
+   "xsrc": {
+    "post": "https://x.com/marinaanddesign/status/2112581175415803975",
+    "author": "@marinaanddesign",
+    "likes": 75,
+    "bookmarks": 32,
+    "reposts": 5,
+    "impressions": 2736,
+    "date": "2026-10-20"
+   },
+   "pub": "2026-10-20",
+   "added": "2026-10-20"
+  },
+  {
+   "id": "rd-vfgog12-magnetic-ui-web-interaction",
+   "name": "Magnetic UI",
+   "url": "https://x.com/Jakubantalik/status/2112572046505087424",
+   "note": "The Libraries.dev website shifts its navigation tags in real time as a physical magnet is held near the iPhone, using the device magnetometer to drive live UI movement.",
+   "noteEn": "The Libraries.dev website shifts its navigation tags in real time as a physical magnet is held near the iPhone, using the device magnetometer to drive live UI movement.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@jakubantalik",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/vfgog12-magnetic-ui-web-interaction",
+   "rdkind": "Design",
+   "rdcat": "Web",
+   "rdstyle": [
+    "Dark"
+   ],
+   "author": {
+    "name": "Jakub Antalik",
+    "handle": "@jakubantalik",
+    "url": "https://x.com/jakubantalik"
+   },
+   "x_post": "https://x.com/Jakubantalik/status/2112572046505087424",
+   "xsrc": {
+    "post": "https://x.com/Jakubantalik/status/2112572046505087424",
+    "author": "@Jakubantalik",
+    "likes": 378,
+    "bookmarks": 102,
+    "reposts": 17,
+    "impressions": 9791,
+    "date": "2026-10-20"
+   },
+   "pub": "2026-10-20",
+   "added": "2026-10-20"
+  },
+  {
+   "id": "rd-j5yd5l1-access-grid-homepage",
+   "name": "Access Grid Homepage",
+   "url": "https://x.com/jamesm/status/2112596398395077034",
+   "note": "Scrolling homepage for Access Grid showing how businesses can issue and manage NFC mobile wallet credentials for Apple and Google Wallet via API.",
+   "noteEn": "Scrolling homepage for Access Grid showing how businesses can issue and manage NFC mobile wallet credentials for Apple and Google Wallet via API.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@jamesm",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/j5yd5l1-access-grid-homepage",
+   "rdkind": "Design",
+   "rdcat": "Web",
+   "rdstyle": [
+    "Light"
+   ],
+   "author": {
+    "name": "James McDonald",
+    "handle": "@jamesm",
+    "url": "https://x.com/jamesm"
+   },
+   "x_post": "https://x.com/jamesm/status/2112596398395077034",
+   "xsrc": {
+    "post": "https://x.com/jamesm/status/2112596398395077034",
+    "author": "@jamesm",
+    "likes": 56,
+    "bookmarks": 25,
+    "reposts": 5,
+    "impressions": 1922,
+    "date": "2026-10-20"
+   },
+   "pub": "2026-10-20",
+   "added": "2026-10-20"
+  },
+  {
+   "id": "rd-cv7a3zm-prekesh-chavda-portfolio",
+   "name": "Prekesh Chavda Portfolio",
+   "url": "https://www.prekesh.design/",
+   "note": "A portfolio showreel presenting past work through animated 3D CRT monitors and floating icons, paired with a kinetic title sequence cycling through the creator's many design roles.",
+   "noteEn": "A portfolio showreel presenting past work through animated 3D CRT monitors and floating icons, paired with a kinetic title sequence cycling through the creator's many design roles.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@prekesh",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "3d"
+   ],
+   "origin": "site",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/cv7a3zm-prekesh-chavda-portfolio",
+   "rdkind": "Design",
+   "rdcat": "Web",
+   "rdstyle": [
+    "Experimental",
+    "3D",
+    "Dark"
+   ],
+   "author": {
+    "name": "prekesh ◡̈",
+    "handle": "@prekesh",
+    "url": "https://x.com/prekesh"
+   },
+   "x_post": "https://x.com/prekesh/status/2109617342846025951",
+   "xsrc": {
+    "post": "https://x.com/prekesh/status/2109617342846025951",
+    "author": "@prekesh",
+    "likes": 588,
+    "bookmarks": 348,
+    "reposts": 25,
+    "impressions": 36734,
+    "date": "2026-10-12"
+   },
+   "official": "https://www.prekesh.design/",
+   "pub": "2026-10-20",
+   "added": "2026-10-20"
+  },
+  {
+   "id": "rd-3v0fr0t-procedural-grass-shader",
+   "name": "Procedural Grass Shader",
+   "url": "https://x.com/MSchwaibold/status/2112573858754494746",
+   "note": "An iPhone app cycles through AI-generated procedural grass shader views including color relief and topographical maps, with a Wind slider that animates the grass in real time.",
+   "noteEn": "An iPhone app cycles through AI-generated procedural grass shader views including color relief and topographical maps, with a Wind slider that animates the grass in real time.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@mschwaibold",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "3d"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/3v0fr0t-procedural-grass-shader",
+   "rdkind": "Design",
+   "rdcat": "Interface",
+   "rdstyle": [
+    "3D",
+    "Organic"
+   ],
+   "author": {
+    "name": "Marvin Schwaibold",
+    "handle": "@mschwaibold",
+    "url": "https://x.com/mschwaibold"
+   },
+   "x_post": "https://x.com/MSchwaibold/status/2112573858754494746",
+   "xsrc": {
+    "post": "https://x.com/MSchwaibold/status/2112573858754494746",
+    "author": "@MSchwaibold",
+    "likes": 223,
+    "bookmarks": 88,
+    "reposts": 3,
+    "impressions": 4820,
+    "date": "2026-10-20"
+   },
+   "pub": "2026-10-20",
+   "added": "2026-10-20"
+  },
+  {
+   "id": "rd-g0uwa2i-wizard-frog-illustration",
+   "name": "Wizard Frog",
+   "url": "https://x.com/pizzaboy/status/2112563867054399920",
+   "note": "Hand-drawn character illustration of a green frog dressed as a wizard, clutching a purple potion with colorful bubbles drifting up.",
+   "noteEn": "Hand-drawn character illustration of a green frog dressed as a wizard, clutching a purple potion with colorful bubbles drifting up.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@pizzaboy",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "playful"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/g0uwa2i-wizard-frog-illustration",
+   "rdkind": "Design",
+   "rdcat": "Illustration",
+   "rdstyle": [
+    "Playful",
+    "Illustrative",
+    "Light"
+   ],
+   "author": {
+    "name": "Dan",
+    "handle": "@pizzaboy",
+    "url": "https://x.com/pizzaboy"
+   },
+   "x_post": "https://x.com/pizzaboy/status/2112563867054399920",
+   "xsrc": {
+    "post": "https://x.com/pizzaboy/status/2112563867054399920",
+    "author": "@pizzaboy",
+    "likes": 12,
+    "bookmarks": 1,
+    "reposts": 0,
+    "impressions": 260,
+    "date": "2026-10-20"
+   },
+   "pub": "2026-10-20",
+   "added": "2026-10-20"
+  },
+  {
+   "id": "rd-ftnkmeq-compliance-badge-stamps",
+   "name": "Compliance Badge Stamps",
+   "url": "https://x.com/formintern/status/2056568207994171824",
+   "note": "A set of rubber-stamp-style compliance badges for SOC2, GDPR, ISO 27001 and HIPAA, rendered with ink texture on paper in blue, red and sepia colorways.",
+   "noteEn": "A set of rubber-stamp-style compliance badges for SOC2, GDPR, ISO 27001 and HIPAA, rendered with ink texture on paper in blue, red and sepia colorways.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@formintern",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/ftnkmeq-compliance-badge-stamps",
+   "rdkind": "Design",
+   "rdcat": "Illustration",
+   "rdstyle": [
+    "Typographic",
+    "Textured",
+    "Light"
+   ],
+   "author": {
+    "name": "eric zhou",
+    "handle": "@formintern",
+    "url": "https://x.com/formintern"
+   },
+   "x_post": "https://x.com/formintern/status/2056568207994171824",
+   "xsrc": {
+    "post": "https://x.com/formintern/status/2056568207994171824",
+    "author": "@formintern",
+    "likes": 8,
+    "bookmarks": 3,
+    "reposts": 0,
+    "impressions": 1036,
+    "date": "2026-05-19"
+   },
+   "pub": "2026-10-20",
+   "added": "2026-10-20"
+  },
+  {
+   "id": "rd-6frflao-step-tracker-app-ui",
+   "name": "Step Tracker App",
+   "url": "https://x.com/heysatya_/status/2109536310973378573",
+   "note": "A fitness app screen animates from blank to fully loaded, with a blue arc gauge counting up to 19,538 steps and a weekly streak calendar populating above it.",
+   "noteEn": "A fitness app screen animates from blank to fully loaded, with a blue arc gauge counting up to 19,538 steps and a weekly streak calendar populating above it.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@heysatya_",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/6frflao-step-tracker-app-ui",
+   "rdkind": "Design",
+   "rdcat": "Interface",
+   "rdstyle": [
+    "Clean",
+    "Light"
+   ],
+   "author": {
+    "name": "Satya",
+    "handle": "@heysatya_",
+    "url": "https://x.com/heysatya_"
+   },
+   "x_post": "https://x.com/heysatya_/status/2109536310973378573",
+   "xsrc": {
+    "post": "https://x.com/heysatya_/status/2109536310973378573",
+    "author": "@heysatya_",
+    "likes": 464,
+    "bookmarks": 186,
+    "reposts": 18,
+    "impressions": 11412,
+    "date": "2026-10-12"
+   },
+   "pub": "2026-10-20",
+   "added": "2026-10-20"
+  },
+  {
+   "id": "rd-sxy775a-ownit-symbol-motion-study",
+   "name": "Animation In Code",
+   "url": "https://x.com/spoonyvu/status/2108663551015440665",
+   "note": "A code-driven motion study of the Ownit brand symbol cycling through scan-line, object detection, LiDAR point cloud, blueprint, and skeleton-tracking treatments.",
+   "noteEn": "A code-driven motion study of the Ownit brand symbol cycling through scan-line, object detection, LiDAR point cloud, blueprint, and skeleton-tracking treatments.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@spoonyvu",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "motion"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "3d"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/sxy775a-ownit-symbol-motion-study",
+   "rdkind": "Design",
+   "rdcat": "Motion",
+   "rdstyle": [
+    "Experimental",
+    "3D",
+    "Dark"
+   ],
+   "author": {
+    "name": "spoony",
+    "handle": "@spoonyvu",
+    "url": "https://x.com/spoonyvu"
+   },
+   "x_post": "https://x.com/spoonyvu/status/2108663551015440665",
+   "xsrc": {
+    "post": "https://x.com/spoonyvu/status/2108663551015440665",
+    "author": "@spoonyvu",
+    "likes": 12,
+    "bookmarks": 3,
+    "reposts": 1,
+    "impressions": 1084,
+    "date": "2026-10-09"
+   },
+   "pub": "2026-10-20",
+   "added": "2026-10-20"
+  },
+  {
+   "id": "rd-t865vsj-krea-agent-onboarding",
+   "name": "Krea Agent Onboarding",
+   "url": "https://x.com/dsgn_aleksei/status/2112558512362418250",
+   "note": "Krea Agent's onboarding modal walks through connecting tools like Notion and Slack, uploading brand assets, and prompting the AI to plan and execute creative work end to end.",
+   "noteEn": "Krea Agent's onboarding modal walks through connecting tools like Notion and Slack, uploading brand assets, and prompting the AI to plan and execute creative work end to end.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@dsgn_aleksei",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/t865vsj-krea-agent-onboarding",
+   "rdkind": "Design",
+   "rdcat": "Web",
+   "rdstyle": [
+    "Minimal",
+    "Light"
+   ],
+   "author": {
+    "name": "Aleksei Larionov",
+    "handle": "@dsgn_aleksei",
+    "url": "https://x.com/dsgn_aleksei"
+   },
+   "x_post": "https://x.com/dsgn_aleksei/status/2112558512362418250",
+   "xsrc": {
+    "post": "https://x.com/dsgn_aleksei/status/2112558512362418250",
+    "author": "@dsgn_aleksei",
+    "likes": 11,
+    "bookmarks": 8,
+    "reposts": 0,
+    "impressions": 688,
+    "date": "2026-10-20"
+   },
+   "pub": "2026-10-20",
+   "added": "2026-10-20"
+  },
+  {
+   "id": "rd-f3cwpo5-ai-image-generation-loading-state",
+   "name": "Krea Image Generation",
+   "url": "https://x.com/dsgn_aleksei/status/2109764946766803385",
+   "note": "Krea's chat interface progressively reveals an AI-generated porcelain samurai portrait through staged status labels and a progress bar, from dotted placeholder to fully sharp final image.",
+   "noteEn": "Krea's chat interface progressively reveals an AI-generated porcelain samurai portrait through staged status labels and a progress bar, from dotted placeholder to fully sharp final image.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@dsgn_aleksei",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/f3cwpo5-ai-image-generation-loading-state",
+   "rdkind": "Design",
+   "rdcat": "Interface",
+   "rdstyle": [
+    "Minimal",
+    "Light"
+   ],
+   "author": {
+    "name": "Aleksei Larionov",
+    "handle": "@dsgn_aleksei",
+    "url": "https://x.com/dsgn_aleksei"
+   },
+   "x_post": "https://x.com/dsgn_aleksei/status/2109764946766803385",
+   "xsrc": {
+    "post": "https://x.com/dsgn_aleksei/status/2109764946766803385",
+    "author": "@dsgn_aleksei",
+    "likes": 147,
+    "bookmarks": 81,
+    "reposts": 4,
+    "impressions": 3553,
+    "date": "2026-10-12"
+   },
+   "pub": "2026-10-20",
+   "added": "2026-10-20"
+  },
+  {
+   "id": "rd-bs1ixsl-geometric-medallion-brand-identity",
+   "name": "Geometric Logo",
+   "url": "https://x.com/WesleyBancroft/status/2112293157518061822",
+   "note": "A white radial floral logomark set against a flowing, textured deep-blue background with sweeping light streaks as part of a large-scale brand identity.",
+   "noteEn": "A white radial floral logomark set against a flowing, textured deep-blue background with sweeping light streaks as part of a large-scale brand identity.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@wesleybancroft",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/bs1ixsl-geometric-medallion-brand-identity",
+   "rdkind": "Design",
+   "rdcat": "Branding",
+   "rdstyle": [
+    "Geometric",
+    "Minimal",
+    "Organic",
+    "Dark"
+   ],
+   "author": {
+    "name": "Wes",
+    "handle": "@wesleybancroft",
+    "url": "https://x.com/wesleybancroft"
+   },
+   "x_post": "https://x.com/WesleyBancroft/status/2112293157518061822",
+   "xsrc": {
+    "post": "https://x.com/WesleyBancroft/status/2112293157518061822",
+    "author": "@WesleyBancroft",
+    "likes": 54,
+    "bookmarks": 8,
+    "reposts": 1,
+    "impressions": 1953,
+    "date": "2026-10-19"
+   },
+   "pub": "2026-10-20",
+   "added": "2026-10-20"
+  },
+  {
+   "id": "rd-wa8d7jc-thinking-floral-type-animation",
+   "name": "Thinking...",
+   "url": "https://x.com/nonzeroexitcode/status/2105042956583670154",
+   "note": "A looping kinetic type experiment where the word 'Thinking...' cycles between plain black letters and letterforms filled with clusters of colorful illustrated flowers.",
+   "noteEn": "A looping kinetic type experiment where the word 'Thinking...' cycles between plain black letters and letterforms filled with clusters of colorful illustrated flowers.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@nonzeroexitcode",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "motion"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "playful"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/wa8d7jc-thinking-floral-type-animation",
+   "rdkind": "Design",
+   "rdcat": "Motion",
+   "rdstyle": [
+    "Typographic",
+    "Playful",
+    "Vibrant",
+    "Light"
+   ],
+   "author": {
+    "name": "daniel petho",
+    "handle": "@nonzeroexitcode",
+    "url": "https://x.com/nonzeroexitcode"
+   },
+   "x_post": "https://x.com/nonzeroexitcode/status/2105042956583670154",
+   "xsrc": {
+    "post": "https://x.com/nonzeroexitcode/status/2105042956583670154",
+    "author": "@nonzeroexitcode",
+    "likes": 629,
+    "bookmarks": 288,
+    "reposts": 21,
+    "impressions": 17649,
+    "date": "2026-09-29"
+   },
+   "pub": "2026-10-20",
+   "added": "2026-10-20"
+  },
+  {
+   "id": "rd-3lhe3e6-fallengrey-studio-website",
+   "name": "Fallengrey Studio",
+   "url": "https://fallengrey.com",
+   "note": "Design studio portfolio site with two browsing modes: a rotating halo of orbiting project cards and a flat gallery carousel, each revealing past client work.",
+   "noteEn": "Design studio portfolio site with two browsing modes: a rotating halo of orbiting project cards and a flat gallery carousel, each revealing past client work.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@fallengrey",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "site",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/3lhe3e6-fallengrey-studio-website",
+   "rdkind": "Design",
+   "rdcat": "Web",
+   "rdstyle": [
+    "Minimal",
+    "Light"
+   ],
+   "author": {
+    "name": "fallen ⊕",
+    "handle": "@fallengrey",
+    "url": "https://x.com/fallengrey"
+   },
+   "x_post": "https://x.com/fallengrey/status/2112514564952891751",
+   "xsrc": {
+    "post": "https://x.com/fallengrey/status/2112514564952891751",
+    "author": "@fallengrey",
+    "likes": 10,
+    "bookmarks": 7,
+    "reposts": 3,
+    "impressions": 532,
+    "date": "2026-10-20"
+   },
+   "official": "https://fallengrey.com",
+   "pub": "2026-10-20",
+   "added": "2026-10-20"
+  },
+  {
+   "id": "rd-a75z6ja-gaussian-splat-portal-jumping",
+   "name": "Gaussian Splat Portal Jumping",
+   "url": "https://x.com/XRarchitect/status/2112207444101541962",
+   "note": "Real-time WebGPU demo where glowing portals tear open between gaussian splat worlds, transporting the viewer from a bedroom to a cyberpunk room, Japanese temple, and baroque mansion.",
+   "noteEn": "Real-time WebGPU demo where glowing portals tear open between gaussian splat worlds, transporting the viewer from a bedroom to a cyberpunk room, Japanese temple, and baroque mansion.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@xrarchitect",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "3d"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/a75z6ja-gaussian-splat-portal-jumping",
+   "rdkind": "Design",
+   "rdcat": "Web",
+   "rdstyle": [
+    "Experimental",
+    "3D",
+    "Vibrant"
+   ],
+   "author": {
+    "name": "Ian Curtis",
+    "handle": "@xrarchitect",
+    "url": "https://x.com/xrarchitect"
+   },
+   "x_post": "https://x.com/XRarchitect/status/2112207444101541962",
+   "xsrc": {
+    "post": "https://x.com/XRarchitect/status/2112207444101541962",
+    "author": "@XRarchitect",
+    "likes": 8538,
+    "bookmarks": 3832,
+    "reposts": 653,
+    "impressions": 347679,
+    "date": "2026-10-19"
+   },
+   "pub": "2026-10-20",
+   "added": "2026-10-20"
+  },
+  {
+   "id": "rd-lzxaebw-agent-first-billing-landing-page",
+   "name": "Agent-first Billing",
+   "url": "https://polar.sh/field-guide",
+   "note": "Polar's landing page for its agent-first metering and billing engine, featuring an animated geometric logo assembling on a dark background above a ten-feature grid.",
+   "noteEn": "Polar's landing page for its agent-first metering and billing engine, featuring an animated geometric logo assembling on a dark background above a ten-feature grid.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@polar_sh",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "site",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/lzxaebw-agent-first-billing-landing-page",
+   "rdkind": "Design",
+   "rdcat": "Web",
+   "rdstyle": [
+    "Geometric",
+    "Minimal",
+    "Dark"
+   ],
+   "author": {
+    "name": "Polar",
+    "handle": "@polar_sh",
+    "url": "https://x.com/polar_sh"
+   },
+   "x_post": "https://x.com/polar_sh/status/2112520117435195565",
+   "xsrc": {
+    "post": "https://x.com/polar_sh/status/2112520117435195565",
+    "author": "@polar_sh",
+    "likes": 148,
+    "bookmarks": 98,
+    "reposts": 12,
+    "impressions": 9462,
+    "date": "2026-10-20"
+   },
+   "official": "https://polar.sh/field-guide",
+   "pub": "2026-10-20",
+   "added": "2026-10-20"
+  },
+  {
+   "id": "rd-q1jsa1k-cloudflare-customer-story-cards",
+   "name": "Cloudflare Customer Story Cards",
+   "url": "https://x.com/oguzyagizkara/status/2112524525917143529",
+   "note": "Web page cards with animated vertical bar backgrounds cycle through brand stories, while a cursor resizes and repositions card elements using draggable handles in a design tool.",
+   "noteEn": "Web page cards with animated vertical bar backgrounds cycle through brand stories, while a cursor resizes and repositions card elements using draggable handles in a design tool.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@oguzyagizkara",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/q1jsa1k-cloudflare-customer-story-cards",
+   "rdkind": "Design",
+   "rdcat": "Web",
+   "rdstyle": [
+    "Abstract",
+    "Dark"
+   ],
+   "author": {
+    "name": "Oğuz Yağız Kara",
+    "handle": "@oguzyagizkara",
+    "url": "https://x.com/oguzyagizkara"
+   },
+   "x_post": "https://x.com/oguzyagizkara/status/2112524525917143529",
+   "xsrc": {
+    "post": "https://x.com/oguzyagizkara/status/2112524525917143529",
+    "author": "@oguzyagizkara",
+    "likes": 616,
+    "bookmarks": 356,
+    "reposts": 11,
+    "impressions": 11525,
+    "date": "2026-10-20"
+   },
+   "pub": "2026-10-20",
+   "added": "2026-10-20"
+  },
+  {
+   "id": "rd-0249i0p-art-gallery-flip-cards",
+   "name": "Art Gallery Flip Cards",
+   "url": "https://x.com/gabriell_lab/status/2112520073378488501",
+   "note": "Hanging shaped frames flip on hover to reveal classic paintings, with artist name and year appearing below each piece.",
+   "noteEn": "Hanging shaped frames flip on hover to reveal classic paintings, with artist name and year appearing below each piece.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@gabriell_lab",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/0249i0p-art-gallery-flip-cards",
+   "rdkind": "Design",
+   "rdcat": "Interface",
+   "rdstyle": [
+    "Minimal",
+    "Light"
+   ],
+   "author": {
+    "name": "Gabriel",
+    "handle": "@gabriell_lab",
+    "url": "https://x.com/gabriell_lab"
+   },
+   "x_post": "https://x.com/gabriell_lab/status/2112520073378488501",
+   "xsrc": {
+    "post": "https://x.com/gabriell_lab/status/2112520073378488501",
+    "author": "@gabriell_lab",
+    "likes": 145,
+    "bookmarks": 61,
+    "reposts": 2,
+    "impressions": 3644,
+    "date": "2026-10-20"
+   },
+   "pub": "2026-10-20",
+   "added": "2026-10-20"
+  },
+  {
+   "id": "rd-zpouyfj-james-clements-personal-site",
+   "name": "James Clements Personal Site",
+   "url": "https://jm.sv",
+   "note": "Personal site with a scallop-edged stamp avatar cycling through hand-drawn illustrations, long-form writing, and a name-to-domain collapse animation on a minimal light layout.",
+   "noteEn": "Personal site with a scallop-edged stamp avatar cycling through hand-drawn illustrations, long-form writing, and a name-to-domain collapse animation on a minimal light layout.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@jamesvclements",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "site",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/zpouyfj-james-clements-personal-site",
+   "rdkind": "Design",
+   "rdcat": "Web",
+   "rdstyle": [
+    "Minimal",
+    "Illustrative",
+    "Light"
+   ],
+   "author": {
+    "name": "James Clements",
+    "handle": "@jamesvclements",
+    "url": "https://x.com/jamesvclements"
+   },
+   "x_post": "https://x.com/jamesvclements/status/2112283119915004156",
+   "xsrc": {
+    "post": "https://x.com/jamesvclements/status/2112283119915004156",
+    "author": "@jamesvclements",
+    "likes": 394,
+    "bookmarks": 300,
+    "reposts": 12,
+    "impressions": 17900,
+    "date": "2026-10-19"
+   },
+   "official": "https://jm.sv",
+   "pub": "2026-10-20",
+   "added": "2026-10-20"
+  },
+  {
+   "id": "rd-urgr6kv-crumpled-paper-unfold",
+   "name": "Crumpled Paper Unfold",
+   "url": "https://x.com/Matthias_Oel/status/2112182514286825716",
+   "note": "A Framer component that animates any image or document from a crumpled paper ball into a flat, crease-retaining sheet on click.",
+   "noteEn": "A Framer component that animates any image or document from a crumpled paper ball into a flat, crease-retaining sheet on click.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@matthias_oel",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "3d"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/urgr6kv-crumpled-paper-unfold",
+   "rdkind": "Design",
+   "rdcat": "Web",
+   "rdstyle": [
+    "3D",
+    "Organic",
+    "Light"
+   ],
+   "author": {
+    "name": "Matt",
+    "handle": "@matthias_oel",
+    "url": "https://x.com/matthias_oel"
+   },
+   "x_post": "https://x.com/Matthias_Oel/status/2112182514286825716",
+   "xsrc": {
+    "post": "https://x.com/Matthias_Oel/status/2112182514286825716",
+    "author": "@Matthias_Oel",
+    "likes": 1154,
+    "bookmarks": 591,
+    "reposts": 73,
+    "impressions": 29642,
+    "date": "2026-10-19"
+   },
+   "pub": "2026-10-20",
+   "added": "2026-10-20"
+  },
+  {
+   "id": "rd-24fvo3o-processing-state-cards",
+   "name": "Processing State Cards",
+   "url": "https://x.com/ddynmcs/status/2112306911173353905",
+   "note": "Stacked mobile UI cards showing agent task states including a translucent amber processing panel with a cube icon and a teal step-progress indicator.",
+   "noteEn": "Stacked mobile UI cards showing agent task states including a translucent amber processing panel with a cube icon and a teal step-progress indicator.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@ddynmcs",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "glass"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/24fvo3o-processing-state-cards",
+   "rdkind": "Design",
+   "rdcat": "Interface",
+   "rdstyle": [
+    "Glassmorphism",
+    "Dark"
+   ],
+   "author": {
+    "name": "dynamics",
+    "handle": "@ddynmcs",
+    "url": "https://x.com/ddynmcs"
+   },
+   "x_post": "https://x.com/ddynmcs/status/2112306911173353905",
+   "xsrc": {
+    "post": "https://x.com/ddynmcs/status/2112306911173353905",
+    "author": "@ddynmcs",
+    "likes": 332,
+    "bookmarks": 102,
+    "reposts": 6,
+    "impressions": 6049,
+    "date": "2026-10-19"
+   },
+   "pub": "2026-10-20",
+   "added": "2026-10-20"
+  },
+  {
+   "id": "rd-5xawgkr-lcd-face-morph-loop",
+   "name": "LCD Face Morph",
+   "url": "https://x.com/ingi_erlingsson/status/2112355677205123413",
+   "note": "A surreal animated loop where a rainbow-haired head morphs through wildly distorted expressions and impossible shapes, with glitch pixel artifacts punctuating each transition.",
+   "noteEn": "A surreal animated loop where a rainbow-haired head morphs through wildly distorted expressions and impossible shapes, with glitch pixel artifacts punctuating each transition.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@ingi_erlingsson",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "motion"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "playful"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/5xawgkr-lcd-face-morph-loop",
+   "rdkind": "Design",
+   "rdcat": "Motion",
+   "rdstyle": [
+    "Experimental",
+    "Playful",
+    "Vibrant"
+   ],
+   "author": {
+    "name": "Ingi Erlingsson 🪄",
+    "handle": "@ingi_erlingsson",
+    "url": "https://x.com/ingi_erlingsson"
+   },
+   "x_post": "https://x.com/ingi_erlingsson/status/2112355677205123413",
+   "xsrc": {
+    "post": "https://x.com/ingi_erlingsson/status/2112355677205123413",
+    "author": "@ingi_erlingsson",
+    "likes": 179,
+    "bookmarks": 41,
+    "reposts": 8,
+    "impressions": 4092,
+    "date": "2026-10-20"
+   },
+   "pub": "2026-10-20",
+   "added": "2026-10-20"
+  },
+  {
+   "id": "rd-cghdokb-bouncing-icon-shape-morph",
+   "name": "Bouncing Bot",
+   "url": "https://x.com/alexabraham/status/2112274106276344106",
+   "note": "A looping motion study where a small icon character bounces across a black screen, morphing through different geometric shapes and vibrant colors with each pass.",
+   "noteEn": "A looping motion study where a small icon character bounces across a black screen, morphing through different geometric shapes and vibrant colors with each pass.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@alexabraham",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "motion"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "playful"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/cghdokb-bouncing-icon-shape-morph",
+   "rdkind": "Design",
+   "rdcat": "Motion",
+   "rdstyle": [
+    "Geometric",
+    "Playful",
+    "Dark",
+    "Vibrant"
+   ],
+   "author": {
+    "name": "alex",
+    "handle": "@alexabraham",
+    "url": "https://x.com/alexabraham"
+   },
+   "x_post": "https://x.com/alexabraham/status/2112274106276344106",
+   "xsrc": {
+    "post": "https://x.com/alexabraham/status/2112274106276344106",
+    "author": "@alexabraham",
+    "likes": 762,
+    "bookmarks": 63,
+    "reposts": 33,
+    "impressions": 21095,
+    "date": "2026-10-19"
+   },
+   "pub": "2026-10-20",
+   "added": "2026-10-20"
   }
  ],
  "guides": [
@@ -180575,5 +181854,5 @@
    ]
   }
  ],
- "updatedAt": "2026-10-20T08:43Z"
+ "updatedAt": "2026-10-20T18:06Z"
 }
