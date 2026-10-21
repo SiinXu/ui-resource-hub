@@ -1,6 +1,6 @@
 {
  "generated": "2026-10-21",
- "count": 4828,
+ "count": 4829,
  "items": [
   {
    "id": "ued-figma-mcp-guide",
@@ -182064,6 +182064,55 @@
    ],
    "noteEn": "Listed in awesome-shadcn-ui: Delightful components for a clean, accessible and modern component library for React Native.",
    "added": "2026-10-21"
+  },
+  {
+   "id": "rd-fgweqvk-thumbnail-grid-transition",
+   "name": "Thumbnail Grid Transition",
+   "url": "https://x.com/CorentinBerndu/status/2051716784617635924",
+   "note": "A WebGL motion study breaks a single portrait into vertical slices that dissolve into a scattered grid of thumbnails before reforming.",
+   "noteEn": "A WebGL motion study breaks a single portrait into vertical slices that dissolve into a scattered grid of thumbnails before reforming.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@corentinberndu",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "motion"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/fgweqvk-thumbnail-grid-transition",
+   "rdkind": "Design",
+   "rdcat": "Motion",
+   "rdstyle": [
+    "Experimental",
+    "Light"
+   ],
+   "author": {
+    "name": "Corentin Bernadou",
+    "handle": "@corentinberndu",
+    "url": "https://x.com/corentinberndu"
+   },
+   "x_post": "https://x.com/CorentinBerndu/status/2051716784617635924",
+   "xsrc": {
+    "post": "https://x.com/CorentinBerndu/status/2051716784617635924",
+    "author": "@CorentinBerndu",
+    "likes": 1504,
+    "bookmarks": 729,
+    "reposts": 96,
+    "impressions": 77607,
+    "date": "2026-05-05"
+   },
+   "pub": "2026-10-20",
+   "added": "2026-10-21"
   }
  ],
  "guides": [
@@ -182266,5 +182315,5 @@
    ]
   }
  ],
- "updatedAt": "2026-10-21T04:42Z"
+ "updatedAt": "2026-10-21T06:31Z"
 }
