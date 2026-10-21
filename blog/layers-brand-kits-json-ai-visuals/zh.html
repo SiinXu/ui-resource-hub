@@ -1,0 +1,28 @@
+<p>人们对 AI 生成图形最常见的抱怨，不是难看，而是都长一个样：氛围对了，字体不对；品牌色差一点点；想改标题里一个字，整行字就糊了。10 月 20 日的三项发布从三个方向处理这个问题，放在一起看，正好是一张选择任何视觉 AI 工具时该问什么的地图。</p><figure><img src="../../blog/img/layers-brand-kits-json-ai-visuals-1.webp" alt="Coco Labs 博客：介绍按图层构建设计的模型 Vyb" loading="lazy" decoding="async" width="1280" height="800"><figcaption>Coco Labs 博客：介绍按图层构建设计的模型 Vyb · 截图：Coco Labs（<a href="https://cocolabs.ai/blog/introducing-vyb" rel="noopener" target="_blank">cocolabs.ai</a>），2026-10-21 截取，版权归原站所有</figcaption></figure>
+<h2>三项发布，三种答案</h2>
+<ul><li><strong>Vyb（Coco Labs）：按图层构建。</strong>Vyb 的定位是设计模型，不是出图模型。它把你自己的图片、字体和颜色一层一层组合起来：文字保持为文字，图形保持为矢量，照片保持为像素，只在需要补位时才调用图像生成器。底层是一种新的设计语言 Cocolang，Coco Labs 说它足够紧凑、适合模型的上下文窗口，并能无损导出到 Figma 等工具。目前需要加入候补名单抢先体验。</li>
+<li><strong>Gemini：记住品牌。</strong>Google 在 Gemini 里推出了面向小企业的新入口，可以上传网站、品牌包、字体或配色来定义品牌风格。配合 Nano Banana 2.1 图像模型，Gemini 会在之后的请求里沿用这套风格，不必每次做活动都重新上传规范。Google 表示会在未来几天全球陆续上线。</li>
+<li><strong>Fibo 2（Bria）：让每次编辑可检查。</strong>Bria 的新开放权重模型使用授权数据训练，会先把一句自然语言修改翻译成结构化 JSON 指令（对象、光线、背景、文字和修改本身），再按这份 JSON 执行。你可以单独生成这份 JSON，审阅或修改后再传回去，也可以直接传自己写的。用同样的图片、JSON 和种子就能复现结果。一次编辑最多可组合四张参考图，单图编辑还能用蒙版保护蒙版外的全部内容。</li></ul><figure><img src="../../blog/img/layers-brand-kits-json-ai-visuals-2.webp" alt="网格：图层保证字体和颜色准确，品牌风格存档复用，结构化 JSON 让修改可审阅，你自己的检查抓住漂移" loading="lazy" decoding="async" width="1200" height="675"><figcaption>网格：图层保证字体和颜色准确，品牌风格存档复用，结构化 JSON 让修改可审阅，你自己的检查抓住漂移 · 示意图：UI Hub 原创，CC BY 4.0</figcaption></figure>
+<h2>这些数字说明了什么、没说明什么</h2>
+<p>Coco Labs 公布了自家基准测试：在 145 款 Google 字体上，Vyb 的字形吻合度为 90.3%，它测试的次优模型为 76.0%；指定十六进制颜色时平均误差为零；在 200 次编辑中，Vyb 平均只改动 11.9% 的像素，而对比的图像模型都超过 90%。这些是厂商用公开字体做的测试，不是独立结果，但最后一个数字对日常工作最关键：为了改一个字而重画整张图的模型，会一点点磨掉你喜欢第一版的所有理由。另外，Vyb 的通过率略低于最强对手，Coco Labs 的解释是模型会拒绝会损害可读性的修改。</p>
+<h2>我们的看法</h2>
+<p>三者都在把「审美」从提示词里搬出来，放进可以检查的东西里。图层让你的字体和颜色成为事实而不是建议；存下来的品牌风格把规范变成可复用的资产；结构化 JSON 把一次修改变成渲染前可以审阅的差异。它们针对的失败，和我们在 AI 生成界面里看到的是同一种：除非你的选择以模型无法重新诠释的形式固定下来，否则模型总会滑向训练数据的平均值。</p>
+<p>两点提醒。第一，记住的品牌风格只和你上传的品牌包一样好。只有一个 Logo 和一套模糊的配色，得到的就是稳定的平庸。第二，别把分层导出当成设计系统。如果工具输出了你字体的可编辑文字，却无视你的间距和层级规则，后面还是要返工。图层要争取，版式也照样要检查。</p>
+<h2>清单：让 AI 视觉看起来像你的</h2>
+<ol><li><strong>开工前准备真正的品牌包。</strong>字体用文件、颜色用十六进制值、Logo 用矢量，再加两三个认可的参考版式和一份「绝不做」清单。</li>
+<li><strong>用一张最无聊的图测保真度。</strong>让它做一张只有标题字体和主色的简单横幅，核对字体，再用取色器吸一下颜色。任何一项不对，说明工具在猜。</li>
+<li><strong>测编辑漂移。</strong>只改一个词或一个颜色，对比前后。其他地方也动了，就是多轮修改的危险信号。</li>
+<li><strong>优先选能打开的输出。</strong>还要再改的素材用分层文件或 Figma 导出；平面图只用于一次性场景。</li>
+<li><strong>保存指令，而不只是图片。</strong>工具像 Fibo 2 那样提供结构化指令和种子时，把它们和素材存在一起，下个月做变体就能从同一份规格出发。</li>
+<li><strong>保护不能改的部分。</strong>产品照片、人脸和 Logo 用蒙版、锁定图层或明确的「其他全部保持不变」规则保护。</li></ol>
+<pre><code>{
+  "brand": "Northwind Tea",
+  "fonts": { "display": "Fraunces 600", "body": "Inter 400" },
+  "colors": { "ink": "#1d1a16", "paper": "#f6f1e7", "accent": "#8a5a3b" },
+  "logo": "logo.svg（安全区 ≥ 1 倍大写字母高度）",
+  "layout": "一张焦点照片 · 标题在左上 · 最多 2 段文字",
+  "never": ["文字渐变", "图库 3D", "超过一个强调色"],
+  "keep": "产品照片像素不动，只改文字和颜色"
+}</code></pre>
+<figure><img src="../../blog/img/layers-brand-kits-json-ai-visuals-3.webp" alt="Bria 文档：Fibo 2 图像生成与编辑发布页" loading="lazy" decoding="async" width="1280" height="800"><figcaption>Bria 文档：Fibo 2 图像生成与编辑发布页 · 截图：Bria AI（<a href="https://docs.bria.ai/whats-new/fibo-2" rel="noopener" target="_blank">docs.bria.ai</a>），2026-10-21 截取，版权归原站所有</figcaption></figure><h2>UI Hub 能帮什么</h2>
+<p>上面的品牌包，相当于视觉版的 Token 文件。如果要为产品建一份，可以看我们的<a href="../design-tokens-for-agents/">给智能体的设计 Token</a>和 <a href="../oklch-color-and-dark-mode/">OKLCH 配色</a>，讲命名和选色；昨天那篇 <a href="../lovart-arti-design-agent-memory/">Lovart 审美记忆</a>则是从智能体一侧讲同一件事：把你的审美写成机器能检查的形式。</p>

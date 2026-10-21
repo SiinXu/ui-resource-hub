@@ -765,4 +765,73 @@ check: same illustration style on every frame · logo clear space ≥ 1× cap he
 <h2>UI Hub 能帮什么</h2>
 <p>如果要从零写这份审美文件，可以从 <a href="../../kb/">UI Hub 设计百科</a> 里的风格笔记和规范起步，再看我们之前那篇<a href="../taste-and-skills-for-agents/">教智能体审美</a>。无论智能体是 Lovart、Claude、Cursor 还是 Figma 的，格式都一样：先写短规则，再出像素。</p>""",
  refs=[('Lovart 2.0: Meet Arti, your personal design agent','Lovart','https://www.lovart.ai/news/lovart-2-0-arti'),('Lovart','Lovart','https://www.lovart.ai/'),('How to shape your slides and videos with Gemini Notebook','Google (Viraj Doshi, Shan Wang)','https://blog.google/innovation-and-ai/products/gemini-notebook/co-create-slides-videos/'),('Designs chosen by taste, not just by rule','Automo.ai','https://automo.ai/releases/designs-chosen-by-taste-not-just-by-rule'),('Teaching agents taste: how design skills de-slop AI interfaces','UI Hub','https://siinxu.github.io/ui-resource-hub/blog/taste-and-skills-for-agents/')]),
+dict(slug='layers-brand-kits-json-ai-visuals', date='2026-10-21', cat='tools', series=None, featured=True, tags=['Vyb','Gemini','Fibo 2','layers','brand kit'],
+ t=T('Layers, brand kits and JSON: three ways AI visuals stop looking generic','图层、品牌包和 JSON：让 AI 视觉不再千篇一律的三条路','圖層、品牌包和 JSON：讓 AI 視覺不再千篇一律的三條路','レイヤー、ブランドキット、JSON：AIビジュアルが没個性から抜け出す3つの方法','레이어, 브랜드 키트, JSON: AI 비주얼이 뻔해지지 않는 세 가지 방법','Lapisan, kit jenama dan JSON: tiga cara visual AI berhenti kelihatan generik','Layer, bộ nhận diện và JSON: ba cách để hình ảnh AI hết rập khuôn',"Calques, kits de marque et JSON : trois façons de rendre les visuels IA moins génériques",'Capas, kits de marca y JSON: tres formas de que los visuales con IA dejen de parecer genéricos','Ebenen, Brand-Kits und JSON: drei Wege, wie KI-Visuals nicht mehr generisch wirken'),
+ s=T('On 20 October Coco Labs launched Vyb, a design model that builds in layers; Gemini started remembering an uploaded brand style; and Bria shipped Fibo 2, which turns every edit into editable JSON. Three different answers to the same problem, and a checklist for using them.',
+     '10 月 20 日，Coco Labs 发布了按图层构建设计的模型 Vyb，Gemini 开始记住你上传的品牌风格，Bria 推出了把每次编辑都变成可改 JSON 的 Fibo 2。同一个问题的三种解法，附一份实用清单。',
+     '10 月 20 日，Coco Labs 發布了按圖層建構設計的模型 Vyb，Gemini 開始記住你上傳的品牌風格，Bria 推出了把每次編輯都變成可改 JSON 的 Fibo 2。同一個問題的三種解法，附一份實用清單。',
+     '10月20日、Coco Labsはレイヤーで組み立てるデザインモデルVybを発表し、Geminiはアップロードしたブランドスタイルを記憶し始め、BriaはすべてのEditを編集可能なJSONにするFibo 2を公開。同じ課題への3つの答えと実践チェックリスト。',
+     '10월 20일 Coco Labs는 레이어로 디자인을 만드는 모델 Vyb를, Gemini는 업로드한 브랜드 스타일 기억 기능을, Bria는 모든 편집을 수정 가능한 JSON으로 바꾸는 Fibo 2를 내놓았다. 같은 문제에 대한 세 가지 답과 체크리스트.',
+     'Pada 20 Okt, Coco Labs melancarkan Vyb yang membina reka bentuk secara berlapis, Gemini mula mengingati gaya jenama yang dimuat naik, dan Bria melancarkan Fibo 2 yang menjadikan setiap suntingan JSON boleh diubah. Tiga jawapan dan satu senarai semak.',
+     'Ngày 20/10, Coco Labs ra mắt Vyb, mô hình thiết kế dựng theo layer; Gemini bắt đầu ghi nhớ phong cách thương hiệu bạn tải lên; Bria phát hành Fibo 2, biến mỗi lần chỉnh sửa thành JSON sửa được. Ba lời giải và một checklist.',
+     "Le 20 octobre, Coco Labs a lancé Vyb, un modèle qui construit en calques ; Gemini mémorise désormais un style de marque importé ; Bria a publié Fibo 2, qui transforme chaque retouche en JSON modifiable. Trois réponses et une checklist.",
+     'El 20 de octubre Coco Labs lanzó Vyb, un modelo que diseña por capas; Gemini empezó a recordar un estilo de marca subido; y Bria publicó Fibo 2, que convierte cada edición en JSON editable. Tres respuestas y una lista de control.',
+     'Am 20. Oktober brachte Coco Labs Vyb, ein Modell, das in Ebenen gestaltet; Gemini merkt sich jetzt einen hochgeladenen Markenstil; Bria veröffentlichte Fibo 2, das jede Bearbeitung in editierbares JSON verwandelt. Drei Antworten und eine Checkliste.'),
+ en="""<p>The most common complaint about AI-made graphics is not that they look bad. It is that they all look the same: the right mood, the wrong font, a brand colour that is almost but not quite yours, and a headline that melts when you try to change one word. Three launches on 20 October attack that problem from three different directions, and together they make a useful map of what to ask from any visual AI tool you adopt.</p>
+<h2>Three launches, three answers</h2>
+<ul><li><strong>Vyb (Coco Labs): build in layers.</strong> Vyb is pitched as a design model, not an image generator. It assembles your own images, fonts and colours layer by layer, so text stays text, graphics stay vectors and photos stay pixels, and it calls image generators only to fill gaps. Under the hood is a new design language, Cocolang, which Coco Labs says is compact enough for a model's context window and exports losslessly to tools such as Figma. It is in early access behind a waitlist.</li>
+<li><strong>Gemini: remember the brand.</strong> Google's new business hub in Gemini lets you define a brand style by uploading your website, brand kit, fonts or colour palettes. Paired with its Nano Banana 2.1 image model, Gemini keeps that style for later requests, so you do not have to re-upload guidelines for every campaign. Google says it rolls out globally over the coming days.</li>
+<li><strong>Fibo 2 (Bria): make the edit inspectable.</strong> Bria's new open-weights model, trained on licensed data, turns a plain-language edit into a structured JSON instruction (objects, lighting, background, text and the edit itself), then applies that JSON. You can generate the JSON separately, review or change it, and pass your own. With the same images, JSON and seed you can recreate a result. Edits can combine up to four reference images, or use a mask on a single image to protect everything outside it.</li></ul>
+<h2>What the numbers do and do not say</h2>
+<p>Coco Labs published its own benchmarks. On 145 Google fonts, Vyb matched the reference letter shapes 90.3% of the time against 76.0% for the next model it tested; on exact hex colours its average error was zero; and over 200 edits it changed 11.9% of pixels on average, while the image models it compared changed more than 90%. Those are vendor tests on public fonts, not independent results, but the last figure is the one that matters for daily work. A model that repaints the whole image to change one word slowly erodes everything you liked about the first version. Vyb's approval rate was also slightly lower than its best rival's, which Coco Labs puts down to the model declining edits that would hurt legibility.</p>
+<h2>Our take</h2>
+<p>All three are moving taste out of the prompt and into something you can check. Layers make your fonts and colours facts rather than suggestions. A stored brand style turns guidelines into a reusable asset. Structured JSON turns an edit into a diff you can review before it renders. The common failure they target is the same one we see in generated interfaces: the model drifts toward the average of its training data unless your choices are pinned down in a form it cannot reinterpret.</p>
+<p>Two cautions. First, a remembered brand style is only as good as the kit you upload. A logo and a vague palette will give you consistent mediocrity. Second, do not mistake a layered export for a design system. If the tool outputs editable text in your font but ignores your spacing and hierarchy rules, you still have cleanup work. Ask for the layers, and still check the layout.</p>
+<h2>Checklist: making AI visuals look like yours</h2>
+<ol><li><strong>Prepare a real brand kit before you start.</strong> Fonts as files, colours as hex values, logo in vector, two or three approved reference layouts, and a short list of things you never do.</li>
+<li><strong>Test fidelity with one boring asset.</strong> Ask for a plain banner with your headline font and primary colour, then check the font and pick the colour with an eyedropper. If either is off, the tool is guessing.</li>
+<li><strong>Test edit drift.</strong> Change one word or one colour and compare before and after. Anything else that moved is a warning sign for multi-round work.</li>
+<li><strong>Prefer outputs you can open.</strong> Layered files or Figma export for anything that will be edited again; flat images only for one-off use.</li>
+<li><strong>Keep the instruction, not just the image.</strong> When a tool exposes structured instructions and seeds, as Fibo 2 does, save them next to the asset so a variant next month starts from the same spec.</li>
+<li><strong>Protect what must not change.</strong> Use masks, locked layers or explicit "keep everything else" rules for product photos, faces and logos.</li></ol>
+<pre><code>{
+  "brand": "Northwind Tea",
+  "fonts": { "display": "Fraunces 600", "body": "Inter 400" },
+  "colors": { "ink": "#1d1a16", "paper": "#f6f1e7", "accent": "#8a5a3b" },
+  "logo": "logo.svg  (clear space ≥ 1× cap height)",
+  "layout": "one focal photo · headline top-left · max 2 text blocks",
+  "never": ["gradients on text", "stock 3D", "more than one accent"],
+  "keep": "product photo pixels untouched; edit text and colour only"
+}</code></pre>
+<h2>How UI Hub helps</h2>
+<p>The brand kit above is the visual sibling of a token file. If you are setting one up for a product, our posts on <a href="../design-tokens-for-agents/">design tokens for agents</a> and <a href="../oklch-color-and-dark-mode/">OKLCH colour</a> cover naming and colour choices, and yesterday's piece on <a href="../lovart-arti-design-agent-memory/">Lovart's taste memory</a> shows the same idea from the agent side: write your taste down in a form a machine can check.</p>""",
+ zh="""<p>人们对 AI 生成图形最常见的抱怨，不是难看，而是都长一个样：氛围对了，字体不对；品牌色差一点点；想改标题里一个字，整行字就糊了。10 月 20 日的三项发布从三个方向处理这个问题，放在一起看，正好是一张选择任何视觉 AI 工具时该问什么的地图。</p>
+<h2>三项发布，三种答案</h2>
+<ul><li><strong>Vyb（Coco Labs）：按图层构建。</strong>Vyb 的定位是设计模型，不是出图模型。它把你自己的图片、字体和颜色一层一层组合起来：文字保持为文字，图形保持为矢量，照片保持为像素，只在需要补位时才调用图像生成器。底层是一种新的设计语言 Cocolang，Coco Labs 说它足够紧凑、适合模型的上下文窗口，并能无损导出到 Figma 等工具。目前需要加入候补名单抢先体验。</li>
+<li><strong>Gemini：记住品牌。</strong>Google 在 Gemini 里推出了面向小企业的新入口，可以上传网站、品牌包、字体或配色来定义品牌风格。配合 Nano Banana 2.1 图像模型，Gemini 会在之后的请求里沿用这套风格，不必每次做活动都重新上传规范。Google 表示会在未来几天全球陆续上线。</li>
+<li><strong>Fibo 2（Bria）：让每次编辑可检查。</strong>Bria 的新开放权重模型使用授权数据训练，会先把一句自然语言修改翻译成结构化 JSON 指令（对象、光线、背景、文字和修改本身），再按这份 JSON 执行。你可以单独生成这份 JSON，审阅或修改后再传回去，也可以直接传自己写的。用同样的图片、JSON 和种子就能复现结果。一次编辑最多可组合四张参考图，单图编辑还能用蒙版保护蒙版外的全部内容。</li></ul>
+<h2>这些数字说明了什么、没说明什么</h2>
+<p>Coco Labs 公布了自家基准测试：在 145 款 Google 字体上，Vyb 的字形吻合度为 90.3%，它测试的次优模型为 76.0%；指定十六进制颜色时平均误差为零；在 200 次编辑中，Vyb 平均只改动 11.9% 的像素，而对比的图像模型都超过 90%。这些是厂商用公开字体做的测试，不是独立结果，但最后一个数字对日常工作最关键：为了改一个字而重画整张图的模型，会一点点磨掉你喜欢第一版的所有理由。另外，Vyb 的通过率略低于最强对手，Coco Labs 的解释是模型会拒绝会损害可读性的修改。</p>
+<h2>我们的看法</h2>
+<p>三者都在把「审美」从提示词里搬出来，放进可以检查的东西里。图层让你的字体和颜色成为事实而不是建议；存下来的品牌风格把规范变成可复用的资产；结构化 JSON 把一次修改变成渲染前可以审阅的差异。它们针对的失败，和我们在 AI 生成界面里看到的是同一种：除非你的选择以模型无法重新诠释的形式固定下来，否则模型总会滑向训练数据的平均值。</p>
+<p>两点提醒。第一，记住的品牌风格只和你上传的品牌包一样好。只有一个 Logo 和一套模糊的配色，得到的就是稳定的平庸。第二，别把分层导出当成设计系统。如果工具输出了你字体的可编辑文字，却无视你的间距和层级规则，后面还是要返工。图层要争取，版式也照样要检查。</p>
+<h2>清单：让 AI 视觉看起来像你的</h2>
+<ol><li><strong>开工前准备真正的品牌包。</strong>字体用文件、颜色用十六进制值、Logo 用矢量，再加两三个认可的参考版式和一份「绝不做」清单。</li>
+<li><strong>用一张最无聊的图测保真度。</strong>让它做一张只有标题字体和主色的简单横幅，核对字体，再用取色器吸一下颜色。任何一项不对，说明工具在猜。</li>
+<li><strong>测编辑漂移。</strong>只改一个词或一个颜色，对比前后。其他地方也动了，就是多轮修改的危险信号。</li>
+<li><strong>优先选能打开的输出。</strong>还要再改的素材用分层文件或 Figma 导出；平面图只用于一次性场景。</li>
+<li><strong>保存指令，而不只是图片。</strong>工具像 Fibo 2 那样提供结构化指令和种子时，把它们和素材存在一起，下个月做变体就能从同一份规格出发。</li>
+<li><strong>保护不能改的部分。</strong>产品照片、人脸和 Logo 用蒙版、锁定图层或明确的「其他全部保持不变」规则保护。</li></ol>
+<pre><code>{
+  "brand": "Northwind Tea",
+  "fonts": { "display": "Fraunces 600", "body": "Inter 400" },
+  "colors": { "ink": "#1d1a16", "paper": "#f6f1e7", "accent": "#8a5a3b" },
+  "logo": "logo.svg（安全区 ≥ 1 倍大写字母高度）",
+  "layout": "一张焦点照片 · 标题在左上 · 最多 2 段文字",
+  "never": ["文字渐变", "图库 3D", "超过一个强调色"],
+  "keep": "产品照片像素不动，只改文字和颜色"
+}</code></pre>
+<h2>UI Hub 能帮什么</h2>
+<p>上面的品牌包，相当于视觉版的 Token 文件。如果要为产品建一份，可以看我们的<a href="../design-tokens-for-agents/">给智能体的设计 Token</a>和 <a href="../oklch-color-and-dark-mode/">OKLCH 配色</a>，讲命名和选色；昨天那篇 <a href="../lovart-arti-design-agent-memory/">Lovart 审美记忆</a>则是从智能体一侧讲同一件事：把你的审美写成机器能检查的形式。</p>""",
+ refs=[('Introducing Vyb - Our First Design Model That Understands Taste','Coco Labs (David Zats, Anusha Ramesh)','https://cocolabs.ai/blog/introducing-vyb'),('Coco Labs','Coco Labs','https://cocolabs.ai/'),('New Gemini tools for small business owners','Google (Vishnu Sivaji)','https://blog.google/innovation-and-ai/products/gemini-app/new-tools-small-business-owners/'),('Fibo 2 is live','Bria AI docs','https://docs.bria.ai/whats-new/fibo-2'),('Generate Structured Instruction','Bria AI docs','https://docs.bria.ai/image-editing/editing/generate-structured-instruction'),('Image Edit by Text','Bria AI docs','https://docs.bria.ai/image-editing/editing/edit-image'),('Bria AI models','Hugging Face','https://huggingface.co/briaai'),('Qwen-Image-Layered','QwenLM on GitHub','https://github.com/QwenLM/Qwen-Image-Layered'),('Design tokens for agents','UI Hub','https://siinxu.github.io/ui-resource-hub/blog/design-tokens-for-agents/')]),
 ]

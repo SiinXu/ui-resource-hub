@@ -1,5 +1,5 @@
 {
- "count": 29,
+ "count": 30,
  "rss": "https://siinxu.github.io/ui-resource-hub/blog/rss.xml",
  "categories": {
   "tools": "Tools",
@@ -18,6 +18,97 @@
   "weekly": "Series: Weekly roundup"
  },
  "posts": [
+  {
+   "slug": "layers-brand-kits-json-ai-visuals",
+   "url": "https://siinxu.github.io/ui-resource-hub/blog/layers-brand-kits-json-ai-visuals/",
+   "date": "2026-10-21",
+   "category": "tools",
+   "series": null,
+   "featured": true,
+   "tags": [
+    "Vyb",
+    "Gemini",
+    "Fibo 2",
+    "layers",
+    "brand kit"
+   ],
+   "title": {
+    "en": "Layers, brand kits and JSON: three ways AI visuals stop looking generic",
+    "zh": "图层、品牌包和 JSON：让 AI 视觉不再千篇一律的三条路",
+    "zht": "圖層、品牌包和 JSON：讓 AI 視覺不再千篇一律的三條路",
+    "ja": "レイヤー、ブランドキット、JSON：AIビジュアルが没個性から抜け出す3つの方法",
+    "ko": "레이어, 브랜드 키트, JSON: AI 비주얼이 뻔해지지 않는 세 가지 방법",
+    "ms": "Lapisan, kit jenama dan JSON: tiga cara visual AI berhenti kelihatan generik",
+    "vi": "Layer, bộ nhận diện và JSON: ba cách để hình ảnh AI hết rập khuôn",
+    "fr": "Calques, kits de marque et JSON : trois façons de rendre les visuels IA moins génériques",
+    "es": "Capas, kits de marca y JSON: tres formas de que los visuales con IA dejen de parecer genéricos",
+    "de": "Ebenen, Brand-Kits und JSON: drei Wege, wie KI-Visuals nicht mehr generisch wirken"
+   },
+   "summary": {
+    "en": "On 20 October Coco Labs launched Vyb, a design model that builds in layers; Gemini started remembering an uploaded brand style; and Bria shipped Fibo 2, which turns every edit into editable JSON. Three different answers to the same problem, and a checklist for using them.",
+    "zh": "10 月 20 日，Coco Labs 发布了按图层构建设计的模型 Vyb，Gemini 开始记住你上传的品牌风格，Bria 推出了把每次编辑都变成可改 JSON 的 Fibo 2。同一个问题的三种解法，附一份实用清单。",
+    "zht": "10 月 20 日，Coco Labs 發布了按圖層建構設計的模型 Vyb，Gemini 開始記住你上傳的品牌風格，Bria 推出了把每次編輯都變成可改 JSON 的 Fibo 2。同一個問題的三種解法，附一份實用清單。",
+    "ja": "10月20日、Coco Labsはレイヤーで組み立てるデザインモデルVybを発表し、Geminiはアップロードしたブランドスタイルを記憶し始め、BriaはすべてのEditを編集可能なJSONにするFibo 2を公開。同じ課題への3つの答えと実践チェックリスト。",
+    "ko": "10월 20일 Coco Labs는 레이어로 디자인을 만드는 모델 Vyb를, Gemini는 업로드한 브랜드 스타일 기억 기능을, Bria는 모든 편집을 수정 가능한 JSON으로 바꾸는 Fibo 2를 내놓았다. 같은 문제에 대한 세 가지 답과 체크리스트.",
+    "ms": "Pada 20 Okt, Coco Labs melancarkan Vyb yang membina reka bentuk secara berlapis, Gemini mula mengingati gaya jenama yang dimuat naik, dan Bria melancarkan Fibo 2 yang menjadikan setiap suntingan JSON boleh diubah. Tiga jawapan dan satu senarai semak.",
+    "vi": "Ngày 20/10, Coco Labs ra mắt Vyb, mô hình thiết kế dựng theo layer; Gemini bắt đầu ghi nhớ phong cách thương hiệu bạn tải lên; Bria phát hành Fibo 2, biến mỗi lần chỉnh sửa thành JSON sửa được. Ba lời giải và một checklist.",
+    "fr": "Le 20 octobre, Coco Labs a lancé Vyb, un modèle qui construit en calques ; Gemini mémorise désormais un style de marque importé ; Bria a publié Fibo 2, qui transforme chaque retouche en JSON modifiable. Trois réponses et une checklist.",
+    "es": "El 20 de octubre Coco Labs lanzó Vyb, un modelo que diseña por capas; Gemini empezó a recordar un estilo de marca subido; y Bria publicó Fibo 2, que convierte cada edición en JSON editable. Tres respuestas y una lista de control.",
+    "de": "Am 20. Oktober brachte Coco Labs Vyb, ein Modell, das in Ebenen gestaltet; Gemini merkt sich jetzt einen hochgeladenen Markenstil; Bria veröffentlichte Fibo 2, das jede Bearbeitung in editierbares JSON verwandelt. Drei Antworten und eine Checkliste."
+   },
+   "reading_minutes": {
+    "en": 4,
+    "zh": 5
+   },
+   "cover": "https://siinxu.github.io/ui-resource-hub/blog/img/layers-brand-kits-json-ai-visuals-cover.webp",
+   "references": [
+    {
+     "title": "Introducing Vyb - Our First Design Model That Understands Taste",
+     "by": "Coco Labs (David Zats, Anusha Ramesh)",
+     "url": "https://cocolabs.ai/blog/introducing-vyb"
+    },
+    {
+     "title": "Coco Labs",
+     "by": "Coco Labs",
+     "url": "https://cocolabs.ai/"
+    },
+    {
+     "title": "New Gemini tools for small business owners",
+     "by": "Google (Vishnu Sivaji)",
+     "url": "https://blog.google/innovation-and-ai/products/gemini-app/new-tools-small-business-owners/"
+    },
+    {
+     "title": "Fibo 2 is live",
+     "by": "Bria AI docs",
+     "url": "https://docs.bria.ai/whats-new/fibo-2"
+    },
+    {
+     "title": "Generate Structured Instruction",
+     "by": "Bria AI docs",
+     "url": "https://docs.bria.ai/image-editing/editing/generate-structured-instruction"
+    },
+    {
+     "title": "Image Edit by Text",
+     "by": "Bria AI docs",
+     "url": "https://docs.bria.ai/image-editing/editing/edit-image"
+    },
+    {
+     "title": "Bria AI models",
+     "by": "Hugging Face",
+     "url": "https://huggingface.co/briaai"
+    },
+    {
+     "title": "Qwen-Image-Layered",
+     "by": "QwenLM on GitHub",
+     "url": "https://github.com/QwenLM/Qwen-Image-Layered"
+    },
+    {
+     "title": "Design tokens for agents",
+     "by": "UI Hub",
+     "url": "https://siinxu.github.io/ui-resource-hub/blog/design-tokens-for-agents/"
+    }
+   ]
+  },
   {
    "slug": "lovart-arti-design-agent-memory",
    "url": "https://siinxu.github.io/ui-resource-hub/blog/lovart-arti-design-agent-memory/",
