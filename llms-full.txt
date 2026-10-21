@@ -1,6 +1,6 @@
 # UI Hub
 
-> Curated, multilingual directory of 4813 public UI resources (component libraries, component style demos, effects, design systems, design skills for AI agents) plus original blog analysis of AI design techniques. Data updated 2026-10-20 18:06 UTC.
+> Curated, multilingual directory of 4828 public UI resources (component libraries, component style demos, effects, design systems, design skills for AI agents) plus original blog analysis of AI design techniques. Data updated 2026-10-21 04:42 UTC.
 
 Use the JSON endpoints, not the SPA, when acting as an agent. Every entry links to its original site; licenses belong to the original authors.
 
@@ -113,11 +113,11 @@ Use the JSON endpoints, not the SPA, when acting as an agent. Every entry links 
 - [visx](https://airbnb.io/visx/): Airbnb's low-level visualization components
 
 ## FAQ
-- **What is UI Hub?** A free, curated directory of 4813 public UI resources: 181 component libraries, 1989 component style demos with light/dark screenshots, 70 design skills for AI agents, plus effects, templates, specs and tutorials. It links to original sites and never hosts paid source code.
+- **What is UI Hub?** A free, curated directory of 4828 public UI resources: 190 component libraries, 1989 component style demos with light/dark screenshots, 70 design skills for AI agents, plus effects, templates, specs and tutorials. It links to original sites and never hosts paid source code.
 - **How do I find a component in a given style?** Load https://siinxu.github.io/ui-resource-hub/api/resources.json and filter by ct (component kind, e.g. "dialog") and vs (visual style, e.g. "minimal" or "motion"). type="style" entries are concrete component demos with a libName and page URL; type="library" entries are whole libraries with install info on the site.
 - **Which skills should an agent use for good UI?** One direction skill (frontend-design or taste-skill), emil-design-eng for motion and interaction polish, then impeccable, baseline-ui, web-design-guidelines and accessibility as an audit pass. See https://siinxu.github.io/ui-resource-hub/api/skills.json.
 - **Can I copy the code?** Open-source libraries can be used under their own licenses (MIT, Apache-2.0 etc.); the card shows the original link. Paid tiers (marked paid/freemium) must be bought from the original vendor.
-- **How often is it updated?** Daily via a GitHub Actions job that adds new UI repositories and tools from GitHub, awesome-shadcn-ui and Hacker News. Nothing is deleted. Last update: 2026-10-20 18:06 UTC.
+- **How often is it updated?** Daily via a GitHub Actions job that adds new UI repositories and tools from GitHub, awesome-shadcn-ui and Hacker News. Nothing is deleted. Last update: 2026-10-21 04:42 UTC.
 
 
 # Blog posts (full text, English)
@@ -4199,6 +4199,21 @@ Get Hyped. Get Noticed. Get Results.
 - Processing State Cards | inspiration | https://x.com/ddynmcs/status/2112306911173353905 | Stacked mobile UI cards showing agent task states including a translucent amber processing panel with a cube icon and a teal step-progress indicator.
 - LCD Face Morph | inspiration | https://x.com/ingi_erlingsson/status/2112355677205123413 | A surreal animated loop where a rainbow-haired head morphs through wildly distorted expressions and impossible shapes, with glitch pixel artifacts punctuating e
 - Bouncing Bot | inspiration | https://x.com/alexabraham/status/2112274106276344106 | A looping motion study where a small icon character bounces across a black screen, morphing through different geometric shapes and vibrant colors with each pass
+- gauge-ui | library | https://gauge-ui.dev | New GitHub UI repo: Composable SVG gauges for React, distributed as a shadcn registry. (★152, MIT, thordursk/gauge-ui)
+- niko-table | collection | https://niko-table.com/ | Listed in awesome-shadcn-ui: Composable data table for shadcn/ui built on TanStack Table. Multi-column sort, AND/OR filters, virtualization for 10k+ rows, colum
+- memi | library | https://github.com/sarveshsea/memi | Listed in awesome-shadcn-ui: Agent design CI for shadcn/ui and Tailwind: focused Agent Skills, UI audits, token extraction, component scaffolds, accessibility c
+- marmo-ui | collection | https://marmoui.com | Listed in awesome-shadcn-ui: React components for Applications combined with MCP Server
+- startx | library | https://github.com/avinashid/startx | Listed in awesome-shadcn-ui: Production-ready Turborepo starter featuring Next.js, React Router,  shadcn/ui, Tailwind CSS v4, TypeScript, shared packages, authe
+- adapttable | library | https://github.com/orwa-mahmoud/adapttable | Listed in awesome-shadcn-ui: Data table for shadcn/ui in one import — URL-synced state, declarative filters with chips, column management and virtualization. Un
+- approvals-ui | collection | https://approvals-ui.vercel.app | Listed in awesome-shadcn-ui: Approval workflow components for React Flow: quorum gates, amount thresholds, a policy lint (segregation of duties, single approver
+- rust-ouroboros-ui | library | https://github.com/Type-zero-labs/ouroboros-ui | Listed in awesome-shadcn-ui: Native Rust/egui port of the shadcn/ui design language. Token-first, with governance tests that fail the build on raw values. Live 
+- dice-ui | library | https://github.com/sadmann7/diceui | Listed in awesome-shadcn-ui: Accessible shadcn/ui components built with React, TypeScript, and Tailwind CSS. Copy-paste ready, and customizable.
+- guarahooks | library | https://github.com/h3rmel/guarahooks | Listed in awesome-shadcn-ui: A free, open-source collection of reusable React hooks you can copy and paste into your apps.
+- 7ovr | collection | https://7ovr.com/?utm_source=awesome-shadcn-ui&utm_medium=referral&utm_campaign=directory | Listed in awesome-shadcn-ui: Registry of shadcn/ui blocks and complete page templates built on Base UI and installable with the shadcn CLI; hundreds of the 580+
+- cn | library | https://github.com/jakejarvis/_cn | Listed in awesome-shadcn-ui: Plug-and-play shadcn/ui registry template, powered by TanStack Start
+- zepa-ui | collection | https://zepa.design/ | Listed in awesome-shadcn-ui: zepa is a growing collection of curated UI components, hero sections, and motion systems for React & Next.js. Copy & paste, fully c
+- 8starlabs-ui | collection | https://ui.8starlabs.com | Listed in awesome-shadcn-ui: A set of beautifully designed components designed for developers who want niche, high-utility UI elements that you won't find in st
+- react-native-tetra-ui | library | https://github.com/Liamandrew/tetra-ui | Listed in awesome-shadcn-ui: Delightful components for a clean, accessible and modern component library for React Native.
 
 # Component style demos: 1989 entries, see api/resources.json (type=style)
 

@@ -1,6 +1,6 @@
 {
- "generated": "2026-10-20",
- "count": 4813,
+ "generated": "2026-10-21",
+ "count": 4828,
  "items": [
   {
    "id": "ued-figma-mcp-guide",
@@ -181652,6 +181652,418 @@
    },
    "pub": "2026-10-20",
    "added": "2026-10-20"
+  },
+  {
+   "id": "gh-thordursk-gauge-ui",
+   "name": "gauge-ui",
+   "url": "https://gauge-ui.dev",
+   "note": "GitHub 新晋 UI 仓库：Composable SVG gauges for React, distributed as a shadcn registry.（GitHub ★152，MIT 许可，仓库 thordursk/gauge-ui）",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "GitHub",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "开源",
+    "自动收录"
+   ],
+   "ct": [],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "New GitHub UI repo: Composable SVG gauges for React, distributed as a shadcn registry. (★152, MIT, thordursk/gauge-ui)",
+   "added": "2026-10-21"
+  },
+  {
+   "id": "aw-niko-table-com",
+   "name": "niko-table",
+   "url": "https://niko-table.com/",
+   "note": "awesome-shadcn-ui 收录：Composable data table for shadcn/ui built on TanStack Table. Multi-column sort, AND/OR filters, virtualization for 10k+ rows, column pinning/resizing, row/column drag-and-drop, and CSV export, plus an",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "table"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Composable data table for shadcn/ui built on TanStack Table. Multi-column sort, AND/OR filters, virtualization for 10k+ rows, column pinning/resizing, row/column drag-and-drop, and CSV export, plus an",
+   "added": "2026-10-21"
+  },
+  {
+   "id": "aw-github-com-sarveshsea-memi",
+   "name": "memi",
+   "url": "https://github.com/sarveshsea/memi",
+   "note": "awesome-shadcn-ui 收录：Agent design CI for shadcn/ui and Tailwind: focused Agent Skills, UI audits, token extraction, component scaffolds, accessibility checks, and file-anchored quality gates.",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Agent design CI for shadcn/ui and Tailwind: focused Agent Skills, UI audits, token extraction, component scaffolds, accessibility checks, and file-anchored quality gates.",
+   "added": "2026-10-21"
+  },
+  {
+   "id": "aw-marmoui-com",
+   "name": "marmo-ui",
+   "url": "https://marmoui.com",
+   "note": "awesome-shadcn-ui 收录：React components for Applications combined with MCP Server",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: React components for Applications combined with MCP Server",
+   "added": "2026-10-21"
+  },
+  {
+   "id": "aw-github-com-avinashid-startx",
+   "name": "startx",
+   "url": "https://github.com/avinashid/startx",
+   "note": "awesome-shadcn-ui 收录：Production-ready Turborepo starter featuring Next.js, React Router,  shadcn/ui, Tailwind CSS v4, TypeScript, shared packages, authentication, rolldown and scalable project architecture.",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Production-ready Turborepo starter featuring Next.js, React Router,  shadcn/ui, Tailwind CSS v4, TypeScript, shared packages, authentication, rolldown and scalable project architecture.",
+   "added": "2026-10-21"
+  },
+  {
+   "id": "aw-github-com-orwa-mahmoud-adapttable",
+   "name": "adapttable",
+   "url": "https://github.com/orwa-mahmoud/adapttable",
+   "note": "awesome-shadcn-ui 收录：Data table for shadcn/ui in one import — URL-synced state, declarative filters with chips, column management and virtualization. Unstyled core pre-wired with the shadcn class preset.",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "table"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Data table for shadcn/ui in one import — URL-synced state, declarative filters with chips, column management and virtualization. Unstyled core pre-wired with the shadcn class preset.",
+   "added": "2026-10-21"
+  },
+  {
+   "id": "aw-approvals-ui-vercel-app",
+   "name": "approvals-ui",
+   "url": "https://approvals-ui.vercel.app",
+   "note": "awesome-shadcn-ui 收录：Approval workflow components for React Flow: quorum gates, amount thresholds, a policy lint (segregation of duties, single approver on high value), and plain-language editing behind a human review gat",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Approval workflow components for React Flow: quorum gates, amount thresholds, a policy lint (segregation of duties, single approver on high value), and plain-language editing behind a human review gat",
+   "added": "2026-10-21"
+  },
+  {
+   "id": "aw-github-com-type-zero-labs-ouroboros-ui",
+   "name": "rust-ouroboros-ui",
+   "url": "https://github.com/Type-zero-labs/ouroboros-ui",
+   "note": "awesome-shadcn-ui 收录：Native Rust/egui port of the shadcn/ui design language. Token-first, with governance tests that fail the build on raw values. Live wasm storybook.",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Native Rust/egui port of the shadcn/ui design language. Token-first, with governance tests that fail the build on raw values. Live wasm storybook.",
+   "added": "2026-10-21"
+  },
+  {
+   "id": "aw-github-com-sadmann7-diceui",
+   "name": "dice-ui",
+   "url": "https://github.com/sadmann7/diceui",
+   "note": "awesome-shadcn-ui 收录：Accessible shadcn/ui components built with React, TypeScript, and Tailwind CSS. Copy-paste ready, and customizable.",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Accessible shadcn/ui components built with React, TypeScript, and Tailwind CSS. Copy-paste ready, and customizable.",
+   "added": "2026-10-21"
+  },
+  {
+   "id": "aw-github-com-h3rmel-guarahooks",
+   "name": "guarahooks",
+   "url": "https://github.com/h3rmel/guarahooks",
+   "note": "awesome-shadcn-ui 收录：A free, open-source collection of reusable React hooks you can copy and paste into your apps.",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: A free, open-source collection of reusable React hooks you can copy and paste into your apps.",
+   "added": "2026-10-21"
+  },
+  {
+   "id": "aw-7ovr-com",
+   "name": "7ovr",
+   "url": "https://7ovr.com/?utm_source=awesome-shadcn-ui&utm_medium=referral&utm_campaign=directory",
+   "note": "awesome-shadcn-ui 收录：Registry of shadcn/ui blocks and complete page templates built on Base UI and installable with the shadcn CLI; hundreds of the 580+ blocks are free, while the rest require a paid Pro license.",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat",
+    "layout"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Registry of shadcn/ui blocks and complete page templates built on Base UI and installable with the shadcn CLI; hundreds of the 580+ blocks are free, while the rest require a paid Pro license.",
+   "added": "2026-10-21"
+  },
+  {
+   "id": "aw-github-com-jakejarvis-cn",
+   "name": "cn",
+   "url": "https://github.com/jakejarvis/_cn",
+   "note": "awesome-shadcn-ui 收录：Plug-and-play shadcn/ui registry template, powered by TanStack Start",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Plug-and-play shadcn/ui registry template, powered by TanStack Start",
+   "added": "2026-10-21"
+  },
+  {
+   "id": "aw-zepa-design",
+   "name": "zepa-ui",
+   "url": "https://zepa.design/",
+   "note": "awesome-shadcn-ui 收录：zepa is a growing collection of curated UI components, hero sections, and motion systems for React & Next.js. Copy & paste, fully customizable, free and open source.",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "motion",
+    "layout"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: zepa is a growing collection of curated UI components, hero sections, and motion systems for React & Next.js. Copy & paste, fully customizable, free and open source.",
+   "added": "2026-10-21"
+  },
+  {
+   "id": "aw-ui-8starlabs-com",
+   "name": "8starlabs-ui",
+   "url": "https://ui.8starlabs.com",
+   "note": "awesome-shadcn-ui 收录：A set of beautifully designed components designed for developers who want niche, high-utility UI elements that you won't find in standard libraries.",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: A set of beautifully designed components designed for developers who want niche, high-utility UI elements that you won't find in standard libraries.",
+   "added": "2026-10-21"
+  },
+  {
+   "id": "aw-github-com-liamandrew-tetra-ui",
+   "name": "react-native-tetra-ui",
+   "url": "https://github.com/Liamandrew/tetra-ui",
+   "note": "awesome-shadcn-ui 收录：Delightful components for a clean, accessible and modern component library for React Native.",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Delightful components for a clean, accessible and modern component library for React Native.",
+   "added": "2026-10-21"
   }
  ],
  "guides": [
@@ -181854,5 +182266,5 @@
    ]
   }
  ],
- "updatedAt": "2026-10-20T18:06Z"
+ "updatedAt": "2026-10-21T04:42Z"
 }
