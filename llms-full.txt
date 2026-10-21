@@ -1,6 +1,6 @@
 # UI Hub
 
-> Curated, multilingual directory of 4829 public UI resources (component libraries, component style demos, effects, design systems, design skills for AI agents) plus original blog analysis of AI design techniques. Data updated 2026-10-21 08:44 UTC.
+> Curated, multilingual directory of 4840 public UI resources (component libraries, component style demos, effects, design systems, design skills for AI agents) plus original blog analysis of AI design techniques. Data updated 2026-10-21 18:14 UTC.
 
 Use the JSON endpoints, not the SPA, when acting as an agent. Every entry links to its original site; licenses belong to the original authors.
 
@@ -114,11 +114,11 @@ Use the JSON endpoints, not the SPA, when acting as an agent. Every entry links 
 - [visx](https://airbnb.io/visx/): Airbnb's low-level visualization components
 
 ## FAQ
-- **What is UI Hub?** A free, curated directory of 4829 public UI resources: 190 component libraries, 1989 component style demos with light/dark screenshots, 70 design skills for AI agents, plus effects, templates, specs and tutorials. It links to original sites and never hosts paid source code.
+- **What is UI Hub?** A free, curated directory of 4840 public UI resources: 190 component libraries, 1989 component style demos with light/dark screenshots, 70 design skills for AI agents, plus effects, templates, specs and tutorials. It links to original sites and never hosts paid source code.
 - **How do I find a component in a given style?** Load https://siinxu.github.io/ui-resource-hub/api/resources.json and filter by ct (component kind, e.g. "dialog") and vs (visual style, e.g. "minimal" or "motion"). type="style" entries are concrete component demos with a libName and page URL; type="library" entries are whole libraries with install info on the site.
 - **Which skills should an agent use for good UI?** One direction skill (frontend-design or taste-skill), emil-design-eng for motion and interaction polish, then impeccable, baseline-ui, web-design-guidelines and accessibility as an audit pass. See https://siinxu.github.io/ui-resource-hub/api/skills.json.
 - **Can I copy the code?** Open-source libraries can be used under their own licenses (MIT, Apache-2.0 etc.); the card shows the original link. Paid tiers (marked paid/freemium) must be bought from the original vendor.
-- **How often is it updated?** Daily via a GitHub Actions job that adds new UI repositories and tools from GitHub, awesome-shadcn-ui and Hacker News. Nothing is deleted. Last update: 2026-10-21 08:44 UTC.
+- **How often is it updated?** Daily via a GitHub Actions job that adds new UI repositories and tools from GitHub, awesome-shadcn-ui and Hacker News. Nothing is deleted. Last update: 2026-10-21 18:14 UTC.
 
 
 # Blog posts (full text, English)
@@ -4258,6 +4258,17 @@ Get Hyped. Get Noticed. Get Results.
 - 8starlabs-ui | collection | https://ui.8starlabs.com | Listed in awesome-shadcn-ui: A set of beautifully designed components designed for developers who want niche, high-utility UI elements that you won't find in st
 - react-native-tetra-ui | library | https://github.com/Liamandrew/tetra-ui | Listed in awesome-shadcn-ui: Delightful components for a clean, accessible and modern component library for React Native.
 - Thumbnail Grid Transition | inspiration | https://x.com/CorentinBerndu/status/2051716784617635924 | A WebGL motion study breaks a single portrait into vertical slices that dissolve into a scattered grid of thumbnails before reforming.
+- Token Pass Intro Animation | inspiration | https://x.com/JohnPhamous/status/2112955848805040275 | Animated intro for Token Pass shows a dark leather wallet opening to reveal stacked blue AI model cards for Kimi K3 and GLM 5.3, with more models teased above.
+- Apple Music Sound Logo | inspiration | https://x.com/FonsMans/status/2112952975903924610 | Animated logo sting for Apple Music where a refractive glass icon morphs through chromatic aberration and lens flares into the final wordmark on black.
+- Crumple Changelog | inspiration | https://x.com/ann_nnng/status/2112494977637126157 | A TypingMind changelog where each update is a textured poster that crumples into a 3D paper ball when you slide to advance to the next entry.
+- bem Brand Illustrations | inspiration | https://x.com/xchylerdrenth/status/2112781549343273189 | A series of illustrated promotional cards for bem, a developer workflow tool, using textured geometric nodes, connector lines and bold color blocks to visualize
+- Neon Marker Scrawls | inspiration | https://x.com/senssylee/status/2108125563386724451 | Hand-drawn neon marker scribbles in orange, pink, and yellow-green cover the feedback sections of Japanese book survey postcards, turning forms into gestural dr
+- Ajedrez Film Poem | inspiration | https://x.com/julianleiss/status/2110868325052149925 | An editorial short film weaving archival images, typographic compositions and voiceover around Borges' chess poem, cutting across diagrams, sculptures, archive 
+- Animated Orbital Diagrams | inspiration | https://x.com/yashisinghh/status/2112827827104219609 | Interactive orbital mechanics visualizations showing satellite trajectories as animated dot trails around a wireframe globe, with labeled parameters and a dragg
+- Rejected Logo Marks | inspiration | https://x.com/FonsMans/status/2112612218625998981 | Twelve unused logo mark explorations in white on black, mixing letterform, geometric, and abstract symbol directions across a range of forms.
+- AccessGrid Nav Dropdown | inspiration | https://x.com/jamesm/status/2112838184979611723 | The AccessGrid website nav dropdowns animate open to reveal illustrated sub-sections with live microanimations including scrolling binary code, a drawing line, 
+- Bot Animation States | inspiration | https://x.com/jennywen/status/2112202752118182192 | Eight illustrated bot characters in varied shapes and colors cycle through expressive eye animation states, showing idle, curious, and emotive facial transition
+- Eddy Sticker Pack | inspiration | https://x.com/designbyaron/status/2112600237671932327 | A coded sticker pack for Eddy bursts from an orange snack wrapper to reveal 33 illustrated stickers mixing 3D shapes, speech bubbles, measurement tags and categ
 
 # Component style demos: 1989 entries, see api/resources.json (type=style)
 

@@ -1,6 +1,6 @@
 {
  "generated": "2026-10-21",
- "count": 4829,
+ "count": 4840,
  "items": [
   {
    "id": "ued-figma-mcp-guide",
@@ -182113,6 +182113,561 @@
    },
    "pub": "2026-10-20",
    "added": "2026-10-21"
+  },
+  {
+   "id": "rd-poqewfx-token-pass-intro-animation",
+   "name": "Token Pass Intro Animation",
+   "url": "https://x.com/JohnPhamous/status/2112955848805040275",
+   "note": "Animated intro for Token Pass shows a dark leather wallet opening to reveal stacked blue AI model cards for Kimi K3 and GLM 5.3, with more models teased above.",
+   "noteEn": "Animated intro for Token Pass shows a dark leather wallet opening to reveal stacked blue AI model cards for Kimi K3 and GLM 5.3, with more models teased above.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@johnphamous",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "motion"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "3d"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/poqewfx-token-pass-intro-animation",
+   "rdkind": "Design",
+   "rdcat": "Motion",
+   "rdstyle": [
+    "3D",
+    "Dark"
+   ],
+   "author": {
+    "name": "JohnPhamous",
+    "handle": "@johnphamous",
+    "url": "https://x.com/johnphamous"
+   },
+   "x_post": "https://x.com/JohnPhamous/status/2112955848805040275",
+   "xsrc": {
+    "post": "https://x.com/JohnPhamous/status/2112955848805040275",
+    "author": "@JohnPhamous",
+    "likes": 50,
+    "bookmarks": 11,
+    "reposts": 0,
+    "impressions": 1002,
+    "date": "2026-10-21"
+   },
+   "pub": "2026-10-21",
+   "added": "2026-10-21"
+  },
+  {
+   "id": "rd-5ac3ri1-apple-music-sound-logo",
+   "name": "Apple Music Sound Logo",
+   "url": "https://x.com/FonsMans/status/2112952975903924610",
+   "note": "Animated logo sting for Apple Music where a refractive glass icon morphs through chromatic aberration and lens flares into the final wordmark on black.",
+   "noteEn": "Animated logo sting for Apple Music where a refractive glass icon morphs through chromatic aberration and lens flares into the final wordmark on black.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@apple",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "motion"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "3d",
+    "glass"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/5ac3ri1-apple-music-sound-logo",
+   "rdkind": "Design",
+   "rdcat": "Motion",
+   "rdstyle": [
+    "3D",
+    "Glassmorphism",
+    "Dark"
+   ],
+   "author": {
+    "name": "Fons Mans",
+    "handle": "@apple",
+    "url": "https://x.com/apple"
+   },
+   "x_post": "https://x.com/FonsMans/status/2112952975903924610",
+   "xsrc": {
+    "post": "https://x.com/FonsMans/status/2112952975903924610",
+    "author": "@FonsMans",
+    "likes": 73,
+    "bookmarks": 7,
+    "reposts": 2,
+    "impressions": 1962,
+    "date": "2026-10-21"
+   },
+   "pub": "2026-10-21",
+   "added": "2026-10-21"
+  },
+  {
+   "id": "rd-94h2ciu-crumple-changelog",
+   "name": "Crumple Changelog",
+   "url": "https://x.com/ann_nnng/status/2112494977637126157",
+   "note": "A TypingMind changelog where each update is a textured poster that crumples into a 3D paper ball when you slide to advance to the next entry.",
+   "noteEn": "A TypingMind changelog where each update is a textured poster that crumples into a 3D paper ball when you slide to advance to the next entry.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@ann_nnng",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "3d",
+    "playful"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/94h2ciu-crumple-changelog",
+   "rdkind": "Design",
+   "rdcat": "Web",
+   "rdstyle": [
+    "Typographic",
+    "Experimental",
+    "3D",
+    "Playful",
+    "Textured",
+    "Vibrant"
+   ],
+   "author": {
+    "name": "Ann Nguyen",
+    "handle": "@ann_nnng",
+    "url": "https://x.com/ann_nnng"
+   },
+   "x_post": "https://x.com/ann_nnng/status/2112494977637126157",
+   "xsrc": {
+    "post": "https://x.com/ann_nnng/status/2112494977637126157",
+    "author": "@ann_nnng",
+    "likes": 784,
+    "bookmarks": 451,
+    "reposts": 51,
+    "impressions": 15518,
+    "date": "2026-10-20"
+   },
+   "pub": "2026-10-21",
+   "added": "2026-10-21"
+  },
+  {
+   "id": "rd-eml9ymx-bem-brand-illustrations",
+   "name": "bem Brand Illustrations",
+   "url": "https://x.com/xchylerdrenth/status/2112781549343273189",
+   "note": "A series of illustrated promotional cards for bem, a developer workflow tool, using textured geometric nodes, connector lines and bold color blocks to visualize composable data pipelines.",
+   "noteEn": "A series of illustrated promotional cards for bem, a developer workflow tool, using textured geometric nodes, connector lines and bold color blocks to visualize composable data pipelines.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@xchylerdrenth",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/eml9ymx-bem-brand-illustrations",
+   "rdkind": "Design",
+   "rdcat": "Illustration",
+   "rdstyle": [
+    "Geometric",
+    "Illustrative",
+    "Textured",
+    "Vibrant"
+   ],
+   "author": {
+    "name": "XchylerDrenth",
+    "handle": "@xchylerdrenth",
+    "url": "https://x.com/xchylerdrenth"
+   },
+   "x_post": "https://x.com/xchylerdrenth/status/2112781549343273189",
+   "xsrc": {
+    "post": "https://x.com/xchylerdrenth/status/2112781549343273189",
+    "author": "@xchylerdrenth",
+    "likes": 299,
+    "bookmarks": 144,
+    "reposts": 11,
+    "impressions": 4167,
+    "date": "2026-10-21"
+   },
+   "pub": "2026-10-21",
+   "added": "2026-10-21"
+  },
+  {
+   "id": "rd-42s4ob5-neon-marker-postcard-scrawls",
+   "name": "Neon Marker Scrawls",
+   "url": "https://x.com/senssylee/status/2108125563386724451",
+   "note": "Hand-drawn neon marker scribbles in orange, pink, and yellow-green cover the feedback sections of Japanese book survey postcards, turning forms into gestural drawings.",
+   "noteEn": "Hand-drawn neon marker scribbles in orange, pink, and yellow-green cover the feedback sections of Japanese book survey postcards, turning forms into gestural drawings.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@senssylee",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/42s4ob5-neon-marker-postcard-scrawls",
+   "rdkind": "Design",
+   "rdcat": "Illustration",
+   "rdstyle": [
+    "Experimental",
+    "Organic",
+    "Light",
+    "Neon"
+   ],
+   "author": {
+    "name": "Lee",
+    "handle": "@senssylee",
+    "url": "https://x.com/senssylee"
+   },
+   "x_post": "https://x.com/senssylee/status/2108125563386724451",
+   "xsrc": {
+    "post": "https://x.com/senssylee/status/2108125563386724451",
+    "author": "@senssylee",
+    "likes": 2340,
+    "bookmarks": 525,
+    "reposts": 134,
+    "impressions": 61025,
+    "date": "2026-10-08"
+   },
+   "pub": "2026-10-21",
+   "added": "2026-10-21"
+  },
+  {
+   "id": "rd-qfy3385-ajedrez-film-poem",
+   "name": "Ajedrez Film Poem",
+   "url": "https://x.com/julianleiss/status/2110868325052149925",
+   "note": "An editorial short film weaving archival images, typographic compositions and voiceover around Borges' chess poem, cutting across diagrams, sculptures, archive photos and the full poem text.",
+   "noteEn": "An editorial short film weaving archival images, typographic compositions and voiceover around Borges' chess poem, cutting across diagrams, sculptures, archive photos and the full poem text.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@julianleiss",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "motion"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/qfy3385-ajedrez-film-poem",
+   "rdkind": "Design",
+   "rdcat": "Motion",
+   "rdstyle": [
+    "Typographic",
+    "Experimental",
+    "Editorial",
+    "Black & White",
+    "Muted"
+   ],
+   "author": {
+    "name": "Julián Leiss",
+    "handle": "@julianleiss",
+    "url": "https://x.com/julianleiss"
+   },
+   "x_post": "https://x.com/julianleiss/status/2110868325052149925",
+   "xsrc": {
+    "post": "https://x.com/julianleiss/status/2110868325052149925",
+    "author": "@julianleiss",
+    "likes": 1208,
+    "bookmarks": 1400,
+    "reposts": 55,
+    "impressions": 74706,
+    "date": "2026-10-15"
+   },
+   "pub": "2026-10-21",
+   "added": "2026-10-21"
+  },
+  {
+   "id": "rd-k1hi7aa-animated-orbital-diagrams",
+   "name": "Animated Orbital Diagrams",
+   "url": "https://x.com/yashisinghh/status/2112827827104219609",
+   "note": "Interactive orbital mechanics visualizations showing satellite trajectories as animated dot trails around a wireframe globe, with labeled parameters and a draggable multi-constellation view.",
+   "noteEn": "Interactive orbital mechanics visualizations showing satellite trajectories as animated dot trails around a wireframe globe, with labeled parameters and a draggable multi-constellation view.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@yashisinghh",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "motion"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/k1hi7aa-animated-orbital-diagrams",
+   "rdkind": "Design",
+   "rdcat": "Motion",
+   "rdstyle": [
+    "Geometric",
+    "Experimental",
+    "Dark"
+   ],
+   "author": {
+    "name": "Yashi Singh",
+    "handle": "@yashisinghh",
+    "url": "https://x.com/yashisinghh"
+   },
+   "x_post": "https://x.com/yashisinghh/status/2112827827104219609",
+   "xsrc": {
+    "post": "https://x.com/yashisinghh/status/2112827827104219609",
+    "author": "@yashisinghh",
+    "likes": 297,
+    "bookmarks": 167,
+    "reposts": 11,
+    "impressions": 7032,
+    "date": "2026-10-21"
+   },
+   "pub": "2026-10-21",
+   "added": "2026-10-21"
+  },
+  {
+   "id": "rd-fh60vti-rejected-logo-marks",
+   "name": "Rejected Logo Marks",
+   "url": "https://x.com/FonsMans/status/2112612218625998981",
+   "note": "Twelve unused logo mark explorations in white on black, mixing letterform, geometric, and abstract symbol directions across a range of forms.",
+   "noteEn": "Twelve unused logo mark explorations in white on black, mixing letterform, geometric, and abstract symbol directions across a range of forms.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@FonsMans",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/fh60vti-rejected-logo-marks",
+   "rdkind": "Design",
+   "rdcat": "Branding",
+   "rdstyle": [
+    "Geometric",
+    "Minimal",
+    "Black & White"
+   ],
+   "author": {
+    "name": "Fons Mans",
+    "handle": "@FonsMans",
+    "url": "https://x.com/FonsMans"
+   },
+   "x_post": "https://x.com/FonsMans/status/2112612218625998981",
+   "xsrc": {
+    "post": "https://x.com/FonsMans/status/2112612218625998981",
+    "author": "@FonsMans",
+    "likes": 101,
+    "bookmarks": 35,
+    "reposts": 0,
+    "impressions": 6911,
+    "date": "2026-10-20"
+   },
+   "pub": "2026-10-21",
+   "added": "2026-10-21"
+  },
+  {
+   "id": "rd-7qttbd1-x-com",
+   "name": "AccessGrid Nav Dropdown",
+   "url": "https://x.com/jamesm/status/2112838184979611723",
+   "note": "The AccessGrid website nav dropdowns animate open to reveal illustrated sub-sections with live microanimations including scrolling binary code, a drawing line, and an animating chart.",
+   "noteEn": "The AccessGrid website nav dropdowns animate open to reveal illustrated sub-sections with live microanimations including scrolling binary code, a drawing line, and an animating chart.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@jamesm",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/7qttbd1-x-com",
+   "rdkind": "Design",
+   "rdcat": "Web",
+   "rdstyle": [
+    "Minimal",
+    "Light"
+   ],
+   "author": {
+    "name": "James McDonald",
+    "handle": "@jamesm",
+    "url": "https://x.com/jamesm"
+   },
+   "x_post": "https://x.com/jamesm/status/2112838184979611723",
+   "xsrc": {
+    "post": "https://x.com/jamesm/status/2112838184979611723",
+    "author": "@jamesm",
+    "likes": 129,
+    "bookmarks": 68,
+    "reposts": 3,
+    "impressions": 5262,
+    "date": "2026-10-21"
+   },
+   "pub": "2026-10-21",
+   "added": "2026-10-21"
+  },
+  {
+   "id": "rd-f4gsm71-bot-animation-states",
+   "name": "Bot Animation States",
+   "url": "https://x.com/jennywen/status/2112202752118182192",
+   "note": "Eight illustrated bot characters in varied shapes and colors cycle through expressive eye animation states, showing idle, curious, and emotive facial transitions.",
+   "noteEn": "Eight illustrated bot characters in varied shapes and colors cycle through expressive eye animation states, showing idle, curious, and emotive facial transitions.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@jennywen",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "motion"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "playful"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/f4gsm71-bot-animation-states",
+   "rdkind": "Design",
+   "rdcat": "Motion",
+   "rdstyle": [
+    "Playful",
+    "Illustrative",
+    "Vibrant",
+    "Light"
+   ],
+   "author": {
+    "name": "jenny wen",
+    "handle": "@jennywen",
+    "url": "https://x.com/jennywen"
+   },
+   "x_post": "https://x.com/jennywen/status/2112202752118182192",
+   "xsrc": {
+    "post": "https://x.com/jennywen/status/2112202752118182192",
+    "author": "@jennywen",
+    "likes": 1587,
+    "bookmarks": 317,
+    "reposts": 50,
+    "impressions": 70257,
+    "date": "2026-10-19"
+   },
+   "pub": "2026-10-21",
+   "added": "2026-10-21"
+  },
+  {
+   "id": "rd-t0dcfkj-eddy-sticker-pack",
+   "name": "Eddy Sticker Pack",
+   "url": "https://x.com/designbyaron/status/2112600237671932327",
+   "note": "A coded sticker pack for Eddy bursts from an orange snack wrapper to reveal 33 illustrated stickers mixing 3D shapes, speech bubbles, measurement tags and category badges.",
+   "noteEn": "A coded sticker pack for Eddy bursts from an orange snack wrapper to reveal 33 illustrated stickers mixing 3D shapes, speech bubbles, measurement tags and category badges.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@designbyaron",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "motion"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "3d",
+    "playful"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/t0dcfkj-eddy-sticker-pack",
+   "rdkind": "Design",
+   "rdcat": "Motion",
+   "rdstyle": [
+    "3D",
+    "Playful",
+    "Illustrative",
+    "Vibrant",
+    "Light"
+   ],
+   "author": {
+    "name": "aron",
+    "handle": "@designbyaron",
+    "url": "https://x.com/designbyaron"
+   },
+   "x_post": "https://x.com/designbyaron/status/2112600237671932327",
+   "xsrc": {
+    "post": "https://x.com/designbyaron/status/2112600237671932327",
+    "author": "@designbyaron",
+    "likes": 337,
+    "bookmarks": 189,
+    "reposts": 12,
+    "impressions": 8183,
+    "date": "2026-10-20"
+   },
+   "pub": "2026-10-21",
+   "added": "2026-10-21"
   }
  ],
  "guides": [
@@ -182315,5 +182870,5 @@
    ]
   }
  ],
- "updatedAt": "2026-10-21T08:44Z"
+ "updatedAt": "2026-10-21T18:14Z"
 }
