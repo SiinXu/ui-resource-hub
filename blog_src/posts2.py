@@ -834,4 +834,83 @@ dict(slug='layers-brand-kits-json-ai-visuals', date='2026-10-21', cat='tools', s
 <h2>UI Hub 能帮什么</h2>
 <p>上面的品牌包，相当于视觉版的 Token 文件。如果要为产品建一份，可以看我们的<a href="../design-tokens-for-agents/">给智能体的设计 Token</a>和 <a href="../oklch-color-and-dark-mode/">OKLCH 配色</a>，讲命名和选色；昨天那篇 <a href="../lovart-arti-design-agent-memory/">Lovart 审美记忆</a>则是从智能体一侧讲同一件事：把你的审美写成机器能检查的形式。</p>""",
  refs=[('Introducing Vyb - Our First Design Model That Understands Taste','Coco Labs (David Zats, Anusha Ramesh)','https://cocolabs.ai/blog/introducing-vyb'),('Coco Labs','Coco Labs','https://cocolabs.ai/'),('New Gemini tools for small business owners','Google (Vishnu Sivaji)','https://blog.google/innovation-and-ai/products/gemini-app/new-tools-small-business-owners/'),('Fibo 2 is live','Bria AI docs','https://docs.bria.ai/whats-new/fibo-2'),('Generate Structured Instruction','Bria AI docs','https://docs.bria.ai/image-editing/editing/generate-structured-instruction'),('Image Edit by Text','Bria AI docs','https://docs.bria.ai/image-editing/editing/edit-image'),('Bria AI models','Hugging Face','https://huggingface.co/briaai'),('Qwen-Image-Layered','QwenLM on GitHub','https://github.com/QwenLM/Qwen-Image-Layered'),('Design tokens for agents','UI Hub','https://siinxu.github.io/ui-resource-hub/blog/design-tokens-for-agents/')]),
+dict(slug='lint-agents-onto-your-design-system', date='2026-10-22', cat='agents', series=None, featured=True, tags=['onsystem','@shadcn/lint','Figma Guidelines','design systems','linting'],
+ t=T('Lint the agent: keeping AI-written UI on your design system','给智能体上 Lint：让 AI 写的界面守住你的设计系统','給智能體上 Lint：讓 AI 寫的介面守住你的設計系統','エージェントにLintを：AIが書くUIをデザインシステムに留める','에이전트에 린트를: AI가 쓴 UI를 디자인 시스템 안에 묶어 두기','Lint untuk ejen: memastikan UI tulisan AI kekal dalam sistem reka bentuk anda','Lint cho agent: giữ UI do AI viết bám đúng design system','Linter l’agent : garder l’UI écrite par l’IA dans votre design system','Lintear al agente: mantener la UI escrita por IA dentro de tu design system','Den Agenten linten: KI-geschriebene UI im eigenen Design-System halten'),
+ s=T('On 22 October the open-source onsystem went public, joining shadcn’s agent-first linter and Figma’s new Guidelines and system check. The shared idea: stop asking agents to follow your design system and start checking every edit. What the benchmark shows, and a setup checklist.',
+     '10 月 22 日，开源工具 onsystem 公开发布，与 shadcn 面向智能体的 Lint 工具、Figma 新推出的 Guidelines 和系统检查站到了一起。共同思路是：别再只“请”智能体遵守设计系统，而是检查每一次编辑。基准测试说明了什么，附一份配置清单。',
+     '10 月 22 日，開源工具 onsystem 公開發布，與 shadcn 面向智能體的 Lint 工具、Figma 新推出的 Guidelines 和系統檢查站到了一起。共同思路是：別再只「請」智能體遵守設計系統，而是檢查每一次編輯。基準測試說明了什麼，附一份設定清單。',
+     '10月22日、オープンソースのonsystemが公開され、shadcnのエージェント向けリンターやFigmaの新しいGuidelines・システムチェックに加わった。共通の考え方は、デザインシステムを守るよう頼むのではなく、すべての編集を検査すること。ベンチマークの読み方と導入チェックリスト。',
+     '10월 22일 오픈소스 onsystem이 공개되며 shadcn의 에이전트용 린터, Figma의 새 Guidelines·시스템 체크와 나란히 섰다. 공통된 생각은 디자인 시스템을 지켜 달라고 부탁하지 말고 모든 편집을 검사하라는 것. 벤치마크가 말하는 것과 설정 체크리스트.',
+     'Pada 22 Okt, onsystem sumber terbuka dilancarkan, menyertai linter shadcn untuk ejen serta Guidelines dan semakan sistem baharu Figma. Idea yang sama: berhenti meminta ejen mematuhi sistem reka bentuk, mula menyemak setiap suntingan. Apa kata penanda arasnya, dan senarai semak persediaan.',
+     'Ngày 22/10, công cụ mã nguồn mở onsystem ra mắt, đứng cạnh linter dành cho agent của shadcn và Guidelines cùng system check mới của Figma. Ý chung: đừng chỉ nhờ agent tuân thủ design system, hãy kiểm tra từng lần sửa. Benchmark nói gì và checklist thiết lập.',
+     "Le 22 octobre, l’outil open source onsystem est sorti, rejoignant le linter pour agents de shadcn et les nouvelles Guidelines et vérifications système de Figma. L’idée commune : ne plus demander à l’agent de respecter le design system, mais vérifier chaque modification. Ce que dit le benchmark, et une checklist.",
+     'El 22 de octubre se publicó onsystem, de código abierto, junto al linter para agentes de shadcn y las nuevas Guidelines y comprobaciones de sistema de Figma. La idea común: dejar de pedir al agente que respete el design system y empezar a revisar cada edición. Qué dice el benchmark y una lista de configuración.',
+     'Am 22. Oktober erschien das Open-Source-Tool onsystem, neben shadcns Linter für Agenten und Figmas neuen Guidelines und System-Checks. Die gemeinsame Idee: Agenten nicht mehr bitten, das Design-System einzuhalten, sondern jede Änderung prüfen. Was der Benchmark zeigt, plus Setup-Checkliste.'),
+ en="""<p>Ask a coding agent for a settings card in a shadcn/ui project and you often get something that type-checks and still looks wrong: a hex red instead of the destructive token, <code>p-[13px]</code> instead of the spacing scale, a native <code>&lt;button&gt;</code> with hand-rolled classes next to your real Button, and a <code>variant="danger"</code> your Button has never heard of. The agent is not careless. It writes from its training data, and it cannot see your Storybook. This week the tooling around that gap got noticeably more serious.</p>
+<h2>Three tools, one shift</h2>
+<ul><li><strong>onsystem (22 October).</strong> Diogo Esteves made public an MIT-licensed checker that reads your design system from source and flags agent-written React that strays from it. Its eight rules cover hard-coded colours, spacing and radius, native elements your system already wraps, invented components, unknown props, unknown variant values, and icon buttons without an accessible name. Each finding comes with the replacement to write. It runs in three places: an MCP server the agent can call (<code>check_ui</code>) to see your components and tokens, a hook that checks each file right after the agent edits it in Claude Code, and a CLI, ESLint plugin and GitHub Action for pull requests. It makes no model calls.</li>
+<li><strong>@shadcn/lint.</strong> shadcn's own "agent-first linter for Tailwind design systems" takes the policy route. You declare what may change, for example that a Button accepts margin and width but owns its padding, and when an agent breaks the rule the error explains why and points to an existing size or variant. It works with Tailwind v4 in React, Svelte and Vue, through ESLint or Oxlint, and does not require shadcn/ui.</li>
+<li><strong>Figma Guidelines and system check.</strong> Announced at Config India on 15 October, Guidelines (open beta) let you attach written rules to a published library so agents reading it through Figma's MCP server follow the patterns your team set. A previewed system check scans the library itself for gaps such as missing descriptions and interactive states. That is the same idea one layer up: lint the source of truth, not only the code.</li></ul>
+<h2>What the benchmark says</h2>
+<p>onsystem ships with a public benchmark run on 12 October: six models from three providers each wrote the same 20 UI components in five open-source repositories, 240 runs per configuration. Measured by onsystem's own check, design-system errors fell from 0.85 per run with no help to 0.00 with its skill, MCP server and hook together, with type-check pass rates (93% vs 92%) and cost per run essentially unchanged. Scored by @shadcn/lint, a linter it does not control, findings per run went from 4.97 to 2.64.</p>
+<p>Two readings matter more than the headline. First, the tool under test scores the headline, which the author states openly, so the independent number is the one to quote: roughly half the problems gone, not all of them. Second, the breakdown by part is the real lesson. The written skill alone, a set of instructions in the prompt, cut errors to 0.42 per run. The MCP server alone reached 0.01 and the hook alone 0.05. Telling the agent the rules helps; giving it something to query and something that pushes back helps far more.</p>
+<h2>Our take</h2>
+<p>For two years the answer to off-brand AI UI has been better context: tokens files, AGENTS.md, taste skills, guideline documents. Those still matter, because they tell the agent what good looks like. But context is a request, and a linter is a contract. The pattern emerging this month is a loop of read, write, check, fix: the agent reads your components and tokens, writes, gets a precise error with the fix, and corrects itself before you ever review it. Designers should care, because the rules in that loop are design decisions. Which props may be overridden, which spacing values are legal, which elements need a label: someone has to write those down, and it should be the people who own the system.</p>
+<p>A caution: static checks only see what they can read. onsystem documents that classes built at runtime, such as <code>bg-${color}-500</code>, or values passed in from another file are not followed. @shadcn/lint's <code>require-static-classes</code> rule exists to flag exactly those cases. Linting also says nothing about hierarchy, rhythm or taste, so it shrinks review work rather than replacing it.</p>
+<h2>Checklist: putting a design-system check in the agent loop</h2>
+<ol><li><strong>Run a baseline first.</strong> Check your current app with no setup (<code>npx -y onsystem check .</code> for React, or the @shadcn/lint quickstart) and count findings by rule. That tells you where agents and people already drift.</li>
+<li><strong>Write policies, not just tokens.</strong> For each core component, decide what callers may change (layout, margin, width) and what the component owns (padding, radius, colour). Put that in lint config, where an agent gets an error, not in a wiki.</li>
+<li><strong>Make every error teach.</strong> Prefer rules whose message names the token, size or variant to use instead. An error that only says "not allowed" sends the agent guessing again.</li>
+<li><strong>Check at edit time and at merge time.</strong> A hook or MCP tool keeps the agent honest while it works; the same rules in CI catch anything that slips through, including human edits.</li>
+<li><strong>Forbid what you cannot read.</strong> Turn on a rule that rejects dynamically built class names, so the linter's blind spots do not become the agent's favourite escape hatch.</li>
+<li><strong>Fix the system when the lint is noisy.</strong> If agents keep reaching for a missing variant, that is a gap in your design system. Add it on purpose, as both tools suggest, rather than loosening the rule.</li>
+<li><strong>Still review the pixels.</strong> Clean lint means the parts are legal, not that the screen is good. Keep a visual check for hierarchy, density and states.</li></ol>
+<pre><code># 1. see what drifts today (React, no install)
+npx -y onsystem check .
+
+# 2. or ask your agent to set up shadcn's linter
+"Read https://github.com/shadcn-ui/lint/blob/main/SETUP.md
+ and set up @shadcn/lint in this project."
+
+# 3. a policy: Button keeps its own size and shape
+"shadcn/no-restyle": ["error", { allow: ["layout"] }]
+
+# 4. the same rules on every pull request
+- uses: dgesteves/onsystem@v0</code></pre>
+<h2>How UI Hub helps</h2>
+<p>A linter can only enforce choices that exist. If you are still defining them, start with our posts on <a href="../design-tokens-for-agents/">design tokens for agents</a> and <a href="../component-composition/">component composition</a>, then use <a href="../claude-cursor-design-skills/">design skills for Claude and Cursor</a> for the instruction layer. This post is the missing third step: once the agent knows the rules, check that it kept them.</p>""",
+ zh="""<p>在 shadcn/ui 项目里让编码智能体写一张设置卡片，常常得到能通过类型检查、看起来却不对的东西：用十六进制红色代替 destructive Token，用 <code>p-[13px]</code> 代替间距阶梯，在你真正的 Button 旁边写一个手搓样式的原生 <code>&lt;button&gt;</code>，再加一个你的 Button 根本没有的 <code>variant="danger"</code>。智能体不是不认真，而是凭训练数据写代码，它看不到你的 Storybook。这周，围绕这道缝隙的工具明显成熟了一截。</p>
+<h2>三个工具，一个转向</h2>
+<ul><li><strong>onsystem（10 月 22 日）。</strong>Diogo Esteves 公开了一款 MIT 许可的检查工具：它从源码读取你的设计系统，标出智能体写的、偏离系统的 React 代码。八条规则覆盖写死的颜色、间距和圆角，系统已封装却仍用原生元素，凭空捏造的组件、不存在的属性、不存在的变体值，以及没有无障碍名称的图标按钮。每条问题都附上应该改成什么。它在三个位置运行：智能体可调用的 MCP 服务（<code>check_ui</code>），让它看到你的组件和 Token；在 Claude Code 里每次编辑后立即检查该文件的钩子；以及用于拉取请求的命令行、ESLint 插件和 GitHub Action。全程不调用模型。</li>
+<li><strong>@shadcn/lint。</strong>shadcn 官方这款「面向智能体的 Tailwind 设计系统 Lint 工具」走的是策略路线：由你声明什么能改，例如 Button 可以接受外边距和宽度，但内边距归它自己管。智能体违规时，报错会解释原因，并指向现有的尺寸或变体。它支持 React、Svelte 和 Vue 中的 Tailwind v4，可接入 ESLint 或 Oxlint，不要求使用 shadcn/ui。</li>
+<li><strong>Figma Guidelines 与系统检查。</strong>10 月 15 日在 Config India 上发布的 Guidelines（公开测试）可以把书面规则挂在已发布的组件库上，智能体通过 Figma 的 MCP 服务读取时，就会遵循团队定下的模式。预览中的系统检查则扫描组件库本身，找出缺少描述、缺少交互状态之类的漏洞。这是同一思路往上一层：不只检查代码，也检查事实来源。</li></ul>
+<h2>基准测试说明了什么</h2>
+<p>onsystem 附带一份 10 月 12 日跑的公开基准测试：来自三家厂商的六个模型，在五个开源仓库里各写同样的 20 个界面组件，每种配置 240 次运行。按 onsystem 自己的检查计数，设计系统错误从无辅助时每次 0.85 个，降到技能、MCP 服务和钩子齐上时的 0.00 个，类型检查通过率（93% 对 92%）和每次成本基本不变。换用它控制不了的 @shadcn/lint 打分，每次的问题数从 4.97 降到 2.64。</p>
+<p>比标题数字更重要的有两点。第一，标题数字是被测工具自己打的分，作者也明说了，所以该引用的是独立那组：问题大约少了一半，而不是全部消失。第二，按组件拆开的结果才是真正的教训。只给书面技能（也就是写在提示里的一套说明），错误降到每次 0.42；只用 MCP 服务降到 0.01，只用钩子降到 0.05。把规则告诉智能体有用；给它可以查询的东西、会反驳它的东西，有用得多。</p>
+<h2>我们的看法</h2>
+<p>两年来，解决 AI 界面不合品牌的答案一直是更好的上下文：Token 文件、AGENTS.md、审美技能、规范文档。这些仍然重要，因为它们告诉智能体什么是好的。但上下文只是请求，Lint 才是契约。这个月浮现的模式是一个「读、写、查、改」的循环：智能体读取你的组件和 Token，写代码，拿到附带修法的精确报错，在你审阅之前就自己改好。设计师应该关心这件事，因为循环里的规则本身就是设计决策：哪些属性可以覆盖，哪些间距值合法，哪些元素必须有标签，总得有人把它们写下来，而这个人应该是系统的负责人。</p>
+<p>一点提醒：静态检查只看得见它读得懂的东西。onsystem 文档写明，运行时拼出来的类名（如 <code>bg-${color}-500</code>）或从别的文件传进来的值不会被追踪；@shadcn/lint 的 <code>require-static-classes</code> 规则正是为了标出这类情况。Lint 也管不了层级、节奏和审美，所以它是减少审阅工作，而不是取代审阅。</p>
+<h2>清单：把设计系统检查放进智能体循环</h2>
+<ol><li><strong>先跑一次基线。</strong>不做任何配置先检查现有应用（React 项目用 <code>npx -y onsystem check .</code>，或按 @shadcn/lint 的快速上手），按规则统计问题数，就知道智能体和人已经在哪里跑偏。</li>
+<li><strong>写策略，而不只是 Token。</strong>为每个核心组件决定调用方能改什么（布局、外边距、宽度），什么归组件自己（内边距、圆角、颜色）。把它写进 Lint 配置，让智能体收到报错，而不是写在没人看的 Wiki 里。</li>
+<li><strong>让每条报错都能教人。</strong>优先选报错里直接点名该用哪个 Token、尺寸或变体的规则。只说「不允许」的报错，只会让智能体再猜一次。</li>
+<li><strong>编辑时查，合并时也查。</strong>钩子或 MCP 工具让智能体在工作中守规矩；同样的规则放进 CI，兜住漏网的修改，包括人写的。</li>
+<li><strong>禁止读不懂的写法。</strong>打开拒绝动态拼接类名的规则，别让 Lint 的盲区变成智能体最爱的后门。</li>
+<li><strong>Lint 太吵时，修系统。</strong>智能体反复去找一个不存在的变体，说明设计系统有缺口。照两款工具的建议，有意识地补上它，而不是放宽规则。</li>
+<li><strong>像素还是要看。</strong>Lint 全绿只说明零件合法，不说明画面好看。层级、疏密和各种状态，仍要留一道视觉检查。</li></ol>
+<pre><code># 1. 先看现在哪里跑偏（React，无需安装）
+npx -y onsystem check .
+
+# 2. 或让智能体配置 shadcn 的 Lint 工具
+"Read https://github.com/shadcn-ui/lint/blob/main/SETUP.md
+ and set up @shadcn/lint in this project."
+
+# 3. 一条策略：Button 自己管尺寸和形状
+"shadcn/no-restyle": ["error", { allow: ["layout"] }]
+
+# 4. 每个拉取请求跑同样的规则
+- uses: dgesteves/onsystem@v0</code></pre>
+<h2>UI Hub 能帮什么</h2>
+<p>Lint 只能执行已经存在的选择。如果你还在定义这些选择，可以先看<a href="../design-tokens-for-agents/">给智能体的设计 Token</a>和<a href="../component-composition/">组件组合</a>，再用<a href="../claude-cursor-design-skills/">Claude 和 Cursor 的设计技能</a>搭好说明层。这篇补上缺失的第三步：智能体知道规则之后，检查它有没有守住。</p>""",
+ refs=[('I built three open-source tools for coding agents: onsystem, ondocs and signoff-ui','Diogo Esteves, DEV Community','https://dev.to/dgesteves/i-built-three-open-source-tools-for-coding-agents-onsystem-ondocs-and-signoff-ui-2ho7'),('onsystem: keeps coding agents on your design system','onsystem','https://onsystem.vercel.app/'),('Benchmark: coding agents with and without onsystem','onsystem','https://onsystem.vercel.app/benchmark'),('Rules','onsystem','https://onsystem.vercel.app/rules'),('onsystem repository','GitHub (dgesteves)','https://github.com/dgesteves/onsystem'),('@shadcn/lint: write design system rules that agents can verify','shadcn (GitHub)','https://github.com/shadcn-ui/lint'),('Build by design: New workflows for new ways of building','Figma (Dylan Field)','https://www.figma.com/blog/build-by-design/'),("What's new from Config India 2026",'Figma Learn','https://help.figma.com/hc/en-us/articles/43663368947863-What-s-new-from-Config-India-2026'),("Figma's new system check finds the hover state nobody drew",'Art Direction Daily','https://artdirectiondaily.com/issues/2026-10-16-figma-check-finds-missing-hover.html')]),
 ]

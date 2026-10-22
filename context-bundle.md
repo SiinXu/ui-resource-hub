@@ -393,3 +393,4 @@ curl -s https://siinxu.github.io/ui-resource-hub/api/resources.json | jq --arg d
 - shadcn Trace and AI Elements: one shape for every step an agent takes — https://siinxu.github.io/ui-resource-hub/kb/note/blog-shadcn-trace-and-ai-elements.md
 - Lovart 2.0 and Arti: design agents learn to remember, run and review — https://siinxu.github.io/ui-resource-hub/kb/note/blog-lovart-arti-design-agent-memory.md
 - Layers, brand kits and JSON: three ways AI visuals stop looking generic — https://siinxu.github.io/ui-resource-hub/kb/note/blog-layers-brand-kits-json-ai-visuals.md
+- Lint the agent: keeping AI-written UI on your design system — https://siinxu.github.io/ui-resource-hub/kb/note/blog-lint-agents-onto-your-design-system.md

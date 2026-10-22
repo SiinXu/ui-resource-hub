@@ -1,5 +1,5 @@
 {
- "count": 30,
+ "count": 31,
  "rss": "https://siinxu.github.io/ui-resource-hub/blog/rss.xml",
  "categories": {
   "tools": "Tools",
@@ -18,6 +18,97 @@
   "weekly": "Series: Weekly roundup"
  },
  "posts": [
+  {
+   "slug": "lint-agents-onto-your-design-system",
+   "url": "https://siinxu.github.io/ui-resource-hub/blog/lint-agents-onto-your-design-system/",
+   "date": "2026-10-22",
+   "category": "agents",
+   "series": null,
+   "featured": true,
+   "tags": [
+    "onsystem",
+    "@shadcn/lint",
+    "Figma Guidelines",
+    "design systems",
+    "linting"
+   ],
+   "title": {
+    "en": "Lint the agent: keeping AI-written UI on your design system",
+    "zh": "给智能体上 Lint：让 AI 写的界面守住你的设计系统",
+    "zht": "給智能體上 Lint：讓 AI 寫的介面守住你的設計系統",
+    "ja": "エージェントにLintを：AIが書くUIをデザインシステムに留める",
+    "ko": "에이전트에 린트를: AI가 쓴 UI를 디자인 시스템 안에 묶어 두기",
+    "ms": "Lint untuk ejen: memastikan UI tulisan AI kekal dalam sistem reka bentuk anda",
+    "vi": "Lint cho agent: giữ UI do AI viết bám đúng design system",
+    "fr": "Linter l’agent : garder l’UI écrite par l’IA dans votre design system",
+    "es": "Lintear al agente: mantener la UI escrita por IA dentro de tu design system",
+    "de": "Den Agenten linten: KI-geschriebene UI im eigenen Design-System halten"
+   },
+   "summary": {
+    "en": "On 22 October the open-source onsystem went public, joining shadcn’s agent-first linter and Figma’s new Guidelines and system check. The shared idea: stop asking agents to follow your design system and start checking every edit. What the benchmark shows, and a setup checklist.",
+    "zh": "10 月 22 日，开源工具 onsystem 公开发布，与 shadcn 面向智能体的 Lint 工具、Figma 新推出的 Guidelines 和系统检查站到了一起。共同思路是：别再只“请”智能体遵守设计系统，而是检查每一次编辑。基准测试说明了什么，附一份配置清单。",
+    "zht": "10 月 22 日，開源工具 onsystem 公開發布，與 shadcn 面向智能體的 Lint 工具、Figma 新推出的 Guidelines 和系統檢查站到了一起。共同思路是：別再只「請」智能體遵守設計系統，而是檢查每一次編輯。基準測試說明了什麼，附一份設定清單。",
+    "ja": "10月22日、オープンソースのonsystemが公開され、shadcnのエージェント向けリンターやFigmaの新しいGuidelines・システムチェックに加わった。共通の考え方は、デザインシステムを守るよう頼むのではなく、すべての編集を検査すること。ベンチマークの読み方と導入チェックリスト。",
+    "ko": "10월 22일 오픈소스 onsystem이 공개되며 shadcn의 에이전트용 린터, Figma의 새 Guidelines·시스템 체크와 나란히 섰다. 공통된 생각은 디자인 시스템을 지켜 달라고 부탁하지 말고 모든 편집을 검사하라는 것. 벤치마크가 말하는 것과 설정 체크리스트.",
+    "ms": "Pada 22 Okt, onsystem sumber terbuka dilancarkan, menyertai linter shadcn untuk ejen serta Guidelines dan semakan sistem baharu Figma. Idea yang sama: berhenti meminta ejen mematuhi sistem reka bentuk, mula menyemak setiap suntingan. Apa kata penanda arasnya, dan senarai semak persediaan.",
+    "vi": "Ngày 22/10, công cụ mã nguồn mở onsystem ra mắt, đứng cạnh linter dành cho agent của shadcn và Guidelines cùng system check mới của Figma. Ý chung: đừng chỉ nhờ agent tuân thủ design system, hãy kiểm tra từng lần sửa. Benchmark nói gì và checklist thiết lập.",
+    "fr": "Le 22 octobre, l’outil open source onsystem est sorti, rejoignant le linter pour agents de shadcn et les nouvelles Guidelines et vérifications système de Figma. L’idée commune : ne plus demander à l’agent de respecter le design system, mais vérifier chaque modification. Ce que dit le benchmark, et une checklist.",
+    "es": "El 22 de octubre se publicó onsystem, de código abierto, junto al linter para agentes de shadcn y las nuevas Guidelines y comprobaciones de sistema de Figma. La idea común: dejar de pedir al agente que respete el design system y empezar a revisar cada edición. Qué dice el benchmark y una lista de configuración.",
+    "de": "Am 22. Oktober erschien das Open-Source-Tool onsystem, neben shadcns Linter für Agenten und Figmas neuen Guidelines und System-Checks. Die gemeinsame Idee: Agenten nicht mehr bitten, das Design-System einzuhalten, sondern jede Änderung prüfen. Was der Benchmark zeigt, plus Setup-Checkliste."
+   },
+   "reading_minutes": {
+    "en": 5,
+    "zh": 6
+   },
+   "cover": "https://siinxu.github.io/ui-resource-hub/blog/img/lint-agents-onto-your-design-system-cover.webp",
+   "references": [
+    {
+     "title": "I built three open-source tools for coding agents: onsystem, ondocs and signoff-ui",
+     "by": "Diogo Esteves, DEV Community",
+     "url": "https://dev.to/dgesteves/i-built-three-open-source-tools-for-coding-agents-onsystem-ondocs-and-signoff-ui-2ho7"
+    },
+    {
+     "title": "onsystem: keeps coding agents on your design system",
+     "by": "onsystem",
+     "url": "https://onsystem.vercel.app/"
+    },
+    {
+     "title": "Benchmark: coding agents with and without onsystem",
+     "by": "onsystem",
+     "url": "https://onsystem.vercel.app/benchmark"
+    },
+    {
+     "title": "Rules",
+     "by": "onsystem",
+     "url": "https://onsystem.vercel.app/rules"
+    },
+    {
+     "title": "onsystem repository",
+     "by": "GitHub (dgesteves)",
+     "url": "https://github.com/dgesteves/onsystem"
+    },
+    {
+     "title": "@shadcn/lint: write design system rules that agents can verify",
+     "by": "shadcn (GitHub)",
+     "url": "https://github.com/shadcn-ui/lint"
+    },
+    {
+     "title": "Build by design: New workflows for new ways of building",
+     "by": "Figma (Dylan Field)",
+     "url": "https://www.figma.com/blog/build-by-design/"
+    },
+    {
+     "title": "What's new from Config India 2026",
+     "by": "Figma Learn",
+     "url": "https://help.figma.com/hc/en-us/articles/43663368947863-What-s-new-from-Config-India-2026"
+    },
+    {
+     "title": "Figma's new system check finds the hover state nobody drew",
+     "by": "Art Direction Daily",
+     "url": "https://artdirectiondaily.com/issues/2026-10-16-figma-check-finds-missing-hover.html"
+    }
+   ]
+  },
   {
    "slug": "layers-brand-kits-json-ai-visuals",
    "url": "https://siinxu.github.io/ui-resource-hub/blog/layers-brand-kits-json-ai-visuals/",
