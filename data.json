@@ -1,6 +1,6 @@
 {
- "generated": "2026-10-21",
- "count": 4840,
+ "generated": "2026-10-22",
+ "count": 4854,
  "items": [
   {
    "id": "ued-figma-mcp-guide",
@@ -182668,6 +182668,395 @@
    },
    "pub": "2026-10-21",
    "added": "2026-10-21"
+  },
+  {
+   "id": "gh-flohoeller-affectui",
+   "name": "affectui",
+   "url": "https://www.affectui.com",
+   "note": "GitHub 新晋 UI 仓库：Handcrafted React components, illustrations and motion for AI products. One file each, calm motion, dark mode built in. Install with the shadcn CLI – free and open source.（GitHub ★184，MIT 许可，仓库 flohoeller/affectui）",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "GitHub",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "开源",
+    "自动收录"
+   ],
+   "ct": [
+    "chat",
+    "motion"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "New GitHub UI repo: Handcrafted React components, illustrations and motion for AI products. One file each, calm motion, dark mode built in. Install with the shadcn CLI – free and open source. (★184, MIT, flohoeller/affectui)",
+   "added": "2026-10-22"
+  },
+  {
+   "id": "aw-agentcn-vercel-app",
+   "name": "agentcn",
+   "url": "https://agentcn.vercel.app",
+   "note": "awesome-shadcn-ui 收录：Production-ready agents, made simple. Ready to use, customizable AI agent recipes. Built on Eve and Flue.",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Production-ready agents, made simple. Ready to use, customizable AI agent recipes. Built on Eve and Flue.",
+   "added": "2026-10-22"
+  },
+  {
+   "id": "aw-dominikkoch-dev-ui",
+   "name": "dominik-ui",
+   "url": "https://dominikkoch.dev/ui",
+   "note": "awesome-shadcn-ui 收录：Opinionated components and tools for building modern websites and AI interfaces.",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Opinionated components and tools for building modern websites and AI interfaces.",
+   "added": "2026-10-22"
+  },
+  {
+   "id": "aw-github-com-joachimbrasier-shadcn-stacked-progress-bar",
+   "name": "shadcn-stacked-progress-bar",
+   "url": "https://github.com/JoachimBrasier/shadcn-stacked-progress-bar",
+   "note": "awesome-shadcn-ui 收录：A composable stacked progress bar for shadcn/ui to display multiple statuses in one track, with optional legend, tooltips, and accessible semantics.",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: A composable stacked progress bar for shadcn/ui to display multiple statuses in one track, with optional legend, tooltips, and accessible semantics.",
+   "added": "2026-10-22"
+  },
+  {
+   "id": "aw-payload-components-xyz",
+   "name": "payload-components",
+   "url": "https://www.payload-components.xyz",
+   "note": "awesome-shadcn-ui 收录：MIT registry and CLI for installing wired Payload CMS blocks into Payload v3 and Next.js projects.",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: MIT registry and CLI for installing wired Payload CMS blocks into Payload v3 and Next.js projects.",
+   "added": "2026-10-22"
+  },
+  {
+   "id": "aw-github-com-shadcn-labs-ogimagecn",
+   "name": "ogimagecn",
+   "url": "https://github.com/shadcn-labs/ogimagecn",
+   "note": "awesome-shadcn-ui 收录：Beautiful OG images, made simple. Ready to use, customizable Open Graph image components for React.",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chart"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Beautiful OG images, made simple. Ready to use, customizable Open Graph image components for React.",
+   "added": "2026-10-22"
+  },
+  {
+   "id": "aw-github-com-shadcn-labs-startercn",
+   "name": "startercn",
+   "url": "https://github.com/shadcn-labs/startercn",
+   "note": "awesome-shadcn-ui 收录：A shadcn/ui registry template with built-in landing page, docs, AI agent ready, and baked-in web haptics, audio, and animations.",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat",
+    "motion",
+    "layout"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: A shadcn/ui registry template with built-in landing page, docs, AI agent ready, and baked-in web haptics, audio, and animations.",
+   "added": "2026-10-22"
+  },
+  {
+   "id": "aw-github-com-melromyeah-mixcn",
+   "name": "mix-cn",
+   "url": "https://github.com/melromyeah/MixCN",
+   "note": "awesome-shadcn-ui 收录：Fully functional dj console app built using shadcn",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Fully functional dj console app built using shadcn",
+   "added": "2026-10-22"
+  },
+  {
+   "id": "aw-kairoui-online",
+   "name": "kairo-ui",
+   "url": "https://www.kairoui.online/",
+   "note": "awesome-shadcn-ui 收录：Free landing page templates for Next.js 16.",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat",
+    "layout"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Free landing page templates for Next.js 16.",
+   "added": "2026-10-22"
+  },
+  {
+   "id": "aw-github-com-domidex01-tour-kit",
+   "name": "user-tour-kit",
+   "url": "https://github.com/domidex01/tour-kit",
+   "note": "awesome-shadcn-ui 收录：MIT-licensed headless onboarding suite — tours, hints, checklists, microsurveys, and announcements. Built on Radix UI, shadcn/ui-friendly defaults.",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: MIT-licensed headless onboarding suite — tours, hints, checklists, microsurveys, and announcements. Built on Radix UI, shadcn/ui-friendly defaults.",
+   "added": "2026-10-22"
+  },
+  {
+   "id": "aw-shadcncraft-com-components",
+   "name": "shadcncraft",
+   "url": "https://shadcncraft.com/components?filter=free",
+   "note": "awesome-shadcn-ui 收录：Ship faster with a production-ready shadcn/ui design system. Get a fully matched Figma UI kit, React components, and hundreds of UI blocks built for real products.",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Ship faster with a production-ready shadcn/ui design system. Get a fully matched Figma UI kit, React components, and hundreds of UI blocks built for real products.",
+   "added": "2026-10-22"
+  },
+  {
+   "id": "aw-ui-trophy-so",
+   "name": "trophy-ui",
+   "url": "https://ui.trophy.so",
+   "note": "awesome-shadcn-ui 收录：Open-source gamification UI components for streaks, achievements, leaderboards, points, and more. Built on shadcn/ui and Tailwind CSS.",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Open-source gamification UI components for streaks, achievements, leaderboards, points, and more. Built on shadcn/ui and Tailwind CSS.",
+   "added": "2026-10-22"
+  },
+  {
+   "id": "aw-forui-dev",
+   "name": "flutter-forui",
+   "url": "https://forui.dev/",
+   "note": "awesome-shadcn-ui 收录：Forui is a Flutter UI library heavily inspired by shadcn/ui",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Forui is a Flutter UI library heavily inspired by shadcn/ui",
+   "added": "2026-10-22"
+  },
+  {
+   "id": "aw-github-com-shadcndeck-chatdeck-shadcn-saas-landing-page-temp",
+   "name": "chatdeck-shadcn-saas-landing-template",
+   "url": "https://github.com/ShadcnDeck/chatdeck-shadcn-saas-landing-page-template",
+   "note": "awesome-shadcn-ui 收录：ChatDeck — Free Shadcn UI SaaS landing page template built with Next.js and Tailwind CSS.",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat",
+    "layout"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: ChatDeck — Free Shadcn UI SaaS landing page template built with Next.js and Tailwind CSS.",
+   "added": "2026-10-22"
   }
  ],
  "guides": [
@@ -182870,5 +183259,5 @@
    ]
   }
  ],
- "updatedAt": "2026-10-21T18:14Z"
+ "updatedAt": "2026-10-22T04:40Z"
 }
