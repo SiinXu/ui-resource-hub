@@ -1,6 +1,6 @@
 # UI Hub
 
-> Curated, multilingual directory of 4864 public UI resources (component libraries, component style demos, effects, design systems, design skills for AI agents) plus original blog analysis of AI design techniques. Data updated 2026-10-22 08:46 UTC.
+> Curated, multilingual directory of 4867 public UI resources (component libraries, component style demos, effects, design systems, design skills for AI agents) plus original blog analysis of AI design techniques. Data updated 2026-10-22 18:09 UTC.
 
 Use the JSON endpoints, not the SPA, when acting as an agent. Every entry links to its original site; licenses belong to the original authors.
 
@@ -115,11 +115,11 @@ Use the JSON endpoints, not the SPA, when acting as an agent. Every entry links 
 - [visx](https://airbnb.io/visx/): Airbnb's low-level visualization components
 
 ## FAQ
-- **What is UI Hub?** A free, curated directory of 4864 public UI resources: 197 component libraries, 1989 component style demos with light/dark screenshots, 70 design skills for AI agents, plus effects, templates, specs and tutorials. It links to original sites and never hosts paid source code.
+- **What is UI Hub?** A free, curated directory of 4867 public UI resources: 197 component libraries, 1989 component style demos with light/dark screenshots, 70 design skills for AI agents, plus effects, templates, specs and tutorials. It links to original sites and never hosts paid source code.
 - **How do I find a component in a given style?** Load https://siinxu.github.io/ui-resource-hub/api/resources.json and filter by ct (component kind, e.g. "dialog") and vs (visual style, e.g. "minimal" or "motion"). type="style" entries are concrete component demos with a libName and page URL; type="library" entries are whole libraries with install info on the site.
 - **Which skills should an agent use for good UI?** One direction skill (frontend-design or taste-skill), emil-design-eng for motion and interaction polish, then impeccable, baseline-ui, web-design-guidelines and accessibility as an audit pass. See https://siinxu.github.io/ui-resource-hub/api/skills.json.
 - **Can I copy the code?** Open-source libraries can be used under their own licenses (MIT, Apache-2.0 etc.); the card shows the original link. Paid tiers (marked paid/freemium) must be bought from the original vendor.
-- **How often is it updated?** Daily via a GitHub Actions job that adds new UI repositories and tools from GitHub, awesome-shadcn-ui and Hacker News. Nothing is deleted. Last update: 2026-10-22 08:46 UTC.
+- **How often is it updated?** Daily via a GitHub Actions job that adds new UI repositories and tools from GitHub, awesome-shadcn-ui and Hacker News. Nothing is deleted. Last update: 2026-10-22 18:09 UTC.
 
 
 # Blog posts (full text, English)
@@ -4341,6 +4341,9 @@ Get Hyped. Get Noticed. Get Results.
 - Replay Brand Posters | inspiration | https://x.com/dakshpixelup/status/2112930463107223733 | Two poster variants for Replay, pairing a classical Pegasus engraving with geometric line patterns on contrasting blue textured backgrounds with ornamental corn
 - Animated Icon Set | inspiration | https://x.com/jamesm/status/2113025096755642607 | A set of white outline icons on black, each looping through its own animation including spinning refresh arrows, morphing avatar states, and an AI chat bubble.
 - Buttons with Feelings | inspiration | https://x.com/aleksksaa/status/2112919472533344552 | Rounded buttons with tiny kawaii dot faces that shift color and expression to match each action state: Copy, Send, Save, Like, Thanks, Muted, and Published.
+- Animated Icon Set | inspiration | https://x.com/jamesm/status/2113224126991388873 | A set of outline UI icons displayed in a grid, each cycling through animated state variants in a continuous loop on a light grey background.
+- Lily of the Valley Pixel Island | inspiration | https://x.com/ann_nnng/status/2112897537430741143 | Pixel art isometric island with a vine-covered RV emitting animated blue smoke, two hazmat-suited characters moving through lily of the valley flowers, generate
+- Olivir Brand Identity | inspiration | https://x.com/samstooff/status/2112879824553279899 | Brand identity for Olivir shown across collage, photography, textured logotype, and torn-paper treatments built around a rounded figure icon and soft wordmark.
 
 # Component style demos: 1989 entries, see api/resources.json (type=style)
 

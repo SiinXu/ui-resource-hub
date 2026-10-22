@@ -1,6 +1,6 @@
 {
  "generated": "2026-10-22",
- "count": 4864,
+ "count": 4867,
  "items": [
   {
    "id": "ued-figma-mcp-guide",
@@ -183551,6 +183551,154 @@
    },
    "pub": "2026-10-21",
    "added": "2026-10-22"
+  },
+  {
+   "id": "rd-3ak7kef-animated-ui-icon-set",
+   "name": "Animated Icon Set",
+   "url": "https://x.com/jamesm/status/2113224126991388873",
+   "note": "A set of outline UI icons displayed in a grid, each cycling through animated state variants in a continuous loop on a light grey background.",
+   "noteEn": "A set of outline UI icons displayed in a grid, each cycling through animated state variants in a continuous loop on a light grey background.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@jamesm",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "motion"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/3ak7kef-animated-ui-icon-set",
+   "rdkind": "Design",
+   "rdcat": "Motion",
+   "rdstyle": [
+    "Minimal",
+    "Light"
+   ],
+   "author": {
+    "name": "James McDonald",
+    "handle": "@jamesm",
+    "url": "https://x.com/jamesm"
+   },
+   "x_post": "https://x.com/jamesm/status/2113224126991388873",
+   "xsrc": {
+    "post": "https://x.com/jamesm/status/2113224126991388873",
+    "author": "@jamesm",
+    "likes": 216,
+    "bookmarks": 81,
+    "reposts": 2,
+    "impressions": 7316,
+    "date": "2026-10-22"
+   },
+   "pub": "2026-10-22",
+   "added": "2026-10-22"
+  },
+  {
+   "id": "rd-vvlshhx-lily-of-the-valley-pixel-island",
+   "name": "Lily of the Valley Pixel Island",
+   "url": "https://x.com/ann_nnng/status/2112897537430741143",
+   "note": "Pixel art isometric island with a vine-covered RV emitting animated blue smoke, two hazmat-suited characters moving through lily of the valley flowers, generated entirely with code.",
+   "noteEn": "Pixel art isometric island with a vine-covered RV emitting animated blue smoke, two hazmat-suited characters moving through lily of the valley flowers, generated entirely with code.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@ann_nnng",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "motion"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "playful"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/vvlshhx-lily-of-the-valley-pixel-island",
+   "rdkind": "Design",
+   "rdcat": "Motion",
+   "rdstyle": [
+    "Playful",
+    "Illustrative",
+    "Organic",
+    "Vibrant"
+   ],
+   "author": {
+    "name": "Ann Nguyen",
+    "handle": "@ann_nnng",
+    "url": "https://x.com/ann_nnng"
+   },
+   "x_post": "https://x.com/ann_nnng/status/2112897537430741143",
+   "xsrc": {
+    "post": "https://x.com/ann_nnng/status/2112897537430741143",
+    "author": "@ann_nnng",
+    "likes": 374,
+    "bookmarks": 193,
+    "reposts": 23,
+    "impressions": 10343,
+    "date": "2026-10-21"
+   },
+   "pub": "2026-10-22",
+   "added": "2026-10-22"
+  },
+  {
+   "id": "rd-s1mwe7x-olivir-brand-identity",
+   "name": "Olivir Brand Identity",
+   "url": "https://x.com/samstooff/status/2112879824553279899",
+   "note": "Brand identity for Olivir shown across collage, photography, textured logotype, and torn-paper treatments built around a rounded figure icon and soft wordmark.",
+   "noteEn": "Brand identity for Olivir shown across collage, photography, textured logotype, and torn-paper treatments built around a rounded figure icon and soft wordmark.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@samstooff",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/s1mwe7x-olivir-brand-identity",
+   "rdkind": "Design",
+   "rdcat": "Branding",
+   "rdstyle": [
+    "Illustrative",
+    "Textured",
+    "Muted"
+   ],
+   "author": {
+    "name": "Sam Stoof",
+    "handle": "@samstooff",
+    "url": "https://x.com/samstooff"
+   },
+   "x_post": "https://x.com/samstooff/status/2112879824553279899",
+   "xsrc": {
+    "post": "https://x.com/samstooff/status/2112879824553279899",
+    "author": "@samstooff",
+    "likes": 442,
+    "bookmarks": 156,
+    "reposts": 11,
+    "impressions": 7492,
+    "date": "2026-10-21"
+   },
+   "pub": "2026-10-22",
+   "added": "2026-10-22"
   }
  ],
  "guides": [
@@ -183753,5 +183901,5 @@
    ]
   }
  ],
- "updatedAt": "2026-10-22T08:46Z"
+ "updatedAt": "2026-10-22T18:09Z"
 }
