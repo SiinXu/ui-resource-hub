@@ -2,7 +2,7 @@
 
 > On 22 October Ideogram shipped Vector 1.0, a model that writes editable SVG from a prompt or traces an image, joining Recraft V4.1 and QuiverAI Arrow 2. Editable is not the same as ready for an interface: what the three tools actually return, and a checklist for icons and illustrations.
 
-Blog post: <https://siinxu.github.io/ui-resource-hub/blog/ai-svg-for-ui-ideogram-vector/>
+Blog post: <https://ui.incidental.site/blog/ai-svg-for-ui-ideogram-vector/>
 
 Most AI images reach an interface as a flat PNG: fine for a hero photo, useless for an icon that has to follow your theme colour, an empty-state illustration that must stay sharp on a 3x screen, or a logo you will resize forty times. On 22 October Ideogram launched Vector 1.0, its first model that returns SVG instead of pixels. It joins Recraft V4.1 and QuiverAI's Arrow 2, which already generate vectors. With three serious options, the question for UI work is no longer whether AI can draw a vector, but what it takes to make one ship.
 

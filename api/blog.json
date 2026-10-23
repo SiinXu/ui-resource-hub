@@ -1,5 +1,5 @@
 {
- "count": 31,
+ "count": 32,
  "rss": "https://ui.incidental.site/blog/rss.xml",
  "categories": {
   "tools": "Tools",
@@ -18,6 +18,122 @@
   "weekly": "Series: Weekly roundup"
  },
  "posts": [
+  {
+   "slug": "ai-svg-for-ui-ideogram-vector",
+   "url": "https://ui.incidental.site/blog/ai-svg-for-ui-ideogram-vector/",
+   "date": "2026-10-23",
+   "category": "tools",
+   "series": null,
+   "featured": true,
+   "tags": [
+    "Ideogram Vector 1.0",
+    "Recraft",
+    "QuiverAI Arrow",
+    "SVG",
+    "icons"
+   ],
+   "title": {
+    "en": "AI vectors for UI: what Ideogram Vector 1.0 changes, and the checks before an SVG ships",
+    "zh": "给界面用的 AI 矢量图：Ideogram Vector 1.0 改变了什么，SVG 上线前要查什么",
+    "zht": "給介面用的 AI 向量圖：Ideogram Vector 1.0 改變了什麼，SVG 上線前要查什麼",
+    "ja": "UIのためのAIベクター：Ideogram Vector 1.0で何が変わり、SVGを出す前に何を確認するか",
+    "ko": "UI를 위한 AI 벡터: Ideogram Vector 1.0이 바꾼 것과 SVG 배포 전 점검할 것",
+    "ms": "Vektor AI untuk UI: apa yang diubah Ideogram Vector 1.0, dan semakan sebelum SVG dihantar",
+    "vi": "Vector AI cho UI: Ideogram Vector 1.0 thay đổi gì và cần kiểm tra gì trước khi đưa SVG lên",
+    "fr": "Des vecteurs IA pour l’UI : ce que change Ideogram Vector 1.0, et les vérifications avant de livrer un SVG",
+    "es": "Vectores con IA para la UI: qué cambia Ideogram Vector 1.0 y qué revisar antes de publicar un SVG",
+    "de": "KI-Vektoren für UI: was Ideogram Vector 1.0 ändert und was vor dem Ausliefern einer SVG zu prüfen ist"
+   },
+   "summary": {
+    "en": "On 22 October Ideogram shipped Vector 1.0, a model that writes editable SVG from a prompt or traces an image, joining Recraft V4.1 and QuiverAI Arrow 2. Editable is not the same as ready for an interface: what the three tools actually return, and a checklist for icons and illustrations.",
+    "zh": "10 月 22 日，Ideogram 发布 Vector 1.0：根据提示词直接生成可编辑的 SVG，也能把图片描成矢量，与 Recraft V4.1、QuiverAI Arrow 2 站到了一起。可编辑不等于能直接放进界面：三款工具实际给出什么，附一份图标和插画的检查清单。",
+    "zht": "10 月 22 日，Ideogram 發布 Vector 1.0：根據提示詞直接生成可編輯的 SVG，也能把圖片描成向量，與 Recraft V4.1、QuiverAI Arrow 2 站到了一起。可編輯不等於能直接放進介面：三款工具實際給出什麼，附一份圖示和插畫的檢查清單。",
+    "ja": "10月22日、IdeogramはVector 1.0を公開した。プロンプトから編集可能なSVGを生成し、画像をベクター化もできるモデルで、Recraft V4.1やQuiverAI Arrow 2に並ぶ。編集可能とUIにそのまま使えるは別物。3つのツールが実際に返すものと、アイコン・イラスト用チェックリスト。",
+    "ko": "10월 22일 Ideogram이 Vector 1.0을 내놓았다. 프롬프트로 편집 가능한 SVG를 만들고 이미지를 벡터로 변환하는 모델로, Recraft V4.1·QuiverAI Arrow 2와 나란히 섰다. 편집 가능하다는 것과 UI에 바로 쓸 수 있다는 것은 다르다. 세 도구가 실제로 내놓는 것과 아이콘·일러스트 체크리스트.",
+    "ms": "Pada 22 Okt, Ideogram melancarkan Vector 1.0, model yang menulis SVG boleh sunting daripada prompt atau menjejak imej, menyertai Recraft V4.1 dan QuiverAI Arrow 2. Boleh disunting tidak sama dengan sedia untuk antara muka: apa yang sebenarnya dihasilkan ketiga-tiga alat, dan senarai semak untuk ikon dan ilustrasi.",
+    "vi": "Ngày 22/10, Ideogram ra mắt Vector 1.0, mô hình tạo SVG chỉnh sửa được từ prompt hoặc chuyển ảnh thành vector, đứng cạnh Recraft V4.1 và QuiverAI Arrow 2. Chỉnh sửa được chưa có nghĩa là dùng ngay trong giao diện: ba công cụ thực sự trả về gì, kèm checklist cho icon và minh hoạ.",
+    "fr": "Le 22 octobre, Ideogram a lancé Vector 1.0, un modèle qui produit un SVG modifiable à partir d’un prompt ou vectorise une image, aux côtés de Recraft V4.1 et QuiverAI Arrow 2. Modifiable ne veut pas dire prêt pour une interface : ce que renvoient vraiment les trois outils, et une checklist pour icônes et illustrations.",
+    "es": "El 22 de octubre Ideogram lanzó Vector 1.0, un modelo que genera SVG editable a partir de un prompt o vectoriza una imagen, junto a Recraft V4.1 y QuiverAI Arrow 2. Editable no significa listo para una interfaz: qué devuelven de verdad las tres herramientas y una lista de revisión para iconos e ilustraciones.",
+    "de": "Am 22. Oktober brachte Ideogram Vector 1.0 heraus, ein Modell, das aus einem Prompt editierbare SVG erzeugt oder Bilder vektorisiert, neben Recraft V4.1 und QuiverAI Arrow 2. Editierbar heißt nicht fertig für eine Oberfläche: was die drei Tools wirklich liefern, plus Checkliste für Icons und Illustrationen."
+   },
+   "reading_minutes": {
+    "en": 5,
+    "zh": 6
+   },
+   "cover": "https://ui.incidental.site/blog/img/ai-svg-for-ui-ideogram-vector-cover.webp",
+   "references": [
+    {
+     "title": "Ideogram Vector: ready-to-use SVG artwork",
+     "by": "Ideogram",
+     "url": "https://ideogram.ai/models/vector/"
+    },
+    {
+     "title": "Ideogram launches its first vector model for editable SVG design",
+     "by": "Ryan Merket, Runtime Wire",
+     "url": "https://runtimewire.com/article/ideogram-vector-1-svg-model-launch"
+    },
+    {
+     "title": "Ideogram Vector 1.0: Editable SVGs with an API layer caveat",
+     "by": "OrcaRouter blog",
+     "url": "https://www.orcarouter.ai/blog/ideogram-vector-1-0-release-editable-svg"
+    },
+    {
+     "title": "Ideogram Vector 1.0: Editable SVGs from a prompt",
+     "by": "ArtRealmAI",
+     "url": "https://artrealmai.com/article/ideogram-vector-1-0-editable-svg-text-image-to-vector"
+    },
+    {
+     "title": "Ideogram Vector text-to-vector API",
+     "by": "fal",
+     "url": "https://fal.ai/models/ideogram/vector/text-to-vector/api"
+    },
+    {
+     "title": "AI vector generator: text to SVG",
+     "by": "Recraft",
+     "url": "https://www.recraft.ai/ai-vector-generator"
+    },
+    {
+     "title": "Vector Editor",
+     "by": "Recraft docs",
+     "url": "https://www.recraft.ai/docs/recraft-studio/image-editing/vector-editor"
+    },
+    {
+     "title": "Arrow 2",
+     "by": "QuiverAI",
+     "url": "https://quiver.ai/models/arrow-2/"
+    },
+    {
+     "title": "Models",
+     "by": "QuiverAI docs",
+     "url": "https://docs.quiver.ai/developers/models"
+    },
+    {
+     "title": "Arrow",
+     "by": "Batch Banana docs",
+     "url": "https://batchbanana.com/docs/models/arrow"
+    },
+    {
+     "title": "Introducing Canva Craft",
+     "by": "Canva Newsroom",
+     "url": "https://www.canva.com/newsroom/news/canva-craft/"
+    },
+    {
+     "title": "Canva releases its first image generation model",
+     "by": "Ivan Mehta, TechCrunch",
+     "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/"
+    },
+    {
+     "title": "SVGO",
+     "by": "SVGO",
+     "url": "https://svgo.dev/"
+    },
+    {
+     "title": "Decorative images",
+     "by": "W3C WAI",
+     "url": "https://www.w3.org/WAI/tutorials/images/decorative/"
+    }
+   ]
+  },
   {
    "slug": "lint-agents-onto-your-design-system",
    "url": "https://ui.incidental.site/blog/lint-agents-onto-your-design-system/",
