@@ -1,6 +1,6 @@
 {
- "generated": "2026-10-22",
- "count": 4867,
+ "generated": "2026-10-23",
+ "count": 4881,
  "items": [
   {
    "id": "ued-figma-mcp-guide",
@@ -183699,6 +183699,384 @@
    },
    "pub": "2026-10-22",
    "added": "2026-10-22"
+  },
+  {
+   "id": "aw-pdfmavericks-com",
+   "name": "pdfmavericks",
+   "url": "https://pdfmavericks.com/",
+   "note": "awesome-shadcn-ui 收录：40+ free browser-based PDF tools (compress, merge, split, sign, watermark, redact, OCR, convert) with client-side processing — files never leave the device. Built with Next.js 15 App Router, shadcn/ui",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: 40+ free browser-based PDF tools (compress, merge, split, sign, watermark, redact, OCR, convert) with client-side processing — files never leave the device. Built with Next.js 15 App Router, shadcn/ui",
+   "added": "2026-10-23"
+  },
+  {
+   "id": "aw-shadcn-google-maps-vercel-app",
+   "name": "shadcn-google-maps",
+   "url": "https://shadcn-google-maps.vercel.app/",
+   "note": "awesome-shadcn-ui 收录：Google Places address autocomplete for shadcn/ui using AutocompleteSuggestion (Places API New), with session tokens and typed place results.",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Google Places address autocomplete for shadcn/ui using AutocompleteSuggestion (Places API New), with session tokens and typed place results.",
+   "added": "2026-10-23"
+  },
+  {
+   "id": "aw-otf-kit-dev-components",
+   "name": "otf-ui",
+   "url": "https://otf-kit.dev/components",
+   "note": "awesome-shadcn-ui 收录：215+ cross-platform components for Next.js (Radix + Tailwind v4) and Expo (Tamagui) with one shared API. MIT.",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat",
+    "form"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: 215+ cross-platform components for Next.js (Radix + Tailwind v4) and Expo (Tamagui) with one shared API. MIT.",
+   "added": "2026-10-23"
+  },
+  {
+   "id": "aw-github-com-jiji-hoon96-kalyx",
+   "name": "kalyx",
+   "url": "https://github.com/jiji-hoon96/kalyx",
+   "note": "awesome-shadcn-ui 收录：Headless React DatePicker family — single / range / time / date+time / month / year / week pickers behind one composition API. ISO 8601 UTC values, IANA timezone-safe, ~13.6 KB gzip. v1.0 RC.",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Headless React DatePicker family — single / range / time / date+time / month / year / week pickers behind one composition API. ISO 8601 UTC values, IANA timezone-safe, ~13.6 KB gzip. v1.0 RC.",
+   "added": "2026-10-23"
+  },
+  {
+   "id": "aw-github-com-shadcn-labs-framecn",
+   "name": "framecn",
+   "url": "https://github.com/shadcn-labs/framecn",
+   "note": "awesome-shadcn-ui 收录：Beautiful videos, made simple. Ready to use, customizable video components for React.",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Beautiful videos, made simple. Ready to use, customizable video components for React.",
+   "added": "2026-10-23"
+  },
+  {
+   "id": "aw-grid-joohyunpark-com",
+   "name": "grid",
+   "url": "https://grid.joohyunpark.com",
+   "note": "awesome-shadcn-ui 收录：An opinionated grid system for React and Tailwind",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat",
+    "table"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: An opinionated grid system for React and Tailwind",
+   "added": "2026-10-23"
+  },
+  {
+   "id": "aw-shadcnpreset-com",
+   "name": "shadcnpreset",
+   "url": "https://shadcnpreset.com",
+   "note": "awesome-shadcn-ui 收录：Find the perfect shadcn preset in seconds. Open source and Free.",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Find the perfect shadcn preset in seconds. Open source and Free.",
+   "added": "2026-10-23"
+  },
+  {
+   "id": "aw-shieldcn-dev",
+   "name": "shieldcn",
+   "url": "https://shieldcn.dev",
+   "note": "awesome-shadcn-ui 收录：Shields.io alternative that renders GitHub badges as shadcn/ui Button components via Satori. Supports npm, GitHub, Discord, Reddit badges with dark/light mode, 6 variants, and 40k+ icons.",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "icon"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Shields.io alternative that renders GitHub badges as shadcn/ui Button components via Satori. Supports npm, GitHub, Discord, Reddit badges with dark/light mode, 6 variants, and 40k+ icons.",
+   "added": "2026-10-23"
+  },
+  {
+   "id": "aw-loading-ui-com",
+   "name": "loading-ui",
+   "url": "https://loading-ui.com/",
+   "note": "awesome-shadcn-ui 收录：Curated, copy-friendly spinners, loaders, and loading-state animations for the web—free and open source.",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "motion"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Curated, copy-friendly spinners, loaders, and loading-state animations for the web—free and open source.",
+   "added": "2026-10-23"
+  },
+  {
+   "id": "aw-diffs-com",
+   "name": "diffs",
+   "url": "https://diffs.com/",
+   "note": "awesome-shadcn-ui 收录：@pierre/diffs is an open source diff and code rendering library. It's built on Shiki for syntax highlighting and theming, is super customizable, and comes packed with features. Made with love by The P",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: @pierre/diffs is an open source diff and code rendering library. It's built on Shiki for syntax highlighting and theming, is super customizable, and comes packed with features. Made with love by The P",
+   "added": "2026-10-23"
+  },
+  {
+   "id": "aw-github-com-bitjaru-styleseed",
+   "name": "styleseed",
+   "url": "https://github.com/bitjaru/styleseed",
+   "note": "awesome-shadcn-ui 收录：Design engine with 48 shadcn-style components and swappable brand skins.",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Design engine with 48 shadcn-style components and swappable brand skins.",
+   "added": "2026-10-23"
+  },
+  {
+   "id": "aw-trees-software",
+   "name": "trees",
+   "url": "https://trees.software/",
+   "note": "awesome-shadcn-ui 收录：@pierre/trees is an open source file tree rendering library. It's built for performance and flexibility, is super customizable, and comes packed with features. Made with love by The Pierre Computer Co",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "form"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: @pierre/trees is an open source file tree rendering library. It's built for performance and flexibility, is super customizable, and comes packed with features. Made with love by The Pierre Computer Co",
+   "added": "2026-10-23"
+  },
+  {
+   "id": "aw-ui-flexnative-com",
+   "name": "ui-flexnative",
+   "url": "https://ui.flexnative.com",
+   "note": "awesome-shadcn-ui 收录：A collection of customizable UI blocks with interactive live previews",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: A collection of customizable UI blocks with interactive live previews",
+   "added": "2026-10-23"
+  },
+  {
+   "id": "aw-github-com-w3-kit-ui",
+   "name": "w3-kit",
+   "url": "https://github.com/w3-kit/ui",
+   "note": "awesome-shadcn-ui 收录：A comprehensive library of accessible React components for building high-quality Web3 applications and dApps",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: A comprehensive library of accessible React components for building high-quality Web3 applications and dApps",
+   "added": "2026-10-23"
   }
  ],
  "guides": [
@@ -183901,5 +184279,5 @@
    ]
   }
  ],
- "updatedAt": "2026-10-22T18:09Z"
+ "updatedAt": "2026-10-23T04:46Z"
 }
