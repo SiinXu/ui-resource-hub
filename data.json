@@ -1,6 +1,6 @@
 {
  "generated": "2026-10-23",
- "count": 4881,
+ "count": 4882,
  "items": [
   {
    "id": "ued-figma-mcp-guide",
@@ -184077,6 +184077,55 @@
    ],
    "noteEn": "Listed in awesome-shadcn-ui: A comprehensive library of accessible React components for building high-quality Web3 applications and dApps",
    "added": "2026-10-23"
+  },
+  {
+   "id": "rd-vr4ookj-boat-motion-posters",
+   "name": "Boat Motion Posters",
+   "url": "https://x.com/nickbakeddesign/status/2113391263345263048",
+   "note": "Three animated posters for Boat cloud VM platform, each featuring a pixel-character particle field growing across dark and vivid blue textured backgrounds with bold taglines.",
+   "noteEn": "Three animated posters for Boat cloud VM platform, each featuring a pixel-character particle field growing across dark and vivid blue textured backgrounds with bold taglines.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@nickbakeddesign",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/vr4ookj-boat-motion-posters",
+   "rdkind": "Design",
+   "rdcat": "Posters",
+   "rdstyle": [
+    "Geometric",
+    "Textured",
+    "Dark",
+    "Vibrant"
+   ],
+   "author": {
+    "name": "Nick",
+    "handle": "@nickbakeddesign",
+    "url": "https://x.com/nickbakeddesign"
+   },
+   "x_post": "https://x.com/nickbakeddesign/status/2113391263345263048",
+   "xsrc": {
+    "post": "https://x.com/nickbakeddesign/status/2113391263345263048",
+    "author": "@nickbakeddesign",
+    "likes": 279,
+    "bookmarks": 148,
+    "reposts": 9,
+    "impressions": 6794,
+    "date": "2026-10-22"
+   },
+   "pub": "2026-10-23",
+   "added": "2026-10-23"
   }
  ],
  "guides": [
@@ -184279,5 +184328,5 @@
    ]
   }
  ],
- "updatedAt": "2026-10-23T04:46Z"
+ "updatedAt": "2026-10-23T06:27Z"
 }

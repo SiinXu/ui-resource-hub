@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-23 04:46 UTC",
+ "updated": "2026-10-23 06:27 UTC",
  "workflow": [
   "Read the brief and pick ONE direction skill (frontend-design or taste-skill)",
   "Search api/resources.json for components matching style (vs) and kind (ct)",
