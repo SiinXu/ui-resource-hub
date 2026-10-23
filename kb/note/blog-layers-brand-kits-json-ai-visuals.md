@@ -2,7 +2,7 @@
 
 > On 20 October Coco Labs launched Vyb, a design model that builds in layers; Gemini started remembering an uploaded brand style; and Bria shipped Fibo 2, which turns every edit into editable JSON. Three different answers to the same problem, and a checklist for using them.
 
-Blog post: <https://siinxu.github.io/ui-resource-hub/blog/layers-brand-kits-json-ai-visuals/>
+Blog post: <https://ui.incidental.site/blog/layers-brand-kits-json-ai-visuals/>
 
 The most common complaint about AI-made graphics is not that they look bad. It is that they all look the same: the right mood, the wrong font, a brand colour that is almost but not quite yours, and a headline that melts when you try to change one word. Three launches on 20 October attack that problem from three different directions, and together they make a useful map of what to ask from any visual AI tool you adopt.
 

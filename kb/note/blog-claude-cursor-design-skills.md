@@ -2,7 +2,7 @@
 
 > Three file formats, one idea: durable instructions an agent loads when relevant. How to write a design skill that changes output, with a template.
 
-Blog post: <https://siinxu.github.io/ui-resource-hub/blog/claude-cursor-design-skills/>
+Blog post: <https://ui.incidental.site/blog/claude-cursor-design-skills/>
 
 Anthropic's Agent Skills are folders with a `SKILL.md` file: YAML front matter (a name and a description) followed by instructions, optionally with scripts and assets. The agent sees the descriptions and loads a skill's full body only when it is relevant. Cursor offers project rules in `.cursor/rules`, and many coding agents read an `AGENTS.md` at the repo root. Different files, same idea: durable, scoped instructions.
 

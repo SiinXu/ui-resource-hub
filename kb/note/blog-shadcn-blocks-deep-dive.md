@@ -2,7 +2,7 @@
 
 > Blocks (dashboards, sidebars, login pages) install with one CLI command, and any team can publish its own registry. Why this is the best substrate for AI agents.
 
-Blog post: <https://siinxu.github.io/ui-resource-hub/blog/shadcn-blocks-deep-dive/>
+Blog post: <https://ui.incidental.site/blog/shadcn-blocks-deep-dive/>
 
 shadcn/ui is not a package you install; it is a set of components whose source you copy into your project. Blocks extend the idea to whole sections: dashboards, sidebars, login and signup pages, charts. Each is added with the CLI, for example `npx shadcn@latest add dashboard-01`, and lands as editable files.
 

@@ -2,7 +2,7 @@
 
 > Radix behaviour, your styles, code you own. Compound components keep APIs small and make AI edits safer.
 
-Blog post: <https://siinxu.github.io/ui-resource-hub/blog/component-composition/>
+Blog post: <https://ui.incidental.site/blog/component-composition/>
 
 The old model of a component library was a styled npm package: you installed it, then fought its styles with overrides and `!important`. shadcn/ui flipped that. Behaviour and accessibility come from headless primitives such as Radix, styling comes from Tailwind classes, and the component source is copied into your repository, where you own it. This post explains why that composition model suits AI agents unusually well, how to structure the layers, and the patterns that keep generated code maintainable.
 

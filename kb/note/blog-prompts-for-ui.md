@@ -2,7 +2,7 @@
 
 > "Modern and clean" means nothing to a model. Name layout, tokens, states, content and what to avoid.
 
-Blog post: <https://siinxu.github.io/ui-resource-hub/blog/prompts-for-ui/>
+Blog post: <https://ui.incidental.site/blog/prompts-for-ui/>
 
 A UI prompt is a tiny design spec. The model fills every gap you leave with its defaults, and defaults are clichés: a centred hero, three feature cards, a purple-to-blue gradient, emoji as icons. A prompt that says "modern and clean" leaves every gap open. This post shows how to close them with a fixed structure, how to iterate without starting over, and which mistakes waste the most rounds.
 

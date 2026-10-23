@@ -2,7 +2,7 @@
 
 > Lovart 2.0 adds an editable taste memory, scheduled design delegation and a background consistency check. Read alongside two other launches from 19 Oct, it shows where design agents are heading, and what you should write down before you hand one the work.
 
-Blog post: <https://siinxu.github.io/ui-resource-hub/blog/lovart-arti-design-agent-memory/>
+Blog post: <https://ui.incidental.site/blog/lovart-arti-design-agent-memory/>
 
 On 19 October Lovart shipped version 2.0 of its design agent, built around a new personal agent called Arti. The pitch is not a better image model. Lovart already routes to several third-party image and video models. The change is everything around generation: Arti keeps a memory of how you work, takes whole jobs on a schedule, researches before you start and checks the canvas while you work. It is a useful snapshot of where design agents are going, and of what you have to write down before you can trust one with real work.
 

@@ -2,7 +2,7 @@
 
 > Generators are fast but average. Split the job: humans set direction and constraints, AI explores variants, humans curate and polish.
 
-Blog post: <https://siinxu.github.io/ui-resource-hub/blog/ai-assisted-ui-design-workflow/>
+Blog post: <https://ui.incidental.site/blog/ai-assisted-ui-design-workflow/>
 
 Every AI UI generator converges on the statistical middle of its training data: centred hero, three feature cards, a purple gradient. That is not a bug, it is what "most likely next token" means. The practical consequence is that speed is free and **taste is the scarce input**.
 

@@ -2,7 +2,7 @@
 
 > An open-source (MIT) set of motion components distributed through the shadcn registry. Best picks for SaaS pages and how to keep them accessible.
 
-Blog post: <https://siinxu.github.io/ui-resource-hub/blog/magic-ui-deep-dive/>
+Blog post: <https://ui.incidental.site/blog/magic-ui-deep-dive/>
 
 Magic UI is an open-source library of animated components (MIT licence) designed as a companion to shadcn/ui. Components are added with the shadcn CLI from Magic UI's registry, so the source lands in your repo where you can edit it, rather than living in a dependency.
 

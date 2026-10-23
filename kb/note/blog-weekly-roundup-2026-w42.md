@@ -2,7 +2,7 @@
 
 > Figma agent GA with team guidelines, Lovable drops its pick-a-look step, Magic Patterns launches MagicOS, Chrome iterates on HTML-in-Canvas. What it means for your workflow.
 
-Blog post: <https://siinxu.github.io/ui-resource-hub/blog/weekly-roundup-2026-w42/>
+Blog post: <https://ui.incidental.site/blog/weekly-roundup-2026-w42/>
 
 This week's design-tool news shares one theme: the art brief is moving out of the chat box and into files and canvases that persist. Dates are from each vendor's own announcement.
 

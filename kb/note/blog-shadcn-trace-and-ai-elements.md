@@ -2,7 +2,7 @@
 
 > On 14 Oct 2026 shadcn/ui shipped Trace, Code Block and 21 copy-in AI Elements patterns that replace AI SDK Elements. The design lesson: reasoning, tool calls, sources and subagents are all one line with an icon, a title and a status, so agent UIs stop looking like debug logs.
 
-Blog post: <https://siinxu.github.io/ui-resource-hub/blog/shadcn-trace-and-ai-elements/>
+Blog post: <https://ui.incidental.site/blog/shadcn-trace-and-ai-elements/>
 
 On 14 October 2026 shadcn published **Trace**, a component for agent activity, together with **Code Block** and **AI Elements**, a set of patterns for agentic interfaces built entirely from shadcn/ui components. The announcement post passed 4,500 likes on X within two days, and shadcn-svelte followed with its own AI Elements a day later. The interesting part is not that there are new components. It is the design claim underneath them: reasoning, tool calls, sources, plans and subagent runs all have the same shape, so they should look and behave the same.
 

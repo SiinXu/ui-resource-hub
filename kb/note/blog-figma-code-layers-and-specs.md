@@ -2,7 +2,7 @@
 
 > At Config India (15 Oct 2026) Figma moved code layers into open beta, launched Specs as a Markdown home on the canvas, and let libraries carry guidelines and code sources. The lesson for UI builders: agents are short of constraint files, not generators.
 
-Blog post: <https://siinxu.github.io/ui-resource-hub/blog/figma-code-layers-and-specs/>
+Blog post: <https://ui.incidental.site/blog/figma-code-layers-and-specs/>
 
 On 15 October 2026, at Config India in Bengaluru, Figma shipped a set of updates that are easy to read as “more AI features” and more useful to read as a single idea: put the code, the written intent and the design-system rules on the same canvas, so people and agents work from one context instead of five tabs. Dylan Field’s recap post frames the problem bluntly. AI made code cheap, so teams “build to think”, but that vibe-coding loop is usually single-player; one customer is quoted describing it as “fast, fast, fast… then slow”.
 

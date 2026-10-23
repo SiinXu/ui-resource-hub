@@ -2,7 +2,7 @@
 
 > Dark mode is a second palette, not an inverted one. Use semantic tokens, lighter surfaces for elevation, and desaturated accents.
 
-Blog post: <https://siinxu.github.io/ui-resource-hub/blog/dark-mode-done-right/>
+Blog post: <https://ui.incidental.site/blog/dark-mode-done-right/>
 
 Inverting colours is the fastest way to ship a bad dark mode: pure black backgrounds, glowing saturated blues, borders that vanish and shadows nobody can see. Apple's Human Interface Guidelines and web.dev both treat dark mode as its own design pass, not a filter. This post covers the token structure that makes two themes cheap, the rules for surfaces, colour and contrast, a step-by-step implementation without the white flash, and what to check before you ship.
 

@@ -1,6 +1,6 @@
 {
  "count": 31,
- "rss": "https://siinxu.github.io/ui-resource-hub/blog/rss.xml",
+ "rss": "https://ui.incidental.site/blog/rss.xml",
  "categories": {
   "tools": "Tools",
   "workflow": "Workflow",
@@ -20,7 +20,7 @@
  "posts": [
   {
    "slug": "lint-agents-onto-your-design-system",
-   "url": "https://siinxu.github.io/ui-resource-hub/blog/lint-agents-onto-your-design-system/",
+   "url": "https://ui.incidental.site/blog/lint-agents-onto-your-design-system/",
    "date": "2026-10-22",
    "category": "agents",
    "series": null,
@@ -60,7 +60,7 @@
     "en": 5,
     "zh": 6
    },
-   "cover": "https://siinxu.github.io/ui-resource-hub/blog/img/lint-agents-onto-your-design-system-cover.webp",
+   "cover": "https://ui.incidental.site/blog/img/lint-agents-onto-your-design-system-cover.webp",
    "references": [
     {
      "title": "I built three open-source tools for coding agents: onsystem, ondocs and signoff-ui",
@@ -111,7 +111,7 @@
   },
   {
    "slug": "layers-brand-kits-json-ai-visuals",
-   "url": "https://siinxu.github.io/ui-resource-hub/blog/layers-brand-kits-json-ai-visuals/",
+   "url": "https://ui.incidental.site/blog/layers-brand-kits-json-ai-visuals/",
    "date": "2026-10-21",
    "category": "tools",
    "series": null,
@@ -151,7 +151,7 @@
     "en": 4,
     "zh": 5
    },
-   "cover": "https://siinxu.github.io/ui-resource-hub/blog/img/layers-brand-kits-json-ai-visuals-cover.webp",
+   "cover": "https://ui.incidental.site/blog/img/layers-brand-kits-json-ai-visuals-cover.webp",
    "references": [
     {
      "title": "Introducing Vyb - Our First Design Model That Understands Taste",
@@ -202,7 +202,7 @@
   },
   {
    "slug": "lovart-arti-design-agent-memory",
-   "url": "https://siinxu.github.io/ui-resource-hub/blog/lovart-arti-design-agent-memory/",
+   "url": "https://ui.incidental.site/blog/lovart-arti-design-agent-memory/",
    "date": "2026-10-20",
    "category": "agents",
    "series": null,
@@ -242,7 +242,7 @@
     "en": 4,
     "zh": 5
    },
-   "cover": "https://siinxu.github.io/ui-resource-hub/blog/img/lovart-arti-design-agent-memory-cover.webp",
+   "cover": "https://ui.incidental.site/blog/img/lovart-arti-design-agent-memory-cover.webp",
    "references": [
     {
      "title": "Lovart 2.0: Meet Arti, your personal design agent",
@@ -273,7 +273,7 @@
   },
   {
    "slug": "shadcn-trace-and-ai-elements",
-   "url": "https://siinxu.github.io/ui-resource-hub/blog/shadcn-trace-and-ai-elements/",
+   "url": "https://ui.incidental.site/blog/shadcn-trace-and-ai-elements/",
    "date": "2026-10-16",
    "category": "components",
    "series": "library-deep-dive",
@@ -313,7 +313,7 @@
     "en": 5,
     "zh": 7
    },
-   "cover": "https://siinxu.github.io/ui-resource-hub/blog/img/shadcn-trace-and-ai-elements-cover.webp",
+   "cover": "https://ui.incidental.site/blog/img/shadcn-trace-and-ai-elements-cover.webp",
    "references": [
     {
      "title": "October 2026 - Trace, Code Block and AI Elements",
@@ -379,7 +379,7 @@
   },
   {
    "slug": "figma-code-layers-and-specs",
-   "url": "https://siinxu.github.io/ui-resource-hub/blog/figma-code-layers-and-specs/",
+   "url": "https://ui.incidental.site/blog/figma-code-layers-and-specs/",
    "date": "2026-10-15",
    "category": "tools",
    "series": null,
@@ -419,7 +419,7 @@
     "en": 5,
     "zh": 6
    },
-   "cover": "https://siinxu.github.io/ui-resource-hub/blog/img/figma-code-layers-and-specs-cover.webp",
+   "cover": "https://ui.incidental.site/blog/img/figma-code-layers-and-specs-cover.webp",
    "references": [
     {
      "title": "Build by design: New workflows for new ways of building",
@@ -470,7 +470,7 @@
   },
   {
    "slug": "claude-design-everywhere",
-   "url": "https://siinxu.github.io/ui-resource-hub/blog/claude-design-everywhere/",
+   "url": "https://ui.incidental.site/blog/claude-design-everywhere/",
    "date": "2026-10-14",
    "category": "tools",
    "series": null,
@@ -509,7 +509,7 @@
     "en": 3,
     "zh": 4
    },
-   "cover": "https://siinxu.github.io/ui-resource-hub/blog/img/claude-design-everywhere-cover.webp",
+   "cover": "https://ui.incidental.site/blog/img/claude-design-everywhere-cover.webp",
    "references": [
     {
      "title": "Build live dashboards and animate explainers with Claude",
@@ -540,7 +540,7 @@
   },
   {
    "slug": "tutorial-agent-builds-landing-with-ui-hub",
-   "url": "https://siinxu.github.io/ui-resource-hub/blog/tutorial-agent-builds-landing-with-ui-hub/",
+   "url": "https://ui.incidental.site/blog/tutorial-agent-builds-landing-with-ui-hub/",
    "date": "2026-10-14",
    "category": "tutorial",
    "series": "agent-context",
@@ -578,7 +578,7 @@
     "en": 2,
     "zh": 2
    },
-   "cover": "https://siinxu.github.io/ui-resource-hub/blog/img/tutorial-agent-builds-landing-with-ui-hub-cover.webp",
+   "cover": "https://ui.incidental.site/blog/img/tutorial-agent-builds-landing-with-ui-hub-cover.webp",
    "references": [
     {
      "title": "UI Hub AGENTS.md",
@@ -604,7 +604,7 @@
   },
   {
    "slug": "weekly-roundup-2026-w42",
-   "url": "https://siinxu.github.io/ui-resource-hub/blog/weekly-roundup-2026-w42/",
+   "url": "https://ui.incidental.site/blog/weekly-roundup-2026-w42/",
    "date": "2026-10-14",
    "category": "news",
    "series": "weekly",
@@ -644,7 +644,7 @@
     "en": 2,
     "zh": 2
    },
-   "cover": "https://siinxu.github.io/ui-resource-hub/blog/img/weekly-roundup-2026-w42-cover.webp",
+   "cover": "https://ui.incidental.site/blog/img/weekly-roundup-2026-w42-cover.webp",
    "references": [
     {
      "title": "Figma's AI agent for product design is now generally available",
@@ -675,7 +675,7 @@
   },
   {
    "slug": "claude-cursor-design-skills",
-   "url": "https://siinxu.github.io/ui-resource-hub/blog/claude-cursor-design-skills/",
+   "url": "https://ui.incidental.site/blog/claude-cursor-design-skills/",
    "date": "2026-10-14",
    "category": "agents",
    "series": "agent-context",
@@ -714,7 +714,7 @@
     "en": 2,
     "zh": 2
    },
-   "cover": "https://siinxu.github.io/ui-resource-hub/blog/img/claude-cursor-design-skills-cover.webp",
+   "cover": "https://ui.incidental.site/blog/img/claude-cursor-design-skills-cover.webp",
    "references": [
     {
      "title": "Agent Skills overview",
@@ -745,7 +745,7 @@
   },
   {
    "slug": "design-tokens-for-agents",
-   "url": "https://siinxu.github.io/ui-resource-hub/blog/design-tokens-for-agents/",
+   "url": "https://ui.incidental.site/blog/design-tokens-for-agents/",
    "date": "2026-10-14",
    "category": "agents",
    "series": "agent-context",
@@ -783,7 +783,7 @@
     "en": 2,
     "zh": 2
    },
-   "cover": "https://siinxu.github.io/ui-resource-hub/blog/img/design-tokens-for-agents-cover.webp",
+   "cover": "https://ui.incidental.site/blog/img/design-tokens-for-agents-cover.webp",
    "references": [
     {
      "title": "Design Tokens Community Group",
@@ -809,7 +809,7 @@
   },
   {
    "slug": "dashboard-design-patterns",
-   "url": "https://siinxu.github.io/ui-resource-hub/blog/dashboard-design-patterns/",
+   "url": "https://ui.incidental.site/blog/dashboard-design-patterns/",
    "date": "2026-10-14",
    "category": "craft",
    "series": null,
@@ -847,7 +847,7 @@
     "en": 2,
     "zh": 2
    },
-   "cover": "https://siinxu.github.io/ui-resource-hub/blog/img/dashboard-design-patterns-cover.webp",
+   "cover": "https://ui.incidental.site/blog/img/dashboard-design-patterns-cover.webp",
    "references": [
     {
      "title": "Dashboard blocks",
@@ -878,7 +878,7 @@
   },
   {
    "slug": "landing-page-teardown-linear-vercel",
-   "url": "https://siinxu.github.io/ui-resource-hub/blog/landing-page-teardown-linear-vercel/",
+   "url": "https://ui.incidental.site/blog/landing-page-teardown-linear-vercel/",
    "date": "2026-10-14",
    "category": "teardown",
    "series": null,
@@ -916,7 +916,7 @@
     "en": 2,
     "zh": 2
    },
-   "cover": "https://siinxu.github.io/ui-resource-hub/blog/img/landing-page-teardown-linear-vercel-cover.webp",
+   "cover": "https://ui.incidental.site/blog/img/landing-page-teardown-linear-vercel-cover.webp",
    "references": [
     {
      "title": "Linear homepage",
@@ -942,7 +942,7 @@
   },
   {
    "slug": "oklch-color-and-dark-mode",
-   "url": "https://siinxu.github.io/ui-resource-hub/blog/oklch-color-and-dark-mode/",
+   "url": "https://ui.incidental.site/blog/oklch-color-and-dark-mode/",
    "date": "2026-10-14",
    "category": "craft",
    "series": null,
@@ -980,7 +980,7 @@
     "en": 2,
     "zh": 2
    },
-   "cover": "https://siinxu.github.io/ui-resource-hub/blog/img/oklch-color-and-dark-mode-cover.webp",
+   "cover": "https://ui.incidental.site/blog/img/oklch-color-and-dark-mode-cover.webp",
    "references": [
     {
      "title": "oklch()",
@@ -1011,7 +1011,7 @@
   },
   {
    "slug": "typography-for-ai-generated-ui",
-   "url": "https://siinxu.github.io/ui-resource-hub/blog/typography-for-ai-generated-ui/",
+   "url": "https://ui.incidental.site/blog/typography-for-ai-generated-ui/",
    "date": "2026-10-14",
    "category": "craft",
    "series": null,
@@ -1048,7 +1048,7 @@
     "en": 2,
     "zh": 2
    },
-   "cover": "https://siinxu.github.io/ui-resource-hub/blog/img/typography-for-ai-generated-ui-cover.webp",
+   "cover": "https://ui.incidental.site/blog/img/typography-for-ai-generated-ui-cover.webp",
    "references": [
     {
      "title": "Practical Typography: line length",
@@ -1079,7 +1079,7 @@
   },
   {
    "slug": "shadcn-blocks-deep-dive",
-   "url": "https://siinxu.github.io/ui-resource-hub/blog/shadcn-blocks-deep-dive/",
+   "url": "https://ui.incidental.site/blog/shadcn-blocks-deep-dive/",
    "date": "2026-10-14",
    "category": "components",
    "series": "library-deep-dive",
@@ -1117,7 +1117,7 @@
     "en": 2,
     "zh": 2
    },
-   "cover": "https://siinxu.github.io/ui-resource-hub/blog/img/shadcn-blocks-deep-dive-cover.webp",
+   "cover": "https://ui.incidental.site/blog/img/shadcn-blocks-deep-dive-cover.webp",
    "references": [
     {
      "title": "Blocks",
@@ -1143,7 +1143,7 @@
   },
   {
    "slug": "cult-ui-deep-dive",
-   "url": "https://siinxu.github.io/ui-resource-hub/blog/cult-ui-deep-dive/",
+   "url": "https://ui.incidental.site/blog/cult-ui-deep-dive/",
    "date": "2026-10-14",
    "category": "components",
    "series": "library-deep-dive",
@@ -1181,7 +1181,7 @@
     "en": 6,
     "zh": 8
    },
-   "cover": "https://siinxu.github.io/ui-resource-hub/blog/img/cult-ui-deep-dive-cover.webp",
+   "cover": "https://ui.incidental.site/blog/img/cult-ui-deep-dive-cover.webp",
    "references": [
     {
      "title": "Cult UI",
@@ -1227,7 +1227,7 @@
   },
   {
    "slug": "magic-ui-deep-dive",
-   "url": "https://siinxu.github.io/ui-resource-hub/blog/magic-ui-deep-dive/",
+   "url": "https://ui.incidental.site/blog/magic-ui-deep-dive/",
    "date": "2026-10-14",
    "category": "components",
    "series": "library-deep-dive",
@@ -1265,7 +1265,7 @@
     "en": 2,
     "zh": 2
    },
-   "cover": "https://siinxu.github.io/ui-resource-hub/blog/img/magic-ui-deep-dive-cover.webp",
+   "cover": "https://ui.incidental.site/blog/img/magic-ui-deep-dive-cover.webp",
    "references": [
     {
      "title": "Magic UI",
@@ -1291,7 +1291,7 @@
   },
   {
    "slug": "aceternity-ui-deep-dive",
-   "url": "https://siinxu.github.io/ui-resource-hub/blog/aceternity-ui-deep-dive/",
+   "url": "https://ui.incidental.site/blog/aceternity-ui-deep-dive/",
    "date": "2026-10-14",
    "category": "components",
    "series": "library-deep-dive",
@@ -1329,7 +1329,7 @@
     "en": 2,
     "zh": 2
    },
-   "cover": "https://siinxu.github.io/ui-resource-hub/blog/img/aceternity-ui-deep-dive-cover.webp",
+   "cover": "https://ui.incidental.site/blog/img/aceternity-ui-deep-dive-cover.webp",
    "references": [
     {
      "title": "Aceternity UI",
@@ -1355,7 +1355,7 @@
   },
   {
    "slug": "prompt-to-ui-tools-compared",
-   "url": "https://siinxu.github.io/ui-resource-hub/blog/prompt-to-ui-tools-compared/",
+   "url": "https://ui.incidental.site/blog/prompt-to-ui-tools-compared/",
    "date": "2026-10-14",
    "category": "tools",
    "series": "prompt-to-ui",
@@ -1396,7 +1396,7 @@
     "en": 2,
     "zh": 2
    },
-   "cover": "https://siinxu.github.io/ui-resource-hub/blog/img/prompt-to-ui-tools-compared-cover.webp",
+   "cover": "https://ui.incidental.site/blog/img/prompt-to-ui-tools-compared-cover.webp",
    "references": [
     {
      "title": "v0",
@@ -1427,7 +1427,7 @@
   },
   {
    "slug": "magic-patterns-magicos",
-   "url": "https://siinxu.github.io/ui-resource-hub/blog/magic-patterns-magicos/",
+   "url": "https://ui.incidental.site/blog/magic-patterns-magicos/",
    "date": "2026-10-14",
    "category": "tools",
    "series": "prompt-to-ui",
@@ -1465,7 +1465,7 @@
     "en": 2,
     "zh": 2
    },
-   "cover": "https://siinxu.github.io/ui-resource-hub/blog/img/magic-patterns-magicos-cover.webp",
+   "cover": "https://ui.incidental.site/blog/img/magic-patterns-magicos-cover.webp",
    "references": [
     {
      "title": "Introducing MagicOS",
@@ -1491,7 +1491,7 @@
   },
   {
    "slug": "figma-make-and-figma-agent",
-   "url": "https://siinxu.github.io/ui-resource-hub/blog/figma-make-and-figma-agent/",
+   "url": "https://ui.incidental.site/blog/figma-make-and-figma-agent/",
    "date": "2026-10-14",
    "category": "tools",
    "series": "prompt-to-ui",
@@ -1529,7 +1529,7 @@
     "en": 2,
     "zh": 2
    },
-   "cover": "https://siinxu.github.io/ui-resource-hub/blog/img/figma-make-and-figma-agent-cover.webp",
+   "cover": "https://ui.incidental.site/blog/img/figma-make-and-figma-agent-cover.webp",
    "references": [
     {
      "title": "Figma Make",
@@ -1555,7 +1555,7 @@
   },
   {
    "slug": "lovable-bolt-prompt-to-app",
-   "url": "https://siinxu.github.io/ui-resource-hub/blog/lovable-bolt-prompt-to-app/",
+   "url": "https://ui.incidental.site/blog/lovable-bolt-prompt-to-app/",
    "date": "2026-10-14",
    "category": "tools",
    "series": "prompt-to-ui",
@@ -1593,7 +1593,7 @@
     "en": 2,
     "zh": 2
    },
-   "cover": "https://siinxu.github.io/ui-resource-hub/blog/img/lovable-bolt-prompt-to-app-cover.webp",
+   "cover": "https://ui.incidental.site/blog/img/lovable-bolt-prompt-to-app-cover.webp",
    "references": [
     {
      "title": "Lovable changelog (8 Oct 2026)",
@@ -1624,7 +1624,7 @@
   },
   {
    "slug": "v0-prompt-to-shadcn",
-   "url": "https://siinxu.github.io/ui-resource-hub/blog/v0-prompt-to-shadcn/",
+   "url": "https://ui.incidental.site/blog/v0-prompt-to-shadcn/",
    "date": "2026-10-14",
    "category": "tools",
    "series": "prompt-to-ui",
@@ -1662,7 +1662,7 @@
     "en": 2,
     "zh": 2
    },
-   "cover": "https://siinxu.github.io/ui-resource-hub/blog/img/v0-prompt-to-shadcn-cover.webp",
+   "cover": "https://ui.incidental.site/blog/img/v0-prompt-to-shadcn-cover.webp",
    "references": [
     {
      "title": "v0 by Vercel",
@@ -1688,7 +1688,7 @@
   },
   {
    "slug": "accessibility-in-ai-generated-ui",
-   "url": "https://siinxu.github.io/ui-resource-hub/blog/accessibility-in-ai-generated-ui/",
+   "url": "https://ui.incidental.site/blog/accessibility-in-ai-generated-ui/",
    "date": "2026-10-14",
    "category": "craft",
    "series": null,
@@ -1724,7 +1724,7 @@
     "en": 6,
     "zh": 9
    },
-   "cover": "https://siinxu.github.io/ui-resource-hub/blog/img/accessibility-in-ai-generated-ui-cover.webp",
+   "cover": "https://ui.incidental.site/blog/img/accessibility-in-ai-generated-ui-cover.webp",
    "references": [
     {
      "title": "Web Content Accessibility Guidelines (WCAG) 2.2",
@@ -1780,7 +1780,7 @@
   },
   {
    "slug": "dark-mode-done-right",
-   "url": "https://siinxu.github.io/ui-resource-hub/blog/dark-mode-done-right/",
+   "url": "https://ui.incidental.site/blog/dark-mode-done-right/",
    "date": "2026-10-14",
    "category": "craft",
    "series": null,
@@ -1817,7 +1817,7 @@
     "en": 6,
     "zh": 8
    },
-   "cover": "https://siinxu.github.io/ui-resource-hub/blog/img/dark-mode-done-right-cover.webp",
+   "cover": "https://ui.incidental.site/blog/img/dark-mode-done-right-cover.webp",
    "references": [
     {
      "title": "Dark Mode — Human Interface Guidelines",
@@ -1868,7 +1868,7 @@
   },
   {
    "slug": "motion-that-feels-right",
-   "url": "https://siinxu.github.io/ui-resource-hub/blog/motion-that-feels-right/",
+   "url": "https://ui.incidental.site/blog/motion-that-feels-right/",
    "date": "2026-10-14",
    "category": "craft",
    "series": null,
@@ -1904,7 +1904,7 @@
     "en": 6,
     "zh": 8
    },
-   "cover": "https://siinxu.github.io/ui-resource-hub/blog/img/motion-that-feels-right-cover.webp",
+   "cover": "https://ui.incidental.site/blog/img/motion-that-feels-right-cover.webp",
    "references": [
     {
      "title": "Great animations",
@@ -1950,7 +1950,7 @@
   },
   {
    "slug": "component-composition",
-   "url": "https://siinxu.github.io/ui-resource-hub/blog/component-composition/",
+   "url": "https://ui.incidental.site/blog/component-composition/",
    "date": "2026-10-14",
    "category": "components",
    "series": null,
@@ -1987,7 +1987,7 @@
     "en": 6,
     "zh": 9
    },
-   "cover": "https://siinxu.github.io/ui-resource-hub/blog/img/component-composition-cover.webp",
+   "cover": "https://ui.incidental.site/blog/img/component-composition-cover.webp",
    "references": [
     {
      "title": "shadcn/ui docs",
@@ -2033,7 +2033,7 @@
   },
   {
    "slug": "taste-and-skills-for-agents",
-   "url": "https://siinxu.github.io/ui-resource-hub/blog/taste-and-skills-for-agents/",
+   "url": "https://ui.incidental.site/blog/taste-and-skills-for-agents/",
    "date": "2026-10-14",
    "category": "agents",
    "series": "agent-context",
@@ -2070,7 +2070,7 @@
     "en": 6,
     "zh": 7
    },
-   "cover": "https://siinxu.github.io/ui-resource-hub/blog/img/taste-and-skills-for-agents-cover.webp",
+   "cover": "https://ui.incidental.site/blog/img/taste-and-skills-for-agents-cover.webp",
    "references": [
     {
      "title": "Agent Skills repository",
@@ -2111,7 +2111,7 @@
   },
   {
    "slug": "design-to-code-with-ai",
-   "url": "https://siinxu.github.io/ui-resource-hub/blog/design-to-code-with-ai/",
+   "url": "https://ui.incidental.site/blog/design-to-code-with-ai/",
    "date": "2026-10-14",
    "category": "workflow",
    "series": null,
@@ -2148,7 +2148,7 @@
     "en": 6,
     "zh": 8
    },
-   "cover": "https://siinxu.github.io/ui-resource-hub/blog/img/design-to-code-with-ai-cover.webp",
+   "cover": "https://ui.incidental.site/blog/img/design-to-code-with-ai-cover.webp",
    "references": [
     {
      "title": "Introducing the Figma MCP server",
@@ -2199,7 +2199,7 @@
   },
   {
    "slug": "prompts-for-ui",
-   "url": "https://siinxu.github.io/ui-resource-hub/blog/prompts-for-ui/",
+   "url": "https://ui.incidental.site/blog/prompts-for-ui/",
    "date": "2026-10-14",
    "category": "workflow",
    "series": null,
@@ -2235,7 +2235,7 @@
     "en": 6,
     "zh": 7
    },
-   "cover": "https://siinxu.github.io/ui-resource-hub/blog/img/prompts-for-ui-cover.webp",
+   "cover": "https://ui.incidental.site/blog/img/prompts-for-ui-cover.webp",
    "references": [
     {
      "title": "Web Interface Guidelines",
@@ -2266,7 +2266,7 @@
   },
   {
    "slug": "ai-assisted-ui-design-workflow",
-   "url": "https://siinxu.github.io/ui-resource-hub/blog/ai-assisted-ui-design-workflow/",
+   "url": "https://ui.incidental.site/blog/ai-assisted-ui-design-workflow/",
    "date": "2026-10-14",
    "category": "workflow",
    "series": null,
@@ -2303,7 +2303,7 @@
     "en": 2,
     "zh": 2
    },
-   "cover": "https://siinxu.github.io/ui-resource-hub/blog/img/ai-assisted-ui-design-workflow-cover.webp",
+   "cover": "https://ui.incidental.site/blog/img/ai-assisted-ui-design-workflow-cover.webp",
    "references": [
     {
      "title": "Status Update: AI UX-Design Tools Are Not Ready for Primetime",

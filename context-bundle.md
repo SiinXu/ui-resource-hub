@@ -1,15 +1,15 @@
 # UI Hub context bundle (2026-10-22 18:09 UTC)
 
-Source: https://siinxu.github.io/ui-resource-hub/kb/ · Full skills: https://siinxu.github.io/ui-resource-hub/api/kb.json
+Source: https://ui.incidental.site/kb/ · Full skills: https://ui.incidental.site/api/kb.json
 
 # UI Hub — guide for AI agents
 
-Data updated 2026-10-22 18:09 UTC. Endpoints: `https://siinxu.github.io/ui-resource-hub/api/resources.json` (items), `https://siinxu.github.io/ui-resource-hub/api/skills.json` (skills + workflow), `https://siinxu.github.io/ui-resource-hub/llms.txt`.
+Data updated 2026-10-22 18:09 UTC. Endpoints: `https://ui.incidental.site/api/resources.json` (items), `https://ui.incidental.site/api/skills.json` (skills + workflow), `https://ui.incidental.site/llms.txt`.
 
 ## One-line prompt
-EN: Use UI Hub (https://siinxu.github.io/ui-resource-hub/) as your design source. First read https://siinxu.github.io/ui-resource-hub/AGENTS.md, then fetch https://siinxu.github.io/ui-resource-hub/api/resources.json and filter by ct (component kind), vs (visual style) and pricing=free to pick ONE open-source library and a visual style; lock tokens (font, spacing, radius, one accent, light+dark) before building. Load skills in this order from https://siinxu.github.io/ui-resource-hub/api/skills.json: frontend-design or taste-skill → emil-design-eng → impeccable + baseline-ui + web-design-guidelines + accessibility. Verify in a browser (light/dark, 375px, keyboard, reduced motion) and cite every resource you used.
+EN: Use UI Hub (https://ui.incidental.site/) as your design source. First read https://ui.incidental.site/AGENTS.md, then fetch https://ui.incidental.site/api/resources.json and filter by ct (component kind), vs (visual style) and pricing=free to pick ONE open-source library and a visual style; lock tokens (font, spacing, radius, one accent, light+dark) before building. Load skills in this order from https://ui.incidental.site/api/skills.json: frontend-design or taste-skill → emil-design-eng → impeccable + baseline-ui + web-design-guidelines + accessibility. Verify in a browser (light/dark, 375px, keyboard, reduced motion) and cite every resource you used.
 
-中文：请把 UI Hub（https://siinxu.github.io/ui-resource-hub/）当作设计资料库。先读 https://siinxu.github.io/ui-resource-hub/AGENTS.md，再获取 https://siinxu.github.io/ui-resource-hub/api/resources.json，按 ct（组件类型）、vs（视觉风格）和 pricing=free 筛选，只选一个开源组件库和一种视觉风格；动手前先把字体、间距、圆角、唯一强调色和亮/暗两套 token 定下来。按顺序加载 https://siinxu.github.io/ui-resource-hub/api/skills.json 里的 skill：frontend-design 或 taste-skill → emil-design-eng → impeccable + baseline-ui + web-design-guidelines + accessibility。最后在浏览器里验证（亮/暗、375px 手机、键盘、减少动效），并列出用到的每个资源。
+中文：请把 UI Hub（https://ui.incidental.site/）当作设计资料库。先读 https://ui.incidental.site/AGENTS.md，再获取 https://ui.incidental.site/api/resources.json，按 ct（组件类型）、vs（视觉风格）和 pricing=free 筛选，只选一个开源组件库和一种视觉风格；动手前先把字体、间距、圆角、唯一强调色和亮/暗两套 token 定下来。按顺序加载 https://ui.incidental.site/api/skills.json 里的 skill：frontend-design 或 taste-skill → emil-design-eng → impeccable + baseline-ui + web-design-guidelines + accessibility。最后在浏览器里验证（亮/暗、375px 手机、键盘、减少动效），并列出用到的每个资源。
 
 ## What this is for
 - **Pick a component library** — type=library, filter by framework tag (React/Vue/Svelte), licence, pricing=free.
@@ -45,46 +45,46 @@ curl -s {BASE}kb/spec/motion.md
 ## Filter snippets
 ### Free React libraries with dialogs
 ```bash
-curl -s https://siinxu.github.io/ui-resource-hub/api/resources.json | jq '.items[] | select(.type=="library" and .pricing=="free" and (.ct//[]|index("dialog")) and (.tags|index("React"))) | {name,url}'
+curl -s https://ui.incidental.site/api/resources.json | jq '.items[] | select(.type=="library" and .pricing=="free" and (.ct//[]|index("dialog")) and (.tags|index("React"))) | {name,url}'
 ```
 
 ### Dark-tech style demos for cards
 ```bash
-curl -s https://siinxu.github.io/ui-resource-hub/api/resources.json | jq '[.items[] | select(.type=="style" and (.vs//[]|index("dark-tech")) and (.ct|index("card")))] | .[:10] | map({name,libName,page})'
+curl -s https://ui.incidental.site/api/resources.json | jq '[.items[] | select(.type=="style" and (.vs//[]|index("dark-tech")) and (.ct|index("card")))] | .[:10] | map({name,libName,page})'
 ```
 
 ### Count items per visual style
 ```bash
-curl -s https://siinxu.github.io/ui-resource-hub/api/resources.json | jq '[.items[].vs[]?] | group_by(.) | map({(.[0]):length}) | add'
+curl -s https://ui.incidental.site/api/resources.json | jq '[.items[].vs[]?] | group_by(.) | map({(.[0]):length}) | add'
 ```
 
 ### fetch (JS): motion effects, free
 ```bash
-const r = await fetch('https://siinxu.github.io/ui-resource-hub/api/resources.json').then(r => r.json());
+const r = await fetch('https://ui.incidental.site/api/resources.json').then(r => r.json());
 const picks = r.items.filter(i => ['effect','library'].includes(i.type) && i.vs?.includes('motion') && i.pricing === 'free');
 ```
 
 ### New this week
 ```bash
-curl -s https://siinxu.github.io/ui-resource-hub/api/resources.json | jq --arg d "$(date -u -d '7 days ago' +%F)" '.items[] | select(.added and .added >= $d) | {name,url,added}'
+curl -s https://ui.incidental.site/api/resources.json | jq --arg d "$(date -u -d '7 days ago' +%F)" '.items[] | select(.added and .added >= $d) | {name,url,added}'
 ```
 
 ## Worked examples
 ### Build a dark SaaS pricing page
-- **Filter:** curl -s https://siinxu.github.io/ui-resource-hub/api/resources.json | jq '.items[] | select(.type=="library" and .pricing=="free" and (.tags|index("React")) and ((.ct//[]) | index("card") or index("button") or index("layout"))) | {name,url}'
+- **Filter:** curl -s https://ui.incidental.site/api/resources.json | jq '.items[] | select(.type=="library" and .pricing=="free" and (.tags|index("React")) and ((.ct//[]) | index("card") or index("button") or index("layout"))) | {name,url}'
 - **Choose:** shadcn/ui (base components); shadcn/ui Blocks (pricing section); Radix Primitives (underneath); Magic UI Number Ticker (the one accent moment)
 - **Tokens:** bg #06070b, surface #10131a, ink #f3f5fb, accent #67e8f9, radius 12px, font Geist 14/20, numbers tabular-nums
 - **Skills order:** taste-skill (set the direction), then emil-design-eng (toggle and hover motion, 200ms or less, ease-out), then impeccable + baseline-ui + accessibility (final audit)
 - **Verify:** Monthly / annual toggle works with the keyboard; Visible focus ring on every CTA; Muted text reaches 4.5:1 contrast; At 375px the tiers stack vertically; Reduced motion turns the ticker off; Light theme still looks right
 
 ### Add a fancy but restrained landing hero
-- **Filter:** curl -s https://siinxu.github.io/ui-resource-hub/api/resources.json | jq '.items[] | select((.type=="effect" or .type=="library") and .pricing=="free" and ((.vs//[])|index("motion")) and ((.ct//[])|index("background"))) | {name,url}'
+- **Filter:** curl -s https://ui.incidental.site/api/resources.json | jq '.items[] | select((.type=="effect" or .type=="library") and .pricing=="free" and ((.vs//[])|index("motion")) and ((.ct//[])|index("background"))) | {name,url}'
 - **Choose:** Aceternity Spotlight (pick one of these two); Magic UI Beams (or this one); Motion (entrance only)
 - **Skills order:** frontend-design (set the direction), then emil-design-eng (motion polish), then web-design-guidelines + performance (audit)
 - **Verify:** LCP under 2.5s; Effect pauses when reduced motion is on; Text stays readable over the effect in both themes
 
 ### Audit an existing admin dashboard
-- **Filter:** curl -s https://siinxu.github.io/ui-resource-hub/api/resources.json | jq '[.items[] | select(.type=="style" and ((.vs//[])|index("enterprise")) and ((.ct//[]) | index("table") or index("nav") or index("form")))] | .[:20] | map({name,libName,page})'
+- **Filter:** curl -s https://ui.incidental.site/api/resources.json | jq '[.items[] | select(.type=="style" and ((.vs//[])|index("enterprise")) and ((.ct//[]) | index("table") or index("nav") or index("form")))] | .[:20] | map({name,libName,page})'
 - **Skills order:** redesign-skill (find the problems), then baseline-ui (fix the basics), then accessibility (accessibility pass), then web-quality-audit (final score)
 - **Verify:** Table header stays sticky; Rows can be focused with the keyboard; Empty, loading and error states exist; Click targets are at least 24px; Dark mode matches light mode
 
@@ -136,8 +136,8 @@ curl -s https://siinxu.github.io/ui-resource-hub/api/resources.json | jq --arg d
 
 ## FAQ
 - **What is UI Hub?** A free, curated directory of 4867 public UI resources: 197 component libraries, 1989 component style demos with light/dark screenshots, 70 design skills for AI agents, plus effects, templates, specs and tutorials. It links to original sites and never hosts paid source code.
-- **How do I find a component in a given style?** Load https://siinxu.github.io/ui-resource-hub/api/resources.json and filter by ct (component kind, e.g. "dialog") and vs (visual style, e.g. "minimal" or "motion"). type="style" entries are concrete component demos with a libName and page URL; type="library" entries are whole libraries with install info on the site.
-- **Which skills should an agent use for good UI?** One direction skill (frontend-design or taste-skill), emil-design-eng for motion and interaction polish, then impeccable, baseline-ui, web-design-guidelines and accessibility as an audit pass. See https://siinxu.github.io/ui-resource-hub/api/skills.json.
+- **How do I find a component in a given style?** Load https://ui.incidental.site/api/resources.json and filter by ct (component kind, e.g. "dialog") and vs (visual style, e.g. "minimal" or "motion"). type="style" entries are concrete component demos with a libName and page URL; type="library" entries are whole libraries with install info on the site.
+- **Which skills should an agent use for good UI?** One direction skill (frontend-design or taste-skill), emil-design-eng for motion and interaction polish, then impeccable, baseline-ui, web-design-guidelines and accessibility as an audit pass. See https://ui.incidental.site/api/skills.json.
 - **Can I copy the code?** Open-source libraries can be used under their own licenses (MIT, Apache-2.0 etc.); the card shows the original link. Paid tiers (marked paid/freemium) must be bought from the original vendor.
 - **How often is it updated?** Daily via a GitHub Actions job that adds new UI repositories and tools from GitHub, awesome-shadcn-ui and Hacker News. Nothing is deleted. Last update: 2026-10-22 18:09 UTC.
 
@@ -335,62 +335,62 @@ curl -s https://siinxu.github.io/ui-resource-hub/api/resources.json | jq --arg d
 
 # Skills index (fetch raw .md for full text)
 
-- **accessibility** (design, full-text): Audit and improve web accessibility following WCAG 2.2 guidelines. Use when asked to "improve accessibility", "a11y audit", "WCAG compliance", "screen reader support", "keyboard na — https://siinxu.github.io/ui-resource-hub/kb/skill/accessibility.md
-- **api-design-principles** (engineering, digest): Master REST and GraphQL API design principles to build intuitive, scalable, and maintainable APIs that delight developers. Use when designing new APIs, reviewing API specifications — https://siinxu.github.io/ui-resource-hub/kb/skill/api-design-principles.md
-- **architecture-patterns** (engineering, digest): Implement proven backend architecture patterns including Clean Architecture, Hexagonal Architecture, and Domain-Driven Design. Use this skill when designing clean architecture for  — https://siinxu.github.io/ui-resource-hub/kb/skill/architecture-patterns.md
-- **baseline-ui** (design, full-text): Quickly deslop UI code by fixing spacing, hierarchy, typography, and small layout issues. Use when the interface needs a fast cleanup or polish pass. — https://siinxu.github.io/ui-resource-hub/kb/skill/baseline-ui.md
-- **composition-patterns** (engineering, full-text): React composition patterns that scale. Use when refactoring components with — https://siinxu.github.io/ui-resource-hub/kb/skill/composition-patterns.md
-- **emil-design-eng** (design, full-text): This skill encodes Emil Kowalski's philosophy on UI polish, component design, animation decisions, and the invisible details that make software feel great. — https://siinxu.github.io/ui-resource-hub/kb/skill/emil-design-eng.md
-- **fastapi-templates** (engineering, digest): Create production-ready FastAPI projects with async patterns, dependency injection, and comprehensive error handling. Use when building new FastAPI applications or setting up backe — https://siinxu.github.io/ui-resource-hub/kb/skill/fastapi-templates.md
-- **frontend-design** (design, full-text): Guidance for distinctive, intentional visual design when building new UI or reshaping an existing one. Helps with aesthetic direction, typography, and making choices that don't rea — https://siinxu.github.io/ui-resource-hub/kb/skill/frontend-design.md
-- **github-actions-templates** (engineering, digest): Create production-ready GitHub Actions workflows for automated testing, building, and deploying applications. Use when setting up CI/CD with GitHub Actions, automating development  — https://siinxu.github.io/ui-resource-hub/kb/skill/github-actions-templates.md
-- **impeccable** (design, full-text): Use when the user wants to design, redesign, shape, critique, audit, polish, clarify, distill, harden, optimize, adapt, animate, colorize, extract, or otherwise improve a frontend  — https://siinxu.github.io/ui-resource-hub/kb/skill/impeccable.md
-- **javascript-testing-patterns** (engineering, digest): Implement comprehensive testing strategies using Jest, Vitest, and Testing Library for unit tests, integration tests, and end-to-end testing with mocking, fixtures, and test-driven — https://siinxu.github.io/ui-resource-hub/kb/skill/javascript-testing-patterns.md
-- **mcp-builder** (engineering, full-text): Guide for creating high-quality MCP (Model Context Protocol) servers that enable LLMs to interact with external services through well-designed tools. Use when building MCP servers  — https://siinxu.github.io/ui-resource-hub/kb/skill/mcp-builder.md
-- **nodejs-backend-patterns** (engineering, digest): Build production-ready Node.js backend services with Express/Fastify, implementing middleware patterns, error handling, authentication, database integration, and API design best pr — https://siinxu.github.io/ui-resource-hub/kb/skill/nodejs-backend-patterns.md
-- **performance** (engineering, full-text): Optimize web performance for faster loading and better user experience. Use when asked to "speed up my site", "optimize performance", "reduce load time", "fix slow loading", "impro — https://siinxu.github.io/ui-resource-hub/kb/skill/performance.md
-- **playwright-cli** (engineering, digest): Automate browser interactions, test web pages and work with Playwright tests. — https://siinxu.github.io/ui-resource-hub/kb/skill/playwright-cli.md
-- **postgresql-table-design** (engineering, digest): Use this skill when designing or reviewing a PostgreSQL-specific schema. Covers best-practices, data types, indexing, constraints, performance patterns, and advanced features — https://siinxu.github.io/ui-resource-hub/kb/skill/postgresql-table-design.md
-- **rag-implementation** (engineering, digest): Build Retrieval-Augmented Generation (RAG) systems for LLM applications with vector databases and semantic search. Use when implementing knowledge-grounded AI, building document Q& — https://siinxu.github.io/ui-resource-hub/kb/skill/rag-implementation.md
-- **react-best-practices** (engineering, full-text): React and Next.js performance optimization guidelines from Vercel Engineering. This skill should be used when writing, reviewing, or refactoring React/Next.js code to ensure optima — https://siinxu.github.io/ui-resource-hub/kb/skill/react-best-practices.md
-- **redesign-skill** (design, digest): Upgrades existing websites and apps to premium quality. Audits current design, identifies generic AI patterns, and applies high-end design standards without breaking functionality. — https://siinxu.github.io/ui-resource-hub/kb/skill/redesign-skill.md
-- **stripe-integration** (engineering, digest): Implement Stripe payment processing for robust, PCI-compliant payment flows including checkout, subscriptions, and webhooks. Use when integrating Stripe payments, building subscrip — https://siinxu.github.io/ui-resource-hub/kb/skill/stripe-integration.md
-- **taste-skill** (design, full-text): Anti-slop frontend skill for landing pages, portfolios, and redesigns. The agent reads the brief, infers the right design direction, and ships interfaces that do not look templated — https://siinxu.github.io/ui-resource-hub/kb/skill/taste-skill.md
-- **typescript-advanced-types** (engineering, digest): Master TypeScript's advanced type system including generics, conditional types, mapped types, template literals, and utility types for building type-safe applications. Use when imp — https://siinxu.github.io/ui-resource-hub/kb/skill/typescript-advanced-types.md
-- **web-design-guidelines** (design, digest): Review UI code for Web Interface Guidelines compliance. Use when asked to "review my UI", "check accessibility", "audit design", "review UX", or "check my site against best practic — https://siinxu.github.io/ui-resource-hub/kb/skill/web-design-guidelines.md
-- **web-quality-audit** (engineering, full-text): Run an evidence-led web quality audit covering performance, accessibility, SEO, best practices, and agentic browsing. Use when asked to "audit my site", "review web quality", "run  — https://siinxu.github.io/ui-resource-hub/kb/skill/web-quality-audit.md
-- **webapp-testing** (engineering, full-text): Toolkit for interacting with and testing local web applications using Playwright. Supports verifying frontend functionality, debugging UI behavior, capturing browser screenshots, a — https://siinxu.github.io/ui-resource-hub/kb/skill/webapp-testing.md
+- **accessibility** (design, full-text): Audit and improve web accessibility following WCAG 2.2 guidelines. Use when asked to "improve accessibility", "a11y audit", "WCAG compliance", "screen reader support", "keyboard na — https://ui.incidental.site/kb/skill/accessibility.md
+- **api-design-principles** (engineering, digest): Master REST and GraphQL API design principles to build intuitive, scalable, and maintainable APIs that delight developers. Use when designing new APIs, reviewing API specifications — https://ui.incidental.site/kb/skill/api-design-principles.md
+- **architecture-patterns** (engineering, digest): Implement proven backend architecture patterns including Clean Architecture, Hexagonal Architecture, and Domain-Driven Design. Use this skill when designing clean architecture for  — https://ui.incidental.site/kb/skill/architecture-patterns.md
+- **baseline-ui** (design, full-text): Quickly deslop UI code by fixing spacing, hierarchy, typography, and small layout issues. Use when the interface needs a fast cleanup or polish pass. — https://ui.incidental.site/kb/skill/baseline-ui.md
+- **composition-patterns** (engineering, full-text): React composition patterns that scale. Use when refactoring components with — https://ui.incidental.site/kb/skill/composition-patterns.md
+- **emil-design-eng** (design, full-text): This skill encodes Emil Kowalski's philosophy on UI polish, component design, animation decisions, and the invisible details that make software feel great. — https://ui.incidental.site/kb/skill/emil-design-eng.md
+- **fastapi-templates** (engineering, digest): Create production-ready FastAPI projects with async patterns, dependency injection, and comprehensive error handling. Use when building new FastAPI applications or setting up backe — https://ui.incidental.site/kb/skill/fastapi-templates.md
+- **frontend-design** (design, full-text): Guidance for distinctive, intentional visual design when building new UI or reshaping an existing one. Helps with aesthetic direction, typography, and making choices that don't rea — https://ui.incidental.site/kb/skill/frontend-design.md
+- **github-actions-templates** (engineering, digest): Create production-ready GitHub Actions workflows for automated testing, building, and deploying applications. Use when setting up CI/CD with GitHub Actions, automating development  — https://ui.incidental.site/kb/skill/github-actions-templates.md
+- **impeccable** (design, full-text): Use when the user wants to design, redesign, shape, critique, audit, polish, clarify, distill, harden, optimize, adapt, animate, colorize, extract, or otherwise improve a frontend  — https://ui.incidental.site/kb/skill/impeccable.md
+- **javascript-testing-patterns** (engineering, digest): Implement comprehensive testing strategies using Jest, Vitest, and Testing Library for unit tests, integration tests, and end-to-end testing with mocking, fixtures, and test-driven — https://ui.incidental.site/kb/skill/javascript-testing-patterns.md
+- **mcp-builder** (engineering, full-text): Guide for creating high-quality MCP (Model Context Protocol) servers that enable LLMs to interact with external services through well-designed tools. Use when building MCP servers  — https://ui.incidental.site/kb/skill/mcp-builder.md
+- **nodejs-backend-patterns** (engineering, digest): Build production-ready Node.js backend services with Express/Fastify, implementing middleware patterns, error handling, authentication, database integration, and API design best pr — https://ui.incidental.site/kb/skill/nodejs-backend-patterns.md
+- **performance** (engineering, full-text): Optimize web performance for faster loading and better user experience. Use when asked to "speed up my site", "optimize performance", "reduce load time", "fix slow loading", "impro — https://ui.incidental.site/kb/skill/performance.md
+- **playwright-cli** (engineering, digest): Automate browser interactions, test web pages and work with Playwright tests. — https://ui.incidental.site/kb/skill/playwright-cli.md
+- **postgresql-table-design** (engineering, digest): Use this skill when designing or reviewing a PostgreSQL-specific schema. Covers best-practices, data types, indexing, constraints, performance patterns, and advanced features — https://ui.incidental.site/kb/skill/postgresql-table-design.md
+- **rag-implementation** (engineering, digest): Build Retrieval-Augmented Generation (RAG) systems for LLM applications with vector databases and semantic search. Use when implementing knowledge-grounded AI, building document Q& — https://ui.incidental.site/kb/skill/rag-implementation.md
+- **react-best-practices** (engineering, full-text): React and Next.js performance optimization guidelines from Vercel Engineering. This skill should be used when writing, reviewing, or refactoring React/Next.js code to ensure optima — https://ui.incidental.site/kb/skill/react-best-practices.md
+- **redesign-skill** (design, digest): Upgrades existing websites and apps to premium quality. Audits current design, identifies generic AI patterns, and applies high-end design standards without breaking functionality. — https://ui.incidental.site/kb/skill/redesign-skill.md
+- **stripe-integration** (engineering, digest): Implement Stripe payment processing for robust, PCI-compliant payment flows including checkout, subscriptions, and webhooks. Use when integrating Stripe payments, building subscrip — https://ui.incidental.site/kb/skill/stripe-integration.md
+- **taste-skill** (design, full-text): Anti-slop frontend skill for landing pages, portfolios, and redesigns. The agent reads the brief, infers the right design direction, and ships interfaces that do not look templated — https://ui.incidental.site/kb/skill/taste-skill.md
+- **typescript-advanced-types** (engineering, digest): Master TypeScript's advanced type system including generics, conditional types, mapped types, template literals, and utility types for building type-safe applications. Use when imp — https://ui.incidental.site/kb/skill/typescript-advanced-types.md
+- **web-design-guidelines** (design, digest): Review UI code for Web Interface Guidelines compliance. Use when asked to "review my UI", "check accessibility", "audit design", "review UX", or "check my site against best practic — https://ui.incidental.site/kb/skill/web-design-guidelines.md
+- **web-quality-audit** (engineering, full-text): Run an evidence-led web quality audit covering performance, accessibility, SEO, best practices, and agentic browsing. Use when asked to "audit my site", "review web quality", "run  — https://ui.incidental.site/kb/skill/web-quality-audit.md
+- **webapp-testing** (engineering, full-text): Toolkit for interacting with and testing local web applications using Playwright. Supports verifying frontend functionality, debugging UI behavior, capturing browser screenshots, a — https://ui.incidental.site/kb/skill/webapp-testing.md
 
 # Blog notes
 
-- AI-assisted UI design: a workflow that keeps taste in the loop — https://siinxu.github.io/ui-resource-hub/kb/note/blog-ai-assisted-ui-design-workflow.md
-- Prompting for UI: write specs, not wishes — https://siinxu.github.io/ui-resource-hub/kb/note/blog-prompts-for-ui.md
-- Design-to-code with AI: map to your components, not to pixels — https://siinxu.github.io/ui-resource-hub/kb/note/blog-design-to-code-with-ai.md
-- Teaching agents taste: how design skills de-slop AI interfaces — https://siinxu.github.io/ui-resource-hub/kb/note/blog-taste-and-skills-for-agents.md
-- Component composition: why headless + copy-paste won — https://siinxu.github.io/ui-resource-hub/kb/note/blog-component-composition.md
-- Motion that feels right: purpose, duration, easing, restraint — https://siinxu.github.io/ui-resource-hub/kb/note/blog-motion-that-feels-right.md
-- Dark mode done right: tokens, elevation and contrast — https://siinxu.github.io/ui-resource-hub/kb/note/blog-dark-mode-done-right.md
-- Accessibility in AI-generated UI: the checks models skip — https://siinxu.github.io/ui-resource-hub/kb/note/blog-accessibility-in-ai-generated-ui.md
-- v0 in practice: from a prompt to shadcn code you can keep — https://siinxu.github.io/ui-resource-hub/kb/note/blog-v0-prompt-to-shadcn.md
-- Lovable and Bolt: when prompt-to-UI becomes prompt-to-app — https://siinxu.github.io/ui-resource-hub/kb/note/blog-lovable-bolt-prompt-to-app.md
-- Figma Make and the Figma agent: AI moves onto the canvas — https://siinxu.github.io/ui-resource-hub/kb/note/blog-figma-make-and-figma-agent.md
-- MagicOS: Magic Patterns bets on an infinite canvas of AI threads — https://siinxu.github.io/ui-resource-hub/kb/note/blog-magic-patterns-magicos.md
-- Prompt-to-UI tools compared: v0, Lovable, Bolt, Figma Make, Magic Patterns — https://siinxu.github.io/ui-resource-hub/kb/note/blog-prompt-to-ui-tools-compared.md
-- Aceternity UI deep dive: spectacle, used sparingly — https://siinxu.github.io/ui-resource-hub/kb/note/blog-aceternity-ui-deep-dive.md
-- Magic UI deep dive: animated components that install like shadcn — https://siinxu.github.io/ui-resource-hub/kb/note/blog-magic-ui-deep-dive.md
-- Cult UI deep dive: tactile components with personality — https://siinxu.github.io/ui-resource-hub/kb/note/blog-cult-ui-deep-dive.md
-- shadcn blocks and registries: page sections as source code — https://siinxu.github.io/ui-resource-hub/kb/note/blog-shadcn-blocks-deep-dive.md
-- Typography for AI-generated UI: the fastest way to look less generic — https://siinxu.github.io/ui-resource-hub/kb/note/blog-typography-for-ai-generated-ui.md
-- OKLCH colour systems: palettes that survive dark mode — https://siinxu.github.io/ui-resource-hub/kb/note/blog-oklch-color-and-dark-mode.md
-- Landing page teardown: what Linear and Vercel get right — https://siinxu.github.io/ui-resource-hub/kb/note/blog-landing-page-teardown-linear-vercel.md
-- Dashboard patterns that hold up: from KPI strip to drill-down table — https://siinxu.github.io/ui-resource-hub/kb/note/blog-dashboard-design-patterns.md
-- Design tokens for agents: the file that makes AI output on-brand — https://siinxu.github.io/ui-resource-hub/kb/note/blog-design-tokens-for-agents.md
-- Design skills for Claude and Cursor: SKILL.md, rules and AGENTS.md — https://siinxu.github.io/ui-resource-hub/kb/note/blog-claude-cursor-design-skills.md
-- Weekly roundup, 14 Oct 2026: guideline files go mainstream — https://siinxu.github.io/ui-resource-hub/kb/note/blog-weekly-roundup-2026-w42.md
-- Tutorial: have an agent build a landing page using UI Hub as context — https://siinxu.github.io/ui-resource-hub/kb/note/blog-tutorial-agent-builds-landing-with-ui-hub.md
-- Claude Design everywhere: out of beta, into every chat — https://siinxu.github.io/ui-resource-hub/kb/note/blog-claude-design-everywhere.md
-- Figma code layers and Specs: the canvas becomes the shared context again — https://siinxu.github.io/ui-resource-hub/kb/note/blog-figma-code-layers-and-specs.md
-- shadcn Trace and AI Elements: one shape for every step an agent takes — https://siinxu.github.io/ui-resource-hub/kb/note/blog-shadcn-trace-and-ai-elements.md
-- Lovart 2.0 and Arti: design agents learn to remember, run and review — https://siinxu.github.io/ui-resource-hub/kb/note/blog-lovart-arti-design-agent-memory.md
-- Layers, brand kits and JSON: three ways AI visuals stop looking generic — https://siinxu.github.io/ui-resource-hub/kb/note/blog-layers-brand-kits-json-ai-visuals.md
-- Lint the agent: keeping AI-written UI on your design system — https://siinxu.github.io/ui-resource-hub/kb/note/blog-lint-agents-onto-your-design-system.md
+- AI-assisted UI design: a workflow that keeps taste in the loop — https://ui.incidental.site/kb/note/blog-ai-assisted-ui-design-workflow.md
+- Prompting for UI: write specs, not wishes — https://ui.incidental.site/kb/note/blog-prompts-for-ui.md
+- Design-to-code with AI: map to your components, not to pixels — https://ui.incidental.site/kb/note/blog-design-to-code-with-ai.md
+- Teaching agents taste: how design skills de-slop AI interfaces — https://ui.incidental.site/kb/note/blog-taste-and-skills-for-agents.md
+- Component composition: why headless + copy-paste won — https://ui.incidental.site/kb/note/blog-component-composition.md
+- Motion that feels right: purpose, duration, easing, restraint — https://ui.incidental.site/kb/note/blog-motion-that-feels-right.md
+- Dark mode done right: tokens, elevation and contrast — https://ui.incidental.site/kb/note/blog-dark-mode-done-right.md
+- Accessibility in AI-generated UI: the checks models skip — https://ui.incidental.site/kb/note/blog-accessibility-in-ai-generated-ui.md
+- v0 in practice: from a prompt to shadcn code you can keep — https://ui.incidental.site/kb/note/blog-v0-prompt-to-shadcn.md
+- Lovable and Bolt: when prompt-to-UI becomes prompt-to-app — https://ui.incidental.site/kb/note/blog-lovable-bolt-prompt-to-app.md
+- Figma Make and the Figma agent: AI moves onto the canvas — https://ui.incidental.site/kb/note/blog-figma-make-and-figma-agent.md
+- MagicOS: Magic Patterns bets on an infinite canvas of AI threads — https://ui.incidental.site/kb/note/blog-magic-patterns-magicos.md
+- Prompt-to-UI tools compared: v0, Lovable, Bolt, Figma Make, Magic Patterns — https://ui.incidental.site/kb/note/blog-prompt-to-ui-tools-compared.md
+- Aceternity UI deep dive: spectacle, used sparingly — https://ui.incidental.site/kb/note/blog-aceternity-ui-deep-dive.md
+- Magic UI deep dive: animated components that install like shadcn — https://ui.incidental.site/kb/note/blog-magic-ui-deep-dive.md
+- Cult UI deep dive: tactile components with personality — https://ui.incidental.site/kb/note/blog-cult-ui-deep-dive.md
+- shadcn blocks and registries: page sections as source code — https://ui.incidental.site/kb/note/blog-shadcn-blocks-deep-dive.md
+- Typography for AI-generated UI: the fastest way to look less generic — https://ui.incidental.site/kb/note/blog-typography-for-ai-generated-ui.md
+- OKLCH colour systems: palettes that survive dark mode — https://ui.incidental.site/kb/note/blog-oklch-color-and-dark-mode.md
+- Landing page teardown: what Linear and Vercel get right — https://ui.incidental.site/kb/note/blog-landing-page-teardown-linear-vercel.md
+- Dashboard patterns that hold up: from KPI strip to drill-down table — https://ui.incidental.site/kb/note/blog-dashboard-design-patterns.md
+- Design tokens for agents: the file that makes AI output on-brand — https://ui.incidental.site/kb/note/blog-design-tokens-for-agents.md
+- Design skills for Claude and Cursor: SKILL.md, rules and AGENTS.md — https://ui.incidental.site/kb/note/blog-claude-cursor-design-skills.md
+- Weekly roundup, 14 Oct 2026: guideline files go mainstream — https://ui.incidental.site/kb/note/blog-weekly-roundup-2026-w42.md
+- Tutorial: have an agent build a landing page using UI Hub as context — https://ui.incidental.site/kb/note/blog-tutorial-agent-builds-landing-with-ui-hub.md
+- Claude Design everywhere: out of beta, into every chat — https://ui.incidental.site/kb/note/blog-claude-design-everywhere.md
+- Figma code layers and Specs: the canvas becomes the shared context again — https://ui.incidental.site/kb/note/blog-figma-code-layers-and-specs.md
+- shadcn Trace and AI Elements: one shape for every step an agent takes — https://ui.incidental.site/kb/note/blog-shadcn-trace-and-ai-elements.md
+- Lovart 2.0 and Arti: design agents learn to remember, run and review — https://ui.incidental.site/kb/note/blog-lovart-arti-design-agent-memory.md
+- Layers, brand kits and JSON: three ways AI visuals stop looking generic — https://ui.incidental.site/kb/note/blog-layers-brand-kits-json-ai-visuals.md
+- Lint the agent: keeping AI-written UI on your design system — https://ui.incidental.site/kb/note/blog-lint-agents-onto-your-design-system.md

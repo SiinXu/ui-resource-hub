@@ -2,7 +2,7 @@
 
 > v0 is strongest when you treat it as a shadcn/Tailwind code generator, not a design oracle. Brief it like an engineer, then pull the code into your repo.
 
-Blog post: <https://siinxu.github.io/ui-resource-hub/blog/v0-prompt-to-shadcn/>
+Blog post: <https://ui.incidental.site/blog/v0-prompt-to-shadcn/>
 
 v0 by Vercel generates React components built on shadcn/ui and Tailwind CSS. That stack choice is the whole point: the output is ordinary, readable code using primitives many teams already ship, so the result can leave the tool. Treat v0 as a fast pair-programmer for UI, and judge it by whether you would merge its code.
 

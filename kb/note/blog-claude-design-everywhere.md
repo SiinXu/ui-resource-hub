@@ -2,7 +2,7 @@
 
 > Anthropic took Docs, Slides and Design out of beta on every plan, launched Dashboards and Motion in beta, and will close the standalone Design site on 14 Dec 2026. For UI builders the practical move is to migrate the design system now.
 
-Blog post: <https://siinxu.github.io/ui-resource-hub/blog/claude-design-everywhere/>
+Blog post: <https://ui.incidental.site/blog/claude-design-everywhere/>
 
 On 8 October 2026 Anthropic published a product update that matters more for design-and-code workflows than the headline tools might suggest. Claude Dashboards and Claude Motion entered beta; Claude Docs, Slides and Design left beta and are available on every Claude plan, including Free. The same post says the standalone Claude Design site at claude.ai/design stays open only until 14 December 2026, after which design work lives inside ordinary Claude conversations, Claude Code and the Artifacts tab.
 

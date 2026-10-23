@@ -2,7 +2,7 @@
 
 > Six steps from an empty folder to a verified page: load AGENTS.md, search the encyclopedia, pick components, load skills, build, verify in a browser.
 
-Blog post: <https://siinxu.github.io/ui-resource-hub/blog/tutorial-agent-builds-landing-with-ui-hub/>
+Blog post: <https://ui.incidental.site/blog/tutorial-agent-builds-landing-with-ui-hub/>
 
 UI Hub is built to be read by agents: a JSON API, a design encyclopedia with raw Markdown per entry, and an AGENTS.md. This walkthrough shows the loop we use ourselves. Paste the prompts into Claude Code, Cursor, Codex or any agent that can fetch URLs.
 

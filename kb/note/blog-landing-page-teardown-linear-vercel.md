@@ -2,7 +2,7 @@
 
 > Two widely copied developer-tool homepages, read as a list of decisions: one message, product as hero image, dark restraint, and proof placed right after the promise.
 
-Blog post: <https://siinxu.github.io/ui-resource-hub/blog/landing-page-teardown-linear-vercel/>
+Blog post: <https://ui.incidental.site/blog/landing-page-teardown-linear-vercel/>
 
 Linear's and Vercel's homepages are among the most imitated in software. Copying their gradients misses the point; what is worth copying is a set of decisions you can see by reading the pages carefully. Screenshots below were captured on 14 October 2026; both sites change often.
 

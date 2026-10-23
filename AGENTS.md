@@ -1,11 +1,11 @@
 # UI Hub — guide for AI agents
 
-Data updated 2026-10-22 18:09 UTC. Endpoints: `https://siinxu.github.io/ui-resource-hub/api/resources.json` (items), `https://siinxu.github.io/ui-resource-hub/api/skills.json` (skills + workflow), `https://siinxu.github.io/ui-resource-hub/llms.txt`.
+Data updated 2026-10-22 18:09 UTC. Endpoints: `https://ui.incidental.site/api/resources.json` (items), `https://ui.incidental.site/api/skills.json` (skills + workflow), `https://ui.incidental.site/llms.txt`.
 
 ## One-line prompt
-EN: Use UI Hub (https://siinxu.github.io/ui-resource-hub/) as your design source. First read https://siinxu.github.io/ui-resource-hub/AGENTS.md, then fetch https://siinxu.github.io/ui-resource-hub/api/resources.json and filter by ct (component kind), vs (visual style) and pricing=free to pick ONE open-source library and a visual style; lock tokens (font, spacing, radius, one accent, light+dark) before building. Load skills in this order from https://siinxu.github.io/ui-resource-hub/api/skills.json: frontend-design or taste-skill → emil-design-eng → impeccable + baseline-ui + web-design-guidelines + accessibility. Verify in a browser (light/dark, 375px, keyboard, reduced motion) and cite every resource you used.
+EN: Use UI Hub (https://ui.incidental.site/) as your design source. First read https://ui.incidental.site/AGENTS.md, then fetch https://ui.incidental.site/api/resources.json and filter by ct (component kind), vs (visual style) and pricing=free to pick ONE open-source library and a visual style; lock tokens (font, spacing, radius, one accent, light+dark) before building. Load skills in this order from https://ui.incidental.site/api/skills.json: frontend-design or taste-skill → emil-design-eng → impeccable + baseline-ui + web-design-guidelines + accessibility. Verify in a browser (light/dark, 375px, keyboard, reduced motion) and cite every resource you used.
 
-中文：请把 UI Hub（https://siinxu.github.io/ui-resource-hub/）当作设计资料库。先读 https://siinxu.github.io/ui-resource-hub/AGENTS.md，再获取 https://siinxu.github.io/ui-resource-hub/api/resources.json，按 ct（组件类型）、vs（视觉风格）和 pricing=free 筛选，只选一个开源组件库和一种视觉风格；动手前先把字体、间距、圆角、唯一强调色和亮/暗两套 token 定下来。按顺序加载 https://siinxu.github.io/ui-resource-hub/api/skills.json 里的 skill：frontend-design 或 taste-skill → emil-design-eng → impeccable + baseline-ui + web-design-guidelines + accessibility。最后在浏览器里验证（亮/暗、375px 手机、键盘、减少动效），并列出用到的每个资源。
+中文：请把 UI Hub（https://ui.incidental.site/）当作设计资料库。先读 https://ui.incidental.site/AGENTS.md，再获取 https://ui.incidental.site/api/resources.json，按 ct（组件类型）、vs（视觉风格）和 pricing=free 筛选，只选一个开源组件库和一种视觉风格；动手前先把字体、间距、圆角、唯一强调色和亮/暗两套 token 定下来。按顺序加载 https://ui.incidental.site/api/skills.json 里的 skill：frontend-design 或 taste-skill → emil-design-eng → impeccable + baseline-ui + web-design-guidelines + accessibility。最后在浏览器里验证（亮/暗、375px 手机、键盘、减少动效），并列出用到的每个资源。
 
 ## What this is for
 - **Pick a component library** — type=library, filter by framework tag (React/Vue/Svelte), licence, pricing=free.
@@ -41,46 +41,46 @@ curl -s {BASE}kb/spec/motion.md
 ## Filter snippets
 ### Free React libraries with dialogs
 ```bash
-curl -s https://siinxu.github.io/ui-resource-hub/api/resources.json | jq '.items[] | select(.type=="library" and .pricing=="free" and (.ct//[]|index("dialog")) and (.tags|index("React"))) | {name,url}'
+curl -s https://ui.incidental.site/api/resources.json | jq '.items[] | select(.type=="library" and .pricing=="free" and (.ct//[]|index("dialog")) and (.tags|index("React"))) | {name,url}'
 ```
 
 ### Dark-tech style demos for cards
 ```bash
-curl -s https://siinxu.github.io/ui-resource-hub/api/resources.json | jq '[.items[] | select(.type=="style" and (.vs//[]|index("dark-tech")) and (.ct|index("card")))] | .[:10] | map({name,libName,page})'
+curl -s https://ui.incidental.site/api/resources.json | jq '[.items[] | select(.type=="style" and (.vs//[]|index("dark-tech")) and (.ct|index("card")))] | .[:10] | map({name,libName,page})'
 ```
 
 ### Count items per visual style
 ```bash
-curl -s https://siinxu.github.io/ui-resource-hub/api/resources.json | jq '[.items[].vs[]?] | group_by(.) | map({(.[0]):length}) | add'
+curl -s https://ui.incidental.site/api/resources.json | jq '[.items[].vs[]?] | group_by(.) | map({(.[0]):length}) | add'
 ```
 
 ### fetch (JS): motion effects, free
 ```bash
-const r = await fetch('https://siinxu.github.io/ui-resource-hub/api/resources.json').then(r => r.json());
+const r = await fetch('https://ui.incidental.site/api/resources.json').then(r => r.json());
 const picks = r.items.filter(i => ['effect','library'].includes(i.type) && i.vs?.includes('motion') && i.pricing === 'free');
 ```
 
 ### New this week
 ```bash
-curl -s https://siinxu.github.io/ui-resource-hub/api/resources.json | jq --arg d "$(date -u -d '7 days ago' +%F)" '.items[] | select(.added and .added >= $d) | {name,url,added}'
+curl -s https://ui.incidental.site/api/resources.json | jq --arg d "$(date -u -d '7 days ago' +%F)" '.items[] | select(.added and .added >= $d) | {name,url,added}'
 ```
 
 ## Worked examples
 ### Build a dark SaaS pricing page
-- **Filter:** curl -s https://siinxu.github.io/ui-resource-hub/api/resources.json | jq '.items[] | select(.type=="library" and .pricing=="free" and (.tags|index("React")) and ((.ct//[]) | index("card") or index("button") or index("layout"))) | {name,url}'
+- **Filter:** curl -s https://ui.incidental.site/api/resources.json | jq '.items[] | select(.type=="library" and .pricing=="free" and (.tags|index("React")) and ((.ct//[]) | index("card") or index("button") or index("layout"))) | {name,url}'
 - **Choose:** shadcn/ui (base components); shadcn/ui Blocks (pricing section); Radix Primitives (underneath); Magic UI Number Ticker (the one accent moment)
 - **Tokens:** bg #06070b, surface #10131a, ink #f3f5fb, accent #67e8f9, radius 12px, font Geist 14/20, numbers tabular-nums
 - **Skills order:** taste-skill (set the direction), then emil-design-eng (toggle and hover motion, 200ms or less, ease-out), then impeccable + baseline-ui + accessibility (final audit)
 - **Verify:** Monthly / annual toggle works with the keyboard; Visible focus ring on every CTA; Muted text reaches 4.5:1 contrast; At 375px the tiers stack vertically; Reduced motion turns the ticker off; Light theme still looks right
 
 ### Add a fancy but restrained landing hero
-- **Filter:** curl -s https://siinxu.github.io/ui-resource-hub/api/resources.json | jq '.items[] | select((.type=="effect" or .type=="library") and .pricing=="free" and ((.vs//[])|index("motion")) and ((.ct//[])|index("background"))) | {name,url}'
+- **Filter:** curl -s https://ui.incidental.site/api/resources.json | jq '.items[] | select((.type=="effect" or .type=="library") and .pricing=="free" and ((.vs//[])|index("motion")) and ((.ct//[])|index("background"))) | {name,url}'
 - **Choose:** Aceternity Spotlight (pick one of these two); Magic UI Beams (or this one); Motion (entrance only)
 - **Skills order:** frontend-design (set the direction), then emil-design-eng (motion polish), then web-design-guidelines + performance (audit)
 - **Verify:** LCP under 2.5s; Effect pauses when reduced motion is on; Text stays readable over the effect in both themes
 
 ### Audit an existing admin dashboard
-- **Filter:** curl -s https://siinxu.github.io/ui-resource-hub/api/resources.json | jq '[.items[] | select(.type=="style" and ((.vs//[])|index("enterprise")) and ((.ct//[]) | index("table") or index("nav") or index("form")))] | .[:20] | map({name,libName,page})'
+- **Filter:** curl -s https://ui.incidental.site/api/resources.json | jq '[.items[] | select(.type=="style" and ((.vs//[])|index("enterprise")) and ((.ct//[]) | index("table") or index("nav") or index("form")))] | .[:20] | map({name,libName,page})'
 - **Skills order:** redesign-skill (find the problems), then baseline-ui (fix the basics), then accessibility (accessibility pass), then web-quality-audit (final score)
 - **Verify:** Table header stays sticky; Rows can be focused with the keyboard; Empty, loading and error states exist; Click targets are at least 24px; Dark mode matches light mode
 
@@ -132,7 +132,7 @@ curl -s https://siinxu.github.io/ui-resource-hub/api/resources.json | jq --arg d
 
 ## FAQ
 - **What is UI Hub?** A free, curated directory of 4867 public UI resources: 197 component libraries, 1989 component style demos with light/dark screenshots, 70 design skills for AI agents, plus effects, templates, specs and tutorials. It links to original sites and never hosts paid source code.
-- **How do I find a component in a given style?** Load https://siinxu.github.io/ui-resource-hub/api/resources.json and filter by ct (component kind, e.g. "dialog") and vs (visual style, e.g. "minimal" or "motion"). type="style" entries are concrete component demos with a libName and page URL; type="library" entries are whole libraries with install info on the site.
-- **Which skills should an agent use for good UI?** One direction skill (frontend-design or taste-skill), emil-design-eng for motion and interaction polish, then impeccable, baseline-ui, web-design-guidelines and accessibility as an audit pass. See https://siinxu.github.io/ui-resource-hub/api/skills.json.
+- **How do I find a component in a given style?** Load https://ui.incidental.site/api/resources.json and filter by ct (component kind, e.g. "dialog") and vs (visual style, e.g. "minimal" or "motion"). type="style" entries are concrete component demos with a libName and page URL; type="library" entries are whole libraries with install info on the site.
+- **Which skills should an agent use for good UI?** One direction skill (frontend-design or taste-skill), emil-design-eng for motion and interaction polish, then impeccable, baseline-ui, web-design-guidelines and accessibility as an audit pass. See https://ui.incidental.site/api/skills.json.
 - **Can I copy the code?** Open-source libraries can be used under their own licenses (MIT, Apache-2.0 etc.); the card shows the original link. Paid tiers (marked paid/freemium) must be bought from the original vendor.
 - **How often is it updated?** Daily via a GitHub Actions job that adds new UI repositories and tools from GitHub, awesome-shadcn-ui and Hacker News. Nothing is deleted. Last update: 2026-10-22 18:09 UTC.

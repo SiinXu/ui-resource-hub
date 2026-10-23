@@ -6,7 +6,7 @@ import os, re, json, glob
 HAN = re.compile(r'[\u4e00-\u9fff\u3400-\u4dbf]')
 from collections import Counter
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-BASE = 'https://siinxu.github.io/ui-resource-hub/'
+BASE = 'https://ui.incidental.site/'   # canonical host; the GitHub Pages mirror (siinxu.github.io/ui-resource-hub/) serves identical pages whose canonical/hreflang/og/sitemap now point here (2026-10-22)
 LC = ['zh-Hans','zh-Hant','en','ja','ko','ms','vi','fr','es','de']
 D = json.load(open(os.path.join(ROOT, 'data.json'), encoding='utf-8'))
 ITEMS = D['items']; tc = Counter(i['type'] for i in ITEMS); N = len(ITEMS); LIB = tc.get('library', 0); STY = tc.get('style', 0)

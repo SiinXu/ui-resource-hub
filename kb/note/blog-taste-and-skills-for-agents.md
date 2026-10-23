@@ -2,7 +2,7 @@
 
 > Skills like frontend-design, taste-skill and impeccable package opinions as files agents load on demand. Here is how to combine them.
 
-Blog post: <https://siinxu.github.io/ui-resource-hub/blog/taste-and-skills-for-agents/>
+Blog post: <https://ui.incidental.site/blog/taste-and-skills-for-agents/>
 
 An agent skill is a folder with a `SKILL.md` file that the agent reads when a task matches the skill's description. For design work this matters more than it sounds: opinions about spacing, motion and what never to ship survive between sessions, instead of living in one long prompt you paste every morning. This post explains how skills load, which kinds of design skill are worth having, how to combine them without conflicts, and how to write a small project skill of your own.
 

@@ -6,7 +6,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, 'blog_src'))
 from posts import POSTS
 from images import IMAGES
-BASE = 'https://siinxu.github.io/ui-resource-hub/'
+BASE = 'https://ui.incidental.site/'   # canonical host; the GitHub Pages mirror (siinxu.github.io/ui-resource-hub/) serves identical pages whose canonical/hreflang/og/sitemap now point here (2026-10-22)
 LANGS = [('zh-Hans','简体中文','zh'),('zh-Hant','繁體中文','zht'),('en','English','en'),('ja','日本語','ja'),('ko','한국어','ko'),('ms','Bahasa Melayu','ms'),('vi','Tiếng Việt','vi'),('fr','Français','fr'),('es','Español','es'),('de','Deutsch','de')]
 sys.path.insert(0, os.path.join(ROOT, 'scripts'))
 from content_filter import purge as _policy_purge

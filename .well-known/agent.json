@@ -1,15 +1,15 @@
 {
  "name": "UI Hub",
  "description": "Curated directory of UI component libraries, component style demos, design skills and AI design techniques.",
- "url": "https://siinxu.github.io/ui-resource-hub/",
- "documentation": "https://siinxu.github.io/ui-resource-hub/agents/",
- "llms_txt": "https://siinxu.github.io/ui-resource-hub/llms.txt",
- "llms_full_txt": "https://siinxu.github.io/ui-resource-hub/llms-full.txt",
- "agents_md": "https://siinxu.github.io/ui-resource-hub/AGENTS.md",
+ "url": "https://ui.incidental.site/",
+ "documentation": "https://ui.incidental.site/agents/",
+ "llms_txt": "https://ui.incidental.site/llms.txt",
+ "llms_full_txt": "https://ui.incidental.site/llms-full.txt",
+ "agents_md": "https://ui.incidental.site/AGENTS.md",
  "endpoints": {
-  "resources": "https://siinxu.github.io/ui-resource-hub/api/resources.json",
-  "skills": "https://siinxu.github.io/ui-resource-hub/api/skills.json",
-  "sitemap": "https://siinxu.github.io/ui-resource-hub/sitemap.xml"
+  "resources": "https://ui.incidental.site/api/resources.json",
+  "skills": "https://ui.incidental.site/api/skills.json",
+  "sitemap": "https://ui.incidental.site/sitemap.xml"
  },
  "updated": "2026-10-22 18:09 UTC",
  "auth": "none",

@@ -2,7 +2,7 @@
 
 > On 22 October the open-source onsystem went public, joining shadcn’s agent-first linter and Figma’s new Guidelines and system check. The shared idea: stop asking agents to follow your design system and start checking every edit. What the benchmark shows, and a setup checklist.
 
-Blog post: <https://siinxu.github.io/ui-resource-hub/blog/lint-agents-onto-your-design-system/>
+Blog post: <https://ui.incidental.site/blog/lint-agents-onto-your-design-system/>
 
 Ask a coding agent for a settings card in a shadcn/ui project and you often get something that type-checks and still looks wrong: a hex red instead of the destructive token, `p-[13px]` instead of the spacing scale, a native `<button>` with hand-rolled classes next to your real Button, and a `variant="danger"` your Button has never heard of. The agent is not careless. It writes from its training data, and it cannot see your Storybook. This week the tooling around that gap got noticeably more serious.
 
