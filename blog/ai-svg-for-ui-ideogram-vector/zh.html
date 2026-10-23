@@ -1,0 +1,31 @@
+<p>大多数 AI 图片进入界面时都是一张扁平的 PNG：放首屏照片没问题，但要做一个跟随主题色变化的图标、一张在 3 倍屏上也要清晰的空状态插画，或者一个要缩放几十次的 Logo，就派不上用场。10 月 22 日，Ideogram 发布 Vector 1.0，这是它第一个直接输出 SVG、而不是像素的模型。在它之前，Recraft V4.1 和 QuiverAI 的 Arrow 2 已经能生成矢量图。三个像样的选择摆在一起，对界面设计来说，问题已经不是 AI 能不能画矢量，而是怎样才能让它真正上线。</p><figure><img src="../../blog/img/ai-svg-for-ui-ideogram-vector-1.webp" alt="Ideogram Vector 产品页：从提示词或图片生成可直接使用的 SVG" loading="lazy" decoding="async" width="1280" height="800"><figcaption>Ideogram Vector 产品页：从提示词或图片生成可直接使用的 SVG · 截图：Ideogram（<a href="https://ideogram.ai/models/vector/" rel="noopener" target="_blank">ideogram.ai</a>），2026-10-23 截取，版权归原站所有</figcaption></figure>
+<h2>发布了什么，三款工具实际给出什么</h2>
+<ul><li><strong>Ideogram Vector 1.0（10 月 22 日）。</strong>一个模型做两件事：文生矢量，可附参考图，有三档质量和种子；图转矢量，可描摹 50 MB 以内的 JPEG、PNG 或 WebP。可以在 Ideogram 应用、API 里用，首日也上了 fal 等合作平台。Ideogram 主打 Logo、字标、印刷品、标签、贴纸和插画，并称每个形状都是独立元素，可以单独改色、移动或缩放。产品页上的 API 价格按质量为每张 SVG 0.13 到 0.20 美元（高质量加参考图 0.32 美元），图转矢量每张 0.10 美元。有一点要留意：按早期对 API 文档的解读，描摹接口的图层分组选项标为「暂不可用」，所以描出来的是一堆路径，而不是命名好的分组。它的两种模式在细节和形状数量之间取舍：默认模式保留细节，简洁模式画得更少、更干净。</li>
+<li><strong>Recraft V4.1。</strong>可根据提示词为 Logo、图标和插画生成 SVG，也能把位图转成矢量；Recraft Studio 里有矢量编辑器，可以直接在画布上移动锚点、加切线、改颜色。文档注明，矢量生成类型不支持参考图。</li>
+<li><strong>QuiverAI Arrow 2。</strong>已正式可用，一个模型同时做 SVG 生成、矢量化、编辑和动画，按 token 计价（每百万输入 4 美元、输出 20 美元），更强的 Arrow 2 Telos 费率高 50%。一份第三方使用指南建议：提示词里写明十六进制颜色和统一描边粗细，说明要在 32 px 下仍能看清，并排除渐变、文字和阴影；也提到它不适合照片类内容。</li></ul><figure><img src="../../blog/img/ai-svg-for-ui-ideogram-vector-2.webp" alt="流程：带网格和 Token 的提示词，整套一起生成，用 SVGO 清理，颜色交给 currentColor 并设置 ARIA 角色" loading="lazy" decoding="async" width="1200" height="675"><figcaption>流程：带网格和 Token 的提示词，整套一起生成，用 SVGO 清理，颜色交给 currentColor 并设置 ARIA 角色 · 示意图：UI Hub 原创，CC BY 4.0</figcaption></figure>
+<p>同一天，Canva 发布了第一个自研图像模型 Craft：先写出画面构图的规划，再渲染，并借助这份规划把图片转成可编辑图层。它输出的仍是像素，但方向一致：生成的视觉开始以「可编辑的结构」交到你手上，而不是一张只能重画的图。</p>
+<h2>我们的看法</h2>
+<p>对界面来说，可编辑是必要条件，但不够。产品里能用的图标是一份契约：固定网格（通常 24×24），整套统一的描边粗细，颜色取自周围文字以便跟随亮暗主题，文件小，并且对读屏软件有明确的角色。生成器优化的是「全尺寸下好看的一张图」，从发布信息看，它们并没有瞄准这些规则。所以要把它们的产出当成一位没见过你图标库的插画师交来的好初稿。收益最大的是中间地带：空状态、引导页插画、营销插画和 Logo 探索，在这些地方，能按 Token 改色的矢量图远胜一张改不了的 PNG。至于核心图标集，持续维护的开源图标库仍是更稳的默认选择，AI 用来补它没有的那几个。</p>
+<p>两点实际提醒。描摹出来的图可能带着成千上万个锚点，既拖慢页面，也让手动修改很痛苦；界面素材优先用简洁模式，或者干脆重新生成。另外，把生成的标志放进产品之前，先确认你所用套餐的授权和输出隐私条款；Ideogram 文档说输出默认私有，但各工具、各档位的条款并不相同。</p>
+<h2>清单：让 AI 生成的 SVG 能放进界面</h2>
+<ol><li><strong>按系统写提示词，而不是按画面。</strong>写明网格尺寸、描边粗细、端点样式、填充与否、Token 里的准确十六进制色值，以及最小要在多大尺寸下看清。图标要禁止渐变、文字和阴影。</li>
+<li><strong>整套一起生成。</strong>在一条提示里要多个图标，或复用同一个种子和参考图，让粗细和圆角一致。粗细不统一是用户最先注意到的问题。</li>
+<li><strong>界面素材优先生成，少用描摹。</strong>只有必须保留现有画稿时才描摹，并选仍然好看的最简模式。</li>
+<li><strong>清理文件。</strong>用 SVGO 之类的优化器跑一遍，保留 <code>viewBox</code>，删掉编辑器元数据，对比清理前后的路径数。</li>
+<li><strong>把颜色交给 CSS。</strong>单色图标把写死的 fill 和 stroke 换成 <code>currentColor</code>，让它在两套主题里都跟随文字颜色；多色插画把每种颜色映射到 Token 里的 CSS 变量。</li>
+<li><strong>给它正确的角色。</strong>旁边有文字标签的装饰性图标加 <code>aria-hidden="true"</code>；单独表达含义的图形加 <code>role="img"</code> 和 <code>&lt;title&gt;</code>，或给所在按钮一个无障碍名称。</li>
+<li><strong>小尺寸、双主题都看一遍。</strong>合并前在亮色和暗色背景上，分别以 16 px 和 24 px 查看。只有放大才好看的，是插画，不是图标。</li></ol>
+<pre><code># 1. 按界面图标写提示词，而不是海报
+"Six 24 px line icons for a finance app: wallet, card,
+ receipt, chart, bell, lock. 2 px stroke, round caps,
+ no fill, one colour #111827, no text, no gradients.
+ Each must read at 16 px."
+
+# 2. 清理文件
+npx svgo wallet.svg -o wallet.min.svg
+
+# 3. 让 CSS 管颜色和角色
+&lt;svg viewBox="0 0 24 24" fill="none"
+     stroke="currentColor" aria-hidden="true"&gt;…&lt;/svg&gt;</code></pre>
+<figure><img src="../../blog/img/ai-svg-for-ui-ideogram-vector-3.webp" alt="QuiverAI Arrow 2 模型页：SVG 生成、编辑、动画与矢量化" loading="lazy" decoding="async" width="1280" height="800"><figcaption>QuiverAI Arrow 2 模型页：SVG 生成、编辑、动画与矢量化 · 截图：QuiverAI（<a href="https://quiver.ai/models/arrow-2/" rel="noopener" target="_blank">quiver.ai</a>），2026-10-23 截取，版权归原站所有</figcaption></figure><h2>UI Hub 能帮什么</h2>
+<p>生成的矢量图要先有 Token 才对得上。配色部分可以看<a href="../design-tokens-for-agents/">给智能体的设计 Token</a>和 <a href="../oklch-color-and-dark-mode/">OKLCH 配色与暗色模式</a>；<a href="../layers-brand-kits-json-ai-visuals/">图层、品牌包与 JSON</a> 讲的是位图领域同样的「可编辑而非扁平」转向。无障碍名称和角色，参见 <a href="../accessibility-in-ai-generated-ui/">AI 生成界面的无障碍</a>。</p>
