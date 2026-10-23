@@ -1,6 +1,6 @@
 {
  "generated": "2026-10-23",
- "count": 4882,
+ "count": 4891,
  "items": [
   {
    "id": "ued-figma-mcp-guide",
@@ -184126,6 +184126,452 @@
    },
    "pub": "2026-10-23",
    "added": "2026-10-23"
+  },
+  {
+   "id": "rd-6xh77zq-doodle-app-icon-maker",
+   "name": "Doodle Maker",
+   "url": "https://x.com/samdape/status/2113665319877374388",
+   "note": "A mobile app lets users draw a freehand doodle that you can hear play, with color switching and undo controls visible throughout.",
+   "noteEn": "A mobile app lets users draw a freehand doodle that you can hear play, with color switching and undo controls visible throughout.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@samdape",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "playful"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/6xh77zq-doodle-app-icon-maker",
+   "rdkind": "Design",
+   "rdcat": "Interface",
+   "rdstyle": [
+    "Playful",
+    "Light"
+   ],
+   "author": {
+    "name": "sam",
+    "handle": "@samdape",
+    "url": "https://x.com/samdape"
+   },
+   "x_post": "https://x.com/samdape/status/2113665319877374388",
+   "xsrc": {
+    "post": "https://x.com/samdape/status/2113665319877374388",
+    "author": "@samdape",
+    "likes": 64,
+    "bookmarks": 27,
+    "reposts": 2,
+    "impressions": 2225,
+    "date": "2026-10-23"
+   },
+   "pub": "2026-10-23",
+   "added": "2026-10-23"
+  },
+  {
+   "id": "rd-r4nkk3e-ai-simulation-dot-visuals",
+   "name": "AI Simulation Dot Visuals",
+   "url": "https://x.com/yashisinghh/status/2113540944704180619",
+   "note": "Four concept motion studies rendering AI and computing subjects as animated dot-matrix forms including a neural structure, terrain peak, spinning disc symbol, and rotating particle swirl.",
+   "noteEn": "Four concept motion studies rendering AI and computing subjects as animated dot-matrix forms including a neural structure, terrain peak, spinning disc symbol, and rotating particle swirl.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@yashisinghh",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "motion"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/r4nkk3e-ai-simulation-dot-visuals",
+   "rdkind": "Design",
+   "rdcat": "Motion",
+   "rdstyle": [
+    "Geometric",
+    "Abstract",
+    "Experimental",
+    "Dark",
+    "Vibrant"
+   ],
+   "author": {
+    "name": "Yashi Singh",
+    "handle": "@yashisinghh",
+    "url": "https://x.com/yashisinghh"
+   },
+   "x_post": "https://x.com/yashisinghh/status/2113540944704180619",
+   "xsrc": {
+    "post": "https://x.com/yashisinghh/status/2113540944704180619",
+    "author": "@yashisinghh",
+    "likes": 270,
+    "bookmarks": 128,
+    "reposts": 9,
+    "impressions": 4628,
+    "date": "2026-10-23"
+   },
+   "pub": "2026-10-23",
+   "added": "2026-10-23"
+  },
+  {
+   "id": "rd-sov8eea-art-input-shape-studies",
+   "name": "Art Input Shapes",
+   "url": "https://x.com/JCKHLRY/status/2113314443358859376",
+   "note": "Rotating 3D primitives including a torus, cube and pyramid morph between forms with shifting iridescent gradients of blue, magenta and orange against black.",
+   "noteEn": "Rotating 3D primitives including a torus, cube and pyramid morph between forms with shifting iridescent gradients of blue, magenta and orange against black.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@jckhlry",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "motion"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "3d",
+    "gradient"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/sov8eea-art-input-shape-studies",
+   "rdkind": "Design",
+   "rdcat": "Motion",
+   "rdstyle": [
+    "Geometric",
+    "Abstract",
+    "3D",
+    "Dark",
+    "Vibrant",
+    "Gradient"
+   ],
+   "author": {
+    "name": "JACKⒿ",
+    "handle": "@jckhlry",
+    "url": "https://x.com/jckhlry"
+   },
+   "x_post": "https://x.com/JCKHLRY/status/2113314443358859376",
+   "xsrc": {
+    "post": "https://x.com/JCKHLRY/status/2113314443358859376",
+    "author": "@JCKHLRY",
+    "likes": 55,
+    "bookmarks": 7,
+    "reposts": 0,
+    "impressions": 1157,
+    "date": "2026-10-22"
+   },
+   "pub": "2026-10-23",
+   "added": "2026-10-23"
+  },
+  {
+   "id": "rd-pd1kyjp-liquid-button-hover-effect",
+   "name": "Liquid Button",
+   "url": "https://x.com/val_soonafter/status/2113254105238171837",
+   "note": "A CTA button morphs into an organic blob shape with a soft pink-purple gradient glow when hovered, then snaps back to a dark pill on cursor exit.",
+   "noteEn": "A CTA button morphs into an organic blob shape with a soft pink-purple gradient glow when hovered, then snaps back to a dark pill on cursor exit.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@val_soonafter",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "gradient"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/pd1kyjp-liquid-button-hover-effect",
+   "rdkind": "Design",
+   "rdcat": "Interface",
+   "rdstyle": [
+    "Soft UI",
+    "Organic",
+    "Light",
+    "Gradient"
+   ],
+   "author": {
+    "name": "Val Guerra",
+    "handle": "@val_soonafter",
+    "url": "https://x.com/val_soonafter"
+   },
+   "x_post": "https://x.com/val_soonafter/status/2113254105238171837",
+   "xsrc": {
+    "post": "https://x.com/val_soonafter/status/2113254105238171837",
+    "author": "@val_soonafter",
+    "likes": 18,
+    "bookmarks": 5,
+    "reposts": 0,
+    "impressions": 345,
+    "date": "2026-10-22"
+   },
+   "pub": "2026-10-23",
+   "added": "2026-10-23"
+  },
+  {
+   "id": "rd-fw9lnh3-x-com",
+   "name": "Rabbit Hole",
+   "url": "https://x.com/blak3shao/status/2113324127658602888",
+   "note": "A motion study cycling through riso-inspired halftone, mosaic, tie-dye and cross-stitch textures applied to a shared skeleton of an eye motif and rabbit silhouettes.",
+   "noteEn": "A motion study cycling through riso-inspired halftone, mosaic, tie-dye and cross-stitch textures applied to a shared skeleton of an eye motif and rabbit silhouettes.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@blak3shao",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "motion"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "retro"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/fw9lnh3-x-com",
+   "rdkind": "Design",
+   "rdcat": "Motion",
+   "rdstyle": [
+    "Experimental",
+    "Retro",
+    "Textured",
+    "Vibrant"
+   ],
+   "author": {
+    "name": "Blake Shao",
+    "handle": "@blak3shao",
+    "url": "https://x.com/blak3shao"
+   },
+   "x_post": "https://x.com/blak3shao/status/2113324127658602888",
+   "xsrc": {
+    "post": "https://x.com/blak3shao/status/2113324127658602888",
+    "author": "@blak3shao",
+    "likes": 98,
+    "bookmarks": 70,
+    "reposts": 5,
+    "impressions": 3473,
+    "date": "2026-10-22"
+   },
+   "pub": "2026-10-23",
+   "added": "2026-10-23"
+  },
+  {
+   "id": "rd-h5wdwir-apple-hardware-dimension-drawings",
+   "name": "Apple Hardware Dimension Drawings",
+   "url": "https://developer.apple.com/accessories/dimensional-drawings/",
+   "note": "Official Apple engineering dimension sheets for iPhone 18 Pro, Apple Watch Ultra 3, Vision Pro, and AirPods 5, showing orthographic views with precise metric callouts.",
+   "noteEn": "Official Apple engineering dimension sheets for iPhone 18 Pro, Apple Watch Ultra 3, Vision Pro, and AirPods 5, showing orthographic views with precise metric callouts.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@apple",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "site",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/h5wdwir-apple-hardware-dimension-drawings",
+   "rdkind": "Design",
+   "rdcat": "Illustration",
+   "rdstyle": [
+    "Geometric",
+    "Black & White"
+   ],
+   "author": {
+    "name": "Andreas Storm",
+    "handle": "@apple",
+    "url": "https://x.com/apple"
+   },
+   "x_post": "https://x.com/avstorm/status/2113545710469554310",
+   "xsrc": {
+    "post": "https://x.com/avstorm/status/2113545710469554310",
+    "author": "@avstorm",
+    "likes": 1814,
+    "bookmarks": 1099,
+    "reposts": 121,
+    "impressions": 70349,
+    "date": "2026-10-23"
+   },
+   "official": "https://developer.apple.com/accessories/dimensional-drawings/",
+   "pub": "2026-10-23",
+   "added": "2026-10-23"
+  },
+  {
+   "id": "rd-sf6nnvx-macos-lookaway-orb-interaction",
+   "name": "macOS Lookaway Orb",
+   "url": "https://x.com/kushsolitary/status/2113254488790495682",
+   "note": "A dark glassmorphic pill rises from the macOS dock, morphing from a compact orb into a tall capsule with a glowing arrow before floating away and disappearing.",
+   "noteEn": "A dark glassmorphic pill rises from the macOS dock, morphing from a compact orb into a tall capsule with a glowing arrow before floating away and disappearing.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@kushsolitary",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "glass"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/sf6nnvx-macos-lookaway-orb-interaction",
+   "rdkind": "Design",
+   "rdcat": "Interface",
+   "rdstyle": [
+    "Glassmorphism",
+    "Dark"
+   ],
+   "author": {
+    "name": "kush",
+    "handle": "@kushsolitary",
+    "url": "https://x.com/kushsolitary"
+   },
+   "x_post": "https://x.com/kushsolitary/status/2113254488790495682",
+   "xsrc": {
+    "post": "https://x.com/kushsolitary/status/2113254488790495682",
+    "author": "@kushsolitary",
+    "likes": 493,
+    "bookmarks": 203,
+    "reposts": 17,
+    "impressions": 21866,
+    "date": "2026-10-22"
+   },
+   "pub": "2026-10-23",
+   "added": "2026-10-23"
+  },
+  {
+   "id": "rd-l9294qq-earth-timeline",
+   "name": "Earth Timeline",
+   "url": "https://x.com/quantapar/status/2113562786265756046",
+   "note": "Interactive web experience where a scrubbing cursor moves through 13.8 billion years of Earth history, with a 3D globe morphing its surface and color at each major geological era.",
+   "noteEn": "Interactive web experience where a scrubbing cursor moves through 13.8 billion years of Earth history, with a 3D globe morphing its surface and color at each major geological era.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@quantapar",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal",
+    "3d"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/l9294qq-earth-timeline",
+   "rdkind": "Design",
+   "rdcat": "Web",
+   "rdstyle": [
+    "Minimal",
+    "3D",
+    "Light"
+   ],
+   "author": {
+    "name": "manu",
+    "handle": "@quantapar",
+    "url": "https://x.com/quantapar"
+   },
+   "x_post": "https://x.com/quantapar/status/2113562786265756046",
+   "xsrc": {
+    "post": "https://x.com/quantapar/status/2113562786265756046",
+    "author": "@quantapar",
+    "likes": 399,
+    "bookmarks": 158,
+    "reposts": 22,
+    "impressions": 8439,
+    "date": "2026-10-23"
+   },
+   "pub": "2026-10-23",
+   "added": "2026-10-23"
+  },
+  {
+   "id": "rd-3w11htw-sidebar-design-audit",
+   "name": "Sidebar Deslop",
+   "url": "https://x.com/MichaelFilipiuk/status/2113239967006855524",
+   "note": "A wireframe sidebar is stepped through a series of design-lint checks, with color-coded highlights revealing spacing, alignment, padding, and auto-layout violations before the panel is cleaned up.",
+   "noteEn": "A wireframe sidebar is stepped through a series of design-lint checks, with color-coded highlights revealing spacing, alignment, padding, and auto-layout violations before the panel is cleaned up.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@michaelfilipiuk",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/3w11htw-sidebar-design-audit",
+   "rdkind": "Design",
+   "rdcat": "Interface",
+   "rdstyle": [
+    "Minimal",
+    "Light"
+   ],
+   "author": {
+    "name": "Michael · Design Partner",
+    "handle": "@michaelfilipiuk",
+    "url": "https://x.com/michaelfilipiuk"
+   },
+   "x_post": "https://x.com/MichaelFilipiuk/status/2113239967006855524",
+   "xsrc": {
+    "post": "https://x.com/MichaelFilipiuk/status/2113239967006855524",
+    "author": "@MichaelFilipiuk",
+    "likes": 2169,
+    "bookmarks": 1669,
+    "reposts": 63,
+    "impressions": 110986,
+    "date": "2026-10-22"
+   },
+   "pub": "2026-10-23",
+   "added": "2026-10-23"
   }
  ],
  "guides": [
@@ -184328,5 +184774,5 @@
    ]
   }
  ],
- "updatedAt": "2026-10-23T08:42Z"
+ "updatedAt": "2026-10-23T17:57Z"
 }

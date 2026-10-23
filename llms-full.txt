@@ -1,6 +1,6 @@
 # UI Hub
 
-> Curated, multilingual directory of 4882 public UI resources (component libraries, component style demos, effects, design systems, design skills for AI agents) plus original blog analysis of AI design techniques. Data updated 2026-10-23 08:42 UTC.
+> Curated, multilingual directory of 4891 public UI resources (component libraries, component style demos, effects, design systems, design skills for AI agents) plus original blog analysis of AI design techniques. Data updated 2026-10-23 17:57 UTC.
 
 Use the JSON endpoints, not the SPA, when acting as an agent. Every entry links to its original site; licenses belong to the original authors.
 
@@ -116,11 +116,11 @@ Use the JSON endpoints, not the SPA, when acting as an agent. Every entry links 
 - [visx](https://airbnb.io/visx/): Airbnb's low-level visualization components
 
 ## FAQ
-- **What is UI Hub?** A free, curated directory of 4882 public UI resources: 201 component libraries, 1989 component style demos with light/dark screenshots, 70 design skills for AI agents, plus effects, templates, specs and tutorials. It links to original sites and never hosts paid source code.
+- **What is UI Hub?** A free, curated directory of 4891 public UI resources: 201 component libraries, 1989 component style demos with light/dark screenshots, 70 design skills for AI agents, plus effects, templates, specs and tutorials. It links to original sites and never hosts paid source code.
 - **How do I find a component in a given style?** Load https://ui.incidental.site/api/resources.json and filter by ct (component kind, e.g. "dialog") and vs (visual style, e.g. "minimal" or "motion"). type="style" entries are concrete component demos with a libName and page URL; type="library" entries are whole libraries with install info on the site.
 - **Which skills should an agent use for good UI?** One direction skill (frontend-design or taste-skill), emil-design-eng for motion and interaction polish, then impeccable, baseline-ui, web-design-guidelines and accessibility as an audit pass. See https://ui.incidental.site/api/skills.json.
 - **Can I copy the code?** Open-source libraries can be used under their own licenses (MIT, Apache-2.0 etc.); the card shows the original link. Paid tiers (marked paid/freemium) must be bought from the original vendor.
-- **How often is it updated?** Daily via a GitHub Actions job that adds new UI repositories and tools from GitHub, awesome-shadcn-ui and Hacker News. Nothing is deleted. Last update: 2026-10-23 08:42 UTC.
+- **How often is it updated?** Daily via a GitHub Actions job that adds new UI repositories and tools from GitHub, awesome-shadcn-ui and Hacker News. Nothing is deleted. Last update: 2026-10-23 17:57 UTC.
 
 
 # Blog posts (full text, English)
@@ -4410,6 +4410,15 @@ Get Hyped. Get Noticed. Get Results.
 - ui-flexnative | collection | https://ui.flexnative.com | Listed in awesome-shadcn-ui: A collection of customizable UI blocks with interactive live previews
 - w3-kit | library | https://github.com/w3-kit/ui | Listed in awesome-shadcn-ui: A comprehensive library of accessible React components for building high-quality Web3 applications and dApps
 - Boat Motion Posters | inspiration | https://x.com/nickbakeddesign/status/2113391263345263048 | Three animated posters for Boat cloud VM platform, each featuring a pixel-character particle field growing across dark and vivid blue textured backgrounds with 
+- Doodle Maker | inspiration | https://x.com/samdape/status/2113665319877374388 | A mobile app lets users draw a freehand doodle that you can hear play, with color switching and undo controls visible throughout.
+- AI Simulation Dot Visuals | inspiration | https://x.com/yashisinghh/status/2113540944704180619 | Four concept motion studies rendering AI and computing subjects as animated dot-matrix forms including a neural structure, terrain peak, spinning disc symbol, a
+- Art Input Shapes | inspiration | https://x.com/JCKHLRY/status/2113314443358859376 | Rotating 3D primitives including a torus, cube and pyramid morph between forms with shifting iridescent gradients of blue, magenta and orange against black.
+- Liquid Button | inspiration | https://x.com/val_soonafter/status/2113254105238171837 | A CTA button morphs into an organic blob shape with a soft pink-purple gradient glow when hovered, then snaps back to a dark pill on cursor exit.
+- Rabbit Hole | inspiration | https://x.com/blak3shao/status/2113324127658602888 | A motion study cycling through riso-inspired halftone, mosaic, tie-dye and cross-stitch textures applied to a shared skeleton of an eye motif and rabbit silhoue
+- Apple Hardware Dimension Drawings | inspiration | https://developer.apple.com/accessories/dimensional-drawings/ | Official Apple engineering dimension sheets for iPhone 18 Pro, Apple Watch Ultra 3, Vision Pro, and AirPods 5, showing orthographic views with precise metric ca
+- macOS Lookaway Orb | inspiration | https://x.com/kushsolitary/status/2113254488790495682 | A dark glassmorphic pill rises from the macOS dock, morphing from a compact orb into a tall capsule with a glowing arrow before floating away and disappearing.
+- Earth Timeline | inspiration | https://x.com/quantapar/status/2113562786265756046 | Interactive web experience where a scrubbing cursor moves through 13.8 billion years of Earth history, with a 3D globe morphing its surface and color at each ma
+- Sidebar Deslop | inspiration | https://x.com/MichaelFilipiuk/status/2113239967006855524 | A wireframe sidebar is stepped through a series of design-lint checks, with color-coded highlights revealing spacing, alignment, padding, and auto-layout violat
 
 # Component style demos: 1989 entries, see api/resources.json (type=style)
 
