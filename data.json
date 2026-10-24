@@ -1,6 +1,6 @@
 {
- "generated": "2026-10-23",
- "count": 4891,
+ "generated": "2026-10-24",
+ "count": 4905,
  "items": [
   {
    "id": "ued-figma-mcp-guide",
@@ -184572,6 +184572,412 @@
    },
    "pub": "2026-10-23",
    "added": "2026-10-23"
+  },
+  {
+   "id": "aw-github-com-f0rextasy-bigbullui",
+   "name": "bigbullui",
+   "url": "https://github.com/F0Rextasy/bigbullui",
+   "note": "awesome-shadcn-ui 收录：659 Ticket-Stub components, 63 blocks and 1023 icons, zero-dep React 19 + Tailwind v4 with a shadcn-compatible registry, MIT.",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat",
+    "layout",
+    "icon"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: 659 Ticket-Stub components, 63 blocks and 1023 icons, zero-dep React 19 + Tailwind v4 with a shadcn-compatible registry, MIT.",
+   "added": "2026-10-24"
+  },
+  {
+   "id": "aw-github-com-lirena00-blobz",
+   "name": "blobz",
+   "url": "https://github.com/lirena00/blobz",
+   "note": "awesome-shadcn-ui 收录：Deterministic SVG avatar generator with a free MIT-licensed shadcn registry of avatar components and blocks, plus an optional paid hosted image API.",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat",
+    "layout"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Deterministic SVG avatar generator with a free MIT-licensed shadcn registry of avatar components and blocks, plus an optional paid hosted image API.",
+   "added": "2026-10-24"
+  },
+  {
+   "id": "aw-aureformui-com",
+   "name": "aureform-ui",
+   "url": "https://aureformui.com/",
+   "note": "awesome-shadcn-ui 收录：Apache-2.0 registry of editable dashboard components and SaaS blocks, installed with the shadcn CLI and customizable through an appearance studio.",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "table",
+    "form",
+    "layout"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Apache-2.0 registry of editable dashboard components and SaaS blocks, installed with the shadcn CLI and customizable through an appearance studio.",
+   "added": "2026-10-24"
+  },
+  {
+   "id": "aw-beamline-io",
+   "name": "beamline-ui",
+   "url": "https://beamline.io",
+   "note": "awesome-shadcn-ui 收录：React components and application screens installable from a shadcn registry, with a usable MIT sample and a paid Complete System offering multiple visual styles.",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: React components and application screens installable from a shadcn registry, with a usable MIT sample and a paid Complete System offering multiple visual styles.",
+   "added": "2026-10-24"
+  },
+  {
+   "id": "aw-glassyui-com",
+   "name": "glassy-ui",
+   "url": "https://glassyui.com",
+   "note": "awesome-shadcn-ui 收录：Open-source glass components for React and React Native, installed with shadcn; Pro is a separate paid offering.",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Open-source glass components for React and React Native, installed with shadcn; Pro is a separate paid offering.",
+   "added": "2026-10-24"
+  },
+  {
+   "id": "aw-suiss-app-ui",
+   "name": "suiss-ui",
+   "url": "https://suiss.app/ui",
+   "note": "awesome-shadcn-ui 收录：MIT-licensed shadcn registry of components, patterns, interactions, charts and blocks for React on Base UI, Radix or React Aria, React Native, SwiftUI and Jetpack Compose, in nine styles.",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chart",
+    "layout"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: MIT-licensed shadcn registry of components, patterns, interactions, charts and blocks for React on Base UI, Radix or React Aria, React Native, SwiftUI and Jetpack Compose, in nine styles.",
+   "added": "2026-10-24"
+  },
+  {
+   "id": "aw-uaiblocks-dev",
+   "name": "uai",
+   "url": "https://uaiblocks.dev",
+   "note": "awesome-shadcn-ui 收录：MIT-licensed shadcn registry of 108 compound React components and page blocks with built-in motion and micro-interactions, including AI agent UI (prompt composer, thinking, approvals) and Brazilian co",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat",
+    "motion",
+    "layout"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: MIT-licensed shadcn registry of 108 compound React components and page blocks with built-in motion and micro-interactions, including AI agent UI (prompt composer, thinking, approvals) and Brazilian co",
+   "added": "2026-10-24"
+  },
+  {
+   "id": "aw-ui-watermelon-sh",
+   "name": "watermelon-ui",
+   "url": "https://ui.watermelon.sh",
+   "note": "awesome-shadcn-ui 收录：MIT-licensed shadcn registry (@watermelon) with 516 component variants, 131 animated components, 189 blocks and 12 dashboards, plus a free keyless MCP server for AI agents.",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat",
+    "motion",
+    "layout"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: MIT-licensed shadcn registry (@watermelon) with 516 component variants, 131 animated components, 189 blocks and 12 dashboards, plus a free keyless MCP server for AI agents.",
+   "added": "2026-10-24"
+  },
+  {
+   "id": "aw-we-inc-components",
+   "name": "we-inc-components",
+   "url": "https://we.inc/components",
+   "note": "awesome-shadcn-ui 收录：Free shadcn registry of 667 React and Tailwind CSS components and page sections in 35 categories, each with a live preview, the React code and a plain HTML version, installable with `npx shadcn@latest",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat",
+    "layout"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Free shadcn registry of 667 React and Tailwind CSS components and page sections in 35 categories, each with a live preview, the React code and a plain HTML version, installable with `npx shadcn@latest",
+   "added": "2026-10-24"
+  },
+  {
+   "id": "aw-wick-charts-eeff-io-integrations-shadcn",
+   "name": "wick-charts",
+   "url": "https://wick-charts.eeff.io/integrations/shadcn/",
+   "note": "awesome-shadcn-ui 收录：MIT-licensed shadcn registry of realtime canvas charts for React and shadcn-vue that stay smooth while data streams in and take their colors from your theme tokens.",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chart"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: MIT-licensed shadcn registry of realtime canvas charts for React and shadcn-vue that stay smooth while data streams in and take their colors from your theme tokens.",
+   "added": "2026-10-24"
+  },
+  {
+   "id": "aw-github-com-lbrdev-night-glass",
+   "name": "night-glass",
+   "url": "https://github.com/lbrdev/night-glass",
+   "note": "awesome-shadcn-ui 收录：Dark glassmorphism theme for shadcn/ui: near-black surfaces, one accent color, liquid-glass panels and buttons, with matching Tailwind v3/v4 presets.",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Dark glassmorphism theme for shadcn/ui: near-black surfaces, one accent color, liquid-glass panels and buttons, with matching Tailwind v3/v4 presets.",
+   "added": "2026-10-24"
+  },
+  {
+   "id": "aw-chewypixel-io-components",
+   "name": "chewypixel",
+   "url": "https://chewypixel.io/components",
+   "note": "awesome-shadcn-ui 收录：Free animated components for shadcn/ui, built with Motion and installable with the shadcn CLI.",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "motion"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Free animated components for shadcn/ui, built with Motion and installable with the shadcn CLI.",
+   "added": "2026-10-24"
+  },
+  {
+   "id": "aw-eased-dev",
+   "name": "eased",
+   "url": "https://eased.dev",
+   "note": "awesome-shadcn-ui 收录：Motion-first React components and page blocks for shadcn, with tuned springs and light and dark themes, installed with the shadcn CLI: 37 free MIT components plus a paid one-time Pro tier.",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat",
+    "motion",
+    "layout"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Motion-first React components and page blocks for shadcn, with tuned springs and light and dark themes, installed with the shadcn CLI: 37 free MIT components plus a paid one-time Pro tier.",
+   "added": "2026-10-24"
+  },
+  {
+   "id": "aw-illos-dev",
+   "name": "illos",
+   "url": "https://illos.dev/",
+   "note": "awesome-shadcn-ui 收录：Animated SVG illustrations in Shader, HUD and Isometric styles that install with the shadcn CLI; spot illustrations are free and Illos Pro adds the full set plus agent skills.",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "motion",
+    "background"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Animated SVG illustrations in Shader, HUD and Isometric styles that install with the shadcn CLI; spot illustrations are free and Illos Pro adds the full set plus agent skills.",
+   "added": "2026-10-24"
   }
  ],
  "guides": [
@@ -184774,5 +185180,5 @@
    ]
   }
  ],
- "updatedAt": "2026-10-23T17:57Z"
+ "updatedAt": "2026-10-24T04:33Z"
 }

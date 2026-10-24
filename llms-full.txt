@@ -1,6 +1,6 @@
 # UI Hub
 
-> Curated, multilingual directory of 4891 public UI resources (component libraries, component style demos, effects, design systems, design skills for AI agents) plus original blog analysis of AI design techniques. Data updated 2026-10-23 17:57 UTC.
+> Curated, multilingual directory of 4905 public UI resources (component libraries, component style demos, effects, design systems, design skills for AI agents) plus original blog analysis of AI design techniques. Data updated 2026-10-24 04:33 UTC.
 
 Use the JSON endpoints, not the SPA, when acting as an agent. Every entry links to its original site; licenses belong to the original authors.
 
@@ -116,11 +116,11 @@ Use the JSON endpoints, not the SPA, when acting as an agent. Every entry links 
 - [visx](https://airbnb.io/visx/): Airbnb's low-level visualization components
 
 ## FAQ
-- **What is UI Hub?** A free, curated directory of 4891 public UI resources: 201 component libraries, 1989 component style demos with light/dark screenshots, 70 design skills for AI agents, plus effects, templates, specs and tutorials. It links to original sites and never hosts paid source code.
+- **What is UI Hub?** A free, curated directory of 4905 public UI resources: 204 component libraries, 1989 component style demos with light/dark screenshots, 70 design skills for AI agents, plus effects, templates, specs and tutorials. It links to original sites and never hosts paid source code.
 - **How do I find a component in a given style?** Load https://ui.incidental.site/api/resources.json and filter by ct (component kind, e.g. "dialog") and vs (visual style, e.g. "minimal" or "motion"). type="style" entries are concrete component demos with a libName and page URL; type="library" entries are whole libraries with install info on the site.
 - **Which skills should an agent use for good UI?** One direction skill (frontend-design or taste-skill), emil-design-eng for motion and interaction polish, then impeccable, baseline-ui, web-design-guidelines and accessibility as an audit pass. See https://ui.incidental.site/api/skills.json.
 - **Can I copy the code?** Open-source libraries can be used under their own licenses (MIT, Apache-2.0 etc.); the card shows the original link. Paid tiers (marked paid/freemium) must be bought from the original vendor.
-- **How often is it updated?** Daily via a GitHub Actions job that adds new UI repositories and tools from GitHub, awesome-shadcn-ui and Hacker News. Nothing is deleted. Last update: 2026-10-23 17:57 UTC.
+- **How often is it updated?** Daily via a GitHub Actions job that adds new UI repositories and tools from GitHub, awesome-shadcn-ui and Hacker News. Nothing is deleted. Last update: 2026-10-24 04:33 UTC.
 
 
 # Blog posts (full text, English)
@@ -4419,6 +4419,20 @@ Get Hyped. Get Noticed. Get Results.
 - macOS Lookaway Orb | inspiration | https://x.com/kushsolitary/status/2113254488790495682 | A dark glassmorphic pill rises from the macOS dock, morphing from a compact orb into a tall capsule with a glowing arrow before floating away and disappearing.
 - Earth Timeline | inspiration | https://x.com/quantapar/status/2113562786265756046 | Interactive web experience where a scrubbing cursor moves through 13.8 billion years of Earth history, with a 3D globe morphing its surface and color at each ma
 - Sidebar Deslop | inspiration | https://x.com/MichaelFilipiuk/status/2113239967006855524 | A wireframe sidebar is stepped through a series of design-lint checks, with color-coded highlights revealing spacing, alignment, padding, and auto-layout violat
+- bigbullui | library | https://github.com/F0Rextasy/bigbullui | Listed in awesome-shadcn-ui: 659 Ticket-Stub components, 63 blocks and 1023 icons, zero-dep React 19 + Tailwind v4 with a shadcn-compatible registry, MIT.
+- blobz | library | https://github.com/lirena00/blobz | Listed in awesome-shadcn-ui: Deterministic SVG avatar generator with a free MIT-licensed shadcn registry of avatar components and blocks, plus an optional paid 
+- aureform-ui | collection | https://aureformui.com/ | Listed in awesome-shadcn-ui: Apache-2.0 registry of editable dashboard components and SaaS blocks, installed with the shadcn CLI and customizable through an app
+- beamline-ui | collection | https://beamline.io | Listed in awesome-shadcn-ui: React components and application screens installable from a shadcn registry, with a usable MIT sample and a paid Complete System of
+- glassy-ui | collection | https://glassyui.com | Listed in awesome-shadcn-ui: Open-source glass components for React and React Native, installed with shadcn; Pro is a separate paid offering.
+- suiss-ui | collection | https://suiss.app/ui | Listed in awesome-shadcn-ui: MIT-licensed shadcn registry of components, patterns, interactions, charts and blocks for React on Base UI, Radix or React Aria, Re
+- uai | collection | https://uaiblocks.dev | Listed in awesome-shadcn-ui: MIT-licensed shadcn registry of 108 compound React components and page blocks with built-in motion and micro-interactions, includin
+- watermelon-ui | collection | https://ui.watermelon.sh | Listed in awesome-shadcn-ui: MIT-licensed shadcn registry (@watermelon) with 516 component variants, 131 animated components, 189 blocks and 12 dashboards, plus
+- we-inc-components | collection | https://we.inc/components | Listed in awesome-shadcn-ui: Free shadcn registry of 667 React and Tailwind CSS components and page sections in 35 categories, each with a live preview, the Rea
+- wick-charts | collection | https://wick-charts.eeff.io/integrations/shadcn/ | Listed in awesome-shadcn-ui: MIT-licensed shadcn registry of realtime canvas charts for React and shadcn-vue that stay smooth while data streams in and take the
+- night-glass | library | https://github.com/lbrdev/night-glass | Listed in awesome-shadcn-ui: Dark glassmorphism theme for shadcn/ui: near-black surfaces, one accent color, liquid-glass panels and buttons, with matching Tailw
+- chewypixel | collection | https://chewypixel.io/components | Listed in awesome-shadcn-ui: Free animated components for shadcn/ui, built with Motion and installable with the shadcn CLI.
+- eased | collection | https://eased.dev | Listed in awesome-shadcn-ui: Motion-first React components and page blocks for shadcn, with tuned springs and light and dark themes, installed with the shadcn C
+- illos | collection | https://illos.dev/ | Listed in awesome-shadcn-ui: Animated SVG illustrations in Shader, HUD and Isometric styles that install with the shadcn CLI; spot illustrations are free and Il
 
 # Component style demos: 1989 entries, see api/resources.json (type=style)
 
