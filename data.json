@@ -1,6 +1,6 @@
 {
- "generated": "2026-10-24",
- "count": 4905,
+ "generated": "2026-10-25",
+ "count": 4919,
  "items": [
   {
    "id": "ued-figma-mcp-guide",
@@ -184978,6 +184978,403 @@
    ],
    "noteEn": "Listed in awesome-shadcn-ui: Animated SVG illustrations in Shader, HUD and Isometric styles that install with the shadcn CLI; spot illustrations are free and Illos Pro adds the full set plus agent skills.",
    "added": "2026-10-24"
+  },
+  {
+   "id": "aw-mizzle-saddy-me",
+   "name": "mizzle",
+   "url": "https://mizzle.saddy.me",
+   "note": "awesome-shadcn-ui 收录：Animated React components installed as source with the shadcn CLI, with a free core set and a one-time license for the remaining catalog.",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat",
+    "motion"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Animated React components installed as source with the shadcn CLI, with a free core set and a one-time license for the remaining catalog.",
+   "added": "2026-10-25"
+  },
+  {
+   "id": "aw-movin-design-components",
+   "name": "movin-design",
+   "url": "https://movin.design/components/",
+   "note": "awesome-shadcn-ui 收录：Free animated UI components (toggles, buttons, loaders, inputs and more) installable from the @movin shadcn registry, each also available as plain HTML/CSS with no dependencies, under MIT-0.",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat",
+    "motion",
+    "form"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Free animated UI components (toggles, buttons, loaders, inputs and more) installable from the @movin shadcn registry, each also available as plain HTML/CSS with no dependencies, under MIT-0.",
+   "added": "2026-10-25"
+  },
+  {
+   "id": "aw-nxui-geoql-in-docs",
+   "name": "nxui",
+   "url": "https://nxui.geoql.in/docs",
+   "note": "awesome-shadcn-ui 收录：Animated Vue 3 components for shadcn-vue projects: 360+ components, including text animations, WebGL backgrounds, dashboard charts and shader effects, installable from its own registry with the shadcn",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "motion",
+    "background",
+    "chart"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Animated Vue 3 components for shadcn-vue projects: 360+ components, including text animations, WebGL backgrounds, dashboard charts and shader effects, installable from its own registry with the shadcn",
+   "added": "2026-10-25"
+  },
+  {
+   "id": "aw-github-com-teodoravadani-qodesign-free",
+   "name": "qodesign-free",
+   "url": "https://github.com/teodoravadani/qodesign-free",
+   "note": "awesome-shadcn-ui 收录：Free, MIT-licensed animated React components and two dashboards, installable with the shadcn CLI and also shipped as single HTML files; a paid catalog lives at qodesign.dev.",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat",
+    "motion"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Free, MIT-licensed animated React components and two dashboards, installable with the shadcn CLI and also shipped as single HTML files; a paid catalog lives at qodesign.dev.",
+   "added": "2026-10-25"
+  },
+  {
+   "id": "aw-reactframe-com",
+   "name": "reactframe",
+   "url": "https://reactframe.com/",
+   "note": "awesome-shadcn-ui 收录：Animated React components, blocks and page sections built with Tailwind CSS and Motion, installable with the shadcn CLI; 150+ free MIT-licensed items plus a paid premium tier.",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat",
+    "motion",
+    "layout"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Animated React components, blocks and page sections built with Tailwind CSS and Motion, installable with the shadcn CLI; 150+ free MIT-licensed items plus a paid premium tier.",
+   "added": "2026-10-25"
+  },
+  {
+   "id": "aw-shadcn-exchange",
+   "name": "shadcn-exchange",
+   "url": "https://shadcn.exchange/",
+   "note": "awesome-shadcn-ui 收录：Free search engine for public shadcn/ui registries, with 3,500+ blocks from 100+ registries, each shown with a live light and dark preview, its source code and a one-line install command that serves t",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Free search engine for public shadcn/ui registries, with 3,500+ blocks from 100+ registries, each shown with a live light and dark preview, its source code and a one-line install command that serves t",
+   "added": "2026-10-25"
+  },
+  {
+   "id": "aw-anon-li",
+   "name": "anon-li",
+   "url": "https://anon.li",
+   "note": "awesome-shadcn-ui 收录：Open-source privacy app for email aliases, end-to-end encrypted file sharing and encrypted forms, with a dashboard and public pages built on shadcn/ui; free tier plus paid plans.",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat",
+    "form"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Open-source privacy app for email aliases, end-to-end encrypted file sharing and encrypted forms, with a dashboard and public pages built on shadcn/ui; free tier plus paid plans.",
+   "added": "2026-10-25"
+  },
+  {
+   "id": "aw-carejobs-now",
+   "name": "carejobs-now",
+   "url": "https://carejobs.now",
+   "note": "awesome-shadcn-ui 收录：Free US healthcare job board with 170,000+ open jobs and posted pay, with its interface built on shadcn/ui components.",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Free US healthcare job board with 170,000+ open jobs and posted pay, with its interface built on shadcn/ui components.",
+   "added": "2026-10-25"
+  },
+  {
+   "id": "aw-github-com-loootai-looot-crm",
+   "name": "looot-crm",
+   "url": "https://github.com/loootai/looot-crm",
+   "note": "awesome-shadcn-ui 收录：Open-source, self-hosted CRM and Pipedrive alternative with buying-intent signals per account (hiring, funding, tech stack, news), built with Next.js, Supabase and shadcn/ui; free demo mode, with live",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Open-source, self-hosted CRM and Pipedrive alternative with buying-intent signals per account (hiring, funding, tech stack, news), built with Next.js, Supabase and shadcn/ui; free demo mode, with live",
+   "added": "2026-10-25"
+  },
+  {
+   "id": "aw-mailmop-com",
+   "name": "mailmop",
+   "url": "https://mailmop.com",
+   "note": "awesome-shadcn-ui 收录：Gmail cleaner with a shadcn/ui interface that ranks senders by email count for bulk delete, unsubscribe and block in the browser, with a free tier and an optional paid Pro plan.",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat",
+    "layout"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Gmail cleaner with a shadcn/ui interface that ranks senders by email count for bulk delete, unsubscribe and block in the browser, with a free tier and an optional paid Pro plan.",
+   "added": "2026-10-25"
+  },
+  {
+   "id": "aw-minigolfspots-com",
+   "name": "mini-golf-spots",
+   "url": "https://minigolfspots.com/",
+   "note": "awesome-shadcn-ui 收录：Free US mini golf course finder whose shadcn/ui interface includes course sorting, a mobile filter sheet and course-action buttons.",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Free US mini golf course finder whose shadcn/ui interface includes course sorting, a mobile filter sheet and course-action buttons.",
+   "added": "2026-10-25"
+  },
+  {
+   "id": "aw-github-com-fclairamb-solidping",
+   "name": "solidping",
+   "url": "https://github.com/fclairamb/solidping",
+   "note": "awesome-shadcn-ui 收录：AGPL-3.0 self-hosted uptime monitoring app with a shadcn/ui dashboard for checks, incidents and status pages, plus an optional paid hosted version.",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: AGPL-3.0 self-hosted uptime monitoring app with a shadcn/ui dashboard for checks, incidents and status pages, plus an optional paid hosted version.",
+   "added": "2026-10-25"
+  },
+  {
+   "id": "aw-stockexpertai-com",
+   "name": "stock-expert-ai",
+   "url": "https://www.stockexpertai.com/",
+   "note": "awesome-shadcn-ui 收录：A free US-stock research app demonstrating shadcn/ui cards, badges, buttons, dropdowns, and accordions across stock screening and company research interfaces.",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: A free US-stock research app demonstrating shadcn/ui cards, badges, buttons, dropdowns, and accordions across stock screening and company research interfaces.",
+   "added": "2026-10-25"
+  },
+  {
+   "id": "aw-agent-elements-21st-dev",
+   "name": "21st-dev-agent-elements",
+   "url": "https://agent-elements.21st.dev",
+   "note": "awesome-shadcn-ui 收录：Open-source registry of agent UI primitives — chat shell, tool-call cards (Bash, Edit, Search, Todo, Plan), clarifying questions, input bar, streaming markdown. Built on React 19, Tailwind v4, and the",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat",
+    "form"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Open-source registry of agent UI primitives — chat shell, tool-call cards (Bash, Edit, Search, Todo, Plan), clarifying questions, input bar, streaming markdown. Built on React 19, Tailwind v4, and the",
+   "added": "2026-10-25"
   }
  ],
  "guides": [
@@ -185180,5 +185577,5 @@
    ]
   }
  ],
- "updatedAt": "2026-10-24T16:54Z"
+ "updatedAt": "2026-10-25T04:37Z"
 }
