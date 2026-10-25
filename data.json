@@ -1,6 +1,6 @@
 {
  "generated": "2026-10-25",
- "count": 4919,
+ "count": 4923,
  "items": [
   {
    "id": "ued-figma-mcp-guide",
@@ -185375,6 +185375,205 @@
    ],
    "noteEn": "Listed in awesome-shadcn-ui: Open-source registry of agent UI primitives — chat shell, tool-call cards (Bash, Edit, Search, Todo, Plan), clarifying questions, input bar, streaming markdown. Built on React 19, Tailwind v4, and the",
    "added": "2026-10-25"
+  },
+  {
+   "id": "rd-jwd5fyq-grok-bot-upsell-sheet",
+   "name": "Grok Bot Upsell Sheet",
+   "url": "https://x.com/spottedinprod/status/2113814891475722437",
+   "note": "X Chat's in-app upsell sheet for Grok Bot, showing animated colorful blob mascots bouncing and shuffling above a 'Try Grok Bot' call-to-action on a dark background.",
+   "noteEn": "X Chat's in-app upsell sheet for Grok Bot, showing animated colorful blob mascots bouncing and shuffling above a 'Try Grok Bot' call-to-action on a dark background.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@bot",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "playful"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/jwd5fyq-grok-bot-upsell-sheet",
+   "rdkind": "Design",
+   "rdcat": "Interface",
+   "rdstyle": [
+    "Playful",
+    "Dark",
+    "Vibrant"
+   ],
+   "author": {
+    "name": "SIP",
+    "handle": "@bot",
+    "url": "https://x.com/bot"
+   },
+   "x_post": "https://x.com/spottedinprod/status/2113814891475722437",
+   "xsrc": {
+    "post": "https://x.com/spottedinprod/status/2113814891475722437",
+    "author": "@spottedinprod",
+    "likes": 308,
+    "bookmarks": 117,
+    "reposts": 4,
+    "impressions": 21975,
+    "date": "2026-10-24"
+   },
+   "pub": "2026-10-25",
+   "added": "2026-10-25"
+  },
+  {
+   "id": "rd-762nav7-tash-partner-pack-opening",
+   "name": "Tash Partner Pack Opening",
+   "url": "https://x.com/nickbakeddesign/status/2114067278241353903",
+   "note": "Interactive card pack opening experience for Tash where holding the pack triggers a rarity-graded reveal with light effects, confetti, and a personalized discount reward card.",
+   "noteEn": "Interactive card pack opening experience for Tash where holding the pack triggers a rarity-graded reveal with light effects, confetti, and a personalized discount reward card.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@nickbakeddesign",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "3d"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/762nav7-tash-partner-pack-opening",
+   "rdkind": "Design",
+   "rdcat": "Interface",
+   "rdstyle": [
+    "3D",
+    "Dark"
+   ],
+   "author": {
+    "name": "Nick",
+    "handle": "@nickbakeddesign",
+    "url": "https://x.com/nickbakeddesign"
+   },
+   "x_post": "https://x.com/nickbakeddesign/status/2114067278241353903",
+   "xsrc": {
+    "post": "https://x.com/nickbakeddesign/status/2114067278241353903",
+    "author": "@nickbakeddesign",
+    "likes": 88,
+    "bookmarks": 33,
+    "reposts": 2,
+    "impressions": 3693,
+    "date": "2026-10-24"
+   },
+   "pub": "2026-10-25",
+   "added": "2026-10-25"
+  },
+  {
+   "id": "rd-3thyap5-illustrated-aerial-world-maps",
+   "name": "Illustrated Aerial World Maps",
+   "url": "https://x.com/notjignes/status/2113958988949942538",
+   "note": "A series of animated top-down map illustrations depicting real global landscapes including Japanese rice paddies, Argentine grassland, Serengeti savanna, and Indian mustard fields.",
+   "noteEn": "A series of animated top-down map illustrations depicting real global landscapes including Japanese rice paddies, Argentine grassland, Serengeti savanna, and Indian mustard fields.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@notjignes",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "motion"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/3thyap5-illustrated-aerial-world-maps",
+   "rdkind": "Design",
+   "rdcat": "Motion",
+   "rdstyle": [
+    "Geometric",
+    "Illustrative",
+    "Vibrant"
+   ],
+   "author": {
+    "name": "Vignesh",
+    "handle": "@notjignes",
+    "url": "https://x.com/notjignes"
+   },
+   "x_post": "https://x.com/notjignes/status/2113958988949942538",
+   "xsrc": {
+    "post": "https://x.com/notjignes/status/2113958988949942538",
+    "author": "@notjignes",
+    "likes": 1241,
+    "bookmarks": 641,
+    "reposts": 118,
+    "impressions": 23254,
+    "date": "2026-10-24"
+   },
+   "pub": "2026-10-24",
+   "added": "2026-10-25"
+  },
+  {
+   "id": "rd-7bqklue-bloom",
+   "name": "Bloom",
+   "url": "https://x.com/visualatelier8/status/2113989522723893561",
+   "note": "A looping 3D flower animation by Teknosis where bulbous petals and a sinuous stem continuously morph in color and form through blue, crimson and green states.",
+   "noteEn": "A looping 3D flower animation by Teknosis where bulbous petals and a sinuous stem continuously morph in color and form through blue, crimson and green states.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@visualatelier8",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "motion"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "3d",
+    "gradient"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/7bqklue-bloom",
+   "rdkind": "Design",
+   "rdcat": "Motion",
+   "rdstyle": [
+    "Abstract",
+    "3D",
+    "Organic",
+    "Vibrant",
+    "Light",
+    "Gradient"
+   ],
+   "author": {
+    "name": "Visual Atelier 8",
+    "handle": "@visualatelier8",
+    "url": "https://x.com/visualatelier8"
+   },
+   "x_post": "https://x.com/visualatelier8/status/2113989522723893561",
+   "xsrc": {
+    "post": "https://x.com/visualatelier8/status/2113989522723893561",
+    "author": "@visualatelier8",
+    "likes": 453,
+    "bookmarks": 148,
+    "reposts": 27,
+    "impressions": 8674,
+    "date": "2026-10-24"
+   },
+   "pub": "2026-10-24",
+   "added": "2026-10-25"
   }
  ],
  "guides": [
@@ -185577,5 +185776,5 @@
    ]
   }
  ],
- "updatedAt": "2026-10-25T04:37Z"
+ "updatedAt": "2026-10-25T06:46Z"
 }

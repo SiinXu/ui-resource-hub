@@ -1,6 +1,6 @@
 # UI Hub
 
-> Curated, multilingual directory of 4919 public UI resources (component libraries, component style demos, effects, design systems, design skills for AI agents) plus original blog analysis of AI design techniques. Data updated 2026-10-25 04:37 UTC.
+> Curated, multilingual directory of 4923 public UI resources (component libraries, component style demos, effects, design systems, design skills for AI agents) plus original blog analysis of AI design techniques. Data updated 2026-10-25 06:46 UTC.
 
 Use the JSON endpoints, not the SPA, when acting as an agent. Every entry links to its original site; licenses belong to the original authors.
 
@@ -116,11 +116,11 @@ Use the JSON endpoints, not the SPA, when acting as an agent. Every entry links 
 - [visx](https://airbnb.io/visx/): Airbnb's low-level visualization components
 
 ## FAQ
-- **What is UI Hub?** A free, curated directory of 4919 public UI resources: 207 component libraries, 1989 component style demos with light/dark screenshots, 70 design skills for AI agents, plus effects, templates, specs and tutorials. It links to original sites and never hosts paid source code.
+- **What is UI Hub?** A free, curated directory of 4923 public UI resources: 207 component libraries, 1989 component style demos with light/dark screenshots, 70 design skills for AI agents, plus effects, templates, specs and tutorials. It links to original sites and never hosts paid source code.
 - **How do I find a component in a given style?** Load https://ui.incidental.site/api/resources.json and filter by ct (component kind, e.g. "dialog") and vs (visual style, e.g. "minimal" or "motion"). type="style" entries are concrete component demos with a libName and page URL; type="library" entries are whole libraries with install info on the site.
 - **Which skills should an agent use for good UI?** One direction skill (frontend-design or taste-skill), emil-design-eng for motion and interaction polish, then impeccable, baseline-ui, web-design-guidelines and accessibility as an audit pass. See https://ui.incidental.site/api/skills.json.
 - **Can I copy the code?** Open-source libraries can be used under their own licenses (MIT, Apache-2.0 etc.); the card shows the original link. Paid tiers (marked paid/freemium) must be bought from the original vendor.
-- **How often is it updated?** Daily via a GitHub Actions job that adds new UI repositories and tools from GitHub, awesome-shadcn-ui and Hacker News. Nothing is deleted. Last update: 2026-10-25 04:37 UTC.
+- **How often is it updated?** Daily via a GitHub Actions job that adds new UI repositories and tools from GitHub, awesome-shadcn-ui and Hacker News. Nothing is deleted. Last update: 2026-10-25 06:46 UTC.
 
 
 # Blog posts (full text, English)
@@ -4447,6 +4447,10 @@ Get Hyped. Get Noticed. Get Results.
 - solidping | library | https://github.com/fclairamb/solidping | Listed in awesome-shadcn-ui: AGPL-3.0 self-hosted uptime monitoring app with a shadcn/ui dashboard for checks, incidents and status pages, plus an optional paid
 - stock-expert-ai | collection | https://www.stockexpertai.com/ | Listed in awesome-shadcn-ui: A free US-stock research app demonstrating shadcn/ui cards, badges, buttons, dropdowns, and accordions across stock screening and c
 - 21st-dev-agent-elements | collection | https://agent-elements.21st.dev | Listed in awesome-shadcn-ui: Open-source registry of agent UI primitives — chat shell, tool-call cards (Bash, Edit, Search, Todo, Plan), clarifying questions, i
+- Grok Bot Upsell Sheet | inspiration | https://x.com/spottedinprod/status/2113814891475722437 | X Chat's in-app upsell sheet for Grok Bot, showing animated colorful blob mascots bouncing and shuffling above a 'Try Grok Bot' call-to-action on a dark backgro
+- Tash Partner Pack Opening | inspiration | https://x.com/nickbakeddesign/status/2114067278241353903 | Interactive card pack opening experience for Tash where holding the pack triggers a rarity-graded reveal with light effects, confetti, and a personalized discou
+- Illustrated Aerial World Maps | inspiration | https://x.com/notjignes/status/2113958988949942538 | A series of animated top-down map illustrations depicting real global landscapes including Japanese rice paddies, Argentine grassland, Serengeti savanna, and In
+- Bloom | inspiration | https://x.com/visualatelier8/status/2113989522723893561 | A looping 3D flower animation by Teknosis where bulbous petals and a sinuous stem continuously morph in color and form through blue, crimson and green states.
 
 # Component style demos: 1989 entries, see api/resources.json (type=style)
 
