@@ -1,6 +1,6 @@
 {
  "generated": "2026-10-26",
- "count": 4937,
+ "count": 4938,
  "items": [
   {
    "id": "ued-figma-mcp-guide",
@@ -185958,6 +185958,55 @@
    ],
    "noteEn": "Listed in awesome-shadcn-ui: Beautiful terminal UIs, made simple. Ready to use, customizable terminal UI components for React.",
    "added": "2026-10-26"
+  },
+  {
+   "id": "rd-7h73fxn-crumpled-receipt-component",
+   "name": "Crumpled Receipt Component",
+   "url": "https://bencho.dev",
+   "note": "An interactive receipt component that crumples into a 3D paper ball when clicked, then falls with physics into a trash bin below.",
+   "noteEn": "An interactive receipt component that crumples into a 3D paper ball when clicked, then falls with physics into a trash bin below.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@cabralorenzo",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "3d"
+   ],
+   "origin": "site",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/7h73fxn-crumpled-receipt-component",
+   "rdkind": "Design",
+   "rdcat": "Interface",
+   "rdstyle": [
+    "3D",
+    "Dark",
+    "Black & White"
+   ],
+   "author": {
+    "name": "Lorenzo Cabra",
+    "handle": "@cabralorenzo",
+    "url": "https://x.com/cabralorenzo"
+   },
+   "x_post": "https://x.com/cabralorenzo/status/2114427621434081629",
+   "xsrc": {
+    "post": "https://x.com/cabralorenzo/status/2114427621434081629",
+    "author": "@cabralorenzo",
+    "likes": 85,
+    "bookmarks": 44,
+    "reposts": 4,
+    "impressions": 3181,
+    "date": "2026-10-25"
+   },
+   "official": "https://bencho.dev",
+   "pub": "2026-10-26",
+   "added": "2026-10-26"
   }
  ],
  "guides": [
@@ -186160,5 +186209,5 @@
    ]
   }
  ],
- "updatedAt": "2026-10-26T04:43Z"
+ "updatedAt": "2026-10-26T06:54Z"
 }
