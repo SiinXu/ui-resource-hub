@@ -1,6 +1,6 @@
 {
- "generated": "2026-10-25",
- "count": 4923,
+ "generated": "2026-10-26",
+ "count": 4937,
  "items": [
   {
    "id": "ued-figma-mcp-guide",
@@ -185574,6 +185574,390 @@
    },
    "pub": "2026-10-24",
    "added": "2026-10-25"
+  },
+  {
+   "id": "aw-dialectcn-xyz",
+   "name": "dialectcn",
+   "url": "https://dialectcn.xyz/",
+   "note": "awesome-shadcn-ui 收录：A living catalog of shadcn presets — brand-inspired, community-submitted, and occasionally random. Pick one, copy the code, ship the UI.",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: A living catalog of shadcn presets — brand-inspired, community-submitted, and occasionally random. Pick one, copy the code, ship the UI.",
+   "added": "2026-10-26"
+  },
+  {
+   "id": "aw-fluid-functionalism-vercel-app",
+   "name": "fluid-functionalism",
+   "url": "https://fluid-functionalism.vercel.app",
+   "note": "awesome-shadcn-ui 收录：Refined shadcn/ui-compatible components with spring physics, proximity hover, and font weight transitions. Every animation serves a functional purpose.",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "motion"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Refined shadcn/ui-compatible components with spring physics, proximity hover, and font weight transitions. Every animation serves a functional purpose.",
+   "added": "2026-10-26"
+  },
+  {
+   "id": "aw-github-com-nikunjsonigara-create-next-shadcn-kit",
+   "name": "create-next-shadcn-kit",
+   "url": "https://github.com/NikunjSonigara/create-next-shadcn-kit",
+   "note": "awesome-shadcn-ui 收录：CLI to scaffold a production-ready Next.js app with shadcn/ui, Tailwind CSS, optional state management (Redux Toolkit/Zustand), and preconfigured tooling like Husky.",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: CLI to scaffold a production-ready Next.js app with shadcn/ui, Tailwind CSS, optional state management (Redux Toolkit/Zustand), and preconfigured tooling like Husky.",
+   "added": "2026-10-26"
+  },
+  {
+   "id": "aw-github-com-nikunjsonigara-create-react-shadcn-kit",
+   "name": "create-react-shadcn-kit",
+   "url": "https://github.com/NikunjSonigara/create-react-shadcn-kit",
+   "note": "awesome-shadcn-ui 收录：CLI to scaffold a production-ready React (Vite) app with shadcn/ui, Tailwind CSS v4, optional Redux Toolkit/Zustand, and preconfigured tooling like Husky and TypeScript.",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: CLI to scaffold a production-ready React (Vite) app with shadcn/ui, Tailwind CSS v4, optional Redux Toolkit/Zustand, and preconfigured tooling like Husky and TypeScript.",
+   "added": "2026-10-26"
+  },
+  {
+   "id": "aw-auditzap-io",
+   "name": "auditzap",
+   "url": "https://auditzap.io",
+   "note": "awesome-shadcn-ui 收录：AI-powered website audit tool that runs 24 checks across SEO, performance, and site health, then generates code-level fix instructions ranked by revenue impact. Built with Next.js 16, shadcn/ui, Tailw",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat",
+    "form"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: AI-powered website audit tool that runs 24 checks across SEO, performance, and site health, then generates code-level fix instructions ranked by revenue impact. Built with Next.js 16, shadcn/ui, Tailw",
+   "added": "2026-10-26"
+  },
+  {
+   "id": "aw-keyzen-theshiva-xyz",
+   "name": "keyzen",
+   "url": "https://keyzen.theshiva.xyz/",
+   "note": "awesome-shadcn-ui 收录：KeyZen is a small side project: a clean, browser-based typing speed test built for practice and fun. It is open source and free to use or fork.",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: KeyZen is a small side project: a clean, browser-based typing speed test built for practice and fun. It is open source and free to use or fork.",
+   "added": "2026-10-26"
+  },
+  {
+   "id": "aw-github-com-s5sajid-next-dashcommerce",
+   "name": "s5arc-ecommerce-platform",
+   "url": "https://github.com/S5SAJID/next-dashcommerce",
+   "note": "awesome-shadcn-ui 收录：S5ARC is an open-source, multi-tenant e-commerce SaaS platform designed to help non-technical founders launch online stores quickly built with shadcn & nextjs etc.",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "form"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: S5ARC is an open-source, multi-tenant e-commerce SaaS platform designed to help non-technical founders launch online stores quickly built with shadcn & nextjs etc.",
+   "added": "2026-10-26"
+  },
+  {
+   "id": "aw-xquik-com",
+   "name": "xquik",
+   "url": "https://xquik.com",
+   "note": "awesome-shadcn-ui 收录：All-in-one X automation platform with 40+ tools, REST API, MCP server, and HMAC webhooks. Built with Next.js, shadcn/ui, and Tailwind CSS.",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat",
+    "form"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: All-in-one X automation platform with 40+ tools, REST API, MCP server, and HMAC webhooks. Built with Next.js, shadcn/ui, and Tailwind CSS.",
+   "added": "2026-10-26"
+  },
+  {
+   "id": "aw-github-com-yaminncco-deska-dashboard-template",
+   "name": "deska-dashboard-template",
+   "url": "https://github.com/yaminncco/deska-dashboard-template",
+   "note": "awesome-shadcn-ui 收录：A dashboard template built with Nuxt, Tailwind and Shadcn.",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat",
+    "layout"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: A dashboard template built with Nuxt, Tailwind and Shadcn.",
+   "added": "2026-10-26"
+  },
+  {
+   "id": "aw-shadcnadmin-com",
+   "name": "shadcn-admin-template",
+   "url": "https://shadcnadmin.com",
+   "note": "awesome-shadcn-ui 收录：A admin dashboard template for Next.js, React, Vite and Vue.js, built with Tailwind CSS.",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat",
+    "layout"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: A admin dashboard template for Next.js, React, Vite and Vue.js, built with Tailwind CSS.",
+   "added": "2026-10-26"
+  },
+  {
+   "id": "aw-github-com-abderrahimghazali-shadcn-fintech",
+   "name": "shadcn-fintech",
+   "url": "https://github.com/abderrahimghazali/shadcn-fintech",
+   "note": "awesome-shadcn-ui 收录：Premium fintech dashboard with 10 pages — drag-and-drop layout, 3D credit cards, live investment ticker, spending heatmap, actionable notifications, and dark mode. Built with Next.js 16, shadcn/ui, an",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Premium fintech dashboard with 10 pages — drag-and-drop layout, 3D credit cards, live investment ticker, spending heatmap, actionable notifications, and dark mode. Built with Next.js 16, shadcn/ui, an",
+   "added": "2026-10-26"
+  },
+  {
+   "id": "aw-remocn-dev",
+   "name": "remocn",
+   "url": "https://www.remocn.dev/",
+   "note": "awesome-shadcn-ui 收录：Build product demos, changelogs, and launch videos in React. Open source and delightfully easy",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Build product demos, changelogs, and launch videos in React. Open source and delightfully easy",
+   "added": "2026-10-26"
+  },
+  {
+   "id": "aw-github-com-gluer-space-calendar",
+   "name": "calendar-schedular",
+   "url": "https://github.com/gluer-space/calendar",
+   "note": "awesome-shadcn-ui 收录：A multi-purpose calendar component built on top of date-fn and shadcn-ui",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: A multi-purpose calendar component built on top of date-fn and shadcn-ui",
+   "added": "2026-10-26"
+  },
+  {
+   "id": "aw-termcn-vercel-app",
+   "name": "termcn",
+   "url": "https://termcn.vercel.app/",
+   "note": "awesome-shadcn-ui 收录：Beautiful terminal UIs, made simple. Ready to use, customizable terminal UI components for React.",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Beautiful terminal UIs, made simple. Ready to use, customizable terminal UI components for React.",
+   "added": "2026-10-26"
   }
  ],
  "guides": [
@@ -185776,5 +186160,5 @@
    ]
   }
  ],
- "updatedAt": "2026-10-25T17:12Z"
+ "updatedAt": "2026-10-26T04:43Z"
 }
