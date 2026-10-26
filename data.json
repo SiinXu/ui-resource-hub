@@ -1,6 +1,6 @@
 {
  "generated": "2026-10-26",
- "count": 4954,
+ "count": 4992,
  "items": [
   {
    "id": "ued-figma-mcp-guide",
@@ -186489,6 +186489,1132 @@
    ],
    "vs": [
     "minimal"
+   ],
+   "added": "2026-10-26",
+   "cur": 1
+  },
+  {
+   "id": "x1026b-pricing-bootstrap-example",
+   "name": "Bootstrap Pricing Example",
+   "url": "https://getbootstrap.com/docs/5.3/examples/pricing/",
+   "note": "Bootstrap 5.3 官方定价示例：三档套餐（每月 $0 / $15 / $29）加套餐对比表",
+   "noteTw": "Bootstrap 5.3 官方定價範例：三檔方案（每月 $0 / $15 / $29）加方案比較表",
+   "noteEn": "Official Bootstrap 5.3 pricing example: three plans ($0 / $15 / $29 per month) plus a plan comparison table",
+   "type": "template",
+   "section": "精选扩充 · 2026-10-26",
+   "sectionTitle": "精选扩充（2026-10-26）",
+   "sectionDesc": "",
+   "source": "Bootstrap",
+   "pricing": "free",
+   "tags": [
+    "Bootstrap"
+   ],
+   "ct": [
+    "pricing",
+    "card",
+    "table"
+   ],
+   "rt": [
+    "template"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "added": "2026-10-26",
+   "cur": 1
+  },
+  {
+   "id": "x1026b-pricing-freefrontend-css",
+   "name": "FreeFrontend CSS Pricing Tables",
+   "url": "https://freefrontend.com/css-pricing-tables/",
+   "note": "20 多个纯 CSS 定价表模板：响应式对比网格和订阅周期切换",
+   "noteTw": "20 多個純 CSS 定價表範本：響應式比較網格和訂閱週期切換",
+   "noteEn": "20+ pure CSS pricing table templates: responsive comparison grids and subscription toggles",
+   "type": "collection",
+   "section": "精选扩充 · 2026-10-26",
+   "sectionTitle": "精选扩充（2026-10-26）",
+   "sectionDesc": "",
+   "source": "FreeFrontend",
+   "pricing": "free",
+   "tags": [
+    "CSS"
+   ],
+   "ct": [
+    "pricing",
+    "card",
+    "table"
+   ],
+   "rt": [
+    "collection"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "added": "2026-10-26",
+   "cur": 1
+  },
+  {
+   "id": "x1026b-pricing-freefrontend-tw",
+   "name": "FreeFrontend Tailwind Pricing Tables",
+   "url": "https://freefrontend.com/tailwind-pricing-tables/",
+   "note": "40 多个面向 SaaS 的 Tailwind 定价表示例：套餐对比、功能清单、推荐套餐高亮和计费选项",
+   "noteTw": "40 多個面向 SaaS 的 Tailwind 定價表範例：方案比較、功能清單、推薦方案醒目標示和計費選項",
+   "noteEn": "40+ Tailwind pricing table examples for SaaS: plan comparisons, feature lists, highlighted plans and billing options",
+   "type": "collection",
+   "section": "精选扩充 · 2026-10-26",
+   "sectionTitle": "精选扩充（2026-10-26）",
+   "sectionDesc": "",
+   "source": "FreeFrontend",
+   "pricing": "free",
+   "tags": [
+    "Tailwind CSS"
+   ],
+   "ct": [
+    "pricing",
+    "card",
+    "table"
+   ],
+   "rt": [
+    "collection"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "added": "2026-10-26",
+   "cur": 1
+  },
+  {
+   "id": "x1026b-pricing-landingfolio",
+   "name": "Landingfolio Pricing Sections",
+   "url": "https://www.landingfolio.com/inspiration/section/pricing",
+   "note": "精选真实网站的定价区块设计，作为灵感参考",
+   "noteTw": "精選真實網站的定價區塊設計，作為靈感參考",
+   "noteEn": "Curated pricing section designs from real websites, for inspiration",
+   "type": "inspiration",
+   "section": "精选扩充 · 2026-10-26",
+   "sectionTitle": "精选扩充（2026-10-26）",
+   "sectionDesc": "",
+   "source": "Landingfolio",
+   "pricing": "freemium",
+   "tags": [],
+   "ct": [
+    "pricing",
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "added": "2026-10-26",
+   "cur": 1
+  },
+  {
+   "id": "x1026b-pricing-lukacho",
+   "name": "Lukacho UI Pricing Card",
+   "url": "https://ui.lukacho.com/components/pricing",
+   "note": "带动画的定价卡片组件，Next.js + Tailwind CSS + Framer Motion",
+   "noteTw": "帶動畫的定價卡片元件，Next.js + Tailwind CSS + Framer Motion",
+   "noteEn": "Animated pricing card component built with Next.js, Tailwind CSS and Framer Motion",
+   "type": "effect",
+   "section": "精选扩充 · 2026-10-26",
+   "sectionTitle": "精选扩充（2026-10-26）",
+   "sectionDesc": "",
+   "source": "Lukacho UI",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Tailwind CSS"
+   ],
+   "ct": [
+    "pricing",
+    "card"
+   ],
+   "rt": [
+    "effect"
+   ],
+   "vs": [
+    "motion",
+    "minimal"
+   ],
+   "added": "2026-10-26",
+   "cur": 1
+  },
+  {
+   "id": "x1026b-pricing-magicui-pro",
+   "name": "Magic UI Pro Pricing Section",
+   "url": "https://pro.magicui.design/docs/sections/pricing",
+   "note": "Magic UI Pro 的网站定价区块组件",
+   "noteTw": "Magic UI Pro 的網站定價區塊元件",
+   "noteEn": "Magic UI Pro section components for building a website’s pricing",
+   "type": "template",
+   "section": "精选扩充 · 2026-10-26",
+   "sectionTitle": "精选扩充（2026-10-26）",
+   "sectionDesc": "",
+   "source": "Magic UI",
+   "pricing": "paid",
+   "tags": [
+    "React",
+    "Tailwind CSS"
+   ],
+   "ct": [
+    "pricing",
+    "card"
+   ],
+   "rt": [
+    "template"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "added": "2026-10-26",
+   "cur": 1
+  },
+  {
+   "id": "x1026b-pricing-pricingpages-design",
+   "name": "Pricing Pages Design Vault",
+   "url": "https://www.pricingpages.design/",
+   "note": "精选定价页案例库：SaaS 公司、电商品牌和数字代理公司",
+   "noteTw": "精選定價頁案例庫：SaaS 公司、電商品牌和數位代理商",
+   "noteEn": "Handpicked pricing page examples from SaaS companies, ecommerce brands and digital agencies",
+   "type": "inspiration",
+   "section": "精选扩充 · 2026-10-26",
+   "sectionTitle": "精选扩充（2026-10-26）",
+   "sectionDesc": "",
+   "source": "Pricing Pages",
+   "pricing": "freemium",
+   "tags": [],
+   "ct": [
+    "pricing",
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "added": "2026-10-26",
+   "cur": 1
+  },
+  {
+   "id": "x1026b-pricing-saasframe",
+   "name": "SaaSFrame Pricing Pages",
+   "url": "https://www.saasframe.io/categories/pricing-page",
+   "note": "收录 211 个 SaaS 定价页界面设计案例",
+   "noteTw": "收錄 211 個 SaaS 定價頁介面設計案例",
+   "noteEn": "Library of 211 SaaS pricing page UI design examples",
+   "type": "inspiration",
+   "section": "精选扩充 · 2026-10-26",
+   "sectionTitle": "精选扩充（2026-10-26）",
+   "sectionDesc": "",
+   "source": "SaaSFrame",
+   "pricing": "freemium",
+   "tags": [],
+   "ct": [
+    "pricing",
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "added": "2026-10-26",
+   "cur": 1
+  },
+  {
+   "id": "x1026b-pricing-saaslandingpage",
+   "name": "SaaS Landing Page Pricing Examples",
+   "url": "https://saaslandingpage.com/pricing/",
+   "note": "精选 64 个顶尖 SaaS 公司的定价页案例",
+   "noteTw": "精選 64 個頂尖 SaaS 公司的定價頁案例",
+   "noteEn": "64 curated pricing page examples from top SaaS companies",
+   "type": "inspiration",
+   "section": "精选扩充 · 2026-10-26",
+   "sectionTitle": "精选扩充（2026-10-26）",
+   "sectionDesc": "",
+   "source": "SaaS Landing Page",
+   "pricing": "freemium",
+   "tags": [],
+   "ct": [
+    "pricing",
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "added": "2026-10-26",
+   "cur": 1
+  },
+  {
+   "id": "x1026b-pricing-saasui",
+   "name": "SaaSUI Pricing Patterns",
+   "url": "https://www.saasui.design/pattern/pricing",
+   "note": "真实 SaaS 产品的定价页设计：套餐对比、功能表和升级流程",
+   "noteTw": "真實 SaaS 產品的定價頁設計：方案比較、功能表和升級流程",
+   "noteEn": "Pricing page designs from real SaaS products: plan comparisons, feature tables and upgrade flows",
+   "type": "inspiration",
+   "section": "精选扩充 · 2026-10-26",
+   "sectionTitle": "精选扩充（2026-10-26）",
+   "sectionDesc": "",
+   "source": "SaaSUI",
+   "pricing": "freemium",
+   "tags": [],
+   "ct": [
+    "pricing",
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "added": "2026-10-26",
+   "cur": 1
+  },
+  {
+   "id": "x1026b-pricing-tailwindcomponents",
+   "name": "Tailwind Components Pricing",
+   "url": "https://tailwindcomponents.com/components/pricing",
+   "note": "26 个以上 Tailwind CSS 定价组件，免费和付费款都有",
+   "noteTw": "26 個以上 Tailwind CSS 定價元件，免費和付費款都有",
+   "noteEn": "26+ Tailwind CSS pricing components, free and premium",
+   "type": "collection",
+   "section": "精选扩充 · 2026-10-26",
+   "sectionTitle": "精选扩充（2026-10-26）",
+   "sectionDesc": "",
+   "source": "Tailwind Components",
+   "pricing": "freemium",
+   "tags": [
+    "Tailwind CSS"
+   ],
+   "ct": [
+    "pricing",
+    "card"
+   ],
+   "rt": [
+    "collection"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "added": "2026-10-26",
+   "cur": 1
+  },
+  {
+   "id": "x1026b-pricing-shadcnblocks-1",
+   "name": "Shadcnblocks Pricing 1",
+   "url": "https://www.shadcnblocks.com/block/pricing1",
+   "note": "四档对比网格：四列套餐、大号价格、按钮和打勾功能清单",
+   "noteTw": "四檔比較網格：四欄方案、大號價格、按鈕和打勾功能清單",
+   "noteEn": "Four-tier comparison grid: four plan columns, large prices, CTAs and checkmarked feature lists",
+   "type": "template",
+   "section": "精选扩充 · 2026-10-26",
+   "sectionTitle": "精选扩充（2026-10-26）",
+   "sectionDesc": "",
+   "source": "Shadcnblocks",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "Tailwind CSS"
+   ],
+   "ct": [
+    "pricing",
+    "card"
+   ],
+   "rt": [
+    "template"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "added": "2026-10-26",
+   "cur": 1
+  },
+  {
+   "id": "x1026b-pricing-shadcnblocks-3",
+   "name": "Shadcnblocks Pricing 3",
+   "url": "https://www.shadcnblocks.com/block/pricing3",
+   "note": "三档套餐：计费周期开关、打勾功能行带虚线分隔",
+   "noteTw": "三檔方案：計費週期開關、打勾功能列帶虛線分隔",
+   "noteEn": "Three plans with a billing switch and checked feature rows split by dashed lines",
+   "type": "template",
+   "section": "精选扩充 · 2026-10-26",
+   "sectionTitle": "精选扩充（2026-10-26）",
+   "sectionDesc": "",
+   "source": "Shadcnblocks",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "Tailwind CSS"
+   ],
+   "ct": [
+    "pricing",
+    "card"
+   ],
+   "rt": [
+    "template"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "added": "2026-10-26",
+   "cur": 1
+  },
+  {
+   "id": "x1026b-pricing-shadcnblocks-4",
+   "name": "Shadcnblocks Pricing 4",
+   "url": "https://www.shadcnblocks.com/block/pricing4",
+   "note": "月付/年付标签页，三档套餐，其中一列高亮",
+   "noteTw": "月付/年付分頁，三檔方案，其中一欄醒目標示",
+   "noteEn": "Monthly/yearly tabs above three tiers with one highlighted column",
+   "type": "template",
+   "section": "精选扩充 · 2026-10-26",
+   "sectionTitle": "精选扩充（2026-10-26）",
+   "sectionDesc": "",
+   "source": "Shadcnblocks",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "Tailwind CSS"
+   ],
+   "ct": [
+    "pricing",
+    "card"
+   ],
+   "rt": [
+    "template"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "added": "2026-10-26",
+   "cur": 1
+  },
+  {
+   "id": "x1026b-pricing-shadcnblocks-5",
+   "name": "Shadcnblocks Pricing 5",
+   "url": "https://www.shadcnblocks.com/block/pricing5",
+   "note": "双套餐卡片并排，下方是用勾和横线标示的功能对比表",
+   "noteTw": "雙方案卡片並排，下方是用勾和橫線標示的功能比較表",
+   "noteEn": "Two side-by-side plan cards plus a feature matrix with check and minus marks",
+   "type": "template",
+   "section": "精选扩充 · 2026-10-26",
+   "sectionTitle": "精选扩充（2026-10-26）",
+   "sectionDesc": "",
+   "source": "Shadcnblocks",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "Tailwind CSS"
+   ],
+   "ct": [
+    "pricing",
+    "card"
+   ],
+   "rt": [
+    "template"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "added": "2026-10-26",
+   "cur": 1
+  },
+  {
+   "id": "x1026b-pricing-shadcnblocks-6",
+   "name": "Shadcnblocks Pricing 6",
+   "url": "https://www.shadcnblocks.com/block/pricing6",
+   "note": "居中的单套餐卡片：功能分组、大号价格和按钮",
+   "noteTw": "置中的單一方案卡片：功能分組、大號價格和按鈕",
+   "noteEn": "Centered single-plan card with grouped features, a large price and a CTA",
+   "type": "template",
+   "section": "精选扩充 · 2026-10-26",
+   "sectionTitle": "精选扩充（2026-10-26）",
+   "sectionDesc": "",
+   "source": "Shadcnblocks",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "Tailwind CSS"
+   ],
+   "ct": [
+    "pricing",
+    "card"
+   ],
+   "rt": [
+    "template"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "added": "2026-10-26",
+   "cur": 1
+  },
+  {
+   "id": "x1026b-pricing-shadcnblocks-7",
+   "name": "Shadcnblocks Pricing 7",
+   "url": "https://www.shadcnblocks.com/block/pricing7",
+   "note": "分段单选切换月付/年付，带省钱徽章，两个描边套餐面板",
+   "noteTw": "分段單選切換月付/年付，帶省錢徽章，兩個描邊方案面板",
+   "noteEn": "Segmented radio for monthly/yearly billing, a savings badge and two bordered plan panels",
+   "type": "template",
+   "section": "精选扩充 · 2026-10-26",
+   "sectionTitle": "精选扩充（2026-10-26）",
+   "sectionDesc": "",
+   "source": "Shadcnblocks",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "Tailwind CSS"
+   ],
+   "ct": [
+    "pricing",
+    "card"
+   ],
+   "rt": [
+    "template"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "added": "2026-10-26",
+   "cur": 1
+  },
+  {
+   "id": "x1026b-pricing-shadcnblocks-8",
+   "name": "Shadcnblocks Pricing 8",
+   "url": "https://www.shadcnblocks.com/block/pricing8",
+   "note": "单套餐卡片：超大价格和按钮，下方多列功能清单，浅灰底",
+   "noteTw": "單一方案卡片：超大價格和按鈕，下方多欄功能清單，淺灰底",
+   "noteEn": "Single-plan card with an oversized price and CTA, multi-column feature checklist on a muted surface",
+   "type": "template",
+   "section": "精选扩充 · 2026-10-26",
+   "sectionTitle": "精选扩充（2026-10-26）",
+   "sectionDesc": "",
+   "source": "Shadcnblocks",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "Tailwind CSS"
+   ],
+   "ct": [
+    "pricing",
+    "card"
+   ],
+   "rt": [
+    "template"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "added": "2026-10-26",
+   "cur": 1
+  },
+  {
+   "id": "x1026b-pricing-shadcnblocks-9",
+   "name": "Shadcnblocks Pricing 9",
+   "url": "https://www.shadcnblocks.com/block/pricing9",
+   "note": "三档功能对比：桌面端是表格、手机端堆叠成卡片，带年付/月付开关",
+   "noteTw": "三檔功能比較：桌面端是表格、手機端堆疊成卡片，帶年付/月付開關",
+   "noteEn": "Three-tier comparison: a table on desktop, stacked cards on mobile, with an annual/monthly switch",
+   "type": "template",
+   "section": "精选扩充 · 2026-10-26",
+   "sectionTitle": "精选扩充（2026-10-26）",
+   "sectionDesc": "",
+   "source": "Shadcnblocks",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "Tailwind CSS"
+   ],
+   "ct": [
+    "pricing",
+    "card"
+   ],
+   "rt": [
+    "template"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "added": "2026-10-26",
+   "cur": 1
+  },
+  {
+   "id": "x1026b-pricing-shadcnblocks-10",
+   "name": "Shadcnblocks Pricing 10",
+   "url": "https://www.shadcnblocks.com/block/pricing10",
+   "note": "四张套餐卡片一排：套餐配图、分组功能清单和高亮的推荐档",
+   "noteTw": "四張方案卡片一排：方案配圖、分組功能清單和醒目的推薦方案",
+   "noteEn": "Four plan cards in a row with plan images, grouped feature checklists and a highlighted recommended tier",
+   "type": "template",
+   "section": "精选扩充 · 2026-10-26",
+   "sectionTitle": "精选扩充（2026-10-26）",
+   "sectionDesc": "",
+   "source": "Shadcnblocks",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "Tailwind CSS"
+   ],
+   "ct": [
+    "pricing",
+    "card"
+   ],
+   "rt": [
+    "template"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "added": "2026-10-26",
+   "cur": 1
+  },
+  {
+   "id": "x1026b-pricing-shadcnblocks-11",
+   "name": "Shadcnblocks Pricing 11",
+   "url": "https://www.shadcnblocks.com/block/pricing11",
+   "note": "四套餐功能矩阵：套餐表头吸顶、计费标签页、功能名提示，手机端可折叠",
+   "noteTw": "四方案功能矩陣：方案表頭固定、計費分頁、功能名提示，手機端可摺疊",
+   "noteEn": "Four-plan feature matrix with a sticky plan header, billing tabs, tooltips and collapsible rows on mobile",
+   "type": "template",
+   "section": "精选扩充 · 2026-10-26",
+   "sectionTitle": "精选扩充（2026-10-26）",
+   "sectionDesc": "",
+   "source": "Shadcnblocks",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "Tailwind CSS"
+   ],
+   "ct": [
+    "pricing",
+    "card"
+   ],
+   "rt": [
+    "template"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "added": "2026-10-26",
+   "cur": 1
+  },
+  {
+   "id": "x1026b-pricing-shadcnblocks-12",
+   "name": "Shadcnblocks Pricing 12",
+   "url": "https://www.shadcnblocks.com/block/pricing12",
+   "note": "附加项定价：重点项放在强调色卡片上，其余放在分隔列表里，各附月价",
+   "noteTw": "附加項定價：重點項放在強調色卡片上，其餘放在分隔列表裡，各附月價",
+   "noteEn": "Add-on pricing: featured items on accent cards, others in a divided list, each with a monthly price",
+   "type": "template",
+   "section": "精选扩充 · 2026-10-26",
+   "sectionTitle": "精选扩充（2026-10-26）",
+   "sectionDesc": "",
+   "source": "Shadcnblocks",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "Tailwind CSS"
+   ],
+   "ct": [
+    "pricing",
+    "card"
+   ],
+   "rt": [
+    "template"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "added": "2026-10-26",
+   "cur": 1
+  },
+  {
+   "id": "x1026b-pricing-shadcnblocks-13",
+   "name": "Shadcnblocks Pricing 13",
+   "url": "https://www.shadcnblocks.com/block/pricing13",
+   "note": "同一描边容器里的三个附加项，各有标题、说明和月价或“联系我们”",
+   "noteTw": "同一描邊容器裡的三個附加項，各有標題、說明和月價或「聯絡我們」",
+   "noteEn": "Three add-on options in one bordered container, each with title, description and monthly price or contact label",
+   "type": "template",
+   "section": "精选扩充 · 2026-10-26",
+   "sectionTitle": "精选扩充（2026-10-26）",
+   "sectionDesc": "",
+   "source": "Shadcnblocks",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "Tailwind CSS"
+   ],
+   "ct": [
+    "pricing",
+    "card"
+   ],
+   "rt": [
+    "template"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "added": "2026-10-26",
+   "cur": 1
+  },
+  {
+   "id": "x1026b-pricing-shadcnblocks-14",
+   "name": "Shadcnblocks Pricing 14",
+   "url": "https://www.shadcnblocks.com/block/pricing14",
+   "note": "单套餐：折扣徽章、价格、两列功能清单和两个按钮",
+   "noteTw": "單一方案：折扣徽章、價格、兩欄功能清單和兩個按鈕",
+   "noteEn": "Single plan with a discount badge, price, two-column feature checklist and two CTA buttons",
+   "type": "template",
+   "section": "精选扩充 · 2026-10-26",
+   "sectionTitle": "精选扩充（2026-10-26）",
+   "sectionDesc": "",
+   "source": "Shadcnblocks",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "Tailwind CSS"
+   ],
+   "ct": [
+    "pricing",
+    "card"
+   ],
+   "rt": [
+    "template"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "added": "2026-10-26",
+   "cur": 1
+  },
+  {
+   "id": "x1026b-pricing-shadcnblocks-15",
+   "name": "Shadcnblocks Pricing 15",
+   "url": "https://www.shadcnblocks.com/block/pricing15",
+   "note": "左右分栏：左侧标题、说明和订阅按钮，右侧是含价格和清单的功能卡片",
+   "noteTw": "左右分欄：左側標題、說明和訂閱按鈕，右側是含價格和清單的功能卡片",
+   "noteEn": "Split layout: heading, description and subscribe button on the left, a feature card with price and checklist on the right",
+   "type": "template",
+   "section": "精选扩充 · 2026-10-26",
+   "sectionTitle": "精选扩充（2026-10-26）",
+   "sectionDesc": "",
+   "source": "Shadcnblocks",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "Tailwind CSS"
+   ],
+   "ct": [
+    "pricing",
+    "card"
+   ],
+   "rt": [
+    "template"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "added": "2026-10-26",
+   "cur": 1
+  },
+  {
+   "id": "x1026b-pricing-uiverse-brown-bird-6",
+   "name": "Uiverse Pricing Card by Admin12121 (brown-bird-6)",
+   "url": "https://uiverse.io/Admin12121/brown-bird-6",
+   "note": "蓝色渐变定价卡：功能列表和徽章",
+   "noteTw": "藍色漸層定價卡：功能列表和徽章",
+   "noteEn": "Blue-gradient pricing card with a feature list and badge",
+   "type": "effect",
+   "section": "精选扩充 · 2026-10-26",
+   "sectionTitle": "精选扩充（2026-10-26）",
+   "sectionDesc": "",
+   "source": "Uiverse",
+   "pricing": "free",
+   "tags": [
+    "CSS"
+   ],
+   "ct": [
+    "pricing",
+    "card"
+   ],
+   "rt": [
+    "effect"
+   ],
+   "vs": [
+    "playful"
+   ],
+   "added": "2026-10-26",
+   "cur": 1
+  },
+  {
+   "id": "x1026b-pricing-uiverse-curvy-robin-66",
+   "name": "Uiverse Pricing Card by emmanuelh-dev (curvy-robin-66)",
+   "url": "https://uiverse.io/emmanuelh-dev/curvy-robin-66",
+   "note": "黄色高级套餐卡片：价格、说明和购买按钮",
+   "noteTw": "黃色進階方案卡片：價格、說明和購買按鈕",
+   "noteEn": "Yellow premium plan card with price, description and purchase button",
+   "type": "effect",
+   "section": "精选扩充 · 2026-10-26",
+   "sectionTitle": "精选扩充（2026-10-26）",
+   "sectionDesc": "",
+   "source": "Uiverse",
+   "pricing": "free",
+   "tags": [
+    "Tailwind CSS"
+   ],
+   "ct": [
+    "pricing",
+    "card"
+   ],
+   "rt": [
+    "effect"
+   ],
+   "vs": [
+    "playful"
+   ],
+   "added": "2026-10-26",
+   "cur": 1
+  },
+  {
+   "id": "x1026b-pricing-uiverse-foolish-husky-65",
+   "name": "Uiverse Pricing Card by Yaya12085 (foolish-husky-65)",
+   "url": "https://uiverse.io/Yaya12085/foolish-husky-65",
+   "note": "套餐选择表单：月付/年付和免费套餐，蓝灰白极简风",
+   "noteTw": "方案選擇表單：月付/年付和免費方案，藍灰白極簡風",
+   "noteEn": "Plan selection form with monthly/yearly and free plans, minimal blue, gray and white",
+   "type": "effect",
+   "section": "精选扩充 · 2026-10-26",
+   "sectionTitle": "精选扩充（2026-10-26）",
+   "sectionDesc": "",
+   "source": "Uiverse",
+   "pricing": "free",
+   "tags": [
+    "CSS"
+   ],
+   "ct": [
+    "pricing",
+    "card"
+   ],
+   "rt": [
+    "effect"
+   ],
+   "vs": [
+    "playful"
+   ],
+   "added": "2026-10-26",
+   "cur": 1
+  },
+  {
+   "id": "x1026b-pricing-uiverse-loud-baboon-79",
+   "name": "Uiverse Pricing Card by alexruix (loud-baboon-79)",
+   "url": "https://uiverse.io/alexruix/loud-baboon-79",
+   "note": "黑绿配色的入门订阅卡：月付价格和功能清单",
+   "noteTw": "黑綠配色的入門訂閱卡：月付價格和功能清單",
+   "noteEn": "Black-and-green starter subscription card with monthly price and checklist",
+   "type": "effect",
+   "section": "精选扩充 · 2026-10-26",
+   "sectionTitle": "精选扩充（2026-10-26）",
+   "sectionDesc": "",
+   "source": "Uiverse",
+   "pricing": "free",
+   "tags": [
+    "CSS"
+   ],
+   "ct": [
+    "pricing",
+    "card"
+   ],
+   "rt": [
+    "effect"
+   ],
+   "vs": [
+    "playful"
+   ],
+   "added": "2026-10-26",
+   "cur": 1
+  },
+  {
+   "id": "x1026b-pricing-uiverse-mean-vampirebat-50",
+   "name": "Uiverse Pricing Card by Yaya12085 (mean-vampirebat-50)",
+   "url": "https://uiverse.io/Yaya12085/mean-vampirebat-50",
+   "note": "深色极简定价卡：免费入门档、打勾清单和行动按钮",
+   "noteTw": "深色極簡定價卡：免費入門檔、打勾清單和行動按鈕",
+   "noteEn": "Dark minimalist pricing card: free beginner tier, checkmarks and a call to action",
+   "type": "effect",
+   "section": "精选扩充 · 2026-10-26",
+   "sectionTitle": "精选扩充（2026-10-26）",
+   "sectionDesc": "",
+   "source": "Uiverse",
+   "pricing": "free",
+   "tags": [
+    "CSS"
+   ],
+   "ct": [
+    "pricing",
+    "card"
+   ],
+   "rt": [
+    "effect"
+   ],
+   "vs": [
+    "playful"
+   ],
+   "added": "2026-10-26",
+   "cur": 1
+  },
+  {
+   "id": "x1026b-pricing-uiverse-old-cat-57",
+   "name": "Uiverse Pricing Card by Cobp (old-cat-57)",
+   "url": "https://uiverse.io/Cobp/old-cat-57",
+   "note": "蓝色渐变的热门月付订阅卡，带功能列表",
+   "noteTw": "藍色漸層的熱門月付訂閱卡，帶功能列表",
+   "noteEn": "Blue-gradient popular monthly subscription card with a feature list",
+   "type": "effect",
+   "section": "精选扩充 · 2026-10-26",
+   "sectionTitle": "精选扩充（2026-10-26）",
+   "sectionDesc": "",
+   "source": "Uiverse",
+   "pricing": "free",
+   "tags": [
+    "CSS"
+   ],
+   "ct": [
+    "pricing",
+    "card"
+   ],
+   "rt": [
+    "effect"
+   ],
+   "vs": [
+    "playful"
+   ],
+   "added": "2026-10-26",
+   "cur": 1
+  },
+  {
+   "id": "x1026b-pricing-uiverse-orange-cougar-98",
+   "name": "Uiverse Pricing Card by emmanuelh-dev (orange-cougar-98)",
+   "url": "https://uiverse.io/emmanuelh-dev/orange-cougar-98",
+   "note": "黑白极简入门月付套餐卡",
+   "noteTw": "黑白極簡入門月付方案卡",
+   "noteEn": "Simple black-and-white starter monthly plan card",
+   "type": "effect",
+   "section": "精选扩充 · 2026-10-26",
+   "sectionTitle": "精选扩充（2026-10-26）",
+   "sectionDesc": "",
+   "source": "Uiverse",
+   "pricing": "free",
+   "tags": [
+    "Tailwind CSS"
+   ],
+   "ct": [
+    "pricing",
+    "card"
+   ],
+   "rt": [
+    "effect"
+   ],
+   "vs": [
+    "playful"
+   ],
+   "added": "2026-10-26",
+   "cur": 1
+  },
+  {
+   "id": "x1026b-pricing-uiverse-popular-gecko-2",
+   "name": "Uiverse Pricing Card by Cobp (popular-gecko-2)",
+   "url": "https://uiverse.io/Cobp/popular-gecko-2",
+   "note": "蓝紫渐变的专业版热门订阅卡",
+   "noteTw": "藍紫漸層的專業版熱門訂閱卡",
+   "noteEn": "Gradient \"professional\" popular subscription card",
+   "type": "effect",
+   "section": "精选扩充 · 2026-10-26",
+   "sectionTitle": "精选扩充（2026-10-26）",
+   "sectionDesc": "",
+   "source": "Uiverse",
+   "pricing": "free",
+   "tags": [
+    "CSS"
+   ],
+   "ct": [
+    "pricing",
+    "card"
+   ],
+   "rt": [
+    "effect"
+   ],
+   "vs": [
+    "playful"
+   ],
+   "added": "2026-10-26",
+   "cur": 1
+  },
+  {
+   "id": "x1026b-pricing-uiverse-rotten-dolphin-86",
+   "name": "Uiverse Pricing Card by Yaya12085 (rotten-dolphin-86)",
+   "url": "https://uiverse.io/Yaya12085/rotten-dolphin-86",
+   "note": "黑白套餐卡：入门价格、功能列表（账户连接、分析、导出、支持）",
+   "noteTw": "黑白方案卡：入門價格、功能列表（帳戶連接、分析、匯出、支援）",
+   "noteEn": "Black-and-white plan card: start price and features like account connect, analytics, export and support",
+   "type": "effect",
+   "section": "精选扩充 · 2026-10-26",
+   "sectionTitle": "精选扩充（2026-10-26）",
+   "sectionDesc": "",
+   "source": "Uiverse",
+   "pricing": "free",
+   "tags": [
+    "CSS"
+   ],
+   "ct": [
+    "pricing",
+    "card"
+   ],
+   "rt": [
+    "effect"
+   ],
+   "vs": [
+    "playful"
+   ],
+   "added": "2026-10-26",
+   "cur": 1
+  },
+  {
+   "id": "x1026b-pricing-uiverse-serious-eagle-83",
+   "name": "Uiverse Pricing Card by Yaya12085 (serious-eagle-83)",
+   "url": "https://uiverse.io/Yaya12085/serious-eagle-83",
+   "note": "黑白高对比扁平入门月付卡：价格、功能和购买按钮",
+   "noteTw": "黑白高對比扁平入門月付卡：價格、功能和購買按鈕",
+   "noteEn": "Flat high-contrast black-and-white starter monthly card with price, features and purchase button",
+   "type": "effect",
+   "section": "精选扩充 · 2026-10-26",
+   "sectionTitle": "精选扩充（2026-10-26）",
+   "sectionDesc": "",
+   "source": "Uiverse",
+   "pricing": "free",
+   "tags": [
+    "CSS"
+   ],
+   "ct": [
+    "pricing",
+    "card"
+   ],
+   "rt": [
+    "effect"
+   ],
+   "vs": [
+    "playful"
+   ],
+   "added": "2026-10-26",
+   "cur": 1
+  },
+  {
+   "id": "x1026b-pricing-uiverse-splendid-eagle-61",
+   "name": "Uiverse Pricing Card by mi-series (splendid-eagle-61)",
+   "url": "https://uiverse.io/mi-series/splendid-eagle-61",
+   "note": "深色低饱和绿调的极简定价卡（Material 风格）",
+   "noteTw": "深色低飽和綠調的極簡定價卡（Material 風格）",
+   "noteEn": "Dark, muted green minimalist pricing card in a Material Design style",
+   "type": "effect",
+   "section": "精选扩充 · 2026-10-26",
+   "sectionTitle": "精选扩充（2026-10-26）",
+   "sectionDesc": "",
+   "source": "Uiverse",
+   "pricing": "free",
+   "tags": [
+    "CSS"
+   ],
+   "ct": [
+    "pricing",
+    "card"
+   ],
+   "rt": [
+    "effect"
+   ],
+   "vs": [
+    "playful"
+   ],
+   "added": "2026-10-26",
+   "cur": 1
+  },
+  {
+   "id": "x1026b-pricing-uiverse-splendid-firefox-37",
+   "name": "Uiverse Pricing Card by Yaya12085 (splendid-firefox-37)",
+   "url": "https://uiverse.io/Yaya12085/splendid-firefox-37",
+   "note": "浅色蓝紫专业版会员套餐卡：月付价格和打勾功能",
+   "noteTw": "淺色藍紫專業版會員方案卡：月付價格和打勾功能",
+   "noteEn": "Light blue-purple professional membership plan card with monthly price and checkmarks",
+   "type": "effect",
+   "section": "精选扩充 · 2026-10-26",
+   "sectionTitle": "精选扩充（2026-10-26）",
+   "sectionDesc": "",
+   "source": "Uiverse",
+   "pricing": "free",
+   "tags": [
+    "CSS"
+   ],
+   "ct": [
+    "pricing",
+    "card"
+   ],
+   "rt": [
+    "effect"
+   ],
+   "vs": [
+    "playful"
+   ],
+   "added": "2026-10-26",
+   "cur": 1
+  },
+  {
+   "id": "x1026b-pricing-uiverse-swift-sloth-95",
+   "name": "Uiverse Pricing Card by seyed-mohsen-mousavi (swift-sloth-95)",
+   "url": "https://uiverse.io/seyed-mohsen-mousavi/swift-sloth-95",
+   "note": "绿灰白商务专业版订阅卡：价格、功能、用户数和订阅按钮",
+   "noteTw": "綠灰白商務專業版訂閱卡：價格、功能、使用者數和訂閱按鈕",
+   "noteEn": "Green, gray and white business Pro subscription card with price, features, users and subscribe button",
+   "type": "effect",
+   "section": "精选扩充 · 2026-10-26",
+   "sectionTitle": "精选扩充（2026-10-26）",
+   "sectionDesc": "",
+   "source": "Uiverse",
+   "pricing": "free",
+   "tags": [
+    "Tailwind CSS"
+   ],
+   "ct": [
+    "pricing",
+    "card"
+   ],
+   "rt": [
+    "effect"
+   ],
+   "vs": [
+    "playful"
    ],
    "added": "2026-10-26",
    "cur": 1

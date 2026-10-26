@@ -1,0 +1,402 @@
+{
+ "x1026b-pricing-bootstrap-example": {
+  "url": "https://getbootstrap.com/docs/5.3/examples/pricing/",
+  "status": 200,
+  "title": "Pricing example · Bootstrap v5.3",
+  "desc": "",
+  "h": "Pricing | $0/mo | $15/mo | $29/mo",
+  "content": 0.1527
+ },
+ "x1026b-pricing-land-book": {
+  "url": "https://land-book.com/?category=pricing",
+  "status": 200,
+  "title": "Landbook - website design inspiration gallery",
+  "desc": "Find the best hand-picked website design inspiration. We're a curated website design gallery for Creatives, updated daily.",
+  "h": "Landbook - website design inspiration gallery",
+  "content": 0.4578
+ },
+ "x1026b-pricing-mdb": {
+  "url": "https://mdbootstrap.com/docs/standard/extended/pricing/",
+  "status": 200,
+  "title": "",
+  "desc": "",
+  "h": "Oops! This obviously isn't a page you were looking for. | Access restricted",
+  "content": 0.1412
+ },
+ "x1026b-pricing-saaslandingpage": {
+  "url": "https://saaslandingpage.com/pricing/",
+  "status": 200,
+  "title": "64 Best Pricing Page Examples [Design Inspiration] - SaaS Landing Page",
+  "desc": "A curated selection of the best pricing page examples created by top-class SaaS companies.",
+  "h": " | Pricing page examples | EVpin pricing | Calendly pricing",
+  "content": 0.2812
+ },
+ "x1026b-pricing-tailwindcomponents": {
+  "url": "https://tailwindcomponents.com/components/pricing",
+  "status": 200,
+  "title": "26+ Tailwind CSS pricing - Free and Premium Components Collection.",
+  "desc": "Visit our Pricing collection that you can add to your Tailwind UI project to create awesome websites.",
+  "h": "26+ Tailwind CSS Pricing Components | Material Tailwind | Log in",
+  "content": 0.5339
+ },
+ "x1026b-pricing-tailark": {
+  "url": "https://tailark.com/pricing",
+  "status": 200,
+  "title": "Pricing - Tailark",
+  "desc": "Choose the Tailark plan that fits your workflow — free blocks to start, Pro for full access to marketing pages, blocks, and illustrations.",
+  "h": "Command menu | Start building. Choose the plan that fits your workflow. | Frequently asked questions",
+  "content": 0.1072
+ },
+ "x1026b-pricing-tailwind-plus": {
+  "url": "https://tailwindcss.com/plus/ui-blocks/marketing/sections/pricing",
+  "status": 200,
+  "title": "Login - Tailwind Plus",
+  "desc": "Beautiful UI components and templates by the creators of Tailwind CSS.",
+  "h": "Log in to your Tailwind Plus account",
+  "content": 0.0221
+ },
+ "x1026b-pricing-pagecollective": {
+  "url": "https://www.pagecollective.com/pricing",
+  "status": 200,
+  "title": "UI/UX Design Inspiration & User Flows from Top Apps — Page Flows",
+  "desc": "Explore 100,000+ recorded user flows, app screens, and UI patterns from Airbnb, Uber, Netflix & more. Save hours on UX research with Page Flows.",
+  "h": "UI/UX Inspiration from Real User Flows | Why Choose Page Flows? | Page Flows Empowers UX Research for All | Trusted by Designers and\nProduct Teams Worldwide",
+  "content": 0.3777
+ },
+ "x1026b-pricing-magicui-pro": {
+  "url": "https://pro.magicui.design/docs/sections/pricing",
+  "status": 200,
+  "title": "Pricing Section | Magic UI Pro",
+  "desc": "These components are used to build the pricing of the website.",
+  "h": "Command Palette | Pricing Section | Magic UI Pro",
+  "content": 0.1497
+ },
+ "x1026b-pricing-pricingpages-design": {
+  "url": "https://www.pricingpages.design/",
+  "status": 200,
+  "title": "Pricing Pages — A Curated Gallery of Pricing Page Designs",
+  "desc": "Discover handpicked pricing page examples from SaaS companies, ecommerce brands, and digital agencies. Find design inspiration for your next pricing page design",
+  "h": "Pricing pages design vault",
+  "content": 0.111
+ },
+ "x1026b-pricing-landingfolio": {
+  "url": "https://www.landingfolio.com/inspiration/section/pricing",
+  "status": 200,
+  "title": "The Best Pricing Section Design Inspiration & Examples | Landingfolio",
+  "desc": "Landingfolio features the best Pricing Section designs on the web. Get inspiration from real Pricing Section examples, curated by us to ensure the highest quality.",
+  "h": "The Best Pricing Section Design Inspiration & Examples",
+  "content": 0.1442
+ },
+ "x1026b-pricing-lukacho": {
+  "url": "https://ui.lukacho.com/components/pricing",
+  "status": 200,
+  "title": "Pricing Card",
+  "desc": "Animated UI component Collection made with Next.js | TailwindCSS | Framer Motion",
+  "h": "Getting Started | Components | Getting Started | Components",
+  "content": 0.0646
+ },
+ "x1026b-pricing-saasui": {
+  "url": "https://www.saasui.design/pattern/pricing",
+  "status": 200,
+  "title": "Pricing UI UX Interface Design Patterns | SaaSUI",
+  "desc": "Pricing page designs from real SaaS products. Plan comparisons, feature tables, and upgrade flows.",
+  "h": "Pricing Design Patterns | NAVIGATE | PROJECTS | STAY UPDATED",
+  "content": 0.3339
+ },
+ "x1026b-pricing-webflow-made": {
+  "url": "https://webflow.com/made-in-webflow/pricing",
+  "status": 200,
+  "title": "Best Pricing Websites | Free Examples & Designs - Webflow",
+  "desc": "Discover the best pricing websites created by professional designers. Get inspired and start planning your perfect pricing web design today!",
+  "h": "Discover Pricing websites\nbuilt by the Webflow community | Start with a clone. Make it yours with an AI agent.",
+  "content": 0.2011
+ },
+ "x1026b-pricing-freefrontend-css": {
+  "url": "https://freefrontend.com/css-pricing-tables/",
+  "status": 200,
+  "title": "20+ CSS Pricing Tables: Best Free Subscription Templates",
+  "desc": "Explore brilliant CSS pricing tables to build responsive comparison grids. Find optimized, pure CSS templates utilizing modern subscription toggles.",
+  "h": "20+ CSS Pricing Tables: Best Free Subscription Templates | Related Collections | Examples | Frequently Asked Questions",
+  "content": 0.1437
+ },
+ "x1026b-pricing-markuptag": {
+  "url": "https://www.markuptag.com/category/pricing-table/",
+  "status": 200,
+  "title": "MarkupTag.com is for sale | HugeDomains",
+  "desc": "Get this domain name before someone else does. Quick and painless shopping. Affordable payment options available.",
+  "h": "MarkupTag.com | Since 2005, we've helped thousands of people get the perfect domain name | Our promise to you | FAQs",
+  "content": 0.2229
+ },
+ "x1026b-pricing-freefrontend-tw": {
+  "url": "https://freefrontend.com/tailwind-pricing-tables/",
+  "status": 200,
+  "title": "40+ Tailwind Pricing Table Examples for SaaS Websites",
+  "desc": "Browse Tailwind pricing table examples with plan comparisons, feature lists, highlighted plans, billing options, and responsive layouts for SaaS websites.",
+  "h": "40+ Tailwind Pricing Table Examples for SaaS Websites | Related Collections | Examples | Saved Snippets",
+  "content": 0.1261
+ },
+ "x1026b-pricing-saasframe": {
+  "url": "https://www.saasframe.io/categories/pricing-page",
+  "status": 200,
+  "title": "211 SaaS Pricing Page UI Design Examples in 2026",
+  "desc": "Explore our library of 211 SaaS Pricing Page UI designs example, and find inspiration for your next design project.",
+  "h": "Pricing Page | Monthly | $18 /month | Quarterly",
+  "content": 0.1369
+ },
+ "x1026b-pricing-wickedblocks": {
+  "url": "https://wickedblocks.dev/groups/pricing",
+  "status": 200,
+  "title": "Shadcnblocks shadcn/ui blocks & components",
+  "desc": "Discover hundreds of extra shadcn/ui blocks and Shadcn UI components. Shadcnblocks is a premium component library built with Shadcn UI, React & Tailwind.",
+  "h": "The ultimate block set for Shadcn UI & Tailwind | 2500 Extra Shadcn Blocks | 21 Shadcn Templates | 2154 Shadcn UI Components",
+  "content": 0.1113
+ },
+ "x1026b-pricing-preline-examples": {
+  "url": "https://preline.co/examples/pricing-sections.html",
+  "status": 200,
+  "title": "Tailwind CSS Pricing Cards Blocks | Preline UI",
+  "desc": "Tailwind CSS pricing card blocks with plan grids, billing toggles, tiered cards, and plan list layouts for marketing pages.",
+  "h": "Pricing Cards | Pricing Plan Card List\nPRO | Pricing Hero Section with Billing Toggle\nPRO | Pricing Card Grid\nFREE",
+  "content": 0.1274
+ },
+ "x1026b-pricing-awwwards-pricing": {
+  "url": "https://www.awwwards.com/websites/pricing/",
+  "status": 200,
+  "title": "Awwwards Nominees",
+  "desc": "            Awwwards are the Website Awards that recognize and promote the talent and effort of the best developers, designers and web agencies in the world.\n    ",
+  "h": "",
+  "content": 0.5611
+ },
+ "x1026b-pricing-shadcnblocks-1": {
+  "url": "https://www.shadcnblocks.com/block/pricing1",
+  "status": 200,
+  "title": "Pricing 1 - Four-tier pricing comparison grid - Shadcnblocks.com",
+  "desc": "A centered pricing section with four divided plan columns, large prices, CTAs, and checkmarked feature lists below a divider. A Shadcn UI pricing block built with React and Tailwind CSS. Copy, paste, or install via the shadcn CLI.",
+  "h": "Pricing 1 - Four-tier pricing comparison grid | Pricing 1 block design & features",
+  "content": 0.1141
+ },
+ "x1026b-pricing-shadcnblocks-3": {
+  "url": "https://www.shadcnblocks.com/block/pricing3",
+  "status": 200,
+  "title": "Pricing 3 - Three-plan pricing with billing switch and dashed feature rows - Shadcnblocks.com",
+  "desc": "Three columns with a billing switch, optional intro text, checks and dashed separators on feature rows, and feature blocks that appear only on wide layouts. A Shadcn UI pricing block built with React and Tailwind CSS. Copy, paste, or install via the shadcn CLI.",
+  "h": "Pricing 3 - Three-plan pricing with billing switch and dashed feature rows | Pricing 3 block design & features",
+  "content": 0.1176
+ },
+ "x1026b-pricing-shadcnblocks-4": {
+  "url": "https://www.shadcnblocks.com/block/pricing4",
+  "status": 200,
+  "title": "Pricing 4 - Three-plan pricing with tabs and one highlighted column - Shadcnblocks.com",
+  "desc": "Monthly and yearly tabs above three tier columns with one muted highlighted column, badge labels from tier names, checks on features, and sans-serif price type. A Shadcn UI pricing block built with React and Tailwind CSS. Copy, paste, or install via the shadcn CLI.",
+  "h": "Pricing 4 - Three-plan pricing with tabs and one highlighted column | Pricing 4 block design & features",
+  "content": 0.1195
+ },
+ "x1026b-pricing-tw-elements-comp": {
+  "url": "https://tw-elements.com/docs/standard/components/pricing/",
+  "status": 200,
+  "title": "TW Elements - 500+ free Tailwind CSS components",
+  "desc": "A free collection of open source UI components, templates, sections & plugins for Tailwind CSS. Features dark mode and theming customization options.",
+  "h": "Top quality\nopen-source UI Kit",
+  "content": 0.1388
+ },
+ "x1026b-pricing-shadcnblocks-5": {
+  "url": "https://www.shadcnblocks.com/block/pricing5",
+  "status": 200,
+  "title": "Pricing 5 - Two-plan pricing with comparison table - Shadcnblocks.com",
+  "desc": "Side-by-side plan cards with prices and CTAs, plus a feature matrix table with check and minus indicators. A Shadcn UI pricing block built with React and Tailwind CSS. Copy, paste, or install via the shadcn CLI.",
+  "h": "Pricing 5 - Two-plan pricing with comparison table | Pricing 5 block design & features",
+  "content": 0.1008
+ },
+ "x1026b-pricing-shadcnblocks-6": {
+  "url": "https://www.shadcnblocks.com/block/pricing6",
+  "status": 200,
+  "title": "Pricing 6 - Single plan pricing card with grouped features - Shadcnblocks.com",
+  "desc": "Centered single-plan card with separated feature groups, a large price numeral, and a CTA button, all under a heading and subheading. A Shadcn UI pricing block built with React and Tailwind CSS. Copy, paste, or install via the shadcn CLI.",
+  "h": "Pricing 6 - Single plan pricing card with grouped features | Pricing 6 block design & features",
+  "content": 0.105
+ },
+ "x1026b-pricing-shadcnblocks-7": {
+  "url": "https://www.shadcnblocks.com/block/pricing7",
+  "status": 200,
+  "title": "Pricing 7 - Two-plan pricing with radio toggle and discount badge - Shadcnblocks.com",
+  "desc": "Centered heading with a segmented radio control for monthly/yearly billing, optional savings badge, and two bordered plan panels with feature checklists. A Shadcn UI pricing block built with React and Tailwind CSS. Copy, paste, or install via the shadcn CLI.",
+  "h": "Pricing 7 - Two-plan pricing with radio toggle and discount badge | Pricing 7 block design & features",
+  "content": 0.134
+ },
+ "x1026b-pricing-shadcnblocks-8": {
+  "url": "https://www.shadcnblocks.com/block/pricing8",
+  "status": 200,
+  "title": "Pricing 8 - Single plan card on muted background with feature grid - Shadcnblocks.com",
+  "desc": "Single-plan card with oversized price, CTA button, and a multi-column feature checklist spread beneath the card on a muted surface. A Shadcn UI pricing block built with React and Tailwind CSS. Copy, paste, or install via the shadcn CLI.",
+  "h": "Pricing 8 - Single plan card on muted background with feature grid | Pricing 8 block design & features",
+  "content": 0.1186
+ },
+ "x1026b-pricing-shadcnblocks-9": {
+  "url": "https://www.shadcnblocks.com/block/pricing9",
+  "status": 200,
+  "title": "Pricing 9 - Three-tier comparison table with billing toggle - Shadcnblocks.com",
+  "desc": "Three-plan feature comparison rendered as stacked cards on mobile and a bordered table on desktop, with an annual/monthly switch and tooltips. A Shadcn UI pricing block built with React and Tailwind CSS. Copy, paste, or install via the shadcn CLI.",
+  "h": "Pricing 9 - Three-tier comparison table with billing toggle | Pricing 9 block design & features",
+  "content": 0.0995
+ },
+ "x1026b-pricing-shadcnblocks-10": {
+  "url": "https://www.shadcnblocks.com/block/pricing10",
+  "status": 200,
+  "title": "Pricing 10 - Four-plan pricing cards with grouped features - Shadcnblocks.com",
+  "desc": "Four pricing cards with plan images, grouped feature checklists, and a highlighted recommended tier, arranged in a row under a heading. A Shadcn UI pricing block built with React and Tailwind CSS. Copy, paste, or install via the shadcn CLI.",
+  "h": "Pricing 10 - Four-plan pricing cards with grouped features | Pricing 10 block design & features",
+  "content": 0.0936
+ },
+ "x1026b-pricing-shadcnblocks-11": {
+  "url": "https://www.shadcnblocks.com/block/pricing11",
+  "status": 200,
+  "title": "Pricing 11 - Four-plan feature matrix with sticky header - Shadcnblocks.com",
+  "desc": "Feature comparison matrix for four plans with a sticky plan header row, billing tabs, tooltips on feature names, and collapsible rows on mobile. A Shadcn UI pricing block built with React and Tailwind CSS. Copy, paste, or install via the shadcn CLI.",
+  "h": "Pricing 11 - Four-plan feature matrix with sticky header | Pricing 11 block design & features",
+  "content": 0.0879
+ },
+ "x1026b-pricing-shadcnblocks-12": {
+  "url": "https://www.shadcnblocks.com/block/pricing12",
+  "status": 200,
+  "title": "Pricing 12 - Add-on pricing with featured cards and list - Shadcnblocks.com",
+  "desc": "Add-on section split into featured items on accent cards and additional items in a divided list, each with title, description, and monthly price. A Shadcn UI pricing block built with React and Tailwind CSS. Copy, paste, or install via the shadcn CLI.",
+  "h": "Pricing 12 - Add-on pricing with featured cards and list | Pricing 12 block design & features",
+  "content": 0.088
+ },
+ "x1026b-pricing-shadcnblocks-13": {
+  "url": "https://www.shadcnblocks.com/block/pricing13",
+  "status": 200,
+  "title": "Pricing 13 - Three add-on cards in a bordered container - Shadcnblocks.com",
+  "desc": "Three add-on options inside a single bordered section, each with a title, description, and monthly price or contact label, plus a header image. A Shadcn UI pricing block built with React and Tailwind CSS. Copy, paste, or install via the shadcn CLI.",
+  "h": "Pricing 13 - Three add-on cards in a bordered container | Pricing 13 block design & features",
+  "content": 0.0878
+ },
+ "x1026b-pricing-shadcnblocks-15": {
+  "url": "https://www.shadcnblocks.com/block/pricing15",
+  "status": 200,
+  "title": "Pricing 15 - Two-column single plan with feature sidebar - Shadcnblocks.com",
+  "desc": "Split layout with heading, description, and subscribe button on the left, paired with a bordered feature card showing price and checklist on the right. A Shadcn UI pricing block built with React and Tailwind CSS. Copy, paste, or install via the shadcn CLI.",
+  "h": "Pricing 15 - Two-column single plan with feature sidebar | Pricing 15 block design & features",
+  "content": 0.1203
+ },
+ "x1026b-pricing-shadcnblocks-14": {
+  "url": "https://www.shadcnblocks.com/block/pricing14",
+  "status": 200,
+  "title": "Pricing 14 - Single plan card with discount badge and dual buttons - Shadcnblocks.com",
+  "desc": "Single-plan layout on a muted surface with plan name, discount badge, price, separator, two-column feature checklist, and two CTA buttons. A Shadcn UI pricing block built with React and Tailwind CSS. Copy, paste, or install via the shadcn CLI.",
+  "h": "Pricing 14 - Single plan card with discount badge and dual buttons | Pricing 14 block design & features",
+  "content": 0.1019
+ },
+ "x1026b-pricing-uiverse-splendid-firefox-37": {
+  "url": "https://uiverse.io/Yaya12085/splendid-firefox-37",
+  "status": 200,
+  "title": "Card by Yaya12085 made with CSS | Uiverse.io",
+  "desc": "This Card was posted by Yaya12085. Tagged with: card, product, modern, pack, plan, rounded, button, shadow, light, blue, card, purple, checkmark, clean, contrast, pricing, monthly, plan, professional, subscription, offer, service, membership. You can create your own elements by signing up.",
+  "h": "Card by\nYaya12085 | Card",
+  "content": 0.7412
+ },
+ "x1026b-pricing-uiverse-foolish-husky-65": {
+  "url": "https://uiverse.io/Yaya12085/foolish-husky-65",
+  "status": 200,
+  "title": "Form by Yaya12085 made with CSS | Uiverse.io",
+  "desc": "This Form was posted by Yaya12085. Tagged with: form, button, blue, gray, white, minimal, selection, pricing, monthly, plan, free, subscription, yearly. You can create your own elements by signing up.",
+  "h": "Form by\nYaya12085 | Form",
+  "content": 0.74
+ },
+ "x1026b-pricing-uiverse-mean-vampirebat-50": {
+  "url": "https://uiverse.io/Yaya12085/mean-vampirebat-50",
+  "status": 200,
+  "title": "Card by Yaya12085 made with CSS | Uiverse.io",
+  "desc": "This Card was posted by Yaya12085. Tagged with: pricing, card, dark, price, dark, rounded, button, ui, minimalist, modern, card, purple, calltoaction, free, checkmarks, beginner. You can create your own elements by signing up.",
+  "h": "Card by\nYaya12085 | Card",
+  "content": 0.7348
+ },
+ "x1026b-pricing-uiverse-rotten-dolphin-86": {
+  "url": "https://uiverse.io/Yaya12085/rotten-dolphin-86",
+  "status": 200,
+  "title": "Card by Yaya12085 made with CSS | Uiverse.io",
+  "desc": "This Card was posted by Yaya12085. Tagged with: list, button, card, price, pack, rounded, black, white, cloud, start, pricing, plan, credit, subscription, support, bank, connect, accounts, cards, analytics, export, service. You can create your own elements by signing up.",
+  "h": "Card by\nYaya12085 | Card",
+  "content": 0.6828
+ },
+ "x1026b-pricing-uiverse-serious-eagle-83": {
+  "url": "https://uiverse.io/Yaya12085/serious-eagle-83",
+  "status": 200,
+  "title": "Card by Yaya12085 made with CSS | Uiverse.io",
+  "desc": "This Card was posted by Yaya12085. Tagged with: subscription, card, price, plan, rounded, button, black, minimalist, modern, white, price, flat, features, contrast, purchase, pricing, monthly, plan, starter. You can create your own elements by signing up.",
+  "h": "Card by\nYaya12085 | Card",
+  "content": 0.7432
+ },
+ "x1026b-pricing-uiverse-curvy-robin-66": {
+  "url": "https://uiverse.io/emmanuelh-dev/curvy-robin-66",
+  "status": 200,
+  "title": "Card by emmanuelh-dev made with Tailwind | Uiverse.io",
+  "desc": "This Card was posted by emmanuelh-dev. Tagged with: pricing, card, premium, rounded, button, bold, yellow, card, price, description, purchase, Corporate. You can create your own elements by signing up.",
+  "h": "Card by\nemmanuelh-dev | Card",
+  "content": 0.7385
+ },
+ "x1026b-pricing-uiverse-orange-cougar-98": {
+  "url": "https://uiverse.io/emmanuelh-dev/orange-cougar-98",
+  "status": 200,
+  "title": "Card by emmanuelh-dev made with Tailwind | Uiverse.io",
+  "desc": "This Card was posted by emmanuelh-dev. Tagged with: pricing, card, price, rounded, button, black, simple, minimalist, white, card, price, monthly, plan, starter, subscription. You can create your own elements by signing up.",
+  "h": "Card by\nemmanuelh-dev | Card",
+  "content": 0.7401
+ },
+ "x1026b-pricing-uiverse-old-cat-57": {
+  "url": "https://uiverse.io/Cobp/old-cat-57",
+  "status": 200,
+  "title": "Card by Cobp made with CSS | Uiverse.io",
+  "desc": "This Card was posted by Cobp. Tagged with: card, rounded, button, gradient, blue, modern, card, features, pricing, monthly, subscription, popular. You can create your own elements by signing up.",
+  "h": "Variation of Cobp's card | Card",
+  "content": 0.7376
+ },
+ "x1026b-pricing-uiverse-popular-gecko-2": {
+  "url": "https://uiverse.io/Cobp/popular-gecko-2",
+  "status": 200,
+  "title": "Card by Cobp made with CSS | Uiverse.io",
+  "desc": "This Card was posted by Cobp. Tagged with: card, rounded, button, gradient, blue, modern, purple, pricing, professional, subscription, popular. You can create your own elements by signing up.",
+  "h": "Card by\nCobp | Card",
+  "content": 0.7374
+ },
+ "x1026b-pricing-uiverse-loud-baboon-79": {
+  "url": "https://uiverse.io/alexruix/loud-baboon-79",
+  "status": 200,
+  "title": "Card by alexruix made with CSS | Uiverse.io",
+  "desc": "This Card was posted by alexruix. Tagged with: subscription, card, sub, plan, rounded, black, green, pricing, monthly, starter, free, checklist. You can create your own elements by signing up.",
+  "h": "Card by\nalexruix | Card",
+  "content": 0.7418
+ },
+ "x1026b-pricing-uiverse-splendid-eagle-61": {
+  "url": "https://uiverse.io/mi-series/splendid-eagle-61",
+  "status": 200,
+  "title": "Card by mi-series made with CSS | Uiverse.io",
+  "desc": "This Card was posted by mi-series. Tagged with: simple, material design, pricing, green, minimalist, card, chatgpt, dark, modern, elegant, minimal, muted. You can create your own elements by signing up.",
+  "h": "Card by\nmi-series | Card",
+  "content": 0.7432
+ },
+ "x1026b-pricing-uiverse-swift-sloth-95": {
+  "url": "https://uiverse.io/seyed-mohsen-mousavi/swift-sloth-95",
+  "status": 200,
+  "title": "Card by seyed-mohsen-mousavi made with Tailwind | Uiverse.io",
+  "desc": "This Card was posted by seyed-mohsen-mousavi. Tagged with: subscription, green, card, subscribe, button, green, gray, white, card, price, select, features, pricing, plan, business, pro, subscription, support, users. You can create your own elements by signing up.",
+  "h": "Card by\nseyed-mohsen-mousavi | Card",
+  "content": 0.7382
+ },
+ "x1026b-pricing-uiverse-brown-bird-6": {
+  "url": "https://uiverse.io/Admin12121/brown-bird-6",
+  "status": 200,
+  "title": "Card by Admin12121 made with CSS | Uiverse.io",
+  "desc": "This Card was posted by Admin12121. Tagged with: card, business card, card template, card design, rounded, shadow, gradient, blue, white, control, card, updates, features, pricing, badge, support, projects, dollar, license, solo, hosting. You can create your own elements by signing up.",
+  "h": "Card by\nAdmin12121 | Card",
+  "content": 0.7398
+ },
+ "x1026b-pricing-uiverse-itchy-octopus-9": {
+  "url": "https://uiverse.io/Li-Deheng/itchy-octopus-9",
+  "status": 200,
+  "title": "Card by Li-Deheng made with CSS | Uiverse.io",
+  "desc": "This Card was posted by Li-Deheng. Tagged with: slider, pricing, card, price, range, input, white, card, price, minimal, slider, range, currency. You can create your own elements by signing up.",
+  "h": "Card by\nLi-Deheng | Card",
+  "content": 0.7401
+ }
+}

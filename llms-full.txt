@@ -1,6 +1,6 @@
 # UI Hub
 
-> Curated, multilingual directory of 4954 public UI resources (component libraries, component style demos, effects, design systems, design skills for AI agents) plus original blog analysis of AI design techniques. Data updated 2026-10-26 09:10 UTC.
+> Curated, multilingual directory of 4992 public UI resources (component libraries, component style demos, effects, design systems, design skills for AI agents) plus original blog analysis of AI design techniques. Data updated 2026-10-26 09:10 UTC.
 
 Use the JSON endpoints, not the SPA, when acting as an agent. Every entry links to its original site; licenses belong to the original authors.
 
@@ -116,7 +116,7 @@ Use the JSON endpoints, not the SPA, when acting as an agent. Every entry links 
 - [visx](https://airbnb.io/visx/): Airbnb's low-level visualization components
 
 ## FAQ
-- **What is UI Hub?** A free, curated directory of 4954 public UI resources: 213 component libraries, 1989 component style demos with light/dark screenshots, 70 design skills for AI agents, plus effects, templates, specs and tutorials. It links to original sites and never hosts paid source code.
+- **What is UI Hub?** A free, curated directory of 4992 public UI resources: 213 component libraries, 1989 component style demos with light/dark screenshots, 70 design skills for AI agents, plus effects, templates, specs and tutorials. It links to original sites and never hosts paid source code.
 - **How do I find a component in a given style?** Load https://ui.incidental.site/api/resources.json and filter by ct (component kind, e.g. "dialog") and vs (visual style, e.g. "minimal" or "motion"). type="style" entries are concrete component demos with a libName and page URL; type="library" entries are whole libraries with install info on the site.
 - **Which skills should an agent use for good UI?** One direction skill (frontend-design or taste-skill), emil-design-eng for motion and interaction polish, then impeccable, baseline-ui, web-design-guidelines and accessibility as an audit pass. See https://ui.incidental.site/api/skills.json.
 - **Can I copy the code?** Open-source libraries can be used under their own licenses (MIT, Apache-2.0 etc.); the card shows the original link. Paid tiers (marked paid/freemium) must be bought from the original vendor.
@@ -4482,6 +4482,44 @@ Get Hyped. Get Noticed. Get Results.
 - Shadcnblocks Pricing 2 | template | https://www.shadcnblocks.com/block/pricing2 | Classic two-plan pricing: monthly/yearly switch, large prices, feature checklists, full-width CTAs
 - shadcn.io Pricing Blocks | template | https://www.shadcn.io/pricing-block | 108 pricing blocks for React, Vue, Svelte and Solid with live previews and one-line install
 - Tailwind Kit Pricing Cards | template | https://www.tailwind-kit.com/components/pricing | Free Tailwind pricing card components
+- Bootstrap Pricing Example | template | https://getbootstrap.com/docs/5.3/examples/pricing/ | Official Bootstrap 5.3 pricing example: three plans ($0 / $15 / $29 per month) plus a plan comparison table
+- FreeFrontend CSS Pricing Tables | collection | https://freefrontend.com/css-pricing-tables/ | 20+ pure CSS pricing table templates: responsive comparison grids and subscription toggles
+- FreeFrontend Tailwind Pricing Tables | collection | https://freefrontend.com/tailwind-pricing-tables/ | 40+ Tailwind pricing table examples for SaaS: plan comparisons, feature lists, highlighted plans and billing options
+- Landingfolio Pricing Sections | inspiration | https://www.landingfolio.com/inspiration/section/pricing | Curated pricing section designs from real websites, for inspiration
+- Lukacho UI Pricing Card | effect | https://ui.lukacho.com/components/pricing | Animated pricing card component built with Next.js, Tailwind CSS and Framer Motion
+- Magic UI Pro Pricing Section | template | https://pro.magicui.design/docs/sections/pricing | Magic UI Pro section components for building a website’s pricing
+- Pricing Pages Design Vault | inspiration | https://www.pricingpages.design/ | Handpicked pricing page examples from SaaS companies, ecommerce brands and digital agencies
+- SaaSFrame Pricing Pages | inspiration | https://www.saasframe.io/categories/pricing-page | Library of 211 SaaS pricing page UI design examples
+- SaaS Landing Page Pricing Examples | inspiration | https://saaslandingpage.com/pricing/ | 64 curated pricing page examples from top SaaS companies
+- SaaSUI Pricing Patterns | inspiration | https://www.saasui.design/pattern/pricing | Pricing page designs from real SaaS products: plan comparisons, feature tables and upgrade flows
+- Tailwind Components Pricing | collection | https://tailwindcomponents.com/components/pricing | 26+ Tailwind CSS pricing components, free and premium
+- Shadcnblocks Pricing 1 | template | https://www.shadcnblocks.com/block/pricing1 | Four-tier comparison grid: four plan columns, large prices, CTAs and checkmarked feature lists
+- Shadcnblocks Pricing 3 | template | https://www.shadcnblocks.com/block/pricing3 | Three plans with a billing switch and checked feature rows split by dashed lines
+- Shadcnblocks Pricing 4 | template | https://www.shadcnblocks.com/block/pricing4 | Monthly/yearly tabs above three tiers with one highlighted column
+- Shadcnblocks Pricing 5 | template | https://www.shadcnblocks.com/block/pricing5 | Two side-by-side plan cards plus a feature matrix with check and minus marks
+- Shadcnblocks Pricing 6 | template | https://www.shadcnblocks.com/block/pricing6 | Centered single-plan card with grouped features, a large price and a CTA
+- Shadcnblocks Pricing 7 | template | https://www.shadcnblocks.com/block/pricing7 | Segmented radio for monthly/yearly billing, a savings badge and two bordered plan panels
+- Shadcnblocks Pricing 8 | template | https://www.shadcnblocks.com/block/pricing8 | Single-plan card with an oversized price and CTA, multi-column feature checklist on a muted surface
+- Shadcnblocks Pricing 9 | template | https://www.shadcnblocks.com/block/pricing9 | Three-tier comparison: a table on desktop, stacked cards on mobile, with an annual/monthly switch
+- Shadcnblocks Pricing 10 | template | https://www.shadcnblocks.com/block/pricing10 | Four plan cards in a row with plan images, grouped feature checklists and a highlighted recommended tier
+- Shadcnblocks Pricing 11 | template | https://www.shadcnblocks.com/block/pricing11 | Four-plan feature matrix with a sticky plan header, billing tabs, tooltips and collapsible rows on mobile
+- Shadcnblocks Pricing 12 | template | https://www.shadcnblocks.com/block/pricing12 | Add-on pricing: featured items on accent cards, others in a divided list, each with a monthly price
+- Shadcnblocks Pricing 13 | template | https://www.shadcnblocks.com/block/pricing13 | Three add-on options in one bordered container, each with title, description and monthly price or contact label
+- Shadcnblocks Pricing 14 | template | https://www.shadcnblocks.com/block/pricing14 | Single plan with a discount badge, price, two-column feature checklist and two CTA buttons
+- Shadcnblocks Pricing 15 | template | https://www.shadcnblocks.com/block/pricing15 | Split layout: heading, description and subscribe button on the left, a feature card with price and checklist on the right
+- Uiverse Pricing Card by Admin12121 (brown-bird-6) | effect | https://uiverse.io/Admin12121/brown-bird-6 | Blue-gradient pricing card with a feature list and badge
+- Uiverse Pricing Card by emmanuelh-dev (curvy-robin-66) | effect | https://uiverse.io/emmanuelh-dev/curvy-robin-66 | Yellow premium plan card with price, description and purchase button
+- Uiverse Pricing Card by Yaya12085 (foolish-husky-65) | effect | https://uiverse.io/Yaya12085/foolish-husky-65 | Plan selection form with monthly/yearly and free plans, minimal blue, gray and white
+- Uiverse Pricing Card by alexruix (loud-baboon-79) | effect | https://uiverse.io/alexruix/loud-baboon-79 | Black-and-green starter subscription card with monthly price and checklist
+- Uiverse Pricing Card by Yaya12085 (mean-vampirebat-50) | effect | https://uiverse.io/Yaya12085/mean-vampirebat-50 | Dark minimalist pricing card: free beginner tier, checkmarks and a call to action
+- Uiverse Pricing Card by Cobp (old-cat-57) | effect | https://uiverse.io/Cobp/old-cat-57 | Blue-gradient popular monthly subscription card with a feature list
+- Uiverse Pricing Card by emmanuelh-dev (orange-cougar-98) | effect | https://uiverse.io/emmanuelh-dev/orange-cougar-98 | Simple black-and-white starter monthly plan card
+- Uiverse Pricing Card by Cobp (popular-gecko-2) | effect | https://uiverse.io/Cobp/popular-gecko-2 | Gradient "professional" popular subscription card
+- Uiverse Pricing Card by Yaya12085 (rotten-dolphin-86) | effect | https://uiverse.io/Yaya12085/rotten-dolphin-86 | Black-and-white plan card: start price and features like account connect, analytics, export and support
+- Uiverse Pricing Card by Yaya12085 (serious-eagle-83) | effect | https://uiverse.io/Yaya12085/serious-eagle-83 | Flat high-contrast black-and-white starter monthly card with price, features and purchase button
+- Uiverse Pricing Card by mi-series (splendid-eagle-61) | effect | https://uiverse.io/mi-series/splendid-eagle-61 | Dark, muted green minimalist pricing card in a Material Design style
+- Uiverse Pricing Card by Yaya12085 (splendid-firefox-37) | effect | https://uiverse.io/Yaya12085/splendid-firefox-37 | Light blue-purple professional membership plan card with monthly price and checkmarks
+- Uiverse Pricing Card by seyed-mohsen-mousavi (swift-sloth-95) | effect | https://uiverse.io/seyed-mohsen-mousavi/swift-sloth-95 | Green, gray and white business Pro subscription card with price, features, users and subscribe button
 
 # Component style demos: 1989 entries, see api/resources.json (type=style)
 
