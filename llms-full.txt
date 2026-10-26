@@ -1,6 +1,6 @@
 # UI Hub
 
-> Curated, multilingual directory of 4938 public UI resources (component libraries, component style demos, effects, design systems, design skills for AI agents) plus original blog analysis of AI design techniques. Data updated 2026-10-26 06:54 UTC.
+> Curated, multilingual directory of 4954 public UI resources (component libraries, component style demos, effects, design systems, design skills for AI agents) plus original blog analysis of AI design techniques. Data updated 2026-10-26 06:54 UTC.
 
 Use the JSON endpoints, not the SPA, when acting as an agent. Every entry links to its original site; licenses belong to the original authors.
 
@@ -116,7 +116,7 @@ Use the JSON endpoints, not the SPA, when acting as an agent. Every entry links 
 - [visx](https://airbnb.io/visx/): Airbnb's low-level visualization components
 
 ## FAQ
-- **What is UI Hub?** A free, curated directory of 4938 public UI resources: 213 component libraries, 1989 component style demos with light/dark screenshots, 70 design skills for AI agents, plus effects, templates, specs and tutorials. It links to original sites and never hosts paid source code.
+- **What is UI Hub?** A free, curated directory of 4954 public UI resources: 213 component libraries, 1989 component style demos with light/dark screenshots, 70 design skills for AI agents, plus effects, templates, specs and tutorials. It links to original sites and never hosts paid source code.
 - **How do I find a component in a given style?** Load https://ui.incidental.site/api/resources.json and filter by ct (component kind, e.g. "dialog") and vs (visual style, e.g. "minimal" or "motion"). type="style" entries are concrete component demos with a libName and page URL; type="library" entries are whole libraries with install info on the site.
 - **Which skills should an agent use for good UI?** One direction skill (frontend-design or taste-skill), emil-design-eng for motion and interaction polish, then impeccable, baseline-ui, web-design-guidelines and accessibility as an audit pass. See https://ui.incidental.site/api/skills.json.
 - **Can I copy the code?** Open-source libraries can be used under their own licenses (MIT, Apache-2.0 etc.); the card shows the original link. Paid tiers (marked paid/freemium) must be bought from the original vendor.
@@ -4466,6 +4466,22 @@ Get Hyped. Get Noticed. Get Results.
 - calendar-schedular | library | https://github.com/gluer-space/calendar | Listed in awesome-shadcn-ui: A multi-purpose calendar component built on top of date-fn and shadcn-ui
 - termcn | collection | https://termcn.vercel.app/ | Listed in awesome-shadcn-ui: Beautiful terminal UIs, made simple. Ready to use, customizable terminal UI components for React.
 - Crumpled Receipt Component | inspiration | https://bencho.dev | An interactive receipt component that crumples into a 3D paper ball when clicked, then falls with physics into a trash bin below.
+- Flowbite Pricing Tables | template | https://flowbite.com/blocks/marketing/pricing/ | Responsive pricing sections in multiple sizes, styles and layouts
+- Preline Pricing Cards | template | https://preline.co/blocks/marketing/pricing-cards/ | Tailwind pricing card blocks: plan grids, billing toggles, tiered cards and plan lists
+- Uiverse Pricing Elements | template | https://uiverse.io/tags/pricing | Open-source community pricing elements in CSS and Tailwind, free to copy
+- Hover.dev Animated Pricing | template | https://www.hover.dev/components/pricing | Animated, interactive pricing sections in React, Tailwind and Framer Motion
+- Untitled UI React Pricing Sections | template | https://www.untitledui.com/react/marketing/pricing-sections | React pricing sections built on React Aria and styled with Tailwind CSS 4
+- shadcn/studio Pricing Component | template | https://shadcnstudio.com/blocks/marketing-ui/pricing-component | shadcn pricing table blocks that lay out features, tiers and CTAs clearly
+- TailGrids Pricing Tables | template | https://tailgrids.com/blocks/pricing-tables | React pricing table blocks for plans, features, limits and comparisons
+- Meraki UI Pricing Components | template | https://merakiui.com/components/marketing/pricing | Free Tailwind pricing components with copy-paste HTML
+- Mamba UI Pricing | template | https://mambaui.com/components/pricing | Free Tailwind pricing components, copy HTML or JSX
+- TW Elements Pricing Sections | template | https://tw-elements.com/docs/standard/designblocks/pricing/ | Tailwind pricing section templates, free for commercial use, no sign-up
+- Launch UI Pricing | template | https://www.launchuicomponents.com/docs/sections/pricing | shadcn/ui pricing table with several variants and subscription options
+- Creative Tim Tailwind Pricing | template | https://www.creative-tim.com/twcomponents/components/pricing | Tailwind pricing component collection with free and premium pieces
+- TailwindFlex Pricing Examples | template | https://tailwindflex.com/tag/pricing | Free Tailwind pricing examples: cards, tables and full pages
+- Shadcnblocks Pricing 2 | template | https://www.shadcnblocks.com/block/pricing2 | Classic two-plan pricing: monthly/yearly switch, large prices, feature checklists, full-width CTAs
+- shadcn.io Pricing Blocks | template | https://www.shadcn.io/pricing-block | 108 pricing blocks for React, Vue, Svelte and Solid with live previews and one-line install
+- Tailwind Kit Pricing Cards | template | https://www.tailwind-kit.com/components/pricing | Free Tailwind pricing card components
 
 # Component style demos: 1989 entries, see api/resources.json (type=style)
 

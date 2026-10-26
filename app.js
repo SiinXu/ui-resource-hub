@@ -66,7 +66,7 @@ var NOTES = window.UI_NOTES || (F&&F.notes) || {notes:{},why:{}}, CTO = window.U
 // 组件样式卡：名称/说明按语言模板生成（组件类型 · 来源库）
 function styleName(i){return CTN(i.kind)+' · '+i.libName+(i.var?' · '+lat(i.var):'')}
 function syncStyleNames(){ITEMS.forEach(function(i){if(i.type==='style')i.name=styleName(i)})}
-function noteOf(i){if(i.type==='style')return t('cs_note',{lib:i.libName,kind:CTN(i.kind)});var m=!isZh()&&(NOTES.notes[LANG]||NOTES.notes.en);if(m&&m[i.id])return m[i.id];if(isZh())return shown(i.note);var v=EN.note[i.id]||i.noteEn||i.note||'';return CJK.test(v)?'':v}
+function noteOf(i){if(i.type==='style')return t('cs_note',{lib:i.libName,kind:CTN(i.kind)});var m=!isZh()&&(NOTES.notes[LANG]||NOTES.notes.en);if(m&&m[i.id])return m[i.id];if(isZh())return shown(LANG==='zh-TW'&&i.noteTw||i.note);var v=EN.note[i.id]||i.noteEn||i.note||'';return CJK.test(v)?'':v}
 function whyOf(p,g){var m=!isZh()&&(NOTES.why[LANG]||NOTES.why.en);var v=(m&&m[p.id+'@'+g.id])||p.why;return (!isZh()&&!(m&&m[p.id+'@'+g.id])&&CJK.test(v||''))?'':v}
 function secOf(i){if(isZh())return i.sectionTitle;var n=SECO.indexOf(i.section);return n<0?lat(i.sectionTitle):t('sec_'+n)}
 function CTN(k){return t('ct_'+k)}
@@ -107,6 +107,7 @@ function srcOk(i,k){return k==='recent.design'?i.discovered_via==='recent.design
 function SRN(k){return k==='recent.design'?'recent.design':t('src_'+k)}
 function awRow(i){var a=i.awwwards;if(!a)return '';return '<dt>Awwwards</dt><dd>'+(a.page?'<a href="'+esc(a.page)+'" target="_blank" rel="noopener noreferrer">':'')+esc((a.awards||[]).map(function(x){return t('aw_'+x.replace(/ /g,'_').toLowerCase())}).join(' · ')||'Awwwards')+(a.date?' · '+esc(a.date):'')+(a.page?'</a>':'')+'</dd>'}
 (function(){var m=(location.search.match(/[?&]src=([\w.-]+)/)||[])[1];if(m&&SRCO.indexOf(m)>=0)state.src=m})();
+(function(){var m=(location.search.match(/[?&]ct=([\w-]+)/)||[])[1];if(m&&CTO.indexOf(m)>=0)state.ct=m})();
 function syncSrcUrl(){try{var u=new URL(location.href);if(state.src)u.searchParams.set('src',state.src);else u.searchParams.delete('src');history.replaceState(history.state,'',u.pathname+u.search+u.hash)}catch(e){}}
 var $ = function(id){return document.getElementById(id)};
 function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})}

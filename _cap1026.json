@@ -1,0 +1,130 @@
+{
+ "x1026-pricing-shadcnblocks": {
+  "url": "https://www.shadcnblocks.com/block/pricing2",
+  "status": 200,
+  "title": "Pricing 2 - Classic two-plan pricing with billing switch - Shadcnblocks.com",
+  "desc": "Centered heading with a monthly/yearly toggle, two side-by-side cards with large prices, feature checklists, and full-width CTA buttons. A Shadcn UI pricing block built with React and Tailwind CSS. Copy, paste, or install via the shadcn CLI.",
+  "y": null,
+  "content": 0.1267
+ },
+ "x1026-pricing-hover-dev": {
+  "url": "https://www.hover.dev/components/pricing",
+  "status": 200,
+  "title": "Animated Pricing Sections for React and TailwindCSS",
+  "desc": "Access prebuilt pricing sections interaction and animations built with React, Tailwind CSS, Framer Motion & more!",
+  "y": 2259,
+  "content": 0.5379
+ },
+ "x1026-pricing-uiverse": {
+  "url": "https://uiverse.io/tags/pricing",
+  "status": 200,
+  "title": "pricing UI Elements in CSS & Tailwind | Uiverse.io",
+  "desc": "Open-source pricing UI elements made with CSS and Tailwind. Free to use, customizable, and ready to copy into your project.",
+  "y": null,
+  "content": 0.7674
+ },
+ "x1026-pricing-preline": {
+  "url": "https://preline.co/blocks/marketing/pricing-cards/",
+  "status": 200,
+  "title": "Tailwind CSS Pricing Cards Blocks | Preline UI",
+  "desc": "Tailwind CSS pricing card blocks with plan grids, billing toggles, tiered cards, and plan list layouts for marketing pages.",
+  "y": null,
+  "content": 0.1274
+ },
+ "x1026-pricing-untitled-ui": {
+  "url": "https://www.untitledui.com/react/marketing/pricing-sections",
+  "status": 200,
+  "title": "React website pricing section components | Untitled UI",
+  "desc": "Powerful and customizable React website pricing section components built for modern and responsive websites. These pricing sections are built using React Aria v1.21 and styled with Tailwind CSS 4.3.",
+  "y": null,
+  "content": 0.1131
+ },
+ "x1026-pricing-shadcn-studio": {
+  "url": "https://shadcnstudio.com/blocks/marketing-ui/pricing-component",
+  "status": 200,
+  "title": "Shadcn Pricing Component - Shadcn Studio",
+  "desc": "Create high-converting pricing tables with Shadcn Pricing blocks. Highlight features, tiers, and CTAs in a clear layout.",
+  "y": null,
+  "content": 0.1874
+ },
+ "x1026-pricing-tailgrids": {
+  "url": "https://tailgrids.com/blocks/pricing-tables",
+  "status": 200,
+  "title": "React Pricing Tables Sections and Blocks | Tailgrids UI",
+  "desc": "Pricing table blocks present plans, features, and comparisons in a clear format. They help users evaluate options quickly by organizing pricing information, feature limits, and CTAs in a structured and readable layout.",
+  "y": null,
+  "content": 0.1092
+ },
+ "x1026-pricing-mambaui": {
+  "url": "https://mambaui.com/components/pricing",
+  "status": 200,
+  "title": "Mamba UI | Pricing components | Free Tailwind CSS components and templates",
+  "desc": "Mamba UI is an UI kit with over 150 free Tailwind CSS components and templates. Just copy-paste HTML or JSX into your project.",
+  "y": 817,
+  "content": 0.5207
+ },
+ "x1026-pricing-flowbite-blocks": {
+  "url": "https://flowbite.com/blocks/marketing/pricing/",
+  "status": 200,
+  "title": "Tailwind CSS Pricing Tables - Flowbite",
+  "desc": "Get started with a collection of responsive pricing sections to show the pricing plan to your potential customers based on multiple sizes, styles, and layouts.",
+  "y": null,
+  "content": 0.1674
+ },
+ "x1026-pricing-tw-elements": {
+  "url": "https://tw-elements.com/docs/standard/designblocks/pricing/",
+  "status": 200,
+  "title": "6+ Free Pricing Sections Templates for Tailwind CSS",
+  "desc": "Collection of pricing section templates for TailwindCSS. Free for commercial use, no registration required.",
+  "y": null,
+  "content": 0.1296
+ },
+ "x1026-pricing-merakiui": {
+  "url": "https://merakiui.com/components/marketing/pricing",
+  "status": 200,
+  "title": "Meraki UI Pricing Components | Free Tailwind CSS Components",
+  "desc": "Ready to use Tailwind CSS Pricing Components, copy-paste HTML components code, and build your awesome website, dashboard, landing page, and more.",
+  "y": null,
+  "content": 0.1443
+ },
+ "x1026-pricing-launch-ui": {
+  "url": "https://www.launchuicomponents.com/docs/sections/pricing",
+  "status": 200,
+  "title": "Pricing - Launch UI",
+  "desc": "A flexible pricing table component with multiple variants and subscription options built with shadcn/ui.",
+  "y": 1486.75,
+  "content": 0.1767
+ },
+ "x1026-pricing-creative-tim": {
+  "url": "https://www.creative-tim.com/twcomponents/components/pricing",
+  "status": 200,
+  "title": "26+ Tailwind CSS pricing - Free and Premium Components Collection.",
+  "desc": "Visit our Pricing collection that you can add to your Tailwind UI project to create awesome websites.",
+  "y": 294,
+  "content": 0.5581
+ },
+ "x1026-pricing-tailwindflex": {
+  "url": "https://tailwindflex.com/tag/pricing",
+  "status": 200,
+  "title": "134+ Free Pricing (cards,tables and pages) examples in Tailwind CSS",
+  "desc": "The pricing section can help to set expectations and establish trust with potential customers by providing clear and transparent information about pri...",
+  "y": null,
+  "content": 0.1534
+ },
+ "x1026-pricing-tailwind-kit": {
+  "url": "https://www.tailwind-kit.com/components/pricing",
+  "status": 200,
+  "title": "Pricing cards free Tailwind components",
+  "desc": "Pricing cards and more components for tailwind css",
+  "y": 580,
+  "content": 0.0548
+ },
+ "x1026-pricing-shadcn-io": {
+  "url": "https://www.shadcn.io/pricing-block",
+  "status": 200,
+  "title": "Pricing Blocks: 108 shadcn Pricing Sections",
+  "desc": "108 pricing blocks for React (Base UI, React Aria, Ark UI, Radix UI), Vue, Svelte and Solid. Live previews and a one-line install.",
+  "y": 2663.3125,
+  "content": 0.1699
+ }
+}

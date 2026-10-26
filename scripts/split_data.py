@@ -25,7 +25,7 @@ P = lambda *a: os.path.join(ROOT, *a)
 LANGS = ['zh-CN', 'zh-TW', 'en', 'ja', 'ko', 'ms', 'vi', 'fr', 'es', 'de']
 FIRST_GRID = 96          # app.js moreGrid(): first page = 96 cards
 # fields app.js needs to render cards, filter, sort and search (everything else is detail-only)
-CORE_F = ['id', 'name', 'note', 'noteEn', 'url', 'type', 'pricing', 'tags', 'ct', 'rt', 'vs', 'source', 'section',
+CORE_F = ['id', 'name', 'note', 'noteTw', 'noteEn', 'url', 'type', 'pricing', 'tags', 'ct', 'rt', 'vs', 'source', 'section',
           'libName', 'kind', 'var', 'lib', 'discovered_via', 'origin', 'xsrc', 'sponsored']
 VISUAL = {'style', 'library', 'component', 'effect', 'template', 'generator', 'inspiration', 'guide', 'system', 'spec',
           'tutorial', 'tool', 'collection'}

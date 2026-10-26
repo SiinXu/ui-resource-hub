@@ -1,6 +1,6 @@
 {
  "generated": "2026-10-26",
- "count": 4938,
+ "count": 4954,
  "items": [
   {
    "id": "ued-figma-mcp-guide",
@@ -12157,7 +12157,8 @@
     "HyperUI"
    ],
    "ct": [
-    "layout"
+    "layout",
+    "pricing"
    ],
    "rt": [
     "component-demo"
@@ -68930,7 +68931,8 @@
     "daisyUI"
    ],
    "ct": [
-    "card"
+    "card",
+    "pricing"
    ],
    "rt": [
     "component-demo"
@@ -74974,7 +74976,8 @@
    "pricing": "freemium",
    "tags": [],
    "ct": [
-    "layout"
+    "layout",
+    "pricing"
    ],
    "rt": [
     "template"
@@ -186007,6 +186010,488 @@
    "official": "https://bencho.dev",
    "pub": "2026-10-26",
    "added": "2026-10-26"
+  },
+  {
+   "id": "x1026-pricing-flowbite-blocks",
+   "name": "Flowbite Pricing Tables",
+   "url": "https://flowbite.com/blocks/marketing/pricing/",
+   "note": "响应式定价区块合集，多种尺寸、风格和布局",
+   "noteTw": "響應式定價區塊合集，多種尺寸、風格和佈局",
+   "noteEn": "Responsive pricing sections in multiple sizes, styles and layouts",
+   "type": "template",
+   "section": "精选扩充 · 2026-10-26",
+   "sectionTitle": "精选扩充（2026-10-26）",
+   "sectionDesc": "",
+   "source": "Flowbite",
+   "pricing": "freemium",
+   "tags": [
+    "Tailwind CSS"
+   ],
+   "ct": [
+    "pricing",
+    "card"
+   ],
+   "rt": [
+    "template"
+   ],
+   "vs": [
+    "minimal",
+    "enterprise"
+   ],
+   "added": "2026-10-26",
+   "cur": 1
+  },
+  {
+   "id": "x1026-pricing-preline",
+   "name": "Preline Pricing Cards",
+   "url": "https://preline.co/blocks/marketing/pricing-cards/",
+   "note": "Tailwind 定价卡片区块：套餐网格、计费周期切换、分档卡片和套餐列表",
+   "noteTw": "Tailwind 定價卡片區塊：方案網格、計費週期切換、分級卡片和方案列表",
+   "noteEn": "Tailwind pricing card blocks: plan grids, billing toggles, tiered cards and plan lists",
+   "type": "template",
+   "section": "精选扩充 · 2026-10-26",
+   "sectionTitle": "精选扩充（2026-10-26）",
+   "sectionDesc": "",
+   "source": "Preline UI",
+   "pricing": "freemium",
+   "tags": [
+    "Tailwind CSS"
+   ],
+   "ct": [
+    "pricing",
+    "card"
+   ],
+   "rt": [
+    "template"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "added": "2026-10-26",
+   "cur": 1
+  },
+  {
+   "id": "x1026-pricing-uiverse",
+   "name": "Uiverse Pricing Elements",
+   "url": "https://uiverse.io/tags/pricing",
+   "note": "社区开源的定价卡片小组件，CSS 和 Tailwind 写成，可免费复制",
+   "noteTw": "社群開源的定價卡片小元件，CSS 和 Tailwind 寫成，可免費複製",
+   "noteEn": "Open-source community pricing elements in CSS and Tailwind, free to copy",
+   "type": "template",
+   "section": "精选扩充 · 2026-10-26",
+   "sectionTitle": "精选扩充（2026-10-26）",
+   "sectionDesc": "",
+   "source": "Uiverse",
+   "pricing": "free",
+   "tags": [
+    "CSS",
+    "Tailwind CSS"
+   ],
+   "ct": [
+    "pricing",
+    "card"
+   ],
+   "rt": [
+    "template"
+   ],
+   "vs": [
+    "playful"
+   ],
+   "added": "2026-10-26",
+   "cur": 1
+  },
+  {
+   "id": "x1026-pricing-hover-dev",
+   "name": "Hover.dev Animated Pricing",
+   "url": "https://www.hover.dev/components/pricing",
+   "note": "带交互动效的定价区块，React + Tailwind + Framer Motion",
+   "noteTw": "帶互動動效的定價區塊，React + Tailwind + Framer Motion",
+   "noteEn": "Animated, interactive pricing sections in React, Tailwind and Framer Motion",
+   "type": "template",
+   "section": "精选扩充 · 2026-10-26",
+   "sectionTitle": "精选扩充（2026-10-26）",
+   "sectionDesc": "",
+   "source": "Hover.dev",
+   "pricing": "freemium",
+   "tags": [
+    "React",
+    "Tailwind CSS"
+   ],
+   "ct": [
+    "pricing",
+    "card"
+   ],
+   "rt": [
+    "template"
+   ],
+   "vs": [
+    "motion",
+    "dark-tech"
+   ],
+   "added": "2026-10-26",
+   "cur": 1
+  },
+  {
+   "id": "x1026-pricing-untitled-ui",
+   "name": "Untitled UI React Pricing Sections",
+   "url": "https://www.untitledui.com/react/marketing/pricing-sections",
+   "note": "React 定价区块，基于 React Aria，用 Tailwind CSS 4 写样式",
+   "noteTw": "React 定價區塊，基於 React Aria，用 Tailwind CSS 4 寫樣式",
+   "noteEn": "React pricing sections built on React Aria and styled with Tailwind CSS 4",
+   "type": "template",
+   "section": "精选扩充 · 2026-10-26",
+   "sectionTitle": "精选扩充（2026-10-26）",
+   "sectionDesc": "",
+   "source": "Untitled UI",
+   "pricing": "freemium",
+   "tags": [
+    "React",
+    "Tailwind CSS"
+   ],
+   "ct": [
+    "pricing",
+    "card"
+   ],
+   "rt": [
+    "template"
+   ],
+   "vs": [
+    "minimal",
+    "enterprise"
+   ],
+   "added": "2026-10-26",
+   "cur": 1
+  },
+  {
+   "id": "x1026-pricing-shadcn-studio",
+   "name": "shadcn/studio Pricing Component",
+   "url": "https://shadcnstudio.com/blocks/marketing-ui/pricing-component",
+   "note": "shadcn 定价表区块：清楚展示功能、档位和行动按钮",
+   "noteTw": "shadcn 定價表區塊：清楚展示功能、方案級別和行動按鈕",
+   "noteEn": "shadcn pricing table blocks that lay out features, tiers and CTAs clearly",
+   "type": "template",
+   "section": "精选扩充 · 2026-10-26",
+   "sectionTitle": "精选扩充（2026-10-26）",
+   "sectionDesc": "",
+   "source": "shadcn/studio",
+   "pricing": "freemium",
+   "tags": [
+    "React",
+    "shadcn"
+   ],
+   "ct": [
+    "pricing",
+    "card"
+   ],
+   "rt": [
+    "template"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "added": "2026-10-26",
+   "cur": 1
+  },
+  {
+   "id": "x1026-pricing-tailgrids",
+   "name": "TailGrids Pricing Tables",
+   "url": "https://tailgrids.com/blocks/pricing-tables",
+   "note": "React 定价表区块：套餐、功能、额度限制和对比一目了然",
+   "noteTw": "React 定價表區塊：方案、功能、額度限制和比較一目了然",
+   "noteEn": "React pricing table blocks for plans, features, limits and comparisons",
+   "type": "template",
+   "section": "精选扩充 · 2026-10-26",
+   "sectionTitle": "精选扩充（2026-10-26）",
+   "sectionDesc": "",
+   "source": "TailGrids",
+   "pricing": "freemium",
+   "tags": [
+    "React",
+    "Tailwind CSS"
+   ],
+   "ct": [
+    "pricing",
+    "card"
+   ],
+   "rt": [
+    "template"
+   ],
+   "vs": [
+    "minimal",
+    "enterprise"
+   ],
+   "added": "2026-10-26",
+   "cur": 1
+  },
+  {
+   "id": "x1026-pricing-merakiui",
+   "name": "Meraki UI Pricing Components",
+   "url": "https://merakiui.com/components/marketing/pricing",
+   "note": "免费的 Tailwind 定价组件，直接复制 HTML 代码",
+   "noteTw": "免費的 Tailwind 定價元件，直接複製 HTML 程式碼",
+   "noteEn": "Free Tailwind pricing components with copy-paste HTML",
+   "type": "template",
+   "section": "精选扩充 · 2026-10-26",
+   "sectionTitle": "精选扩充（2026-10-26）",
+   "sectionDesc": "",
+   "source": "Meraki UI",
+   "pricing": "free",
+   "tags": [
+    "Tailwind CSS"
+   ],
+   "ct": [
+    "pricing",
+    "card"
+   ],
+   "rt": [
+    "template"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "added": "2026-10-26",
+   "cur": 1
+  },
+  {
+   "id": "x1026-pricing-mambaui",
+   "name": "Mamba UI Pricing",
+   "url": "https://mambaui.com/components/pricing",
+   "note": "免费的 Tailwind 定价组件，可复制 HTML 或 JSX",
+   "noteTw": "免費的 Tailwind 定價元件，可複製 HTML 或 JSX",
+   "noteEn": "Free Tailwind pricing components, copy HTML or JSX",
+   "type": "template",
+   "section": "精选扩充 · 2026-10-26",
+   "sectionTitle": "精选扩充（2026-10-26）",
+   "sectionDesc": "",
+   "source": "Mamba UI",
+   "pricing": "free",
+   "tags": [
+    "Tailwind CSS"
+   ],
+   "ct": [
+    "pricing",
+    "card"
+   ],
+   "rt": [
+    "template"
+   ],
+   "vs": [
+    "minimal",
+    "dark-tech"
+   ],
+   "added": "2026-10-26",
+   "cur": 1
+  },
+  {
+   "id": "x1026-pricing-tw-elements",
+   "name": "TW Elements Pricing Sections",
+   "url": "https://tw-elements.com/docs/standard/designblocks/pricing/",
+   "note": "Tailwind 定价区块模板，可免费商用，无需注册",
+   "noteTw": "Tailwind 定價區塊範本，可免費商用，無需註冊",
+   "noteEn": "Tailwind pricing section templates, free for commercial use, no sign-up",
+   "type": "template",
+   "section": "精选扩充 · 2026-10-26",
+   "sectionTitle": "精选扩充（2026-10-26）",
+   "sectionDesc": "",
+   "source": "TW Elements",
+   "pricing": "free",
+   "tags": [
+    "Tailwind CSS"
+   ],
+   "ct": [
+    "pricing",
+    "card"
+   ],
+   "rt": [
+    "template"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "added": "2026-10-26",
+   "cur": 1
+  },
+  {
+   "id": "x1026-pricing-launch-ui",
+   "name": "Launch UI Pricing",
+   "url": "https://www.launchuicomponents.com/docs/sections/pricing",
+   "note": "基于 shadcn/ui 的定价表组件，多种变体，支持订阅选项",
+   "noteTw": "基於 shadcn/ui 的定價表元件，多種變體，支援訂閱選項",
+   "noteEn": "shadcn/ui pricing table with several variants and subscription options",
+   "type": "template",
+   "section": "精选扩充 · 2026-10-26",
+   "sectionTitle": "精选扩充（2026-10-26）",
+   "sectionDesc": "",
+   "source": "Launch UI",
+   "pricing": "freemium",
+   "tags": [
+    "React",
+    "shadcn"
+   ],
+   "ct": [
+    "pricing",
+    "card"
+   ],
+   "rt": [
+    "template"
+   ],
+   "vs": [
+    "minimal",
+    "dark-tech"
+   ],
+   "added": "2026-10-26",
+   "cur": 1
+  },
+  {
+   "id": "x1026-pricing-creative-tim",
+   "name": "Creative Tim Tailwind Pricing",
+   "url": "https://www.creative-tim.com/twcomponents/components/pricing",
+   "note": "Tailwind 定价组件合集，免费款和付费款都有",
+   "noteTw": "Tailwind 定價元件合集，免費款和付費款都有",
+   "noteEn": "Tailwind pricing component collection with free and premium pieces",
+   "type": "template",
+   "section": "精选扩充 · 2026-10-26",
+   "sectionTitle": "精选扩充（2026-10-26）",
+   "sectionDesc": "",
+   "source": "Creative Tim",
+   "pricing": "freemium",
+   "tags": [
+    "Tailwind CSS"
+   ],
+   "ct": [
+    "pricing",
+    "card"
+   ],
+   "rt": [
+    "template"
+   ],
+   "vs": [
+    "minimal",
+    "soft"
+   ],
+   "added": "2026-10-26",
+   "cur": 1
+  },
+  {
+   "id": "x1026-pricing-tailwindflex",
+   "name": "TailwindFlex Pricing Examples",
+   "url": "https://tailwindflex.com/tag/pricing",
+   "note": "免费的 Tailwind 定价示例：卡片、表格和整页",
+   "noteTw": "免費的 Tailwind 定價範例：卡片、表格和整頁",
+   "noteEn": "Free Tailwind pricing examples: cards, tables and full pages",
+   "type": "template",
+   "section": "精选扩充 · 2026-10-26",
+   "sectionTitle": "精选扩充（2026-10-26）",
+   "sectionDesc": "",
+   "source": "TailwindFlex",
+   "pricing": "free",
+   "tags": [
+    "Tailwind CSS"
+   ],
+   "ct": [
+    "pricing",
+    "card"
+   ],
+   "rt": [
+    "template"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "added": "2026-10-26",
+   "cur": 1
+  },
+  {
+   "id": "x1026-pricing-shadcnblocks",
+   "name": "Shadcnblocks Pricing 2",
+   "url": "https://www.shadcnblocks.com/block/pricing2",
+   "note": "经典双套餐定价：月付/年付切换、大号价格、功能清单和整宽按钮",
+   "noteTw": "經典雙方案定價：月付/年付切換、大號價格、功能清單和整寬按鈕",
+   "noteEn": "Classic two-plan pricing: monthly/yearly switch, large prices, feature checklists, full-width CTAs",
+   "type": "template",
+   "section": "精选扩充 · 2026-10-26",
+   "sectionTitle": "精选扩充（2026-10-26）",
+   "sectionDesc": "",
+   "source": "Shadcnblocks",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn"
+   ],
+   "ct": [
+    "pricing",
+    "card"
+   ],
+   "rt": [
+    "template"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "added": "2026-10-26",
+   "cur": 1
+  },
+  {
+   "id": "x1026-pricing-shadcn-io",
+   "name": "shadcn.io Pricing Blocks",
+   "url": "https://www.shadcn.io/pricing-block",
+   "note": "108 个定价区块，支持 React、Vue、Svelte、Solid，可在线预览，一行命令安装",
+   "noteTw": "108 個定價區塊，支援 React、Vue、Svelte、Solid，可線上預覽，一行指令安裝",
+   "noteEn": "108 pricing blocks for React, Vue, Svelte and Solid with live previews and one-line install",
+   "type": "template",
+   "section": "精选扩充 · 2026-10-26",
+   "sectionTitle": "精选扩充（2026-10-26）",
+   "sectionDesc": "",
+   "source": "shadcn.io",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "Vue",
+    "Svelte",
+    "shadcn"
+   ],
+   "ct": [
+    "pricing",
+    "card"
+   ],
+   "rt": [
+    "template"
+   ],
+   "vs": [
+    "minimal",
+    "dark-tech"
+   ],
+   "added": "2026-10-26",
+   "cur": 1
+  },
+  {
+   "id": "x1026-pricing-tailwind-kit",
+   "name": "Tailwind Kit Pricing Cards",
+   "url": "https://www.tailwind-kit.com/components/pricing",
+   "note": "免费的 Tailwind 定价卡片组件",
+   "noteTw": "免費的 Tailwind 定價卡片元件",
+   "noteEn": "Free Tailwind pricing card components",
+   "type": "template",
+   "section": "精选扩充 · 2026-10-26",
+   "sectionTitle": "精选扩充（2026-10-26）",
+   "sectionDesc": "",
+   "source": "Tailwind Kit",
+   "pricing": "free",
+   "tags": [
+    "Tailwind CSS"
+   ],
+   "ct": [
+    "pricing",
+    "card"
+   ],
+   "rt": [
+    "template"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "added": "2026-10-26",
+   "cur": 1
   }
  ],
  "guides": [
