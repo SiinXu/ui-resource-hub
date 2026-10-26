@@ -21,10 +21,16 @@ function lat(s){if(isZh()||!s||!CJK.test(s))return s;return EN.misc[s]||EN.name[
 function TG(x){return isZh()?x:((EN.tag[LANG]||EN.tag.en||{})[x]||lat(x))}
 var ITEMS = D.items, BY = {}, TOTAL = D.count || ITEMS.length;
 ITEMS.forEach(function(i){BY[i.id]=i});
+(function(){var X=window.UI_CTX;if(!X||!F||CORE)return;var ix=X.ix||{};X.items.forEach(function(i){if(!BY[i.id]){BY[i.id]=i;ITEMS.push(i)}});ITEMS.sort(function(a,b){return (ix[a.id]==null?1e9:ix[a.id])-(ix[b.id]==null?1e9:ix[b.id])});
+  var mg=function(a,b){for(var k in b)if(a[k]==null)a[k]=b[k]};mg(M,X.media||{});mg(LG,X.legal||{});
+  var E=F.en,XE=X.en||{};if(E){['name','var','misc','note'].forEach(function(g){E[g]=E[g]||{};mg(E[g],XE[g]||{})});E.tag=E.tag||{};for(var tl in XE.tag||{}){E.tag[tl]=E.tag[tl]||{};mg(E.tag[tl],XE.tag[tl])}}
+  var N=F.notes;if(N){N.notes=N.notes||{};for(var nl in (X.notes||{}).notes||{}){N.notes[nl]=N.notes[nl]||{};mg(N.notes[nl],X.notes.notes[nl])}}})();
 function VU(f,k){var v=(window.__uhV||{})[k];return f+(v?'?h='+v:'')}
 function addS(src,cb){var s=document.createElement('script');s.src=src;s.async=true;s.onload=function(){cb&&cb(true)};s.onerror=function(){cb&&cb(false)};document.head.appendChild(s)}
 /* true when the current view needs the whole catalog (anything but the default unfiltered home grid) */
-function needsAll(){return !!(state.q||state.type!=='all'||state.rt||state.vs||state.ct||state.tag||state.src||state.view==='fav')}
+/* perf 2026-10-26: a ?ct= deep link with UI_CTX loaded (that kind's rows) renders from first + ctx; core.js still loads after */
+function ctxOnly(){var X=window.UI_CTX;return !!(X&&F&&!FULL&&state.ct===X.ct&&!state.q&&state.type==='all'&&!state.rt&&!state.vs&&!state.tag&&!state.src&&state.view!=='fav')}
+function needsAll(){if(ctxOnly())return false;return !!(state.q||state.type!=='all'||state.rt||state.vs||state.ct||state.tag||state.src||state.view==='fav')}
 var CQ=null, CST=0;
 function whenCore(cb){if(FULL){cb();return}(CQ=CQ||[]).push(cb)}
 function needCore(cb){if(FULL){cb&&cb();return}if(cb)(CQ=CQ||[]).push(cb);startCore()}
