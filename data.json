@@ -1,6 +1,6 @@
 {
  "generated": "2026-10-26",
- "count": 4992,
+ "count": 4994,
  "items": [
   {
    "id": "ued-figma-mcp-guide",
@@ -187618,6 +187618,109 @@
    ],
    "added": "2026-10-26",
    "cur": 1
+  },
+  {
+   "id": "rd-co36vwe-playful-loading-screens",
+   "name": "Playful Loading Screens",
+   "url": "https://x.com/oiharshit/status/2114696899320299668",
+   "note": "A set of app loading screens featuring animated clay-textured characters including a caterpillar, morphing shapes, and orbiting creature ensembles, each paired with a witty loading message.",
+   "noteEn": "A set of app loading screens featuring animated clay-textured characters including a caterpillar, morphing shapes, and orbiting creature ensembles, each paired with a witty loading message.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@oiharshit",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "motion"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "3d",
+    "playful"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/co36vwe-playful-loading-screens",
+   "rdkind": "Design",
+   "rdcat": "Motion",
+   "rdstyle": [
+    "3D",
+    "Playful",
+    "Vibrant",
+    "Light"
+   ],
+   "author": {
+    "name": "Harshit",
+    "handle": "@oiharshit",
+    "url": "https://x.com/oiharshit"
+   },
+   "x_post": "https://x.com/oiharshit/status/2114696899320299668",
+   "xsrc": {
+    "post": "https://x.com/oiharshit/status/2114696899320299668",
+    "author": "@oiharshit",
+    "likes": 361,
+    "bookmarks": 176,
+    "reposts": 10,
+    "impressions": 7342,
+    "date": "2026-10-26"
+   },
+   "pub": "2026-10-26",
+   "added": "2026-10-26"
+  },
+  {
+   "id": "rd-hdhkn18-portfolio-with-walking-avatar",
+   "name": "Portfolio with Walking Avatar",
+   "url": "https://lnkd.in/eUXiDQkh",
+   "note": "Guillaume's folio shows a 3D avatar of himself walking past a horizontal row of project cards, blending personal identity with a live portfolio scroll.",
+   "noteEn": "Guillaume's folio shows a 3D avatar of himself walking past a horizontal row of project cards, blending personal identity with a live portfolio scroll.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@guillaumebth",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "3d"
+   ],
+   "origin": "site",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/hdhkn18-portfolio-with-walking-avatar",
+   "rdkind": "Design",
+   "rdcat": "Web",
+   "rdstyle": [
+    "Experimental",
+    "3D",
+    "Light"
+   ],
+   "author": {
+    "name": "Guillaume",
+    "handle": "@guillaumebth",
+    "url": "https://x.com/guillaumebth"
+   },
+   "x_post": "https://x.com/guillaumebth/status/2114724734797529282",
+   "xsrc": {
+    "post": "https://x.com/guillaumebth/status/2114724734797529282",
+    "author": "@guillaumebth",
+    "likes": 266,
+    "bookmarks": 112,
+    "reposts": 8,
+    "impressions": 6905,
+    "date": "2026-10-26"
+   },
+   "official": "https://lnkd.in/eUXiDQkh",
+   "pub": "2026-10-26",
+   "added": "2026-10-26"
   }
  ],
  "guides": [
@@ -187820,5 +187923,5 @@
    ]
   }
  ],
- "updatedAt": "2026-10-26T09:10Z"
+ "updatedAt": "2026-10-26T19:31Z"
 }

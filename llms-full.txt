@@ -1,6 +1,6 @@
 # UI Hub
 
-> Curated, multilingual directory of 4992 public UI resources (component libraries, component style demos, effects, design systems, design skills for AI agents) plus original blog analysis of AI design techniques. Data updated 2026-10-26 09:10 UTC.
+> Curated, multilingual directory of 4994 public UI resources (component libraries, component style demos, effects, design systems, design skills for AI agents) plus original blog analysis of AI design techniques. Data updated 2026-10-26 19:31 UTC.
 
 Use the JSON endpoints, not the SPA, when acting as an agent. Every entry links to its original site; licenses belong to the original authors.
 
@@ -117,11 +117,11 @@ Use the JSON endpoints, not the SPA, when acting as an agent. Every entry links 
 - [visx](https://airbnb.io/visx/): Airbnb's low-level visualization components
 
 ## FAQ
-- **What is UI Hub?** A free, curated directory of 4992 public UI resources: 213 component libraries, 1989 component style demos with light/dark screenshots, 70 design skills for AI agents, plus effects, templates, specs and tutorials. It links to original sites and never hosts paid source code.
+- **What is UI Hub?** A free, curated directory of 4994 public UI resources: 213 component libraries, 1989 component style demos with light/dark screenshots, 70 design skills for AI agents, plus effects, templates, specs and tutorials. It links to original sites and never hosts paid source code.
 - **How do I find a component in a given style?** Load https://ui.incidental.site/api/resources.json and filter by ct (component kind, e.g. "dialog") and vs (visual style, e.g. "minimal" or "motion"). type="style" entries are concrete component demos with a libName and page URL; type="library" entries are whole libraries with install info on the site.
 - **Which skills should an agent use for good UI?** One direction skill (frontend-design or taste-skill), emil-design-eng for motion and interaction polish, then impeccable, baseline-ui, web-design-guidelines and accessibility as an audit pass. See https://ui.incidental.site/api/skills.json.
 - **Can I copy the code?** Open-source libraries can be used under their own licenses (MIT, Apache-2.0 etc.); the card shows the original link. Paid tiers (marked paid/freemium) must be bought from the original vendor.
-- **How often is it updated?** Daily via a GitHub Actions job that adds new UI repositories and tools from GitHub, awesome-shadcn-ui and Hacker News. Nothing is deleted. Last update: 2026-10-26 09:10 UTC.
+- **How often is it updated?** Daily via a GitHub Actions job that adds new UI repositories and tools from GitHub, awesome-shadcn-ui and Hacker News. Nothing is deleted. Last update: 2026-10-26 19:31 UTC.
 
 
 # Blog posts (full text, English)
@@ -4569,6 +4569,8 @@ Get Hyped. Get Noticed. Get Results.
 - Uiverse Pricing Card by mi-series (splendid-eagle-61) | effect | https://uiverse.io/mi-series/splendid-eagle-61 | Dark, muted green minimalist pricing card in a Material Design style
 - Uiverse Pricing Card by Yaya12085 (splendid-firefox-37) | effect | https://uiverse.io/Yaya12085/splendid-firefox-37 | Light blue-purple professional membership plan card with monthly price and checkmarks
 - Uiverse Pricing Card by seyed-mohsen-mousavi (swift-sloth-95) | effect | https://uiverse.io/seyed-mohsen-mousavi/swift-sloth-95 | Green, gray and white business Pro subscription card with price, features, users and subscribe button
+- Playful Loading Screens | inspiration | https://x.com/oiharshit/status/2114696899320299668 | A set of app loading screens featuring animated clay-textured characters including a caterpillar, morphing shapes, and orbiting creature ensembles, each paired 
+- Portfolio with Walking Avatar | inspiration | https://lnkd.in/eUXiDQkh | Guillaume's folio shows a 3D avatar of himself walking past a horizontal row of project cards, blending personal identity with a live portfolio scroll.
 
 # Component style demos: 1989 entries, see api/resources.json (type=style)
 
