@@ -1,0 +1,30 @@
+<p>大多数智能体界面至今只有一种授权方式：智能体用你的账号登录，所以你能做的它全都能做。在智能体主要负责阅读和起草时，这样还行；一旦它开始买东西、发消息、签文件，就不行了。10 月 21 日那一周，一家零售商、一家模型公司和一家密码管理器各自发布了同一个答案的不同部分。把三者放在一起看，是迄今最清楚的一张图：给智能体的授权界面应该长什么样。</p><figure><img src="../../blog/img/agent-approval-ui-budgets-interruptions-1.webp" alt="Walmart 公告：推出 Agent Profiles、Agent Gateway 和 AI 智能体条款" loading="lazy" decoding="async" width="1280" height="800"><figcaption>Walmart 公告：推出 Agent Profiles、Agent Gateway 和 AI 智能体条款 · 截图：Walmart（<a href="https://corporate.walmart.com/news/2026/10/Making-It-Possible-for-Agents-to-Shop-on-Behalf-of-Customers" rel="noopener" target="_blank">corporate.walmart.com</a>），2026-10-26 截取，版权归原站所有</figcaption></figure>
+<h2>发布了什么</h2>
+<ul><li><strong>Walmart Agent Profiles（10 月 21 日公布，一个月内上线）。</strong>现在智能体在 Walmart 购物时用的是顾客的账号，它下的单和顾客自己的订单混在一起。Agent Profiles 让每个智能体在账号里拥有自己的资料页，它的购买记录单独列出。默认情况下智能体每次购买都需要批准；顾客也可以改成允许它在某个额度内消费，例如 50、100 或 200 美元，Walmart 表示即便在额度内也可能再要求确认。资料页可以随时关闭或删除。按新条款，智能体拿不到银行卡信息，不能添加或修改支付方式，只能使用任务所需的信息。测试中的 Agent Gateway 通过 MCP 连接智能体；按 Walmart 举的例子，它能帮智能体找到你常买的牛奶，而不把你的全部购物记录交出去。</li>
+<li><strong>Claude Duet（10 月 21 日开放研究预览）。</strong>Anthropic 的主动型智能体每天早上发一份简报，每隔几小时（而不是持续不断地）检查已连接的应用，只在有事需要你处理时才发消息；你可以告诉它想听哪些事、多久一次。它会自己阅读、起草和准备工作，但在发送消息、付款、签署文件或删除任何东西之前，会把它准备做的事原样展示给你，等你批准。有些操作即使你批准也不允许，比如交易证券或在账户之间转账；任何已连接的应用都可以断开。Anthropic 也说明，预览版仍可能误判轻重缓急，暂时还不能让你看到它的浏览器。</li>
+<li><strong>1Password for Agents（10 月）。</strong>智能体遇到登录表单时，1Password 会弹出提示，写明是哪个智能体在请求，并推荐一条登录项；你在自己的设备上批准，1Password 直接填表，凭据从不经过智能体。它与 Claude 的集成更进一步：没有长期有效的批准，新的智能体会话就要重新确认，放出的凭据随会话结束而失效。</li></ul><figure><img src="../../blog/img/agent-approval-ui-budgets-interruptions-2.webp" alt="阶梯：永不允许，默认每次都问，在用户设定的预算内执行，所有智能体操作事后都能在独立记录里查到" loading="lazy" decoding="async" width="1200" height="675"><figcaption>阶梯：永不允许，默认每次都问，在用户设定的预算内执行，所有智能体操作事后都能在独立记录里查到 · 示意图：UI Hub 原创，CC BY 4.0</figcaption></figure>
+<p>FocusHeron 的《AI and Designers》通讯汇总了 Claire Vo 对 Duet 的早期上手评测，补上了人的一面：主动型智能体需要一条明确的「什么时候可以打扰」规则，而响应慢会迅速消磨人们实时与它协作的意愿。</p>
+<h2>我们的看法</h2>
+<p>这三次发布的共同点比分歧多，而且共同点是一种设计模式，不只是安全功能。自主权不是一个开关，而是按操作类型分别设置的四级阶梯：有些操作<strong>永不允许</strong>；有后果的操作默认<strong>每次都问</strong>；日常操作可以在用户选定的<strong>预算内自动执行</strong>；智能体做过的一切都要在它自己的记录里<strong>事后可查</strong>，和用户本人的操作分开。审批本身必须是对具体操作的预览，而不是一个笼统的「允许吗？」对话框：Duet 的「把准备做的事原样展示给你」和 1Password 的「哪个智能体、要用哪条登录」，正好是一张好审批卡片的两半。</p>
+<p>更安静的一课关于注意力。什么都要问的授权模型，会把人训练成不看内容就点「批准」，这比没有审批还糟。Duet 几小时一次的检查、按话题设置的通知，以及 Walmart 的预算档位，都是为了减少打扰次数，让剩下的那些问题真正被读到。如果你的产品要加智能体操作，请把「打扰预算」和「消费预算」一起设计。</p>
+<h2>清单：为智能体操作设计审批界面</h2>
+<ol><li><strong>给每个智能体独立身份。</strong>每次请求、历史里的每条操作，都显示它的名字和图标，而不是用户本人的头像。</li>
+<li><strong>先给操作分级，再画界面。</strong>阅读、起草、预算内执行、需批准执行、永不允许。把这份清单写下来，它就是你的授权规格。</li>
+<li><strong>有后果的操作默认「先问」。</strong>发送、付款、签署、删除、修改账号设置都从「先问」档开始，之后用户可以按智能体逐个放宽。</li>
+<li><strong>审批卡片要做成预览。</strong>写明确切的收件人和正文、商品和价格，或文件和改动，以及是谁在请求、为什么。提供批准、编辑、拒绝三个选项，拒绝要和批准一样容易点到。</li>
+<li><strong>预算用用户熟悉的单位。</strong>每笔或每周金额、每天消息数、团队外收件人数量。在卡片和设置里都显示剩余额度。</li>
+<li><strong>单独的操作记录。</strong>智能体的操作单独成列，可筛选；能撤销或退货的提供入口，并提供一键暂停或移除该智能体。</li>
+<li><strong>定一条打扰规则。</strong>低风险事项合并进简报，只在受阻或有时效时打断，并让用户自己选择话题和频率。</li>
+<li><strong>不留长期密钥。</strong>永远不要把凭据贴进智能体的上下文；登录交给密码管理器，访问权限随会话结束失效。</li>
+<li><strong>审批要无障碍。</strong>阻断式审批用 <code>alertdialog</code>，标题清楚，焦点落在最安全的选项上，正文读屏软件能完整读出。</li></ol>
+<pre><code># agent-permissions.yml：一份起步规格
+agent: "Shopping assistant"
+never:    [change_payment_method, move_money, trade]
+ask:      [send_message, purchase_over_budget, sign, delete]
+budget:   { purchase: "$100 / week", messages: "10 / day" }
+auto:     [read, search, draft, add_to_cart]
+notify:   { brief: "08:00", interrupt: [blocked, deadline_today] }
+ledger:   separate_from_owner
+session:  { credentials: via_password_manager, expire: on_end }</code></pre>
+<figure><img src="../../blog/img/agent-approval-ui-budgets-interruptions-3.webp" alt="Anthropic 公告：介绍会在行动前先确认的主动型智能体 Claude Duet" loading="lazy" decoding="async" width="1280" height="800"><figcaption>Anthropic 公告：介绍会在行动前先确认的主动型智能体 Claude Duet · 截图：Anthropic（<a href="https://claude.com/resources/articles/claude-duet" rel="noopener" target="_blank">claude.com</a>），2026-10-26 截取，版权归原站所有</figcaption></figure><h2>UI Hub 能帮什么</h2>
+<p>搭这种界面的积木已经有了。<a href="../shadcn-trace-and-ai-elements/">shadcn Trace 与 AI Elements</a> 一文介绍了可用来拼审批卡片的 Confirmation 和 Tool 模式；<a href="../accessibility-in-ai-generated-ui/">AI 生成界面的无障碍</a>讲了焦点和对话框角色。想让智能体在搭这类界面时遵守你的规范，可以看<a href="../lint-agents-onto-your-design-system/">用 Lint 把智能体拉回你的设计系统</a>。</p>

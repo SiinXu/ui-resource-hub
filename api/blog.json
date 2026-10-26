@@ -1,5 +1,5 @@
 {
- "count": 32,
+ "count": 33,
  "rss": "https://ui.incidental.site/blog/rss.xml",
  "categories": {
   "tools": "Tools",
@@ -18,6 +18,117 @@
   "weekly": "Series: Weekly roundup"
  },
  "posts": [
+  {
+   "slug": "agent-approval-ui-budgets-interruptions",
+   "url": "https://ui.incidental.site/blog/agent-approval-ui-budgets-interruptions/",
+   "date": "2026-10-26",
+   "category": "agents",
+   "series": null,
+   "featured": true,
+   "tags": [
+    "agent UX",
+    "approvals",
+    "Walmart Agent Profiles",
+    "Claude Duet",
+    "1Password for Agents"
+   ],
+   "title": {
+    "en": "Designing approvals for agents that act for people: budgets, previews and when to interrupt",
+    "zh": "为替人办事的智能体设计审批：预算、预览，以及什么时候打扰用户",
+    "zht": "為替人辦事的智慧體設計審批：預算、預覽，以及什麼時候打擾使用者",
+    "ja": "人の代わりに動くエージェントの承認設計：予算、プレビュー、そして割り込むタイミング",
+    "ko": "사람 대신 일하는 에이전트의 승인 설계: 예산, 미리보기, 그리고 끼어들 때",
+    "ms": "Mereka bentuk kelulusan untuk ejen yang bertindak bagi pihak orang: bajet, pratonton dan bila perlu mengganggu",
+    "vi": "Thiết kế phê duyệt cho agent làm thay người dùng: ngân sách, xem trước và khi nào nên làm phiền",
+    "fr": "Concevoir les validations des agents qui agissent pour nous : budgets, aperçus et moment d’interrompre",
+    "es": "Diseñar aprobaciones para agentes que actúan por las personas: presupuestos, vistas previas y cuándo interrumpir",
+    "de": "Freigaben für Agents gestalten, die für Menschen handeln: Budgets, Vorschauen und wann man stört"
+   },
+   "summary": {
+    "en": "In one week Walmart announced Agent Profiles with spending limits, Anthropic opened Claude Duet, which asks before it sends, pays, signs or deletes, and 1Password shipped approvals for agent sign-ins. Together they sketch a shared pattern for agent permission UI: what each one shipped, our take, and a checklist for your own product.",
+    "zh": "一周之内，Walmart 公布了带消费上限的 Agent Profiles，Anthropic 开放了在发送、付款、签署或删除前都会先问你的 Claude Duet，1Password 也上线了智能体登录审批。三者拼出了一套智能体授权界面的共同模式：它们各自发布了什么，我们的看法，以及一份可用于你自己产品的清单。",
+    "zht": "一週之內，Walmart 公布了帶消費上限的 Agent Profiles，Anthropic 開放了在傳送、付款、簽署或刪除前都會先問你的 Claude Duet，1Password 也上線了智慧體登入審批。三者拼出了一套智慧體授權介面的共同模式：它們各自發布了什麼，我們的看法，以及一份可用於你自己產品的清單。",
+    "ja": "1週間のうちに、Walmartは支出上限付きのAgent Profilesを発表し、Anthropicは送信・支払い・署名・削除の前に必ず確認するClaude Duetを公開し、1Passwordはエージェントのサインイン承認を出した。3つを並べるとエージェント権限UIの共通パターンが見える。各社の内容、私たちの見解、自社プロダクト用チェックリスト。",
+    "ko": "일주일 사이에 Walmart는 지출 한도가 있는 Agent Profiles를 발표했고, Anthropic은 보내기·결제·서명·삭제 전에 먼저 묻는 Claude Duet을 열었으며, 1Password는 에이전트 로그인 승인을 내놓았다. 셋을 합치면 에이전트 권한 UI의 공통 패턴이 보인다. 각자 내놓은 것, 우리의 견해, 내 제품용 체크리스트.",
+    "ms": "Dalam seminggu, Walmart mengumumkan Agent Profiles dengan had perbelanjaan, Anthropic membuka Claude Duet yang bertanya sebelum menghantar, membayar, menandatangani atau memadam, dan 1Password melancarkan kelulusan log masuk ejen. Bersama-sama ia melakar corak UI kebenaran ejen: apa yang dilancarkan, pandangan kami dan senarai semak untuk produk anda.",
+    "vi": "Trong một tuần, Walmart công bố Agent Profiles có hạn mức chi tiêu, Anthropic mở Claude Duet luôn hỏi trước khi gửi, thanh toán, ký hay xoá, và 1Password ra mắt phê duyệt đăng nhập cho agent. Gộp lại, chúng phác ra một mẫu chung cho UI cấp quyền agent: mỗi bên ra mắt gì, nhận định của chúng tôi và checklist cho sản phẩm của bạn.",
+    "fr": "En une semaine, Walmart a annoncé Agent Profiles avec plafonds de dépense, Anthropic a ouvert Claude Duet, qui demande avant d’envoyer, payer, signer ou supprimer, et 1Password a lancé la validation des connexions d’agents. Ensemble, ils dessinent un modèle commun d’UI de permissions : ce que chacun a lancé, notre avis et une checklist pour votre produit.",
+    "es": "En una semana, Walmart anunció Agent Profiles con límites de gasto, Anthropic abrió Claude Duet, que pregunta antes de enviar, pagar, firmar o borrar, y 1Password lanzó aprobaciones para los inicios de sesión de agentes. Juntos esbozan un patrón común de UI de permisos: qué lanzó cada uno, nuestra opinión y una lista de revisión para tu producto.",
+    "de": "Innerhalb einer Woche kündigte Walmart Agent Profiles mit Ausgabenlimits an, Anthropic öffnete Claude Duet, das vor Senden, Bezahlen, Unterschreiben oder Löschen fragt, und 1Password brachte Freigaben für Agent-Logins. Zusammen skizzieren sie ein gemeinsames Muster für Agent-Berechtigungs-UI: was jeweils kam, unsere Einschätzung und eine Checkliste für dein Produkt."
+   },
+   "reading_minutes": {
+    "en": 5,
+    "zh": 6
+   },
+   "cover": "https://ui.incidental.site/blog/img/agent-approval-ui-budgets-interruptions-cover.webp",
+   "references": [
+    {
+     "title": "Making it possible for agents to shop on behalf of customers",
+     "by": "Walmart",
+     "url": "https://corporate.walmart.com/news/2026/10/Making-It-Possible-for-Agents-to-Shop-on-Behalf-of-Customers"
+    },
+    {
+     "title": "Walmart is inviting AI agents to shop for you",
+     "by": "The Verge",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/1015715/walmart-ai-shopping-agents"
+    },
+    {
+     "title": "Walmart will let AI agents shop for you, with their own spending limits",
+     "by": "The Next Web",
+     "url": "https://thenextweb.com/news/walmart-ai-agents-shop-agent-profiles"
+    },
+    {
+     "title": "Walmart AI agent shopping: new controls and spending limits",
+     "by": "Digital Commerce 360",
+     "url": "https://www.digitalcommerce360.com/2026/10/23/walmart-unveils-ai-agent-shopping-controls-spending-limits/"
+    },
+    {
+     "title": "Introducing Claude Duet",
+     "by": "Anthropic",
+     "url": "https://claude.com/resources/articles/claude-duet"
+    },
+    {
+     "title": "Get started with Claude Duet",
+     "by": "Claude Help Center",
+     "url": "https://support.claude.com/en/articles/17631495-get-started-with-claude-duet"
+    },
+    {
+     "title": "Anthropic announces preview of Claude Duet",
+     "by": "Ashley Capoot, CNBC",
+     "url": "https://www.cnbc.com/2026/10/21/anthropic-preview-of-claude-duet-personal-ai-agent-take-on-muse-dots.html"
+    },
+    {
+     "title": "Use 1Password to sign in to sites with supported agents",
+     "by": "1Password Support",
+     "url": "https://support.1password.com/1password-for-agents/"
+    },
+    {
+     "title": "1Password for Agents launches as the trust layer for personal AI agents",
+     "by": "1Password",
+     "url": "https://1password.com/press/2026/october/1password-for-agents-trust-layer-personal-ai-agents"
+    },
+    {
+     "title": "About the security of 1Password for Claude",
+     "by": "1Password Support",
+     "url": "https://support.1password.com/1password-claude-security/"
+    },
+    {
+     "title": "AI and Designers, issue 2 (25 October 2026)",
+     "by": "FocusHeron",
+     "url": "https://focusheron.com/n/agentic-for-designers/i/iss_974440f090eb494aaff677d12748be1e"
+    },
+    {
+     "title": "AI Elements",
+     "by": "shadcn/ui",
+     "url": "https://ui.shadcn.com/docs/ai-elements"
+    },
+    {
+     "title": "Alert and message dialogs pattern",
+     "by": "W3C WAI-ARIA APG",
+     "url": "https://www.w3.org/WAI/ARIA/apg/patterns/alertdialog/"
+    }
+   ]
+  },
   {
    "slug": "ai-svg-for-ui-ideogram-vector",
    "url": "https://ui.incidental.site/blog/ai-svg-for-ui-ideogram-vector/",

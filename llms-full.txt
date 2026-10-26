@@ -52,6 +52,7 @@ Use the JSON endpoints, not the SPA, when acting as an agent. Every entry links 
 - [Layers, brand kits and JSON: three ways AI visuals stop looking generic](https://ui.incidental.site/blog/layers-brand-kits-json-ai-visuals/): On 20 October Coco Labs launched Vyb, a design model that builds in layers; Gemini started remembering an uploaded brand style; and Bria shipped Fibo 2, which turns every edit into editable JSON. Three different answers to the same problem, and a checklist for using them.
 - [Lint the agent: keeping AI-written UI on your design system](https://ui.incidental.site/blog/lint-agents-onto-your-design-system/): On 22 October the open-source onsystem went public, joining shadcn’s agent-first linter and Figma’s new Guidelines and system check. The shared idea: stop asking agents to follow your design system and start checking every edit. What the benchmark shows, and a setup checklist.
 - [AI vectors for UI: what Ideogram Vector 1.0 changes, and the checks before an SVG ships](https://ui.incidental.site/blog/ai-svg-for-ui-ideogram-vector/): On 22 October Ideogram shipped Vector 1.0, a model that writes editable SVG from a prompt or traces an image, joining Recraft V4.1 and QuiverAI Arrow 2. Editable is not the same as ready for an interface: what the three tools actually return, and a checklist for icons and illustrations.
+- [Designing approvals for agents that act for people: budgets, previews and when to interrupt](https://ui.incidental.site/blog/agent-approval-ui-budgets-interruptions/): In one week Walmart announced Agent Profiles with spending limits, Anthropic opened Claude Duet, which asks before it sends, pays, signs or deletes, and 1Password shipped approvals for agent sign-ins. Together they sketch a shared pattern for agent permission UI: what each one shipped, our take, and a checklist for your own product.
 
 ## Top component libraries
 - [Radix Primitives](https://www.radix-ui.com/primitives): Unstyled, accessible React primitives (dialogs, dropdowns, selects, tabs, tooltips) and the foundation of shadcn/ui
@@ -1511,6 +1512,54 @@ References:
 - Canva releases its first image generation model — Ivan Mehta, TechCrunch: https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/
 - SVGO — SVGO: https://svgo.dev/
 - Decorative images — W3C WAI: https://www.w3.org/WAI/tutorials/images/decorative/
+
+## Designing approvals for agents that act for people: budgets, previews and when to interrupt
+
+Most agent interfaces still have one permission model: the agent can do everything the person can, because it signs in as them. That worked while agents mostly read and drafted. It stops working the moment they buy, send and sign. In the week of 21 October three launches, from a retailer, a model lab and a password manager, each shipped a different piece of the same answer. Read together, they are the clearest picture yet of what a permission screen for an agent should look like.
+What shipped
+Walmart Agent Profiles (announced 21 October, launching within a month). Today an agent shopping on Walmart signs in with the customer's account, so its orders are mixed in with theirs. Agent Profiles give each agent its own profile inside the account, with its purchases listed separately. By default every agent purchase needs approval; the customer can instead allow spending up to a limit such as $50, $100 or $200, and Walmart says it may still ask for approval inside that limit. Profiles can be turned off or deleted at any time. Under the new terms, agents never receive card details, cannot add or change payment methods, and may only use the information a task needs. A beta Agent Gateway connects agents over MCP and, in Walmart's example, helps an agent find your usual milk without handing over your whole shopping history.
+Claude Duet (research preview, 21 October). Anthropic's proactive agent sends a morning brief, checks connected apps every few hours rather than continuously, and messages you only when something needs your attention; you can tell it what you want to hear about and how often. It reads, drafts and prepares work on its own, but before it sends a message, makes a payment, signs a document or deletes anything, it shows exactly what it is about to do and waits. Some actions, such as trading securities or moving money between accounts, stay off-limits even with approval, and any connected app can be disconnected. Anthropic says the preview may still misjudge what is urgent and cannot yet show you its browser.
+1Password for Agents (October). When an agent hits a sign-in form, 1Password shows a prompt naming which agent is asking and suggesting a login; you approve on your own device, and 1Password fills the form without the credential ever reaching the agent. Its Claude integration goes further: there are no standing approvals, so a new agent session means a new prompt, and released credentials expire with the session.
+One early hands-on review of Duet, by Claire Vo and summarised in the FocusHeron AI and Designers newsletter, adds the human side: a proactive agent needs a deliberate rule for when it may interrupt, and slow responses quickly erode the willingness to work with it in real time.
+Our take
+The three launches agree on more than they differ, and the agreement is a design pattern rather than a security feature. Autonomy is not one switch; it is a setting per action type, with four rungs. Some actions are never allowed. Consequential ones are asked every time by default. Routine ones can run within a budget the person chose. Everything the agent did is visible afterwards in its own ledger, separate from what the person did. The approval itself has to be a preview of the exact action, not a generic "Allow?" dialog: Duet's "shows you exactly what it is about to do" and 1Password's "which agent is asking, for which login" are the two halves of a good approval card.
+The quieter lesson is about attention. A permission model that asks for everything trains people to tap Approve without reading, which is worse than no approval at all. Duet's few-hours check-in and per-topic notification settings, and Walmart's budget tier, both exist to reduce how often the person is asked, so that the remaining questions get read. If your product adds agent actions, design the interruption budget at the same time as the spending budget.
+Checklist: an approval UI for agent actions
+Give each agent its own identity. Show its name and icon on every request and on every action in history, never the person's avatar.
+Classify actions before you design screens. Read, draft, act within budget, act with approval, never. Write the list down; it is your permission spec.
+Default consequential actions to "ask". Sending, paying, signing, deleting and changing account settings start in the ask tier; the person can loosen it later, per agent.
+Make the approval card a preview. Show the exact recipient and text, item and price, or file and change, plus who is asking and why. Offer Approve, Edit and Deny, and make Deny as easy to hit as Approve.
+Budgets in the person's units. Money per purchase or per week, messages per day, or recipients outside the team. Show the remaining budget on the card and in settings.
+Keep a separate ledger. Agent actions get their own list with filters, an undo or return path where one exists, and a one-tap way to pause or remove the agent.
+Set an interruption rule. Batch low-stakes items into a brief, interrupt only for blocked or time-critical work, and let people choose topics and frequency.
+No standing secrets. Never paste credentials into the agent's context; hand sign-in to a credential manager and expire access with the session.
+Make the approval accessible. A blocking approval is an alertdialog with a clear title, focus on the safest option, and text a screen reader can read in full.
+# agent-permissions.yml: a starting spec
+agent: "Shopping assistant"
+never:    [change_payment_method, move_money, trade]
+ask:      [send_message, purchase_over_budget, sign, delete]
+budget:   { purchase: "$100 / week", messages: "10 / day" }
+auto:     [read, search, draft, add_to_cart]
+notify:   { brief: "08:00", interrupt: [blocked, deadline_today] }
+ledger:   separate_from_owner
+session:  { credentials: via_password_manager, expire: on_end }
+How UI Hub helps
+The building blocks for this UI already exist. Our post on shadcn Trace and AI Elements covers the Confirmation and Tool patterns that an approval card can be built from, and accessibility in AI-generated UI covers focus and dialog roles. For making the agent itself follow your rules while it builds screens like these, see linting agents onto your design system.
+
+References:
+- Making it possible for agents to shop on behalf of customers — Walmart: https://corporate.walmart.com/news/2026/10/Making-It-Possible-for-Agents-to-Shop-on-Behalf-of-Customers
+- Walmart is inviting AI agents to shop for you — The Verge: https://www.theverge.com/ai-artificial-intelligence/1015715/walmart-ai-shopping-agents
+- Walmart will let AI agents shop for you, with their own spending limits — The Next Web: https://thenextweb.com/news/walmart-ai-agents-shop-agent-profiles
+- Walmart AI agent shopping: new controls and spending limits — Digital Commerce 360: https://www.digitalcommerce360.com/2026/10/23/walmart-unveils-ai-agent-shopping-controls-spending-limits/
+- Introducing Claude Duet — Anthropic: https://claude.com/resources/articles/claude-duet
+- Get started with Claude Duet — Claude Help Center: https://support.claude.com/en/articles/17631495-get-started-with-claude-duet
+- Anthropic announces preview of Claude Duet — Ashley Capoot, CNBC: https://www.cnbc.com/2026/10/21/anthropic-preview-of-claude-duet-personal-ai-agent-take-on-muse-dots.html
+- Use 1Password to sign in to sites with supported agents — 1Password Support: https://support.1password.com/1password-for-agents/
+- 1Password for Agents launches as the trust layer for personal AI agents — 1Password: https://1password.com/press/2026/october/1password-for-agents-trust-layer-personal-ai-agents
+- About the security of 1Password for Claude — 1Password Support: https://support.1password.com/1password-claude-security/
+- AI and Designers, issue 2 (25 October 2026) — FocusHeron: https://focusheron.com/n/agentic-for-designers/i/iss_974440f090eb494aaff677d12748be1e
+- AI Elements — shadcn/ui: https://ui.shadcn.com/docs/ai-elements
+- Alert and message dialogs pattern — W3C WAI-ARIA APG: https://www.w3.org/WAI/ARIA/apg/patterns/alertdialog/
 
 # All resources (name | type | url | note)
 

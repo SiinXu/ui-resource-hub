@@ -395,3 +395,4 @@ curl -s https://ui.incidental.site/api/resources.json | jq --arg d "$(date -u -d
 - Layers, brand kits and JSON: three ways AI visuals stop looking generic — https://ui.incidental.site/kb/note/blog-layers-brand-kits-json-ai-visuals.md
 - Lint the agent: keeping AI-written UI on your design system — https://ui.incidental.site/kb/note/blog-lint-agents-onto-your-design-system.md
 - AI vectors for UI: what Ideogram Vector 1.0 changes, and the checks before an SVG ships — https://ui.incidental.site/kb/note/blog-ai-svg-for-ui-ideogram-vector.md
+- Designing approvals for agents that act for people: budgets, previews and when to interrupt — https://ui.incidental.site/kb/note/blog-agent-approval-ui-budgets-interruptions.md
