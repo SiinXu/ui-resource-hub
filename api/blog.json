@@ -1,5 +1,5 @@
 {
- "count": 33,
+ "count": 34,
  "rss": "https://ui.incidental.site/blog/rss.xml",
  "categories": {
   "tools": "Tools",
@@ -18,6 +18,122 @@
   "weekly": "Series: Weekly roundup"
  },
  "posts": [
+  {
+   "slug": "agents-drive-design-tools-framer-weave-app-studio",
+   "url": "https://ui.incidental.site/blog/agents-drive-design-tools-framer-weave-app-studio/",
+   "date": "2026-10-27",
+   "category": "agents",
+   "series": null,
+   "featured": true,
+   "tags": [
+    "Framer MCP",
+    "Figma Weave",
+    "Runway App Studio",
+    "MCP",
+    "creative workflows"
+   ],
+   "title": {
+    "en": "Your design tools now take orders from agents: Framer MCP, Figma Weave and Runway App Studio",
+    "zh": "设计工具开始听智能体指挥：Framer MCP、Figma Weave 与 Runway App Studio",
+    "zht": "設計工具開始聽智慧體指揮：Framer MCP、Figma Weave 與 Runway App Studio",
+    "ja": "デザインツールがエージェントの指示で動き出す：Framer MCP、Figma Weave、Runway App Studio",
+    "ko": "디자인 도구가 에이전트의 지시를 받기 시작했다: Framer MCP, Figma Weave, Runway App Studio",
+    "ms": "Alat reka bentuk kini menerima arahan ejen: Framer MCP, Figma Weave dan Runway App Studio",
+    "vi": "Công cụ thiết kế bắt đầu nhận lệnh từ agent: Framer MCP, Figma Weave và Runway App Studio",
+    "fr": "Vos outils de design obéissent désormais aux agents : Framer MCP, Figma Weave et Runway App Studio",
+    "es": "Tus herramientas de diseño ya reciben órdenes de agentes: Framer MCP, Figma Weave y Runway App Studio",
+    "de": "Deine Design-Tools nehmen jetzt Aufträge von Agents an: Framer MCP, Figma Weave und Runway App Studio"
+   },
+   "summary": {
+    "en": "In five days Framer opened its canvas and CMS to outside agents over MCP, Figma made every Weave image and video model callable from the Figma MCP, and Runway turned plain-language descriptions into shareable creative apps. Three different ways to put a creative tool behind an agent, what each one gates, our take, and a checklist for setting it up safely.",
+    "zh": "五天之内，Framer 通过 MCP 把画布和 CMS 开放给外部智能体，Figma 让 Weave 的所有图像和视频模型都能从 Figma MCP 调用，Runway 则能把一段自然语言描述变成可分享的创作应用。这是把创作工具交给智能体的三种不同方式：各自在哪里设了关卡，我们的看法，以及一份安全上手清单。",
+    "zht": "五天之內，Framer 透過 MCP 把畫布和 CMS 開放給外部智慧體，Figma 讓 Weave 的所有圖像和影片模型都能從 Figma MCP 呼叫，Runway 則能把一段自然語言描述變成可分享的創作應用。這是把創作工具交給智慧體的三種不同方式：各自在哪裡設了關卡，我們的看法，以及一份安全上手清單。",
+    "ja": "5日間で、FramerはMCP経由でキャンバスとCMSを外部エージェントに開放し、FigmaはWeaveの画像・動画モデルをすべてFigma MCPから呼べるようにし、Runwayは自然文の説明を共有できるクリエイティブアプリに変えた。クリエイティブツールをエージェントに任せる3つの方法、それぞれの関門、私たちの見解、安全に始めるチェックリスト。",
+    "ko": "닷새 사이에 Framer는 MCP로 캔버스와 CMS를 외부 에이전트에 열었고, Figma는 Weave의 모든 이미지·동영상 모델을 Figma MCP에서 호출할 수 있게 했으며, Runway는 자연어 설명을 공유 가능한 크리에이티브 앱으로 바꿨다. 크리에이티브 도구를 에이전트에 맡기는 세 가지 방식, 각각의 관문, 우리의 견해, 안전한 설정 체크리스트.",
+    "ms": "Dalam lima hari, Framer membuka kanvas dan CMS kepada ejen luar melalui MCP, Figma menjadikan setiap model imej dan video Weave boleh dipanggil dari Figma MCP, dan Runway menukar penerangan bahasa biasa kepada aplikasi kreatif yang boleh dikongsi. Tiga cara meletakkan alat kreatif di belakang ejen, apa yang dikawal setiap satu, pandangan kami dan senarai semak persediaan yang selamat.",
+    "vi": "Trong năm ngày, Framer mở canvas và CMS cho agent bên ngoài qua MCP, Figma cho phép gọi mọi mô hình ảnh và video của Weave từ Figma MCP, còn Runway biến mô tả bằng ngôn ngữ tự nhiên thành ứng dụng sáng tạo có thể chia sẻ. Ba cách đặt công cụ sáng tạo sau một agent, mỗi cách chặn ở đâu, nhận định của chúng tôi và checklist thiết lập an toàn.",
+    "fr": "En cinq jours, Framer a ouvert son canevas et son CMS aux agents externes via MCP, Figma a rendu tous les modèles image et vidéo de Weave accessibles depuis le Figma MCP, et Runway transforme une description en langage courant en app créative partageable. Trois façons de confier un outil créatif à un agent, ce que chacune verrouille, notre avis et une checklist pour s’y mettre sans risque.",
+    "es": "En cinco días, Framer abrió su lienzo y su CMS a agentes externos por MCP, Figma hizo que todos los modelos de imagen y vídeo de Weave se puedan llamar desde el Figma MCP, y Runway convierte una descripción en lenguaje natural en una app creativa que se puede compartir. Tres formas de poner una herramienta creativa detrás de un agente, qué controla cada una, nuestra opinión y una lista para configurarlo con seguridad.",
+    "de": "Innerhalb von fünf Tagen öffnete Framer Canvas und CMS per MCP für externe Agents, Figma machte alle Bild- und Videomodelle von Weave über den Figma MCP aufrufbar, und Runway macht aus einer Beschreibung in Alltagssprache eine teilbare Kreativ-App. Drei Wege, ein Kreativ-Tool hinter einen Agent zu stellen, was jeder absichert, unsere Einschätzung und eine Checkliste für ein sicheres Setup."
+   },
+   "reading_minutes": {
+    "en": 5,
+    "zh": 6
+   },
+   "cover": "https://ui.incidental.site/blog/img/agents-drive-design-tools-framer-weave-app-studio-cover.webp",
+   "references": [
+    {
+     "title": "Framer MCP",
+     "by": "Framer Updates",
+     "url": "https://www.framer.com/updates/framer-mcp"
+    },
+    {
+     "title": "Connect Claude, Codex and Cursor to Framer with MCP",
+     "by": "Framer",
+     "url": "https://www.framer.com/mcp/"
+    },
+    {
+     "title": "Getting started with Framer MCP",
+     "by": "Framer Help",
+     "url": "https://www.framer.com/help/articles/getting-started-with-framer-mcp/"
+    },
+    {
+     "title": "What you can do with Framer MCP",
+     "by": "Framer Help",
+     "url": "https://www.framer.com/help/articles/what-you-can-do-with-framer-mcp/"
+    },
+    {
+     "title": "How to use branches in Framer",
+     "by": "Framer Help",
+     "url": "https://www.framer.com/help/articles/how-to-use-branches-in-framer/"
+    },
+    {
+     "title": "Review Agent changes safely with Branching",
+     "by": "Framer Academy",
+     "url": "https://www.framer.com/academy/lessons/branching-explore-variations-safely"
+    },
+    {
+     "title": "Access video and image models from Figma Weave via the Figma MCP",
+     "by": "Figma release notes",
+     "url": "https://www.figma.com/release-notes/"
+    },
+    {
+     "title": "Figma MCP server FAQs",
+     "by": "Figma Learn",
+     "url": "https://help.figma.com/hc/en-us/articles/39252411778583-Figma-MCP-server-FAQs"
+    },
+    {
+     "title": "Tools and example prompts",
+     "by": "Figma Learn",
+     "url": "https://help.figma.com/hc/en-us/articles/42495147242903-Tools-and-example-prompts"
+    },
+    {
+     "title": "Running Weave tools and models from external agents (MCP)",
+     "by": "Figma Weave Knowledge Center",
+     "url": "https://help.weavy.ai/en/articles/16202764-running-weave-tools-and-models-from-external-agents-mcp"
+    },
+    {
+     "title": "Introducing Runway App Studio",
+     "by": "Runway",
+     "url": "https://runway.com/news/company-news/introducing-runway-app-studio"
+    },
+    {
+     "title": "App Studio: build your own creative apps",
+     "by": "Runway",
+     "url": "https://runway.com/product/app-studio"
+    },
+    {
+     "title": "Runway App Studio brings no-code app building to AI filmmaking",
+     "by": "Bottle Rocket Content",
+     "url": "https://www.bottlerocketcontent.com/runway-app-studio-no-code-creative-apps/"
+    },
+    {
+     "title": "Tools",
+     "by": "Model Context Protocol specification",
+     "url": "https://modelcontextprotocol.io/specification/2025-06-18/server/tools"
+    }
+   ]
+  },
   {
    "slug": "agent-approval-ui-budgets-interruptions",
    "url": "https://ui.incidental.site/blog/agent-approval-ui-budgets-interruptions/",

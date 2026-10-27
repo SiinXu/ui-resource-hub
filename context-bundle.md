@@ -396,3 +396,4 @@ curl -s https://ui.incidental.site/api/resources.json | jq --arg d "$(date -u -d
 - Lint the agent: keeping AI-written UI on your design system — https://ui.incidental.site/kb/note/blog-lint-agents-onto-your-design-system.md
 - AI vectors for UI: what Ideogram Vector 1.0 changes, and the checks before an SVG ships — https://ui.incidental.site/kb/note/blog-ai-svg-for-ui-ideogram-vector.md
 - Designing approvals for agents that act for people: budgets, previews and when to interrupt — https://ui.incidental.site/kb/note/blog-agent-approval-ui-budgets-interruptions.md
+- Your design tools now take orders from agents: Framer MCP, Figma Weave and Runway App Studio — https://ui.incidental.site/kb/note/blog-agents-drive-design-tools-framer-weave-app-studio.md

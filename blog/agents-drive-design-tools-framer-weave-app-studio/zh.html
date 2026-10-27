@@ -1,0 +1,35 @@
+<p>不久之前，一个想改网站或做一张活动图的 AI 智能体只有两条路：从零写代码，或者请你自己打开设计工具。10 月 22 日到 26 日，三款创作工具用三种不同方式填上了这道缝：Framer 让外部智能体编辑它的画布和 CMS，Figma 让智能体通过 Figma MCP 调用 Weave 的图像和视频模型，Runway 让任何人描述一个创作应用就能得到能用的成品。它们回答的是同一个问题——<em>智能体在我的创作工具里能做什么？</em>——只是关卡设在不同的地方。</p><figure><img src="../../blog/img/agents-drive-design-tools-framer-weave-app-studio-1.webp" alt="Framer MCP 页面：连接 Claude、Codex 和 Cursor 来编辑画布与 CMS" loading="lazy" decoding="async" width="1280" height="612"><figcaption>Framer MCP 页面：连接 Claude、Codex 和 Cursor 来编辑画布与 CMS · 截图：Framer（<a href="https://www.framer.com/mcp/" rel="noopener" target="_blank">www.framer.com</a>），2026-10-27 截取，版权归原站所有</figcaption></figure>
+<h2>发布了什么</h2>
+<ul><li><strong>Framer MCP（10 月 22 日）。</strong>任何支持远程 MCP 服务器和 OAuth 的客户端，比如 Codex、Claude 或 Cursor，都能连接 <code>https://mcp.framer.com/mcp</code>。你批准连接后，智能体可以用项目已有的样式和组件新建页面、在桌面/平板/手机断点上改布局，管理 CMS 集合与条目，检查元数据、标题层级和替代文本。它使用你账号的权限。改动会留在项目或分支里，直到有人发布；智能体也能发布，但只在你明确要求时。Framer 的分支在 Review Changes 里显示差异，把分支应用到 main 和发布 main 是两个独立步骤。</li>
+<li><strong>通过 Figma MCP 使用 Figma Weave（10 月 26 日）。</strong>只要有一个与 Figma 关联的付费独立 Weave 账号，外部智能体就能直接运行 Seedance、Kling、Nano Banana 等 Weave 模型，或者运行已发布的 Weave tool——这是 Weave 对「已发布工作流」的叫法，比如一个产品样机生成器。运行消耗的是 Weave 积分，不是 Figma AI 积分。付费运行前，工具会返回需确认费用的状态，智能体必须把积分花费告诉你并得到同意；费用取决于动态迭代器的工作流，会事先说明无法报价。私有工具对智能体不可见，目前也还不支持通过 MCP 创建或编辑工作流。</li>
+<li><strong>Runway App Studio（10 月 26 日）。</strong>你用自然语言描述一个工具，Runway 的构建智能体就会规划、设计并部署一个有独立界面的应用，用你的 Brand Kit、Workflow 和素材生成图像、视频和音频。构建早期它会让你从三套配色里选一套，也可以放入你的 Logo。应用在发布前只是你自己能看的私有预览，发布时可选仅自己、整个工作区或指定的人；可以回滚到旧版本，代码可查看，每个应用单独显示积分用量。首发示例里有只修你圈出区域的 Precise Edit，以及把产品换进现有视频画面的 AutoComp。</li></ul><figure><img src="../../blog/img/agents-drive-design-tools-framer-weave-app-studio-2.webp" alt="阶梯：智能体在分支上操作画布，智能体在确认费用后运行已发布工作流，工作流变成发布给指定人群的应用" loading="lazy" decoding="async" width="1200" height="675"><figcaption>阶梯：智能体在分支上操作画布，智能体在确认费用后运行已发布工作流，工作流变成发布给指定人群的应用 · 示意图：UI Hub 原创，CC BY 4.0</figcaption></figure>
+<h2>我们的看法</h2>
+<p>这是同一架梯子的三级。最低一级是<strong>智能体直接操作画布</strong>（Framer）：你能碰的它都能碰，所以安全来自它的成果落在哪里——一个能看差异的分支——以及发布是一个单独、明确的动作。中间一级是<strong>智能体调用已发布的工作流</strong>（Weave）：它改不了素材的做法，只能填别人设计好的输入，而且每次付费运行都要过一道价格确认。最高一级是<strong>工作流变成给人用的应用</strong>（App Studio）：智能体的产出就是工具本身，护栏是它读取的 Brand Kit、发布对象和可以回滚的版本。</p>
+<p>对设计团队来说，最实际的一课是：有价值的资产正在从「提示词」变成「已发布的工作流」。一条曾经出过一张好首屏图的提示词只是笔记；一个固定了参考图、品牌色和已知费用的 Weave tool 或 App Studio 应用，才是能放心让智能体跑一百次的东西。Framer 版本的同一思路，是项目自己的样式和组件，它的智能体被要求优先复用。如果你的设计系统没有被打包成这类形式，外部智能体就会即兴发挥，跑偏的产出就是这么来的。</p>
+<p>两点提醒：Framer 的智能体使用你账号的权限，接在个人账号上的智能体能碰到该账号的所有项目；费用确认只有在有人认真看时才有用，批量运行（Weave 每次调用可跑 1 到 10 次）会让花费迅速翻倍。</p>
+<h2>清单：让智能体进入你的创作工具</h2>
+<ol><li><strong>有意识地选层级。</strong>布局和内容修改用画布权限，可重复的素材用已发布工作流，需要非设计师自己跑流程时做成应用。</li>
+<li><strong>默认开分支。</strong>每个 Framer 任务都让智能体先建分支，打开自动分支保护 main，应用前先看差异和分支预览链接。</li>
+<li><strong>发布留给人。</strong>长期指令里不要写「然后发布」；审完之后由你自己发布 main。</li>
+<li><strong>连接权限最小的账号。</strong>用只包含智能体该碰项目的工作区或账号，因为它继承的是这个账号的全部权限。</li>
+<li><strong>发布工作流，而不是提示词。</strong>把最好的图像或视频做法封装成 Weave tool 或 App Studio 应用，固定参考图、Brand Kit 和命名输入，让智能体填空而不是自创风格。</li>
+<li><strong>设积分上限。</strong>定好单次和每周的积分预算，效果没验证前把 <code>numberOfRuns</code> 设小，遇到「无法报价」就先跑一次再说。</li>
+<li><strong>像审代码一样审素材。</strong>生成的每张图、每个页面，进素材库或 CMS 之前都在亮色和暗色、375 px 宽度下检查，看替代文本和对比度。</li>
+<li><strong>记录智能体产出。</strong>把智能体生成的页面、CMS 条目和素材列成清单，附上提示词、工作流版本和积分花费，方便以后查找和替换。</li></ol>
+<pre><code># creative-agent-policy.yml：一份起步规格
+framer:
+  connect: https://mcp.framer.com/mcp   # OAuth，只用工作区账号
+  always_branch: true
+  publish: human_only
+  review: [diff, branch_preview_url, 375px, dark_mode]
+weave:
+  allow: published_tools_only           # 生产环境不直接跑原始模型
+  confirm_cost: always
+  max_runs_per_call: 2
+  weekly_credit_budget: 500
+app_studio:
+  audience_default: only_me             # 审过再扩大
+  brand_kit: required
+log: [page, cms_item, asset, prompt, workflow_version, credits]</code></pre>
+<figure><img src="../../blog/img/agents-drive-design-tools-framer-weave-app-studio-3.webp" alt="Runway App Studio 产品页：描述、打磨并分享自定义创作应用" loading="lazy" decoding="async" width="1280" height="800"><figcaption>Runway App Studio 产品页：描述、打磨并分享自定义创作应用 · 截图：Runway（<a href="https://runway.com/product/app-studio" rel="noopener" target="_blank">runway.com</a>），2026-10-27 截取，版权归原站所有</figcaption></figure><h2>UI Hub 能帮什么</h2>
+<p>智能体只能复用写下来的样式。<a href="../design-tokens-for-agents/">给智能体的设计 Token</a>和<a href="../lint-agents-onto-your-design-system/">用 Lint 把智能体拉回你的设计系统</a>讲了怎么打包；<a href="../layers-brand-kits-json-ai-visuals/">图层、品牌包与 JSON</a>讲了生成图片的品牌包这一侧。审批环节本身见<a href="../agent-approval-ui-budgets-interruptions/">为替人办事的智能体设计审批</a>；Figma 其他智能体功能见 <a href="../figma-code-layers-and-specs/">Figma Code Layers 与 Specs</a>。</p>
