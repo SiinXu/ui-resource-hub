@@ -1,6 +1,6 @@
 # UI Hub
 
-> Curated, multilingual directory of 5008 public UI resources (component libraries, component style demos, effects, design systems, design skills for AI agents) plus original blog analysis of AI design techniques. Data updated 2026-10-27 05:00 UTC.
+> Curated, multilingual directory of 5009 public UI resources (component libraries, component style demos, effects, design systems, design skills for AI agents) plus original blog analysis of AI design techniques. Data updated 2026-10-27 06:47 UTC.
 
 Use the JSON endpoints, not the SPA, when acting as an agent. Every entry links to its original site; licenses belong to the original authors.
 
@@ -117,11 +117,11 @@ Use the JSON endpoints, not the SPA, when acting as an agent. Every entry links 
 - [visx](https://airbnb.io/visx/): Airbnb's low-level visualization components
 
 ## FAQ
-- **What is UI Hub?** A free, curated directory of 5008 public UI resources: 220 component libraries, 1989 component style demos with light/dark screenshots, 70 design skills for AI agents, plus effects, templates, specs and tutorials. It links to original sites and never hosts paid source code.
+- **What is UI Hub?** A free, curated directory of 5009 public UI resources: 220 component libraries, 1989 component style demos with light/dark screenshots, 70 design skills for AI agents, plus effects, templates, specs and tutorials. It links to original sites and never hosts paid source code.
 - **How do I find a component in a given style?** Load https://ui.incidental.site/api/resources.json and filter by ct (component kind, e.g. "dialog") and vs (visual style, e.g. "minimal" or "motion"). type="style" entries are concrete component demos with a libName and page URL; type="library" entries are whole libraries with install info on the site.
 - **Which skills should an agent use for good UI?** One direction skill (frontend-design or taste-skill), emil-design-eng for motion and interaction polish, then impeccable, baseline-ui, web-design-guidelines and accessibility as an audit pass. See https://ui.incidental.site/api/skills.json.
 - **Can I copy the code?** Open-source libraries can be used under their own licenses (MIT, Apache-2.0 etc.); the card shows the original link. Paid tiers (marked paid/freemium) must be bought from the original vendor.
-- **How often is it updated?** Daily via a GitHub Actions job that adds new UI repositories and tools from GitHub, awesome-shadcn-ui and Hacker News. Nothing is deleted. Last update: 2026-10-27 05:00 UTC.
+- **How often is it updated?** Daily via a GitHub Actions job that adds new UI repositories and tools from GitHub, awesome-shadcn-ui and Hacker News. Nothing is deleted. Last update: 2026-10-27 06:47 UTC.
 
 
 # Blog posts (full text, English)
@@ -4585,6 +4585,7 @@ Get Hyped. Get Noticed. Get Results.
 - calendar-cn | library | https://github.com/vmnog/calendarcn | Listed in awesome-shadcn-ui: A beautifully crafted calendar component built with shadcn/ui and Tailwind CSS, inspired by Notion Calendar. Week view, dark mode, 
 - agents-ui | collection | https://livekit.io/ui | Listed in awesome-shadcn-ui: Agents UI is LiveKit’s open source component library built with React and shadcn for designing voice agent interfaces. Start with p
 - citeme | collection | https://citeme.app | Listed in awesome-shadcn-ui: AI-powered academic citation generator. Searches 11+ databases and formats in 40+ styles (APA, ABNT, MLA, etc.). Web app, Chrome ex
+- Internet Improvement Dept | inspiration | https://x.com/willking/status/2114736247683916242 | Cloudflare's Internet Improvement Department campaign film combining retro pixel art, bold illustrative collage scenes, and an animated lanyard badge reveal.
 
 # Component style demos: 1989 entries, see api/resources.json (type=style)
 

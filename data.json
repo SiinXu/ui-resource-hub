@@ -1,6 +1,6 @@
 {
  "generated": "2026-10-27",
- "count": 5008,
+ "count": 5009,
  "items": [
   {
    "id": "ued-figma-mcp-guide",
@@ -188108,6 +188108,57 @@
    ],
    "noteEn": "Listed in awesome-shadcn-ui: AI-powered academic citation generator. Searches 11+ databases and formats in 40+ styles (APA, ABNT, MLA, etc.). Web app, Chrome extension, Google Docs add-on, and Word add-in.",
    "added": "2026-10-27"
+  },
+  {
+   "id": "rd-a2iyh8h-internet-improvement-dept",
+   "name": "Internet Improvement Dept",
+   "url": "https://x.com/willking/status/2114736247683916242",
+   "note": "Cloudflare's Internet Improvement Department campaign film combining retro pixel art, bold illustrative collage scenes, and an animated lanyard badge reveal.",
+   "noteEn": "Cloudflare's Internet Improvement Department campaign film combining retro pixel art, bold illustrative collage scenes, and an animated lanyard badge reveal.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@willking",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "motion"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "retro"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/a2iyh8h-internet-improvement-dept",
+   "rdkind": "Design",
+   "rdcat": "Motion",
+   "rdstyle": [
+    "Typographic",
+    "Retro",
+    "Illustrative",
+    "Vibrant"
+   ],
+   "author": {
+    "name": "Will King",
+    "handle": "@willking",
+    "url": "https://x.com/willking"
+   },
+   "x_post": "https://x.com/willking/status/2114736247683916242",
+   "xsrc": {
+    "post": "https://x.com/willking/status/2114736247683916242",
+    "author": "@willking",
+    "likes": 625,
+    "bookmarks": 210,
+    "reposts": 18,
+    "impressions": 21415,
+    "date": "2026-10-26"
+   },
+   "pub": "2026-10-27",
+   "added": "2026-10-27"
   }
  ],
  "guides": [
@@ -188310,5 +188361,5 @@
    ]
   }
  ],
- "updatedAt": "2026-10-27T05:00Z"
+ "updatedAt": "2026-10-27T06:47Z"
 }
