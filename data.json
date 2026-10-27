@@ -1,6 +1,6 @@
 {
- "generated": "2026-10-26",
- "count": 4994,
+ "generated": "2026-10-27",
+ "count": 5008,
  "items": [
   {
    "id": "ued-figma-mcp-guide",
@@ -187721,6 +187721,393 @@
    "official": "https://lnkd.in/eUXiDQkh",
    "pub": "2026-10-26",
    "added": "2026-10-26"
+  },
+  {
+   "id": "aw-ui-justinlevine-me",
+   "name": "jalco-ui",
+   "url": "https://ui.justinlevine.me",
+   "note": "awesome-shadcn-ui 收录：Polished, composable React components distributed via a shadcn-compatible registry. Install with one command or copy the source directly.",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Polished, composable React components distributed via a shadcn-compatible registry. Install with one command or copy the source directly.",
+   "added": "2026-10-27"
+  },
+  {
+   "id": "aw-github-com-thefrontkit-a11y-starter-kit-code",
+   "name": "a11y-starter-kit",
+   "url": "https://github.com/thefrontkit/a11y-starter-kit-code",
+   "note": "awesome-shadcn-ui 收录：Free WCAG 2.1 AA starter kit with accessible components, custom a11y hooks, and dark mode. Built with Next.js 16, Tailwind CSS v4, and shadcn/ui.",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Free WCAG 2.1 AA starter kit with accessible components, custom a11y hooks, and dark mode. Built with Next.js 16, Tailwind CSS v4, and shadcn/ui.",
+   "added": "2026-10-27"
+  },
+  {
+   "id": "aw-flightcn-yencheng-dev",
+   "name": "flightcn",
+   "url": "https://flightcn.yencheng.dev/",
+   "note": "awesome-shadcn-ui 收录：flightcn is a flight route visualization component set built for the mapcn ecosystem",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chart"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: flightcn is a flight route visualization component set built for the mapcn ecosystem",
+   "added": "2026-10-27"
+  },
+  {
+   "id": "aw-nexus-ui-dev",
+   "name": "nexus-ui",
+   "url": "https://nexus-ui.dev/",
+   "note": "awesome-shadcn-ui 收录：Open-source component library of composable, copy-paste primitives for building AI interfaces (chat, voice, agents)",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Open-source component library of composable, copy-paste primitives for building AI interfaces (chat, voice, agents)",
+   "added": "2026-10-27"
+  },
+  {
+   "id": "aw-github-com-baxy5-scificn-ui",
+   "name": "scificn-ui",
+   "url": "https://github.com/baxy5/scificn-ui",
+   "note": "awesome-shadcn-ui 收录：A retro sci-fi UI design system inspired by classic starship consoles and alien computer terminals, featuring modular HUD components, neon data grids, tactical panels, and cinematic interface elements",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "table"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: A retro sci-fi UI design system inspired by classic starship consoles and alien computer terminals, featuring modular HUD components, neon data grids, tactical panels, and cinematic interface elements",
+   "added": "2026-10-27"
+  },
+  {
+   "id": "aw-github-com-agmmnn-tauri-ui",
+   "name": "create-tauri-ui",
+   "url": "https://github.com/agmmnn/tauri-ui",
+   "note": "awesome-shadcn-ui 收录：Create modern Tauri desktop apps with shadcn/ui, desktop-first defaults, and optional batteries.",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Create modern Tauri desktop apps with shadcn/ui, desktop-first defaults, and optional batteries.",
+   "added": "2026-10-27"
+  },
+  {
+   "id": "aw-github-com-thesysdev-openui-tree-main-examples-design-system",
+   "name": "openui-shadcn-chat",
+   "url": "https://github.com/thesysdev/openui/tree/main/examples/design-systems/shadcn",
+   "note": "awesome-shadcn-ui 收录：Full-stack generative UI chatbot template using OpenUI Lang with shadcn/ui component library, SSE streaming, and tool calling.",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat",
+    "layout"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Full-stack generative UI chatbot template using OpenUI Lang with shadcn/ui component library, SSE streaming, and tool calling.",
+   "added": "2026-10-27"
+  },
+  {
+   "id": "aw-github-com-sekmenahmet-saas-blocks-kit",
+   "name": "saas-blocks-kit",
+   "url": "https://github.com/SekmenAhmet/saas-blocks-kit",
+   "note": "awesome-shadcn-ui 收录：10 production-ready SaaS landing page sections built with Next.js 15, shadcn/ui, Tailwind CSS v4 and TypeScript. Dark mode by default.",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat",
+    "layout"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: 10 production-ready SaaS landing page sections built with Next.js 15, shadcn/ui, Tailwind CSS v4 and TypeScript. Dark mode by default.",
+   "added": "2026-10-27"
+  },
+  {
+   "id": "aw-openui-com",
+   "name": "open-ui",
+   "url": "https://www.openui.com/",
+   "note": "awesome-shadcn-ui 收录：The Open Standard for Generative UI",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: The Open Standard for Generative UI",
+   "added": "2026-10-27"
+  },
+  {
+   "id": "aw-shadcn-login-auth-vercel-app",
+   "name": "login-auth",
+   "url": "https://shadcn-login-auth.vercel.app/",
+   "note": "awesome-shadcn-ui 收录：A login authentication web app built with Vite + React, Tailwind CSS, and Shadcn UI. It uses Firebase for Google sign-in, email sign-up, and password reset.",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: A login authentication web app built with Vite + React, Tailwind CSS, and Shadcn UI. It uses Firebase for Google sign-in, email sign-up, and password reset.",
+   "added": "2026-10-27"
+  },
+  {
+   "id": "aw-github-com-arsenehuot-openhive",
+   "name": "openhive",
+   "url": "https://github.com/arseneHuot/openhive",
+   "note": "awesome-shadcn-ui 收录：Open-source, self-hosted Slack alternative with channels, DMs, threads, reactions, file uploads, and video/audio calls. Built with Next.js, Supabase, Zustand, and shadcn/ui.",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Open-source, self-hosted Slack alternative with channels, DMs, threads, reactions, file uploads, and video/audio calls. Built with Next.js, Supabase, Zustand, and shadcn/ui.",
+   "added": "2026-10-27"
+  },
+  {
+   "id": "aw-github-com-vmnog-calendarcn",
+   "name": "calendar-cn",
+   "url": "https://github.com/vmnog/calendarcn",
+   "note": "awesome-shadcn-ui 收录：A beautifully crafted calendar component built with shadcn/ui and Tailwind CSS, inspired by Notion Calendar. Week view, dark mode, and more.",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: A beautifully crafted calendar component built with shadcn/ui and Tailwind CSS, inspired by Notion Calendar. Week view, dark mode, and more.",
+   "added": "2026-10-27"
+  },
+  {
+   "id": "aw-livekit-io-ui",
+   "name": "agents-ui",
+   "url": "https://livekit.io/ui",
+   "note": "awesome-shadcn-ui 收录：Agents UI is LiveKit’s open source component library built with React and shadcn for designing voice agent interfaces. Start with production-ready defaults, then customize every detail to match your b",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Agents UI is LiveKit’s open source component library built with React and shadcn for designing voice agent interfaces. Start with production-ready defaults, then customize every detail to match your b",
+   "added": "2026-10-27"
+  },
+  {
+   "id": "aw-citeme-app",
+   "name": "citeme",
+   "url": "https://citeme.app",
+   "note": "awesome-shadcn-ui 收录：AI-powered academic citation generator. Searches 11+ databases and formats in 40+ styles (APA, ABNT, MLA, etc.). Web app, Chrome extension, Google Docs add-on, and Word add-in.",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat",
+    "form"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: AI-powered academic citation generator. Searches 11+ databases and formats in 40+ styles (APA, ABNT, MLA, etc.). Web app, Chrome extension, Google Docs add-on, and Word add-in.",
+   "added": "2026-10-27"
   }
  ],
  "guides": [
@@ -187923,5 +188310,5 @@
    ]
   }
  ],
- "updatedAt": "2026-10-26T19:31Z"
+ "updatedAt": "2026-10-27T05:00Z"
 }

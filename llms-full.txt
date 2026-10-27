@@ -1,6 +1,6 @@
 # UI Hub
 
-> Curated, multilingual directory of 4994 public UI resources (component libraries, component style demos, effects, design systems, design skills for AI agents) plus original blog analysis of AI design techniques. Data updated 2026-10-26 19:31 UTC.
+> Curated, multilingual directory of 5008 public UI resources (component libraries, component style demos, effects, design systems, design skills for AI agents) plus original blog analysis of AI design techniques. Data updated 2026-10-27 05:00 UTC.
 
 Use the JSON endpoints, not the SPA, when acting as an agent. Every entry links to its original site; licenses belong to the original authors.
 
@@ -117,11 +117,11 @@ Use the JSON endpoints, not the SPA, when acting as an agent. Every entry links 
 - [visx](https://airbnb.io/visx/): Airbnb's low-level visualization components
 
 ## FAQ
-- **What is UI Hub?** A free, curated directory of 4994 public UI resources: 213 component libraries, 1989 component style demos with light/dark screenshots, 70 design skills for AI agents, plus effects, templates, specs and tutorials. It links to original sites and never hosts paid source code.
+- **What is UI Hub?** A free, curated directory of 5008 public UI resources: 220 component libraries, 1989 component style demos with light/dark screenshots, 70 design skills for AI agents, plus effects, templates, specs and tutorials. It links to original sites and never hosts paid source code.
 - **How do I find a component in a given style?** Load https://ui.incidental.site/api/resources.json and filter by ct (component kind, e.g. "dialog") and vs (visual style, e.g. "minimal" or "motion"). type="style" entries are concrete component demos with a libName and page URL; type="library" entries are whole libraries with install info on the site.
 - **Which skills should an agent use for good UI?** One direction skill (frontend-design or taste-skill), emil-design-eng for motion and interaction polish, then impeccable, baseline-ui, web-design-guidelines and accessibility as an audit pass. See https://ui.incidental.site/api/skills.json.
 - **Can I copy the code?** Open-source libraries can be used under their own licenses (MIT, Apache-2.0 etc.); the card shows the original link. Paid tiers (marked paid/freemium) must be bought from the original vendor.
-- **How often is it updated?** Daily via a GitHub Actions job that adds new UI repositories and tools from GitHub, awesome-shadcn-ui and Hacker News. Nothing is deleted. Last update: 2026-10-26 19:31 UTC.
+- **How often is it updated?** Daily via a GitHub Actions job that adds new UI repositories and tools from GitHub, awesome-shadcn-ui and Hacker News. Nothing is deleted. Last update: 2026-10-27 05:00 UTC.
 
 
 # Blog posts (full text, English)
@@ -4571,6 +4571,20 @@ Get Hyped. Get Noticed. Get Results.
 - Uiverse Pricing Card by seyed-mohsen-mousavi (swift-sloth-95) | effect | https://uiverse.io/seyed-mohsen-mousavi/swift-sloth-95 | Green, gray and white business Pro subscription card with price, features, users and subscribe button
 - Playful Loading Screens | inspiration | https://x.com/oiharshit/status/2114696899320299668 | A set of app loading screens featuring animated clay-textured characters including a caterpillar, morphing shapes, and orbiting creature ensembles, each paired 
 - Portfolio with Walking Avatar | inspiration | https://lnkd.in/eUXiDQkh | Guillaume's folio shows a 3D avatar of himself walking past a horizontal row of project cards, blending personal identity with a live portfolio scroll.
+- jalco-ui | collection | https://ui.justinlevine.me | Listed in awesome-shadcn-ui: Polished, composable React components distributed via a shadcn-compatible registry. Install with one command or copy the source dir
+- a11y-starter-kit | library | https://github.com/thefrontkit/a11y-starter-kit-code | Listed in awesome-shadcn-ui: Free WCAG 2.1 AA starter kit with accessible components, custom a11y hooks, and dark mode. Built with Next.js 16, Tailwind CSS v4, 
+- flightcn | collection | https://flightcn.yencheng.dev/ | Listed in awesome-shadcn-ui: flightcn is a flight route visualization component set built for the mapcn ecosystem
+- nexus-ui | collection | https://nexus-ui.dev/ | Listed in awesome-shadcn-ui: Open-source component library of composable, copy-paste primitives for building AI interfaces (chat, voice, agents)
+- scificn-ui | library | https://github.com/baxy5/scificn-ui | Listed in awesome-shadcn-ui: A retro sci-fi UI design system inspired by classic starship consoles and alien computer terminals, featuring modular HUD component
+- create-tauri-ui | library | https://github.com/agmmnn/tauri-ui | Listed in awesome-shadcn-ui: Create modern Tauri desktop apps with shadcn/ui, desktop-first defaults, and optional batteries.
+- openui-shadcn-chat | library | https://github.com/thesysdev/openui/tree/main/examples/design-systems/shadcn | Listed in awesome-shadcn-ui: Full-stack generative UI chatbot template using OpenUI Lang with shadcn/ui component library, SSE streaming, and tool calling.
+- saas-blocks-kit | library | https://github.com/SekmenAhmet/saas-blocks-kit | Listed in awesome-shadcn-ui: 10 production-ready SaaS landing page sections built with Next.js 15, shadcn/ui, Tailwind CSS v4 and TypeScript. Dark mode by defau
+- open-ui | collection | https://www.openui.com/ | Listed in awesome-shadcn-ui: The Open Standard for Generative UI
+- login-auth | collection | https://shadcn-login-auth.vercel.app/ | Listed in awesome-shadcn-ui: A login authentication web app built with Vite + React, Tailwind CSS, and Shadcn UI. It uses Firebase for Google sign-in, email sig
+- openhive | library | https://github.com/arseneHuot/openhive | Listed in awesome-shadcn-ui: Open-source, self-hosted Slack alternative with channels, DMs, threads, reactions, file uploads, and video/audio calls. Built with 
+- calendar-cn | library | https://github.com/vmnog/calendarcn | Listed in awesome-shadcn-ui: A beautifully crafted calendar component built with shadcn/ui and Tailwind CSS, inspired by Notion Calendar. Week view, dark mode, 
+- agents-ui | collection | https://livekit.io/ui | Listed in awesome-shadcn-ui: Agents UI is LiveKit’s open source component library built with React and shadcn for designing voice agent interfaces. Start with p
+- citeme | collection | https://citeme.app | Listed in awesome-shadcn-ui: AI-powered academic citation generator. Searches 11+ databases and formats in 40+ styles (APA, ABNT, MLA, etc.). Web app, Chrome ex
 
 # Component style demos: 1989 entries, see api/resources.json (type=style)
 
