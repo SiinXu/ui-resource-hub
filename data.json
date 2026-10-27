@@ -1,6 +1,6 @@
 {
  "generated": "2026-10-27",
- "count": 5009,
+ "count": 5015,
  "items": [
   {
    "id": "ued-figma-mcp-guide",
@@ -188159,6 +188159,305 @@
    },
    "pub": "2026-10-27",
    "added": "2026-10-27"
+  },
+  {
+   "id": "rd-1u0n947-halden-app-website",
+   "name": "Halden App Website",
+   "url": "https://x.com/Mike_Andreuzza/status/2114698829803200682",
+   "note": "Landing page for Halden, a calm iOS app combining daily planning, habit tracking and focus sessions, shown scrolling through feature sections with an iPhone mockup.",
+   "noteEn": "Landing page for Halden, a calm iOS app combining daily planning, habit tracking and focus sessions, shown scrolling through feature sections with an iPhone mockup.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@mike_andreuzza",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/1u0n947-halden-app-website",
+   "rdkind": "Design",
+   "rdcat": "Web",
+   "rdstyle": [
+    "Minimal",
+    "Light"
+   ],
+   "author": {
+    "name": "Michael Andreuzza",
+    "handle": "@mike_andreuzza",
+    "url": "https://x.com/mike_andreuzza"
+   },
+   "x_post": "https://x.com/Mike_Andreuzza/status/2114698829803200682",
+   "xsrc": {
+    "post": "https://x.com/Mike_Andreuzza/status/2114698829803200682",
+    "author": "@Mike_Andreuzza",
+    "likes": 610,
+    "bookmarks": 611,
+    "reposts": 13,
+    "impressions": 20418,
+    "date": "2026-10-26"
+   },
+   "pub": "2026-10-27",
+   "added": "2026-10-27"
+  },
+  {
+   "id": "rd-buxddnx-orvo-3d-brand-posters",
+   "name": "Orvo 3D Brand Posters",
+   "url": "https://x.com/studiobakers/status/2115014389770465735",
+   "note": "A series of rendered 3D hexagonal objects presented across poster compositions for Orvo, an AI cloud computer platform, shifting from sky blue to purple and black backgrounds.",
+   "noteEn": "A series of rendered 3D hexagonal objects presented across poster compositions for Orvo, an AI cloud computer platform, shifting from sky blue to purple and black backgrounds.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@studiobakers",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal",
+    "3d",
+    "gradient"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/buxddnx-orvo-3d-brand-posters",
+   "rdkind": "Design",
+   "rdcat": "Illustration",
+   "rdstyle": [
+    "Minimal",
+    "3D",
+    "Gradient"
+   ],
+   "author": {
+    "name": "Bakers Studio",
+    "handle": "@studiobakers",
+    "url": "https://x.com/studiobakers"
+   },
+   "x_post": "https://x.com/studiobakers/status/2115014389770465735",
+   "xsrc": {
+    "post": "https://x.com/studiobakers/status/2115014389770465735",
+    "author": "@studiobakers",
+    "likes": 242,
+    "bookmarks": 113,
+    "reposts": 4,
+    "impressions": 3847,
+    "date": "2026-10-27"
+   },
+   "pub": "2026-10-27",
+   "added": "2026-10-27"
+  },
+  {
+   "id": "rd-bky6wkw-infinite-scroll-3d-concept",
+   "name": "Infinite Scroll",
+   "url": "https://x.com/apostraphi/status/2114914886689935683",
+   "note": "A 3D rendered ribbon of stacked page cards curves and coils into a rolling spool, animating the idea of an infinite scroll feed with a glittery particle overlay.",
+   "noteEn": "A 3D rendered ribbon of stacked page cards curves and coils into a rolling spool, animating the idea of an infinite scroll feed with a glittery particle overlay.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@apostraphi",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "motion"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "3d"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/bky6wkw-infinite-scroll-3d-concept",
+   "rdkind": "Design",
+   "rdcat": "Motion",
+   "rdstyle": [
+    "Experimental",
+    "3D",
+    "Dark"
+   ],
+   "author": {
+    "name": "Phi Hoang",
+    "handle": "@apostraphi",
+    "url": "https://x.com/apostraphi"
+   },
+   "x_post": "https://x.com/apostraphi/status/2114914886689935683",
+   "xsrc": {
+    "post": "https://x.com/apostraphi/status/2114914886689935683",
+    "author": "@apostraphi",
+    "likes": 230,
+    "bookmarks": 63,
+    "reposts": 8,
+    "impressions": 5695,
+    "date": "2026-10-27"
+   },
+   "pub": "2026-10-27",
+   "added": "2026-10-27"
+  },
+  {
+   "id": "rd-2ta73xt-mechanical-key-switch-anatomy",
+   "name": "Mechanical Key Switch Anatomy",
+   "url": "https://x.com/wheresryan22/status/2114881666023846116",
+   "note": "An interactive exploded-view diagram of a mechanical key switch that separates into labeled isometric components, each rotatable with drag gestures and accompanied by technical specs.",
+   "noteEn": "An interactive exploded-view diagram of a mechanical key switch that separates into labeled isometric components, each rotatable with drag gestures and accompanied by technical specs.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@wheresryan22",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal",
+    "3d"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/2ta73xt-mechanical-key-switch-anatomy",
+   "rdkind": "Design",
+   "rdcat": "Interface",
+   "rdstyle": [
+    "Minimal",
+    "3D",
+    "Light",
+    "Monochrome"
+   ],
+   "author": {
+    "name": "R",
+    "handle": "@wheresryan22",
+    "url": "https://x.com/wheresryan22"
+   },
+   "x_post": "https://x.com/wheresryan22/status/2114881666023846116",
+   "xsrc": {
+    "post": "https://x.com/wheresryan22/status/2114881666023846116",
+    "author": "@wheresryan22",
+    "likes": 642,
+    "bookmarks": 459,
+    "reposts": 16,
+    "impressions": 17467,
+    "date": "2026-10-27"
+   },
+   "pub": "2026-10-27",
+   "added": "2026-10-27"
+  },
+  {
+   "id": "rd-ge0x6yq-orbiting-ellipse-sphere",
+   "name": "Orbiting Ellipse Sphere",
+   "url": "https://x.com/okazz_/status/2114730656135819528",
+   "note": "Generative animation of a rotating sphere built from colorful ellipses and line segments that continuously orbit and tumble within the spherical boundary.",
+   "noteEn": "Generative animation of a rotating sphere built from colorful ellipses and line segments that continuously orbit and tumble within the spherical boundary.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@okazz_",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "motion"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/ge0x6yq-orbiting-ellipse-sphere",
+   "rdkind": "Design",
+   "rdcat": "Motion",
+   "rdstyle": [
+    "Geometric",
+    "Abstract",
+    "Experimental",
+    "Dark",
+    "Vibrant"
+   ],
+   "author": {
+    "name": "おかず / Okazz",
+    "handle": "@okazz_",
+    "url": "https://x.com/okazz_"
+   },
+   "x_post": "https://x.com/okazz_/status/2114730656135819528",
+   "xsrc": {
+    "post": "https://x.com/okazz_/status/2114730656135819528",
+    "author": "@okazz_",
+    "likes": 3257,
+    "bookmarks": 707,
+    "reposts": 362,
+    "impressions": 66627,
+    "date": "2026-10-26"
+   },
+   "pub": "2026-10-27",
+   "added": "2026-10-27"
+  },
+  {
+   "id": "rd-w2vz8gw-sheep-grazing-scene-editor",
+   "name": "Sheep Grazing Scene Editor",
+   "url": "https://x.com/AreadneMaria/status/2114898325451444419",
+   "note": "An interactive 3D pastoral scene where the user selects individual sheep and assigns behavior states like Idle, Graze, Walk, or Jump via a floating contextual toolbar.",
+   "noteEn": "An interactive 3D pastoral scene where the user selects individual sheep and assigns behavior states like Idle, Graze, Walk, or Jump via a floating contextual toolbar.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@areadnemaria",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "3d",
+    "playful"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/w2vz8gw-sheep-grazing-scene-editor",
+   "rdkind": "Design",
+   "rdcat": "Interface",
+   "rdstyle": [
+    "3D",
+    "Playful"
+   ],
+   "author": {
+    "name": "areadne",
+    "handle": "@areadnemaria",
+    "url": "https://x.com/areadnemaria"
+   },
+   "x_post": "https://x.com/AreadneMaria/status/2114898325451444419",
+   "xsrc": {
+    "post": "https://x.com/AreadneMaria/status/2114898325451444419",
+    "author": "@AreadneMaria",
+    "likes": 2669,
+    "bookmarks": 1274,
+    "reposts": 126,
+    "impressions": 72149,
+    "date": "2026-10-27"
+   },
+   "pub": "2026-10-27",
+   "added": "2026-10-27"
   }
  ],
  "guides": [
@@ -188361,5 +188660,5 @@
    ]
   }
  ],
- "updatedAt": "2026-10-27T09:11Z"
+ "updatedAt": "2026-10-27T18:55Z"
 }

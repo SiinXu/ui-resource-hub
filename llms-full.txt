@@ -1,6 +1,6 @@
 # UI Hub
 
-> Curated, multilingual directory of 5009 public UI resources (component libraries, component style demos, effects, design systems, design skills for AI agents) plus original blog analysis of AI design techniques. Data updated 2026-10-27 09:11 UTC.
+> Curated, multilingual directory of 5015 public UI resources (component libraries, component style demos, effects, design systems, design skills for AI agents) plus original blog analysis of AI design techniques. Data updated 2026-10-27 18:55 UTC.
 
 Use the JSON endpoints, not the SPA, when acting as an agent. Every entry links to its original site; licenses belong to the original authors.
 
@@ -118,11 +118,11 @@ Use the JSON endpoints, not the SPA, when acting as an agent. Every entry links 
 - [visx](https://airbnb.io/visx/): Airbnb's low-level visualization components
 
 ## FAQ
-- **What is UI Hub?** A free, curated directory of 5009 public UI resources: 220 component libraries, 1989 component style demos with light/dark screenshots, 70 design skills for AI agents, plus effects, templates, specs and tutorials. It links to original sites and never hosts paid source code.
+- **What is UI Hub?** A free, curated directory of 5015 public UI resources: 220 component libraries, 1989 component style demos with light/dark screenshots, 70 design skills for AI agents, plus effects, templates, specs and tutorials. It links to original sites and never hosts paid source code.
 - **How do I find a component in a given style?** Load https://ui.incidental.site/api/resources.json and filter by ct (component kind, e.g. "dialog") and vs (visual style, e.g. "minimal" or "motion"). type="style" entries are concrete component demos with a libName and page URL; type="library" entries are whole libraries with install info on the site.
 - **Which skills should an agent use for good UI?** One direction skill (frontend-design or taste-skill), emil-design-eng for motion and interaction polish, then impeccable, baseline-ui, web-design-guidelines and accessibility as an audit pass. See https://ui.incidental.site/api/skills.json.
 - **Can I copy the code?** Open-source libraries can be used under their own licenses (MIT, Apache-2.0 etc.); the card shows the original link. Paid tiers (marked paid/freemium) must be bought from the original vendor.
-- **How often is it updated?** Daily via a GitHub Actions job that adds new UI repositories and tools from GitHub, awesome-shadcn-ui and Hacker News. Nothing is deleted. Last update: 2026-10-27 09:11 UTC.
+- **How often is it updated?** Daily via a GitHub Actions job that adds new UI repositories and tools from GitHub, awesome-shadcn-ui and Hacker News. Nothing is deleted. Last update: 2026-10-27 18:55 UTC.
 
 
 # Blog posts (full text, English)
@@ -4641,6 +4641,12 @@ Get Hyped. Get Noticed. Get Results.
 - agents-ui | collection | https://livekit.io/ui | Listed in awesome-shadcn-ui: Agents UI is LiveKit’s open source component library built with React and shadcn for designing voice agent interfaces. Start with p
 - citeme | collection | https://citeme.app | Listed in awesome-shadcn-ui: AI-powered academic citation generator. Searches 11+ databases and formats in 40+ styles (APA, ABNT, MLA, etc.). Web app, Chrome ex
 - Internet Improvement Dept | inspiration | https://x.com/willking/status/2114736247683916242 | Cloudflare's Internet Improvement Department campaign film combining retro pixel art, bold illustrative collage scenes, and an animated lanyard badge reveal.
+- Halden App Website | inspiration | https://x.com/Mike_Andreuzza/status/2114698829803200682 | Landing page for Halden, a calm iOS app combining daily planning, habit tracking and focus sessions, shown scrolling through feature sections with an iPhone moc
+- Orvo 3D Brand Posters | inspiration | https://x.com/studiobakers/status/2115014389770465735 | A series of rendered 3D hexagonal objects presented across poster compositions for Orvo, an AI cloud computer platform, shifting from sky blue to purple and bla
+- Infinite Scroll | inspiration | https://x.com/apostraphi/status/2114914886689935683 | A 3D rendered ribbon of stacked page cards curves and coils into a rolling spool, animating the idea of an infinite scroll feed with a glittery particle overlay
+- Mechanical Key Switch Anatomy | inspiration | https://x.com/wheresryan22/status/2114881666023846116 | An interactive exploded-view diagram of a mechanical key switch that separates into labeled isometric components, each rotatable with drag gestures and accompan
+- Orbiting Ellipse Sphere | inspiration | https://x.com/okazz_/status/2114730656135819528 | Generative animation of a rotating sphere built from colorful ellipses and line segments that continuously orbit and tumble within the spherical boundary.
+- Sheep Grazing Scene Editor | inspiration | https://x.com/AreadneMaria/status/2114898325451444419 | An interactive 3D pastoral scene where the user selects individual sheep and assigns behavior states like Idle, Graze, Walk, or Jump via a floating contextual t
 
 # Component style demos: 1989 entries, see api/resources.json (type=style)
 
