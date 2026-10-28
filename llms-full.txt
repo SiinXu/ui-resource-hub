@@ -1,6 +1,6 @@
 # UI Hub
 
-> Curated, multilingual directory of 5015 public UI resources (component libraries, component style demos, effects, design systems, design skills for AI agents) plus original blog analysis of AI design techniques. Data updated 2026-10-27 18:55 UTC.
+> Curated, multilingual directory of 5029 public UI resources (component libraries, component style demos, effects, design systems, design skills for AI agents) plus original blog analysis of AI design techniques. Data updated 2026-10-28 05:38 UTC.
 
 Use the JSON endpoints, not the SPA, when acting as an agent. Every entry links to its original site; licenses belong to the original authors.
 
@@ -118,11 +118,11 @@ Use the JSON endpoints, not the SPA, when acting as an agent. Every entry links 
 - [visx](https://airbnb.io/visx/): Airbnb's low-level visualization components
 
 ## FAQ
-- **What is UI Hub?** A free, curated directory of 5015 public UI resources: 220 component libraries, 1989 component style demos with light/dark screenshots, 70 design skills for AI agents, plus effects, templates, specs and tutorials. It links to original sites and never hosts paid source code.
+- **What is UI Hub?** A free, curated directory of 5029 public UI resources: 226 component libraries, 1989 component style demos with light/dark screenshots, 70 design skills for AI agents, plus effects, templates, specs and tutorials. It links to original sites and never hosts paid source code.
 - **How do I find a component in a given style?** Load https://ui.incidental.site/api/resources.json and filter by ct (component kind, e.g. "dialog") and vs (visual style, e.g. "minimal" or "motion"). type="style" entries are concrete component demos with a libName and page URL; type="library" entries are whole libraries with install info on the site.
 - **Which skills should an agent use for good UI?** One direction skill (frontend-design or taste-skill), emil-design-eng for motion and interaction polish, then impeccable, baseline-ui, web-design-guidelines and accessibility as an audit pass. See https://ui.incidental.site/api/skills.json.
 - **Can I copy the code?** Open-source libraries can be used under their own licenses (MIT, Apache-2.0 etc.); the card shows the original link. Paid tiers (marked paid/freemium) must be bought from the original vendor.
-- **How often is it updated?** Daily via a GitHub Actions job that adds new UI repositories and tools from GitHub, awesome-shadcn-ui and Hacker News. Nothing is deleted. Last update: 2026-10-27 18:55 UTC.
+- **How often is it updated?** Daily via a GitHub Actions job that adds new UI repositories and tools from GitHub, awesome-shadcn-ui and Hacker News. Nothing is deleted. Last update: 2026-10-28 05:38 UTC.
 
 
 # Blog posts (full text, English)
@@ -4647,6 +4647,20 @@ Get Hyped. Get Noticed. Get Results.
 - Mechanical Key Switch Anatomy | inspiration | https://x.com/wheresryan22/status/2114881666023846116 | An interactive exploded-view diagram of a mechanical key switch that separates into labeled isometric components, each rotatable with drag gestures and accompan
 - Orbiting Ellipse Sphere | inspiration | https://x.com/okazz_/status/2114730656135819528 | Generative animation of a rotating sphere built from colorful ellipses and line segments that continuously orbit and tumble within the spherical boundary.
 - Sheep Grazing Scene Editor | inspiration | https://x.com/AreadneMaria/status/2114898325451444419 | An interactive 3D pastoral scene where the user selects individual sheep and assigns behavior states like Idle, Graze, Walk, or Jump via a floating contextual t
+- design.how | library | https://design.how | New GitHub UI repo: Agent skills and design systems from design.how. Build a design system from your app, use agents to ship UI, enforce it in CI. (★204, MIT, a
+- agentic-react-nextjs-shadcn | library | https://github.com/iscale-llc/agentic-react-nextjs-shadcn | Listed in awesome-shadcn-ui: Agent-testable SaaS starter built with Next.js 16, shadcn/ui, and Tailwind CSS. Includes accessibility-first components, semantic H
+- chanhdai-components | collection | https://chanhdai.com/components | Listed in awesome-shadcn-ui: A collection of reusable components. Trusted registry for shadcn/ui.
+- pdfx | library | https://github.com/akii09/pdfx | Listed in awesome-shadcn-ui: shadcn/ui-style PDF component library for React. Copy-paste components built on @react-pdf/renderer run pdfx add invoice and own th
+- trable-craft | library | https://github.com/jacksonkasi1/TableCraft | Listed in awesome-shadcn-ui: Drizzle ORM-powered table engine that auto-generates tables from your schema. Built on TanStack Table with server-side filtering, s
+- shadcn-space | library | https://github.com/shadcnspace/shadcnspace | Listed in awesome-shadcn-ui: Open-source shadcn/ui blocks, components, and templates built with React, Tailwind, and Base UI.
+- smui | collection | https://smui.statico.io | Listed in awesome-shadcn-ui: Nord-inspired terminal theme for shadcn/ui with monospace typography, zero border radius, and frost-blue accents.
+- anishshobithps-com | collection | https://anishshobithps.com/ | Listed in awesome-shadcn-ui: Personal portfolio of a software developer, grid-styled design .
+- goey-toast | collection | https://goey-toast.vercel.app/ | Listed in awesome-shadcn-ui: Morphing toast notifications for React. Organic blob animations, promise tracking, and full customization out of the box
+- siddz-ui | collection | https://siddz.com/components | Listed in awesome-shadcn-ui: A curated collection of modern, reusable React components. Built with performance and accessibility in mind. Copy, paste, and custo
+- shadcn-play | library | https://github.com/ephraimduncan/shadcn-play | Listed in awesome-shadcn-ui: A playground for building and previewing shadcn/ui components with a live editor.
+- shoogle | collection | https://shoogle.dev/ | Listed in awesome-shadcn-ui: A shadcn search engine
+- glitchcn-ui | collection | https://glitchcn-ui.vercel.app/ | Listed in awesome-shadcn-ui: A terminal-styled cyberpunk component library for Next.js with scanline effects, glowing borders, and monospace typography.
+- warcraftcn | collection | https://www.warcraftcn.com/ | Listed in awesome-shadcn-ui: A set of components inspired by classic Warcraft III RTS UI aesthetics
 
 # Component style demos: 1989 entries, see api/resources.json (type=style)
 

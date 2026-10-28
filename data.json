@@ -1,6 +1,6 @@
 {
- "generated": "2026-10-27",
- "count": 5015,
+ "generated": "2026-10-28",
+ "count": 5029,
  "items": [
   {
    "id": "ued-figma-mcp-guide",
@@ -188458,6 +188458,395 @@
    },
    "pub": "2026-10-27",
    "added": "2026-10-27"
+  },
+  {
+   "id": "gh-arla6ka-design-how",
+   "name": "design.how",
+   "url": "https://design.how",
+   "note": "GitHub 新晋 UI 仓库：Agent skills and design systems from design.how. Build a design system from your app, use agents to ship UI, enforce it in CI.（GitHub ★204，MIT 许可，仓库 arla6ka/design.how）",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "GitHub",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "HTML",
+    "开源",
+    "自动收录"
+   ],
+   "ct": [
+    "chat"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "New GitHub UI repo: Agent skills and design systems from design.how. Build a design system from your app, use agents to ship UI, enforce it in CI. (★204, MIT, arla6ka/design.how)",
+   "added": "2026-10-28"
+  },
+  {
+   "id": "aw-github-com-iscale-llc-agentic-react-nextjs-shadcn",
+   "name": "agentic-react-nextjs-shadcn",
+   "url": "https://github.com/iscale-llc/agentic-react-nextjs-shadcn",
+   "note": "awesome-shadcn-ui 收录：Agent-testable SaaS starter built with Next.js 16, shadcn/ui, and Tailwind CSS. Includes accessibility-first components, semantic HTML for AI agent testing, and production-ready patterns.",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat",
+    "table"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Agent-testable SaaS starter built with Next.js 16, shadcn/ui, and Tailwind CSS. Includes accessibility-first components, semantic HTML for AI agent testing, and production-ready patterns.",
+   "added": "2026-10-28"
+  },
+  {
+   "id": "aw-chanhdai-com-components",
+   "name": "chanhdai-components",
+   "url": "https://chanhdai.com/components",
+   "note": "awesome-shadcn-ui 收录：A collection of reusable components. Trusted registry for shadcn/ui.",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: A collection of reusable components. Trusted registry for shadcn/ui.",
+   "added": "2026-10-28"
+  },
+  {
+   "id": "aw-github-com-akii09-pdfx",
+   "name": "pdfx",
+   "url": "https://github.com/akii09/pdfx",
+   "note": "awesome-shadcn-ui 收录：shadcn/ui-style PDF component library for React. Copy-paste components built on @react-pdf/renderer run pdfx add invoice and own the code.",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: shadcn/ui-style PDF component library for React. Copy-paste components built on @react-pdf/renderer run pdfx add invoice and own the code.",
+   "added": "2026-10-28"
+  },
+  {
+   "id": "aw-github-com-jacksonkasi1-tablecraft",
+   "name": "trable-craft",
+   "url": "https://github.com/jacksonkasi1/TableCraft",
+   "note": "awesome-shadcn-ui 收录：Drizzle ORM-powered table engine that auto-generates tables from your schema. Built on TanStack Table with server-side filtering, sorting, pagination, search, export, and URL state sync.",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "table"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Drizzle ORM-powered table engine that auto-generates tables from your schema. Built on TanStack Table with server-side filtering, sorting, pagination, search, export, and URL state sync.",
+   "added": "2026-10-28"
+  },
+  {
+   "id": "aw-github-com-shadcnspace-shadcnspace",
+   "name": "shadcn-space",
+   "url": "https://github.com/shadcnspace/shadcnspace",
+   "note": "awesome-shadcn-ui 收录：Open-source shadcn/ui blocks, components, and templates built with React, Tailwind, and Base UI.",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat",
+    "layout"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Open-source shadcn/ui blocks, components, and templates built with React, Tailwind, and Base UI.",
+   "added": "2026-10-28"
+  },
+  {
+   "id": "aw-smui-statico-io",
+   "name": "smui",
+   "url": "https://smui.statico.io",
+   "note": "awesome-shadcn-ui 收录：Nord-inspired terminal theme for shadcn/ui with monospace typography, zero border radius, and frost-blue accents.",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chart"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Nord-inspired terminal theme for shadcn/ui with monospace typography, zero border radius, and frost-blue accents.",
+   "added": "2026-10-28"
+  },
+  {
+   "id": "aw-anishshobithps-com",
+   "name": "anishshobithps-com",
+   "url": "https://anishshobithps.com/",
+   "note": "awesome-shadcn-ui 收录：Personal portfolio of a software developer, grid-styled design .",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "table"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Personal portfolio of a software developer, grid-styled design .",
+   "added": "2026-10-28"
+  },
+  {
+   "id": "aw-goey-toast-vercel-app",
+   "name": "goey-toast",
+   "url": "https://goey-toast.vercel.app/",
+   "note": "awesome-shadcn-ui 收录：Morphing toast notifications for React. Organic blob animations, promise tracking, and full customization out of the box",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "motion"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Morphing toast notifications for React. Organic blob animations, promise tracking, and full customization out of the box",
+   "added": "2026-10-28"
+  },
+  {
+   "id": "aw-siddz-com-components",
+   "name": "siddz-ui",
+   "url": "https://siddz.com/components",
+   "note": "awesome-shadcn-ui 收录：A curated collection of modern, reusable React components. Built with performance and accessibility in mind. Copy, paste, and customize.",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "form"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: A curated collection of modern, reusable React components. Built with performance and accessibility in mind. Copy, paste, and customize.",
+   "added": "2026-10-28"
+  },
+  {
+   "id": "aw-github-com-ephraimduncan-shadcn-play",
+   "name": "shadcn-play",
+   "url": "https://github.com/ephraimduncan/shadcn-play",
+   "note": "awesome-shadcn-ui 收录：A playground for building and previewing shadcn/ui components with a live editor.",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "editor"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: A playground for building and previewing shadcn/ui components with a live editor.",
+   "added": "2026-10-28"
+  },
+  {
+   "id": "aw-shoogle-dev",
+   "name": "shoogle",
+   "url": "https://shoogle.dev/",
+   "note": "awesome-shadcn-ui 收录：A shadcn search engine",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: A shadcn search engine",
+   "added": "2026-10-28"
+  },
+  {
+   "id": "aw-glitchcn-ui-vercel-app",
+   "name": "glitchcn-ui",
+   "url": "https://glitchcn-ui.vercel.app/",
+   "note": "awesome-shadcn-ui 收录：A terminal-styled cyberpunk component library for Next.js with scanline effects, glowing borders, and monospace typography.",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chart"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: A terminal-styled cyberpunk component library for Next.js with scanline effects, glowing borders, and monospace typography.",
+   "added": "2026-10-28"
+  },
+  {
+   "id": "aw-warcraftcn-com",
+   "name": "warcraftcn",
+   "url": "https://www.warcraftcn.com/",
+   "note": "awesome-shadcn-ui 收录：A set of components inspired by classic Warcraft III RTS UI aesthetics",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: A set of components inspired by classic Warcraft III RTS UI aesthetics",
+   "added": "2026-10-28"
   }
  ],
  "guides": [
@@ -188660,5 +189049,5 @@
    ]
   }
  ],
- "updatedAt": "2026-10-27T18:55Z"
+ "updatedAt": "2026-10-28T05:38Z"
 }
