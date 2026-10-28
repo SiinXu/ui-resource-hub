@@ -1,5 +1,5 @@
 {
- "count": 34,
+ "count": 35,
  "rss": "https://ui.incidental.site/blog/rss.xml",
  "categories": {
   "tools": "Tools",
@@ -18,6 +18,92 @@
   "weekly": "Series: Weekly roundup"
  },
  "posts": [
+  {
+   "slug": "annotate-dont-describe-visual-prompts",
+   "url": "https://ui.incidental.site/blog/annotate-dont-describe-visual-prompts/",
+   "date": "2026-10-28",
+   "category": "workflow",
+   "series": null,
+   "featured": true,
+   "tags": [
+    "Cursor Design Mode",
+    "Annotate",
+    "v0 Design mode",
+    "Lovable",
+    "visual prompts"
+   ],
+   "title": {
+    "en": "Point, don’t describe: visual prompts for UI edits in Cursor, v0 and Lovable",
+    "zh": "别再描述，直接指：Cursor、v0 与 Lovable 里用「可视化提示」改界面",
+    "zht": "別再描述，直接指：Cursor、v0 與 Lovable 裡用「視覺化提示」改介面",
+    "ja": "説明より指さし：Cursor・v0・Lovable のビジュアルプロンプトでUIを直す",
+    "ko": "설명 대신 가리키기: Cursor, v0, Lovable의 시각적 프롬프트로 UI 고치기",
+    "ms": "Tunjuk, jangan terangkan: prompt visual untuk suntingan UI dalam Cursor, v0 dan Lovable",
+    "vi": "Chỉ vào, đừng mô tả: prompt trực quan để sửa UI trong Cursor, v0 và Lovable",
+    "fr": "Montrer plutôt que décrire : les prompts visuels pour retoucher une UI dans Cursor, v0 et Lovable",
+    "es": "Señala, no describas: prompts visuales para editar UI en Cursor, v0 y Lovable",
+    "de": "Zeigen statt beschreiben: visuelle Prompts für UI-Änderungen in Cursor, v0 und Lovable"
+   },
+   "summary": {
+    "en": "On 27 October Cursor added Annotate to Design Mode: click, box, draw, edit text or CSS on your running app and the agent gets the element’s identity plus a cropped screenshot. v0 and Lovable already let you point at a preview. What each one actually sends to the model, where pointing beats a paragraph, where it quietly breaks your design system, and a checklist for notes that land first time.",
+    "zh": "10 月 27 日，Cursor 给 Design Mode 加上了 Annotate：在运行中的应用上点选、框选、涂画、改文字或改 CSS，智能体就能拿到元素身份信息和一张裁好的截图。v0 和 Lovable 也早已支持在预览上直接指。本文拆解三者到底把什么交给模型、什么时候「指」比一段话更好用、什么时候它会悄悄绕开你的设计系统，以及一份让批注一次命中的清单。",
+    "zht": "10 月 27 日，Cursor 為 Design Mode 加上了 Annotate：在執行中的應用上點選、框選、塗畫、改文字或改 CSS，智慧體就能拿到元素身分資訊和一張裁好的截圖。v0 和 Lovable 也早已支援在預覽上直接指。本文拆解三者到底把什麼交給模型、什麼時候「指」比一段話更好用、什麼時候它會悄悄繞開你的設計系統，以及一份讓批註一次命中的清單。",
+    "ja": "10月27日、CursorはDesign ModeにAnnotateを追加した。動いているアプリ上でクリック、範囲指定、描き込み、テキストやCSSの編集をすると、エージェントは要素の識別情報と切り抜いたスクリーンショットを受け取る。v0とLovableもプレビューを指さす機能を持つ。3つが実際にモデルへ渡すもの、指さしが文章に勝つ場面、デザインシステムを静かに崩す場面、一度で通るメモのチェックリスト。",
+    "ko": "10월 27일 Cursor는 Design Mode에 Annotate를 추가했다. 실행 중인 앱에서 클릭, 영역 지정, 그리기, 텍스트나 CSS 편집을 하면 에이전트는 요소의 식별 정보와 잘라낸 스크린샷을 받는다. v0와 Lovable도 이미 미리보기를 가리킬 수 있다. 세 도구가 모델에 실제로 넘기는 것, 가리키기가 문장보다 나은 경우, 디자인 시스템을 조용히 깨는 경우, 한 번에 통하는 메모 체크리스트.",
+    "ms": "Pada 27 Oktober Cursor menambah Annotate pada Design Mode: klik, kotakkan, lukis, sunting teks atau CSS pada aplikasi yang sedang berjalan dan ejen menerima identiti elemen serta tangkapan skrin yang dipotong. v0 dan Lovable sudah membolehkan anda menunjuk pada pratonton. Apa yang setiap satu hantar kepada model, bila menunjuk lebih baik daripada perenggan, bila ia diam-diam memecahkan sistem reka bentuk, dan senarai semak untuk nota yang tepat kali pertama.",
+    "vi": "Ngày 27/10, Cursor thêm Annotate vào Design Mode: bấm, khoanh vùng, vẽ, sửa chữ hoặc CSS trên ứng dụng đang chạy và agent nhận được danh tính phần tử cùng ảnh chụp đã cắt. v0 và Lovable vốn đã cho phép chỉ vào bản xem trước. Mỗi công cụ thực sự gửi gì cho mô hình, khi nào chỉ tay hơn một đoạn văn, khi nào nó âm thầm phá design system, và checklist để ghi chú trúng ngay lần đầu.",
+    "fr": "Le 27 octobre, Cursor a ajouté Annotate à Design Mode : cliquez, encadrez, dessinez, modifiez un texte ou du CSS sur l’app en cours d’exécution, et l’agent reçoit l’identité de l’élément et une capture recadrée. v0 et Lovable permettaient déjà de pointer l’aperçu. Ce que chacun envoie vraiment au modèle, quand pointer vaut mieux qu’un paragraphe, quand cela contourne en silence votre design system, et une checklist pour des notes qui passent du premier coup.",
+    "es": "El 27 de octubre Cursor añadió Annotate a Design Mode: haz clic, enmarca, dibuja o edita texto o CSS sobre tu app en marcha y el agente recibe la identidad del elemento y una captura recortada. v0 y Lovable ya permitían señalar la vista previa. Qué envía cada uno al modelo, cuándo señalar gana a un párrafo, cuándo rompe en silencio tu sistema de diseño y una lista para notas que acierten a la primera.",
+    "de": "Am 27. Oktober hat Cursor Design Mode um Annotate erweitert: Klicke, rahme ein, zeichne oder ändere Text und CSS in der laufenden App, und der Agent erhält die Identität des Elements plus einen zugeschnittenen Screenshot. v0 und Lovable können schon länger auf die Vorschau zeigen. Was jedes Tool wirklich ans Modell schickt, wann Zeigen einen Absatz schlägt, wann es dein Design-System leise umgeht, und eine Checkliste für Notizen, die beim ersten Mal sitzen."
+   },
+   "reading_minutes": {
+    "en": 5,
+    "zh": 6
+   },
+   "cover": "https://ui.incidental.site/blog/img/annotate-dont-describe-visual-prompts-cover.webp",
+   "references": [
+    {
+     "title": "Design Mode",
+     "by": "Cursor Docs",
+     "url": "https://cursor.com/docs/agent/design-mode"
+    },
+    {
+     "title": "Direct agents with visual prompts in Design Mode",
+     "by": "Erik Nilsson, Ian Huang & Ryo Lu, Cursor",
+     "url": "https://cursor.com/blog/design-mode"
+    },
+    {
+     "title": "Release notes",
+     "by": "Cursor Docs",
+     "url": "https://cursor.com/docs/release-notes"
+    },
+    {
+     "title": "New in Cursor design mode: Annotate",
+     "by": "@cursor_ai on X",
+     "url": "https://x.com/cursor_ai/status/2115159585548021814"
+    },
+    {
+     "title": "Cursor’s Design Mode adds Annotate: point and draw instead of describing UI changes to agents",
+     "by": "Automater News",
+     "url": "https://automater.ai/news/cursor-design-mode-annotate-point-draw-agents/"
+    },
+    {
+     "title": "Cursor adds Annotate to Design mode",
+     "by": "daily.dev",
+     "url": "https://daily.dev/posts/cursor-adds-annotate-to-design-mode-t6xlmktyu"
+    },
+    {
+     "title": "Design mode",
+     "by": "v0 Docs",
+     "url": "https://v0.app/docs/design-mode"
+    },
+    {
+     "title": "Edit from the preview",
+     "by": "Lovable Documentation",
+     "url": "https://docs.lovable.dev/features/visual-edit"
+    }
+   ]
+  },
   {
    "slug": "agents-drive-design-tools-framer-weave-app-studio",
    "url": "https://ui.incidental.site/blog/agents-drive-design-tools-framer-weave-app-studio/",

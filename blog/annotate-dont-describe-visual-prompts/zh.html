@@ -1,0 +1,26 @@
+<p>「把第二张卡片改得和第一张一样，但更紧凑一点」——这句话对编码智能体来说很难。哪张是第二张？怎么个紧凑法？智能体只能在代码里找一个长得像你描述的东西，猜错了，你写的纠正往往比原来的请求还长。10 月 27 日，Cursor 推出了 Annotate，这是它浏览器里 Design Mode 的改版：你可以直接在运行中的应用上「指」来回答这些问题。v0 和 Lovable 也有各自的版本。放在一起看，可以发现：做界面时，好用的提示正在从「一段话」变成<em>「一个指向 + 一个小改动」</em>。</p><figure><img src="../../blog/img/annotate-dont-describe-visual-prompts-1.webp" alt="Cursor 文档的 Design Mode 页面：说明如何用 Annotate 在运行中的应用上留批注" loading="lazy" decoding="async" width="1280" height="800"><figcaption>Cursor 文档的 Design Mode 页面：说明如何用 Annotate 在运行中的应用上留批注 · 截图：Cursor（<a href="https://cursor.com/docs/agent/design-mode" rel="noopener" target="_blank">cursor.com</a>），2026-10-28 截取，版权归原站所有</figcaption></figure>
+<h2>三个工具分别把什么交给模型</h2>
+<ul><li><strong>Cursor Design Mode + Annotate（10 月 27 日，需 Cursor 3.24.18 或更高）。</strong>它在 Agents Window 内置浏览器里，点 Annotate 或按 <code>Cmd/Ctrl + Shift + D</code> 打开。你可以点选元素（方向键可把高亮移到父级或子级），Shift 点击把更多元素加进同一条批注，拖拽框选区域并用画笔、椭圆、矩形或箭头标注，双击文字原地修改，对单个元素打开 CSS 检查器，或者直接语音口述。每个被选中的元素，智能体都会收到：标签、id、class、属性、选择器路径、前 200 个可见字符、尺寸与位置、六项计算样式（颜色、背景色、字号、字体、display、position）；在 React、Vue、Svelte 应用里还有组件名和组件栈。另外还有一张裁到该元素或你标注区域的截图。批注默认逐条发送；打开 <em>Batch edits</em> 开关后，批注会以编号图钉的形式攒起来，一次作为一条消息发出。Cursor 建议这类循环用速度快、擅长界面的模型，点名了 Composer 2.5。</li>
+<li><strong>v0 Design mode。</strong>在实时预览里选中元素，要么在面板里调（字体排印、颜色、背景、内外边距、边框、透明度与圆角、阴影、文字），要么输入一句指令，v0 会自动附上该元素的截图。项目用 Tailwind 时，面板会给出兼容 Tailwind 的取值。改动先挂起，可撤销、重置、对比前后，按 Apply 才会发到对话里，生成一个可看差异、可回退的新版本。团队还能通过 Design Mode API 把同一套编辑器嵌进自己的产品。</li>
+<li><strong>Lovable 预览工具栏。</strong>它取代了旧的 Visual edits 面板，分四种模式：选择元素（Cmd/Ctrl 点击可多选）、原地改文字、画批注（作为带标注的截图发送，随手画的形状会被自动规整）、给队友留的图钉评论。评论免费；把评论发给 Lovable、选择元素和画批注都消耗构建积分。每个账号每滚动 24 小时有 100 次免费原地改字，工作区共享上限 2000 次。</li></ul><figure><img src="../../blog/img/annotate-dont-describe-visual-prompts-2.webp" alt="Cursor Design Mode 一条批注携带的上下文：标签与选择器路径、前 200 字符文本、尺寸位置、六项计算样式、组件栈、裁剪截图以及你的文字" loading="lazy" decoding="async" width="1200" height="675"><figcaption>Cursor Design Mode 一条批注携带的上下文：标签与选择器路径、前 200 字符文本、尺寸位置、六项计算样式、组件栈、裁剪截图以及你的文字 · 示意图：UI Hub 原创，CC BY 4.0</figcaption></figure>
+<h2>我们的看法</h2>
+<p>三者的分界线是：<strong>工具是自己执行你的视觉改动，还是把它翻译给智能体？</strong>v0 最接近设计工具：面板改的是具体数值，结果是一个可审阅的版本，模型主要负责把它写进源码。Cursor 和 Lovable 把你的标注当作上下文：改哪段代码仍由智能体决定，但它从正确的组件出发，而不是靠猜。Cursor 给的上下文最丰富——除了像素还有结构化的元素数据和组件栈——所以它能在大型现有代码库里工作，而不只是在生成出来的项目里。</p>
+<p>「指」有两个盲区。第一，一条批注只记录某个宽度下的一个定格状态。智能体看到的是你在 1440 px 下圈出的悬停态，看不到空状态、错误态或 375 px 布局，而且会很乐意只修它看到的那一个。Cursor 的发布说明提到可以在不同屏幕尺寸下检查设计，但检查这件事仍然是你的。第二，直接操作产生的是裸数值。在检查器里把内边距拖到 18 px、选了 <code>#3b82f6</code>，你就写下了一个设计系统不认识的一次性值。v0 的 Tailwind 取值有帮助，但这几个工具都没有承诺把改动映射到你的 Token。要明确告诉智能体这么做，事后再用 Lint 查。</p>
+<p>我们的经验法则：<strong>用「指」说明在哪里，用文字说明为什么。</strong>标注给位置，句子给意图和边界。「把这张卡片的间距改成和左边那张一致，用我们的间距 Token，文案别动」比单独一幅涂鸦或一段话都好。</p>
+<h2>清单：让可视化批注一次命中</h2>
+<ol><li><strong>选最小的目标。</strong>用父级/子级高亮（Cursor 里是方向键）调到你真正想改的组件，而不是它的外层容器或里面的某个 span。</li>
+<li><strong>涉及关系就多选。</strong>「让 A 和 B 一致」「删掉重复的」「把这些对齐」时，把两个元素都选上。只选一个，智能体就得自己去找另一个。</li>
+<li><strong>只在说区域时才画。</strong>改动关乎一块区域（太挤、有空隙、新元素放哪）时才框或圈，别用来指一个按钮。</li>
+<li><strong>一句话写清意图和边界。</strong>说明要改什么、用哪个 Token 或组件、什么不能动。</li>
+<li><strong>把裸数值换成 Token。</strong>用过 CSS 检查器或面板微调后，补一句「用最接近的现有 Token」，并让设计系统 Lint 在硬编码颜色和间距上报错。</li>
+<li><strong>相关的批注打包，不相关的单发。</strong>同一屏的一轮间距修正是一批；不同页面上的一处文案和一处布局是两条独立批注，智能体可以并行处理。</li>
+<li><strong>回头检查其他状态。</strong>每轮之后看一遍 375 px、暗色模式、空状态、加载、错误和键盘焦点。批注只展示了其中一种。</li>
+<li><strong>看差异，而不只是看预览。</strong>热更新告诉你「看起来对」；差异告诉你智能体是不是改了一个另外十个页面都在用的共享组件。</li></ol>
+<pre><code># 一条好用的可视化批注（目标 + 意图 + 边界）
+target:  PricingCard[plan="Pro"]  + PricingCard[plan="Team"]   # 多选
+change:  让 Team 和 Pro 一致：相同内边距、相同徽章位置
+use:     内边距用 --space-6，Badge variant="outline"
+keep:    文案、价格、按钮文字
+check:   375px 堆叠、暗色模式、CTA 焦点环</code></pre>
+<figure><img src="../../blog/img/annotate-dont-describe-visual-prompts-3.webp" alt="v0 文档的 Design mode 页面：在实时预览中选中元素、在面板里调整，然后 Apply" loading="lazy" decoding="async" width="1280" height="800"><figcaption>v0 文档的 Design mode 页面：在实时预览中选中元素、在面板里调整，然后 Apply · 截图：v0 by Vercel（<a href="https://v0.app/docs/design-mode" rel="noopener" target="_blank">v0.app</a>），2026-10-28 截取，版权归原站所有</figcaption></figure><h2>UI Hub 能帮什么</h2>
+<p>只有当智能体有 Token 可映射时，「指」出来的改动才不会跑偏。<a href="../design-tokens-for-agents/">给智能体的设计 Token</a> 讲了怎么把它们写下来，<a href="../lint-agents-onto-your-design-system/">用 Lint 把智能体拉回你的设计系统</a> 讲了怎么抓住可视化编辑产生的一次性数值。工具本身见 <a href="../v0-prompt-to-shadcn/">v0 实战</a> 和 <a href="../lovable-bolt-prompt-to-app/">Lovable 与 Bolt</a>；单条批注看不到的那些状态，见 <a href="../accessibility-in-ai-generated-ui/">AI 生成界面的无障碍</a>。</p>
