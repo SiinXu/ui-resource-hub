@@ -1,6 +1,6 @@
 {
  "generated": "2026-10-28",
- "count": 5031,
+ "count": 5032,
  "items": [
   {
    "id": "ued-figma-mcp-guide",
@@ -188947,6 +188947,56 @@
    },
    "pub": "2026-10-27",
    "added": "2026-10-28"
+  },
+  {
+   "id": "rd-7ieh532-poster-series-reel",
+   "name": "Poster Series Reel",
+   "url": "https://x.com/oliverhamrin/status/2115464287338561646",
+   "note": "A varied portfolio reel of poster and editorial cover designs spanning typographic illustration, brand event announcements, and expressive photo-collage layouts.",
+   "noteEn": "A varied portfolio reel of poster and editorial cover designs spanning typographic illustration, brand event announcements, and expressive photo-collage layouts.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@oliverhamrin",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/7ieh532-poster-series-reel",
+   "rdkind": "Design",
+   "rdcat": "Posters",
+   "rdstyle": [
+    "Typographic",
+    "Experimental",
+    "Editorial",
+    "Dark",
+    "Vibrant"
+   ],
+   "author": {
+    "name": "Oliver",
+    "handle": "@oliverhamrin",
+    "url": "https://x.com/oliverhamrin"
+   },
+   "x_post": "https://x.com/oliverhamrin/status/2115464287338561646",
+   "xsrc": {
+    "post": "https://x.com/oliverhamrin/status/2115464287338561646",
+    "author": "@oliverhamrin",
+    "likes": 201,
+    "bookmarks": 64,
+    "reposts": 10,
+    "impressions": 5894,
+    "date": "2026-10-28"
+   },
+   "pub": "2026-10-28",
+   "added": "2026-10-28"
   }
  ],
  "guides": [
@@ -189149,5 +189199,5 @@
    ]
   }
  ],
- "updatedAt": "2026-10-28T09:52Z"
+ "updatedAt": "2026-10-28T19:04Z"
 }
