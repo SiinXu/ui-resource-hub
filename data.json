@@ -1,6 +1,6 @@
 {
  "generated": "2026-10-28",
- "count": 5029,
+ "count": 5031,
  "items": [
   {
    "id": "ued-figma-mcp-guide",
@@ -188847,6 +188847,106 @@
    ],
    "noteEn": "Listed in awesome-shadcn-ui: A set of components inspired by classic Warcraft III RTS UI aesthetics",
    "added": "2026-10-28"
+  },
+  {
+   "id": "rd-x35tdwz-agentic-data-company-branding",
+   "name": "Agentic Data Company Branding",
+   "url": "https://x.com/nickbakeddesign/status/2115130404134846645",
+   "note": "Four animated motion brand pieces for an AI data company, using ink-sketch illustrations of a door, globe, node graph, and waveform with animated blue data-scramble overlays.",
+   "noteEn": "Four animated motion brand pieces for an AI data company, using ink-sketch illustrations of a door, globe, node graph, and waveform with animated blue data-scramble overlays.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@nickbakeddesign",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "motion"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/x35tdwz-agentic-data-company-branding",
+   "rdkind": "Design",
+   "rdcat": "Motion",
+   "rdstyle": [
+    "Minimal",
+    "Illustrative",
+    "Black & White",
+    "Light"
+   ],
+   "author": {
+    "name": "Nick",
+    "handle": "@nickbakeddesign",
+    "url": "https://x.com/nickbakeddesign"
+   },
+   "x_post": "https://x.com/nickbakeddesign/status/2115130404134846645",
+   "xsrc": {
+    "post": "https://x.com/nickbakeddesign/status/2115130404134846645",
+    "author": "@nickbakeddesign",
+    "likes": 165,
+    "bookmarks": 69,
+    "reposts": 2,
+    "impressions": 4784,
+    "date": "2026-10-27"
+   },
+   "pub": "2026-10-28",
+   "added": "2026-10-28"
+  },
+  {
+   "id": "rd-sknzklq-dessn-logo-explorations",
+   "name": "DESSN Logo Explorations",
+   "url": "https://x.com/adieldesign/status/2114935728912146825",
+   "note": "A series of 13 badge-style logo marks for DESSN, each pairing a different geometric icon with the wordmark on varied textured, retro-styled backgrounds.",
+   "noteEn": "A series of 13 badge-style logo marks for DESSN, each pairing a different geometric icon with the wordmark on varied textured, retro-styled backgrounds.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@adieldesign",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "retro"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/sknzklq-dessn-logo-explorations",
+   "rdkind": "Design",
+   "rdcat": "Branding",
+   "rdstyle": [
+    "Geometric",
+    "Retro",
+    "Textured",
+    "Monochrome"
+   ],
+   "author": {
+    "name": "Adiel",
+    "handle": "@adieldesign",
+    "url": "https://x.com/adieldesign"
+   },
+   "x_post": "https://x.com/adieldesign/status/2114935728912146825",
+   "xsrc": {
+    "post": "https://x.com/adieldesign/status/2114935728912146825",
+    "author": "@adieldesign",
+    "likes": 41,
+    "bookmarks": 5,
+    "reposts": 2,
+    "impressions": 803,
+    "date": "2026-10-27"
+   },
+   "pub": "2026-10-27",
+   "added": "2026-10-28"
   }
  ],
  "guides": [
@@ -189049,5 +189149,5 @@
    ]
   }
  ],
- "updatedAt": "2026-10-28T05:38Z"
+ "updatedAt": "2026-10-28T07:20Z"
 }
