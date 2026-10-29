@@ -1,0 +1,32 @@
+<p>大多数「提示生成界面」工具都从一张空白页和模型心目中的「干净 SaaS 应用」开始。你会得到一个精致但千篇一律的结果，评审的第一个小时都花在解释「我们产品没有这种侧栏、不是这种按钮、空状态也不长这样」上。10 月 28 日，GitHub 开源了由 GitHub Design 与 Microsoft CoreAI Design 打造的原型工具 <strong>Replica</strong>，它想把顺序调过来：<em>先由设计师写好并批准规则，团队里的任何人再在规则之内做原型。</em></p><figure><img src="../../blog/img/github-replica-design-system-prototypes-1.webp" alt="GitHub 上的 github/replica 仓库：MIT 许可，包含 starter、Copilot 画布插件和可选的 Hub" loading="lazy" decoding="async" width="1280" height="800"><figcaption>GitHub 上的 github/replica 仓库：MIT 许可，包含 starter、Copilot 画布插件和可选的 Hub · 截图：GitHub（<a href="https://github.com/github/replica" rel="noopener" target="_blank">github.com</a>），2026-10-29 截取，版权归原站所有</figcaption></figure>
+<h2>Replica 是什么</h2>
+<ul><li><strong>在哪里运行。</strong>在 GitHub Copilot 应用里。一个插件会加上 Replica 画布，把正在运行的原型显示在对话旁边：描述改动、试用、再迭代，都在一个地方完成。MIT 许可，由 GitHub 员工维护。</li>
+<li><strong>四个部分。</strong>Starter（一个用来改造成你自己设计系统的 <em>Minimal</em> 应用，或已经接好微软 CoreAI 设计系统的 <em>CoreAI Sandbox</em>）、画布插件、可选的自托管 <strong>Replica Hub</strong>（用于发布与评论），以及只有在发布时才用得到的 GitHub 构建 Action。</li>
+<li><strong>本地优先。</strong>本地原型只需要 macOS 或 Linux 上的 Copilot 应用、Git、Node.js 和 npm，不需要 Hub、Docker、域名或 GitHub 仓库。Hub 则需要一台 Linux 服务器、带通配符 DNS 和 HTTPS 的专用域名，以及 GitHub 侧的授权，并且由你的组织自己运维，不是 GitHub 托管。</li>
+<li><strong>模型。</strong>可用 Copilot 套餐里 GitHub 托管的模型，也可接入自己的模型服务商（公开预览，按服务商条款计费）。查看或评审已完成的原型不需要 Copilot 订阅。</li></ul><figure><img src="../../blog/img/github-replica-design-system-prototypes-2.webp" alt="Replica 技能从 .agents/context 读取的上下文文件：设计系统、产品设计、响应式、无障碍、浏览器验证、示例数据和仓库规则" loading="lazy" decoding="async" width="1200" height="675"><figcaption>Replica 技能从 .agents/context 读取的上下文文件：设计系统、产品设计、响应式、无障碍、浏览器验证、示例数据和仓库规则 · 示意图：UI Hub 原创，CC BY 4.0</figcaption></figure>
+<h2>真正有意思的部分：把规范当作需要评审的产物</h2>
+<p>你运行 <code>/setup-skills</code>，把 Copilot 指向经过批准的资料（产品文档、设计系统文档、组件和 Token 包），它会起草规范。文档写得很明确：起草不会让任何东西生效；设计师和设计系统维护者评审草稿，生效是另一次单独的批准。最终得到一组上下文文件，每个只管一件事：<code>DESIGN-SYSTEM.md</code> 管组件、Token 和模式，<code>PRODUCT-DESIGN.md</code> 管场景和状态行为，<code>RESPONSIVE-DESIGN.md</code> 管宽度，另外还有无障碍、浏览器验证、示例数据和仓库规则。</p>
+<p>内置技能对这些上下文的用法很严格。设计系统评审技能只读生效目录，从不读草稿；标为 <code>proposed-default</code> 的规则只算提议，不算政策；缺少必要证据时，这项检查记为<em>人工检查，绝不算通过</em>，并且明确要求不要猜组件或 Token。<code>DESIGN-SYSTEM.md</code> 的模板也拒绝敷衍的上下文：「有 TextInput 组件」并不能回答「校验错误怎么展示」。</p>
+<p>它还有反馈闭环。接上 Hub 后，<code>/review-hub-feedback</code> 会在多个原型的评审中找反复出现的主题，<code>/prepare-feedback-proposals</code> 把选中的发现变成对规范的修改提议，每条都先展示、再由你批准。评论改进的是规则，而不只是收到评论的那一个原型。</p>
+<h2>我们的看法</h2>
+<p>Replica 与其说是一个新的生成器，不如说是包在生成器外面的一套工作流：一个原型一个分支、只用示例数据、提交前先问、未经批准绝不推送或发布。对于产品经理、工程师和设计师一起做原型的团队，这个形态是对的。最有价值的想法可以直接带走：<strong>按负责方拆分规范、区分草稿和生效、让「不知道」显性化</strong>。我们见到的大多数智能体上下文文件，都是一份没人负责、没人评审、却被每个智能体奉为圣旨的长 <code>AGENTS.md</code>。</p>
+<p>代价也是真实的。它默认你用 Copilot 应用（macOS 或 Linux）；要分享，还得有人愿意运维一个带通配符 DNS 的 Hub。画布从另一个源（origin）代理预览，所以依赖自身源做存储或登录的应用可能要额外处理。文档自己也提醒了 AI 生成界面里我们最常见的失败：智能体用<em>长得像的替代品</em>而不是你真正的组件。规范能降低这个风险，但不能消除它，所以要查 import，而不是看截图。</p>
+<h2>清单：以设计系统为起点做原型（用不用 Replica 都适用）</h2>
+<ol><li><strong>把规范拆成有人负责的文件。</strong>设计系统、产品行为、响应式宽度、无障碍、示例数据、仓库规则，各一个文件、各一个负责人。</li>
+<li><strong>每条规则写清适用条件和依据。</strong>「页面级错误用 Banner，表单内用 InlineMessage，见文档链接」好过「用我们的组件」。</li>
+<li><strong>草稿不进生效上下文。</strong>智能体写的规范先放草稿目录，设计师批准后才生效；没评审过的默认值标为「提议」。</li>
+<li><strong>让未知可见。</strong>智能体找不到某个 Token 或模式的依据时，应该说出来，把检查留给人工，而不是编一个值。</li>
+<li><strong>一个原型一个分支。</strong>默认分支保持为评审过的起点，绝不让原型改写它。</li>
+<li><strong>只用示例数据。</strong>原型里永远不放生产凭据或客户数据。</li>
+<li><strong>核对是不是真组件。</strong>在原型的 import 里搜你的组件包和封装层；一个长得像的 <code>&lt;button&gt;</code> 就算检查失败。</li>
+<li><strong>把反馈导回规则。</strong>同一条评审意见出现两次，就去改规范文件，而不只是改原型。</li></ol>
+<pre><code># .agents/context/  （一个文件管一件事，评审后才使用）
+DESIGN-SYSTEM.md      # import、Token、布局、表单、反馈——每条附文档链接
+PRODUCT-DESIGN.md     # 场景、保存、空 / 加载 / 错误状态行为
+RESPONSIVE-DESIGN.md  # 必须支持的宽度，375px 下什么会折叠
+ACCESSIBILITY.md      # 键盘、对比度、读屏要求
+SEED-DATA.md          # 示例数据规则（不用真实客户）
+REPOSITORY.md         # 必须使用的封装层、分支与提交规则
+# drafts/ 永远不作为生效上下文读取；"proposed-default" ≠ 政策</code></pre>
+<figure><img src="../../blog/img/github-replica-design-system-prototypes-3.webp" alt="GitHub Changelog 2026 年 10 月 28 日发布 Replica 的公告" loading="lazy" decoding="async" width="1280" height="800"><figcaption>GitHub Changelog 2026 年 10 月 28 日发布 Replica 的公告 · 截图：GitHub Changelog（<a href="https://github.blog/changelog/2026-10-28-introducing-replica-an-open-source-ai-prototyping-tool/" rel="noopener" target="_blank">github.blog</a>），2026-10-29 截取，版权归原站所有</figcaption></figure><h2>UI Hub 能帮什么</h2>
+<p>Replica 的效果取决于你喂给它的规范。<a href="../design-tokens-for-agents/">给智能体的设计 Token</a> 和 <a href="../claude-cursor-design-skills/">Claude 与 Cursor 的设计技能</a> 讲了怎么写这些上下文；<a href="../lint-agents-onto-your-design-system/">用 Lint 把智能体拉回你的设计系统</a> 讲了事后怎么抓住「长得像」的组件。Replica 和 v0、Lovable、Figma Make、Magic Patterns 的定位对比，见<a href="../prompt-to-ui-tools-compared/">提示生成界面工具横评</a>；Figma 自己的组件库规范，见 <a href="../figma-make-and-figma-agent/">Figma Make 与 Figma 智能体</a>。</p>

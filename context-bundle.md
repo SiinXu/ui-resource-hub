@@ -398,3 +398,4 @@ curl -s https://ui.incidental.site/api/resources.json | jq --arg d "$(date -u -d
 - Designing approvals for agents that act for people: budgets, previews and when to interrupt — https://ui.incidental.site/kb/note/blog-agent-approval-ui-budgets-interruptions.md
 - Your design tools now take orders from agents: Framer MCP, Figma Weave and Runway App Studio — https://ui.incidental.site/kb/note/blog-agents-drive-design-tools-framer-weave-app-studio.md
 - Point, don’t describe: visual prompts for UI edits in Cursor, v0 and Lovable — https://ui.incidental.site/kb/note/blog-annotate-dont-describe-visual-prompts.md
+- GitHub Replica: AI prototypes that start from your design system, not a blank page — https://ui.incidental.site/kb/note/blog-github-replica-design-system-prototypes.md

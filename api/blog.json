@@ -1,5 +1,5 @@
 {
- "count": 35,
+ "count": 36,
  "rss": "https://ui.incidental.site/blog/rss.xml",
  "categories": {
   "tools": "Tools",
@@ -18,6 +18,102 @@
   "weekly": "Series: Weekly roundup"
  },
  "posts": [
+  {
+   "slug": "github-replica-design-system-prototypes",
+   "url": "https://ui.incidental.site/blog/github-replica-design-system-prototypes/",
+   "date": "2026-10-29",
+   "category": "tools",
+   "series": "agent-context",
+   "featured": true,
+   "tags": [
+    "GitHub Replica",
+    "Copilot",
+    "design systems",
+    "AI prototyping",
+    "agent guidance"
+   ],
+   "title": {
+    "en": "GitHub Replica: AI prototypes that start from your design system, not a blank page",
+    "zh": "GitHub Replica：从你的设计系统出发、而不是从空白页出发的 AI 原型",
+    "zht": "GitHub Replica：從你的設計系統出發、而不是從空白頁出發的 AI 原型",
+    "ja": "GitHub Replica：白紙ではなく自社デザインシステムから始めるAIプロトタイプ",
+    "ko": "GitHub Replica: 빈 페이지가 아니라 내 디자인 시스템에서 시작하는 AI 프로토타입",
+    "ms": "GitHub Replica: prototaip AI yang bermula daripada sistem reka bentuk anda, bukan halaman kosong",
+    "vi": "GitHub Replica: prototype AI bắt đầu từ design system của bạn, không phải trang trắng",
+    "fr": "GitHub Replica : des prototypes IA qui partent de votre design system, pas d’une page blanche",
+    "es": "GitHub Replica: prototipos con IA que parten de tu design system, no de una página en blanco",
+    "de": "GitHub Replica: KI-Prototypen, die bei deinem Designsystem anfangen statt bei einer leeren Seite"
+   },
+   "summary": {
+    "en": "On 28 October GitHub open-sourced Replica, an MIT-licensed prototyping tool from GitHub Design and Microsoft CoreAI Design that runs in the Copilot app. Its real idea is not the canvas but the guidance: reviewed context files split by owner, drafts kept out of active use, missing evidence marked manual instead of passed. What it does, where it is heavy, and a checklist you can apply even without Replica.",
+    "zh": "10 月 28 日，GitHub 开源了 Replica：一款由 GitHub Design 与 Microsoft CoreAI Design 打造、运行在 Copilot 应用里的原型工具，MIT 许可。它真正值得看的不是画布，而是「规范」的管法：按负责方拆分、经过评审的上下文文件，草稿不进入生效状态，缺证据就记为人工检查而不是默认通过。本文讲它能做什么、哪里偏重，以及一份即使不用 Replica 也能照做的清单。",
+    "zht": "10 月 28 日，GitHub 開源了 Replica：一款由 GitHub Design 與 Microsoft CoreAI Design 打造、執行在 Copilot 應用裡的原型工具，MIT 授權。它真正值得看的不是畫布，而是「規範」的管法：按負責方拆分、經過審閱的上下文檔案，草稿不進入生效狀態，缺證據就記為人工檢查而不是預設通過。本文講它能做什麼、哪裡偏重，以及一份即使不用 Replica 也能照做的清單。",
+    "ja": "10月28日、GitHubはReplicaをオープンソース化した。GitHub DesignとMicrosoft CoreAI Designが作った、Copilotアプリ上で動くMITライセンスのプロトタイピングツールだ。本当の見どころはキャンバスではなくガイダンスの扱い方にある。担当ごとに分けたレビュー済みのコンテキストファイル、有効化されない下書き、根拠がなければ合格ではなく手動確認。できること、重い部分、Replicaを使わなくても使えるチェックリスト。",
+    "ko": "10월 28일 GitHub는 Replica를 오픈소스로 공개했다. GitHub Design과 Microsoft CoreAI Design이 만든, Copilot 앱에서 동작하는 MIT 라이선스 프로토타이핑 도구다. 진짜 핵심은 캔버스가 아니라 가이드를 다루는 방식이다. 담당별로 나눈 검토된 컨텍스트 파일, 활성화되지 않는 초안, 근거가 없으면 통과가 아니라 수동 확인. 무엇을 하는지, 어디가 무거운지, Replica 없이도 쓸 수 있는 체크리스트.",
+    "ms": "Pada 28 Oktober GitHub menjadikan Replica sumber terbuka: alat prototaip berlesen MIT daripada GitHub Design dan Microsoft CoreAI Design yang berjalan dalam aplikasi Copilot. Idea sebenarnya bukan kanvas tetapi panduan: fail konteks yang disemak dan dipecahkan mengikut pemilik, draf tidak digunakan secara aktif, bukti yang tiada ditanda manual dan bukan lulus. Apa yang ia buat, di mana ia berat, dan senarai semak yang boleh digunakan walaupun tanpa Replica.",
+    "vi": "Ngày 28/10, GitHub mở mã nguồn Replica: công cụ làm prototype giấy phép MIT do GitHub Design và Microsoft CoreAI Design xây dựng, chạy trong ứng dụng Copilot. Ý tưởng thật sự không nằm ở canvas mà ở cách quản lý hướng dẫn: các file ngữ cảnh đã duyệt, chia theo người phụ trách, bản nháp không được kích hoạt, thiếu bằng chứng thì đánh dấu kiểm tra thủ công chứ không phải đạt. Nó làm gì, nặng ở đâu, và checklist áp dụng được cả khi không dùng Replica.",
+    "fr": "Le 28 octobre, GitHub a publié en open source Replica, un outil de prototypage sous licence MIT conçu par GitHub Design et Microsoft CoreAI Design, qui tourne dans l’app Copilot. Son idée forte n’est pas le canevas mais la gestion des consignes : des fichiers de contexte relus et répartis par responsable, des brouillons jamais actifs, une preuve manquante notée « manuel » plutôt que « validé ». Ce qu’il fait, où il est lourd, et une checklist applicable même sans Replica.",
+    "es": "El 28 de octubre GitHub liberó Replica, una herramienta de prototipado con licencia MIT creada por GitHub Design y Microsoft CoreAI Design que funciona dentro de la app de Copilot. Su idea de fondo no es el lienzo sino la guía: archivos de contexto revisados y repartidos por responsable, borradores que nunca quedan activos y evidencia ausente marcada como manual en vez de aprobada. Qué hace, dónde pesa y una checklist útil incluso sin Replica.",
+    "de": "Am 28. Oktober hat GitHub Replica als Open Source veröffentlicht: ein MIT-lizenziertes Prototyping-Tool von GitHub Design und Microsoft CoreAI Design, das in der Copilot-App läuft. Die eigentliche Idee ist nicht die Canvas, sondern der Umgang mit Vorgaben: geprüfte Kontextdateien nach Zuständigkeit getrennt, Entwürfe nie aktiv, fehlende Belege als manuell statt bestanden markiert. Was es kann, wo es schwer ist, und eine Checkliste, die auch ohne Replica funktioniert."
+   },
+   "reading_minutes": {
+    "en": 4,
+    "zh": 6
+   },
+   "cover": "https://ui.incidental.site/blog/img/github-replica-design-system-prototypes-cover.webp",
+   "references": [
+    {
+     "title": "Introducing Replica, an open-source AI prototyping tool",
+     "by": "GitHub Changelog",
+     "url": "https://github.blog/changelog/2026-10-28-introducing-replica-an-open-source-ai-prototyping-tool/"
+    },
+    {
+     "title": "github/replica",
+     "by": "GitHub Design & Microsoft CoreAI Design, GitHub",
+     "url": "https://github.com/github/replica"
+    },
+    {
+     "title": "Create your first local prototype",
+     "by": "Replica docs",
+     "url": "https://github.com/github/replica/blob/main/docs/local-prototyping.md"
+    },
+    {
+     "title": "Set up and configure your prototype environment",
+     "by": "Replica docs",
+     "url": "https://github.com/github/replica/blob/main/docs/prototype-environment.md"
+    },
+    {
+     "title": "Replica setup and workflows (REPLICA.md)",
+     "by": "Replica starters",
+     "url": "https://github.com/github/replica/blob/main/starters/shared/REPLICA.md"
+    },
+    {
+     "title": "Component design-system review skill",
+     "by": "Replica starters",
+     "url": "https://github.com/github/replica/blob/main/starters/shared/.agents/skills/component-design-system-review/SKILL.md"
+    },
+    {
+     "title": "Design-system research template",
+     "by": "Replica starters",
+     "url": "https://github.com/github/replica/blob/main/starters/shared/.agents/context-templates/DESIGN-SYSTEM.md"
+    },
+    {
+     "title": "GitHub open-sources Replica for prototypes built with your design system",
+     "by": "Jordan Reid, ByteForward",
+     "url": "https://bytefwd.com/github-replica-design-system-prototypes-local-hub/"
+    },
+    {
+     "title": "GitHub Open-Sources Replica for On-Brand AI Prototypes",
+     "by": "Nvdium",
+     "url": "https://nvdium.com/en/articles/140006649"
+    },
+    {
+     "title": "Figma product news and release notes",
+     "by": "Figma",
+     "url": "https://www.figma.com/release-notes/"
+    }
+   ]
+  },
   {
    "slug": "annotate-dont-describe-visual-prompts",
    "url": "https://ui.incidental.site/blog/annotate-dont-describe-visual-prompts/",
