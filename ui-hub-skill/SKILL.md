@@ -1,11 +1,11 @@
 ---
 name: ui-hub
-description: Use UI Hub (https://ui.incidental.site/) as a design source. Search 5032+ UI resources (component libraries, component style demos, effects, design systems) by component kind and visual style, copy code/prompts from original sources, and apply design skills (frontend-design, taste-skill, emil-design-eng, impeccable, baseline-ui, web-design-guidelines, accessibility) to build and audit good-looking, accessible UIs. Use when picking a component library or visual style, building a landing/pricing/dashboard page, or auditing UI quality.
+description: Use UI Hub (https://ui.incidental.site/) as a design source. Search 5043+ UI resources (component libraries, component style demos, effects, design systems) by component kind and visual style, copy code/prompts from original sources, and apply design skills (frontend-design, taste-skill, emil-design-eng, impeccable, baseline-ui, web-design-guidelines, accessibility) to build and audit good-looking, accessible UIs. Use when picking a component library or visual style, building a landing/pricing/dashboard page, or auditing UI quality.
 ---
 
 # UI Hub — guide for AI agents
 
-Data updated 2026-10-28 19:04 UTC. Endpoints: `https://ui.incidental.site/api/resources.json` (items), `https://ui.incidental.site/api/skills.json` (skills + workflow), `https://ui.incidental.site/llms.txt`.
+Data updated 2026-10-29 05:44 UTC. Endpoints: `https://ui.incidental.site/api/resources.json` (items), `https://ui.incidental.site/api/skills.json` (skills + workflow), `https://ui.incidental.site/llms.txt`.
 
 ## One-line prompt
 EN: Use UI Hub (https://ui.incidental.site/) as your design source. First read https://ui.incidental.site/AGENTS.md, then fetch https://ui.incidental.site/api/resources.json and filter by ct (component kind), vs (visual style) and pricing=free to pick ONE open-source library and a visual style; lock tokens (font, spacing, radius, one accent, light+dark) before building. Load skills in this order from https://ui.incidental.site/api/skills.json: frontend-design or taste-skill → emil-design-eng → impeccable + baseline-ui + web-design-guidelines + accessibility. Verify in a browser (light/dark, 375px, keyboard, reduced motion) and cite every resource you used.
@@ -136,8 +136,8 @@ curl -s https://ui.incidental.site/api/resources.json | jq --arg d "$(date -u -d
 - `webapp-testing` (engineering-ui): Toolkit for interacting with and testing local web applications using Playwright. Supports verifying frontend functionality, debugging UI behavior, capturing browser screenshots, and viewing browser l — https://github.com/anthropics/skills
 
 ## FAQ
-- **What is UI Hub?** A free, curated directory of 5032 public UI resources: 226 component libraries, 1989 component style demos with light/dark screenshots, 70 design skills for AI agents, plus effects, templates, specs and tutorials. It links to original sites and never hosts paid source code.
+- **What is UI Hub?** A free, curated directory of 5043 public UI resources: 233 component libraries, 1989 component style demos with light/dark screenshots, 70 design skills for AI agents, plus effects, templates, specs and tutorials. It links to original sites and never hosts paid source code.
 - **How do I find a component in a given style?** Load https://ui.incidental.site/api/resources.json and filter by ct (component kind, e.g. "dialog") and vs (visual style, e.g. "minimal" or "motion"). type="style" entries are concrete component demos with a libName and page URL; type="library" entries are whole libraries with install info on the site.
 - **Which skills should an agent use for good UI?** One direction skill (frontend-design or taste-skill), emil-design-eng for motion and interaction polish, then impeccable, baseline-ui, web-design-guidelines and accessibility as an audit pass. See https://ui.incidental.site/api/skills.json.
 - **Can I copy the code?** Open-source libraries can be used under their own licenses (MIT, Apache-2.0 etc.); the card shows the original link. Paid tiers (marked paid/freemium) must be bought from the original vendor.
-- **How often is it updated?** Daily via a GitHub Actions job that adds new UI repositories and tools from GitHub, awesome-shadcn-ui and Hacker News. Nothing is deleted. Last update: 2026-10-28 19:04 UTC.
+- **How often is it updated?** Daily via a GitHub Actions job that adds new UI repositories and tools from GitHub, awesome-shadcn-ui and Hacker News. Nothing is deleted. Last update: 2026-10-29 05:44 UTC.

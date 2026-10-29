@@ -1,6 +1,6 @@
 {
- "generated": "2026-10-28",
- "count": 5032,
+ "generated": "2026-10-29",
+ "count": 5043,
  "items": [
   {
    "id": "ued-figma-mcp-guide",
@@ -188997,6 +188997,311 @@
    },
    "pub": "2026-10-28",
    "added": "2026-10-28"
+  },
+  {
+   "id": "aw-thegridcn-com",
+   "name": "the-gridcn",
+   "url": "https://thegridcn.com/",
+   "note": "awesome-shadcn-ui 收录：Tron inspired shadcn/ui theme",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "table"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Tron inspired shadcn/ui theme",
+   "added": "2026-10-29"
+  },
+  {
+   "id": "aw-github-com-arnaudvolp-shadcnship",
+   "name": "shadcnship",
+   "url": "https://github.com/arnaudvolp/shadcnship",
+   "note": "awesome-shadcn-ui 收录：Production-ready shadcn/ui component registry for building modern SaaS applications with Next.js, TypeScript, and Tailwind CSS.",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Production-ready shadcn/ui component registry for building modern SaaS applications with Next.js, TypeScript, and Tailwind CSS.",
+   "added": "2026-10-29"
+  },
+  {
+   "id": "aw-github-com-bradgroux-veritas-kanban",
+   "name": "veritas-kanban",
+   "url": "https://github.com/BradGroux/veritas-kanban",
+   "note": "awesome-shadcn-ui 收录：Self-hosted Kanban board with AI agent integration, time tracking, and 1,255 tests. Built with React 19, Vite 6, TanStack Query, dnd-kit, and shadcn/ui.",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Self-hosted Kanban board with AI agent integration, time tracking, and 1,255 tests. Built with React 19, Vite 6, TanStack Query, dnd-kit, and shadcn/ui.",
+   "added": "2026-10-29"
+  },
+  {
+   "id": "aw-github-com-mnove-carouselcn",
+   "name": "carouselcn",
+   "url": "https://github.com/mnove/carouselcn",
+   "note": "awesome-shadcn-ui 收录：Copy-paste carousel components and examples for your react apps",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Copy-paste carousel components and examples for your react apps",
+   "added": "2026-10-29"
+  },
+  {
+   "id": "aw-github-com-ssshooter-mindmapcn",
+   "name": "mindmapcn",
+   "url": "https://github.com/SSShooter/mindmapcn",
+   "note": "awesome-shadcn-ui 收录：Beautiful mind maps, works seamlessly with shadcn/ui.",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Beautiful mind maps, works seamlessly with shadcn/ui.",
+   "added": "2026-10-29"
+  },
+  {
+   "id": "aw-github-com-pittaya-ui-ui-kit",
+   "name": "pittaya-ui",
+   "url": "https://github.com/pittaya-ui/ui-kit",
+   "note": "awesome-shadcn-ui 收录：A fully open-source UI library for React, powered by TypeScript and Tailwind CSS. Fast, composable, and ready for production.",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: A fully open-source UI library for React, powered by TypeScript and Tailwind CSS. Fast, composable, and ready for production.",
+   "added": "2026-10-29"
+  },
+  {
+   "id": "aw-github-com-zippystarter-template-devstarter",
+   "name": "devstarter",
+   "url": "https://github.com/zippystarter/template-devstarter",
+   "note": "awesome-shadcn-ui 收录：Devstarter is a bold, one-page developer portfolio template with a distinctive cyberpunk aesthetic. Built with Next.js, shadcn/ui, and Tailwind CSS, it's designed to help developers showcase their wor",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat",
+    "layout"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Devstarter is a bold, one-page developer portfolio template with a distinctive cyberpunk aesthetic. Built with Next.js, shadcn/ui, and Tailwind CSS, it's designed to help developers showcase their wor",
+   "added": "2026-10-29"
+  },
+  {
+   "id": "aw-github-com-johuniq-jolyui",
+   "name": "jolyui",
+   "url": "https://github.com/Johuniq/jolyui",
+   "note": "awesome-shadcn-ui 收录：JolyUI is a modern React component library built with TypeScript, Tailwind CSS and Motion. It offers a wide range of customizable and accessible UI components to help you build stunning web applicatio",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat",
+    "motion"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: JolyUI is a modern React component library built with TypeScript, Tailwind CSS and Motion. It offers a wide range of customizable and accessible UI components to help you build stunning web applicatio",
+   "added": "2026-10-29"
+  },
+  {
+   "id": "aw-more-shadcn-noair-fun",
+   "name": "more-shadcn",
+   "url": "https://more-shadcn.noair.fun/",
+   "note": "awesome-shadcn-ui 收录：A collection of high-quality, copy-paste components for Svelte 5, built on top of shadcn-svelte.",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: A collection of high-quality, copy-paste components for Svelte 5, built on top of shadcn-svelte.",
+   "added": "2026-10-29"
+  },
+  {
+   "id": "aw-heroicons-animated-vercel-app",
+   "name": "heroicons-animated",
+   "url": "https://heroicons-animated.vercel.app/",
+   "note": "awesome-shadcn-ui 收录：An open-source collection of 316 beautifully animated heroicons for your projects.",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "motion",
+    "icon"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: An open-source collection of 316 beautifully animated heroicons for your projects.",
+   "added": "2026-10-29"
+  },
+  {
+   "id": "aw-slidytabs-dev",
+   "name": "slidytabs",
+   "url": "https://slidytabs.dev",
+   "note": "awesome-shadcn-ui 收录：A tool that adds a sliding indicator animation to shadcn `<Tabs />` without changing how you use or customize the component",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "motion"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: A tool that adds a sliding indicator animation to shadcn `<Tabs />` without changing how you use or customize the component",
+   "added": "2026-10-29"
   }
  ],
  "guides": [
@@ -189199,5 +189504,5 @@
    ]
   }
  ],
- "updatedAt": "2026-10-28T19:04Z"
+ "updatedAt": "2026-10-29T05:44Z"
 }

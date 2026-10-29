@@ -1,6 +1,6 @@
 # UI Hub
 
-> Curated, multilingual directory of 5032 public UI resources (component libraries, component style demos, effects, design systems, design skills for AI agents) plus original blog analysis of AI design techniques. Data updated 2026-10-28 19:04 UTC.
+> Curated, multilingual directory of 5043 public UI resources (component libraries, component style demos, effects, design systems, design skills for AI agents) plus original blog analysis of AI design techniques. Data updated 2026-10-29 05:44 UTC.
 
 Use the JSON endpoints, not the SPA, when acting as an agent. Every entry links to its original site; licenses belong to the original authors.
 
@@ -119,11 +119,11 @@ Use the JSON endpoints, not the SPA, when acting as an agent. Every entry links 
 - [visx](https://airbnb.io/visx/): Airbnb's low-level visualization components
 
 ## FAQ
-- **What is UI Hub?** A free, curated directory of 5032 public UI resources: 226 component libraries, 1989 component style demos with light/dark screenshots, 70 design skills for AI agents, plus effects, templates, specs and tutorials. It links to original sites and never hosts paid source code.
+- **What is UI Hub?** A free, curated directory of 5043 public UI resources: 233 component libraries, 1989 component style demos with light/dark screenshots, 70 design skills for AI agents, plus effects, templates, specs and tutorials. It links to original sites and never hosts paid source code.
 - **How do I find a component in a given style?** Load https://ui.incidental.site/api/resources.json and filter by ct (component kind, e.g. "dialog") and vs (visual style, e.g. "minimal" or "motion"). type="style" entries are concrete component demos with a libName and page URL; type="library" entries are whole libraries with install info on the site.
 - **Which skills should an agent use for good UI?** One direction skill (frontend-design or taste-skill), emil-design-eng for motion and interaction polish, then impeccable, baseline-ui, web-design-guidelines and accessibility as an audit pass. See https://ui.incidental.site/api/skills.json.
 - **Can I copy the code?** Open-source libraries can be used under their own licenses (MIT, Apache-2.0 etc.); the card shows the original link. Paid tiers (marked paid/freemium) must be bought from the original vendor.
-- **How often is it updated?** Daily via a GitHub Actions job that adds new UI repositories and tools from GitHub, awesome-shadcn-ui and Hacker News. Nothing is deleted. Last update: 2026-10-28 19:04 UTC.
+- **How often is it updated?** Daily via a GitHub Actions job that adds new UI repositories and tools from GitHub, awesome-shadcn-ui and Hacker News. Nothing is deleted. Last update: 2026-10-29 05:44 UTC.
 
 
 # Blog posts (full text, English)
@@ -4704,6 +4704,17 @@ Get Hyped. Get Noticed. Get Results.
 - Agentic Data Company Branding | inspiration | https://x.com/nickbakeddesign/status/2115130404134846645 | Four animated motion brand pieces for an AI data company, using ink-sketch illustrations of a door, globe, node graph, and waveform with animated blue data-scra
 - DESSN Logo Explorations | inspiration | https://x.com/adieldesign/status/2114935728912146825 | A series of 13 badge-style logo marks for DESSN, each pairing a different geometric icon with the wordmark on varied textured, retro-styled backgrounds.
 - Poster Series Reel | inspiration | https://x.com/oliverhamrin/status/2115464287338561646 | A varied portfolio reel of poster and editorial cover designs spanning typographic illustration, brand event announcements, and expressive photo-collage layouts
+- the-gridcn | collection | https://thegridcn.com/ | Listed in awesome-shadcn-ui: Tron inspired shadcn/ui theme
+- shadcnship | library | https://github.com/arnaudvolp/shadcnship | Listed in awesome-shadcn-ui: Production-ready shadcn/ui component registry for building modern SaaS applications with Next.js, TypeScript, and Tailwind CSS.
+- veritas-kanban | library | https://github.com/BradGroux/veritas-kanban | Listed in awesome-shadcn-ui: Self-hosted Kanban board with AI agent integration, time tracking, and 1,255 tests. Built with React 19, Vite 6, TanStack Query, dn
+- carouselcn | library | https://github.com/mnove/carouselcn | Listed in awesome-shadcn-ui: Copy-paste carousel components and examples for your react apps
+- mindmapcn | library | https://github.com/SSShooter/mindmapcn | Listed in awesome-shadcn-ui: Beautiful mind maps, works seamlessly with shadcn/ui.
+- pittaya-ui | library | https://github.com/pittaya-ui/ui-kit | Listed in awesome-shadcn-ui: A fully open-source UI library for React, powered by TypeScript and Tailwind CSS. Fast, composable, and ready for production.
+- devstarter | library | https://github.com/zippystarter/template-devstarter | Listed in awesome-shadcn-ui: Devstarter is a bold, one-page developer portfolio template with a distinctive cyberpunk aesthetic. Built with Next.js, shadcn/ui, 
+- jolyui | library | https://github.com/Johuniq/jolyui | Listed in awesome-shadcn-ui: JolyUI is a modern React component library built with TypeScript, Tailwind CSS and Motion. It offers a wide range of customizable a
+- more-shadcn | collection | https://more-shadcn.noair.fun/ | Listed in awesome-shadcn-ui: A collection of high-quality, copy-paste components for Svelte 5, built on top of shadcn-svelte.
+- heroicons-animated | collection | https://heroicons-animated.vercel.app/ | Listed in awesome-shadcn-ui: An open-source collection of 316 beautifully animated heroicons for your projects.
+- slidytabs | collection | https://slidytabs.dev | Listed in awesome-shadcn-ui: A tool that adds a sliding indicator animation to shadcn `<Tabs />` without changing how you use or customize the component
 
 # Component style demos: 1989 entries, see api/resources.json (type=style)
 
