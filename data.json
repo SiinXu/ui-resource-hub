@@ -1,6 +1,6 @@
 {
  "generated": "2026-10-29",
- "count": 5043,
+ "count": 5047,
  "items": [
   {
    "id": "ued-figma-mcp-guide",
@@ -189302,6 +189302,202 @@
    ],
    "noteEn": "Listed in awesome-shadcn-ui: A tool that adds a sliding indicator animation to shadcn `<Tabs />` without changing how you use or customize the component",
    "added": "2026-10-29"
+  },
+  {
+   "id": "rd-i6vcqw4-x-com",
+   "name": "Morphing UI Controls",
+   "url": "https://x.com/keviduk/status/2115445879725256843",
+   "note": "A versatile interface component smoothly morphs between a toggle switch, stepper, segmented control, and slider to demonstrate a shared underlying structure.",
+   "noteEn": "A versatile interface component smoothly morphs between a toggle switch, stepper, segmented control, and slider to demonstrate a shared underlying structure.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@keviduk",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/i6vcqw4-x-com",
+   "rdkind": "Design",
+   "rdcat": "Interface",
+   "rdstyle": [
+    "Minimal",
+    "Clean",
+    "Light"
+   ],
+   "author": {
+    "name": "Kevin",
+    "handle": "@keviduk",
+    "url": "https://x.com/keviduk"
+   },
+   "x_post": "https://x.com/keviduk/status/2115445879725256843",
+   "xsrc": {
+    "post": "https://x.com/keviduk/status/2115445879725256843",
+    "author": "@keviduk",
+    "likes": 600,
+    "bookmarks": 433,
+    "reposts": 7,
+    "impressions": 14152,
+    "date": "2026-10-28"
+   },
+   "pub": "2026-10-29",
+   "added": "2026-10-29"
+  },
+  {
+   "id": "rd-0l89gp5-shopify-expo-mode",
+   "name": "Shopify Expo Mode",
+   "url": "https://x.com/tobi/status/2115476533007802567",
+   "note": "Shopify's Expo Mode renders a 44,000px interactive changelog as a 3D first-person runway using Google's HTML-in-Canvas API, letting users fly through color-coded product sections.",
+   "noteEn": "Shopify's Expo Mode renders a 44,000px interactive changelog as a 3D first-person runway using Google's HTML-in-Canvas API, letting users fly through color-coded product sections.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@tobi",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "3d"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/0l89gp5-shopify-expo-mode",
+   "rdkind": "Design",
+   "rdcat": "Web",
+   "rdstyle": [
+    "Experimental",
+    "3D",
+    "Dark",
+    "Vibrant"
+   ],
+   "author": {
+    "name": "tobi lutke",
+    "handle": "@tobi",
+    "url": "https://x.com/tobi"
+   },
+   "x_post": "https://x.com/tobi/status/2115476533007802567",
+   "xsrc": {
+    "post": "https://x.com/tobi/status/2115476533007802567",
+    "author": "@tobi",
+    "likes": 527,
+    "bookmarks": 462,
+    "reposts": 39,
+    "impressions": 93975,
+    "date": "2026-10-28"
+   },
+   "pub": "2026-10-29",
+   "added": "2026-10-29"
+  },
+  {
+   "id": "rd-6jgiv46-fold-toolbar-interaction",
+   "name": "Fold Toolbar",
+   "url": "https://x.com/pmalay694/status/2115398805462122583",
+   "note": "A floating toolbar that expands inline to reveal sub-tool options when a parent tool is clicked, then folds back to its compact state with a blue active indicator.",
+   "noteEn": "A floating toolbar that expands inline to reveal sub-tool options when a parent tool is clicked, then folds back to its compact state with a blue active indicator.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@pmalay694",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/6jgiv46-fold-toolbar-interaction",
+   "rdkind": "Design",
+   "rdcat": "Interface",
+   "rdstyle": [
+    "Minimal",
+    "Dark"
+   ],
+   "author": {
+    "name": "Malay",
+    "handle": "@pmalay694",
+    "url": "https://x.com/pmalay694"
+   },
+   "x_post": "https://x.com/pmalay694/status/2115398805462122583",
+   "xsrc": {
+    "post": "https://x.com/pmalay694/status/2115398805462122583",
+    "author": "@pmalay694",
+    "likes": 146,
+    "bookmarks": 86,
+    "reposts": 3,
+    "impressions": 4074,
+    "date": "2026-10-28"
+   },
+   "pub": "2026-10-29",
+   "added": "2026-10-29"
+  },
+  {
+   "id": "rd-s2zrpka-keycap-ascii-fish",
+   "name": "Keycap ASCII Fish",
+   "url": "https://x.com/kail_designs/status/2115435415855624593",
+   "note": "An animated koi fish shape assembled from colorful keycap-style ASCII character tiles that continuously morph and rearrange against a dark background.",
+   "noteEn": "An animated koi fish shape assembled from colorful keycap-style ASCII character tiles that continuously morph and rearrange against a dark background.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@kail_designs",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "motion"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/s2zrpka-keycap-ascii-fish",
+   "rdkind": "Design",
+   "rdcat": "Motion",
+   "rdstyle": [
+    "Abstract",
+    "Experimental",
+    "Dark"
+   ],
+   "author": {
+    "name": "Kailash",
+    "handle": "@kail_designs",
+    "url": "https://x.com/kail_designs"
+   },
+   "x_post": "https://x.com/kail_designs/status/2115435415855624593",
+   "xsrc": {
+    "post": "https://x.com/kail_designs/status/2115435415855624593",
+    "author": "@kail_designs",
+    "likes": 462,
+    "bookmarks": 248,
+    "reposts": 20,
+    "impressions": 11316,
+    "date": "2026-10-28"
+   },
+   "pub": "2026-10-29",
+   "added": "2026-10-29"
   }
  ],
  "guides": [
@@ -189504,5 +189700,5 @@
    ]
   }
  ],
- "updatedAt": "2026-10-29T05:44Z"
+ "updatedAt": "2026-10-29T07:38Z"
 }
