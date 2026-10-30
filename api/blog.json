@@ -1,5 +1,5 @@
 {
- "count": 36,
+ "count": 37,
  "rss": "https://ui.incidental.site/blog/rss.xml",
  "categories": {
   "tools": "Tools",
@@ -18,6 +18,92 @@
   "weekly": "Series: Weekly roundup"
  },
  "posts": [
+  {
+   "slug": "canva-brush-edit-dont-regenerate",
+   "url": "https://ui.incidental.site/blog/canva-brush-edit-dont-regenerate/",
+   "date": "2026-10-30",
+   "category": "tools",
+   "series": null,
+   "featured": true,
+   "tags": [
+    "Canva Brush",
+    "Canva AI",
+    "AI editing",
+    "brand consistency",
+    "Krea"
+   ],
+   "title": {
+    "en": "Canva Brush: AI design moves from generating to editing",
+    "zh": "Canva Brush：AI 设计正从「生成」走向「修改」",
+    "zht": "Canva Brush：AI 設計正從「生成」走向「修改」",
+    "ja": "Canva Brush：AIデザインは「生成」から「編集」へ",
+    "ko": "Canva Brush: AI 디자인이 ‘생성’에서 ‘편집’으로 옮겨 간다",
+    "ms": "Canva Brush: reka bentuk AI beralih daripada menjana kepada menyunting",
+    "vi": "Canva Brush: thiết kế AI chuyển từ tạo mới sang chỉnh sửa",
+    "fr": "Canva Brush : le design IA passe de la génération à l’édition",
+    "es": "Canva Brush: el diseño con IA pasa de generar a editar",
+    "de": "Canva Brush: KI-Design wechselt vom Generieren zum Bearbeiten"
+   },
+   "summary": {
+    "en": "On 29 October Canva Research launched Brush, a vision-language model trained to edit existing designs: it reads the layout, writes code to change elements, checks the page and keeps everything editable. Canva claims up to 69% faster and 46% cheaper edits than its previous agent. What it does, what the numbers do and don’t prove, how it compares with Krea’s brand-kit-first Ad Studio, and a checklist for edit prompts that change only what you meant.",
+    "zh": "10 月 29 日，Canva Research 发布了 Brush：一个专门用来「修改现有设计」的视觉语言模型。它读懂版面结构，写代码改元素，再检查页面，结果全部保持可编辑。Canva 称它比自家上一代设计智能体快最多 69%、每次修改成本低 46%。本文讲它能做什么、这些数字能说明什么不能说明什么、它和 Krea 先抽品牌套件的 Ad Studio 有何不同，以及一份「只改你想改的」修改提示清单。",
+    "zht": "10 月 29 日，Canva Research 發布了 Brush：一個專門用來「修改現有設計」的視覺語言模型。它讀懂版面結構，寫程式改元素，再檢查頁面，結果全部保持可編輯。Canva 稱它比自家上一代設計智慧體快最多 69%、每次修改成本低 46%。本文講它能做什麼、這些數字能說明什麼不能說明什麼、它和 Krea 先抽品牌套件的 Ad Studio 有何不同，以及一份「只改你想改的」修改提示清單。",
+    "ja": "10月29日、Canva ResearchはBrushを発表した。既存デザインの編集に特化した視覚言語モデルで、レイアウトを読み取り、コードを書いて要素を変え、ページを確認し、結果はすべて編集可能なまま残る。Canvaは従来のエージェント比で最大69%速く、編集1回あたり46%安いとしている。何ができるか、数字が示すこと・示さないこと、ブランドキット先行のKrea Ad Studioとの違い、意図した部分だけを変える編集プロンプトのチェックリスト。",
+    "ko": "10월 29일 Canva Research는 Brush를 공개했다. 기존 디자인 편집에 특화된 비전-언어 모델로, 레이아웃을 읽고 코드를 써서 요소를 바꾸고 페이지를 확인하며 결과는 모두 편집 가능한 상태로 남는다. Canva는 이전 에이전트보다 최대 69% 빠르고 편집당 비용이 46% 낮다고 말한다. 무엇을 하는지, 숫자가 증명하는 것과 아닌 것, 브랜드 키트부터 만드는 Krea Ad Studio와의 차이, 의도한 부분만 바꾸는 편집 프롬프트 체크리스트.",
+    "ms": "Pada 29 Oktober Canva Research melancarkan Brush, model bahasa-visual yang dilatih untuk menyunting reka bentuk sedia ada: ia membaca susun atur, menulis kod untuk menukar elemen, menyemak halaman dan mengekalkan semuanya boleh disunting. Canva mendakwa suntingan sehingga 69% lebih pantas dan 46% lebih murah berbanding ejen sebelumnya. Apa yang ia buat, apa yang angka itu buktikan dan tidak, perbandingan dengan Ad Studio Krea yang bermula dengan kit jenama, dan senarai semak untuk prompt suntingan yang hanya mengubah apa yang anda maksudkan.",
+    "vi": "Ngày 29/10, Canva Research ra mắt Brush, một mô hình thị giác-ngôn ngữ được huấn luyện để chỉnh sửa thiết kế có sẵn: nó đọc bố cục, viết code để thay đổi phần tử, kiểm tra trang và giữ mọi thứ có thể chỉnh sửa. Canva nói chỉnh sửa nhanh hơn tới 69% và rẻ hơn 46% so với agent trước. Nó làm gì, các con số chứng minh được gì và không, so sánh với Ad Studio của Krea (bắt đầu từ bộ nhận diện thương hiệu), và checklist cho prompt chỉnh sửa chỉ đổi đúng thứ bạn muốn.",
+    "fr": "Le 29 octobre, Canva Research a lancé Brush, un modèle vision-langage entraîné à modifier des designs existants : il lit la mise en page, écrit du code pour changer les éléments, vérifie la page et garde tout modifiable. Canva annonce des modifications jusqu’à 69 % plus rapides et 46 % moins chères qu’avec son agent précédent. Ce qu’il fait, ce que ces chiffres prouvent ou non, la comparaison avec Ad Studio de Krea qui part d’un kit de marque, et une checklist de prompts d’édition qui ne changent que ce que vous vouliez.",
+    "es": "El 29 de octubre Canva Research lanzó Brush, un modelo de visión y lenguaje entrenado para editar diseños existentes: lee el layout, escribe código para cambiar elementos, revisa la página y deja todo editable. Canva afirma ediciones hasta un 69 % más rápidas y un 46 % más baratas que con su agente anterior. Qué hace, qué prueban y qué no esas cifras, cómo se compara con Ad Studio de Krea, que parte de un kit de marca, y una checklist de prompts de edición que cambian solo lo que querías.",
+    "de": "Am 29. Oktober hat Canva Research Brush vorgestellt, ein Vision-Language-Modell, das auf das Bearbeiten bestehender Designs trainiert ist: Es liest das Layout, schreibt Code, um Elemente zu ändern, prüft die Seite und lässt alles editierbar. Canva nennt bis zu 69 % schnellere und 46 % günstigere Bearbeitungen als mit dem bisherigen Agenten. Was es kann, was die Zahlen belegen und was nicht, der Vergleich mit Kreas Ad Studio, das beim Brand Kit beginnt, und eine Checkliste für Bearbeitungs-Prompts, die nur das ändern, was du meinst."
+   },
+   "reading_minutes": {
+    "en": 4,
+    "zh": 5
+   },
+   "cover": "https://ui.incidental.site/blog/img/canva-brush-edit-dont-regenerate-cover.webp",
+   "references": [
+    {
+     "title": "Introducing Canva Brush, a vision-language model for design",
+     "by": "Canva Research Team, Canva Newsroom",
+     "url": "https://www.canva.com/newsroom/news/canva-brush/"
+    },
+    {
+     "title": "Introducing Canva Craft",
+     "by": "Canva Newsroom",
+     "url": "https://www.canva.com/newsroom/news/canva-craft/"
+    },
+    {
+     "title": "Canva launches AI design editing model ‘Brush’",
+     "by": "Capital Brief",
+     "url": "https://www.capitalbrief.com/briefing/canva-launches-ai-design-editing-model-brush-48352e11-c62c-4319-973a-490efa945f92/"
+    },
+    {
+     "title": "Canva launches Brush, an in-house vision-language model that edits existing designs",
+     "by": "Aipolix",
+     "url": "https://aipolix.com/en-us/news/canva-brush-vision-language-model-design-editing"
+    },
+    {
+     "title": "Canva Research unveils Brush vision-language model for design editing",
+     "by": "AI Compass",
+     "url": "https://ashutoshai.com/ai-compass/2026/10/29/canva-brush/"
+    },
+    {
+     "title": "Krea launches Ad Studio, powered by the first Krea 3 “expert” dedicated to advertising",
+     "by": "Iris & Tomo, Neural Brew",
+     "url": "https://neuralbrew.ai/en/articles/2026/10/krea-launches-ad-studio-first-expert/"
+    },
+    {
+     "title": "Ad Studio",
+     "by": "Krea",
+     "url": "https://www.krea.ai/ad-studio"
+    },
+    {
+     "title": "Canva AI",
+     "by": "Canva",
+     "url": "https://www.canva.com/ai/"
+    }
+   ]
+  },
   {
    "slug": "github-replica-design-system-prototypes",
    "url": "https://ui.incidental.site/blog/github-replica-design-system-prototypes/",
