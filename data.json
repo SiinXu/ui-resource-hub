@@ -1,6 +1,6 @@
 {
  "generated": "2026-10-30",
- "count": 5050,
+ "count": 5052,
  "items": [
   {
    "id": "ued-figma-mcp-guide",
@@ -189629,6 +189629,107 @@
    "official": "https://vercel.com",
    "pub": "2026-10-29",
    "added": "2026-10-30"
+  },
+  {
+   "id": "rd-2q002o2-geist-serif-release-posters",
+   "name": "Geist Serif Release Posters",
+   "url": "https://x.com/PatrickAltair/status/2116223395083989176",
+   "note": "Three release posters for Vercel's Geist Serif typeface, each showcasing the letterforms through cascading repetition, a specimen layout, and a word list set in shades of black.",
+   "noteEn": "Three release posters for Vercel's Geist Serif typeface, each showcasing the letterforms through cascading repetition, a specimen layout, and a word list set in shades of black.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@patrickaltair",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/2q002o2-geist-serif-release-posters",
+   "rdkind": "Design",
+   "rdcat": "Posters",
+   "rdstyle": [
+    "Typographic",
+    "Editorial",
+    "High Contrast",
+    "Dark",
+    "Black & White"
+   ],
+   "author": {
+    "name": "Patrick Altair",
+    "handle": "@patrickaltair",
+    "url": "https://x.com/patrickaltair"
+   },
+   "x_post": "https://x.com/PatrickAltair/status/2116223395083989176",
+   "xsrc": {
+    "post": "https://x.com/PatrickAltair/status/2116223395083989176",
+    "author": "@PatrickAltair",
+    "likes": 7,
+    "bookmarks": 0,
+    "reposts": 2,
+    "impressions": 313,
+    "date": "2026-10-30"
+   },
+   "pub": "2026-10-30",
+   "added": "2026-10-30"
+  },
+  {
+   "id": "rd-tiv2vzr-geist-serif-font",
+   "name": "Geist Serif Font",
+   "url": "https://x.com/evilrabbit_/status/2116186171424563665",
+   "note": "Announcement film for Geist Serif, Vercel's open-source typeface, showcasing glyph construction diagrams, weight specimens from Thin to Black, and display-size letterforms in electric blue.",
+   "noteEn": "Announcement film for Geist Serif, Vercel's open-source typeface, showcasing glyph construction diagrams, weight specimens from Thin to Black, and display-size letterforms in electric blue.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@evilrabbit_",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "motion"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/tiv2vzr-geist-serif-font",
+   "rdkind": "Design",
+   "rdcat": "Motion",
+   "rdstyle": [
+    "Typographic",
+    "Minimal",
+    "Vibrant",
+    "Light"
+   ],
+   "author": {
+    "name": "Evil Rabbit",
+    "handle": "@evilrabbit_",
+    "url": "https://x.com/evilrabbit_"
+   },
+   "x_post": "https://x.com/evilrabbit_/status/2116186171424563665",
+   "xsrc": {
+    "post": "https://x.com/evilrabbit_/status/2116186171424563665",
+    "author": "@evilrabbit_",
+    "likes": 2296,
+    "bookmarks": 758,
+    "reposts": 128,
+    "impressions": 69274,
+    "date": "2026-10-30"
+   },
+   "pub": "2026-10-30",
+   "added": "2026-10-30"
   }
  ],
  "guides": [
@@ -189831,5 +189932,5 @@
    ]
   }
  ],
- "updatedAt": "2026-10-30T10:15Z"
+ "updatedAt": "2026-10-30T18:48Z"
 }
