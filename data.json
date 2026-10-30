@@ -1,6 +1,6 @@
 {
  "generated": "2026-10-30",
- "count": 5048,
+ "count": 5050,
  "items": [
   {
    "id": "ued-figma-mcp-guide",
@@ -189527,6 +189527,108 @@
    ],
    "noteEn": "New GitHub UI repo: Keeps coding agents on your design system: catches palette colors, native elements and APIs your system lacks, at every edit and pull request, with the fix. Set it up once in your  (★165, MIT, dgesteves/onsystem)",
    "added": "2026-10-30"
+  },
+  {
+   "id": "rd-atqflyp-experimental-portrait-distortion",
+   "name": "Experimental Portrait Distortion",
+   "url": "https://x.com/ingi_erlingsson/status/2115840729209594236",
+   "note": "A 3D animated portrait features extreme, surreal fleshy distortions, stretching and morphing a face into bizarre shapes against a vibrant blue background.",
+   "noteEn": "A 3D animated portrait features extreme, surreal fleshy distortions, stretching and morphing a face into bizarre shapes against a vibrant blue background.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@ingi_erlingsson",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "motion"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "3d"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/atqflyp-experimental-portrait-distortion",
+   "rdkind": "Design",
+   "rdcat": "Motion",
+   "rdstyle": [
+    "Experimental",
+    "3D",
+    "Organic",
+    "Vibrant"
+   ],
+   "author": {
+    "name": "Ingi Erlingsson 🪄",
+    "handle": "@ingi_erlingsson",
+    "url": "https://x.com/ingi_erlingsson"
+   },
+   "x_post": "https://x.com/ingi_erlingsson/status/2115840729209594236",
+   "xsrc": {
+    "post": "https://x.com/ingi_erlingsson/status/2115840729209594236",
+    "author": "@ingi_erlingsson",
+    "likes": 271,
+    "bookmarks": 66,
+    "reposts": 16,
+    "impressions": 8061,
+    "date": "2026-10-29"
+   },
+   "pub": "2026-10-30",
+   "added": "2026-10-30"
+  },
+  {
+   "id": "rd-7j8h20w-x-com",
+   "name": "Vercel Halloween Costumes",
+   "url": "https://x.com/evilrabbit_/status/2115922658089111996",
+   "note": "The Vercel triangle morphs through pixel-art Halloween costumes including a spider, devil, slime monster, vampire, and potion bottle, each triggered by a clicking cursor.",
+   "noteEn": "The Vercel triangle morphs through pixel-art Halloween costumes including a spider, devil, slime monster, vampire, and potion bottle, each triggered by a clicking cursor.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@evilrabbit_",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "motion"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "playful"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/7j8h20w-x-com",
+   "rdkind": "Design",
+   "rdcat": "Motion",
+   "rdstyle": [
+    "Geometric",
+    "Playful",
+    "Dark"
+   ],
+   "author": {
+    "name": "Evil Rabbit",
+    "handle": "@evilrabbit_",
+    "url": "https://x.com/evilrabbit_"
+   },
+   "x_post": "https://x.com/evilrabbit_/status/2115922658089111996",
+   "xsrc": {
+    "post": "https://x.com/evilrabbit_/status/2115922658089111996",
+    "author": "@evilrabbit_",
+    "likes": 250,
+    "bookmarks": 35,
+    "reposts": 10,
+    "impressions": 12455,
+    "date": "2026-10-29"
+   },
+   "official": "https://vercel.com",
+   "pub": "2026-10-29",
+   "added": "2026-10-30"
   }
  ],
  "guides": [
@@ -189729,5 +189831,5 @@
    ]
   }
  ],
- "updatedAt": "2026-10-30T05:44Z"
+ "updatedAt": "2026-10-30T07:42Z"
 }
