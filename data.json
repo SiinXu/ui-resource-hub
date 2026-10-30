@@ -1,6 +1,6 @@
 {
- "generated": "2026-10-29",
- "count": 5047,
+ "generated": "2026-10-30",
+ "count": 5048,
  "items": [
   {
    "id": "ued-figma-mcp-guide",
@@ -189498,6 +189498,35 @@
    },
    "pub": "2026-10-29",
    "added": "2026-10-29"
+  },
+  {
+   "id": "gh-dgesteves-onsystem",
+   "name": "onsystem",
+   "url": "https://onsystem.vercel.app",
+   "note": "GitHub 新晋 UI 仓库：Keeps coding agents on your design system: catches palette colors, native elements and APIs your system lacks, at every edit and pull request, with the fix. Set it up once in your （GitHub ★165，MIT 许可，仓库 dgesteves/onsystem）",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "GitHub",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "HTML",
+    "开源",
+    "自动收录"
+   ],
+   "ct": [
+    "chat"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "New GitHub UI repo: Keeps coding agents on your design system: catches palette colors, native elements and APIs your system lacks, at every edit and pull request, with the fix. Set it up once in your  (★165, MIT, dgesteves/onsystem)",
+   "added": "2026-10-30"
   }
  ],
  "guides": [
@@ -189700,5 +189729,5 @@
    ]
   }
  ],
- "updatedAt": "2026-10-29T19:11Z"
+ "updatedAt": "2026-10-30T05:44Z"
 }
