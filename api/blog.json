@@ -1,5 +1,5 @@
 {
- "count": 37,
+ "count": 38,
  "rss": "https://ui.incidental.site/blog/rss.xml",
  "categories": {
   "tools": "Tools",
@@ -18,6 +18,102 @@
   "weekly": "Series: Weekly roundup"
  },
  "posts": [
+  {
+   "slug": "generative-ui-catalogs-surfaces-a2ui",
+   "url": "https://ui.incidental.site/blog/generative-ui-catalogs-surfaces-a2ui/",
+   "date": "2026-10-31",
+   "category": "agents",
+   "series": null,
+   "featured": true,
+   "tags": [
+    "CopilotKit",
+    "A2UI",
+    "generative UI",
+    "component catalog",
+    "design systems"
+   ],
+   "title": {
+    "en": "Generative UI gets a design system: CopilotKit catalogs, surfaces and A2UI 1.0",
+    "zh": "生成式界面有了设计系统：CopilotKit 的组件目录、页面区域与 A2UI 1.0",
+    "zht": "生成式介面有了設計系統：CopilotKit 的元件目錄、頁面區域與 A2UI 1.0",
+    "ja": "生成UIにデザインシステムが入る：CopilotKitのカタログ、サーフェス、A2UI 1.0",
+    "ko": "생성형 UI에 디자인 시스템이 들어오다: CopilotKit 카탈로그, 서피스, A2UI 1.0",
+    "ms": "UI generatif kini ada sistem reka bentuk: katalog, permukaan CopilotKit dan A2UI 1.0",
+    "vi": "Generative UI có hệ thống thiết kế: catalog, surface của CopilotKit và A2UI 1.0",
+    "fr": "L’UI générative a enfin un design system : catalogues, surfaces CopilotKit et A2UI 1.0",
+    "es": "La UI generativa ya tiene sistema de diseño: catálogos, superficies de CopilotKit y A2UI 1.0",
+    "de": "Generative UI bekommt ein Designsystem: CopilotKit-Kataloge, Surfaces und A2UI 1.0"
+   },
+   "summary": {
+    "en": "On 29 October CopilotKit shipped a 70-component catalog, page “surfaces” and a markdown mode for generative UI, all on Google’s A2UI 1.0 protocol; two days earlier Google added A2UI Express, a compact format that cuts tokens up to 3×. The shift for designers: when an agent builds screens, the component catalog becomes the design system’s contract. What changed, what it means for UI teams, and a checklist for a catalog agents can’t break.",
+    "zh": "10 月 29 日，CopilotKit 为生成式界面发布了 70 个组件的标准目录、可放在页面任意位置的「surface 区域」和 Markdown 模式，全部基于 Google 的 A2UI 1.0 协议；两天前 Google 推出了 A2UI Express，一种最多省 3 倍 token 的紧凑格式。对设计师来说，变化在于：当智能体来搭界面，组件目录就成了设计系统的「合同」。本文讲改了什么、对 UI 团队意味着什么，以及一份让智能体「改不坏」的组件目录清单。",
+    "zht": "10 月 29 日，CopilotKit 為生成式介面發布了 70 個元件的標準目錄、可放在頁面任意位置的「surface 區域」和 Markdown 模式，全部基於 Google 的 A2UI 1.0 協定；兩天前 Google 推出了 A2UI Express，一種最多省 3 倍 token 的緊湊格式。對設計師來說，變化在於：當智慧體來搭介面，元件目錄就成了設計系統的「合約」。本文講改了什麼、對 UI 團隊意味著什麼，以及一份讓智慧體「改不壞」的元件目錄清單。",
+    "ja": "10月29日、CopilotKitは生成UI向けに70コンポーネントの標準カタログ、ページ上の「サーフェス」、マークダウンモードを公開した。いずれもGoogleのA2UI 1.0プロトコル上に構築されている。その2日前、Googleはトークンを最大3分の1にするコンパクト形式A2UI Expressを追加した。デザイナーにとっての変化は、エージェントが画面を組むとき、コンポーネントカタログがデザインシステムの契約になることだ。何が変わったか、UIチームへの意味、エージェントに壊されないカタログのチェックリスト。",
+    "ko": "10월 29일 CopilotKit는 생성형 UI용 70개 컴포넌트 표준 카탈로그, 페이지 위의 ‘서피스’, 마크다운 모드를 내놓았다. 모두 Google의 A2UI 1.0 프로토콜 위에 만들어졌다. 이틀 전 Google은 토큰을 최대 3배 줄이는 간결한 형식 A2UI Express를 추가했다. 디자이너에게 달라지는 점은, 에이전트가 화면을 만들 때 컴포넌트 카탈로그가 디자인 시스템의 계약이 된다는 것이다. 무엇이 바뀌었는지, UI 팀에 주는 의미, 에이전트가 깨뜨릴 수 없는 카탈로그 체크리스트.",
+    "ms": "Pada 29 Oktober CopilotKit melancarkan katalog 70 komponen, “permukaan” halaman dan mod markdown untuk UI generatif, semuanya di atas protokol A2UI 1.0 Google; dua hari sebelumnya Google menambah A2UI Express, format padat yang mengurangkan token sehingga 3×. Perubahan bagi pereka: apabila ejen membina skrin, katalog komponen menjadi kontrak sistem reka bentuk. Apa yang berubah, maksudnya bagi pasukan UI, dan senarai semak untuk katalog yang tidak boleh dirosakkan ejen.",
+    "vi": "Ngày 29/10, CopilotKit ra mắt catalog 70 component, “surface” trên trang và chế độ markdown cho generative UI, tất cả dựa trên giao thức A2UI 1.0 của Google; hai ngày trước, Google thêm A2UI Express, định dạng gọn giúp giảm token tới 3 lần. Thay đổi với designer: khi agent dựng màn hình, catalog component trở thành hợp đồng của hệ thống thiết kế. Điều gì thay đổi, ý nghĩa với đội UI, và checklist cho một catalog mà agent không thể phá.",
+    "fr": "Le 29 octobre, CopilotKit a publié un catalogue de 70 composants, des « surfaces » de page et un mode markdown pour l’UI générative, le tout sur le protocole A2UI 1.0 de Google ; deux jours plus tôt, Google ajoutait A2UI Express, un format compact qui divise les tokens jusqu’à 3. Le changement pour les designers : quand un agent construit les écrans, le catalogue de composants devient le contrat du design system. Ce qui change, ce que cela implique pour les équipes UI, et une checklist pour un catalogue que l’agent ne peut pas casser.",
+    "es": "El 29 de octubre CopilotKit lanzó un catálogo de 70 componentes, “superficies” en la página y un modo markdown para UI generativa, todo sobre el protocolo A2UI 1.0 de Google; dos días antes Google añadió A2UI Express, un formato compacto que reduce los tokens hasta 3×. El cambio para diseñadores: cuando un agente construye pantallas, el catálogo de componentes se convierte en el contrato del sistema de diseño. Qué cambió, qué significa para los equipos de UI y una checklist para un catálogo que el agente no pueda romper.",
+    "de": "Am 29. Oktober hat CopilotKit einen Katalog mit 70 Komponenten, Seiten-„Surfaces“ und einen Markdown-Modus für Generative UI veröffentlicht, alles auf Googles A2UI-1.0-Protokoll; zwei Tage zuvor brachte Google A2UI Express, ein kompaktes Format mit bis zu 3× weniger Tokens. Der Wandel für Designer: Wenn ein Agent Screens baut, wird der Komponentenkatalog zum Vertrag des Designsystems. Was sich geändert hat, was es für UI-Teams bedeutet und eine Checkliste für einen Katalog, den der Agent nicht kaputt machen kann."
+   },
+   "reading_minutes": {
+    "en": 5,
+    "zh": 6
+   },
+   "cover": "https://ui.incidental.site/blog/img/generative-ui-catalogs-surfaces-a2ui-cover.webp",
+   "references": [
+    {
+     "title": "New in Generative UI: Catalogs, Surfaces and Markdown Mode",
+     "by": "Anmol Baranwal and Eli Berman, CopilotKit Blog",
+     "url": "https://www.copilotkit.ai/blog/new-generative-ui"
+    },
+    {
+     "title": "Surfaces",
+     "by": "CopilotKit Docs",
+     "url": "https://docs.copilotkit.ai/generative-ui/components/surfaces"
+    },
+    {
+     "title": "Catalogs",
+     "by": "CopilotKit Docs",
+     "url": "https://docs.copilotkit.ai/generative-ui/components/catalogs"
+    },
+    {
+     "title": "Standard catalog",
+     "by": "CopilotKit Docs",
+     "url": "https://docs.copilotkit.ai/generative-ui/components/standard-catalog"
+    },
+    {
+     "title": "Generative UI shop example",
+     "by": "CopilotKit, GitHub",
+     "url": "https://github.com/CopilotKit/CopilotKit/tree/main/examples/v2/generative-ui-shop"
+    },
+    {
+     "title": "A2UI: a generative UI protocol for cross-platform agentic experiences",
+     "by": "A2UI project",
+     "url": "https://a2ui.org/"
+    },
+    {
+     "title": "Fast, reliable A2UI, with swappable inference formats",
+     "by": "Vishal Motwani, Google Developers Blog",
+     "url": "https://developers.googleblog.com/en/fast-reliable-a2ui/"
+    },
+    {
+     "title": "A2UI Express technical specification",
+     "by": "A2UI project",
+     "url": "https://a2ui.org/specification/proposals/express/a2ui_express/"
+    },
+    {
+     "title": "A2UI CLI v0.1.0 release",
+     "by": "a2ui-project, GitHub",
+     "url": "https://github.com/a2ui-project/a2ui/releases/tag/cli-v0.1.0"
+    },
+    {
+     "title": "Generative UI timeline",
+     "by": "AG-UI.AI",
+     "url": "https://ag-ui.ai/en/timeline"
+    }
+   ]
+  },
   {
    "slug": "canva-brush-edit-dont-regenerate",
    "url": "https://ui.incidental.site/blog/canva-brush-edit-dont-regenerate/",

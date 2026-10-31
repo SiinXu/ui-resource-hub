@@ -1,0 +1,30 @@
+<p>两年来，「生成式界面」大多意味着一个偶尔在气泡里画张图表的聊天机器人。这周它长大了。10 月 29 日，CopilotKit 大幅升级了它的生成式界面层：一个 70 个组件的标准目录，让智能体把界面渲染到你真实页面上指定区域的 <strong>surface（页面区域）</strong>，以及让文字和组件在同一条回答里一起流式输出的 Markdown 模式。底层是 <strong>A2UI</strong>，由 Google 发起、CopilotKit 等参与贡献的开放协议，1.0 规范现在处于候选版本。两天前，Google 的 A2UI 团队还发布了一种让模型更快写出 A2UI 的方式。放在一起看，这几次发布把一个重要决定从工程师手里交给了设计系统的负责人：<em>智能体能用哪些组件、用在哪里、带什么属性</em>。</p><figure><img src="../../blog/img/generative-ui-catalogs-surfaces-a2ui-1.webp" alt="CopilotKit 博客 2026 年 10 月 29 日发布生成式界面组件目录、页面区域和 Markdown 模式的文章" loading="lazy" decoding="async" width="1280" height="800"><figcaption>CopilotKit 博客 2026 年 10 月 29 日发布生成式界面组件目录、页面区域和 Markdown 模式的文章 · 截图：CopilotKit Blog（<a href="https://www.copilotkit.ai/blog/new-generative-ui" rel="noopener" target="_blank">www.copilotkit.ai</a>），2026-10-31 截取，版权归原站所有</figcaption></figure>
+<h2>这周发布了什么</h2>
+<ul><li><strong>70 个组件的标准目录。</strong>布局、文字、表单输入、表格、图片、视频、图表（基于 Recharts）和地图（基于 MapLibre），外加链接预览、引用、商品卡片、追问建议等现成区块。CopilotKit 说其中 18 个是 A2UI 的基础组件，另外 52 个是它自己的。</li>
+<li><strong>你自己的组件，带类型。</strong>用 <code>createGenerativeUI</code> 注册：每个组件有一段描述，智能体靠它决定什么时候用；还有一个属性 schema（Zod、Valibot 或 ArkType）。三个开关决定你的目录和标准目录怎么共存：<code>extends</code> 两者都保留，<code>omit</code> 移除组件、让智能体根本看不到，<code>overrides</code> 用你的组件替换标准组件。</li>
+<li><strong>聊天框之外的 surface。</strong>用 <code>GenerativeUISurface</code> 包住页面上任意区域，给它一个 id、一段说明这里该放什么的文字、允许使用的组件列表，以及一个兜底内容（你平时手工做的界面）。智能体只有在该区域出现在屏幕上时才看得到它；不在允许列表里的组件会被拒绝，并告诉智能体原因。</li>
+<li><strong>两种流式模式。</strong>工具模式（默认）通过工具调用发送界面，逐块渲染；Markdown 模式让智能体直接把界面写进回复。滑块、实时数值和表单校验都在浏览器里运行，所以和生成的界面交互不额外消耗 token。</li>
+<li><strong>防护与调试。</strong>每一块在渲染前都会对照目录检查，生成的界面不会在你的页面上执行代码，每个组件有自己的错误边界，Inspector 新增的面板会显示渲染了什么、拒绝了什么、模型看到的完整提示。在 A2UI 1.0 定稿之前，CopilotKit 把这些都标为实验功能。</li></ul><figure><img src="../../blog/img/generative-ui-catalogs-surfaces-a2ui-2.webp" alt="流程示意：设计团队定义带类型的组件目录，智能体只用该目录写 A2UI，客户端逐块校验，再用自己的组件渲染" loading="lazy" decoding="async" width="1200" height="675"><figcaption>流程示意：设计团队定义带类型的组件目录，智能体只用该目录写 A2UI，客户端逐块校验，再用自己的组件渲染 · 示意图：UI Hub 原创，CC BY 4.0</figcaption></figure>
+<h2>为什么 A2UI 和设计师有关</h2>
+<p>A2UI 的核心思路很简单：智能体不发 HTML，也不发代码，而是发一份<em>声明式描述</em>，里面只能用客户端批准过的目录里的组件，客户端再用自己的原生组件渲染（已有 Angular、Flutter、Lit、React 和 Markdown 渲染器）。这样，目录就是智能体唯一的词汇表。10 月 27 日，Google 加入了可替换的「推理格式」：模型可以写 <strong>A2UI Express</strong>，一种逐行书写的紧凑语法，再由 SDK 编译成标准 A2UI 消息。Google 称它比直接写 JSON 最多少用 3 倍 token、延迟最多降 3 倍；如果只让一个小型决策模型在你预先设计好的版式之间挑选，速度还能快得多。对设计质量最关键的一点是：提示和编译器都从你的目录 schema 生成，所以这种格式描述不出目录里没有的组件或属性。10 月 30 日，项目还发布了第一个命令行工具，可以从目录 schema 生成带类型的构建器。</p>
+<h2>我们的看法</h2>
+<p>这是智能体搭界面的正确形态，而且它改变了「结果归谁负责」。当智能体只能从带类型的目录里组合，「符合品牌」就不再是写在提示里的愿望，而是系统本身的属性：如果目录里没有霓虹渐变按钮这个变体，智能体就根本输出不了。反过来，目录的每个弱点都会暴露出来。描述含糊（「一张卡片」），智能体就什么都用它；<code>variant</code> 属性是自由文本，就等于邀请它发明样式；surface 没有好的兜底，模型慢了或错了就会留下一个洞。所以手艺往上游移：设计师应该把组件描述写成使用规范，把属性类型收窄，并为每个 surface 设计空状态、加载中和出错状态，因为这些现在都是产品的一部分。两点提醒：CopilotKit 的 API 明确是实验性的，速度数字是厂商给出的最好情况，所以要锁定版本，在你自己的页面上实测。</p>
+<h2>清单：让智能体改不坏的组件目录</h2>
+<ol><li><strong>从窄开始。</strong>每个 surface 只给它需要的组件（<code>components</code> 或 <code>omit</code>）；商品行只接受商品卡片，不接受滑块。列表越短，提示也越短。</li>
+<li><strong>替换基础组件。</strong>用你自己的 Button、Card、Input 替换标准组件，让 token、圆角和焦点样式来自你的系统，而不是库的默认值。</li>
+<li><strong>把描述写成规则。</strong>写清什么时候用、什么时候不用、不用时换成什么。智能体每次运行都会读。</li>
+<li><strong>收窄属性类型。</strong>变体和语气用枚举，数字用数字类型，标签限制长度。自由字符串正是「发明样式」的来源。</li>
+<li><strong>先设计兜底内容。</strong>每个 surface 在智能体接手之前、以及放手之后，都应该显示你手工设计的真实界面。</li>
+<li><strong>设计中间状态。</strong>流式加载骨架屏、单个组件的出错兜底，以及智能体移除 surface 后这块区域的样子。</li>
+<li><strong>用户输入不能动。</strong>用户已经填写的值绝不能被智能体覆盖，确认你的配置做到了这一点。</li>
+<li><strong>用 token 定主题，测暗色模式。</strong>生成的页面应该和手工页面通过同样的对比度检查（正文 4.5:1）。</li>
+<li><strong>看被拒绝的记录。</strong>每周看一遍 Inspector 里被拒绝的内容：反复被拒，说明缺组件或描述有误导，而不是模型不行。</li>
+<li><strong>按页面选模式。</strong>固定版式更适合预先设计好的模板、由智能体挑选；自由组合留给真正多变的页面。</li></ol>
+<pre><code>StatCard（指标卡）
+  何时用：  用户询问某个时间段内的单个指标
+  不用于：  超过 4 个数字（改用 Table）· 趋势（改用 LineChart）
+  属性：    label: string ≤ 24 · value: number · delta: number
+            tone: "up" | "down" | "flat"
+  token：   surface/raised · text/muted · 仅 tone = "up" 时用强调色</code></pre>
+<figure><img src="../../blog/img/generative-ui-catalogs-surfaces-a2ui-3.webp" alt="A2UI 项目首页，介绍协议与各规范版本" loading="lazy" decoding="async" width="1280" height="800"><figcaption>A2UI 项目首页，介绍协议与各规范版本 · 截图：A2UI（<a href="https://a2ui.org/" rel="noopener" target="_blank">a2ui.org</a>），2026-10-31 截取，版权归原站所有</figcaption></figure><h2>UI Hub 能帮什么</h2>
+<p>好的组件目录从有名字的数值开始：<a href="../design-tokens-for-agents/">给智能体的设计 Token</a> 讲了怎么把它们写下来，<a href="../lint-agents-onto-your-design-system/">用 Lint 把智能体拉回你的设计系统</a> 讲了事后怎么抓住一次性数值。智能体界面里聊天那一侧（步骤、工具调用、代码输出），见 <a href="../shadcn-trace-and-ai-elements/">shadcn Trace 与 AI Elements</a>；智能体在页面上动手时的审批与打断模式，见<a href="../agent-approval-ui-budgets-interruptions/">智能体审批界面</a>。决定目录里该放什么组件时，UI Hub 的组件页面是一份好用的清单。</p>
