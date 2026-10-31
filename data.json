@@ -1,6 +1,6 @@
 {
  "generated": "2026-10-31",
- "count": 5053,
+ "count": 5057,
  "items": [
   {
    "id": "ued-figma-mcp-guide",
@@ -189756,6 +189756,210 @@
    ],
    "noteEn": "New GitHub UI repo: PRD 한 장으로 한국 앱 스타일 모바일 화면 초안을 15분 안팎에 만드는 Claude Code·Codex 플러그인 (★219, MIT, vmc-inner-circle/k-style-ui-ux)",
    "added": "2026-10-31"
+  },
+  {
+   "id": "rd-wnq20jp-crestora-footer-design",
+   "name": "Crestora Footer Design",
+   "url": "https://x.com/PranavOriginals/status/2116207299866046817",
+   "note": "Website footer for Crestora featuring a four-column nav on a dark starfield, with a black Porsche 911 trailing vibrant rainbow light streaks across the lower half.",
+   "noteEn": "Website footer for Crestora featuring a four-column nav on a dark starfield, with a black Porsche 911 trailing vibrant rainbow light streaks across the lower half.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@pranavoriginals",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/wnq20jp-crestora-footer-design",
+   "rdkind": "Design",
+   "rdcat": "Web",
+   "rdstyle": [
+    "Illustrative",
+    "Dark",
+    "Vibrant"
+   ],
+   "author": {
+    "name": "Pranav",
+    "handle": "@pranavoriginals",
+    "url": "https://x.com/pranavoriginals"
+   },
+   "x_post": "https://x.com/PranavOriginals/status/2116207299866046817",
+   "xsrc": {
+    "post": "https://x.com/PranavOriginals/status/2116207299866046817",
+    "author": "@PranavOriginals",
+    "likes": 937,
+    "bookmarks": 395,
+    "reposts": 18,
+    "impressions": 21887,
+    "date": "2026-10-30"
+   },
+   "pub": "2026-10-31",
+   "added": "2026-10-31"
+  },
+  {
+   "id": "rd-q9ctcrf-halloween-ghost-animation",
+   "name": "Halloween Ghost Animation",
+   "url": "https://x.com/njesenberger/status/2116204264884449707",
+   "note": "A flat geometric ghost character builds itself from parts and shifts between light and dark backgrounds, ending with a friendly smile in a looping Halloween motion piece.",
+   "noteEn": "A flat geometric ghost character builds itself from parts and shifts between light and dark backgrounds, ending with a friendly smile in a looping Halloween motion piece.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@njesenberger",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "motion"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal",
+    "playful"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/q9ctcrf-halloween-ghost-animation",
+   "rdkind": "Design",
+   "rdcat": "Motion",
+   "rdstyle": [
+    "Geometric",
+    "Minimal",
+    "Playful",
+    "Black & White"
+   ],
+   "author": {
+    "name": "Nicolas Jesenberger",
+    "handle": "@njesenberger",
+    "url": "https://x.com/njesenberger"
+   },
+   "x_post": "https://x.com/njesenberger/status/2116204264884449707",
+   "xsrc": {
+    "post": "https://x.com/njesenberger/status/2116204264884449707",
+    "author": "@njesenberger",
+    "likes": 63,
+    "bookmarks": 7,
+    "reposts": 3,
+    "impressions": 1616,
+    "date": "2026-10-30"
+   },
+   "pub": "2026-10-30",
+   "added": "2026-10-31"
+  },
+  {
+   "id": "rd-792e5r8-the-blue-hour-newspaper",
+   "name": "The Blue Hour Newspaper",
+   "url": "https://x.com/kshvbgde/status/2116270360417243293",
+   "note": "A two-page broadsheet newspaper typeset in Geist Serif using Pretext, featuring editorial columns, moon phase diagrams, and blue halftone illustrations composed live.",
+   "noteEn": "A two-page broadsheet newspaper typeset in Geist Serif using Pretext, featuring editorial columns, moon phase diagrams, and blue halftone illustrations composed live.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@kshvbgde",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/792e5r8-the-blue-hour-newspaper",
+   "rdkind": "Design",
+   "rdcat": "Web",
+   "rdstyle": [
+    "Typographic",
+    "Editorial",
+    "Black & White"
+   ],
+   "author": {
+    "name": "keshav",
+    "handle": "@kshvbgde",
+    "url": "https://x.com/kshvbgde"
+   },
+   "x_post": "https://x.com/kshvbgde/status/2116270360417243293",
+   "xsrc": {
+    "post": "https://x.com/kshvbgde/status/2116270360417243293",
+    "author": "@kshvbgde",
+    "likes": 315,
+    "bookmarks": 215,
+    "reposts": 10,
+    "impressions": 10477,
+    "date": "2026-10-30"
+   },
+   "pub": "2026-10-30",
+   "added": "2026-10-31"
+  },
+  {
+   "id": "rd-vzr4zlr-lucky-air-balloon-brand-identity",
+   "name": "Lucky Air Balloon Brand Identity",
+   "url": "https://x.com/theShaneLevine/status/2116219986020880404",
+   "note": "Brand identity for LAB, a game-building platform, featuring a bold playful type system, illustrated character avatars, branded ID cards, and a 3D mascot across a vibrant blue and multicolor palette.",
+   "noteEn": "Brand identity for LAB, a game-building platform, featuring a bold playful type system, illustrated character avatars, branded ID cards, and a 3D mascot across a vibrant blue and multicolor palette.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@theshanelevine",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "3d",
+    "playful"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/vzr4zlr-lucky-air-balloon-brand-identity",
+   "rdkind": "Design",
+   "rdcat": "Branding",
+   "rdstyle": [
+    "Typographic",
+    "3D",
+    "Playful",
+    "Illustrative",
+    "Dark",
+    "Vibrant"
+   ],
+   "author": {
+    "name": "Shane Levine",
+    "handle": "@theshanelevine",
+    "url": "https://x.com/theshanelevine"
+   },
+   "x_post": "https://x.com/theShaneLevine/status/2116219986020880404",
+   "xsrc": {
+    "post": "https://x.com/theShaneLevine/status/2116219986020880404",
+    "author": "@theShaneLevine",
+    "likes": 41,
+    "bookmarks": 11,
+    "reposts": 4,
+    "impressions": 1530,
+    "date": "2026-10-30"
+   },
+   "pub": "2026-10-30",
+   "added": "2026-10-31"
   }
  ],
  "guides": [
@@ -189958,5 +190162,5 @@
    ]
   }
  ],
- "updatedAt": "2026-10-31T05:36Z"
+ "updatedAt": "2026-10-31T07:28Z"
 }
