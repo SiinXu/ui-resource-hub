@@ -1,6 +1,6 @@
 {
- "generated": "2026-10-30",
- "count": 5052,
+ "generated": "2026-10-31",
+ "count": 5053,
  "items": [
   {
    "id": "ued-figma-mcp-guide",
@@ -189730,6 +189730,32 @@
    },
    "pub": "2026-10-30",
    "added": "2026-10-30"
+  },
+  {
+   "id": "gh-vmc-inner-circle-k-style-ui-ux",
+   "name": "k-style-ui-ux",
+   "url": "https://www.vibemafiaclub.com/inner-circle",
+   "note": "GitHub 新晋 UI 仓库：PRD 한 장으로 한국 앱 스타일 모바일 화면 초안을 15분 안팎에 만드는 Claude Code·Codex 플러그인（GitHub ★219，MIT 许可，仓库 vmc-inner-circle/k-style-ui-ux）",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "GitHub",
+   "pricing": "free",
+   "tags": [
+    "HTML",
+    "开源",
+    "自动收录"
+   ],
+   "ct": [],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "New GitHub UI repo: PRD 한 장으로 한국 앱 스타일 모바일 화면 초안을 15분 안팎에 만드는 Claude Code·Codex 플러그인 (★219, MIT, vmc-inner-circle/k-style-ui-ux)",
+   "added": "2026-10-31"
   }
  ],
  "guides": [
@@ -189932,5 +189958,5 @@
    ]
   }
  ],
- "updatedAt": "2026-10-30T18:48Z"
+ "updatedAt": "2026-10-31T05:36Z"
 }

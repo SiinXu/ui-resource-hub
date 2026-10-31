@@ -1,6 +1,6 @@
 # UI Hub
 
-> Curated, multilingual directory of 5052 public UI resources (component libraries, component style demos, effects, design systems, design skills for AI agents) plus original blog analysis of AI design techniques. Data updated 2026-10-30 18:48 UTC.
+> Curated, multilingual directory of 5053 public UI resources (component libraries, component style demos, effects, design systems, design skills for AI agents) plus original blog analysis of AI design techniques. Data updated 2026-10-31 05:36 UTC.
 
 Use the JSON endpoints, not the SPA, when acting as an agent. Every entry links to its original site; licenses belong to the original authors.
 
@@ -121,11 +121,11 @@ Use the JSON endpoints, not the SPA, when acting as an agent. Every entry links 
 - [visx](https://airbnb.io/visx/): Airbnb's low-level visualization components
 
 ## FAQ
-- **What is UI Hub?** A free, curated directory of 5052 public UI resources: 234 component libraries, 1989 component style demos with light/dark screenshots, 70 design skills for AI agents, plus effects, templates, specs and tutorials. It links to original sites and never hosts paid source code.
+- **What is UI Hub?** A free, curated directory of 5053 public UI resources: 235 component libraries, 1989 component style demos with light/dark screenshots, 70 design skills for AI agents, plus effects, templates, specs and tutorials. It links to original sites and never hosts paid source code.
 - **How do I find a component in a given style?** Load https://ui.incidental.site/api/resources.json and filter by ct (component kind, e.g. "dialog") and vs (visual style, e.g. "minimal" or "motion"). type="style" entries are concrete component demos with a libName and page URL; type="library" entries are whole libraries with install info on the site.
 - **Which skills should an agent use for good UI?** One direction skill (frontend-design or taste-skill), emil-design-eng for motion and interaction polish, then impeccable, baseline-ui, web-design-guidelines and accessibility as an audit pass. See https://ui.incidental.site/api/skills.json.
 - **Can I copy the code?** Open-source libraries can be used under their own licenses (MIT, Apache-2.0 etc.); the card shows the original link. Paid tiers (marked paid/freemium) must be bought from the original vendor.
-- **How often is it updated?** Daily via a GitHub Actions job that adds new UI repositories and tools from GitHub, awesome-shadcn-ui and Hacker News. Nothing is deleted. Last update: 2026-10-30 18:48 UTC.
+- **How often is it updated?** Daily via a GitHub Actions job that adds new UI repositories and tools from GitHub, awesome-shadcn-ui and Hacker News. Nothing is deleted. Last update: 2026-10-31 05:36 UTC.
 
 
 # Blog posts (full text, English)
@@ -4813,6 +4813,7 @@ Get Hyped. Get Noticed. Get Results.
 - Vercel Halloween Costumes | inspiration | https://x.com/evilrabbit_/status/2115922658089111996 | The Vercel triangle morphs through pixel-art Halloween costumes including a spider, devil, slime monster, vampire, and potion bottle, each triggered by a clicki
 - Geist Serif Release Posters | inspiration | https://x.com/PatrickAltair/status/2116223395083989176 | Three release posters for Vercel's Geist Serif typeface, each showcasing the letterforms through cascading repetition, a specimen layout, and a word list set in
 - Geist Serif Font | inspiration | https://x.com/evilrabbit_/status/2116186171424563665 | Announcement film for Geist Serif, Vercel's open-source typeface, showcasing glyph construction diagrams, weight specimens from Thin to Black, and display-size 
+- k-style-ui-ux | library | https://www.vibemafiaclub.com/inner-circle | New GitHub UI repo: PRD 한 장으로 한국 앱 스타일 모바일 화면 초안을 15분 안팎에 만드는 Claude Code·Codex 플러그인 (★219, MIT, vmc-inner-circle/k-style-ui-ux)
 
 # Component style demos: 1989 entries, see api/resources.json (type=style)
 
