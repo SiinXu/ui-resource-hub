@@ -1,5 +1,5 @@
 {
- "count": 38,
+ "count": 39,
  "rss": "https://ui.incidental.site/blog/rss.xml",
  "categories": {
   "tools": "Tools",
@@ -18,6 +18,102 @@
   "weekly": "Series: Weekly roundup"
  },
  "posts": [
+  {
+   "slug": "ai-design-tool-shutdowns-keep-work-portable",
+   "url": "https://ui.incidental.site/blog/ai-design-tool-shutdowns-keep-work-portable/",
+   "date": "2026-11-01",
+   "category": "workflow",
+   "series": null,
+   "featured": true,
+   "tags": [
+    "Motiff",
+    "Visily",
+    "export",
+    "design tokens",
+    "portability"
+   ],
+   "title": {
+    "en": "Two AI design tools closed on 31 October: how to keep your design work portable",
+    "zh": "两款 AI 设计工具在 10 月 31 日关停：怎样让你的设计成果随时能带走",
+    "zht": "兩款 AI 設計工具在 10 月 31 日關閉：怎樣讓你的設計成果隨時能帶走",
+    "ja": "10月31日、2つのAIデザインツールが終了：デザイン資産を持ち出せる状態に保つ方法",
+    "ko": "10월 31일 두 AI 디자인 도구가 문을 닫았다: 디자인 작업을 언제든 옮길 수 있게 지키는 법",
+    "ms": "Dua alat reka bentuk AI ditutup pada 31 Oktober: cara memastikan kerja reka bentuk anda mudah dipindah",
+    "vi": "Hai công cụ thiết kế AI đóng cửa ngày 31/10: cách giữ thành quả thiết kế luôn mang đi được",
+    "fr": "Deux outils de design IA ont fermé le 31 octobre : comment garder votre travail portable",
+    "es": "Dos herramientas de diseño con IA cerraron el 31 de octubre: cómo mantener tu trabajo portable",
+    "de": "Zwei KI-Designtools schlossen am 31. Oktober: So bleibt deine Designarbeit portabel"
+   },
+   "summary": {
+    "en": "Motiff’s export window and Visily’s service both ended on 31 October 2026; Visily deletes all data on 30 November. Neither had an open file format, so what survived was whatever teams exported in time. What happened, why AI design tools are consolidating, the export ladder from code down to PNG, and a ten-point exit plan to set up before you adopt the next tool.",
+    "zh": "Motiff 的数据导出窗口和 Visily 的服务都在 2026 年 10 月 31 日结束；Visily 会在 11 月 30 日删除全部数据。两者都没有开放的文件格式，最后留下来的只有团队及时导出的东西。本文讲发生了什么、AI 设计工具为什么在收缩、从代码到 PNG 的「导出阶梯」，以及一份在采用下一个工具之前就该定好的十条退出计划。",
+    "zht": "Motiff 的資料匯出窗口和 Visily 的服務都在 2026 年 10 月 31 日結束；Visily 會在 11 月 30 日刪除全部資料。兩者都沒有開放的檔案格式，最後留下來的只有團隊及時匯出的東西。本文講發生了什麼、AI 設計工具為什麼在收縮、從程式碼到 PNG 的「匯出階梯」，以及一份在採用下一個工具之前就該定好的十條退出計畫。",
+    "ja": "Motiffのデータエクスポート期間とVisilyのサービスは、どちらも2026年10月31日に終了した。Visilyは11月30日に全データを削除する。どちらにも公開ファイル形式はなく、残ったのはチームが期限内に書き出したものだけだった。何が起きたか、AIデザインツールが集約に向かう理由、コードからPNGまでの「エクスポートの階段」、次のツールを導入する前に用意したい10項目の撤退計画。",
+    "ko": "Motiff의 데이터 내보내기 기간과 Visily의 서비스가 모두 2026년 10월 31일에 끝났고, Visily는 11월 30일에 모든 데이터를 삭제한다. 둘 다 공개 파일 형식이 없어서, 남은 것은 팀이 제때 내보낸 것뿐이었다. 무슨 일이 있었는지, AI 디자인 도구가 왜 정리되고 있는지, 코드에서 PNG까지의 ‘내보내기 사다리’, 다음 도구를 도입하기 전에 세워 둘 10가지 탈출 계획.",
+    "ms": "Tetingkap eksport data Motiff dan perkhidmatan Visily kedua-duanya tamat pada 31 Oktober 2026; Visily memadam semua data pada 30 November. Tiada satu pun mempunyai format fail terbuka, jadi yang tinggal hanyalah apa yang sempat dieksport pasukan. Apa yang berlaku, mengapa alat reka bentuk AI semakin bergabung, tangga eksport dari kod hingga PNG, dan pelan keluar 10 perkara sebelum anda menggunakan alat seterusnya.",
+    "vi": "Cửa sổ xuất dữ liệu của Motiff và dịch vụ Visily đều kết thúc ngày 31/10/2026; Visily xóa toàn bộ dữ liệu vào 30/11. Cả hai đều không có định dạng tệp mở, nên thứ còn lại chỉ là những gì đội ngũ kịp xuất ra. Chuyện gì đã xảy ra, vì sao công cụ thiết kế AI đang thu gọn, “bậc thang xuất” từ code đến PNG, và kế hoạch rút lui 10 điểm nên có trước khi dùng công cụ tiếp theo.",
+    "fr": "La fenêtre d’export de Motiff et le service Visily ont tous deux pris fin le 31 octobre 2026 ; Visily supprime toutes les données le 30 novembre. Aucun n’avait de format de fichier ouvert : ce qui a survécu, c’est ce que les équipes ont exporté à temps. Ce qui s’est passé, pourquoi les outils de design IA se concentrent, l’échelle d’export du code jusqu’au PNG, et un plan de sortie en dix points à préparer avant d’adopter le prochain outil.",
+    "es": "La ventana de exportación de Motiff y el servicio de Visily terminaron el 31 de octubre de 2026; Visily borra todos los datos el 30 de noviembre. Ninguno tenía un formato de archivo abierto, así que lo que sobrevivió fue lo que los equipos exportaron a tiempo. Qué pasó, por qué las herramientas de diseño con IA se están concentrando, la escalera de exportación del código al PNG y un plan de salida de diez puntos para preparar antes de adoptar la siguiente herramienta.",
+    "de": "Motiffs Exportfenster und der Dienst von Visily endeten beide am 31. Oktober 2026; Visily löscht alle Daten am 30. November. Keines der Tools hatte ein offenes Dateiformat, also blieb nur, was Teams rechtzeitig exportiert hatten. Was passiert ist, warum sich KI-Designtools konsolidieren, die Export-Leiter vom Code bis zum PNG und ein Exit-Plan in zehn Punkten, den du vor dem nächsten Tool aufsetzen solltest."
+   },
+   "reading_minutes": {
+    "en": 5,
+    "zh": 6
+   },
+   "cover": "https://ui.incidental.site/blog/img/ai-design-tool-shutdowns-keep-work-portable-cover.webp",
+   "references": [
+    {
+     "title": "Motiff is shutting down — what you need to know",
+     "by": "Motiff Help Center",
+     "url": "https://motiff.com/help/others/462390803479041"
+    },
+    {
+     "title": "Motiff home page (discontinued banner)",
+     "by": "Motiff",
+     "url": "https://motiff.com/home"
+    },
+    {
+     "title": "Moving from Motiff",
+     "by": "Brilliant Docs",
+     "url": "https://brilliant.design/docs/solutions/moving-from-motiff"
+    },
+    {
+     "title": "Visily is shutting down",
+     "by": "The Visily Team, Visily Blog",
+     "url": "https://www.visily.ai/blog/visily-is-shutting-down"
+    },
+    {
+     "title": "How to export designs to code",
+     "by": "Visily Support",
+     "url": "https://support.visily.ai/portal/en/kb/articles/how-to-export-designs-to-code"
+    },
+    {
+     "title": "How to export designs as images",
+     "by": "Visily Support",
+     "url": "https://support.visily.ai/portal/en/kb/articles/how-to-export-designs-as-images"
+    },
+    {
+     "title": "Visily shutdown: dates, export steps, alternatives",
+     "by": "Shutdown Watch",
+     "url": "https://shutdownwatch.com/shutdowns/visily/"
+    },
+    {
+     "title": "Week of Oct 26 to Nov 1, 2026: what changed",
+     "by": "Design Eng Index",
+     "url": "https://designengindex.com/weekly/2026-44"
+    },
+    {
+     "title": "Figma bets on design-specific AI agent as quality lags speed",
+     "by": "GMAsia News",
+     "url": "https://gmasia.ai/news/figma-bets-on-design-specific-ai-agent-as-quality-lags-speed"
+    },
+    {
+     "title": "Design Tokens Community Group (DTCG), first stable version 2025.10",
+     "by": "W3C Design Tokens Community Group",
+     "url": "https://www.designtokens.org/"
+    }
+   ]
+  },
   {
    "slug": "generative-ui-catalogs-surfaces-a2ui",
    "url": "https://ui.incidental.site/blog/generative-ui-catalogs-surfaces-a2ui/",

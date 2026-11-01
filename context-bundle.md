@@ -401,3 +401,4 @@ curl -s https://ui.incidental.site/api/resources.json | jq --arg d "$(date -u -d
 - GitHub Replica: AI prototypes that start from your design system, not a blank page — https://ui.incidental.site/kb/note/blog-github-replica-design-system-prototypes.md
 - Canva Brush: AI design moves from generating to editing — https://ui.incidental.site/kb/note/blog-canva-brush-edit-dont-regenerate.md
 - Generative UI gets a design system: CopilotKit catalogs, surfaces and A2UI 1.0 — https://ui.incidental.site/kb/note/blog-generative-ui-catalogs-surfaces-a2ui.md
+- Two AI design tools closed on 31 October: how to keep your design work portable — https://ui.incidental.site/kb/note/blog-ai-design-tool-shutdowns-keep-work-portable.md

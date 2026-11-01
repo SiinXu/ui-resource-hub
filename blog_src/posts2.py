@@ -1453,3 +1453,87 @@ dict(slug='generative-ui-catalogs-surfaces-a2ui', date='2026-10-31', cat='agents
 <p>好的组件目录从有名字的数值开始：<a href="../design-tokens-for-agents/">给智能体的设计 Token</a> 讲了怎么把它们写下来，<a href="../lint-agents-onto-your-design-system/">用 Lint 把智能体拉回你的设计系统</a> 讲了事后怎么抓住一次性数值。智能体界面里聊天那一侧（步骤、工具调用、代码输出），见 <a href="../shadcn-trace-and-ai-elements/">shadcn Trace 与 AI Elements</a>；智能体在页面上动手时的审批与打断模式，见<a href="../agent-approval-ui-budgets-interruptions/">智能体审批界面</a>。决定目录里该放什么组件时，UI Hub 的组件页面是一份好用的清单。</p>""",
  refs=[('New in Generative UI: Catalogs, Surfaces and Markdown Mode','Anmol Baranwal and Eli Berman, CopilotKit Blog','https://www.copilotkit.ai/blog/new-generative-ui'),('Surfaces','CopilotKit Docs','https://docs.copilotkit.ai/generative-ui/components/surfaces'),('Catalogs','CopilotKit Docs','https://docs.copilotkit.ai/generative-ui/components/catalogs'),('Standard catalog','CopilotKit Docs','https://docs.copilotkit.ai/generative-ui/components/standard-catalog'),('Generative UI shop example','CopilotKit, GitHub','https://github.com/CopilotKit/CopilotKit/tree/main/examples/v2/generative-ui-shop'),('A2UI: a generative UI protocol for cross-platform agentic experiences','A2UI project','https://a2ui.org/'),('Fast, reliable A2UI, with swappable inference formats','Vishal Motwani, Google Developers Blog','https://developers.googleblog.com/en/fast-reliable-a2ui/'),('A2UI Express technical specification','A2UI project','https://a2ui.org/specification/proposals/express/a2ui_express/'),('A2UI CLI v0.1.0 release','a2ui-project, GitHub','https://github.com/a2ui-project/a2ui/releases/tag/cli-v0.1.0'),('Generative UI timeline','AG-UI.AI','https://ag-ui.ai/en/timeline')]),
 ]
+POSTS2 += [
+dict(slug='ai-design-tool-shutdowns-keep-work-portable', date='2026-11-01', cat='workflow', series=None, featured=True, tags=['Motiff','Visily','export','design tokens','portability'],
+ t=T('Two AI design tools closed on 31 October: how to keep your design work portable',
+     '两款 AI 设计工具在 10 月 31 日关停：怎样让你的设计成果随时能带走',
+     '兩款 AI 設計工具在 10 月 31 日關閉：怎樣讓你的設計成果隨時能帶走',
+     '10月31日、2つのAIデザインツールが終了：デザイン資産を持ち出せる状態に保つ方法',
+     '10월 31일 두 AI 디자인 도구가 문을 닫았다: 디자인 작업을 언제든 옮길 수 있게 지키는 법',
+     'Dua alat reka bentuk AI ditutup pada 31 Oktober: cara memastikan kerja reka bentuk anda mudah dipindah',
+     'Hai công cụ thiết kế AI đóng cửa ngày 31/10: cách giữ thành quả thiết kế luôn mang đi được',
+     'Deux outils de design IA ont fermé le 31 octobre : comment garder votre travail portable',
+     'Dos herramientas de diseño con IA cerraron el 31 de octubre: cómo mantener tu trabajo portable',
+     'Zwei KI-Designtools schlossen am 31. Oktober: So bleibt deine Designarbeit portabel'),
+ s=T('Motiff’s export window and Visily’s service both ended on 31 October 2026; Visily deletes all data on 30 November. Neither had an open file format, so what survived was whatever teams exported in time. What happened, why AI design tools are consolidating, the export ladder from code down to PNG, and a ten-point exit plan to set up before you adopt the next tool.',
+     'Motiff 的数据导出窗口和 Visily 的服务都在 2026 年 10 月 31 日结束；Visily 会在 11 月 30 日删除全部数据。两者都没有开放的文件格式，最后留下来的只有团队及时导出的东西。本文讲发生了什么、AI 设计工具为什么在收缩、从代码到 PNG 的「导出阶梯」，以及一份在采用下一个工具之前就该定好的十条退出计划。',
+     'Motiff 的資料匯出窗口和 Visily 的服務都在 2026 年 10 月 31 日結束；Visily 會在 11 月 30 日刪除全部資料。兩者都沒有開放的檔案格式，最後留下來的只有團隊及時匯出的東西。本文講發生了什麼、AI 設計工具為什麼在收縮、從程式碼到 PNG 的「匯出階梯」，以及一份在採用下一個工具之前就該定好的十條退出計畫。',
+     'Motiffのデータエクスポート期間とVisilyのサービスは、どちらも2026年10月31日に終了した。Visilyは11月30日に全データを削除する。どちらにも公開ファイル形式はなく、残ったのはチームが期限内に書き出したものだけだった。何が起きたか、AIデザインツールが集約に向かう理由、コードからPNGまでの「エクスポートの階段」、次のツールを導入する前に用意したい10項目の撤退計画。',
+     'Motiff의 데이터 내보내기 기간과 Visily의 서비스가 모두 2026년 10월 31일에 끝났고, Visily는 11월 30일에 모든 데이터를 삭제한다. 둘 다 공개 파일 형식이 없어서, 남은 것은 팀이 제때 내보낸 것뿐이었다. 무슨 일이 있었는지, AI 디자인 도구가 왜 정리되고 있는지, 코드에서 PNG까지의 ‘내보내기 사다리’, 다음 도구를 도입하기 전에 세워 둘 10가지 탈출 계획.',
+     'Tetingkap eksport data Motiff dan perkhidmatan Visily kedua-duanya tamat pada 31 Oktober 2026; Visily memadam semua data pada 30 November. Tiada satu pun mempunyai format fail terbuka, jadi yang tinggal hanyalah apa yang sempat dieksport pasukan. Apa yang berlaku, mengapa alat reka bentuk AI semakin bergabung, tangga eksport dari kod hingga PNG, dan pelan keluar 10 perkara sebelum anda menggunakan alat seterusnya.',
+     'Cửa sổ xuất dữ liệu của Motiff và dịch vụ Visily đều kết thúc ngày 31/10/2026; Visily xóa toàn bộ dữ liệu vào 30/11. Cả hai đều không có định dạng tệp mở, nên thứ còn lại chỉ là những gì đội ngũ kịp xuất ra. Chuyện gì đã xảy ra, vì sao công cụ thiết kế AI đang thu gọn, “bậc thang xuất” từ code đến PNG, và kế hoạch rút lui 10 điểm nên có trước khi dùng công cụ tiếp theo.',
+     'La fenêtre d’export de Motiff et le service Visily ont tous deux pris fin le 31 octobre 2026 ; Visily supprime toutes les données le 30 novembre. Aucun n’avait de format de fichier ouvert : ce qui a survécu, c’est ce que les équipes ont exporté à temps. Ce qui s’est passé, pourquoi les outils de design IA se concentrent, l’échelle d’export du code jusqu’au PNG, et un plan de sortie en dix points à préparer avant d’adopter le prochain outil.',
+     'La ventana de exportación de Motiff y el servicio de Visily terminaron el 31 de octubre de 2026; Visily borra todos los datos el 30 de noviembre. Ninguno tenía un formato de archivo abierto, así que lo que sobrevivió fue lo que los equipos exportaron a tiempo. Qué pasó, por qué las herramientas de diseño con IA se están concentrando, la escalera de exportación del código al PNG y un plan de salida de diez puntos para preparar antes de adoptar la siguiente herramienta.',
+     'Motiffs Exportfenster und der Dienst von Visily endeten beide am 31. Oktober 2026; Visily löscht alle Daten am 30. November. Keines der Tools hatte ein offenes Dateiformat, also blieb nur, was Teams rechtzeitig exportiert hatten. Was passiert ist, warum sich KI-Designtools konsolidieren, die Export-Leiter vom Code bis zum PNG und ein Exit-Plan in zehn Punkten, den du vor dem nächsten Tool aufsetzen solltest.'),
+ en="""<p>Yesterday, 31 October 2026, was a quiet deadline for two AI design tools. <strong>Motiff</strong>, the Figma-class editor that later pivoted to AI UI generation, closed its last export window: the service itself went offline on 23 June, and Motiff says all remaining data is deleted after 31 October. <strong>Visily</strong>, the AI wireframing tool, shut down the same day and says its data will be permanently deleted on 30 November. Neither event is dramatic on its own. Together they are a useful reminder that the files in a cloud design tool are often the only copy of your work, and that the market for these tools is changing fast.</p>
+<h2>What happened</h2>
+<ul><li><strong>Motiff.</strong> The shutdown was announced on 24 April 2026, when new sign-ups and renewals stopped. The editor went offline on 23 June, and export stayed open until 31 October, with every export option made free: PNG, JPEG, WebP, PDF, Copy to Figma, HTML code, React code and a project ZIP. The motiff.com home page now shows a “discontinued” banner, and the old editor survives only as an export page.</li>
+<li><strong>Visily.</strong> Announced on 3 October, the team wrote that “the market for tools like Visily has changed substantially in the last couple of years.” Designs could be exported as images, PDF, code (React, Vue or HTML on paid plans, up to 10 screens per ZIP) or to Figma through a plugin, and assets could also be pulled through Visily’s MCP server. Free-plan image exports were limited to 1× scale.</li>
+<li><strong>No open format.</strong> As the migration guide from Brilliant points out, Motiff never published a documented file format, so there was no file to hand to a converter later. The only way out was through the exports, before the deadline.</li></ul>
+<h2>Why this keeps happening</h2>
+<p>Generating a screen has become cheap, and the large platforms now bundle it. Figma, Canva, Framer and GitHub have all shipped agents or prototyping tools in the last month that work inside your existing design system. That squeezes standalone tools whose main feature was “a prompt that makes a screen.” Figma’s own pitch this week is telling: in a survey it cited in South Korea, 62% of respondents said AI output needed six to ten rounds of revision before it could ship, and its answer is an agent that reads a team’s design context. In other words, the value has moved from the generated pixels to the decisions behind them: tokens, components, specs and the reasons for each screen. Those decisions are exactly what gets lost when they only live inside one vendor’s canvas.</p>
+<h2>Our take</h2>
+<p>Treat every AI design tool, including the big ones, as a place where work <em>happens</em>, not where it <em>lives</em>. The source of truth should sit in formats you control: code in your repository, tokens in the open DTCG JSON format (its first stable version, 2025.10, is supported by Figma, Penpot, Sketch, Framer, Tokens Studio and others), and specs and briefs in plain markdown. Then a shutdown, a price change or a pivot costs you a migration weekend instead of your archive. The test is simple: if the tool vanished tomorrow, could you rebuild your three most important screens from what is on your own disk? If the honest answer is no, fix that before you design anything else in it.</p>
+<h2>The export ladder</h2>
+<p>When you export, take the highest rung the tool offers, and take the lower rungs too. <strong>Code</strong> you can run beats a <strong>design file</strong> another tool can open; both beat <strong>structured files</strong> such as SVG and token JSON; and those beat <strong>flat images and PDF</strong>, which are a faithful record but cannot be edited. Images are still worth keeping, named by screen and date, as proof of what was agreed.</p>
+<h2>Checklist: an exit plan for any AI design tool</h2>
+<ol><li><strong>Find the export page on day one.</strong> Before your team commits, export one real screen in every format offered and open it somewhere else.</li>
+<li><strong>Check which exports are paywalled.</strong> At Visily, code and Figma exports needed a paid plan and free images were 1×. Know what you lose if you downgrade.</li>
+<li><strong>Keep tokens outside the tool.</strong> Colours, type, spacing and radii belong in a DTCG JSON file in git that the tool imports, not the other way round.</li>
+<li><strong>Put generated code in git straight away.</strong> A ZIP in a downloads folder is not a source of truth.</li>
+<li><strong>Write down the brief.</strong> Save the prompt, the constraints and the reason you chose a direction for each key screen in a markdown file next to the code.</li>
+<li><strong>Export on a schedule.</strong> Monthly, the richest format available, to storage your team owns. Batch limits (10 screens per ZIP at Visily) mean large boards take longer than you expect.</li>
+<li><strong>Bring your fonts and assets.</strong> Code exports often lose custom fonts and licensed images; keep originals and licences separately.</li>
+<li><strong>Prefer tools with an MCP server or API.</strong> Visily’s MCP server gave agents a second way to pull assets out. Programmatic access is an exit door.</li>
+<li><strong>Watch the warning signs.</strong> Renewals paused, a home page that suddenly promotes a different product, or a support article titled “what you need to know.”</li>
+<li><strong>If you just missed a deadline, ask today.</strong> Visily says data is deleted on 30 November and lists support@visily.ai for questions; it does not say whether export still works after 31 October, so ask now rather than assume.</li></ol>
+<pre><code>design-exit.md
+  tool:       &lt;name&gt; · plan: &lt;tier&gt; · owner: &lt;person&gt;
+  source:     tokens/*.json (DTCG) · src/ (code) · specs/*.md
+  exports:    monthly · code ZIP + Figma copy + PNG @2x
+  last test:  2026-11-01 · opened in &lt;other tool&gt;: OK
+  if closed:  export all · move tokens · rebuild top 3 screens</code></pre>
+<h2>How UI Hub helps</h2>
+<p>Getting values out of a tool starts with naming them: <a href="../design-tokens-for-agents/">design tokens for agents</a> covers writing tokens down in a form agents and tools can share. <a href="../figma-code-layers-and-specs/">Figma code layers and Specs</a> and <a href="../github-replica-design-system-prototypes/">GitHub Replica</a> show the platforms moving toward code and written context as the shared source. If you are choosing a replacement, <a href="../prompt-to-ui-tools-compared/">prompt-to-UI tools compared</a> is a starting point, and the tool pages on UI Hub list what each one exports.</p>""",
+ zh="""<p>昨天，2026 年 10 月 31 日，是两款 AI 设计工具一个不太起眼的截止日。<strong>Motiff</strong>，一款对标 Figma、后来转向 AI 界面生成的编辑器，关闭了最后的导出窗口：服务本身已于 6 月 23 日下线，Motiff 表示 10 月 31 日之后剩余数据全部删除。<strong>Visily</strong>，一款 AI 线框图工具，同一天关停，并表示数据将于 11 月 30 日永久删除。单看每件事都不算大新闻，放在一起却是个有用的提醒：云端设计工具里的文件，往往是你作品唯一的一份；而这类工具的市场正在快速变化。</p>
+<h2>发生了什么</h2>
+<ul><li><strong>Motiff。</strong>2026 年 4 月 24 日宣布关停，同时停止新注册和续费。编辑器 6 月 23 日下线，导出一直开放到 10 月 31 日，并且所有导出选项都改为免费：PNG、JPEG、WebP、PDF、复制到 Figma、HTML 代码、React 代码和项目 ZIP。motiff.com 首页现在挂着「已停止服务」的横幅，旧编辑器只剩一个导出页面。</li>
+<li><strong>Visily。</strong>10 月 3 日宣布，团队写道「像 Visily 这样的工具，市场在过去几年里发生了很大变化」。设计可以导出为图片、PDF、代码（付费方案支持 React、Vue 或 HTML，每个 ZIP 最多 10 个页面），或通过插件导入 Figma，素材还可以通过 Visily 的 MCP 服务器取出。免费方案的图片导出只有 1 倍尺寸。</li>
+<li><strong>没有开放格式。</strong>Brilliant 的迁移指南指出，Motiff 从未公开过有文档的文件格式，所以事后没有一个文件可以交给转换器。唯一的出路就是在截止日前导出。</li></ul>
+<h2>为什么这种事会反复发生</h2>
+<p>生成一个页面已经很便宜，而大平台正在把它打包进来。过去一个月里，Figma、Canva、Framer 和 GitHub 都推出了能在你现有设计系统里工作的智能体或原型工具。这挤压了那些主打「一句提示做出一个页面」的独立工具。Figma 这周的说法很能说明问题：它引用的一项韩国调查中，62% 的受访者说 AI 产出要改六到十轮才能上线，而它给出的答案是一个读取团队设计上下文的智能体。换句话说，价值已经从生成的像素转移到背后的决定：Token、组件、规格说明，以及每个页面为什么这样做。这些决定如果只存在于某个厂商的画布里，正是最先丢掉的东西。</p>
+<h2>我们的看法</h2>
+<p>把每一款 AI 设计工具，包括大平台，都当成工作「发生」的地方，而不是作品「存放」的地方。真正的源头应该放在你自己掌控的格式里：代码放在你的仓库，Token 用开放的 DTCG JSON 格式（首个稳定版 2025.10 已被 Figma、Penpot、Sketch、Framer、Tokens Studio 等支持），规格和需求说明用普通 Markdown。这样一来，工具关停、涨价或转型，代价是一个周末的迁移，而不是你的整个存档。检验方法很简单：如果这个工具明天消失，你能不能只靠自己硬盘上的东西，重建最重要的三个页面？如果诚实的回答是不能，先把这件事解决，再在里面设计别的。</p>
+<h2>导出阶梯</h2>
+<p>导出时，拿工具提供的最高一级，也把低几级一起拿上。能运行的<strong>代码</strong>胜过其他工具能打开的<strong>设计文件</strong>；两者都胜过 SVG、Token JSON 这类<strong>结构化文件</strong>；而这些又胜过<strong>图片和 PDF</strong>，它们忠实记录了设计，但无法编辑。图片仍然值得保留，按页面和日期命名，作为当时达成一致的凭证。</p>
+<h2>清单：任何 AI 设计工具的退出计划</h2>
+<ol><li><strong>第一天就找到导出页面。</strong>团队正式采用之前，把一个真实页面按所有可选格式各导出一次，并在别的工具里打开。</li>
+<li><strong>弄清哪些导出要付费。</strong>在 Visily，代码和 Figma 导出需要付费方案，免费图片只有 1 倍。要知道降级后会失去什么。</li>
+<li><strong>Token 放在工具之外。</strong>颜色、字体、间距和圆角应该放在 git 里的 DTCG JSON 文件中，由工具导入，而不是反过来。</li>
+<li><strong>生成的代码马上进 git。</strong>下载文件夹里的 ZIP 不是源头。</li>
+<li><strong>把需求说明写下来。</strong>每个关键页面的提示词、约束和选择这个方向的理由，存成和代码放在一起的 Markdown 文件。</li>
+<li><strong>定期导出。</strong>每月一次，用能拿到的最完整格式，存到团队自己的存储里。批量限制（Visily 每个 ZIP 最多 10 个页面）意味着大画板比你预想的更花时间。</li>
+<li><strong>字体和素材自己保管。</strong>代码导出常常丢掉自定义字体和授权图片；原文件和授权要单独保存。</li>
+<li><strong>优先选有 MCP 服务器或 API 的工具。</strong>Visily 的 MCP 服务器让智能体多了一条取出素材的路。可编程访问就是一扇出口。</li>
+<li><strong>留意预警信号。</strong>续费暂停、首页突然主推另一个产品，或者出现一篇标题叫「你需要知道的事」的帮助文章。</li>
+<li><strong>如果刚错过截止日，今天就去问。</strong>Visily 说数据在 11 月 30 日删除，并留了 support@visily.ai 作为咨询邮箱；它没有说 10 月 31 日之后还能不能导出，所以现在就问，不要想当然。</li></ol>
+<pre><code>design-exit.md（退出计划）
+  工具：     &lt;名称&gt; · 方案：&lt;档位&gt; · 负责人：&lt;姓名&gt;
+  源头：     tokens/*.json（DTCG）· src/（代码）· specs/*.md
+  导出：     每月 · 代码 ZIP + Figma 副本 + PNG @2x
+  上次测试： 2026-11-01 · 在 &lt;其他工具&gt; 中打开：正常
+  若关停：   全部导出 · 迁移 Token · 重建前三个页面</code></pre>
+<h2>UI Hub 能帮什么</h2>
+<p>把数值从工具里带出来，先要给它们起名字：<a href="../design-tokens-for-agents/">给智能体的设计 Token</a> 讲了怎么把 Token 写成智能体和工具都能共用的形式。<a href="../figma-code-layers-and-specs/">Figma 代码图层与 Specs</a> 和 <a href="../github-replica-design-system-prototypes/">GitHub Replica</a> 展示了大平台正在把代码和书面上下文当作共同的源头。如果你在挑替代工具，可以从<a href="../prompt-to-ui-tools-compared/">提示生成界面工具对比</a>开始，UI Hub 的工具页面也列出了每款工具能导出什么。</p>""",
+ refs=[('Motiff is shutting down — what you need to know','Motiff Help Center','https://motiff.com/help/others/462390803479041'),('Motiff home page (discontinued banner)','Motiff','https://motiff.com/home'),('Moving from Motiff','Brilliant Docs','https://brilliant.design/docs/solutions/moving-from-motiff'),('Visily is shutting down','The Visily Team, Visily Blog','https://www.visily.ai/blog/visily-is-shutting-down'),('How to export designs to code','Visily Support','https://support.visily.ai/portal/en/kb/articles/how-to-export-designs-to-code'),('How to export designs as images','Visily Support','https://support.visily.ai/portal/en/kb/articles/how-to-export-designs-as-images'),('Visily shutdown: dates, export steps, alternatives','Shutdown Watch','https://shutdownwatch.com/shutdowns/visily/'),('Week of Oct 26 to Nov 1, 2026: what changed','Design Eng Index','https://designengindex.com/weekly/2026-44'),('Figma bets on design-specific AI agent as quality lags speed','GMAsia News','https://gmasia.ai/news/figma-bets-on-design-specific-ai-agent-as-quality-lags-speed'),('Design Tokens Community Group (DTCG), first stable version 2025.10','W3C Design Tokens Community Group','https://www.designtokens.org/')]),
+]
