@@ -1,5 +1,9 @@
 from images import S, D
 IMAGES2 = {
+'best-animated-react-component-libraries-2026': dict(cover=dict(chips=[('Engines','Motion · React Spring'),('Copy-paste','Magic UI · React Bits'),('Check','Licence'),('Data','1 Nov 2026')]), inline=[
+  S('https://motion.dev/','Motion','Motion home page: the animation library for React, JavaScript and Vue','Motion 首页：面向 React、JavaScript 和 Vue 的动画库',captured='2026-11-01'),
+  D('checks','Choose by job, not by stars','Grid of four choices: an engine for your own components, a copy-paste collection for landing pages, one engine per project, and a licence check before shipping','按任务选择而不是看星标：自己的组件用引擎、落地页用复制即用的合集、一个项目只用一个引擎、上线前核对许可证',steps=[('Own UI','Pick an engine','Motion · React Spring · AutoAnimate'),('Landing page','Pick a collection','Magic UI · Aceternity UI · React Bits'),('Project','One engine','most collections build on Motion'),('Ship','Read the licence','MIT vs MIT + Commons Clause')]),
+  S('https://magicui.design/','Magic UI','Magic UI home page: 150+ free and open-source animated components','Magic UI 首页：150+ 个免费开源动效组件',captured='2026-11-01')]),
 'v0-prompt-to-shadcn': dict(cover=dict(chips=[('Input','Brief'),('Stack','shadcn'),('Loop','1 change/turn'),('Out','Your repo')]), inline=[
   S('https://v0.app/','v0 by Vercel','v0 home page with the prompt box','v0 首页与提示输入框'),
   D('code','A v0 brief that works','Prompt template: components, tokens, states, content','有效的 v0 提示模板：组件、Token、状态、内容',lines=[('Components','Card · Tabs · Table (sticky header)'),('Tokens','--radius .5rem · accent #2563eb · Geist'),('States','empty · loading · error · long text'),('Content','real names, real prices'),('Iterate','one change per turn, keep the rest'),('Review','CSS vars, real buttons, focus rings')]),

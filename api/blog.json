@@ -1,5 +1,5 @@
 {
- "count": 39,
+ "count": 40,
  "rss": "https://ui.incidental.site/blog/rss.xml",
  "categories": {
   "tools": "Tools",
@@ -18,6 +18,133 @@
   "weekly": "Series: Weekly roundup"
  },
  "posts": [
+  {
+   "slug": "best-animated-react-component-libraries-2026",
+   "url": "https://ui.incidental.site/blog/best-animated-react-component-libraries-2026/",
+   "date": "2026-11-01",
+   "category": "components",
+   "series": null,
+   "featured": false,
+   "tags": [
+    "React",
+    "animation",
+    "Motion",
+    "Magic UI",
+    "React Bits",
+    "Aceternity UI"
+   ],
+   "title": {
+    "en": "Best animated React component libraries 2026: Motion, Magic UI, React Bits and more",
+    "zh": "2026 年最值得用的 React 动效组件库：Motion、Magic UI、React Bits 等",
+    "zht": "2026 年最值得用的 React 動效元件庫：Motion、Magic UI、React Bits 等",
+    "ja": "2026年のReactアニメーションUIライブラリ比較：Motion、Magic UI、React Bitsなど",
+    "ko": "2026년 애니메이션 React 컴포넌트 라이브러리 비교: Motion, Magic UI, React Bits 등",
+    "ms": "Pustaka komponen React beranimasi terbaik 2026: Motion, Magic UI, React Bits dan lain-lain",
+    "vi": "Thư viện component React có hiệu ứng chuyển động đáng dùng năm 2026: Motion, Magic UI, React Bits và hơn thế",
+    "fr": "Meilleures bibliothèques de composants React animés en 2026 : Motion, Magic UI, React Bits et plus",
+    "es": "Mejores bibliotecas de componentes React animados en 2026: Motion, Magic UI, React Bits y más",
+    "de": "Die besten animierten React-Komponentenbibliotheken 2026: Motion, Magic UI, React Bits und mehr"
+   },
+   "summary": {
+    "en": "Ten animated React libraries compared with numbers read from GitHub, npm and their own sites on 1 November 2026: engines you write motion with, copy-paste collections, and the licence catch to check before shipping.",
+    "zh": "十个 React 动效库，数字均于 2026 年 11 月 1 日取自 GitHub、npm 和各自官网：自己写动效的引擎、复制即用的合集，以及上线前要查的许可证细节。",
+    "zht": "十個 React 動效庫，數字均於 2026 年 11 月 1 日取自 GitHub、npm 與各自官網：自己寫動效的引擎、複製即用的合集，以及上線前要查的授權細節。",
+    "ja": "GitHub・npm・各公式サイトから2026年11月1日に読み取った数値で、10のReactアニメーションライブラリを比較。モーションを書くエンジン、コピペ集、公開前に確認すべきライセンスの注意点。",
+    "ko": "2026년 11월 1일 GitHub·npm·각 공식 사이트에서 읽은 수치로 10개의 애니메이션 React 라이브러리를 비교합니다. 직접 모션을 쓰는 엔진, 복사해 쓰는 컬렉션, 배포 전 확인할 라이선스 함정까지.",
+    "ms": "Sepuluh pustaka React beranimasi dibandingkan dengan angka dari GitHub, npm dan laman rasmi pada 1 November 2026: enjin untuk menulis gerakan, koleksi salin-tampal, dan perangkap lesen sebelum dilancarkan.",
+    "vi": "So sánh mười thư viện React có hiệu ứng với số liệu đọc từ GitHub, npm và trang chính thức ngày 1/11/2026: engine để tự viết chuyển động, bộ sưu tập sao chép dùng ngay, và điểm cần kiểm tra về giấy phép trước khi phát hành.",
+    "fr": "Dix bibliothèques React animées comparées avec des chiffres lus sur GitHub, npm et leurs sites le 1er novembre 2026 : moteurs pour écrire le mouvement, collections à copier, et le piège de licence à vérifier avant de livrer.",
+    "es": "Diez bibliotecas React animadas comparadas con cifras leídas en GitHub, npm y sus sitios el 1 de noviembre de 2026: motores para escribir movimiento, colecciones para copiar y la trampa de licencia que hay que revisar antes de publicar.",
+    "de": "Zehn animierte React-Bibliotheken im Vergleich, mit Zahlen von GitHub, npm und den Projektseiten vom 1. November 2026: Engines zum Schreiben von Bewegung, Copy-Paste-Sammlungen und der Lizenzhaken vor dem Release."
+   },
+   "reading_minutes": {
+    "en": 5,
+    "zh": 7
+   },
+   "cover": "https://ui.incidental.site/blog/img/best-animated-react-component-libraries-2026-cover.webp",
+   "references": [
+    {
+     "title": "motiondivision/motion (README, licence, stars)",
+     "by": "GitHub",
+     "url": "https://github.com/motiondivision/motion"
+    },
+    {
+     "title": "Motion for React",
+     "by": "Motion",
+     "url": "https://motion.dev/docs/react"
+    },
+    {
+     "title": "pmndrs/react-spring",
+     "by": "GitHub",
+     "url": "https://github.com/pmndrs/react-spring"
+    },
+    {
+     "title": "formkit/auto-animate",
+     "by": "GitHub",
+     "url": "https://github.com/formkit/auto-animate"
+    },
+    {
+     "title": "Magic UI",
+     "by": "Magic UI",
+     "url": "https://magicui.design/"
+    },
+    {
+     "title": "magicuidesign/magicui",
+     "by": "GitHub",
+     "url": "https://github.com/magicuidesign/magicui"
+    },
+    {
+     "title": "Aceternity UI",
+     "by": "Aceternity",
+     "url": "https://ui.aceternity.com/"
+    },
+    {
+     "title": "React Bits",
+     "by": "React Bits",
+     "url": "https://reactbits.dev/"
+    },
+    {
+     "title": "DavidHDev/react-bits (LICENSE: MIT + Commons Clause)",
+     "by": "GitHub",
+     "url": "https://github.com/DavidHDev/react-bits/blob/main/LICENSE.md"
+    },
+    {
+     "title": "nolly-studio/cult-ui",
+     "by": "GitHub",
+     "url": "https://github.com/nolly-studio/cult-ui"
+    },
+    {
+     "title": "kokonut-labs/kokonutui",
+     "by": "GitHub",
+     "url": "https://github.com/kokonut-labs/kokonutui"
+    },
+    {
+     "title": "ibelick/motion-primitives",
+     "by": "GitHub",
+     "url": "https://github.com/ibelick/motion-primitives"
+    },
+    {
+     "title": "Animate UI",
+     "by": "Animate UI",
+     "url": "https://animate-ui.com/"
+    },
+    {
+     "title": "imskyleen/animate-ui",
+     "by": "GitHub",
+     "url": "https://github.com/imskyleen/animate-ui"
+    },
+    {
+     "title": "npm weekly downloads API (23–29 October 2026)",
+     "by": "npm",
+     "url": "https://api.npmjs.org/downloads/point/last-week/motion"
+    },
+    {
+     "title": "UI Hub resources API",
+     "by": "UI Hub",
+     "url": "https://ui.incidental.site/api/resources.json"
+    }
+   ]
+  },
   {
    "slug": "ai-design-tool-shutdowns-keep-work-portable",
    "url": "https://ui.incidental.site/blog/ai-design-tool-shutdowns-keep-work-portable/",
