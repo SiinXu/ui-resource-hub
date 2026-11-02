@@ -1,5 +1,5 @@
 {
- "count": 40,
+ "count": 41,
  "rss": "https://ui.incidental.site/blog/rss.xml",
  "categories": {
   "tools": "Tools",
@@ -18,6 +18,117 @@
   "weekly": "Series: Weekly roundup"
  },
  "posts": [
+  {
+   "slug": "stageshow-faux-product-ui-for-agents",
+   "url": "https://ui.incidental.site/blog/stageshow-faux-product-ui-for-agents/",
+   "date": "2026-11-02",
+   "category": "agents",
+   "series": null,
+   "featured": true,
+   "tags": [
+    "Stageshow",
+    "faux UI",
+    "agent skills",
+    "product demos",
+    "motion"
+   ],
+   "title": {
+    "en": "Stageshow: teaching agents to make product demos that look real",
+    "zh": "Stageshow：教智能体做出像真产品的界面演示",
+    "zht": "Stageshow：教智能體做出像真產品的介面示範",
+    "ja": "Stageshow：エージェントに本物らしい製品デモを作らせる方法",
+    "ko": "Stageshow: 에이전트가 진짜 같은 제품 데모를 만들게 하는 법",
+    "ms": "Stageshow: mengajar ejen membuat demo produk yang kelihatan sebenar",
+    "vi": "Stageshow: dạy agent làm bản demo sản phẩm trông như thật",
+    "fr": "Stageshow : apprendre aux agents à faire des démos produit crédibles",
+    "es": "Stageshow: enseñar a los agentes a crear demos de producto que parezcan reales",
+    "de": "Stageshow: Agents bringen, Produktdemos zu bauen, die echt wirken"
+   },
+   "summary": {
+    "en": "Benji Taylor’s open-source Stageshow skill, released on 31 October, writes down the judgment behind good faux product UI for coding agents: five ways mockups fail, a seven-step workflow, gold examples, a React kit and a script that films the result so the agent can check its own work. What is in it, what it gets right, the accessibility and honesty gaps you still have to close, and a ten-step checklist for your next hero demo.",
+    "zh": "Benji Taylor 在 10 月 31 日开源的 Stageshow 技能，把做好「假产品界面」（faux UI）的判断力写成了智能体能读的规则：五种常见失败、七步工作流、标杆示例、一套 React 组件，以及一个把成品录下来让智能体自查的脚本。本文讲它包含什么、做对了什么、你仍需自己补上的无障碍与诚实问题，并给出一份做下一个首屏演示时可用的十步清单。",
+    "zht": "Benji Taylor 在 10 月 31 日開源的 Stageshow 技能，把做好「假產品介面」（faux UI）的判斷力寫成了智能體能讀的規則：五種常見失敗、七步工作流程、標竿範例、一套 React 元件，以及一個把成品錄下來讓智能體自查的腳本。本文講它包含什麼、做對了什麼、你仍需自己補上的無障礙與誠實問題，並給出一份做下一個首屏示範時可用的十步清單。",
+    "ja": "Benji Taylorが10月31日に公開したオープンソースのスキル「Stageshow」は、良いフェイク製品UIを作るための判断をコーディングエージェント向けに書き出したものだ。モックアップが失敗する5つのパターン、7ステップの手順、手本となる作例、Reactキット、そして完成品を撮影してエージェント自身に確認させるスクリプト。中身、優れている点、自分で埋めるべきアクセシビリティと誠実さの課題、次のヒーローデモ用の10項目チェックリストを紹介する。",
+    "ko": "Benji Taylor가 10월 31일 공개한 오픈소스 스킬 Stageshow는 좋은 가짜 제품 UI를 만드는 판단을 코딩 에이전트가 읽을 수 있게 글로 옮겼다. 목업이 실패하는 다섯 가지 방식, 7단계 워크플로, 기준이 되는 예제, React 키트, 결과물을 촬영해 에이전트가 스스로 점검하게 하는 스크립트까지. 무엇이 들어 있는지, 무엇을 잘했는지, 직접 메워야 할 접근성과 정직성의 빈틈, 다음 히어로 데모를 위한 10단계 체크리스트를 정리했다.",
+    "ms": "Kemahiran sumber terbuka Stageshow oleh Benji Taylor, dikeluarkan pada 31 Oktober, menulis pertimbangan di sebalik UI produk tiruan yang baik untuk ejen pengekodan: lima cara mockup gagal, aliran kerja tujuh langkah, contoh rujukan, kit React dan skrip yang merakam hasil supaya ejen boleh menyemak kerjanya sendiri. Apa isinya, apa yang betul, jurang kebolehcapaian dan kejujuran yang masih perlu anda tutup, serta senarai semak sepuluh langkah untuk demo hero seterusnya.",
+    "vi": "Stageshow, skill mã nguồn mở của Benji Taylor ra mắt ngày 31/10, viết ra những phán đoán đằng sau một giao diện sản phẩm giả (faux UI) tốt để agent lập trình đọc được: năm kiểu mockup thất bại, quy trình bảy bước, ví dụ chuẩn, bộ kit React và một script quay lại kết quả để agent tự kiểm tra. Bài viết nói nó có gì, làm đúng điều gì, những lỗ hổng về khả năng tiếp cận và tính trung thực bạn vẫn phải tự lấp, cùng danh sách mười bước cho bản demo hero tiếp theo.",
+    "fr": "Stageshow, le skill open source de Benji Taylor publié le 31 octobre, met par écrit pour les agents de code le jugement qui fait une bonne fausse interface produit : cinq façons dont les maquettes échouent, une méthode en sept étapes, des exemples de référence, un kit React et un script qui filme le résultat pour que l’agent vérifie son propre travail. Ce qu’il contient, ce qu’il réussit, les manques d’accessibilité et d’honnêteté à combler vous-même, et une liste en dix étapes pour votre prochaine démo de hero.",
+    "es": "Stageshow, el skill de código abierto que Benji Taylor publicó el 31 de octubre, pone por escrito para los agentes de código el criterio detrás de una buena interfaz de producto simulada: cinco formas en que fallan los mockups, un flujo de siete pasos, ejemplos de referencia, un kit de React y un script que graba el resultado para que el agente revise su propio trabajo. Qué incluye, qué hace bien, los huecos de accesibilidad y honestidad que aún debes cubrir tú, y una lista de diez pasos para tu próxima demo de portada.",
+    "de": "Benji Taylors Open-Source-Skill Stageshow, veröffentlicht am 31. Oktober, schreibt für Coding-Agents das Urteilsvermögen hinter guter Faux-Produkt-UI auf: fünf Arten, wie Mockups scheitern, ein Ablauf in sieben Schritten, Referenzbeispiele, ein React-Kit und ein Skript, das das Ergebnis filmt, damit der Agent seine Arbeit selbst prüft. Was drin ist, was es richtig macht, welche Lücken bei Barrierefreiheit und Ehrlichkeit du selbst schließen musst, und eine Checkliste in zehn Schritten für deine nächste Hero-Demo."
+   },
+   "reading_minutes": {
+    "en": 5,
+    "zh": 6
+   },
+   "cover": "https://ui.incidental.site/blog/img/stageshow-faux-product-ui-for-agents-cover.webp",
+   "references": [
+    {
+     "title": "Stageshow",
+     "by": "Benji Taylor, benji.org",
+     "url": "https://benji.org/stageshow"
+    },
+    {
+     "title": "Stageshow launch post",
+     "by": "Benji Taylor (@benjitaylor), X",
+     "url": "https://x.com/benjitaylor/status/2116593247854453244"
+    },
+    {
+     "title": "stageshow/SKILL.md",
+     "by": "Benji Taylor, GitHub (benjitaylor/skills)",
+     "url": "https://github.com/benjitaylor/skills/blob/main/stageshow/SKILL.md"
+    },
+    {
+     "title": "Framing reference",
+     "by": "Benji Taylor, GitHub (benjitaylor/skills)",
+     "url": "https://github.com/benjitaylor/skills/blob/main/stageshow/references/framing.md"
+    },
+    {
+     "title": "Craft reference",
+     "by": "Benji Taylor, GitHub (benjitaylor/skills)",
+     "url": "https://github.com/benjitaylor/skills/blob/main/stageshow/references/craft.md"
+    },
+    {
+     "title": "Motion reference",
+     "by": "Benji Taylor, GitHub (benjitaylor/skills)",
+     "url": "https://github.com/benjitaylor/skills/blob/main/stageshow/references/motion.md"
+    },
+    {
+     "title": "Rehearse reference (filming and checks)",
+     "by": "Benji Taylor, GitHub (benjitaylor/skills)",
+     "url": "https://github.com/benjitaylor/skills/blob/main/stageshow/references/rehearse.md"
+    },
+    {
+     "title": "Notices: licence and third-party assets",
+     "by": "Benji Taylor, GitHub (benjitaylor/skills)",
+     "url": "https://github.com/benjitaylor/skills/blob/main/stageshow/NOTICE.md"
+    },
+    {
+     "title": "Stageshow skill listing",
+     "by": "agentools.sh",
+     "url": "https://agentools.sh/skills/stageshow/"
+    },
+    {
+     "title": "Reply on labelling faux UI as a mock",
+     "by": "Muscle AI (@themuscleai), X",
+     "url": "https://x.com/themuscleai/status/2116917325613908205"
+    },
+    {
+     "title": "Understanding SC 2.2.2: Pause, Stop, Hide",
+     "by": "W3C Web Accessibility Initiative",
+     "url": "https://www.w3.org/WAI/WCAG22/Understanding/pause-stop-hide.html"
+    },
+    {
+     "title": "prefers-reduced-motion",
+     "by": "MDN Web Docs",
+     "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion"
+    },
+    {
+     "title": "The open agent skills ecosystem",
+     "by": "skills.sh",
+     "url": "https://skills.sh/"
+    }
+   ]
+  },
   {
    "slug": "best-animated-react-component-libraries-2026",
    "url": "https://ui.incidental.site/blog/best-animated-react-component-libraries-2026/",

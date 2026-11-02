@@ -403,3 +403,4 @@ curl -s https://ui.incidental.site/api/resources.json | jq --arg d "$(date -u -d
 - Generative UI gets a design system: CopilotKit catalogs, surfaces and A2UI 1.0 — https://ui.incidental.site/kb/note/blog-generative-ui-catalogs-surfaces-a2ui.md
 - Two AI design tools closed on 31 October: how to keep your design work portable — https://ui.incidental.site/kb/note/blog-ai-design-tool-shutdowns-keep-work-portable.md
 - Best animated React component libraries 2026: Motion, Magic UI, React Bits and more — https://ui.incidental.site/kb/note/blog-best-animated-react-component-libraries-2026.md
+- Stageshow: teaching agents to make product demos that look real — https://ui.incidental.site/kb/note/blog-stageshow-faux-product-ui-for-agents.md

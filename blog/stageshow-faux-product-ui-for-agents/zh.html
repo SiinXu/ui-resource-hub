@@ -1,0 +1,33 @@
+<p>10 月 31 日，设计师 Benji Taylor 开源了 <strong>Stageshow</strong>，一个只做一件事的智能体技能：假产品界面（faux UI）。也就是落地页、功能卡片或文档首屏上那些缩小、简化过的产品画面，可以是一张静帧，也可以是一段带光标的短循环演示。他的观点是，好模型已经能画出这类画面，但结果往往显得笨重、一看就是生成的。Stageshow 想做的，是把设计师手工做这类画面时的上百个小决定写下来，让智能体也能做出这些决定。这条发布帖在 X 上两天内超过 130 万次浏览、2.4 万次收藏，说明很多团队都卡在同一个问题上。</p><figure><img src="../../blog/img/stageshow-faux-product-ui-for-agents-1.webp" alt="Benji Taylor 2026 年 10 月 31 日的 Stageshow 介绍页，讲解这个做假产品界面的技能，并附有用它做的示例" loading="lazy" decoding="async" width="1280" height="800"><figcaption>Benji Taylor 2026 年 10 月 31 日的 Stageshow 介绍页，讲解这个做假产品界面的技能，并附有用它做的示例 · 截图：Benji Taylor（<a href="https://benji.org/stageshow" rel="noopener" target="_blank">benji.org</a>），2026-11-02 截取，版权归原站所有</figcaption></figure>
+<h2>技能里有什么</h2>
+<ul><li><strong>一个核心观点和五种失败。</strong>演示应该看起来像真产品，简化到观众需要的程度，有意图地取景，每个动作都有原因。它会在这几种情况下失败：<em>太满</em>（每一行都是真实文字）、<em>线框图</em>（两个灰块加一个按钮）、<em>装箱</em>（整个窗口缩进一张卡片）、<em>扁平</em>（所有元素一样重）、<em>平淡</em>（不管需求要什么，都是一个灰窗口）。</li>
+<li><strong>七步工作流。</strong>媒介与位置、外观、故事、从示例开始、搭画面、编排动作、彩排。大部分质量在写代码前就决定了：演示放在哪、焦点对象是什么、发生什么动作、结果是什么、哪些可以省掉。</li>
+<li><strong>标杆示例与正反对照。</strong>几十个参考场景（首屏演示、Bento 网格、图表拖动、拖拽排序、AI 回答流式出现等）、真实产品研究，以及好坏两个版本并排对比。智能体从最接近的标杆示例复制起步，而不是从空白开始。</li>
+<li><strong>一套小型 React 组件。</strong>带脚本化 <code>Act</code> API 的 <code>Stage</code>，按真实尺寸绘制的窗口和手机，以及 <code>Roll</code>、<code>Count</code>、<code>Fly</code> 等动效部件。它负责难做的部分，但刻意不提供外观，你要把自己的 Token 映射上去。</li>
+<li><strong>把结果录下来的工具。</strong><code>film.mjs</code> 用无头 Chrome 打开页面，拍成一张联系表；<code>layout.mjs</code> 检查文字和控件是否装得下。智能体看自己拍下的画面，先修最大的问题：取景，其次层级，再次动效，最后细节。</li></ul><figure><img src="../../blog/img/stageshow-faux-product-ui-for-agents-2.webp" alt="流程示意：先规划位置与故事，复制最接近的标杆示例，用真实 Token 和文字预算搭建，再把结果录下来并先修最大的问题" loading="lazy" decoding="async" width="1200" height="675"><figcaption>流程示意：先规划位置与故事，复制最接近的标杆示例，用真实 Token 和文字预算搭建，再把结果录下来并先修最大的问题 · 示意图：UI Hub 原创，CC BY 4.0</figcaption></figure>
+<h2>值得直接借用的数字</h2>
+<p>这些规则具体到可以检查。按演示实际显示的尺寸来设计：放在文案旁的首屏约 720 × 340，通栏首屏宽 900 到 1100，卡片 400 × 300，另外为 358px 宽的手机栏单独做一版紧凑设计。控制的是文字预算，而不是元素数量：通常 3 到 7 处真实文字，其余用占位条。让首屏窗口有 10% 到 40% 被裁出画面，并至少占画面宽度的三分之二。一个故事是三到五个节拍、10 到 16 秒；结果画面停留约两秒；数据不能在画面内倒退。另外，假应用的标题用 <code>div</code>，绝不用真正的标题标签，因为演示是嵌在别人页面的大纲里的。</p>
+<h2>我们的看法</h2>
+<p>组件包有用，但真正值得学的是这个技能的结构。它把一份有名字的失败清单、可复制的标杆示例，以及让智能体<em>看见</em>自己产出的方法放在一起。大多数设计技能只做到第一点。「避免杂乱」这种规则很容易同意，也很容易被忽略；但一张录下来的画面摆在标杆示例旁边，就很难忽略。如果你在给团队写设计技能，可以照搬这个结构：失败要有名字，示例要有数字，检查要能让智能体自己跑。</p>
+<p>有两件事这个技能留给了你。第一是<strong>无障碍</strong>：一段自动播放、与其他内容并列、长达 10 到 16 秒的循环，按 WCAG 2.2.2 需要提供暂停方式；开启「减少动态效果」的读者应该看到海报帧，而不是动画。Stageshow 强调海报帧本身就要讲清故事，这让事情变简单，但接线要你自己做。第二是<strong>诚实</strong>：一张精致的假界面可能悄悄变成设计规格，或者承诺了一个还不存在的功能。只展示已经上线的东西，把示意图标注为示意图，真实产品变了就重新录。还要留意许可：代码是 MIT，但附带的应用图标和品牌标识仍归各自所有者。</p>
+<h2>清单：用智能体做下一个首屏演示</h2>
+<ol><li><strong>先安装，再看样例。</strong>运行 <code>npx skills add benjitaylor/skills --skill stageshow</code>，然后启动演示场，把和你想法最接近的标杆示例录一遍。</li>
+<li><strong>写代码前先写计划。</strong>位置和尺寸、焦点对象、唯一的动作、结果，以及要省掉什么。</li>
+<li><strong>映射你的 Token。</strong>字体、强调色、圆角、浅色或深色底，都取自你的真实产品，而不是组件包默认值。</li>
+<li><strong>定文字预算。</strong>故事相关的地方用三到七处真实文字，边缘用占位条。</li>
+<li><strong>取景。</strong>一个主体，最多一个跨在其边缘上的辅助对象，窗口从一侧出血，全画面统一一个边距。</li>
+<li><strong>编三到五个节拍。</strong>十到十六秒，每次光标移动都有理由，结果画面要停住，循环回到起点。</li>
+<li><strong>选定海报帧。</strong>能单独讲清故事的那一帧；在 <code>prefers-reduced-motion</code> 下和缩略图里都用它。</li>
+<li><strong>加暂停控件。</strong>超过五秒的自动循环需要它；给演示一个可访问的名称，并让里面的假标题不进入页面大纲。</li>
+<li><strong>两个宽度都录。</strong>桌面和 390px；先修最明显的问题，重录直到检查通过，然后自己再看一遍。</li>
+<li><strong>做一遍诚实检查。</strong>展示的每个功能今天都已存在；演示标注为示意图；有人负责在界面改版后重录。</li></ol>
+<pre><code>demo-plan.md（演示计划）
+  位置：    首页首屏，文案旁 · 720×340 · 紧凑版 358
+  焦点：    正在被指派的那一行任务
+  节拍：    打开菜单 → 选同事 → 头像落位 → 状态滚动更新
+  结果：    已指派的行停留 2 秒 · 海报帧 = 这一帧
+  文字：    任务标题 · 同事姓名 · 状态   （3 处真实文字）
+  无障碍：  暂停按钮 · 减少动态 → 海报帧 · role="img" + 名称
+  诚实：    只展示已上线功能 · 标注「示意图」</code></pre>
+<figure><img src="../../blog/img/stageshow-faux-product-ui-for-agents-3.webp" alt="Stageshow 列出的五种失败（太满、线框图、装箱、扁平、平淡）与修正方法：完整而安静的画面，只在故事发生处放真实文字" loading="lazy" decoding="async" width="1200" height="675"><figcaption>Stageshow 列出的五种失败（太满、线框图、装箱、扁平、平淡）与修正方法：完整而安静的画面，只在故事发生处放真实文字 · 示意图：UI Hub 原创，CC BY 4.0</figcaption></figure><h2>UI Hub 能帮什么</h2>
+<p>Stageshow 是越来越多设计技能中的一个；<a href="../taste-and-skills-for-agents/">教智能体审美</a>和 <a href="../claude-cursor-design-skills/">Claude 与 Cursor 的设计技能</a>讲了怎么把它们组合起来。它的动效规则可以和<a href="../motion-that-feels-right/">恰到好处的动效</a>对照着读，<a href="../landing-page-teardown-linear-vercel/">Linear 与 Vercel 落地页拆解</a>说明了为什么落地页的第一张图应该是你的真实产品。演示上线前，用 <a href="../accessibility-in-ai-generated-ui/">AI 生成界面的无障碍检查</a>过一遍。UI Hub 的技能库按角色列出了和 Stageshow 相邻的技能。</p>
