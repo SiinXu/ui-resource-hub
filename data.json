@@ -1,6 +1,6 @@
 {
- "generated": "2026-11-02",
- "count": 5057,
+ "generated": "2026-11-03",
+ "count": 5058,
  "items": [
   {
    "id": "ued-figma-mcp-guide",
@@ -189960,6 +189960,34 @@
    },
    "pub": "2026-10-30",
    "added": "2026-10-31"
+  },
+  {
+   "id": "gh-enmerasoftware-ai-design-check",
+   "name": "ai-design-check",
+   "url": "https://www.npmjs.com/package/@enmera/ai-design-check",
+   "note": "GitHub 新晋 UI 仓库：Design rules and a zero-dependency checker for interfaces built with AI coding agents, on the web and in SwiftUI and Jetpack Compose apps. English and Turkish.（GitHub ★205，MIT 许可，仓库 enmerasoftware/ai-design-check）",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "GitHub",
+   "pricing": "free",
+   "tags": [
+    "HTML",
+    "开源",
+    "自动收录"
+   ],
+   "ct": [
+    "chat"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "New GitHub UI repo: Design rules and a zero-dependency checker for interfaces built with AI coding agents, on the web and in SwiftUI and Jetpack Compose apps. English and Turkish. (★205, MIT, enmerasoftware/ai-design-check)",
+   "added": "2026-11-03"
   }
  ],
  "guides": [
@@ -190162,5 +190190,5 @@
    ]
   }
  ],
- "updatedAt": "2026-11-02T22:27Z"
+ "updatedAt": "2026-11-03T06:44Z"
 }

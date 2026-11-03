@@ -1,6 +1,6 @@
 # UI Hub
 
-> Curated, multilingual directory of 5057 public UI resources (component libraries, component style demos, effects, design systems, design skills for AI agents) plus original blog analysis of AI design techniques. Data updated 2026-11-02 22:27 UTC.
+> Curated, multilingual directory of 5058 public UI resources (component libraries, component style demos, effects, design systems, design skills for AI agents) plus original blog analysis of AI design techniques. Data updated 2026-11-03 06:44 UTC.
 
 Use the JSON endpoints, not the SPA, when acting as an agent. Every entry links to its original site; licenses belong to the original authors.
 
@@ -125,11 +125,11 @@ Use the JSON endpoints, not the SPA, when acting as an agent. Every entry links 
 - [visx](https://airbnb.io/visx/): Airbnb's low-level visualization components
 
 ## FAQ
-- **What is UI Hub?** A free, curated directory of 5057 public UI resources: 235 component libraries, 1989 component style demos with light/dark screenshots, 70 design skills for AI agents, plus effects, templates, specs and tutorials. It links to original sites and never hosts paid source code.
+- **What is UI Hub?** A free, curated directory of 5058 public UI resources: 236 component libraries, 1989 component style demos with light/dark screenshots, 70 design skills for AI agents, plus effects, templates, specs and tutorials. It links to original sites and never hosts paid source code.
 - **How do I find a component in a given style?** Load https://ui.incidental.site/api/resources.json and filter by ct (component kind, e.g. "dialog") and vs (visual style, e.g. "minimal" or "motion"). type="style" entries are concrete component demos with a libName and page URL; type="library" entries are whole libraries with install info on the site.
 - **Which skills should an agent use for good UI?** One direction skill (frontend-design or taste-skill), emil-design-eng for motion and interaction polish, then impeccable, baseline-ui, web-design-guidelines and accessibility as an audit pass. See https://ui.incidental.site/api/skills.json.
 - **Can I copy the code?** Open-source libraries can be used under their own licenses (MIT, Apache-2.0 etc.); the card shows the original link. Paid tiers (marked paid/freemium) must be bought from the original vendor.
-- **How often is it updated?** Daily via a GitHub Actions job that adds new UI repositories and tools from GitHub, awesome-shadcn-ui and Hacker News. Nothing is deleted. Last update: 2026-11-02 22:27 UTC.
+- **How often is it updated?** Daily via a GitHub Actions job that adds new UI repositories and tools from GitHub, awesome-shadcn-ui and Hacker News. Nothing is deleted. Last update: 2026-11-03 06:44 UTC.
 
 
 # Blog posts (full text, English)
@@ -5021,6 +5021,7 @@ Get Hyped. Get Noticed. Get Results.
 - Halloween Ghost Animation | inspiration | https://x.com/njesenberger/status/2116204264884449707 | A flat geometric ghost character builds itself from parts and shifts between light and dark backgrounds, ending with a friendly smile in a looping Halloween mot
 - The Blue Hour Newspaper | inspiration | https://x.com/kshvbgde/status/2116270360417243293 | A two-page broadsheet newspaper typeset in Geist Serif using Pretext, featuring editorial columns, moon phase diagrams, and blue halftone illustrations composed
 - Lucky Air Balloon Brand Identity | inspiration | https://x.com/theShaneLevine/status/2116219986020880404 | Brand identity for LAB, a game-building platform, featuring a bold playful type system, illustrated character avatars, branded ID cards, and a 3D mascot across 
+- ai-design-check | library | https://www.npmjs.com/package/@enmera/ai-design-check | New GitHub UI repo: Design rules and a zero-dependency checker for interfaces built with AI coding agents, on the web and in SwiftUI and Jetpack Compose apps. E
 
 # Component style demos: 1989 entries, see api/resources.json (type=style)
 
