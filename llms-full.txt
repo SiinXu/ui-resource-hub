@@ -1,6 +1,6 @@
 # UI Hub
 
-> Curated, multilingual directory of 5058 public UI resources (component libraries, component style demos, effects, design systems, design skills for AI agents) plus original blog analysis of AI design techniques. Data updated 2026-11-03 06:44 UTC.
+> Curated, multilingual directory of 5065 public UI resources (component libraries, component style demos, effects, design systems, design skills for AI agents) plus original blog analysis of AI design techniques. Data updated 2026-11-03 08:32 UTC.
 
 Use the JSON endpoints, not the SPA, when acting as an agent. Every entry links to its original site; licenses belong to the original authors.
 
@@ -125,11 +125,11 @@ Use the JSON endpoints, not the SPA, when acting as an agent. Every entry links 
 - [visx](https://airbnb.io/visx/): Airbnb's low-level visualization components
 
 ## FAQ
-- **What is UI Hub?** A free, curated directory of 5058 public UI resources: 236 component libraries, 1989 component style demos with light/dark screenshots, 70 design skills for AI agents, plus effects, templates, specs and tutorials. It links to original sites and never hosts paid source code.
+- **What is UI Hub?** A free, curated directory of 5065 public UI resources: 236 component libraries, 1989 component style demos with light/dark screenshots, 70 design skills for AI agents, plus effects, templates, specs and tutorials. It links to original sites and never hosts paid source code.
 - **How do I find a component in a given style?** Load https://ui.incidental.site/api/resources.json and filter by ct (component kind, e.g. "dialog") and vs (visual style, e.g. "minimal" or "motion"). type="style" entries are concrete component demos with a libName and page URL; type="library" entries are whole libraries with install info on the site.
 - **Which skills should an agent use for good UI?** One direction skill (frontend-design or taste-skill), emil-design-eng for motion and interaction polish, then impeccable, baseline-ui, web-design-guidelines and accessibility as an audit pass. See https://ui.incidental.site/api/skills.json.
 - **Can I copy the code?** Open-source libraries can be used under their own licenses (MIT, Apache-2.0 etc.); the card shows the original link. Paid tiers (marked paid/freemium) must be bought from the original vendor.
-- **How often is it updated?** Daily via a GitHub Actions job that adds new UI repositories and tools from GitHub, awesome-shadcn-ui and Hacker News. Nothing is deleted. Last update: 2026-11-03 06:44 UTC.
+- **How often is it updated?** Daily via a GitHub Actions job that adds new UI repositories and tools from GitHub, awesome-shadcn-ui and Hacker News. Nothing is deleted. Last update: 2026-11-03 08:32 UTC.
 
 
 # Blog posts (full text, English)
@@ -5022,6 +5022,13 @@ Get Hyped. Get Noticed. Get Results.
 - The Blue Hour Newspaper | inspiration | https://x.com/kshvbgde/status/2116270360417243293 | A two-page broadsheet newspaper typeset in Geist Serif using Pretext, featuring editorial columns, moon phase diagrams, and blue halftone illustrations composed
 - Lucky Air Balloon Brand Identity | inspiration | https://x.com/theShaneLevine/status/2116219986020880404 | Brand identity for LAB, a game-building platform, featuring a bold playful type system, illustrated character avatars, branded ID cards, and a 3D mascot across 
 - ai-design-check | library | https://www.npmjs.com/package/@enmera/ai-design-check | New GitHub UI repo: Design rules and a zero-dependency checker for interfaces built with AI coding agents, on the web and in SwiftUI and Jetpack Compose apps. E
+- Light Motion Study | inspiration | https://x.com/ALCrego_/status/2116980955525022151 | A looping motion piece depicting surging crowds of figures and reaching hands rendered in halftone black and white, with shifting burst-light sources driving th
+- Stock Ticker Card Interaction | inspiration | https://x.com/alexabraham/status/2117327926580625417 | A compact stock ticker pill expands into a full detail card that scrubs through TSLA's trading day, updating price and gain indicators in real time before colla
+- Motion Inspo 008 | inspiration | https://x.com/mamunrabbe/status/2117240549203935461 | A curated motion reel featuring four distinct animation experiments: a morphing glowing butterfly, kinetic city-name type, a rotating thermal specimen ring, and
+- Interactive Terrain Sculpting | inspiration | https://x.com/nicforey/status/2117330727909883967 | A dark-canvas contour map tool where draggable pins with numeric controls reshape a 3D mountain terrain in real time, splitting and growing peaks as parameters 
+- Retell Brand Identity | inspiration | https://x.com/studiobakers/status/2117215141595083137 | Brand identity for Retell AI featuring soft rendered spheres as a visual motif across editorial layouts pairing serif type with photography and dark feature car
+- Blissful Studio Posters | inspiration | https://x.com/stevelauda_/status/2117454882064281966 | Paired light and dark wheatpaste poster designs for Blissful Studio, each with torn edges and wrinkled paper texture making every print visually unique.
+- Deimos Designer Encyclopedia | inspiration | https://deimos.evilrabbit.com/ | Deimos is an AI-researched website profiling iconic designers, with editorial articles, sourced image plates, and a scrollable year-by-year lifeline for each su
 
 # Component style demos: 1989 entries, see api/resources.json (type=style)
 

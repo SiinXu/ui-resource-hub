@@ -1,6 +1,6 @@
 {
  "generated": "2026-11-03",
- "count": 5058,
+ "count": 5065,
  "items": [
   {
    "id": "ued-figma-mcp-guide",
@@ -189988,6 +189988,349 @@
    ],
    "noteEn": "New GitHub UI repo: Design rules and a zero-dependency checker for interfaces built with AI coding agents, on the web and in SwiftUI and Jetpack Compose apps. English and Turkish. (★205, MIT, enmerasoftware/ai-design-check)",
    "added": "2026-11-03"
+  },
+  {
+   "id": "rd-tquycvu-light-motion-study",
+   "name": "Light Motion Study",
+   "url": "https://x.com/ALCrego_/status/2116980955525022151",
+   "note": "A looping motion piece depicting surging crowds of figures and reaching hands rendered in halftone black and white, with shifting burst-light sources driving the camera through the mass.",
+   "noteEn": "A looping motion piece depicting surging crowds of figures and reaching hands rendered in halftone black and white, with shifting burst-light sources driving the camera through the mass.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@alcrego_",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "motion"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/tquycvu-light-motion-study",
+   "rdkind": "Design",
+   "rdcat": "Motion",
+   "rdstyle": [
+    "Experimental",
+    "High Contrast",
+    "Textured",
+    "Black & White"
+   ],
+   "author": {
+    "name": "A. L. Crego",
+    "handle": "@alcrego_",
+    "url": "https://x.com/alcrego_"
+   },
+   "x_post": "https://x.com/ALCrego_/status/2116980955525022151",
+   "xsrc": {
+    "post": "https://x.com/ALCrego_/status/2116980955525022151",
+    "author": "@ALCrego_",
+    "likes": 1721,
+    "bookmarks": 410,
+    "reposts": 257,
+    "impressions": 34433,
+    "date": "2026-11-01"
+   },
+   "pub": "2026-11-03",
+   "added": "2026-11-03"
+  },
+  {
+   "id": "rd-1sr9bt9-stock-ticker-card-interaction",
+   "name": "Stock Ticker Card Interaction",
+   "url": "https://x.com/alexabraham/status/2117327926580625417",
+   "note": "A compact stock ticker pill expands into a full detail card that scrubs through TSLA's trading day, updating price and gain indicators in real time before collapsing back.",
+   "noteEn": "A compact stock ticker pill expands into a full detail card that scrubs through TSLA's trading day, updating price and gain indicators in real time before collapsing back.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@alexabraham",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/1sr9bt9-stock-ticker-card-interaction",
+   "rdkind": "Design",
+   "rdcat": "Interface",
+   "rdstyle": [
+    "Dark"
+   ],
+   "author": {
+    "name": "alex",
+    "handle": "@alexabraham",
+    "url": "https://x.com/alexabraham"
+   },
+   "x_post": "https://x.com/alexabraham/status/2117327926580625417",
+   "xsrc": {
+    "post": "https://x.com/alexabraham/status/2117327926580625417",
+    "author": "@alexabraham",
+    "likes": 296,
+    "bookmarks": 70,
+    "reposts": 10,
+    "impressions": 11168,
+    "date": "2026-11-02"
+   },
+   "pub": "2026-11-03",
+   "added": "2026-11-03"
+  },
+  {
+   "id": "rd-7blmeso-motion-inspo-008",
+   "name": "Motion Inspo 008",
+   "url": "https://x.com/mamunrabbe/status/2117240549203935461",
+   "note": "A curated motion reel featuring four distinct animation experiments: a morphing glowing butterfly, kinetic city-name type, a rotating thermal specimen ring, and animated editorial poster cards.",
+   "noteEn": "A curated motion reel featuring four distinct animation experiments: a morphing glowing butterfly, kinetic city-name type, a rotating thermal specimen ring, and animated editorial poster cards.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@mamunrabbe",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "motion"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/7blmeso-motion-inspo-008",
+   "rdkind": "Design",
+   "rdcat": "Motion",
+   "rdstyle": [
+    "Abstract",
+    "Experimental",
+    "Dark",
+    "Vibrant"
+   ],
+   "author": {
+    "name": "Mamun",
+    "handle": "@mamunrabbe"
+   },
+   "x_post": "https://x.com/mamunrabbe/status/2117240549203935461",
+   "xsrc": {
+    "post": "https://x.com/mamunrabbe/status/2117240549203935461",
+    "author": "@mamunrabbe",
+    "likes": 497,
+    "bookmarks": 311,
+    "reposts": 36,
+    "impressions": 11287,
+    "date": "2026-11-02"
+   },
+   "pub": "2026-11-03",
+   "added": "2026-11-03"
+  },
+  {
+   "id": "rd-0b15gj9-interactive-terrain-sculpting",
+   "name": "Interactive Terrain Sculpting",
+   "url": "https://x.com/nicforey/status/2117330727909883967",
+   "note": "A dark-canvas contour map tool where draggable pins with numeric controls reshape a 3D mountain terrain in real time, splitting and growing peaks as parameters change.",
+   "noteEn": "A dark-canvas contour map tool where draggable pins with numeric controls reshape a 3D mountain terrain in real time, splitting and growing peaks as parameters change.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@nicforey",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/0b15gj9-interactive-terrain-sculpting",
+   "rdkind": "Design",
+   "rdcat": "Interface",
+   "rdstyle": [
+    "Geometric",
+    "Dark"
+   ],
+   "author": {
+    "name": "nico",
+    "handle": "@nicforey",
+    "url": "https://x.com/nicforey"
+   },
+   "x_post": "https://x.com/nicforey/status/2117330727909883967",
+   "xsrc": {
+    "post": "https://x.com/nicforey/status/2117330727909883967",
+    "author": "@nicforey",
+    "likes": 916,
+    "bookmarks": 436,
+    "reposts": 38,
+    "impressions": 23407,
+    "date": "2026-11-02"
+   },
+   "pub": "2026-11-03",
+   "added": "2026-11-03"
+  },
+  {
+   "id": "rd-p3q14g1-retell-brand-identity",
+   "name": "Retell Brand Identity",
+   "url": "https://x.com/studiobakers/status/2117215141595083137",
+   "note": "Brand identity for Retell AI featuring soft rendered spheres as a visual motif across editorial layouts pairing serif type with photography and dark feature cards.",
+   "noteEn": "Brand identity for Retell AI featuring soft rendered spheres as a visual motif across editorial layouts pairing serif type with photography and dark feature cards.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@studiobakers",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/p3q14g1-retell-brand-identity",
+   "rdkind": "Design",
+   "rdcat": "Branding",
+   "rdstyle": [
+    "Typographic",
+    "Editorial",
+    "Dark"
+   ],
+   "author": {
+    "name": "Bakers Studio",
+    "handle": "@studiobakers",
+    "url": "https://x.com/studiobakers"
+   },
+   "x_post": "https://x.com/studiobakers/status/2117215141595083137",
+   "xsrc": {
+    "post": "https://x.com/studiobakers/status/2117215141595083137",
+    "author": "@studiobakers",
+    "likes": 367,
+    "bookmarks": 223,
+    "reposts": 6,
+    "impressions": 8722,
+    "date": "2026-11-02"
+   },
+   "pub": "2026-11-03",
+   "added": "2026-11-03"
+  },
+  {
+   "id": "rd-xvkom6p-blissful-studio-posters",
+   "name": "Blissful Studio Posters",
+   "url": "https://x.com/stevelauda_/status/2117454882064281966",
+   "note": "Paired light and dark wheatpaste poster designs for Blissful Studio, each with torn edges and wrinkled paper texture making every print visually unique.",
+   "noteEn": "Paired light and dark wheatpaste poster designs for Blissful Studio, each with torn edges and wrinkled paper texture making every print visually unique.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@stevelauda_",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/xvkom6p-blissful-studio-posters",
+   "rdkind": "Design",
+   "rdcat": "Posters",
+   "rdstyle": [
+    "Typographic",
+    "Minimal",
+    "Textured",
+    "Black & White"
+   ],
+   "author": {
+    "name": "Steve Lauda",
+    "handle": "@stevelauda_",
+    "url": "https://x.com/stevelauda_"
+   },
+   "x_post": "https://x.com/stevelauda_/status/2117454882064281966",
+   "xsrc": {
+    "post": "https://x.com/stevelauda_/status/2117454882064281966",
+    "author": "@stevelauda_",
+    "likes": 28,
+    "bookmarks": 0,
+    "reposts": 1,
+    "impressions": 929,
+    "date": "2026-11-03"
+   },
+   "pub": "2026-11-03",
+   "added": "2026-11-03"
+  },
+  {
+   "id": "rd-i50sj5g-deimos-designer-encyclopedia",
+   "name": "Deimos Designer Encyclopedia",
+   "url": "https://deimos.evilrabbit.com/",
+   "note": "Deimos is an AI-researched website profiling iconic designers, with editorial articles, sourced image plates, and a scrollable year-by-year lifeline for each subject.",
+   "noteEn": "Deimos is an AI-researched website profiling iconic designers, with editorial articles, sourced image plates, and a scrollable year-by-year lifeline for each subject.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@evilrabbit_",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal",
+    "editorial"
+   ],
+   "origin": "site",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/i50sj5g-deimos-designer-encyclopedia",
+   "rdkind": "Design",
+   "rdcat": "Web",
+   "rdstyle": [
+    "Minimal",
+    "Editorial",
+    "Light"
+   ],
+   "author": {
+    "name": "Evil Rabbit",
+    "handle": "@evilrabbit_",
+    "url": "https://x.com/evilrabbit_"
+   },
+   "x_post": "https://x.com/evilrabbit_/status/2117459591508427009",
+   "xsrc": {
+    "post": "https://x.com/evilrabbit_/status/2117459591508427009",
+    "author": "@evilrabbit_",
+    "likes": 605,
+    "bookmarks": 537,
+    "reposts": 29,
+    "impressions": 20572,
+    "date": "2026-11-03"
+   },
+   "official": "https://deimos.evilrabbit.com/",
+   "pub": "2026-11-03",
+   "added": "2026-11-03"
   }
  ],
  "guides": [
@@ -190190,5 +190533,5 @@
    ]
   }
  ],
- "updatedAt": "2026-11-03T06:44Z"
+ "updatedAt": "2026-11-03T08:32Z"
 }
