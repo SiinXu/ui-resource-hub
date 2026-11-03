@@ -1633,3 +1633,96 @@ dict(slug='stageshow-faux-product-ui-for-agents', date='2026-11-02', cat='agents
 <p>Stageshow 是越来越多设计技能中的一个；<a href="../taste-and-skills-for-agents/">教智能体审美</a>和 <a href="../claude-cursor-design-skills/">Claude 与 Cursor 的设计技能</a>讲了怎么把它们组合起来。它的动效规则可以和<a href="../motion-that-feels-right/">恰到好处的动效</a>对照着读，<a href="../landing-page-teardown-linear-vercel/">Linear 与 Vercel 落地页拆解</a>说明了为什么落地页的第一张图应该是你的真实产品。演示上线前，用 <a href="../accessibility-in-ai-generated-ui/">AI 生成界面的无障碍检查</a>过一遍。UI Hub 的技能库按角色列出了和 Stageshow 相邻的技能。</p>""",
  refs=[('Stageshow','Benji Taylor, benji.org','https://benji.org/stageshow'),('Stageshow launch post','Benji Taylor (@benjitaylor), X','https://x.com/benjitaylor/status/2116593247854453244'),('stageshow/SKILL.md','Benji Taylor, GitHub (benjitaylor/skills)','https://github.com/benjitaylor/skills/blob/main/stageshow/SKILL.md'),('Framing reference','Benji Taylor, GitHub (benjitaylor/skills)','https://github.com/benjitaylor/skills/blob/main/stageshow/references/framing.md'),('Craft reference','Benji Taylor, GitHub (benjitaylor/skills)','https://github.com/benjitaylor/skills/blob/main/stageshow/references/craft.md'),('Motion reference','Benji Taylor, GitHub (benjitaylor/skills)','https://github.com/benjitaylor/skills/blob/main/stageshow/references/motion.md'),('Rehearse reference (filming and checks)','Benji Taylor, GitHub (benjitaylor/skills)','https://github.com/benjitaylor/skills/blob/main/stageshow/references/rehearse.md'),('Notices: licence and third-party assets','Benji Taylor, GitHub (benjitaylor/skills)','https://github.com/benjitaylor/skills/blob/main/stageshow/NOTICE.md'),('Stageshow skill listing','agentools.sh','https://agentools.sh/skills/stageshow/'),('Reply on labelling faux UI as a mock','Muscle AI (@themuscleai), X','https://x.com/themuscleai/status/2116917325613908205'),('Understanding SC 2.2.2: Pause, Stop, Hide','W3C Web Accessibility Initiative','https://www.w3.org/WAI/WCAG22/Understanding/pause-stop-hide.html'),('prefers-reduced-motion','MDN Web Docs','https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion'),('The open agent skills ecosystem','skills.sh','https://skills.sh/')]),
 ]
+
+POSTS2 += [
+dict(slug='figma-shaders-ga-ship-shader-backgrounds', date='2026-11-03', cat='tools', series=None, featured=True, tags=['Figma','shaders','code layers','WebGL','accessibility'],
+ t=T('Figma shaders are generally available: how to ship shader backgrounds that stay fast and readable',
+     'Figma 着色器全面开放：怎样上线既流畅又易读的着色器背景',
+     'Figma 著色器全面開放：怎樣上線既流暢又易讀的著色器背景',
+     'Figmaのシェーダーが一般提供に：速さと読みやすさを保ったシェーダー背景の出し方',
+     'Figma 셰이더 정식 출시: 빠르고 읽기 쉬운 셰이더 배경을 내보내는 법',
+     'Shader Figma kini tersedia umum: cara menghantar latar shader yang laju dan mudah dibaca',
+     'Shader của Figma đã phát hành chính thức: cách đưa nền shader lên web mà vẫn nhanh và dễ đọc',
+     'Les shaders de Figma sont disponibles pour tous : livrer des fonds shader rapides et lisibles',
+     'Los shaders de Figma ya están disponibles para todos: cómo publicar fondos con shaders rápidos y legibles',
+     'Figma-Shader sind allgemein verfügbar: Shader-Hintergründe ausliefern, die schnell und lesbar bleiben'),
+ s=T('On 2 November Figma made shaders generally available, raised export to 4096 px and let shaders travel into code layers. That moves glowing gradients, grain and glass effects from mockups toward real pages. What changed, what is still unclear, and a checklist for shipping a shader without hurting contrast, motion comfort or battery life.',
+     '11 月 2 日，Figma 把着色器（shader）开放给所有用户，导出上限提高到 4096 像素，并让着色器可以进入代码图层。发光渐变、颗粒和玻璃效果因此从设计稿更接近真实页面。本文讲改了什么、还有什么不清楚，以及一份在不牺牲对比度、动效舒适度和电量的前提下上线着色器的清单。',
+     '11 月 2 日，Figma 把著色器（shader）開放給所有使用者，匯出上限提高到 4096 像素，並讓著色器可以進入程式碼圖層。發光漸層、顆粒和玻璃效果因此從設計稿更接近真實頁面。本文講改了什麼、還有什麼不清楚，以及一份在不犧牲對比度、動效舒適度和電量的前提下上線著色器的清單。',
+     '11月2日、Figmaはシェーダーを全ユーザーに一般提供し、書き出しを最大4096pxに引き上げ、シェーダーをコードレイヤーに持ち込めるようにした。光るグラデーションやグレイン、ガラス表現がモックから実際のページに近づく。何が変わったか、まだ不明な点、そしてコントラスト・動きへの配慮・バッテリーを損なわずにシェーダーを出すためのチェックリスト。',
+     'Figma는 11월 2일 셰이더를 모든 사용자에게 정식 제공하고, 내보내기 해상도를 4096px까지 올렸으며, 셰이더를 코드 레이어로 가져갈 수 있게 했다. 빛나는 그라데이션, 그레인, 유리 효과가 목업에서 실제 페이지로 한 걸음 다가섰다. 무엇이 바뀌었는지, 아직 불분명한 점, 그리고 대비·모션 편안함·배터리를 해치지 않고 셰이더를 출시하는 체크리스트.',
+     'Pada 2 November Figma menjadikan shader tersedia umum, menaikkan eksport hingga 4096 px dan membolehkan shader dibawa ke lapisan kod. Kecerunan bercahaya, butiran dan kesan kaca kini lebih dekat ke halaman sebenar. Apa yang berubah, apa yang masih belum jelas, dan senarai semak untuk menghantar shader tanpa menjejaskan kontras, keselesaan gerakan atau bateri.',
+     'Ngày 2/11, Figma phát hành chính thức shader cho mọi người dùng, nâng mức xuất lên 4096 px và cho phép đưa shader vào code layer. Gradient phát sáng, hạt nhiễu và hiệu ứng kính vì thế tiến gần hơn tới trang thật. Điều gì đã thay đổi, điều gì còn chưa rõ, và danh sách kiểm tra để đưa shader lên mà không làm hỏng độ tương phản, sự dễ chịu khi chuyển động hay thời lượng pin.',
+     'Le 2 novembre, Figma a ouvert les shaders à tous, porté l’export à 4096 px et permis aux shaders de passer dans les code layers. Dégradés lumineux, grain et effets de verre se rapprochent ainsi des vraies pages. Ce qui change, ce qui reste flou, et une liste pour livrer un shader sans nuire au contraste, au confort de mouvement ni à la batterie.',
+     'El 2 de noviembre Figma abrió los shaders a todos los usuarios, subió la exportación a 4096 px y permitió llevarlos a las code layers. Los degradados luminosos, el grano y los efectos de cristal quedan así más cerca de las páginas reales. Qué cambió, qué sigue sin estar claro y una lista para publicar un shader sin perjudicar el contraste, la comodidad con el movimiento ni la batería.',
+     'Am 2. November hat Figma Shader für alle freigegeben, den Export auf 4096 px erhöht und Shader in Code-Layer übertragbar gemacht. Leuchtende Verläufe, Körnung und Glaseffekte rücken damit vom Mockup näher an echte Seiten. Was sich geändert hat, was noch offen ist, und eine Checkliste, um Shader auszuliefern, ohne Kontrast, Bewegungskomfort oder Akku zu opfern.'),
+ en="""<p>On 2 November Figma shipped a short release note with a big consequence: <strong>shaders are now generally available to all users</strong>, they render and export at up to <strong>4096 px</strong>, and they can be included when you use “build this with code” to turn a design into a <strong>code layer</strong>. Inside a code layer the shader runs when the layer is set to Play. Figma says this part works in the browser on Chrome 157 and is rolling out this week. A week earlier, on 27 October, shaders also gained version history, with an agent-written description for each version.</p>
+<p>Put together, a shader is no longer a canvas trick that ends up as a flat PNG or a looping MP4 at handoff. It can stay code. Designers replying to Figma’s announcement on X picked up on exactly that, and one asked the question nobody has answered yet: does the shader stay editable once it lands in code, or is it flattened? That is worth testing before you plan around it.</p>
+<h2>What a Figma shader is</h2>
+<ul><li><strong>Shader fills</strong> replace a layer’s fill with a generated visual: patterns, mesh gradients, noise, procedural textures such as marble or water. They can be static or animated, apply to fills and strokes, and stack with ordinary fills.</li>
+<li><strong>Shader effects</strong> take the layer’s existing pixels as input and change them: grain, blur, distortion, halftone, dithering, colour shifts, even hover-triggered motion.</li>
+<li><strong>You build them by prompting.</strong> Open the Figma agent and ask it to “build me a shader”, describe what you want to see, and name the controls you want, such as a slider for glow intensity. Figma’s own tips: say “shader” explicitly (“make me a mesh gradient” may give you a plain image fill), use real-world references (“like a risograph print”), and state what must survive, such as legible text, crisp edges or brand hues.</li>
+<li><strong>They behave like design-system parts.</strong> Combinations of shader fills or effects can be saved as styles and published to a team library, and you can view the code behind each one.</li></ul>
+<h2>What changed on 2 November, and what did not</h2>
+<p>Three things changed: general availability, the 4096 px export ceiling, and the path into code layers. The higher export matters more than it sounds, because a sharp still is exactly what you need as the fallback for a live shader. The code layer path matters because it is the first official route from a Figma shader to running code rather than a video.</p>
+<p>Some things did not change. On the canvas only one animated or interactive shader plays per page at a time. Code layers are still in open beta, and code layer generation is free on paid plans only through 4 November; after that it uses AI credits like other agent features. And a code layer is a prototype on the canvas, not your production stack, so treat it as a working reference for engineering, not the final component.</p>
+<h2>Our take</h2>
+<p>Shaders are the most “fancy” thing a design tool can hand to a developer, and that is the risk. The same properties that make them striking are the ones that break pages: they move behind text, they change brightness frame by frame, and they keep a GPU busy whether anyone is looking or not. A shader that looked fine in a Figma frame can fail contrast on its brightest frame, drain a phone battery, or run a full-screen loop for a reader who asked their system for reduced motion.</p>
+<p>So treat a shader like a design token with rules attached, not like an image. Decide where it is allowed (hero backgrounds and illustrations, not behind body copy), how bright it may get, whether it may move, and what replaces it when it cannot run. If you code shaders directly instead of going through Figma, small libraries such as Paper Shaders (zero-dependency WebGL shaders for React and vanilla JavaScript, Apache-2.0, about 1.3 million npm downloads in the week to 2 November) make that easy, but their docs ask you to pin an exact version because breaking changes still ship under 0.0.x.</p>
+<h2>Checklist: shipping a shader background</h2>
+<ol><li><strong>Prompt for controls, not just a look.</strong> Ask the agent for named sliders (intensity, speed, scale) and for what must stay unchanged, so engineering can tune it without a new prompt.</li>
+<li><strong>Save it as a style.</strong> Publish the shader to the team library so every screen uses the same one, and lean on version history when someone changes it.</li>
+<li><strong>Export a 4096 px poster.</strong> Use the sharpest still as the fallback image, the social card and the first paint before WebGL starts.</li>
+<li><strong>Check contrast on the worst frame.</strong> Body text needs 4.5:1 against the brightest moment of the animation, not the average. Add a scrim behind text if needed.</li>
+<li><strong>Respect reduced motion.</strong> Under <code>prefers-reduced-motion: reduce</code>, show the poster or set speed to zero.</li>
+<li><strong>Give long motion a pause.</strong> If it moves for more than five seconds next to other content, WCAG 2.2.2 asks for a way to pause, stop or hide it.</li>
+<li><strong>Stop when nobody is looking.</strong> Pause the render loop when the canvas leaves the viewport (Intersection Observer) or the tab is hidden.</li>
+<li><strong>Budget live canvases.</strong> One live shader per view; everything else uses its still. Browsers cap how many WebGL contexts a page can hold.</li>
+<li><strong>Test the code layer handoff.</strong> Build one design with a shader into a code layer and check whether its controls survive, before a team depends on it.</li>
+<li><strong>Pin and record.</strong> Pin the shader library version in <code>package.json</code> and note which Figma style version the code matches.</li></ol>
+<pre><code>shader-spec.md
+  name:      hero-glow (Figma style v3)
+  where:     hero background only, never behind body copy
+  controls:  intensity 0–1 · speed 0–0.4 · hue locked to brand
+  poster:    hero-glow@4096.webp (first paint, og image, reduced motion)
+  contrast:  headline + CTA ≥ 4.5:1 on brightest frame · scrim 40%
+  motion:    pause button · stops offscreen and on hidden tab
+  budget:    1 live canvas per view</code></pre>
+<h2>How UI Hub helps</h2>
+<p>For the code layer workflow itself, read <a href="../figma-code-layers-and-specs/">Figma code layers and Specs</a>. Motion rules from <a href="../motion-that-feels-right/">motion that feels right</a> apply to shaders too, and <a href="../oklch-color-and-dark-mode/">OKLCH colour and dark mode</a> helps you keep a shader inside your palette on both themes. Before shipping, run the checks in <a href="../accessibility-in-ai-generated-ui/">accessibility in AI-generated UI</a>, and if you would rather code the effect, compare options in <a href="../best-animated-react-component-libraries-2026/">the best animated React component libraries of 2026</a>.</p>""",
+ zh="""<p>11 月 2 日，Figma 发布了一条篇幅很短、影响却不小的更新：<strong>着色器（shader）现已向所有用户正式开放</strong>，渲染和导出分辨率最高可达 <strong>4096 像素</strong>，并且在用「build this with code」把设计转换为<strong>代码图层</strong>时，可以把着色器一起带进去。在代码图层里，把图层设为 Play 后着色器就会运行。Figma 表示这一部分需要在浏览器中使用 Chrome 157，本周陆续上线。一周前的 10 月 27 日，着色器还加入了版本历史，每个版本都有一段由智能体写的说明。</p>
+<p>把这些放在一起看，着色器不再是一个在交付时被压成静态 PNG 或循环 MP4 的画布技巧，它可以一直保持为代码。在 X 上回复 Figma 公告的设计师们注意到的正是这一点，其中一位提出了目前还没人回答的问题：着色器进入代码后还能继续编辑吗，还是会被拍平？在围绕它做规划之前，值得先自己测一下。</p>
+<h2>Figma 的着色器是什么</h2>
+<ul><li><strong>着色器填充</strong>用生成的画面替换图层的填充：图案、网格渐变、噪点，以及大理石、水面这类程序化纹理。可以是静态的，也可以是动画；可用于填充和描边，并能和普通填充叠加。</li>
+<li><strong>着色器效果</strong>以图层现有的像素为输入并加以改变：颗粒、模糊、扭曲、半色调、抖动、色彩偏移，甚至是鼠标悬停时触发的动效。</li>
+<li><strong>通过提示词来做。</strong>打开 Figma 智能体，输入「build me a shader」，描述你想看到的效果，并说出你需要的控件，比如一个调节发光强度的滑块。Figma 自己给的建议：明确说「shader」（只说「做一个网格渐变」可能只得到普通图片填充）；用现实中的参照（「像孔版印刷那样」）；说清楚哪些东西必须保留，比如文字可读、边缘清晰、品牌色相不变。</li>
+<li><strong>它们像设计系统的一部分那样工作。</strong>着色器填充或效果的组合可以存成样式并发布到团队库，也可以查看每个着色器背后的代码。</li></ul>
+<h2>11 月 2 日改了什么，没改什么</h2>
+<p>改了三件事：全面开放、4096 像素的导出上限、进入代码图层的路径。更高的导出分辨率比听起来更重要，因为一张清晰的静帧正是实时着色器需要的备用图。进入代码图层的路径之所以重要，是因为这是 Figma 着色器第一次有官方途径变成可运行的代码，而不是一段视频。</p>
+<p>也有没变的。在画布上，每个页面同一时间只能播放一个动画或交互着色器。代码图层仍是公开测试版，付费方案上生成代码图层只免费到 11 月 4 日，之后会像其他智能体功能一样消耗 AI 额度。另外，代码图层是画布上的原型，不是你的生产技术栈，应把它当作给工程师的可运行参考，而不是最终组件。</p>
+<h2>我们的看法</h2>
+<p>着色器大概是设计工具能交给开发者的最「炫」的东西，而这正是风险所在。让它们抢眼的那些特性，也正是会把页面弄坏的特性：它们在文字后面动，每一帧亮度都在变，而且无论有没有人在看，都让 GPU 一直忙着。一个在 Figma 画框里看起来没问题的着色器，可能在最亮的那一帧对比度不达标，可能耗光手机电量，也可能给一位在系统里开启了「减少动态效果」的读者播放全屏循环动画。</p>
+<p>所以，要把着色器当成附带规则的设计 Token，而不是一张图片。决定它允许出现在哪里（首屏背景和插图，而不是正文后面）、最亮可以到多少、能不能动，以及它无法运行时用什么替代。如果你不经过 Figma、直接写着色器代码，Paper Shaders 这类小型库（面向 React 和原生 JavaScript 的零依赖 WebGL 着色器，Apache-2.0 许可，截至 11 月 2 日的一周 npm 下载约 130 万次）会让这件事变得简单，但它的文档要求锁定确切版本，因为 0.0.x 版本之间仍会有破坏性变更。</p>
+<h2>清单：上线一个着色器背景</h2>
+<ol><li><strong>要控件，而不只是要一个样子。</strong>让智能体提供有名字的滑块（强度、速度、缩放），并说明哪些东西必须保持不变，这样工程师不用重新写提示词就能调整。</li>
+<li><strong>存为样式。</strong>把着色器发布到团队库，让每个页面用的都是同一个；有人改动时，借助版本历史追溯。</li>
+<li><strong>导出 4096 像素的海报图。</strong>用最清晰的静帧作为备用图、社交分享图，以及 WebGL 启动前的首屏画面。</li>
+<li><strong>在最差的那一帧检查对比度。</strong>正文需要在动画最亮的时刻也达到 4.5:1，而不是按平均值算。必要时在文字后面加一层遮罩。</li>
+<li><strong>尊重「减少动态效果」。</strong>在 <code>prefers-reduced-motion: reduce</code> 下显示海报图，或把速度设为零。</li>
+<li><strong>长时间动效要能暂停。</strong>如果它与其他内容并列、运动超过五秒，WCAG 2.2.2 要求提供暂停、停止或隐藏的方式。</li>
+<li><strong>没人看时就停下。</strong>画布离开视口（Intersection Observer）或标签页被隐藏时，暂停渲染循环。</li>
+<li><strong>控制实时画布的数量。</strong>每屏只保留一个实时着色器，其余都用静帧。浏览器对一个页面能同时持有的 WebGL 上下文数量有上限。</li>
+<li><strong>先测代码图层的交接。</strong>在团队依赖它之前，先把一个带着色器的设计转成代码图层，检查它的控件是否保留下来。</li>
+<li><strong>锁版本并记录。</strong>在 <code>package.json</code> 里锁定着色器库的确切版本，并记下代码对应的是哪个版本的 Figma 样式。</li></ol>
+<pre><code>shader-spec.md（着色器规格）
+  名称：      hero-glow（Figma 样式 v3）
+  位置：      只用于首屏背景，绝不放在正文后面
+  控件：      强度 0–1 · 速度 0–0.4 · 色相锁定为品牌色
+  海报图：    hero-glow@4096.webp（首屏画面、分享图、减少动态效果）
+  对比度：    标题和按钮在最亮帧 ≥ 4.5:1 · 遮罩 40%
+  动效：      暂停按钮 · 离开视口和标签页隐藏时停止
+  预算：      每屏 1 个实时画布</code></pre>
+<h2>UI Hub 能帮什么</h2>
+<p>代码图层本身的工作流程，请看 <a href="../figma-code-layers-and-specs/">Figma 代码图层与 Specs</a>。<a href="../motion-that-feels-right/">恰到好处的动效</a>里的规则同样适用于着色器，<a href="../oklch-color-and-dark-mode/">OKLCH 色彩与深色模式</a>能帮你让着色器在深浅两种主题下都留在品牌色板之内。上线前，用 <a href="../accessibility-in-ai-generated-ui/">AI 生成界面的无障碍检查</a>过一遍；如果你更想直接写代码实现效果，可以在 <a href="../best-animated-react-component-libraries-2026/">2026 年最值得用的 React 动效组件库</a>里比较选择。</p>""",
+ refs=[('Release notes: Export shaders at higher resolutions and bring them into code layers (2 Nov 2026)','Figma','https://www.figma.com/release-notes/'),('Create shaders with the Figma agent','Figma Learn','https://help.figma.com/hc/en-us/articles/41147702210071-Create-shaders-with-the-Figma-agent'),('Use shaders in designs','Figma Learn','https://help.figma.com/hc/en-us/articles/41175721167767-Use-shaders-in-designs'),('Prompting tips for generative plugins and shaders','Figma Learn','https://help.figma.com/hc/en-us/articles/41408020198935-Prompting-tips-for-generative-plugins-and-shaders'),('Workflow lab: Figma Motion, Figma Weave and shaders','Figma Learn','https://help.figma.com/hc/en-us/articles/42847574436119-Workflow-lab-New-tools-more-expression-with-Figma-Motion-Figma-Weave-and-shaders'),('What’s new from Config India 2026 (code layers open beta and credits)','Figma Learn','https://help.figma.com/hc/en-us/articles/43663368947863-What-s-new-from-Config-India-2026'),('Reply asking whether shaders stay editable in code layers','Shaheryar Butt (@SheryButtUXUI), X','https://x.com/SheryButtUXUI/status/2117367128642687211'),('Reply on shaders reaching sites instead of an MP4','Loki (@lokidotdev), X','https://x.com/lokidotdev/status/2117311148962058335'),('paper-design/shaders','Paper, GitHub','https://github.com/paper-design/shaders'),('Paper Shaders gallery','Paper','https://shaders.paper.design/'),('Understanding SC 1.4.3: Contrast (Minimum)','W3C Web Accessibility Initiative','https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html'),('Understanding SC 2.2.2: Pause, Stop, Hide','W3C Web Accessibility Initiative','https://www.w3.org/WAI/WCAG22/Understanding/pause-stop-hide.html'),('prefers-reduced-motion','MDN Web Docs','https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion'),('Intersection Observer API','MDN Web Docs','https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API'),('WebGL best practices','MDN Web Docs','https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API/WebGL_best_practices')]),
+]

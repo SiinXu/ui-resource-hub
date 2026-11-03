@@ -404,3 +404,4 @@ curl -s https://ui.incidental.site/api/resources.json | jq --arg d "$(date -u -d
 - Two AI design tools closed on 31 October: how to keep your design work portable — https://ui.incidental.site/kb/note/blog-ai-design-tool-shutdowns-keep-work-portable.md
 - Best animated React component libraries 2026: Motion, Magic UI, React Bits and more — https://ui.incidental.site/kb/note/blog-best-animated-react-component-libraries-2026.md
 - Stageshow: teaching agents to make product demos that look real — https://ui.incidental.site/kb/note/blog-stageshow-faux-product-ui-for-agents.md
+- Figma shaders are generally available: how to ship shader backgrounds that stay fast and readable — https://ui.incidental.site/kb/note/blog-figma-shaders-ga-ship-shader-backgrounds.md

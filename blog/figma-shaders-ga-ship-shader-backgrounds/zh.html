@@ -1,0 +1,34 @@
+<p>11 月 2 日，Figma 发布了一条篇幅很短、影响却不小的更新：<strong>着色器（shader）现已向所有用户正式开放</strong>，渲染和导出分辨率最高可达 <strong>4096 像素</strong>，并且在用「build this with code」把设计转换为<strong>代码图层</strong>时，可以把着色器一起带进去。在代码图层里，把图层设为 Play 后着色器就会运行。Figma 表示这一部分需要在浏览器中使用 Chrome 157，本周陆续上线。一周前的 10 月 27 日，着色器还加入了版本历史，每个版本都有一段由智能体写的说明。</p><figure><img src="../../blog/img/figma-shaders-ga-ship-shader-backgrounds-1.webp" alt="2026 年 11 月 3 日的 Figma 更新日志页面，最上方是 11 月 2 日的条目「以更高分辨率导出着色器，并带入代码图层」" loading="lazy" decoding="async" width="1280" height="800"><figcaption>2026 年 11 月 3 日的 Figma 更新日志页面，最上方是 11 月 2 日的条目「以更高分辨率导出着色器，并带入代码图层」 · 截图：Figma（<a href="https://www.figma.com/release-notes/" rel="noopener" target="_blank">www.figma.com</a>），2026-11-03 截取，版权归原站所有</figcaption></figure>
+<p>把这些放在一起看，着色器不再是一个在交付时被压成静态 PNG 或循环 MP4 的画布技巧，它可以一直保持为代码。在 X 上回复 Figma 公告的设计师们注意到的正是这一点，其中一位提出了目前还没人回答的问题：着色器进入代码后还能继续编辑吗，还是会被拍平？在围绕它做规划之前，值得先自己测一下。</p>
+<h2>Figma 的着色器是什么</h2>
+<ul><li><strong>着色器填充</strong>用生成的画面替换图层的填充：图案、网格渐变、噪点，以及大理石、水面这类程序化纹理。可以是静态的，也可以是动画；可用于填充和描边，并能和普通填充叠加。</li>
+<li><strong>着色器效果</strong>以图层现有的像素为输入并加以改变：颗粒、模糊、扭曲、半色调、抖动、色彩偏移，甚至是鼠标悬停时触发的动效。</li>
+<li><strong>通过提示词来做。</strong>打开 Figma 智能体，输入「build me a shader」，描述你想看到的效果，并说出你需要的控件，比如一个调节发光强度的滑块。Figma 自己给的建议：明确说「shader」（只说「做一个网格渐变」可能只得到普通图片填充）；用现实中的参照（「像孔版印刷那样」）；说清楚哪些东西必须保留，比如文字可读、边缘清晰、品牌色相不变。</li>
+<li><strong>它们像设计系统的一部分那样工作。</strong>着色器填充或效果的组合可以存成样式并发布到团队库，也可以查看每个着色器背后的代码。</li></ul><figure><img src="../../blog/img/figma-shaders-ga-ship-shader-backgrounds-2.webp" alt="流程示意：让 Figma 智能体生成带命名控件的着色器填充或效果，调好后存为样式，以 4096 像素海报图加代码图层交付，最后带着静态备用图、暂停控件和对比度检查上线" loading="lazy" decoding="async" width="1200" height="675"><figcaption>流程示意：让 Figma 智能体生成带命名控件的着色器填充或效果，调好后存为样式，以 4096 像素海报图加代码图层交付，最后带着静态备用图、暂停控件和对比度检查上线 · 示意图：UI Hub 原创，CC BY 4.0</figcaption></figure>
+<h2>11 月 2 日改了什么，没改什么</h2>
+<p>改了三件事：全面开放、4096 像素的导出上限、进入代码图层的路径。更高的导出分辨率比听起来更重要，因为一张清晰的静帧正是实时着色器需要的备用图。进入代码图层的路径之所以重要，是因为这是 Figma 着色器第一次有官方途径变成可运行的代码，而不是一段视频。</p>
+<p>也有没变的。在画布上，每个页面同一时间只能播放一个动画或交互着色器。代码图层仍是公开测试版，付费方案上生成代码图层只免费到 11 月 4 日，之后会像其他智能体功能一样消耗 AI 额度。另外，代码图层是画布上的原型，不是你的生产技术栈，应把它当作给工程师的可运行参考，而不是最终组件。</p>
+<h2>我们的看法</h2>
+<p>着色器大概是设计工具能交给开发者的最「炫」的东西，而这正是风险所在。让它们抢眼的那些特性，也正是会把页面弄坏的特性：它们在文字后面动，每一帧亮度都在变，而且无论有没有人在看，都让 GPU 一直忙着。一个在 Figma 画框里看起来没问题的着色器，可能在最亮的那一帧对比度不达标，可能耗光手机电量，也可能给一位在系统里开启了「减少动态效果」的读者播放全屏循环动画。</p>
+<p>所以，要把着色器当成附带规则的设计 Token，而不是一张图片。决定它允许出现在哪里（首屏背景和插图，而不是正文后面）、最亮可以到多少、能不能动，以及它无法运行时用什么替代。如果你不经过 Figma、直接写着色器代码，Paper Shaders 这类小型库（面向 React 和原生 JavaScript 的零依赖 WebGL 着色器，Apache-2.0 许可，截至 11 月 2 日的一周 npm 下载约 130 万次）会让这件事变得简单，但它的文档要求锁定确切版本，因为 0.0.x 版本之间仍会有破坏性变更。</p>
+<h2>清单：上线一个着色器背景</h2>
+<ol><li><strong>要控件，而不只是要一个样子。</strong>让智能体提供有名字的滑块（强度、速度、缩放），并说明哪些东西必须保持不变，这样工程师不用重新写提示词就能调整。</li>
+<li><strong>存为样式。</strong>把着色器发布到团队库，让每个页面用的都是同一个；有人改动时，借助版本历史追溯。</li>
+<li><strong>导出 4096 像素的海报图。</strong>用最清晰的静帧作为备用图、社交分享图，以及 WebGL 启动前的首屏画面。</li>
+<li><strong>在最差的那一帧检查对比度。</strong>正文需要在动画最亮的时刻也达到 4.5:1，而不是按平均值算。必要时在文字后面加一层遮罩。</li>
+<li><strong>尊重「减少动态效果」。</strong>在 <code>prefers-reduced-motion: reduce</code> 下显示海报图，或把速度设为零。</li>
+<li><strong>长时间动效要能暂停。</strong>如果它与其他内容并列、运动超过五秒，WCAG 2.2.2 要求提供暂停、停止或隐藏的方式。</li>
+<li><strong>没人看时就停下。</strong>画布离开视口（Intersection Observer）或标签页被隐藏时，暂停渲染循环。</li>
+<li><strong>控制实时画布的数量。</strong>每屏只保留一个实时着色器，其余都用静帧。浏览器对一个页面能同时持有的 WebGL 上下文数量有上限。</li>
+<li><strong>先测代码图层的交接。</strong>在团队依赖它之前，先把一个带着色器的设计转成代码图层，检查它的控件是否保留下来。</li>
+<li><strong>锁版本并记录。</strong>在 <code>package.json</code> 里锁定着色器库的确切版本，并记下代码对应的是哪个版本的 Figma 样式。</li></ol>
+<pre><code>shader-spec.md（着色器规格）
+  名称：      hero-glow（Figma 样式 v3）
+  位置：      只用于首屏背景，绝不放在正文后面
+  控件：      强度 0–1 · 速度 0–0.4 · 色相锁定为品牌色
+  海报图：    hero-glow@4096.webp（首屏画面、分享图、减少动态效果）
+  对比度：    标题和按钮在最亮帧 ≥ 4.5:1 · 遮罩 40%
+  动效：      暂停按钮 · 离开视口和标签页隐藏时停止
+  预算：      每屏 1 个实时画布</code></pre>
+<figure><img src="../../blog/img/figma-shaders-ga-ship-shader-backgrounds-3.webp" alt="2026 年 11 月 3 日的 Paper Shaders 展示页 shaders.paper.design，展示纸张纹理、凹槽玻璃、水面、半色调等零依赖 WebGL 着色器预设" loading="lazy" decoding="async" width="1280" height="800"><figcaption>2026 年 11 月 3 日的 Paper Shaders 展示页 shaders.paper.design，展示纸张纹理、凹槽玻璃、水面、半色调等零依赖 WebGL 着色器预设 · 截图：Paper（<a href="https://shaders.paper.design/" rel="noopener" target="_blank">shaders.paper.design</a>），2026-11-03 截取，版权归原站所有</figcaption></figure><h2>UI Hub 能帮什么</h2>
+<p>代码图层本身的工作流程，请看 <a href="../figma-code-layers-and-specs/">Figma 代码图层与 Specs</a>。<a href="../motion-that-feels-right/">恰到好处的动效</a>里的规则同样适用于着色器，<a href="../oklch-color-and-dark-mode/">OKLCH 色彩与深色模式</a>能帮你让着色器在深浅两种主题下都留在品牌色板之内。上线前，用 <a href="../accessibility-in-ai-generated-ui/">AI 生成界面的无障碍检查</a>过一遍；如果你更想直接写代码实现效果，可以在 <a href="../best-animated-react-component-libraries-2026/">2026 年最值得用的 React 动效组件库</a>里比较选择。</p>
