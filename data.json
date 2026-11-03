@@ -1,6 +1,6 @@
 {
  "generated": "2026-11-03",
- "count": 5065,
+ "count": 5071,
  "items": [
   {
    "id": "ued-figma-mcp-guide",
@@ -190331,6 +190331,299 @@
    "official": "https://deimos.evilrabbit.com/",
    "pub": "2026-11-03",
    "added": "2026-11-03"
+  },
+  {
+   "id": "rd-lzy2xnr-emoji-picker-globe",
+   "name": "Emoji Picker Globe",
+   "url": "https://x.com/jh3yy/status/2116321049851908266",
+   "note": "A CSS scroll-driven emoji picker where all emojis map onto a rotatable 3D sphere, with search filtering and click-to-insert into a message field.",
+   "noteEn": "A CSS scroll-driven emoji picker where all emojis map onto a rotatable 3D sphere, with search filtering and click-to-insert into a message field.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@jh3yy",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "3d"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/lzy2xnr-emoji-picker-globe",
+   "rdkind": "Design",
+   "rdcat": "Interface",
+   "rdstyle": [
+    "Experimental",
+    "3D",
+    "Dark"
+   ],
+   "author": {
+    "name": "jhey ʕ•ᴥ•ʔ",
+    "handle": "@jh3yy",
+    "url": "https://x.com/jh3yy"
+   },
+   "x_post": "https://x.com/jh3yy/status/2116321049851908266",
+   "xsrc": {
+    "post": "https://x.com/jh3yy/status/2116321049851908266",
+    "author": "@jh3yy",
+    "likes": 724,
+    "bookmarks": 270,
+    "reposts": 22,
+    "impressions": 29507,
+    "date": "2026-10-31"
+   },
+   "pub": "2026-11-03",
+   "added": "2026-11-03"
+  },
+  {
+   "id": "rd-ypfehbv-grew-up-unfortunately",
+   "name": "Grew Up Unfortunately",
+   "url": "https://x.com/deekaymotion/status/2117639673518621055",
+   "note": "Looping character animation of a slouched figure with a briefcase waiting at a Japanese crosswalk, with an expressive childlike shadow and sweeping rainbow light refractions across tiled walls.",
+   "noteEn": "Looping character animation of a slouched figure with a briefcase waiting at a Japanese crosswalk, with an expressive childlike shadow and sweeping rainbow light refractions across tiled walls.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@deekaymotion",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "motion"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/ypfehbv-grew-up-unfortunately",
+   "rdkind": "Design",
+   "rdcat": "Motion",
+   "rdstyle": [
+    "Illustrative",
+    "Textured",
+    "Muted"
+   ],
+   "author": {
+    "name": "DeeKay",
+    "handle": "@deekaymotion",
+    "url": "https://x.com/deekaymotion"
+   },
+   "x_post": "https://x.com/deekaymotion/status/2117639673518621055",
+   "xsrc": {
+    "post": "https://x.com/deekaymotion/status/2117639673518621055",
+    "author": "@deekaymotion",
+    "likes": 2475,
+    "bookmarks": 389,
+    "reposts": 391,
+    "impressions": 42205,
+    "date": "2026-11-03"
+   },
+   "pub": "2026-11-03",
+   "added": "2026-11-03"
+  },
+  {
+   "id": "rd-xfbfnbj-milkshake-identity-motion",
+   "name": "Milkshake Identity",
+   "url": "https://x.com/dsgnevrywhr/status/2117553118003208339",
+   "note": "Kinetic brand identity for Milkshake showing the wordmark, copyright symbols, and label credit text assembling on black in a choreographed animated reveal.",
+   "noteEn": "Kinetic brand identity for Milkshake showing the wordmark, copyright symbols, and label credit text assembling on black in a choreographed animated reveal.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@studioherrstrom",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "motion"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/xfbfnbj-milkshake-identity-motion",
+   "rdkind": "Design",
+   "rdcat": "Motion",
+   "rdstyle": [
+    "Typographic",
+    "Black & White"
+   ],
+   "author": {
+    "name": "Design Everywhere",
+    "handle": "@studioherrstrom",
+    "url": "https://x.com/studioherrstrom"
+   },
+   "x_post": "https://x.com/dsgnevrywhr/status/2117553118003208339",
+   "xsrc": {
+    "post": "https://x.com/dsgnevrywhr/status/2117553118003208339",
+    "author": "@dsgnevrywhr",
+    "likes": 224,
+    "bookmarks": 113,
+    "reposts": 6,
+    "impressions": 5515,
+    "date": "2026-11-03"
+   },
+   "pub": "2026-11-03",
+   "added": "2026-11-03"
+  },
+  {
+   "id": "rd-o5w1k5q-physical-texture-web-experiments",
+   "name": "Physical Texture Web",
+   "url": "https://x.com/eledure/status/2117567527307870649",
+   "note": "A glass lens travels across multiple website concepts exploring paper, ink, grain and glass textures applied to web typography and layout.",
+   "noteEn": "A glass lens travels across multiple website concepts exploring paper, ink, grain and glass textures applied to web typography and layout.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@eledure",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/o5w1k5q-physical-texture-web-experiments",
+   "rdkind": "Design",
+   "rdcat": "Web",
+   "rdstyle": [
+    "Typographic",
+    "Experimental",
+    "Textured",
+    "Light"
+   ],
+   "author": {
+    "name": "Emile",
+    "handle": "@eledure",
+    "url": "https://x.com/eledure"
+   },
+   "x_post": "https://x.com/eledure/status/2117567527307870649",
+   "xsrc": {
+    "post": "https://x.com/eledure/status/2117567527307870649",
+    "author": "@eledure",
+    "likes": 437,
+    "bookmarks": 297,
+    "reposts": 12,
+    "impressions": 9639,
+    "date": "2026-11-03"
+   },
+   "pub": "2026-11-03",
+   "added": "2026-11-03"
+  },
+  {
+   "id": "rd-jc9jje6-account-deletion-fire-effect",
+   "name": "Account Deletion Burn",
+   "url": "https://x.com/kshvbgde/status/2117502283894362219",
+   "note": "Hold-to-delete button ignites with fire and burns the UI away to ash, transitioning the screen to a dark signed-out state with ember particles.",
+   "noteEn": "Hold-to-delete button ignites with fire and burns the UI away to ash, transitioning the screen to a dark signed-out state with ember particles.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@kshvbgde",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/jc9jje6-account-deletion-fire-effect",
+   "rdkind": "Design",
+   "rdcat": "Interface",
+   "rdstyle": [
+    "Experimental",
+    "Dark"
+   ],
+   "author": {
+    "name": "keshav",
+    "handle": "@kshvbgde",
+    "url": "https://x.com/kshvbgde"
+   },
+   "x_post": "https://x.com/kshvbgde/status/2117502283894362219",
+   "xsrc": {
+    "post": "https://x.com/kshvbgde/status/2117502283894362219",
+    "author": "@kshvbgde",
+    "likes": 2924,
+    "bookmarks": 1146,
+    "reposts": 93,
+    "impressions": 95168,
+    "date": "2026-11-03"
+   },
+   "pub": "2026-11-03",
+   "added": "2026-11-03"
+  },
+  {
+   "id": "rd-tzsn9ci-liquid-bubble-buttons",
+   "name": "Liquid Bubble Buttons",
+   "url": "https://x.com/_crisjav/status/2117479742719017227",
+   "note": "Two iOS-style bubble buttons merge with a liquid goo metaball effect on hover, stretching and snapping between a translucent camera orb and a glossy green plus orb.",
+   "noteEn": "Two iOS-style bubble buttons merge with a liquid goo metaball effect on hover, stretching and snapping between a translucent camera orb and a glossy green plus orb.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@_crisjav",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/tzsn9ci-liquid-bubble-buttons",
+   "rdkind": "Design",
+   "rdcat": "Interface",
+   "rdstyle": [
+    "Soft UI",
+    "Organic",
+    "Light"
+   ],
+   "author": {
+    "name": "Cristian Javier",
+    "handle": "@_crisjav",
+    "url": "https://x.com/_crisjav"
+   },
+   "x_post": "https://x.com/_crisjav/status/2117479742719017227",
+   "xsrc": {
+    "post": "https://x.com/_crisjav/status/2117479742719017227",
+    "author": "@_crisjav",
+    "likes": 254,
+    "bookmarks": 80,
+    "reposts": 11,
+    "impressions": 8285,
+    "date": "2026-11-03"
+   },
+   "pub": "2026-11-03",
+   "added": "2026-11-03"
   }
  ],
  "guides": [
@@ -190533,5 +190826,5 @@
    ]
   }
  ],
- "updatedAt": "2026-11-03T11:06Z"
+ "updatedAt": "2026-11-03T20:17Z"
 }
