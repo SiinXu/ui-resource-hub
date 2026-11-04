@@ -1,6 +1,6 @@
 {
  "generated": "2026-11-04",
- "count": 5072,
+ "count": 5073,
  "items": [
   {
    "id": "ued-figma-mcp-guide",
@@ -190650,6 +190650,53 @@
    ],
    "noteEn": "New GitHub UI repo: A component library for GPUI, in light and dark. Every component runs live in the browser. (★574, MIT, ZacharyZhang-NY/Ely-GPUI-Components)",
    "added": "2026-11-04"
+  },
+  {
+   "id": "rd-4ldtkhb-dumbcaptcha-puzzle-widget",
+   "name": "dumbCAPTCHA Puzzle",
+   "url": "https://x.com/jh3yy/status/2117769322013814826",
+   "note": "A satirical CAPTCHA widget that escalates from a simple checkbox to a draggable, rotatable jigsaw puzzle of a robot disguised as a human, then fails with a verification expired error.",
+   "noteEn": "A satirical CAPTCHA widget that escalates from a simple checkbox to a draggable, rotatable jigsaw puzzle of a robot disguised as a human, then fails with a verification expired error.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@jh3yy",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "playful"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/4ldtkhb-dumbcaptcha-puzzle-widget",
+   "rdkind": "Design",
+   "rdcat": "Interface",
+   "rdstyle": [
+    "Playful",
+    "Light"
+   ],
+   "author": {
+    "name": "jhey ʕ•ᴥ•ʔ",
+    "handle": "@jh3yy",
+    "url": "https://x.com/jh3yy"
+   },
+   "x_post": "https://x.com/jh3yy/status/2117769322013814826",
+   "xsrc": {
+    "post": "https://x.com/jh3yy/status/2117769322013814826",
+    "author": "@jh3yy",
+    "likes": 79,
+    "bookmarks": 10,
+    "reposts": 4,
+    "impressions": 4514,
+    "date": "2026-11-04"
+   },
+   "pub": "2026-11-04",
+   "added": "2026-11-04"
   }
  ],
  "guides": [
@@ -190852,5 +190899,5 @@
    ]
   }
  ],
- "updatedAt": "2026-11-04T06:15Z"
+ "updatedAt": "2026-11-04T07:57Z"
 }
