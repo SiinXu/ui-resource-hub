@@ -1,6 +1,6 @@
 {
  "generated": "2026-11-04",
- "count": 5073,
+ "count": 5075,
  "items": [
   {
    "id": "ued-figma-mcp-guide",
@@ -190697,6 +190697,100 @@
    },
    "pub": "2026-11-04",
    "added": "2026-11-04"
+  },
+  {
+   "id": "rd-1pd6afn-ai-spreadsheet-fill-interaction",
+   "name": "AI Spreadsheet Fill",
+   "url": "https://x.com/Nomandsign/status/2117712985804484770",
+   "note": "An AI prompt card triggers a spreadsheet to populate with deal data, animating through a gradient bloom before rows fill with accounts, amounts, and color-coded stage badges.",
+   "noteEn": "An AI prompt card triggers a spreadsheet to populate with deal data, animating through a gradient bloom before rows fill with accounts, amounts, and color-coded stage badges.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@nomandsign",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/1pd6afn-ai-spreadsheet-fill-interaction",
+   "rdkind": "Design",
+   "rdcat": "Interface",
+   "rdstyle": [
+    "Minimal",
+    "Light"
+   ],
+   "author": {
+    "name": "Noman",
+    "handle": "@nomandsign",
+    "url": "https://x.com/nomandsign"
+   },
+   "x_post": "https://x.com/Nomandsign/status/2117712985804484770",
+   "xsrc": {
+    "post": "https://x.com/Nomandsign/status/2117712985804484770",
+    "author": "@Nomandsign",
+    "likes": 744,
+    "bookmarks": 758,
+    "reposts": 10,
+    "impressions": 18879,
+    "date": "2026-11-03"
+   },
+   "pub": "2026-11-04",
+   "added": "2026-11-04"
+  },
+  {
+   "id": "rd-nf0rkxb-genie-minimize-for-web",
+   "name": "Genie Minimize for Web",
+   "url": "https://x.com/raphaelsalaja/status/2118019816233775318",
+   "note": "Web recreation of the macOS Genie minimize effect where a browser window warps and funnels down into a dock target icon with a fluid, curved distortion.",
+   "noteEn": "Web recreation of the macOS Genie minimize effect where a browser window warps and funnels down into a dock target icon with a fluid, curved distortion.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@raphaelsalaja",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/nf0rkxb-genie-minimize-for-web",
+   "rdkind": "Design",
+   "rdcat": "Interface",
+   "rdstyle": [
+    "Minimal",
+    "Light"
+   ],
+   "author": {
+    "name": "Raphael Salaja",
+    "handle": "@raphaelsalaja",
+    "url": "https://x.com/raphaelsalaja"
+   },
+   "x_post": "https://x.com/raphaelsalaja/status/2118019816233775318",
+   "xsrc": {
+    "post": "https://x.com/raphaelsalaja/status/2118019816233775318",
+    "author": "@raphaelsalaja",
+    "likes": 350,
+    "bookmarks": 214,
+    "reposts": 11,
+    "impressions": 6068,
+    "date": "2026-11-04"
+   },
+   "pub": "2026-11-04",
+   "added": "2026-11-04"
   }
  ],
  "guides": [
@@ -190899,5 +190993,5 @@
    ]
   }
  ],
- "updatedAt": "2026-11-04T11:16Z"
+ "updatedAt": "2026-11-04T20:31Z"
 }
