@@ -1,6 +1,6 @@
 {
- "generated": "2026-11-03",
- "count": 5071,
+ "generated": "2026-11-04",
+ "count": 5072,
  "items": [
   {
    "id": "ued-figma-mcp-guide",
@@ -190624,6 +190624,32 @@
    },
    "pub": "2026-11-03",
    "added": "2026-11-03"
+  },
+  {
+   "id": "gh-zacharyzhang-ny-ely-gpui-components",
+   "name": "Ely-GPUI-Components",
+   "url": "https://github.com/ZacharyZhang-NY/Ely-GPUI-Components",
+   "note": "GitHub 新晋 UI 仓库：A component library for GPUI, in light and dark. Every component runs live in the browser.（GitHub ★574，MIT 许可，仓库 ZacharyZhang-NY/Ely-GPUI-Components）",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "GitHub",
+   "pricing": "free",
+   "tags": [
+    "HTML",
+    "开源",
+    "自动收录"
+   ],
+   "ct": [],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "New GitHub UI repo: A component library for GPUI, in light and dark. Every component runs live in the browser. (★574, MIT, ZacharyZhang-NY/Ely-GPUI-Components)",
+   "added": "2026-11-04"
   }
  ],
  "guides": [
@@ -190826,5 +190852,5 @@
    ]
   }
  ],
- "updatedAt": "2026-11-03T20:17Z"
+ "updatedAt": "2026-11-04T06:15Z"
 }
