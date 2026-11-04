@@ -1,0 +1,38 @@
+<p>11 月 3 日，WebKit 团队在 Safari 27.3 测试版中发布了<strong>自适应深色模式</strong>（Adaptive Dark Mode）。如果读者把系统设为深色，又打开了一个很亮的页面，Safari 会提供预览和一个「Try」按钮；据 MacRumors 报道，试用一次之后，可以选择对所有网站开启，或者逐个网站开启。开启后，Safari 会把浅色页面重新着色成深色。WebKit 给出的理由是它自己测到的差距：将近 40% 的页面加载来自使用深色模式的用户，但只有大约 10% 的页面加载支持深色模式。MacRumors 称，带有这项功能的系统更新预计在 12 月推出。</p><figure><img src="../../blog/img/safari-adaptive-dark-mode-design-for-it-1.webp" alt="WebKit 博客 2026 年 11 月 3 日的文章，介绍 Safari 27.3 测试版中的自适应深色模式" loading="lazy" decoding="async" width="1280" height="800"><figcaption>WebKit 博客 2026 年 11 月 3 日的文章，介绍 Safari 27.3 测试版中的自适应深色模式 · 截图：WebKit（<a href="https://webkit.org/blog/18541/introducing-adaptive-dark-mode/" rel="noopener" target="_blank">webkit.org</a>），2026-11-04 截取，版权归原站所有</figcaption></figure>
+<p>对设计师来说，关键不在功能本身，而在它的触发条件：如果你的网站没有声明支持深色模式，浏览器引擎现在会按它自己的规则，给你的部分读者生成一个深色版本，而你无法看到这件事发生了。</p>
+<h2>Safari 改什么，不改什么</h2>
+<ul><li><strong>已声明支持深色的网站会被跳过</strong>：用了 <code>color-scheme</code> meta 标签，或在 CSS 里写了 <code>color-scheme: light dark</code>；本来就以深色背景、浅色文字为主的页面也不受影响。</li>
+<li><strong>对浅色页面，它反转明度但保留色相。</strong>背景变深，深色文字变浅，转换后的文字以 WCAG 4.5:1 的对比度为目标。浅色的 CSS 渐变也会变深。</li>
+<li><strong>它会尽量保持可用：</strong>按钮和背景之间保持对比，图片上的文字保持可读，悬停菜单保持清晰。MacRumors 补充说，它还会把浮起的表面提亮，并重新平衡叠加的阴影。</li>
+<li><strong>图片大多不动。</strong>SVG 会被检查，必要时重新着色；位图则会分析像素直方图，把简单的黑白 Logo 反色。</li>
+<li><strong>部分效果会被关掉。</strong>被转换的元素上，遮罩和 <code>mix-blend-mode</code> 可能会被停用；<code>&lt;canvas&gt;</code> 里的内容保持原样。</li>
+<li><strong>网站察觉不到。</strong>为了不增加可用于指纹追踪的信号，JavaScript 读取 CSS 颜色时拿到的是作者写的原始颜色，而不是屏幕上显示的颜色。</li></ul><figure><img src="../../blog/img/safari-adaptive-dark-mode-design-for-it-2.webp" alt="流程示意：读者在深色模式下开启功能；声明了 color-scheme: light dark 或本来就偏深色的页面被跳过；浅色页面反转明度、保留色相，文字以 4.5:1 为目标；canvas 内容和脚本读取到的颜色保持原样" loading="lazy" decoding="async" width="1200" height="675"><figcaption>流程示意：读者在深色模式下开启功能；声明了 color-scheme: light dark 或本来就偏深色的页面被跳过；浅色页面反转明度、保留色相，文字以 4.5:1 为目标；canvas 内容和脚本读取到的颜色保持原样 · 示意图：UI Hub 原创，CC BY 4.0</figcaption></figure>
+<h2>测试版 1 里的退出陷阱</h2>
+<p>WebKit 文档里让页面或某个元素保持浅色的方法是 <code>color-scheme: light only</code>（或在 meta 标签里写 <code>light only</code>）。但在 Safari 27.3 测试版 1 中，<code>only</code> 关键字还不支持。于是出现一个诱人的捷径：声明 <code>light dark</code>，让 Safari 别管你。如果没有真正的深色样式，不要这样做。这个声明是在告诉所有浏览器「我自己处理深色模式」，于是表单控件、滚动条、默认页面背景这些浏览器自带的部分会跟随读者的深色偏好，而你写死的浅色仍然是浅色。你等于用一个自己造成的「深浅混搭」页面，换掉了 Safari 尝试生成的深色页面。</p>
+<h2>我们的看法</h2>
+<p>自动生成的深色主题是底线，不是设计。在半夜，它大概比一个刺眼的白页面好，WebKit 显然也在对比度上下了功夫。但它替你做了本该由设计师做的决定：品牌色在明度翻转后会变得多浅、哪些表面应该浮在其他表面之上、一张自带白底的图片会不会像贴上去的。而且这种变化对脚本不可见，你在数据分析里看不到，监控工具截的图里也看不到；只有你自己用 Safari 打开页面时才会看到。</p>
+<p>好消息是，做一个真正的深色主题比以前便宜多了。<code>light-dark()</code> 让一个 Token 同时保存两种取值，<code>color-mix()</code> 可以推导出悬停色和边框色，把散落各处的十六进制颜色值整理成 Token 这类机械工作，大部分可以交给编程智能体。剩下的设计工作才是值得亲手做的：选定深色色板、检查对比度、决定哪些地方必须保持浅色。</p>
+<h2>清单：在 Safari 替你决定之前，先做决定</h2>
+<ol><li><strong>先亲眼看看。</strong>在 Safari 27.3 测试版里把系统设为深色，打开你的关键页面并点 Try。给首页、一个表单、一个表格和所有带 Logo 的地方截图。</li>
+<li><strong>按网站选路线。</strong>用户长时间使用的产品，做真正的深色主题；简单的内容网站，可以让 Safari 自动适配；颜色本身就是内容的区域，保持浅色。</li>
+<li><strong>如果做深色，就用 Token。</strong>把每个颜色都放进 Token，用 <code>light-dark()</code> 写出两种取值，并在 HTML head 里声明 <code>color-scheme: light dark</code>，不要等 JavaScript 稍后注入。</li>
+<li><strong>两种主题都查对比度。</strong>正文 4.5:1，大字号文字和图标 3:1，包括焦点框、禁用状态和占位文字。</li>
+<li><strong>修好 Safari 难处理的素材。</strong>Logo 和图标用 SVG；图片用透明背景，不要把页面底色烤进图片；用 CSS 颜色代替平铺背景图和雪碧图。</li>
+<li><strong>标出必须保持浅色的部分。</strong>商品照片、带语义颜色的图表、品牌插画：计划在这些元素上用 <code>color-scheme: light only</code>，等后续测试版支持 <code>only</code> 后再测一遍。</li>
+<li><strong>别忘了 canvas 和混合模式。</strong>着色器、画在 canvas 上的图表以及 <code>mix-blend-mode</code> 效果不会被适配，或者可能被关掉，它们需要自己的深色版本。</li>
+<li><strong>不要假装支持。</strong>绝不要在没有深色样式的情况下，用 <code>light dark</code> 当作退出开关。</li></ol>
+<pre><code>/* 在 &lt;head&gt; 中：&lt;meta name="color-scheme" content="light dark"&gt; */
+:root {
+  color-scheme: light dark;
+  --bg:      light-dark(#f7f7f5, #0e0f13);   /* 页面背景 */
+  --surface: light-dark(#ffffff, #171922);   /* 卡片表面 */
+  --ink:     light-dark(#111318, #eceef4);   /* 正文 */
+  --muted:   light-dark(#4b5162, #a4abbd);   /* 次要文字 */
+  --accent:  light-dark(#2453d6, #8aa8ff);   /* 强调色 */
+  --line:    color-mix(in oklch, var(--ink) 14%, transparent);
+}
+body { background: var(--bg); color: var(--ink); }
+/* 必须保持浅色的区域（等 Safari 支持 "only" 后生效） */
+.product-photos, .brand-art { color-scheme: light only; }</code></pre>
+<figure><img src="../../blog/img/safari-adaptive-dark-mode-design-for-it-3.webp" alt="MDN 上 CSS light-dark() 函数的参考页：根据当前配色方案返回两个颜色中的一个" loading="lazy" decoding="async" width="1280" height="800"><figcaption>MDN 上 CSS light-dark() 函数的参考页：根据当前配色方案返回两个颜色中的一个 · 截图：MDN Web Docs（<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/light-dark" rel="noopener" target="_blank">developer.mozilla.org</a>），2026-11-04 截取，版权归原站所有</figcaption></figure><h2>UI Hub 能帮什么</h2>
+<p>亲手做深色主题的基础，先看<a href="../dark-mode-done-right/">把暗色模式做对</a>；搭建色板本身，请看 <a href="../oklch-color-and-dark-mode/">OKLCH 色彩与深色模式</a>；用 <a href="../design-tokens-for-agents/">面向智能体的设计 Token</a> 把 Token 放在智能体读得到的地方。在两种主题下都用 <a href="../accessibility-in-ai-generated-ui/">AI 生成界面的无障碍检查</a>过一遍对比度和焦点。如果你的首屏用了 canvas 或着色器，<a href="../figma-shaders-ga-ship-shader-backgrounds/">上线着色器背景</a>一文讲了你需要的备用方案，因为 Safari 不会改动 canvas 里的内容。</p>

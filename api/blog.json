@@ -1,5 +1,5 @@
 {
- "count": 42,
+ "count": 43,
  "rss": "https://ui.incidental.site/blog/rss.xml",
  "categories": {
   "tools": "Tools",
@@ -18,6 +18,117 @@
   "weekly": "Series: Weekly roundup"
  },
  "posts": [
+  {
+   "slug": "safari-adaptive-dark-mode-design-for-it",
+   "url": "https://ui.incidental.site/blog/safari-adaptive-dark-mode-design-for-it/",
+   "date": "2026-11-04",
+   "category": "craft",
+   "series": null,
+   "featured": true,
+   "tags": [
+    "Safari",
+    "dark mode",
+    "color-scheme",
+    "CSS",
+    "accessibility"
+   ],
+   "title": {
+    "en": "Safari will darken light-only sites for you: design your own dark mode before Adaptive Dark Mode does",
+    "zh": "Safari 会替你把纯浅色网站变暗：在「自适应深色模式」动手之前，先做好你自己的深色模式",
+    "zht": "Safari 會替你把純淺色網站變暗：在「自適應深色模式」動手之前，先做好你自己的深色模式",
+    "ja": "Safariがライト専用サイトを勝手にダークにする：Adaptive Dark Modeより先に自分のダークモードを設計しよう",
+    "ko": "Safari가 라이트 전용 사이트를 대신 어둡게 만든다: Adaptive Dark Mode보다 먼저 직접 다크 모드를 설계하라",
+    "ms": "Safari akan menggelapkan laman cerah untuk anda: reka mod gelap sendiri sebelum Adaptive Dark Mode melakukannya",
+    "vi": "Safari sẽ tự làm tối các trang chỉ có giao diện sáng: hãy tự thiết kế chế độ tối trước khi Adaptive Dark Mode làm thay bạn",
+    "fr": "Safari va assombrir les sites clairs à votre place : concevez votre mode sombre avant qu’Adaptive Dark Mode ne le fasse",
+    "es": "Safari oscurecerá por ti los sitios solo claros: diseña tu propio modo oscuro antes de que lo haga Adaptive Dark Mode",
+    "de": "Safari dunkelt helle Websites selbst ab: Gestalten Sie Ihren eigenen Dark Mode, bevor Adaptive Dark Mode es tut"
+   },
+   "summary": {
+    "en": "On 3 November WebKit announced Adaptive Dark Mode in the Safari 27.3 beta: when a reader turns it on, Safari recolours light websites as dark, and your site cannot tell. What it changes, what it skips, the opt-out trap in beta 1, and a checklist for choosing between a real dark theme, letting Safari adapt, or keeping parts light.",
+    "zh": "11 月 3 日，WebKit 在 Safari 27.3 测试版中发布了「自适应深色模式」（Adaptive Dark Mode）：读者开启后，Safari 会把浅色网站重新着色成深色，而网站本身无法察觉。本文讲它改什么、不改什么、测试版 1 里的退出陷阱，以及一份清单，帮你在「自己做深色主题」「让 Safari 自动适配」「部分区域保持浅色」之间做选择。",
+    "zht": "11 月 3 日，WebKit 在 Safari 27.3 測試版中發布了「自適應深色模式」（Adaptive Dark Mode）：讀者開啟後，Safari 會把淺色網站重新著色成深色，而網站本身無法察覺。本文講它改什麼、不改什麼、測試版 1 裡的退出陷阱，以及一份清單，幫你在「自己做深色主題」「讓 Safari 自動適配」「部分區域保持淺色」之間做選擇。",
+    "ja": "11月3日、WebKitはSafari 27.3ベータでAdaptive Dark Modeを発表した。読者が有効にすると、Safariはライトなサイトをダークに塗り替え、サイト側はそれを検知できない。何が変わり何が変わらないか、ベータ1のオプトアウトの落とし穴、そして自前のダークテーマ・Safari任せ・一部をライトのまま残す、の選び方チェックリスト。",
+    "ko": "11월 3일 WebKit은 Safari 27.3 베타에서 Adaptive Dark Mode를 발표했다. 사용자가 켜면 Safari가 밝은 웹사이트를 어둡게 다시 칠하고, 사이트는 이를 알 수 없다. 무엇을 바꾸고 무엇을 건너뛰는지, 베타 1의 옵트아웃 함정, 그리고 직접 다크 테마를 만들지·Safari에 맡길지·일부를 밝게 둘지 고르는 체크리스트.",
+    "ms": "Pada 3 November WebKit mengumumkan Adaptive Dark Mode dalam beta Safari 27.3: apabila pembaca menghidupkannya, Safari mewarnakan semula laman cerah menjadi gelap, dan laman anda tidak dapat mengesannya. Apa yang diubah, apa yang dilangkau, perangkap pilihan keluar dalam beta 1, dan senarai semak untuk memilih antara tema gelap sendiri, membiarkan Safari menyesuaikan, atau mengekalkan sebahagian cerah.",
+    "vi": "Ngày 3/11, WebKit công bố Adaptive Dark Mode trong bản beta Safari 27.3: khi người đọc bật, Safari tô lại các trang sáng thành tối và trang web không thể biết điều đó. Nó thay đổi gì, bỏ qua gì, cái bẫy khi muốn từ chối trong beta 1, và danh sách kiểm tra để chọn giữa tự làm giao diện tối, để Safari tự điều chỉnh, hay giữ một phần ở chế độ sáng.",
+    "fr": "Le 3 novembre, WebKit a annoncé Adaptive Dark Mode dans la bêta de Safari 27.3 : quand un lecteur l’active, Safari recolore en sombre les sites clairs, sans que le site puisse le savoir. Ce qui change, ce qui est épargné, le piège de l’exclusion dans la bêta 1, et une liste pour choisir entre un vrai thème sombre, laisser Safari adapter ou garder certaines zones claires.",
+    "es": "El 3 de noviembre WebKit anunció Adaptive Dark Mode en la beta de Safari 27.3: cuando un lector lo activa, Safari recolorea en oscuro los sitios claros y tu sitio no puede detectarlo. Qué cambia, qué deja intacto, la trampa para excluirse en la beta 1 y una lista para elegir entre un tema oscuro propio, dejar que Safari adapte o mantener partes en claro.",
+    "de": "Am 3. November kündigte WebKit Adaptive Dark Mode in der Beta von Safari 27.3 an: Schalten Leser es ein, färbt Safari helle Websites dunkel um, und die Website kann das nicht erkennen. Was es ändert, was es auslässt, die Opt-out-Falle in Beta 1 und eine Checkliste für die Wahl zwischen eigenem Dark Theme, Safari anpassen lassen oder Teile hell halten."
+   },
+   "reading_minutes": {
+    "en": 4,
+    "zh": 7
+   },
+   "cover": "https://ui.incidental.site/blog/img/safari-adaptive-dark-mode-design-for-it-cover.webp",
+   "references": [
+    {
+     "title": "Introducing Adaptive Dark Mode",
+     "by": "Simon Fraser, Luming Yin, Lily Spiniolas, Joanne Pan, Veda Periwal and Jen Simmons, WebKit",
+     "url": "https://webkit.org/blog/18541/introducing-adaptive-dark-mode/"
+    },
+    {
+     "title": "iOS 27.3 Adds Vertical Tabs and Adaptive Dark Mode to Safari",
+     "by": "Juli Clover, MacRumors",
+     "url": "https://www.macrumors.com/2026/11/03/ios-27-3-safari/"
+    },
+    {
+     "title": "Safari’s new dark mode repaints light websites without the sites knowing",
+     "by": "PPC Land",
+     "url": "https://ppc.land/safaris-new-dark-mode-repaints-light-websites-without-the-sites-knowing/"
+    },
+    {
+     "title": "Safari 27.3 Beta Adds Adaptive Dark Mode for Light Websites",
+     "by": "Technobezz",
+     "url": "https://www.technobezz.com/news/safari-beta-adds-adaptive-dark-mode"
+    },
+    {
+     "title": "Safari introduces Adaptive Dark Mode in 27.3 (discussion)",
+     "by": "Hacker News",
+     "url": "https://news.ycombinator.com/item?id=50358562"
+    },
+    {
+     "title": "color-scheme",
+     "by": "MDN Web Docs",
+     "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/color-scheme"
+    },
+    {
+     "title": "light-dark()",
+     "by": "MDN Web Docs",
+     "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/light-dark"
+    },
+    {
+     "title": "prefers-color-scheme",
+     "by": "MDN Web Docs",
+     "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme"
+    },
+    {
+     "title": "color-mix()",
+     "by": "MDN Web Docs",
+     "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/color-mix"
+    },
+    {
+     "title": "contrast-color()",
+     "by": "MDN Web Docs",
+     "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/contrast-color"
+    },
+    {
+     "title": "Improved dark mode default styling with the color-scheme CSS property and the corresponding meta tag",
+     "by": "web.dev",
+     "url": "https://web.dev/articles/color-scheme"
+    },
+    {
+     "title": "CSS Color Adjustment Module Level 1",
+     "by": "W3C CSS Working Group (editor’s draft)",
+     "url": "https://drafts.csswg.org/css-color-adjust-1/"
+    },
+    {
+     "title": "Understanding SC 1.4.3: Contrast (Minimum)",
+     "by": "W3C Web Accessibility Initiative",
+     "url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html"
+    }
+   ]
+  },
   {
    "slug": "figma-shaders-ga-ship-shader-backgrounds",
    "url": "https://ui.incidental.site/blog/figma-shaders-ga-ship-shader-backgrounds/",

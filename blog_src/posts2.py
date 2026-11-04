@@ -1726,3 +1726,104 @@ dict(slug='figma-shaders-ga-ship-shader-backgrounds', date='2026-11-03', cat='to
 <p>代码图层本身的工作流程，请看 <a href="../figma-code-layers-and-specs/">Figma 代码图层与 Specs</a>。<a href="../motion-that-feels-right/">恰到好处的动效</a>里的规则同样适用于着色器，<a href="../oklch-color-and-dark-mode/">OKLCH 色彩与深色模式</a>能帮你让着色器在深浅两种主题下都留在品牌色板之内。上线前，用 <a href="../accessibility-in-ai-generated-ui/">AI 生成界面的无障碍检查</a>过一遍；如果你更想直接写代码实现效果，可以在 <a href="../best-animated-react-component-libraries-2026/">2026 年最值得用的 React 动效组件库</a>里比较选择。</p>""",
  refs=[('Release notes: Export shaders at higher resolutions and bring them into code layers (2 Nov 2026)','Figma','https://www.figma.com/release-notes/'),('Create shaders with the Figma agent','Figma Learn','https://help.figma.com/hc/en-us/articles/41147702210071-Create-shaders-with-the-Figma-agent'),('Use shaders in designs','Figma Learn','https://help.figma.com/hc/en-us/articles/41175721167767-Use-shaders-in-designs'),('Prompting tips for generative plugins and shaders','Figma Learn','https://help.figma.com/hc/en-us/articles/41408020198935-Prompting-tips-for-generative-plugins-and-shaders'),('Workflow lab: Figma Motion, Figma Weave and shaders','Figma Learn','https://help.figma.com/hc/en-us/articles/42847574436119-Workflow-lab-New-tools-more-expression-with-Figma-Motion-Figma-Weave-and-shaders'),('What’s new from Config India 2026 (code layers open beta and credits)','Figma Learn','https://help.figma.com/hc/en-us/articles/43663368947863-What-s-new-from-Config-India-2026'),('Reply asking whether shaders stay editable in code layers','Shaheryar Butt (@SheryButtUXUI), X','https://x.com/SheryButtUXUI/status/2117367128642687211'),('Reply on shaders reaching sites instead of an MP4','Loki (@lokidotdev), X','https://x.com/lokidotdev/status/2117311148962058335'),('paper-design/shaders','Paper, GitHub','https://github.com/paper-design/shaders'),('Paper Shaders gallery','Paper','https://shaders.paper.design/'),('Understanding SC 1.4.3: Contrast (Minimum)','W3C Web Accessibility Initiative','https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html'),('Understanding SC 2.2.2: Pause, Stop, Hide','W3C Web Accessibility Initiative','https://www.w3.org/WAI/WCAG22/Understanding/pause-stop-hide.html'),('prefers-reduced-motion','MDN Web Docs','https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion'),('Intersection Observer API','MDN Web Docs','https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API'),('WebGL best practices','MDN Web Docs','https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API/WebGL_best_practices')]),
 ]
+
+POSTS2 += [
+dict(slug='safari-adaptive-dark-mode-design-for-it', date='2026-11-04', cat='craft', series=None, featured=True, tags=['Safari','dark mode','color-scheme','CSS','accessibility'],
+ t=T('Safari will darken light-only sites for you: design your own dark mode before Adaptive Dark Mode does',
+     'Safari 会替你把纯浅色网站变暗：在「自适应深色模式」动手之前，先做好你自己的深色模式',
+     'Safari 會替你把純淺色網站變暗：在「自適應深色模式」動手之前，先做好你自己的深色模式',
+     'Safariがライト専用サイトを勝手にダークにする：Adaptive Dark Modeより先に自分のダークモードを設計しよう',
+     'Safari가 라이트 전용 사이트를 대신 어둡게 만든다: Adaptive Dark Mode보다 먼저 직접 다크 모드를 설계하라',
+     'Safari akan menggelapkan laman cerah untuk anda: reka mod gelap sendiri sebelum Adaptive Dark Mode melakukannya',
+     'Safari sẽ tự làm tối các trang chỉ có giao diện sáng: hãy tự thiết kế chế độ tối trước khi Adaptive Dark Mode làm thay bạn',
+     'Safari va assombrir les sites clairs à votre place : concevez votre mode sombre avant qu’Adaptive Dark Mode ne le fasse',
+     'Safari oscurecerá por ti los sitios solo claros: diseña tu propio modo oscuro antes de que lo haga Adaptive Dark Mode',
+     'Safari dunkelt helle Websites selbst ab: Gestalten Sie Ihren eigenen Dark Mode, bevor Adaptive Dark Mode es tut'),
+ s=T('On 3 November WebKit announced Adaptive Dark Mode in the Safari 27.3 beta: when a reader turns it on, Safari recolours light websites as dark, and your site cannot tell. What it changes, what it skips, the opt-out trap in beta 1, and a checklist for choosing between a real dark theme, letting Safari adapt, or keeping parts light.',
+     '11 月 3 日，WebKit 在 Safari 27.3 测试版中发布了「自适应深色模式」（Adaptive Dark Mode）：读者开启后，Safari 会把浅色网站重新着色成深色，而网站本身无法察觉。本文讲它改什么、不改什么、测试版 1 里的退出陷阱，以及一份清单，帮你在「自己做深色主题」「让 Safari 自动适配」「部分区域保持浅色」之间做选择。',
+     '11 月 3 日，WebKit 在 Safari 27.3 測試版中發布了「自適應深色模式」（Adaptive Dark Mode）：讀者開啟後，Safari 會把淺色網站重新著色成深色，而網站本身無法察覺。本文講它改什麼、不改什麼、測試版 1 裡的退出陷阱，以及一份清單，幫你在「自己做深色主題」「讓 Safari 自動適配」「部分區域保持淺色」之間做選擇。',
+     '11月3日、WebKitはSafari 27.3ベータでAdaptive Dark Modeを発表した。読者が有効にすると、Safariはライトなサイトをダークに塗り替え、サイト側はそれを検知できない。何が変わり何が変わらないか、ベータ1のオプトアウトの落とし穴、そして自前のダークテーマ・Safari任せ・一部をライトのまま残す、の選び方チェックリスト。',
+     '11월 3일 WebKit은 Safari 27.3 베타에서 Adaptive Dark Mode를 발표했다. 사용자가 켜면 Safari가 밝은 웹사이트를 어둡게 다시 칠하고, 사이트는 이를 알 수 없다. 무엇을 바꾸고 무엇을 건너뛰는지, 베타 1의 옵트아웃 함정, 그리고 직접 다크 테마를 만들지·Safari에 맡길지·일부를 밝게 둘지 고르는 체크리스트.',
+     'Pada 3 November WebKit mengumumkan Adaptive Dark Mode dalam beta Safari 27.3: apabila pembaca menghidupkannya, Safari mewarnakan semula laman cerah menjadi gelap, dan laman anda tidak dapat mengesannya. Apa yang diubah, apa yang dilangkau, perangkap pilihan keluar dalam beta 1, dan senarai semak untuk memilih antara tema gelap sendiri, membiarkan Safari menyesuaikan, atau mengekalkan sebahagian cerah.',
+     'Ngày 3/11, WebKit công bố Adaptive Dark Mode trong bản beta Safari 27.3: khi người đọc bật, Safari tô lại các trang sáng thành tối và trang web không thể biết điều đó. Nó thay đổi gì, bỏ qua gì, cái bẫy khi muốn từ chối trong beta 1, và danh sách kiểm tra để chọn giữa tự làm giao diện tối, để Safari tự điều chỉnh, hay giữ một phần ở chế độ sáng.',
+     'Le 3 novembre, WebKit a annoncé Adaptive Dark Mode dans la bêta de Safari 27.3 : quand un lecteur l’active, Safari recolore en sombre les sites clairs, sans que le site puisse le savoir. Ce qui change, ce qui est épargné, le piège de l’exclusion dans la bêta 1, et une liste pour choisir entre un vrai thème sombre, laisser Safari adapter ou garder certaines zones claires.',
+     'El 3 de noviembre WebKit anunció Adaptive Dark Mode en la beta de Safari 27.3: cuando un lector lo activa, Safari recolorea en oscuro los sitios claros y tu sitio no puede detectarlo. Qué cambia, qué deja intacto, la trampa para excluirse en la beta 1 y una lista para elegir entre un tema oscuro propio, dejar que Safari adapte o mantener partes en claro.',
+     'Am 3. November kündigte WebKit Adaptive Dark Mode in der Beta von Safari 27.3 an: Schalten Leser es ein, färbt Safari helle Websites dunkel um, und die Website kann das nicht erkennen. Was es ändert, was es auslässt, die Opt-out-Falle in Beta 1 und eine Checkliste für die Wahl zwischen eigenem Dark Theme, Safari anpassen lassen oder Teile hell halten.'),
+ en="""<p>On 3 November the WebKit team announced <strong>Adaptive Dark Mode</strong> in the Safari 27.3 beta. If a reader has their system set to dark and lands on a bright page, Safari offers a preview and a “Try” button; MacRumors reports that after the first try it can be switched on for every site or site by site. Once it is on, Safari recolours light pages as dark. WebKit’s reason is a gap it measures itself: almost 40% of page loads come from people in dark mode, but only about 10% of page loads support it. Apple’s point releases that carry the feature are expected in December, according to MacRumors.</p>
+<p>For designers the important line is not the feature but the condition. If your site does not declare dark mode support, a browser engine will now make a dark version of it for some of your readers, using its own rules, and you will not be able to see that it happened.</p>
+<h2>What Safari changes, and what it leaves alone</h2>
+<ul><li><strong>It skips sites that already declare dark support</strong> with the <code>color-scheme</code> meta tag or <code>color-scheme: light dark</code> in CSS, and pages that are already mostly dark with light text.</li>
+<li><strong>On light pages it inverts lightness but keeps hue.</strong> Backgrounds go dark, dark text goes light, and transformed text aims for the WCAG 4.5:1 contrast ratio. Light CSS gradients become dark too.</li>
+<li><strong>It tries to keep things usable:</strong> buttons keep contrast against their backgrounds, text stays readable over images, hover menus stay clear. MacRumors adds that it lifts raised surfaces and rebalances layered shadows.</li>
+<li><strong>Images are mostly untouched.</strong> SVGs are inspected and recoloured when needed; for bitmaps Safari reads the pixel histogram and inverts simple black-and-white logos.</li>
+<li><strong>Some effects get switched off.</strong> Masks and <code>mix-blend-mode</code> may be disabled on transformed elements, and <code>&lt;canvas&gt;</code> content is left as it is.</li>
+<li><strong>Your site cannot detect it.</strong> To avoid adding a fingerprinting signal, JavaScript that reads CSS colours gets the authored colours, not the ones on screen.</li></ul>
+<h2>The opt-out trap in beta 1</h2>
+<p>WebKit’s documented way to keep a page or one element light is <code>color-scheme: light only</code> (or the meta tag with <code>light only</code>). In Safari 27.3 beta 1, the <code>only</code> keyword is not supported yet. That leaves a tempting shortcut: declare <code>light dark</code> so Safari leaves you alone. Don’t do it without real dark styles. That declaration tells every browser you handle dark mode, so built-in parts such as form controls, scrollbars and the default page background follow the reader’s dark preference, while your hard-coded light colours stay light. You trade Safari’s attempt at a dark page for a mixed one that you made yourself.</p>
+<h2>Our take</h2>
+<p>An automatic dark theme is a floor, not a design. It is probably better than a glaring white page at midnight, and WebKit clearly worked hard on contrast. But it makes decisions a designer would want to make: how light your brand colour becomes when its lightness flips, which surfaces sit above others, whether a photo with a baked-in white box looks pasted on. And because the change is invisible to scripts, you will not see it in analytics or in screenshots your monitoring takes; you will only see it if you open the page in Safari yourself.</p>
+<p>The good news is that a real dark theme is cheaper than it used to be. <code>light-dark()</code> lets one token hold both values, <code>color-mix()</code> derives hover and border shades, and a coding agent can do most of the mechanical work of moving scattered hex values into tokens. The design work that remains is the part worth doing by hand: choosing the dark palette, checking contrast and deciding what must stay light.</p>
+<h2>Checklist: decide before Safari decides for you</h2>
+<ol><li><strong>Look at it first.</strong> In the Safari 27.3 beta, set the system to dark, open your key pages and tap Try. Screenshot the home page, a form, a table and anything with your logo.</li>
+<li><strong>Pick a path per site.</strong> A real dark theme for products people use for long sessions; letting Safari adapt for simple content sites; light only for areas where colour is the content.</li>
+<li><strong>If you go dark, use tokens.</strong> Put every colour in a token, write both values with <code>light-dark()</code>, and declare <code>color-scheme: light dark</code> in the HTML head, not later from JavaScript.</li>
+<li><strong>Check contrast in both themes.</strong> Body text 4.5:1, large text and icons 3:1, including focus rings, disabled states and placeholder text.</li>
+<li><strong>Fix the inputs Safari struggles with.</strong> Logos and icons as SVG, images with transparent backgrounds rather than a baked page colour, CSS colours instead of tiled background images or sprites.</li>
+<li><strong>Mark what must stay light.</strong> Product photos, charts with semantic colours, brand artwork: plan <code>color-scheme: light only</code> on those elements and re-test when a later beta supports <code>only</code>.</li>
+<li><strong>Remember canvas and blend modes.</strong> Shaders, charts drawn to canvas and <code>mix-blend-mode</code> effects will not be adapted, or may be switched off, so they need their own dark versions.</li>
+<li><strong>Don’t fake support.</strong> Never ship <code>light dark</code> as an opt-out without dark styles behind it.</li></ol>
+<pre><code>/* in &lt;head&gt;: &lt;meta name="color-scheme" content="light dark"&gt; */
+:root {
+  color-scheme: light dark;
+  --bg:      light-dark(#f7f7f5, #0e0f13);
+  --surface: light-dark(#ffffff, #171922);
+  --ink:     light-dark(#111318, #eceef4);
+  --muted:   light-dark(#4b5162, #a4abbd);
+  --accent:  light-dark(#2453d6, #8aa8ff);
+  --line:    color-mix(in oklch, var(--ink) 14%, transparent);
+}
+body { background: var(--bg); color: var(--ink); }
+/* areas that must stay light (once Safari supports "only") */
+.product-photos, .brand-art { color-scheme: light only; }</code></pre>
+<h2>How UI Hub helps</h2>
+<p>For the basics of a hand-made dark theme, start with <a href="../dark-mode-done-right/">dark mode done right</a>; for building the palette itself, read <a href="../oklch-color-and-dark-mode/">OKLCH colour and dark mode</a>, and keep the tokens where agents can read them with <a href="../design-tokens-for-agents/">design tokens for agents</a>. Run the contrast and focus checks in <a href="../accessibility-in-ai-generated-ui/">accessibility in AI-generated UI</a> on both themes. If your hero uses a canvas or shader, <a href="../figma-shaders-ga-ship-shader-backgrounds/">shipping shader backgrounds</a> covers the fallbacks you will need, since Safari leaves canvas content alone.</p>""",
+ zh="""<p>11 月 3 日，WebKit 团队在 Safari 27.3 测试版中发布了<strong>自适应深色模式</strong>（Adaptive Dark Mode）。如果读者把系统设为深色，又打开了一个很亮的页面，Safari 会提供预览和一个「Try」按钮；据 MacRumors 报道，试用一次之后，可以选择对所有网站开启，或者逐个网站开启。开启后，Safari 会把浅色页面重新着色成深色。WebKit 给出的理由是它自己测到的差距：将近 40% 的页面加载来自使用深色模式的用户，但只有大约 10% 的页面加载支持深色模式。MacRumors 称，带有这项功能的系统更新预计在 12 月推出。</p>
+<p>对设计师来说，关键不在功能本身，而在它的触发条件：如果你的网站没有声明支持深色模式，浏览器引擎现在会按它自己的规则，给你的部分读者生成一个深色版本，而你无法看到这件事发生了。</p>
+<h2>Safari 改什么，不改什么</h2>
+<ul><li><strong>已声明支持深色的网站会被跳过</strong>：用了 <code>color-scheme</code> meta 标签，或在 CSS 里写了 <code>color-scheme: light dark</code>；本来就以深色背景、浅色文字为主的页面也不受影响。</li>
+<li><strong>对浅色页面，它反转明度但保留色相。</strong>背景变深，深色文字变浅，转换后的文字以 WCAG 4.5:1 的对比度为目标。浅色的 CSS 渐变也会变深。</li>
+<li><strong>它会尽量保持可用：</strong>按钮和背景之间保持对比，图片上的文字保持可读，悬停菜单保持清晰。MacRumors 补充说，它还会把浮起的表面提亮，并重新平衡叠加的阴影。</li>
+<li><strong>图片大多不动。</strong>SVG 会被检查，必要时重新着色；位图则会分析像素直方图，把简单的黑白 Logo 反色。</li>
+<li><strong>部分效果会被关掉。</strong>被转换的元素上，遮罩和 <code>mix-blend-mode</code> 可能会被停用；<code>&lt;canvas&gt;</code> 里的内容保持原样。</li>
+<li><strong>网站察觉不到。</strong>为了不增加可用于指纹追踪的信号，JavaScript 读取 CSS 颜色时拿到的是作者写的原始颜色，而不是屏幕上显示的颜色。</li></ul>
+<h2>测试版 1 里的退出陷阱</h2>
+<p>WebKit 文档里让页面或某个元素保持浅色的方法是 <code>color-scheme: light only</code>（或在 meta 标签里写 <code>light only</code>）。但在 Safari 27.3 测试版 1 中，<code>only</code> 关键字还不支持。于是出现一个诱人的捷径：声明 <code>light dark</code>，让 Safari 别管你。如果没有真正的深色样式，不要这样做。这个声明是在告诉所有浏览器「我自己处理深色模式」，于是表单控件、滚动条、默认页面背景这些浏览器自带的部分会跟随读者的深色偏好，而你写死的浅色仍然是浅色。你等于用一个自己造成的「深浅混搭」页面，换掉了 Safari 尝试生成的深色页面。</p>
+<h2>我们的看法</h2>
+<p>自动生成的深色主题是底线，不是设计。在半夜，它大概比一个刺眼的白页面好，WebKit 显然也在对比度上下了功夫。但它替你做了本该由设计师做的决定：品牌色在明度翻转后会变得多浅、哪些表面应该浮在其他表面之上、一张自带白底的图片会不会像贴上去的。而且这种变化对脚本不可见，你在数据分析里看不到，监控工具截的图里也看不到；只有你自己用 Safari 打开页面时才会看到。</p>
+<p>好消息是，做一个真正的深色主题比以前便宜多了。<code>light-dark()</code> 让一个 Token 同时保存两种取值，<code>color-mix()</code> 可以推导出悬停色和边框色，把散落各处的十六进制颜色值整理成 Token 这类机械工作，大部分可以交给编程智能体。剩下的设计工作才是值得亲手做的：选定深色色板、检查对比度、决定哪些地方必须保持浅色。</p>
+<h2>清单：在 Safari 替你决定之前，先做决定</h2>
+<ol><li><strong>先亲眼看看。</strong>在 Safari 27.3 测试版里把系统设为深色，打开你的关键页面并点 Try。给首页、一个表单、一个表格和所有带 Logo 的地方截图。</li>
+<li><strong>按网站选路线。</strong>用户长时间使用的产品，做真正的深色主题；简单的内容网站，可以让 Safari 自动适配；颜色本身就是内容的区域，保持浅色。</li>
+<li><strong>如果做深色，就用 Token。</strong>把每个颜色都放进 Token，用 <code>light-dark()</code> 写出两种取值，并在 HTML head 里声明 <code>color-scheme: light dark</code>，不要等 JavaScript 稍后注入。</li>
+<li><strong>两种主题都查对比度。</strong>正文 4.5:1，大字号文字和图标 3:1，包括焦点框、禁用状态和占位文字。</li>
+<li><strong>修好 Safari 难处理的素材。</strong>Logo 和图标用 SVG；图片用透明背景，不要把页面底色烤进图片；用 CSS 颜色代替平铺背景图和雪碧图。</li>
+<li><strong>标出必须保持浅色的部分。</strong>商品照片、带语义颜色的图表、品牌插画：计划在这些元素上用 <code>color-scheme: light only</code>，等后续测试版支持 <code>only</code> 后再测一遍。</li>
+<li><strong>别忘了 canvas 和混合模式。</strong>着色器、画在 canvas 上的图表以及 <code>mix-blend-mode</code> 效果不会被适配，或者可能被关掉，它们需要自己的深色版本。</li>
+<li><strong>不要假装支持。</strong>绝不要在没有深色样式的情况下，用 <code>light dark</code> 当作退出开关。</li></ol>
+<pre><code>/* 在 &lt;head&gt; 中：&lt;meta name="color-scheme" content="light dark"&gt; */
+:root {
+  color-scheme: light dark;
+  --bg:      light-dark(#f7f7f5, #0e0f13);   /* 页面背景 */
+  --surface: light-dark(#ffffff, #171922);   /* 卡片表面 */
+  --ink:     light-dark(#111318, #eceef4);   /* 正文 */
+  --muted:   light-dark(#4b5162, #a4abbd);   /* 次要文字 */
+  --accent:  light-dark(#2453d6, #8aa8ff);   /* 强调色 */
+  --line:    color-mix(in oklch, var(--ink) 14%, transparent);
+}
+body { background: var(--bg); color: var(--ink); }
+/* 必须保持浅色的区域（等 Safari 支持 "only" 后生效） */
+.product-photos, .brand-art { color-scheme: light only; }</code></pre>
+<h2>UI Hub 能帮什么</h2>
+<p>亲手做深色主题的基础，先看<a href="../dark-mode-done-right/">把暗色模式做对</a>；搭建色板本身，请看 <a href="../oklch-color-and-dark-mode/">OKLCH 色彩与深色模式</a>；用 <a href="../design-tokens-for-agents/">面向智能体的设计 Token</a> 把 Token 放在智能体读得到的地方。在两种主题下都用 <a href="../accessibility-in-ai-generated-ui/">AI 生成界面的无障碍检查</a>过一遍对比度和焦点。如果你的首屏用了 canvas 或着色器，<a href="../figma-shaders-ga-ship-shader-backgrounds/">上线着色器背景</a>一文讲了你需要的备用方案，因为 Safari 不会改动 canvas 里的内容。</p>""",
+ refs=[('Introducing Adaptive Dark Mode','Simon Fraser, Luming Yin, Lily Spiniolas, Joanne Pan, Veda Periwal and Jen Simmons, WebKit','https://webkit.org/blog/18541/introducing-adaptive-dark-mode/'),('iOS 27.3 Adds Vertical Tabs and Adaptive Dark Mode to Safari','Juli Clover, MacRumors','https://www.macrumors.com/2026/11/03/ios-27-3-safari/'),('Safari’s new dark mode repaints light websites without the sites knowing','PPC Land','https://ppc.land/safaris-new-dark-mode-repaints-light-websites-without-the-sites-knowing/'),('Safari 27.3 Beta Adds Adaptive Dark Mode for Light Websites','Technobezz','https://www.technobezz.com/news/safari-beta-adds-adaptive-dark-mode'),('Safari introduces Adaptive Dark Mode in 27.3 (discussion)','Hacker News','https://news.ycombinator.com/item?id=50358562'),('color-scheme','MDN Web Docs','https://developer.mozilla.org/en-US/docs/Web/CSS/color-scheme'),('light-dark()','MDN Web Docs','https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/light-dark'),('prefers-color-scheme','MDN Web Docs','https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme'),('color-mix()','MDN Web Docs','https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/color-mix'),('contrast-color()','MDN Web Docs','https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/contrast-color'),('Improved dark mode default styling with the color-scheme CSS property and the corresponding meta tag','web.dev','https://web.dev/articles/color-scheme'),('CSS Color Adjustment Module Level 1','W3C CSS Working Group (editor’s draft)','https://drafts.csswg.org/css-color-adjust-1/'),('Understanding SC 1.4.3: Contrast (Minimum)','W3C Web Accessibility Initiative','https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html')]),
+]
