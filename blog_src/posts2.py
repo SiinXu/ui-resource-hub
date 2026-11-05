@@ -1827,3 +1827,88 @@ body { background: var(--bg); color: var(--ink); }
 <p>亲手做深色主题的基础，先看<a href="../dark-mode-done-right/">把暗色模式做对</a>；搭建色板本身，请看 <a href="../oklch-color-and-dark-mode/">OKLCH 色彩与深色模式</a>；用 <a href="../design-tokens-for-agents/">面向智能体的设计 Token</a> 把 Token 放在智能体读得到的地方。在两种主题下都用 <a href="../accessibility-in-ai-generated-ui/">AI 生成界面的无障碍检查</a>过一遍对比度和焦点。如果你的首屏用了 canvas 或着色器，<a href="../figma-shaders-ga-ship-shader-backgrounds/">上线着色器背景</a>一文讲了你需要的备用方案，因为 Safari 不会改动 canvas 里的内容。</p>""",
  refs=[('Introducing Adaptive Dark Mode','Simon Fraser, Luming Yin, Lily Spiniolas, Joanne Pan, Veda Periwal and Jen Simmons, WebKit','https://webkit.org/blog/18541/introducing-adaptive-dark-mode/'),('iOS 27.3 Adds Vertical Tabs and Adaptive Dark Mode to Safari','Juli Clover, MacRumors','https://www.macrumors.com/2026/11/03/ios-27-3-safari/'),('Safari’s new dark mode repaints light websites without the sites knowing','PPC Land','https://ppc.land/safaris-new-dark-mode-repaints-light-websites-without-the-sites-knowing/'),('Safari 27.3 Beta Adds Adaptive Dark Mode for Light Websites','Technobezz','https://www.technobezz.com/news/safari-beta-adds-adaptive-dark-mode'),('Safari introduces Adaptive Dark Mode in 27.3 (discussion)','Hacker News','https://news.ycombinator.com/item?id=50358562'),('color-scheme','MDN Web Docs','https://developer.mozilla.org/en-US/docs/Web/CSS/color-scheme'),('light-dark()','MDN Web Docs','https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/light-dark'),('prefers-color-scheme','MDN Web Docs','https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme'),('color-mix()','MDN Web Docs','https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/color-mix'),('contrast-color()','MDN Web Docs','https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/contrast-color'),('Improved dark mode default styling with the color-scheme CSS property and the corresponding meta tag','web.dev','https://web.dev/articles/color-scheme'),('CSS Color Adjustment Module Level 1','W3C CSS Working Group (editor’s draft)','https://drafts.csswg.org/css-color-adjust-1/'),('Understanding SC 1.4.3: Contrast (Minimum)','W3C Web Accessibility Initiative','https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html')]),
 ]
+
+POSTS2 += [
+dict(slug='design-on-running-code-dessn-doop-code-canvas', date='2026-11-05', cat='workflow', series=None, featured=True, tags=['Dessn','Doop','Figma','code layers','MCP','agents','design systems'],
+ t=T('Design on running code: Dessn, Doop and Figma turn the canvas into a place agents and designers share',
+     '在运行中的代码上做设计：Dessn、Doop 和 Figma 正在把画布变成设计师与智能体共用的地方',
+     '在執行中的程式碼上做設計：Dessn、Doop 和 Figma 正在把畫布變成設計師與智慧體共用的地方',
+     '動くコードの上でデザインする：Dessn、Doop、Figmaがキャンバスをデザイナーとエージェントの共有の場に変える',
+     '실행 중인 코드 위에서 디자인하기: Dessn, Doop, Figma가 캔버스를 디자이너와 에이전트가 함께 쓰는 곳으로 바꾼다',
+     'Reka bentuk di atas kod yang sedang berjalan: Dessn, Doop dan Figma menjadikan kanvas ruang kongsi pereka dan ejen',
+     'Thiết kế trên mã đang chạy: Dessn, Doop và Figma biến canvas thành nơi nhà thiết kế và agent cùng làm việc',
+     'Concevoir sur du code qui tourne : Dessn, Doop et Figma font du canevas un espace partagé entre designers et agents',
+     'Diseñar sobre código en ejecución: Dessn, Doop y Figma convierten el lienzo en un espacio compartido por diseñadores y agentes',
+     'Auf laufendem Code gestalten: Dessn, Doop und Figma machen die Arbeitsfläche zum gemeinsamen Ort für Designer und Agents'),
+ s=T('On 4 November Dessn launched a canvas that runs your real app from your repo, the open-source Doop canvas trended on GitHub, and a day earlier Figma’s code layers started reading prototype connections. Two kinds of agent canvas are emerging: frames that are your app, and frames that are loose HTML. How they differ, what to check before connecting a repo, and a checklist for designing on code.',
+     '11 月 4 日，Dessn 发布了一个直接从你的代码仓库运行真实应用的画布；开源画布 Doop 登上 GitHub 趋势榜；前一天，Figma 的代码图层开始读取原型连线。智能体画布正在分成两类：画框就是你的应用，或者画框只是独立的 HTML。本文讲两者的区别、接入代码仓库前要检查什么，以及一份「在代码上做设计」的清单。',
+     '11 月 4 日，Dessn 發布了一個直接從你的程式碼倉庫執行真實應用的畫布；開源畫布 Doop 登上 GitHub 趨勢榜；前一天，Figma 的程式碼圖層開始讀取原型連線。智慧體畫布正在分成兩類：畫框就是你的應用，或者畫框只是獨立的 HTML。本文講兩者的區別、接入程式碼倉庫前要檢查什麼，以及一份「在程式碼上做設計」的清單。',
+     '11月4日、リポジトリから実際のアプリを動かすキャンバスDessnが公開され、オープンソースのキャンバスDoopがGitHubのトレンドに入り、その前日にはFigmaのコードレイヤーがプロトタイプの接続を読むようになった。エージェント向けキャンバスは「フレーム＝自分のアプリ」と「フレーム＝単独のHTML」の2種類に分かれつつある。違い、リポジトリ接続前の確認点、コード上でデザインするためのチェックリスト。',
+     '11월 4일 저장소에서 실제 앱을 그대로 실행하는 캔버스 Dessn이 출시됐고, 오픈소스 캔버스 Doop이 GitHub 트렌딩에 올랐으며, 하루 전 Figma 코드 레이어는 프로토타입 연결을 읽기 시작했다. 에이전트용 캔버스는 ‘프레임이 곧 내 앱’인 것과 ‘프레임이 독립 HTML’인 것으로 나뉘고 있다. 차이점, 저장소 연결 전 확인할 점, 코드 위에서 디자인하기 위한 체크리스트.',
+     'Pada 4 November Dessn melancarkan kanvas yang menjalankan aplikasi sebenar daripada repo anda, kanvas sumber terbuka Doop menjadi trending di GitHub, dan sehari sebelumnya lapisan kod Figma mula membaca sambungan prototaip. Dua jenis kanvas ejen sedang muncul: bingkai yang ialah aplikasi anda, dan bingkai HTML bebas. Perbezaannya, perkara untuk disemak sebelum menyambung repo, dan senarai semak.',
+     'Ngày 4/11, Dessn ra mắt canvas chạy ứng dụng thật từ repo của bạn, canvas mã nguồn mở Doop lên xu hướng GitHub, và một ngày trước đó code layer của Figma bắt đầu đọc các liên kết prototype. Đang hình thành hai loại canvas cho agent: frame chính là ứng dụng của bạn, và frame là HTML rời. Khác biệt, những gì cần kiểm tra trước khi kết nối repo, và một checklist.',
+     'Le 4 novembre, Dessn a lancé un canevas qui exécute votre vraie application depuis votre dépôt, le canevas open source Doop est apparu dans les tendances GitHub, et la veille les calques de code de Figma ont commencé à lire les connexions de prototype. Deux types de canevas pour agents émergent : des cadres qui sont votre application, et des cadres en HTML libre. Différences, vérifications avant de connecter un dépôt, et une checklist.',
+     'El 4 de noviembre Dessn lanzó un lienzo que ejecuta tu aplicación real desde tu repositorio, el lienzo de código abierto Doop fue tendencia en GitHub y un día antes las capas de código de Figma empezaron a leer las conexiones del prototipo. Surgen dos tipos de lienzo para agentes: marcos que son tu aplicación y marcos de HTML suelto. En qué se diferencian, qué revisar antes de conectar un repositorio y una checklist.',
+     'Am 4. November startete Dessn eine Arbeitsfläche, die Ihre echte App aus dem Repository ausführt, die Open-Source-Fläche Doop landete in den GitHub-Trends, und einen Tag zuvor begannen Figmas Code-Ebenen, Prototyp-Verbindungen zu lesen. Zwei Arten von Agent-Flächen entstehen: Frames, die Ihre App sind, und Frames aus losem HTML. Unterschiede, Prüfpunkte vor dem Verbinden eines Repos und eine Checkliste.'),
+ en="""<p>Three releases in two days point the same way. On 4 November <strong>Dessn</strong> launched on Product Hunt with a simple pitch: connect GitHub, GitLab or Bitbucket, and it renders your frontend one to one on a design canvas, with the backend mocked, so the team and their agents look at what is actually live. The same day the open-source <strong>Doop</strong>, a multiplayer canvas where people and AI agents edit HTML frames together, showed up on GitHub’s trending list. And on 3 November <strong>Figma</strong> said that when you turn design frames into a code layer, its agent now reads the prototype connections and interactions between them; it also made repository cloning the default for new GitHub connections.</p>
+<p>None of these is “AI generates a mockup”. They are about where the design and the agent meet: a shared canvas that an agent can write to over MCP (the Model Context Protocol that lets coding agents call tools) and that a person can click through.</p>
+<h2>Two kinds of agent canvas</h2>
+<ul><li><strong>Frames that are your app.</strong> In Dessn, a frame holds the app’s codebase. Its agent guidance says a new page, state or variation is a copy of the app’s frame whose code the agent writes, that components should be reused or modified rather than recreated, and that the change goes home as a patch, commits or a bundle. Dessn also exposes the components and tokens the app really uses, with file and line. Figma’s code layers sit nearby: you can import a GitHub repo or convert frames, and now the prototype wiring travels with them.</li>
+<li><strong>Frames that are loose HTML.</strong> Doop frames render HTML in sandboxed iframes. Agents connect over MCP with OAuth and work as you; its README lists 42 tools, including streaming a design into a frame section by section and taking a screenshot so the agent can review its own work. A built-in agent runs on GPT, Claude, Gemini, DeepSeek, Kimi or Qwen models. It is AGPL-3.0, self-hostable with an embedded Postgres, and calls itself an open-source alternative to Paper.</li></ul>
+<p>Dessn’s own docs draw the same line: real-app frames are what it is for, and HTML frames are for notes, annotations and visuals that are not a page of the app, such as an OG image or a moodboard.</p>
+<h2>Our take</h2>
+<p>The difference matters more than the brand names. An HTML frame is a fast sketch: great for exploring five directions, but every one of them still has to be translated into your components, and that translation is where design systems drift. A frame that runs your code skips the translation, because the variation is already a diff against your app. The cost moves elsewhere: you are now connecting a repository, deciding what data the mocked backend shows, and reviewing a code change rather than a picture.</p>
+<p>That shift also changes what a designer reviews. On a code canvas the useful questions are no longer “is this pixel right” but “did the agent reuse our Button, did it handle the empty and error states, and does the diff touch anything it should not”. Figma reading prototype connections is a small version of the same idea: the flow you wired becomes input for the code, so wiring the flow carefully is now part of the spec.</p>
+<p>We would not pick one canvas for everything. Use an HTML canvas to explore directions quickly and cheaply, then move the winner onto a frame that runs your code before anyone calls it done.</p>
+<h2>Checklist: designing on running code</h2>
+<ol><li><strong>Decide what the frame is.</strong> Your app (code-backed) for anything that will ship; loose HTML for exploration, moodboards and one-off visuals. Label exploration boards so nobody treats them as spec.</li>
+<li><strong>Check repository access first.</strong> Know which repos are connected, whether the tool only reads or also clones, and who can see them. In Figma, new GitHub connections now clone by default; admins can turn it off per repository.</li>
+<li><strong>Seed realistic mock data.</strong> If the backend is mocked, make sure the canvas shows real-looking names, long strings, empty lists and error responses, not just the happy path.</li>
+<li><strong>Tell agents to reuse, not recreate.</strong> Put “reuse or modify existing components; never rebuild one” in your agent rules, and run your design-system lint on every diff.</li>
+<li><strong>Wire the flow before you generate.</strong> In Figma, connect the prototype frames and interactions first, since the code layer agent now reads them.</li>
+<li><strong>Review by clicking, then by diff.</strong> Click through every state on the canvas, then read the patch: changed files, new dependencies, hard-coded colours.</li>
+<li><strong>Keep one source of truth.</strong> After the change merges, refresh the canvas from the repo so the next round starts from production, not from yesterday’s frame.</li>
+<li><strong>Read the licence if you self-host.</strong> Doop is AGPL-3.0: if you modify it and let others use it over a network, you must offer them your modified source.</li></ol>
+<pre><code># Brief for an agent working on a code-backed canvas
+Goal:       add an empty state + error state to the Invoices page
+Frame:      copy the live Invoices frame; do not start from blank HTML
+Reuse:      EmptyState, Alert, Button from src/components (no new components)
+Tokens:     colours and spacing from tokens.css only, no hex values
+Data:       mock 0 invoices, 1 invoice, 240 invoices, and a 500 error
+States:     loading · empty · error · long names · 375px width
+Deliver:    playable frame + patch; list every changed file
+Never:      touch API code, add dependencies, or change other pages</code></pre>
+<h2>How UI Hub helps</h2>
+<p>For the Figma side, read <a href="../figma-code-layers-and-specs/">Figma code layers and Specs</a>. Pointing at a running app instead of describing it is covered in <a href="../annotate-dont-describe-visual-prompts/">annotate, don’t describe</a>. To make agents reuse your components, use <a href="../lint-agents-onto-your-design-system/">lint agents onto your design system</a> and keep tokens readable with <a href="../design-tokens-for-agents/">design tokens for agents</a>. <a href="../github-replica-design-system-prototypes/">GitHub Replica</a> shows a related approach where reviewed design-system guidance drives prototypes.</p>""",
+ zh="""<p>两天里的三个发布，指向同一个方向。11 月 4 日，<strong>Dessn</strong> 在 Product Hunt 上发布，卖点很直接：连上 GitHub、GitLab 或 Bitbucket，它就把你的前端一比一渲染到设计画布上，后端用模拟数据代替，让团队和他们的智能体看到的都是真正上线的东西。同一天，开源的 <strong>Doop</strong>（一个让人和 AI 智能体一起编辑 HTML 画框的多人画布）出现在 GitHub 趋势榜上。11 月 3 日，<strong>Figma</strong> 宣布：把设计画框转成代码图层时，它的智能体现在会读取画框之间的原型连线和交互；同时，新建的 GitHub 连接默认允许克隆代码仓库。</p>
+<p>这些都不是「AI 生成一张效果图」。它们讨论的是设计和智能体在哪里相遇：一个智能体可以通过 MCP（让编程智能体调用外部工具的模型上下文协议）写入、人可以直接点着试用的共享画布。</p>
+<h2>两类智能体画布</h2>
+<ul><li><strong>画框就是你的应用。</strong>在 Dessn 里，一个画框装着整个应用的代码。它给智能体的指南写道：新页面、新状态或新变体，都是复制一份应用画框，再由智能体改写其中的代码；组件应该复用或修改，而不是重新造一个；改动以补丁、提交或代码包的形式带回本地。Dessn 还会列出应用真正在用的组件和 Token，并标明文件和行号。Figma 的代码图层与它相近：你可以导入 GitHub 仓库或转换画框，现在原型连线也会一起带过去。</li>
+<li><strong>画框只是独立的 HTML。</strong>Doop 的画框在沙盒 iframe 里渲染 HTML。智能体通过带 OAuth 的 MCP 接入，以你的身份工作；它的 README 列出了 42 个工具，包括把设计一段一段流式写入画框，以及截图让智能体检查自己的作品。内置智能体可以用 GPT、Claude、Gemini、DeepSeek、Kimi 或 Qwen 模型。它采用 AGPL-3.0 许可，可以带着内嵌的 Postgres 自行部署，并自称是 Paper 的开源替代品。</li></ul>
+<p>Dessn 自己的文档也划了同一条线：真实应用画框才是它的主业，HTML 画框用来放笔记、批注和不属于应用页面的视觉内容，比如 OG 分享图或情绪板。</p>
+<h2>我们的看法</h2>
+<p>两类画布的区别，比品牌名字更重要。HTML 画框是快速草图：适合同时探索五个方向，但每一个最终都得翻译成你的组件，而设计系统恰恰是在这一步跑偏的。运行你代码的画框省掉了翻译，因为变体本身就是针对你应用的一份代码差异。成本转移到了别处：你要接入代码仓库，要决定模拟后端展示什么数据，要审查的是代码改动，而不是一张图。</p>
+<p>这也改变了设计师审查的内容。在代码画布上，有用的问题不再是「这个像素对不对」，而是「智能体有没有复用我们的 Button、有没有处理空状态和错误状态、这份差异有没有碰到不该碰的地方」。Figma 读取原型连线是同一思路的小版本：你连好的流程会成为生成代码的输入，所以认真连流程现在也是需求说明的一部分。</p>
+<p>我们不建议用一种画布做所有事。用 HTML 画布又快又便宜地探索方向，选定之后，在有人宣布「完成」之前，把它搬到运行你代码的画框上。</p>
+<h2>清单：在运行中的代码上做设计</h2>
+<ol><li><strong>先决定画框是什么。</strong>要上线的东西用你的应用（代码支撑的画框）；探索、情绪板和一次性视觉用独立 HTML。给探索用的画板加上标注，免得有人把它当成需求。</li>
+<li><strong>先查代码仓库权限。</strong>弄清楚连了哪些仓库、工具只是读取还是会克隆、谁能看到。在 Figma 里，新建的 GitHub 连接现在默认克隆；管理员可以按仓库关闭。</li>
+<li><strong>准备真实感的模拟数据。</strong>如果后端是模拟的，确保画布上有像真的名字、超长字符串、空列表和报错返回，而不只是一切顺利的情况。</li>
+<li><strong>让智能体复用，而不是重造。</strong>在智能体规则里写上「复用或修改现有组件，绝不重新造一个」，并对每份差异跑一遍设计系统检查。</li>
+<li><strong>先连流程，再生成。</strong>在 Figma 里，先把原型画框和交互连好，因为代码图层的智能体现在会读取它们。</li>
+<li><strong>先点着看，再读差异。</strong>在画布上把每个状态都点一遍，然后读补丁：改了哪些文件、新增了哪些依赖、有没有写死的颜色。</li>
+<li><strong>只保留一个事实来源。</strong>改动合并后，从仓库刷新画布，让下一轮从线上版本开始，而不是从昨天的画框开始。</li>
+<li><strong>自行部署就读许可证。</strong>Doop 采用 AGPL-3.0：如果你修改了它并让别人通过网络使用，就必须向他们提供修改后的源代码。</li></ol>
+<pre><code># 给在代码画布上工作的智能体的任务说明
+目标：     给发票页面加上空状态和错误状态
+画框：     复制线上的发票页画框，不要从空白 HTML 开始
+复用：     src/components 里的 EmptyState、Alert、Button（不新建组件）
+Token：    颜色和间距只用 tokens.css，不写十六进制颜色
+数据：     模拟 0 张、1 张、240 张发票，以及一次 500 错误
+状态：     加载 · 空 · 错误 · 超长名称 · 375px 宽度
+交付：     可点击的画框 + 补丁；列出所有改动的文件
+禁止：     改 API 代码、加依赖、改其他页面</code></pre>
+<h2>UI Hub 能帮什么</h2>
+<p>Figma 这一侧，请看 <a href="../figma-code-layers-and-specs/">Figma 代码图层与 Specs</a>。直接指着运行中的应用说话、而不是用文字描述，见<a href="../annotate-dont-describe-visual-prompts/">标注，而不是描述</a>。想让智能体复用你的组件，用<a href="../lint-agents-onto-your-design-system/">用检查把智能体拉回设计系统</a>，并用<a href="../design-tokens-for-agents/">面向智能体的设计 Token</a> 让 Token 保持可读。<a href="../github-replica-design-system-prototypes/">GitHub Replica</a> 展示了一种相关做法：由审核过的设计系统指南驱动原型。</p>""",
+ refs=[('Dessn: the design canvas that runs your real code (Product Hunt launch, 4 Nov 2026)','Hunted.space','https://hunted.space/product/dessn-2'),('Dessn','Dessn','https://www.dessn.ai/'),('We built what you wished Figma could be (launch video)','Dessn, via posts.design','https://posts.design/gabriella-we-built-what-you-wished-figma-could-2026-11-04'),('kgoedecke/doop','kgoedecke, GitHub','https://github.com/kgoedecke/doop'),('Get started','Doop','https://doop.design/docs/get-started'),('The design MCP for Claude Code','Doop','https://doop.design/design-mcp-for-claude-code'),('doop open-source canvas lets AI agents design live with humans','Marcello Babbili, Not a Tech Guy','https://www.notatechguy.com/doop-open-source-canvas-lets-ai-agents-design-live-with-humans/'),('Release notes: prototype connections as context for code layers; cloning by default (3 Nov 2026)','Figma','https://www.figma.com/release-notes/'),('What’s new from Config India 2026 (code layers open beta)','Figma Learn','https://help.figma.com/hc/en-us/articles/43663368947863-What-s-new-from-Config-India-2026'),('Paper','Paper','https://paper.design/'),('Authorization','Model Context Protocol specification','https://modelcontextprotocol.io/specification/2025-06-18/basic/authorization'),('GNU Affero General Public License v3.0','choosealicense.com','https://choosealicense.com/licenses/agpl-3.0/')]),
+]

@@ -1,0 +1,30 @@
+<p>两天里的三个发布，指向同一个方向。11 月 4 日，<strong>Dessn</strong> 在 Product Hunt 上发布，卖点很直接：连上 GitHub、GitLab 或 Bitbucket，它就把你的前端一比一渲染到设计画布上，后端用模拟数据代替，让团队和他们的智能体看到的都是真正上线的东西。同一天，开源的 <strong>Doop</strong>（一个让人和 AI 智能体一起编辑 HTML 画框的多人画布）出现在 GitHub 趋势榜上。11 月 3 日，<strong>Figma</strong> 宣布：把设计画框转成代码图层时，它的智能体现在会读取画框之间的原型连线和交互；同时，新建的 GitHub 连接默认允许克隆代码仓库。</p><figure><img src="../../blog/img/design-on-running-code-dessn-doop-code-canvas-1.webp" alt="2026 年 11 月 5 日的 Dessn 首页：一个渲染产品真实代码的设计画布，让团队和智能体都以线上版本为准" loading="lazy" decoding="async" width="1280" height="800"><figcaption>2026 年 11 月 5 日的 Dessn 首页：一个渲染产品真实代码的设计画布，让团队和智能体都以线上版本为准 · 截图：Dessn（<a href="https://www.dessn.ai/" rel="noopener" target="_blank">www.dessn.ai</a>），2026-11-05 截取，版权归原站所有</figcaption></figure>
+<p>这些都不是「AI 生成一张效果图」。它们讨论的是设计和智能体在哪里相遇：一个智能体可以通过 MCP（让编程智能体调用外部工具的模型上下文协议）写入、人可以直接点着试用的共享画布。</p>
+<h2>两类智能体画布</h2>
+<ul><li><strong>画框就是你的应用。</strong>在 Dessn 里，一个画框装着整个应用的代码。它给智能体的指南写道：新页面、新状态或新变体，都是复制一份应用画框，再由智能体改写其中的代码；组件应该复用或修改，而不是重新造一个；改动以补丁、提交或代码包的形式带回本地。Dessn 还会列出应用真正在用的组件和 Token，并标明文件和行号。Figma 的代码图层与它相近：你可以导入 GitHub 仓库或转换画框，现在原型连线也会一起带过去。</li>
+<li><strong>画框只是独立的 HTML。</strong>Doop 的画框在沙盒 iframe 里渲染 HTML。智能体通过带 OAuth 的 MCP 接入，以你的身份工作；它的 README 列出了 42 个工具，包括把设计一段一段流式写入画框，以及截图让智能体检查自己的作品。内置智能体可以用 GPT、Claude、Gemini、DeepSeek、Kimi 或 Qwen 模型。它采用 AGPL-3.0 许可，可以带着内嵌的 Postgres 自行部署，并自称是 Paper 的开源替代品。</li></ul><figure><img src="../../blog/img/design-on-running-code-dessn-doop-code-canvas-2.webp" alt="对比示意：代码支撑的画框复制运行中的应用、复用其组件并交回补丁；独立 HTML 画框是快速草图，之后还得翻译成你的组件" loading="lazy" decoding="async" width="1200" height="675"><figcaption>对比示意：代码支撑的画框复制运行中的应用、复用其组件并交回补丁；独立 HTML 画框是快速草图，之后还得翻译成你的组件 · 示意图：UI Hub 原创，CC BY 4.0</figcaption></figure>
+<p>Dessn 自己的文档也划了同一条线：真实应用画框才是它的主业，HTML 画框用来放笔记、批注和不属于应用页面的视觉内容，比如 OG 分享图或情绪板。</p>
+<h2>我们的看法</h2>
+<p>两类画布的区别，比品牌名字更重要。HTML 画框是快速草图：适合同时探索五个方向，但每一个最终都得翻译成你的组件，而设计系统恰恰是在这一步跑偏的。运行你代码的画框省掉了翻译，因为变体本身就是针对你应用的一份代码差异。成本转移到了别处：你要接入代码仓库，要决定模拟后端展示什么数据，要审查的是代码改动，而不是一张图。</p>
+<p>这也改变了设计师审查的内容。在代码画布上，有用的问题不再是「这个像素对不对」，而是「智能体有没有复用我们的 Button、有没有处理空状态和错误状态、这份差异有没有碰到不该碰的地方」。Figma 读取原型连线是同一思路的小版本：你连好的流程会成为生成代码的输入，所以认真连流程现在也是需求说明的一部分。</p>
+<p>我们不建议用一种画布做所有事。用 HTML 画布又快又便宜地探索方向，选定之后，在有人宣布「完成」之前，把它搬到运行你代码的画框上。</p>
+<h2>清单：在运行中的代码上做设计</h2>
+<ol><li><strong>先决定画框是什么。</strong>要上线的东西用你的应用（代码支撑的画框）；探索、情绪板和一次性视觉用独立 HTML。给探索用的画板加上标注，免得有人把它当成需求。</li>
+<li><strong>先查代码仓库权限。</strong>弄清楚连了哪些仓库、工具只是读取还是会克隆、谁能看到。在 Figma 里，新建的 GitHub 连接现在默认克隆；管理员可以按仓库关闭。</li>
+<li><strong>准备真实感的模拟数据。</strong>如果后端是模拟的，确保画布上有像真的名字、超长字符串、空列表和报错返回，而不只是一切顺利的情况。</li>
+<li><strong>让智能体复用，而不是重造。</strong>在智能体规则里写上「复用或修改现有组件，绝不重新造一个」，并对每份差异跑一遍设计系统检查。</li>
+<li><strong>先连流程，再生成。</strong>在 Figma 里，先把原型画框和交互连好，因为代码图层的智能体现在会读取它们。</li>
+<li><strong>先点着看，再读差异。</strong>在画布上把每个状态都点一遍，然后读补丁：改了哪些文件、新增了哪些依赖、有没有写死的颜色。</li>
+<li><strong>只保留一个事实来源。</strong>改动合并后，从仓库刷新画布，让下一轮从线上版本开始，而不是从昨天的画框开始。</li>
+<li><strong>自行部署就读许可证。</strong>Doop 采用 AGPL-3.0：如果你修改了它并让别人通过网络使用，就必须向他们提供修改后的源代码。</li></ol>
+<pre><code># 给在代码画布上工作的智能体的任务说明
+目标：     给发票页面加上空状态和错误状态
+画框：     复制线上的发票页画框，不要从空白 HTML 开始
+复用：     src/components 里的 EmptyState、Alert、Button（不新建组件）
+Token：    颜色和间距只用 tokens.css，不写十六进制颜色
+数据：     模拟 0 张、1 张、240 张发票，以及一次 500 错误
+状态：     加载 · 空 · 错误 · 超长名称 · 375px 宽度
+交付：     可点击的画框 + 补丁；列出所有改动的文件
+禁止：     改 API 代码、加依赖、改其他页面</code></pre>
+<figure><img src="../../blog/img/design-on-running-code-dessn-doop-code-canvas-3.webp" alt="2026 年 11 月 5 日 GitHub 上的 Doop 仓库：AGPL-3.0 许可的多人设计画布，人和 AI 智能体通过 MCP 一起编辑实时 HTML 画框" loading="lazy" decoding="async" width="1280" height="800"><figcaption>2026 年 11 月 5 日 GitHub 上的 Doop 仓库：AGPL-3.0 许可的多人设计画布，人和 AI 智能体通过 MCP 一起编辑实时 HTML 画框 · 截图：GitHub · kgoedecke（<a href="https://github.com/kgoedecke/doop" rel="noopener" target="_blank">github.com</a>），2026-11-05 截取，版权归原站所有</figcaption></figure><h2>UI Hub 能帮什么</h2>
+<p>Figma 这一侧，请看 <a href="../figma-code-layers-and-specs/">Figma 代码图层与 Specs</a>。直接指着运行中的应用说话、而不是用文字描述，见<a href="../annotate-dont-describe-visual-prompts/">标注，而不是描述</a>。想让智能体复用你的组件，用<a href="../lint-agents-onto-your-design-system/">用检查把智能体拉回设计系统</a>，并用<a href="../design-tokens-for-agents/">面向智能体的设计 Token</a> 让 Token 保持可读。<a href="../github-replica-design-system-prototypes/">GitHub Replica</a> 展示了一种相关做法：由审核过的设计系统指南驱动原型。</p>

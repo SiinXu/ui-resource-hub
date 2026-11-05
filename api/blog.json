@@ -1,5 +1,5 @@
 {
- "count": 43,
+ "count": 44,
  "rss": "https://ui.incidental.site/blog/rss.xml",
  "categories": {
   "tools": "Tools",
@@ -18,6 +18,114 @@
   "weekly": "Series: Weekly roundup"
  },
  "posts": [
+  {
+   "slug": "design-on-running-code-dessn-doop-code-canvas",
+   "url": "https://ui.incidental.site/blog/design-on-running-code-dessn-doop-code-canvas/",
+   "date": "2026-11-05",
+   "category": "workflow",
+   "series": null,
+   "featured": true,
+   "tags": [
+    "Dessn",
+    "Doop",
+    "Figma",
+    "code layers",
+    "MCP",
+    "agents",
+    "design systems"
+   ],
+   "title": {
+    "en": "Design on running code: Dessn, Doop and Figma turn the canvas into a place agents and designers share",
+    "zh": "在运行中的代码上做设计：Dessn、Doop 和 Figma 正在把画布变成设计师与智能体共用的地方",
+    "zht": "在執行中的程式碼上做設計：Dessn、Doop 和 Figma 正在把畫布變成設計師與智慧體共用的地方",
+    "ja": "動くコードの上でデザインする：Dessn、Doop、Figmaがキャンバスをデザイナーとエージェントの共有の場に変える",
+    "ko": "실행 중인 코드 위에서 디자인하기: Dessn, Doop, Figma가 캔버스를 디자이너와 에이전트가 함께 쓰는 곳으로 바꾼다",
+    "ms": "Reka bentuk di atas kod yang sedang berjalan: Dessn, Doop dan Figma menjadikan kanvas ruang kongsi pereka dan ejen",
+    "vi": "Thiết kế trên mã đang chạy: Dessn, Doop và Figma biến canvas thành nơi nhà thiết kế và agent cùng làm việc",
+    "fr": "Concevoir sur du code qui tourne : Dessn, Doop et Figma font du canevas un espace partagé entre designers et agents",
+    "es": "Diseñar sobre código en ejecución: Dessn, Doop y Figma convierten el lienzo en un espacio compartido por diseñadores y agentes",
+    "de": "Auf laufendem Code gestalten: Dessn, Doop und Figma machen die Arbeitsfläche zum gemeinsamen Ort für Designer und Agents"
+   },
+   "summary": {
+    "en": "On 4 November Dessn launched a canvas that runs your real app from your repo, the open-source Doop canvas trended on GitHub, and a day earlier Figma’s code layers started reading prototype connections. Two kinds of agent canvas are emerging: frames that are your app, and frames that are loose HTML. How they differ, what to check before connecting a repo, and a checklist for designing on code.",
+    "zh": "11 月 4 日，Dessn 发布了一个直接从你的代码仓库运行真实应用的画布；开源画布 Doop 登上 GitHub 趋势榜；前一天，Figma 的代码图层开始读取原型连线。智能体画布正在分成两类：画框就是你的应用，或者画框只是独立的 HTML。本文讲两者的区别、接入代码仓库前要检查什么，以及一份「在代码上做设计」的清单。",
+    "zht": "11 月 4 日，Dessn 發布了一個直接從你的程式碼倉庫執行真實應用的畫布；開源畫布 Doop 登上 GitHub 趨勢榜；前一天，Figma 的程式碼圖層開始讀取原型連線。智慧體畫布正在分成兩類：畫框就是你的應用，或者畫框只是獨立的 HTML。本文講兩者的區別、接入程式碼倉庫前要檢查什麼，以及一份「在程式碼上做設計」的清單。",
+    "ja": "11月4日、リポジトリから実際のアプリを動かすキャンバスDessnが公開され、オープンソースのキャンバスDoopがGitHubのトレンドに入り、その前日にはFigmaのコードレイヤーがプロトタイプの接続を読むようになった。エージェント向けキャンバスは「フレーム＝自分のアプリ」と「フレーム＝単独のHTML」の2種類に分かれつつある。違い、リポジトリ接続前の確認点、コード上でデザインするためのチェックリスト。",
+    "ko": "11월 4일 저장소에서 실제 앱을 그대로 실행하는 캔버스 Dessn이 출시됐고, 오픈소스 캔버스 Doop이 GitHub 트렌딩에 올랐으며, 하루 전 Figma 코드 레이어는 프로토타입 연결을 읽기 시작했다. 에이전트용 캔버스는 ‘프레임이 곧 내 앱’인 것과 ‘프레임이 독립 HTML’인 것으로 나뉘고 있다. 차이점, 저장소 연결 전 확인할 점, 코드 위에서 디자인하기 위한 체크리스트.",
+    "ms": "Pada 4 November Dessn melancarkan kanvas yang menjalankan aplikasi sebenar daripada repo anda, kanvas sumber terbuka Doop menjadi trending di GitHub, dan sehari sebelumnya lapisan kod Figma mula membaca sambungan prototaip. Dua jenis kanvas ejen sedang muncul: bingkai yang ialah aplikasi anda, dan bingkai HTML bebas. Perbezaannya, perkara untuk disemak sebelum menyambung repo, dan senarai semak.",
+    "vi": "Ngày 4/11, Dessn ra mắt canvas chạy ứng dụng thật từ repo của bạn, canvas mã nguồn mở Doop lên xu hướng GitHub, và một ngày trước đó code layer của Figma bắt đầu đọc các liên kết prototype. Đang hình thành hai loại canvas cho agent: frame chính là ứng dụng của bạn, và frame là HTML rời. Khác biệt, những gì cần kiểm tra trước khi kết nối repo, và một checklist.",
+    "fr": "Le 4 novembre, Dessn a lancé un canevas qui exécute votre vraie application depuis votre dépôt, le canevas open source Doop est apparu dans les tendances GitHub, et la veille les calques de code de Figma ont commencé à lire les connexions de prototype. Deux types de canevas pour agents émergent : des cadres qui sont votre application, et des cadres en HTML libre. Différences, vérifications avant de connecter un dépôt, et une checklist.",
+    "es": "El 4 de noviembre Dessn lanzó un lienzo que ejecuta tu aplicación real desde tu repositorio, el lienzo de código abierto Doop fue tendencia en GitHub y un día antes las capas de código de Figma empezaron a leer las conexiones del prototipo. Surgen dos tipos de lienzo para agentes: marcos que son tu aplicación y marcos de HTML suelto. En qué se diferencian, qué revisar antes de conectar un repositorio y una checklist.",
+    "de": "Am 4. November startete Dessn eine Arbeitsfläche, die Ihre echte App aus dem Repository ausführt, die Open-Source-Fläche Doop landete in den GitHub-Trends, und einen Tag zuvor begannen Figmas Code-Ebenen, Prototyp-Verbindungen zu lesen. Zwei Arten von Agent-Flächen entstehen: Frames, die Ihre App sind, und Frames aus losem HTML. Unterschiede, Prüfpunkte vor dem Verbinden eines Repos und eine Checkliste."
+   },
+   "reading_minutes": {
+    "en": 4,
+    "zh": 5
+   },
+   "cover": "https://ui.incidental.site/blog/img/design-on-running-code-dessn-doop-code-canvas-cover.webp",
+   "references": [
+    {
+     "title": "Dessn: the design canvas that runs your real code (Product Hunt launch, 4 Nov 2026)",
+     "by": "Hunted.space",
+     "url": "https://hunted.space/product/dessn-2"
+    },
+    {
+     "title": "Dessn",
+     "by": "Dessn",
+     "url": "https://www.dessn.ai/"
+    },
+    {
+     "title": "We built what you wished Figma could be (launch video)",
+     "by": "Dessn, via posts.design",
+     "url": "https://posts.design/gabriella-we-built-what-you-wished-figma-could-2026-11-04"
+    },
+    {
+     "title": "kgoedecke/doop",
+     "by": "kgoedecke, GitHub",
+     "url": "https://github.com/kgoedecke/doop"
+    },
+    {
+     "title": "Get started",
+     "by": "Doop",
+     "url": "https://doop.design/docs/get-started"
+    },
+    {
+     "title": "The design MCP for Claude Code",
+     "by": "Doop",
+     "url": "https://doop.design/design-mcp-for-claude-code"
+    },
+    {
+     "title": "doop open-source canvas lets AI agents design live with humans",
+     "by": "Marcello Babbili, Not a Tech Guy",
+     "url": "https://www.notatechguy.com/doop-open-source-canvas-lets-ai-agents-design-live-with-humans/"
+    },
+    {
+     "title": "Release notes: prototype connections as context for code layers; cloning by default (3 Nov 2026)",
+     "by": "Figma",
+     "url": "https://www.figma.com/release-notes/"
+    },
+    {
+     "title": "What’s new from Config India 2026 (code layers open beta)",
+     "by": "Figma Learn",
+     "url": "https://help.figma.com/hc/en-us/articles/43663368947863-What-s-new-from-Config-India-2026"
+    },
+    {
+     "title": "Paper",
+     "by": "Paper",
+     "url": "https://paper.design/"
+    },
+    {
+     "title": "Authorization",
+     "by": "Model Context Protocol specification",
+     "url": "https://modelcontextprotocol.io/specification/2025-06-18/basic/authorization"
+    },
+    {
+     "title": "GNU Affero General Public License v3.0",
+     "by": "choosealicense.com",
+     "url": "https://choosealicense.com/licenses/agpl-3.0/"
+    }
+   ]
+  },
   {
    "slug": "safari-adaptive-dark-mode-design-for-it",
    "url": "https://ui.incidental.site/blog/safari-adaptive-dark-mode-design-for-it/",

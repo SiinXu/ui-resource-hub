@@ -406,3 +406,4 @@ curl -s https://ui.incidental.site/api/resources.json | jq --arg d "$(date -u -d
 - Stageshow: teaching agents to make product demos that look real — https://ui.incidental.site/kb/note/blog-stageshow-faux-product-ui-for-agents.md
 - Figma shaders are generally available: how to ship shader backgrounds that stay fast and readable — https://ui.incidental.site/kb/note/blog-figma-shaders-ga-ship-shader-backgrounds.md
 - Safari will darken light-only sites for you: design your own dark mode before Adaptive Dark Mode does — https://ui.incidental.site/kb/note/blog-safari-adaptive-dark-mode-design-for-it.md
+- Design on running code: Dessn, Doop and Figma turn the canvas into a place agents and designers share — https://ui.incidental.site/kb/note/blog-design-on-running-code-dessn-doop-code-canvas.md
