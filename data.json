@@ -1,6 +1,6 @@
 {
  "generated": "2026-11-05",
- "count": 5075,
+ "count": 5077,
  "items": [
   {
    "id": "ued-figma-mcp-guide",
@@ -190791,6 +190791,106 @@
    },
    "pub": "2026-11-04",
    "added": "2026-11-04"
+  },
+  {
+   "id": "rd-i2g8hzc-holiday-gift-shop-app",
+   "name": "Holiday Gift Shop App",
+   "url": "https://x.com/regyperlera/status/2118132238390903124",
+   "note": "A mobile shopping app's holiday gift experience featuring a 3D snow globe entry point, curated gift guide feeds, and a rotating product-image sphere as the main visual motif.",
+   "noteEn": "A mobile shopping app's holiday gift experience featuring a 3D snow globe entry point, curated gift guide feeds, and a rotating product-image sphere as the main visual motif.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@regyperlera",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "3d",
+    "playful"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/i2g8hzc-holiday-gift-shop-app",
+   "rdkind": "Design",
+   "rdcat": "Interface",
+   "rdstyle": [
+    "3D",
+    "Playful",
+    "Vibrant"
+   ],
+   "author": {
+    "name": "Regy",
+    "handle": "@regyperlera",
+    "url": "https://x.com/regyperlera"
+   },
+   "x_post": "https://x.com/regyperlera/status/2118132238390903124",
+   "xsrc": {
+    "post": "https://x.com/regyperlera/status/2118132238390903124",
+    "author": "@regyperlera",
+    "likes": 91,
+    "bookmarks": 55,
+    "reposts": 10,
+    "impressions": 10495,
+    "date": "2026-11-05"
+   },
+   "pub": "2026-11-05",
+   "added": "2026-11-05"
+  },
+  {
+   "id": "rd-nukdlzc-elevenlabs-october-brand-recap",
+   "name": "ElevenLabs October Brand Recap",
+   "url": "https://x.com/marinaanddesign/status/2118035015959490865",
+   "note": "A monthly brand design recap for ElevenLabs spanning guidelines, business cards, app icon, social assets, event poster, and brand gradients tied together with kinetic type transitions.",
+   "noteEn": "A monthly brand design recap for ElevenLabs spanning guidelines, business cards, app icon, social assets, event poster, and brand gradients tied together with kinetic type transitions.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@marinaanddesign",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal",
+    "gradient"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/nukdlzc-elevenlabs-october-brand-recap",
+   "rdkind": "Design",
+   "rdcat": "Branding",
+   "rdstyle": [
+    "Typographic",
+    "Minimal",
+    "Dark",
+    "Vibrant",
+    "Gradient"
+   ],
+   "author": {
+    "name": "Marina Kondratenko",
+    "handle": "@marinaanddesign",
+    "url": "https://x.com/marinaanddesign"
+   },
+   "x_post": "https://x.com/marinaanddesign/status/2118035015959490865",
+   "xsrc": {
+    "post": "https://x.com/marinaanddesign/status/2118035015959490865",
+    "author": "@marinaanddesign",
+    "likes": 213,
+    "bookmarks": 135,
+    "reposts": 2,
+    "impressions": 5565,
+    "date": "2026-11-04"
+   },
+   "pub": "2026-11-04",
+   "added": "2026-11-05"
   }
  ],
  "guides": [
@@ -190993,5 +191093,5 @@
    ]
   }
  ],
- "updatedAt": "2026-11-05T06:42Z"
+ "updatedAt": "2026-11-05T08:27Z"
 }
