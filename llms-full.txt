@@ -1,6 +1,6 @@
 # UI Hub
 
-> Curated, multilingual directory of 5077 public UI resources (component libraries, component style demos, effects, design systems, design skills for AI agents) plus original blog analysis of AI design techniques. Data updated 2026-11-06 11:12 UTC.
+> Curated, multilingual directory of 5077 public UI resources (component libraries, component style demos, effects, design systems, design skills for AI agents) plus original blog analysis of AI design techniques. Data updated 2026-11-05 11:15 UTC.
 
 Use the JSON endpoints, not the SPA, when acting as an agent. Every entry links to its original site; licenses belong to the original authors.
 
@@ -64,6 +64,7 @@ Use the JSON endpoints, not the SPA, when acting as an agent. Every entry links 
 - [Figma shaders are generally available: how to ship shader backgrounds that stay fast and readable](https://ui.incidental.site/blog/figma-shaders-ga-ship-shader-backgrounds/): On 2 November Figma made shaders generally available, raised export to 4096 px and let shaders travel into code layers. That moves glowing gradients, grain and glass effects from mockups toward real pages. What changed, what is still unclear, and a checklist for shipping a shader without hurting contrast, motion comfort or battery life.
 - [Safari will darken light-only sites for you: design your own dark mode before Adaptive Dark Mode does](https://ui.incidental.site/blog/safari-adaptive-dark-mode-design-for-it/): On 3 November WebKit announced Adaptive Dark Mode in the Safari 27.3 beta: when a reader turns it on, Safari recolours light websites as dark, and your site cannot tell. What it changes, what it skips, the opt-out trap in beta 1, and a checklist for choosing between a real dark theme, letting Safari adapt, or keeping parts light.
 - [Design on running code: Dessn, Doop and Figma turn the canvas into a place agents and designers share](https://ui.incidental.site/blog/design-on-running-code-dessn-doop-code-canvas/): On 4 November Dessn launched a canvas that runs your real app from your repo, the open-source Doop canvas trended on GitHub, and a day earlier Figma’s code layers started reading prototype connections. Two kinds of agent canvas are emerging: frames that are your app, and frames that are loose HTML. How they differ, what to check before connecting a repo, and a checklist for designing on code.
+- [Figma’s agent now draws icons as strokes: keep the line weight editable](https://ui.incidental.site/blog/figma-agent-vector-strokes-icons/): On 5 November 2026 Figma improved agent-generated vector illustrations and icons: line work comes as strokes (not filled outlines), layers are grouped for editing, you can attach style references, and the structure is ready for Figma Motion. Why that matters for icon systems, how to brief the agent, and a checklist from prompt to shipped SVG.
 
 ## Top component libraries
 - [Radix Primitives](https://www.radix-ui.com/primitives): Unstyled, accessible React primitives (dialogs, dropdowns, selects, tabs, tooltips) and the foundation of shadcn/ui
@@ -132,7 +133,7 @@ Use the JSON endpoints, not the SPA, when acting as an agent. Every entry links 
 - **How do I find a component in a given style?** Load https://ui.incidental.site/api/resources.json and filter by ct (component kind, e.g. "dialog") and vs (visual style, e.g. "minimal" or "motion"). type="style" entries are concrete component demos with a libName and page URL; type="library" entries are whole libraries with install info on the site.
 - **Which skills should an agent use for good UI?** One direction skill (frontend-design or taste-skill), emil-design-eng for motion and interaction polish, then impeccable, baseline-ui, web-design-guidelines and accessibility as an audit pass. See https://ui.incidental.site/api/skills.json.
 - **Can I copy the code?** Open-source libraries can be used under their own licenses (MIT, Apache-2.0 etc.); the card shows the original link. Paid tiers (marked paid/freemium) must be bought from the original vendor.
-- **How often is it updated?** Daily via a GitHub Actions job that adds new UI repositories and tools from GitHub, awesome-shadcn-ui and Hacker News. Nothing is deleted. Last update: 2026-11-06 11:12 UTC.
+- **How often is it updated?** Daily via a GitHub Actions job that adds new UI repositories and tools from GitHub, awesome-shadcn-ui and Hacker News. Nothing is deleted. Last update: 2026-11-05 11:15 UTC.
 
 
 # Blog posts (full text, English)
@@ -2107,6 +2108,51 @@ References:
 - Paper — Paper: https://paper.design/
 - Authorization — Model Context Protocol specification: https://modelcontextprotocol.io/specification/2025-06-18/basic/authorization
 - GNU Affero General Public License v3.0 — choosealicense.com: https://choosealicense.com/licenses/agpl-3.0/
+
+## Figma’s agent now draws icons as strokes: keep the line weight editable
+
+On 5 November 2026 Figma’s release notes listed a quiet but useful change: the Figma agent now generates polished vector illustrations and icons that are easier to edit, match to a style, or animate. Four details matter for anyone who has inherited an AI icon set they could not finish: functional layer grouping, attachable style references, line work drawn as strokes instead of fills, and a layer tree clean enough for Figma Motion.
+That is a different promise from “AI drew a nice picture”. A filled outline bakes the weight into the shape. A stroke keeps weight and end caps as settings, so you can drag them later without redrawing. Figma’s own help centre says the agent can generate illustrations and icon sets from a prompt or from reference images, with editable strokes and fills and an organised layer structure, and you can watch them appear live on the canvas.
+What actually changed
+Strokes for line work. Change stroke weight and end caps without redrawing the path. That is the difference between a one-off asset and a system you can still tune.
+Layers grouped by function. Independent layers that are grouped intuitively, so you can revise one part of an icon set without exploding the whole file.
+Style references. Attach your own illustrations so the agent generates more components or on-brand icons at scale, instead of inventing a new look every time.
+Motion-ready structure. The same clean tree is meant to animate in Figma Motion, by you or by the agent.
+The same week Figma also put code layers into open beta with a workflow lab (4 November) and earlier raised shader export to 4096 px and into code layers (2 November). Vectors, motion and code on one canvas are converging; this post stays on the vector side.
+Our take
+The useful unit is not “an illustration”, it is an editable line decision. Most prompt-to-image tools still hand you a raster or a flattened SVG that looks right until you need a 1.5 px hairline next to a 2 px icon. Drawing in strokes moves the decision back into the file. Keep that decision open all the way to production: export SVG with real stroke attributes, set stroke="currentColor", hold width in a CSS custom property, and use vector-effect: non-scaling-stroke when the icon must keep one optical weight at every size.
+Style references are the other half. An agent that has never seen your icon set will invent a second dialect. Attach three of your best icons, name the stroke weight and end cap in the prompt, and ask for three more in the same family before you commission a whole set. Open the layers panel before you admire the preview—generated art is only as useful as its structure.
+We would still clean the SVG before shipping (SVGO, viewBox, aria-hidden or a title). Treat the agent like a junior illustrator who drafts in your file, not like a CDN of finished icons.
+Checklist: from prompt to a shipped stroke icon
+Brief the line, not the vibe. Name stroke weight, end caps (round / butt / square), corner joins, and whether fills are allowed.
+Attach style references. Two or three existing icons beat a paragraph of adjectives. Ask for a small batch first and compare strokes side by side.
+Open the layers panel. Confirm independent, sensibly grouped layers before you accept the result.
+Tune weight on the stroke. Adjust stroke weight and caps; if you have to redraw, the file is still a filled outline—reject it.
+Animate only if the tree is clean. Use Figma Motion on paths that already separate; do not animate a flattened blob.
+Export as live strokes. Keep stroke / stroke-width / stroke-linecap in the SVG. Outline only for logos that need a fixed silhouette.
+Tokenise on the page. One --line (or similar) for icons, rules and markers; currentColor for theme; check light and dark.
+Access and credits. Agent work uses Figma AI credits; check your plan before generating a large set.
+# Brief for the Figma agent (icon set)
+Goal:       6 outline icons for a docs site (search, copy, link, warn, check, menu)
+Style ref:  attach icons/search.svg + icons/copy.svg (our current set)
+Stroke:     1.5 px, round caps, round joins, no filled outlines for line work
+Grid:       24×24 viewBox, 2 px padding, optical centre
+Colour:     single currentColor; no hard-coded greys
+Deliver:    one frame per icon, layers grouped by path, ready for Motion if needed
+Never:      drop shadows, gradients, emoji style, mismatched weights across the set
+First pass: make only search / copy / link so we can compare strokes before the rest
+How UI Hub helps
+For SVG workflows that start outside Figma, see AI SVG for UI with Ideogram Vector. Shaders that now travel into code layers are covered in Figma shaders GA. Broader agent-on-canvas context sits in Figma Make and the Figma agent and code layers and Specs. When the destination is code you already ship, design on running code is the matching workflow post.
+
+References:
+- Improvements to agent-generated vector illustrations and icons (5 Nov 2026) — Figma release notes: https://www.figma.com/release-notes/
+- Generate and edit vectors with Figma AI — Figma Learn: https://help.figma.com/hc/en-us/articles/38031452710807-Generate-and-edit-vectors-with-Figma-AI
+- Figma’s agent now draws in strokes, so the line weight stays yours — Art Direction Daily: https://artdirectiondaily.com/issues/2026-11-05-figma-agent-draws-in-strokes.html
+- AI Vector Illustrations in Figma: the agent finally draws clean — Mazette.co: https://www.mazette.co/en/blog/ai-vector-illustrations-in-figma-the-agent-finally-draws-clean
+- stroke-linecap — MDN Web Docs: https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/stroke-linecap
+- vector-effect — MDN Web Docs: https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/vector-effect
+- Workflow lab: Test ideas with code layers and the Figma agent (4 Nov 2026) — Figma Blog: https://www.figma.com/blog/workflow-lab-build-with-code-on-the-canvas-using-the-figma-agent-and-code-layers/
+- Design Tools news (RSS checked 6 Nov 2026) — designtools.fyi: https://designtools.fyi/news
 
 # All resources (name | type | url | note)
 

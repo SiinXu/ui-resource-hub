@@ -1,0 +1,32 @@
+<p>2026 年 11 月 5 日，Figma 的更新日志写了一条看起来不大、但对做图标的人很有用的改动：智能体生成的矢量插画和图标更容易编辑、对齐风格，也更容易做动画。四个细节对「接手过一套没法改完的 AI 图标」的人都重要：按功能分组的图层、可挂上的风格参考、<strong>线条用描边而不是填色轮廓</strong>，以及干净到适合 Figma Motion 的图层树。</p><figure><img src="../../blog/img/figma-agent-vector-strokes-icons-1.webp" alt="2026 年 11 月 6 日的 Figma 更新日志，最上方是 11 月 5 日的条目「改进智能体生成的矢量插画和图标」" loading="lazy" decoding="async" width="1280" height="800"><figcaption>2026 年 11 月 6 日的 Figma 更新日志，最上方是 11 月 5 日的条目「改进智能体生成的矢量插画和图标」 · 截图：Figma（<a href="https://www.figma.com/release-notes/" rel="noopener" target="_blank">www.figma.com</a>），2026-11-06 截取，版权归原站所有</figcaption></figure>
+<p>这和「AI 画了一张好看的图」不是一回事。填色轮廓把线宽烤进了形状里；描边则把线宽和端点样式留成设置，以后还能拖，不用重画。Figma 帮助中心也写明：智能体可以根据提示或参考图生成插画和图标集，带可编辑的描边与填色、条理清楚的图层，并且你可以看着它们在画布上实时长出来。</p>
+<h2>到底改了什么</h2>
+<ul><li><strong>线条用描边。</strong>改线宽和端点样式时不用重画路径。这是一次性素材和还能继续调的系统之间的差别。</li>
+<li><strong>图层按功能分组。</strong>独立图层、分组合理，改图标集的某一部分时不必拆烂整个文件。</li>
+<li><strong>风格参考。</strong>挂上你自己的插画，让智能体按同一套视觉再批量生成组件或品牌图标，而不是每次发明一种新画风。</li>
+<li><strong>适合做动效的结构。</strong>同一棵干净的图层树，可以在 Figma Motion 里由你或智能体做动画。</li></ul><figure><img src="../../blog/img/figma-agent-vector-strokes-icons-2.webp" alt="流程示意：挂上现有图标作风格参考，写明线宽与端点，在分组图层上调描边，再以适合 Motion 的路径或带 currentColor 与线宽 Token 的 SVG 上线" loading="lazy" decoding="async" width="1200" height="675"><figcaption>流程示意：挂上现有图标作风格参考，写明线宽与端点，在分组图层上调描边，再以适合 Motion 的路径或带 currentColor 与线宽 Token 的 SVG 上线 · 示意图：UI Hub 原创，CC BY 4.0</figcaption></figure>
+<p>同一周，Figma 还用工作流实验把代码图层推进了开放测试（11 月 4 日），并更早把着色器导出提到 4096 像素、带进代码图层（11 月 2 日）。矢量、动效和代码在同一张画布上汇合；这篇只谈矢量这一侧。</p>
+<h2>我们的看法</h2>
+<p>真正有用的单位不是「一张插画」，而是<strong>一个还可编辑的线条决定</strong>。多数提示生成图像的工具，最后给你的是位图或已经压扁的 SVG——看着对，直到你要在 2 px 图标旁边放一根 1.5 px 的发丝线。用描边画，等于把决定留回文件里。把这个决定一直留到上线：导出带真实 <code>stroke</code> 属性的 SVG，设 <code>stroke="currentColor"</code>，线宽放进 CSS 自定义属性，需要光学线宽不随缩放变时再用 <code>vector-effect: non-scaling-stroke</code>。</p>
+<p>另一半是风格参考。从没见过你图标集的智能体，会发明第二种方言。先挂上三枚最好的现有图标，在提示里写明线宽和端点，先要三枚同族新图标，再决定要不要整套。先打开图层面板，再欣赏预览——生成物的价值取决于它的结构。</p>
+<p>上线前我们仍会清理 SVG（SVGO、viewBox、aria-hidden 或 title）。把智能体当成在你文件里起草的初级插画师，而不是成品图标 CDN。</p>
+<h2>清单：从提示到上线的描边图标</h2>
+<ol><li><strong>写清线条，而不是氛围。</strong>写明线宽、端点（圆 / 平 / 方）、转角连接、是否允许填色。</li>
+<li><strong>挂上风格参考。</strong>两三枚现有图标胜过一整段形容词。先要一小批，并排对比描边。</li>
+<li><strong>打开图层面板。</strong>确认图层独立、分组合理，再接受结果。</li>
+<li><strong>在描边上改线宽。</strong>调 stroke weight 和 caps；若还得重画，说明文件仍是填色轮廓——退回。</li>
+<li><strong>图层干净再做动画。</strong>只对已经拆开的路径用 Figma Motion，不要去动压扁的色块。</li>
+<li><strong>导出成活的描边。</strong>SVG 里保留 <code>stroke</code> / <code>stroke-width</code> / <code>stroke-linecap</code>。只有需要固定剪影的 Logo 才转轮廓。</li>
+<li><strong>在页面上做成 Token。</strong>图标、分隔线和标记共用一个 <code>--line</code>（或类似变量）；主题色用 <code>currentColor</code>；浅色和深色都要检查。</li>
+<li><strong>权限和额度。</strong>智能体工作消耗 Figma AI 积分；大批量生成前先看清套餐。</li></ol>
+<pre><code># 给 Figma 智能体的图标集说明
+目标：     文档站用的 6 个线性图标（搜索、复制、链接、警告、完成、菜单）
+风格参考： 挂上 icons/search.svg + icons/copy.svg（现有套件）
+描边：     1.5 px，圆角端点，圆角连接，线条不用填色轮廓
+网格：     24×24 viewBox，内边距 2 px，光学居中
+颜色：     单一 currentColor；不写死灰色
+交付：     每图标一帧，路径按图层分组，需要时可进 Motion
+禁止：     投影、渐变、emoji 风、整套线宽不一致
+第一轮：   只做搜索 / 复制 / 链接，对比描边后再生成其余</code></pre>
+<figure><img src="../../blog/img/figma-agent-vector-strokes-icons-3.webp" alt="Figma Learn 文章《用 Figma AI 生成和编辑矢量》，说明智能体生成矢量与将图片矢量化" loading="lazy" decoding="async" width="1280" height="800"><figcaption>Figma Learn 文章《用 Figma AI 生成和编辑矢量》，说明智能体生成矢量与将图片矢量化 · 截图：Figma Learn（<a href="https://help.figma.com/hc/en-us/articles/38031452710807-Generate-and-edit-vectors-with-Figma-AI" rel="noopener" target="_blank">help.figma.com</a>），2026-11-06 截取，版权归原站所有</figcaption></figure><h2>UI Hub 能帮什么</h2>
+<p>从 Figma 之外起步的 SVG 流程，见 <a href="../ai-svg-for-ui-ideogram-vector/">用 Ideogram Vector 做界面 SVG</a>。已能进入代码图层的着色器，见 <a href="../figma-shaders-ga-ship-shader-backgrounds/">Figma 着色器正式可用</a>。更广的「智能体在画布上」背景，见 <a href="../figma-make-and-figma-agent/">Figma Make 与 Figma 智能体</a>以及 <a href="../figma-code-layers-and-specs/">代码图层与 Specs</a>。若最终落点是你已经在跑的代码，对应的工作流文章是<a href="../design-on-running-code-dessn-doop-code-canvas/">在运行中的代码上做设计</a>。</p>

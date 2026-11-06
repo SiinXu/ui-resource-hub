@@ -1911,4 +1911,90 @@ Token：    颜色和间距只用 tokens.css，不写十六进制颜色
 <h2>UI Hub 能帮什么</h2>
 <p>Figma 这一侧，请看 <a href="../figma-code-layers-and-specs/">Figma 代码图层与 Specs</a>。直接指着运行中的应用说话、而不是用文字描述，见<a href="../annotate-dont-describe-visual-prompts/">标注，而不是描述</a>。想让智能体复用你的组件，用<a href="../lint-agents-onto-your-design-system/">用检查把智能体拉回设计系统</a>，并用<a href="../design-tokens-for-agents/">面向智能体的设计 Token</a> 让 Token 保持可读。<a href="../github-replica-design-system-prototypes/">GitHub Replica</a> 展示了一种相关做法：由审核过的设计系统指南驱动原型。</p>""",
  refs=[('Dessn: the design canvas that runs your real code (Product Hunt launch, 4 Nov 2026)','Hunted.space','https://hunted.space/product/dessn-2'),('Dessn','Dessn','https://www.dessn.ai/'),('We built what you wished Figma could be (launch video)','Dessn, via posts.design','https://posts.design/gabriella-we-built-what-you-wished-figma-could-2026-11-04'),('kgoedecke/doop','kgoedecke, GitHub','https://github.com/kgoedecke/doop'),('Get started','Doop','https://doop.design/docs/get-started'),('The design MCP for Claude Code','Doop','https://doop.design/design-mcp-for-claude-code'),('doop open-source canvas lets AI agents design live with humans','Marcello Babbili, Not a Tech Guy','https://www.notatechguy.com/doop-open-source-canvas-lets-ai-agents-design-live-with-humans/'),('Release notes: prototype connections as context for code layers; cloning by default (3 Nov 2026)','Figma','https://www.figma.com/release-notes/'),('What’s new from Config India 2026 (code layers open beta)','Figma Learn','https://help.figma.com/hc/en-us/articles/43663368947863-What-s-new-from-Config-India-2026'),('Paper','Paper','https://paper.design/'),('Authorization','Model Context Protocol specification','https://modelcontextprotocol.io/specification/2025-06-18/basic/authorization'),('GNU Affero General Public License v3.0','choosealicense.com','https://choosealicense.com/licenses/agpl-3.0/')]),
+dict(slug='figma-agent-vector-strokes-icons', date='2026-11-06', cat='tools', series=None, featured=True, tags=['Figma','vectors','icons','strokes','Figma Motion','agent'],
+ t=T('Figma’s agent now draws icons as strokes: keep the line weight editable',
+     'Figma 智能体开始用描边画图标：让线宽继续可改',
+     'Figma 智慧體開始用描邊畫圖示：讓線寬繼續可改',
+     'Figmaのエージェントがアイコンをストロークで描く：線幅を編集可能なままにする',
+     'Figma 에이전트가 아이콘을 스트로크로 그린다: 선 굵기를 계속 편집 가능하게',
+     'Ejen Figma kini melukis ikon sebagai strok: kekalkan tebal garisan boleh diedit',
+     'Agent Figma giờ vẽ icon bằng stroke: giữ độ dày nét vẫn chỉnh được',
+     'L’agent Figma dessine désormais les icônes en traits : gardez l’épaisseur éditable',
+     'El agente de Figma ahora dibuja iconos con trazos: mantén el grosor editable',
+     'Figmas Agent zeichnet Icons jetzt als Striche: die Strichstärke bleibt editierbar'),
+ s=T('On 5 November 2026 Figma improved agent-generated vector illustrations and icons: line work comes as strokes (not filled outlines), layers are grouped for editing, you can attach style references, and the structure is ready for Figma Motion. Why that matters for icon systems, how to brief the agent, and a checklist from prompt to shipped SVG.',
+     '2026 年 11 月 5 日，Figma 改进了智能体生成的矢量插画和图标：线条用描边而不是填色轮廓、图层按功能分组便于修改、可挂上风格参考，结构也适合用 Figma Motion 做动画。这对图标系统意味着什么、怎么给智能体写提示，以及从提示到上线 SVG 的一份清单。',
+     '2026 年 11 月 5 日，Figma 改進了智慧體產生的向量插畫與圖示：線條用描邊而不是填色輪廓、圖層按功能分組便於修改、可掛上風格參考，結構也適合用 Figma Motion 做動畫。這對圖示系統意味著什麼、怎麼給智慧體寫提示，以及從提示到上線 SVG 的一份清單。',
+     '2026年11月5日、Figmaはエージェントが生成するベクターイラストとアイコンを改善した。線は塗りつぶしではなくストローク、レイヤーは編集しやすいよう機能別にグループ化、スタイル参照を添付でき、Figma Motion向けの構造にもなる。アイコンシステムにとっての意味、エージェントへの指示の出し方、プロンプトから出荷用SVGまでのチェックリスト。',
+     '2026년 11월 5일 Figma는 에이전트가 생성한 벡터 일러스트와 아이콘을 개선했다. 선은 채운 외곽선이 아니라 스트로크이고, 레이어는 편집하기 쉽게 기능별로 묶이며, 스타일 참조를 붙일 수 있고, Figma Motion용 구조도 갖춘다. 아이콘 시스템에 주는 의미, 에이전트 지시 방법, 프롬프트에서 배포 SVG까지의 체크리스트.',
+     'Pada 5 November 2026 Figma menambah baik ilustrasi dan ikon vektor yang dijana ejen: kerja garisan datang sebagai strok (bukan outline terisi), lapisan dikumpulkan untuk suntingan, anda boleh lampirkan rujukan gaya, dan strukturnya sedia untuk Figma Motion. Mengapa penting untuk sistem ikon, cara memberi arahan, dan senarai semak dari prompt ke SVG.',
+     'Ngày 5/11/2026 Figma cải thiện minh họa và icon vector do agent tạo: nét là stroke (không phải outline tô đặc), layer được nhóm để chỉnh sửa, có thể gắn tham chiếu phong cách, và cấu trúc sẵn sàng cho Figma Motion. Vì sao điều đó quan trọng với hệ icon, cách brief agent, và checklist từ prompt đến SVG đưa lên.',
+     'Le 5 novembre 2026, Figma a amélioré les illustrations et icônes vectorielles générées par l’agent : les traits sont des strokes (pas des contours remplis), les calques sont groupés pour l’édition, on peut joindre des références de style, et la structure convient à Figma Motion. Pourquoi c’est important pour un système d’icônes, comment briefer l’agent, et une checklist du prompt au SVG livré.',
+     'El 5 de noviembre de 2026 Figma mejoró las ilustraciones e iconos vectoriales generados por el agente: el trazo llega como stroke (no como contorno relleno), las capas se agrupan para editar, puedes adjuntar referencias de estilo y la estructura sirve para Figma Motion. Por qué importa para un sistema de iconos, cómo briefar al agente y una checklist del prompt al SVG publicado.',
+     'Am 5. November 2026 hat Figma agentengenerierte Vektorillustrationen und Icons verbessert: Linien kommen als Strokes (nicht als gefüllte Outlines), Ebenen sind zum Editieren gruppiert, Stilreferenzen lassen sich anhängen, und die Struktur eignet sich für Figma Motion. Warum das für Icon-Systeme zählt, wie man den Agent briefed und eine Checkliste vom Prompt zum ausgelieferten SVG.'),
+ en="""<p>On 5 November 2026 Figma’s release notes listed a quiet but useful change: the Figma agent now generates polished vector illustrations and icons that are easier to edit, match to a style, or animate. Four details matter for anyone who has inherited an AI icon set they could not finish: functional layer grouping, attachable style references, line work drawn as <strong>strokes instead of fills</strong>, and a layer tree clean enough for Figma Motion.</p>
+<p>That is a different promise from “AI drew a nice picture”. A filled outline bakes the weight into the shape. A stroke keeps weight and end caps as settings, so you can drag them later without redrawing. Figma’s own help centre says the agent can generate illustrations and icon sets from a prompt or from reference images, with editable strokes and fills and an organised layer structure, and you can watch them appear live on the canvas.</p>
+<h2>What actually changed</h2>
+<ul><li><strong>Strokes for line work.</strong> Change stroke weight and end caps without redrawing the path. That is the difference between a one-off asset and a system you can still tune.</li>
+<li><strong>Layers grouped by function.</strong> Independent layers that are grouped intuitively, so you can revise one part of an icon set without exploding the whole file.</li>
+<li><strong>Style references.</strong> Attach your own illustrations so the agent generates more components or on-brand icons at scale, instead of inventing a new look every time.</li>
+<li><strong>Motion-ready structure.</strong> The same clean tree is meant to animate in Figma Motion, by you or by the agent.</li></ul>
+<p>The same week Figma also put code layers into open beta with a workflow lab (4 November) and earlier raised shader export to 4096 px and into code layers (2 November). Vectors, motion and code on one canvas are converging; this post stays on the vector side.</p>
+<h2>Our take</h2>
+<p>The useful unit is not “an illustration”, it is <strong>an editable line decision</strong>. Most prompt-to-image tools still hand you a raster or a flattened SVG that looks right until you need a 1.5 px hairline next to a 2 px icon. Drawing in strokes moves the decision back into the file. Keep that decision open all the way to production: export SVG with real <code>stroke</code> attributes, set <code>stroke="currentColor"</code>, hold width in a CSS custom property, and use <code>vector-effect: non-scaling-stroke</code> when the icon must keep one optical weight at every size.</p>
+<p>Style references are the other half. An agent that has never seen your icon set will invent a second dialect. Attach three of your best icons, name the stroke weight and end cap in the prompt, and ask for three more in the same family before you commission a whole set. Open the layers panel before you admire the preview—generated art is only as useful as its structure.</p>
+<p>We would still clean the SVG before shipping (SVGO, viewBox, aria-hidden or a title). Treat the agent like a junior illustrator who drafts in your file, not like a CDN of finished icons.</p>
+<h2>Checklist: from prompt to a shipped stroke icon</h2>
+<ol><li><strong>Brief the line, not the vibe.</strong> Name stroke weight, end caps (round / butt / square), corner joins, and whether fills are allowed.</li>
+<li><strong>Attach style references.</strong> Two or three existing icons beat a paragraph of adjectives. Ask for a small batch first and compare strokes side by side.</li>
+<li><strong>Open the layers panel.</strong> Confirm independent, sensibly grouped layers before you accept the result.</li>
+<li><strong>Tune weight on the stroke.</strong> Adjust stroke weight and caps; if you have to redraw, the file is still a filled outline—reject it.</li>
+<li><strong>Animate only if the tree is clean.</strong> Use Figma Motion on paths that already separate; do not animate a flattened blob.</li>
+<li><strong>Export as live strokes.</strong> Keep <code>stroke</code> / <code>stroke-width</code> / <code>stroke-linecap</code> in the SVG. Outline only for logos that need a fixed silhouette.</li>
+<li><strong>Tokenise on the page.</strong> One <code>--line</code> (or similar) for icons, rules and markers; <code>currentColor</code> for theme; check light and dark.</li>
+<li><strong>Access and credits.</strong> Agent work uses Figma AI credits; check your plan before generating a large set.</li></ol>
+<pre><code># Brief for the Figma agent (icon set)
+Goal:       6 outline icons for a docs site (search, copy, link, warn, check, menu)
+Style ref:  attach icons/search.svg + icons/copy.svg (our current set)
+Stroke:     1.5 px, round caps, round joins, no filled outlines for line work
+Grid:       24×24 viewBox, 2 px padding, optical centre
+Colour:     single currentColor; no hard-coded greys
+Deliver:    one frame per icon, layers grouped by path, ready for Motion if needed
+Never:      drop shadows, gradients, emoji style, mismatched weights across the set
+First pass: make only search / copy / link so we can compare strokes before the rest</code></pre>
+<h2>How UI Hub helps</h2>
+<p>For SVG workflows that start outside Figma, see <a href="../ai-svg-for-ui-ideogram-vector/">AI SVG for UI with Ideogram Vector</a>. Shaders that now travel into code layers are covered in <a href="../figma-shaders-ga-ship-shader-backgrounds/">Figma shaders GA</a>. Broader agent-on-canvas context sits in <a href="../figma-make-and-figma-agent/">Figma Make and the Figma agent</a> and <a href="../figma-code-layers-and-specs/">code layers and Specs</a>. When the destination is code you already ship, <a href="../design-on-running-code-dessn-doop-code-canvas/">design on running code</a> is the matching workflow post.</p>""",
+ zh="""<p>2026 年 11 月 5 日，Figma 的更新日志写了一条看起来不大、但对做图标的人很有用的改动：智能体生成的矢量插画和图标更容易编辑、对齐风格，也更容易做动画。四个细节对「接手过一套没法改完的 AI 图标」的人都重要：按功能分组的图层、可挂上的风格参考、<strong>线条用描边而不是填色轮廓</strong>，以及干净到适合 Figma Motion 的图层树。</p>
+<p>这和「AI 画了一张好看的图」不是一回事。填色轮廓把线宽烤进了形状里；描边则把线宽和端点样式留成设置，以后还能拖，不用重画。Figma 帮助中心也写明：智能体可以根据提示或参考图生成插画和图标集，带可编辑的描边与填色、条理清楚的图层，并且你可以看着它们在画布上实时长出来。</p>
+<h2>到底改了什么</h2>
+<ul><li><strong>线条用描边。</strong>改线宽和端点样式时不用重画路径。这是一次性素材和还能继续调的系统之间的差别。</li>
+<li><strong>图层按功能分组。</strong>独立图层、分组合理，改图标集的某一部分时不必拆烂整个文件。</li>
+<li><strong>风格参考。</strong>挂上你自己的插画，让智能体按同一套视觉再批量生成组件或品牌图标，而不是每次发明一种新画风。</li>
+<li><strong>适合做动效的结构。</strong>同一棵干净的图层树，可以在 Figma Motion 里由你或智能体做动画。</li></ul>
+<p>同一周，Figma 还用工作流实验把代码图层推进了开放测试（11 月 4 日），并更早把着色器导出提到 4096 像素、带进代码图层（11 月 2 日）。矢量、动效和代码在同一张画布上汇合；这篇只谈矢量这一侧。</p>
+<h2>我们的看法</h2>
+<p>真正有用的单位不是「一张插画」，而是<strong>一个还可编辑的线条决定</strong>。多数提示生成图像的工具，最后给你的是位图或已经压扁的 SVG——看着对，直到你要在 2 px 图标旁边放一根 1.5 px 的发丝线。用描边画，等于把决定留回文件里。把这个决定一直留到上线：导出带真实 <code>stroke</code> 属性的 SVG，设 <code>stroke="currentColor"</code>，线宽放进 CSS 自定义属性，需要光学线宽不随缩放变时再用 <code>vector-effect: non-scaling-stroke</code>。</p>
+<p>另一半是风格参考。从没见过你图标集的智能体，会发明第二种方言。先挂上三枚最好的现有图标，在提示里写明线宽和端点，先要三枚同族新图标，再决定要不要整套。先打开图层面板，再欣赏预览——生成物的价值取决于它的结构。</p>
+<p>上线前我们仍会清理 SVG（SVGO、viewBox、aria-hidden 或 title）。把智能体当成在你文件里起草的初级插画师，而不是成品图标 CDN。</p>
+<h2>清单：从提示到上线的描边图标</h2>
+<ol><li><strong>写清线条，而不是氛围。</strong>写明线宽、端点（圆 / 平 / 方）、转角连接、是否允许填色。</li>
+<li><strong>挂上风格参考。</strong>两三枚现有图标胜过一整段形容词。先要一小批，并排对比描边。</li>
+<li><strong>打开图层面板。</strong>确认图层独立、分组合理，再接受结果。</li>
+<li><strong>在描边上改线宽。</strong>调 stroke weight 和 caps；若还得重画，说明文件仍是填色轮廓——退回。</li>
+<li><strong>图层干净再做动画。</strong>只对已经拆开的路径用 Figma Motion，不要去动压扁的色块。</li>
+<li><strong>导出成活的描边。</strong>SVG 里保留 <code>stroke</code> / <code>stroke-width</code> / <code>stroke-linecap</code>。只有需要固定剪影的 Logo 才转轮廓。</li>
+<li><strong>在页面上做成 Token。</strong>图标、分隔线和标记共用一个 <code>--line</code>（或类似变量）；主题色用 <code>currentColor</code>；浅色和深色都要检查。</li>
+<li><strong>权限和额度。</strong>智能体工作消耗 Figma AI 积分；大批量生成前先看清套餐。</li></ol>
+<pre><code># 给 Figma 智能体的图标集说明
+目标：     文档站用的 6 个线性图标（搜索、复制、链接、警告、完成、菜单）
+风格参考： 挂上 icons/search.svg + icons/copy.svg（现有套件）
+描边：     1.5 px，圆角端点，圆角连接，线条不用填色轮廓
+网格：     24×24 viewBox，内边距 2 px，光学居中
+颜色：     单一 currentColor；不写死灰色
+交付：     每图标一帧，路径按图层分组，需要时可进 Motion
+禁止：     投影、渐变、emoji 风、整套线宽不一致
+第一轮：   只做搜索 / 复制 / 链接，对比描边后再生成其余</code></pre>
+<h2>UI Hub 能帮什么</h2>
+<p>从 Figma 之外起步的 SVG 流程，见 <a href="../ai-svg-for-ui-ideogram-vector/">用 Ideogram Vector 做界面 SVG</a>。已能进入代码图层的着色器，见 <a href="../figma-shaders-ga-ship-shader-backgrounds/">Figma 着色器正式可用</a>。更广的「智能体在画布上」背景，见 <a href="../figma-make-and-figma-agent/">Figma Make 与 Figma 智能体</a>以及 <a href="../figma-code-layers-and-specs/">代码图层与 Specs</a>。若最终落点是你已经在跑的代码，对应的工作流文章是<a href="../design-on-running-code-dessn-doop-code-canvas/">在运行中的代码上做设计</a>。</p>""",
+ refs=[('Improvements to agent-generated vector illustrations and icons (5 Nov 2026)','Figma release notes','https://www.figma.com/release-notes/'),('Generate and edit vectors with Figma AI','Figma Learn','https://help.figma.com/hc/en-us/articles/38031452710807-Generate-and-edit-vectors-with-Figma-AI'),('Figma’s agent now draws in strokes, so the line weight stays yours','Art Direction Daily','https://artdirectiondaily.com/issues/2026-11-05-figma-agent-draws-in-strokes.html'),('AI Vector Illustrations in Figma: the agent finally draws clean','Mazette.co','https://www.mazette.co/en/blog/ai-vector-illustrations-in-figma-the-agent-finally-draws-clean'),('stroke-linecap','MDN Web Docs','https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/stroke-linecap'),('vector-effect','MDN Web Docs','https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/vector-effect'),('Workflow lab: Test ideas with code layers and the Figma agent (4 Nov 2026)','Figma Blog','https://www.figma.com/blog/workflow-lab-build-with-code-on-the-canvas-using-the-figma-agent-and-code-layers/'),('Design Tools news (RSS checked 6 Nov 2026)','designtools.fyi','https://designtools.fyi/news')]),
 ]

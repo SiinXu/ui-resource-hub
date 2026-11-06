@@ -1,5 +1,5 @@
 {
- "count": 44,
+ "count": 45,
  "rss": "https://ui.incidental.site/blog/rss.xml",
  "categories": {
   "tools": "Tools",
@@ -18,6 +18,93 @@
   "weekly": "Series: Weekly roundup"
  },
  "posts": [
+  {
+   "slug": "figma-agent-vector-strokes-icons",
+   "url": "https://ui.incidental.site/blog/figma-agent-vector-strokes-icons/",
+   "date": "2026-11-06",
+   "category": "tools",
+   "series": null,
+   "featured": true,
+   "tags": [
+    "Figma",
+    "vectors",
+    "icons",
+    "strokes",
+    "Figma Motion",
+    "agent"
+   ],
+   "title": {
+    "en": "Figma’s agent now draws icons as strokes: keep the line weight editable",
+    "zh": "Figma 智能体开始用描边画图标：让线宽继续可改",
+    "zht": "Figma 智慧體開始用描邊畫圖示：讓線寬繼續可改",
+    "ja": "Figmaのエージェントがアイコンをストロークで描く：線幅を編集可能なままにする",
+    "ko": "Figma 에이전트가 아이콘을 스트로크로 그린다: 선 굵기를 계속 편집 가능하게",
+    "ms": "Ejen Figma kini melukis ikon sebagai strok: kekalkan tebal garisan boleh diedit",
+    "vi": "Agent Figma giờ vẽ icon bằng stroke: giữ độ dày nét vẫn chỉnh được",
+    "fr": "L’agent Figma dessine désormais les icônes en traits : gardez l’épaisseur éditable",
+    "es": "El agente de Figma ahora dibuja iconos con trazos: mantén el grosor editable",
+    "de": "Figmas Agent zeichnet Icons jetzt als Striche: die Strichstärke bleibt editierbar"
+   },
+   "summary": {
+    "en": "On 5 November 2026 Figma improved agent-generated vector illustrations and icons: line work comes as strokes (not filled outlines), layers are grouped for editing, you can attach style references, and the structure is ready for Figma Motion. Why that matters for icon systems, how to brief the agent, and a checklist from prompt to shipped SVG.",
+    "zh": "2026 年 11 月 5 日，Figma 改进了智能体生成的矢量插画和图标：线条用描边而不是填色轮廓、图层按功能分组便于修改、可挂上风格参考，结构也适合用 Figma Motion 做动画。这对图标系统意味着什么、怎么给智能体写提示，以及从提示到上线 SVG 的一份清单。",
+    "zht": "2026 年 11 月 5 日，Figma 改進了智慧體產生的向量插畫與圖示：線條用描邊而不是填色輪廓、圖層按功能分組便於修改、可掛上風格參考，結構也適合用 Figma Motion 做動畫。這對圖示系統意味著什麼、怎麼給智慧體寫提示，以及從提示到上線 SVG 的一份清單。",
+    "ja": "2026年11月5日、Figmaはエージェントが生成するベクターイラストとアイコンを改善した。線は塗りつぶしではなくストローク、レイヤーは編集しやすいよう機能別にグループ化、スタイル参照を添付でき、Figma Motion向けの構造にもなる。アイコンシステムにとっての意味、エージェントへの指示の出し方、プロンプトから出荷用SVGまでのチェックリスト。",
+    "ko": "2026년 11월 5일 Figma는 에이전트가 생성한 벡터 일러스트와 아이콘을 개선했다. 선은 채운 외곽선이 아니라 스트로크이고, 레이어는 편집하기 쉽게 기능별로 묶이며, 스타일 참조를 붙일 수 있고, Figma Motion용 구조도 갖춘다. 아이콘 시스템에 주는 의미, 에이전트 지시 방법, 프롬프트에서 배포 SVG까지의 체크리스트.",
+    "ms": "Pada 5 November 2026 Figma menambah baik ilustrasi dan ikon vektor yang dijana ejen: kerja garisan datang sebagai strok (bukan outline terisi), lapisan dikumpulkan untuk suntingan, anda boleh lampirkan rujukan gaya, dan strukturnya sedia untuk Figma Motion. Mengapa penting untuk sistem ikon, cara memberi arahan, dan senarai semak dari prompt ke SVG.",
+    "vi": "Ngày 5/11/2026 Figma cải thiện minh họa và icon vector do agent tạo: nét là stroke (không phải outline tô đặc), layer được nhóm để chỉnh sửa, có thể gắn tham chiếu phong cách, và cấu trúc sẵn sàng cho Figma Motion. Vì sao điều đó quan trọng với hệ icon, cách brief agent, và checklist từ prompt đến SVG đưa lên.",
+    "fr": "Le 5 novembre 2026, Figma a amélioré les illustrations et icônes vectorielles générées par l’agent : les traits sont des strokes (pas des contours remplis), les calques sont groupés pour l’édition, on peut joindre des références de style, et la structure convient à Figma Motion. Pourquoi c’est important pour un système d’icônes, comment briefer l’agent, et une checklist du prompt au SVG livré.",
+    "es": "El 5 de noviembre de 2026 Figma mejoró las ilustraciones e iconos vectoriales generados por el agente: el trazo llega como stroke (no como contorno relleno), las capas se agrupan para editar, puedes adjuntar referencias de estilo y la estructura sirve para Figma Motion. Por qué importa para un sistema de iconos, cómo briefar al agente y una checklist del prompt al SVG publicado.",
+    "de": "Am 5. November 2026 hat Figma agentengenerierte Vektorillustrationen und Icons verbessert: Linien kommen als Strokes (nicht als gefüllte Outlines), Ebenen sind zum Editieren gruppiert, Stilreferenzen lassen sich anhängen, und die Struktur eignet sich für Figma Motion. Warum das für Icon-Systeme zählt, wie man den Agent briefed und eine Checkliste vom Prompt zum ausgelieferten SVG."
+   },
+   "reading_minutes": {
+    "en": 4,
+    "zh": 4
+   },
+   "cover": "https://ui.incidental.site/blog/img/figma-agent-vector-strokes-icons-cover.webp",
+   "references": [
+    {
+     "title": "Improvements to agent-generated vector illustrations and icons (5 Nov 2026)",
+     "by": "Figma release notes",
+     "url": "https://www.figma.com/release-notes/"
+    },
+    {
+     "title": "Generate and edit vectors with Figma AI",
+     "by": "Figma Learn",
+     "url": "https://help.figma.com/hc/en-us/articles/38031452710807-Generate-and-edit-vectors-with-Figma-AI"
+    },
+    {
+     "title": "Figma’s agent now draws in strokes, so the line weight stays yours",
+     "by": "Art Direction Daily",
+     "url": "https://artdirectiondaily.com/issues/2026-11-05-figma-agent-draws-in-strokes.html"
+    },
+    {
+     "title": "AI Vector Illustrations in Figma: the agent finally draws clean",
+     "by": "Mazette.co",
+     "url": "https://www.mazette.co/en/blog/ai-vector-illustrations-in-figma-the-agent-finally-draws-clean"
+    },
+    {
+     "title": "stroke-linecap",
+     "by": "MDN Web Docs",
+     "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/stroke-linecap"
+    },
+    {
+     "title": "vector-effect",
+     "by": "MDN Web Docs",
+     "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/vector-effect"
+    },
+    {
+     "title": "Workflow lab: Test ideas with code layers and the Figma agent (4 Nov 2026)",
+     "by": "Figma Blog",
+     "url": "https://www.figma.com/blog/workflow-lab-build-with-code-on-the-canvas-using-the-figma-agent-and-code-layers/"
+    },
+    {
+     "title": "Design Tools news (RSS checked 6 Nov 2026)",
+     "by": "designtools.fyi",
+     "url": "https://designtools.fyi/news"
+    }
+   ]
+  },
   {
    "slug": "design-on-running-code-dessn-doop-code-canvas",
    "url": "https://ui.incidental.site/blog/design-on-running-code-dessn-doop-code-canvas/",
