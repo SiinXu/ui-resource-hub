@@ -1,6 +1,6 @@
 {
- "generated": "2026-11-05",
- "count": 5077,
+ "generated": "2026-11-06",
+ "count": 5079,
  "items": [
   {
    "id": "ued-figma-mcp-guide",
@@ -190891,6 +190891,105 @@
    },
    "pub": "2026-11-04",
    "added": "2026-11-05"
+  },
+  {
+   "id": "rd-5gqq22v-spider-verse-text-reveal",
+   "name": "Spider-Verse Text Reveal",
+   "url": "https://x.com/sethihq/status/2118550187840774366",
+   "note": "Words build word by word with CMY chromatic aberration on each new word, then scatter into comic-panel color blocks before dissolving into pixel fragments.",
+   "noteEn": "Words build word by word with CMY chromatic aberration on each new word, then scatter into comic-panel color blocks before dissolving into pixel fragments.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@sethihq",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "motion"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/5gqq22v-spider-verse-text-reveal",
+   "rdkind": "Design",
+   "rdcat": "Motion",
+   "rdstyle": [
+    "Typographic",
+    "Experimental",
+    "Light"
+   ],
+   "author": {
+    "name": "Rajat Sethi",
+    "handle": "@sethihq",
+    "url": "https://x.com/sethihq"
+   },
+   "x_post": "https://x.com/sethihq/status/2118550187840774366",
+   "xsrc": {
+    "post": "https://x.com/sethihq/status/2118550187840774366",
+    "author": "@sethihq",
+    "likes": 430,
+    "bookmarks": 237,
+    "reposts": 7,
+    "impressions": 8399,
+    "date": "2026-11-06"
+   },
+   "pub": "2026-11-06",
+   "added": "2026-11-06"
+  },
+  {
+   "id": "rd-iw18rhk-doze-feature-section",
+   "name": "Doze Feature Section",
+   "url": "https://x.com/shlok776/status/2118702944694509637",
+   "note": "A website feature section cycles through finance app features, swapping a vivid color-matched card with a minimal UI snippet instead of full screenshots.",
+   "noteEn": "A website feature section cycles through finance app features, swapping a vivid color-matched card with a minimal UI snippet instead of full screenshots.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@shlok776",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/iw18rhk-doze-feature-section",
+   "rdkind": "Design",
+   "rdcat": "Web",
+   "rdstyle": [
+    "Minimal",
+    "Vibrant"
+   ],
+   "author": {
+    "name": "Shlok Negi",
+    "handle": "@shlok776",
+    "url": "https://x.com/shlok776"
+   },
+   "x_post": "https://x.com/shlok776/status/2118702944694509637",
+   "xsrc": {
+    "post": "https://x.com/shlok776/status/2118702944694509637",
+    "author": "@shlok776",
+    "likes": 379,
+    "bookmarks": 386,
+    "reposts": 9,
+    "impressions": 8330,
+    "date": "2026-11-06"
+   },
+   "pub": "2026-11-06",
+   "added": "2026-11-06"
   }
  ],
  "guides": [
@@ -191093,5 +191192,5 @@
    ]
   }
  ],
- "updatedAt": "2026-11-05T11:15Z"
+ "updatedAt": "2026-11-06T20:04Z"
 }
