@@ -1,6 +1,6 @@
 {
  "generated": "2026-11-07",
- "count": 5080,
+ "count": 5081,
  "items": [
   {
    "id": "ued-figma-mcp-guide",
@@ -191019,6 +191019,55 @@
    ],
    "noteEn": "New GitHub UI repo: Native UI components for C: about 150 of them, with spring motion and full keyboard support. Windows, macOS and Linux, no dependencies. (★195, MIT, yappologistic/CUI)",
    "added": "2026-11-07"
+  },
+  {
+   "id": "rd-w568th2-apple-watch-app-screens",
+   "name": "Apple Watch App Screens",
+   "url": "https://touch-time.com",
+   "note": "Four Apple Watch screens showing sun arc, circular clock, compass bearing, and moon phase views in a dark, muted blue UI.",
+   "noteEn": "Four Apple Watch screens showing sun arc, circular clock, compass bearing, and moon phase views in a dark, muted blue UI.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@luyuhang",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "site",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/w568th2-apple-watch-app-screens",
+   "rdkind": "Design",
+   "rdcat": "Interface",
+   "rdstyle": [
+    "Minimal",
+    "Dark",
+    "Muted"
+   ],
+   "author": {
+    "name": "yuhang",
+    "handle": "@luyuhang",
+    "url": "https://x.com/luyuhang"
+   },
+   "x_post": "https://x.com/luyuhang/status/2118821054223130957",
+   "xsrc": {
+    "post": "https://x.com/luyuhang/status/2118821054223130957",
+    "author": "@luyuhang",
+    "likes": 187,
+    "bookmarks": 78,
+    "reposts": 5,
+    "impressions": 8995,
+    "date": "2026-11-06"
+   },
+   "official": "https://touch-time.com",
+   "pub": "2026-11-07",
+   "added": "2026-11-07"
   }
  ],
  "guides": [
@@ -191221,5 +191270,5 @@
    ]
   }
  ],
- "updatedAt": "2026-11-07T05:55Z"
+ "updatedAt": "2026-11-07T07:43Z"
 }
