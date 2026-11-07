@@ -1,6 +1,6 @@
 {
  "generated": "2026-11-07",
- "count": 5081,
+ "count": 5082,
  "items": [
   {
    "id": "ued-figma-mcp-guide",
@@ -191068,6 +191068,53 @@
    "official": "https://touch-time.com",
    "pub": "2026-11-07",
    "added": "2026-11-07"
+  },
+  {
+   "id": "rd-vwi94zh-vael-fintech-app",
+   "name": "Vael Fintech App",
+   "url": "https://x.com/BThreeAgency/status/2118686469267341525",
+   "note": "Dark fintech mobile app flow for Vael showing amount entry via numpad, account selection, swipe-to-confirm gesture, and a deposit confirmation screen with an Onyx card reveal.",
+   "noteEn": "Dark fintech mobile app flow for Vael showing amount entry via numpad, account selection, swipe-to-confirm gesture, and a deposit confirmation screen with an Onyx card reveal.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@bthreeagency",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/vwi94zh-vael-fintech-app",
+   "rdkind": "Design",
+   "rdcat": "Interface",
+   "rdstyle": [
+    "Minimal",
+    "Dark"
+   ],
+   "author": {
+    "name": "Ritu",
+    "handle": "@bthreeagency",
+    "url": "https://x.com/bthreeagency"
+   },
+   "x_post": "https://x.com/BThreeAgency/status/2118686469267341525",
+   "xsrc": {
+    "post": "https://x.com/BThreeAgency/status/2118686469267341525",
+    "author": "@BThreeAgency",
+    "likes": 407,
+    "bookmarks": 392,
+    "reposts": 9,
+    "impressions": 16802,
+    "date": "2026-11-06"
+   },
+   "pub": "2026-11-07",
+   "added": "2026-11-07"
   }
  ],
  "guides": [
@@ -191270,5 +191317,5 @@
    ]
   }
  ],
- "updatedAt": "2026-11-07T10:29Z"
+ "updatedAt": "2026-11-07T18:15Z"
 }
