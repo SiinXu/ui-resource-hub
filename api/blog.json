@@ -1,5 +1,5 @@
 {
- "count": 45,
+ "count": 46,
  "rss": "https://ui.incidental.site/blog/rss.xml",
  "categories": {
   "tools": "Tools",
@@ -18,6 +18,84 @@
   "weekly": "Series: Weekly roundup"
  },
  "posts": [
+  {
+   "slug": "cursor-live-apps-off-localhost",
+   "url": "https://ui.incidental.site/blog/cursor-live-apps-off-localhost/",
+   "date": "2026-11-07",
+   "category": "tools",
+   "series": null,
+   "featured": true,
+   "tags": [
+    "Cursor",
+    "live apps",
+    "cloud agents",
+    "deployment",
+    "Postgres",
+    "SSO",
+    "security"
+   ],
+   "title": {
+    "en": "Cursor Live Apps: get the UI off localhost before the demo dies",
+    "zh": "Cursor Live Apps：在演示凉掉之前，把界面拉出 localhost",
+    "zht": "Cursor Live Apps：在示範涼掉之前，把介面拉出 localhost",
+    "ja": "Cursor Live Apps：デモが死ぬ前にUIをlocalhostから出す",
+    "ko": "Cursor Live Apps: 데모가 죽기 전에 UI를 localhost 밖으로",
+    "ms": "Cursor Live Apps: keluarkan UI dari localhost sebelum demo mati",
+    "vi": "Cursor Live Apps: đưa UI ra khỏi localhost trước khi demo chết",
+    "fr": "Cursor Live Apps : sortez l’UI de localhost avant que la démo meure",
+    "es": "Cursor Live Apps: saca la UI de localhost antes de que muera la demo",
+    "de": "Cursor Live Apps: UI vor dem Demo-Tod von localhost holen"
+   },
+   "summary": {
+    "en": "On 5 November 2026 Cursor let cloud agents scaffold, host, and publish a live app with Postgres, SSO, and security checks. Why that changes the design loop, how it compares to Lovable and v0, and a checklist before you hit publish.",
+    "zh": "2026 年 11 月 5 日，Cursor 让云端智能体搭脚手架、托管并发布带 Postgres、SSO 与安全检查的线上应用。这为什么改了设计循环、怎么和 Lovable、v0 比，以及点发布前的一份清单。",
+    "zht": "2026 年 11 月 5 日，Cursor 讓雲端智慧體搭腳手架、託管並發布帶 Postgres、SSO 與安全檢查的線上應用。這為什麼改了設計循環、怎麼和 Lovable、v0 比，以及點發布前的一份清單。",
+    "ja": "2026年11月5日、Cursorはクラウドエージェントにスキャフォールド・ホスティング・公開まで任せ、Postgres・SSO・セキュリティ検査付きのライブアプリを出せるようにした。デザインループへの影響、Lovableやv0との比較、公開前チェックリスト。",
+    "ko": "2026년 11월 5일 Cursor는 클라우드 에이전트가 Postgres·SSO·보안 검사와 함께 라이브 앱을 스캐폴드·호스팅·게시하게 했다. 디자인 루프가 바뀌는 이유, Lovable·v0 비교, 게시 전 체크리스트.",
+    "ms": "Pada 5 November 2026 Cursor benarkan ejen awan scaffold, hos dan terbitkan apl langsung dengan Postgres, SSO dan semakan keselamatan. Mengapa gelung reka bentuk berubah, banding dengan Lovable dan v0, serta senarai semak sebelum terbit.",
+    "vi": "Ngày 5/11/2026 Cursor cho phép cloud agent dựng scaffold, host và publish app sống kèm Postgres, SSO và kiểm tra bảo mật. Vì sao vòng thiết kế đổi, so với Lovable và v0, và checklist trước khi bấm publish.",
+    "fr": "Le 5 novembre 2026, Cursor a laissé les agents cloud scaffolder, héberger et publier une app live avec Postgres, SSO et contrôles de sécurité. Pourquoi la boucle de design change, comparaison avec Lovable et v0, checklist avant de publier.",
+    "es": "El 5 de noviembre de 2026 Cursor permitió que agentes en la nube andamien, alojen y publiquen una app en vivo con Postgres, SSO y comprobaciones de seguridad. Por qué cambia el bucle de diseño, comparación con Lovable y v0, y checklist antes de publicar.",
+    "de": "Am 5. November 2026 ließ Cursor Cloud-Agenten eine Live-App mit Postgres, SSO und Security-Checks scaffolden, hosten und veröffentlichen. Warum sich die Design-Schleife ändert, Vergleich mit Lovable und v0, Checkliste vor dem Publish."
+   },
+   "reading_minutes": {
+    "en": 5,
+    "zh": 6
+   },
+   "cover": "https://ui.incidental.site/blog/img/cursor-live-apps-off-localhost-cover.webp",
+   "references": [
+    {
+     "title": "Build Live Apps in Cursor (5 Nov 2026)",
+     "by": "Cursor Changelog",
+     "url": "https://cursor.com/changelog/build-live-apps"
+    },
+    {
+     "title": "Voice Chat with Agents (6 Nov 2026)",
+     "by": "Cursor Changelog",
+     "url": "https://cursor.com/changelog"
+    },
+    {
+     "title": "\"Most apps never make it off localhost\": Cursor takes on Lovable and Replit with fully managed app deployment",
+     "by": "Paul Sawers / The New Stack",
+     "url": "https://thenewstack.io/cursor-ai-app-deployment/"
+    },
+    {
+     "title": "Lovable changelog",
+     "by": "Lovable",
+     "url": "https://docs.lovable.dev/changelog"
+    },
+    {
+     "title": "What is v0?",
+     "by": "v0 by Vercel",
+     "url": "https://v0.app/docs"
+    },
+    {
+     "title": "v0 by Vercel",
+     "by": "Vercel",
+     "url": "https://v0.app/"
+    }
+   ]
+  },
   {
    "slug": "figma-agent-vector-strokes-icons",
    "url": "https://ui.incidental.site/blog/figma-agent-vector-strokes-icons/",

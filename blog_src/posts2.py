@@ -1997,4 +1997,95 @@ First pass: make only search / copy / link so we can compare strokes before the 
 <h2>UI Hub 能帮什么</h2>
 <p>从 Figma 之外起步的 SVG 流程，见 <a href="../ai-svg-for-ui-ideogram-vector/">用 Ideogram Vector 做界面 SVG</a>。已能进入代码图层的着色器，见 <a href="../figma-shaders-ga-ship-shader-backgrounds/">Figma 着色器正式可用</a>。更广的「智能体在画布上」背景，见 <a href="../figma-make-and-figma-agent/">Figma Make 与 Figma 智能体</a>以及 <a href="../figma-code-layers-and-specs/">代码图层与 Specs</a>。若最终落点是你已经在跑的代码，对应的工作流文章是<a href="../design-on-running-code-dessn-doop-code-canvas/">在运行中的代码上做设计</a>。</p>""",
  refs=[('Improvements to agent-generated vector illustrations and icons (5 Nov 2026)','Figma release notes','https://www.figma.com/release-notes/'),('Generate and edit vectors with Figma AI','Figma Learn','https://help.figma.com/hc/en-us/articles/38031452710807-Generate-and-edit-vectors-with-Figma-AI'),('Figma’s agent now draws in strokes, so the line weight stays yours','Art Direction Daily','https://artdirectiondaily.com/issues/2026-11-05-figma-agent-draws-in-strokes.html'),('AI Vector Illustrations in Figma: the agent finally draws clean','Mazette.co','https://www.mazette.co/en/blog/ai-vector-illustrations-in-figma-the-agent-finally-draws-clean'),('stroke-linecap','MDN Web Docs','https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/stroke-linecap'),('vector-effect','MDN Web Docs','https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/vector-effect'),('Workflow lab: Test ideas with code layers and the Figma agent (4 Nov 2026)','Figma Blog','https://www.figma.com/blog/workflow-lab-build-with-code-on-the-canvas-using-the-figma-agent-and-code-layers/'),('Design Tools news (RSS checked 6 Nov 2026)','designtools.fyi','https://designtools.fyi/news')]),
+
+dict(slug='cursor-live-apps-off-localhost', date='2026-11-07', cat='tools', series=None, featured=True, tags=['Cursor','live apps','cloud agents','deployment','Postgres','SSO','security'],
+ t=T('Cursor Live Apps: get the UI off localhost before the demo dies',
+     'Cursor Live Apps：在演示凉掉之前，把界面拉出 localhost',
+     'Cursor Live Apps：在示範涼掉之前，把介面拉出 localhost',
+     'Cursor Live Apps：デモが死ぬ前にUIをlocalhostから出す',
+     'Cursor Live Apps: 데모가 죽기 전에 UI를 localhost 밖으로',
+     'Cursor Live Apps: keluarkan UI dari localhost sebelum demo mati',
+     'Cursor Live Apps: đưa UI ra khỏi localhost trước khi demo chết',
+     'Cursor Live Apps : sortez l’UI de localhost avant que la démo meure',
+     'Cursor Live Apps: saca la UI de localhost antes de que muera la demo',
+     'Cursor Live Apps: UI vor dem Demo-Tod von localhost holen'),
+ s=T('On 5 November 2026 Cursor let cloud agents scaffold, host, and publish a live app with Postgres, SSO, and security checks. Why that changes the design loop, how it compares to Lovable and v0, and a checklist before you hit publish.',
+     '2026 年 11 月 5 日，Cursor 让云端智能体搭脚手架、托管并发布带 Postgres、SSO 与安全检查的线上应用。这为什么改了设计循环、怎么和 Lovable、v0 比，以及点发布前的一份清单。',
+     '2026 年 11 月 5 日，Cursor 讓雲端智慧體搭腳手架、託管並發布帶 Postgres、SSO 與安全檢查的線上應用。這為什麼改了設計循環、怎麼和 Lovable、v0 比，以及點發布前的一份清單。',
+     '2026年11月5日、Cursorはクラウドエージェントにスキャフォールド・ホスティング・公開まで任せ、Postgres・SSO・セキュリティ検査付きのライブアプリを出せるようにした。デザインループへの影響、Lovableやv0との比較、公開前チェックリスト。',
+     '2026년 11월 5일 Cursor는 클라우드 에이전트가 Postgres·SSO·보안 검사와 함께 라이브 앱을 스캐폴드·호스팅·게시하게 했다. 디자인 루프가 바뀌는 이유, Lovable·v0 비교, 게시 전 체크리스트.',
+     'Pada 5 November 2026 Cursor benarkan ejen awan scaffold, hos dan terbitkan apl langsung dengan Postgres, SSO dan semakan keselamatan. Mengapa gelung reka bentuk berubah, banding dengan Lovable dan v0, serta senarai semak sebelum terbit.',
+     'Ngày 5/11/2026 Cursor cho phép cloud agent dựng scaffold, host và publish app sống kèm Postgres, SSO và kiểm tra bảo mật. Vì sao vòng thiết kế đổi, so với Lovable và v0, và checklist trước khi bấm publish.',
+     'Le 5 novembre 2026, Cursor a laissé les agents cloud scaffolder, héberger et publier une app live avec Postgres, SSO et contrôles de sécurité. Pourquoi la boucle de design change, comparaison avec Lovable et v0, checklist avant de publier.',
+     'El 5 de noviembre de 2026 Cursor permitió que agentes en la nube andamien, alojen y publiquen una app en vivo con Postgres, SSO y comprobaciones de seguridad. Por qué cambia el bucle de diseño, comparación con Lovable y v0, y checklist antes de publicar.',
+     'Am 5. November 2026 ließ Cursor Cloud-Agenten eine Live-App mit Postgres, SSO und Security-Checks scaffolden, hosten und veröffentlichen. Warum sich die Design-Schleife ändert, Vergleich mit Lovable und v0, Checkliste vor dem Publish.'),
+ en="""<p>On 5 November 2026 Cursor’s changelog shipped <strong>Build Live Apps</strong>: tell a cloud agent you want an app, and it scaffolds the web app, spins up Postgres when needed, puts authentication behind Cursor SSO, provisions hosting, and hands you a shareable URL after you pick a domain. The company’s own framing is blunt—agents made writing code cheap, but most apps still die on localhost. The day after, on 6 November, Cursor also shipped Voice Chat with Agents (Grok Voice) so you can talk through a change while work is running; useful as a design-loop companion, not the main story here.</p>
+<p>Coverage from The New Stack (Paul Sawers, 6 November) places the release next to Lovable and Replit’s prompt-to-app turf, and notes Vercel’s public reply that the hosting path sits on <strong>Vercel for Platforms</strong>—deploy without each teammate opening their own Vercel account or wiring deploy config by hand. Availability is on paid plans with cloud agents enabled. That is the product. The design problem underneath is older: demos that only run on one laptop are not products.</p>
+<h2>What shipped, and how it works</h2>
+<ul><li><strong>Cloud agent, not a localhost wizard.</strong> You kick off a cloud agent and say you want an app; Cursor scaffolds, optionally provisions Postgres, configures auth behind Cursor SSO, and hosts it.</li>
+<li><strong>Secrets on demand.</strong> If the app must talk to your systems (for example a warehouse), Cursor asks for the secrets it needs instead of inventing them.</li>
+<li><strong>Security checks before go-live.</strong> On publish, deterministic and agentic checks look for common failures such as secrets in app files. Failures block the ship until the agent can fix them and you explicitly publish.</li>
+<li><strong>Share scope is a product decision.</strong> After checks pass you get the live URL; share with people, groups, or the whole team behind Cursor sign-in. On individual plans you can also share publicly. Team admins can see apps and secrets, add review rules, approve blocked publishes, and unpublish.</li>
+<li><strong>Repos and git.</strong> Apps can come from new or existing repos on Cursor Origin and GitHub; other providers such as GitLab are listed as coming soon. Cursor also notes you can provision an API key so a script or Grok Bot can call the app.</li></ul>
+<p>Cursor’s own examples lean internal: ops tools, customer multimedia decks, onboarding, sales dashboards, engineering-service portals. That is a clue. Live Apps are strongest when “share with the team behind SSO” is the point, not when you need a public brand site with a long design history.</p>
+<h2>Our take: treat Live Apps like an internal product surface</h2>
+<p>The design problem moved from <strong>“generate a screen”</strong> to <strong>“what ships past localhost”</strong>. A pretty preview that only you can open is still a localhost demo with better lighting. Live Apps collapse scaffold → host → auth → share into one publish path; that is useful, and it is also where taste and security both get decided by default if you do not decide first.</p>
+<p>Lock tokens and components <em>before</em> the agent scaffolds. A cloud agent that has never seen your Button, radius, or type scale will invent a second UI dialect the moment Postgres comes up. Put a short design file (tokens, one accent, density, never-list) in the repo the agent reads, the same way you would for any coding agent. Decide auth and share scope <em>before</em> you hit publish: team-only behind SSO is a different product from a public link on an individual plan. Treat the security checks as a gate, not a vibe—The New Stack reminds readers that Semafor previously reported Replit employees finding sensitive exposure in a sample of Lovable-built apps, after which Lovable said it added further pre-publish checks. Cursor’s checks are addressing that class of failure; they are not a substitute for reviewing what the app can actually reach.</p>
+<p>Know when adjacent tools still fit better. <strong>v0</strong> stays the component-oriented path: prompt into shadcn/Tailwind you pull into an existing repo, with Design mode and design-system hooks when the deliverable is UI inside code you already ship (see v0’s docs). <strong>Lovable</strong> remains a dedicated prompt-to-app surface with its own changelog cadence—recent entries such as GPT Image models for in-app AI features (6 November) and “Dreaming” memory tidy-ups (4 November) show it is still iterating as a full product builder, not a side feature of an IDE. Replit-style environments still win when the whole collaborative runtime is the product. Live Apps win when your team already lives in Cursor and the app’s natural home is “behind our SSO, shareable tomorrow”.</p>
+<h2>Checklist before you hit publish</h2>
+<ol><li><strong>Write the surface brief first.</strong> Audience (team / group / public), one job the app does, and a never-list for UI chrome.</li>
+<li><strong>Lock tokens and components in the repo.</strong> Radius, type, accent, your Button/Card—before the scaffold, not after the first share link.</li>
+<li><strong>Name the data boundary.</strong> Which secrets, which warehouse tables, which environments. Do not paste production keys into a chat because the agent asked politely.</li>
+<li><strong>Choose share scope on purpose.</strong> SSO teammates vs public. Individual-plan public links are a different threat model from internal ops tools.</li>
+<li><strong>Read every failed security check.</strong> Fix or accept with admin override only after a human understands the finding. Do not treat “agent said it fixed it” as a merge.</li>
+<li><strong>Click the live URL like a stranger.</strong> Empty, loading, error, mobile width, and sign-out. Localhost habits hide all four.</li>
+<li><strong>Decide ownership.</strong> Who can unpublish, who rotates secrets, which admin sees the app list—before the third teammate bookmarks it.</li>
+<li><strong>Pick the right tool if Live Apps are wrong.</strong> Components for an existing React app → v0. Open-ended public product with Lovable’s own stack → Lovable. Cursor-native internal tool with SSO → Live Apps.</li></ol>
+<pre><code># Live Apps publish brief (paste into the cloud agent first)
+Surface:   internal ops tool for desk seating + event registration
+Audience:  whole team behind Cursor SSO (not public)
+Stack:     reuse our Button/Card; tokens in styles/tokens.css
+Data:      read-only seat map from warehouse; ask before any write secret
+Auth:      Cursor SSO only; no anonymous link
+Never:     hard-coded API keys, second accent colour, emoji icons
+Gate:      stop on any security-check failure; I review before Publish
+Companion: Voice Chat OK for iteration talk-track; publish stays a click I make</code></pre>
+<h2>When not to use Live Apps</h2>
+<p>Skip them when the deliverable must merge into a mature design system with PR review as the only ship path—v0 or a hand PR still fit better. Skip them when you need Lovable’s (or Replit’s) full product surface and you are not standardising on Cursor. Skip them for customer-facing marketing sites that need brand art direction the agent has never seen. Use them when the pain is real: a useful internal UI that would otherwise die on someone’s laptop between the standup and the demo.</p>
+<p>Related on UI Hub: <a href="../lovable-bolt-prompt-to-app/">Lovable and Bolt</a>, <a href="../v0-prompt-to-shadcn/">v0 to shadcn</a>, <a href="../prompt-to-ui-tools-compared/">prompt-to-UI tools compared</a>, and <a href="../annotate-dont-describe-visual-prompts/">annotate, don’t describe</a> for iterating on a running preview.</p>""",
+ zh="""<p>2026 年 11 月 5 日，Cursor 的更新日志上线了 <strong>Build Live Apps</strong>：对云端智能体说你要做一个应用，它会搭好 Web 应用脚手架，需要时拉起 Postgres，把登录放在 Cursor SSO 后面，配好托管，你选好域名后拿到可分享的链接。官方说法很直白——智能体让写代码变便宜了，但多数应用还是死在 localhost。次日（11 月 6 日）Cursor 还上了 Voice Chat with Agents（Grok Voice），可以边跑任务边语音沟通；适合当设计循环的伴奏，不是这篇的主线。</p>
+<p>The New Stack（Paul Sawers，11 月 6 日）把这次发布放在 Lovable、Replit 的「提示生成应用」赛道旁边，并提到 Vercel 在 X 上的公开回复：托管路径建在 <strong>Vercel for Platforms</strong> 上——团队成员不必各自开 Vercel 账号、也不必手写部署配置。功能面向已开启云端智能体的付费方案。产品是这样；底下的设计问题更老：只能在一台笔记本上跑的演示，还不是产品。</p>
+<h2>上了什么、怎么跑</h2>
+<ul><li><strong>云端智能体，不是本机向导。</strong>发起云端智能体并明确说要做应用；Cursor 搭脚手架，按需开 Postgres，配置 Cursor SSO 登录并托管。</li>
+<li><strong>按需要密钥。</strong>若应用要连你的系统（例如数仓），Cursor 会向你要所需密钥，而不是自己编造。</li>
+<li><strong>上线前的安全检查。</strong>发布时跑确定式与智能体安全检查，抓应用文件里写死密钥等常见问题；不过检就不能上线，修完且由你明确点发布才行。</li>
+<li><strong>分享范围是产品决策。</strong>过检后拿到线上 URL；可分享给特定人、群组或整个团队，都在 Cursor 登录之后。个人方案也可公开分享。团队管理员能看到应用与密钥、加审查规则、批准被拦的发布、下线应用。</li>
+<li><strong>仓库与 Git。</strong>可从 Cursor Origin 与 GitHub 上的新仓或已有仓部署；GitLab 等写明即将支持。也可开通 API key，让脚本或 Grok Bot 调用应用。</li></ul>
+<p>Cursor 自己举的例子偏内部：运营工具、客户多媒体演示、入职培训、销售看板、工程服务门户。这是信号：Live Apps 最强的场景是「挂在团队 SSO 后面分享」，而不是要做有长久设计史的对外品牌站。</p>
+<h2>我们的看法：把 Live Apps 当成内部产品界面</h2>
+<p>设计问题已经从<strong>「生成一屏」</strong>变成<strong>「什么能活过 localhost」</strong>。只有你能打开的漂亮预览，不过是灯光更好的本机演示。Live Apps 把脚手架 → 托管 → 登录 → 分享压成一条发布路径；有用，但也意味着你不先决定，审美和安全都会被默认值替你决定。</p>
+<p>在智能体搭脚手架<strong>之前</strong>锁死 Token 和组件。从没见过你的 Button、圆角、字号阶梯的云端智能体，一接到 Postgres 就会发明第二种界面方言。把简短的设计文件（Token、一个强调色、密度、禁止清单）放进智能体会读的仓库，和对待任何编程智能体一样。在点发布<strong>之前</strong>决定登录与分享范围：SSO 仅限团队，和个人方案上的公开链接，是两种产品。把安全检查当关卡，不当氛围——The New Stack 提醒读者：Semafor 曾报道 Replit 员工在一批 Lovable 应用样本里发现敏感信息暴露，此后 Lovable 称增加了发布前检查。Cursor 的检查对准的是这类问题；它不能代替你审应用到底能碰到什么。</p>
+<p>也要知道相邻工具何时更合适。<strong>v0</strong> 仍是组件导向路径：提示生成可拉进现有仓库的 shadcn/Tailwind，并有 Design mode 与设计系统挂钩——交付物是已有代码里的界面时看 v0 文档。<strong>Lovable</strong> 仍是独立的提示生成应用产品，更新日志节奏自己的——例如 11 月 6 日为应用内 AI 功能接入 GPT Image 模型、11 月 4 日的「Dreaming」记忆整理，说明它还在当完整产品构建器迭代，而不是 IDE 的附属功能。整机协作运行时才是产品时，Replit 一类环境仍更合适。团队已经住在 Cursor、应用天生该「挂在我们的 SSO 后面、明天就能分享」时，Live Apps 才对。</p>
+<h2>点发布前的清单</h2>
+<ol><li><strong>先写界面简报。</strong>受众（团队 / 群组 / 公开）、应用只办一件什么事、界面 chrome 的禁止清单。</li>
+<li><strong>在仓库里锁 Token 和组件。</strong>圆角、字体、强调色、你的 Button/Card——在搭脚手架之前，而不是出了分享链接之后。</li>
+<li><strong>写清数据边界。</strong>哪些密钥、哪些数仓表、哪些环境。不要因为智能体礼貌地要，就把生产密钥贴进对话。</li>
+<li><strong>有意选择分享范围。</strong>SSO 队友 vs 公开。个人方案公开链接，和内部运营工具，威胁模型不同。</li>
+<li><strong>读完每一条失败的安全检查。</strong>只有人看懂发现后，才修复或走管理员覆盖。「智能体说修好了」不等于合并。</li>
+<li><strong>像陌生人一样点开线上 URL。</strong>空态、加载、出错、窄屏、退出登录。localhost 习惯会把这四项都藏起来。</li>
+<li><strong>定好所有权。</strong>谁能下线、谁轮换密钥、哪个管理员看应用列表——在第三个同事收藏链接之前。</li>
+<li><strong>Live Apps 不合适就换工具。</strong>已有 React 应用里的组件 → v0；开放的对外产品且跟 Lovable 栈 → Lovable；Cursor 原生、要 SSO 的内部工具 → Live Apps。</li></ol>
+<pre><code># Live Apps 发布简报（先贴进云端智能体）
+界面：     工位与活动报名用的内部运营工具
+受众：     整个团队，Cursor SSO 之后（不公开）
+技术栈：   复用我们的 Button/Card；Token 在 styles/tokens.css
+数据：     只读座位图来自数仓；任何写入密钥先问我
+登录：     仅 Cursor SSO；不要匿名链接
+禁止：     写死 API key、第二个强调色、emoji 图标
+关卡：     安全检查失败就停；我审过再点 Publish
+伴奏：     迭代讨论可用 Voice Chat；发布必须是我点的那一下</code></pre>
+<h2>什么时候别用 Live Apps</h2>
+<p>交付物必须合进成熟设计系统、且唯一上线路径是 PR 审查时，跳过——v0 或手写 PR 更合适。你需要 Lovable（或 Replit）的完整产品界面、又不以 Cursor 为标准时，跳过。要做智能体从未见过品牌美术方向的对外营销站时，跳过。真正痛的时候再用：一个本来有用的内部界面，若不去掉 localhost，会在站会和演示之间死在某台笔记本上。</p>
+<p>UI Hub 相关阅读：<a href="../lovable-bolt-prompt-to-app/">Lovable 与 Bolt</a>、<a href="../v0-prompt-to-shadcn/">v0 到 shadcn</a>、<a href="../prompt-to-ui-tools-compared/">提示生成界面工具对比</a>，以及在运行中的预览上迭代的<a href="../annotate-dont-describe-visual-prompts/">标注，而不是描述</a>。</p>""",
+ refs=[('Build Live Apps in Cursor (5 Nov 2026)','Cursor Changelog','https://cursor.com/changelog/build-live-apps'),('Voice Chat with Agents (6 Nov 2026)','Cursor Changelog','https://cursor.com/changelog'),('"Most apps never make it off localhost": Cursor takes on Lovable and Replit with fully managed app deployment','Paul Sawers / The New Stack','https://thenewstack.io/cursor-ai-app-deployment/'),('Lovable changelog','Lovable','https://docs.lovable.dev/changelog'),('What is v0?','v0 by Vercel','https://v0.app/docs'),('v0 by Vercel','Vercel','https://v0.app/')]),
 ]

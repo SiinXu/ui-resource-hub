@@ -1,0 +1,34 @@
+<p>2026 年 11 月 5 日，Cursor 的更新日志上线了 <strong>Build Live Apps</strong>：对云端智能体说你要做一个应用，它会搭好 Web 应用脚手架，需要时拉起 Postgres，把登录放在 Cursor SSO 后面，配好托管，你选好域名后拿到可分享的链接。官方说法很直白——智能体让写代码变便宜了，但多数应用还是死在 localhost。次日（11 月 6 日）Cursor 还上了 Voice Chat with Agents（Grok Voice），可以边跑任务边语音沟通；适合当设计循环的伴奏，不是这篇的主线。</p><figure><img src="../../blog/img/cursor-live-apps-off-localhost-1.webp" alt="Cursor 更新日志《Build Live Apps》（2026-11-05）：云端智能体搭脚手架、托管并发布可分享应用" loading="lazy" decoding="async" width="1280" height="800"><figcaption>Cursor 更新日志《Build Live Apps》（2026-11-05）：云端智能体搭脚手架、托管并发布可分享应用 · 截图：Cursor（<a href="https://cursor.com/changelog/build-live-apps" rel="noopener" target="_blank">cursor.com</a>），2026-11-07 截取，版权归原站所有</figcaption></figure>
+<p>The New Stack（Paul Sawers，11 月 6 日）把这次发布放在 Lovable、Replit 的「提示生成应用」赛道旁边，并提到 Vercel 在 X 上的公开回复：托管路径建在 <strong>Vercel for Platforms</strong> 上——团队成员不必各自开 Vercel 账号、也不必手写部署配置。功能面向已开启云端智能体的付费方案。产品是这样；底下的设计问题更老：只能在一台笔记本上跑的演示，还不是产品。</p>
+<h2>上了什么、怎么跑</h2>
+<ul><li><strong>云端智能体，不是本机向导。</strong>发起云端智能体并明确说要做应用；Cursor 搭脚手架，按需开 Postgres，配置 Cursor SSO 登录并托管。</li>
+<li><strong>按需要密钥。</strong>若应用要连你的系统（例如数仓），Cursor 会向你要所需密钥，而不是自己编造。</li>
+<li><strong>上线前的安全检查。</strong>发布时跑确定式与智能体安全检查，抓应用文件里写死密钥等常见问题；不过检就不能上线，修完且由你明确点发布才行。</li>
+<li><strong>分享范围是产品决策。</strong>过检后拿到线上 URL；可分享给特定人、群组或整个团队，都在 Cursor 登录之后。个人方案也可公开分享。团队管理员能看到应用与密钥、加审查规则、批准被拦的发布、下线应用。</li>
+<li><strong>仓库与 Git。</strong>可从 Cursor Origin 与 GitHub 上的新仓或已有仓部署；GitLab 等写明即将支持。也可开通 API key，让脚本或 Grok Bot 调用应用。</li></ul><figure><img src="../../blog/img/cursor-live-apps-off-localhost-2.webp" alt="流程：向云端智能体要一个应用，搭脚手架并按需开 Postgres 与 Cursor SSO，预览，跑安全检查，再发布可分享的线上 URL" loading="lazy" decoding="async" width="1200" height="675"><figcaption>流程：向云端智能体要一个应用，搭脚手架并按需开 Postgres 与 Cursor SSO，预览，跑安全检查，再发布可分享的线上 URL · 示意图：UI Hub 原创，CC BY 4.0</figcaption></figure>
+<p>Cursor 自己举的例子偏内部：运营工具、客户多媒体演示、入职培训、销售看板、工程服务门户。这是信号：Live Apps 最强的场景是「挂在团队 SSO 后面分享」，而不是要做有长久设计史的对外品牌站。</p>
+<h2>我们的看法：把 Live Apps 当成内部产品界面</h2>
+<p>设计问题已经从<strong>「生成一屏」</strong>变成<strong>「什么能活过 localhost」</strong>。只有你能打开的漂亮预览，不过是灯光更好的本机演示。Live Apps 把脚手架 → 托管 → 登录 → 分享压成一条发布路径；有用，但也意味着你不先决定，审美和安全都会被默认值替你决定。</p>
+<p>在智能体搭脚手架<strong>之前</strong>锁死 Token 和组件。从没见过你的 Button、圆角、字号阶梯的云端智能体，一接到 Postgres 就会发明第二种界面方言。把简短的设计文件（Token、一个强调色、密度、禁止清单）放进智能体会读的仓库，和对待任何编程智能体一样。在点发布<strong>之前</strong>决定登录与分享范围：SSO 仅限团队，和个人方案上的公开链接，是两种产品。把安全检查当关卡，不当氛围——The New Stack 提醒读者：Semafor 曾报道 Replit 员工在一批 Lovable 应用样本里发现敏感信息暴露，此后 Lovable 称增加了发布前检查。Cursor 的检查对准的是这类问题；它不能代替你审应用到底能碰到什么。</p>
+<p>也要知道相邻工具何时更合适。<strong>v0</strong> 仍是组件导向路径：提示生成可拉进现有仓库的 shadcn/Tailwind，并有 Design mode 与设计系统挂钩——交付物是已有代码里的界面时看 v0 文档。<strong>Lovable</strong> 仍是独立的提示生成应用产品，更新日志节奏自己的——例如 11 月 6 日为应用内 AI 功能接入 GPT Image 模型、11 月 4 日的「Dreaming」记忆整理，说明它还在当完整产品构建器迭代，而不是 IDE 的附属功能。整机协作运行时才是产品时，Replit 一类环境仍更合适。团队已经住在 Cursor、应用天生该「挂在我们的 SSO 后面、明天就能分享」时，Live Apps 才对。</p>
+<h2>点发布前的清单</h2>
+<ol><li><strong>先写界面简报。</strong>受众（团队 / 群组 / 公开）、应用只办一件什么事、界面 chrome 的禁止清单。</li>
+<li><strong>在仓库里锁 Token 和组件。</strong>圆角、字体、强调色、你的 Button/Card——在搭脚手架之前，而不是出了分享链接之后。</li>
+<li><strong>写清数据边界。</strong>哪些密钥、哪些数仓表、哪些环境。不要因为智能体礼貌地要，就把生产密钥贴进对话。</li>
+<li><strong>有意选择分享范围。</strong>SSO 队友 vs 公开。个人方案公开链接，和内部运营工具，威胁模型不同。</li>
+<li><strong>读完每一条失败的安全检查。</strong>只有人看懂发现后，才修复或走管理员覆盖。「智能体说修好了」不等于合并。</li>
+<li><strong>像陌生人一样点开线上 URL。</strong>空态、加载、出错、窄屏、退出登录。localhost 习惯会把这四项都藏起来。</li>
+<li><strong>定好所有权。</strong>谁能下线、谁轮换密钥、哪个管理员看应用列表——在第三个同事收藏链接之前。</li>
+<li><strong>Live Apps 不合适就换工具。</strong>已有 React 应用里的组件 → v0；开放的对外产品且跟 Lovable 栈 → Lovable；Cursor 原生、要 SSO 的内部工具 → Live Apps。</li></ol>
+<pre><code># Live Apps 发布简报（先贴进云端智能体）
+界面：     工位与活动报名用的内部运营工具
+受众：     整个团队，Cursor SSO 之后（不公开）
+技术栈：   复用我们的 Button/Card；Token 在 styles/tokens.css
+数据：     只读座位图来自数仓；任何写入密钥先问我
+登录：     仅 Cursor SSO；不要匿名链接
+禁止：     写死 API key、第二个强调色、emoji 图标
+关卡：     安全检查失败就停；我审过再点 Publish
+伴奏：     迭代讨论可用 Voice Chat；发布必须是我点的那一下</code></pre>
+<figure><img src="../../blog/img/cursor-live-apps-off-localhost-3.webp" alt="按交付物选择：Cursor Live Apps、Lovable 与 v0——内部 SSO 应用、完整提示生成应用，或打进现有 React 仓库的组件" loading="lazy" decoding="async" width="1200" height="675"><figcaption>按交付物选择：Cursor Live Apps、Lovable 与 v0——内部 SSO 应用、完整提示生成应用，或打进现有 React 仓库的组件 · 示意图：UI Hub 原创，CC BY 4.0</figcaption></figure><h2>什么时候别用 Live Apps</h2>
+<p>交付物必须合进成熟设计系统、且唯一上线路径是 PR 审查时，跳过——v0 或手写 PR 更合适。你需要 Lovable（或 Replit）的完整产品界面、又不以 Cursor 为标准时，跳过。要做智能体从未见过品牌美术方向的对外营销站时，跳过。真正痛的时候再用：一个本来有用的内部界面，若不去掉 localhost，会在站会和演示之间死在某台笔记本上。</p>
+<p>UI Hub 相关阅读：<a href="../lovable-bolt-prompt-to-app/">Lovable 与 Bolt</a>、<a href="../v0-prompt-to-shadcn/">v0 到 shadcn</a>、<a href="../prompt-to-ui-tools-compared/">提示生成界面工具对比</a>，以及在运行中的预览上迭代的<a href="../annotate-dont-describe-visual-prompts/">标注，而不是描述</a>。</p>
