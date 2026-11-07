@@ -1,6 +1,6 @@
 {
- "generated": "2026-11-06",
- "count": 5079,
+ "generated": "2026-11-07",
+ "count": 5080,
  "items": [
   {
    "id": "ued-figma-mcp-guide",
@@ -190990,6 +190990,35 @@
    },
    "pub": "2026-11-06",
    "added": "2026-11-06"
+  },
+  {
+   "id": "gh-yappologistic-cui",
+   "name": "CUI",
+   "url": "https://github.com/yappologistic/CUI",
+   "note": "GitHub 新晋 UI 仓库：Native UI components for C: about 150 of them, with spring motion and full keyboard support. Windows, macOS and Linux, no dependencies.（GitHub ★195，MIT 许可，仓库 yappologistic/CUI）",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "GitHub",
+   "pricing": "free",
+   "tags": [
+    "HTML",
+    "开源",
+    "自动收录"
+   ],
+   "ct": [
+    "motion",
+    "form"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "New GitHub UI repo: Native UI components for C: about 150 of them, with spring motion and full keyboard support. Windows, macOS and Linux, no dependencies. (★195, MIT, yappologistic/CUI)",
+   "added": "2026-11-07"
   }
  ],
  "guides": [
@@ -191192,5 +191221,5 @@
    ]
   }
  ],
- "updatedAt": "2026-11-06T20:04Z"
+ "updatedAt": "2026-11-07T05:55Z"
 }
