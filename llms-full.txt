@@ -1,6 +1,6 @@
 # UI Hub
 
-> Curated, multilingual directory of 5083 public UI resources (component libraries, component style demos, effects, design systems, design skills for AI agents) plus original blog analysis of AI design techniques. Data updated 2026-11-08 07:55 UTC.
+> Curated, multilingual directory of 5096 public UI resources (component libraries, component style demos, effects, design systems, design skills for AI agents) plus original blog analysis of AI design techniques. Data updated 2026-11-08 18:28 UTC.
 
 Use the JSON endpoints, not the SPA, when acting as an agent. Every entry links to its original site; licenses belong to the original authors.
 
@@ -131,11 +131,11 @@ Use the JSON endpoints, not the SPA, when acting as an agent. Every entry links 
 - [visx](https://airbnb.io/visx/): Airbnb's low-level visualization components
 
 ## FAQ
-- **What is UI Hub?** A free, curated directory of 5083 public UI resources: 238 component libraries, 1989 component style demos with light/dark screenshots, 70 design skills for AI agents, plus effects, templates, specs and tutorials. It links to original sites and never hosts paid source code.
+- **What is UI Hub?** A free, curated directory of 5096 public UI resources: 238 component libraries, 1989 component style demos with light/dark screenshots, 70 design skills for AI agents, plus effects, templates, specs and tutorials. It links to original sites and never hosts paid source code.
 - **How do I find a component in a given style?** Load https://ui.incidental.site/api/resources.json and filter by ct (component kind, e.g. "dialog") and vs (visual style, e.g. "minimal" or "motion"). type="style" entries are concrete component demos with a libName and page URL; type="library" entries are whole libraries with install info on the site.
 - **Which skills should an agent use for good UI?** One direction skill (frontend-design or taste-skill), emil-design-eng for motion and interaction polish, then impeccable, baseline-ui, web-design-guidelines and accessibility as an audit pass. See https://ui.incidental.site/api/skills.json.
 - **Can I copy the code?** Open-source libraries can be used under their own licenses (MIT, Apache-2.0 etc.); the card shows the original link. Paid tiers (marked paid/freemium) must be bought from the original vendor.
-- **How often is it updated?** Daily via a GitHub Actions job that adds new UI repositories and tools from GitHub, awesome-shadcn-ui and Hacker News. Nothing is deleted. Last update: 2026-11-08 07:55 UTC.
+- **How often is it updated?** Daily via a GitHub Actions job that adds new UI repositories and tools from GitHub, awesome-shadcn-ui and Hacker News. Nothing is deleted. Last update: 2026-11-08 18:28 UTC.
 
 
 # Blog posts (full text, English)
@@ -5350,6 +5350,19 @@ Get Hyped. Get Noticed. Get Results.
 - Apple Watch App Screens | inspiration | https://touch-time.com | Four Apple Watch screens showing sun arc, circular clock, compass bearing, and moon phase views in a dark, muted blue UI.
 - Vael Fintech App | inspiration | https://x.com/BThreeAgency/status/2118686469267341525 | Dark fintech mobile app flow for Vael showing amount entry via numpad, account selection, swipe-to-confirm gesture, and a deposit confirmation screen with an On
 - Plans Hero | inspiration | https://x.com/hours/status/2119170020412629369 | Landing page hero where neon-cyan 3D-rendered brand logos emerge from darkness around the app icon, showcasing a refractive glass material treatment.
+- King of Glory | inspiration | https://x.com/Acethetic_Holly/status/2119066527584416054 | Animated dark illustration of a crowned regal figure with an iridescent spiked halo, body covered in shimmering crystal particle textures that pulse subtly acro
+- CK Monogram Lapel Pin | inspiration | https://x.com/brijanp/status/2119092894007279787 | A silver blackletter CK monogram designed as a lapel pin, photographed on black with archival fig. I caption framing it as a house insignia.
+- Glitter Castle | inspiration | https://x.com/JenPanepinto/status/2119108186632544621 | A fantasy castle silhouette under a rainbow arc, rendered entirely in shimmering multicolored glitter that sparkles and shifts across a dark starry landscape.
+- Skull Mask Figure | inspiration | https://x.com/baladasathar/status/2119106638997278781 | Looping illustration of a pale figure holding a black skull mask and red card against a vivid red background, rendered with halftone texture and floating orbs.
+- Brand Identity Portfolio Reel | inspiration | https://x.com/kyleanthony/status/2119057547416211885 | A compilation of speculative brand identity work spanning tech companies, defense programs, and AI ventures, using bold type, geometric marks, and high-contrast
+- California Interface Poster Series | inspiration | https://x.com/joshpuckett/status/2119192186264953332 | A WIP series of posters pairing bold sans-serif titles with vivid thermal-gradient abstract fills, each numbered and attributed to The California Interface & Tr
+- Dark Mode Toggle | inspiration | https://x.com/kaolti/status/2119151022014894260 | A 3D toggle switch that slides between dark and light modes, with pixel particles dissolving and reforming into moon and sun icons as the thumb travels across.
+- Animated Ink Drawing | inspiration | https://x.com/jakejfried/status/2119215525662273610 | Dense hand-drawn ink animation morphing through surreal scenes of eyes, candles, animals, and celestial symbols in deep blue, red, and gold.
+- Cinema Seat View App | inspiration | https://x.com/RaminNasibov/status/2119378104892211287 | Mobile cinema booking app that previews a 3D-rendered first-person view from your selected seat, with distance, angle, and field-of-view stats before you book.
+- Pace Experimental Layouts | inspiration | https://x.com/retsendesign/status/2118789152590242156 | Experimental campaign posters for Pace mixing engraved portrait photography, halftone textures, and a recurring oval-in-rectangle mark across dark and lavender 
+- SwiftUI Slider | inspiration | https://x.com/withAnimationUI/status/2118682546951360730 | A SwiftUI slider with a black pill thumb and live numeric label that updates fluidly as it is dragged across a tick-mark track.
+- Inkwell Ink Drop Footer | inspiration | https://x.com/imharshin/status/2118715905815519708 | The Inkwell website footer lets users drag to drop ink blobs that spread and bleed into each other like watercolor, mixing vibrant yellow, pink, and violet pool
+- Project Tracker Carousel | inspiration | https://x.com/yungudon/status/2119076735182602494 | A rotating 3D dry-cleaning rack displays pastel project order cards, each stamped with handwritten status labels like RUSH, ON HOLD, or percent complete.
 
 # Component style demos: 1989 entries, see api/resources.json (type=style)
 

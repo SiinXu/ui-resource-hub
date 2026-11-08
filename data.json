@@ -1,6 +1,6 @@
 {
  "generated": "2026-11-08",
- "count": 5083,
+ "count": 5096,
  "items": [
   {
    "id": "ued-figma-mcp-guide",
@@ -191164,6 +191164,654 @@
    },
    "pub": "2026-11-07",
    "added": "2026-11-08"
+  },
+  {
+   "id": "rd-z6m3baj-king-of-glory",
+   "name": "King of Glory",
+   "url": "https://x.com/Acethetic_Holly/status/2119066527584416054",
+   "note": "Animated dark illustration of a crowned regal figure with an iridescent spiked halo, body covered in shimmering crystal particle textures that pulse subtly across the loop.",
+   "noteEn": "Animated dark illustration of a crowned regal figure with an iridescent spiked halo, body covered in shimmering crystal particle textures that pulse subtly across the loop.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@acethetic_holly",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "motion"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/z6m3baj-king-of-glory",
+   "rdkind": "Design",
+   "rdcat": "Motion",
+   "rdstyle": [
+    "Experimental",
+    "Illustrative",
+    "Textured",
+    "Dark",
+    "Monochrome"
+   ],
+   "author": {
+    "name": "HOLY✦",
+    "handle": "@acethetic_holly",
+    "url": "https://x.com/acethetic_holly"
+   },
+   "x_post": "https://x.com/Acethetic_Holly/status/2119066527584416054",
+   "xsrc": {
+    "post": "https://x.com/Acethetic_Holly/status/2119066527584416054",
+    "author": "@Acethetic_Holly",
+    "likes": 2138,
+    "bookmarks": 150,
+    "reposts": 199,
+    "impressions": 25214,
+    "date": "2026-11-07"
+   },
+   "pub": "2026-11-08",
+   "added": "2026-11-08"
+  },
+  {
+   "id": "rd-1ysxfiu-ck-monogram-lapel-pin",
+   "name": "CK Monogram Lapel Pin",
+   "url": "https://x.com/brijanp/status/2119092894007279787",
+   "note": "A silver blackletter CK monogram designed as a lapel pin, photographed on black with archival fig. I caption framing it as a house insignia.",
+   "noteEn": "A silver blackletter CK monogram designed as a lapel pin, photographed on black with archival fig. I caption framing it as a house insignia.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@brijanp",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/1ysxfiu-ck-monogram-lapel-pin",
+   "rdkind": "Design",
+   "rdcat": "Branding",
+   "rdstyle": [
+    "Typographic",
+    "High Contrast",
+    "Dark",
+    "Monochrome"
+   ],
+   "author": {
+    "name": "Brijan Powell",
+    "handle": "@brijanp",
+    "url": "https://x.com/brijanp"
+   },
+   "x_post": "https://x.com/brijanp/status/2119092894007279787",
+   "xsrc": {
+    "post": "https://x.com/brijanp/status/2119092894007279787",
+    "author": "@brijanp",
+    "likes": 97,
+    "bookmarks": 23,
+    "reposts": 4,
+    "impressions": 1906,
+    "date": "2026-11-07"
+   },
+   "pub": "2026-11-08",
+   "added": "2026-11-08"
+  },
+  {
+   "id": "rd-1fw5ar6-glitter-castle-rainbow",
+   "name": "Glitter Castle",
+   "url": "https://x.com/JenPanepinto/status/2119108186632544621",
+   "note": "A fantasy castle silhouette under a rainbow arc, rendered entirely in shimmering multicolored glitter that sparkles and shifts across a dark starry landscape.",
+   "noteEn": "A fantasy castle silhouette under a rainbow arc, rendered entirely in shimmering multicolored glitter that sparkles and shifts across a dark starry landscape.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@jenpanepinto",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/1fw5ar6-glitter-castle-rainbow",
+   "rdkind": "Design",
+   "rdcat": "Illustration",
+   "rdstyle": [
+    "Illustrative",
+    "Textured",
+    "Dark",
+    "Vibrant"
+   ],
+   "author": {
+    "name": "🌙en 🏴‍☠️ quantumspirit.eth/tez 🌈",
+    "handle": "@jenpanepinto",
+    "url": "https://x.com/jenpanepinto"
+   },
+   "x_post": "https://x.com/JenPanepinto/status/2119108186632544621",
+   "xsrc": {
+    "post": "https://x.com/JenPanepinto/status/2119108186632544621",
+    "author": "@JenPanepinto",
+    "likes": 2536,
+    "bookmarks": 283,
+    "reposts": 515,
+    "impressions": 38909,
+    "date": "2026-11-07"
+   },
+   "pub": "2026-11-08",
+   "added": "2026-11-08"
+  },
+  {
+   "id": "rd-q8yyixc-skull-mask-figure",
+   "name": "Skull Mask Figure",
+   "url": "https://x.com/baladasathar/status/2119106638997278781",
+   "note": "Looping illustration of a pale figure holding a black skull mask and red card against a vivid red background, rendered with halftone texture and floating orbs.",
+   "noteEn": "Looping illustration of a pale figure holding a black skull mask and red card against a vivid red background, rendered with halftone texture and floating orbs.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@baladasathar",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/q8yyixc-skull-mask-figure",
+   "rdkind": "Design",
+   "rdcat": "Illustration",
+   "rdstyle": [
+    "Illustrative",
+    "High Contrast",
+    "Dark",
+    "Vibrant"
+   ],
+   "author": {
+    "name": "SATHAR",
+    "handle": "@baladasathar",
+    "url": "https://x.com/baladasathar"
+   },
+   "x_post": "https://x.com/baladasathar/status/2119106638997278781",
+   "xsrc": {
+    "post": "https://x.com/baladasathar/status/2119106638997278781",
+    "author": "@baladasathar",
+    "likes": 2180,
+    "bookmarks": 251,
+    "reposts": 202,
+    "impressions": 19901,
+    "date": "2026-11-07"
+   },
+   "pub": "2026-11-08",
+   "added": "2026-11-08"
+  },
+  {
+   "id": "rd-dmvo649-brand-identity-portfolio-reel",
+   "name": "Brand Identity Portfolio Reel",
+   "url": "https://x.com/kyleanthony/status/2119057547416211885",
+   "note": "A compilation of speculative brand identity work spanning tech companies, defense programs, and AI ventures, using bold type, geometric marks, and high-contrast graphic systems.",
+   "noteEn": "A compilation of speculative brand identity work spanning tech companies, defense programs, and AI ventures, using bold type, geometric marks, and high-contrast graphic systems.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@kyleanthony",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/dmvo649-brand-identity-portfolio-reel",
+   "rdkind": "Design",
+   "rdcat": "Branding",
+   "rdstyle": [
+    "Typographic",
+    "Geometric",
+    "Experimental",
+    "High Contrast",
+    "Dark",
+    "Vibrant"
+   ],
+   "author": {
+    "name": "Kyle Anthony Miller",
+    "handle": "@kyleanthony",
+    "url": "https://x.com/kyleanthony"
+   },
+   "x_post": "https://x.com/kyleanthony/status/2119057547416211885",
+   "xsrc": {
+    "post": "https://x.com/kyleanthony/status/2119057547416211885",
+    "author": "@kyleanthony",
+    "likes": 1164,
+    "bookmarks": 431,
+    "reposts": 60,
+    "impressions": 20706,
+    "date": "2026-11-07"
+   },
+   "pub": "2026-11-08",
+   "added": "2026-11-08"
+  },
+  {
+   "id": "rd-2yzdjxg-california-interface-poster-series",
+   "name": "California Interface Poster Series",
+   "url": "https://x.com/joshpuckett/status/2119192186264953332",
+   "note": "A WIP series of posters pairing bold sans-serif titles with vivid thermal-gradient abstract fills, each numbered and attributed to The California Interface & Trade Company.",
+   "noteEn": "A WIP series of posters pairing bold sans-serif titles with vivid thermal-gradient abstract fills, each numbered and attributed to The California Interface & Trade Company.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@joshpuckett",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "gradient"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/2yzdjxg-california-interface-poster-series",
+   "rdkind": "Design",
+   "rdcat": "Posters",
+   "rdstyle": [
+    "Typographic",
+    "Abstract",
+    "Experimental",
+    "Vibrant",
+    "Gradient"
+   ],
+   "author": {
+    "name": "joshpuckett",
+    "handle": "@joshpuckett",
+    "url": "https://x.com/joshpuckett"
+   },
+   "x_post": "https://x.com/joshpuckett/status/2119192186264953332",
+   "xsrc": {
+    "post": "https://x.com/joshpuckett/status/2119192186264953332",
+    "author": "@joshpuckett",
+    "likes": 147,
+    "bookmarks": 42,
+    "reposts": 1,
+    "impressions": 5510,
+    "date": "2026-11-07"
+   },
+   "pub": "2026-11-08",
+   "added": "2026-11-08"
+  },
+  {
+   "id": "rd-yifo62r-dark-light-mode-toggle",
+   "name": "Dark Mode Toggle",
+   "url": "https://x.com/kaolti/status/2119151022014894260",
+   "note": "A 3D toggle switch that slides between dark and light modes, with pixel particles dissolving and reforming into moon and sun icons as the thumb travels across.",
+   "noteEn": "A 3D toggle switch that slides between dark and light modes, with pixel particles dissolving and reforming into moon and sun icons as the thumb travels across.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@kaolti",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "3d",
+    "glass"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/yifo62r-dark-light-mode-toggle",
+   "rdkind": "Design",
+   "rdcat": "Interface",
+   "rdstyle": [
+    "3D",
+    "Glassmorphism",
+    "Soft UI",
+    "Dark"
+   ],
+   "author": {
+    "name": "Zsolt Kacso",
+    "handle": "@kaolti",
+    "url": "https://x.com/kaolti"
+   },
+   "x_post": "https://x.com/kaolti/status/2119151022014894260",
+   "xsrc": {
+    "post": "https://x.com/kaolti/status/2119151022014894260",
+    "author": "@kaolti",
+    "likes": 2670,
+    "bookmarks": 1390,
+    "reposts": 93,
+    "impressions": 107092,
+    "date": "2026-11-07"
+   },
+   "pub": "2026-11-08",
+   "added": "2026-11-08"
+  },
+  {
+   "id": "rd-4ynavz6-animated-ink-drawing-loop",
+   "name": "Animated Ink Drawing",
+   "url": "https://x.com/jakejfried/status/2119215525662273610",
+   "note": "Dense hand-drawn ink animation morphing through surreal scenes of eyes, candles, animals, and celestial symbols in deep blue, red, and gold.",
+   "noteEn": "Dense hand-drawn ink animation morphing through surreal scenes of eyes, candles, animals, and celestial symbols in deep blue, red, and gold.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@jakejfried",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "motion"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/4ynavz6-animated-ink-drawing-loop",
+   "rdkind": "Design",
+   "rdcat": "Motion",
+   "rdstyle": [
+    "Experimental",
+    "Illustrative",
+    "Textured",
+    "Dark",
+    "Vibrant"
+   ],
+   "author": {
+    "name": "Jake Fried",
+    "handle": "@jakejfried",
+    "url": "https://x.com/jakejfried"
+   },
+   "x_post": "https://x.com/jakejfried/status/2119215525662273610",
+   "xsrc": {
+    "post": "https://x.com/jakejfried/status/2119215525662273610",
+    "author": "@jakejfried",
+    "likes": 939,
+    "bookmarks": 143,
+    "reposts": 169,
+    "impressions": 15528,
+    "date": "2026-11-07"
+   },
+   "pub": "2026-11-08",
+   "added": "2026-11-08"
+  },
+  {
+   "id": "rd-wn7zt6p-cinema-seat-view-app",
+   "name": "Cinema Seat View App",
+   "url": "https://x.com/RaminNasibov/status/2119378104892211287",
+   "note": "Mobile cinema booking app that previews a 3D-rendered first-person view from your selected seat, with distance, angle, and field-of-view stats before you book.",
+   "noteEn": "Mobile cinema booking app that previews a 3D-rendered first-person view from your selected seat, with distance, angle, and field-of-view stats before you book.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@raminnasibov",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "3d"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/wn7zt6p-cinema-seat-view-app",
+   "rdkind": "Design",
+   "rdcat": "Interface",
+   "rdstyle": [
+    "3D",
+    "Dark"
+   ],
+   "author": {
+    "name": "Ramin Nasibov",
+    "handle": "@raminnasibov",
+    "url": "https://x.com/raminnasibov"
+   },
+   "x_post": "https://x.com/RaminNasibov/status/2119378104892211287",
+   "xsrc": {
+    "post": "https://x.com/RaminNasibov/status/2119378104892211287",
+    "author": "@RaminNasibov",
+    "likes": 20703,
+    "bookmarks": 4204,
+    "reposts": 1343,
+    "impressions": 642823,
+    "date": "2026-11-08"
+   },
+   "pub": "2026-11-08",
+   "added": "2026-11-08"
+  },
+  {
+   "id": "rd-cerral2-pace-experimental-layouts",
+   "name": "Pace Experimental Layouts",
+   "url": "https://x.com/retsendesign/status/2118789152590242156",
+   "note": "Experimental campaign posters for Pace mixing engraved portrait photography, halftone textures, and a recurring oval-in-rectangle mark across dark and lavender palettes.",
+   "noteEn": "Experimental campaign posters for Pace mixing engraved portrait photography, halftone textures, and a recurring oval-in-rectangle mark across dark and lavender palettes.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@retsendesign",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/cerral2-pace-experimental-layouts",
+   "rdkind": "Design",
+   "rdcat": "Posters",
+   "rdstyle": [
+    "Geometric",
+    "Experimental",
+    "Textured",
+    "Dark"
+   ],
+   "author": {
+    "name": "Illia",
+    "handle": "@retsendesign",
+    "url": "https://x.com/retsendesign"
+   },
+   "x_post": "https://x.com/retsendesign/status/2118789152590242156",
+   "xsrc": {
+    "post": "https://x.com/retsendesign/status/2118789152590242156",
+    "author": "@retsendesign",
+    "likes": 413,
+    "bookmarks": 134,
+    "reposts": 12,
+    "impressions": 6243,
+    "date": "2026-11-06"
+   },
+   "pub": "2026-11-08",
+   "added": "2026-11-08"
+  },
+  {
+   "id": "rd-542towy-swiftui-slider-interaction",
+   "name": "SwiftUI Slider",
+   "url": "https://x.com/withAnimationUI/status/2118682546951360730",
+   "note": "A SwiftUI slider with a black pill thumb and live numeric label that updates fluidly as it is dragged across a tick-mark track.",
+   "noteEn": "A SwiftUI slider with a black pill thumb and live numeric label that updates fluidly as it is dragged across a tick-mark track.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@withanimationui",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/542towy-swiftui-slider-interaction",
+   "rdkind": "Design",
+   "rdcat": "Interface",
+   "rdstyle": [
+    "Minimal",
+    "Light"
+   ],
+   "author": {
+    "name": "withAnimation",
+    "handle": "@withanimationui",
+    "url": "https://x.com/withanimationui"
+   },
+   "x_post": "https://x.com/withAnimationUI/status/2118682546951360730",
+   "xsrc": {
+    "post": "https://x.com/withAnimationUI/status/2118682546951360730",
+    "author": "@withAnimationUI",
+    "likes": 670,
+    "bookmarks": 394,
+    "reposts": 20,
+    "impressions": 19424,
+    "date": "2026-11-06"
+   },
+   "pub": "2026-11-08",
+   "added": "2026-11-08"
+  },
+  {
+   "id": "rd-gdt102o-inkwell-ink-drop-footer",
+   "name": "Inkwell Ink Drop Footer",
+   "url": "https://x.com/imharshin/status/2118715905815519708",
+   "note": "The Inkwell website footer lets users drag to drop ink blobs that spread and bleed into each other like watercolor, mixing vibrant yellow, pink, and violet pools across a pale surface.",
+   "noteEn": "The Inkwell website footer lets users drag to drop ink blobs that spread and bleed into each other like watercolor, mixing vibrant yellow, pink, and violet pools across a pale surface.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@imharshin",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/gdt102o-inkwell-ink-drop-footer",
+   "rdkind": "Design",
+   "rdcat": "Web",
+   "rdstyle": [
+    "Experimental",
+    "Organic",
+    "Vibrant",
+    "Light"
+   ],
+   "author": {
+    "name": "Harsh Sharma",
+    "handle": "@imharshin",
+    "url": "https://x.com/imharshin"
+   },
+   "x_post": "https://x.com/imharshin/status/2118715905815519708",
+   "xsrc": {
+    "post": "https://x.com/imharshin/status/2118715905815519708",
+    "author": "@imharshin",
+    "likes": 614,
+    "bookmarks": 385,
+    "reposts": 19,
+    "impressions": 13242,
+    "date": "2026-11-06"
+   },
+   "pub": "2026-11-08",
+   "added": "2026-11-08"
+  },
+  {
+   "id": "rd-ibsfv7y-x-com",
+   "name": "Project Tracker Carousel",
+   "url": "https://x.com/yungudon/status/2119076735182602494",
+   "note": "A rotating 3D dry-cleaning rack displays pastel project order cards, each stamped with handwritten status labels like RUSH, ON HOLD, or percent complete.",
+   "noteEn": "A rotating 3D dry-cleaning rack displays pastel project order cards, each stamped with handwritten status labels like RUSH, ON HOLD, or percent complete.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@yungudon",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "3d",
+    "playful"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/ibsfv7y-x-com",
+   "rdkind": "Design",
+   "rdcat": "Web",
+   "rdstyle": [
+    "3D",
+    "Playful",
+    "Light",
+    "Pastel"
+   ],
+   "author": {
+    "name": "sharon",
+    "handle": "@yungudon",
+    "url": "https://x.com/yungudon"
+   },
+   "x_post": "https://x.com/yungudon/status/2119076735182602494",
+   "xsrc": {
+    "post": "https://x.com/yungudon/status/2119076735182602494",
+    "author": "@yungudon",
+    "likes": 720,
+    "bookmarks": 275,
+    "reposts": 60,
+    "impressions": 15712,
+    "date": "2026-11-07"
+   },
+   "pub": "2026-11-08",
+   "added": "2026-11-08"
   }
  ],
  "guides": [
@@ -191366,5 +192014,5 @@
    ]
   }
  ],
- "updatedAt": "2026-11-08T07:55Z"
+ "updatedAt": "2026-11-08T18:28Z"
 }
