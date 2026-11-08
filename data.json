@@ -1,6 +1,6 @@
 {
  "generated": "2026-11-08",
- "count": 5082,
+ "count": 5083,
  "items": [
   {
    "id": "ued-figma-mcp-guide",
@@ -191115,6 +191115,55 @@
    },
    "pub": "2026-11-07",
    "added": "2026-11-07"
+  },
+  {
+   "id": "rd-fquutvp-hours-plans-page-hero",
+   "name": "Plans Hero",
+   "url": "https://x.com/hours/status/2119170020412629369",
+   "note": "Landing page hero where neon-cyan 3D-rendered brand logos emerge from darkness around the app icon, showcasing a refractive glass material treatment.",
+   "noteEn": "Landing page hero where neon-cyan 3D-rendered brand logos emerge from darkness around the app icon, showcasing a refractive glass material treatment.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@hours",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "3d"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/fquutvp-hours-plans-page-hero",
+   "rdkind": "Design",
+   "rdcat": "Web",
+   "rdstyle": [
+    "3D",
+    "Dark"
+   ],
+   "author": {
+    "name": "Hours",
+    "handle": "@hours",
+    "url": "https://x.com/hours"
+   },
+   "x_post": "https://x.com/hours/status/2119170020412629369",
+   "xsrc": {
+    "post": "https://x.com/hours/status/2119170020412629369",
+    "author": "@hours",
+    "likes": 72,
+    "bookmarks": 37,
+    "reposts": 1,
+    "impressions": 2220,
+    "date": "2026-11-07"
+   },
+   "pub": "2026-11-07",
+   "added": "2026-11-08"
   }
  ],
  "guides": [
@@ -191317,5 +191366,5 @@
    ]
   }
  ],
- "updatedAt": "2026-11-08T05:57Z"
+ "updatedAt": "2026-11-08T07:55Z"
 }
