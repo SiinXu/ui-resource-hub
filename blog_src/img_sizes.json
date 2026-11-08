@@ -31,6 +31,38 @@
     1200,
     630
   ],
+  "agent-approval-ui-budgets-interruptions-1": [
+    1280,
+    800
+  ],
+  "agent-approval-ui-budgets-interruptions-2": [
+    1200,
+    675
+  ],
+  "agent-approval-ui-budgets-interruptions-3": [
+    1280,
+    800
+  ],
+  "agent-approval-ui-budgets-interruptions-4": [
+    1200,
+    675
+  ],
+  "agents-drive-design-tools-framer-weave-app-studio-1": [
+    1280,
+    612
+  ],
+  "agents-drive-design-tools-framer-weave-app-studio-2": [
+    1200,
+    675
+  ],
+  "agents-drive-design-tools-framer-weave-app-studio-3": [
+    1280,
+    800
+  ],
+  "agents-drive-design-tools-framer-weave-app-studio-4": [
+    1200,
+    675
+  ],
   "ai-assisted-ui-design-workflow-1": [
     1280,
     800
@@ -46,6 +78,42 @@
   "ai-assisted-ui-design-workflow-cover": [
     1200,
     630
+  ],
+  "ai-svg-for-ui-ideogram-vector-1": [
+    1280,
+    800
+  ],
+  "ai-svg-for-ui-ideogram-vector-2": [
+    1200,
+    675
+  ],
+  "ai-svg-for-ui-ideogram-vector-3": [
+    1280,
+    800
+  ],
+  "ai-svg-for-ui-ideogram-vector-4": [
+    1200,
+    675
+  ],
+  "ai-svg-for-ui-ideogram-vector-cover": [
+    1200,
+    630
+  ],
+  "annotate-dont-describe-visual-prompts-1": [
+    1280,
+    800
+  ],
+  "annotate-dont-describe-visual-prompts-2": [
+    1200,
+    675
+  ],
+  "annotate-dont-describe-visual-prompts-3": [
+    1280,
+    800
+  ],
+  "annotate-dont-describe-visual-prompts-4": [
+    1200,
+    675
   ],
   "claude-cursor-design-skills-1": [
     1280,
@@ -108,6 +176,26 @@
     800
   ],
   "cult-ui-deep-dive-cover": [
+    1200,
+    630
+  ],
+  "cursor-live-apps-off-localhost-1": [
+    1280,
+    800
+  ],
+  "cursor-live-apps-off-localhost-2": [
+    1200,
+    675
+  ],
+  "cursor-live-apps-off-localhost-3": [
+    1200,
+    675
+  ],
+  "cursor-live-apps-off-localhost-4": [
+    1200,
+    675
+  ],
+  "cursor-live-apps-off-localhost-cover": [
     1200,
     630
   ],
@@ -207,6 +295,46 @@
     1200,
     630
   ],
+  "layers-brand-kits-json-ai-visuals-1": [
+    1280,
+    800
+  ],
+  "layers-brand-kits-json-ai-visuals-2": [
+    1200,
+    675
+  ],
+  "layers-brand-kits-json-ai-visuals-3": [
+    1280,
+    800
+  ],
+  "layers-brand-kits-json-ai-visuals-4": [
+    1200,
+    675
+  ],
+  "layers-brand-kits-json-ai-visuals-cover": [
+    1200,
+    630
+  ],
+  "lint-agents-onto-your-design-system-1": [
+    1280,
+    800
+  ],
+  "lint-agents-onto-your-design-system-2": [
+    1200,
+    675
+  ],
+  "lint-agents-onto-your-design-system-3": [
+    1280,
+    800
+  ],
+  "lint-agents-onto-your-design-system-4": [
+    1200,
+    675
+  ],
+  "lint-agents-onto-your-design-system-cover": [
+    1200,
+    630
+  ],
   "lovable-bolt-prompt-to-app-1": [
     1280,
     800
@@ -220,6 +348,26 @@
     800
   ],
   "lovable-bolt-prompt-to-app-cover": [
+    1200,
+    630
+  ],
+  "lovart-arti-design-agent-memory-1": [
+    1280,
+    800
+  ],
+  "lovart-arti-design-agent-memory-2": [
+    1200,
+    675
+  ],
+  "lovart-arti-design-agent-memory-3": [
+    1200,
+    675
+  ],
+  "lovart-arti-design-agent-memory-4": [
+    1280,
+    800
+  ],
+  "lovart-arti-design-agent-memory-cover": [
     1200,
     630
   ],
@@ -367,6 +515,26 @@
     1200,
     630
   ],
+  "twombly-shared-canvas-team-comments-1": [
+    1280,
+    800
+  ],
+  "twombly-shared-canvas-team-comments-2": [
+    1200,
+    675
+  ],
+  "twombly-shared-canvas-team-comments-3": [
+    1280,
+    800
+  ],
+  "twombly-shared-canvas-team-comments-4": [
+    1200,
+    675
+  ],
+  "twombly-shared-canvas-team-comments-cover": [
+    1200,
+    630
+  ],
   "typography-for-ai-generated-ui-1": [
     1200,
     675
@@ -414,153 +582,5 @@
   "weekly-roundup-2026-w42-cover": [
     1200,
     630
-  ],
-  "lovart-arti-design-agent-memory-1": [
-    1280,
-    800
-  ],
-  "lovart-arti-design-agent-memory-2": [
-    1200,
-    675
-  ],
-  "lovart-arti-design-agent-memory-3": [
-    1200,
-    675
-  ],
-  "lovart-arti-design-agent-memory-4": [
-    1280,
-    800
-  ],
-  "lovart-arti-design-agent-memory-cover": [
-    1200,
-    630
-  ],
-  "layers-brand-kits-json-ai-visuals-1": [
-    1280,
-    800
-  ],
-  "layers-brand-kits-json-ai-visuals-2": [
-    1200,
-    675
-  ],
-  "layers-brand-kits-json-ai-visuals-3": [
-    1280,
-    800
-  ],
-  "layers-brand-kits-json-ai-visuals-4": [
-    1200,
-    675
-  ],
-  "layers-brand-kits-json-ai-visuals-cover": [
-    1200,
-    630
-  ],
-  "lint-agents-onto-your-design-system-1": [
-    1280,
-    800
-  ],
-  "lint-agents-onto-your-design-system-2": [
-    1200,
-    675
-  ],
-  "lint-agents-onto-your-design-system-3": [
-    1280,
-    800
-  ],
-  "lint-agents-onto-your-design-system-4": [
-    1200,
-    675
-  ],
-  "lint-agents-onto-your-design-system-cover": [
-    1200,
-    630
-  ],
-  "ai-svg-for-ui-ideogram-vector-1": [
-    1280,
-    800
-  ],
-  "ai-svg-for-ui-ideogram-vector-2": [
-    1200,
-    675
-  ],
-  "ai-svg-for-ui-ideogram-vector-3": [
-    1280,
-    800
-  ],
-  "ai-svg-for-ui-ideogram-vector-4": [
-    1200,
-    675
-  ],
-  "ai-svg-for-ui-ideogram-vector-cover": [
-    1200,
-    630
-  ],
-  "agent-approval-ui-budgets-interruptions-1": [
-    1280,
-    800
-  ],
-  "agent-approval-ui-budgets-interruptions-2": [
-    1200,
-    675
-  ],
-  "agent-approval-ui-budgets-interruptions-3": [
-    1280,
-    800
-  ],
-  "agent-approval-ui-budgets-interruptions-4": [
-    1200,
-    675
-  ],
-  "agents-drive-design-tools-framer-weave-app-studio-1": [
-    1280,
-    612
-  ],
-  "agents-drive-design-tools-framer-weave-app-studio-2": [
-    1200,
-    675
-  ],
-  "agents-drive-design-tools-framer-weave-app-studio-3": [
-    1280,
-    800
-  ],
-  "agents-drive-design-tools-framer-weave-app-studio-4": [
-    1200,
-    675
-  ],
-  "annotate-dont-describe-visual-prompts-1": [
-    1280,
-    800
-  ],
-  "annotate-dont-describe-visual-prompts-2": [
-    1200,
-    675
-  ],
-  "annotate-dont-describe-visual-prompts-3": [
-    1280,
-    800
-  ],
-  "annotate-dont-describe-visual-prompts-4": [
-    1200,
-    675
-  ],
-  "cursor-live-apps-off-localhost-cover": [
-    1200,
-    630
-  ],
-  "cursor-live-apps-off-localhost-1": [
-    1280,
-    800
-  ],
-  "cursor-live-apps-off-localhost-2": [
-    1200,
-    675
-  ],
-  "cursor-live-apps-off-localhost-3": [
-    1200,
-    675
-  ],
-  "cursor-live-apps-off-localhost-4": [
-    1200,
-    675
   ]
 }

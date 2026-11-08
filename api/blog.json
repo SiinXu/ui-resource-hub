@@ -1,5 +1,5 @@
 {
- "count": 46,
+ "count": 47,
  "rss": "https://ui.incidental.site/blog/rss.xml",
  "categories": {
   "tools": "Tools",
@@ -18,6 +18,87 @@
   "weekly": "Series: Weekly roundup"
  },
  "posts": [
+  {
+   "slug": "twombly-shared-canvas-team-comments",
+   "url": "https://ui.incidental.site/blog/twombly-shared-canvas-team-comments/",
+   "date": "2026-11-08",
+   "category": "tools",
+   "series": null,
+   "featured": true,
+   "tags": [
+    "Twombly",
+    "canvas",
+    "agents",
+    "collaboration",
+    "comments"
+   ],
+   "title": {
+    "en": "Twombly: pin comments on the agent’s frames so it iterates on the team’s feedback",
+    "zh": "Twombly：把批注钉在智能体的画框上，让它按团队的反馈迭代",
+    "zht": "Twombly：把批註釘在智慧體的畫框上，讓它按團隊的回饋迭代",
+    "ja": "Twombly：エージェントのフレームにコメントをピンし、チームのフィードバックで次の案を出す",
+    "ko": "Twombly: 에이전트 프레임에 댓글을 고정해 팀 피드백으로 다음 안을 만든다",
+    "ms": "Twombly: semat komen pada bingkai ejen supaya ia mengulang berdasarkan maklum balas pasukan",
+    "vi": "Twombly: ghim bình luận lên khung của agent để nó lặp theo phản hồi của cả nhóm",
+    "fr": "Twombly : épinglez des commentaires sur les cadres de l’agent pour qu’il itère sur les retours de l’équipe",
+    "es": "Twombly: fija comentarios en los marcos del agente para que itere con el feedback del equipo",
+    "de": "Twombly: Kommentare an die Agent-Frames heften, damit die nächste Runde dem Team folgt"
+   },
+   "summary": {
+    "en": "On 7 November 2026 Jaytel showed Twombly on Hacker News: a localhost canvas where coding agents place each design version as a live frame, and a Share link adds live cursors, comments and voice huddles the agent can read. How that differs from Dessn, Doop and Cursor Live Apps, plus a checklist before you share.",
+    "zh": "2026 年 11 月 7 日，Jaytel 在 Hacker News 展示了 Twombly：智能体把每个设计版本放成本机画布上的实时画框，点 Share 后团队可以用实时光标、批注和语音围聊，智能体也能读到这些反馈。它和 Dessn、Doop、Cursor Live Apps 有何不同，以及分享前的清单。",
+    "zht": "2026 年 11 月 7 日，Jaytel 在 Hacker News 展示了 Twombly：智慧體把每個設計版本放成本機畫布上的即時畫框，點 Share 後團隊可以用即時光標、批註和語音圍聊，智慧體也能讀到這些回饋。它和 Dessn、Doop、Cursor Live Apps 有何不同，以及分享前的清單。",
+    "ja": "2026年11月7日、JaytelはHacker NewsでTwomblyを紹介した。コーディングエージェントが各デザイン案をローカルホストのキャンバス上のライブフレームとして置き、Shareするとチームはライブカーソル・コメント・ボイスハドルを使え、エージェントもそれを読める。Dessn、Doop、Cursor Live Appsとの違いと、共有前のチェックリスト。",
+    "ko": "2026년 11월 7일 Jaytel이 해커뉴스에 Twombly를 올렸다. 코딩 에이전트가 각 디자인 버전을 로컬호스트 캔버스의 라이브 프레임으로 올리고, Share 링크는 실시간 커서·댓글·보이스 허들을 더하며 에이전트도 이를 읽는다. Dessn·Doop·Cursor Live Apps와의 차이와 공유 전 체크리스트.",
+    "ms": "Pada 7 November 2026 Jaytel mempamerkan Twombly di Hacker News: kanvas localhost di mana ejen pengekodan meletakkan setiap versi reka bentuk sebagai bingkai langsung, dan pautan Share menambah kursor langsung, komen dan huddle suara yang boleh dibaca ejen. Bezanya dengan Dessn, Doop dan Cursor Live Apps, serta senarai semak sebelum anda kongsi.",
+    "vi": "Ngày 7/11/2026 Jaytel giới thiệu Twombly trên Hacker News: canvas localhost để coding agent đặt mỗi phiên bản thiết kế thành khung sống, và liên kết Share thêm con trỏ trực tiếp, bình luận cùng voice huddle mà agent có thể đọc. Khác gì Dessn, Doop và Cursor Live Apps, cùng checklist trước khi chia sẻ.",
+    "fr": "Le 7 novembre 2026, Jaytel a présenté Twombly sur Hacker News : un canvas en localhost où l’agent de code pose chaque version comme un cadre vivant ; un lien Share ajoute curseurs, commentaires et huddles vocaux que l’agent peut lire. Différences avec Dessn, Doop et Cursor Live Apps, et une checklist avant de partager.",
+    "es": "El 7 de noviembre de 2026 Jaytel mostró Twombly en Hacker News: un lienzo en localhost donde el agente de código coloca cada versión como un marco en vivo, y un enlace Share añade cursores, comentarios y huddles de voz que el agente puede leer. Cómo se diferencia de Dessn, Doop y Cursor Live Apps, y una lista antes de compartir.",
+    "de": "Am 7. November 2026 zeigte Jaytel Twombly auf Hacker News: ein Localhost-Canvas, auf dem Coding-Agenten jede Designversion als Live-Frame ablegen; der Share-Link ergänzt Live-Cursor, Kommentare und Voice-Huddles, die der Agent lesen kann. Unterschiede zu Dessn, Doop und Cursor Live Apps sowie eine Checkliste vor dem Teilen."
+   },
+   "reading_minutes": {
+    "en": 6,
+    "zh": 7
+   },
+   "cover": "https://ui.incidental.site/blog/img/twombly-shared-canvas-team-comments-cover.webp",
+   "references": [
+    {
+     "title": "Twombly: a canvas for your agent’s explorations",
+     "by": "Twombly",
+     "url": "https://twombly.app/"
+    },
+    {
+     "title": "Twombly llms.txt",
+     "by": "Twombly",
+     "url": "https://twombly.app/llms.txt"
+    },
+    {
+     "title": "Privacy (updated 7 November 2026)",
+     "by": "Twombly / Materic, Inc.",
+     "url": "https://twombly.app/privacy"
+    },
+    {
+     "title": "twombly on npm",
+     "by": "Materic, Inc.",
+     "url": "https://www.npmjs.com/package/twombly"
+    },
+    {
+     "title": "materic-inc/twombly-skill",
+     "by": "GitHub",
+     "url": "https://github.com/materic-inc/twombly-skill"
+    },
+    {
+     "title": "Show HN: Twombly – A collaborative canvas for your agent’s design explorations",
+     "by": "Hacker News (jaytel)",
+     "url": "https://news.ycombinator.com/item?id=50405205"
+    },
+    {
+     "title": "twombly skill listing",
+     "by": "skills.sh",
+     "url": "https://www.skills.sh/materic-inc/twombly-skill/twombly"
+    }
+   ]
+  },
   {
    "slug": "cursor-live-apps-off-localhost",
    "url": "https://ui.incidental.site/blog/cursor-live-apps-off-localhost/",

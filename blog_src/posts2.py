@@ -2088,4 +2088,103 @@ Companion: Voice Chat OK for iteration talk-track; publish stays a click I make<
 <p>交付物必须合进成熟设计系统、且唯一上线路径是 PR 审查时，跳过——v0 或手写 PR 更合适。你需要 Lovable（或 Replit）的完整产品界面、又不以 Cursor 为标准时，跳过。要做智能体从未见过品牌美术方向的对外营销站时，跳过。真正痛的时候再用：一个本来有用的内部界面，若不去掉 localhost，会在站会和演示之间死在某台笔记本上。</p>
 <p>UI Hub 相关阅读：<a href="../lovable-bolt-prompt-to-app/">Lovable 与 Bolt</a>、<a href="../v0-prompt-to-shadcn/">v0 到 shadcn</a>、<a href="../prompt-to-ui-tools-compared/">提示生成界面工具对比</a>，以及在运行中的预览上迭代的<a href="../annotate-dont-describe-visual-prompts/">标注，而不是描述</a>。</p>""",
  refs=[('Build Live Apps in Cursor (5 Nov 2026)','Cursor Changelog','https://cursor.com/changelog/build-live-apps'),('Voice Chat with Agents (6 Nov 2026)','Cursor Changelog','https://cursor.com/changelog'),('"Most apps never make it off localhost": Cursor takes on Lovable and Replit with fully managed app deployment','Paul Sawers / The New Stack','https://thenewstack.io/cursor-ai-app-deployment/'),('Lovable changelog','Lovable','https://docs.lovable.dev/changelog'),('What is v0?','v0 by Vercel','https://v0.app/docs'),('v0 by Vercel','Vercel','https://v0.app/')]),
+
+dict(slug='twombly-shared-canvas-team-comments', date='2026-11-08', cat='tools', series=None, featured=True, tags=['Twombly','canvas','agents','collaboration','comments'],
+ t=T('Twombly: pin comments on the agent’s frames so it iterates on the team’s feedback',
+     'Twombly：把批注钉在智能体的画框上，让它按团队的反馈迭代',
+     'Twombly：把批註釘在智慧體的畫框上，讓它按團隊的回饋迭代',
+     'Twombly：エージェントのフレームにコメントをピンし、チームのフィードバックで次の案を出す',
+     'Twombly: 에이전트 프레임에 댓글을 고정해 팀 피드백으로 다음 안을 만든다',
+     'Twombly: semat komen pada bingkai ejen supaya ia mengulang berdasarkan maklum balas pasukan',
+     'Twombly: ghim bình luận lên khung của agent để nó lặp theo phản hồi của cả nhóm',
+     'Twombly : épinglez des commentaires sur les cadres de l’agent pour qu’il itère sur les retours de l’équipe',
+     'Twombly: fija comentarios en los marcos del agente para que itere con el feedback del equipo',
+     'Twombly: Kommentare an die Agent-Frames heften, damit die nächste Runde dem Team folgt'),
+ s=T('On 7 November 2026 Jaytel showed Twombly on Hacker News: a localhost canvas where coding agents place each design version as a live frame, and a Share link adds live cursors, comments and voice huddles the agent can read. How that differs from Dessn, Doop and Cursor Live Apps, plus a checklist before you share.',
+     '2026 年 11 月 7 日，Jaytel 在 Hacker News 展示了 Twombly：智能体把每个设计版本放成本机画布上的实时画框，点 Share 后团队可以用实时光标、批注和语音围聊，智能体也能读到这些反馈。它和 Dessn、Doop、Cursor Live Apps 有何不同，以及分享前的清单。',
+     '2026 年 11 月 7 日，Jaytel 在 Hacker News 展示了 Twombly：智慧體把每個設計版本放成本機畫布上的即時畫框，點 Share 後團隊可以用即時光標、批註和語音圍聊，智慧體也能讀到這些回饋。它和 Dessn、Doop、Cursor Live Apps 有何不同，以及分享前的清單。',
+     '2026年11月7日、JaytelはHacker NewsでTwomblyを紹介した。コーディングエージェントが各デザイン案をローカルホストのキャンバス上のライブフレームとして置き、Shareするとチームはライブカーソル・コメント・ボイスハドルを使え、エージェントもそれを読める。Dessn、Doop、Cursor Live Appsとの違いと、共有前のチェックリスト。',
+     '2026년 11월 7일 Jaytel이 해커뉴스에 Twombly를 올렸다. 코딩 에이전트가 각 디자인 버전을 로컬호스트 캔버스의 라이브 프레임으로 올리고, Share 링크는 실시간 커서·댓글·보이스 허들을 더하며 에이전트도 이를 읽는다. Dessn·Doop·Cursor Live Apps와의 차이와 공유 전 체크리스트.',
+     'Pada 7 November 2026 Jaytel mempamerkan Twombly di Hacker News: kanvas localhost di mana ejen pengekodan meletakkan setiap versi reka bentuk sebagai bingkai langsung, dan pautan Share menambah kursor langsung, komen dan huddle suara yang boleh dibaca ejen. Bezanya dengan Dessn, Doop dan Cursor Live Apps, serta senarai semak sebelum anda kongsi.',
+     'Ngày 7/11/2026 Jaytel giới thiệu Twombly trên Hacker News: canvas localhost để coding agent đặt mỗi phiên bản thiết kế thành khung sống, và liên kết Share thêm con trỏ trực tiếp, bình luận cùng voice huddle mà agent có thể đọc. Khác gì Dessn, Doop và Cursor Live Apps, cùng checklist trước khi chia sẻ.',
+     'Le 7 novembre 2026, Jaytel a présenté Twombly sur Hacker News : un canvas en localhost où l’agent de code pose chaque version comme un cadre vivant ; un lien Share ajoute curseurs, commentaires et huddles vocaux que l’agent peut lire. Différences avec Dessn, Doop et Cursor Live Apps, et une checklist avant de partager.',
+     'El 7 de noviembre de 2026 Jaytel mostró Twombly en Hacker News: un lienzo en localhost donde el agente de código coloca cada versión como un marco en vivo, y un enlace Share añade cursores, comentarios y huddles de voz que el agente puede leer. Cómo se diferencia de Dessn, Doop y Cursor Live Apps, y una lista antes de compartir.',
+     'Am 7. November 2026 zeigte Jaytel Twombly auf Hacker News: ein Localhost-Canvas, auf dem Coding-Agenten jede Designversion als Live-Frame ablegen; der Share-Link ergänzt Live-Cursor, Kommentare und Voice-Huddles, die der Agent lesen kann. Unterschiede zu Dessn, Doop und Cursor Live Apps sowie eine Checkliste vor dem Teilen.'),
+ en="""<p>On 7 November 2026, software designer Jaytel posted a Show HN for <strong>Twombly</strong>: give your coding agent a skill, and it places each design version on one infinite canvas as a live frame. Click Share and the team gets a single link with live cursors, following, comments pinned to frames, and voice huddles. The loop he stressed is what happens next: the agent can read those comments and see which frame someone is looking at, so the next pass is steered by the team’s feedback, not only by the person who typed the prompt.</p>
+<p>The npm package <code>twombly</code>, published by Materic, Inc. on 5 November and updated through version 0.4.12 on 7 November, matches that description. It works with Claude Code, Codex, Cursor, and any agent that can run a command, in any framework and any repo. You can install the skill with <code>npx skills add materic-inc/twombly-skill -g -y</code>, or run <code>npx -y twombly@latest guide</code> and hand the guide to the agent. The homepage, the project’s <code>llms.txt</code>, and the skill repository on GitHub all tell the same story. The interesting design claim is smaller than “another AI canvas”: explorations become addressable frames a group can stand around.</p>
+<h2>What a frame is, and what stays local</h2>
+<ul><li><strong>A frame is a folder of static files</strong> that should run with no server and no network: a Vite, Next.js, SvelteKit or Astro build, one component bundled with mock data, a frozen capture of a running page, or a picture.</li>
+<li><strong>Nothing goes online until a person clicks Share.</strong> The canvas opens on localhost. Twombly’s own docs say the agent never shares unless asked.</li>
+<li><strong>Gates check every frame</strong> for secrets, outside requests and server code, locally and again in the cloud, before it is placed.</li>
+<li><strong>The agent has two machine-readable signals:</strong> <code>twombly context</code> returns what the person is looking at; <code>twombly comments</code> returns the feedback left on the frames. Output is JSON.</li>
+<li><strong>Several agents can share one canvas</strong>, and a folder can hold any number of named canvases. Typical commands include <code>twombly init --name "Notification Explorations"</code> and <code>twombly add ./dist --title "V1" --width 1280 --height 800</code>.</li></ul>
+<p>Sharing has a clearer privacy story than most prototype tools bother to write down. Twombly’s privacy page (updated 7 November) says an unshared canvas stays on your computer; once you share, anyone with the link can see the canvas, its comments and who is present, and can join the huddle. Links are hard to guess and search engines are asked not to index them, but they are not private. Huddle audio passes through the host and is not recorded or stored. Materic says it does not use canvases to train AI models. Account data for shared work comes from Google sign-in (name, email, picture and account ID).</p>
+<h2>Our take: this is annotate-don’t-describe, made multiplayer</h2>
+<p>A week of canvas news has been circling the same problem. <a href="../design-on-running-code-dessn-doop-code-canvas/">Dessn, Doop and Figma code layers</a> let people and agents design on something that actually runs. <a href="../cursor-live-apps-off-localhost/">Cursor Live Apps</a> take a different cut: get a useful internal UI off localhost and behind SSO. Twombly is neither a production runtime nor a hosted app. It is a review surface for versions. That is the gap many agent workflows still leave as a chat scroll—“try it again, but tighter”—with no one else able to point at the frame they mean.</p>
+<p>The move that matters is making each exploration <em>addressable</em>. A comment pinned to “V2 — denser table” is a different artifact from a paragraph in a prompt. Combined with <code>twombly context</code>, the agent can see which frame a teammate is looking at. That is the same instinct as <a href="../annotate-dont-describe-visual-prompts/">annotate, don’t describe</a>, except the note lives where the whole team can add it, and the agent is expected to read it back.</p>
+<p>Treat the frames as what they are. They are static folders—builds, captures, pictures—not your connected app. They are good for comparing layout, type, density and empty states; they are a weak place to judge auth, live data or anything that needs a server. Dessn (or a Figma code layer wired to the repo) is still the better canvas once you have picked a direction and need the real components. Cursor Live Apps are still the better path when the pain is “this demo dies on my laptop.” Twombly is for the messy middle: several directions on the table, several people talking, one agent that should hear all of them.</p>
+<p>Two caveats follow from the docs themselves. First, a shared link is public to anyone who receives it; do not put customer data, unreleased work you would not email, or anything the gates might miss, on a frame you then Share. Second, the product is days old—the package appeared on 5 November—so command names and defaults may move. Read <code>twombly help</code> on the version you installed rather than memorising a blog post.</p>
+<h2>Checklist before you share a canvas</h2>
+<ol><li><strong>Name the canvas after the question.</strong> “Notification density” beats “Explorations”.</li>
+<li><strong>Init on localhost first.</strong> Install the skill, run the guide, and do not click Share until you have looked at every frame yourself.</li>
+<li><strong>Add frames from real builds with mock data.</strong> Include empty, loading, error and a long string—not only the happy-path screenshot.</li>
+<li><strong>Title frames as directions, not as winners.</strong> “V1 dense table / V2 editorial cards,” never “Final”.</li>
+<li><strong>Keep tokens and components in the repo the agent builds from.</strong> A pretty frame that invents a second accent is not an option; it is drift.</li>
+<li><strong>Read the gate results.</strong> Secrets, outside requests and server code should fail closed. If something slips through, do not share.</li>
+<li><strong>Treat the Share link as public.</strong> Anyone with it can see comments, presence and the huddle. Send it the way you would send a prototype link you are willing to forward.</li>
+<li><strong>Comment on the frame you mean, with something checkable.</strong> “Tighten the header 8px and drop the second accent” beats “make it cleaner.”</li>
+<li><strong>Have the agent read before it rebuilds.</strong> Run <code>twombly context</code> then <code>twombly comments</code>, then one change set—not a fresh prompt that ignores the board.</li>
+<li><strong>When you pick a direction, leave the exploration canvas.</strong> Take the winner into the real repo, a code-backed canvas, or a pull request. Twombly is not the source of truth.</li></ol>
+<pre><code># Paste this to your coding agent (after the skill is installed)
+Put this project's main screens on a Twombly canvas named "Notification density".
+Add three frames from a static build with mock data:
+  V1 dense table — our current tokens, 8px density
+  V2 editorial cards — same tokens, more whitespace
+  V3 split inbox — list + preview, empty + error states included
+Do not click Share. Do not invent a second accent or a new typeface.
+After I (or the team) comment, run `twombly context` and `twombly comments`
+and change only what those notes ask for. Rebuild the same frame titles.
+When we pick a winner, stop exploring and open a PR in this repo.</code></pre>
+<h2>When Twombly is the wrong surface</h2>
+<p>Skip it when you already know the direction and need to edit the running product—use a code-backed canvas or a pull request. Skip it when the deliverable is a hosted internal tool behind SSO: that is Live Apps territory. Skip it when the only reviewer is you and a screenshot thread would do. Use it when several people need to stand around several live versions, and the agent should iterate on what they marked, not on a recap you typed from memory.</p>
+<p>Related on UI Hub: <a href="../design-on-running-code-dessn-doop-code-canvas/">design on running code</a>, <a href="../cursor-live-apps-off-localhost/">Cursor Live Apps</a>, <a href="../annotate-dont-describe-visual-prompts/">annotate, don’t describe</a>, and <a href="../claude-cursor-design-skills/">design skills for Claude and Cursor</a>.</p>""",
+ zh="""<p>2026 年 11 月 7 日，软件设计师 Jaytel 在 Hacker News 上发了一条 Show HN，介绍 <strong>Twombly</strong>：给你的编程智能体装上对应 skill，它就会把每个设计版本放进同一张无限画布，成为一个实时画框。点 Share，团队拿到一条链接，带实时光标、跟随、钉在画框上的批注，以及语音围聊。他强调的循环是接下来那一步：智能体可以读这些批注，也能看到有人正在看哪一框，于是下一轮由团队的反馈来开，而不只听那个敲提示词的人。</p>
+<p>Materic, Inc. 在 11 月 5 日发布的 npm 包 <code>twombly</code>（到 11 月 7 日已更新至 0.4.12）和这套说法对得上。它适用于 Claude Code、Codex、Cursor，以及任何能跑命令的智能体，不限框架和仓库。安装方式是 <code>npx skills add materic-inc/twombly-skill -g -y</code>，或者自己跑 <code>npx -y twombly@latest guide</code> 再把指南交给智能体。官网、项目的 <code>llms.txt</code> 和 GitHub 上的 skill 仓库讲的是同一件事。真正有设计含量的主张，比「又一块 AI 画布」小得多：探索变成一组成员能围着看的、可寻址的画框。</p>
+<h2>画框是什么，以及什么留在本机</h2>
+<ul><li><strong>一个画框就是一夹静态文件</strong>，应当不靠服务器、也不联网就能跑：Vite、Next.js、SvelteKit 或 Astro 的构建产物，带模拟数据的单个组件，对正在运行页面的冻结抓取，或者一张图。</li>
+<li><strong>在有人点 Share 之前，什么都不会上网。</strong>画布开在 localhost。Twombly 自己的文档写明：除非被要求，智能体不会去分享。</li>
+<li><strong>关卡会检查每个画框</strong>：密钥、对外请求和服务器代码，先在本地查一遍，上云再查一遍，通过后才会放上去。</li>
+<li><strong>智能体有两个可机读信号：</strong><code>twombly context</code> 返回此人正在看什么；<code>twombly comments</code> 返回钉在画框上的反馈。输出是 JSON。</li>
+<li><strong>多个智能体可以共用一块画布</strong>，一个文件夹里也可以放任意多个命名画布。常见命令包括 <code>twombly init --name "Notification Explorations"</code> 和 <code>twombly add ./dist --title "V1" --width 1280 --height 800</code>。</li></ul>
+<p>它对分享隐私的说明，比多数原型工具愿意写下来的更清楚。Twombly 的隐私页（11 月 7 日更新）写着：未分享的画布留在你的电脑上；一旦分享，任何拿到链接的人都能看到画布、批注和在场的人，也能加入围聊。链接不好猜，他们也请求搜索引擎不要收录，但链接本身并不是私密的。围聊音频经过托管方传递，不录音、不存储。Materic 称不会用画布内容训练 AI 模型。分享所需的账户信息来自 Google 登录（姓名、邮箱、头像和账户 ID）。</p>
+<h2>我们的看法：这是「标注，而不是描述」的多人版</h2>
+<p>这一周的画布新闻其实围着同一个问题转。<a href="../design-on-running-code-dessn-doop-code-canvas/">Dessn、Doop 和 Figma 代码图层</a>让人和智能体在真正能跑的东西上设计。<a href="../cursor-live-apps-off-localhost/">Cursor Live Apps</a> 切的是另一刀：把有用的内部界面拉出 localhost，挂到 SSO 后面。Twombly 既不是生产运行时，也不是托管应用。它是版本的审阅面。许多智能体工作流至今仍把这块留成一段聊天记录——「再试一次，紧一点」——别人无法指着他们说的那一框。</p>
+<p>真正重要的动作，是让每一次探索都<strong>可寻址</strong>。钉在「V2 — 更密的表格」上的一条批注，和提示词里的一段话，不是同一种工件。再加上 <code>twombly context</code>，智能体能看到同事正在看哪一框。这和<a href="../annotate-dont-describe-visual-prompts/">标注，而不是描述</a>是同一直觉，只不过批注活在整个团队都能加的地方，并且智能体被要求读回去。</p>
+<p>把画框当成它本来的样子。它们是静态文件夹——构建产物、抓取、图片——不是你连着后端的应用。用来比较布局、字体、密度和空状态很合适；用来判断登录、实时数据或任何需要服务器的东西就弱。一旦选定方向、需要真实组件，Dessn（或接到仓库的 Figma 代码图层）仍是更好的画布。痛点是「演示会死在我笔记本上」时，Cursor Live Apps 仍更合适。Twombly 适合中间那段乱：桌上有好几个方向，好几个人在说话，一个智能体应当听见所有人。</p>
+<p>文档本身也带出两条提醒。第一，分享链接对任何收到它的人是公开的；客户数据、你不会发邮件的未发布稿，以及关卡可能漏掉的东西，都不要放上再点 Share。第二，这个产品才几天——包裹 11 月 5 日才出现——命令名和默认值都可能变。以你安装的那个版本的 <code>twombly help</code> 为准，不要背一篇博客。</p>
+<h2>点分享前的清单</h2>
+<ol><li><strong>用问题给画布起名。</strong>「通知密度」比「探索」好。</li>
+<li><strong>先在 localhost 初始化。</strong>装 skill、跑指南，自己看完每一框再点 Share。</li>
+<li><strong>用带模拟数据的真实构建来加画框。</strong>带上空态、加载、出错和一条很长的文案，不要只有快乐路径截图。</li>
+<li><strong>把画框标成方向，而不是胜者。</strong>「V1 密表格 / V2 编辑风卡片」，不要写「Final」。</li>
+<li><strong>Token 和组件留在智能体构建所用的仓库里。</strong>漂亮但是发明了第二种强调色的画框，不是选项，是跑偏。</li>
+<li><strong>读关卡结果。</strong>密钥、对外请求和服务器代码应当直接拦下。有漏网的就不要分享。</li>
+<li><strong>把 Share 链接当成公开的。</strong>任何拿到它的人都能看到批注、在场情况和围聊。发送方式，要像你愿意被转发的原型链接一样。</li>
+<li><strong>批注钉在你指的那一框上，而且要能核对。</strong>「页头收紧 8px，去掉第二种强调色」比「做干净一点」有用。</li>
+<li><strong>让智能体先读再改。</strong>先跑 <code>twombly context</code> 再跑 <code>twombly comments</code>，然后做一组改动——不要另开一段无视画板的新提示。</li>
+<li><strong>选定方向后，离开这块探索画布。</strong>把赢家带回真实仓库、代码支撑的画布，或开一个 PR。Twombly 不是事实来源。</li></ol>
+<pre><code># 技能装好后，把这段贴给你的编程智能体
+把本项目的主界面放到名为「通知密度」的 Twombly 画布上。
+用带模拟数据的静态构建加三个画框：
+  V1 密表格 — 用我们现有 Token，8px 密度
+  V2 编辑风卡片 — 同一套 Token，留白更多
+  V3 分栏收件箱 — 列表 + 预览，包含空态和错误态
+不要点 Share。不要发明第二种强调色或新字体。
+等我（或团队）批注之后，运行 `twombly context` 和 `twombly comments`，
+只改这些笔记要求的内容。重建时沿用原来的画框标题。
+我们选定赢家后，停止探索，在本仓库开一个 PR。</code></pre>
+<h2>什么时候 Twombly 不是合适的界面</h2>
+<p>方向已经清楚、需要改正在运行的产品时，跳过——用代码支撑的画布或 pull request。交付物是挂在 SSO 后面的内部托管工具时，跳过——那是 Live Apps 的地盘。审阅者只有你、截图线程就够用时，也跳过。适合用它的时候是：好几个人需要围着好几个实时版本看，而智能体应当按他们标出来的东西迭代，而不是按你凭记忆重述的一句话。</p>
+<p>UI Hub 相关阅读：<a href="../design-on-running-code-dessn-doop-code-canvas/">在运行中的代码上设计</a>、<a href="../cursor-live-apps-off-localhost/">Cursor Live Apps</a>、<a href="../annotate-dont-describe-visual-prompts/">标注，而不是描述</a>，以及<a href="../claude-cursor-design-skills/">给 Claude 和 Cursor 的设计技能</a>。</p>""",
+ refs=[('Twombly: a canvas for your agent’s explorations','Twombly','https://twombly.app/'),('Twombly llms.txt','Twombly','https://twombly.app/llms.txt'),('Privacy (updated 7 November 2026)','Twombly / Materic, Inc.','https://twombly.app/privacy'),('twombly on npm','Materic, Inc.','https://www.npmjs.com/package/twombly'),('materic-inc/twombly-skill','GitHub','https://github.com/materic-inc/twombly-skill'),('Show HN: Twombly – A collaborative canvas for your agent’s design explorations','Hacker News (jaytel)','https://news.ycombinator.com/item?id=50405205'),('twombly skill listing','skills.sh','https://www.skills.sh/materic-inc/twombly-skill/twombly')]),
 ]

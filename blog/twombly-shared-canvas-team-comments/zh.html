@@ -1,0 +1,38 @@
+<p>2026 年 11 月 7 日，软件设计师 Jaytel 在 Hacker News 上发了一条 Show HN，介绍 <strong>Twombly</strong>：给你的编程智能体装上对应 skill，它就会把每个设计版本放进同一张无限画布，成为一个实时画框。点 Share，团队拿到一条链接，带实时光标、跟随、钉在画框上的批注，以及语音围聊。他强调的循环是接下来那一步：智能体可以读这些批注，也能看到有人正在看哪一框，于是下一轮由团队的反馈来开，而不只听那个敲提示词的人。</p><figure><img src="../../blog/img/twombly-shared-canvas-team-comments-1.webp" alt="2026 年 11 月 8 日的 Twombly 首页：为编程智能体的设计探索准备的画布，并给出安装 skill、把项目主界面放到画布上的提示" loading="lazy" decoding="async" width="1280" height="800"><figcaption>2026 年 11 月 8 日的 Twombly 首页：为编程智能体的设计探索准备的画布，并给出安装 skill、把项目主界面放到画布上的提示 · 截图：Twombly（<a href="https://twombly.app/" rel="noopener" target="_blank">twombly.app</a>），2026-11-08 截取，版权归原站所有</figcaption></figure>
+<p>Materic, Inc. 在 11 月 5 日发布的 npm 包 <code>twombly</code>（到 11 月 7 日已更新至 0.4.12）和这套说法对得上。它适用于 Claude Code、Codex、Cursor，以及任何能跑命令的智能体，不限框架和仓库。安装方式是 <code>npx skills add materic-inc/twombly-skill -g -y</code>，或者自己跑 <code>npx -y twombly@latest guide</code> 再把指南交给智能体。官网、项目的 <code>llms.txt</code> 和 GitHub 上的 skill 仓库讲的是同一件事。真正有设计含量的主张，比「又一块 AI 画布」小得多：探索变成一组成员能围着看的、可寻址的画框。</p>
+<h2>画框是什么，以及什么留在本机</h2>
+<ul><li><strong>一个画框就是一夹静态文件</strong>，应当不靠服务器、也不联网就能跑：Vite、Next.js、SvelteKit 或 Astro 的构建产物，带模拟数据的单个组件，对正在运行页面的冻结抓取，或者一张图。</li>
+<li><strong>在有人点 Share 之前，什么都不会上网。</strong>画布开在 localhost。Twombly 自己的文档写明：除非被要求，智能体不会去分享。</li>
+<li><strong>关卡会检查每个画框</strong>：密钥、对外请求和服务器代码，先在本地查一遍，上云再查一遍，通过后才会放上去。</li>
+<li><strong>智能体有两个可机读信号：</strong><code>twombly context</code> 返回此人正在看什么；<code>twombly comments</code> 返回钉在画框上的反馈。输出是 JSON。</li>
+<li><strong>多个智能体可以共用一块画布</strong>，一个文件夹里也可以放任意多个命名画布。常见命令包括 <code>twombly init --name "Notification Explorations"</code> 和 <code>twombly add ./dist --title "V1" --width 1280 --height 800</code>。</li></ul><figure><img src="../../blog/img/twombly-shared-canvas-team-comments-2.webp" alt="流程示意：在本机初始化命名画布，把每个设计版本加为静态画框，点 Share 后让团队钉批注并围聊，再让智能体先读 context 和 comments 再重建" loading="lazy" decoding="async" width="1200" height="675"><figcaption>流程示意：在本机初始化命名画布，把每个设计版本加为静态画框，点 Share 后让团队钉批注并围聊，再让智能体先读 context 和 comments 再重建 · 示意图：UI Hub 原创，CC BY 4.0</figcaption></figure>
+<p>它对分享隐私的说明，比多数原型工具愿意写下来的更清楚。Twombly 的隐私页（11 月 7 日更新）写着：未分享的画布留在你的电脑上；一旦分享，任何拿到链接的人都能看到画布、批注和在场的人，也能加入围聊。链接不好猜，他们也请求搜索引擎不要收录，但链接本身并不是私密的。围聊音频经过托管方传递，不录音、不存储。Materic 称不会用画布内容训练 AI 模型。分享所需的账户信息来自 Google 登录（姓名、邮箱、头像和账户 ID）。</p>
+<h2>我们的看法：这是「标注，而不是描述」的多人版</h2>
+<p>这一周的画布新闻其实围着同一个问题转。<a href="../design-on-running-code-dessn-doop-code-canvas/">Dessn、Doop 和 Figma 代码图层</a>让人和智能体在真正能跑的东西上设计。<a href="../cursor-live-apps-off-localhost/">Cursor Live Apps</a> 切的是另一刀：把有用的内部界面拉出 localhost，挂到 SSO 后面。Twombly 既不是生产运行时，也不是托管应用。它是版本的审阅面。许多智能体工作流至今仍把这块留成一段聊天记录——「再试一次，紧一点」——别人无法指着他们说的那一框。</p>
+<p>真正重要的动作，是让每一次探索都<strong>可寻址</strong>。钉在「V2 — 更密的表格」上的一条批注，和提示词里的一段话，不是同一种工件。再加上 <code>twombly context</code>，智能体能看到同事正在看哪一框。这和<a href="../annotate-dont-describe-visual-prompts/">标注，而不是描述</a>是同一直觉，只不过批注活在整个团队都能加的地方，并且智能体被要求读回去。</p>
+<p>把画框当成它本来的样子。它们是静态文件夹——构建产物、抓取、图片——不是你连着后端的应用。用来比较布局、字体、密度和空状态很合适；用来判断登录、实时数据或任何需要服务器的东西就弱。一旦选定方向、需要真实组件，Dessn（或接到仓库的 Figma 代码图层）仍是更好的画布。痛点是「演示会死在我笔记本上」时，Cursor Live Apps 仍更合适。Twombly 适合中间那段乱：桌上有好几个方向，好几个人在说话，一个智能体应当听见所有人。</p>
+<p>文档本身也带出两条提醒。第一，分享链接对任何收到它的人是公开的；客户数据、你不会发邮件的未发布稿，以及关卡可能漏掉的东西，都不要放上再点 Share。第二，这个产品才几天——包裹 11 月 5 日才出现——命令名和默认值都可能变。以你安装的那个版本的 <code>twombly help</code> 为准，不要背一篇博客。</p>
+<h2>点分享前的清单</h2>
+<ol><li><strong>用问题给画布起名。</strong>「通知密度」比「探索」好。</li>
+<li><strong>先在 localhost 初始化。</strong>装 skill、跑指南，自己看完每一框再点 Share。</li>
+<li><strong>用带模拟数据的真实构建来加画框。</strong>带上空态、加载、出错和一条很长的文案，不要只有快乐路径截图。</li>
+<li><strong>把画框标成方向，而不是胜者。</strong>「V1 密表格 / V2 编辑风卡片」，不要写「Final」。</li>
+<li><strong>Token 和组件留在智能体构建所用的仓库里。</strong>漂亮但是发明了第二种强调色的画框，不是选项，是跑偏。</li>
+<li><strong>读关卡结果。</strong>密钥、对外请求和服务器代码应当直接拦下。有漏网的就不要分享。</li>
+<li><strong>把 Share 链接当成公开的。</strong>任何拿到它的人都能看到批注、在场情况和围聊。发送方式，要像你愿意被转发的原型链接一样。</li>
+<li><strong>批注钉在你指的那一框上，而且要能核对。</strong>「页头收紧 8px，去掉第二种强调色」比「做干净一点」有用。</li>
+<li><strong>让智能体先读再改。</strong>先跑 <code>twombly context</code> 再跑 <code>twombly comments</code>，然后做一组改动——不要另开一段无视画板的新提示。</li>
+<li><strong>选定方向后，离开这块探索画布。</strong>把赢家带回真实仓库、代码支撑的画布，或开一个 PR。Twombly 不是事实来源。</li></ol>
+<pre><code># 技能装好后，把这段贴给你的编程智能体
+把本项目的主界面放到名为「通知密度」的 Twombly 画布上。
+用带模拟数据的静态构建加三个画框：
+  V1 密表格 — 用我们现有 Token，8px 密度
+  V2 编辑风卡片 — 同一套 Token，留白更多
+  V3 分栏收件箱 — 列表 + 预览，包含空态和错误态
+不要点 Share。不要发明第二种强调色或新字体。
+等我（或团队）批注之后，运行 `twombly context` 和 `twombly comments`，
+只改这些笔记要求的内容。重建时沿用原来的画框标题。
+我们选定赢家后，停止探索，在本仓库开一个 PR。</code></pre>
+<figure><img src="../../blog/img/twombly-shared-canvas-team-comments-3.webp" alt="2026 年 11 月 8 日 GitHub 上的 materic-inc/twombly-skill 仓库，可用 npx skills add 安装的智能体 skill" loading="lazy" decoding="async" width="1280" height="800"><figcaption>2026 年 11 月 8 日 GitHub 上的 materic-inc/twombly-skill 仓库，可用 npx skills add 安装的智能体 skill · 截图：GitHub · materic-inc（<a href="https://github.com/materic-inc/twombly-skill" rel="noopener" target="_blank">github.com</a>），2026-11-08 截取，版权归原站所有</figcaption></figure><h2>什么时候 Twombly 不是合适的界面</h2>
+<p>方向已经清楚、需要改正在运行的产品时，跳过——用代码支撑的画布或 pull request。交付物是挂在 SSO 后面的内部托管工具时，跳过——那是 Live Apps 的地盘。审阅者只有你、截图线程就够用时，也跳过。适合用它的时候是：好几个人需要围着好几个实时版本看，而智能体应当按他们标出来的东西迭代，而不是按你凭记忆重述的一句话。</p>
+<p>UI Hub 相关阅读：<a href="../design-on-running-code-dessn-doop-code-canvas/">在运行中的代码上设计</a>、<a href="../cursor-live-apps-off-localhost/">Cursor Live Apps</a>、<a href="../annotate-dont-describe-visual-prompts/">标注，而不是描述</a>，以及<a href="../claude-cursor-design-skills/">给 Claude 和 Cursor 的设计技能</a>。</p>

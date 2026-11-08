@@ -409,3 +409,4 @@ curl -s https://ui.incidental.site/api/resources.json | jq --arg d "$(date -u -d
 - Design on running code: Dessn, Doop and Figma turn the canvas into a place agents and designers share — https://ui.incidental.site/kb/note/blog-design-on-running-code-dessn-doop-code-canvas.md
 - Figma’s agent now draws icons as strokes: keep the line weight editable — https://ui.incidental.site/kb/note/blog-figma-agent-vector-strokes-icons.md
 - Cursor Live Apps: get the UI off localhost before the demo dies — https://ui.incidental.site/kb/note/blog-cursor-live-apps-off-localhost.md
+- Twombly: pin comments on the agent’s frames so it iterates on the team’s feedback — https://ui.incidental.site/kb/note/blog-twombly-shared-canvas-team-comments.md
