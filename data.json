@@ -1,6 +1,6 @@
 {
  "generated": "2026-11-09",
- "count": 5097,
+ "count": 5098,
  "items": [
   {
    "id": "ued-figma-mcp-guide",
@@ -191842,6 +191842,57 @@
    ],
    "noteEn": "New GitHub UI repo: Toasts with real spring physics. One toast that morphs in place. No dependencies. React, Svelte and plain DOM. (★156, MIT, YusufCeng1z/ding)",
    "added": "2026-11-09"
+  },
+  {
+   "id": "rd-h1p57fb-axiomai-embossed-holo-brand",
+   "name": "Axiomai Embossed Holo Brand",
+   "url": "https://x.com/DmitryKurash/status/2119523315207352663",
+   "note": "Brand identity card for Axiomai rendered as an embossed holographic sticker, with the globe logo and segmented wordmark cycling through iridescent rainbow color shifts.",
+   "noteEn": "Brand identity card for Axiomai rendered as an embossed holographic sticker, with the globe logo and segmented wordmark cycling through iridescent rainbow color shifts.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@dmitrykurash",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "motion"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/h1p57fb-axiomai-embossed-holo-brand",
+   "rdkind": "Design",
+   "rdcat": "Motion",
+   "rdstyle": [
+    "Typographic",
+    "Experimental",
+    "Dark",
+    "Vibrant"
+   ],
+   "author": {
+    "name": "Dmitry Kurash",
+    "handle": "@dmitrykurash",
+    "url": "https://x.com/dmitrykurash"
+   },
+   "x_post": "https://x.com/DmitryKurash/status/2119523315207352663",
+   "xsrc": {
+    "post": "https://x.com/DmitryKurash/status/2119523315207352663",
+    "author": "@DmitryKurash",
+    "likes": 219,
+    "bookmarks": 99,
+    "reposts": 1,
+    "impressions": 4087,
+    "date": "2026-11-08"
+   },
+   "pub": "2026-11-08",
+   "added": "2026-11-09"
   }
  ],
  "guides": [
@@ -192044,5 +192095,5 @@
    ]
   }
  ],
- "updatedAt": "2026-11-09T06:21Z"
+ "updatedAt": "2026-11-09T08:38Z"
 }
