@@ -1,5 +1,5 @@
 {
- "count": 47,
+ "count": 48,
  "rss": "https://ui.incidental.site/blog/rss.xml",
  "categories": {
   "tools": "Tools",
@@ -18,6 +18,97 @@
   "weekly": "Series: Weekly roundup"
  },
  "posts": [
+  {
+   "slug": "motion-pinch-press-gestures-with-fallbacks",
+   "url": "https://ui.incidental.site/blog/motion-pinch-press-gestures-with-fallbacks/",
+   "date": "2026-11-09",
+   "category": "craft",
+   "series": null,
+   "featured": true,
+   "tags": [
+    "Motion",
+    "gestures",
+    "pinch",
+    "long press",
+    "accessibility"
+   ],
+   "title": {
+    "en": "Motion’s new pinch and press gestures: ship them with a visible fallback",
+    "zh": "Motion 新增双指缩放与按压手势：上线时务必配一个看得见的替代操作",
+    "zht": "Motion 新增雙指縮放與按壓手勢：上線時務必配一個看得見的替代操作",
+    "ja": "Motionの新しいピンチとプレスのジェスチャー：見える代替操作と一緒に出す",
+    "ko": "Motion의 새 핀치·프레스 제스처: 눈에 보이는 대체 조작과 함께 내보내기",
+    "ms": "Gerak isyarat pinch dan press baharu Motion: hantar bersama alternatif yang kelihatan",
+    "vi": "Cử chỉ pinch và press mới của Motion: phát hành kèm một lựa chọn thay thế nhìn thấy được",
+    "fr": "Les nouveaux gestes pinch et press de Motion : livrez-les avec une alternative visible",
+    "es": "Los nuevos gestos pinch y press de Motion: publícalos con una alternativa visible",
+    "de": "Motions neue Pinch- und Press-Gesten: nur mit sichtbarer Alternative ausliefern"
+   },
+   "summary": {
+    "en": "Motion 14.11 (9 November 2026) adds pinch for two-finger and trackpad zoom and rotate; 14.10 (5 November) gave press double press, long press and hold-to-repeat. What the new APIs do, where they quietly break scrolling and accessibility, and a checklist for shipping gestures with buttons that do the same job.",
+    "zh": "Motion 14.11（2026 年 11 月 9 日）新增 pinch，支持双指和触控板缩放、旋转；14.10（11 月 5 日）让 press 支持双击、长按和按住连发。新 API 能做什么、会在哪里悄悄破坏滚动和无障碍，以及一份让手势与「做同一件事的按钮」一起上线的清单。",
+    "zht": "Motion 14.11（2026 年 11 月 9 日）新增 pinch，支援雙指和觸控板縮放、旋轉；14.10（11 月 5 日）讓 press 支援雙擊、長按和按住連發。新 API 能做什麼、會在哪裡悄悄破壞捲動和無障礙，以及一份讓手勢與「做同一件事的按鈕」一起上線的清單。",
+    "ja": "Motion 14.11（2026年11月9日）は2本指とトラックパッドでのズーム・回転を行うpinchを追加し、14.10（11月5日）はpressにダブルプレス、長押し、押し続けでの連続実行を加えた。新APIでできること、スクロールとアクセシビリティを静かに壊す場所、同じ操作ができるボタンと一緒に出すためのチェックリスト。",
+    "ko": "Motion 14.11(2026년 11월 9일)은 두 손가락·트랙패드 확대와 회전을 위한 pinch를 추가했고, 14.10(11월 5일)은 press에 더블 프레스, 길게 누르기, 누르고 있으면 반복을 더했다. 새 API가 하는 일, 스크롤과 접근성을 조용히 깨는 지점, 같은 일을 하는 버튼과 함께 제스처를 내보내는 체크리스트.",
+    "ms": "Motion 14.11 (9 November 2026) menambah pinch untuk zum dan putar dengan dua jari atau trackpad; 14.10 (5 November) memberi press tekan dua kali, tekan lama dan tahan untuk ulang. Apa yang dilakukan API baharu, di mana ia diam-diam merosakkan skrol dan kebolehcapaian, serta senarai semak untuk menghantar gerak isyarat bersama butang yang melakukan kerja sama.",
+    "vi": "Motion 14.11 (9/11/2026) thêm pinch để phóng to và xoay bằng hai ngón tay hoặc trackpad; 14.10 (5/11) cho press nhấn đúp, nhấn giữ và giữ để lặp. API mới làm gì, chỗ nào nó âm thầm làm hỏng cuộn trang và khả năng tiếp cận, cùng checklist để phát hành cử chỉ kèm nút làm cùng việc.",
+    "fr": "Motion 14.11 (9 novembre 2026) ajoute pinch pour zoomer et pivoter à deux doigts ou au trackpad ; 14.10 (5 novembre) a donné à press le double appui, l’appui long et la répétition au maintien. Ce que font ces API, où elles cassent discrètement le défilement et l’accessibilité, et une checklist pour livrer chaque geste avec un bouton qui fait la même chose.",
+    "es": "Motion 14.11 (9 de noviembre de 2026) añade pinch para hacer zoom y rotar con dos dedos o trackpad; 14.10 (5 de noviembre) dio a press doble pulsación, pulsación larga y repetir al mantener. Qué hacen las nuevas API, dónde rompen en silencio el scroll y la accesibilidad, y una lista para publicar cada gesto con un botón que haga lo mismo.",
+    "de": "Motion 14.11 (9. November 2026) bringt pinch für Zoomen und Drehen mit zwei Fingern oder Trackpad; 14.10 (5. November) gab press Doppeltippen, langes Drücken und Wiederholen beim Halten. Was die neuen APIs tun, wo sie unbemerkt Scrollen und Barrierefreiheit brechen, und eine Checkliste, um jede Geste mit einem Button auszuliefern, der dasselbe kann."
+   },
+   "reading_minutes": {
+    "en": 6,
+    "zh": 6
+   },
+   "cover": "https://ui.incidental.site/blog/img/motion-pinch-press-gestures-with-fallbacks-cover.webp",
+   "references": [
+    {
+     "title": "Motion changelog (14.10.0 on 5 Nov, 14.11.0 and 14.11.1 on 9 Nov 2026)",
+     "by": "Motion",
+     "url": "https://motion.dev/changelog"
+    },
+    {
+     "title": "CHANGELOG.md",
+     "by": "motiondivision/motion on GitHub",
+     "url": "https://raw.githubusercontent.com/motiondivision/motion/refs/heads/main/CHANGELOG.md"
+    },
+    {
+     "title": "pinch",
+     "by": "Motion docs",
+     "url": "https://motion.dev/docs/pinch"
+    },
+    {
+     "title": "press",
+     "by": "Motion docs",
+     "url": "https://motion.dev/docs/press"
+    },
+    {
+     "title": "Pinch zoom live example",
+     "by": "Motion examples",
+     "url": "https://examples.motion.dev/js/pinch-zoom"
+    },
+    {
+     "title": "Gesture animation (React)",
+     "by": "Motion docs",
+     "url": "https://motion.dev/docs/react-gestures"
+    },
+    {
+     "title": "touch-action",
+     "by": "MDN Web Docs",
+     "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/touch-action"
+    },
+    {
+     "title": "Understanding SC 2.5.1: Pointer Gestures",
+     "by": "W3C WAI",
+     "url": "https://www.w3.org/WAI/WCAG22/Understanding/pointer-gestures.html"
+    },
+    {
+     "title": "Understanding SC 2.5.7: Dragging Movements",
+     "by": "W3C WAI",
+     "url": "https://www.w3.org/WAI/WCAG22/Understanding/dragging-movements.html"
+    }
+   ]
+  },
   {
    "slug": "twombly-shared-canvas-team-comments",
    "url": "https://ui.incidental.site/blog/twombly-shared-canvas-team-comments/",

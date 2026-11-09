@@ -1,0 +1,37 @@
+<p>从 Framer Motion 演变而来的动画库 Motion，五天内发了两次手势更新。2026 年 11 月 5 日的 <strong>14.10.0</strong> 让 <code>press</code> 学会了计数、按住和连发，一个函数就能覆盖双击、长按和按住不放的步进按钮。11 月 9 日的 <strong>14.11.0</strong> 新增 <code>pinch</code>：双指缩放和旋转；同一天的补丁 14.11.1 让旋转吸附参考松手时的速度，并允许你选择旋转与缩放的支点。对产品团队来说，这补上了过去常要另装一个手势库、或手写一堆 pointer 事件代码的缺口。同时，它也让人很容易做出没人找得到、甚至有些人根本做不出来的交互。</p><figure><img src="../../blog/img/motion-pinch-press-gestures-with-fallbacks-1.webp" alt="2026 年 11 月 9 日 Motion 的 pinch() 文档页：围绕两指之间的点，用双指或触控板缩放和旋转" loading="lazy" decoding="async" width="1280" height="800"><figcaption>2026 年 11 月 9 日 Motion 的 pinch() 文档页：围绕两指之间的点，用双指或触控板缩放和旋转 · 截图：Motion（<a href="https://motion.dev/docs/pinch" rel="noopener" target="_blank">motion.dev</a>），2026-11-09 截取，版权归原站所有</figcaption></figure>
+<h2>这次发了什么</h2>
+<ul><li><strong><code>pinch()</code> 支持四类输入：</strong>两个触点、触控板、带 <code>ctrlKey</code> 的 <code>wheel</code> 事件，以及 Safari 自己的 <code>gesturestart</code>/<code>gesturechange</code>/<code>gestureend</code> 事件。元素围绕两指之间的点缩放和旋转；在触控板上则围绕光标所在位置。</li>
+<li><strong>限制、弹性和吸附都是选项，不用你自己算。</strong><code>scale</code> 和 <code>rotate</code> 接受 <code>min</code>/<code>max</code>；<code>elastic</code>（默认 0.35）控制能越界多远；<code>rotate.snap: 90</code> 会落到最近的 90 度；<code>snapToOrigin</code> 会弹回 1 倍并摆正。<code>origin</code> 可以是指尖位置，也可以是固定点，比如中心。</li>
+<li><strong>和其他手势配合良好。</strong>同一元素加上 <code>drag</code> 时，抬起一根手指会无跳动地接着拖动，而缩放结束时不会被甩飞。pinch 永远不算 press：它会以 <code>success: false</code> 取消正在进行的 press。</li>
+<li><strong><code>press()</code> 新增 <code>count</code>、<code>hold</code> 和 <code>repeat</code>。</strong><code>count: 2</code> 是双击（默认两次间隔 0.3 秒）；<code>hold: 1</code> 是一秒长按，并通过 <code>onHold</code> 给出 0 到 1 的进度；<code>hold</code> 加 <code>repeat</code> 会在按住步进按钮时持续触发 <code>onRepeat</code>。指针移动超过几个像素，长按就会取消，所以滚动不会误触；Motion 还会阻止触屏长按弹出的系统菜单。</li>
+<li><strong><code>press</code> 自带键盘支持。</strong>任何带 press 手势的元素都会变得可聚焦，并响应 Enter。14.10 还给 <code>Reorder</code> 加上了 Home 和 End 键，并为 <code>motion</code> 组件新增 <code>tap</code> 属性。</li></ul><figure><img src="../../blog/img/motion-pinch-press-gestures-with-fallbacks-2.webp" alt="流程示意：先做可见控件，再把手势作为同一操作的快捷方式加上，把 pinch 限定在专注界面里让页面仍可滚动，最后用键盘、手机和触控板测试" loading="lazy" decoding="async" width="1200" height="675"><figcaption>流程示意：先做可见控件，再把手势作为同一操作的快捷方式加上，把 pinch 限定在专注界面里让页面仍可滚动，最后用键盘、手机和触控板测试 · 示意图：UI Hub 原创，CC BY 4.0</figcaption></figure>
+<p>pinch 文档展示的是一个普通 JavaScript 函数：接受元素、元素数组或选择器，返回一个停止函数。在 React 组件里，顺手的写法是在 effect 中对 ref 调用它，再把停止函数作为清理函数返回。这是我们对 API 的理解，并不是一个单独的 React 属性，请以你安装版本的文档为准。</p>
+<h2>我们的看法：手势是快捷方式，不是功能本身</h2>
+<p>双指缩放、双击和长按都是看不见的。屏幕上没有任何东西写着「按住我」或「这里用两根手指」，而很多人用的是鼠标、键盘、开关设备或一根手指。WCAG 2.2 早已划好线：成功准则 2.5.1（指针手势，A 级）要求凡是靠多点或路径手势操作的功能，都必须也能用单个指针完成，除非该手势本身不可替代；2.5.7（拖动动作，AA 级）对拖动提出同样要求。所以能上线的形态永远是一对：手势是给熟手的快速通道，旁边还要有一个做完全相同事情的可见控件。</p>
+<p>第二个坑更隐蔽。<code>pinch</code> 会在元素上设置 <code>touch-action: none</code>，让浏览器不再滚动或缩放下面的页面。放在图片查看器里这是对的；放在可滚动信息流里的一张通栏大图上，就意味着从图上开始的单指滑动再也滚不动页面。解决办法是设计决策，而不是改一行代码：只在专注的界面里允许缩放——灯箱、地图、画布——信息流里的媒体保持静态。</p>
+<p>按压的各种变体也需要同样的克制。除非你能接受单击动作变得迟缓或含糊，否则不要在同一个元素上同时叠单击和双击；一个元素只做一件事。长按最适合用来做破坏性操作的「按住确认」：<code>onHold</code> 的进度可以画成一个随按住逐渐填满的圆环，按住这个动作本身就是保险。把唯一的菜单入口藏在长按里则很糟。按住连发应当放在步进按钮上，普通点一下仍然只加一，旁边还要有可以直接输入的字段。</p>
+<h2>上线手势前的清单</h2>
+<ol><li><strong>先写可见控件。</strong>缩放按钮和复位、旋转按钮、⋯ 菜单、带确认的删除按钮。然后再把手势作为同一操作的快捷方式加上去。</li>
+<li><strong>只在专注界面里允许双指缩放。</strong>灯箱、地图、编辑画布。永远不要放在可滚动页面里的通栏图上，因为 <code>touch-action: none</code> 会接管滑动。</li>
+<li><strong>按内容设置限制。</strong>照片用 <code>scale: { min: 1, max: 4 }</code> 和较低的 <code>elastic</code>；除非旋转有意义，否则关掉 <code>rotate</code>。</li>
+<li><strong>吸附到用户说得出名字的状态。</strong>方向用 <code>rotate.snap: 90</code>，「适应窗口」复位用 <code>snapToOrigin</code>，并用文字显示当前缩放比例。</li>
+<li><strong>每个元素只有一种按压含义。</strong>不要在同一目标上同时用单击和双击。</li>
+<li><strong>长按当作带进度的按住确认。</strong>画出 <code>onHold</code> 进度，提前松手要干净地取消，并提供普通的确认对话框作为替代。</li>
+<li><strong>按住连发要慢启动。</strong>在 <code>repeat</code> 之前留一小段 <code>hold</code>，让快速点一下仍然只改变一，大幅调整则提供输入框。</li>
+<li><strong>只用键盘测一遍。</strong>Tab 到每个可按压元素再按 Enter。按住按键时的表现要实际核对，不要想当然。</li>
+<li><strong>在真手机和触控板上测。</strong>桌面鼠标的 Ctrl+滚轮、iOS Safari、安卓 Chrome；确认手势区域周围的页面仍能正常滚动。</li>
+<li><strong>只提示一次。</strong>界面第一次打开时给一句提示（「双指缩放，或用 + / − 缩放」），之后就别再打扰。</li></ol>
+<pre><code># 把这段贴给你的编程智能体
+只给我们的图片查看器（灯箱，不是信息流）加 Motion 手势。
+用 pinch()，scale { min: 1, max: 4 }、elastic 0.2、关闭 rotate，
+另加一个「适应」按钮，把 scale、rotate、x、y 动画回初始值。
+在 effect 里对 ref 挂载，清理时调用返回的停止函数。
+每个手势都要有做同样事情的可见控件：
+  + / − 缩放按钮、「适应」按钮，并用文字显示当前缩放比例。
+「删除照片」用 press()，hold: 1，把 onHold 进度画成圆环；
+保留普通的确认对话框作为替代路径。
+灯箱外的页面滚动必须正常。只用键盘、iOS Safari 和触控板各测一遍，
+列出你没能测试的项目。</code></pre>
+<figure><img src="../../blog/img/motion-pinch-press-gestures-with-fallbacks-3.webp" alt="2026 年 11 月 9 日 Motion 的 press() 文档页，现已覆盖双击、长按和按住连发，并自带键盘支持" loading="lazy" decoding="async" width="1280" height="800"><figcaption>2026 年 11 月 9 日 Motion 的 press() 文档页，现已覆盖双击、长按和按住连发，并自带键盘支持 · 截图：Motion（<a href="https://motion.dev/docs/press" rel="noopener" target="_blank">motion.dev</a>），2026-11-09 截取，版权归原站所有</figcaption></figure><h2>什么时候别用</h2>
+<p>内容是文字时不要用 pinch：让浏览器自带的缩放去做，永远不要拦截它。在大多数人用鼠标的网页应用里，不要把主要操作交给长按和双击。只在符合物理直觉的地方用这些手势——照片、地图、画布、步进按钮、按住确认——并把它们当作叠在人人都看得见的控件之上的快捷方式。</p>
+<p>UI Hub 相关阅读：<a href="../motion-that-feels-right/">让动效感觉对</a>、<a href="../best-animated-react-component-libraries-2026/">动效 React 组件库</a>，以及<a href="../accessibility-in-ai-generated-ui/">AI 生成界面的无障碍</a>。</p>

@@ -2187,4 +2187,101 @@ When we pick a winner, stop exploring and open a PR in this repo.</code></pre>
 <p>方向已经清楚、需要改正在运行的产品时，跳过——用代码支撑的画布或 pull request。交付物是挂在 SSO 后面的内部托管工具时，跳过——那是 Live Apps 的地盘。审阅者只有你、截图线程就够用时，也跳过。适合用它的时候是：好几个人需要围着好几个实时版本看，而智能体应当按他们标出来的东西迭代，而不是按你凭记忆重述的一句话。</p>
 <p>UI Hub 相关阅读：<a href="../design-on-running-code-dessn-doop-code-canvas/">在运行中的代码上设计</a>、<a href="../cursor-live-apps-off-localhost/">Cursor Live Apps</a>、<a href="../annotate-dont-describe-visual-prompts/">标注，而不是描述</a>，以及<a href="../claude-cursor-design-skills/">给 Claude 和 Cursor 的设计技能</a>。</p>""",
  refs=[('Twombly: a canvas for your agent’s explorations','Twombly','https://twombly.app/'),('Twombly llms.txt','Twombly','https://twombly.app/llms.txt'),('Privacy (updated 7 November 2026)','Twombly / Materic, Inc.','https://twombly.app/privacy'),('twombly on npm','Materic, Inc.','https://www.npmjs.com/package/twombly'),('materic-inc/twombly-skill','GitHub','https://github.com/materic-inc/twombly-skill'),('Show HN: Twombly – A collaborative canvas for your agent’s design explorations','Hacker News (jaytel)','https://news.ycombinator.com/item?id=50405205'),('twombly skill listing','skills.sh','https://www.skills.sh/materic-inc/twombly-skill/twombly')]),
+
+dict(slug='motion-pinch-press-gestures-with-fallbacks', date='2026-11-09', cat='craft', series=None, featured=True, tags=['Motion','gestures','pinch','long press','accessibility'],
+ t=T('Motion’s new pinch and press gestures: ship them with a visible fallback',
+     'Motion 新增双指缩放与按压手势：上线时务必配一个看得见的替代操作',
+     'Motion 新增雙指縮放與按壓手勢：上線時務必配一個看得見的替代操作',
+     'Motionの新しいピンチとプレスのジェスチャー：見える代替操作と一緒に出す',
+     'Motion의 새 핀치·프레스 제스처: 눈에 보이는 대체 조작과 함께 내보내기',
+     'Gerak isyarat pinch dan press baharu Motion: hantar bersama alternatif yang kelihatan',
+     'Cử chỉ pinch và press mới của Motion: phát hành kèm một lựa chọn thay thế nhìn thấy được',
+     'Les nouveaux gestes pinch et press de Motion : livrez-les avec une alternative visible',
+     'Los nuevos gestos pinch y press de Motion: publícalos con una alternativa visible',
+     'Motions neue Pinch- und Press-Gesten: nur mit sichtbarer Alternative ausliefern'),
+ s=T('Motion 14.11 (9 November 2026) adds pinch for two-finger and trackpad zoom and rotate; 14.10 (5 November) gave press double press, long press and hold-to-repeat. What the new APIs do, where they quietly break scrolling and accessibility, and a checklist for shipping gestures with buttons that do the same job.',
+     'Motion 14.11（2026 年 11 月 9 日）新增 pinch，支持双指和触控板缩放、旋转；14.10（11 月 5 日）让 press 支持双击、长按和按住连发。新 API 能做什么、会在哪里悄悄破坏滚动和无障碍，以及一份让手势与「做同一件事的按钮」一起上线的清单。',
+     'Motion 14.11（2026 年 11 月 9 日）新增 pinch，支援雙指和觸控板縮放、旋轉；14.10（11 月 5 日）讓 press 支援雙擊、長按和按住連發。新 API 能做什麼、會在哪裡悄悄破壞捲動和無障礙，以及一份讓手勢與「做同一件事的按鈕」一起上線的清單。',
+     'Motion 14.11（2026年11月9日）は2本指とトラックパッドでのズーム・回転を行うpinchを追加し、14.10（11月5日）はpressにダブルプレス、長押し、押し続けでの連続実行を加えた。新APIでできること、スクロールとアクセシビリティを静かに壊す場所、同じ操作ができるボタンと一緒に出すためのチェックリスト。',
+     'Motion 14.11(2026년 11월 9일)은 두 손가락·트랙패드 확대와 회전을 위한 pinch를 추가했고, 14.10(11월 5일)은 press에 더블 프레스, 길게 누르기, 누르고 있으면 반복을 더했다. 새 API가 하는 일, 스크롤과 접근성을 조용히 깨는 지점, 같은 일을 하는 버튼과 함께 제스처를 내보내는 체크리스트.',
+     'Motion 14.11 (9 November 2026) menambah pinch untuk zum dan putar dengan dua jari atau trackpad; 14.10 (5 November) memberi press tekan dua kali, tekan lama dan tahan untuk ulang. Apa yang dilakukan API baharu, di mana ia diam-diam merosakkan skrol dan kebolehcapaian, serta senarai semak untuk menghantar gerak isyarat bersama butang yang melakukan kerja sama.',
+     'Motion 14.11 (9/11/2026) thêm pinch để phóng to và xoay bằng hai ngón tay hoặc trackpad; 14.10 (5/11) cho press nhấn đúp, nhấn giữ và giữ để lặp. API mới làm gì, chỗ nào nó âm thầm làm hỏng cuộn trang và khả năng tiếp cận, cùng checklist để phát hành cử chỉ kèm nút làm cùng việc.',
+     'Motion 14.11 (9 novembre 2026) ajoute pinch pour zoomer et pivoter à deux doigts ou au trackpad ; 14.10 (5 novembre) a donné à press le double appui, l’appui long et la répétition au maintien. Ce que font ces API, où elles cassent discrètement le défilement et l’accessibilité, et une checklist pour livrer chaque geste avec un bouton qui fait la même chose.',
+     'Motion 14.11 (9 de noviembre de 2026) añade pinch para hacer zoom y rotar con dos dedos o trackpad; 14.10 (5 de noviembre) dio a press doble pulsación, pulsación larga y repetir al mantener. Qué hacen las nuevas API, dónde rompen en silencio el scroll y la accesibilidad, y una lista para publicar cada gesto con un botón que haga lo mismo.',
+     'Motion 14.11 (9. November 2026) bringt pinch für Zoomen und Drehen mit zwei Fingern oder Trackpad; 14.10 (5. November) gab press Doppeltippen, langes Drücken und Wiederholen beim Halten. Was die neuen APIs tun, wo sie unbemerkt Scrollen und Barrierefreiheit brechen, und eine Checkliste, um jede Geste mit einem Button auszuliefern, der dasselbe kann.'),
+ en="""<p>Motion, the animation library that grew out of Framer Motion, shipped two gesture releases in five days. Version <strong>14.10.0</strong> on 5 November 2026 taught <code>press</code> to count, hold and repeat, so one function now covers double press, long press and press-and-hold steppers. Version <strong>14.11.0</strong> on 9 November added <code>pinch</code>: two-finger zoom and rotate, and a patch the same day (14.11.1) made rotation snapping use the release velocity and let you choose the pivot. For product teams this closes a gap that usually meant a second gesture library or a pile of pointer-event code. It also makes it very easy to ship interactions nobody can find, and some people cannot perform.</p>
+<h2>What shipped</h2>
+<ul><li><strong><code>pinch()</code> handles four kinds of input:</strong> two pointers, trackpads, <code>wheel</code> events with <code>ctrlKey</code>, and Safari’s own <code>gesturestart</code>/<code>gesturechange</code>/<code>gestureend</code> events. The element scales and rotates around the point between the fingers, or under the cursor on a trackpad.</li>
+<li><strong>Limits, elasticity and snapping are options, not your maths.</strong> <code>scale</code> and <code>rotate</code> take <code>min</code>/<code>max</code>; <code>elastic</code> (default 0.35) controls how far you can overshoot; <code>rotate.snap: 90</code> lands on the nearest quarter turn; <code>snapToOrigin</code> springs back to 1× and upright. <code>origin</code> can be the pointer or a fixed point such as the centre.</li>
+<li><strong>It plays well with the other gestures.</strong> With <code>drag</code> on the same element, lifting one finger continues as a drag without a jump, and a zoom does not end in a fling. A pinch is never a press: it cancels a running press with <code>success: false</code>.</li>
+<li><strong><code>press()</code> gained <code>count</code>, <code>hold</code> and <code>repeat</code>.</strong> <code>count: 2</code> is a double press (with a 0.3-second default gap); <code>hold: 1</code> is a one-second long press with an <code>onHold</code> progress value from 0 to 1; <code>hold</code> plus <code>repeat</code> fires <code>onRepeat</code> while a stepper button is held. A long press cancels if the pointer moves more than a few pixels, so scrolling does not trigger it, and Motion suppresses the touch context menu.</li>
+<li><strong>Keyboard support is built into <code>press</code>.</strong> Any element with a press gesture becomes focusable and responds to Enter. The 14.10 release also added Home and End keys to <code>Reorder</code> and a new <code>tap</code> prop on <code>motion</code> components.</li></ul>
+<p>The pinch documentation shows a plain JavaScript function that takes an element, an array or a selector and returns a stop function. In a React component the natural shape is to call it on a ref inside an effect and return that stop function as the cleanup. That is our reading of the API, not a separate React prop, so check the docs for your installed version.</p>
+<h2>Our take: a gesture is a shortcut, not a feature</h2>
+<p>Pinch, double press and long press are invisible. Nothing on screen says “hold me” or “two fingers here”, and many people use a mouse, a keyboard, a switch or a single finger. WCAG 2.2 already draws the line. Success criterion 2.5.1 (Pointer Gestures, level A) says anything operated by a multipoint or path-based gesture must also work with a single pointer, unless the gesture is essential. 2.5.7 (Dragging Movements, AA) says the same for dragging. So the shippable pattern is always a pair: the gesture as a fast path for people who know it, and a visible control that does exactly the same thing.</p>
+<p>The second trap is quieter. <code>pinch</code> sets <code>touch-action: none</code> on the element so the browser does not scroll or zoom the page underneath. That is correct inside a photo viewer. On a full-width image in a scrolling feed, it means a one-finger swipe that starts on the image no longer scrolls the page. The fix is a design decision, not a code tweak: make things pinchable inside a focused surface such as a lightbox, a map or a canvas, and keep inline media static.</p>
+<p>Press variants need the same discipline. Do not stack a single press and a double press on one element unless you are happy for the single action to feel delayed or ambiguous; give each element one job. Long press is best for <em>hold to confirm</em> on destructive actions, where the <code>onHold</code> progress can draw a ring that fills as you hold, and the hold itself is the safety. It is a poor place to hide the only way to reach a menu. Hold-to-repeat belongs on stepper buttons that still change by one on a normal press, next to a field you can type into.</p>
+<h2>Checklist before you ship a gesture</h2>
+<ol><li><strong>Write the visible control first.</strong> Zoom buttons and a reset, a rotate button, a ⋯ menu, a delete button with confirmation. Then add the gesture as a shortcut for the same action.</li>
+<li><strong>Pinch only inside a focused surface.</strong> Lightbox, map, editor canvas. Never a full-bleed image in a scrolling page, because <code>touch-action: none</code> takes over the swipe.</li>
+<li><strong>Set limits that match the content.</strong> For photos, <code>scale: { min: 1, max: 4 }</code> with a low <code>elastic</code>; turn <code>rotate</code> off unless rotation means something.</li>
+<li><strong>Snap to states the user can name.</strong> <code>rotate.snap: 90</code> for orientation, <code>snapToOrigin</code> for a “fit” reset, and show the current zoom as text.</li>
+<li><strong>One press meaning per element.</strong> Do not combine single and double press on the same target.</li>
+<li><strong>Use long press as hold-to-confirm, with progress.</strong> Draw <code>onHold</code> progress, cancel cleanly on early release, and offer a normal confirm dialog as the alternative.</li>
+<li><strong>Hold-to-repeat starts slow.</strong> A short <code>hold</code> before <code>repeat</code>, so a quick tap still changes the value by one, and a text field for big jumps.</li>
+<li><strong>Test with keyboard only.</strong> Tab to every pressable element and press Enter. Check that held-key behaviour matches what you expect rather than assuming.</li>
+<li><strong>Test on a real phone and a trackpad.</strong> Ctrl-wheel on a desktop mouse, Safari on iOS, Android Chrome; confirm the page still scrolls around the gesture surface.</li>
+<li><strong>Tell people once.</strong> A one-line hint (“Pinch or use + / − to zoom”) the first time the surface opens, then get out of the way.</li></ol>
+<pre><code># Paste this to your coding agent
+Add Motion gestures to our image viewer only (the lightbox, not the feed).
+Use pinch() with scale { min: 1, max: 4 }, elastic 0.2, rotate off, and
+a "Fit" button that animates scale, rotate, x and y back to their start.
+Attach it in an effect on a ref and call the returned stop function on cleanup.
+Every gesture needs a visible control that does the same thing:
+  + / − zoom buttons, a Fit button, and the current zoom shown as text.
+For "Delete photo", use press() with hold: 1 and draw onHold progress as a
+ring; keep the normal confirm dialog as the alternative path.
+Keep page scrolling working outside the lightbox. Test keyboard-only,
+iOS Safari and a trackpad, and list anything you could not test.</code></pre>
+<h2>When not to use it</h2>
+<p>Skip pinch when the content is text: let the browser’s own zoom do its job, and never block it. Skip long press and double press for primary actions in a web app that most people will use with a mouse. Use these gestures where they match a physical expectation—photos, maps, canvases, steppers, hold-to-confirm—and treat them as shortcuts layered over controls everyone can see.</p>
+<p>Related on UI Hub: <a href="../motion-that-feels-right/">motion that feels right</a>, <a href="../best-animated-react-component-libraries-2026/">animated React component libraries</a>, and <a href="../accessibility-in-ai-generated-ui/">accessibility in AI-generated UI</a>.</p>""",
+ zh="""<p>从 Framer Motion 演变而来的动画库 Motion，五天内发了两次手势更新。2026 年 11 月 5 日的 <strong>14.10.0</strong> 让 <code>press</code> 学会了计数、按住和连发，一个函数就能覆盖双击、长按和按住不放的步进按钮。11 月 9 日的 <strong>14.11.0</strong> 新增 <code>pinch</code>：双指缩放和旋转；同一天的补丁 14.11.1 让旋转吸附参考松手时的速度，并允许你选择旋转与缩放的支点。对产品团队来说，这补上了过去常要另装一个手势库、或手写一堆 pointer 事件代码的缺口。同时，它也让人很容易做出没人找得到、甚至有些人根本做不出来的交互。</p>
+<h2>这次发了什么</h2>
+<ul><li><strong><code>pinch()</code> 支持四类输入：</strong>两个触点、触控板、带 <code>ctrlKey</code> 的 <code>wheel</code> 事件，以及 Safari 自己的 <code>gesturestart</code>/<code>gesturechange</code>/<code>gestureend</code> 事件。元素围绕两指之间的点缩放和旋转；在触控板上则围绕光标所在位置。</li>
+<li><strong>限制、弹性和吸附都是选项，不用你自己算。</strong><code>scale</code> 和 <code>rotate</code> 接受 <code>min</code>/<code>max</code>；<code>elastic</code>（默认 0.35）控制能越界多远；<code>rotate.snap: 90</code> 会落到最近的 90 度；<code>snapToOrigin</code> 会弹回 1 倍并摆正。<code>origin</code> 可以是指尖位置，也可以是固定点，比如中心。</li>
+<li><strong>和其他手势配合良好。</strong>同一元素加上 <code>drag</code> 时，抬起一根手指会无跳动地接着拖动，而缩放结束时不会被甩飞。pinch 永远不算 press：它会以 <code>success: false</code> 取消正在进行的 press。</li>
+<li><strong><code>press()</code> 新增 <code>count</code>、<code>hold</code> 和 <code>repeat</code>。</strong><code>count: 2</code> 是双击（默认两次间隔 0.3 秒）；<code>hold: 1</code> 是一秒长按，并通过 <code>onHold</code> 给出 0 到 1 的进度；<code>hold</code> 加 <code>repeat</code> 会在按住步进按钮时持续触发 <code>onRepeat</code>。指针移动超过几个像素，长按就会取消，所以滚动不会误触；Motion 还会阻止触屏长按弹出的系统菜单。</li>
+<li><strong><code>press</code> 自带键盘支持。</strong>任何带 press 手势的元素都会变得可聚焦，并响应 Enter。14.10 还给 <code>Reorder</code> 加上了 Home 和 End 键，并为 <code>motion</code> 组件新增 <code>tap</code> 属性。</li></ul>
+<p>pinch 文档展示的是一个普通 JavaScript 函数：接受元素、元素数组或选择器，返回一个停止函数。在 React 组件里，顺手的写法是在 effect 中对 ref 调用它，再把停止函数作为清理函数返回。这是我们对 API 的理解，并不是一个单独的 React 属性，请以你安装版本的文档为准。</p>
+<h2>我们的看法：手势是快捷方式，不是功能本身</h2>
+<p>双指缩放、双击和长按都是看不见的。屏幕上没有任何东西写着「按住我」或「这里用两根手指」，而很多人用的是鼠标、键盘、开关设备或一根手指。WCAG 2.2 早已划好线：成功准则 2.5.1（指针手势，A 级）要求凡是靠多点或路径手势操作的功能，都必须也能用单个指针完成，除非该手势本身不可替代；2.5.7（拖动动作，AA 级）对拖动提出同样要求。所以能上线的形态永远是一对：手势是给熟手的快速通道，旁边还要有一个做完全相同事情的可见控件。</p>
+<p>第二个坑更隐蔽。<code>pinch</code> 会在元素上设置 <code>touch-action: none</code>，让浏览器不再滚动或缩放下面的页面。放在图片查看器里这是对的；放在可滚动信息流里的一张通栏大图上，就意味着从图上开始的单指滑动再也滚不动页面。解决办法是设计决策，而不是改一行代码：只在专注的界面里允许缩放——灯箱、地图、画布——信息流里的媒体保持静态。</p>
+<p>按压的各种变体也需要同样的克制。除非你能接受单击动作变得迟缓或含糊，否则不要在同一个元素上同时叠单击和双击；一个元素只做一件事。长按最适合用来做破坏性操作的「按住确认」：<code>onHold</code> 的进度可以画成一个随按住逐渐填满的圆环，按住这个动作本身就是保险。把唯一的菜单入口藏在长按里则很糟。按住连发应当放在步进按钮上，普通点一下仍然只加一，旁边还要有可以直接输入的字段。</p>
+<h2>上线手势前的清单</h2>
+<ol><li><strong>先写可见控件。</strong>缩放按钮和复位、旋转按钮、⋯ 菜单、带确认的删除按钮。然后再把手势作为同一操作的快捷方式加上去。</li>
+<li><strong>只在专注界面里允许双指缩放。</strong>灯箱、地图、编辑画布。永远不要放在可滚动页面里的通栏图上，因为 <code>touch-action: none</code> 会接管滑动。</li>
+<li><strong>按内容设置限制。</strong>照片用 <code>scale: { min: 1, max: 4 }</code> 和较低的 <code>elastic</code>；除非旋转有意义，否则关掉 <code>rotate</code>。</li>
+<li><strong>吸附到用户说得出名字的状态。</strong>方向用 <code>rotate.snap: 90</code>，「适应窗口」复位用 <code>snapToOrigin</code>，并用文字显示当前缩放比例。</li>
+<li><strong>每个元素只有一种按压含义。</strong>不要在同一目标上同时用单击和双击。</li>
+<li><strong>长按当作带进度的按住确认。</strong>画出 <code>onHold</code> 进度，提前松手要干净地取消，并提供普通的确认对话框作为替代。</li>
+<li><strong>按住连发要慢启动。</strong>在 <code>repeat</code> 之前留一小段 <code>hold</code>，让快速点一下仍然只改变一，大幅调整则提供输入框。</li>
+<li><strong>只用键盘测一遍。</strong>Tab 到每个可按压元素再按 Enter。按住按键时的表现要实际核对，不要想当然。</li>
+<li><strong>在真手机和触控板上测。</strong>桌面鼠标的 Ctrl+滚轮、iOS Safari、安卓 Chrome；确认手势区域周围的页面仍能正常滚动。</li>
+<li><strong>只提示一次。</strong>界面第一次打开时给一句提示（「双指缩放，或用 + / − 缩放」），之后就别再打扰。</li></ol>
+<pre><code># 把这段贴给你的编程智能体
+只给我们的图片查看器（灯箱，不是信息流）加 Motion 手势。
+用 pinch()，scale { min: 1, max: 4 }、elastic 0.2、关闭 rotate，
+另加一个「适应」按钮，把 scale、rotate、x、y 动画回初始值。
+在 effect 里对 ref 挂载，清理时调用返回的停止函数。
+每个手势都要有做同样事情的可见控件：
+  + / − 缩放按钮、「适应」按钮，并用文字显示当前缩放比例。
+「删除照片」用 press()，hold: 1，把 onHold 进度画成圆环；
+保留普通的确认对话框作为替代路径。
+灯箱外的页面滚动必须正常。只用键盘、iOS Safari 和触控板各测一遍，
+列出你没能测试的项目。</code></pre>
+<h2>什么时候别用</h2>
+<p>内容是文字时不要用 pinch：让浏览器自带的缩放去做，永远不要拦截它。在大多数人用鼠标的网页应用里，不要把主要操作交给长按和双击。只在符合物理直觉的地方用这些手势——照片、地图、画布、步进按钮、按住确认——并把它们当作叠在人人都看得见的控件之上的快捷方式。</p>
+<p>UI Hub 相关阅读：<a href="../motion-that-feels-right/">让动效感觉对</a>、<a href="../best-animated-react-component-libraries-2026/">动效 React 组件库</a>，以及<a href="../accessibility-in-ai-generated-ui/">AI 生成界面的无障碍</a>。</p>""",
+ refs=[('Motion changelog (14.10.0 on 5 Nov, 14.11.0 and 14.11.1 on 9 Nov 2026)','Motion','https://motion.dev/changelog'),('CHANGELOG.md','motiondivision/motion on GitHub','https://raw.githubusercontent.com/motiondivision/motion/refs/heads/main/CHANGELOG.md'),('pinch','Motion docs','https://motion.dev/docs/pinch'),('press','Motion docs','https://motion.dev/docs/press'),('Pinch zoom live example','Motion examples','https://examples.motion.dev/js/pinch-zoom'),('Gesture animation (React)','Motion docs','https://motion.dev/docs/react-gestures'),('touch-action','MDN Web Docs','https://developer.mozilla.org/en-US/docs/Web/CSS/touch-action'),('Understanding SC 2.5.1: Pointer Gestures','W3C WAI','https://www.w3.org/WAI/WCAG22/Understanding/pointer-gestures.html'),('Understanding SC 2.5.7: Dragging Movements','W3C WAI','https://www.w3.org/WAI/WCAG22/Understanding/dragging-movements.html')]),
 ]

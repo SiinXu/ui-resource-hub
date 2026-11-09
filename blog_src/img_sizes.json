@@ -403,6 +403,26 @@
     1200,
     630
   ],
+  "motion-pinch-press-gestures-with-fallbacks-1": [
+    1280,
+    800
+  ],
+  "motion-pinch-press-gestures-with-fallbacks-2": [
+    1200,
+    675
+  ],
+  "motion-pinch-press-gestures-with-fallbacks-3": [
+    1280,
+    800
+  ],
+  "motion-pinch-press-gestures-with-fallbacks-4": [
+    1200,
+    675
+  ],
+  "motion-pinch-press-gestures-with-fallbacks-cover": [
+    1200,
+    630
+  ],
   "motion-that-feels-right-1": [
     1200,
     675

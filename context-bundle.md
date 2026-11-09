@@ -135,7 +135,7 @@ curl -s https://ui.incidental.site/api/resources.json | jq --arg d "$(date -u -d
 - `webapp-testing` (engineering-ui): Toolkit for interacting with and testing local web applications using Playwright. Supports verifying frontend functionality, debugging UI behavior, capturing browser screenshots, and viewing browser l — https://github.com/anthropics/skills
 
 ## FAQ
-- **What is UI Hub?** A free, curated directory of 5098 public UI resources: 239 component libraries, 1989 component style demos with light/dark screenshots, 70 design skills for AI agents, plus effects, templates, specs and tutorials. It links to original sites and never hosts paid source code.
+- **What is UI Hub?** A free, curated directory of 5100 public UI resources: 239 component libraries, 1989 component style demos with light/dark screenshots, 70 design skills for AI agents, plus effects, templates, specs and tutorials. It links to original sites and never hosts paid source code.
 - **How do I find a component in a given style?** Load https://ui.incidental.site/api/resources.json and filter by ct (component kind, e.g. "dialog") and vs (visual style, e.g. "minimal" or "motion"). type="style" entries are concrete component demos with a libName and page URL; type="library" entries are whole libraries with install info on the site.
 - **Which skills should an agent use for good UI?** One direction skill (frontend-design or taste-skill), emil-design-eng for motion and interaction polish, then impeccable, baseline-ui, web-design-guidelines and accessibility as an audit pass. See https://ui.incidental.site/api/skills.json.
 - **Can I copy the code?** Open-source libraries can be used under their own licenses (MIT, Apache-2.0 etc.); the card shows the original link. Paid tiers (marked paid/freemium) must be bought from the original vendor.
@@ -219,6 +219,8 @@ curl -s https://ui.incidental.site/api/resources.json | jq --arg d "$(date -u -d
 - [Emil Kowalski — Great Animations](https://emilkowal.ski/ui/great-animations)
 - [Material 3 motion](https://m3.material.io/styles/motion/overview)
 - [MDN prefers-reduced-motion](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion)
+- [Transitions.dev](https://transitions.dev)
+- [Kubai physical shockwave (reference only)](https://x.com/Kubai087/status/2119359092334743735)
 
 # Accessibility
 
@@ -410,3 +412,4 @@ curl -s https://ui.incidental.site/api/resources.json | jq --arg d "$(date -u -d
 - Figma’s agent now draws icons as strokes: keep the line weight editable — https://ui.incidental.site/kb/note/blog-figma-agent-vector-strokes-icons.md
 - Cursor Live Apps: get the UI off localhost before the demo dies — https://ui.incidental.site/kb/note/blog-cursor-live-apps-off-localhost.md
 - Twombly: pin comments on the agent’s frames so it iterates on the team’s feedback — https://ui.incidental.site/kb/note/blog-twombly-shared-canvas-team-comments.md
+- Motion’s new pinch and press gestures: ship them with a visible fallback — https://ui.incidental.site/kb/note/blog-motion-pinch-press-gestures-with-fallbacks.md
