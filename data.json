@@ -1,6 +1,6 @@
 {
- "generated": "2026-11-08",
- "count": 5096,
+ "generated": "2026-11-09",
+ "count": 5097,
  "items": [
   {
    "id": "ued-figma-mcp-guide",
@@ -191812,6 +191812,36 @@
    },
    "pub": "2026-11-08",
    "added": "2026-11-08"
+  },
+  {
+   "id": "gh-yusufceng1z-ding",
+   "name": "ding",
+   "url": "https://ding.yusufcengiz.dev",
+   "note": "GitHub 新晋 UI 仓库：Toasts with real spring physics. One toast that morphs in place. No dependencies. React, Svelte and plain DOM.（GitHub ★156，MIT 许可，仓库 YusufCeng1z/ding）",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "GitHub",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Svelte",
+    "开源",
+    "自动收录"
+   ],
+   "ct": [
+    "chat",
+    "motion"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "New GitHub UI repo: Toasts with real spring physics. One toast that morphs in place. No dependencies. React, Svelte and plain DOM. (★156, MIT, YusufCeng1z/ding)",
+   "added": "2026-11-09"
   }
  ],
  "guides": [
@@ -192014,5 +192044,5 @@
    ]
   }
  ],
- "updatedAt": "2026-11-08T18:28Z"
+ "updatedAt": "2026-11-09T06:21Z"
 }
