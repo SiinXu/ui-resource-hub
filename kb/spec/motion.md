@@ -29,7 +29,7 @@ Curated 2026-11-09. Prefer short, purposeful motion; always honour `prefers-redu
 - **Required:** `@media (prefers-reduced-motion: reduce)` → fade or none.
 
 ### Kubai physical shockwave (reference only)
-- Source: https://x.com/Kubai087/status/2119359092334743735 (author 枯白啟设计（@Kubai087）, 2026-11-08).
+- Source: https://x.com/Kubai087/status/2119359092334743735 (author 枯白啃设计（@Kubai087）, 2026-11-08).
 - Six layers: page snapshot, lens warp, RGB channel split ±8%, four color rings, edge refraction, edge-line specular.
 - Palette names: Aurora / Halo / Frost / Spark (hex only if verified from the post; this entry stores none).
 - **License:** reference only — **no code license**; do not copy source or prompts into production without separate rights.

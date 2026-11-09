@@ -846,7 +846,7 @@
    "ued-x-designer-workflow": "プロダクト文脈 → Mobbin + Paper／Claude Code で試作 → Figma コンポーネントを Storybook へ → エージェントで審査",
    "ued-x-cc-design-system": "トークン・基礎コンポーネント・バリアント・状態・レスポンシブ・アクセシビリティ",
    "ued-transitions-dev-craft": "Jakub Antalik の UI トランジションライブラリとエージェントツール。サイトに 43+ の精巧な遷移（サイト自体はほぼグレースケール。未確認のブランド／アクセント hex は載せない）。無料 Skill は 27+ のコア（npx skills add Jakubantalik/transitions.dev、ツールは MIT）。Pro（約 $12/月）で React/TS レシピと Pro Skill。Pro コードはコピーせずリンクのみ。無料の transitions-agent はローカル採点（MIT）。Builder MCP は Pro/Business 要。向く用途：ダイアログ開閉、パネル表示、ページ切替、成功チェック。避ける：全画面エフェクト、本文の可読性妨害、頻出操作への多重装飾。必須：prefers-reduced-motion でフェードまたは無効。ライセンス：製品内の個人／商用は無制限。ライブラリ自体の再配布禁止。Pro は https://transitions.dev/pro.html へのリンクのみ。",
-   "ued-kubai-shockwave-ref": "X の参考（作者 枯白啟设计 @Kubai087、投稿 2119359092334743735、2026-11-08）。6 層：ページスナップショット、レンズ歪み、RGB チャンネル分離 ±8%、4 本の色環、縁の屈折、縁ラインの反射。配色名 Aurora / Halo / Frost / Spark（未確認 hex は載せない）。参考のみ・コード許可なし（ソースをコピーしない）。向く用途：稀な完了フィードバック、LP ヒーローの一拍。避ける：長文ページ、頻出フォーム、アクセシビリティ優先 UI、全画面ループ。弱める動き：prefers-reduced-motion ではその場で半強度のフェードイン／アウト、600ms。"
+   "ued-kubai-shockwave-ref": "X の参考（作者 枯白啃设计 @Kubai087、投稿 2119359092334743735、2026-11-08）。6 層：ページスナップショット、レンズ歪み、RGB チャンネル分離 ±8%、4 本の色環、縁の屈折、縁ラインの反射。配色名 Aurora / Halo / Frost / Spark（未確認 hex は載せない）。参考のみ・コード許可なし（ソースをコピーしない）。向く用途：稀な完了フィードバック、LP ヒーローの一拍。避ける：長文ページ、頻出フォーム、アクセシビリティ優先 UI、全画面ループ。弱める動き：prefers-reduced-motion ではその場で半強度のフェードイン／アウト、600ms。"
   },
   "ko": {
    "www-beautifului-dev": "엄선한 예쁜 AI 인터페이스 컴포넌트",
