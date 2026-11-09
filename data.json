@@ -1,6 +1,6 @@
 {
  "generated": "2026-11-09",
- "count": 5100,
+ "count": 5102,
  "items": [
   {
    "id": "ued-transitions-dev-craft",
@@ -191951,6 +191951,104 @@
    },
    "pub": "2026-11-08",
    "added": "2026-11-09"
+  },
+  {
+   "id": "rd-daymzqf-mascot-logo-collection",
+   "name": "Mascot Logo Collection",
+   "url": "https://x.com/ktnr23/status/2119836751770288537",
+   "note": "Eight bold, flat mascot logo marks featuring whimsical characters including ghosts, cats, and creatures, rendered in white on black with a playful illustrative style.",
+   "noteEn": "Eight bold, flat mascot logo marks featuring whimsical characters including ghosts, cats, and creatures, rendered in white on black with a playful illustrative style.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@ktnr23",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "playful"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/daymzqf-mascot-logo-collection",
+   "rdkind": "Design",
+   "rdcat": "Branding",
+   "rdstyle": [
+    "Geometric",
+    "Playful",
+    "Illustrative",
+    "Black & White"
+   ],
+   "author": {
+    "name": "Katya N.",
+    "handle": "@ktnr23",
+    "url": "https://x.com/ktnr23"
+   },
+   "x_post": "https://x.com/ktnr23/status/2119836751770288537",
+   "xsrc": {
+    "post": "https://x.com/ktnr23/status/2119836751770288537",
+    "author": "@ktnr23",
+    "likes": 169,
+    "bookmarks": 79,
+    "reposts": 3,
+    "impressions": 3634,
+    "date": "2026-11-09"
+   },
+   "pub": "2026-11-09",
+   "added": "2026-11-09"
+  },
+  {
+   "id": "rd-xj080k0-banking-app-work-hours",
+   "name": "Banking App Work Hours",
+   "url": "https://x.com/uxuisavitskiy/status/2119720404960903540",
+   "note": "A banking app concept that converts spending into work hours, showing each category as a swipeable dark card with a colored gradient and hour count alongside the euro amount.",
+   "noteEn": "A banking app concept that converts spending into work hours, showing each category as a swipeable dark card with a colored gradient and hour count alongside the euro amount.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@uxuisavitskiy",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal",
+    "gradient"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/xj080k0-banking-app-work-hours",
+   "rdkind": "Design",
+   "rdcat": "Interface",
+   "rdstyle": [
+    "Minimal",
+    "Dark",
+    "Gradient"
+   ],
+   "author": {
+    "name": "Anton Savitskiy",
+    "handle": "@uxuisavitskiy",
+    "url": "https://x.com/uxuisavitskiy"
+   },
+   "x_post": "https://x.com/uxuisavitskiy/status/2119720404960903540",
+   "xsrc": {
+    "post": "https://x.com/uxuisavitskiy/status/2119720404960903540",
+    "author": "@uxuisavitskiy",
+    "likes": 472,
+    "bookmarks": 470,
+    "reposts": 16,
+    "impressions": 20670,
+    "date": "2026-11-09"
+   },
+   "pub": "2026-11-09",
+   "added": "2026-11-09"
   }
  ],
  "guides": [
@@ -192153,5 +192251,5 @@
    ]
   }
  ],
- "updatedAt": "2026-11-09T08:38Z"
+ "updatedAt": "2026-11-09T23:08Z"
 }
