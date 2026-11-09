@@ -41,7 +41,7 @@ SPECS = [
 - **Performance:** animate `transform` and `opacity`; avoid animating layout properties.
 - **Reduced motion:** `@media (prefers-reduced-motion: reduce)` swaps movement for fades or nothing.
 - **One hero effect per page** (beam, spotlight, marquee). Stacking effects looks like a template.
-""",[('Emil Kowalski — Great Animations','https://emilkowal.ski/ui/great-animations'),('Material 3 motion','https://m3.material.io/styles/motion/overview'),('MDN prefers-reduced-motion','https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion')]),
+""",[('Emil Kowalski — Great Animations','https://emilkowal.ski/ui/great-animations'),('Material 3 motion','https://m3.material.io/styles/motion/overview'),('MDN prefers-reduced-motion','https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion'),('Transitions.dev','https://transitions.dev'),('Kubai physical shockwave (reference only)','https://x.com/Kubai087/status/2119359092334743735')]),
 ('accessibility','Accessibility','Semantic HTML, visible focus, names for icon buttons, 24px targets, keyboard dialogs, WCAG 2.2 AA.',['a11y'],"""
 ## Checklist
 - Real `<button>`, `<a href>`, `<label>`; headings in order (one h1).

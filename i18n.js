@@ -371,3 +371,9 @@ var SO=window.UI_SEC_ORDER=window.UI_SEC_ORDER||[],K='整站灵感 · Awwwards �
 Object.keys(A).forEach(function(l){var d=window.UI_I18N[l];if(!d)return;for(var k in A[l])if(d[k]==null)d[k]=A[l][k];if(d['sec_'+n]==null)d['sec_'+n]=A[l].sec_aw})})();
 /* 2026-10-26: pricing / subscription plan cards as a component kind (after card) */
 (function(W){var O=W.UI_CT_ORDER;if(O&&O.indexOf('pricing')<0)O.splice(O.indexOf('card')+1,0,'pricing');var I=W.UI_I18N,T={'zh-CN':'订阅定价卡','zh-TW':'訂閱定價卡',en:'Pricing & plans',ja:'料金プラン',ko:'가격·요금제',ms:'Harga & pelan',vi:'Bảng giá & gói',fr:'Tarifs & offres',es:'Precios y planes',de:'Preise & Tarife'};for(var l in T)if(I[l])I[l].ct_pricing=T[l]})(window);
+/* craft-motion-q：质感动效 */
+(function(){
+var SO=window.UI_SEC_ORDER=window.UI_SEC_ORDER||[],K='质感动效 · 新增',n=SO.indexOf(K);if(n<0)n=SO.push(K)-1;
+var A={"zh-CN": "质感动效 · 新增", "zh-TW": "質感動效 · 新增", "en": "Craft motion · new", "ja": "質感モーション・新着", "ko": "질감 모션 · 신규", "ms": "Animasi berkualiti · baharu", "vi": "Chuyển động chất cảm · mới", "es": "Motion con craft · nuevo", "de": "Craft-Motion · neu", "fr": "Motion craft · nouveau"};
+Object.keys(A).forEach(function(l){var d=window.UI_I18N[l];if(!d)return;if(d['sec_'+n]==null)d['sec_'+n]=A[l];});
+})();

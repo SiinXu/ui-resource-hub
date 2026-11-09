@@ -420,7 +420,9 @@
    "ued-x-indie-ui": "Three steps: find references → set the framework → polish details (consistent icons), with icon sites",
    "ued-x-design-eng-stack": "Explains to designers and PMs what React, Next, TS and Prisma each do",
    "ued-x-designer-workflow": "Product context → Mobbin + Paper/Claude Code prototypes → Figma components into Storybook → agent review",
-   "ued-x-cc-design-system": "Tokens, base components, variants, states, responsiveness and accessibility"
+   "ued-x-cc-design-system": "Tokens, base components, variants, states, responsiveness and accessibility",
+   "ued-transitions-dev-craft": "Jakub Antalik’s UI transition library and agent tooling: 43+ crafted transitions on the site (the site itself is largely grayscale — this entry does not invent brand/accent hex values); free Skill covers 27+ core snippets (npx skills add Jakubantalik/transitions.dev; tooling MIT); Pro (~$12/mo) unlocks full-library React/TS recipes and the Pro Skill—do not copy Pro code, link only; free transitions-agent scores locally (MIT); Builder MCP needs Pro/Business. Use for: dialog open, panel reveal, page switch, success check. Avoid: full-screen effects, stealing focus from reading, stacking decoration on frequent controls. Required: prefers-reduced-motion → fade or none. License: unlimited personal/commercial use in your products; do not redistribute the library as a competing pack; Pro: https://transitions.dev/pro.html only as a link.",
+   "ued-kubai-shockwave-ref": "X reference (author Kubai @Kubai087, post 2119359092334743735, 2026-11-08). Six layers: page snapshot, lens warp, RGB channel split ±8%, four color rings, edge refraction, edge-line specular; palette names Aurora / Halo / Frost / Spark (hex only if verified from the post — this entry stores none). Reference only — no code license; do not copy source. Use for: rare completion feedback, a single landing-page hero beat. Avoid: long reading pages, frequent form actions, a11y-first UI, looping full-screen. Reduced motion: in-place half-strength fade in/out, 600ms."
   },
   "ja": {
    "www-beautifului-dev": "厳選された美しい AI インターフェースのコンポーネント",
@@ -842,7 +844,9 @@
    "ued-x-indie-ui": "参考探し → 枠組み決め → 細部の詰め（アイコン統一）の 3 ステップ。アイコンサイト付き",
    "ued-x-design-eng-stack": "デザイナーと PM 向けに React・Next・TS・Prisma の役割を解説",
    "ued-x-designer-workflow": "プロダクト文脈 → Mobbin + Paper／Claude Code で試作 → Figma コンポーネントを Storybook へ → エージェントで審査",
-   "ued-x-cc-design-system": "トークン・基礎コンポーネント・バリアント・状態・レスポンシブ・アクセシビリティ"
+   "ued-x-cc-design-system": "トークン・基礎コンポーネント・バリアント・状態・レスポンシブ・アクセシビリティ",
+   "ued-transitions-dev-craft": "Jakub Antalik の UI トランジションライブラリとエージェントツール。サイトに 43+ の精巧な遷移（サイト自体はほぼグレースケール。未確認のブランド／アクセント hex は載せない）。無料 Skill は 27+ のコア（npx skills add Jakubantalik/transitions.dev、ツールは MIT）。Pro（約 $12/月）で React/TS レシピと Pro Skill。Pro コードはコピーせずリンクのみ。無料の transitions-agent はローカル採点（MIT）。Builder MCP は Pro/Business 要。向く用途：ダイアログ開閉、パネル表示、ページ切替、成功チェック。避ける：全画面エフェクト、本文の可読性妨害、頻出操作への多重装飾。必須：prefers-reduced-motion でフェードまたは無効。ライセンス：製品内の個人／商用は無制限。ライブラリ自体の再配布禁止。Pro は https://transitions.dev/pro.html へのリンクのみ。",
+   "ued-kubai-shockwave-ref": "X の参考（作者 枯白啟设计 @Kubai087、投稿 2119359092334743735、2026-11-08）。6 層：ページスナップショット、レンズ歪み、RGB チャンネル分離 ±8%、4 本の色環、縁の屈折、縁ラインの反射。配色名 Aurora / Halo / Frost / Spark（未確認 hex は載せない）。参考のみ・コード許可なし（ソースをコピーしない）。向く用途：稀な完了フィードバック、LP ヒーローの一拍。避ける：長文ページ、頻出フォーム、アクセシビリティ優先 UI、全画面ループ。弱める動き：prefers-reduced-motion ではその場で半強度のフェードイン／アウト、600ms。"
   },
   "ko": {
    "www-beautifului-dev": "엄선한 예쁜 AI 인터페이스 컴포넌트",
@@ -1264,7 +1268,9 @@
    "ued-x-indie-ui": "레퍼런스 찾기 → 틀 잡기 → 디테일(아이콘 통일) 3단계, 아이콘 사이트 포함",
    "ued-x-design-eng-stack": "디자이너·PM에게 React, Next, TS, Prisma 역할 설명",
    "ued-x-designer-workflow": "제품 맥락 → Mobbin + Paper/Claude Code 프로토타입 → Figma 컴포넌트를 Storybook으로 → 에이전트 리뷰",
-   "ued-x-cc-design-system": "토큰, 기본 컴포넌트, 변형, 상태, 반응형, 접근성"
+   "ued-x-cc-design-system": "토큰, 기본 컴포넌트, 변형, 상태, 반응형, 접근성",
+   "ued-transitions-dev-craft": "Jakub Antalik의 UI 전환 라이브러리와 에이전트 도구. 사이트에 43+ 정교한 전환(사이트 자체는 대체로 그레이스케일 — 확인되지 않은 브랜드/액센트 hex는 수록하지 않음). 무료 Skill은 27+ 코어(npx skills add Jakubantalik/transitions.dev, 도구 MIT). Pro(약 $12/월)는 전체 라이브러리 React/TS 레시피와 Pro Skill—Pro 코드는 복사하지 말고 링크만. 무료 transitions-agent는 로컬 채점(MIT). Builder MCP는 Pro/Business 필요. 적합: 대화상자 열기, 패널 표시, 페이지 전환, 성공 체크. 피함: 전체 화면 효과, 가독성 방해, 자주 쓰는 컨트롤에 장식 중첩. 필수: prefers-reduced-motion → 페이드 또는 끄기. 라이선스: 제품 내 개인/상업 무제한. 라이브러리 자체 재배포 금지. Pro는 https://transitions.dev/pro.html 링크만.",
+   "ued-kubai-shockwave-ref": "X 참고(저자 Kubai @Kubai087, 게시물 2119359092334743735, 2026-11-08). 6층: 페이지 스냅샷, 렌즈 왜곡, RGB 채널 분리 ±8%, 네 색 고리, 가장자리 굴절, 테두리 반사. 배색명 Aurora / Halo / Frost / Spark(확인되지 않은 hex는 수록하지 않음). 참고 전용·코드 라이선스 없음(소스 복사 금지). 적합: 드문 완료 피드백, 랜딩 히어로 한 박자. 피함: 긴 읽기 페이지, 잦은 폼, 접근성 우선 UI, 전체 화면 루프. 감소 모션: prefers-reduced-motion에서는 제자리 반강도 페이드 인/아웃, 600ms."
   },
   "ms": {
    "www-beautifului-dev": "Pilihan komponen antara muka AI yang cantik",
@@ -1686,7 +1692,9 @@
    "ued-x-indie-ui": "Tiga langkah: cari rujukan → tetapkan rangka → kemas butiran (ikon seragam), dengan laman ikon",
    "ued-x-design-eng-stack": "Terangkan kepada pereka dan PM fungsi React, Next, TS dan Prisma",
    "ued-x-designer-workflow": "Konteks produk → prototaip Mobbin + Paper/Claude Code → komponen Figma ke Storybook → semakan ejen",
-   "ued-x-cc-design-system": "Token, komponen asas, varian, keadaan, responsif dan kebolehcapaian"
+   "ued-x-cc-design-system": "Token, komponen asas, varian, keadaan, responsif dan kebolehcapaian",
+   "ued-transitions-dev-craft": "Perpustakaan peralihan UI dan alatan ejen Jakub Antalik: 43+ peralihan di tapak (tapak sendiri kebanyakan skala kelabu — entri ini tidak mencipta nilai hex jenama/aksen); Skill percuma ~27+ teras (npx skills add Jakubantalik/transitions.dev; alatan MIT); Pro (~$12/bln) buka resipi React/TS penuh dan Pro Skill—jangan salin kod Pro, pautan sahaja; transitions-agent percuma skor tempatan (MIT); Builder MCP perlu Pro/Business. Sesuai: buka dialog, panel, tukar halaman, tanda berjaya. Elak: kesan skrin penuh, ganggu bacaan, hiasan bertindan pada kawalan kerap. Wajib: prefers-reduced-motion → pudar atau tiada. Lesen: guna tanpa had dalam produk; jangan edar semula pustaka; Pro: pautan https://transitions.dev/pro.html sahaja.",
+   "ued-kubai-shockwave-ref": "Rujukan X (pengarang Kubai @Kubai087, siaran 2119359092334743735, 2026-11-08). Enam lapisan: petikan halaman, herotan kanta, pisahan saluran RGB ±8%, empat gelang warna, pembiasan tepi, kilauan garis tepi; nama palet Aurora / Halo / Frost / Spark (tiada hex yang tidak disahkan). Rujukan sahaja — tiada lesen kod; jangan salin sumber. Sesuai: maklum balas siap yang jarang, satu beat hero landing. Elak: halaman bacaan panjang, tindakan borang kerap, UI utamakan a11y, gelung skrin penuh. Gerak dikurangkan: prefers-reduced-motion → pudar masuk/keluar separuh kekuatan di tempat, 600ms."
   },
   "es": {
    "www-beautifului-dev": "Una selección de componentes bonitos para interfaces de IA",
@@ -2108,7 +2116,9 @@
    "ued-x-indie-ui": "Tres pasos: buscar referencias → fijar la estructura → pulir detalles (iconos coherentes), con webs de iconos",
    "ued-x-design-eng-stack": "Explica a diseñadores y PM qué hace React, Next, TS y Prisma",
    "ued-x-designer-workflow": "Contexto de producto → prototipos con Mobbin + Paper/Claude Code → componentes de Figma a Storybook → revisión por agente",
-   "ued-x-cc-design-system": "Tokens, componentes base, variantes, estados, responsive y accesibilidad"
+   "ued-x-cc-design-system": "Tokens, componentes base, variantes, estados, responsive y accesibilidad",
+   "ued-transitions-dev-craft": "Biblioteca de transiciones UI y herramientas de agente de Jakub Antalik: 43+ en el sitio (el sitio es en gran parte escala de grises — esta ficha no inventa hex de marca/acento); Skill gratis ~27+ núcleo (npx skills add Jakubantalik/transitions.dev; tooling MIT); Pro (~12 USD/mes) abre recetas React/TS y Pro Skill—no copiar código Pro, solo enlace; transitions-agent gratis puntúa en local (MIT); Builder MCP requiere Pro/Business. Sirve para: abrir diálogo, revelar panel, cambiar página, check de éxito. Evitar: efectos a pantalla completa, restar legibilidad, decorar controles frecuentes. Obligatorio: prefers-reduced-motion → fundido o nada. Licencia: uso ilimitado en tus productos; no redistribuir la biblioteca; Pro solo enlace https://transitions.dev/pro.html.",
+   "ued-kubai-shockwave-ref": "Referencia en X (autor Kubai @Kubai087, post 2119359092334743735, 2026-11-08). Seis capas: instantánea de página, distorsión de lente, separación RGB ±8%, cuatro anillos de color, refracción de borde, brillo de línea; nombres de paleta Aurora / Halo / Frost / Spark (sin hex no verificados). Solo referencia — sin licencia de código; no copiar fuente. Sirve para: feedback raro de finalización, un beat de hero en landing. Evitar: páginas de lectura largas, formularios frecuentes, UI a11y-first, bucle a pantalla completa. Movimiento reducido: con prefers-reduced-motion, fundido in-place a media intensidad, 600ms."
   },
   "de": {
    "www-beautifului-dev": "Eine Auswahl schöner Komponenten für KI-Oberflächen",
@@ -2530,7 +2540,9 @@
    "ued-x-indie-ui": "Drei Schritte: Referenzen finden → Gerüst festlegen → Details schleifen (einheitliche Icons), mit Icon-Seiten",
    "ued-x-design-eng-stack": "Erklärt Designern und PMs, wofür React, Next, TS und Prisma da sind",
    "ued-x-designer-workflow": "Produktkontext → Prototypen mit Mobbin + Paper/Claude Code → Figma-Komponenten in Storybook → Agent-Review",
-   "ued-x-cc-design-system": "Tokens, Basiskomponenten, Varianten, Zustände, Responsiveness und Barrierefreiheit"
+   "ued-x-cc-design-system": "Tokens, Basiskomponenten, Varianten, Zustände, Responsiveness und Barrierefreiheit",
+   "ued-transitions-dev-craft": "UI-Transitions-Bibliothek und Agent-Tools von Jakub Antalik: 43+ Transitionen auf der Site (die Site selbst ist weitgehend Graustufen — kein erfundener Marken-/Akzent-Hex); Free Skill ~27+ Kernsnippets (npx skills add Jakubantalik/transitions.dev; Tooling MIT); Pro (~12 $/Monat) freischaltet React/TS-Rezepte und Pro Skill—Pro-Code nicht kopieren, nur verlinken; kostenloser transitions-agent bewertet lokal (MIT); Builder-MCP braucht Pro/Business. Geeignet: Dialog öffnen, Panel zeigen, Seitenwechsel, Erfolgshaken. Vermeiden: Vollbildeffekte, Lesbarkeit stören, Deko auf häufigen Controls stapeln. Pflicht: prefers-reduced-motion → Fade oder aus. Lizenz: unbegrenzt in eigenen Produkten; Bibliothek nicht als Paket weiterverkaufen; Pro nur Link https://transitions.dev/pro.html.",
+   "ued-kubai-shockwave-ref": "X-Referenz (Autor Kubai @Kubai087, Post 2119359092334743735, 2026-11-08). Sechs Schichten: Seiten-Snapshot, Linsenverzerrung, RGB-Kanaltrennung ±8%, vier Farbringe, Kantenbrechung, Kantenlinie-Specular; Palettennamen Aurora / Halo / Frost / Spark (keine unbestätigten Hex-Werte). Nur Referenz — keine Code-Lizenz; Quelle nicht kopieren. Geeignet: seltene Abschluss-Rückmeldung, ein Landing-Hero-Beat. Vermeiden: lange Leseseiten, häufige Formularaktionen, a11y-first UI, Vollbild-Loop. Reduzierte Bewegung: bei prefers-reduced-motion vor Ort halb starke Ein-/Ausblendung, 600ms."
   },
   "fr": {
    "www-beautifului-dev": "Une sélection de beaux composants pour interfaces d’IA",
@@ -2952,7 +2964,9 @@
    "ued-x-indie-ui": "Trois étapes : trouver des références → poser la structure → peaufiner (icônes cohérentes), avec sites d’icônes",
    "ued-x-design-eng-stack": "Explique aux designers et PM le rôle de React, Next, TS et Prisma",
    "ued-x-designer-workflow": "Contexte produit → prototypes Mobbin + Paper/Claude Code → composants Figma dans Storybook → revue par agent",
-   "ued-x-cc-design-system": "Tokens, composants de base, variantes, états, responsive et accessibilité"
+   "ued-x-cc-design-system": "Tokens, composants de base, variantes, états, responsive et accessibilité",
+   "ued-transitions-dev-craft": "Bibliothèque de transitions UI et outils d’agent de Jakub Antalik : 43+ sur le site (le site est surtout en niveaux de gris — cette fiche n’invente pas de hex marque/accent) ; Skill gratuit ~27+ extraits (npx skills add Jakubantalik/transitions.dev ; outillage MIT) ; Pro (~12 $/mois) débloque recettes React/TS et Pro Skill — ne pas copier le code Pro, lien seul ; transitions-agent gratuit note en local (MIT) ; Builder MCP exige Pro/Business. Bon pour : ouvrir une boîte de dialogue, révéler un panneau, changer de page, coche de succès. À éviter : effets plein écran, nuire à la lecture, empiler du décor sur des contrôles fréquents. Obligatoire : prefers-reduced-motion → fondu ou rien. Licence : usage illimité dans vos produits ; ne pas redistribuer la bibliothèque ; Pro : lien https://transitions.dev/pro.html uniquement.",
+   "ued-kubai-shockwave-ref": "Référence X (auteur Kubai @Kubai087, post 2119359092334743735, 2026-11-08). Six couches : instantané de page, distorsion de lentille, séparation RVB ±8 %, quatre anneaux de couleur, réfraction de bord, reflet de ligne ; noms de palettes Aurora / Halo / Frost / Spark (pas d’hex non vérifié). Référence seule — pas de licence code ; ne pas copier la source. Bon pour : feedback rare de fin, un beat de hero landing. À éviter : longues pages de lecture, actions de formulaire fréquentes, UI a11y d’abord, boucle plein écran. Mouvement réduit : sous prefers-reduced-motion, fondu sur place à demi-intensité, 600ms."
   },
   "vi": {
    "ued-figma-mcp-guide": "Hướng dẫn cấu hình MCP chính thức của Figma, kèm các skill như figma-create-design-system-rules để ghi quy tắc thiết kế vào CLAUDE.md, AGENTS.md hoặc .cursor/rules",
@@ -3407,7 +3421,9 @@
    "gh-panel-ui-panelui": "Repo UI mới trên GitHub: component React Native và React hiệu năng cao. (★806, MIT, panel-ui/PanelUI)",
    "gh-deeplethe-solid-glass": "Repo UI mới trên GitHub: hệ thống thiết kế cho ứng dụng AI. Chất liệu, vật lý, xúc giác, kỹ thuật. (★724, MIT, deeplethe/solid-glass)",
    "gh-theorcdev-shadscan": "Repo UI mới trên GitHub: audit UI mang tính tất định cho ứng dụng shadcn, dành cho terminal, CI và agent AI của bạn. (★553, MIT, TheOrcDev/shadscan)",
-   "gh-keyline-icons-keyline-icons": "Repo UI mới trên GitHub: 1.435 icon MIT miễn phí với các kiểu nét, hai tông, duotone và tô đặc, bo tròn hoặc vuông: 11.480 SVG trên cùng lưới 24×24. Xây cho shadcn/ui. (★162, MIT, keyline-icons/keyline-icons)"
+   "gh-keyline-icons-keyline-icons": "Repo UI mới trên GitHub: 1.435 icon MIT miễn phí với các kiểu nét, hai tông, duotone và tô đặc, bo tròn hoặc vuông: 11.480 SVG trên cùng lưới 24×24. Xây cho shadcn/ui. (★162, MIT, keyline-icons/keyline-icons)",
+   "ued-transitions-dev-craft": "Thư viện chuyển động UI và công cụ agent của Jakub Antalik: 43+ chuyển cảnh trên site; Skill miễn phí ~27+ lõi (npx skills add Jakubantalik/transitions.dev; tooling MIT); Pro (~12$/tháng) mở công thức React/TS và Pro Skill — không sao chép mã Pro, chỉ liên kết; transitions-agent miễn phí chấm điểm cục bộ (MIT); Builder MCP cần Pro/Business. Phù hợp: mở hộp thoại, hiện panel, đổi trang, dấu thành công. Tránh: hiệu ứng toàn màn hình, làm giảm khả năng đọc, chồng trang trí lên điều khiển thường dùng. Bắt buộc: prefers-reduced-motion → mờ dần hoặc tắt. Giấy phép: dùng không giới hạn trong sản phẩm; không tái phân phối thư viện; Pro chỉ liên kết https://transitions.dev/pro.html.",
+   "ued-kubai-shockwave-ref": "Tham chiếu X (tác giả Kubai @Kubai087, bài 2119359092334743735, 2026-11-08). Sáu lớp: ảnh chụp trang, biến dạng thấu kính, tách kênh RGB ±8%, bốn vòng màu, khúc xạ cạnh, phản chiếu đường viền; tên bảng màu Aurora / Halo / Frost / Spark (không ghi hex chưa xác minh). Chỉ tham khảo — không có giấy phép mã; không sao chép nguồn. Phù hợp: phản hồi hoàn thành hiếm, một nhịp hero landing. Tránh: trang đọc dài, form thường xuyên, UI ưu tiên a11y, vòng lặp toàn màn hình. Giảm chuyển động: dưới prefers-reduced-motion, fade tại chỗ nửa cường độ, 600ms."
   }
  },
  "why": {

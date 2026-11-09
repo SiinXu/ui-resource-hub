@@ -10,14 +10,15 @@ def rjs(f, pre):
     s = open(os.path.join(H, f), encoding='utf-8').read(); return json.loads(s[len(pre):].rstrip().rstrip(';'))
 def wjs(f, pre, o): open(os.path.join(H, f), 'w', encoding='utf-8').write(pre + json.dumps(o, ensure_ascii=False) + ';\n')
 ns = {}
-for f in ('items_a.py','items_b.py','items_c.py','items_d.py'): exec(open(os.path.join(U, f), encoding='utf-8').read(), ns)
-NEW = ns['A'] + ns['B'] + ns['C'] + ns['D']
+for f in ('items_a.py','items_b.py','items_c.py','items_d.py','items_q.py'): exec(open(os.path.join(U, f), encoding='utf-8').read(), ns)
+NEW = ns['A'] + ns['B'] + ns['C'] + ns['D'] + ns.get('Q', [])
 SEC = {'S': ('Agent 设计 Skills · 新增', '十一、Agent 设计 Skills（Cursor / Claude Code / Codex）· 2026-10 新增'),
        'D': ('大厂 UED / 设计系统', '十二、大厂 UED 与官方设计系统'),
        'T': ('设计教程', '十三、设计教程：组件体系、token、字体、间距、动效、无障碍'),
        'N': ('组件风格与 Token 规范', '十四、组件风格与规范：token 标准、命名、无障碍硬规范'),
        'I': ('UI 灵感站与素材 · 新增', '十五、UI 灵感站、组件与素材 · 2026-10 新增'),
-       'A': ('AI Coding × 设计', '十六、AI Coding × 设计：工作流、工具、DESIGN.md、课程与资讯')}
+       'A': ('AI Coding × 设计', '十六、AI Coding × 设计：工作流、工具、DESIGN.md、课程与资讯'),
+       'Q': ('质感动效 · 新增', '十七、质感动效（Transitions.dev / 物理冲击波参考）· 2026-11 新增')}
 RT_TAG = {'skill':'Skill','mcp':'MCP','design-md':'DESIGN.md','tokens-spec':'Token','a11y':'无障碍','anti-slop':'去 AI 味','design-system':'大厂规范','motion':'动效'}
 
 d = json.load(open(os.path.join(H, 'data.json'), encoding='utf-8'))

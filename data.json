@@ -1,7 +1,65 @@
 {
  "generated": "2026-11-09",
- "count": 5098,
+ "count": 5100,
  "items": [
+  {
+   "id": "ued-transitions-dev-craft",
+   "name": "Transitions.dev（质感动效）",
+   "url": "https://transitions.dev/skill.html",
+   "note": "Jakub Antalik 的 UI 过渡库与代理工具：站内展示 43+ 精作过渡（站点本身以灰阶为主，本条目不收录未核实的品牌色/强调色 hex）；免费 Skill 约 27+ 核心片段（npx skills add Jakubantalik/transitions.dev，MIT 工具链）；Pro（约 $12/月）解锁完整库的 React/TS 配方与 Pro Skill，不拷贝 Pro 代码仅列链接；另有免费 transitions-agent 本地打分（MIT）与需 Pro/Business 的 Builder MCP。适合：打开弹窗、面板显隐、页面切换、成功勾选等短反馈。不该用：满屏特效、抢读正文、高频控件上叠多重装饰。必须：prefers-reduced-motion 降级为淡入淡出或关闭。许可：可用在无限个人/商业项目，禁止把库本身再打包转售；Pro 部分仅链接 https://transitions.dev/pro.html。",
+   "type": "effect",
+   "section": "质感动效 · 新增",
+   "sectionTitle": "十七、质感动效（Transitions.dev / 物理冲击波参考）· 2026-11 新增",
+   "sectionDesc": "",
+   "source": "Jakub Antalik",
+   "pricing": "freemium",
+   "tags": [
+    "动效",
+    "Skill",
+    "MCP"
+   ],
+   "ct": [
+    "motion"
+   ],
+   "rt": [
+    "motion",
+    "skill",
+    "mcp"
+   ],
+   "vs": [
+    "motion",
+    "minimal"
+   ],
+   "batch": "craft-motion-q"
+  },
+  {
+   "id": "ued-kubai-shockwave-ref",
+   "name": "枯白啟设计 · 物理质感冲击波（参考）",
+   "url": "https://x.com/Kubai087/status/2119359092334743735",
+   "note": "X 参考条（作者 枯白啟设计（@Kubai087），帖 2119359092334743735，2026-11-08）。六层：页面快照、透镜扭曲、RGB 通道分离 ±8%、四道色环、边缘折射、边线反光；配色名 Aurora / Halo / Frost / Spark（色值以原帖为准，本条目不收录未核实 hex）。仅参考，无代码许可——不拷源码。适合：罕见的完成反馈、落地页首屏一次性格调。不该用：阅读页正文、表单高频操作、无障碍优先界面、满屏连放。减弱动效：prefers-reduced-motion 下改为原地半强度淡入淡出，600ms。",
+   "type": "inspiration",
+   "section": "质感动效 · 新增",
+   "sectionTitle": "十七、质感动效（Transitions.dev / 物理冲击波参考）· 2026-11 新增",
+   "sectionDesc": "",
+   "source": "枯白啟设计（@Kubai087）",
+   "pricing": "free",
+   "tags": [
+    "动效",
+    "灵感"
+   ],
+   "ct": [
+    "motion"
+   ],
+   "rt": [
+    "motion",
+    "inspiration"
+   ],
+   "vs": [
+    "motion",
+    "gradient"
+   ],
+   "batch": "craft-motion-q"
+  },
   {
    "id": "ued-figma-mcp-guide",
    "name": "Figma MCP Server Guide（含官方 Skills）",
