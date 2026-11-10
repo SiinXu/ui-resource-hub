@@ -1,6 +1,6 @@
 {
  "generated": "2026-11-10",
- "count": 5103,
+ "count": 5108,
  "items": [
   {
    "id": "ued-transitions-dev-craft",
@@ -192075,6 +192075,251 @@
    ],
    "noteEn": "New GitHub UI repo: 🍭 Lobe MyGo - the UI kit for native Go apps: Lobe UI design language for MyGo, drawn on the GPU in pure Go (★204, MIT, lobehub/lobe-mygo)",
    "added": "2026-11-10"
+  },
+  {
+   "id": "rd-ukxeowa-ai-workspace-login-screen",
+   "name": "Ramp Login Screen",
+   "url": "https://x.com/pontusab/status/2119865335990141433",
+   "note": "Login screen for a Ramp with a dark, organically morphing sand-texture background animation that shifts shape continuously behind the centered sign-in UI.",
+   "noteEn": "Login screen for a Ramp with a dark, organically morphing sand-texture background animation that shifts shape continuously behind the centered sign-in UI.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@pontusab",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/ukxeowa-ai-workspace-login-screen",
+   "rdkind": "Design",
+   "rdcat": "Interface",
+   "rdstyle": [
+    "Textured",
+    "Organic",
+    "Dark"
+   ],
+   "author": {
+    "name": "Pontus Abrahamsson",
+    "handle": "@pontusab",
+    "url": "https://x.com/pontusab"
+   },
+   "x_post": "https://x.com/pontusab/status/2119865335990141433",
+   "xsrc": {
+    "post": "https://x.com/pontusab/status/2119865335990141433",
+    "author": "@pontusab",
+    "likes": 597,
+    "bookmarks": 321,
+    "reposts": 5,
+    "impressions": 24458,
+    "date": "2026-11-09"
+   },
+   "pub": "2026-11-10",
+   "added": "2026-11-10"
+  },
+  {
+   "id": "rd-lrtfzrm-liquid-stepper-interaction",
+   "name": "Liquid Stepper Interaction",
+   "url": "https://x.com/kaolti/status/2119797138276471067",
+   "note": "A checkout stepper where pill-shaped steps merge with a liquid morphing effect, glowing pink to purple to green as each stage is completed.",
+   "noteEn": "A checkout stepper where pill-shaped steps merge with a liquid morphing effect, glowing pink to purple to green as each stage is completed.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@kaolti",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/lrtfzrm-liquid-stepper-interaction",
+   "rdkind": "Design",
+   "rdcat": "Interface",
+   "rdstyle": [
+    "Soft UI",
+    "Dark",
+    "Vibrant",
+    "Neon"
+   ],
+   "author": {
+    "name": "Zsolt Kacso",
+    "handle": "@kaolti",
+    "url": "https://x.com/kaolti"
+   },
+   "x_post": "https://x.com/kaolti/status/2119797138276471067",
+   "xsrc": {
+    "post": "https://x.com/kaolti/status/2119797138276471067",
+    "author": "@kaolti",
+    "likes": 154,
+    "bookmarks": 59,
+    "reposts": 2,
+    "impressions": 4016,
+    "date": "2026-11-09"
+   },
+   "pub": "2026-11-10",
+   "added": "2026-11-10"
+  },
+  {
+   "id": "rd-gk72os6-kinetic-text-motion-studies",
+   "name": "Kinetic Text Motion Studies",
+   "url": "https://x.com/mamunrabbe/status/2119779316238307719",
+   "note": "Four kinetic typography experiments animating dense text bodies, including redacted documents and prose, with words splitting, scattering, and reforming across light backgrounds.",
+   "noteEn": "Four kinetic typography experiments animating dense text bodies, including redacted documents and prose, with words splitting, scattering, and reforming across light backgrounds.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@mamunrabbe",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "motion"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/gk72os6-kinetic-text-motion-studies",
+   "rdkind": "Design",
+   "rdcat": "Motion",
+   "rdstyle": [
+    "Typographic",
+    "Experimental",
+    "Light"
+   ],
+   "author": {
+    "name": "Mamun",
+    "handle": "@mamunrabbe"
+   },
+   "x_post": "https://x.com/mamunrabbe/status/2119779316238307719",
+   "xsrc": {
+    "post": "https://x.com/mamunrabbe/status/2119779316238307719",
+    "author": "@mamunrabbe",
+    "likes": 863,
+    "bookmarks": 484,
+    "reposts": 97,
+    "impressions": 19061,
+    "date": "2026-11-09"
+   },
+   "pub": "2026-11-10",
+   "added": "2026-11-10"
+  },
+  {
+   "id": "rd-k584efx-rare-disease-cluster-explorer",
+   "name": "Rare Disease Cluster Explorer",
+   "url": "https://x.com/nicforey/status/2119850582907535604",
+   "note": "An interactive map of rare disease clusters shown as contour rings, where hovering a node reveals its ORPHA code, similarity score, and shared gene count.",
+   "noteEn": "An interactive map of rare disease clusters shown as contour rings, where hovering a node reveals its ORPHA code, similarity score, and shared gene count.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@nicforey",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/k584efx-rare-disease-cluster-explorer",
+   "rdkind": "Design",
+   "rdcat": "Interface",
+   "rdstyle": [
+    "Minimal",
+    "Light"
+   ],
+   "author": {
+    "name": "nico",
+    "handle": "@nicforey",
+    "url": "https://x.com/nicforey"
+   },
+   "x_post": "https://x.com/nicforey/status/2119850582907535604",
+   "xsrc": {
+    "post": "https://x.com/nicforey/status/2119850582907535604",
+    "author": "@nicforey",
+    "likes": 257,
+    "bookmarks": 150,
+    "reposts": 9,
+    "impressions": 4548,
+    "date": "2026-11-09"
+   },
+   "pub": "2026-11-10",
+   "added": "2026-11-10"
+  },
+  {
+   "id": "rd-0hnbtfz-hex-website-motion",
+   "name": "HEX Website Motion",
+   "url": "https://hex.inc",
+   "note": "Animated website launch film for HEX cycling through illustrative painted scenes including a glowing city vortex, letterform reveals, and a skater figure.",
+   "noteEn": "Animated website launch film for HEX cycling through illustrative painted scenes including a glowing city vortex, letterform reveals, and a skater figure.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@hellohex",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "motion"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "site",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/0hnbtfz-hex-website-motion",
+   "rdkind": "Design",
+   "rdcat": "Motion",
+   "rdstyle": [
+    "Experimental",
+    "Illustrative",
+    "Dark",
+    "Vibrant"
+   ],
+   "author": {
+    "name": "HEX",
+    "handle": "@hellohex",
+    "url": "https://x.com/hellohex"
+   },
+   "x_post": "https://x.com/helloHEX/status/2119927116083159441",
+   "xsrc": {
+    "post": "https://x.com/helloHEX/status/2119927116083159441",
+    "author": "@helloHEX",
+    "likes": 276,
+    "bookmarks": 138,
+    "reposts": 15,
+    "impressions": 20407,
+    "date": "2026-11-09"
+   },
+   "official": "https://hex.inc",
+   "pub": "2026-11-09",
+   "added": "2026-11-10"
   }
  ],
  "guides": [
@@ -192277,5 +192522,5 @@
    ]
   }
  ],
- "updatedAt": "2026-11-10T07:14Z"
+ "updatedAt": "2026-11-10T08:49Z"
 }
