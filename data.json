@@ -1,6 +1,6 @@
 {
  "generated": "2026-11-10",
- "count": 5108,
+ "count": 5110,
  "items": [
   {
    "id": "ued-transitions-dev-craft",
@@ -192320,6 +192320,107 @@
    "official": "https://hex.inc",
    "pub": "2026-11-09",
    "added": "2026-11-10"
+  },
+  {
+   "id": "rd-s153en0-noema-brand-world",
+   "name": "NOEMA Brand World",
+   "url": "https://x.com/fallengrey/status/2120164911942926424",
+   "note": "Brand identity exploration for NOEMA using concentric circle grids, a central starburst mark, soft rendered forms, and oversized typographic compositions on a warm cream palette.",
+   "noteEn": "Brand identity exploration for NOEMA using concentric circle grids, a central starburst mark, soft rendered forms, and oversized typographic compositions on a warm cream palette.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@fallengrey",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/s153en0-noema-brand-world",
+   "rdkind": "Design",
+   "rdcat": "Branding",
+   "rdstyle": [
+    "Typographic",
+    "Geometric",
+    "Minimal",
+    "Light",
+    "Muted"
+   ],
+   "author": {
+    "name": "fallen ⊕",
+    "handle": "@fallengrey",
+    "url": "https://x.com/fallengrey"
+   },
+   "x_post": "https://x.com/fallengrey/status/2120164911942926424",
+   "xsrc": {
+    "post": "https://x.com/fallengrey/status/2120164911942926424",
+    "author": "@fallengrey",
+    "likes": 102,
+    "bookmarks": 48,
+    "reposts": 5,
+    "impressions": 1701,
+    "date": "2026-11-10"
+   },
+   "pub": "2026-11-10",
+   "added": "2026-11-10"
+  },
+  {
+   "id": "rd-o635a0e-research-lab-brand-identity",
+   "name": "Research Lab Brand Identity",
+   "url": "https://x.com/kyleanthony/status/2120161921081176240",
+   "note": "Brand identity system for a fictional research lab using a geometric star mark, monospaced type, halftone textures, and dark gradient posters.",
+   "noteEn": "Brand identity system for a fictional research lab using a geometric star mark, monospaced type, halftone textures, and dark gradient posters.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@kyleanthony",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "gradient"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/o635a0e-research-lab-brand-identity",
+   "rdkind": "Design",
+   "rdcat": "Branding",
+   "rdstyle": [
+    "Typographic",
+    "Geometric",
+    "Experimental",
+    "Textured",
+    "Dark",
+    "Gradient"
+   ],
+   "author": {
+    "name": "Kyle Anthony Miller",
+    "handle": "@kyleanthony",
+    "url": "https://x.com/kyleanthony"
+   },
+   "x_post": "https://x.com/kyleanthony/status/2120161921081176240",
+   "xsrc": {
+    "post": "https://x.com/kyleanthony/status/2120161921081176240",
+    "author": "@kyleanthony",
+    "likes": 268,
+    "bookmarks": 101,
+    "reposts": 1,
+    "impressions": 5167,
+    "date": "2026-11-10"
+   },
+   "pub": "2026-11-10",
+   "added": "2026-11-10"
   }
  ],
  "guides": [
@@ -192522,5 +192623,5 @@
    ]
   }
  ],
- "updatedAt": "2026-11-10T08:49Z"
+ "updatedAt": "2026-11-10T20:35Z"
 }
