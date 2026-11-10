@@ -1,6 +1,6 @@
 {
- "generated": "2026-11-09",
- "count": 5102,
+ "generated": "2026-11-10",
+ "count": 5103,
  "items": [
   {
    "id": "ued-transitions-dev-craft",
@@ -192049,6 +192049,32 @@
    },
    "pub": "2026-11-09",
    "added": "2026-11-09"
+  },
+  {
+   "id": "gh-lobehub-lobe-mygo",
+   "name": "lobe-mygo",
+   "url": "https://mygo.lobehub.com",
+   "note": "GitHub 新晋 UI 仓库：🍭 Lobe MyGo - the UI kit for native Go apps: Lobe UI design language for MyGo, drawn on the GPU in pure Go（GitHub ★204，MIT 许可，仓库 lobehub/lobe-mygo）",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "GitHub",
+   "pricing": "free",
+   "tags": [
+    "HTML",
+    "开源",
+    "自动收录"
+   ],
+   "ct": [],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "New GitHub UI repo: 🍭 Lobe MyGo - the UI kit for native Go apps: Lobe UI design language for MyGo, drawn on the GPU in pure Go (★204, MIT, lobehub/lobe-mygo)",
+   "added": "2026-11-10"
   }
  ],
  "guides": [
@@ -192251,5 +192277,5 @@
    ]
   }
  ],
- "updatedAt": "2026-11-09T23:08Z"
+ "updatedAt": "2026-11-10T07:14Z"
 }
