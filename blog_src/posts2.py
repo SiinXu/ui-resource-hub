@@ -2284,4 +2284,95 @@ iOS Safari and a trackpad, and list anything you could not test.</code></pre>
 <p>内容是文字时不要用 pinch：让浏览器自带的缩放去做，永远不要拦截它。在大多数人用鼠标的网页应用里，不要把主要操作交给长按和双击。只在符合物理直觉的地方用这些手势——照片、地图、画布、步进按钮、按住确认——并把它们当作叠在人人都看得见的控件之上的快捷方式。</p>
 <p>UI Hub 相关阅读：<a href="../motion-that-feels-right/">让动效感觉对</a>、<a href="../best-animated-react-component-libraries-2026/">动效 React 组件库</a>，以及<a href="../accessibility-in-ai-generated-ui/">AI 生成界面的无障碍</a>。</p>""",
  refs=[('Motion changelog (14.10.0 on 5 Nov, 14.11.0 and 14.11.1 on 9 Nov 2026)','Motion','https://motion.dev/changelog'),('CHANGELOG.md','motiondivision/motion on GitHub','https://raw.githubusercontent.com/motiondivision/motion/refs/heads/main/CHANGELOG.md'),('pinch','Motion docs','https://motion.dev/docs/pinch'),('press','Motion docs','https://motion.dev/docs/press'),('Pinch zoom live example','Motion examples','https://examples.motion.dev/js/pinch-zoom'),('Gesture animation (React)','Motion docs','https://motion.dev/docs/react-gestures'),('touch-action','MDN Web Docs','https://developer.mozilla.org/en-US/docs/Web/CSS/touch-action'),('Understanding SC 2.5.1: Pointer Gestures','W3C WAI','https://www.w3.org/WAI/WCAG22/Understanding/pointer-gestures.html'),('Understanding SC 2.5.7: Dragging Movements','W3C WAI','https://www.w3.org/WAI/WCAG22/Understanding/dragging-movements.html')]),
+dict(slug='adobe-max-2026-agents-keep-layers-editable', date='2026-11-10', cat='agents', series=None, featured=True, tags=['Adobe MAX','Firefly Builder','Plan Mode','MCP','design systems'],
+ t=T('Adobe MAX 2026: when agents edit your layered files, file hygiene becomes the interface',
+     'Adobe MAX 2026：当智能体直接改你的分层文件，文件整洁度就成了接口',
+     'Adobe MAX 2026：當智能體直接改你的分層檔案，檔案整潔度就成了介面',
+     'Adobe MAX 2026：エージェントがレイヤー付きファイルを直接編集するなら、ファイルの整理がインターフェースになる',
+     'Adobe MAX 2026: 에이전트가 레이어 파일을 직접 고친다면, 파일 정리가 곧 인터페이스다',
+     'Adobe MAX 2026: apabila ejen mengedit fail berlapis anda, kekemasan fail menjadi antara mukanya',
+     'Adobe MAX 2026: khi agent sửa thẳng tệp nhiều lớp của bạn, sự gọn gàng của tệp trở thành giao diện',
+     'Adobe MAX 2026 : quand des agents modifient vos fichiers à calques, l’hygiène des fichiers devient l’interface',
+     'Adobe MAX 2026: cuando los agentes editan tus archivos con capas, el orden del archivo se vuelve la interfaz',
+     'Adobe MAX 2026: Wenn Agents deine Ebenen-Dateien bearbeiten, wird Dateihygiene zur Schnittstelle'),
+ s=T('At MAX on 10 November 2026 Adobe previewed local MCP integrations that let outside agents change Photoshop, Illustrator, Premiere and After Effects files with layers left editable, added Plan Mode to the Firefly AI Assistant, and put Firefly Builder, a prompt-to-prototype tool, in private beta. What was announced, what is not shipping yet, and a checklist for getting files and brand rules ready for agents.',
+     '2026 年 11 月 10 日的 MAX 大会上，Adobe 预告了本地 MCP 集成：让外部智能体直接修改 Photoshop、Illustrator、Premiere 和 After Effects 文件，图层仍保持可编辑；Firefly AI 助手新增 Plan Mode（计划模式）；提示生成原型的 Firefly Builder 进入私测。这篇梳理发布了什么、哪些还没上线，并给出一份让文件和品牌规则为智能体做好准备的清单。',
+     '2026 年 11 月 10 日的 MAX 大會上，Adobe 預告了本機 MCP 整合：讓外部智能體直接修改 Photoshop、Illustrator、Premiere 和 After Effects 檔案，圖層仍保持可編輯；Firefly AI 助理新增 Plan Mode（計畫模式）；提示產生原型的 Firefly Builder 進入私測。這篇梳理發布了什麼、哪些還沒上線，並給出一份讓檔案和品牌規則為智能體做好準備的清單。',
+     '2026年11月10日のMAXで、Adobeは外部エージェントがPhotoshop・Illustrator・Premiere・After Effectsのファイルをレイヤーを編集可能なまま変更できるローカルMCP連携をプレビューし、Firefly AI AssistantにPlan Modeを追加、プロンプトからプロトタイプを作るFirefly Builderを非公開ベータにした。発表内容、まだ出ていないもの、ファイルとブランドルールをエージェント向けに整えるチェックリスト。',
+     '2026년 11월 10일 MAX에서 Adobe는 외부 에이전트가 레이어를 편집 가능한 상태로 둔 채 Photoshop·Illustrator·Premiere·After Effects 파일을 바꿀 수 있는 로컬 MCP 연동을 미리 공개했고, Firefly AI Assistant에 Plan Mode를 더했으며, 프롬프트로 프로토타입을 만드는 Firefly Builder를 비공개 베타로 내놓았다. 발표 내용, 아직 나오지 않은 것, 파일과 브랜드 규칙을 에이전트용으로 준비하는 체크리스트.',
+     'Di MAX pada 10 November 2026, Adobe mempratonton integrasi MCP tempatan yang membolehkan ejen luar mengubah fail Photoshop, Illustrator, Premiere dan After Effects dengan lapisan kekal boleh diedit, menambah Plan Mode pada Firefly AI Assistant, dan meletakkan Firefly Builder, alat prompt-ke-prototaip, dalam beta tertutup. Apa yang diumumkan, apa yang belum dihantar, dan senarai semak untuk menyediakan fail serta peraturan jenama bagi ejen.',
+     'Tại MAX ngày 10/11/2026, Adobe giới thiệu trước tích hợp MCP cục bộ cho phép agent bên ngoài sửa tệp Photoshop, Illustrator, Premiere và After Effects mà các lớp vẫn chỉnh được, thêm Plan Mode cho Firefly AI Assistant, và đưa Firefly Builder, công cụ biến prompt thành prototype, vào beta kín. Những gì đã công bố, những gì chưa phát hành, và checklist để chuẩn bị tệp cùng quy tắc thương hiệu cho agent.',
+     'À MAX, le 10 novembre 2026, Adobe a présenté en avant-première des intégrations MCP locales qui laissent des agents externes modifier des fichiers Photoshop, Illustrator, Premiere et After Effects en gardant les calques modifiables, a ajouté un Plan Mode à Firefly AI Assistant et ouvert Firefly Builder, un outil prompt-vers-prototype, en bêta privée. Ce qui a été annoncé, ce qui n’est pas encore disponible, et une checklist pour préparer fichiers et règles de marque aux agents.',
+     'En MAX, el 10 de noviembre de 2026, Adobe adelantó integraciones MCP locales que permiten a agentes externos modificar archivos de Photoshop, Illustrator, Premiere y After Effects manteniendo las capas editables, añadió Plan Mode a Firefly AI Assistant y lanzó en beta privada Firefly Builder, una herramienta de prompt a prototipo. Qué se anunció, qué aún no está disponible y una lista para preparar archivos y reglas de marca para agentes.',
+     'Auf der MAX am 10. November 2026 zeigte Adobe lokale MCP-Integrationen, mit denen externe Agents Photoshop-, Illustrator-, Premiere- und After-Effects-Dateien ändern, während die Ebenen bearbeitbar bleiben, ergänzte den Firefly AI Assistant um einen Plan Mode und startete Firefly Builder, ein Prompt-zu-Prototyp-Tool, in der privaten Beta. Was angekündigt wurde, was noch nicht erscheint, und eine Checkliste, um Dateien und Markenregeln für Agents vorzubereiten.'),
+ en="""<p>Adobe opened MAX in Miami Beach on 10 November 2026 with a long list of agent features. Most of them are about Adobe’s own assistant. The one that matters most for designers is about other people’s agents: Adobe previewed <strong>local MCP integrations</strong> that let an outside agent, such as one from OpenAI, Google or Anthropic, make changes directly in Photoshop, Illustrator, Premiere and After Effects project files on your own computer, with layers, vectors, bins and sequences still editable afterwards. That is not shipping yet. Adobe says a private beta starts in early 2027. But it tells you where the work is going, and the preparation is mostly about your files, not about the tools.</p>
+<h2>What was announced</h2>
+<ul><li><strong>Local MCP integrations (preview).</strong> MCP, the Model Context Protocol, is the open standard many assistants use to call outside tools. Adobe’s version runs locally against native project files. Coverage across the announcements is consistent: Photoshop, Illustrator, Premiere and After Effects, edits stay editable, and the agent can chain other MCP tools, for example pulling a brief from Google Docs and posting results to Slack. An Adobe vice president told TechCrunch the company is still deciding which capabilities to expose and will follow how people use it.</li>
+<li><strong>Plan Mode in the Firefly AI Assistant (beta).</strong> You review, edit and approve the agent’s plan before it runs a multi-step task. A Model Selector lets you pick the model or leave it on auto. The assistant can now store preferred formats, colours, brand guidelines, characters and products and apply them to every project.</li>
+<li><strong>Firefly Builder (private beta).</strong> A natural-language tool that turns an idea into an interactive, on-brand prototype of a website, presentation or app, with no code. TechCrunch framed it as Adobe moving into Figma’s territory; Creative Bloq noted Adobe’s claim that it stays on your design system, and said that is the claim to test first.</li>
+<li><strong>Always-on agents (preview).</strong> Agents that keep doing recurring work in the background, such as organising incoming assets, checking quality and preparing channel versions, and come back for your review. Adobe says these arrive in the Firefly AI Assistant first, with no date.</li>
+<li><strong>Brand Intelligence goes into the editors.</strong> Adobe’s brand-checking agent gains Intelligent Reflow, which adapts a design to new sizes and layouts, and is coming to Photoshop, Illustrator and InDesign. Firefly also gets a beta design canvas (Firefly Design) and Firefly Graph for saved, repeatable workflows.</li></ul>
+<h2>Our take: a named layer is now an API</h2>
+<p>When a person opens your file, they can cope with “Layer 47 copy 3”. An agent working through MCP cannot see what you meant; it sees names, groups, artboards, swatches and text frames. If those are tidy, “swap the hero photo on every social size and keep the headline” is one clear instruction. If they are not, the agent will guess, and a wrong guess inside a native file is harder to spot than a bad generated image, because it looks finished. So the first job is boring: name things the way you name components in code, group by function, keep text as live text and brand colours as library swatches.</p>
+<p>The second point is the output contract. “Layers stay editable” is the important promise in this release, and it is also what you should check every time. A tool that flattens a layer, outlines text or rasterises a vector has handed you a picture, not a file. Make “still editable” part of review, next to “looks right”.</p>
+<p>Third, approvals. Plan Mode is the right default for anything multi-step, and it is the same pattern we argued for in <a href="../agent-approval-ui-budgets-interruptions/">approval UI for agents</a>: read the plan, cut the steps you did not ask for, then run. Always-on agents raise the stakes, because nobody is watching when they work. Give them a review queue, never a publish button.</p>
+<p>Finally, Builder. Every prompt-to-prototype tool says it is on-brand; most drift on the first unusual request. Before you trust it, or any rival, run the same small set of awkward prompts and count what leaves your system: new colours, new radii, components you do not have.</p>
+<h2>Checklist: get your files ready for agents</h2>
+<ol><li><strong>Name layers and artboards like components.</strong> “hero/photo”, “hero/headline”, “cta/primary”. No “copy 3”. Group by function, not by when you made it.</li>
+<li><strong>Keep brand rules in one place.</strong> Colours, type and logo rules as library swatches and styles, plus one short written guideline. Load that into the assistant’s preferences instead of retyping it in every prompt.</li>
+<li><strong>Lock what must not change.</strong> Logos, legal text and approved photography on locked layers, and say in the prompt that locked layers are off limits.</li>
+<li><strong>Turn on plan approval.</strong> For multi-step jobs, read the plan first. Reject any step that touches files, layers or channels you did not name.</li>
+<li><strong>Work on a copy, then compare.</strong> Duplicate or version the file before an outside agent edits it, and compare the layer list afterwards: what was added, renamed, flattened or deleted.</li>
+<li><strong>Check that output is still editable.</strong> Live text, vector paths, smart objects and adjustment layers, not a flattened bitmap. Treat a flattened result as a failed run.</li>
+<li><strong>Stress-test “on-brand” claims.</strong> Five awkward prompts (a dense table, an error state, a long German headline, a dark theme, a new component) and count anything off-system.</li>
+<li><strong>Give background agents a queue.</strong> Always-on work lands in a review folder with a daily check, a spending limit and an easy off switch.</li>
+<li><strong>Scope every connection.</strong> Which apps and folders an agent may touch, which MCP tools it may chain, and a log of what it changed.</li></ol>
+<pre><code># Paste this to your design agent (before any MCP edit)
+Work only on the duplicate file I name; never the original.
+Before running, write a numbered plan and wait for my approval.
+Target layers by name. Do not touch locked layers or anything
+named logo/*, legal/*, or approved/*.
+Keep text as live text, vectors as paths, smart objects intact.
+Use only colours and type styles from the linked brand library.
+When done, list every layer you added, renamed, moved, flattened
+or deleted, and anything you could not do.</code></pre>
+<h2>What to do this week</h2>
+<p>Nothing here needs the beta. Pick one real campaign file, clean its names and groups, move its colours into a library, and write the one-page guideline. That file will work better with Adobe’s assistant, with Figma’s agent and with whatever MCP client you use next year. If you already keep tokens for your product UI, point the guideline at them so print, social and product share one source.</p>
+<p>Related on UI Hub: <a href="../lint-agents-onto-your-design-system/">lint agents onto your design system</a>, <a href="../ai-design-tool-shutdowns-keep-work-portable/">keep AI design work portable</a>, and <a href="../design-tokens-for-agents/">design tokens for agents</a>.</p>""",
+ zh="""<p>2026 年 11 月 10 日，Adobe 在迈阿密海滩开幕 MAX 大会，发布了一长串智能体功能。大部分是关于 Adobe 自家助手的；对设计师最重要的一条，却是关于别人家的智能体：Adobe 预告了<strong>本地 MCP 集成</strong>，让外部智能体（比如来自 OpenAI、Google 或 Anthropic 的）直接在你自己电脑上的 Photoshop、Illustrator、Premiere 和 After Effects 项目文件里动手改，改完之后图层、矢量、素材箱和序列依然可编辑。这项功能还没上线，Adobe 说私测要到 2027 年初。但它指明了方向，而要做的准备主要在你的文件上，而不是在工具上。</p>
+<h2>这次发布了什么</h2>
+<ul><li><strong>本地 MCP 集成（预览）。</strong>MCP 即模型上下文协议，是许多 AI 助手调用外部工具的开放标准。Adobe 的版本在本机针对原生项目文件运行。各方报道口径一致：覆盖 Photoshop、Illustrator、Premiere 和 After Effects，改动保持可编辑，智能体还能串联其他 MCP 工具，比如从 Google Docs 拉简报、把结果发到 Slack。一位 Adobe 副总裁对 TechCrunch 表示，公司还在决定开放哪些能力，会根据大家怎么用再调整。</li>
+<li><strong>Firefly AI 助手（测试版）新增 Plan Mode。</strong>智能体执行多步骤任务之前，你可以审阅、修改并批准它的计划。模型选择器让你指定模型或交给自动选择。助手现在还能保存偏好的格式、颜色、品牌规范、角色和产品，并应用到每个项目。</li>
+<li><strong>Firefly Builder（私测）。</strong>用自然语言把想法变成可交互、符合品牌的网站、演示或应用原型，不用写代码。TechCrunch 认为这是 Adobe 进入 Figma 的地盘；Creative Bloq 提到 Adobe 声称它不会偏离你的设计系统，并说这正是最该先测试的说法。</li>
+<li><strong>常驻智能体（预览）。</strong>在后台持续处理重复性工作的智能体，比如整理新进素材、检查质量、准备各渠道版本，再交回给你审核。Adobe 说会先进入 Firefly AI 助手，没有给出日期。</li>
+<li><strong>Brand Intelligence 进入编辑器。</strong>Adobe 的品牌检查智能体新增 Intelligent Reflow，可把设计自动适配到新尺寸和版式，并将进入 Photoshop、Illustrator 和 InDesign。Firefly 还推出测试版设计画布 Firefly Design，以及可保存、可重复运行工作流的 Firefly Graph。</li></ul>
+<h2>我们的看法：一个命名好的图层，现在就是一个 API</h2>
+<p>人打开你的文件，还能忍受「图层 47 拷贝 3」。通过 MCP 工作的智能体看不出你的本意，它看到的是名称、分组、画板、色板和文本框。这些整齐，「把每个社媒尺寸里的主图换掉，标题保持不变」就是一条清楚的指令；不整齐，智能体就只能猜。而在原生文件里猜错，比生成一张坏图更难发现，因为它看起来已经完工了。所以第一件事很枯燥：像给代码组件起名那样给图层起名，按功能分组，文字保持为可编辑文字，品牌色放进库里的色板。</p>
+<p>第二点是输出约定。「图层保持可编辑」是这次发布里最重要的承诺，也是你每次都该检查的东西。工具一旦把图层拼合、把文字转曲、把矢量栅格化，交给你的就是一张图，而不是一个文件。把「仍可编辑」写进审核项，和「看起来对」并列。</p>
+<p>第三是审批。对任何多步骤任务，Plan Mode 都应该是默认设置，这和我们在<a href="../agent-approval-ui-budgets-interruptions/">智能体审批界面</a>一文里主张的模式一样：先读计划，删掉你没要求的步骤，再执行。常驻智能体让风险更高，因为它干活时没人盯着。给它一个审核队列，永远不要给它发布按钮。</p>
+<p>最后是 Builder。每个提示生成原型的工具都说自己符合品牌；大多数在第一个不寻常的请求上就跑偏。在信任它或任何竞品之前，用同一组刁钻的小提示跑一遍，数一数有多少东西跑出了你的设计系统：新颜色、新圆角、你没有的组件。</p>
+<h2>清单：让文件为智能体做好准备</h2>
+<ol><li><strong>像命名组件一样命名图层和画板。</strong>「hero/photo」「hero/headline」「cta/primary」，不要「拷贝 3」。按功能分组，而不是按创建时间。</li>
+<li><strong>品牌规则只放一处。</strong>颜色、字体和 Logo 规则做成库里的色板和样式，再加一份简短的书面规范。把它载入助手的偏好设置，而不是每次在提示里重打。</li>
+<li><strong>锁住不能改的东西。</strong>Logo、法律文字和已批准的摄影图放在锁定图层上，并在提示里写明锁定图层禁止改动。</li>
+<li><strong>打开计划审批。</strong>多步骤任务先读计划。凡是碰到你没点名的文件、图层或渠道的步骤，一律驳回。</li>
+<li><strong>在副本上改，再做对比。</strong>外部智能体动手前先复制或存版本，事后对比图层列表：新增、改名、拼合、删除了什么。</li>
+<li><strong>检查输出是否仍可编辑。</strong>可编辑文字、矢量路径、智能对象和调整图层，而不是一张拼合的位图。拼合结果一律算作失败。</li>
+<li><strong>压力测试「符合品牌」的说法。</strong>五条刁钻提示（密集表格、错误状态、很长的德语标题、深色主题、一个新组件），数出所有超出设计系统的东西。</li>
+<li><strong>给后台智能体一个队列。</strong>常驻任务的产出进审核文件夹，每天检查一次，设消费上限，并且能一键关掉。</li>
+<li><strong>每个连接都要限定范围。</strong>智能体能碰哪些应用和文件夹、能串联哪些 MCP 工具，并记录它改了什么。</li></ol>
+<pre><code># 把这段贴给你的设计智能体（任何 MCP 改动之前）
+只在我指定的副本文件上工作，绝不动原文件。
+执行前先写编号计划，等我批准。
+按名称定位图层。不要碰锁定图层，也不要碰
+logo/*、legal/*、approved/* 开头的任何图层。
+文字保持可编辑，矢量保持路径，智能对象保持完整。
+只使用已链接品牌库里的颜色和文字样式。
+完成后列出你新增、改名、移动、拼合或删除的每个图层，
+以及你没能完成的事项。</code></pre>
+<h2>这周可以做什么</h2>
+<p>以上没有一项需要等测试版。挑一个真实的活动文件，把命名和分组理干净，把颜色挪进库里，写一页规范。这个文件无论配 Adobe 的助手、Figma 的智能体，还是你明年用的任何 MCP 客户端，都会更好用。如果你已经为产品界面维护了 Token，就让这份规范指向它们，让印刷、社媒和产品共用一个来源。</p>
+<p>UI Hub 相关阅读：<a href="../lint-agents-onto-your-design-system/">用 Lint 把智能体约束在设计系统上</a>、<a href="../ai-design-tool-shutdowns-keep-work-portable/">让 AI 设计成果可迁移</a>，以及<a href="../design-tokens-for-agents/">给智能体的设计 Token</a>。</p>""",
+ refs=[('Adobe brings AI agents and new creative tools to Photoshop, Premiere, and Firefly','Ivan Mehta, TechCrunch','https://techcrunch.com/2026/11/10/adobe-adds-more-ai-to-its-products-and-launches-an-mcp/'),('Adobe is going all in on agentic AI','Jess Weatherbed, The Verge','https://www.theverge.com/tech/1030593/adobe-max-ai-agents-mcp-firefly-assistant-updates'),('Adobe Firefly is now a creative studio, and it means AI is everything everywhere all at once','Ian Dean, Creative Bloq','https://www.creativebloq.com/news/adobes-firefly-is-now-a-creative-studio-and-it-means-ai-is-everything-everywhere-all-at-once'),('Adobe Powers a New Era of Creativity, Bringing Agents and Tools to Creatives Wherever and However They Create','Adobe via Business Wire','https://www.businesswire.com/news/home/20261110226769/en/Adobe-Powers-a-New-Era-of-Creativity-Bringing-Agents-and-Tools-to-Creatives-Wherever-and-However-They-Create'),('Architecture overview','Model Context Protocol','https://modelcontextprotocol.io/docs/learn/architecture')]),
 ]
+

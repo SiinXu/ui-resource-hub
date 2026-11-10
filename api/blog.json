@@ -1,5 +1,5 @@
 {
- "count": 48,
+ "count": 49,
  "rss": "https://ui.incidental.site/blog/rss.xml",
  "categories": {
   "tools": "Tools",
@@ -18,6 +18,77 @@
   "weekly": "Series: Weekly roundup"
  },
  "posts": [
+  {
+   "slug": "adobe-max-2026-agents-keep-layers-editable",
+   "url": "https://ui.incidental.site/blog/adobe-max-2026-agents-keep-layers-editable/",
+   "date": "2026-11-10",
+   "category": "agents",
+   "series": null,
+   "featured": true,
+   "tags": [
+    "Adobe MAX",
+    "Firefly Builder",
+    "Plan Mode",
+    "MCP",
+    "design systems"
+   ],
+   "title": {
+    "en": "Adobe MAX 2026: when agents edit your layered files, file hygiene becomes the interface",
+    "zh": "Adobe MAX 2026：当智能体直接改你的分层文件，文件整洁度就成了接口",
+    "zht": "Adobe MAX 2026：當智能體直接改你的分層檔案，檔案整潔度就成了介面",
+    "ja": "Adobe MAX 2026：エージェントがレイヤー付きファイルを直接編集するなら、ファイルの整理がインターフェースになる",
+    "ko": "Adobe MAX 2026: 에이전트가 레이어 파일을 직접 고친다면, 파일 정리가 곧 인터페이스다",
+    "ms": "Adobe MAX 2026: apabila ejen mengedit fail berlapis anda, kekemasan fail menjadi antara mukanya",
+    "vi": "Adobe MAX 2026: khi agent sửa thẳng tệp nhiều lớp của bạn, sự gọn gàng của tệp trở thành giao diện",
+    "fr": "Adobe MAX 2026 : quand des agents modifient vos fichiers à calques, l’hygiène des fichiers devient l’interface",
+    "es": "Adobe MAX 2026: cuando los agentes editan tus archivos con capas, el orden del archivo se vuelve la interfaz",
+    "de": "Adobe MAX 2026: Wenn Agents deine Ebenen-Dateien bearbeiten, wird Dateihygiene zur Schnittstelle"
+   },
+   "summary": {
+    "en": "At MAX on 10 November 2026 Adobe previewed local MCP integrations that let outside agents change Photoshop, Illustrator, Premiere and After Effects files with layers left editable, added Plan Mode to the Firefly AI Assistant, and put Firefly Builder, a prompt-to-prototype tool, in private beta. What was announced, what is not shipping yet, and a checklist for getting files and brand rules ready for agents.",
+    "zh": "2026 年 11 月 10 日的 MAX 大会上，Adobe 预告了本地 MCP 集成：让外部智能体直接修改 Photoshop、Illustrator、Premiere 和 After Effects 文件，图层仍保持可编辑；Firefly AI 助手新增 Plan Mode（计划模式）；提示生成原型的 Firefly Builder 进入私测。这篇梳理发布了什么、哪些还没上线，并给出一份让文件和品牌规则为智能体做好准备的清单。",
+    "zht": "2026 年 11 月 10 日的 MAX 大會上，Adobe 預告了本機 MCP 整合：讓外部智能體直接修改 Photoshop、Illustrator、Premiere 和 After Effects 檔案，圖層仍保持可編輯；Firefly AI 助理新增 Plan Mode（計畫模式）；提示產生原型的 Firefly Builder 進入私測。這篇梳理發布了什麼、哪些還沒上線，並給出一份讓檔案和品牌規則為智能體做好準備的清單。",
+    "ja": "2026年11月10日のMAXで、Adobeは外部エージェントがPhotoshop・Illustrator・Premiere・After Effectsのファイルをレイヤーを編集可能なまま変更できるローカルMCP連携をプレビューし、Firefly AI AssistantにPlan Modeを追加、プロンプトからプロトタイプを作るFirefly Builderを非公開ベータにした。発表内容、まだ出ていないもの、ファイルとブランドルールをエージェント向けに整えるチェックリスト。",
+    "ko": "2026년 11월 10일 MAX에서 Adobe는 외부 에이전트가 레이어를 편집 가능한 상태로 둔 채 Photoshop·Illustrator·Premiere·After Effects 파일을 바꿀 수 있는 로컬 MCP 연동을 미리 공개했고, Firefly AI Assistant에 Plan Mode를 더했으며, 프롬프트로 프로토타입을 만드는 Firefly Builder를 비공개 베타로 내놓았다. 발표 내용, 아직 나오지 않은 것, 파일과 브랜드 규칙을 에이전트용으로 준비하는 체크리스트.",
+    "ms": "Di MAX pada 10 November 2026, Adobe mempratonton integrasi MCP tempatan yang membolehkan ejen luar mengubah fail Photoshop, Illustrator, Premiere dan After Effects dengan lapisan kekal boleh diedit, menambah Plan Mode pada Firefly AI Assistant, dan meletakkan Firefly Builder, alat prompt-ke-prototaip, dalam beta tertutup. Apa yang diumumkan, apa yang belum dihantar, dan senarai semak untuk menyediakan fail serta peraturan jenama bagi ejen.",
+    "vi": "Tại MAX ngày 10/11/2026, Adobe giới thiệu trước tích hợp MCP cục bộ cho phép agent bên ngoài sửa tệp Photoshop, Illustrator, Premiere và After Effects mà các lớp vẫn chỉnh được, thêm Plan Mode cho Firefly AI Assistant, và đưa Firefly Builder, công cụ biến prompt thành prototype, vào beta kín. Những gì đã công bố, những gì chưa phát hành, và checklist để chuẩn bị tệp cùng quy tắc thương hiệu cho agent.",
+    "fr": "À MAX, le 10 novembre 2026, Adobe a présenté en avant-première des intégrations MCP locales qui laissent des agents externes modifier des fichiers Photoshop, Illustrator, Premiere et After Effects en gardant les calques modifiables, a ajouté un Plan Mode à Firefly AI Assistant et ouvert Firefly Builder, un outil prompt-vers-prototype, en bêta privée. Ce qui a été annoncé, ce qui n’est pas encore disponible, et une checklist pour préparer fichiers et règles de marque aux agents.",
+    "es": "En MAX, el 10 de noviembre de 2026, Adobe adelantó integraciones MCP locales que permiten a agentes externos modificar archivos de Photoshop, Illustrator, Premiere y After Effects manteniendo las capas editables, añadió Plan Mode a Firefly AI Assistant y lanzó en beta privada Firefly Builder, una herramienta de prompt a prototipo. Qué se anunció, qué aún no está disponible y una lista para preparar archivos y reglas de marca para agentes.",
+    "de": "Auf der MAX am 10. November 2026 zeigte Adobe lokale MCP-Integrationen, mit denen externe Agents Photoshop-, Illustrator-, Premiere- und After-Effects-Dateien ändern, während die Ebenen bearbeitbar bleiben, ergänzte den Firefly AI Assistant um einen Plan Mode und startete Firefly Builder, ein Prompt-zu-Prototyp-Tool, in der privaten Beta. Was angekündigt wurde, was noch nicht erscheint, und eine Checkliste, um Dateien und Markenregeln für Agents vorzubereiten."
+   },
+   "reading_minutes": {
+    "en": 5,
+    "zh": 6
+   },
+   "cover": "https://ui.incidental.site/blog/img/adobe-max-2026-agents-keep-layers-editable-cover.webp",
+   "references": [
+    {
+     "title": "Adobe brings AI agents and new creative tools to Photoshop, Premiere, and Firefly",
+     "by": "Ivan Mehta, TechCrunch",
+     "url": "https://techcrunch.com/2026/11/10/adobe-adds-more-ai-to-its-products-and-launches-an-mcp/"
+    },
+    {
+     "title": "Adobe is going all in on agentic AI",
+     "by": "Jess Weatherbed, The Verge",
+     "url": "https://www.theverge.com/tech/1030593/adobe-max-ai-agents-mcp-firefly-assistant-updates"
+    },
+    {
+     "title": "Adobe Firefly is now a creative studio, and it means AI is everything everywhere all at once",
+     "by": "Ian Dean, Creative Bloq",
+     "url": "https://www.creativebloq.com/news/adobes-firefly-is-now-a-creative-studio-and-it-means-ai-is-everything-everywhere-all-at-once"
+    },
+    {
+     "title": "Adobe Powers a New Era of Creativity, Bringing Agents and Tools to Creatives Wherever and However They Create",
+     "by": "Adobe via Business Wire",
+     "url": "https://www.businesswire.com/news/home/20261110226769/en/Adobe-Powers-a-New-Era-of-Creativity-Bringing-Agents-and-Tools-to-Creatives-Wherever-and-However-They-Create"
+    },
+    {
+     "title": "Architecture overview",
+     "by": "Model Context Protocol",
+     "url": "https://modelcontextprotocol.io/docs/learn/architecture"
+    }
+   ]
+  },
   {
    "slug": "motion-pinch-press-gestures-with-fallbacks",
    "url": "https://ui.incidental.site/blog/motion-pinch-press-gestures-with-fallbacks/",

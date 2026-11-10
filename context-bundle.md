@@ -413,3 +413,4 @@ curl -s https://ui.incidental.site/api/resources.json | jq --arg d "$(date -u -d
 - Cursor Live Apps: get the UI off localhost before the demo dies — https://ui.incidental.site/kb/note/blog-cursor-live-apps-off-localhost.md
 - Twombly: pin comments on the agent’s frames so it iterates on the team’s feedback — https://ui.incidental.site/kb/note/blog-twombly-shared-canvas-team-comments.md
 - Motion’s new pinch and press gestures: ship them with a visible fallback — https://ui.incidental.site/kb/note/blog-motion-pinch-press-gestures-with-fallbacks.md
+- Adobe MAX 2026: when agents edit your layered files, file hygiene becomes the interface — https://ui.incidental.site/kb/note/blog-adobe-max-2026-agents-keep-layers-editable.md
