@@ -1,6 +1,6 @@
 {
  "generated": "2026-11-11",
- "count": 5111,
+ "count": 5112,
  "items": [
   {
    "id": "ued-transitions-dev-craft",
@@ -192451,6 +192451,57 @@
    ],
    "noteEn": "New GitHub UI repo: Admin foundation on FastAPI + React 19 + shadcn/ui — row-level permissions, multi-tab that keeps state, approval workflow, permission-bound AI assistant, open API, S3 resumable upl (★156, MIT, yilecoding/fastapi-react-admin)",
    "added": "2026-11-11"
+  },
+  {
+   "id": "rd-ri5f5wg-matcha-brand-pitch-page",
+   "name": "Matcha Brand Pitch",
+   "url": "https://x.com/soluna_stensale/status/2120207360173941180",
+   "note": "A bespoke pitch website with a rotating 3D photo-sphere globe of lifestyle images, scrolling into e-commerce case studies for Body by Raven Tracy and Nothing.",
+   "noteEn": "A bespoke pitch website with a rotating 3D photo-sphere globe of lifestyle images, scrolling into e-commerce case studies for Body by Raven Tracy and Nothing.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@soluna_stensale",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal",
+    "3d"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/ri5f5wg-matcha-brand-pitch-page",
+   "rdkind": "Design",
+   "rdcat": "Web",
+   "rdstyle": [
+    "Minimal",
+    "3D",
+    "Light"
+   ],
+   "author": {
+    "name": "Soluna Stensale",
+    "handle": "@soluna_stensale",
+    "url": "https://x.com/soluna_stensale"
+   },
+   "x_post": "https://x.com/soluna_stensale/status/2120207360173941180",
+   "xsrc": {
+    "post": "https://x.com/soluna_stensale/status/2120207360173941180",
+    "author": "@soluna_stensale",
+    "likes": 39,
+    "bookmarks": 32,
+    "reposts": 2,
+    "impressions": 1578,
+    "date": "2026-11-10"
+   },
+   "pub": "2026-11-11",
+   "added": "2026-11-11"
   }
  ],
  "guides": [
@@ -192653,5 +192704,5 @@
    ]
   }
  ],
- "updatedAt": "2026-11-11T06:10Z"
+ "updatedAt": "2026-11-11T08:19Z"
 }
