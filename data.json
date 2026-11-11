@@ -1,6 +1,6 @@
 {
- "generated": "2026-11-10",
- "count": 5110,
+ "generated": "2026-11-11",
+ "count": 5111,
  "items": [
   {
    "id": "ued-transitions-dev-craft",
@@ -192421,6 +192421,36 @@
    },
    "pub": "2026-11-10",
    "added": "2026-11-10"
+  },
+  {
+   "id": "gh-yilecoding-fastapi-react-admin",
+   "name": "fastapi-react-admin",
+   "url": "https://fra.wubunan.com",
+   "note": "GitHub 新晋 UI 仓库：Admin foundation on FastAPI + React 19 + shadcn/ui — row-level permissions, multi-tab that keeps state, approval workflow, permission-bound AI assistant, open API, S3 resumable upl（GitHub ★156，MIT 许可，仓库 yilecoding/fastapi-react-admin）",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "GitHub",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "HTML",
+    "开源",
+    "自动收录"
+   ],
+   "ct": [
+    "chat",
+    "layout"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "New GitHub UI repo: Admin foundation on FastAPI + React 19 + shadcn/ui — row-level permissions, multi-tab that keeps state, approval workflow, permission-bound AI assistant, open API, S3 resumable upl (★156, MIT, yilecoding/fastapi-react-admin)",
+   "added": "2026-11-11"
   }
  ],
  "guides": [
@@ -192623,5 +192653,5 @@
    ]
   }
  ],
- "updatedAt": "2026-11-10T20:35Z"
+ "updatedAt": "2026-11-11T06:10Z"
 }
