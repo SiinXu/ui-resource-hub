@@ -69,6 +69,7 @@ Use the JSON endpoints, not the SPA, when acting as an agent. Every entry links 
 - [Twombly: pin comments on the agent’s frames so it iterates on the team’s feedback](https://ui.incidental.site/blog/twombly-shared-canvas-team-comments/): On 7 November 2026 Jaytel showed Twombly on Hacker News: a localhost canvas where coding agents place each design version as a live frame, and a Share link adds live cursors, comments and voice huddles the agent can read. How that differs from Dessn, Doop and Cursor Live Apps, plus a checklist before you share.
 - [Motion’s new pinch and press gestures: ship them with a visible fallback](https://ui.incidental.site/blog/motion-pinch-press-gestures-with-fallbacks/): Motion 14.11 (9 November 2026) adds pinch for two-finger and trackpad zoom and rotate; 14.10 (5 November) gave press double press, long press and hold-to-repeat. What the new APIs do, where they quietly break scrolling and accessibility, and a checklist for shipping gestures with buttons that do the same job.
 - [Adobe MAX 2026: when agents edit your layered files, file hygiene becomes the interface](https://ui.incidental.site/blog/adobe-max-2026-agents-keep-layers-editable/): At MAX on 10 November 2026 Adobe previewed local MCP integrations that let outside agents change Photoshop, Illustrator, Premiere and After Effects files with layers left editable, added Plan Mode to the Firefly AI Assistant, and put Firefly Builder, a prompt-to-prototype tool, in private beta. What was announced, what is not shipping yet, and a checklist for getting files and brand rules ready for agents.
+- [Figma Motion now has physics springs: hand off three numbers, not a duration](https://ui.incidental.site/blog/figma-motion-physics-springs-handoff/): On 10 November 2026 Figma Motion added physics-based springs (mass, stiffness, damping) that can be saved in a design system, plus style previews and Lottie export previews. Why a spring belongs in your tokens, how to convert one spring for SwiftUI, Jetpack Compose, Motion and CSS without it feeling different on each, and a handoff checklist.
 
 ## Top component libraries
 - [Radix Primitives](https://www.radix-ui.com/primitives): Unstyled, accessible React primitives (dialogs, dropdowns, selects, tabs, tooltips) and the foundation of shadcn/ui
@@ -2347,6 +2348,60 @@ References:
 - Adobe Firefly is now a creative studio, and it means AI is everything everywhere all at once — Ian Dean, Creative Bloq: https://www.creativebloq.com/news/adobes-firefly-is-now-a-creative-studio-and-it-means-ai-is-everything-everywhere-all-at-once
 - Adobe Powers a New Era of Creativity, Bringing Agents and Tools to Creatives Wherever and However They Create — Adobe via Business Wire: https://www.businesswire.com/news/home/20261110226769/en/Adobe-Powers-a-New-Era-of-Creativity-Bringing-Agents-and-Tools-to-Creatives-Wherever-and-However-They-Create
 - Architecture overview — Model Context Protocol: https://modelcontextprotocol.io/docs/learn/architecture
+
+## Figma Motion now has physics springs: hand off three numbers, not a duration
+
+Figma shipped a small Motion bundle on 10 November 2026, and one part of it changes how motion gets handed to engineers. Custom springs in Figma Motion can now be physics-based: you set mass, stiffness and damping, and the duration is worked out from them instead of typed in. Figma says you can save that spring in a design system and reuse it. The same release adds style previews, so each preset animation plays in the list and on your canvas before you apply it, and Lottie export previews, so you can see how an animation will play as a Lottie file before you export it.
+What shipped
+Two kinds of custom spring. Figma’s help article now offers Time and Physics. A time-based spring takes bounciness and a duration, which is what you want when motion must line up with a sound or a fixed beat. A physics-based spring takes stiffness, damping and mass, and its length follows from those values.
+Android has no mass field. Figma notes that Android springs use stiffness and a damping ratio, with no separate mass, while mass applies to iOS and web.
+Physics springs can overrun the timeline. Because the duration is computed, the motion can finish before or after the next keyframe; a line on the timeline shows where it really ends.
+Previews before you commit. Style previews play presets in place; the Lottie preview shows the exported result before you hand it off.
+The API keeps less than you typed. In Figma’s plugin API a custom spring is stored as a single normalized bounce from 0 to 1, and figma.motion.physicalSpringToNormalized() converts mass, stiffness and damping into it. Figma’s own agent skill notes that reading keyframes back returns only bounce.
+Our take: a spring is a token, and the three numbers are the source of truth
+For years, motion handoff meant “300 ms, ease-out” in a spec and a developer guessing the rest. Springs fix the two things that never survived that handoff: an interruption keeps its velocity instead of jumping, and the feel comes from physics that every platform can reproduce. But a spring is only portable if the numbers travel with it. That last API detail matters. If an agent or plugin reads your file, it gets a normalized bounce, not the mass, stiffness and damping you tuned. So do not let the Figma file be the only place the spring lives. Name it, write the three numbers into your token file next to colour and radius, and treat Figma as one consumer of that token.
+The second point is that the platforms do not take the same inputs. SwiftUI and Motion accept mass, stiffness and damping directly. Jetpack Compose takes a damping ratio and a stiffness, and behaves as if the mass were 1. If someone copies “stiffness 300” across without converting, the Android version will feel different. The conversion is simple physics, and it belongs in your tokens so nobody does it by hand:
+Damping ratio ζ = damping ÷ (2 × √(stiffness × mass)). Below 1 it overshoots; 1 settles without overshoot; above 1 creeps in slowly.
+Compose: dampingRatio = ζ and stiffness = stiffness ÷ mass.
+Rough settle time for a spring under 1: about 4 ÷ (ζ × √(stiffness ÷ mass)) seconds. Useful for checking that a “quick” spring is actually quick.
+Worked example: a sheet spring of mass 1.2, stiffness 300, damping 26 gives ζ ≈ 0.68, a Compose stiffness of 250, and settles in roughly 0.37 seconds. A button spring of mass 1, stiffness 400, damping 30 gives ζ = 0.75 and settles in about 0.27 seconds. Those are our calculations from the formula, so check the feel on a device, but they show why the numbers, not a duration, are the thing to hand over.
+Third, Lottie is not a spring. A Lottie file plays keyframes with easing curves, so the physics is baked in at export and will not respond to an interruption. That is fine for an illustration or a success animation. It is wrong for UI that people drag, dismiss or tap twice. The new Lottie preview is the moment to decide which one you are making.
+Checklist: hand off a spring that feels the same everywhere
+Keep a small set. Three to five named springs, such as spring.snappy, spring.sheet and spring.bouncy, saved in the Figma design system and mirrored in your token file.
+Store mass, stiffness, damping and the derived values. Add the damping ratio and the Compose stiffness so Android never converts by hand.
+Use time-based springs only for synced motion. Sound, video, a fixed onboarding beat. Everything a person touches gets a physics spring.
+Watch the timeline line. If a physics spring runs past the next keyframe, either let it overlap on purpose or pick a stiffer spring; do not stretch the keyframes to hide it.
+Mark what ships as Lottie. Decorative and celebratory motion can be baked; interactive UI should be built in code with the live spring.
+Preview before you apply. Use style previews on the real frame, in light and dark, not on a placeholder rectangle.
+Write the reduced-motion version. When prefers-reduced-motion is on, swap movement for a short fade or a spring with ζ of 1 and no travel.
+Test interruption on a device. Open and dismiss a sheet halfway through, twice. That is the case springs exist for.
+Never use damping 0. Motion warns that such a spring runs forever; keep a floor in your tokens.
+# Paste this to your coding agent
+Add our motion tokens from tokens/motion.json to the app.
+Each spring has mass, stiffness and damping. For every platform:
+  SwiftUI: Spring(mass:stiffness:damping:)
+  Web (Motion): transition { type: "spring", mass, stiffness, damping }
+  Compose: spring(dampingRatio = damping / (2*sqrt(stiffness*mass)),
+                  stiffness = stiffness / mass)
+Do not replace springs with fixed durations. Use spring.sheet for sheets
+and drawers, spring.snappy for buttons and toggles.
+Under prefers-reduced-motion, use a 150 ms opacity fade instead.
+Test interrupting each animation halfway and list any that jump.
+When a duration is still right
+Keep plain easing and a fixed time for loading indicators, progress, anything synced to media, and CSS-only pages where you cannot ship a spring engine. CSS linear() can approximate a spring curve by sampling it, and Motion can generate that string, but the result has a fixed length and will not carry velocity through an interruption. Use it as a fallback, not as the source.
+Related on UI Hub: motion that feels right, Motion’s pinch and press gestures, and design tokens for agents.
+
+References:
+- New Figma Motion updates: physics based springs, style and Lottie export previews (10 Nov 2026) — Figma release notes: https://www.figma.com/release-notes/
+- Adjust an animation’s easing — Figma Learn: https://help.figma.com/hc/en-us/articles/41414048690839-Adjust-an-animation-s-easing
+- Motion (plugin API: MotionEasing, NormalizedSpring, PhysicalSpring) — Figma Developer Docs: https://developers.figma.com/docs/plugins/api/Motion/
+- figma-use-motion: motion-easing.md — figma/mcp-server-guide on GitHub: https://github.com/figma/mcp-server-guide/blob/main/skills/figma-use-motion/references/motion-easing.md
+- How Figma put the bounce in spring animations — Figma Blog: https://www.figma.com/blog/how-we-built-spring-animations/
+- Spring — Apple Developer Documentation: https://developer.apple.com/documentation/swiftui/spring
+- Customize animations (spring) — Android Developers: https://developer.android.com/develop/ui/compose/animation/customize
+- spring — Motion docs: https://motion.dev/docs/spring
+- linear() easing function — MDN Web Docs: https://developer.mozilla.org/en-US/docs/Web/CSS/easing-function/linear
+- prefers-reduced-motion — MDN Web Docs: https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion
 
 # All resources (name | type | url | note)
 

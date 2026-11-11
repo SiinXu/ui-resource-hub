@@ -1,0 +1,39 @@
+<p>2026 年 11 月 10 日，Figma 发布了一组小小的 Motion 更新，其中一项改变了动效交给工程师的方式。Figma Motion 的自定义弹簧现在可以是<strong>基于物理的</strong>：你设置质量、刚度和阻尼，时长由它们算出来，而不是手动填写。Figma 说这个弹簧可以存进设计系统重复使用。同一次更新还加入了<strong>样式预览</strong>，每个预设动画在应用之前就会在列表里和画布上播放；以及 <strong>Lottie 导出预览</strong>，导出前就能看到动画作为 Lottie 文件播放的效果。</p><figure><img src="../../blog/img/figma-motion-physics-springs-handoff-1.webp" alt="2026 年 11 月 11 日的 Figma Learn 文章《调整动画的缓动》，目录里包括弹簧动画类型和创建自定义弹簧" loading="lazy" decoding="async" width="1280" height="800"><figcaption>2026 年 11 月 11 日的 Figma Learn 文章《调整动画的缓动》，目录里包括弹簧动画类型和创建自定义弹簧 · 截图：Figma Learn（<a href="https://help.figma.com/hc/en-us/articles/41414048690839-Adjust-an-animation-s-easing" rel="noopener" target="_blank">help.figma.com</a>），2026-11-11 截取，版权归原站所有</figcaption></figure>
+<h2>这次发了什么</h2>
+<ul><li><strong>两种自定义弹簧。</strong>Figma 帮助文档现在提供「时间」和「物理」两种。基于时间的弹簧设置弹性和时长，适合需要和音效或固定节拍对齐的动效。基于物理的弹簧设置刚度、阻尼和质量，时长由这些数值决定。</li>
+<li><strong>Android 没有质量参数。</strong>Figma 说明 Android 的弹簧使用刚度和阻尼比，没有单独的质量；质量只用于 iOS 和网页。</li>
+<li><strong>物理弹簧可能超出时间轴。</strong>因为时长是算出来的，动效可能在下一个关键帧之前或之后结束；时间轴上会有一条线标出它真正结束的位置。</li>
+<li><strong>应用前先预览。</strong>样式预览就地播放预设；Lottie 预览在交付前显示导出后的效果。</li>
+<li><strong>API 存下的比你填的少。</strong>在 Figma 插件 API 里，自定义弹簧存成一个 0 到 1 的归一化 <code>bounce</code> 值，<code>figma.motion.physicalSpringToNormalized()</code> 负责把质量、刚度、阻尼换算成它。Figma 官方的智能体技能文档写明，读回关键帧时只返回 <code>bounce</code>。</li></ul><figure><img src="../../blog/img/figma-motion-physics-springs-handoff-2.webp" alt="流程示意：在 Figma Motion 调好物理弹簧并存入设计系统，把质量、刚度、阻尼写进 Token 文件，推导出阻尼比和 Compose 刚度，再在 SwiftUI、网页 Motion 和 Jetpack Compose 中使用" loading="lazy" decoding="async" width="1200" height="675"><figcaption>流程示意：在 Figma Motion 调好物理弹簧并存入设计系统，把质量、刚度、阻尼写进 Token 文件，推导出阻尼比和 Compose 刚度，再在 SwiftUI、网页 Motion 和 Jetpack Compose 中使用 · 示意图：UI Hub 原创，CC BY 4.0</figcaption></figure>
+<h2>我们的看法：弹簧是 Token，三个数字才是真相来源</h2>
+<p>多年来，动效交付就是规范里写一句「300 毫秒，ease-out」，剩下的让开发去猜。弹簧解决了两件从来交接不过去的事：动画被打断时会保留速度而不是跳变，手感来自每个平台都能复现的物理规律。但只有数字跟着走，弹簧才可移植。上面那条 API 细节很关键：如果智能体或插件读取你的文件，拿到的是归一化的 bounce，而不是你调好的质量、刚度和阻尼。所以别让 Figma 文件成为弹簧唯一存在的地方。给它起名，把三个数字写进 Token 文件，和颜色、圆角放在一起，把 Figma 当作这个 Token 的使用方之一。</p>
+<p>第二点是各平台接受的参数不一样。SwiftUI 和 Motion 直接接受质量、刚度和阻尼；Jetpack Compose 接受阻尼比和刚度，表现相当于质量为 1。如果有人不换算就把「刚度 300」照抄过去，Android 版的手感就会不同。换算只是简单的物理，应该写在 Token 里，免得有人手算：</p>
+<ul><li><strong>阻尼比</strong> ζ = 阻尼 ÷（2 × √（刚度 × 质量））。小于 1 会过冲；等于 1 不过冲地停下；大于 1 慢慢靠近。</li>
+<li><strong>Compose</strong>：<code>dampingRatio = ζ</code>，<code>stiffness = 刚度 ÷ 质量</code>。</li>
+<li><strong>大致稳定时间</strong>（ζ 小于 1 时）：约 4 ÷（ζ × √（刚度 ÷ 质量））秒。可以用来核对一个「快」弹簧是不是真的快。</li></ul>
+<p>算个例子：抽屉弹簧质量 1.2、刚度 300、阻尼 26，得到 ζ ≈ 0.68，Compose 刚度 250，大约 0.37 秒稳定。按钮弹簧质量 1、刚度 400、阻尼 30，ζ = 0.75，大约 0.27 秒稳定。这些是我们按公式算的，手感仍要在真机上确认，但它说明了为什么要交付的是这些数字，而不是一个时长。</p>
+<p>第三，Lottie 不是弹簧。Lottie 文件播放的是带缓动曲线的关键帧，物理效果在导出时就被「烤」死了，不会响应打断。插画或成功动画这样没问题；但对用户会拖动、关闭或连点两下的界面就是错的。新的 Lottie 预览，正是决定你在做哪一种的时刻。</p>
+<h2>清单：交付一个在哪里都手感一致的弹簧</h2>
+<ol><li><strong>只保留一小组。</strong>三到五个命名弹簧，比如 <code>spring.snappy</code>、<code>spring.sheet</code>、<code>spring.bouncy</code>，存进 Figma 设计系统，并在 Token 文件里同步一份。</li>
+<li><strong>存质量、刚度、阻尼和推导值。</strong>加上阻尼比和 Compose 刚度，让 Android 永远不用手算。</li>
+<li><strong>只有需要同步的动效才用时间弹簧。</strong>音效、视频、固定节拍的引导页。凡是用户会触碰的，都用物理弹簧。</li>
+<li><strong>留意时间轴上那条线。</strong>物理弹簧如果越过下一个关键帧，要么有意让它重叠，要么换一个更硬的弹簧；不要拉长关键帧来掩盖。</li>
+<li><strong>标明哪些以 Lottie 交付。</strong>装饰和庆祝类动效可以烤成关键帧；可交互的界面应在代码里用实时弹簧实现。</li>
+<li><strong>应用前先预览。</strong>在真实画框上用样式预览，浅色和深色都看，不要在占位矩形上看。</li>
+<li><strong>写好减少动效的版本。</strong>开启 <code>prefers-reduced-motion</code> 时，把位移换成短暂淡入淡出，或 ζ 为 1、没有位移的弹簧。</li>
+<li><strong>在真机上测打断。</strong>抽屉打开到一半就关掉，来两次。弹簧就是为这种情况存在的。</li>
+<li><strong>永远别用阻尼 0。</strong>Motion 文档提醒这种弹簧会无限振荡；在 Token 里设一个下限。</li></ol>
+<pre><code># 把这段贴给你的编程智能体
+把 tokens/motion.json 里的动效 Token 接入应用。
+每个弹簧都有 mass、stiffness、damping。各平台这样用：
+  SwiftUI：Spring(mass:stiffness:damping:)
+  网页（Motion）：transition { type: "spring", mass, stiffness, damping }
+  Compose：spring(dampingRatio = damping / (2*sqrt(stiffness*mass)),
+                  stiffness = stiffness / mass)
+不要用固定时长替换弹簧。抽屉和底部面板用 spring.sheet，
+按钮和开关用 spring.snappy。
+开启 prefers-reduced-motion 时改用 150 毫秒的透明度淡入淡出。
+每个动画都在进行到一半时打断测试，列出所有出现跳变的地方。</code></pre>
+<figure><img src="../../blog/img/figma-motion-physics-springs-handoff-3.webp" alt="2026 年 11 月 11 日 Motion 的 spring() 文档页，列出物理参数：刚度、阻尼和质量" loading="lazy" decoding="async" width="1280" height="800"><figcaption>2026 年 11 月 11 日 Motion 的 spring() 文档页，列出物理参数：刚度、阻尼和质量 · 截图：Motion（<a href="https://motion.dev/docs/spring" rel="noopener" target="_blank">motion.dev</a>），2026-11-11 截取，版权归原站所有</figcaption></figure><h2>什么时候仍该用时长</h2>
+<p>加载指示、进度条、任何和媒体同步的动效，以及无法引入弹簧引擎的纯 CSS 页面，继续用普通缓动加固定时长。CSS <code>linear()</code> 可以通过采样近似一条弹簧曲线，Motion 也能生成这段字符串，但结果长度固定，打断时不会带上速度。把它当作退路，而不是源头。</p>
+<p>UI Hub 相关阅读：<a href="../motion-that-feels-right/">让动效感觉对</a>、<a href="../motion-pinch-press-gestures-with-fallbacks/">Motion 的 pinch 和 press 手势</a>，以及<a href="../design-tokens-for-agents/">给智能体的设计 Token</a>。</p>

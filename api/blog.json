@@ -1,5 +1,5 @@
 {
- "count": 49,
+ "count": 50,
  "rss": "https://ui.incidental.site/blog/rss.xml",
  "categories": {
   "tools": "Tools",
@@ -18,6 +18,102 @@
   "weekly": "Series: Weekly roundup"
  },
  "posts": [
+  {
+   "slug": "figma-motion-physics-springs-handoff",
+   "url": "https://ui.incidental.site/blog/figma-motion-physics-springs-handoff/",
+   "date": "2026-11-11",
+   "category": "craft",
+   "series": null,
+   "featured": true,
+   "tags": [
+    "Figma Motion",
+    "springs",
+    "Lottie",
+    "motion tokens",
+    "handoff"
+   ],
+   "title": {
+    "en": "Figma Motion now has physics springs: hand off three numbers, not a duration",
+    "zh": "Figma Motion 支持物理弹簧了：交付三个数字，而不是一个时长",
+    "zht": "Figma Motion 支援物理彈簧了：交付三個數字，而不是一個時長",
+    "ja": "Figma Motionに物理スプリングが来た：渡すのは長さではなく3つの数値",
+    "ko": "Figma Motion에 물리 스프링이 생겼다: 시간 대신 숫자 세 개를 넘겨라",
+    "ms": "Figma Motion kini ada spring fizik: serahkan tiga nombor, bukan satu tempoh",
+    "vi": "Figma Motion đã có spring vật lý: bàn giao ba con số, không phải một thời lượng",
+    "fr": "Figma Motion a désormais des ressorts physiques : transmettez trois nombres, pas une durée",
+    "es": "Figma Motion ya tiene muelles físicos: entrega tres números, no una duración",
+    "de": "Figma Motion hat jetzt physikalische Federn: Übergib drei Zahlen statt einer Dauer"
+   },
+   "summary": {
+    "en": "On 10 November 2026 Figma Motion added physics-based springs (mass, stiffness, damping) that can be saved in a design system, plus style previews and Lottie export previews. Why a spring belongs in your tokens, how to convert one spring for SwiftUI, Jetpack Compose, Motion and CSS without it feeling different on each, and a handoff checklist.",
+    "zh": "2026 年 11 月 10 日，Figma Motion 新增基于物理的弹簧（质量、刚度、阻尼），可以存进设计系统，同时加入动画样式预览和 Lottie 导出预览。为什么弹簧应该成为 Token，如何把同一个弹簧换算到 SwiftUI、Jetpack Compose、Motion 和 CSS 而手感不走样，以及一份交付清单。",
+    "zht": "2026 年 11 月 10 日，Figma Motion 新增基於物理的彈簧（質量、剛度、阻尼），可以存進設計系統，同時加入動畫樣式預覽和 Lottie 匯出預覽。為什麼彈簧應該成為 Token，如何把同一個彈簧換算到 SwiftUI、Jetpack Compose、Motion 和 CSS 而手感不走樣，以及一份交付清單。",
+    "ja": "2026年11月10日、Figma Motionに物理ベースのスプリング（質量・剛性・減衰）が加わり、デザインシステムに保存できるようになった。スタイルプレビューとLottie書き出しプレビューも追加。スプリングをトークンにすべき理由、同じスプリングをSwiftUI・Jetpack Compose・Motion・CSSへ手触りを変えずに変換する方法、そして受け渡しチェックリスト。",
+    "ko": "2026년 11월 10일 Figma Motion에 디자인 시스템에 저장할 수 있는 물리 기반 스프링(질량·강성·감쇠)이 추가됐고, 스타일 미리보기와 Lottie 내보내기 미리보기도 생겼다. 스프링을 토큰으로 둬야 하는 이유, 같은 스프링을 SwiftUI·Jetpack Compose·Motion·CSS로 느낌 그대로 옮기는 방법, 그리고 핸드오프 체크리스트.",
+    "ms": "Pada 10 November 2026 Figma Motion menambah spring berasaskan fizik (jisim, kekakuan, redaman) yang boleh disimpan dalam sistem reka bentuk, serta pratonton gaya dan pratonton eksport Lottie. Mengapa spring patut menjadi token, cara menukar satu spring untuk SwiftUI, Jetpack Compose, Motion dan CSS tanpa rasa berbeza, dan senarai semak serahan.",
+    "vi": "Ngày 10/11/2026 Figma Motion thêm spring dựa trên vật lý (khối lượng, độ cứng, giảm chấn) có thể lưu vào design system, cùng xem trước style và xem trước khi xuất Lottie. Vì sao spring nên là token, cách quy đổi một spring cho SwiftUI, Jetpack Compose, Motion và CSS mà cảm giác không đổi, và checklist bàn giao.",
+    "fr": "Le 10 novembre 2026, Figma Motion a ajouté des ressorts physiques (masse, raideur, amortissement) enregistrables dans un design system, ainsi que des aperçus de styles et d’export Lottie. Pourquoi un ressort doit devenir un token, comment convertir un même ressort pour SwiftUI, Jetpack Compose, Motion et CSS sans changer la sensation, et une checklist de passation.",
+    "es": "El 10 de noviembre de 2026 Figma Motion añadió muelles basados en física (masa, rigidez, amortiguación) que se pueden guardar en un sistema de diseño, además de vistas previas de estilos y de exportación Lottie. Por qué un muelle debe ser un token, cómo convertir un mismo muelle para SwiftUI, Jetpack Compose, Motion y CSS sin que cambie la sensación, y una lista de entrega.",
+    "de": "Am 10. November 2026 bekam Figma Motion physikbasierte Federn (Masse, Steifigkeit, Dämpfung), die sich im Designsystem speichern lassen, dazu Stil-Vorschauen und Lottie-Exportvorschauen. Warum eine Feder ein Token sein sollte, wie man dieselbe Feder für SwiftUI, Jetpack Compose, Motion und CSS umrechnet, ohne dass sie sich anders anfühlt, und eine Übergabe-Checkliste."
+   },
+   "reading_minutes": {
+    "en": 5,
+    "zh": 6
+   },
+   "cover": "https://ui.incidental.site/blog/img/figma-motion-physics-springs-handoff-cover.webp",
+   "references": [
+    {
+     "title": "New Figma Motion updates: physics based springs, style and Lottie export previews (10 Nov 2026)",
+     "by": "Figma release notes",
+     "url": "https://www.figma.com/release-notes/"
+    },
+    {
+     "title": "Adjust an animation’s easing",
+     "by": "Figma Learn",
+     "url": "https://help.figma.com/hc/en-us/articles/41414048690839-Adjust-an-animation-s-easing"
+    },
+    {
+     "title": "Motion (plugin API: MotionEasing, NormalizedSpring, PhysicalSpring)",
+     "by": "Figma Developer Docs",
+     "url": "https://developers.figma.com/docs/plugins/api/Motion/"
+    },
+    {
+     "title": "figma-use-motion: motion-easing.md",
+     "by": "figma/mcp-server-guide on GitHub",
+     "url": "https://github.com/figma/mcp-server-guide/blob/main/skills/figma-use-motion/references/motion-easing.md"
+    },
+    {
+     "title": "How Figma put the bounce in spring animations",
+     "by": "Figma Blog",
+     "url": "https://www.figma.com/blog/how-we-built-spring-animations/"
+    },
+    {
+     "title": "Spring",
+     "by": "Apple Developer Documentation",
+     "url": "https://developer.apple.com/documentation/swiftui/spring"
+    },
+    {
+     "title": "Customize animations (spring)",
+     "by": "Android Developers",
+     "url": "https://developer.android.com/develop/ui/compose/animation/customize"
+    },
+    {
+     "title": "spring",
+     "by": "Motion docs",
+     "url": "https://motion.dev/docs/spring"
+    },
+    {
+     "title": "linear() easing function",
+     "by": "MDN Web Docs",
+     "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/easing-function/linear"
+    },
+    {
+     "title": "prefers-reduced-motion",
+     "by": "MDN Web Docs",
+     "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion"
+    }
+   ]
+  },
   {
    "slug": "adobe-max-2026-agents-keep-layers-editable",
    "url": "https://ui.incidental.site/blog/adobe-max-2026-agents-keep-layers-editable/",

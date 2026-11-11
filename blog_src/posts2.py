@@ -2374,5 +2374,104 @@ logo/*、legal/*、approved/* 开头的任何图层。
 <p>以上没有一项需要等测试版。挑一个真实的活动文件，把命名和分组理干净，把颜色挪进库里，写一页规范。这个文件无论配 Adobe 的助手、Figma 的智能体，还是你明年用的任何 MCP 客户端，都会更好用。如果你已经为产品界面维护了 Token，就让这份规范指向它们，让印刷、社媒和产品共用一个来源。</p>
 <p>UI Hub 相关阅读：<a href="../lint-agents-onto-your-design-system/">用 Lint 把智能体约束在设计系统上</a>、<a href="../ai-design-tool-shutdowns-keep-work-portable/">让 AI 设计成果可迁移</a>，以及<a href="../design-tokens-for-agents/">给智能体的设计 Token</a>。</p>""",
  refs=[('Adobe brings AI agents and new creative tools to Photoshop, Premiere, and Firefly','Ivan Mehta, TechCrunch','https://techcrunch.com/2026/11/10/adobe-adds-more-ai-to-its-products-and-launches-an-mcp/'),('Adobe is going all in on agentic AI','Jess Weatherbed, The Verge','https://www.theverge.com/tech/1030593/adobe-max-ai-agents-mcp-firefly-assistant-updates'),('Adobe Firefly is now a creative studio, and it means AI is everything everywhere all at once','Ian Dean, Creative Bloq','https://www.creativebloq.com/news/adobes-firefly-is-now-a-creative-studio-and-it-means-ai-is-everything-everywhere-all-at-once'),('Adobe Powers a New Era of Creativity, Bringing Agents and Tools to Creatives Wherever and However They Create','Adobe via Business Wire','https://www.businesswire.com/news/home/20261110226769/en/Adobe-Powers-a-New-Era-of-Creativity-Bringing-Agents-and-Tools-to-Creatives-Wherever-and-However-They-Create'),('Architecture overview','Model Context Protocol','https://modelcontextprotocol.io/docs/learn/architecture')]),
+dict(slug='figma-motion-physics-springs-handoff', date='2026-11-11', cat='craft', series=None, featured=True, tags=['Figma Motion','springs','Lottie','motion tokens','handoff'],
+ t=T('Figma Motion now has physics springs: hand off three numbers, not a duration',
+     'Figma Motion 支持物理弹簧了：交付三个数字，而不是一个时长',
+     'Figma Motion 支援物理彈簧了：交付三個數字，而不是一個時長',
+     'Figma Motionに物理スプリングが来た：渡すのは長さではなく3つの数値',
+     'Figma Motion에 물리 스프링이 생겼다: 시간 대신 숫자 세 개를 넘겨라',
+     'Figma Motion kini ada spring fizik: serahkan tiga nombor, bukan satu tempoh',
+     'Figma Motion đã có spring vật lý: bàn giao ba con số, không phải một thời lượng',
+     'Figma Motion a désormais des ressorts physiques : transmettez trois nombres, pas une durée',
+     'Figma Motion ya tiene muelles físicos: entrega tres números, no una duración',
+     'Figma Motion hat jetzt physikalische Federn: Übergib drei Zahlen statt einer Dauer'),
+ s=T('On 10 November 2026 Figma Motion added physics-based springs (mass, stiffness, damping) that can be saved in a design system, plus style previews and Lottie export previews. Why a spring belongs in your tokens, how to convert one spring for SwiftUI, Jetpack Compose, Motion and CSS without it feeling different on each, and a handoff checklist.',
+     '2026 年 11 月 10 日，Figma Motion 新增基于物理的弹簧（质量、刚度、阻尼），可以存进设计系统，同时加入动画样式预览和 Lottie 导出预览。为什么弹簧应该成为 Token，如何把同一个弹簧换算到 SwiftUI、Jetpack Compose、Motion 和 CSS 而手感不走样，以及一份交付清单。',
+     '2026 年 11 月 10 日，Figma Motion 新增基於物理的彈簧（質量、剛度、阻尼），可以存進設計系統，同時加入動畫樣式預覽和 Lottie 匯出預覽。為什麼彈簧應該成為 Token，如何把同一個彈簧換算到 SwiftUI、Jetpack Compose、Motion 和 CSS 而手感不走樣，以及一份交付清單。',
+     '2026年11月10日、Figma Motionに物理ベースのスプリング（質量・剛性・減衰）が加わり、デザインシステムに保存できるようになった。スタイルプレビューとLottie書き出しプレビューも追加。スプリングをトークンにすべき理由、同じスプリングをSwiftUI・Jetpack Compose・Motion・CSSへ手触りを変えずに変換する方法、そして受け渡しチェックリスト。',
+     '2026년 11월 10일 Figma Motion에 디자인 시스템에 저장할 수 있는 물리 기반 스프링(질량·강성·감쇠)이 추가됐고, 스타일 미리보기와 Lottie 내보내기 미리보기도 생겼다. 스프링을 토큰으로 둬야 하는 이유, 같은 스프링을 SwiftUI·Jetpack Compose·Motion·CSS로 느낌 그대로 옮기는 방법, 그리고 핸드오프 체크리스트.',
+     'Pada 10 November 2026 Figma Motion menambah spring berasaskan fizik (jisim, kekakuan, redaman) yang boleh disimpan dalam sistem reka bentuk, serta pratonton gaya dan pratonton eksport Lottie. Mengapa spring patut menjadi token, cara menukar satu spring untuk SwiftUI, Jetpack Compose, Motion dan CSS tanpa rasa berbeza, dan senarai semak serahan.',
+     'Ngày 10/11/2026 Figma Motion thêm spring dựa trên vật lý (khối lượng, độ cứng, giảm chấn) có thể lưu vào design system, cùng xem trước style và xem trước khi xuất Lottie. Vì sao spring nên là token, cách quy đổi một spring cho SwiftUI, Jetpack Compose, Motion và CSS mà cảm giác không đổi, và checklist bàn giao.',
+     'Le 10 novembre 2026, Figma Motion a ajouté des ressorts physiques (masse, raideur, amortissement) enregistrables dans un design system, ainsi que des aperçus de styles et d’export Lottie. Pourquoi un ressort doit devenir un token, comment convertir un même ressort pour SwiftUI, Jetpack Compose, Motion et CSS sans changer la sensation, et une checklist de passation.',
+     'El 10 de noviembre de 2026 Figma Motion añadió muelles basados en física (masa, rigidez, amortiguación) que se pueden guardar en un sistema de diseño, además de vistas previas de estilos y de exportación Lottie. Por qué un muelle debe ser un token, cómo convertir un mismo muelle para SwiftUI, Jetpack Compose, Motion y CSS sin que cambie la sensación, y una lista de entrega.',
+     'Am 10. November 2026 bekam Figma Motion physikbasierte Federn (Masse, Steifigkeit, Dämpfung), die sich im Designsystem speichern lassen, dazu Stil-Vorschauen und Lottie-Exportvorschauen. Warum eine Feder ein Token sein sollte, wie man dieselbe Feder für SwiftUI, Jetpack Compose, Motion und CSS umrechnet, ohne dass sie sich anders anfühlt, und eine Übergabe-Checkliste.'),
+ en="""<p>Figma shipped a small Motion bundle on 10 November 2026, and one part of it changes how motion gets handed to engineers. Custom springs in Figma Motion can now be <strong>physics-based</strong>: you set mass, stiffness and damping, and the duration is worked out from them instead of typed in. Figma says you can save that spring in a design system and reuse it. The same release adds <strong>style previews</strong>, so each preset animation plays in the list and on your canvas before you apply it, and <strong>Lottie export previews</strong>, so you can see how an animation will play as a Lottie file before you export it.</p>
+<h2>What shipped</h2>
+<ul><li><strong>Two kinds of custom spring.</strong> Figma’s help article now offers <em>Time</em> and <em>Physics</em>. A time-based spring takes bounciness and a duration, which is what you want when motion must line up with a sound or a fixed beat. A physics-based spring takes stiffness, damping and mass, and its length follows from those values.</li>
+<li><strong>Android has no mass field.</strong> Figma notes that Android springs use stiffness and a damping ratio, with no separate mass, while mass applies to iOS and web.</li>
+<li><strong>Physics springs can overrun the timeline.</strong> Because the duration is computed, the motion can finish before or after the next keyframe; a line on the timeline shows where it really ends.</li>
+<li><strong>Previews before you commit.</strong> Style previews play presets in place; the Lottie preview shows the exported result before you hand it off.</li>
+<li><strong>The API keeps less than you typed.</strong> In Figma’s plugin API a custom spring is stored as a single normalized <code>bounce</code> from 0 to 1, and <code>figma.motion.physicalSpringToNormalized()</code> converts mass, stiffness and damping into it. Figma’s own agent skill notes that reading keyframes back returns only <code>bounce</code>.</li></ul>
+<h2>Our take: a spring is a token, and the three numbers are the source of truth</h2>
+<p>For years, motion handoff meant “300 ms, ease-out” in a spec and a developer guessing the rest. Springs fix the two things that never survived that handoff: an interruption keeps its velocity instead of jumping, and the feel comes from physics that every platform can reproduce. But a spring is only portable if the numbers travel with it. That last API detail matters. If an agent or plugin reads your file, it gets a normalized bounce, not the mass, stiffness and damping you tuned. So do not let the Figma file be the only place the spring lives. Name it, write the three numbers into your token file next to colour and radius, and treat Figma as one consumer of that token.</p>
+<p>The second point is that the platforms do not take the same inputs. SwiftUI and Motion accept mass, stiffness and damping directly. Jetpack Compose takes a damping ratio and a stiffness, and behaves as if the mass were 1. If someone copies “stiffness 300” across without converting, the Android version will feel different. The conversion is simple physics, and it belongs in your tokens so nobody does it by hand:</p>
+<ul><li><strong>Damping ratio</strong> ζ = damping ÷ (2 × √(stiffness × mass)). Below 1 it overshoots; 1 settles without overshoot; above 1 creeps in slowly.</li>
+<li><strong>Compose</strong>: <code>dampingRatio = ζ</code> and <code>stiffness = stiffness ÷ mass</code>.</li>
+<li><strong>Rough settle time</strong> for a spring under 1: about 4 ÷ (ζ × √(stiffness ÷ mass)) seconds. Useful for checking that a “quick” spring is actually quick.</li></ul>
+<p>Worked example: a sheet spring of mass 1.2, stiffness 300, damping 26 gives ζ ≈ 0.68, a Compose stiffness of 250, and settles in roughly 0.37 seconds. A button spring of mass 1, stiffness 400, damping 30 gives ζ = 0.75 and settles in about 0.27 seconds. Those are our calculations from the formula, so check the feel on a device, but they show why the numbers, not a duration, are the thing to hand over.</p>
+<p>Third, Lottie is not a spring. A Lottie file plays keyframes with easing curves, so the physics is baked in at export and will not respond to an interruption. That is fine for an illustration or a success animation. It is wrong for UI that people drag, dismiss or tap twice. The new Lottie preview is the moment to decide which one you are making.</p>
+<h2>Checklist: hand off a spring that feels the same everywhere</h2>
+<ol><li><strong>Keep a small set.</strong> Three to five named springs, such as <code>spring.snappy</code>, <code>spring.sheet</code> and <code>spring.bouncy</code>, saved in the Figma design system and mirrored in your token file.</li>
+<li><strong>Store mass, stiffness, damping and the derived values.</strong> Add the damping ratio and the Compose stiffness so Android never converts by hand.</li>
+<li><strong>Use time-based springs only for synced motion.</strong> Sound, video, a fixed onboarding beat. Everything a person touches gets a physics spring.</li>
+<li><strong>Watch the timeline line.</strong> If a physics spring runs past the next keyframe, either let it overlap on purpose or pick a stiffer spring; do not stretch the keyframes to hide it.</li>
+<li><strong>Mark what ships as Lottie.</strong> Decorative and celebratory motion can be baked; interactive UI should be built in code with the live spring.</li>
+<li><strong>Preview before you apply.</strong> Use style previews on the real frame, in light and dark, not on a placeholder rectangle.</li>
+<li><strong>Write the reduced-motion version.</strong> When <code>prefers-reduced-motion</code> is on, swap movement for a short fade or a spring with ζ of 1 and no travel.</li>
+<li><strong>Test interruption on a device.</strong> Open and dismiss a sheet halfway through, twice. That is the case springs exist for.</li>
+<li><strong>Never use damping 0.</strong> Motion warns that such a spring runs forever; keep a floor in your tokens.</li></ol>
+<pre><code># Paste this to your coding agent
+Add our motion tokens from tokens/motion.json to the app.
+Each spring has mass, stiffness and damping. For every platform:
+  SwiftUI: Spring(mass:stiffness:damping:)
+  Web (Motion): transition { type: "spring", mass, stiffness, damping }
+  Compose: spring(dampingRatio = damping / (2*sqrt(stiffness*mass)),
+                  stiffness = stiffness / mass)
+Do not replace springs with fixed durations. Use spring.sheet for sheets
+and drawers, spring.snappy for buttons and toggles.
+Under prefers-reduced-motion, use a 150 ms opacity fade instead.
+Test interrupting each animation halfway and list any that jump.</code></pre>
+<h2>When a duration is still right</h2>
+<p>Keep plain easing and a fixed time for loading indicators, progress, anything synced to media, and CSS-only pages where you cannot ship a spring engine. CSS <code>linear()</code> can approximate a spring curve by sampling it, and Motion can generate that string, but the result has a fixed length and will not carry velocity through an interruption. Use it as a fallback, not as the source.</p>
+<p>Related on UI Hub: <a href="../motion-that-feels-right/">motion that feels right</a>, <a href="../motion-pinch-press-gestures-with-fallbacks/">Motion’s pinch and press gestures</a>, and <a href="../design-tokens-for-agents/">design tokens for agents</a>.</p>""",
+ zh="""<p>2026 年 11 月 10 日，Figma 发布了一组小小的 Motion 更新，其中一项改变了动效交给工程师的方式。Figma Motion 的自定义弹簧现在可以是<strong>基于物理的</strong>：你设置质量、刚度和阻尼，时长由它们算出来，而不是手动填写。Figma 说这个弹簧可以存进设计系统重复使用。同一次更新还加入了<strong>样式预览</strong>，每个预设动画在应用之前就会在列表里和画布上播放；以及 <strong>Lottie 导出预览</strong>，导出前就能看到动画作为 Lottie 文件播放的效果。</p>
+<h2>这次发了什么</h2>
+<ul><li><strong>两种自定义弹簧。</strong>Figma 帮助文档现在提供「时间」和「物理」两种。基于时间的弹簧设置弹性和时长，适合需要和音效或固定节拍对齐的动效。基于物理的弹簧设置刚度、阻尼和质量，时长由这些数值决定。</li>
+<li><strong>Android 没有质量参数。</strong>Figma 说明 Android 的弹簧使用刚度和阻尼比，没有单独的质量；质量只用于 iOS 和网页。</li>
+<li><strong>物理弹簧可能超出时间轴。</strong>因为时长是算出来的，动效可能在下一个关键帧之前或之后结束；时间轴上会有一条线标出它真正结束的位置。</li>
+<li><strong>应用前先预览。</strong>样式预览就地播放预设；Lottie 预览在交付前显示导出后的效果。</li>
+<li><strong>API 存下的比你填的少。</strong>在 Figma 插件 API 里，自定义弹簧存成一个 0 到 1 的归一化 <code>bounce</code> 值，<code>figma.motion.physicalSpringToNormalized()</code> 负责把质量、刚度、阻尼换算成它。Figma 官方的智能体技能文档写明，读回关键帧时只返回 <code>bounce</code>。</li></ul>
+<h2>我们的看法：弹簧是 Token，三个数字才是真相来源</h2>
+<p>多年来，动效交付就是规范里写一句「300 毫秒，ease-out」，剩下的让开发去猜。弹簧解决了两件从来交接不过去的事：动画被打断时会保留速度而不是跳变，手感来自每个平台都能复现的物理规律。但只有数字跟着走，弹簧才可移植。上面那条 API 细节很关键：如果智能体或插件读取你的文件，拿到的是归一化的 bounce，而不是你调好的质量、刚度和阻尼。所以别让 Figma 文件成为弹簧唯一存在的地方。给它起名，把三个数字写进 Token 文件，和颜色、圆角放在一起，把 Figma 当作这个 Token 的使用方之一。</p>
+<p>第二点是各平台接受的参数不一样。SwiftUI 和 Motion 直接接受质量、刚度和阻尼；Jetpack Compose 接受阻尼比和刚度，表现相当于质量为 1。如果有人不换算就把「刚度 300」照抄过去，Android 版的手感就会不同。换算只是简单的物理，应该写在 Token 里，免得有人手算：</p>
+<ul><li><strong>阻尼比</strong> ζ = 阻尼 ÷（2 × √（刚度 × 质量））。小于 1 会过冲；等于 1 不过冲地停下；大于 1 慢慢靠近。</li>
+<li><strong>Compose</strong>：<code>dampingRatio = ζ</code>，<code>stiffness = 刚度 ÷ 质量</code>。</li>
+<li><strong>大致稳定时间</strong>（ζ 小于 1 时）：约 4 ÷（ζ × √（刚度 ÷ 质量））秒。可以用来核对一个「快」弹簧是不是真的快。</li></ul>
+<p>算个例子：抽屉弹簧质量 1.2、刚度 300、阻尼 26，得到 ζ ≈ 0.68，Compose 刚度 250，大约 0.37 秒稳定。按钮弹簧质量 1、刚度 400、阻尼 30，ζ = 0.75，大约 0.27 秒稳定。这些是我们按公式算的，手感仍要在真机上确认，但它说明了为什么要交付的是这些数字，而不是一个时长。</p>
+<p>第三，Lottie 不是弹簧。Lottie 文件播放的是带缓动曲线的关键帧，物理效果在导出时就被「烤」死了，不会响应打断。插画或成功动画这样没问题；但对用户会拖动、关闭或连点两下的界面就是错的。新的 Lottie 预览，正是决定你在做哪一种的时刻。</p>
+<h2>清单：交付一个在哪里都手感一致的弹簧</h2>
+<ol><li><strong>只保留一小组。</strong>三到五个命名弹簧，比如 <code>spring.snappy</code>、<code>spring.sheet</code>、<code>spring.bouncy</code>，存进 Figma 设计系统，并在 Token 文件里同步一份。</li>
+<li><strong>存质量、刚度、阻尼和推导值。</strong>加上阻尼比和 Compose 刚度，让 Android 永远不用手算。</li>
+<li><strong>只有需要同步的动效才用时间弹簧。</strong>音效、视频、固定节拍的引导页。凡是用户会触碰的，都用物理弹簧。</li>
+<li><strong>留意时间轴上那条线。</strong>物理弹簧如果越过下一个关键帧，要么有意让它重叠，要么换一个更硬的弹簧；不要拉长关键帧来掩盖。</li>
+<li><strong>标明哪些以 Lottie 交付。</strong>装饰和庆祝类动效可以烤成关键帧；可交互的界面应在代码里用实时弹簧实现。</li>
+<li><strong>应用前先预览。</strong>在真实画框上用样式预览，浅色和深色都看，不要在占位矩形上看。</li>
+<li><strong>写好减少动效的版本。</strong>开启 <code>prefers-reduced-motion</code> 时，把位移换成短暂淡入淡出，或 ζ 为 1、没有位移的弹簧。</li>
+<li><strong>在真机上测打断。</strong>抽屉打开到一半就关掉，来两次。弹簧就是为这种情况存在的。</li>
+<li><strong>永远别用阻尼 0。</strong>Motion 文档提醒这种弹簧会无限振荡；在 Token 里设一个下限。</li></ol>
+<pre><code># 把这段贴给你的编程智能体
+把 tokens/motion.json 里的动效 Token 接入应用。
+每个弹簧都有 mass、stiffness、damping。各平台这样用：
+  SwiftUI：Spring(mass:stiffness:damping:)
+  网页（Motion）：transition { type: "spring", mass, stiffness, damping }
+  Compose：spring(dampingRatio = damping / (2*sqrt(stiffness*mass)),
+                  stiffness = stiffness / mass)
+不要用固定时长替换弹簧。抽屉和底部面板用 spring.sheet，
+按钮和开关用 spring.snappy。
+开启 prefers-reduced-motion 时改用 150 毫秒的透明度淡入淡出。
+每个动画都在进行到一半时打断测试，列出所有出现跳变的地方。</code></pre>
+<h2>什么时候仍该用时长</h2>
+<p>加载指示、进度条、任何和媒体同步的动效，以及无法引入弹簧引擎的纯 CSS 页面，继续用普通缓动加固定时长。CSS <code>linear()</code> 可以通过采样近似一条弹簧曲线，Motion 也能生成这段字符串，但结果长度固定，打断时不会带上速度。把它当作退路，而不是源头。</p>
+<p>UI Hub 相关阅读：<a href="../motion-that-feels-right/">让动效感觉对</a>、<a href="../motion-pinch-press-gestures-with-fallbacks/">Motion 的 pinch 和 press 手势</a>，以及<a href="../design-tokens-for-agents/">给智能体的设计 Token</a>。</p>""",
+ refs=[('New Figma Motion updates: physics based springs, style and Lottie export previews (10 Nov 2026)','Figma release notes','https://www.figma.com/release-notes/'),('Adjust an animation’s easing','Figma Learn','https://help.figma.com/hc/en-us/articles/41414048690839-Adjust-an-animation-s-easing'),('Motion (plugin API: MotionEasing, NormalizedSpring, PhysicalSpring)','Figma Developer Docs','https://developers.figma.com/docs/plugins/api/Motion/'),('figma-use-motion: motion-easing.md','figma/mcp-server-guide on GitHub','https://github.com/figma/mcp-server-guide/blob/main/skills/figma-use-motion/references/motion-easing.md'),('How Figma put the bounce in spring animations','Figma Blog','https://www.figma.com/blog/how-we-built-spring-animations/'),('Spring','Apple Developer Documentation','https://developer.apple.com/documentation/swiftui/spring'),('Customize animations (spring)','Android Developers','https://developer.android.com/develop/ui/compose/animation/customize'),('spring','Motion docs','https://motion.dev/docs/spring'),('linear() easing function','MDN Web Docs','https://developer.mozilla.org/en-US/docs/Web/CSS/easing-function/linear'),('prefers-reduced-motion','MDN Web Docs','https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion')]),
 ]
-
