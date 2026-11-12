@@ -1,5 +1,5 @@
 {
- "count": 50,
+ "count": 51,
  "rss": "https://ui.incidental.site/blog/rss.xml",
  "categories": {
   "tools": "Tools",
@@ -18,6 +18,108 @@
   "weekly": "Series: Weekly roundup"
  },
  "posts": [
+  {
+   "slug": "native-popover-dialog-overlays-for-ai-ui",
+   "url": "https://ui.incidental.site/blog/native-popover-dialog-overlays-for-ai-ui/",
+   "date": "2026-11-12",
+   "category": "craft",
+   "series": null,
+   "featured": true,
+   "tags": [
+    "Webflow",
+    "Popover API",
+    "dialog",
+    "invoker commands",
+    "anchor positioning",
+    "accessibility"
+   ],
+   "title": {
+    "en": "Webflow went native for modals and popovers. Make your AI-generated overlays do the same",
+    "zh": "Webflow 的弹窗和浮层改用原生实现了，你的 AI 生成界面也该这样做",
+    "zht": "Webflow 的彈窗和浮層改用原生實作了，你的 AI 生成介面也該這樣做",
+    "ja": "Webflowのモーダルとポップオーバーがネイティブに。AIが作るオーバーレイも同じにしよう",
+    "ko": "Webflow 모달과 팝오버가 네이티브로 바뀌었다. AI가 만드는 오버레이도 그렇게 하자",
+    "ms": "Webflow kini guna modal dan popover asli. Jadikan overlay UI janaan AI anda begitu juga",
+    "vi": "Webflow chuyển modal và popover sang bản gốc của trình duyệt. Overlay do AI tạo cũng nên như vậy",
+    "fr": "Webflow passe aux modales et popovers natifs. Faites de même pour vos overlays générés par IA",
+    "es": "Webflow adopta modales y popovers nativos. Haz lo mismo con los overlays que genera tu IA",
+    "de": "Webflow setzt bei Modals und Popovers auf native Technik. Mach es bei KI-generierten Overlays genauso"
+   },
+   "summary": {
+    "en": "On 10 November 2026 Webflow shipped Modal and Popover elements built on the native <dialog> element, the Popover API and invoker commands. Why that is the right default for any overlay an AI tool writes for you, how to choose between a modal, a popover and a hint, where CSS anchor positioning fits, and a review checklist plus a prompt for your coding agent.",
+    "zh": "2026 年 11 月 10 日，Webflow 上线了 Modal 和 Popover 元素，底层是原生 <dialog> 元素、Popover API 和调用者命令（invoker commands）。为什么这也应该是 AI 工具替你写任何浮层时的默认做法，怎样在模态框、浮层和提示之间选择，CSS 锚点定位用在哪里，以及一份审查清单和一段给编程智能体的提示词。",
+    "zht": "2026 年 11 月 10 日，Webflow 上線了 Modal 和 Popover 元素，底層是原生 <dialog> 元素、Popover API 和呼叫者命令（invoker commands）。為什麼這也應該是 AI 工具替你寫任何浮層時的預設做法，怎樣在模態框、浮層和提示之間選擇，CSS 錨點定位用在哪裡，以及一份審查清單和一段給程式智能體的提示詞。",
+    "ja": "2026年11月10日、Webflowはネイティブの<dialog>要素、Popover API、インボーカーコマンドで作られたModalとPopover要素を公開した。AIツールが書くあらゆるオーバーレイでもこれを既定にすべき理由、モーダル・ポップオーバー・ヒントの選び方、CSSアンカー配置の使いどころ、レビュー用チェックリストとコーディングエージェント向けプロンプト。",
+    "ko": "2026년 11월 10일 Webflow가 네이티브 <dialog> 요소, Popover API, 인보커 커맨드로 만든 Modal·Popover 요소를 내놓았다. AI 도구가 써 주는 모든 오버레이에서도 이것이 기본이어야 하는 이유, 모달·팝오버·힌트를 고르는 법, CSS 앵커 포지셔닝의 자리, 그리고 리뷰 체크리스트와 코딩 에이전트용 프롬프트.",
+    "ms": "Pada 10 November 2026 Webflow melancarkan elemen Modal dan Popover yang dibina atas elemen <dialog> asli, Popover API dan invoker commands. Mengapa itu patut menjadi lalai bagi setiap overlay yang ditulis alat AI untuk anda, cara memilih antara modal, popover dan hint, di mana CSS anchor positioning sesuai, serta senarai semak semakan dan prompt untuk ejen pengekodan anda.",
+    "vi": "Ngày 10/11/2026 Webflow ra mắt phần tử Modal và Popover dựa trên <dialog> gốc, Popover API và invoker commands. Vì sao đó nên là mặc định cho mọi overlay mà công cụ AI viết cho bạn, cách chọn giữa modal, popover và hint, chỗ dùng CSS anchor positioning, kèm checklist rà soát và prompt cho agent lập trình.",
+    "fr": "Le 10 novembre 2026, Webflow a lancé des éléments Modal et Popover reposant sur l’élément natif <dialog>, la Popover API et les invoker commands. Pourquoi c’est le bon choix par défaut pour tout overlay qu’un outil d’IA écrit pour vous, comment choisir entre modale, popover et hint, où placer le CSS anchor positioning, plus une checklist de revue et un prompt pour votre agent de code.",
+    "es": "El 10 de noviembre de 2026 Webflow lanzó elementos Modal y Popover basados en el elemento nativo <dialog>, la Popover API y los invoker commands. Por qué eso debe ser lo predeterminado en cualquier overlay que te escriba una herramienta de IA, cómo elegir entre modal, popover y hint, dónde encaja el CSS anchor positioning, y una lista de revisión más un prompt para tu agente de código.",
+    "de": "Am 10. November 2026 hat Webflow Modal- und Popover-Elemente veröffentlicht, die auf dem nativen <dialog>-Element, der Popover API und Invoker Commands beruhen. Warum das der Standard für jedes Overlay sein sollte, das ein KI-Tool für dich schreibt, wie du zwischen Modal, Popover und Hint wählst, wo CSS Anchor Positioning passt, plus Review-Checkliste und Prompt für deinen Coding-Agent."
+   },
+   "reading_minutes": {
+    "en": 5,
+    "zh": 8
+   },
+   "cover": "https://ui.incidental.site/blog/img/native-popover-dialog-overlays-for-ai-ui-cover.webp",
+   "references": [
+    {
+     "title": "New modal and popover elements (10 Nov 2026)",
+     "by": "Webflow Updates",
+     "url": "https://webflow.com/updates/new-modal-and-popover-elements"
+    },
+    {
+     "title": "Popovers",
+     "by": "Webflow Help Center",
+     "url": "https://help.webflow.com/hc/en-us/articles/57348530718099-Popovers"
+    },
+    {
+     "title": "Modals",
+     "by": "Webflow Help Center",
+     "url": "https://help.webflow.com/hc/en-us/articles/57348593306387-Modals"
+    },
+    {
+     "title": "Popovers & Modals (video lesson)",
+     "by": "Webflow University",
+     "url": "https://university.webflow.com/videos/popovers-modals"
+    },
+    {
+     "title": "Native Modals and Popovers in Webflow",
+     "by": "Mazette",
+     "url": "https://www.mazette.co/en/blog/webflow-launches-native-modals-and-popovers"
+    },
+    {
+     "title": "Popover API",
+     "by": "MDN Web Docs",
+     "url": "https://developer.mozilla.org/en-US/docs/Web/API/Popover_API"
+    },
+    {
+     "title": "<dialog>: The Dialog element",
+     "by": "MDN Web Docs",
+     "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/dialog"
+    },
+    {
+     "title": "Invoker Commands API",
+     "by": "MDN Web Docs",
+     "url": "https://developer.mozilla.org/en-US/docs/Web/API/Invoker_Commands_API"
+    },
+    {
+     "title": "CSS anchor positioning",
+     "by": "MDN Web Docs",
+     "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_anchor_positioning"
+    },
+    {
+     "title": "HTMLDialogElement: closedBy property",
+     "by": "MDN Web Docs",
+     "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement/closedBy"
+    },
+    {
+     "title": "Dialog (Modal) pattern",
+     "by": "W3C WAI-ARIA Authoring Practices",
+     "url": "https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/"
+    }
+   ]
+  },
   {
    "slug": "figma-motion-physics-springs-handoff",
    "url": "https://ui.incidental.site/blog/figma-motion-physics-springs-handoff/",

@@ -1,0 +1,52 @@
+<p>2026 年 11 月 10 日，Webflow 在「添加」面板里加了两个元素：<strong>Modal（模态框）</strong>和 <strong>Popover（浮层）</strong>。有意思的不是建站工具终于能做下拉菜单，而是做法。Webflow 说明，浮层使用浏览器原生的 Popover API，由声明式的调用者命令（invoker commands）打开；模态框则是以模态方式打开的原生 <code>&lt;dialog&gt;</code> 元素。发布后的页面打开和关闭它们都不需要 Webflow 自己的 JavaScript，除非你加了动画。一个承载海量页面的无代码工具，选择了平台能力而不是自家脚本。对于浮层已经交给 v0、Lovable、Cursor 或其他智能体来写的团队，这是一个值得注意的信号。</p><figure><img src="../../blog/img/native-popover-dialog-overlays-for-ai-ui-1.webp" alt="Webflow 更新页《New modal and popover elements》，2026 年 11 月 10 日上线" loading="lazy" decoding="async" width="1280" height="585"><figcaption>Webflow 更新页《New modal and popover elements》，2026 年 11 月 10 日上线 · 截图：Webflow（<a href="https://webflow.com/updates/new-modal-and-popover-elements" rel="noopener" target="_blank">webflow.com</a>），2026-11-12 截取，版权归原站所有</figcaption></figure>
+<h2>这次发了什么</h2>
+<ul><li><strong>两个元素，两种用途。</strong>浮层贴着打开它的按钮出现，页面其他部分仍可操作：菜单、展开面板、提示。模态框会拦住访客直到关闭：注册表单、确认操作、重要通知。</li>
+<li><strong>行为由浏览器提供。</strong>Webflow 帮助文档列出了这些「白送」的能力：auto 浮层按 Esc 或点击外部即关闭，背后的页面仍可点击；模态框会挡住页面、让 Tab 焦点留在内部、按 Esc 关闭、点击背景不关闭，关闭后焦点回到打开它的按钮。</li>
+<li><strong>顶层渲染，不用拼 z-index。</strong>两者都渲染在浏览器的顶层（top layer），可以直接给模态框的 <code>::backdrop</code> 和浮层的 <code>:popover-open</code> 状态写样式。</li>
+<li><strong>只有按钮能打开。</strong>链接块和文本链接不行。浮层按钮可以切换、显示或隐藏；模态框没有切换动作，也没有默认的关闭按钮。</li>
+<li><strong>动效是可选项。</strong>勾选「Animate open/close」会加一段基于 GSAP 的交互，可以再编辑。悬停打开不是原生行为，需要交互触发器。所有站点套餐都可用，包括免费的 Starter。</li></ul><figure><img src="../../blog/img/native-popover-dialog-overlays-for-ai-ui-2.webp" alt="流程示意：先问用户是否必须处理完才能继续；是则用 show-modal 打开的原生 dialog，否则用 auto 浮层、通知用 manual 浮层、工具提示用 hint，由带 commandfor 的按钮打开，最后做键盘测试" loading="lazy" decoding="async" width="1200" height="675"><figcaption>流程示意：先问用户是否必须处理完才能继续；是则用 show-modal 打开的原生 dialog，否则用 auto 浮层、通知用 manual 浮层、工具提示用 hint，由带 commandfor 的按钮打开，最后做键盘测试 · 示意图：UI Hub 原创，CC BY 4.0</figcaption></figure>
+<h2>我们的看法：浮层是一份行为契约，而不是一个定位好的 div</h2>
+<p>让大多数 AI 生成工具做「一个下拉菜单」或「一个确认弹窗」，常常得到的是一个 <code>position: fixed</code> 的 <code>div</code>，加上很大的 <code>z-index</code>、一个状态变量，以及背景上的 <code>onClick</code>。预览里看着没问题。然后有人按 Tab，焦点跑到了它背后；按 Esc 没反应；页面在它下面滚动；关闭后焦点丢失；第二个浮层开在了第一个下面。这些在截图里一样都看不出来，所以只靠看图审查生成的界面会漏掉它们。</p>
+<p>原生版本替你扛下了这份契约。用 <code>showModal()</code> 打开的 <code>&lt;dialog&gt;</code> 会让页面其余部分变为惰性（inert），关闭时归还焦点；<code>popover="auto"</code> 自带轻触关闭，并会关掉其他 auto 浮层；调用者命令（<code>commandfor</code> 加 <code>command</code>）不写脚本就能把按钮连到任意一个上，MDN 标注它自 2025 年 12 月起进入 Baseline。据 MDN，<code>popover</code> 属性自 2024 年 4 月、<code>&lt;dialog&gt;</code> 自 2022 年 3 月起已在各主流浏览器可用，对大多数用户群来说这已经不是实验。智能体写的自定义代码越少，要审查的自定义代码就越少。</p>
+<p>不过设计上的判断不会消失。Webflow 那句话就是对的标准：<strong>用户还需要继续操作背后的页面吗？</strong>需要，就是浮层；必须先处理完再继续，就是模态框。我们见过的糟糕浮层，大多是本该是浮层的模态框（一个把整页冻住的筛选面板），或者本该是模态框的浮层（一个误点一下就消失的删除确认）。</p>
+<h2>选对原语</h2>
+<ul><li><strong>模态对话框</strong>：<code>&lt;dialog&gt;</code> + <code>command="show-modal"</code>。用于确认、必须填完的表单、阻断性错误。给它一个无障碍名称和一个看得见的关闭按钮。</li>
+<li><strong>auto 浮层</strong>：<code>popover</code>（默认 auto）。用于菜单、账户面板、筛选面板、日期选择。轻触即关，同时只开一个。</li>
+<li><strong>manual 浮层</strong>：<code>popover="manual"</code>。用于需要在代码里关闭的通知或面板，可以同时开多个。</li>
+<li><strong>hint 提示</strong>：<code>popover="hint"</code>，用于不应关掉已打开菜单的工具提示。依赖它之前先查浏览器支持表，提示里只放简短、非必要的文字。</li>
+<li><strong>非模态对话框</strong>：用 <code>show()</code> 打开的 <code>&lt;dialog&gt;</code>，适合放在工作区旁边的检查器或聊天面板。</li></ul>
+<p>定位方面，CSS 锚点定位（<code>anchor-name</code>、<code>position-anchor</code>、<code>position-area</code>，以及靠近边缘时用于翻转的 <code>position-try-fallbacks</code>）已经可以替代很多菜单里的定位库；MDN 把 <code>position-anchor</code> 标为 2026 年新进入 Baseline。为旧浏览器保留一个后备位置。能让模态框原生支持点击背景关闭的 <code>closedby</code> 属性目前仍标为「有限可用」，暂时别依赖它。</p>
+<h2>清单：审查任何一个 AI 生成的浮层</h2>
+<ol><li><strong>先说清用途。</strong>在提示词里写明「模态框」还是「浮层」，并给出理由。别让工具从「弹窗」这个词自己猜。</li>
+<li><strong>在 diff 里搜手搓的浮层。</strong><code>z-index: 9999</code>、<code>position: fixed</code> 加一个背景 div、自写的焦点陷阱，都说明它绕开了平台能力。</li>
+<li><strong>用按钮打开。</strong>不要用链接或可点击的 <code>div</code>；这与 Webflow 的规则一致，也符合无障碍要求。</li>
+<li><strong>键盘测试。</strong>Tab 在模态框里循环、能走出浮层；Esc 两者都能关；焦点回到打开它的元素。</li>
+<li><strong>每个模态框都有名称和关闭按钮。</strong>用 <code>aria-labelledby</code> 指向它的标题，并放一个真正的关闭控件，因为原生模态框没有默认关闭按钮。</li>
+<li><strong>有意识地决定背景点击。</strong>原生模态框会忽略背景点击；删除类确认就保持这样。</li>
+<li><strong>加动画但别弄坏它。</strong>在 <code>:popover-open</code> 或 <code>[open]</code> 上动透明度和位移，遵守 <code>prefers-reduced-motion</code>，并确认关闭态最终仍是 <code>display: none</code>。</li>
+<li><strong>在手机上测。</strong>返回手势和软键盘是自定义浮层最常出错的地方。</li>
+<li><strong>两种主题下都检查顶层样式。</strong>在浅色和深色模式下看 <code>::backdrop</code> 的对比度；在白底上好用的遮罩，到接近黑色的背景上可能就看不见了。</li></ol>
+<pre><code>&lt;!-- 一个菜单和一个确认弹窗，不写 JavaScript --&gt;
+&lt;button commandfor="acct" command="toggle-popover"&gt;账户&lt;/button&gt;
+&lt;div id="acct" popover&gt;…链接…&lt;/div&gt;
+
+&lt;button commandfor="del" command="show-modal"&gt;删除项目&lt;/button&gt;
+&lt;dialog id="del" aria-labelledby="del-t"&gt;
+  &lt;h2 id="del-t"&gt;确定删除这个项目？&lt;/h2&gt;
+  &lt;button commandfor="del" command="close"&gt;取消&lt;/button&gt;
+  &lt;button&gt;删除&lt;/button&gt;
+&lt;/dialog&gt;</code></pre>
+<pre><code># 把这段贴给你的编程智能体
+审查仓库里所有浮层（菜单、提示、对话框、抽屉、通知）。
+逐个判断：用户是否必须先处理完它才能继续？
+  是 -> 原生 &lt;dialog&gt;，用 command="show-modal"（或 showModal()）打开，
+        aria-labelledby 指向标题，放一个看得见的关闭按钮。
+  否 -> 菜单和面板用 popover="auto"，通知用 popover="manual"，
+        由带 commandfor/command 的 &lt;button&gt; 打开。
+删掉原生元素已经替代的自定义 z-index 层级、背景 div 和手写焦点陷阱。
+菜单用 CSS 锚点定位，并保留静态后备位置。
+沿用我们现有的 Token 和动效，遵守 prefers-reduced-motion。
+输出一张表：组件、改前、改后、键盘测试结果。</code></pre>
+<figure><img src="../../blog/img/native-popover-dialog-overlays-for-ai-ui-3.webp" alt="2026 年 11 月 12 日 MDN Web Docs 的 Popover API 页面" loading="lazy" decoding="async" width="1280" height="800"><figcaption>2026 年 11 月 12 日 MDN Web Docs 的 Popover API 页面 · 截图：MDN Web Docs（<a href="https://developer.mozilla.org/en-US/docs/Web/API/Popover_API" rel="noopener" target="_blank">developer.mozilla.org</a>），2026-11-12 截取，版权归原站所有</figcaption></figure><h2>什么时候仍需要组件库</h2>
+<p>带输入联想的组合框、用方向键移动焦点的多级菜单、复杂的日期选择器，都有原生元素没有实现的键盘模式。这些就用经过充分测试的无头（headless）组件库，最好是渲染进原生顶层的那种，并对照 WAI-ARIA 编写实践里的模式检查。原生原语仍然是底线：比这些简单的东西，就不该自带一套浮层引擎。</p>
+<p>UI Hub 相关阅读：<a href="../agent-approval-ui-budgets-interruptions/">智能体的审批界面</a>、<a href="../motion-pinch-press-gestures-with-fallbacks/">Motion 的 pinch 和 press 手势及降级</a>，以及<a href="../lint-agents-onto-your-design-system/">用 Lint 把智能体约束在设计系统上</a>。</p>

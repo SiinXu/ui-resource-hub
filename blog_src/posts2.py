@@ -2474,4 +2474,131 @@ Test interrupting each animation halfway and list any that jump.</code></pre>
 <p>加载指示、进度条、任何和媒体同步的动效，以及无法引入弹簧引擎的纯 CSS 页面，继续用普通缓动加固定时长。CSS <code>linear()</code> 可以通过采样近似一条弹簧曲线，Motion 也能生成这段字符串，但结果长度固定，打断时不会带上速度。把它当作退路，而不是源头。</p>
 <p>UI Hub 相关阅读：<a href="../motion-that-feels-right/">让动效感觉对</a>、<a href="../motion-pinch-press-gestures-with-fallbacks/">Motion 的 pinch 和 press 手势</a>，以及<a href="../design-tokens-for-agents/">给智能体的设计 Token</a>。</p>""",
  refs=[('New Figma Motion updates: physics based springs, style and Lottie export previews (10 Nov 2026)','Figma release notes','https://www.figma.com/release-notes/'),('Adjust an animation’s easing','Figma Learn','https://help.figma.com/hc/en-us/articles/41414048690839-Adjust-an-animation-s-easing'),('Motion (plugin API: MotionEasing, NormalizedSpring, PhysicalSpring)','Figma Developer Docs','https://developers.figma.com/docs/plugins/api/Motion/'),('figma-use-motion: motion-easing.md','figma/mcp-server-guide on GitHub','https://github.com/figma/mcp-server-guide/blob/main/skills/figma-use-motion/references/motion-easing.md'),('How Figma put the bounce in spring animations','Figma Blog','https://www.figma.com/blog/how-we-built-spring-animations/'),('Spring','Apple Developer Documentation','https://developer.apple.com/documentation/swiftui/spring'),('Customize animations (spring)','Android Developers','https://developer.android.com/develop/ui/compose/animation/customize'),('spring','Motion docs','https://motion.dev/docs/spring'),('linear() easing function','MDN Web Docs','https://developer.mozilla.org/en-US/docs/Web/CSS/easing-function/linear'),('prefers-reduced-motion','MDN Web Docs','https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion')]),
+dict(slug='native-popover-dialog-overlays-for-ai-ui', date='2026-11-12', cat='craft', series=None, featured=True, tags=['Webflow','Popover API','dialog','invoker commands','anchor positioning','accessibility'],
+ t=T('Webflow went native for modals and popovers. Make your AI-generated overlays do the same',
+     'Webflow 的弹窗和浮层改用原生实现了，你的 AI 生成界面也该这样做',
+     'Webflow 的彈窗和浮層改用原生實作了，你的 AI 生成介面也該這樣做',
+     'Webflowのモーダルとポップオーバーがネイティブに。AIが作るオーバーレイも同じにしよう',
+     'Webflow 모달과 팝오버가 네이티브로 바뀌었다. AI가 만드는 오버레이도 그렇게 하자',
+     'Webflow kini guna modal dan popover asli. Jadikan overlay UI janaan AI anda begitu juga',
+     'Webflow chuyển modal và popover sang bản gốc của trình duyệt. Overlay do AI tạo cũng nên như vậy',
+     'Webflow passe aux modales et popovers natifs. Faites de même pour vos overlays générés par IA',
+     'Webflow adopta modales y popovers nativos. Haz lo mismo con los overlays que genera tu IA',
+     'Webflow setzt bei Modals und Popovers auf native Technik. Mach es bei KI-generierten Overlays genauso'),
+ s=T('On 10 November 2026 Webflow shipped Modal and Popover elements built on the native <dialog> element, the Popover API and invoker commands. Why that is the right default for any overlay an AI tool writes for you, how to choose between a modal, a popover and a hint, where CSS anchor positioning fits, and a review checklist plus a prompt for your coding agent.',
+     '2026 年 11 月 10 日，Webflow 上线了 Modal 和 Popover 元素，底层是原生 <dialog> 元素、Popover API 和调用者命令（invoker commands）。为什么这也应该是 AI 工具替你写任何浮层时的默认做法，怎样在模态框、浮层和提示之间选择，CSS 锚点定位用在哪里，以及一份审查清单和一段给编程智能体的提示词。',
+     '2026 年 11 月 10 日，Webflow 上線了 Modal 和 Popover 元素，底層是原生 <dialog> 元素、Popover API 和呼叫者命令（invoker commands）。為什麼這也應該是 AI 工具替你寫任何浮層時的預設做法，怎樣在模態框、浮層和提示之間選擇，CSS 錨點定位用在哪裡，以及一份審查清單和一段給程式智能體的提示詞。',
+     '2026年11月10日、Webflowはネイティブの<dialog>要素、Popover API、インボーカーコマンドで作られたModalとPopover要素を公開した。AIツールが書くあらゆるオーバーレイでもこれを既定にすべき理由、モーダル・ポップオーバー・ヒントの選び方、CSSアンカー配置の使いどころ、レビュー用チェックリストとコーディングエージェント向けプロンプト。',
+     '2026년 11월 10일 Webflow가 네이티브 <dialog> 요소, Popover API, 인보커 커맨드로 만든 Modal·Popover 요소를 내놓았다. AI 도구가 써 주는 모든 오버레이에서도 이것이 기본이어야 하는 이유, 모달·팝오버·힌트를 고르는 법, CSS 앵커 포지셔닝의 자리, 그리고 리뷰 체크리스트와 코딩 에이전트용 프롬프트.',
+     'Pada 10 November 2026 Webflow melancarkan elemen Modal dan Popover yang dibina atas elemen <dialog> asli, Popover API dan invoker commands. Mengapa itu patut menjadi lalai bagi setiap overlay yang ditulis alat AI untuk anda, cara memilih antara modal, popover dan hint, di mana CSS anchor positioning sesuai, serta senarai semak semakan dan prompt untuk ejen pengekodan anda.',
+     'Ngày 10/11/2026 Webflow ra mắt phần tử Modal và Popover dựa trên <dialog> gốc, Popover API và invoker commands. Vì sao đó nên là mặc định cho mọi overlay mà công cụ AI viết cho bạn, cách chọn giữa modal, popover và hint, chỗ dùng CSS anchor positioning, kèm checklist rà soát và prompt cho agent lập trình.',
+     'Le 10 novembre 2026, Webflow a lancé des éléments Modal et Popover reposant sur l’élément natif <dialog>, la Popover API et les invoker commands. Pourquoi c’est le bon choix par défaut pour tout overlay qu’un outil d’IA écrit pour vous, comment choisir entre modale, popover et hint, où placer le CSS anchor positioning, plus une checklist de revue et un prompt pour votre agent de code.',
+     'El 10 de noviembre de 2026 Webflow lanzó elementos Modal y Popover basados en el elemento nativo <dialog>, la Popover API y los invoker commands. Por qué eso debe ser lo predeterminado en cualquier overlay que te escriba una herramienta de IA, cómo elegir entre modal, popover y hint, dónde encaja el CSS anchor positioning, y una lista de revisión más un prompt para tu agente de código.',
+     'Am 10. November 2026 hat Webflow Modal- und Popover-Elemente veröffentlicht, die auf dem nativen <dialog>-Element, der Popover API und Invoker Commands beruhen. Warum das der Standard für jedes Overlay sein sollte, das ein KI-Tool für dich schreibt, wie du zwischen Modal, Popover und Hint wählst, wo CSS Anchor Positioning passt, plus Review-Checkliste und Prompt für deinen Coding-Agent.'),
+ en="""<p>On 10 November 2026 Webflow added two elements to its Add panel: <strong>Modal</strong> and <strong>Popover</strong>. The interesting part is not that a site builder can now make a dropdown. It is how. Webflow says popovers use the browser’s native Popover API and are opened by declarative invoker commands, and modals are native <code>&lt;dialog&gt;</code> elements opened as modals. Published pages open and close them without Webflow’s own JavaScript unless you add an animation. A no-code tool with millions of pages chose the platform over its own script. That is a useful signal for anyone whose overlays are now written by v0, Lovable, Cursor or another agent.</p>
+<h2>What shipped</h2>
+<ul><li><strong>Two elements, two jobs.</strong> A popover floats next to the button that opens it and leaves the page usable: menus, flyouts, tooltips. A modal holds the visitor until they close it: sign-up forms, confirmations, important messages.</li>
+<li><strong>Behaviour comes from the browser.</strong> Webflow’s help pages list what you get for free. Auto popovers close on Escape and on a click outside, and the page behind stays clickable. Modals block the page, keep Tab inside, close on Escape, do not close on a backdrop click, and return focus to the button that opened them.</li>
+<li><strong>Top layer, no z-index.</strong> Both render in the browser’s top layer, and you style the modal’s <code>::backdrop</code> and the popover’s <code>:popover-open</code> state directly.</li>
+<li><strong>Only buttons open them.</strong> Link blocks and text links cannot. A popover button can Toggle, Show or Hide; a modal has no Toggle and no default close button.</li>
+<li><strong>Motion is opt-in.</strong> “Animate open/close” adds a GSAP-powered interaction you can edit. Hover-to-open is not native and needs an interaction trigger. Available on all site plans, including the free Starter plan.</li></ul>
+<h2>Our take: an overlay is a behaviour contract, not a positioned div</h2>
+<p>Ask most AI builders for “a dropdown” or “a confirm dialog” and you often get a <code>div</code> with <code>position: fixed</code>, a large <code>z-index</code>, a state variable and an <code>onClick</code> on the backdrop. It looks right in the preview. Then someone presses Tab and lands behind it, Escape does nothing, the page scrolls under it, focus is lost when it closes, and a second overlay opens underneath the first. None of that shows up in a screenshot, which is why visual review of generated UI misses it.</p>
+<p>The native versions carry that contract for you. <code>&lt;dialog&gt;</code> opened with <code>showModal()</code> makes the rest of the page inert and returns focus on close. <code>popover="auto"</code> gives light dismiss and closes other auto popovers. Invoker commands (<code>commandfor</code> plus <code>command</code>) wire a button to either one without any script, and MDN lists them as Baseline since December 2025. MDN says the <code>popover</code> attribute has worked across browsers since April 2024 and <code>&lt;dialog&gt;</code> since March 2022, so for most audiences this is not an experiment any more. When an agent writes less custom code, there is less custom code to review.</p>
+<p>The design decision does not go away, though. Webflow’s one-line rule is the right one: <strong>does the person need to keep using the page behind it?</strong> If yes, it is a popover. If they must deal with it before going on, it is a modal. Most bad overlays we see are modals that should have been popovers (a filter panel that freezes the page) or popovers that should have been modals (a destructive confirm that a stray click dismisses).</p>
+<h2>Pick the right primitive</h2>
+<ul><li><strong>Modal dialog</strong> — <code>&lt;dialog&gt;</code> + <code>command="show-modal"</code>. Confirmations, forms that must finish, blocking errors. Give it an accessible name and a visible close button.</li>
+<li><strong>Auto popover</strong> — <code>popover</code> (auto). Menus, account flyouts, filter panels, date pickers. Light dismiss, one at a time.</li>
+<li><strong>Manual popover</strong> — <code>popover="manual"</code>. Toasts or panels that should stay until closed in code; several can be open at once.</li>
+<li><strong>Hint</strong> — <code>popover="hint"</code> for tooltips that should not close an open menu. Check your browser support table before relying on it, and keep tooltips to short, non-essential text.</li>
+<li><strong>Non-modal dialog</strong> — <code>&lt;dialog&gt;</code> opened with <code>show()</code> for an inspector or chat panel that sits beside the work.</li></ul>
+<p>For placement, CSS anchor positioning (<code>anchor-name</code>, <code>position-anchor</code>, <code>position-area</code>, and <code>position-try-fallbacks</code> for flipping near the edge) can now replace a positioning library for many menus; MDN marks <code>position-anchor</code> as newly Baseline in 2026. Keep a fallback position for older browsers. The <code>closedby</code> attribute, which would let a modal close on a backdrop click natively, is still marked limited availability, so do not depend on it yet.</p>
+<h2>Checklist: review any AI-generated overlay</h2>
+<ol><li><strong>Name the job first.</strong> Write “modal” or “popover” in the prompt, with the reason. Do not let the tool pick from the word “popup”.</li>
+<li><strong>Search the diff for hand-rolled overlays.</strong> <code>z-index: 9999</code>, <code>position: fixed</code> plus a backdrop div, or a custom focus trap are signs it ignored the platform.</li>
+<li><strong>Use a button to open it.</strong> Never a link or a clickable <code>div</code>; that matches Webflow’s rule and the accessibility one.</li>
+<li><strong>Keyboard test.</strong> Tab stays inside a modal and walks out of a popover; Escape closes both; focus returns to the opener.</li>
+<li><strong>Give every modal a name and a close button.</strong> <code>aria-labelledby</code> pointing at its heading, and a real close control, because native modals have no default one.</li>
+<li><strong>Decide on backdrop clicks deliberately.</strong> Native modals ignore them. For a destructive confirm, keep it that way.</li>
+<li><strong>Animate without breaking it.</strong> Animate opacity and transform on <code>:popover-open</code> or <code>[open]</code>, honour <code>prefers-reduced-motion</code>, and check that the closed state still ends at <code>display: none</code>.</li>
+<li><strong>Test on a phone.</strong> The Back gesture and the on-screen keyboard are where custom overlays most often fail.</li>
+<li><strong>Style the top layer in both themes.</strong> Check <code>::backdrop</code> contrast in light and dark mode; a backdrop that works on white can disappear on near-black.</li></ol>
+<pre><code>&lt;!-- A menu and a confirm dialog with no JavaScript --&gt;
+&lt;button commandfor="acct" command="toggle-popover"&gt;Account&lt;/button&gt;
+&lt;div id="acct" popover&gt;…links…&lt;/div&gt;
+
+&lt;button commandfor="del" command="show-modal"&gt;Delete project&lt;/button&gt;
+&lt;dialog id="del" aria-labelledby="del-t"&gt;
+  &lt;h2 id="del-t"&gt;Delete this project?&lt;/h2&gt;
+  &lt;button commandfor="del" command="close"&gt;Cancel&lt;/button&gt;
+  &lt;button&gt;Delete&lt;/button&gt;
+&lt;/dialog&gt;</code></pre>
+<pre><code># Paste this to your coding agent
+Audit every overlay in this repo (menus, tooltips, dialogs, drawers, toasts).
+For each one, say whether the user must finish it before continuing.
+  Yes  -> native &lt;dialog&gt; opened with command="show-modal" (or showModal()),
+          aria-labelledby on its heading, a visible close button.
+  No   -> popover="auto" for menus and panels, popover="manual" for toasts,
+          opened by a &lt;button&gt; with commandfor/command.
+Remove custom z-index stacks, backdrop divs and hand-written focus traps
+that the native element replaces. Position menus with CSS anchor
+positioning and keep a static fallback. Keep our existing tokens and
+animations; respect prefers-reduced-motion.
+Report a table: component, before, after, keyboard test result.</code></pre>
+<h2>When you still need a library</h2>
+<p>Comboboxes with typeahead, nested menus with arrow-key roving focus, and complex date pickers carry keyboard patterns the native elements do not implement. Use a well-tested headless library for those, ideally one that renders into the native top layer, and check it against the WAI-ARIA Authoring Practices patterns. The native primitives still set the floor: anything simpler than that should not ship its own overlay engine.</p>
+<p>Related on UI Hub: <a href="../agent-approval-ui-budgets-interruptions/">approval UI for agents</a>, <a href="../motion-pinch-press-gestures-with-fallbacks/">Motion’s pinch and press gestures with fallbacks</a>, and <a href="../lint-agents-onto-your-design-system/">linting agents onto your design system</a>.</p>""",
+ zh="""<p>2026 年 11 月 10 日，Webflow 在「添加」面板里加了两个元素：<strong>Modal（模态框）</strong>和 <strong>Popover（浮层）</strong>。有意思的不是建站工具终于能做下拉菜单，而是做法。Webflow 说明，浮层使用浏览器原生的 Popover API，由声明式的调用者命令（invoker commands）打开；模态框则是以模态方式打开的原生 <code>&lt;dialog&gt;</code> 元素。发布后的页面打开和关闭它们都不需要 Webflow 自己的 JavaScript，除非你加了动画。一个承载海量页面的无代码工具，选择了平台能力而不是自家脚本。对于浮层已经交给 v0、Lovable、Cursor 或其他智能体来写的团队，这是一个值得注意的信号。</p>
+<h2>这次发了什么</h2>
+<ul><li><strong>两个元素，两种用途。</strong>浮层贴着打开它的按钮出现，页面其他部分仍可操作：菜单、展开面板、提示。模态框会拦住访客直到关闭：注册表单、确认操作、重要通知。</li>
+<li><strong>行为由浏览器提供。</strong>Webflow 帮助文档列出了这些「白送」的能力：auto 浮层按 Esc 或点击外部即关闭，背后的页面仍可点击；模态框会挡住页面、让 Tab 焦点留在内部、按 Esc 关闭、点击背景不关闭，关闭后焦点回到打开它的按钮。</li>
+<li><strong>顶层渲染，不用拼 z-index。</strong>两者都渲染在浏览器的顶层（top layer），可以直接给模态框的 <code>::backdrop</code> 和浮层的 <code>:popover-open</code> 状态写样式。</li>
+<li><strong>只有按钮能打开。</strong>链接块和文本链接不行。浮层按钮可以切换、显示或隐藏；模态框没有切换动作，也没有默认的关闭按钮。</li>
+<li><strong>动效是可选项。</strong>勾选「Animate open/close」会加一段基于 GSAP 的交互，可以再编辑。悬停打开不是原生行为，需要交互触发器。所有站点套餐都可用，包括免费的 Starter。</li></ul>
+<h2>我们的看法：浮层是一份行为契约，而不是一个定位好的 div</h2>
+<p>让大多数 AI 生成工具做「一个下拉菜单」或「一个确认弹窗」，常常得到的是一个 <code>position: fixed</code> 的 <code>div</code>，加上很大的 <code>z-index</code>、一个状态变量，以及背景上的 <code>onClick</code>。预览里看着没问题。然后有人按 Tab，焦点跑到了它背后；按 Esc 没反应；页面在它下面滚动；关闭后焦点丢失；第二个浮层开在了第一个下面。这些在截图里一样都看不出来，所以只靠看图审查生成的界面会漏掉它们。</p>
+<p>原生版本替你扛下了这份契约。用 <code>showModal()</code> 打开的 <code>&lt;dialog&gt;</code> 会让页面其余部分变为惰性（inert），关闭时归还焦点；<code>popover="auto"</code> 自带轻触关闭，并会关掉其他 auto 浮层；调用者命令（<code>commandfor</code> 加 <code>command</code>）不写脚本就能把按钮连到任意一个上，MDN 标注它自 2025 年 12 月起进入 Baseline。据 MDN，<code>popover</code> 属性自 2024 年 4 月、<code>&lt;dialog&gt;</code> 自 2022 年 3 月起已在各主流浏览器可用，对大多数用户群来说这已经不是实验。智能体写的自定义代码越少，要审查的自定义代码就越少。</p>
+<p>不过设计上的判断不会消失。Webflow 那句话就是对的标准：<strong>用户还需要继续操作背后的页面吗？</strong>需要，就是浮层；必须先处理完再继续，就是模态框。我们见过的糟糕浮层，大多是本该是浮层的模态框（一个把整页冻住的筛选面板），或者本该是模态框的浮层（一个误点一下就消失的删除确认）。</p>
+<h2>选对原语</h2>
+<ul><li><strong>模态对话框</strong>：<code>&lt;dialog&gt;</code> + <code>command="show-modal"</code>。用于确认、必须填完的表单、阻断性错误。给它一个无障碍名称和一个看得见的关闭按钮。</li>
+<li><strong>auto 浮层</strong>：<code>popover</code>（默认 auto）。用于菜单、账户面板、筛选面板、日期选择。轻触即关，同时只开一个。</li>
+<li><strong>manual 浮层</strong>：<code>popover="manual"</code>。用于需要在代码里关闭的通知或面板，可以同时开多个。</li>
+<li><strong>hint 提示</strong>：<code>popover="hint"</code>，用于不应关掉已打开菜单的工具提示。依赖它之前先查浏览器支持表，提示里只放简短、非必要的文字。</li>
+<li><strong>非模态对话框</strong>：用 <code>show()</code> 打开的 <code>&lt;dialog&gt;</code>，适合放在工作区旁边的检查器或聊天面板。</li></ul>
+<p>定位方面，CSS 锚点定位（<code>anchor-name</code>、<code>position-anchor</code>、<code>position-area</code>，以及靠近边缘时用于翻转的 <code>position-try-fallbacks</code>）已经可以替代很多菜单里的定位库；MDN 把 <code>position-anchor</code> 标为 2026 年新进入 Baseline。为旧浏览器保留一个后备位置。能让模态框原生支持点击背景关闭的 <code>closedby</code> 属性目前仍标为「有限可用」，暂时别依赖它。</p>
+<h2>清单：审查任何一个 AI 生成的浮层</h2>
+<ol><li><strong>先说清用途。</strong>在提示词里写明「模态框」还是「浮层」，并给出理由。别让工具从「弹窗」这个词自己猜。</li>
+<li><strong>在 diff 里搜手搓的浮层。</strong><code>z-index: 9999</code>、<code>position: fixed</code> 加一个背景 div、自写的焦点陷阱，都说明它绕开了平台能力。</li>
+<li><strong>用按钮打开。</strong>不要用链接或可点击的 <code>div</code>；这与 Webflow 的规则一致，也符合无障碍要求。</li>
+<li><strong>键盘测试。</strong>Tab 在模态框里循环、能走出浮层；Esc 两者都能关；焦点回到打开它的元素。</li>
+<li><strong>每个模态框都有名称和关闭按钮。</strong>用 <code>aria-labelledby</code> 指向它的标题，并放一个真正的关闭控件，因为原生模态框没有默认关闭按钮。</li>
+<li><strong>有意识地决定背景点击。</strong>原生模态框会忽略背景点击；删除类确认就保持这样。</li>
+<li><strong>加动画但别弄坏它。</strong>在 <code>:popover-open</code> 或 <code>[open]</code> 上动透明度和位移，遵守 <code>prefers-reduced-motion</code>，并确认关闭态最终仍是 <code>display: none</code>。</li>
+<li><strong>在手机上测。</strong>返回手势和软键盘是自定义浮层最常出错的地方。</li>
+<li><strong>两种主题下都检查顶层样式。</strong>在浅色和深色模式下看 <code>::backdrop</code> 的对比度；在白底上好用的遮罩，到接近黑色的背景上可能就看不见了。</li></ol>
+<pre><code>&lt;!-- 一个菜单和一个确认弹窗，不写 JavaScript --&gt;
+&lt;button commandfor="acct" command="toggle-popover"&gt;账户&lt;/button&gt;
+&lt;div id="acct" popover&gt;…链接…&lt;/div&gt;
+
+&lt;button commandfor="del" command="show-modal"&gt;删除项目&lt;/button&gt;
+&lt;dialog id="del" aria-labelledby="del-t"&gt;
+  &lt;h2 id="del-t"&gt;确定删除这个项目？&lt;/h2&gt;
+  &lt;button commandfor="del" command="close"&gt;取消&lt;/button&gt;
+  &lt;button&gt;删除&lt;/button&gt;
+&lt;/dialog&gt;</code></pre>
+<pre><code># 把这段贴给你的编程智能体
+审查仓库里所有浮层（菜单、提示、对话框、抽屉、通知）。
+逐个判断：用户是否必须先处理完它才能继续？
+  是 -> 原生 &lt;dialog&gt;，用 command="show-modal"（或 showModal()）打开，
+        aria-labelledby 指向标题，放一个看得见的关闭按钮。
+  否 -> 菜单和面板用 popover="auto"，通知用 popover="manual"，
+        由带 commandfor/command 的 &lt;button&gt; 打开。
+删掉原生元素已经替代的自定义 z-index 层级、背景 div 和手写焦点陷阱。
+菜单用 CSS 锚点定位，并保留静态后备位置。
+沿用我们现有的 Token 和动效，遵守 prefers-reduced-motion。
+输出一张表：组件、改前、改后、键盘测试结果。</code></pre>
+<h2>什么时候仍需要组件库</h2>
+<p>带输入联想的组合框、用方向键移动焦点的多级菜单、复杂的日期选择器，都有原生元素没有实现的键盘模式。这些就用经过充分测试的无头（headless）组件库，最好是渲染进原生顶层的那种，并对照 WAI-ARIA 编写实践里的模式检查。原生原语仍然是底线：比这些简单的东西，就不该自带一套浮层引擎。</p>
+<p>UI Hub 相关阅读：<a href="../agent-approval-ui-budgets-interruptions/">智能体的审批界面</a>、<a href="../motion-pinch-press-gestures-with-fallbacks/">Motion 的 pinch 和 press 手势及降级</a>，以及<a href="../lint-agents-onto-your-design-system/">用 Lint 把智能体约束在设计系统上</a>。</p>""",
+ refs=[('New modal and popover elements (10 Nov 2026)','Webflow Updates','https://webflow.com/updates/new-modal-and-popover-elements'),('Popovers','Webflow Help Center','https://help.webflow.com/hc/en-us/articles/57348530718099-Popovers'),('Modals','Webflow Help Center','https://help.webflow.com/hc/en-us/articles/57348593306387-Modals'),('Popovers & Modals (video lesson)','Webflow University','https://university.webflow.com/videos/popovers-modals'),('Native Modals and Popovers in Webflow','Mazette','https://www.mazette.co/en/blog/webflow-launches-native-modals-and-popovers'),('Popover API','MDN Web Docs','https://developer.mozilla.org/en-US/docs/Web/API/Popover_API'),('<dialog>: The Dialog element','MDN Web Docs','https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/dialog'),('Invoker Commands API','MDN Web Docs','https://developer.mozilla.org/en-US/docs/Web/API/Invoker_Commands_API'),('CSS anchor positioning','MDN Web Docs','https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_anchor_positioning'),('HTMLDialogElement: closedBy property','MDN Web Docs','https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement/closedBy'),('Dialog (Modal) pattern','W3C WAI-ARIA Authoring Practices','https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/')]),
 ]
