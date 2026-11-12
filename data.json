@@ -1,6 +1,6 @@
 {
  "generated": "2026-11-12",
- "count": 5114,
+ "count": 5115,
  "items": [
   {
    "id": "ued-transitions-dev-craft",
@@ -192602,6 +192602,56 @@
    },
    "pub": "2026-11-11",
    "added": "2026-11-12"
+  },
+  {
+   "id": "rd-1xh94om-geometric-logo-mark-animation",
+   "name": "Geometric Logo Animation",
+   "url": "https://x.com/VadimCarazan/status/2120806555579044315",
+   "note": "A rounded square logomark dissolves into white particles, morphs through 3D spatial forms, then reassembles into the flat geometric symbol on a black background.",
+   "noteEn": "A rounded square logomark dissolves into white particles, morphs through 3D spatial forms, then reassembles into the flat geometric symbol on a black background.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@vadimcarazan",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "motion"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/1xh94om-geometric-logo-mark-animation",
+   "rdkind": "Design",
+   "rdcat": "Motion",
+   "rdstyle": [
+    "Geometric",
+    "Minimal",
+    "Black & White"
+   ],
+   "author": {
+    "name": "Vadim Carazan",
+    "handle": "@vadimcarazan",
+    "url": "https://x.com/vadimcarazan"
+   },
+   "x_post": "https://x.com/VadimCarazan/status/2120806555579044315",
+   "xsrc": {
+    "post": "https://x.com/VadimCarazan/status/2120806555579044315",
+    "author": "@VadimCarazan",
+    "likes": 31,
+    "bookmarks": 8,
+    "reposts": 3,
+    "impressions": 1060,
+    "date": "2026-11-12"
+   },
+   "pub": "2026-11-12",
+   "added": "2026-11-12"
   }
  ],
  "guides": [
@@ -192804,5 +192854,5 @@
    ]
   }
  ],
- "updatedAt": "2026-11-12T08:48Z"
+ "updatedAt": "2026-11-12T21:03Z"
 }
