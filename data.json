@@ -1,6 +1,6 @@
 {
  "generated": "2026-11-12",
- "count": 5112,
+ "count": 5114,
  "items": [
   {
    "id": "ued-transitions-dev-craft",
@@ -192502,6 +192502,106 @@
    },
    "pub": "2026-11-11",
    "added": "2026-11-11"
+  },
+  {
+   "id": "rd-01nuhob-prefer-taste-quiz",
+   "name": "Prefer Taste Quiz",
+   "url": "https://x.com/krispuckett/status/2120685647115792802",
+   "note": "A web tool that presents 42 side-by-side image pairs of design objects from museum collections to map a user's aesthetic preferences across dimensions like plain vs ornate and warm vs cool.",
+   "noteEn": "A web tool that presents 42 side-by-side image pairs of design objects from museum collections to map a user's aesthetic preferences across dimensions like plain vs ornate and warm vs cool.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@krispuckett",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/01nuhob-prefer-taste-quiz",
+   "rdkind": "Design",
+   "rdcat": "Web",
+   "rdstyle": [
+    "Minimal",
+    "Light"
+   ],
+   "author": {
+    "name": "Kris Puckett",
+    "handle": "@krispuckett",
+    "url": "https://x.com/krispuckett"
+   },
+   "x_post": "https://x.com/krispuckett/status/2120685647115792802",
+   "xsrc": {
+    "post": "https://x.com/krispuckett/status/2120685647115792802",
+    "author": "@krispuckett",
+    "likes": 32,
+    "bookmarks": 16,
+    "reposts": 2,
+    "impressions": 1340,
+    "date": "2026-11-12"
+   },
+   "pub": "2026-11-12",
+   "added": "2026-11-12"
+  },
+  {
+   "id": "rd-hydso8e-kept-memory-visualization",
+   "name": "Kept Memory Visualization",
+   "url": "https://x.com/_andresjasso/status/2120004288676274395",
+   "note": "Animated radial timeline for Kept, an AI agent memory tool, showing context items as white segments across concentric rings with red highlights rotating to mark active memory.",
+   "noteEn": "Animated radial timeline for Kept, an AI agent memory tool, showing context items as white segments across concentric rings with red highlights rotating to mark active memory.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@_andresjasso",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "motion"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/hydso8e-kept-memory-visualization",
+   "rdkind": "Design",
+   "rdcat": "Motion",
+   "rdstyle": [
+    "Geometric",
+    "Minimal",
+    "Dark",
+    "Vibrant"
+   ],
+   "author": {
+    "name": "andres",
+    "handle": "@_andresjasso",
+    "url": "https://x.com/_andresjasso"
+   },
+   "x_post": "https://x.com/_andresjasso/status/2120004288676274395",
+   "xsrc": {
+    "post": "https://x.com/_andresjasso/status/2120004288676274395",
+    "author": "@_andresjasso",
+    "likes": 250,
+    "bookmarks": 192,
+    "reposts": 10,
+    "impressions": 9169,
+    "date": "2026-11-10"
+   },
+   "pub": "2026-11-11",
+   "added": "2026-11-12"
   }
  ],
  "guides": [
@@ -192704,5 +192804,5 @@
    ]
   }
  ],
- "updatedAt": "2026-11-12T07:06Z"
+ "updatedAt": "2026-11-12T08:48Z"
 }
