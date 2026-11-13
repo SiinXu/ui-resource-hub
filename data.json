@@ -1,6 +1,6 @@
 {
  "generated": "2026-11-13",
- "count": 5115,
+ "count": 5118,
  "items": [
   {
    "id": "ued-transitions-dev-craft",
@@ -192652,6 +192652,157 @@
    },
    "pub": "2026-11-12",
    "added": "2026-11-12"
+  },
+  {
+   "id": "rd-2pl65e8-kinetic-token-api-concept",
+   "name": "Kinetic Token API Concept",
+   "url": "https://x.com/iamnotsrc/status/2121317173578674438",
+   "note": "A motion concept for a crypto data API where stacked tagline rows animate with rapidly color-cycling highlight blocks across a black field.",
+   "noteEn": "A motion concept for a crypto data API where stacked tagline rows animate with rapidly color-cycling highlight blocks across a black field.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@iamnotsrc",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "motion"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/2pl65e8-kinetic-token-api-concept",
+   "rdkind": "Design",
+   "rdcat": "Motion",
+   "rdstyle": [
+    "Typographic",
+    "Experimental",
+    "Dark",
+    "Vibrant"
+   ],
+   "author": {
+    "name": "src",
+    "handle": "@iamnotsrc",
+    "url": "https://x.com/iamnotsrc"
+   },
+   "x_post": "https://x.com/iamnotsrc/status/2121317173578674438",
+   "xsrc": {
+    "post": "https://x.com/iamnotsrc/status/2121317173578674438",
+    "author": "@iamnotsrc",
+    "likes": 58,
+    "bookmarks": 23,
+    "reposts": 1,
+    "impressions": 1119,
+    "date": "2026-11-13"
+   },
+   "pub": "2026-11-13",
+   "added": "2026-11-13"
+  },
+  {
+   "id": "rd-n8vaetb-joby-sans-custom-typeface",
+   "name": "Joby Sans",
+   "url": "https://x.com/BrunoArizio/status/2121250962505388133",
+   "note": "Custom variable sans-serif typeface designed for Joby Aviation, shown across weights from 300 to 700 with glyph construction details and in-context aviation phrases.",
+   "noteEn": "Custom variable sans-serif typeface designed for Joby Aviation, shown across weights from 300 to 700 with glyph construction details and in-context aviation phrases.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@brunoarizio",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/n8vaetb-joby-sans-custom-typeface",
+   "rdkind": "Design",
+   "rdcat": "Branding",
+   "rdstyle": [
+    "Typographic",
+    "Minimal",
+    "Dark"
+   ],
+   "author": {
+    "name": "Bruno Arizio",
+    "handle": "@brunoarizio",
+    "url": "https://x.com/brunoarizio"
+   },
+   "x_post": "https://x.com/BrunoArizio/status/2121250962505388133",
+   "xsrc": {
+    "post": "https://x.com/BrunoArizio/status/2121250962505388133",
+    "author": "@BrunoArizio",
+    "likes": 69,
+    "bookmarks": 20,
+    "reposts": 2,
+    "impressions": 2164,
+    "date": "2026-11-13"
+   },
+   "pub": "2026-11-13",
+   "added": "2026-11-13"
+  },
+  {
+   "id": "rd-e4nb43w-graphic-ticket-rolls",
+   "name": "Graphic Ticket Rolls",
+   "url": "https://x.com/nono_ai_archive/status/2120811339413402008",
+   "note": "A 3D ticket-roll study unfolds into stacked neon-glitch ticket designs with barcode motifs and Korean type.",
+   "noteEn": "A 3D ticket-roll study unfolds into stacked neon-glitch ticket designs with barcode motifs and Korean type.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@nono_ai_archive",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "motion"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "3d",
+    "gradient"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/e4nb43w-graphic-ticket-rolls",
+   "rdkind": "Design",
+   "rdcat": "Motion",
+   "rdstyle": [
+    "Experimental",
+    "3D",
+    "Light",
+    "Gradient"
+   ],
+   "author": {
+    "name": "노노아카이브",
+    "handle": "@nono_ai_archive",
+    "url": "https://x.com/nono_ai_archive"
+   },
+   "x_post": "https://x.com/nono_ai_archive/status/2120811339413402008",
+   "xsrc": {
+    "post": "https://x.com/nono_ai_archive/status/2120811339413402008",
+    "author": "@nono_ai_archive",
+    "likes": 3417,
+    "bookmarks": 1939,
+    "reposts": 372,
+    "impressions": 72587,
+    "date": "2026-11-12"
+   },
+   "pub": "2026-11-13",
+   "added": "2026-11-13"
   }
  ],
  "guides": [
@@ -192854,5 +193005,5 @@
    ]
   }
  ],
- "updatedAt": "2026-11-13T08:42Z"
+ "updatedAt": "2026-11-13T20:38Z"
 }
