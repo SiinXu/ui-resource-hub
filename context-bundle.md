@@ -416,3 +416,4 @@ curl -s https://ui.incidental.site/api/resources.json | jq --arg d "$(date -u -d
 - Adobe MAX 2026: when agents edit your layered files, file hygiene becomes the interface — https://ui.incidental.site/kb/note/blog-adobe-max-2026-agents-keep-layers-editable.md
 - Figma Motion now has physics springs: hand off three numbers, not a duration — https://ui.incidental.site/kb/note/blog-figma-motion-physics-springs-handoff.md
 - Webflow went native for modals and popovers. Make your AI-generated overlays do the same — https://ui.incidental.site/kb/note/blog-native-popover-dialog-overlays-for-ai-ui.md
+- Figma’s 3D transforms map straight to CSS. The traps are in what flattens — https://ui.incidental.site/kb/note/blog-figma-3d-transforms-css-handoff.md

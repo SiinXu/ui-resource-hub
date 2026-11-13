@@ -1,0 +1,56 @@
+<p>2026 年 11 月 12 日，Figma 向 Full 席位开放了两个 Beta 效果：<strong>3D 变换（3D transform）</strong>，可以让图层绕 X、Y、Z 轴旋转，并用 Depth（深度）沿 Z 轴推远拉近；以及 <strong>Perspective（透视）</strong>，为一个画框里的所有内容设定相机距离。Figma 智能体可以搭 3D 场景，Figma Motion 可以给它打关键帧，发布说明把这项功能定位为「直接交付到代码」：Dev Mode 可以复制 CSS，编程智能体也能通过 Figma MCP 服务器读取和创建 3D 设计。同一天，Framer 的智能体也学会了生成图片和着色器。纵深和质感正在变成设计工具里的普通材料，这意味着它们会开始出现在你的智能体写的代码里。</p><figure><img src="../../blog/img/figma-3d-transforms-css-handoff-1.webp" alt="2026 年 11 月 13 日的 Figma Learn 文章《在 Figma Design 中创建 3D 效果》" loading="lazy" decoding="async" width="1280" height="800"><figcaption>2026 年 11 月 13 日的 Figma Learn 文章《在 Figma Design 中创建 3D 效果》 · 截图：Figma Learn（<a href="https://help.figma.com/hc/en-us/articles/44568893374999-Create-3D-effects-in-Figma-Design" rel="noopener" target="_blank">help.figma.com</a>），2026-11-13 截取，版权归原站所有</figcaption></figure>
+<p>好消息是，这是 Figma 迄今最「字面」的设计到代码映射。不那么显眼的是：难点不在角度，而在一个 3D 场景什么时候会悄悄塌成一张平面图，而这些规则在画布上和浏览器里几乎一模一样。</p>
+<h2>这次发了什么</h2>
+<ul><li><strong>两个效果，用法和其他效果一样。</strong>3D 变换可用于矢量、图片、画框、组件和文字，并且是非破坏性的：内容仍可编辑，文字和填充（包括着色器填充）随变换后的图层一起渲染。</li>
+<li><strong>相机与物体。</strong>Figma 帮助文档的说法很清楚：透视是移动相机，深度是移动物体。透视加在父画框上，子图层共享同一个视点。</li>
+<li><strong>共享 3D 空间需要手动开启。</strong>「Keep nested layers 3D（保持嵌套图层 3D）」让子图层能互相穿插、按深度排序；「Turn into flat plane（转为平面）」在该画框处结束 3D 空间。另有旋转原点和背面显示/隐藏的控制。</li>
+<li><strong>动效与智能体。</strong>Rotate X、Rotate Y、Depth 和透视都能打关键帧；智能体能理解「把这些图层排成立方体的六个面并让它旋转」这类提示。</li>
+<li><strong>Beta 版插件 API。</strong>插件更新 142 新增 <code>transform3d</code>、<code>transformOrigin</code>、<code>scene3d</code>，以及对应的 Motion 关键帧字段。Figma 品牌工作室写到，智能体甚至替他们做了一个生成式插件，把卡片排成网格、圆环和螺旋。</li></ul><figure><img src="../../blog/img/figma-3d-transforms-css-handoff-2.webp" alt="对应表：X/Y/Z 旋转对应 rotateX/rotateY/rotateZ，深度对应 translateZ，画框透视对应父元素的 perspective 属性，保持嵌套图层 3D 对应 transform-style: preserve-3d，转为平面对应 flat，背面对应 backface-visibility，原点对应 transform-origin" loading="lazy" decoding="async" width="1200" height="675"><figcaption>对应表：X/Y/Z 旋转对应 rotateX/rotateY/rotateZ，深度对应 translateZ，画框透视对应父元素的 perspective 属性，保持嵌套图层 3D 对应 transform-style: preserve-3d，转为平面对应 flat，背面对应 backface-visibility，原点对应 transform-origin · 示意图：UI Hub 原创，CC BY 4.0</figcaption></figure>
+<h2>逐项对应关系</h2>
+<p>Figma 文档写明了对应关系，插件 API 说得更严格：可编辑的 3D 变换就是 <code>translateZ() rotateX() rotateY() rotateZ()</code>，<em>并且按这个顺序</em>。CSS 里顺序很重要，因为每个函数都会旋转下一个函数所用的坐标系，所以手改时请保持顺序。</p>
+<ul><li><strong>旋转 X / Y / Z</strong> → <code>transform</code> 里的 <code>rotateX()</code>、<code>rotateY()</code>、<code>rotateZ()</code>。</li>
+<li><strong>深度 Depth</strong> → <code>translateZ()</code>，单位像素。</li>
+<li><strong>画框上的透视</strong> → 父元素上的 <code>perspective</code> 属性。不是每个子元素各写一个 <code>perspective()</code> 函数，那样每张卡片都会有自己的消失点。</li>
+<li><strong>保持嵌套图层 3D / 转为平面</strong> → <code>transform-style: preserve-3d</code> / <code>flat</code>。这个属性不继承，中间的每一层包裹元素都要写。</li>
+<li><strong>背面</strong> → <code>backface-visibility</code>；旋转原点 → <code>transform-origin</code>。</li></ul>
+<h2>我们的看法：把「压平」设计出来，而不是事后才发现</h2>
+<p>在 Figma 里，一旦开启「保持嵌套图层 3D」，这个画框的透明度会被禁用，混合模式、着色器、其他效果、裁剪内容、填充和描边也都会被隐藏。这看起来像工具限制，其实是浏览器规则透了出来。MDN 列出了一组「分组」属性值，即使你写了 <code>preserve-3d</code>，它们也会强制 <code>transform-style</code> 按 <code>flat</code> 处理：<code>overflow</code> 不是 <code>visible</code> 或 <code>clip</code>、<code>opacity</code> 小于 1、任何 <code>filter</code>、<code>clip-path</code>、<code>isolation: isolate</code>、遮罩、<code>mix-blend-mode</code>，以及绘制约束（paint containment）。</p>
+<p>AI 生成的 3D 代码恰恰在这里出错。智能体给场景套一张带 <code>overflow: hidden</code> 和圆角的卡片，或者用 <code>opacity</code> 做淡入，或者加一层毛玻璃模糊，立方体就变成了一张扁平贴纸。不报错，只是看起来不对；而动画的第一帧往往没问题，所以只看截图的审查常常漏掉它。</p>
+<p>Figma 的插件文档给出了解法，在 CSS 里原样适用：<strong>把场景拆成两层包裹</strong>。外层是平面的，负责透视、裁剪、圆角、透明度和各种效果；内层只负责 <code>preserve-3d</code>，不放任何会触发分组的属性。如果设计师在文件里就搭好这种结构，Dev Mode 或 MCP 产出的 CSS 自然就是对的。</p>
+<h2>纵深适合用在哪里</h2>
+<p>合适的用法就是 Figma 自己列的那些：倾斜的设备样机、扇形展开的卡片、正反两面的翻转、首屏视觉组合。我们的经验法则是：需要阅读的文字只用小角度，表单、菜单和正文永远不要放在旋转平面上。旋转后的文字更难读，倾斜元素上的键盘焦点框也很容易看不见。</p>
+<p>更大的风险是动效。大角度旋转、沿 Z 轴的推拉和持续自转，正是可能让前庭功能障碍人群不适的运动。WCAG 的「交互触发的动画」准则要求能关闭由交互触发的动效；在 CSS 里，就是写一个 <code>prefers-reduced-motion</code> 分支，保留静态的 3D 姿态，或把翻转换成淡入淡出。只在外层包裹上动 <code>transform</code> 和 <code>opacity</code>，移动端控制同时存在的 3D 图层数量。</p>
+<h2>清单：交接一个 3D 图层</h2>
+<ol><li><strong>透视放在父级。</strong>每个场景只有一个 <code>perspective</code>，放在平面的外层包裹上，并在规格里写明数值；数值越小，变形越夸张。</li>
+<li><strong>保持函数顺序。</strong><code>translateZ rotateX rotateY rotateZ</code>，和 Dev Mode 复制出来的一致。</li>
+<li><strong>两层包裹。</strong>外层：透视、圆角、<code>overflow</code>、透明度、滤镜。内层：只有 <code>transform-style: preserve-3d</code>。</li>
+<li><strong>在 diff 里搜分组属性。</strong>场景根节点到各个面之间的任何元素上，出现 <code>overflow: hidden</code>、<code>opacity</code>、<code>filter</code>、<code>backdrop-filter</code>、<code>clip-path</code>、<code>isolation</code>、<code>mix-blend-mode</code>、<code>contain</code> 都要检查。</li>
+<li><strong>有意识地处理背面。</strong>翻转卡片用两层，都设 <code>backface-visibility: hidden</code>，背面预先旋转 180°。</li>
+<li><strong>文字保持可读。</strong>正文、输入框和菜单保持平面，只旋转装饰层或标题层。</li>
+<li><strong>减少动效。</strong>写 <code>prefers-reduced-motion: reduce</code> 分支：静态姿态或淡入淡出，不要旋转。</li>
+<li><strong>保底姿态。</strong>去掉 3D 之后，平面、未旋转的布局也必须讲得通。</li>
+<li><strong>两种主题都检查。</strong>在白底上撑起纵深的明暗和阴影，到接近黑色的背景上常常消失；浅色和深色都要看。</li></ol>
+<pre><code>/* 翻转卡片：外层平面，内层 3D 场景 */
+.stage { perspective: 900px; border-radius: 16px; overflow: hidden; }
+.scene { transform-style: preserve-3d; transition: transform .6s; }
+.stage:hover .scene { transform: rotateY(180deg); }
+.face  { position: absolute; inset: 0; backface-visibility: hidden; }
+.back  { transform: rotateY(180deg); }
+@media (prefers-reduced-motion: reduce) {
+  .scene { transition: none; }
+  .stage:hover .scene { transform: none; }  /* 改用淡入显示背面 */
+}</code></pre>
+<pre><code># 把这段贴给你的编程智能体（已连接 Figma MCP）
+实现选中的 Figma 画框，包括其中的 3D 变换和透视效果。
+- 变换按 translateZ() rotateX() rotateY() rotateZ() 的顺序复制。
+- 每个场景只在「一个」平面外层包裹上写 perspective；圆角、overflow、
+  透明度、滤镜和阴影也都放在这一层。
+- 内层场景以及它和各个面之间的每层包裹都写 transform-style: preserve-3d，
+  这些元素上不要出现 overflow/opacity/filter/clip-path/isolation/
+  mix-blend-mode/contain。
+- 输入框、菜单和正文不旋转。
+- 加一个 prefers-reduced-motion 分支（静态姿态或交叉淡入淡出）。
+输出：每个 3D 元素、它的 CSS，以及因为会压平场景而删掉的属性。</code></pre>
+<figure><img src="../../blog/img/figma-3d-transforms-css-handoff-3.webp" alt="2026 年 11 月 13 日 MDN Web Docs 的 transform-style 页面" loading="lazy" decoding="async" width="1280" height="800"><figcaption>2026 年 11 月 13 日 MDN Web Docs 的 transform-style 页面 · 截图：MDN Web Docs（<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-style" rel="noopener" target="_blank">developer.mozilla.org</a>），2026-11-13 截取，版权归原站所有</figcaption></figure><h2>暂时不建议做的事</h2>
+<p>这项功能和它的插件 API 都还是 Beta，Figma 说明 API 可能变化；导入的 <code>FREEFORM</code> 变换只能读、不能写。所以先别把设计系统的 Token 流水线建在 Dev Mode 的具体输出格式上。把那段 CSS 当作角度和深度的参考，真正要标准化的是结构规则：外层平面，内层 3D。</p>
+<p>UI Hub 相关阅读：<a href="../figma-motion-physics-springs-handoff/">Figma Motion 弹簧的交接</a>、<a href="../figma-shaders-ga-ship-shader-backgrounds/">把 Figma 着色器做进产品</a>，以及<a href="../motion-that-feels-right/">让动效感觉对</a>。</p>

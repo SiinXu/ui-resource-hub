@@ -2601,4 +2601,138 @@ Report a table: component, before, after, keyboard test result.</code></pre>
 <p>带输入联想的组合框、用方向键移动焦点的多级菜单、复杂的日期选择器，都有原生元素没有实现的键盘模式。这些就用经过充分测试的无头（headless）组件库，最好是渲染进原生顶层的那种，并对照 WAI-ARIA 编写实践里的模式检查。原生原语仍然是底线：比这些简单的东西，就不该自带一套浮层引擎。</p>
 <p>UI Hub 相关阅读：<a href="../agent-approval-ui-budgets-interruptions/">智能体的审批界面</a>、<a href="../motion-pinch-press-gestures-with-fallbacks/">Motion 的 pinch 和 press 手势及降级</a>，以及<a href="../lint-agents-onto-your-design-system/">用 Lint 把智能体约束在设计系统上</a>。</p>""",
  refs=[('New modal and popover elements (10 Nov 2026)','Webflow Updates','https://webflow.com/updates/new-modal-and-popover-elements'),('Popovers','Webflow Help Center','https://help.webflow.com/hc/en-us/articles/57348530718099-Popovers'),('Modals','Webflow Help Center','https://help.webflow.com/hc/en-us/articles/57348593306387-Modals'),('Popovers & Modals (video lesson)','Webflow University','https://university.webflow.com/videos/popovers-modals'),('Native Modals and Popovers in Webflow','Mazette','https://www.mazette.co/en/blog/webflow-launches-native-modals-and-popovers'),('Popover API','MDN Web Docs','https://developer.mozilla.org/en-US/docs/Web/API/Popover_API'),('<dialog>: The Dialog element','MDN Web Docs','https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/dialog'),('Invoker Commands API','MDN Web Docs','https://developer.mozilla.org/en-US/docs/Web/API/Invoker_Commands_API'),('CSS anchor positioning','MDN Web Docs','https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_anchor_positioning'),('HTMLDialogElement: closedBy property','MDN Web Docs','https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement/closedBy'),('Dialog (Modal) pattern','W3C WAI-ARIA Authoring Practices','https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/')]),
+dict(slug='figma-3d-transforms-css-handoff', date='2026-11-13', cat='craft', series=None, featured=True, tags=['Figma','3D transform','CSS transforms','perspective','handoff','reduced motion'],
+ t=T('Figma’s 3D transforms map straight to CSS. The traps are in what flattens',
+     'Figma 的 3D 变换可以直接对应到 CSS，真正的坑在「被压平」的地方',
+     'Figma 的 3D 變換可以直接對應到 CSS，真正的坑在「被壓平」的地方',
+     'Figmaの3D変換はそのままCSSになる。落とし穴は「平面化」にある',
+     'Figma 3D 변환은 CSS로 그대로 옮겨진다. 함정은 ‘평면화’에 있다',
+     '3D transform Figma dipetakan terus ke CSS. Perangkapnya ada pada apa yang menjadi rata',
+     '3D transform của Figma chuyển thẳng sang CSS. Cái bẫy nằm ở những chỗ bị làm phẳng',
+     'Les transformations 3D de Figma passent tel quel en CSS. Le piège, c’est ce qui s’aplatit',
+     'Las transformaciones 3D de Figma pasan directo a CSS. La trampa está en lo que se aplana',
+     'Figmas 3D-Transformationen landen direkt in CSS. Die Falle liegt in dem, was flach wird'),
+ s=T('On 12 November 2026 Figma opened its 3D transform and Perspective effects in beta, with Dev Mode copying them as CSS and the Figma MCP passing them to coding agents. How each control maps to a CSS property, why opacity, clipping and effects quietly flatten a 3D scene in both Figma and the browser, where depth helps an interface and where it hurts, plus a handoff checklist and a prompt for your coding agent.',
+     '2026 年 11 月 12 日，Figma 以 Beta 形式开放了 3D 变换和透视效果，Dev Mode 可以把它们复制成 CSS，Figma MCP 也能把它们交给编程智能体。每个控件对应哪条 CSS 属性，为什么透明度、裁剪和特效会在 Figma 和浏览器里同样悄悄把 3D 场景压平，纵深在界面里什么时候有用、什么时候有害，以及一份交接清单和一段给编程智能体的提示词。',
+     '2026 年 11 月 12 日，Figma 以 Beta 形式開放了 3D 變換和透視效果，Dev Mode 可以把它們複製成 CSS，Figma MCP 也能把它們交給程式智能體。每個控制項對應哪條 CSS 屬性，為什麼透明度、裁切和特效會在 Figma 和瀏覽器裡同樣悄悄把 3D 場景壓平，縱深在介面裡什麼時候有用、什麼時候有害，以及一份交接清單和一段給程式智能體的提示詞。',
+     '2026年11月12日、Figmaは3D変換とパースペクティブ効果をベータ公開した。Dev ModeはそれをCSSとしてコピーでき、Figma MCPはコーディングエージェントに渡せる。各コントロールとCSSプロパティの対応、不透明度・クリップ・エフェクトがFigmaでもブラウザでも3Dシーンを黙って平面化する理由、奥行きがUIに効く場面と害になる場面、ハンドオフ用チェックリストとエージェント向けプロンプト。',
+     '2026년 11월 12일 Figma가 3D 변환과 원근 효과를 베타로 공개했다. Dev Mode는 이를 CSS로 복사하고 Figma MCP는 코딩 에이전트에 넘긴다. 각 컨트롤이 어떤 CSS 속성에 대응하는지, 불투명도·클리핑·이펙트가 Figma와 브라우저 모두에서 3D 장면을 조용히 평면화하는 이유, 깊이가 인터페이스에 도움이 되는 곳과 해가 되는 곳, 그리고 핸드오프 체크리스트와 코딩 에이전트용 프롬프트.',
+     'Pada 12 November 2026 Figma membuka kesan 3D transform dan Perspective dalam beta, dengan Dev Mode menyalinnya sebagai CSS dan Figma MCP menghantarnya kepada ejen pengekodan. Bagaimana setiap kawalan dipetakan ke sifat CSS, mengapa kelegapan, keratan dan kesan diam-diam meratakan adegan 3D dalam Figma dan pelayar, bila kedalaman membantu antara muka dan bila ia merosakkan, serta senarai semak serahan dan prompt untuk ejen anda.',
+     'Ngày 12/11/2026 Figma mở bản beta cho hiệu ứng 3D transform và Perspective; Dev Mode sao chép chúng thành CSS và Figma MCP chuyển chúng cho agent lập trình. Mỗi điều khiển ứng với thuộc tính CSS nào, vì sao opacity, cắt xén và hiệu ứng lặng lẽ làm phẳng cảnh 3D cả trong Figma lẫn trình duyệt, khi nào chiều sâu giúp giao diện và khi nào gây hại, kèm checklist bàn giao và prompt cho agent.',
+     'Le 12 novembre 2026, Figma a ouvert en bêta ses effets 3D transform et Perspective ; Dev Mode les copie en CSS et le MCP Figma les transmet aux agents de code. La correspondance de chaque réglage avec une propriété CSS, pourquoi l’opacité, le rognage et les effets aplatissent discrètement une scène 3D dans Figma comme dans le navigateur, quand la profondeur aide une interface et quand elle nuit, plus une checklist de passation et un prompt pour votre agent.',
+     'El 12 de noviembre de 2026 Figma abrió en beta sus efectos 3D transform y Perspective; Dev Mode los copia como CSS y el MCP de Figma los pasa a los agentes de código. Cómo se corresponde cada control con una propiedad CSS, por qué la opacidad, el recorte y los efectos aplanan en silencio una escena 3D tanto en Figma como en el navegador, cuándo la profundidad ayuda a una interfaz y cuándo estorba, más una checklist de entrega y un prompt para tu agente.',
+     'Am 12. November 2026 hat Figma die Effekte 3D Transform und Perspective als Beta geöffnet; Dev Mode kopiert sie als CSS, und der Figma-MCP reicht sie an Coding-Agents weiter. Wie jede Einstellung einer CSS-Eigenschaft entspricht, warum Deckkraft, Beschneidung und Effekte eine 3D-Szene in Figma wie im Browser stillschweigend flach machen, wann Tiefe einer Oberfläche hilft und wann sie schadet, dazu eine Übergabe-Checkliste und ein Prompt für deinen Agent.'),
+ en="""<p>On 12 November 2026 Figma moved two new effects into open beta for Full seats: <strong>3D transform</strong>, which rotates a layer on the X, Y and Z axes and pushes it along Z with a Depth value, and <strong>Perspective</strong>, which sets the camera distance for everything inside a frame. The Figma agent can compose 3D scenes, Figma Motion can keyframe them, and the release notes pitch the feature as “ship directly to code”: Dev Mode copies the CSS, and coding agents can read and create 3D designs through the Figma MCP server. The same day, Framer’s agent learned to generate images and shaders. Depth and texture are becoming ordinary materials in design tools, which means they will start showing up in the code your agents write.</p>
+<p>The good news is that this is the most literal design-to-code mapping Figma has shipped. The less obvious news is that the hard part is not the angles. It is the rules for when a 3D scene silently collapses into a flat picture, and those rules are almost the same on the canvas and in the browser.</p>
+<h2>What shipped</h2>
+<ul><li><strong>Two effects, applied like any other.</strong> 3D transform works on vectors, images, frames, components and text, and stays non-destructive: the content remains editable, and text and fills, including shader fills, render with the transformed layer.</li>
+<li><strong>Camera vs object.</strong> Figma’s help article puts it neatly: Perspective is moving the camera, Depth is moving the object. Perspective goes on the parent frame so its children share one viewpoint.</li>
+<li><strong>A shared space is opt-in.</strong> “Keep nested layers 3D” lets children intersect and sort by depth; “Turn into flat plane” ends the 3D space at that frame. There are also controls for the origin point and for showing or hiding the backface.</li>
+<li><strong>Motion and agents.</strong> Rotate X, Rotate Y, Depth and perspective can be keyframed, and the agent accepts prompts like “arrange these layers as the faces of a cube and animate it rotating”.</li>
+<li><strong>A plugin API in beta.</strong> Plugin update 142 adds <code>transform3d</code>, <code>transformOrigin</code> and <code>scene3d</code>, plus Motion keyframe fields for them. Figma’s Brand Studio wrote that the agent even built them a generative plugin to scatter cards into grids, rings and helices.</li></ul>
+<h2>The mapping, control by control</h2>
+<p>Figma’s docs spell out the correspondence, and the plugin API is stricter still: an editable 3D transform is <code>translateZ() rotateX() rotateY() rotateZ()</code>, <em>in that order</em>. Order matters in CSS because each function rotates the coordinate system for the next one, so keep the order when you hand-edit.</p>
+<ul><li><strong>Rotation X / Y / Z</strong> → <code>rotateX()</code>, <code>rotateY()</code>, <code>rotateZ()</code> in <code>transform</code>.</li>
+<li><strong>Depth</strong> → <code>translateZ()</code>, in pixels.</li>
+<li><strong>Perspective on a frame</strong> → the <code>perspective</code> property on the parent. Not the <code>perspective()</code> function on each child, which gives every card its own vanishing point.</li>
+<li><strong>Keep nested layers 3D / Turn into flat plane</strong> → <code>transform-style: preserve-3d</code> / <code>flat</code>. This property is not inherited, so every intermediate wrapper needs it too.</li>
+<li><strong>Backface</strong> → <code>backface-visibility</code>. Origin point → <code>transform-origin</code>.</li></ul>
+<h2>Our take: design the flattening, don’t discover it</h2>
+<p>In Figma, turning on “Keep nested layers 3D” disables the frame’s opacity and hides its blend modes, shaders, other effects, clip content, fills and strokes. That looks like a tool limitation. It is actually the browser’s rule showing through. MDN lists the “grouping” values that force <code>transform-style</code> to behave as <code>flat</code> even when you wrote <code>preserve-3d</code>: <code>overflow</code> other than <code>visible</code> or <code>clip</code>, <code>opacity</code> below 1, any <code>filter</code>, <code>clip-path</code>, <code>isolation: isolate</code>, masks, <code>mix-blend-mode</code> and paint containment.</p>
+<p>That is exactly where AI-generated 3D code breaks. An agent wraps the scene in a card with <code>overflow: hidden</code> and rounded corners, or fades it in with <code>opacity</code>, or adds a glassy <code>backdrop</code> blur, and the cube becomes a flat sticker. Nothing errors. It just looks wrong, and the screenshot review often misses it because the first frame of the animation looks fine.</p>
+<p>Figma’s plugin docs describe the fix, and it works in CSS unchanged: <strong>split the scene into two wrappers</strong>. The outer one is flat and carries the perspective, the clipping, the radius, the opacity and any effects. The inner one carries <code>preserve-3d</code> and nothing that groups. If designers build that structure in the file, the CSS that Dev Mode or the MCP produces will already be correct.</p>
+<h2>Where depth earns its place</h2>
+<p>Good uses are the ones Figma lists: a tilted device mockup, a fan of cards, a flip between two faces, a hero composition. Our rule of thumb is to keep readable text within small angles and to never put form fields, menus or body copy on a rotated plane. Rotated text is harder to read, and keyboard focus rings on a tilted element are easy to lose.</p>
+<p>Motion is the bigger risk. Large rotations, zooms through Z and continuous spins are the kind of movement that can make people with vestibular disorders unwell. WCAG’s “Animation from Interactions” criterion asks for a way to turn motion triggered by interaction off; in CSS that means a <code>prefers-reduced-motion</code> branch that keeps the static 3D pose, or swaps the flip for a cross-fade. Animate only <code>transform</code> and <code>opacity</code> on the outer wrapper, and keep the number of live 3D layers small on mobile.</p>
+<h2>Checklist: hand off a 3D layer</h2>
+<ol><li><strong>Perspective on the parent.</strong> One <code>perspective</code> per scene, on the flat outer wrapper. Note the value in the spec; small numbers exaggerate distortion.</li>
+<li><strong>Keep the function order.</strong> <code>translateZ rotateX rotateY rotateZ</code>, as Dev Mode copies it.</li>
+<li><strong>Two wrappers.</strong> Outer: perspective, radius, <code>overflow</code>, opacity, filters. Inner: <code>transform-style: preserve-3d</code> only.</li>
+<li><strong>Search the diff for groupers.</strong> <code>overflow: hidden</code>, <code>opacity</code>, <code>filter</code>, <code>backdrop-filter</code>, <code>clip-path</code>, <code>isolation</code>, <code>mix-blend-mode</code>, <code>contain</code> on any element between the scene root and its faces.</li>
+<li><strong>Backfaces on purpose.</strong> For a flip card, two layers with <code>backface-visibility: hidden</code>, the back pre-rotated 180°.</li>
+<li><strong>Text stays readable.</strong> Body text, inputs and menus stay flat; only decorative or headline layers rotate.</li>
+<li><strong>Reduced motion.</strong> A <code>prefers-reduced-motion: reduce</code> branch: static pose or a fade, no spinning.</li>
+<li><strong>Fallback pose.</strong> The flat, unrotated layout must still make sense if the 3D is removed.</li>
+<li><strong>Check both themes.</strong> Shading and shadows that sell depth on white often vanish on near-black; check light and dark.</li></ol>
+<pre><code>/* Flip card: flat outer wrapper, 3D inner scene */
+.stage { perspective: 900px; border-radius: 16px; overflow: hidden; }
+.scene { transform-style: preserve-3d; transition: transform .6s; }
+.stage:hover .scene { transform: rotateY(180deg); }
+.face  { position: absolute; inset: 0; backface-visibility: hidden; }
+.back  { transform: rotateY(180deg); }
+@media (prefers-reduced-motion: reduce) {
+  .scene { transition: none; }
+  .stage:hover .scene { transform: none; }  /* show the back with a fade instead */
+}</code></pre>
+<pre><code># Paste this to your coding agent (with the Figma MCP connected)
+Implement the selected Figma frame, including its 3D transform and Perspective effects.
+- Copy transforms as translateZ() rotateX() rotateY() rotateZ() in that order.
+- Put perspective on ONE flat outer wrapper per scene; it also owns radius,
+  overflow, opacity, filters and shadows.
+- Put transform-style: preserve-3d on the inner scene and on every wrapper
+  between it and the faces. No overflow/opacity/filter/clip-path/isolation/
+  mix-blend-mode/contain on those elements.
+- Text inputs, menus and body copy stay unrotated.
+- Add a prefers-reduced-motion branch (static pose or cross-fade).
+Report: each 3D element, its CSS, and any property you removed because it flattened the scene.</code></pre>
+<h2>What we would not do yet</h2>
+<p>The feature and its plugin API are in beta, and Figma notes that the API may change; an imported <code>FREEFORM</code> transform can be read but not written. Don’t build a design-system token pipeline on the exact Dev Mode output format yet. Treat the CSS as a reference for angles and depth, and keep the structural rule, flat outside and 3D inside, as the part you standardise.</p>
+<p>Related on UI Hub: <a href="../figma-motion-physics-springs-handoff/">handing off Figma Motion springs</a>, <a href="../figma-shaders-ga-ship-shader-backgrounds/">shipping Figma shaders</a>, and <a href="../motion-that-feels-right/">motion that feels right</a>.</p>""",
+ zh="""<p>2026 年 11 月 12 日，Figma 向 Full 席位开放了两个 Beta 效果：<strong>3D 变换（3D transform）</strong>，可以让图层绕 X、Y、Z 轴旋转，并用 Depth（深度）沿 Z 轴推远拉近；以及 <strong>Perspective（透视）</strong>，为一个画框里的所有内容设定相机距离。Figma 智能体可以搭 3D 场景，Figma Motion 可以给它打关键帧，发布说明把这项功能定位为「直接交付到代码」：Dev Mode 可以复制 CSS，编程智能体也能通过 Figma MCP 服务器读取和创建 3D 设计。同一天，Framer 的智能体也学会了生成图片和着色器。纵深和质感正在变成设计工具里的普通材料，这意味着它们会开始出现在你的智能体写的代码里。</p>
+<p>好消息是，这是 Figma 迄今最「字面」的设计到代码映射。不那么显眼的是：难点不在角度，而在一个 3D 场景什么时候会悄悄塌成一张平面图，而这些规则在画布上和浏览器里几乎一模一样。</p>
+<h2>这次发了什么</h2>
+<ul><li><strong>两个效果，用法和其他效果一样。</strong>3D 变换可用于矢量、图片、画框、组件和文字，并且是非破坏性的：内容仍可编辑，文字和填充（包括着色器填充）随变换后的图层一起渲染。</li>
+<li><strong>相机与物体。</strong>Figma 帮助文档的说法很清楚：透视是移动相机，深度是移动物体。透视加在父画框上，子图层共享同一个视点。</li>
+<li><strong>共享 3D 空间需要手动开启。</strong>「Keep nested layers 3D（保持嵌套图层 3D）」让子图层能互相穿插、按深度排序；「Turn into flat plane（转为平面）」在该画框处结束 3D 空间。另有旋转原点和背面显示/隐藏的控制。</li>
+<li><strong>动效与智能体。</strong>Rotate X、Rotate Y、Depth 和透视都能打关键帧；智能体能理解「把这些图层排成立方体的六个面并让它旋转」这类提示。</li>
+<li><strong>Beta 版插件 API。</strong>插件更新 142 新增 <code>transform3d</code>、<code>transformOrigin</code>、<code>scene3d</code>，以及对应的 Motion 关键帧字段。Figma 品牌工作室写到，智能体甚至替他们做了一个生成式插件，把卡片排成网格、圆环和螺旋。</li></ul>
+<h2>逐项对应关系</h2>
+<p>Figma 文档写明了对应关系，插件 API 说得更严格：可编辑的 3D 变换就是 <code>translateZ() rotateX() rotateY() rotateZ()</code>，<em>并且按这个顺序</em>。CSS 里顺序很重要，因为每个函数都会旋转下一个函数所用的坐标系，所以手改时请保持顺序。</p>
+<ul><li><strong>旋转 X / Y / Z</strong> → <code>transform</code> 里的 <code>rotateX()</code>、<code>rotateY()</code>、<code>rotateZ()</code>。</li>
+<li><strong>深度 Depth</strong> → <code>translateZ()</code>，单位像素。</li>
+<li><strong>画框上的透视</strong> → 父元素上的 <code>perspective</code> 属性。不是每个子元素各写一个 <code>perspective()</code> 函数，那样每张卡片都会有自己的消失点。</li>
+<li><strong>保持嵌套图层 3D / 转为平面</strong> → <code>transform-style: preserve-3d</code> / <code>flat</code>。这个属性不继承，中间的每一层包裹元素都要写。</li>
+<li><strong>背面</strong> → <code>backface-visibility</code>；旋转原点 → <code>transform-origin</code>。</li></ul>
+<h2>我们的看法：把「压平」设计出来，而不是事后才发现</h2>
+<p>在 Figma 里，一旦开启「保持嵌套图层 3D」，这个画框的透明度会被禁用，混合模式、着色器、其他效果、裁剪内容、填充和描边也都会被隐藏。这看起来像工具限制，其实是浏览器规则透了出来。MDN 列出了一组「分组」属性值，即使你写了 <code>preserve-3d</code>，它们也会强制 <code>transform-style</code> 按 <code>flat</code> 处理：<code>overflow</code> 不是 <code>visible</code> 或 <code>clip</code>、<code>opacity</code> 小于 1、任何 <code>filter</code>、<code>clip-path</code>、<code>isolation: isolate</code>、遮罩、<code>mix-blend-mode</code>，以及绘制约束（paint containment）。</p>
+<p>AI 生成的 3D 代码恰恰在这里出错。智能体给场景套一张带 <code>overflow: hidden</code> 和圆角的卡片，或者用 <code>opacity</code> 做淡入，或者加一层毛玻璃模糊，立方体就变成了一张扁平贴纸。不报错，只是看起来不对；而动画的第一帧往往没问题，所以只看截图的审查常常漏掉它。</p>
+<p>Figma 的插件文档给出了解法，在 CSS 里原样适用：<strong>把场景拆成两层包裹</strong>。外层是平面的，负责透视、裁剪、圆角、透明度和各种效果；内层只负责 <code>preserve-3d</code>，不放任何会触发分组的属性。如果设计师在文件里就搭好这种结构，Dev Mode 或 MCP 产出的 CSS 自然就是对的。</p>
+<h2>纵深适合用在哪里</h2>
+<p>合适的用法就是 Figma 自己列的那些：倾斜的设备样机、扇形展开的卡片、正反两面的翻转、首屏视觉组合。我们的经验法则是：需要阅读的文字只用小角度，表单、菜单和正文永远不要放在旋转平面上。旋转后的文字更难读，倾斜元素上的键盘焦点框也很容易看不见。</p>
+<p>更大的风险是动效。大角度旋转、沿 Z 轴的推拉和持续自转，正是可能让前庭功能障碍人群不适的运动。WCAG 的「交互触发的动画」准则要求能关闭由交互触发的动效；在 CSS 里，就是写一个 <code>prefers-reduced-motion</code> 分支，保留静态的 3D 姿态，或把翻转换成淡入淡出。只在外层包裹上动 <code>transform</code> 和 <code>opacity</code>，移动端控制同时存在的 3D 图层数量。</p>
+<h2>清单：交接一个 3D 图层</h2>
+<ol><li><strong>透视放在父级。</strong>每个场景只有一个 <code>perspective</code>，放在平面的外层包裹上，并在规格里写明数值；数值越小，变形越夸张。</li>
+<li><strong>保持函数顺序。</strong><code>translateZ rotateX rotateY rotateZ</code>，和 Dev Mode 复制出来的一致。</li>
+<li><strong>两层包裹。</strong>外层：透视、圆角、<code>overflow</code>、透明度、滤镜。内层：只有 <code>transform-style: preserve-3d</code>。</li>
+<li><strong>在 diff 里搜分组属性。</strong>场景根节点到各个面之间的任何元素上，出现 <code>overflow: hidden</code>、<code>opacity</code>、<code>filter</code>、<code>backdrop-filter</code>、<code>clip-path</code>、<code>isolation</code>、<code>mix-blend-mode</code>、<code>contain</code> 都要检查。</li>
+<li><strong>有意识地处理背面。</strong>翻转卡片用两层，都设 <code>backface-visibility: hidden</code>，背面预先旋转 180°。</li>
+<li><strong>文字保持可读。</strong>正文、输入框和菜单保持平面，只旋转装饰层或标题层。</li>
+<li><strong>减少动效。</strong>写 <code>prefers-reduced-motion: reduce</code> 分支：静态姿态或淡入淡出，不要旋转。</li>
+<li><strong>保底姿态。</strong>去掉 3D 之后，平面、未旋转的布局也必须讲得通。</li>
+<li><strong>两种主题都检查。</strong>在白底上撑起纵深的明暗和阴影，到接近黑色的背景上常常消失；浅色和深色都要看。</li></ol>
+<pre><code>/* 翻转卡片：外层平面，内层 3D 场景 */
+.stage { perspective: 900px; border-radius: 16px; overflow: hidden; }
+.scene { transform-style: preserve-3d; transition: transform .6s; }
+.stage:hover .scene { transform: rotateY(180deg); }
+.face  { position: absolute; inset: 0; backface-visibility: hidden; }
+.back  { transform: rotateY(180deg); }
+@media (prefers-reduced-motion: reduce) {
+  .scene { transition: none; }
+  .stage:hover .scene { transform: none; }  /* 改用淡入显示背面 */
+}</code></pre>
+<pre><code># 把这段贴给你的编程智能体（已连接 Figma MCP）
+实现选中的 Figma 画框，包括其中的 3D 变换和透视效果。
+- 变换按 translateZ() rotateX() rotateY() rotateZ() 的顺序复制。
+- 每个场景只在「一个」平面外层包裹上写 perspective；圆角、overflow、
+  透明度、滤镜和阴影也都放在这一层。
+- 内层场景以及它和各个面之间的每层包裹都写 transform-style: preserve-3d，
+  这些元素上不要出现 overflow/opacity/filter/clip-path/isolation/
+  mix-blend-mode/contain。
+- 输入框、菜单和正文不旋转。
+- 加一个 prefers-reduced-motion 分支（静态姿态或交叉淡入淡出）。
+输出：每个 3D 元素、它的 CSS，以及因为会压平场景而删掉的属性。</code></pre>
+<h2>暂时不建议做的事</h2>
+<p>这项功能和它的插件 API 都还是 Beta，Figma 说明 API 可能变化；导入的 <code>FREEFORM</code> 变换只能读、不能写。所以先别把设计系统的 Token 流水线建在 Dev Mode 的具体输出格式上。把那段 CSS 当作角度和深度的参考，真正要标准化的是结构规则：外层平面，内层 3D。</p>
+<p>UI Hub 相关阅读：<a href="../figma-motion-physics-springs-handoff/">Figma Motion 弹簧的交接</a>、<a href="../figma-shaders-ga-ship-shader-backgrounds/">把 Figma 着色器做进产品</a>，以及<a href="../motion-that-feels-right/">让动效感觉对</a>。</p>""",
+ refs=[('Design in 3D, natively in Figma, and ship directly to code (12 Nov 2026)','Figma release notes','https://www.figma.com/release-notes/'),('How 3D transforms and Figma’s agent brought a launch video to life — Chad Colby','Figma Blog','https://www.figma.com/blog/how-3d-transforms-and-figmas-agent-brought-a-launch-video-to-life/'),('Create 3D effects in Figma Design','Figma Learn','https://help.figma.com/hc/en-us/articles/44568893374999-Create-3D-effects-in-Figma-Design'),('Version 1, Update 142','Figma Developer Docs','https://developers.figma.com/docs/plugins/updates/2026/11/12/version-1-update-142/'),('Transform3d','Figma Developer Docs','https://developers.figma.com/docs/plugins/api/Transform3d/'),('Scene3d','Figma Developer Docs','https://developers.figma.com/docs/plugins/api/Scene3d/'),('Image and Shader Generation (12 Nov 2026)','Framer Updates','https://www.framer.com/updates/image-shader-generation'),('transform-style','MDN Web Docs','https://developer.mozilla.org/en-US/docs/Web/CSS/transform-style'),('perspective','MDN Web Docs','https://developer.mozilla.org/en-US/docs/Web/CSS/perspective'),('backface-visibility','MDN Web Docs','https://developer.mozilla.org/en-US/docs/Web/CSS/backface-visibility'),('prefers-reduced-motion','MDN Web Docs','https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion'),('Understanding SC 2.3.3: Animation from Interactions','W3C WAI','https://www.w3.org/WAI/WCAG22/Understanding/animation-from-interactions.html')]),
 ]

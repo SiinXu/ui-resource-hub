@@ -1,5 +1,5 @@
 {
- "count": 51,
+ "count": 52,
  "rss": "https://ui.incidental.site/blog/rss.xml",
  "categories": {
   "tools": "Tools",
@@ -18,6 +18,113 @@
   "weekly": "Series: Weekly roundup"
  },
  "posts": [
+  {
+   "slug": "figma-3d-transforms-css-handoff",
+   "url": "https://ui.incidental.site/blog/figma-3d-transforms-css-handoff/",
+   "date": "2026-11-13",
+   "category": "craft",
+   "series": null,
+   "featured": true,
+   "tags": [
+    "Figma",
+    "3D transform",
+    "CSS transforms",
+    "perspective",
+    "handoff",
+    "reduced motion"
+   ],
+   "title": {
+    "en": "Figma’s 3D transforms map straight to CSS. The traps are in what flattens",
+    "zh": "Figma 的 3D 变换可以直接对应到 CSS，真正的坑在「被压平」的地方",
+    "zht": "Figma 的 3D 變換可以直接對應到 CSS，真正的坑在「被壓平」的地方",
+    "ja": "Figmaの3D変換はそのままCSSになる。落とし穴は「平面化」にある",
+    "ko": "Figma 3D 변환은 CSS로 그대로 옮겨진다. 함정은 ‘평면화’에 있다",
+    "ms": "3D transform Figma dipetakan terus ke CSS. Perangkapnya ada pada apa yang menjadi rata",
+    "vi": "3D transform của Figma chuyển thẳng sang CSS. Cái bẫy nằm ở những chỗ bị làm phẳng",
+    "fr": "Les transformations 3D de Figma passent tel quel en CSS. Le piège, c’est ce qui s’aplatit",
+    "es": "Las transformaciones 3D de Figma pasan directo a CSS. La trampa está en lo que se aplana",
+    "de": "Figmas 3D-Transformationen landen direkt in CSS. Die Falle liegt in dem, was flach wird"
+   },
+   "summary": {
+    "en": "On 12 November 2026 Figma opened its 3D transform and Perspective effects in beta, with Dev Mode copying them as CSS and the Figma MCP passing them to coding agents. How each control maps to a CSS property, why opacity, clipping and effects quietly flatten a 3D scene in both Figma and the browser, where depth helps an interface and where it hurts, plus a handoff checklist and a prompt for your coding agent.",
+    "zh": "2026 年 11 月 12 日，Figma 以 Beta 形式开放了 3D 变换和透视效果，Dev Mode 可以把它们复制成 CSS，Figma MCP 也能把它们交给编程智能体。每个控件对应哪条 CSS 属性，为什么透明度、裁剪和特效会在 Figma 和浏览器里同样悄悄把 3D 场景压平，纵深在界面里什么时候有用、什么时候有害，以及一份交接清单和一段给编程智能体的提示词。",
+    "zht": "2026 年 11 月 12 日，Figma 以 Beta 形式開放了 3D 變換和透視效果，Dev Mode 可以把它們複製成 CSS，Figma MCP 也能把它們交給程式智能體。每個控制項對應哪條 CSS 屬性，為什麼透明度、裁切和特效會在 Figma 和瀏覽器裡同樣悄悄把 3D 場景壓平，縱深在介面裡什麼時候有用、什麼時候有害，以及一份交接清單和一段給程式智能體的提示詞。",
+    "ja": "2026年11月12日、Figmaは3D変換とパースペクティブ効果をベータ公開した。Dev ModeはそれをCSSとしてコピーでき、Figma MCPはコーディングエージェントに渡せる。各コントロールとCSSプロパティの対応、不透明度・クリップ・エフェクトがFigmaでもブラウザでも3Dシーンを黙って平面化する理由、奥行きがUIに効く場面と害になる場面、ハンドオフ用チェックリストとエージェント向けプロンプト。",
+    "ko": "2026년 11월 12일 Figma가 3D 변환과 원근 효과를 베타로 공개했다. Dev Mode는 이를 CSS로 복사하고 Figma MCP는 코딩 에이전트에 넘긴다. 각 컨트롤이 어떤 CSS 속성에 대응하는지, 불투명도·클리핑·이펙트가 Figma와 브라우저 모두에서 3D 장면을 조용히 평면화하는 이유, 깊이가 인터페이스에 도움이 되는 곳과 해가 되는 곳, 그리고 핸드오프 체크리스트와 코딩 에이전트용 프롬프트.",
+    "ms": "Pada 12 November 2026 Figma membuka kesan 3D transform dan Perspective dalam beta, dengan Dev Mode menyalinnya sebagai CSS dan Figma MCP menghantarnya kepada ejen pengekodan. Bagaimana setiap kawalan dipetakan ke sifat CSS, mengapa kelegapan, keratan dan kesan diam-diam meratakan adegan 3D dalam Figma dan pelayar, bila kedalaman membantu antara muka dan bila ia merosakkan, serta senarai semak serahan dan prompt untuk ejen anda.",
+    "vi": "Ngày 12/11/2026 Figma mở bản beta cho hiệu ứng 3D transform và Perspective; Dev Mode sao chép chúng thành CSS và Figma MCP chuyển chúng cho agent lập trình. Mỗi điều khiển ứng với thuộc tính CSS nào, vì sao opacity, cắt xén và hiệu ứng lặng lẽ làm phẳng cảnh 3D cả trong Figma lẫn trình duyệt, khi nào chiều sâu giúp giao diện và khi nào gây hại, kèm checklist bàn giao và prompt cho agent.",
+    "fr": "Le 12 novembre 2026, Figma a ouvert en bêta ses effets 3D transform et Perspective ; Dev Mode les copie en CSS et le MCP Figma les transmet aux agents de code. La correspondance de chaque réglage avec une propriété CSS, pourquoi l’opacité, le rognage et les effets aplatissent discrètement une scène 3D dans Figma comme dans le navigateur, quand la profondeur aide une interface et quand elle nuit, plus une checklist de passation et un prompt pour votre agent.",
+    "es": "El 12 de noviembre de 2026 Figma abrió en beta sus efectos 3D transform y Perspective; Dev Mode los copia como CSS y el MCP de Figma los pasa a los agentes de código. Cómo se corresponde cada control con una propiedad CSS, por qué la opacidad, el recorte y los efectos aplanan en silencio una escena 3D tanto en Figma como en el navegador, cuándo la profundidad ayuda a una interfaz y cuándo estorba, más una checklist de entrega y un prompt para tu agente.",
+    "de": "Am 12. November 2026 hat Figma die Effekte 3D Transform und Perspective als Beta geöffnet; Dev Mode kopiert sie als CSS, und der Figma-MCP reicht sie an Coding-Agents weiter. Wie jede Einstellung einer CSS-Eigenschaft entspricht, warum Deckkraft, Beschneidung und Effekte eine 3D-Szene in Figma wie im Browser stillschweigend flach machen, wann Tiefe einer Oberfläche hilft und wann sie schadet, dazu eine Übergabe-Checkliste und ein Prompt für deinen Agent."
+   },
+   "reading_minutes": {
+    "en": 6,
+    "zh": 9
+   },
+   "cover": "https://ui.incidental.site/blog/img/figma-3d-transforms-css-handoff-cover.webp",
+   "references": [
+    {
+     "title": "Design in 3D, natively in Figma, and ship directly to code (12 Nov 2026)",
+     "by": "Figma release notes",
+     "url": "https://www.figma.com/release-notes/"
+    },
+    {
+     "title": "How 3D transforms and Figma’s agent brought a launch video to life — Chad Colby",
+     "by": "Figma Blog",
+     "url": "https://www.figma.com/blog/how-3d-transforms-and-figmas-agent-brought-a-launch-video-to-life/"
+    },
+    {
+     "title": "Create 3D effects in Figma Design",
+     "by": "Figma Learn",
+     "url": "https://help.figma.com/hc/en-us/articles/44568893374999-Create-3D-effects-in-Figma-Design"
+    },
+    {
+     "title": "Version 1, Update 142",
+     "by": "Figma Developer Docs",
+     "url": "https://developers.figma.com/docs/plugins/updates/2026/11/12/version-1-update-142/"
+    },
+    {
+     "title": "Transform3d",
+     "by": "Figma Developer Docs",
+     "url": "https://developers.figma.com/docs/plugins/api/Transform3d/"
+    },
+    {
+     "title": "Scene3d",
+     "by": "Figma Developer Docs",
+     "url": "https://developers.figma.com/docs/plugins/api/Scene3d/"
+    },
+    {
+     "title": "Image and Shader Generation (12 Nov 2026)",
+     "by": "Framer Updates",
+     "url": "https://www.framer.com/updates/image-shader-generation"
+    },
+    {
+     "title": "transform-style",
+     "by": "MDN Web Docs",
+     "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/transform-style"
+    },
+    {
+     "title": "perspective",
+     "by": "MDN Web Docs",
+     "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/perspective"
+    },
+    {
+     "title": "backface-visibility",
+     "by": "MDN Web Docs",
+     "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/backface-visibility"
+    },
+    {
+     "title": "prefers-reduced-motion",
+     "by": "MDN Web Docs",
+     "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion"
+    },
+    {
+     "title": "Understanding SC 2.3.3: Animation from Interactions",
+     "by": "W3C WAI",
+     "url": "https://www.w3.org/WAI/WCAG22/Understanding/animation-from-interactions.html"
+    }
+   ]
+  },
   {
    "slug": "native-popover-dialog-overlays-for-ai-ui",
    "url": "https://ui.incidental.site/blog/native-popover-dialog-overlays-for-ai-ui/",
