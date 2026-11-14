@@ -1,0 +1,40 @@
+<p>今天大多数会用网页应用的智能体，走的都是笨办法：截图或者导出整页，猜哪个元素是「Region」下拉框，点击，等待，再截图。Vercel Labs 的 <strong>UI SDK</strong> 是一个 Apache-2.0 许可的 Beta 库，各框架包在 2026 年 11 月 13 日发布了新版本，11 月 14 日在设计圈信息流里被大量转发。它提出了另一种约定：组件由经过测试的<em>行为（behavior）</em>拼成，再通过一座<em>智能体桥（agent bridge）</em>，让智能体直接读取这些组件并调用它们的动作。</p><figure><img src="../../blog/img/vercel-ui-sdk-agent-operable-interfaces-1.webp" alt="2026 年 11 月 14 日 UI SDK 首页上的演示组件（时间线、周日历、智能体、表格），全部由同一套行为搭建" loading="lazy" decoding="async" width="1280" height="800"><figcaption>2026 年 11 月 14 日 UI SDK 首页上的演示组件（时间线、周日历、智能体、表格），全部由同一套行为搭建 · 截图：UI SDK (Vercel Labs)（<a href="https://ui-sdk.dev/" rel="noopener" target="_blank">ui-sdk.dev</a>），2026-11-14 截取，版权归原站所有</figcaption></figure>
+<p>这是一个开发者库，但后果落在设计上。当智能体是「读」界面而不是「看」界面时，屏幕上的文字、表单的结构、危险按钮上的文案，就成了智能体的操作说明。本文讲清楚发布了什么、基准数据说明了什么和没说明什么，以及我们会怎么改自己的界面。</p>
+<h2>这次发了什么</h2>
+<ul><li><strong>以「行为」而不是「组件」为单位。</strong><code>@ui-sdk/core</code> 提供 50 多个不依赖框架的行为，比如 <code>createPopup</code>、<code>createSelection</code>、<code>createTypeahead</code>、<code>createRovingFocus</code>、<code>createReorder</code>。官网的说法是：把 Select 的零件交给智能体，它不仅能做 Select，还能做组合框，甚至做出还没人命名的新组件。适配层让同一个原语在 React、Vue、Svelte、Solid 和 Web Components 里渲染。</li>
+<li><strong>给「搭建者」的技能和版本化文档。</strong><code>npx skills add vercel-labs/ui --skill ui-sdk</code> 给编程智能体一套流程：选行为、定义原语、渲染、用自带的测试工具检查键盘、焦点和 ARIA。每个包还附带与已安装版本一致的 Markdown 文档。</li>
+<li><strong>给「操作者」的桥。</strong><code>createAgent()</code> 暴露三个工具：<code>snapshot</code> 列出组件的标签、值和当前可用动作；<code>query</code> 搜索组件和列表选项；<code>act</code> 执行步骤，比如对「Project name」调用 <code>setValue</code>。这些工具也能通过 WebMCP 注册给浏览器内置的智能体，Chrome 目前以早期预览形式提供 WebMCP。</li>
+<li><strong>权限钩子。</strong><code>allow</code> 回调可以批准或拒绝每一步；组件的变更回调会收到 <code>source: "agent"</code>；三个 HTML 标记决定智能体能看什么、做什么：<code>data-agent-confirm</code>、<code>data-agent-hidden</code>、<code>data-agent-secret</code>。</li></ul><figure><img src="../../blog/img/vercel-ui-sdk-agent-operable-interfaces-2.webp" alt="对比网格：同一项目设置任务三次运行的中位数，工具调用 16 次对 5 次，读取文字 3.98 万对 6800 字符，耗时 41 秒对 16 秒，花费 0.073 美元对 0.032 美元；厂商自测，一个模型、一个任务" loading="lazy" decoding="async" width="1200" height="675"><figcaption>对比网格：同一项目设置任务三次运行的中位数，工具调用 16 次对 5 次，读取文字 3.98 万对 6800 字符，耗时 41 秒对 16 秒，花费 0.073 美元对 0.032 美元；厂商自测，一个模型、一个任务 · 示意图：UI Hub 原创，CC BY 4.0</figcaption></figure>
+<h2>仔细看基准数据</h2>
+<p>Vercel 文档报告了一个项目设置任务（重命名项目、更新成员和通知设置、保存）的两种做法。用浏览器工具操作另一个组件库做的页面：16 次工具调用、读取 3.98 万字符、41 秒、0.073 美元。用智能体桥操作同一界面的 UI SDK 版本：5 次调用、6800 字符、16 秒、0.032 美元。这是每种做法三次运行的中位数，一个模型、一个任务，由厂商自己测量。把它当方向而不是定律：结构化状态胜过像素，字段越多差距越大。它没有告诉你，在标签含糊、结构混乱的真实应用里会怎样，而那正是设计师能掌控的部分。</p>
+<h2>我们的看法：可访问名称就是智能体的 API</h2>
+<p>这座桥按标签找控件，整词匹配，不区分大小写和重音。如果两个控件标签相同，调用会失败并返回所有匹配项。换句话说，屏幕阅读器朗读的那个可访问名称（accessible name），正是智能体瞄准的目标。由此有三个设计结论。</p>
+<ul><li><strong>同一屏里，标签必须唯一且具体。</strong>两个都叫「名称」的字段、一排没有名称的图标按钮、拿占位符冒充标签：每一个都是无障碍缺陷，现在也都是智能体故障。WCAG 的「Label in Name（名称包含标签）」要求可见文字出现在可访问名称里，这对两类用户都是好的默认值。</li>
+<li><strong>确认文案是安全护栏，就要按护栏来写。</strong><code>data-agent-confirm="Charges $20 to your card for 1,000 credits"</code> 会在智能体动手之前出现在快照里；没有 <code>allow</code> 回调时，点击会以「Needs a person（需要本人操作）」失败。这句话会在做决定的那一刻展示给人看，所以要用直白的话写清动作、金额和对象，而不是一句「确定吗？」。</li>
+<li><strong>有些区域应该有意隐藏。</strong>恢复码、API 密钥、危险操作区：标上 <code>data-agent-hidden</code>，它们就不会出现在 <code>snapshot</code> 和 <code>query</code> 里。税号这类字段标 <code>data-agent-secret</code>，智能体可以输入，但读回来是「[redacted]」。密码、银行卡和一次性验证码字段不用标记也会按机密处理。</li></ul>
+<p>文档里还有一个值得重复的坑：一个不读取 <code>step.confirm</code> 就直接返回 <code>true</code> 的 <code>allow</code>，等于替用户点了「是」。如果确认文案是你写的，请确认有人把它接到了真正的确认弹窗上。</p>
+<h2>适合用在哪里，哪里先等等</h2>
+<p>「搭建」这一半今天就有用，用法和无头组件库一样：用 <code>createPopup</code> 加 <code>createListbox</code> 拼菜单的智能体，比手写事件处理的智能体更不容易做出焦点不回位的菜单。「桥」这一半值得先在内部工具和设置页上做原型，那里动作有边界，标签也由你掌控。结账、注销账户或任何涉及钱的地方，让智能体待在确认标记后面，并记录每一次 <code>source: "agent"</code> 的变更。UI SDK 是 Beta，受 Vercel Beta 条款约束；WebMCP 是早期预览的浏览器 API，所以暂时别在它们之上做面向公众的产品承诺。</p>
+<p>同一周，Google 的 <em>Modern Web Guidance</em> 技能（与 Edge、Firefox 和 MDN 团队共同维护）也因为相关原因上了热门：除非上下文里有最新、经过整理的平台指南，智能体默认会写老旧写法。两个项目押的是同一件事：智能体用经过测试的积木写界面，比凭记忆写得更好。</p>
+<figure><img src="../../blog/img/vercel-ui-sdk-agent-operable-interfaces-3.webp" alt="2026 年 11 月 14 日 UI SDK 文档的 Permissions 页面，介绍 allow 回调和 data-agent-confirm、hidden、secret 标记" loading="lazy" decoding="async" width="1280" height="800"><figcaption>2026 年 11 月 14 日 UI SDK 文档的 Permissions 页面，介绍 allow 回调和 data-agent-confirm、hidden、secret 标记 · 截图：UI SDK docs（<a href="https://ui-sdk.dev/docs/agents/connect-an-agent/permissions" rel="noopener" target="_blank">ui-sdk.dev</a>），2026-11-14 截取，版权归原站所有</figcaption></figure><h2>清单：让一个界面可以被智能体操作</h2>
+<ol><li><strong>一个控件一个名字。</strong>每个输入框、选择框和图标按钮都有可见或程序化的标签，并且在本屏唯一。在设计稿里搜重复的「名称」「编辑」「更多」。</li>
+<li><strong>可见文字放进名称。</strong>可访问名称以用户看到的文字开头，让语音用户和智能体用同样的词。</li>
+<li><strong>状态放在组件里，而不只是颜色。</strong>选中、展开、错误、禁用都是真实状态，而不是智能体读不到的一层色调。</li>
+<li><strong>列表选项有可读标签。</strong>像 <code>north-america</code> 这样的值需要「North America」这样的人类标签；避免只有旗帜或图标的选项。</li>
+<li><strong>危险控件带一句确认文案。</strong>动作、金额、对象，15 个词以内。放在表单或对话框上，覆盖里面的所有控件。</li>
+<li><strong>有意隐藏。</strong>机密和危险区标 hidden 或 secret；在设计评审时就检查这些标记，而不是上线之后。</li>
+<li><strong>把智能体的改动展示给人。</strong>为 <code>source: "agent"</code> 的变更设计可见的记录、提示或历史条目，并提供撤销。</li>
+<li><strong>测两遍。</strong>先过键盘和屏幕阅读器；再在控制台运行 <code>agent.snapshot()</code>，把它当作这个界面唯一的样子来读。</li></ol>
+<pre><code># 把这段贴给你的编程智能体（React + UI SDK）
+使用 ui-sdk 技能，让 <路径> 里的设置页可以被智能体操作。
+- 缺少的控件用 ui-sdk 的行为搭建，保留我们现有的样式和 token。
+- 每个控件都有本屏唯一的可访问名称，并以可见文字开头。
+- 用 createAgent({ allow }) 创建桥，allow 要读取 step.confirm 并弹出
+  我们现有的确认对话框；遇到确认步骤绝不直接返回 true。
+- 删除、计费和邀请按钮加 data-agent-confirm，用一句直白的话写清
+  动作、金额和对象；API 密钥和恢复码加 data-agent-hidden；
+  税号字段加 data-agent-secret。
+- details.source 为 "agent" 的变更弹出提示，并提供撤销。
+输出：agent.snapshot() 的结果、你修复的重复或缺失标签，
+以及每个加了标记的控件和所用的那句话。</code></pre>
+<p>UI Hub 相关阅读：<a href="../agent-approval-ui-budgets-interruptions/">智能体的审批界面</a>、<a href="../native-popover-dialog-overlays-for-ai-ui/">AI 生成界面里的原生浮层和对话框</a>，以及<a href="../accessibility-in-ai-generated-ui/">AI 生成界面的无障碍</a>。</p>

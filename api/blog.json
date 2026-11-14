@@ -1,5 +1,5 @@
 {
- "count": 52,
+ "count": 53,
  "rss": "https://ui.incidental.site/blog/rss.xml",
  "categories": {
   "tools": "Tools",
@@ -18,6 +18,113 @@
   "weekly": "Series: Weekly roundup"
  },
  "posts": [
+  {
+   "slug": "vercel-ui-sdk-agent-operable-interfaces",
+   "url": "https://ui.incidental.site/blog/vercel-ui-sdk-agent-operable-interfaces/",
+   "date": "2026-11-14",
+   "category": "agents",
+   "series": null,
+   "featured": true,
+   "tags": [
+    "UI SDK",
+    "Vercel",
+    "agent-operable UI",
+    "WebMCP",
+    "accessible names",
+    "permissions"
+   ],
+   "title": {
+    "en": "Vercel’s UI SDK lets agents operate your interface. Design for the agent that reads it",
+    "zh": "Vercel 的 UI SDK 让智能体直接操作界面：为「读界面」的智能体做设计",
+    "zht": "Vercel 的 UI SDK 讓智能體直接操作介面：為「讀介面」的智能體做設計",
+    "ja": "VercelのUI SDKでエージェントがUIを直接操作する。読み取るエージェントのために設計しよう",
+    "ko": "Vercel UI SDK로 에이전트가 인터페이스를 직접 조작한다. 화면을 읽는 에이전트를 위해 디자인하라",
+    "ms": "UI SDK Vercel membolehkan ejen mengendalikan antara muka anda. Reka untuk ejen yang membacanya",
+    "vi": "UI SDK của Vercel cho agent thao tác trực tiếp giao diện. Hãy thiết kế cho agent đọc giao diện",
+    "fr": "Le UI SDK de Vercel laisse les agents piloter votre interface. Concevez pour l’agent qui la lit",
+    "es": "El UI SDK de Vercel deja que los agentes manejen tu interfaz. Diseña para el agente que la lee",
+    "de": "Mit Vercels UI SDK bedienen Agents deine Oberfläche direkt. Gestalte für den Agent, der sie liest"
+   },
+   "summary": {
+    "en": "Vercel Labs’ UI SDK (beta, new package releases on 13 November 2026) gives coding agents 50+ tested behaviors to assemble components from, and gives runtime agents a bridge that reads component state and calls actions without screenshots. In Vercel’s own benchmark that cut a settings task from 41 s to 16 s. What changes for designers: labels become the agent’s map, confirmation copy becomes a safety rail, and some regions should be hidden on purpose. With a checklist and an agent prompt.",
+    "zh": "Vercel Labs 的 UI SDK（Beta，2026 年 11 月 13 日发布新一批包）给编程智能体提供 50 多个经过测试的「行为」来拼装组件，也给运行时智能体一座「桥」，不用截图就能读组件状态、调用组件动作。在 Vercel 自己的基准里，一个设置页任务从 41 秒降到 16 秒。对设计师来说变化在于：标签成了智能体的地图，确认文案成了安全护栏，有些区域应该有意隐藏。附检查清单和一段智能体提示词。",
+    "zht": "Vercel Labs 的 UI SDK（Beta，2026 年 11 月 13 日發布新一批套件）給程式智能體提供 50 多個經過測試的「行為」來拼裝元件，也給執行時智能體一座「橋」，不用截圖就能讀元件狀態、呼叫元件動作。在 Vercel 自己的基準裡，一個設定頁任務從 41 秒降到 16 秒。對設計師來說變化在於：標籤成了智能體的地圖，確認文案成了安全護欄，有些區域應該刻意隱藏。附檢查清單和一段智能體提示詞。",
+    "ja": "Vercel LabsのUI SDK（ベータ、2026年11月13日に新パッケージ公開）は、コーディングエージェントに50以上のテスト済み「ビヘイビア」を与えてコンポーネントを組み立てさせ、実行時のエージェントにはスクリーンショットなしで状態を読み、アクションを呼べるブリッジを提供する。Vercel自身のベンチマークでは設定タスクが41秒から16秒に。デザイナーにとっての変化：ラベルはエージェントの地図に、確認文はセーフティレールに、一部の領域は意図的に隠すべきものになる。チェックリストとプロンプト付き。",
+    "ko": "Vercel Labs의 UI SDK(베타, 2026년 11월 13일 새 패키지 릴리스)는 코딩 에이전트에게 컴포넌트를 조립할 50개 이상의 검증된 ‘동작(behavior)’을, 실행 중인 에이전트에게는 스크린샷 없이 상태를 읽고 액션을 호출하는 브리지를 준다. Vercel 자체 벤치마크에서 설정 작업이 41초에서 16초로 줄었다. 디자이너에게 바뀌는 점: 라벨은 에이전트의 지도가, 확인 문구는 안전장치가 되고, 일부 영역은 일부러 숨겨야 한다. 체크리스트와 에이전트 프롬프트 포함.",
+    "ms": "UI SDK Vercel Labs (beta, keluaran pakej baharu pada 13 November 2026) memberi ejen pengekodan lebih 50 tingkah laku teruji untuk membina komponen, dan memberi ejen masa jalan jambatan yang membaca keadaan komponen dan memanggil tindakan tanpa tangkapan skrin. Dalam penanda aras Vercel sendiri, tugas tetapan turun daripada 41 s ke 16 s. Apa yang berubah untuk pereka: label menjadi peta ejen, teks pengesahan menjadi pagar keselamatan, dan sesetengah kawasan patut disembunyikan dengan sengaja. Dengan senarai semak dan prompt ejen.",
+    "vi": "UI SDK của Vercel Labs (beta, phát hành gói mới ngày 13/11/2026) cho agent lập trình hơn 50 “hành vi” đã được kiểm thử để ghép thành component, và cho agent lúc chạy một cầu nối đọc trạng thái component và gọi hành động mà không cần ảnh chụp màn hình. Trong benchmark của chính Vercel, một tác vụ cài đặt giảm từ 41 giây xuống 16 giây. Điều thay đổi với designer: nhãn thành bản đồ của agent, câu xác nhận thành rào an toàn, và một số vùng nên được ẩn có chủ đích. Kèm checklist và prompt.",
+    "fr": "Le UI SDK de Vercel Labs (bêta, nouveaux paquets publiés le 13 novembre 2026) donne aux agents de code plus de 50 comportements testés pour assembler des composants, et aux agents en exécution un pont qui lit l’état des composants et appelle leurs actions sans captures d’écran. Dans le benchmark de Vercel, une tâche de réglages passe de 41 s à 16 s. Ce qui change pour les designers : les libellés deviennent la carte de l’agent, le texte de confirmation devient un garde-fou, et certaines zones doivent être masquées exprès. Avec une checklist et un prompt.",
+    "es": "El UI SDK de Vercel Labs (beta, nuevos paquetes publicados el 13 de noviembre de 2026) da a los agentes de código más de 50 comportamientos probados para montar componentes, y a los agentes en ejecución un puente que lee el estado de los componentes y llama a sus acciones sin capturas de pantalla. En el benchmark de Vercel, una tarea de ajustes pasó de 41 s a 16 s. Qué cambia para quien diseña: las etiquetas se vuelven el mapa del agente, el texto de confirmación una barandilla y algunas zonas deben ocultarse a propósito. Con checklist y prompt.",
+    "de": "Vercel Labs’ UI SDK (Beta, neue Paketversionen am 13. November 2026) gibt Coding-Agents über 50 getestete Behaviors, aus denen sie Komponenten bauen, und Laufzeit-Agents eine Brücke, die Komponentenzustand liest und Aktionen aufruft, ganz ohne Screenshots. In Vercels eigenem Benchmark sank eine Einstellungsaufgabe von 41 s auf 16 s. Was sich fürs Design ändert: Labels werden zur Karte des Agents, Bestätigungstexte zur Leitplanke, und manche Bereiche sollten bewusst verborgen bleiben. Mit Checkliste und Agent-Prompt."
+   },
+   "reading_minutes": {
+    "en": 6,
+    "zh": 8
+   },
+   "cover": "https://ui.incidental.site/blog/img/vercel-ui-sdk-agent-operable-interfaces-cover.webp",
+   "references": [
+    {
+     "title": "UI SDK — A library of behaviors for agents",
+     "by": "Vercel Labs",
+     "url": "https://ui-sdk.dev/"
+    },
+    {
+     "title": "Built for Agents (agent bridge and benchmark)",
+     "by": "UI SDK docs",
+     "url": "https://ui-sdk.dev/docs/agents"
+    },
+    {
+     "title": "Permissions",
+     "by": "UI SDK docs",
+     "url": "https://ui-sdk.dev/docs/agents/connect-an-agent/permissions"
+    },
+    {
+     "title": "WebMCP",
+     "by": "UI SDK docs",
+     "url": "https://ui-sdk.dev/docs/agents/connect-an-agent/webmcp"
+    },
+    {
+     "title": "All Behaviors",
+     "by": "UI SDK docs",
+     "url": "https://ui-sdk.dev/docs/core/behaviors"
+    },
+    {
+     "title": "vercel-labs/ui",
+     "by": "GitHub",
+     "url": "https://github.com/vercel-labs/ui"
+    },
+    {
+     "title": "WebMCP is available for early preview",
+     "by": "Chrome for Developers",
+     "url": "https://developer.chrome.com/blog/webmcp-epp"
+    },
+    {
+     "title": "WebMCP specification draft",
+     "by": "W3C Web Machine Learning Community Group",
+     "url": "https://webmachinelearning.github.io/webmcp/"
+    },
+    {
+     "title": "Modern Web Guidance",
+     "by": "GoogleChrome on GitHub",
+     "url": "https://github.com/GoogleChrome/modern-web-guidance"
+    },
+    {
+     "title": "AI Design Daily, 14 Nov 2026 (morning edition)",
+     "by": "Daily Design",
+     "url": "https://studios.greatcreations.art/daily-design/editions/2026-11-14/morning.html"
+    },
+    {
+     "title": "Accessible name",
+     "by": "MDN Web Docs",
+     "url": "https://developer.mozilla.org/en-US/docs/Glossary/Accessible_name"
+    },
+    {
+     "title": "Understanding SC 2.5.3: Label in Name",
+     "by": "W3C WAI",
+     "url": "https://www.w3.org/WAI/WCAG22/Understanding/label-in-name.html"
+    }
+   ]
+  },
   {
    "slug": "figma-3d-transforms-css-handoff",
    "url": "https://ui.incidental.site/blog/figma-3d-transforms-css-handoff/",

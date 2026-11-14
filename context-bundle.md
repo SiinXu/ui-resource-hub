@@ -417,3 +417,4 @@ curl -s https://ui.incidental.site/api/resources.json | jq --arg d "$(date -u -d
 - Figma Motion now has physics springs: hand off three numbers, not a duration — https://ui.incidental.site/kb/note/blog-figma-motion-physics-springs-handoff.md
 - Webflow went native for modals and popovers. Make your AI-generated overlays do the same — https://ui.incidental.site/kb/note/blog-native-popover-dialog-overlays-for-ai-ui.md
 - Figma’s 3D transforms map straight to CSS. The traps are in what flattens — https://ui.incidental.site/kb/note/blog-figma-3d-transforms-css-handoff.md
+- Vercel’s UI SDK lets agents operate your interface. Design for the agent that reads it — https://ui.incidental.site/kb/note/blog-vercel-ui-sdk-agent-operable-interfaces.md
