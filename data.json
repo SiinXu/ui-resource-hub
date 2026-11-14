@@ -1,6 +1,6 @@
 {
- "generated": "2026-11-13",
- "count": 5118,
+ "generated": "2026-11-14",
+ "count": 5121,
  "items": [
   {
    "id": "ued-transitions-dev-craft",
@@ -192803,6 +192803,90 @@
    },
    "pub": "2026-11-13",
    "added": "2026-11-13"
+  },
+  {
+   "id": "gh-opencoredev-islandcn",
+   "name": "islandcn",
+   "url": "https://islandcn.dev",
+   "note": "GitHub 新晋 UI 仓库：The open-source Dynamic Island for React, installed with shadcn.（GitHub ★407，MIT 许可，仓库 opencoredev/islandcn）",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "GitHub",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "开源",
+    "自动收录"
+   ],
+   "ct": [],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "New GitHub UI repo: The open-source Dynamic Island for React, installed with shadcn. (★407, MIT, opencoredev/islandcn)",
+   "added": "2026-11-14"
+  },
+  {
+   "id": "gh-preetsuthar17-hextaui",
+   "name": "hextaui",
+   "url": "https://hextaui.com",
+   "note": "GitHub 新晋 UI 仓库：shadcn/ui components, hooks and AI blocks built on Base UI, with loading, error, empty and other hard states handled.（GitHub ★153，MIT 许可，仓库 preetsuthar17/hextaui）",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "GitHub",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "HTML",
+    "开源",
+    "自动收录"
+   ],
+   "ct": [
+    "chat",
+    "layout"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "New GitHub UI repo: shadcn/ui components, hooks and AI blocks built on Base UI, with loading, error, empty and other hard states handled. (★153, MIT, preetsuthar17/hextaui)",
+   "added": "2026-11-14"
+  },
+  {
+   "id": "gh-wiziscool-oh-my-cpa",
+   "name": "oh-my-cpa",
+   "url": "https://omc-demo.junze.dev",
+   "note": "GitHub 新晋 UI 仓库：Modern web console for CLIProxyAPI v8+ with provider and OAuth management, live routing, request analytics, pricing, and MCP.（GitHub ★389，MIT 许可，仓库 WizisCool/oh-my-cpa）",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "GitHub",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "开源",
+    "自动收录"
+   ],
+   "ct": [
+    "chat"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "New GitHub UI repo: Modern web console for CLIProxyAPI v8+ with provider and OAuth management, live routing, request analytics, pricing, and MCP. (★389, MIT, WizisCool/oh-my-cpa)",
+   "added": "2026-11-14"
   }
  ],
  "guides": [
@@ -193005,5 +193089,5 @@
    ]
   }
  ],
- "updatedAt": "2026-11-13T20:38Z"
+ "updatedAt": "2026-11-14T06:17Z"
 }
