@@ -1,9 +1,9 @@
 # UI Hub endpoints
 
-- Resources (live, 5121+ items): https://ui.incidental.site/api/resources.json
+- Resources (live, 5122+ items): https://ui.incidental.site/api/resources.json
 - Skills + workflow: https://ui.incidental.site/api/skills.json
 - llms.txt: https://ui.incidental.site/llms.txt
 - Full text: https://ui.incidental.site/llms-full.txt
 - Human guide: https://ui.incidental.site/agents/
 
-Always fetch the live JSON; the bundled copy below is a snapshot (2026-11-14 18:49 UTC).
+Always fetch the live JSON; the bundled copy below is a snapshot (2026-11-15 06:24 UTC).

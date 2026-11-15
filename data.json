@@ -1,6 +1,6 @@
 {
- "generated": "2026-11-14",
- "count": 5121,
+ "generated": "2026-11-15",
+ "count": 5122,
  "items": [
   {
    "id": "ued-transitions-dev-craft",
@@ -192887,6 +192887,34 @@
    ],
    "noteEn": "New GitHub UI repo: Modern web console for CLIProxyAPI v8+ with provider and OAuth management, live routing, request analytics, pricing, and MCP. (★389, MIT, WizisCool/oh-my-cpa)",
    "added": "2026-11-14"
+  },
+  {
+   "id": "gh-oil-oil-oil-ui",
+   "name": "oil-ui",
+   "url": "https://ui.oiloil.org",
+   "note": "GitHub 新晋 UI 仓库：UI design skill for Claude Code, Codex and other AI agents: explore distinct directions, compare them side by side, refine against real screenshots. 给 AI Agent 用的 UI 设计 Skill。（GitHub ★3383，MIT 许可，仓库 oil-oil/oil-ui）",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "GitHub",
+   "pricing": "free",
+   "tags": [
+    "HTML",
+    "开源",
+    "自动收录"
+   ],
+   "ct": [
+    "chat"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "New GitHub UI repo: UI design skill for Claude Code, Codex and other AI agents: explore distinct directions, compare them side by side, refine against real screenshots. 给 AI Agent 用的 UI 设计 Skill。 (★3383, MIT, oil-oil/oil-ui)",
+   "added": "2026-11-15"
   }
  ],
  "guides": [
@@ -193089,5 +193117,5 @@
    ]
   }
  ],
- "updatedAt": "2026-11-14T18:49Z"
+ "updatedAt": "2026-11-15T06:24Z"
 }
