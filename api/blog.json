@@ -1,5 +1,5 @@
 {
- "count": 53,
+ "count": 54,
  "rss": "https://ui.incidental.site/blog/rss.xml",
  "categories": {
   "tools": "Tools",
@@ -18,6 +18,123 @@
   "weekly": "Series: Weekly roundup"
  },
  "posts": [
+  {
+   "slug": "agent-motion-skills-pick-renderer-by-destination",
+   "url": "https://ui.incidental.site/blog/agent-motion-skills-pick-renderer-by-destination/",
+   "date": "2026-11-15",
+   "category": "workflow",
+   "series": null,
+   "featured": true,
+   "tags": [
+    "HyperFrames",
+    "Remotion",
+    "Lottie",
+    "agent skills",
+    "motion design",
+    "licences"
+   ],
+   "title": {
+    "en": "Coding agents are turning into motion studios. Pick the renderer by where the motion ships",
+    "zh": "编程智能体正在变成动效工作室：先看动效发到哪里，再选渲染器",
+    "zht": "程式智能體正在變成動效工作室：先看動效發到哪裡，再選渲染器",
+    "ja": "コーディングエージェントがモーションスタジオになりつつある。動きの行き先でレンダラーを選ぼう",
+    "ko": "코딩 에이전트가 모션 스튜디오가 되고 있다. 모션이 어디로 가는지 보고 렌더러를 고르자",
+    "ms": "Ejen pengekodan menjadi studio gerakan. Pilih pemapar mengikut ke mana animasi itu dihantar",
+    "vi": "Agent lập trình đang thành xưởng chuyển động. Hãy chọn trình kết xuất theo nơi chuyển động được giao",
+    "fr": "Les agents de code deviennent des studios de motion. Choisissez le moteur selon la destination de l’animation",
+    "es": "Los agentes de código se vuelven estudios de motion. Elige el renderizador según adónde va la animación",
+    "de": "Coding-Agents werden zu Motion-Studios. Wähle den Renderer danach, wo die Animation landet"
+   },
+   "summary": {
+    "en": "On 14–15 November 2026 a list of 18 free GitHub tools for making animation with Claude Code or Codex was the most-saved design post on X, and one catalogue now counts 146 motion-skill repositories. The tools differ less in what they can animate than in what they hand back: code in your app, a Lottie file or a rendered MP4. How to choose by destination, why a frame-driven clock matters, the licence and house-style traps, plus a checklist and an agent prompt.",
+    "zh": "2026 年 11 月 14 日到 15 日，一份「让 Claude Code 或 Codex 做动画的 18 个免费 GitHub 工具」清单成了 X 上收藏最多的设计帖，一个目录站已收录 146 个动效技能仓库。这些工具的差别不在于能做什么动画，而在于交回来的是什么：应用里的代码、一个 Lottie 文件，还是一段渲染好的 MP4。本文讲怎样按目的地选择、为什么要用按帧驱动的时钟、许可证和「默认风格」两个坑，附检查清单和一段智能体提示词。",
+    "zht": "2026 年 11 月 14 日到 15 日，一份「讓 Claude Code 或 Codex 做動畫的 18 個免費 GitHub 工具」清單成了 X 上收藏最多的設計貼文，一個目錄站已收錄 146 個動效技能儲存庫。這些工具的差別不在於能做什麼動畫，而在於交回來的是什麼：應用裡的程式碼、一個 Lottie 檔案，還是一段算繪好的 MP4。本文講怎樣按目的地選擇、為什麼要用按影格驅動的時鐘、授權和「預設風格」兩個坑，附檢查清單和一段智能體提示詞。",
+    "ja": "2026年11月14〜15日、Claude CodeやCodexでアニメーションを作るための無料GitHubツール18選がXで最も保存されたデザイン投稿になり、あるカタログはモーション用スキルのリポジトリを146件数えている。ツールの違いは何を動かせるかより、何を返すかにある。アプリのコード、Lottieファイル、レンダリング済みのMP4だ。行き先での選び方、フレーム駆動の時計が重要な理由、ライセンスと「標準の見た目」の落とし穴、チェックリストとエージェント用プロンプト付き。",
+    "ko": "2026년 11월 14~15일, Claude Code나 Codex로 애니메이션을 만드는 무료 GitHub 도구 18개 목록이 X에서 가장 많이 저장된 디자인 글이 됐고, 한 카탈로그는 모션 스킬 저장소를 146개나 집계한다. 도구의 차이는 무엇을 움직일 수 있느냐보다 무엇을 돌려주느냐에 있다. 앱 안의 코드, Lottie 파일, 렌더링된 MP4다. 목적지로 고르는 법, 프레임 기반 시계가 중요한 이유, 라이선스와 ‘기본 스타일’ 함정, 체크리스트와 에이전트 프롬프트 포함.",
+    "ms": "Pada 14–15 November 2026, senarai 18 alat GitHub percuma untuk membuat animasi dengan Claude Code atau Codex menjadi hantaran reka bentuk paling banyak disimpan di X, dan satu katalog kini mengira 146 repositori kemahiran gerakan. Alat-alat ini berbeza bukan pada apa yang boleh dianimasikan, tetapi pada apa yang dipulangkan: kod dalam aplikasi, fail Lottie atau MP4 yang siap dipapar. Cara memilih mengikut destinasi, mengapa jam berasaskan bingkai penting, perangkap lesen dan gaya lalai, serta senarai semak dan prompt ejen.",
+    "vi": "Ngày 14–15/11/2026, danh sách 18 công cụ GitHub miễn phí để làm hoạt ảnh bằng Claude Code hoặc Codex là bài thiết kế được lưu nhiều nhất trên X, và một danh mục hiện đếm được 146 kho kỹ năng chuyển động. Khác biệt giữa các công cụ không nằm ở thứ chúng làm chuyển động được, mà ở thứ chúng trả về: mã trong ứng dụng, một tệp Lottie hay một MP4 đã kết xuất. Cách chọn theo đích đến, vì sao đồng hồ theo khung hình quan trọng, bẫy giấy phép và phong cách mặc định, kèm checklist và prompt cho agent.",
+    "fr": "Les 14 et 15 novembre 2026, une liste de 18 outils GitHub gratuits pour animer avec Claude Code ou Codex a été le post design le plus sauvegardé sur X, et un catalogue recense désormais 146 dépôts de skills de motion. Ces outils diffèrent moins par ce qu’ils savent animer que par ce qu’ils rendent : du code dans votre app, un fichier Lottie ou un MP4 rendu. Comment choisir selon la destination, pourquoi une horloge pilotée par les images compte, les pièges de licence et de style par défaut, avec une checklist et un prompt.",
+    "es": "El 14 y 15 de noviembre de 2026, una lista de 18 herramientas gratuitas de GitHub para animar con Claude Code o Codex fue la publicación de diseño más guardada en X, y un catálogo ya cuenta 146 repositorios de skills de motion. Las herramientas se diferencian menos en lo que pueden animar que en lo que devuelven: código en tu app, un archivo Lottie o un MP4 renderizado. Cómo elegir según el destino, por qué importa un reloj basado en fotogramas, las trampas de licencia y de estilo por defecto, con checklist y prompt.",
+    "de": "Am 14. und 15. November 2026 war eine Liste mit 18 kostenlosen GitHub-Tools für Animationen mit Claude Code oder Codex der meistgespeicherte Design-Post auf X, und ein Katalog zählt inzwischen 146 Repositorys mit Motion-Skills. Die Tools unterscheiden sich weniger darin, was sie animieren können, als darin, was sie zurückgeben: Code in deiner App, eine Lottie-Datei oder ein gerendertes MP4. Wie du nach Ziel wählst, warum eine framegesteuerte Uhr zählt, die Fallen bei Lizenz und Standard-Look, mit Checkliste und Agent-Prompt."
+   },
+   "reading_minutes": {
+    "en": 6,
+    "zh": 8
+   },
+   "cover": "https://ui.incidental.site/blog/img/agent-motion-skills-pick-renderer-by-destination-cover.webp",
+   "references": [
+    {
+     "title": "18 free GitHub tools for making animation with a coding agent — @okapi_fukugyo (14 Nov 2026)",
+     "by": "X",
+     "url": "https://x.com/okapi_fukugyo/status/2121725407867351215"
+    },
+    {
+     "title": "AI Design Daily, 15 Nov 2026 (morning edition)",
+     "by": "Daily Design",
+     "url": "https://studios.greatcreations.art/daily-design/editions/2026-11-15/morning.html"
+    },
+    {
+     "title": "Agent skills for making motion with Claude",
+     "by": "motif",
+     "url": "https://createmotion.io/resources/agent-skills/"
+    },
+    {
+     "title": "heygen-com/hyperframes",
+     "by": "GitHub",
+     "url": "https://github.com/heygen-com/hyperframes"
+    },
+    {
+     "title": "HyperFrames introduction",
+     "by": "HyperFrames docs (HeyGen)",
+     "url": "https://hyperframes.heygen.com/introduction"
+    },
+    {
+     "title": "Agent Skills",
+     "by": "Remotion docs",
+     "url": "https://www.remotion.dev/docs/ai/skills"
+    },
+    {
+     "title": "Animating properties",
+     "by": "Remotion docs",
+     "url": "https://www.remotion.dev/docs/animating-properties"
+    },
+    {
+     "title": "Remotion License",
+     "by": "GitHub · remotion-dev",
+     "url": "https://github.com/remotion-dev/remotion/blob/main/LICENSE.md"
+    },
+    {
+     "title": "diffusionstudio/lottie (text-to-lottie)",
+     "by": "GitHub",
+     "url": "https://github.com/diffusionstudio/lottie"
+    },
+    {
+     "title": "emilkowalski/skills",
+     "by": "GitHub",
+     "url": "https://github.com/emilkowalski/skills"
+    },
+    {
+     "title": "hughminhphan/motion-kit",
+     "by": "GitHub",
+     "url": "https://github.com/hughminhphan/motion-kit"
+    },
+    {
+     "title": "Motion Canvas",
+     "by": "motioncanvas.io",
+     "url": "https://motioncanvas.io/"
+    },
+    {
+     "title": "prefers-reduced-motion",
+     "by": "MDN Web Docs",
+     "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion"
+    },
+    {
+     "title": "Understanding SC 2.2.2: Pause, Stop, Hide",
+     "by": "W3C WAI",
+     "url": "https://www.w3.org/WAI/WCAG22/Understanding/pause-stop-hide.html"
+    }
+   ]
+  },
   {
    "slug": "vercel-ui-sdk-agent-operable-interfaces",
    "url": "https://ui.incidental.site/blog/vercel-ui-sdk-agent-operable-interfaces/",

@@ -2837,4 +2837,115 @@ and every control you marked, with the sentence you used.</code></pre>
 以及每个加了标记的控件和所用的那句话。</code></pre>
 <p>UI Hub 相关阅读：<a href="../agent-approval-ui-budgets-interruptions/">智能体的审批界面</a>、<a href="../native-popover-dialog-overlays-for-ai-ui/">AI 生成界面里的原生浮层和对话框</a>，以及<a href="../accessibility-in-ai-generated-ui/">AI 生成界面的无障碍</a>。</p>""",
  refs=[('UI SDK — A library of behaviors for agents','Vercel Labs','https://ui-sdk.dev/'),('Built for Agents (agent bridge and benchmark)','UI SDK docs','https://ui-sdk.dev/docs/agents'),('Permissions','UI SDK docs','https://ui-sdk.dev/docs/agents/connect-an-agent/permissions'),('WebMCP','UI SDK docs','https://ui-sdk.dev/docs/agents/connect-an-agent/webmcp'),('All Behaviors','UI SDK docs','https://ui-sdk.dev/docs/core/behaviors'),('vercel-labs/ui','GitHub','https://github.com/vercel-labs/ui'),('WebMCP is available for early preview','Chrome for Developers','https://developer.chrome.com/blog/webmcp-epp'),('WebMCP specification draft','W3C Web Machine Learning Community Group','https://webmachinelearning.github.io/webmcp/'),('Modern Web Guidance','GoogleChrome on GitHub','https://github.com/GoogleChrome/modern-web-guidance'),('AI Design Daily, 14 Nov 2026 (morning edition)','Daily Design','https://studios.greatcreations.art/daily-design/editions/2026-11-14/morning.html'),('Accessible name','MDN Web Docs','https://developer.mozilla.org/en-US/docs/Glossary/Accessible_name'),('Understanding SC 2.5.3: Label in Name','W3C WAI','https://www.w3.org/WAI/WCAG22/Understanding/label-in-name.html')]),
+dict(slug='agent-motion-skills-pick-renderer-by-destination', date='2026-11-15', cat='workflow', series=None, featured=True, tags=['HyperFrames','Remotion','Lottie','agent skills','motion design','licences'],
+ t=T('Coding agents are turning into motion studios. Pick the renderer by where the motion ships',
+     '编程智能体正在变成动效工作室：先看动效发到哪里，再选渲染器',
+     '程式智能體正在變成動效工作室：先看動效發到哪裡，再選渲染器',
+     'コーディングエージェントがモーションスタジオになりつつある。動きの行き先でレンダラーを選ぼう',
+     '코딩 에이전트가 모션 스튜디오가 되고 있다. 모션이 어디로 가는지 보고 렌더러를 고르자',
+     'Ejen pengekodan menjadi studio gerakan. Pilih pemapar mengikut ke mana animasi itu dihantar',
+     'Agent lập trình đang thành xưởng chuyển động. Hãy chọn trình kết xuất theo nơi chuyển động được giao',
+     'Les agents de code deviennent des studios de motion. Choisissez le moteur selon la destination de l’animation',
+     'Los agentes de código se vuelven estudios de motion. Elige el renderizador según adónde va la animación',
+     'Coding-Agents werden zu Motion-Studios. Wähle den Renderer danach, wo die Animation landet'),
+ s=T('On 14–15 November 2026 a list of 18 free GitHub tools for making animation with Claude Code or Codex was the most-saved design post on X, and one catalogue now counts 146 motion-skill repositories. The tools differ less in what they can animate than in what they hand back: code in your app, a Lottie file or a rendered MP4. How to choose by destination, why a frame-driven clock matters, the licence and house-style traps, plus a checklist and an agent prompt.',
+     '2026 年 11 月 14 日到 15 日，一份「让 Claude Code 或 Codex 做动画的 18 个免费 GitHub 工具」清单成了 X 上收藏最多的设计帖，一个目录站已收录 146 个动效技能仓库。这些工具的差别不在于能做什么动画，而在于交回来的是什么：应用里的代码、一个 Lottie 文件，还是一段渲染好的 MP4。本文讲怎样按目的地选择、为什么要用按帧驱动的时钟、许可证和「默认风格」两个坑，附检查清单和一段智能体提示词。',
+     '2026 年 11 月 14 日到 15 日，一份「讓 Claude Code 或 Codex 做動畫的 18 個免費 GitHub 工具」清單成了 X 上收藏最多的設計貼文，一個目錄站已收錄 146 個動效技能儲存庫。這些工具的差別不在於能做什麼動畫，而在於交回來的是什麼：應用裡的程式碼、一個 Lottie 檔案，還是一段算繪好的 MP4。本文講怎樣按目的地選擇、為什麼要用按影格驅動的時鐘、授權和「預設風格」兩個坑，附檢查清單和一段智能體提示詞。',
+     '2026年11月14〜15日、Claude CodeやCodexでアニメーションを作るための無料GitHubツール18選がXで最も保存されたデザイン投稿になり、あるカタログはモーション用スキルのリポジトリを146件数えている。ツールの違いは何を動かせるかより、何を返すかにある。アプリのコード、Lottieファイル、レンダリング済みのMP4だ。行き先での選び方、フレーム駆動の時計が重要な理由、ライセンスと「標準の見た目」の落とし穴、チェックリストとエージェント用プロンプト付き。',
+     '2026년 11월 14~15일, Claude Code나 Codex로 애니메이션을 만드는 무료 GitHub 도구 18개 목록이 X에서 가장 많이 저장된 디자인 글이 됐고, 한 카탈로그는 모션 스킬 저장소를 146개나 집계한다. 도구의 차이는 무엇을 움직일 수 있느냐보다 무엇을 돌려주느냐에 있다. 앱 안의 코드, Lottie 파일, 렌더링된 MP4다. 목적지로 고르는 법, 프레임 기반 시계가 중요한 이유, 라이선스와 ‘기본 스타일’ 함정, 체크리스트와 에이전트 프롬프트 포함.',
+     'Pada 14–15 November 2026, senarai 18 alat GitHub percuma untuk membuat animasi dengan Claude Code atau Codex menjadi hantaran reka bentuk paling banyak disimpan di X, dan satu katalog kini mengira 146 repositori kemahiran gerakan. Alat-alat ini berbeza bukan pada apa yang boleh dianimasikan, tetapi pada apa yang dipulangkan: kod dalam aplikasi, fail Lottie atau MP4 yang siap dipapar. Cara memilih mengikut destinasi, mengapa jam berasaskan bingkai penting, perangkap lesen dan gaya lalai, serta senarai semak dan prompt ejen.',
+     'Ngày 14–15/11/2026, danh sách 18 công cụ GitHub miễn phí để làm hoạt ảnh bằng Claude Code hoặc Codex là bài thiết kế được lưu nhiều nhất trên X, và một danh mục hiện đếm được 146 kho kỹ năng chuyển động. Khác biệt giữa các công cụ không nằm ở thứ chúng làm chuyển động được, mà ở thứ chúng trả về: mã trong ứng dụng, một tệp Lottie hay một MP4 đã kết xuất. Cách chọn theo đích đến, vì sao đồng hồ theo khung hình quan trọng, bẫy giấy phép và phong cách mặc định, kèm checklist và prompt cho agent.',
+     'Les 14 et 15 novembre 2026, une liste de 18 outils GitHub gratuits pour animer avec Claude Code ou Codex a été le post design le plus sauvegardé sur X, et un catalogue recense désormais 146 dépôts de skills de motion. Ces outils diffèrent moins par ce qu’ils savent animer que par ce qu’ils rendent : du code dans votre app, un fichier Lottie ou un MP4 rendu. Comment choisir selon la destination, pourquoi une horloge pilotée par les images compte, les pièges de licence et de style par défaut, avec une checklist et un prompt.',
+     'El 14 y 15 de noviembre de 2026, una lista de 18 herramientas gratuitas de GitHub para animar con Claude Code o Codex fue la publicación de diseño más guardada en X, y un catálogo ya cuenta 146 repositorios de skills de motion. Las herramientas se diferencian menos en lo que pueden animar que en lo que devuelven: código en tu app, un archivo Lottie o un MP4 renderizado. Cómo elegir según el destino, por qué importa un reloj basado en fotogramas, las trampas de licencia y de estilo por defecto, con checklist y prompt.',
+     'Am 14. und 15. November 2026 war eine Liste mit 18 kostenlosen GitHub-Tools für Animationen mit Claude Code oder Codex der meistgespeicherte Design-Post auf X, und ein Katalog zählt inzwischen 146 Repositorys mit Motion-Skills. Die Tools unterscheiden sich weniger darin, was sie animieren können, als darin, was sie zurückgeben: Code in deiner App, eine Lottie-Datei oder ein gerendertes MP4. Wie du nach Ziel wählst, warum eine framegesteuerte Uhr zählt, die Fallen bei Lizenz und Standard-Look, mit Checkliste und Agent-Prompt.'),
+ en="""<p>The design post people saved most on X between 14 and 15 November 2026 was not a model launch. It was a list of 18 free GitHub projects to hand Claude Code or Codex for animation, from Remotion’s agent skills and Motion Canvas to Lottie, Manim, three.js, Blender and Godot. It passed 5,800 bookmarks within a day, and AI Design Daily’s 15 November edition named it the most-saved post of its sweep. None of those tools is new. What is new is the habit of treating them as parts an agent can pick up, and the speed at which skills for them are appearing: motif’s catalogue counted 146 motion-skill repositories holding 901 skill files on 12 November.</p>
+<p>A long list invites the wrong question, which is “which one is best?”. For anyone who designs interfaces, the useful question is where the motion will live when it is done: inside the product, inside a video, or inside a file someone else will play. That decides the tool, the review and the licence. This post maps the main options to those destinations and lists the traps we would check before letting an agent animate anything for us.</p>
+<h2>What is in the toolbox</h2>
+<ul><li><strong>HTML to video: HyperFrames.</strong> HeyGen’s Apache-2.0 framework turns HTML, CSS, media and seekable animations into deterministic MP4s. It ships nine agent skills, a registry of about 450 editable blocks (titles, captions, charts, transitions) and a CLI that lints, previews and renders. Two of the skills, reverse-any-video and style-sampling, need the paid Pro plan.</li>
+<li><strong>React to video: Remotion.</strong> Compositions are React components whose every property is computed from the current frame. Remotion maintains 13 official skills, installed with <code>npx remotion skills add</code>, for creating, previewing, rendering, captions and maps.</li>
+<li><strong>Vector files that play anywhere: Lottie.</strong> Diffusion Studio’s MIT-licensed text-to-lottie skill has the agent write Lottie JSON and preview it live in a bundled player. The output plays on the web, iOS, Android, React Native and Flutter, or opens in After Effects for a human pass.</li>
+<li><strong>Diagrams and explainers: Motion Canvas and Manim.</strong> Code-first tools for animated diagrams and maths; several skills now plan the scenes, render low-quality previews and check frames before the final render.</li>
+<li><strong>Interface motion: skills, not a renderer.</strong> Emil Kowalski’s MIT-licensed skills (animate, choreograph, review-animations, remove-animations, animation-performance) write and review the CSS or Motion code that ships in your app. This is product motion, not video.</li></ul>
+<h2>Our take: choose by destination, then check the clock</h2>
+<p>Most comparisons sort these tools by what they can draw. In practice they overlap heavily; HyperFrames, Remotion and Motion Canvas can all make a kinetic title. What separates them is what comes back and who edits it next.</p>
+<ul><li><strong>It ships inside the product</strong> (enter, exit, hover, layout, loading): use your app’s own CSS or Motion code with an interface-motion skill. Never ship a rendered video of UI where real UI would do; it cannot respond to input, theme or text size.</li>
+<li><strong>It ships as a film</strong> (launch video, changelog clip, explainer): use a deterministic renderer. Pick HyperFrames if your team thinks in HTML and GSAP, Remotion if it thinks in React and wants the composition next to its components.</li>
+<li><strong>It ships as an asset inside apps</strong> (empty state, success tick, onboarding illustration): ask for Lottie, so a motion designer can open it in After Effects and engineers can play it natively.</li>
+<li><strong>It explains something</strong> (a data change, an algorithm, a formula): Motion Canvas or Manim, which keep the values on screen tied to the code.</li></ul>
+<p>Then check the clock. A film renderer captures one frame at a time, so every movement must be computed from the frame number. Remotion’s docs warn that animations not driven by <code>useCurrentFrame()</code>, CSS transitions for example, can flicker during rendering. Agents trained mostly on web UI reach for exactly those transitions. In a video project, a wall-clock animation is a bug even when the preview looks fine.</p>
+<h2>Three traps we would check first</h2>
+<ul><li><strong>Licences differ more than the README badges suggest.</strong> HyperFrames is Apache-2.0. Remotion is source-available: free for individuals, non-profits and for-profit companies with up to three employees, while larger companies need a company licence, and every skill built on Remotion inherits that rule. Some catalogue entries have no licence file at all, and several bundle GSAP under its own standard licence, which is not an open-source licence. Check before a client project, not after.</li>
+<li><strong>A skill is code with permissions.</strong> motif’s catalogue and HyperFrames’ community-skills README both warn that a skill can tell your agent to run commands, read files or spend money on paid APIs. Read the SKILL.md and its scripts, install only the skills the job needs, and keep paid keys out of the environment unless the job calls for them.</li>
+<li><strong>Every agent film moves the same way.</strong> The motion-kit project points out that HyperFrames’ own animation guide sets a house default of 0.6 seconds on <code>power3.out</code>, so agents that follow it fade everything up with the same curve and even staggers. Its fix is the same advice good interface motion follows: duration from distance and weight, one element leading and the rest reacting at uneven offsets, and many texts simply cut on. If your product already has motion tokens, give the agent those numbers instead of letting a framework default become your brand.</li></ul>
+<h2>Where we would start</h2>
+<p>For a design team, the cheapest first win is a 15-second changelog clip built from the product’s real components and tokens, rendered by HyperFrames or Remotion, reviewed on a contact sheet of frames before the full render. The second is replacing one hand-made Lottie with an agent draft that a motion designer finishes in After Effects. Both keep a human on taste and the agent on keyframes. Interface motion is the place to be strictest: one skill to write it, one to review it, and a reduced-motion check every time.</p>
+<h2>Checklist: brief an agent for motion</h2>
+<ol><li><strong>Name the destination.</strong> In-app code, MP4, Lottie JSON or an explainer. One per request.</li>
+<li><strong>Name the renderer and the licence.</strong> Confirm your company qualifies for the free tier of anything source-available, and note bundled libraries with their own terms.</li>
+<li><strong>Give the clock rule.</strong> For films: everything computed from the frame number, no CSS transitions or timers. For apps: transform and opacity only, no layout thrash.</li>
+<li><strong>Hand over your motion tokens.</strong> Durations, curves and springs from your design system, or ask for durations derived from distance and size instead of one global default.</li>
+<li><strong>Specify format.</strong> Frame rate, total frames or seconds, aspect ratios (16:9 and 9:16), safe zones, transparent background if needed.</li>
+<li><strong>Ask for a review artefact.</strong> A contact sheet of key frames or a low-resolution preview before the final render.</li>
+<li><strong>Keep in-product motion accessible.</strong> Respect <code>prefers-reduced-motion</code>, and give any loop longer than five seconds a pause control (WCAG 2.2.2).</li>
+<li><strong>Audit the skills you installed.</strong> Read each SKILL.md and script; remove skills you no longer use.</li></ol>
+<pre><code># Paste this to your coding agent
+Make a 15-second <changelog / launch> clip for <feature>.
+- Destination: MP4, 1920x1080 and 1080x1920, 30 fps. Renderer: <HyperFrames | Remotion>.
+- Licence: confirm we qualify for the renderer’s licence; list any bundled
+  library with its own terms (e.g. GSAP) before you start.
+- Build scenes from our real components and tokens in <path>; no stock UI.
+- Clock: every animated value comes from the frame number. No CSS
+  transitions, setTimeout or requestAnimationFrame.
+- Motion: use our tokens <durations / easings / springs>. If missing, derive
+  duration from distance and size; one element leads, others react at uneven
+  offsets; most text cuts on. Do not apply one global ease to everything.
+- Before the final render, give me a contact sheet of 12 key frames and wait.
+Report: renderer and version, licence check, skills used, and anything you
+could not verify.</code></pre>
+<p>Related on UI Hub: <a href="../motion-that-feels-right/">motion that feels right</a>, <a href="../figma-motion-physics-springs-handoff/">handing off Figma Motion springs</a>, and <a href="../best-animated-react-component-libraries-2026/">the best animated React component libraries of 2026</a>.</p>""",
+ zh="""<p>2026 年 11 月 14 日到 15 日，X 上被收藏最多的设计帖不是哪个新模型发布，而是一份清单：18 个可以交给 Claude Code 或 Codex 做动画的免费 GitHub 项目，从 Remotion 的智能体技能、Motion Canvas，到 Lottie、Manim、three.js、Blender 和 Godot。它一天内收藏数超过 5800，AI Design Daily 11 月 15 日这一期也把它列为本期收藏最多的帖子。这些工具都不新，新的是把它们当作智能体可以随手拿起的零件，以及相关技能冒出来的速度：截至 11 月 12 日，motif 的目录已收录 146 个动效技能仓库、901 个技能文件。</p>
+<p>清单一长，人就容易问错问题：「哪个最好？」。对做界面的人来说，有用的问题是：动效做完之后住在哪里？在产品里、在视频里，还是在一个别人会播放的文件里？这决定了用什么工具、怎么评审、受什么许可证约束。本文把主要选项对应到这些目的地，并列出在让智能体替我们做动画之前，我们会先检查的几个坑。</p>
+<h2>工具箱里有什么</h2>
+<ul><li><strong>HTML 转视频：HyperFrames。</strong>HeyGen 推出的 Apache-2.0 框架，把 HTML、CSS、媒体和可定位（seekable）的动画渲染成确定性的 MP4。它带 9 个智能体技能、一个约 450 个可编辑区块的组件库（标题、字幕、图表、转场），以及能检查、预览和渲染的命令行工具。其中 reverse-any-video 和 style-sampling 两个技能需要付费的 Pro 方案。</li>
+<li><strong>React 转视频：Remotion。</strong>每个合成都是 React 组件，所有属性都由当前帧计算出来。Remotion 官方维护 13 个技能，用 <code>npx remotion skills add</code> 安装，覆盖创建、预览、渲染、字幕和地图。</li>
+<li><strong>到处都能播的矢量文件：Lottie。</strong>Diffusion Studio 的 text-to-lottie 技能（MIT 许可）让智能体写 Lottie JSON，并在自带播放器里实时预览。成品能在网页、iOS、Android、React Native 和 Flutter 上播放，也能导入 After Effects 让人再打磨。</li>
+<li><strong>图解和讲解：Motion Canvas 与 Manim。</strong>以代码为主的动画图表和数学讲解工具；现在已有不少技能会先规划分镜、渲染低清预览、逐帧检查，再做最终渲染。</li>
+<li><strong>界面动效：要的是技能，不是渲染器。</strong>Emil Kowalski 的技能（MIT 许可，包括 animate、choreograph、review-animations、remove-animations、animation-performance）负责编写和审查会发布到你应用里的 CSS 或 Motion 代码。这是产品动效，不是视频。</li></ul>
+<h2>我们的看法：先按目的地选，再查时钟</h2>
+<p>大多数对比按「能画什么」给这些工具排序。实际上它们重叠很多；HyperFrames、Remotion 和 Motion Canvas 都能做动态标题。真正区分它们的，是交回来的东西是什么，以及下一个由谁来改。</p>
+<ul><li><strong>发到产品里</strong>（进场、退场、悬停、布局变化、加载）：用应用自己的 CSS 或 Motion 代码，配一个界面动效技能。能用真实界面的地方，绝不放一段界面录屏视频；视频不会响应输入、主题和字号。</li>
+<li><strong>发成影片</strong>（发布视频、更新日志短片、讲解片）：用确定性渲染器。团队习惯 HTML 和 GSAP，选 HyperFrames；团队习惯 React、想让合成和组件放在一起，选 Remotion。</li>
+<li><strong>发成应用里的素材</strong>（空状态、成功对勾、引导插画）：要 Lottie，这样动效设计师能在 After Effects 里打开，工程师能原生播放。</li>
+<li><strong>用来讲清一件事</strong>（数据变化、算法、公式）：用 Motion Canvas 或 Manim，屏幕上的数值始终和代码绑定。</li></ul>
+<p>然后查时钟。影片渲染器一次截一帧，所以每个动作都必须由帧号算出来。Remotion 文档提醒：不是由 <code>useCurrentFrame()</code> 驱动的动画（比如 CSS 过渡）在渲染时可能闪烁。而主要在网页界面上训练出来的智能体，最爱用的恰恰是这种过渡。在视频项目里，按真实时间走的动画就是 bug，哪怕预览看起来没问题。</p>
+<h2>我们会先检查的三个坑</h2>
+<ul><li><strong>许可证的差别比 README 徽章显示的大。</strong>HyperFrames 是 Apache-2.0。Remotion 是源码可见（source-available）：个人、非营利组织和员工不超过 3 人的营利公司可免费使用，更大的公司需要购买公司许可，所有基于 Remotion 的技能都继承这条规则。目录里有些项目根本没有许可证文件，还有几个打包了 GSAP，而 GSAP 用的是它自己的标准许可，不是开源许可。接客户项目之前就查，别等之后。</li>
+<li><strong>技能就是带权限的代码。</strong>motif 的目录和 HyperFrames 社区技能的 README 都提醒：一个技能可以让智能体执行命令、读取文件，或在付费 API 上花钱。先读 SKILL.md 和附带脚本，只装这次任务需要的技能；任务用不到的付费密钥，不要放进环境变量。</li>
+<li><strong>每部智能体影片都动得一样。</strong>motion-kit 项目指出，HyperFrames 自己的动画指南把 <code>power3.out</code>、0.6 秒设为默认值，于是照着做的智能体会让所有元素用同一条曲线、均匀错开地淡入上浮。它的解法和好的界面动效原则一致：时长由距离和重量决定，一个元素领头、其余以不均匀的间隔做出反应，很多文字直接切入。如果你的产品已有动效 Token，就把这些数字交给智能体，别让框架默认值变成你的品牌。</li></ul>
+<h2>我们会从哪里开始</h2>
+<p>对设计团队来说，成本最低的第一步是一段 15 秒的更新日志短片：用产品真实的组件和 Token 搭建，由 HyperFrames 或 Remotion 渲染，正式渲染前先看一张关键帧联系表。第二步是把一个手做的 Lottie 换成智能体初稿，再由动效设计师在 After Effects 里完成。两者都让人负责品味、智能体负责关键帧。界面动效是要求最严的地方：一个技能写，一个技能审，每次都检查减少动效设置。</p>
+<h2>清单：给智能体布置动效任务</h2>
+<ol><li><strong>写明目的地。</strong>应用内代码、MP4、Lottie JSON 还是讲解片。一次只要一种。</li>
+<li><strong>写明渲染器和许可证。</strong>确认你的公司符合任何源码可见工具的免费条件，并记下自带独立条款的打包库。</li>
+<li><strong>给出时钟规则。</strong>影片：一切由帧号计算，不用 CSS 过渡或计时器。应用：只动 transform 和 opacity，不引发布局抖动。</li>
+<li><strong>交出动效 Token。</strong>设计系统里的时长、曲线和弹簧；没有的话，要求按距离和尺寸推算时长，而不是一个全局默认值。</li>
+<li><strong>规定格式。</strong>帧率、总帧数或秒数、画幅（16:9 和 9:16）、安全区，需要时用透明背景。</li>
+<li><strong>要一个评审产物。</strong>正式渲染前，先给关键帧联系表或低清预览。</li>
+<li><strong>产品内动效要无障碍。</strong>遵守 <code>prefers-reduced-motion</code>，超过 5 秒的循环动画要有暂停控件（WCAG 2.2.2）。</li>
+<li><strong>审计已装的技能。</strong>读每个 SKILL.md 和脚本；不再用的技能就删掉。</li></ol>
+<pre><code># 把这段贴给你的编程智能体
+为 <功能> 做一段 15 秒的 <更新日志 / 发布> 短片。
+- 目的地：MP4，1920x1080 和 1080x1920，30 fps。渲染器：<HyperFrames | Remotion>。
+- 许可证：先确认我们符合该渲染器的许可条件；开工前列出所有
+  自带独立条款的打包库（例如 GSAP）。
+- 用 <路径> 里我们真实的组件和 Token 搭场景，不用素材库界面。
+- 时钟：每个动画值都由帧号算出。不用 CSS 过渡、setTimeout
+  或 requestAnimationFrame。
+- 动效：使用我们的 Token <时长 / 缓动 / 弹簧>。没有的话，按距离和尺寸
+  推算时长；一个元素领头，其余以不均匀的间隔反应；多数文字直接切入。
+  不要给所有动作套同一个全局缓动。
+- 正式渲染前，先给我一张 12 个关键帧的联系表，然后等我确认。
+输出：渲染器和版本、许可证检查结果、用到的技能，以及你无法核实的内容。</code></pre>
+<p>UI Hub 相关阅读：<a href="../motion-that-feels-right/">让动效感觉对</a>、<a href="../figma-motion-physics-springs-handoff/">Figma Motion 弹簧的交接</a>，以及<a href="../best-animated-react-component-libraries-2026/">2026 年最好的 React 动画组件库</a>。</p>""",
+ refs=[('18 free GitHub tools for making animation with a coding agent — @okapi_fukugyo (14 Nov 2026)','X','https://x.com/okapi_fukugyo/status/2121725407867351215'),('AI Design Daily, 15 Nov 2026 (morning edition)','Daily Design','https://studios.greatcreations.art/daily-design/editions/2026-11-15/morning.html'),('Agent skills for making motion with Claude','motif','https://createmotion.io/resources/agent-skills/'),('heygen-com/hyperframes','GitHub','https://github.com/heygen-com/hyperframes'),('HyperFrames introduction','HyperFrames docs (HeyGen)','https://hyperframes.heygen.com/introduction'),('Agent Skills','Remotion docs','https://www.remotion.dev/docs/ai/skills'),('Animating properties','Remotion docs','https://www.remotion.dev/docs/animating-properties'),('Remotion License','GitHub · remotion-dev','https://github.com/remotion-dev/remotion/blob/main/LICENSE.md'),('diffusionstudio/lottie (text-to-lottie)','GitHub','https://github.com/diffusionstudio/lottie'),('emilkowalski/skills','GitHub','https://github.com/emilkowalski/skills'),('hughminhphan/motion-kit','GitHub','https://github.com/hughminhphan/motion-kit'),('Motion Canvas','motioncanvas.io','https://motioncanvas.io/'),('prefers-reduced-motion','MDN Web Docs','https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion'),('Understanding SC 2.2.2: Pause, Stop, Hide','W3C WAI','https://www.w3.org/WAI/WCAG22/Understanding/pause-stop-hide.html')]),
 ]
