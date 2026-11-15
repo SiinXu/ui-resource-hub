@@ -1,6 +1,6 @@
 {
  "generated": "2026-11-15",
- "count": 5122,
+ "count": 5123,
  "items": [
   {
    "id": "ued-transitions-dev-craft",
@@ -192915,6 +192915,56 @@
    ],
    "noteEn": "New GitHub UI repo: UI design skill for Claude Code, Codex and other AI agents: explore distinct directions, compare them side by side, refine against real screenshots. 给 AI Agent 用的 UI 设计 Skill。 (★3383, MIT, oil-oil/oil-ui)",
    "added": "2026-11-15"
+  },
+  {
+   "id": "rd-c5eums8-crayon-textured-app-icons",
+   "name": "Textured App Icons",
+   "url": "https://zirui.ca",
+   "note": "A set of five app icons with a hand-drawn crayon texture, each on a bold flat color tile, gently wobbling on a topographic paper background.",
+   "noteEn": "A set of five app icons with a hand-drawn crayon texture, each on a bold flat color tile, gently wobbling on a topographic paper background.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@z6rui",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "playful"
+   ],
+   "origin": "site",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/c5eums8-crayon-textured-app-icons",
+   "rdkind": "Design",
+   "rdcat": "Interface",
+   "rdstyle": [
+    "Playful",
+    "Textured",
+    "Vibrant",
+    "Light"
+   ],
+   "author": {
+    "name": "💤irui",
+    "handle": "@z6rui",
+    "url": "https://x.com/z6rui"
+   },
+   "x_post": "https://x.com/z6rui/status/2121688028905095472",
+   "xsrc": {
+    "post": "https://x.com/z6rui/status/2121688028905095472",
+    "author": "@z6rui",
+    "likes": 262,
+    "bookmarks": 115,
+    "reposts": 4,
+    "impressions": 6244,
+    "date": "2026-11-14"
+   },
+   "official": "https://zirui.ca",
+   "pub": "2026-11-15",
+   "added": "2026-11-15"
   }
  ],
  "guides": [
@@ -193117,5 +193167,5 @@
    ]
   }
  ],
- "updatedAt": "2026-11-15T06:24Z"
+ "updatedAt": "2026-11-15T08:24Z"
 }
