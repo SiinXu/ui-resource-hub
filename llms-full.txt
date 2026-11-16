@@ -74,6 +74,7 @@ Use the JSON endpoints, not the SPA, when acting as an agent. Every entry links 
 - [Figma’s 3D transforms map straight to CSS. The traps are in what flattens](https://ui.incidental.site/blog/figma-3d-transforms-css-handoff/): On 12 November 2026 Figma opened its 3D transform and Perspective effects in beta, with Dev Mode copying them as CSS and the Figma MCP passing them to coding agents. How each control maps to a CSS property, why opacity, clipping and effects quietly flatten a 3D scene in both Figma and the browser, where depth helps an interface and where it hurts, plus a handoff checklist and a prompt for your coding agent.
 - [Vercel’s UI SDK lets agents operate your interface. Design for the agent that reads it](https://ui.incidental.site/blog/vercel-ui-sdk-agent-operable-interfaces/): Vercel Labs’ UI SDK (beta, new package releases on 13 November 2026) gives coding agents 50+ tested behaviors to assemble components from, and gives runtime agents a bridge that reads component state and calls actions without screenshots. In Vercel’s own benchmark that cut a settings task from 41 s to 16 s. What changes for designers: labels become the agent’s map, confirmation copy becomes a safety rail, and some regions should be hidden on purpose. With a checklist and an agent prompt.
 - [Coding agents are turning into motion studios. Pick the renderer by where the motion ships](https://ui.incidental.site/blog/agent-motion-skills-pick-renderer-by-destination/): On 14–15 November 2026 a list of 18 free GitHub tools for making animation with Claude Code or Codex was the most-saved design post on X, and one catalogue now counts 146 motion-skill repositories. The tools differ less in what they can animate than in what they hand back: code in your app, a Lottie file or a rendered MP4. How to choose by destination, why a frame-driven clock matters, the licence and house-style traps, plus a checklist and an agent prompt.
+- [Magic UI vs Aceternity vs React Bits: compare the licence before the effects](https://ui.incidental.site/blog/magic-ui-vs-aceternity-vs-react-bits/): Three copy-paste libraries of animated React components, all installed through the shadcn CLI, all free to start. As of 16 November 2026 they differ most in what you may do with the code: MIT, a free tier plus a paid licence, and MIT with the Commons Clause. Component counts, stack, install commands, paid tiers and how we would choose, with every figure linked to its source.
 
 ## Top component libraries
 - [Radix Primitives](https://www.radix-ui.com/primitives): Unstyled, accessible React primitives (dialogs, dropdowns, selects, tabs, tooltips) and the foundation of shadcn/ui
@@ -2668,6 +2669,54 @@ References:
 - hughminhphan/motion-kit — GitHub: https://github.com/hughminhphan/motion-kit
 - Motion Canvas — motioncanvas.io: https://motioncanvas.io/
 - prefers-reduced-motion — MDN Web Docs: https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion
+- Understanding SC 2.2.2: Pause, Stop, Hide — W3C WAI: https://www.w3.org/WAI/WCAG22/Understanding/pause-stop-hide.html
+
+## Magic UI vs Aceternity vs React Bits: compare the licence before the effects
+
+Magic UI, Aceternity UI and React Bits are the three names that come up whenever someone asks for “animated components for a landing page”. All three hand you source code rather than a package you import, all three now install through the shadcn CLI, and all three have a free tier. That makes them easy to confuse and easy to mix in one project. We checked each official site, GitHub repository and licence on 16 November 2026. The effects overlap a lot. The terms do not, and the terms are what you cannot change later.
+At a glance (16 November 2026)
+Magic UI. “150+ free and open-source animated components and effects built with React, Typescript, Tailwind CSS, and Motion”, described as a “perfect companion for shadcn/ui”. Licence: MIT. The GitHub repository has about 23,300 stars. Install: pnpm dlx shadcn@latest add @magicui/globe, with “the exact same installation process as shadcn/ui”. Paid: Magic UI Pro, listed at $199 once for 8 templates and 50+ premium components.
+Aceternity UI. “200+ production-ready components, blocks, templates, landing pages and micro-interactions built with React, Tailwind CSS and Motion”. The free section lists 118+ components; the pricing page and FAQ round this to 100+ and say the free tier can be used in personal and commercial projects. Install: npx shadcn@latest add @aceternity/3d-card, or through its MCP registry. Paid: All-Access, listed on 16 November at $169 for one year or $199 for lifetime (regular prices $249 and $299), and $1,590 for a team of up to 10. The component library itself has no public open-source repository that we could find; the paid items come under the Aceternity Licence published on the site.
+React Bits. “215+ free animated components and backgrounds for React”, in five categories: 33 text animations, 38 animations, 48 components, 34 micro-interactions and 63 backgrounds. Every component comes in four flavours: JavaScript or TypeScript, styled with plain CSS or Tailwind. Licence: MIT plus the Commons Clause. The GitHub repository has about 52,000 stars. Install: npx shadcn@latest add @react-bits/SplitText-TS-TW, where the suffix picks the flavour, or the same file through jsrepo. Paid: React Bits Pro, which its README describes as 230 animated components, 300 page sections, 300 app UI blocks, 15 templates and 20 agent skills.
+The licence is the real difference
+Copy-paste code becomes your code, so the licence decides what you may do with it afterwards. Here the three libraries take three different positions.
+Magic UI is plain MIT. You can use, change, ship and even redistribute the components, as long as the copyright and licence notice travel with them. This is the most permissive of the three.
+React Bits is MIT with the Commons Clause. Its LICENSE.md allows any use, commercial included, but you may not sell, sublicense or redistribute the components themselves, alone, in a bundle or as a port. Because of the added clause, GitHub reports the licence as “Other” rather than MIT, and it is not an open-source licence in the OSI sense. Using a React Bits background on a client site is fine; selling a template or a component kit built mainly from React Bits is not.
+Aceternity UI separates free and paid. Its FAQ says the free components can be used in personal and commercial projects. The paid blocks and templates are covered by the Aceternity Licence: unlimited end products for yourself or clients, but no redistribution of source files and no reselling of templates or derivative products on any marketplace.
+The practical rule: if you build sites and apps, all three are usable. If you build things that other developers will install, such as a starter kit, a theme, a template for sale or your own component library, only Magic UI lets you include the components without asking.
+Stack and install: closer than they look
+All three target React, and Magic UI and Aceternity both name Tailwind CSS and Motion as their stack. React Bits is the one to pick if your project does not use Tailwind or TypeScript, because each component also ships as plain JavaScript with plain CSS. Since all three publish shadcn registries, one components.json can pull from all of them, and the shadcn MCP server lets a coding agent search and add components for you. Aceternity and React Bits both promote that agent route on their own pages.
+The flip side of copy-paste is that updates do not arrive by themselves. Whatever you add is a file in your repository; when the library fixes a bug, you re-run the add command and review the diff. Keep a list of which components came from where.
+How we would choose
+You already use shadcn/ui and want polished marketing sections: start with Magic UI. Same CLI, same conventions, and the MIT licence never gets in the way.
+You want a whole landing page fast and are willing to pay: look at Aceternity. Its strength is the paid blocks, templates and full pages, not only single effects.
+You want striking text effects and full-section backgrounds, or your project is plain JavaScript and CSS: React Bits has the largest free catalogue and the most variants. Just do not resell it.
+You mix them: fine for a product, but check the motion budget. Three libraries’ worth of effects on one page is the fastest way to a slow, noisy page.
+UI Hub indexes official demo cards from all three: 45 from Magic UI, 34 from Aceternity UI and 30 from React Bits as of 15 November 2026. For each library on its own, read our Magic UI deep dive and Aceternity UI deep dive.
+Checklist before you copy a component
+Read the licence file, not the badge. Note whether you may redistribute the code.
+Write down the source. Library, component name and date added, in a comment or a NOTICE file.
+Check dependencies. Some effects pull in Motion or WebGL libraries; confirm the bundle cost.
+Respect reduced motion. Wrap each effect so prefers-reduced-motion turns it off or down.
+Give loops a pause. Animations that run longer than five seconds need a way to stop them (WCAG 2.2.2).
+Re-check prices and counts. The figures above are from 16 November 2026 and change often.
+Related on UI Hub: the best animated React component libraries of 2026 and motion that feels right.
+
+References:
+- Magic UI home page — magicui.design: https://magicui.design/
+- Magic UI installation — Magic UI docs: https://magicui.design/docs/installation
+- magicuidesign/magicui (MIT licence) — GitHub: https://github.com/magicuidesign/magicui
+- Aceternity UI home page and FAQ — ui.aceternity.com: https://ui.aceternity.com/
+- Aceternity UI pricing — ui.aceternity.com: https://ui.aceternity.com/pricing
+- Aceternity UI licence — ui.aceternity.com: https://ui.aceternity.com/licence
+- 3D Card Effect: installation — Aceternity UI docs: https://ui.aceternity.com/components/3d-card-effect
+- React Bits home page — reactbits.dev: https://reactbits.dev/
+- React Bits installation — React Bits docs: https://reactbits.dev/get-started/installation
+- DavidHDev/react-bits README — GitHub: https://github.com/DavidHDev/react-bits
+- React Bits LICENSE.md (MIT + Commons Clause) — GitHub · DavidHDev: https://github.com/DavidHDev/react-bits/blob/main/LICENSE.md
+- Commons Clause — commonsclause.com: https://commonsclause.com/
+- The MIT License — Open Source Initiative: https://opensource.org/license/mit
+- shadcn MCP server — shadcn/ui docs: https://ui.shadcn.com/docs/mcp
 - Understanding SC 2.2.2: Pause, Stop, Hide — W3C WAI: https://www.w3.org/WAI/WCAG22/Understanding/pause-stop-hide.html
 
 # All resources (name | type | url | note)

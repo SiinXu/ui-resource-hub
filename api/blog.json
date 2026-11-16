@@ -1,5 +1,5 @@
 {
- "count": 54,
+ "count": 55,
  "rss": "https://ui.incidental.site/blog/rss.xml",
  "categories": {
   "tools": "Tools",
@@ -18,6 +18,128 @@
   "weekly": "Series: Weekly roundup"
  },
  "posts": [
+  {
+   "slug": "magic-ui-vs-aceternity-vs-react-bits",
+   "url": "https://ui.incidental.site/blog/magic-ui-vs-aceternity-vs-react-bits/",
+   "date": "2026-11-16",
+   "category": "components",
+   "series": null,
+   "featured": true,
+   "tags": [
+    "Magic UI",
+    "Aceternity UI",
+    "React Bits",
+    "shadcn",
+    "licences",
+    "React"
+   ],
+   "title": {
+    "en": "Magic UI vs Aceternity vs React Bits: compare the licence before the effects",
+    "zh": "Magic UI、Aceternity、React Bits 怎么选：先比许可证，再比特效",
+    "zht": "Magic UI、Aceternity、React Bits 怎麼選：先比授權，再比特效",
+    "ja": "Magic UI vs Aceternity vs React Bits：エフェクトより先にライセンスを比べる",
+    "ko": "Magic UI vs Aceternity vs React Bits: 효과보다 라이선스를 먼저 비교하자",
+    "ms": "Magic UI lawan Aceternity lawan React Bits: bandingkan lesen sebelum kesannya",
+    "vi": "Magic UI, Aceternity hay React Bits: so sánh giấy phép trước hiệu ứng",
+    "fr": "Magic UI vs Aceternity vs React Bits : comparez la licence avant les effets",
+    "es": "Magic UI vs Aceternity vs React Bits: compara la licencia antes que los efectos",
+    "de": "Magic UI vs. Aceternity vs. React Bits: erst die Lizenz vergleichen, dann die Effekte"
+   },
+   "summary": {
+    "en": "Three copy-paste libraries of animated React components, all installed through the shadcn CLI, all free to start. As of 16 November 2026 they differ most in what you may do with the code: MIT, a free tier plus a paid licence, and MIT with the Commons Clause. Component counts, stack, install commands, paid tiers and how we would choose, with every figure linked to its source.",
+    "zh": "三个可复制粘贴的 React 动效组件库，都用 shadcn 命令行安装，都可以免费起步。截至 2026 年 11 月 16 日，它们最大的差别在于你能拿代码做什么：MIT、免费层加付费许可，以及 MIT 加 Commons Clause。本文对比组件数量、技术栈、安装命令、付费层和我们的选择方法，每个数字都附来源。",
+    "zht": "三個可複製貼上的 React 動效元件庫，都用 shadcn 命令列安裝，都可以免費起步。截至 2026 年 11 月 16 日，它們最大的差別在於你能拿程式碼做什麼：MIT、免費層加付費授權，以及 MIT 加 Commons Clause。本文比較元件數量、技術堆疊、安裝指令、付費層和我們的選擇方法，每個數字都附來源。",
+    "ja": "コピー＆ペーストで使えるReactのアニメーションコンポーネント集が3つ。どれもshadcn CLIで導入でき、無料で始められる。2026年11月16日時点で最も違うのはコードで何をしてよいかだ。MIT、無料枠と有料ライセンス、そしてMITにCommons Clauseを加えたもの。コンポーネント数、技術スタック、導入コマンド、有料プラン、選び方を、すべての数字に出典付きで比べる。",
+    "ko": "복사해 붙여 쓰는 React 애니메이션 컴포넌트 라이브러리 세 곳. 모두 shadcn CLI로 설치하고 무료로 시작할 수 있다. 2026년 11월 16일 기준 가장 큰 차이는 코드로 무엇을 할 수 있느냐다. MIT, 무료 등급과 유료 라이선스, 그리고 MIT에 Commons Clause를 더한 조건. 컴포넌트 수, 스택, 설치 명령, 유료 등급, 고르는 법을 모든 수치의 출처와 함께 비교한다.",
+    "ms": "Tiga pustaka komponen React beranimasi yang boleh disalin dan ditampal, semuanya dipasang melalui CLI shadcn dan percuma untuk bermula. Setakat 16 November 2026 perbezaan terbesar ialah apa yang boleh anda lakukan dengan kodnya: MIT, peringkat percuma serta lesen berbayar, dan MIT dengan Commons Clause. Bilangan komponen, susunan teknologi, arahan pemasangan, peringkat berbayar dan cara kami memilih, setiap angka dengan sumbernya.",
+    "vi": "Ba thư viện component React có hiệu ứng để sao chép và dán, đều cài qua CLI của shadcn và đều bắt đầu miễn phí. Tính đến 16/11/2026, khác biệt lớn nhất là bạn được làm gì với mã nguồn: MIT, gói miễn phí kèm giấy phép trả phí, và MIT kèm Commons Clause. So sánh số lượng component, stack, lệnh cài đặt, gói trả phí và cách chúng tôi chọn, mọi con số đều có nguồn.",
+    "fr": "Trois bibliothèques de composants React animés à copier-coller, toutes installables avec la CLI shadcn, toutes gratuites pour commencer. Au 16 novembre 2026, elles diffèrent surtout par ce que vous avez le droit de faire du code : MIT, une offre gratuite plus une licence payante, et MIT avec la Commons Clause. Nombre de composants, stack, commandes d’installation, offres payantes et notre méthode de choix, chaque chiffre avec sa source.",
+    "es": "Tres bibliotecas de componentes React animados para copiar y pegar, todas instalables con la CLI de shadcn y gratuitas para empezar. A 16 de noviembre de 2026 se diferencian sobre todo en lo que puedes hacer con el código: MIT, un plan gratuito más una licencia de pago, y MIT con la Commons Clause. Número de componentes, stack, comandos de instalación, planes de pago y cómo elegimos, con la fuente de cada cifra.",
+    "de": "Drei Bibliotheken mit animierten React-Komponenten zum Kopieren und Einfügen, alle per shadcn-CLI installierbar, alle kostenlos für den Einstieg. Stand 16. November 2026 unterscheiden sie sich vor allem darin, was du mit dem Code tun darfst: MIT, eine Gratisstufe plus Bezahllizenz, und MIT mit Commons Clause. Komponentenzahl, Stack, Installationsbefehle, Bezahlstufen und wie wir wählen, jede Zahl mit Quelle."
+   },
+   "reading_minutes": {
+    "en": 5,
+    "zh": 6
+   },
+   "cover": "https://ui.incidental.site/blog/img/magic-ui-vs-aceternity-vs-react-bits-cover.webp",
+   "references": [
+    {
+     "title": "Magic UI home page",
+     "by": "magicui.design",
+     "url": "https://magicui.design/"
+    },
+    {
+     "title": "Magic UI installation",
+     "by": "Magic UI docs",
+     "url": "https://magicui.design/docs/installation"
+    },
+    {
+     "title": "magicuidesign/magicui (MIT licence)",
+     "by": "GitHub",
+     "url": "https://github.com/magicuidesign/magicui"
+    },
+    {
+     "title": "Aceternity UI home page and FAQ",
+     "by": "ui.aceternity.com",
+     "url": "https://ui.aceternity.com/"
+    },
+    {
+     "title": "Aceternity UI pricing",
+     "by": "ui.aceternity.com",
+     "url": "https://ui.aceternity.com/pricing"
+    },
+    {
+     "title": "Aceternity UI licence",
+     "by": "ui.aceternity.com",
+     "url": "https://ui.aceternity.com/licence"
+    },
+    {
+     "title": "3D Card Effect: installation",
+     "by": "Aceternity UI docs",
+     "url": "https://ui.aceternity.com/components/3d-card-effect"
+    },
+    {
+     "title": "React Bits home page",
+     "by": "reactbits.dev",
+     "url": "https://reactbits.dev/"
+    },
+    {
+     "title": "React Bits installation",
+     "by": "React Bits docs",
+     "url": "https://reactbits.dev/get-started/installation"
+    },
+    {
+     "title": "DavidHDev/react-bits README",
+     "by": "GitHub",
+     "url": "https://github.com/DavidHDev/react-bits"
+    },
+    {
+     "title": "React Bits LICENSE.md (MIT + Commons Clause)",
+     "by": "GitHub · DavidHDev",
+     "url": "https://github.com/DavidHDev/react-bits/blob/main/LICENSE.md"
+    },
+    {
+     "title": "Commons Clause",
+     "by": "commonsclause.com",
+     "url": "https://commonsclause.com/"
+    },
+    {
+     "title": "The MIT License",
+     "by": "Open Source Initiative",
+     "url": "https://opensource.org/license/mit"
+    },
+    {
+     "title": "shadcn MCP server",
+     "by": "shadcn/ui docs",
+     "url": "https://ui.shadcn.com/docs/mcp"
+    },
+    {
+     "title": "Understanding SC 2.2.2: Pause, Stop, Hide",
+     "by": "W3C WAI",
+     "url": "https://www.w3.org/WAI/WCAG22/Understanding/pause-stop-hide.html"
+    }
+   ]
+  },
   {
    "slug": "agent-motion-skills-pick-renderer-by-destination",
    "url": "https://ui.incidental.site/blog/agent-motion-skills-pick-renderer-by-destination/",
