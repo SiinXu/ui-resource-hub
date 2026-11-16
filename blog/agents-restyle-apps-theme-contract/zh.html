@@ -1,0 +1,35 @@
+<p>这个周末 X 上转发最多的两个开发工具更新，讲的都是「样子」而不是代码。Claude Code 桌面版现在可以用 mod 重新上色：你自己的颜色，加上对话背后的一段动态场景和覆盖其上的磨砂面板；Anthropic 还提供了一个示例插件，它的 <code>/custom-theme</code> 命令里有二十个场景。同一时间，开源的多智能体编程前端 T3 Code 合并了一个题为「agents can restyle T3 Code with theme colors and CSS」的 PR（按 UTC 于 11 月 14 日合并，目前只在 nightly 版本里）。对智能体说一句「给 T3 Code 换成 solarized 主题」，所有连着的网页和桌面客户端就会一起换装。</p><figure><img src="../../blog/img/agents-restyle-apps-theme-contract-1.webp" alt="2026 年 11 月 16 日 GitHub 上已合并的 T3 Code PR #35247「agents can restyle T3 Code with theme colors and CSS」，附应用内渲染的示例主题" loading="lazy" decoding="async" width="1280" height="800"><figcaption>2026 年 11 月 16 日 GitHub 上已合并的 T3 Code PR #35247「agents can restyle T3 Code with theme colors and CSS」，附应用内渲染的示例主题 · 截图：GitHub · pingdotgg/t3code（<a href="https://github.com/pingdotgg/t3code/pull/35247" rel="noopener" target="_blank">github.com</a>），2026-11-16 截取，版权归原站所有</figcaption></figure>
+<p>很容易把这当成换桌面壁纸。我们认为，这是设计系统团队必须提前规划的一件事的第一个公开、可用的例子：界面的外观通过智能体调用的 API 来改，改的人从来不会打开你的设计文件。两款工具做了不同的取舍，合在一起正好说明一个安全的主题接口需要什么。</p>
+<h2>两款工具到底让智能体改什么</h2>
+<ul><li><strong>Claude Code：主题就是 mod。</strong>没有主题文件。mod 是一个小的 JavaScript 或 TypeScript 模块，在会话开始时调用 <code>$.theme.set</code>，传入 <code>colors</code>、可选的 <code>backdrop</code> 和配色模式覆盖（需 v2.1.319 及以上）。颜色由 <code>makeColors</code> 生成：每个模式只给三个锚点色 <code>surface-0</code>、<code>text-primary</code>、<code>text-muted</code>，它就能算出整套配色。它会返回一个 <code>problems</code> 列表，凡是以「Desktop won’t paint this theme」开头的条目，都表示应用会拒绝这套主题。每个会话只有一个主题：最后调用的 mod 生效，而且一次调用会替换整个主题。</li>
+<li><strong>Claude Code：不止颜色。</strong>Claude Code 自己绘制的每个位置，从加载动画到消息行、提问对话框，都是 mod 可以改样式或替换的「render site」。权限确认框被刻意排除在外。</li>
+<li><strong>T3 Code：主题就是数据。</strong>主题是一个 JSON 文件。最短的写法只要 <code>appearance</code>、一个 <code>canvas</code> 底色和一个 <code>accent</code> 强调色，其余由应用生成；可选的 <code>css</code> 字段用来加规则。两个智能体工具负责执行：<code>t3_theme_read</code>（读取主题和一份样式指南）和 <code>t3_theme_set</code>（发布并切换），并且只对运行在服务器本机、处于 Full access 模式的智能体开放。</li>
+<li><strong>T3 Code：公开的选择器契约。</strong>样式指南列出了 29 个主题 CSS 可以依赖的选择器，比如 <code>[data-chat-header]</code> 和 <code>[data-slot="button"]</code>，只要其中一个从源码里消失，测试就会失败。原本没有钩子的元素也补上了（<code>data-user-message-bubble</code>、<code>data-slot="project-monogram"</code>）。文档说得很直白：类名每个版本都会变，所以要写 <code>data-</code> 属性。</li>
+<li><strong>T3 Code：防护和退路。</strong>客户端会丢弃 <code>@import</code>、<code>image-set()</code> 以及任何不是 <code>data:</code> 地址或 <code>#id</code> 的 <code>url()</code>，这样导入的主题或被提示注入的智能体就无法把屏幕内容发到别的服务器。如果某条规则把你需要的东西藏起来了，用 <code>t3 theme set t3-chat</code> 或快捷键 Cmd/Ctrl+Option/Alt+A 就能换回内置主题。主题 CSS 原本上限 20000 字符，一天后因为社区里有人整套重做界面碰到上限，提高到了 50000。</li></ul><figure><img src="../../blog/img/agents-restyle-apps-theme-contract-2.webp" alt="流程：输入锚点色（每个模式的 surface、text、muted、accent），生成配色并检查对比度，只对公开的 data-slot 钩子应用 CSS 并丢弃远程加载，最后截亮色和暗色图并保留一键退路" loading="lazy" decoding="async" width="1200" height="675"><figcaption>流程：输入锚点色（每个模式的 surface、text、muted、accent），生成配色并检查对比度，只对公开的 data-slot 钩子应用 CSS 并丢弃远程加载，最后截亮色和暗色图并保留一键退路 · 示意图：UI Hub 原创，CC BY 4.0</figcaption></figure>
+<h2>我们的看法：主题正在变成 API，就按 API 来设计</h2>
+<p>多年来，主题是一个由人点来点去的设置页。现在它是智能体替人发起的一次调用，往往只来自一句话的愿望。这改变了设计系统对外的责任：你的 Token 和钩子不再是内部实现，而是一份公开契约，承担任何 API 都有的义务：输入要少、要校验、要有版本、要能撤销。</p>
+<p>两款工具把问题拆得很好。Claude Code 把输入压到最小（每个模式三个锚点色），让代码去生成并检查其余部分，这正是防止智能体交出灰底灰字的办法。T3 Code 保留了逃生口——原始 CSS——但给它围上了栏杆：只承诺具名钩子、不允许任何远程加载、有长度上限、有快捷键退路。两者都不让主题碰到信任相关的界面：Claude Code 的权限确认框，T3 Code 的远程请求。一个想被安全换装的产品，三层都要有。</p>
+<p>要注意的地方写在 T3 Code 自己的限制里：智能体看不到改完的效果，所以指南让它小步修改、改完就问。而 Claude Code 的 mod 以你的权限运行、没有沙箱隔离，文档也明说了。从陌生人那里装的主题，首先是代码，其次才是颜色。让它重新上色之前，先看清它挂了哪些钩子。</p>
+<h2>就算你的应用没有主题编辑器，也该做的事</h2>
+<p>同一份契约对你自己的编程智能体也有用。让智能体「把页头弄得安静一点」，它会改它能找到的任何东西；给它锚点色、角色 Token 和具名插槽，它就会改这些，而不是去翻生成出来的类名。三个低成本动作：给用户真正想改的二十来个部位加上 <code>data-slot</code> 名称；在构建里用几个锚点色生成亮色和暗色配色并做对比度检查；保留一个所有覆盖都能退回的内置主题。</p>
+<figure><img src="../../blog/img/agents-restyle-apps-theme-contract-3.webp" alt="2026 年 11 月 16 日的 T3 Themes 社区主题库：在真实应用里拍下的 T3 Code 主题，每个都附可导入的 JSON" loading="lazy" decoding="async" width="1280" height="800"><figcaption>2026 年 11 月 16 日的 T3 Themes 社区主题库：在真实应用里拍下的 T3 Code 主题，每个都附可导入的 JSON · 截图：t3themes.com（<a href="https://t3themes.com/" rel="noopener" target="_blank">t3themes.com</a>），2026-11-16 截取，版权归原站所有</figcaption></figure><h2>清单：一个智能体能安全使用的主题接口</h2>
+<ol><li><strong>输入少量锚点，输出完整配色。</strong>每个模式只接收背景、正文、弱化文字和强调色，其余在代码里推导。</li>
+<li><strong>先检查再上色。</strong>两种模式下，正文对比度低于 4.5:1、大字和界面部件低于 3:1 的组合，一律拒绝或标出。</li>
+<li><strong>公开具名钩子。</strong>列出你承诺保留的 <code>data-slot</code> 选择器，并加一个钩子消失就失败的测试。</li>
+<li><strong>绝不承诺类名。</strong>工具类和哈希类名每个版本都会变，在指南里写明。</li>
+<li><strong>主题 CSS 禁止远程加载。</strong>丢弃 <code>@import</code>、<code>image-set()</code> 和外部 <code>url()</code>；只允许 <code>data:</code>，并设大小上限。</li>
+<li><strong>信任相关界面不让碰。</strong>权限确认、支付和安全相关界面不可换主题。</li>
+<li><strong>留一条退路。</strong>一个内置主题、一条命令和一个快捷键，即使主题把设置藏起来了也能用。</li>
+<li><strong>让智能体亲眼看。</strong>保留主题之前，要求它给出亮色和暗色两张截图。</li></ol>
+<pre><code># 把这段贴给你的编程智能体
+把 <应用> 的样子改成 <一句话描述，例如「暖色纸张、墨色强调」>。
+- 只改我们的主题契约：<path/to/theme.json> 里的锚点色
+  （亮色和暗色各自的 surface、text、muted、accent），以及
+  <path/to/theme-guide.md> 里列出的 data-slot 选择器。不要写类名。
+- 生成配色后，列出所有低于 4.5:1（大字和控件低于 3:1）的
+  文字/背景组合，修好再继续。
+- 主题 CSS：不用 @import、image-set()，url() 只允许 10 KB 以内的 data:。
+- 不要改权限、支付或安全相关界面的样式。
+- 给 <3 个关键页面> 各截亮色和暗色图，给我看，然后等我确认。
+输出：选用的锚点色、对比度结果、改动的选择器，以及如何退回内置主题。</code></pre>
+<p>UI Hub 相关阅读：<a href="../design-tokens-for-agents/">给智能体用的设计 Token</a>、<a href="../oklch-color-and-dark-mode/">OKLCH 颜色与暗色模式</a>，以及<a href="../lint-agents-onto-your-design-system/">用 Lint 把智能体约束在设计系统里</a>。</p>

@@ -1,5 +1,5 @@
 {
- "count": 55,
+ "count": 56,
  "rss": "https://ui.incidental.site/blog/rss.xml",
  "categories": {
   "tools": "Tools",
@@ -18,6 +18,118 @@
   "weekly": "Series: Weekly roundup"
  },
  "posts": [
+  {
+   "slug": "agents-restyle-apps-theme-contract",
+   "url": "https://ui.incidental.site/blog/agents-restyle-apps-theme-contract/",
+   "date": "2026-11-16",
+   "category": "craft",
+   "series": null,
+   "featured": true,
+   "tags": [
+    "Claude Code mods",
+    "T3 Code",
+    "theming",
+    "design tokens",
+    "data-slot",
+    "CSS security"
+   ],
+   "title": {
+    "en": "Agents can now restyle the apps you use. Give them a theme contract, not your class names",
+    "zh": "智能体开始替人改应用的样子了：交给它主题契约，而不是你的类名",
+    "zht": "智能體開始替人改應用的樣子了：交給它主題契約，而不是你的類名",
+    "ja": "エージェントがアプリの見た目を書き換え始めた。渡すのはクラス名ではなくテーマの契約だ",
+    "ko": "에이전트가 앱의 모습을 바꾸기 시작했다. 클래스 이름이 아니라 테마 계약을 건네자",
+    "ms": "Ejen kini boleh menggayakan semula aplikasi anda. Beri mereka kontrak tema, bukan nama kelas anda",
+    "vi": "Agent giờ đã tự đổi giao diện ứng dụng. Hãy trao cho chúng một hợp đồng giao diện, đừng trao tên class",
+    "fr": "Les agents peuvent désormais relooker vos apps. Donnez-leur un contrat de thème, pas vos noms de classes",
+    "es": "Los agentes ya pueden cambiar el aspecto de tus apps. Dales un contrato de tema, no tus nombres de clase",
+    "de": "Agents gestalten Apps jetzt selbst um. Gib ihnen einen Theme-Vertrag statt deiner Klassennamen"
+   },
+   "summary": {
+    "en": "In mid-November 2026 two coding tools let an agent repaint their own interface: Claude Code themes are mods that call $.theme.set from a few anchor colours, and T3 Code merged agent tools that publish a theme with colours and CSS. Under the fun backdrops sits a design-system lesson: anchors that generate a checked palette, stable data-slot hooks, a guard against remote loads, and a one-key way back. What each tool does, our take, a checklist and an agent prompt.",
+    "zh": "2026 年 11 月中旬，两款编程工具让智能体可以重画它们自己的界面：Claude Code 的主题是用几种锚点色调用 $.theme.set 的 mod，T3 Code 合并了能发布「颜色 + CSS」主题的智能体工具。好玩的动态背景之下是一堂设计系统课：用锚点色生成经过检查的配色、稳定的 data-slot 钩子、阻止远程加载的防护，以及一键回退。本文讲两者各做了什么、我们的看法，附检查清单和智能体提示词。",
+    "zht": "2026 年 11 月中旬，兩款程式工具讓智能體可以重畫它們自己的介面：Claude Code 的主題是用幾種錨點色呼叫 $.theme.set 的 mod，T3 Code 合併了能發布「顏色 + CSS」主題的智能體工具。好玩的動態背景之下是一堂設計系統課：用錨點色生成經過檢查的配色、穩定的 data-slot 鉤子、阻止遠端載入的防護，以及一鍵回退。本文講兩者各做了什麼、我們的看法，附檢查清單和智能體提示詞。",
+    "ja": "2026年11月中旬、2つのコーディングツールがエージェントに自分のUIを塗り替えさせ始めた。Claude Codeのテーマは数色のアンカーから$.theme.setを呼ぶmodで、T3 Codeは色とCSSのテーマを公開するエージェント用ツールをマージした。楽しい背景の下にあるのはデザインシステムの教訓だ。検査済みパレットを生むアンカー、安定したdata-slotフック、外部読み込みの遮断、ワンキーで戻せる道。各ツールの中身、私たちの見解、チェックリストとプロンプト付き。",
+    "ko": "2026년 11월 중순, 두 코딩 도구가 에이전트에게 자기 인터페이스를 다시 칠하게 했다. Claude Code의 테마는 몇 가지 기준 색으로 $.theme.set을 호출하는 mod이고, T3 Code는 색과 CSS로 된 테마를 게시하는 에이전트 도구를 병합했다. 재미있는 배경 아래에는 디자인 시스템의 교훈이 있다. 검사된 팔레트를 만드는 기준 색, 안정적인 data-slot 훅, 원격 로드 차단, 한 번에 되돌리는 길. 각 도구의 내용, 우리의 견해, 체크리스트와 프롬프트 포함.",
+    "ms": "Pada pertengahan November 2026 dua alat pengekodan membenarkan ejen mengecat semula antara muka mereka: tema Claude Code ialah mod yang memanggil $.theme.set daripada beberapa warna sauh, dan T3 Code menggabungkan alat ejen yang menerbitkan tema dengan warna dan CSS. Di bawah latar animasi itu ada pelajaran sistem reka bentuk: warna sauh yang menjana palet yang disemak, cangkuk data-slot yang stabil, pengawal terhadap muatan jauh dan jalan pulang satu kekunci. Apa yang dibuat setiap alat, pandangan kami, senarai semak dan prompt ejen.",
+    "vi": "Giữa tháng 11/2026, hai công cụ lập trình cho phép agent tự vẽ lại giao diện của chính chúng: theme của Claude Code là mod gọi $.theme.set từ vài màu neo, còn T3 Code đã merge công cụ cho agent xuất bản theme gồm màu và CSS. Bên dưới những phông nền vui mắt là một bài học về design system: màu neo sinh ra bảng màu đã kiểm tra, hook data-slot ổn định, chặn tải từ xa và một phím để quay lại. Mỗi công cụ làm gì, nhận định của chúng tôi, kèm checklist và prompt cho agent.",
+    "fr": "Mi-novembre 2026, deux outils de code ont laissé un agent repeindre leur propre interface : les thèmes de Claude Code sont des mods qui appellent $.theme.set à partir de quelques couleurs d’ancrage, et T3 Code a fusionné des outils d’agent qui publient un thème avec couleurs et CSS. Sous les fonds animés se cache une leçon de design system : des ancres qui génèrent une palette vérifiée, des hooks data-slot stables, un garde-fou contre les chargements distants et un retour en une touche. Ce que fait chaque outil, notre avis, une checklist et un prompt.",
+    "es": "A mediados de noviembre de 2026, dos herramientas de código dejaron que un agente repinte su propia interfaz: los temas de Claude Code son mods que llaman a $.theme.set desde unos pocos colores ancla, y T3 Code fusionó herramientas de agente que publican un tema con colores y CSS. Bajo los fondos animados hay una lección de design system: anclas que generan una paleta comprobada, hooks data-slot estables, una protección contra cargas remotas y una vuelta atrás con una tecla. Qué hace cada herramienta, nuestra opinión, checklist y prompt.",
+    "de": "Mitte November 2026 ließen zwei Coding-Tools einen Agenten ihre eigene Oberfläche neu einfärben: Claude-Code-Themes sind Mods, die $.theme.set aus wenigen Ankerfarben aufrufen, und T3 Code hat Agent-Tools gemergt, die ein Theme aus Farben und CSS veröffentlichen. Unter den verspielten Hintergründen steckt eine Design-System-Lektion: Anker, die eine geprüfte Palette erzeugen, stabile data-slot-Hooks, ein Schutz gegen externe Ladevorgänge und ein Weg zurück per Tastenkürzel. Was jedes Tool tut, unsere Einschätzung, Checkliste und Agent-Prompt."
+   },
+   "reading_minutes": {
+    "en": 5,
+    "zh": 7
+   },
+   "cover": "https://ui.incidental.site/blog/img/agents-restyle-apps-theme-contract-cover.webp",
+   "references": [
+    {
+     "title": "Draw in the interface with a mod (themes and backdrops)",
+     "by": "Claude Code Docs (Anthropic)",
+     "url": "https://code.claude.com/docs/en/plugins/mods/interface"
+    },
+    {
+     "title": "Mods overview",
+     "by": "Claude Code Docs (Anthropic)",
+     "url": "https://code.claude.com/docs/en/plugins/mods/overview"
+    },
+    {
+     "title": "Mods reference",
+     "by": "Claude Code Docs (Anthropic)",
+     "url": "https://code.claude.com/docs/en/plugins/mods/reference"
+    },
+    {
+     "title": "Claude Code Desktop Themes: Build One With Mods",
+     "by": "vanja.io",
+     "url": "https://vanja.io/claude-code-desktop-themes/"
+    },
+    {
+     "title": "feat: agents can restyle T3 Code with theme colors and CSS (#35247)",
+     "by": "GitHub · pingdotgg/t3code",
+     "url": "https://github.com/pingdotgg/t3code/pull/35247"
+    },
+    {
+     "title": "feat(themes): theme CSS can hold 50,000 characters (#36656)",
+     "by": "GitHub · pingdotgg/t3code",
+     "url": "https://github.com/pingdotgg/t3code/pull/36656"
+    },
+    {
+     "title": "Appearance (custom themes, custom CSS, ask an agent)",
+     "by": "GitHub · pingdotgg/t3code docs",
+     "url": "https://github.com/pingdotgg/t3code/blob/main/docs/user/appearance.md"
+    },
+    {
+     "title": "T3 Code lets your agent restyle the app with theme colors and CSS",
+     "by": "Creators Toolbox",
+     "url": "https://creatorstoolbox.com/@scout/post/n_0lglos4it08wt"
+    },
+    {
+     "title": "T3 Themes community gallery",
+     "by": "t3themes.com",
+     "url": "https://t3themes.com/"
+    },
+    {
+     "title": "Theme Color reference",
+     "by": "Visual Studio Code docs",
+     "url": "https://code.visualstudio.com/api/references/theme-color"
+    },
+    {
+     "title": "Design Tokens Format Module (draft)",
+     "by": "W3C Design Tokens Community Group",
+     "url": "https://www.designtokens.org/tr/drafts/format/"
+    },
+    {
+     "title": "Understanding SC 1.4.3: Contrast (Minimum)",
+     "by": "W3C WAI",
+     "url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html"
+    },
+    {
+     "title": "Attribute selectors",
+     "by": "MDN Web Docs",
+     "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/Attribute_selectors"
+    }
+   ]
+  },
   {
    "slug": "magic-ui-vs-aceternity-vs-react-bits",
    "url": "https://ui.incidental.site/blog/magic-ui-vs-aceternity-vs-react-bits/",
