@@ -1,6 +1,6 @@
 {
  "generated": "2026-11-16",
- "count": 5123,
+ "count": 5125,
  "items": [
   {
    "id": "ued-transitions-dev-craft",
@@ -192965,6 +192965,108 @@
    "official": "https://zirui.ca",
    "pub": "2026-11-15",
    "added": "2026-11-15"
+  },
+  {
+   "id": "rd-f6w6klo-grokbot-on-the-sphere",
+   "name": "GrokBot on The Sphere",
+   "url": "https://x.com/benjitaylor/status/2122394272091848868",
+   "note": "A branded motion sequence for GrokBot displayed on the Las Vegas Sphere, cycling through colorful 3D blob character animations and product use-case callouts.",
+   "noteEn": "A branded motion sequence for GrokBot displayed on the Las Vegas Sphere, cycling through colorful 3D blob character animations and product use-case callouts.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@benjitaylor",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "motion"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "3d"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/f6w6klo-grokbot-on-the-sphere",
+   "rdkind": "Design",
+   "rdcat": "Motion",
+   "rdstyle": [
+    "3D",
+    "Illustrative",
+    "Dark",
+    "Vibrant"
+   ],
+   "author": {
+    "name": "Benji Taylor",
+    "handle": "@benjitaylor",
+    "url": "https://x.com/benjitaylor"
+   },
+   "x_post": "https://x.com/benjitaylor/status/2122394272091848868",
+   "xsrc": {
+    "post": "https://x.com/benjitaylor/status/2122394272091848868",
+    "author": "@benjitaylor",
+    "likes": 5468,
+    "bookmarks": 288,
+    "reposts": 192,
+    "impressions": 102955,
+    "date": "2026-11-16"
+   },
+   "pub": "2026-11-16",
+   "added": "2026-11-16"
+  },
+  {
+   "id": "rd-yxjp23s-allo-variable-font",
+   "name": "Allo Variable Font",
+   "url": "https://allo.joshpuckett.me",
+   "note": "Allo is a free open-source variable font with weight and roundness axes, optical sizing, true obliques, and 606 glyphs, shown through playful themed vignettes.",
+   "noteEn": "Allo is a free open-source variable font with weight and roundness axes, optical sizing, true obliques, and 606 glyphs, shown through playful themed vignettes.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@joshpuckett",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "motion"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "playful"
+   ],
+   "origin": "site",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/yxjp23s-allo-variable-font",
+   "rdkind": "Design",
+   "rdcat": "Motion",
+   "rdstyle": [
+    "Typographic",
+    "Playful",
+    "Vibrant"
+   ],
+   "author": {
+    "name": "joshpuckett",
+    "handle": "@joshpuckett",
+    "url": "https://x.com/joshpuckett"
+   },
+   "x_post": "https://x.com/joshpuckett/status/2122329345670988258",
+   "xsrc": {
+    "post": "https://x.com/joshpuckett/status/2122329345670988258",
+    "author": "@joshpuckett",
+    "likes": 3972,
+    "bookmarks": 3181,
+    "reposts": 257,
+    "impressions": 135638,
+    "date": "2026-11-16"
+   },
+   "official": "https://allo.joshpuckett.me",
+   "pub": "2026-11-16",
+   "added": "2026-11-16"
   }
  ],
  "guides": [
@@ -193167,5 +193269,5 @@
    ]
   }
  ],
- "updatedAt": "2026-11-16T08:33Z"
+ "updatedAt": "2026-11-16T23:00Z"
 }
