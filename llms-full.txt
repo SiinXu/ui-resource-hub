@@ -1,6 +1,6 @@
 # UI Hub
 
-> Curated, multilingual directory of 5125 public UI resources (component libraries, component style demos, effects, design systems, design skills for AI agents) plus original blog analysis of AI design techniques. Data updated 2026-11-17 07:51 UTC.
+> Curated, multilingual directory of 5131 public UI resources (component libraries, component style demos, effects, design systems, design skills for AI agents) plus original blog analysis of AI design techniques. Data updated 2026-11-17 09:42 UTC.
 
 Use the JSON endpoints, not the SPA, when acting as an agent. Every entry links to its original site; licenses belong to the original authors.
 
@@ -140,11 +140,11 @@ Use the JSON endpoints, not the SPA, when acting as an agent. Every entry links 
 - [visx](https://airbnb.io/visx/): Airbnb's low-level visualization components
 
 ## FAQ
-- **What is UI Hub?** A free, curated directory of 5125 public UI resources: 245 component libraries, 1989 component style demos with light/dark screenshots, 70 design skills for AI agents, plus effects, templates, specs and tutorials. It links to original sites and never hosts paid source code.
+- **What is UI Hub?** A free, curated directory of 5131 public UI resources: 245 component libraries, 1989 component style demos with light/dark screenshots, 70 design skills for AI agents, plus effects, templates, specs and tutorials. It links to original sites and never hosts paid source code.
 - **How do I find a component in a given style?** Load https://ui.incidental.site/api/resources.json and filter by ct (component kind, e.g. "dialog") and vs (visual style, e.g. "minimal" or "motion"). type="style" entries are concrete component demos with a libName and page URL; type="library" entries are whole libraries with install info on the site.
 - **Which skills should an agent use for good UI?** One direction skill (frontend-design or taste-skill), emil-design-eng for motion and interaction polish, then impeccable, baseline-ui, web-design-guidelines and accessibility as an audit pass. See https://ui.incidental.site/api/skills.json.
 - **Can I copy the code?** Open-source libraries can be used under their own licenses (MIT, Apache-2.0 etc.); the card shows the original link. Paid tiers (marked paid/freemium) must be bought from the original vendor.
-- **How often is it updated?** Daily via a GitHub Actions job that adds new UI repositories and tools from GitHub, awesome-shadcn-ui and Hacker News. Nothing is deleted. Last update: 2026-11-17 07:51 UTC.
+- **How often is it updated?** Daily via a GitHub Actions job that adds new UI repositories and tools from GitHub, awesome-shadcn-ui and Hacker News. Nothing is deleted. Last update: 2026-11-17 09:42 UTC.
 
 
 # Blog posts (full text, English)
@@ -5915,6 +5915,12 @@ Get Hyped. Get Noticed. Get Results.
 - Textured App Icons | inspiration | https://zirui.ca | A set of five app icons with a hand-drawn crayon texture, each on a bold flat color tile, gently wobbling on a topographic paper background.
 - GrokBot on The Sphere | inspiration | https://x.com/benjitaylor/status/2122394272091848868 | A branded motion sequence for GrokBot displayed on the Las Vegas Sphere, cycling through colorful 3D blob character animations and product use-case callouts.
 - Allo Variable Font | inspiration | https://allo.joshpuckett.me | Allo is a free open-source variable font with weight and roundness axes, optical sizing, true obliques, and 606 glyphs, shown through playful themed vignettes.
+- 3D Bar Chart | inspiration | https://x.com/cabralorenzo/status/2122407566743310461 | Interactive sales chart card with isometric 3D bars that highlight on click, update live values, and switch between Day, Month, and Year views in both light and
+- App Icon Morphing | inspiration | https://x.com/VadimCarazan/status/2122599634518585849 | An app icon built from four curved hook shapes on a blue rounded square deconstructs and reassembles through a looping morph sequence, passing through dots and 
+- Football Ticket Seat Viewer | inspiration | https://x.com/RaminNasibov/status/2122433340250718529 | A mobile ticketing app lets users pick a stadium seat and preview an interactive 3D view from that exact position before buying.
+- Fermah Brand Identity | inspiration | https://x.com/AdelineAstraOS/status/2122328210989883731 | Brand identity and UI system for Fermah, centered on a morphing iridescent blob mascot, an animated math-equation globe, a dark explorer dashboard, and 3D rende
+- Import Animation | inspiration | https://x.com/Aaron_porter/status/2122363699692511408 | A photo import loading animation for PhotoLab where tapping Import explodes into chromatic light streaks, then shifts to a warm 35mm film strip processing state
+- Paper Airplanes Footer | inspiration | https://x.com/jeanxcrj/status/2122471910214873291 | The Sedrus website footer triggers an animated 3D desk scene where paper airplanes collect among scattered branded documents and envelopes as the cursor approac
 
 # Component style demos: 1989 entries, see api/resources.json (type=style)
 

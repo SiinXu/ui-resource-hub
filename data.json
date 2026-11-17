@@ -1,6 +1,6 @@
 {
  "generated": "2026-11-17",
- "count": 5125,
+ "count": 5131,
  "items": [
   {
    "id": "ued-transitions-dev-craft",
@@ -193067,6 +193067,300 @@
    "official": "https://allo.joshpuckett.me",
    "pub": "2026-11-16",
    "added": "2026-11-16"
+  },
+  {
+   "id": "rd-xftrpxy-3d-bar-chart-component",
+   "name": "3D Bar Chart",
+   "url": "https://x.com/cabralorenzo/status/2122407566743310461",
+   "note": "Interactive sales chart card with isometric 3D bars that highlight on click, update live values, and switch between Day, Month, and Year views in both light and dark themes.",
+   "noteEn": "Interactive sales chart card with isometric 3D bars that highlight on click, update live values, and switch between Day, Month, and Year views in both light and dark themes.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@cabralorenzo",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal",
+    "3d"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/xftrpxy-3d-bar-chart-component",
+   "rdkind": "Design",
+   "rdcat": "Interface",
+   "rdstyle": [
+    "Minimal",
+    "3D",
+    "Dark",
+    "Light"
+   ],
+   "author": {
+    "name": "Lorenzo Cabra",
+    "handle": "@cabralorenzo",
+    "url": "https://x.com/cabralorenzo"
+   },
+   "x_post": "https://x.com/cabralorenzo/status/2122407566743310461",
+   "xsrc": {
+    "post": "https://x.com/cabralorenzo/status/2122407566743310461",
+    "author": "@cabralorenzo",
+    "likes": 36,
+    "bookmarks": 17,
+    "reposts": 1,
+    "impressions": 1328,
+    "date": "2026-11-16"
+   },
+   "official": "https://bencho.dev",
+   "pub": "2026-11-17",
+   "added": "2026-11-17"
+  },
+  {
+   "id": "rd-l9xqu78-animated-app-icon-morphing",
+   "name": "App Icon Morphing",
+   "url": "https://x.com/VadimCarazan/status/2122599634518585849",
+   "note": "An app icon built from four curved hook shapes on a blue rounded square deconstructs and reassembles through a looping morph sequence, passing through dots and geometric states.",
+   "noteEn": "An app icon built from four curved hook shapes on a blue rounded square deconstructs and reassembles through a looping morph sequence, passing through dots and geometric states.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@vadimcarazan",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "motion"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/l9xqu78-animated-app-icon-morphing",
+   "rdkind": "Design",
+   "rdcat": "Motion",
+   "rdstyle": [
+    "Geometric",
+    "Vibrant"
+   ],
+   "author": {
+    "name": "Vadim Carazan",
+    "handle": "@vadimcarazan",
+    "url": "https://x.com/vadimcarazan"
+   },
+   "x_post": "https://x.com/VadimCarazan/status/2122599634518585849",
+   "xsrc": {
+    "post": "https://x.com/VadimCarazan/status/2122599634518585849",
+    "author": "@VadimCarazan",
+    "likes": 33,
+    "bookmarks": 12,
+    "reposts": 0,
+    "impressions": 717,
+    "date": "2026-11-17"
+   },
+   "pub": "2026-11-17",
+   "added": "2026-11-17"
+  },
+  {
+   "id": "rd-ct6rser-football-ticket-seat-view-app",
+   "name": "Football Ticket Seat Viewer",
+   "url": "https://x.com/RaminNasibov/status/2122433340250718529",
+   "note": "A mobile ticketing app lets users pick a stadium seat and preview an interactive 3D view from that exact position before buying.",
+   "noteEn": "A mobile ticketing app lets users pick a stadium seat and preview an interactive 3D view from that exact position before buying.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@raminnasibov",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "3d"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/ct6rser-football-ticket-seat-view-app",
+   "rdkind": "Design",
+   "rdcat": "Interface",
+   "rdstyle": [
+    "3D",
+    "Dark"
+   ],
+   "author": {
+    "name": "Ramin Nasibov",
+    "handle": "@raminnasibov",
+    "url": "https://x.com/raminnasibov"
+   },
+   "x_post": "https://x.com/RaminNasibov/status/2122433340250718529",
+   "xsrc": {
+    "post": "https://x.com/RaminNasibov/status/2122433340250718529",
+    "author": "@RaminNasibov",
+    "likes": 355,
+    "bookmarks": 160,
+    "reposts": 21,
+    "impressions": 22297,
+    "date": "2026-11-16"
+   },
+   "pub": "2026-11-17",
+   "added": "2026-11-17"
+  },
+  {
+   "id": "rd-4mzehio-fermah-brand-identity-ui",
+   "name": "Fermah Brand Identity",
+   "url": "https://x.com/AdelineAstraOS/status/2122328210989883731",
+   "note": "Brand identity and UI system for Fermah, centered on a morphing iridescent blob mascot, an animated math-equation globe, a dark explorer dashboard, and 3D rendered hero visuals.",
+   "noteEn": "Brand identity and UI system for Fermah, centered on a morphing iridescent blob mascot, an animated math-equation globe, a dark explorer dashboard, and 3D rendered hero visuals.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@adelineastraos",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "3d"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/4mzehio-fermah-brand-identity-ui",
+   "rdkind": "Design",
+   "rdcat": "Branding",
+   "rdstyle": [
+    "Experimental",
+    "3D",
+    "Organic",
+    "Dark",
+    "Vibrant"
+   ],
+   "author": {
+    "name": "Adeline",
+    "handle": "@adelineastraos",
+    "url": "https://x.com/adelineastraos"
+   },
+   "x_post": "https://x.com/AdelineAstraOS/status/2122328210989883731",
+   "xsrc": {
+    "post": "https://x.com/AdelineAstraOS/status/2122328210989883731",
+    "author": "@AdelineAstraOS",
+    "likes": 844,
+    "bookmarks": 535,
+    "reposts": 45,
+    "impressions": 18516,
+    "date": "2026-11-16"
+   },
+   "pub": "2026-11-17",
+   "added": "2026-11-17"
+  },
+  {
+   "id": "rd-qsiev2j-photolab-import-animation",
+   "name": "Import Animation",
+   "url": "https://x.com/Aaron_porter/status/2122363699692511408",
+   "note": "A photo import loading animation for PhotoLab where tapping Import explodes into chromatic light streaks, then shifts to a warm 35mm film strip processing state.",
+   "noteEn": "A photo import loading animation for PhotoLab where tapping Import explodes into chromatic light streaks, then shifts to a warm 35mm film strip processing state.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@aaron_porter",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/qsiev2j-photolab-import-animation",
+   "rdkind": "Design",
+   "rdcat": "Interface",
+   "rdstyle": [
+    "Experimental",
+    "Dark"
+   ],
+   "author": {
+    "name": "Aaron Porter",
+    "handle": "@aaron_porter",
+    "url": "https://x.com/aaron_porter"
+   },
+   "x_post": "https://x.com/Aaron_porter/status/2122363699692511408",
+   "xsrc": {
+    "post": "https://x.com/Aaron_porter/status/2122363699692511408",
+    "author": "@Aaron_porter",
+    "likes": 1860,
+    "bookmarks": 1118,
+    "reposts": 62,
+    "impressions": 64438,
+    "date": "2026-11-16"
+   },
+   "pub": "2026-11-17",
+   "added": "2026-11-17"
+  },
+  {
+   "id": "rd-qq65w0x-sedrus-footer-paper-airplanes",
+   "name": "Paper Airplanes Footer",
+   "url": "https://x.com/jeanxcrj/status/2122471910214873291",
+   "note": "The Sedrus website footer triggers an animated 3D desk scene where paper airplanes collect among scattered branded documents and envelopes as the cursor approaches.",
+   "noteEn": "The Sedrus website footer triggers an animated 3D desk scene where paper airplanes collect among scattered branded documents and envelopes as the cursor approaches.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@jeanxcrj",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "3d"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/qq65w0x-sedrus-footer-paper-airplanes",
+   "rdkind": "Design",
+   "rdcat": "Web",
+   "rdstyle": [
+    "3D",
+    "Light",
+    "Muted"
+   ],
+   "author": {
+    "name": "Jean Chen",
+    "handle": "@jeanxcrj",
+    "url": "https://x.com/jeanxcrj"
+   },
+   "x_post": "https://x.com/jeanxcrj/status/2122471910214873291",
+   "xsrc": {
+    "post": "https://x.com/jeanxcrj/status/2122471910214873291",
+    "author": "@jeanxcrj",
+    "likes": 328,
+    "bookmarks": 116,
+    "reposts": 16,
+    "impressions": 6267,
+    "date": "2026-11-16"
+   },
+   "pub": "2026-11-17",
+   "added": "2026-11-17"
   }
  ],
  "guides": [
@@ -193269,5 +193563,5 @@
    ]
   }
  ],
- "updatedAt": "2026-11-17T07:51Z"
+ "updatedAt": "2026-11-17T09:42Z"
 }
