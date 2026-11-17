@@ -506,6 +506,9 @@ function openSheet(id){
    '<div class="sb"><div class="row">'+'<span class="tp">'+TN(i.type)+'</span>'+(PR(i.pricing)?'<span class="pill '+i.pricing+'">'+PR(i.pricing)+'</span>':'')+(l.lic?'<span class="pill oss">'+esc(l.lic)+'</span>':'')+(i.source?'<span class="src">'+esc(lat(i.source))+'</span>':'')+'</div>'+
    '<h2>'+esc(shown(i.name))+'</h2>'+(noteOf(i)?'<p class="lead">'+esc(noteOf(i))+'</p>':'')+
    '<div class="acts"><a class="b pri" href="'+esc(i.url)+'" target="_blank" rel="'+REL(i)+'">'+esc(t('btn_original'))+IC.ext+'</a>'+
+   /* 11-16: copy entry points in the first action row (3 previews, 0 copies — the copy buttons sat below the preview + metadata) */
+   '<button class="b ghost" data-cp="'+i.id+'">'+IC.spark+esc(t('btn_copy_prompt'))+'</button>'+
+   (codeOf(i)?'<button class="b ghost" data-cc="'+i.id+'">'+IC.code+esc(t('btn_copy_code'))+'</button>':'')+
    (vis(i)?'<button class="b ghost" data-play="'+i.id+'">'+IC.full+esc(canFrame(i)?t('btn_play'):t('btn_view'))+'</button>':'')+
    '<button class="b ghost" data-copy="'+esc(i.url)+'" data-msg="'+esc(t('toast_link'))+'">'+IC.copy+esc(t('btn_copy_link'))+'</button>'+favBtn(i,'lg')+'</div>'+
    fwSibs(i)+
