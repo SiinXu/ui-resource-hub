@@ -1,5 +1,5 @@
 {
- "count": 56,
+ "count": 57,
  "rss": "https://ui.incidental.site/blog/rss.xml",
  "categories": {
   "tools": "Tools",
@@ -18,6 +18,98 @@
   "weekly": "Series: Weekly roundup"
  },
  "posts": [
+  {
+   "slug": "parallel-design-directions-drafts-stitch-rapid",
+   "url": "https://ui.incidental.site/blog/parallel-design-directions-drafts-stitch-rapid/",
+   "date": "2026-11-17",
+   "category": "workflow",
+   "series": null,
+   "featured": true,
+   "tags": [
+    "Lovable Drafts",
+    "Stitch Rapid",
+    "parallel design",
+    "example data",
+    "design review",
+    "prototyping"
+   ],
+   "title": {
+    "en": "AI made design variants cheap. Now make them comparable: Lovable Drafts, Stitch Rapid and parallel design",
+    "zh": "AI 让设计方案变便宜了，接下来要让它们可比较：Lovable Drafts、Stitch Rapid 与并行设计",
+    "zht": "AI 讓設計方案變便宜了，接下來要讓它們可比較：Lovable Drafts、Stitch Rapid 與並行設計",
+    "ja": "AIでデザイン案は安くなった。次は比べられるようにする：Lovable Drafts、Stitch Rapid、並行デザイン",
+    "ko": "AI 덕분에 디자인 시안은 싸졌다. 이제 비교할 수 있게 만들자: Lovable Drafts, Stitch Rapid, 병렬 디자인",
+    "ms": "AI menjadikan variasi reka bentuk murah. Kini jadikan ia boleh dibandingkan: Lovable Drafts, Stitch Rapid dan reka bentuk selari",
+    "vi": "AI đã làm phương án thiết kế trở nên rẻ. Giờ hãy làm chúng so sánh được: Lovable Drafts, Stitch Rapid và thiết kế song song",
+    "fr": "L’IA a rendu les variantes de design bon marché. Rendez-les comparables : Lovable Drafts, Stitch Rapid et design parallèle",
+    "es": "La IA abarató las variantes de diseño. Ahora hazlas comparables: Lovable Drafts, Stitch Rapid y diseño en paralelo",
+    "de": "KI hat Designvarianten billig gemacht. Jetzt müssen sie vergleichbar werden: Lovable Drafts, Stitch Rapid und paralleles Design"
+   },
+   "summary": {
+    "en": "On 16 November 2026 Lovable launched Drafts, full copies of an app with their own chat, preview and, usually, a backend filled with example data. Five days earlier Google began rolling out Stitch Rapid, which turns a rough prompt into a clickable multi-screen flow in about five seconds. One is high fidelity, one is a throwaway scratchpad, and both make parallel design nearly free. What each does, where the risks hide, our take on judging variants fairly, plus a checklist and an agent prompt.",
+    "zh": "2026 年 11 月 16 日，Lovable 推出 Drafts：应用的完整副本，各有自己的对话、预览，通常还带一个填满示例数据的后端。五天前，Google 开始逐步开放 Stitch Rapid，约 5 秒就能把一句粗略的提示变成可点击的多屏流程。一个高保真，一个是用完即弃的草稿板，两者都让并行设计几乎零成本。本文讲两者各做了什么、风险藏在哪、如何公平地评判多个方案，并附检查清单和智能体提示词。",
+    "zht": "2026 年 11 月 16 日，Lovable 推出 Drafts：應用的完整副本，各有自己的對話、預覽，通常還帶一個填滿範例資料的後端。五天前，Google 開始逐步開放 Stitch Rapid，約 5 秒就能把一句粗略的提示變成可點擊的多畫面流程。一個高保真，一個是用完即棄的草稿板，兩者都讓並行設計幾乎零成本。本文講兩者各做了什麼、風險藏在哪、如何公平地評判多個方案，並附檢查清單和智能體提示詞。",
+    "ja": "2026年11月16日、LovableはDraftsを公開した。アプリ丸ごとのコピーで、それぞれにチャットとプレビュー、多くの場合はサンプルデータ入りのバックエンドが付く。その5日前、GoogleはStitch Rapidの段階提供を始めた。ざっくりした指示から約5秒でクリックできる複数画面のフローを作る。片方は高忠実度、片方は使い捨てのスクラッチパッドで、どちらも並行デザインをほぼ無料にする。中身、リスクの所在、案を公平に比べるための見解、チェックリストとプロンプト付き。",
+    "ko": "2026년 11월 16일 Lovable은 Drafts를 출시했다. 앱 전체의 사본으로, 각자 채팅과 미리보기, 대개는 예시 데이터가 채워진 백엔드를 갖는다. 닷새 전 Google은 대략적인 프롬프트를 약 5초 만에 클릭 가능한 여러 화면 흐름으로 바꾸는 Stitch Rapid를 단계적으로 배포하기 시작했다. 하나는 고충실도, 하나는 쓰고 버리는 스크래치패드이며, 둘 다 병렬 디자인을 거의 공짜로 만든다. 각 도구의 기능, 위험이 숨은 곳, 시안을 공정하게 평가하는 법에 대한 견해, 체크리스트와 프롬프트 포함.",
+    "ms": "Pada 16 November 2026 Lovable melancarkan Drafts, salinan penuh aplikasi dengan sembang, pratonton dan biasanya backend sendiri yang diisi data contoh. Lima hari sebelumnya Google mula melancarkan Stitch Rapid, yang menukar prompt kasar kepada aliran berbilang skrin boleh klik dalam kira-kira lima saat. Satu berfideliti tinggi, satu lagi pad conteng sekali guna, dan kedua-duanya menjadikan reka bentuk selari hampir percuma. Apa yang dibuat setiap satu, di mana risikonya, pandangan kami tentang menilai variasi secara adil, senarai semak dan prompt ejen.",
+    "vi": "Ngày 16/11/2026, Lovable ra mắt Drafts: bản sao đầy đủ của ứng dụng, mỗi bản có chat, bản xem trước riêng và thường có backend riêng chứa dữ liệu mẫu. Năm ngày trước đó, Google bắt đầu triển khai Stitch Rapid, biến một prompt sơ sài thành luồng nhiều màn hình bấm được trong khoảng năm giây. Một bên độ trung thực cao, một bên là bảng nháp dùng xong bỏ, và cả hai khiến thiết kế song song gần như miễn phí. Mỗi công cụ làm gì, rủi ro nằm ở đâu, nhận định về cách đánh giá phương án công bằng, kèm checklist và prompt.",
+    "fr": "Le 16 novembre 2026, Lovable a lancé Drafts : des copies complètes d’une app, chacune avec son chat, son aperçu et, le plus souvent, un backend rempli de données d’exemple. Cinq jours plus tôt, Google commençait à déployer Stitch Rapid, qui transforme un prompt approximatif en parcours cliquable de plusieurs écrans en cinq secondes environ. L’un est haute fidélité, l’autre un brouillon jetable, et tous deux rendent le design parallèle presque gratuit. Ce que fait chacun, où se cachent les risques, notre avis pour juger les variantes équitablement, checklist et prompt.",
+    "es": "El 16 de noviembre de 2026 Lovable lanzó Drafts: copias completas de una app, cada una con su chat, su vista previa y, normalmente, un backend lleno de datos de ejemplo. Cinco días antes Google empezó a desplegar Stitch Rapid, que convierte un prompt aproximado en un flujo clicable de varias pantallas en unos cinco segundos. Uno es de alta fidelidad y el otro un borrador desechable, y ambos hacen que el diseño en paralelo sea casi gratis. Qué hace cada uno, dónde están los riesgos, nuestra opinión para juzgar variantes con justicia, checklist y prompt.",
+    "de": "Am 16. November 2026 startete Lovable Drafts: vollständige Kopien einer App mit eigenem Chat, eigener Vorschau und meist einem eigenen Backend voller Beispieldaten. Fünf Tage zuvor begann Google mit dem Rollout von Stitch Rapid, das aus einem groben Prompt in etwa fünf Sekunden einen klickbaren Ablauf über mehrere Screens macht. Das eine ist High-Fidelity, das andere ein Wegwerf-Notizblock, und beide machen paralleles Design fast kostenlos. Was beide tun, wo die Risiken liegen, unsere Sicht auf faires Vergleichen, Checkliste und Agent-Prompt."
+   },
+   "reading_minutes": {
+    "en": 5,
+    "zh": 6
+   },
+   "cover": "https://ui.incidental.site/blog/img/parallel-design-directions-drafts-stitch-rapid-cover.webp",
+   "references": [
+    {
+     "title": "Now you can explore any idea in parallel without touching what’s live",
+     "by": "Lovable blog",
+     "url": "https://lovable.dev/blog/introducing-drafts"
+    },
+    {
+     "title": "Explore changes with drafts",
+     "by": "Lovable Docs",
+     "url": "https://docs.lovable.dev/features/drafts"
+    },
+    {
+     "title": "Revert and restore your project with version history",
+     "by": "Lovable Docs",
+     "url": "https://docs.lovable.dev/features/projects/history"
+    },
+    {
+     "title": "Collaboration",
+     "by": "Lovable Docs",
+     "url": "https://docs.lovable.dev/features/collaboration"
+    },
+    {
+     "title": "Google releases experimental “Stitch Rapid”: multi-screen prototypes in about five seconds (in Japanese)",
+     "by": "gihyo.jp",
+     "url": "https://gihyo.jp/article/2026/11/stitch-rapid"
+    },
+    {
+     "title": "What is Google “Stitch Rapid”? Where the five-second multi-screen prototype experiment fits, and its caveats (in Japanese)",
+     "by": "chot Inc.",
+     "url": "https://chot-inc.com/columns/google-stitch-rapid-multi-screen-prototype"
+    },
+    {
+     "title": "Stitch by Google (official account, Stitch Rapid thread, 11 Nov 2026)",
+     "by": "X · @stitchbygoogle",
+     "url": "https://x.com/stitchbygoogle"
+    },
+    {
+     "title": "Introducing “vibe design” with Stitch",
+     "by": "Google blog",
+     "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/stitch-ai-ui-design/"
+    },
+    {
+     "title": "3 Design Processes for High Usability: Iterative Design, Parallel Design, and Competitive Testing",
+     "by": "Therese Fessenden · Nielsen Norman Group",
+     "url": "https://www.nngroup.com/articles/parallel-and-iterative-design/"
+    }
+   ]
+  },
   {
    "slug": "agents-restyle-apps-theme-contract",
    "url": "https://ui.incidental.site/blog/agents-restyle-apps-theme-contract/",

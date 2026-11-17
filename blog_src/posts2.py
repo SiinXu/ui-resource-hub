@@ -3122,4 +3122,103 @@ revert to the built-in theme.</code></pre>
 输出：选用的锚点色、对比度结果、改动的选择器，以及如何退回内置主题。</code></pre>
 <p>UI Hub 相关阅读：<a href="../design-tokens-for-agents/">给智能体用的设计 Token</a>、<a href="../oklch-color-and-dark-mode/">OKLCH 颜色与暗色模式</a>，以及<a href="../lint-agents-onto-your-design-system/">用 Lint 把智能体约束在设计系统里</a>。</p>""",
  refs=[('Draw in the interface with a mod (themes and backdrops)','Claude Code Docs (Anthropic)','https://code.claude.com/docs/en/plugins/mods/interface'),('Mods overview','Claude Code Docs (Anthropic)','https://code.claude.com/docs/en/plugins/mods/overview'),('Mods reference','Claude Code Docs (Anthropic)','https://code.claude.com/docs/en/plugins/mods/reference'),('Claude Code Desktop Themes: Build One With Mods','vanja.io','https://vanja.io/claude-code-desktop-themes/'),('feat: agents can restyle T3 Code with theme colors and CSS (#35247)','GitHub · pingdotgg/t3code','https://github.com/pingdotgg/t3code/pull/35247'),('feat(themes): theme CSS can hold 50,000 characters (#36656)','GitHub · pingdotgg/t3code','https://github.com/pingdotgg/t3code/pull/36656'),('Appearance (custom themes, custom CSS, ask an agent)','GitHub · pingdotgg/t3code docs','https://github.com/pingdotgg/t3code/blob/main/docs/user/appearance.md'),('T3 Code lets your agent restyle the app with theme colors and CSS','Creators Toolbox','https://creatorstoolbox.com/@scout/post/n_0lglos4it08wt'),('T3 Themes community gallery','t3themes.com','https://t3themes.com/'),('Theme Color reference','Visual Studio Code docs','https://code.visualstudio.com/api/references/theme-color'),('Design Tokens Format Module (draft)','W3C Design Tokens Community Group','https://www.designtokens.org/tr/drafts/format/'),('Understanding SC 1.4.3: Contrast (Minimum)','W3C WAI','https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html'),('Attribute selectors','MDN Web Docs','https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/Attribute_selectors')]),
+dict(slug='parallel-design-directions-drafts-stitch-rapid', date='2026-11-17', cat='workflow', series=None, featured=True, tags=['Lovable Drafts','Stitch Rapid','parallel design','example data','design review','prototyping'],
+ t=T('AI made design variants cheap. Now make them comparable: Lovable Drafts, Stitch Rapid and parallel design',
+     'AI 让设计方案变便宜了，接下来要让它们可比较：Lovable Drafts、Stitch Rapid 与并行设计',
+     'AI 讓設計方案變便宜了，接下來要讓它們可比較：Lovable Drafts、Stitch Rapid 與並行設計',
+     'AIでデザイン案は安くなった。次は比べられるようにする：Lovable Drafts、Stitch Rapid、並行デザイン',
+     'AI 덕분에 디자인 시안은 싸졌다. 이제 비교할 수 있게 만들자: Lovable Drafts, Stitch Rapid, 병렬 디자인',
+     'AI menjadikan variasi reka bentuk murah. Kini jadikan ia boleh dibandingkan: Lovable Drafts, Stitch Rapid dan reka bentuk selari',
+     'AI đã làm phương án thiết kế trở nên rẻ. Giờ hãy làm chúng so sánh được: Lovable Drafts, Stitch Rapid và thiết kế song song',
+     'L’IA a rendu les variantes de design bon marché. Rendez-les comparables : Lovable Drafts, Stitch Rapid et design parallèle',
+     'La IA abarató las variantes de diseño. Ahora hazlas comparables: Lovable Drafts, Stitch Rapid y diseño en paralelo',
+     'KI hat Designvarianten billig gemacht. Jetzt müssen sie vergleichbar werden: Lovable Drafts, Stitch Rapid und paralleles Design'),
+ s=T('On 16 November 2026 Lovable launched Drafts, full copies of an app with their own chat, preview and, usually, a backend filled with example data. Five days earlier Google began rolling out Stitch Rapid, which turns a rough prompt into a clickable multi-screen flow in about five seconds. One is high fidelity, one is a throwaway scratchpad, and both make parallel design nearly free. What each does, where the risks hide, our take on judging variants fairly, plus a checklist and an agent prompt.',
+     '2026 年 11 月 16 日，Lovable 推出 Drafts：应用的完整副本，各有自己的对话、预览，通常还带一个填满示例数据的后端。五天前，Google 开始逐步开放 Stitch Rapid，约 5 秒就能把一句粗略的提示变成可点击的多屏流程。一个高保真，一个是用完即弃的草稿板，两者都让并行设计几乎零成本。本文讲两者各做了什么、风险藏在哪、如何公平地评判多个方案，并附检查清单和智能体提示词。',
+     '2026 年 11 月 16 日，Lovable 推出 Drafts：應用的完整副本，各有自己的對話、預覽，通常還帶一個填滿範例資料的後端。五天前，Google 開始逐步開放 Stitch Rapid，約 5 秒就能把一句粗略的提示變成可點擊的多畫面流程。一個高保真，一個是用完即棄的草稿板，兩者都讓並行設計幾乎零成本。本文講兩者各做了什麼、風險藏在哪、如何公平地評判多個方案，並附檢查清單和智能體提示詞。',
+     '2026年11月16日、LovableはDraftsを公開した。アプリ丸ごとのコピーで、それぞれにチャットとプレビュー、多くの場合はサンプルデータ入りのバックエンドが付く。その5日前、GoogleはStitch Rapidの段階提供を始めた。ざっくりした指示から約5秒でクリックできる複数画面のフローを作る。片方は高忠実度、片方は使い捨てのスクラッチパッドで、どちらも並行デザインをほぼ無料にする。中身、リスクの所在、案を公平に比べるための見解、チェックリストとプロンプト付き。',
+     '2026년 11월 16일 Lovable은 Drafts를 출시했다. 앱 전체의 사본으로, 각자 채팅과 미리보기, 대개는 예시 데이터가 채워진 백엔드를 갖는다. 닷새 전 Google은 대략적인 프롬프트를 약 5초 만에 클릭 가능한 여러 화면 흐름으로 바꾸는 Stitch Rapid를 단계적으로 배포하기 시작했다. 하나는 고충실도, 하나는 쓰고 버리는 스크래치패드이며, 둘 다 병렬 디자인을 거의 공짜로 만든다. 각 도구의 기능, 위험이 숨은 곳, 시안을 공정하게 평가하는 법에 대한 견해, 체크리스트와 프롬프트 포함.',
+     'Pada 16 November 2026 Lovable melancarkan Drafts, salinan penuh aplikasi dengan sembang, pratonton dan biasanya backend sendiri yang diisi data contoh. Lima hari sebelumnya Google mula melancarkan Stitch Rapid, yang menukar prompt kasar kepada aliran berbilang skrin boleh klik dalam kira-kira lima saat. Satu berfideliti tinggi, satu lagi pad conteng sekali guna, dan kedua-duanya menjadikan reka bentuk selari hampir percuma. Apa yang dibuat setiap satu, di mana risikonya, pandangan kami tentang menilai variasi secara adil, senarai semak dan prompt ejen.',
+     'Ngày 16/11/2026, Lovable ra mắt Drafts: bản sao đầy đủ của ứng dụng, mỗi bản có chat, bản xem trước riêng và thường có backend riêng chứa dữ liệu mẫu. Năm ngày trước đó, Google bắt đầu triển khai Stitch Rapid, biến một prompt sơ sài thành luồng nhiều màn hình bấm được trong khoảng năm giây. Một bên độ trung thực cao, một bên là bảng nháp dùng xong bỏ, và cả hai khiến thiết kế song song gần như miễn phí. Mỗi công cụ làm gì, rủi ro nằm ở đâu, nhận định về cách đánh giá phương án công bằng, kèm checklist và prompt.',
+     'Le 16 novembre 2026, Lovable a lancé Drafts : des copies complètes d’une app, chacune avec son chat, son aperçu et, le plus souvent, un backend rempli de données d’exemple. Cinq jours plus tôt, Google commençait à déployer Stitch Rapid, qui transforme un prompt approximatif en parcours cliquable de plusieurs écrans en cinq secondes environ. L’un est haute fidélité, l’autre un brouillon jetable, et tous deux rendent le design parallèle presque gratuit. Ce que fait chacun, où se cachent les risques, notre avis pour juger les variantes équitablement, checklist et prompt.',
+     'El 16 de noviembre de 2026 Lovable lanzó Drafts: copias completas de una app, cada una con su chat, su vista previa y, normalmente, un backend lleno de datos de ejemplo. Cinco días antes Google empezó a desplegar Stitch Rapid, que convierte un prompt aproximado en un flujo clicable de varias pantallas en unos cinco segundos. Uno es de alta fidelidad y el otro un borrador desechable, y ambos hacen que el diseño en paralelo sea casi gratis. Qué hace cada uno, dónde están los riesgos, nuestra opinión para juzgar variantes con justicia, checklist y prompt.',
+     'Am 16. November 2026 startete Lovable Drafts: vollständige Kopien einer App mit eigenem Chat, eigener Vorschau und meist einem eigenen Backend voller Beispieldaten. Fünf Tage zuvor begann Google mit dem Rollout von Stitch Rapid, das aus einem groben Prompt in etwa fünf Sekunden einen klickbaren Ablauf über mehrere Screens macht. Das eine ist High-Fidelity, das andere ein Wegwerf-Notizblock, und beide machen paralleles Design fast kostenlos. Was beide tun, wo die Risiken liegen, unsere Sicht auf faires Vergleichen, Checkliste und Agent-Prompt.'),
+ en="""<p>Two launches a few days apart point the same way. On 16 November Lovable shipped <strong>Drafts</strong>: from the project name at the top of the editor you hit “New draft” and get a complete copy of your app, from design to database, with its own chat and preview. On 11 November Google started rolling out <strong>Stitch Rapid</strong>, an experiment in its Stitch design tool that turns a rough prompt or a screenshot into a clickable, medium-fidelity flow of several screens in about five seconds, with new variations about two seconds after a tap.</p>
+<p>They sit at opposite ends of fidelity, but they remove the same cost. Exploring three directions used to mean three times the work, so most teams quietly shipped their first idea and polished it. That cost is close to zero now. The new bottleneck is judging the variants, and that is a design-process problem, not a tooling one.</p>
+<h2>What each tool actually gives you</h2>
+<ul><li><strong>Lovable Drafts: a branch of the whole product.</strong> Each draft has its own chat, preview and edits, and you can compare drafts side by side or ask Lovable to spin up several versions. On a project that uses the built-in backend, a draft usually gets a backend of its own filled with example data, so a new dashboard shows months of bookings instead of an empty table. A project can hold up to 500 open drafts; an untouched new draft disappears after 24 hours.</li>
+<li><strong>Lovable Drafts: the data can be made consistent.</strong> Unless you say otherwise, Lovable writes a few example rows per table when it creates a draft. Ask it to create an example data file and it saves the rows in <code>db/seed.sql</code>, so every later draft starts from the same customers and bookings. For comparing designs, that file matters more than it sounds.</li>
+<li><strong>Lovable Drafts: accept is not fully reversible.</strong> Accepting adds the draft’s pages to your unpublished changes, but changes to database structure, storage settings and backend functions take effect in the live app immediately. Restoring an earlier version does not undo schema changes. Some drafts share the live backend (no “example data” banner above the preview), and in every draft secrets and connected services use their live values.</li>
+<li><strong>Stitch Rapid: a scratchpad for flows.</strong> Google calls it an early MVP. You pick one of seven design systems (Wireframe, Breeze and Material Design 3 among them, Auto by default), then edit on the canvas: right-click an element to ask for a change, double-click text to rewrite it, hold Space to speak an edit, or open a Tuner with sliders for size and spacing. Screens come pre-linked, and clicking an unlinked button while playing can generate the next screen.</li>
+<li><strong>Stitch Rapid: nothing is kept.</strong> The scratchpad is not saved between sessions. “Send to Stitch” moves a flow into regular Stitch for high-fidelity polish, and hands-on reports say the Rapid page reloads when you do, so download keepers as HTML first.</li></ul>
+<h2>Our take: the variant is cheap, the comparison is the work</h2>
+<p>Parallel design is old advice. Nielsen Norman Group’s guidance is three to five quick alternatives, then a merge, then iteration. In their 1996 study, picking the best of four parallel versions gave usability 56% above the average original, merging the best ideas gave 70%, and one further iteration on the merge reached 152%. Note what wins: the merge, not the winner. Tools that make ten variants in a minute tempt you to do the opposite, scroll through them, pick the prettiest and move on.</p>
+<p>Three things decide whether cheap variants actually improve the result. First, <strong>fidelity should match the question</strong>. “Which screens does onboarding need, in what order?” is a Stitch Rapid question; answering it in full app copies wastes review time on colours. “Does this dashboard still read when a clinic has 400 bookings a week?” needs real components and realistic data, which is what Drafts provide. Second, <strong>variants must differ on purpose</strong>. Name the one axis each direction changes (density, navigation model, tone) and keep everything else fixed, or you cannot tell what caused the difference. Third, <strong>the data must be the same</strong>. A draft with three tidy rows will always beat one shown with a messy, realistic week. A shared seed file with long names, empty states and outliers is a design asset; treat it like your type scale.</p>
+<p>The risks are about what is shared, not what is copied. In Lovable the screens are isolated but schema changes go live on accept, and secrets and integrations are live everywhere, so a “test” email from a draft is a real email. In Stitch Rapid the risk is the opposite: nothing persists, so a good direction can vanish with a tab.</p>
+<h2>A workflow that keeps the benefit</h2>
+<ol><li><strong>Write the brief once.</strong> Goal, audience, the three to five key screens, and what success looks like. Every variant gets the same brief.</li>
+<li><strong>Explore flows at low fidelity.</strong> Use Stitch Rapid or a wireframe system to settle screen count and order. Download every keeper as HTML before sending it on.</li>
+<li><strong>Fix the seed data.</strong> Create one example data file with realistic volume, long strings, empty and error cases, and one extreme user. All drafts start from it.</li>
+<li><strong>Branch three directions, one axis each.</strong> Name drafts by the axis (“dense table”, “card timeline”, “calm summary”), not “v2”.</li>
+<li><strong>Review side by side against the brief.</strong> Same tasks, same data, same viewport, light and dark. Ideally show each person two or three versions and vary the order.</li>
+<li><strong>Merge, then iterate.</strong> Take the best parts into one direction, record why the others lost, delete the rest, and only then accept and publish.</li></ol>
+<h2>Checklist before you accept a draft</h2>
+<ul><li>Does the draft have its own backend (example data banner) or share the live one?</li>
+<li>Will accepting change tables, access rules, storage or backend functions? Those go live at once and a restore will not undo them.</li>
+<li>Did anything in the draft call a live integration, such as email, payments or webhooks?</li>
+<li>Were all variants judged on the same seed data and the same tasks?</li>
+<li>Is the losing directions’ best idea carried into the merge, and is the reason written down?</li>
+<li>Were light, dark and a narrow mobile width checked after the merge?</li></ul>
+<pre><code># Paste this into your design or coding agent
+Create 3 design directions for <screen or flow> from the brief below.
+- Each direction changes ONE axis only: <e.g. density | navigation | tone>.
+  Name each draft after its axis. Keep copy, data and components identical otherwise.
+- Use the shared seed data in <db/seed.sql>: include a long name, an empty state,
+  an error state and one heavy user. Do not invent extra rows per direction.
+- Do not change the database schema, access rules or any live integration.
+- For each direction: screenshots at 1280px and 390px, light and dark,
+  plus 3 sentences on what it optimises for and what it sacrifices.
+- Then propose ONE merged direction that keeps the best idea from each,
+  and list what you dropped and why. Wait for my approval before accepting anything.</code></pre>
+<p>UI Hub related reading: <a href="../lovable-bolt-prompt-to-app/">Lovable and Bolt, prompt to app</a>, <a href="../prompt-to-ui-tools-compared/">prompt-to-UI tools compared</a> and <a href="../annotate-dont-describe-visual-prompts/">annotate, don’t describe</a>.</p>""",
+ zh="""<p>相隔几天的两次发布指向同一个方向。11 月 16 日，Lovable 推出 <strong>Drafts</strong>：在编辑器顶部点项目名，再点「New draft」，就会得到应用的完整副本——从设计到数据库，各有自己的对话和预览。11 月 11 日，Google 开始逐步开放 <strong>Stitch Rapid</strong>，这是 Stitch 设计工具里的一个实验：把一句粗略的提示或一张截图，在约 5 秒内变成可点击的中保真多屏流程，点一下约 2 秒就出新的变体。</p>
+<p>两者在保真度的两端，却消除了同一种成本。以前探索三个方向意味着三倍工作量，所以大多数团队默默上线了第一个想法再去打磨。现在这项成本几乎为零，新的瓶颈变成了评判这些方案——这是设计流程问题，不是工具问题。</p>
+<h2>两款工具实际给了你什么</h2>
+<ul><li><strong>Lovable Drafts：整个产品的一个分支。</strong>每个草稿有自己的对话、预览和改动，可以并排比较，也可以让 Lovable 一次生成几个版本。使用内置后端的项目，草稿通常有自己的后端并填好示例数据，于是新仪表盘里看到的是几个月的预约，而不是一张空表。一个项目最多可同时开 500 个草稿；新建后 24 小时无人动过的草稿会被自动移除。</li>
+<li><strong>Lovable Drafts：数据可以统一。</strong>默认情况下，Lovable 建草稿时会为每张表写几行示例数据。让它创建一个示例数据文件，它会把这些行存进 <code>db/seed.sql</code>，之后每个草稿都从同一批客户和预约开始。对比较设计来说，这个文件比听上去重要得多。</li>
+<li><strong>Lovable Drafts：接受（Accept）并非完全可逆。</strong>接受会把草稿的页面加入未发布的改动，但数据库结构、存储设置和后端函数的改动会立即在线上应用中生效，恢复旧版本也撤销不了结构变更。有些草稿共用线上后端（预览上方没有「示例数据」横幅），而且所有草稿里的密钥和已连接服务都是线上值。</li>
+<li><strong>Stitch Rapid：流程的草稿板。</strong>Google 称它为早期 MVP。你先从 7 种设计系统里选一个（包括 Wireframe、Breeze、Material Design 3，默认 Auto），然后直接在画布上改：右键元素提出修改、双击文字就地改写、按住空格用语音下指令，或打开 Tuner 用滑块调字号和间距。生成的屏幕已经连好跳转，播放时点一个没连线的按钮，还能当场生成下一屏。</li>
+<li><strong>Stitch Rapid：什么都不保存。</strong>草稿板不跨会话保存。「Send to Stitch」会把流程送进常规 Stitch 做高保真精修，而上手报道称这一步会让 Rapid 页面刷新，所以要先把想留的方案下载成 HTML。</li></ul>
+<h2>我们的看法：方案便宜了，比较才是真正的工作</h2>
+<p>并行设计是老建议。Nielsen Norman Group 的做法是：快速做三到五个备选，合并，再迭代。在他们 1996 年的研究里，从四个并行版本中挑最好的一个，可用性比原始版本平均高 56%；把各版本的好点子合并，高 70%；在合并版上再迭代一轮，达到 152%。注意胜出的是「合并」，而不是「冠军」。一分钟出十个方案的工具，诱惑你做相反的事：划一遍，挑最好看的，继续。</p>
+<p>便宜的方案能否真正改善结果，取决于三件事。第一，<strong>保真度要匹配问题</strong>。「新手引导需要哪几屏、什么顺序？」是 Stitch Rapid 的问题，用完整应用副本来回答，只会把评审时间浪费在颜色上；「一家诊所一周 400 个预约时，这个仪表盘还看得清吗？」则需要真实组件和逼真数据，这正是 Drafts 提供的。第二，<strong>方案之间要有目的地不同</strong>。给每个方向写明它只改变的那一个维度（密度、导航模式、语气），其余保持不变，否则你说不清差异从哪来。第三，<strong>数据必须一样</strong>。只有三行整齐数据的草稿，永远会赢过展示一周真实杂乱数据的那个。一份共享的种子数据——有长名字、空状态和极端值——是设计资产，要像对待字号阶梯一样对待它。</p>
+<p>风险在于「共享了什么」，而不是「复制了什么」。在 Lovable 里，界面是隔离的，但结构变更在接受时上线，密钥和集成到处都是线上的，所以从草稿发出的「测试」邮件是真邮件。Stitch Rapid 的风险正相反：什么都不留存，好方向可能随一个标签页一起消失。</p>
+<h2>保住收益的工作流</h2>
+<ol><li><strong>只写一次简报。</strong>目标、受众、三到五个关键屏、成功标准。每个方案用同一份简报。</li>
+<li><strong>低保真探索流程。</strong>用 Stitch Rapid 或线框系统定下屏数和顺序。送走之前，把每个想留的方案下载成 HTML。</li>
+<li><strong>固定种子数据。</strong>建一个示例数据文件：真实的数据量、长字符串、空状态和错误状态，外加一个极端用户。所有草稿都从它开始。</li>
+<li><strong>分出三个方向，每个只改一个维度。</strong>按维度给草稿命名（「密集表格」「卡片时间线」「安静摘要」），而不是「v2」。</li>
+<li><strong>对照简报并排评审。</strong>同样的任务、同样的数据、同样的视口，亮色和暗色都看。最好每人只看两三个版本，并轮换顺序。</li>
+<li><strong>先合并，再迭代。</strong>把各方向最好的部分合进一个方向，写下其他方向落选的原因，删掉其余草稿，然后才接受和发布。</li></ol>
+<h2>接受草稿前的检查清单</h2>
+<ul><li>这个草稿有自己的后端（有示例数据横幅），还是共用线上后端？</li>
+<li>接受后会改表、访问规则、存储或后端函数吗？这些会立即上线，恢复版本也撤销不了。</li>
+<li>草稿里有没有调用过线上集成，比如邮件、支付或 Webhook？</li>
+<li>所有方案是否用同一份种子数据、同一组任务来评判？</li>
+<li>落选方向里最好的点子是否带进了合并版，原因是否写了下来？</li>
+<li>合并后是否检查了亮色、暗色和窄屏手机宽度？</li></ul>
+<pre><code># 把这段贴给你的设计或编程智能体
+根据下面的简报，为 <页面或流程> 做 3 个设计方向。
+- 每个方向只改变一个维度：<例如 密度 | 导航 | 语气>。
+  用该维度给草稿命名。其余文案、数据和组件保持一致。
+- 使用 <db/seed.sql> 里的共享种子数据：包含一个长名字、一个空状态、
+  一个错误状态和一个重度用户。不要为某个方向单独编造数据。
+- 不要修改数据库结构、访问规则或任何线上集成。
+- 每个方向：1280px 和 390px 宽、亮色和暗色截图，
+  外加 3 句话说明它优化了什么、牺牲了什么。
+- 然后提出一个合并方向，保留每个方向最好的想法，
+  并列出舍弃了什么及原因。接受任何改动前等我确认。</code></pre>
+<p>UI Hub 相关阅读：<a href="../lovable-bolt-prompt-to-app/">Lovable 与 Bolt：从提示到应用</a>、<a href="../prompt-to-ui-tools-compared/">提示生成界面工具对比</a>，以及<a href="../annotate-dont-describe-visual-prompts/">标注，而不是描述</a>。</p>""",
+ refs=[('Now you can explore any idea in parallel without touching what’s live','Lovable blog','https://lovable.dev/blog/introducing-drafts'),('Explore changes with drafts','Lovable Docs','https://docs.lovable.dev/features/drafts'),('Revert and restore your project with version history','Lovable Docs','https://docs.lovable.dev/features/projects/history'),('Collaboration','Lovable Docs','https://docs.lovable.dev/features/collaboration'),('Google releases experimental “Stitch Rapid”: multi-screen prototypes in about five seconds (in Japanese)','gihyo.jp','https://gihyo.jp/article/2026/11/stitch-rapid'),('What is Google “Stitch Rapid”? Where the five-second multi-screen prototype experiment fits, and its caveats (in Japanese)','chot Inc.','https://chot-inc.com/columns/google-stitch-rapid-multi-screen-prototype'),('Stitch by Google (official account, Stitch Rapid thread, 11 Nov 2026)','X · @stitchbygoogle','https://x.com/stitchbygoogle'),('Introducing “vibe design” with Stitch','Google blog','https://blog.google/innovation-and-ai/models-and-research/google-labs/stitch-ai-ui-design/'),('3 Design Processes for High Usability: Iterative Design, Parallel Design, and Competitive Testing','Therese Fessenden · Nielsen Norman Group','https://www.nngroup.com/articles/parallel-and-iterative-design/')]),
+
 ]
