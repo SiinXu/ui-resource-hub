@@ -1,6 +1,6 @@
 {
  "generated": "2026-11-17",
- "count": 5131,
+ "count": 5133,
  "items": [
   {
    "id": "ued-transitions-dev-craft",
@@ -193361,6 +193361,103 @@
    },
    "pub": "2026-11-17",
    "added": "2026-11-17"
+  },
+  {
+   "id": "rd-wstxmxc-elevenlabs-feature-cards",
+   "name": "ElevenLabs Feature Cards",
+   "url": "https://x.com/RomaTesla/status/2122316404066242649",
+   "note": "A scrolling set of three-column feature card layouts for ElevenLabs, each card pairing a rich media thumbnail with a title and short description of an AI audio or video capability.",
+   "noteEn": "A scrolling set of three-column feature card layouts for ElevenLabs, each card pairing a rich media thumbnail with a title and short description of an AI audio or video capability.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@romatesla",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/wstxmxc-elevenlabs-feature-cards",
+   "rdkind": "Design",
+   "rdcat": "Interface",
+   "rdstyle": [
+    "Minimal",
+    "Light"
+   ],
+   "author": {
+    "name": "Roman Tesliuk",
+    "handle": "@romatesla",
+    "url": "https://x.com/romatesla"
+   },
+   "x_post": "https://x.com/RomaTesla/status/2122316404066242649",
+   "xsrc": {
+    "post": "https://x.com/RomaTesla/status/2122316404066242649",
+    "author": "@RomaTesla",
+    "likes": 737,
+    "bookmarks": 665,
+    "reposts": 17,
+    "impressions": 17427,
+    "date": "2026-11-16"
+   },
+   "pub": "2026-11-17",
+   "added": "2026-11-17"
+  },
+  {
+   "id": "rd-cy0vkfh-shader-page-transition",
+   "name": "Shader Page Transition",
+   "url": "https://x.com/saintdsgn/status/2122389933327524262",
+   "note": "A page-transition shader cycles a minimal layout through dark, iridescent, and green aurora states, with an inspector exposing warp, chromatic split, and bokeh controls.",
+   "noteEn": "A page-transition shader cycles a minimal layout through dark, iridescent, and green aurora states, with an inspector exposing warp, chromatic split, and bokeh controls.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@saintdsgn",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "motion"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "gradient"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/cy0vkfh-shader-page-transition",
+   "rdkind": "Design",
+   "rdcat": "Motion",
+   "rdstyle": [
+    "Abstract",
+    "Experimental",
+    "Gradient"
+   ],
+   "author": {
+    "name": "saint",
+    "handle": "@saintdsgn",
+    "url": "https://x.com/saintdsgn"
+   },
+   "x_post": "https://x.com/saintdsgn/status/2122389933327524262",
+   "xsrc": {
+    "post": "https://x.com/saintdsgn/status/2122389933327524262",
+    "author": "@saintdsgn",
+    "likes": 825,
+    "bookmarks": 682,
+    "reposts": 22,
+    "impressions": 28859,
+    "date": "2026-11-16"
+   },
+   "pub": "2026-11-17",
+   "added": "2026-11-17"
   }
  ],
  "guides": [
@@ -193563,5 +193660,5 @@
    ]
   }
  ],
- "updatedAt": "2026-11-17T09:42Z"
+ "updatedAt": "2026-11-17T21:53Z"
 }
