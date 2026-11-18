@@ -1,6 +1,6 @@
 /* UI Hub · Mobile topic. Reuses ../styles.css and the Hub's card markup; no styles of its own. */
 (function(){
-var I=window.MT_I18N, D=window.MT_DATA||[], LANG=window.__uhL||'zh-CN';
+var I=window.MT_I18N, D=window.MT_DATA||[], LANG=window.__uhL||'en';
 var CATS=['app','shot','kit','pattern','inspo','flow','store','motion','comp','asset','skill','guide','web'], PLATS=['ios','android','rn','flutter','web','cross'];
 D=D.map(function(x,k){return [x,k]}).sort(function(a,b){return (CATS.indexOf(a[0].cat)-CATS.indexOf(b[0].cat))||(a[1]-b[1])}).map(function(x){return x[0]});
 var st={c:'',p:'',q:''}, PAGE=48, shown=PAGE;
