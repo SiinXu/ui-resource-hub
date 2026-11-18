@@ -422,3 +422,4 @@ curl -s https://ui.incidental.site/api/resources.json | jq --arg d "$(date -u -d
 - Magic UI vs Aceternity vs React Bits: compare the licence before the effects — https://ui.incidental.site/kb/note/blog-magic-ui-vs-aceternity-vs-react-bits.md
 - Agents can now restyle the apps you use. Give them a theme contract, not your class names — https://ui.incidental.site/kb/note/blog-agents-restyle-apps-theme-contract.md
 - AI made design variants cheap. Now make them comparable: Lovable Drafts, Stitch Rapid and parallel design — https://ui.incidental.site/kb/note/blog-parallel-design-directions-drafts-stitch-rapid.md
+- Design the AI off switch: what Flodesk and Firefox teach about global AI controls — https://ui.incidental.site/kb/note/blog-ai-off-switch-global-ai-controls.md

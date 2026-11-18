@@ -3221,4 +3221,113 @@ Create 3 design directions for <screen or flow> from the brief below.
 <p>UI Hub 相关阅读：<a href="../lovable-bolt-prompt-to-app/">Lovable 与 Bolt：从提示到应用</a>、<a href="../prompt-to-ui-tools-compared/">提示生成界面工具对比</a>，以及<a href="../annotate-dont-describe-visual-prompts/">标注，而不是描述</a>。</p>""",
  refs=[('Now you can explore any idea in parallel without touching what’s live','Lovable blog','https://lovable.dev/blog/introducing-drafts'),('Explore changes with drafts','Lovable Docs','https://docs.lovable.dev/features/drafts'),('Revert and restore your project with version history','Lovable Docs','https://docs.lovable.dev/features/projects/history'),('Collaboration','Lovable Docs','https://docs.lovable.dev/features/collaboration'),('Google releases experimental “Stitch Rapid”: multi-screen prototypes in about five seconds (in Japanese)','gihyo.jp','https://gihyo.jp/article/2026/11/stitch-rapid'),('What is Google “Stitch Rapid”? Where the five-second multi-screen prototype experiment fits, and its caveats (in Japanese)','chot Inc.','https://chot-inc.com/columns/google-stitch-rapid-multi-screen-prototype'),('Stitch by Google (official account, Stitch Rapid thread, 11 Nov 2026)','X · @stitchbygoogle','https://x.com/stitchbygoogle'),('Introducing “vibe design” with Stitch','Google blog','https://blog.google/innovation-and-ai/models-and-research/google-labs/stitch-ai-ui-design/'),('3 Design Processes for High Usability: Iterative Design, Parallel Design, and Competitive Testing','Therese Fessenden · Nielsen Norman Group','https://www.nngroup.com/articles/parallel-and-iterative-design/')]),
 
+dict(slug='ai-off-switch-global-ai-controls', date='2026-11-18', cat='craft', series=None, featured=True, tags=['AI kill switch','AI controls','settings UX','Flodesk','Firefox','trust'],
+ t=T('Design the AI off switch: what Flodesk and Firefox teach about global AI controls',
+     '设计 AI 关闭开关：从 Flodesk 和 Firefox 看全局 AI 控制怎么做',
+     '設計 AI 關閉開關：從 Flodesk 和 Firefox 看全域 AI 控制怎麼做',
+     'AIのオフスイッチを設計する：FlodeskとFirefoxに学ぶグローバルAIコントロール',
+     'AI 끄기 스위치 설계하기: Flodesk와 Firefox에서 배우는 전역 AI 제어',
+     'Reka bentuk suis matikan AI: apa yang Flodesk dan Firefox ajar tentang kawalan AI global',
+     'Thiết kế công tắc tắt AI: bài học từ Flodesk và Firefox về điều khiển AI toàn cục',
+     'Concevoir l’interrupteur qui coupe l’IA : ce que Flodesk et Firefox enseignent sur les contrôles IA globaux',
+     'Diseña el interruptor para apagar la IA: lo que Flodesk y Firefox enseñan sobre controles globales de IA',
+     'Den KI-Ausschalter gestalten: was Flodesk und Firefox über globale KI-Einstellungen lehren'),
+ s=T('On 17 November 2026 Flodesk moved its AI email designer into the main product and shipped, alongside it, one toggle that turns AI off across the whole account. Firefox has offered a similar “Block AI enhancements” switch since version 148. An off switch looks like a settings detail, but it is really a statement of scope, and getting that scope right is design work. What the two products do, our take on what makes an off switch trustworthy, plus a build checklist and an agent prompt.',
+     '2026 年 11 月 17 日，Flodesk 把 AI 邮件设计工具并入主产品，同时上线了一个开关：一键关掉整个账号里的 AI。Firefox 从 148 版起就有类似的「阻止 AI 增强功能」开关。关闭开关看上去只是设置页的一个细节，其实是一份「范围声明」，把范围说清楚本身就是设计工作。本文讲两款产品具体怎么做、我们认为怎样的关闭开关才值得信任，并附实现检查清单和智能体提示词。',
+     '2026 年 11 月 17 日，Flodesk 把 AI 郵件設計工具併入主產品，同時上線了一個開關：一鍵關掉整個帳號裡的 AI。Firefox 從 148 版起就有類似的「封鎖 AI 增強功能」開關。關閉開關看起來只是設定頁的一個細節，其實是一份「範圍聲明」，把範圍說清楚本身就是設計工作。本文講兩款產品具體怎麼做、我們認為怎樣的關閉開關才值得信任，並附實作檢查清單和智能體提示詞。',
+     '2026年11月17日、FlodeskはAIメールデザインツールを本体に統合し、アカウント全体のAIを一つのトグルで止められる機能も同時に出した。Firefoxもバージョン148から「AI拡張機能をブロック」というスイッチを提供している。オフスイッチは設定画面の細部に見えるが、実際には「範囲の宣言」であり、その範囲を正しく決めることはデザインの仕事だ。両製品の中身、信頼できるオフスイッチの条件についての見解、実装チェックリストとエージェント用プロンプト付き。',
+     '2026년 11월 17일 Flodesk는 AI 이메일 디자인 도구를 본 제품에 통합하면서, 계정 전체의 AI를 한 번에 끄는 토글도 함께 내놓았다. Firefox도 148 버전부터 비슷한 “AI 향상 기능 차단” 스위치를 제공한다. 끄기 스위치는 설정 화면의 사소한 요소처럼 보이지만 실제로는 “범위 선언”이며, 그 범위를 제대로 정하는 일은 디자인 작업이다. 두 제품이 하는 일, 신뢰할 수 있는 끄기 스위치에 대한 견해, 구현 체크리스트와 에이전트 프롬프트 포함.',
+     'Pada 17 November 2026 Flodesk memindahkan pereka e-mel AI ke dalam produk utama dan, bersamanya, melancarkan satu togol yang mematikan AI di seluruh akaun. Firefox telah menawarkan suis “Block AI enhancements” yang serupa sejak versi 148. Suis matikan nampak seperti butiran tetapan, tetapi sebenarnya ia satu kenyataan skop, dan menetapkan skop itu dengan betul ialah kerja reka bentuk. Apa yang dibuat kedua-dua produk, pandangan kami tentang suis yang boleh dipercayai, senarai semak binaan dan prompt ejen.',
+     'Ngày 17/11/2026, Flodesk đưa công cụ thiết kế email bằng AI vào sản phẩm chính và kèm theo một công tắc tắt AI trên toàn bộ tài khoản. Firefox đã có công tắc “Block AI enhancements” tương tự từ phiên bản 148. Công tắc tắt trông như một chi tiết cài đặt, nhưng thực chất là một tuyên bố phạm vi, và xác định đúng phạm vi đó là việc của thiết kế. Hai sản phẩm làm gì, nhận định về một công tắc đáng tin, kèm checklist triển khai và prompt cho agent.',
+     'Le 17 novembre 2026, Flodesk a intégré son designer d’e-mails IA au produit principal et a livré en même temps un interrupteur qui coupe l’IA sur tout le compte. Firefox propose un interrupteur « Bloquer les améliorations IA » similaire depuis la version 148. Un interrupteur d’arrêt ressemble à un détail de réglages, mais c’est en réalité une déclaration de périmètre, et bien fixer ce périmètre est un travail de design. Ce que font les deux produits, notre avis sur un interrupteur digne de confiance, checklist et prompt.',
+     'El 17 de noviembre de 2026 Flodesk integró su diseñador de emails con IA en el producto principal y lanzó a la vez un interruptor que apaga la IA en toda la cuenta. Firefox ofrece un interruptor similar, «Bloquear mejoras de IA», desde la versión 148. Un interruptor de apagado parece un detalle de ajustes, pero en realidad es una declaración de alcance, y definir bien ese alcance es trabajo de diseño. Qué hacen ambos productos, nuestra opinión sobre un interruptor fiable, checklist y prompt.',
+     'Am 17. November 2026 hat Flodesk seinen KI-E-Mail-Designer ins Hauptprodukt geholt und gleichzeitig einen Schalter ausgeliefert, der KI im ganzen Konto abschaltet. Firefox bietet mit „KI-Verbesserungen blockieren“ seit Version 148 etwas Ähnliches. Ein Ausschalter wirkt wie ein Detail in den Einstellungen, ist aber eine Aussage über den Umfang, und diesen Umfang richtig festzulegen ist Designarbeit. Was beide Produkte tun, unsere Sicht auf vertrauenswürdige Ausschalter, Checkliste und Agent-Prompt.'),
+ en="""<p>On 17 November Flodesk, an email marketing platform for small businesses and creators, brought <strong>Flodesk Studio</strong>, its prompt-to-create email designer, inside the main product. The same release added what the company calls an <strong>AI kill switch</strong>: in Account settings → AI, one toggle turns off every AI feature in the account, including prompt-to-create, subject line generation and “refine text”. With it off, the Prompt to Create option no longer appears when you start a new email, and you can turn it back on at any time. The announcement is blunt about why: most companies have refused to build this, or their off switch does not fully turn AI off.</p>
+<p>Flodesk is not the first. Firefox 148, which rolled out on 24 February 2026, added an <strong>AI controls</strong> section to desktop settings with a single “Block AI enhancements” switch plus per-feature controls. And on the same day as Flodesk, SNO, a website platform for student newsrooms, launched AI design widgets with a different kind of promise: the AI never sees your stories or photos, because the code is generated outside SNO and pasted in by you. Three products, three ways of telling users where AI stops. For anyone designing an AI-enabled product, the off switch is becoming part of the interface, not an afterthought in a legal page.</p>
+<h2>What the two switches actually do</h2>
+<ul><li><strong>Flodesk: one account-wide toggle.</strong> It covers the three generative features by name. The manual drag-and-drop builder stays fully usable, and Flodesk’s help centre even has a newsletter guide written for people who work with AI turned off. The help article also states that member content is not used to train AI models, by Flodesk or by Anthropic, the provider behind the feature.</li>
+<li><strong>Firefox: a master switch with per-feature overrides.</strong> “Block AI enhancements” hides current <em>and future</em> AI features and the pop-ups that promote them. Each feature (translations, alt text in PDFs, AI tab grouping, link previews, the sidebar chatbot) also has a dropdown with three states: Available (you can see and use it), Enabled (you opted in) and Blocked (hidden and unusable). You can block everything and still keep, say, translations. Mozilla says the choices persist across updates.</li>
+<li><strong>Firefox is explicit about what the switch does not cover.</strong> Its guide separates newer AI-enhanced features from the ranking and classification systems browsers have used for years, and its support page notes that extensions calling third-party AI services are not stopped by the switch.</li></ul>
+<h2>Our take: an off switch is a scope statement</h2>
+<p>A toggle labelled “AI” only earns trust if the user can predict exactly what changes when they flip it. That turns a one-line setting into four design decisions.</p>
+<p><strong>First, name the scope, both ways.</strong> List what turns off, and say what does not. Flodesk lists its three features; Firefox draws the line between generative features and older machine learning. “AI” on its own is too vague a label: users will assume spam filters, search ranking or autocomplete are included unless you tell them otherwise. Microsoft’s 2019 Guidelines for Human-AI Interaction already had a rule for this (“provide global controls”); what has changed is that users now go looking for the switch.</p>
+<p><strong>Second, off means gone, not greyed out.</strong> Both products remove the entry points rather than disabling them, and Firefox also stops the promotional pop-ups. A sparkle button that is still visible but dead, or a “Try AI” banner that comes back next week, tells the user the switch is cosmetic. The <em>future</em> part matters too: a switch that only covers today’s features is broken by your next launch.</p>
+<p><strong>Third, the no-AI path must be a complete product.</strong> A kill switch is only honest if everything still works without it. Flodesk can offer one because its full builder predates Studio. If your onboarding, empty states or templates now assume the AI writes the first draft, turning AI off will leave people staring at blank screens. Test the product with the switch off as a first-class flow, with screenshots, like any other state.</p>
+<p><strong>Fourth, keep the feature switch and the data promise separate.</strong> “Does AI appear in my product?” and “What does the AI see, and is it used for training?” are different questions. SNO answers the second one without offering a toggle at all; Flodesk answers both in separate places. Users will read a toggle as an answer to whichever question worries them, so put a one-line data statement right under it.</p>
+<p>Finally, it is a toggle, so the old toggle rules apply. Nielsen Norman Group’s guidance is that switches should take effect immediately, with clear labels. If turning AI off needs a save button, a reload or a confirmation dialog, use a different control or fix the flow.</p>
+<h2>How to build one</h2>
+<ol><li><strong>Inventory every AI touchpoint.</strong> Buttons, menu items, inline suggestions, generated defaults, onboarding steps, emails and promos. Put them in one registry with a feature id and a one-line plain-language name.</li>
+<li><strong>Gate them all with one flag, plus overrides.</strong> A global value (on / off) and, if you have several features, a per-feature state that can re-enable one while the rest stay off. New features must register before they ship, so the switch covers the future by default.</li>
+<li><strong>Remove, don’t disable.</strong> When off, entry points and promos disappear and layouts close the gap. No disabled sparkle buttons, no upsell banners.</li>
+<li><strong>Design the no-AI empty states.</strong> Templates, blank-canvas guidance and manual tools should carry the user where the AI used to.</li>
+<li><strong>Persist and scope it.</strong> Save the choice server-side so it survives updates and follows the user across devices. Decide whether it is per user, per workspace or set by an admin, and show who set it.</li>
+<li><strong>Write the labels.</strong> Title, a sentence listing what turns off, a sentence on what stays, and a link to the data policy. Apply immediately and confirm with a quiet inline message.</li></ol>
+<h2>Checklist before you ship an AI switch</h2>
+<ul><li>Does the description list every feature it turns off, and name what stays (search, ranking, spam filtering)?</li>
+<li>With it off, are all AI entry points and promotional messages gone, on web, mobile and in emails?</li>
+<li>Will a feature launched next month respect the switch without extra work?</li>
+<li>Can someone block everything but keep one feature they like?</li>
+<li>Does every core task still work end to end with AI off, including onboarding and empty states?</li>
+<li>Does the choice survive app updates, sign-out and a new device?</li>
+<li>Is there a plain statement next to the switch about what data the AI sees and whether it trains on it?</li>
+<li>Do light, dark and narrow mobile layouts look finished with the AI elements removed?</li></ul>
+<pre><code># Paste this into your design or coding agent
+Add a global "AI features" setting to this app.
+- First list every AI touchpoint you can find (buttons, menus,
+  suggestions, generated defaults, onboarding, promos) with file paths.
+  Wait for my confirmation of the list.
+- Create one registry of AI features (id, plain-language name) and gate
+  every touchpoint through it: global on/off plus per-feature override.
+  Any new AI feature must register to render.
+- When off, remove entry points and promos; do not show disabled buttons.
+  Fill the gap with the manual path or a non-AI empty state.
+- Settings copy: title, one sentence on what turns off, one on what
+  stays, and a link to the data policy. Apply immediately, no save button.
+- Persist the choice server-side. Then screenshot the main flows with AI
+  on and off, light and dark, at 1280px and 390px.</code></pre>
+<p>Related reading on UI Hub: <a href="../agent-approval-ui-budgets-interruptions/">Approval UI for agents</a>, <a href="../accessibility-in-ai-generated-ui/">Accessibility in AI-generated UI</a> and <a href="../native-popover-dialog-overlays-for-ai-ui/">Native popovers and dialogs for AI UI</a>.</p>""",
+ zh="""<p>11 月 17 日，面向小商家和创作者的邮件营销平台 Flodesk，把它的「一句话生成邮件」设计工具 <strong>Flodesk Studio</strong> 并入了主产品。同一次发布还加了官方所说的 <strong>AI 关闭开关（AI kill switch）</strong>：在 账户设置 → AI 里，一个开关就能关掉账号里所有 AI 功能，包括一句话生成、主题行生成和「润色文字」。关掉之后，新建邮件时不再出现 Prompt to Create 入口，随时可以再打开。发布稿说得很直白：大多数公司拒绝做这个开关，或者他们的关闭开关并不能真正关掉 AI。</p>
+<p>Flodesk 不是第一个。2026 年 2 月 24 日推送的 Firefox 148 在桌面版设置里加了 <strong>AI 控制</strong>一栏：一个「阻止 AI 增强功能」总开关，外加逐项功能的控制。和 Flodesk 同一天，面向学生媒体的建站平台 SNO 上线了 AI 设计组件，给出的是另一种承诺：AI 永远看不到你的报道和照片，因为代码在 SNO 之外生成、由你自己粘贴进来。三个产品，三种告诉用户「AI 到哪里为止」的方式。对设计 AI 产品的人来说，关闭开关正在变成界面的一部分，而不是法律页面里的附注。</p>
+<h2>两个开关具体做了什么</h2>
+<ul><li><strong>Flodesk：一个账号级开关。</strong>它点名覆盖三个生成式功能。手动拖拽编辑器完全可用，帮助中心甚至有一篇专门写给「关掉 AI 工作」的人的通讯发送教程。帮助文章还说明，会员内容不会被 Flodesk 或其 AI 供应商 Anthropic 用来训练模型。</li>
+<li><strong>Firefox：总开关加逐项覆盖。</strong>「阻止 AI 增强功能」会隐藏现有<em>和未来</em>的 AI 功能，以及推广它们的弹窗。每个功能（网页翻译、PDF 图片替代文字、AI 标签页分组、链接预览、侧栏聊天机器人）还有一个三态下拉：可用（看得到、能用）、已启用（你主动开启）、已阻止（隐藏且不能用）。你可以全部阻止，同时只保留翻译。Mozilla 表示这些选择在升级后依然保留。</li>
+<li><strong>Firefox 明确说了开关不管什么。</strong>它的指南把新的 AI 增强功能和浏览器用了多年的排序、分类系统区分开；支持页面也注明，调用第三方 AI 服务的扩展不受这个开关限制。</li></ul>
+<h2>我们的看法：关闭开关是一份范围声明</h2>
+<p>一个标着「AI」的开关，只有当用户能准确预料拨动后会发生什么时，才值得信任。这让一行设置变成了四个设计决策。</p>
+<p><strong>第一，把范围说清楚，正反两面都要说。</strong>列出会关掉什么，也说明不会关掉什么。Flodesk 列出了三个功能；Firefox 划清了生成式功能和老式机器学习的界线。单写一个「AI」太含糊：除非你说明，用户会以为垃圾邮件过滤、搜索排序、自动补全都包括在内。微软 2019 年的《人机交互指南》里早有一条（「提供全局控制」）；变化在于，现在用户会主动去找这个开关。</p>
+<p><strong>第二，关掉就是消失，而不是变灰。</strong>两个产品都是移除入口而不是禁用入口，Firefox 还会停掉推广弹窗。一个还看得见却点不动的闪光按钮，或者下周又冒出来的「试试 AI」横幅，都在告诉用户这个开关只是摆设。「未来」这部分也很重要：只覆盖现有功能的开关，会被你下一次发布打破。</p>
+<p><strong>第三，没有 AI 的路径必须是完整的产品。</strong>只有关掉 AI 后一切照常能用，关闭开关才是诚实的。Flodesk 能提供这个开关，是因为它的完整编辑器早于 Studio 就存在。如果你的新手引导、空状态或模板已经默认由 AI 写第一稿，关掉 AI 就会让用户对着空白屏幕。把「开关关闭」当成一等流程来测试，像其他状态一样截图。</p>
+<p><strong>第四，功能开关和数据承诺要分开。</strong>「我的产品里出不出现 AI？」和「AI 看到了什么、会不会拿去训练？」是两个问题。SNO 根本没有开关，只回答了第二个问题；Flodesk 在不同地方分别回答了两个。用户会把开关理解成对他最担心那个问题的回答，所以在开关下方紧跟一句数据说明。</p>
+<p>最后，它终究是个开关，老规矩依然适用。Nielsen Norman Group 的建议是：开关应当立即生效，标签要清楚。如果关掉 AI 还要点保存、刷新页面或确认弹窗，就换一种控件，或者修好流程。</p>
+<h2>怎么实现</h2>
+<ol><li><strong>盘点每一个 AI 触点。</strong>按钮、菜单项、行内建议、AI 生成的默认值、新手引导步骤、邮件和推广。全部放进一个注册表，每项有功能 id 和一句大白话名称。</li>
+<li><strong>一个总开关控制全部，外加逐项覆盖。</strong>一个全局值（开 / 关），功能多的话再加逐项状态，可以在其余关闭时单独打开某一项。新功能上线前必须先注册，这样开关默认就覆盖未来。</li>
+<li><strong>移除，而不是禁用。</strong>关闭时入口和推广全部消失，布局把空位收拢。不留变灰的闪光按钮，不留升级横幅。</li>
+<li><strong>设计「无 AI」的空状态。</strong>模板、空白画布引导和手动工具，要接住原来由 AI 承担的那一步。</li>
+<li><strong>持久化并确定作用范围。</strong>把选择存在服务端，升级后不丢、换设备也跟着走。决定它是按用户、按工作区还是由管理员设置，并显示是谁设置的。</li>
+<li><strong>写好文案。</strong>标题、一句话列出会关掉什么、一句话说明保留什么、再链接到数据政策。立即生效，用一条安静的行内提示确认。</li></ol>
+<h2>上线 AI 开关前的检查清单</h2>
+<ul><li>说明文字是否列出了它关掉的每个功能，并点名保留的部分（搜索、排序、垃圾过滤）？</li>
+<li>关闭后，网页、移动端和邮件里的所有 AI 入口和推广信息是否都消失了？</li>
+<li>下个月上线的新功能，不做额外工作也会遵守这个开关吗？</li>
+<li>用户能否全部阻止、只保留一个喜欢的功能？</li>
+<li>关闭 AI 后，每个核心任务（包括新手引导和空状态）能否从头走到尾？</li>
+<li>这个选择在应用升级、退出登录和换新设备后还在吗？</li>
+<li>开关旁边有没有一句大白话说明 AI 能看到哪些数据、是否用于训练？</li>
+<li>去掉 AI 元素后，亮色、暗色和窄屏手机布局看起来是否完整？</li></ul>
+<pre><code># 把这段贴给你的设计或编程智能体
+给这个应用加一个全局「AI 功能」设置。
+- 先列出你能找到的每个 AI 触点（按钮、菜单、建议、
+  AI 生成的默认值、新手引导、推广），附文件路径。等我确认清单。
+- 建一个 AI 功能注册表（id、大白话名称），所有触点都经过它：
+  全局开 / 关，加逐项覆盖。新的 AI 功能必须注册后才能渲染。
+- 关闭时移除入口和推广，不显示禁用按钮；
+  用手动路径或非 AI 的空状态填补空位。
+- 设置文案：标题、一句话说明关掉什么、一句话说明保留什么，
+  再链接数据政策。立即生效，不要保存按钮。
+- 在服务端持久化这个选择。然后在 AI 开 / 关、亮色 / 暗色、
+  1280px 和 390px 下截图主要流程。</code></pre>
+<p>UI Hub 相关阅读：<a href="../agent-approval-ui-budgets-interruptions/">智能体的审批界面</a>、<a href="../accessibility-in-ai-generated-ui/">AI 生成界面的无障碍</a>，以及<a href="../native-popover-dialog-overlays-for-ai-ui/">AI 界面的原生弹层与对话框</a>。</p>""",
+ refs=[('Flodesk Brings Studio Inside Its Platform With a Whole New Way to Create Emails','Flodesk via PR Newswire','https://www.prnewswire.com/news-releases/flodesk-brings-studio-inside-its-platform-with-a-whole-new-way-to-create-emails-302941983.html'),('Create an email from a prompt in Flodesk (incl. how to turn off AI features)','Flodesk Help Center','https://help.flodesk.com/en/articles/14449281'),('How to send a newsletter in Flodesk','Flodesk Help Center','https://help.flodesk.com/en/articles/4482113'),('Official information about Flodesk (AI)','Flodesk','https://flodesk.com/ai-information'),('AI controls are coming to Firefox','Ajit Varma · Mozilla blog','https://blog.mozilla.org/en/firefox/ai-controls/'),('How to turn off AI features in Firefox, or choose the ones you want','Mozilla blog','https://blog.mozilla.org/en/firefox/how-to-use-ai-controls/'),('Firefox AI controls','Mozilla Support','https://support.mozilla.org/en-US/kb/firefox-ai-controls'),('A new way to design your SNO site, on your terms','SNO Sites','https://snosites.com/news-announcements/2026/11/17/a-new-way-to-design-your-sno-site-on-your-terms/'),('Provide global controls (Guideline 17)','Microsoft HAX Toolkit','https://www.microsoft.com/en-us/haxtoolkit/guideline/provide-global-controls/'),('Guidelines for Human-AI Interaction','Saleema Amershi et al. · Microsoft Research (CHI 2019)','https://www.microsoft.com/en-us/research/publication/guidelines-for-human-ai-interaction/'),('Toggle-Switch Guidelines','Alita Kendrick · Nielsen Norman Group','https://www.nngroup.com/articles/toggle-switch-guidelines/')]),
+
 ]

@@ -1,5 +1,5 @@
 {
- "count": 57,
+ "count": 58,
  "rss": "https://ui.incidental.site/blog/rss.xml",
  "categories": {
   "tools": "Tools",
@@ -18,6 +18,108 @@
   "weekly": "Series: Weekly roundup"
  },
  "posts": [
+  {
+   "slug": "ai-off-switch-global-ai-controls",
+   "url": "https://ui.incidental.site/blog/ai-off-switch-global-ai-controls/",
+   "date": "2026-11-18",
+   "category": "craft",
+   "series": null,
+   "featured": true,
+   "tags": [
+    "AI kill switch",
+    "AI controls",
+    "settings UX",
+    "Flodesk",
+    "Firefox",
+    "trust"
+   ],
+   "title": {
+    "en": "Design the AI off switch: what Flodesk and Firefox teach about global AI controls",
+    "zh": "设计 AI 关闭开关：从 Flodesk 和 Firefox 看全局 AI 控制怎么做",
+    "zht": "設計 AI 關閉開關：從 Flodesk 和 Firefox 看全域 AI 控制怎麼做",
+    "ja": "AIのオフスイッチを設計する：FlodeskとFirefoxに学ぶグローバルAIコントロール",
+    "ko": "AI 끄기 스위치 설계하기: Flodesk와 Firefox에서 배우는 전역 AI 제어",
+    "ms": "Reka bentuk suis matikan AI: apa yang Flodesk dan Firefox ajar tentang kawalan AI global",
+    "vi": "Thiết kế công tắc tắt AI: bài học từ Flodesk và Firefox về điều khiển AI toàn cục",
+    "fr": "Concevoir l’interrupteur qui coupe l’IA : ce que Flodesk et Firefox enseignent sur les contrôles IA globaux",
+    "es": "Diseña el interruptor para apagar la IA: lo que Flodesk y Firefox enseñan sobre controles globales de IA",
+    "de": "Den KI-Ausschalter gestalten: was Flodesk und Firefox über globale KI-Einstellungen lehren"
+   },
+   "summary": {
+    "en": "On 17 November 2026 Flodesk moved its AI email designer into the main product and shipped, alongside it, one toggle that turns AI off across the whole account. Firefox has offered a similar “Block AI enhancements” switch since version 148. An off switch looks like a settings detail, but it is really a statement of scope, and getting that scope right is design work. What the two products do, our take on what makes an off switch trustworthy, plus a build checklist and an agent prompt.",
+    "zh": "2026 年 11 月 17 日，Flodesk 把 AI 邮件设计工具并入主产品，同时上线了一个开关：一键关掉整个账号里的 AI。Firefox 从 148 版起就有类似的「阻止 AI 增强功能」开关。关闭开关看上去只是设置页的一个细节，其实是一份「范围声明」，把范围说清楚本身就是设计工作。本文讲两款产品具体怎么做、我们认为怎样的关闭开关才值得信任，并附实现检查清单和智能体提示词。",
+    "zht": "2026 年 11 月 17 日，Flodesk 把 AI 郵件設計工具併入主產品，同時上線了一個開關：一鍵關掉整個帳號裡的 AI。Firefox 從 148 版起就有類似的「封鎖 AI 增強功能」開關。關閉開關看起來只是設定頁的一個細節，其實是一份「範圍聲明」，把範圍說清楚本身就是設計工作。本文講兩款產品具體怎麼做、我們認為怎樣的關閉開關才值得信任，並附實作檢查清單和智能體提示詞。",
+    "ja": "2026年11月17日、FlodeskはAIメールデザインツールを本体に統合し、アカウント全体のAIを一つのトグルで止められる機能も同時に出した。Firefoxもバージョン148から「AI拡張機能をブロック」というスイッチを提供している。オフスイッチは設定画面の細部に見えるが、実際には「範囲の宣言」であり、その範囲を正しく決めることはデザインの仕事だ。両製品の中身、信頼できるオフスイッチの条件についての見解、実装チェックリストとエージェント用プロンプト付き。",
+    "ko": "2026년 11월 17일 Flodesk는 AI 이메일 디자인 도구를 본 제품에 통합하면서, 계정 전체의 AI를 한 번에 끄는 토글도 함께 내놓았다. Firefox도 148 버전부터 비슷한 “AI 향상 기능 차단” 스위치를 제공한다. 끄기 스위치는 설정 화면의 사소한 요소처럼 보이지만 실제로는 “범위 선언”이며, 그 범위를 제대로 정하는 일은 디자인 작업이다. 두 제품이 하는 일, 신뢰할 수 있는 끄기 스위치에 대한 견해, 구현 체크리스트와 에이전트 프롬프트 포함.",
+    "ms": "Pada 17 November 2026 Flodesk memindahkan pereka e-mel AI ke dalam produk utama dan, bersamanya, melancarkan satu togol yang mematikan AI di seluruh akaun. Firefox telah menawarkan suis “Block AI enhancements” yang serupa sejak versi 148. Suis matikan nampak seperti butiran tetapan, tetapi sebenarnya ia satu kenyataan skop, dan menetapkan skop itu dengan betul ialah kerja reka bentuk. Apa yang dibuat kedua-dua produk, pandangan kami tentang suis yang boleh dipercayai, senarai semak binaan dan prompt ejen.",
+    "vi": "Ngày 17/11/2026, Flodesk đưa công cụ thiết kế email bằng AI vào sản phẩm chính và kèm theo một công tắc tắt AI trên toàn bộ tài khoản. Firefox đã có công tắc “Block AI enhancements” tương tự từ phiên bản 148. Công tắc tắt trông như một chi tiết cài đặt, nhưng thực chất là một tuyên bố phạm vi, và xác định đúng phạm vi đó là việc của thiết kế. Hai sản phẩm làm gì, nhận định về một công tắc đáng tin, kèm checklist triển khai và prompt cho agent.",
+    "fr": "Le 17 novembre 2026, Flodesk a intégré son designer d’e-mails IA au produit principal et a livré en même temps un interrupteur qui coupe l’IA sur tout le compte. Firefox propose un interrupteur « Bloquer les améliorations IA » similaire depuis la version 148. Un interrupteur d’arrêt ressemble à un détail de réglages, mais c’est en réalité une déclaration de périmètre, et bien fixer ce périmètre est un travail de design. Ce que font les deux produits, notre avis sur un interrupteur digne de confiance, checklist et prompt.",
+    "es": "El 17 de noviembre de 2026 Flodesk integró su diseñador de emails con IA en el producto principal y lanzó a la vez un interruptor que apaga la IA en toda la cuenta. Firefox ofrece un interruptor similar, «Bloquear mejoras de IA», desde la versión 148. Un interruptor de apagado parece un detalle de ajustes, pero en realidad es una declaración de alcance, y definir bien ese alcance es trabajo de diseño. Qué hacen ambos productos, nuestra opinión sobre un interruptor fiable, checklist y prompt.",
+    "de": "Am 17. November 2026 hat Flodesk seinen KI-E-Mail-Designer ins Hauptprodukt geholt und gleichzeitig einen Schalter ausgeliefert, der KI im ganzen Konto abschaltet. Firefox bietet mit „KI-Verbesserungen blockieren“ seit Version 148 etwas Ähnliches. Ein Ausschalter wirkt wie ein Detail in den Einstellungen, ist aber eine Aussage über den Umfang, und diesen Umfang richtig festzulegen ist Designarbeit. Was beide Produkte tun, unsere Sicht auf vertrauenswürdige Ausschalter, Checkliste und Agent-Prompt."
+   },
+   "reading_minutes": {
+    "en": 6,
+    "zh": 6
+   },
+   "cover": "https://ui.incidental.site/blog/img/ai-off-switch-global-ai-controls-cover.webp",
+   "references": [
+    {
+     "title": "Flodesk Brings Studio Inside Its Platform With a Whole New Way to Create Emails",
+     "by": "Flodesk via PR Newswire",
+     "url": "https://www.prnewswire.com/news-releases/flodesk-brings-studio-inside-its-platform-with-a-whole-new-way-to-create-emails-302941983.html"
+    },
+    {
+     "title": "Create an email from a prompt in Flodesk (incl. how to turn off AI features)",
+     "by": "Flodesk Help Center",
+     "url": "https://help.flodesk.com/en/articles/14449281"
+    },
+    {
+     "title": "How to send a newsletter in Flodesk",
+     "by": "Flodesk Help Center",
+     "url": "https://help.flodesk.com/en/articles/4482113"
+    },
+    {
+     "title": "Official information about Flodesk (AI)",
+     "by": "Flodesk",
+     "url": "https://flodesk.com/ai-information"
+    },
+    {
+     "title": "AI controls are coming to Firefox",
+     "by": "Ajit Varma · Mozilla blog",
+     "url": "https://blog.mozilla.org/en/firefox/ai-controls/"
+    },
+    {
+     "title": "How to turn off AI features in Firefox, or choose the ones you want",
+     "by": "Mozilla blog",
+     "url": "https://blog.mozilla.org/en/firefox/how-to-use-ai-controls/"
+    },
+    {
+     "title": "Firefox AI controls",
+     "by": "Mozilla Support",
+     "url": "https://support.mozilla.org/en-US/kb/firefox-ai-controls"
+    },
+    {
+     "title": "A new way to design your SNO site, on your terms",
+     "by": "SNO Sites",
+     "url": "https://snosites.com/news-announcements/2026/11/17/a-new-way-to-design-your-sno-site-on-your-terms/"
+    },
+    {
+     "title": "Provide global controls (Guideline 17)",
+     "by": "Microsoft HAX Toolkit",
+     "url": "https://www.microsoft.com/en-us/haxtoolkit/guideline/provide-global-controls/"
+    },
+    {
+     "title": "Guidelines for Human-AI Interaction",
+     "by": "Saleema Amershi et al. · Microsoft Research (CHI 2019)",
+     "url": "https://www.microsoft.com/en-us/research/publication/guidelines-for-human-ai-interaction/"
+    },
+    {
+     "title": "Toggle-Switch Guidelines",
+     "by": "Alita Kendrick · Nielsen Norman Group",
+     "url": "https://www.nngroup.com/articles/toggle-switch-guidelines/"
+    }
+   ]
+  },
   {
    "slug": "parallel-design-directions-drafts-stitch-rapid",
    "url": "https://ui.incidental.site/blog/parallel-design-directions-drafts-stitch-rapid/",
