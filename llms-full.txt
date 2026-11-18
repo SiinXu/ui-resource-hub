@@ -1,6 +1,6 @@
 # UI Hub
 
-> Curated, multilingual directory of 5145 public UI resources (component libraries, component style demos, effects, design systems, design skills for AI agents) plus original blog analysis of AI design techniques. Data updated 2026-11-18 09:03 UTC.
+> Curated, multilingual directory of 5151 public UI resources (component libraries, component style demos, effects, design systems, design skills for AI agents) plus original blog analysis of AI design techniques. Data updated 2026-11-18 21:34 UTC.
 
 Use the JSON endpoints, not the SPA, when acting as an agent. Every entry links to its original site; licenses belong to the original authors.
 
@@ -142,11 +142,11 @@ Use the JSON endpoints, not the SPA, when acting as an agent. Every entry links 
 - [visx](https://airbnb.io/visx/): Airbnb's low-level visualization components
 
 ## FAQ
-- **What is UI Hub?** A free, curated directory of 5145 public UI resources: 247 component libraries, 1989 component style demos with light/dark screenshots, 70 design skills for AI agents, plus effects, templates, specs and tutorials. It links to original sites and never hosts paid source code.
+- **What is UI Hub?** A free, curated directory of 5151 public UI resources: 247 component libraries, 1989 component style demos with light/dark screenshots, 70 design skills for AI agents, plus effects, templates, specs and tutorials. It links to original sites and never hosts paid source code.
 - **How do I find a component in a given style?** Load https://ui.incidental.site/api/resources.json and filter by ct (component kind, e.g. "dialog") and vs (visual style, e.g. "minimal" or "motion"). type="style" entries are concrete component demos with a libName and page URL; type="library" entries are whole libraries with install info on the site.
 - **Which skills should an agent use for good UI?** One direction skill (frontend-design or taste-skill), emil-design-eng for motion and interaction polish, then impeccable, baseline-ui, web-design-guidelines and accessibility as an audit pass. See https://ui.incidental.site/api/skills.json.
 - **Can I copy the code?** Open-source libraries can be used under their own licenses (MIT, Apache-2.0 etc.); the card shows the original link. Paid tiers (marked paid/freemium) must be bought from the original vendor.
-- **How often is it updated?** Daily via a GitHub Actions job that adds new UI repositories and tools from GitHub, awesome-shadcn-ui and Hacker News. Nothing is deleted. Last update: 2026-11-18 09:03 UTC.
+- **How often is it updated?** Daily via a GitHub Actions job that adds new UI repositories and tools from GitHub, awesome-shadcn-ui and Hacker News. Nothing is deleted. Last update: 2026-11-18 21:34 UTC.
 
 
 # Blog posts (full text, English)
@@ -6049,6 +6049,12 @@ Get Hyped. Get Noticed. Get Results.
 - NVIDIA Earnings Call Poster | inspiration | https://x.com/Quartr_App/status/2122759531356930150 | Event announcement poster for NVIDIA's Q3 FY2027 earnings call, using a moody dark photograph of a leather jacket on a coat rack as its central image.
 - Bioluminescent Creature Scan | inspiration | https://x.com/fredremotion/status/2122844630886572036 | Animated motion study tracking bioluminescent sea creatures with live HUD annotation boxes and anatomy labels cycling across each specimen on a black ground.
 - Slash Card Onboarding Flow | inspiration | https://x.com/alyx_so/status/2122849828367393228 | Cinematic Blender-rendered onboarding for Slash, a business Visa card, stepping through card activation and feature highlights with 3D-animated card and packagi
+- Rotating Money Stack | inspiration | https://x.com/alexabraham/status/2123130420711612841 | A 3D rendered brick of custom $100 bills branded Global Town Square with X logos on the band, rotating through a continuous orbit on a white ground.
+- Chrome X Logo | inspiration | https://vercel.com/x | A beveled X logomark rendered in 3D cycles through material states from flat black to mirror chrome to warm golden reflections in a looping animation.
+- Night Dive Pixel Animation | inspiration | https://x.com/anikrisn/status/2122850545551479212 | Pixel-art character dives through a morphing dark tunnel of bioluminescent green terrain, passing through eyes, grids, and spiral forms in a looping animated se
+- Scroll Text Disintegration Effect | inspiration | https://x.com/jamesm/status/2123100098204709026 | A dark editorial webpage where scrolling triggers a disintegration effect on select text lines, causing letterforms to blur, fragment, and scatter before resolv
+- Prismatic Forms | inspiration | https://x.com/nono_ai_archive/status/2122988750250901956 | Traditional East Asian vessels, stands, and a wind bell rendered with shifting iridescent materials cycle through an animated showcase on a white ground.
+- Stripe Press Shelf | inspiration | https://Stripe.press | A Stripe Press website presents books as a browsable shelf with 3D covers and page-flip reading views.
 
 # Component style demos: 1989 entries, see api/resources.json (type=style)
 

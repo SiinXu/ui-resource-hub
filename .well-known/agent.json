@@ -11,7 +11,7 @@
   "skills": "https://ui.incidental.site/api/skills.json",
   "sitemap": "https://ui.incidental.site/sitemap.xml"
  },
- "updated": "2026-11-18 09:03 UTC",
+ "updated": "2026-11-18 21:34 UTC",
  "auth": "none",
  "rate_limit": "static files, be polite"
 }

@@ -1,6 +1,6 @@
 {
  "generated": "2026-11-18",
- "count": 5145,
+ "count": 5151,
  "items": [
   {
    "id": "ued-transitions-dev-craft",
@@ -194008,6 +194008,311 @@
    },
    "pub": "2026-11-18",
    "added": "2026-11-18"
+  },
+  {
+   "id": "rd-90zsuhe-rotating-money-stack",
+   "name": "Rotating Money Stack",
+   "url": "https://x.com/alexabraham/status/2123130420711612841",
+   "note": "A 3D rendered brick of custom $100 bills branded Global Town Square with X logos on the band, rotating through a continuous orbit on a white ground.",
+   "noteEn": "A 3D rendered brick of custom $100 bills branded Global Town Square with X logos on the band, rotating through a continuous orbit on a white ground.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@alexabraham",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "motion"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "3d"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/90zsuhe-rotating-money-stack",
+   "rdkind": "Design",
+   "rdcat": "Motion",
+   "rdstyle": [
+    "3D",
+    "Light"
+   ],
+   "author": {
+    "name": "alex",
+    "handle": "@alexabraham",
+    "url": "https://x.com/alexabraham"
+   },
+   "x_post": "https://x.com/alexabraham/status/2123130420711612841",
+   "xsrc": {
+    "post": "https://x.com/alexabraham/status/2123130420711612841",
+    "author": "@alexabraham",
+    "likes": 141,
+    "bookmarks": 8,
+    "reposts": 4,
+    "impressions": 2603,
+    "date": "2026-11-18"
+   },
+   "pub": "2026-11-18",
+   "added": "2026-11-18"
+  },
+  {
+   "id": "rd-aw41t7h-chrome-x-logo-animation",
+   "name": "Chrome X Logo",
+   "url": "https://vercel.com/x",
+   "note": "A beveled X logomark rendered in 3D cycles through material states from flat black to mirror chrome to warm golden reflections in a looping animation.",
+   "noteEn": "A beveled X logomark rendered in 3D cycles through material states from flat black to mirror chrome to warm golden reflections in a looping animation.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@evilrabbit_",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "motion"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal",
+    "3d"
+   ],
+   "origin": "site",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/aw41t7h-chrome-x-logo-animation",
+   "rdkind": "Design",
+   "rdcat": "Motion",
+   "rdstyle": [
+    "Minimal",
+    "3D",
+    "Light"
+   ],
+   "author": {
+    "name": "Evil Rabbit",
+    "handle": "@evilrabbit_",
+    "url": "https://x.com/evilrabbit_"
+   },
+   "x_post": "https://x.com/evilrabbit_/status/2123085968274293043",
+   "xsrc": {
+    "post": "https://x.com/evilrabbit_/status/2123085968274293043",
+    "author": "@evilrabbit_",
+    "likes": 194,
+    "bookmarks": 60,
+    "reposts": 7,
+    "impressions": 10078,
+    "date": "2026-11-18"
+   },
+   "official": "https://vercel.com/x",
+   "pub": "2026-11-18",
+   "added": "2026-11-18"
+  },
+  {
+   "id": "rd-3oxzw7f-night-dive-pixel-animation",
+   "name": "Night Dive Pixel Animation",
+   "url": "https://x.com/anikrisn/status/2122850545551479212",
+   "note": "Pixel-art character dives through a morphing dark tunnel of bioluminescent green terrain, passing through eyes, grids, and spiral forms in a looping animated sequence.",
+   "noteEn": "Pixel-art character dives through a morphing dark tunnel of bioluminescent green terrain, passing through eyes, grids, and spiral forms in a looping animated sequence.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@anikrisn",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "motion"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "retro"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/3oxzw7f-night-dive-pixel-animation",
+   "rdkind": "Design",
+   "rdcat": "Motion",
+   "rdstyle": [
+    "Experimental",
+    "Retro",
+    "Dark"
+   ],
+   "author": {
+    "name": "Ani",
+    "handle": "@anikrisn",
+    "url": "https://x.com/anikrisn"
+   },
+   "x_post": "https://x.com/anikrisn/status/2122850545551479212",
+   "xsrc": {
+    "post": "https://x.com/anikrisn/status/2122850545551479212",
+    "author": "@anikrisn",
+    "likes": 1045,
+    "bookmarks": 230,
+    "reposts": 69,
+    "impressions": 14751,
+    "date": "2026-11-18"
+   },
+   "pub": "2026-11-18",
+   "added": "2026-11-18"
+  },
+  {
+   "id": "rd-t3hk5ld-scroll-text-disintegration-effect",
+   "name": "Scroll Text Disintegration Effect",
+   "url": "https://x.com/jamesm/status/2123100098204709026",
+   "note": "A dark editorial webpage where scrolling triggers a disintegration effect on select text lines, causing letterforms to blur, fragment, and scatter before resolving into clean serif type.",
+   "noteEn": "A dark editorial webpage where scrolling triggers a disintegration effect on select text lines, causing letterforms to blur, fragment, and scatter before resolving into clean serif type.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@tcosta",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal",
+    "editorial"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/t3hk5ld-scroll-text-disintegration-effect",
+   "rdkind": "Design",
+   "rdcat": "Web",
+   "rdstyle": [
+    "Typographic",
+    "Minimal",
+    "Editorial",
+    "Dark",
+    "Black & White"
+   ],
+   "author": {
+    "name": "James McDonald",
+    "handle": "@tcosta",
+    "url": "https://x.com/tcosta"
+   },
+   "x_post": "https://x.com/jamesm/status/2123100098204709026",
+   "xsrc": {
+    "post": "https://x.com/jamesm/status/2123100098204709026",
+    "author": "@jamesm",
+    "likes": 19,
+    "bookmarks": 10,
+    "reposts": 1,
+    "impressions": 952,
+    "date": "2026-11-18"
+   },
+   "pub": "2026-11-18",
+   "added": "2026-11-18"
+  },
+  {
+   "id": "rd-uc3xmxq-prismatic-forms",
+   "name": "Prismatic Forms",
+   "url": "https://x.com/nono_ai_archive/status/2122988750250901956",
+   "note": "Traditional East Asian vessels, stands, and a wind bell rendered with shifting iridescent materials cycle through an animated showcase on a white ground.",
+   "noteEn": "Traditional East Asian vessels, stands, and a wind bell rendered with shifting iridescent materials cycle through an animated showcase on a white ground.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@nono_ai_archive",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "motion"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "3d"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/uc3xmxq-prismatic-forms",
+   "rdkind": "Design",
+   "rdcat": "Motion",
+   "rdstyle": [
+    "Experimental",
+    "3D",
+    "Vibrant",
+    "Light"
+   ],
+   "author": {
+    "name": "노노아카이브",
+    "handle": "@nono_ai_archive",
+    "url": "https://x.com/nono_ai_archive"
+   },
+   "x_post": "https://x.com/nono_ai_archive/status/2122988750250901956",
+   "xsrc": {
+    "post": "https://x.com/nono_ai_archive/status/2122988750250901956",
+    "author": "@nono_ai_archive",
+    "likes": 434,
+    "bookmarks": 188,
+    "reposts": 25,
+    "impressions": 8985,
+    "date": "2026-11-18"
+   },
+   "pub": "2026-11-18",
+   "added": "2026-11-18"
+  },
+  {
+   "id": "rd-0czighg-stripe-press-shelf",
+   "name": "Stripe Press Shelf",
+   "url": "https://Stripe.press",
+   "note": "A Stripe Press website presents books as a browsable shelf with 3D covers and page-flip reading views.",
+   "noteEn": "A Stripe Press website presents books as a browsable shelf with 3D covers and page-flip reading views.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@stripepress",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "3d"
+   ],
+   "origin": "site",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/0czighg-stripe-press-shelf",
+   "rdkind": "Design",
+   "rdcat": "Web",
+   "rdstyle": [
+    "3D",
+    "Light"
+   ],
+   "author": {
+    "name": "Katie Dill",
+    "handle": "@stripepress",
+    "url": "https://x.com/stripepress"
+   },
+   "x_post": "https://x.com/lil_dill/status/2122726317892468876",
+   "xsrc": {
+    "post": "https://x.com/lil_dill/status/2122726317892468876",
+    "author": "@lil_dill",
+    "likes": 261,
+    "bookmarks": 79,
+    "reposts": 15,
+    "impressions": 9719,
+    "date": "2026-11-17"
+   },
+   "official": "https://Stripe.press",
+   "pub": "2026-11-18",
+   "added": "2026-11-18"
   }
  ],
  "guides": [
@@ -194210,5 +194515,5 @@
    ]
   }
  ],
- "updatedAt": "2026-11-18T09:03Z"
+ "updatedAt": "2026-11-18T21:34Z"
 }
