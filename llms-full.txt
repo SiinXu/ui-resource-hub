@@ -1,6 +1,6 @@
 # UI Hub
 
-> Curated, multilingual directory of 5133 public UI resources (component libraries, component style demos, effects, design systems, design skills for AI agents) plus original blog analysis of AI design techniques. Data updated 2026-11-17 21:53 UTC.
+> Curated, multilingual directory of 5135 public UI resources (component libraries, component style demos, effects, design systems, design skills for AI agents) plus original blog analysis of AI design techniques. Data updated 2026-11-18 07:23 UTC.
 
 Use the JSON endpoints, not the SPA, when acting as an agent. Every entry links to its original site; licenses belong to the original authors.
 
@@ -141,11 +141,11 @@ Use the JSON endpoints, not the SPA, when acting as an agent. Every entry links 
 - [visx](https://airbnb.io/visx/): Airbnb's low-level visualization components
 
 ## FAQ
-- **What is UI Hub?** A free, curated directory of 5133 public UI resources: 245 component libraries, 1989 component style demos with light/dark screenshots, 70 design skills for AI agents, plus effects, templates, specs and tutorials. It links to original sites and never hosts paid source code.
+- **What is UI Hub?** A free, curated directory of 5135 public UI resources: 247 component libraries, 1989 component style demos with light/dark screenshots, 70 design skills for AI agents, plus effects, templates, specs and tutorials. It links to original sites and never hosts paid source code.
 - **How do I find a component in a given style?** Load https://ui.incidental.site/api/resources.json and filter by ct (component kind, e.g. "dialog") and vs (visual style, e.g. "minimal" or "motion"). type="style" entries are concrete component demos with a libName and page URL; type="library" entries are whole libraries with install info on the site.
 - **Which skills should an agent use for good UI?** One direction skill (frontend-design or taste-skill), emil-design-eng for motion and interaction polish, then impeccable, baseline-ui, web-design-guidelines and accessibility as an audit pass. See https://ui.incidental.site/api/skills.json.
 - **Can I copy the code?** Open-source libraries can be used under their own licenses (MIT, Apache-2.0 etc.); the card shows the original link. Paid tiers (marked paid/freemium) must be bought from the original vendor.
-- **How often is it updated?** Daily via a GitHub Actions job that adds new UI repositories and tools from GitHub, awesome-shadcn-ui and Hacker News. Nothing is deleted. Last update: 2026-11-17 21:53 UTC.
+- **How often is it updated?** Daily via a GitHub Actions job that adds new UI repositories and tools from GitHub, awesome-shadcn-ui and Hacker News. Nothing is deleted. Last update: 2026-11-18 07:23 UTC.
 
 
 # Blog posts (full text, English)
@@ -5976,6 +5976,8 @@ Get Hyped. Get Noticed. Get Results.
 - Paper Airplanes Footer | inspiration | https://x.com/jeanxcrj/status/2122471910214873291 | The Sedrus website footer triggers an animated 3D desk scene where paper airplanes collect among scattered branded documents and envelopes as the cursor approac
 - ElevenLabs Feature Cards | inspiration | https://x.com/RomaTesla/status/2122316404066242649 | A scrolling set of three-column feature card layouts for ElevenLabs, each card pairing a rich media thumbnail with a title and short description of an AI audio 
 - Shader Page Transition | inspiration | https://x.com/saintdsgn/status/2122389933327524262 | A page-transition shader cycles a minimal layout through dark, iridescent, and green aurora states, with an inspector exposing warp, chromatic split, and bokeh 
+- material-design-3-ui-skill | library | https://github.com/skydashnet/material-design-3-ui-skill | New GitHub UI repo: A reusable Agent Skill for designing, reviewing, and implementing UI/UX with Google Material Design 3, Material You, M3 Expressive, accessib
+- TKCode.Arc | library | https://docs.tkcode.si/ | New GitHub UI repo: Arc-style (uiarc.dev) component library for Avalonia, built on AtomUI (★310, MIT, AIDotNet/TKCode.Arc)
 
 # Component style demos: 1989 entries, see api/resources.json (type=style)
 

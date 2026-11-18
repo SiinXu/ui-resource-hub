@@ -1,6 +1,6 @@
 {
- "generated": "2026-11-17",
- "count": 5133,
+ "generated": "2026-11-18",
+ "count": 5135,
  "items": [
   {
    "id": "ued-transitions-dev-craft",
@@ -193458,6 +193458,62 @@
    },
    "pub": "2026-11-17",
    "added": "2026-11-17"
+  },
+  {
+   "id": "gh-skydashnet-material-design-3-ui-skill",
+   "name": "material-design-3-ui-skill",
+   "url": "https://github.com/skydashnet/material-design-3-ui-skill",
+   "note": "GitHub 新晋 UI 仓库：A reusable Agent Skill for designing, reviewing, and implementing UI/UX with Google Material Design 3, Material You, M3 Expressive, accessibility, adaptive layouts, and semantic de（GitHub ★323，MIT 许可，仓库 skydashnet/material-design-3-ui-skill）",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "GitHub",
+   "pricing": "free",
+   "tags": [
+    "HTML",
+    "开源",
+    "自动收录"
+   ],
+   "ct": [
+    "chat"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "New GitHub UI repo: A reusable Agent Skill for designing, reviewing, and implementing UI/UX with Google Material Design 3, Material You, M3 Expressive, accessibility, adaptive layouts, and semantic de (★323, MIT, skydashnet/material-design-3-ui-skill)",
+   "added": "2026-11-18"
+  },
+  {
+   "id": "gh-aidotnet-tkcode-arc",
+   "name": "TKCode.Arc",
+   "url": "https://docs.tkcode.si/",
+   "note": "GitHub 新晋 UI 仓库：Arc-style (uiarc.dev) component library for Avalonia, built on AtomUI（GitHub ★310，MIT 许可，仓库 AIDotNet/TKCode.Arc）",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "GitHub",
+   "pricing": "free",
+   "tags": [
+    "HTML",
+    "开源",
+    "自动收录"
+   ],
+   "ct": [
+    "chat"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "New GitHub UI repo: Arc-style (uiarc.dev) component library for Avalonia, built on AtomUI (★310, MIT, AIDotNet/TKCode.Arc)",
+   "added": "2026-11-18"
   }
  ],
  "guides": [
@@ -193660,5 +193716,5 @@
    ]
   }
  ],
- "updatedAt": "2026-11-17T21:53Z"
+ "updatedAt": "2026-11-18T07:23Z"
 }
