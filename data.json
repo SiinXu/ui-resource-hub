@@ -1,6 +1,6 @@
 {
- "generated": "2026-11-18",
- "count": 5151,
+ "generated": "2026-11-19",
+ "count": 5164,
  "items": [
   {
    "id": "ued-transitions-dev-craft",
@@ -194313,6 +194313,372 @@
    "official": "https://Stripe.press",
    "pub": "2026-11-18",
    "added": "2026-11-18"
+  },
+  {
+   "id": "aw-medium-zoom-francoischalifour-com-react",
+   "name": "medium-zoom",
+   "url": "https://medium-zoom.francoischalifour.com/react",
+   "note": "awesome-shadcn-ui 收录：Image zoom for React with keyboard controls and theme-aware styling, powered by medium-zoom.",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Image zoom for React with keyboard controls and theme-aware styling, powered by medium-zoom.",
+   "added": "2026-11-19"
+  },
+  {
+   "id": "aw-github-com-yayaw-sas-yayaw-table",
+   "name": "yayaw-table",
+   "url": "https://github.com/Yayaw-SAS/Yayaw-Table",
+   "note": "awesome-shadcn-ui 收录：Shadcn Table System",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "table"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Shadcn Table System",
+   "added": "2026-11-19"
+  },
+  {
+   "id": "aw-brioui-com",
+   "name": "brio-ui",
+   "url": "https://brioui.com/",
+   "note": "awesome-shadcn-ui 收录：Everyday React components with the edge cases handled, installed from its own shadcn registry, one file each; 10 are free under MIT and the rest need a paid Pro licence.",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Everyday React components with the edge cases handled, installed from its own shadcn registry, one file each; 10 are free under MIT and the rest need a paid Pro licence.",
+   "added": "2026-11-19"
+  },
+  {
+   "id": "aw-dashral-com",
+   "name": "dashral",
+   "url": "https://dashral.com",
+   "note": "awesome-shadcn-ui 收录：MIT-licensed shadcn registry (`@dashral`) of 100+ accessible React components for admin dashboards, with charts in plain SVG, pickers, a data table and a sidebar, plus Motion editions and 30+ free blo",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat",
+    "motion",
+    "chart",
+    "table"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: MIT-licensed shadcn registry (`@dashral`) of 100+ accessible React components for admin dashboards, with charts in plain SVG, pickers, a data table and a sidebar, plus Motion editions and 30+ free blo",
+   "added": "2026-11-19"
+  },
+  {
+   "id": "aw-drift-ui-dev",
+   "name": "drift-ui",
+   "url": "https://drift-ui.dev",
+   "note": "awesome-shadcn-ui 收录：MIT-licensed shadcn registry of 48 React components that shadcn/ui does not ship, such as tags input, tree view, stepper, filter builder and recurrence editor, each with a Radix and a Base UI build.",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "form",
+    "editor"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: MIT-licensed shadcn registry of 48 React components that shadcn/ui does not ship, such as tags input, tree view, stepper, filter builder and recurrence editor, each with a Radix and a Base UI build.",
+   "added": "2026-11-19"
+  },
+  {
+   "id": "aw-goodui-dev",
+   "name": "goodui",
+   "url": "https://goodui.dev",
+   "note": "awesome-shadcn-ui 收录：Free MIT registry of 132 animated components and 39 app blocks (scheduling, dashboards, AI chat), installable with `npx shadcn add`; an optional paid Pro tier adds more blocks and kits.",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat",
+    "motion",
+    "layout"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Free MIT registry of 132 animated components and 39 app blocks (scheduling, dashboards, AI chat), installable with `npx shadcn add`; an optional paid Pro tier adds more blocks and kits.",
+   "added": "2026-11-19"
+  },
+  {
+   "id": "aw-keyline-ui-dev",
+   "name": "keyline-ui",
+   "url": "https://keyline-ui.dev/",
+   "note": "awesome-shadcn-ui 收录：MIT-licensed shadcn registry of 66 React components for dense, work-heavy screens such as toolbars, data tables, menus, inspectors and app shells, built on Base UI and installed beside stock shadcn un",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "table"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: MIT-licensed shadcn registry of 66 React components for dense, work-heavy screens such as toolbars, data tables, menus, inspectors and app shells, built on Base UI and installed beside stock shadcn un",
+   "added": "2026-11-19"
+  },
+  {
+   "id": "aw-ui-minidev-pro",
+   "name": "minidev-ui",
+   "url": "https://ui.minidev.pro",
+   "note": "awesome-shadcn-ui 收录：Free, MIT-licensed shadcn registry of 548 React and Tailwind CSS v4 components, blocks and templates for product screens such as data tables, billing, settings, dashboards and AI chat, built on Base U",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat",
+    "table",
+    "layout"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Free, MIT-licensed shadcn registry of 548 React and Tailwind CSS v4 components, blocks and templates for product screens such as data tables, billing, settings, dashboards and AI chat, built on Base U",
+   "added": "2026-11-19"
+  },
+  {
+   "id": "aw-blhasn-sehli-github-io-mpkcn",
+   "name": "mpkcn",
+   "url": "https://blhasn-sehli.github.io/mpkcn/",
+   "note": "awesome-shadcn-ui 收录：Terminal-style React components (boot screen, command palette, terminal window, file explorer, tmux bar) installable from a shadcn registry or with their own CLI.",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Terminal-style React components (boot screen, command palette, terminal window, file explorer, tmux bar) installable from a shadcn registry or with their own CLI.",
+   "added": "2026-11-19"
+  },
+  {
+   "id": "aw-prestigeui-com",
+   "name": "prestige-ui",
+   "url": "https://prestigeui.com",
+   "note": "awesome-shadcn-ui 收录：shadcn registry of animated React components and full-page blocks built with Tailwind CSS and Motion, with free components and a paid Pro tier for the blocks and templates.",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat",
+    "motion",
+    "layout"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: shadcn registry of animated React components and full-page blocks built with Tailwind CSS and Motion, with free components and a paid Pro tier for the blocks and templates.",
+   "added": "2026-11-19"
+  },
+  {
+   "id": "aw-github-com-alan-donk-tree-ui",
+   "name": "tree-ui",
+   "url": "https://github.com/Alan-donk/tree-ui",
+   "note": "awesome-shadcn-ui 收录：MIT-licensed shadcn registry that adds an accessible, zero-dependency tree view with windowing for 10k+ rows, label filtering and async children.",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: MIT-licensed shadcn registry that adds an accessible, zero-dependency tree view with windowing for 10k+ rows, label filtering and async children.",
+   "added": "2026-11-19"
+  },
+  {
+   "id": "aw-github-com-weatheo-com-weatheo-ui",
+   "name": "weatheo-ui",
+   "url": "https://github.com/weatheo-com/weatheo-ui",
+   "note": "awesome-shadcn-ui 收录：Weather components (current-conditions card, hourly strip, daily list) in server and client versions, installable from its own shadcn registry.",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Weather components (current-conditions card, hourly strip, daily list) in server and client versions, installable from its own shadcn registry.",
+   "added": "2026-11-19"
+  },
+  {
+   "id": "aw-codexdesign-io-tools-shadcn-theme-generator",
+   "name": "codex-design-shadcn-theme-generator",
+   "url": "https://codexdesign.io/tools/shadcn-theme-generator",
+   "note": "awesome-shadcn-ui 收录：Free in-browser generator that builds a complete light and dark shadcn/ui theme from one brand color, radius and font, previews it on shadcn components, and exports globals.css or shadcn registry JSON",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Free in-browser generator that builds a complete light and dark shadcn/ui theme from one brand color, radius and font, previews it on shadcn components, and exports globals.css or shadcn registry JSON",
+   "added": "2026-11-19"
   }
  ],
  "guides": [
@@ -194515,5 +194881,5 @@
    ]
   }
  ],
- "updatedAt": "2026-11-18T21:34Z"
+ "updatedAt": "2026-11-19T07:20Z"
 }
