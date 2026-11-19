@@ -1,6 +1,6 @@
 {
  "generated": "2026-11-19",
- "count": 5164,
+ "count": 5166,
  "items": [
   {
    "id": "ued-transitions-dev-craft",
@@ -194679,6 +194679,104 @@
    ],
    "noteEn": "Listed in awesome-shadcn-ui: Free in-browser generator that builds a complete light and dark shadcn/ui theme from one brand color, radius and font, previews it on shadcn components, and exports globals.css or shadcn registry JSON",
    "added": "2026-11-19"
+  },
+  {
+   "id": "rd-n6na4it-docker-rebrand",
+   "name": "Docker Rebrand",
+   "url": "https://x.com/avstorm/status/2123471265167999156",
+   "note": "Docker's logo refresh replaces the detailed whale-with-containers mark with a simplified, solid rounded whale icon alongside the unchanged wordmark.",
+   "noteEn": "Docker's logo refresh replaces the detailed whale-with-containers mark with a simplified, solid rounded whale icon alongside the unchanged wordmark.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@docker",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/n6na4it-docker-rebrand",
+   "rdkind": "Design",
+   "rdcat": "Branding",
+   "rdstyle": [
+    "Minimal",
+    "Dark",
+    "Black & White"
+   ],
+   "author": {
+    "name": "Andreas Storm",
+    "handle": "@docker",
+    "url": "https://x.com/docker"
+   },
+   "x_post": "https://x.com/avstorm/status/2123471265167999156",
+   "xsrc": {
+    "post": "https://x.com/avstorm/status/2123471265167999156",
+    "author": "@avstorm",
+    "likes": 696,
+    "bookmarks": 64,
+    "reposts": 13,
+    "impressions": 27423,
+    "date": "2026-11-19"
+   },
+   "pub": "2026-11-19",
+   "added": "2026-11-19"
+  },
+  {
+   "id": "rd-kkq4tkf-webgpu-html-text-renderer",
+   "name": "WebGPU HTML Text Renderer",
+   "url": "https://x.com/jesper_alpacka/status/2120947205158883672",
+   "note": "A scrollable demo site for DOMGL, a WebGPU skill that renders HTML text directly from font curves per pixel, with DOM and GPU split-screen comparison overlays.",
+   "noteEn": "A scrollable demo site for DOMGL, a WebGPU skill that renders HTML text directly from font curves per pixel, with DOM and GPU split-screen comparison overlays.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@jesper_alpacka",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/kkq4tkf-webgpu-html-text-renderer",
+   "rdkind": "Design",
+   "rdcat": "Web",
+   "rdstyle": [
+    "Typographic",
+    "Experimental",
+    "Dark"
+   ],
+   "author": {
+    "name": "JesperLandberg",
+    "handle": "@jesper_alpacka",
+    "url": "https://x.com/jesper_alpacka"
+   },
+   "x_post": "https://x.com/jesper_alpacka/status/2120947205158883672",
+   "xsrc": {
+    "post": "https://x.com/jesper_alpacka/status/2120947205158883672",
+    "author": "@jesper_alpacka",
+    "likes": 214,
+    "bookmarks": 218,
+    "reposts": 18,
+    "impressions": 15400,
+    "date": "2026-11-12"
+   },
+   "pub": "2026-11-19",
+   "added": "2026-11-19"
   }
  ],
  "guides": [
@@ -194881,5 +194979,5 @@
    ]
   }
  ],
- "updatedAt": "2026-11-19T09:26Z"
+ "updatedAt": "2026-11-19T21:45Z"
 }
