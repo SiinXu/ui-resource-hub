@@ -1,6 +1,6 @@
 {
  "generated": "2026-11-20",
- "count": 5179,
+ "count": 5182,
  "items": [
   {
    "id": "ued-transitions-dev-craft",
@@ -195147,6 +195147,155 @@
    ],
    "noteEn": "Listed in awesome-shadcn-ui: Free MIT dark landing page for AI and SaaS products, built on shadcn/ui with a night sky and guilloche hero; its theme and sections install with npx shadcn add from the @vilqor registry, and a paid fu",
    "added": "2026-11-20"
+  },
+  {
+   "id": "rd-bq4eavc-utility-design-co-brand-exploration",
+   "name": "Utility Design Brand Exploration",
+   "url": "https://x.com/062a_00/status/2123133550576931285",
+   "note": "A multi-asset brand exploration for Utility Design Co. spanning logo marks, mascots, sticker sheets, and typographic wordmarks across retro, pixel, and brutalist treatments.",
+   "noteEn": "A multi-asset brand exploration for Utility Design Co. spanning logo marks, mascots, sticker sheets, and typographic wordmarks across retro, pixel, and brutalist treatments.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@062a_00",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "retro"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/bq4eavc-utility-design-co-brand-exploration",
+   "rdkind": "Design",
+   "rdcat": "Branding",
+   "rdstyle": [
+    "Typographic",
+    "Experimental",
+    "Retro",
+    "Illustrative",
+    "Dark",
+    "Vibrant"
+   ],
+   "author": {
+    "name": "Sam",
+    "handle": "@062a_00",
+    "url": "https://x.com/062a_00"
+   },
+   "x_post": "https://x.com/062a_00/status/2123133550576931285",
+   "xsrc": {
+    "post": "https://x.com/062a_00/status/2123133550576931285",
+    "author": "@062a_00",
+    "likes": 690,
+    "bookmarks": 303,
+    "reposts": 18,
+    "impressions": 11205,
+    "date": "2026-11-18"
+   },
+   "pub": "2026-11-20",
+   "added": "2026-11-20"
+  },
+  {
+   "id": "rd-mot0bqr-enter-the-spectrum",
+   "name": "Enter the Spectrum",
+   "url": "https://x.com/rathniley/status/2123437162821763476",
+   "note": "An interactive WebGL experiment where a fluid gradient field cycles through named colour states, responding to cursor movement and clicks with real-time disruption and sound.",
+   "noteEn": "An interactive WebGL experiment where a fluid gradient field cycles through named colour states, responding to cursor movement and clicks with real-time disruption and sound.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@rathniley",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "gradient"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/mot0bqr-enter-the-spectrum",
+   "rdkind": "Design",
+   "rdcat": "Web",
+   "rdstyle": [
+    "Abstract",
+    "Experimental",
+    "Vibrant",
+    "Gradient"
+   ],
+   "author": {
+    "name": "Nathan Riley",
+    "handle": "@rathniley",
+    "url": "https://x.com/rathniley"
+   },
+   "x_post": "https://x.com/rathniley/status/2123437162821763476",
+   "xsrc": {
+    "post": "https://x.com/rathniley/status/2123437162821763476",
+    "author": "@rathniley",
+    "likes": 296,
+    "bookmarks": 213,
+    "reposts": 13,
+    "impressions": 7651,
+    "date": "2026-11-19"
+   },
+   "pub": "2026-11-20",
+   "added": "2026-11-20"
+  },
+  {
+   "id": "rd-2mk19o6-ai-agent-scheduler-ui",
+   "name": "AI Agent Scheduler UI",
+   "url": "https://x.com/shedsgns/status/2123685558933168628",
+   "note": "A cron-style task scheduler UI for a crypto wallet agent shows scheduled jobs on a 24-hour timeline, with a live agent status chip updating as it executes each task.",
+   "noteEn": "A cron-style task scheduler UI for a crypto wallet agent shows scheduled jobs on a 24-hour timeline, with a live agent status chip updating as it executes each task.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@shedsgns",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/2mk19o6-ai-agent-scheduler-ui",
+   "rdkind": "Design",
+   "rdcat": "Interface",
+   "rdstyle": [
+    "Minimal",
+    "Light"
+   ],
+   "author": {
+    "name": "Juliette",
+    "handle": "@shedsgns",
+    "url": "https://x.com/shedsgns"
+   },
+   "x_post": "https://x.com/shedsgns/status/2123685558933168628",
+   "xsrc": {
+    "post": "https://x.com/shedsgns/status/2123685558933168628",
+    "author": "@shedsgns",
+    "likes": 17,
+    "bookmarks": 9,
+    "reposts": 0,
+    "impressions": 424,
+    "date": "2026-11-20"
+   },
+   "pub": "2026-11-20",
+   "added": "2026-11-20"
   }
  ],
  "guides": [
@@ -195349,5 +195498,5 @@
    ]
   }
  ],
- "updatedAt": "2026-11-20T07:10Z"
+ "updatedAt": "2026-11-20T09:07Z"
 }
