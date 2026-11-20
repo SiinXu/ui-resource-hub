@@ -1,6 +1,6 @@
 {
  "generated": "2026-11-20",
- "count": 5182,
+ "count": 5186,
  "items": [
   {
    "id": "ued-transitions-dev-craft",
@@ -195296,6 +195296,198 @@
    },
    "pub": "2026-11-20",
    "added": "2026-11-20"
+  },
+  {
+   "id": "rd-bqdwuaq-payment-swipe-interaction",
+   "name": "Payment Swipe",
+   "url": "https://uimaxx.ing",
+   "note": "Mobile payment flow where swiping to send triggers a glowing animated loading state, then resolves into a success confirmation screen with a color-shifting edge glow.",
+   "noteEn": "Mobile payment flow where swiping to send triggers a glowing animated loading state, then resolves into a success confirmation screen with a color-shifting edge glow.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@suriadesign",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "gradient"
+   ],
+   "origin": "site",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/bqdwuaq-payment-swipe-interaction",
+   "rdkind": "Design",
+   "rdcat": "Interface",
+   "rdstyle": [
+    "Dark",
+    "Gradient"
+   ],
+   "author": {
+    "name": "Yogi Suria",
+    "handle": "@suriadesign",
+    "url": "https://x.com/suriadesign"
+   },
+   "x_post": "https://x.com/suriadesign/status/2123140379482681663",
+   "xsrc": {
+    "post": "https://x.com/suriadesign/status/2123140379482681663",
+    "author": "@suriadesign",
+    "likes": 1361,
+    "bookmarks": 1265,
+    "reposts": 55,
+    "impressions": 38890,
+    "date": "2026-11-18"
+   },
+   "official": "https://uimaxx.ing",
+   "pub": "2026-11-20",
+   "added": "2026-11-20"
+  },
+  {
+   "id": "rd-4zbyp6z-coupon-dust-microinteraction",
+   "name": "Coupon Dust Microinteraction",
+   "url": "https://x.com/AetherMaker/status/2123480143310078451",
+   "note": "Tapping a coupon card in a checkout UI dissolves it into iridescent particle dust that travels to the order total and reassembles as the discount is applied.",
+   "noteEn": "Tapping a coupon card in a checkout UI dissolves it into iridescent particle dust that travels to the order total and reassembles as the discount is applied.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@aethermaker",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/4zbyp6z-coupon-dust-microinteraction",
+   "rdkind": "Design",
+   "rdcat": "Interface",
+   "rdstyle": [
+    "Dark"
+   ],
+   "author": {
+    "name": "Mehran",
+    "handle": "@aethermaker",
+    "url": "https://x.com/aethermaker"
+   },
+   "x_post": "https://x.com/AetherMaker/status/2123480143310078451",
+   "xsrc": {
+    "post": "https://x.com/AetherMaker/status/2123480143310078451",
+    "author": "@AetherMaker",
+    "likes": 609,
+    "bookmarks": 525,
+    "reposts": 23,
+    "impressions": 16334,
+    "date": "2026-11-19"
+   },
+   "pub": "2026-11-20",
+   "added": "2026-11-20"
+  },
+  {
+   "id": "rd-ltfstm1-billiard-hold-buttons",
+   "name": "Pool Hold To Confirm",
+   "url": "https://x.com/ozzyxs1a/status/2123441401904144799",
+   "note": "Hold-to-confirm interaction controls styled as pool tables where a cue ball rolls across felt to pocket into a confirmation state on each button.",
+   "noteEn": "Hold-to-confirm interaction controls styled as pool tables where a cue ball rolls across felt to pocket into a confirmation state on each button.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@ozzyxs1a",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "3d",
+    "playful"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/ltfstm1-billiard-hold-buttons",
+   "rdkind": "Design",
+   "rdcat": "Interface",
+   "rdstyle": [
+    "3D",
+    "Playful",
+    "Vibrant"
+   ],
+   "author": {
+    "name": "ozzy",
+    "handle": "@ozzyxs1a",
+    "url": "https://x.com/ozzyxs1a"
+   },
+   "x_post": "https://x.com/ozzyxs1a/status/2123441401904144799",
+   "xsrc": {
+    "post": "https://x.com/ozzyxs1a/status/2123441401904144799",
+    "author": "@ozzyxs1a",
+    "likes": 321,
+    "bookmarks": 104,
+    "reposts": 10,
+    "impressions": 12479,
+    "date": "2026-11-19"
+   },
+   "pub": "2026-11-20",
+   "added": "2026-11-20"
+  },
+  {
+   "id": "rd-a4hb69f-voice-ui-library",
+   "name": "Voice UI Library",
+   "url": "https://x.com/Jakubantalik/status/2123457524070273426",
+   "note": "A free voice interface component library showing listening, thinking, and idle states with animated multicolor pixel equalizer bars that shift hue per emotional state.",
+   "noteEn": "A free voice interface component library showing listening, thinking, and idle states with animated multicolor pixel equalizer bars that shift hue per emotional state.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@jakubantalik",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/a4hb69f-voice-ui-library",
+   "rdkind": "Design",
+   "rdcat": "Interface",
+   "rdstyle": [
+    "Geometric",
+    "Dark",
+    "Vibrant"
+   ],
+   "author": {
+    "name": "Jakub Antalik",
+    "handle": "@jakubantalik",
+    "url": "https://x.com/jakubantalik"
+   },
+   "x_post": "https://x.com/Jakubantalik/status/2123457524070273426",
+   "xsrc": {
+    "post": "https://x.com/Jakubantalik/status/2123457524070273426",
+    "author": "@Jakubantalik",
+    "likes": 2251,
+    "bookmarks": 2066,
+    "reposts": 96,
+    "impressions": 64195,
+    "date": "2026-11-19"
+   },
+   "official": "https://libraries.dev/voice",
+   "pub": "2026-11-20",
+   "added": "2026-11-20"
   }
  ],
  "guides": [
@@ -195498,5 +195690,5 @@
    ]
   }
  ],
- "updatedAt": "2026-11-20T09:07Z"
+ "updatedAt": "2026-11-20T21:30Z"
 }
