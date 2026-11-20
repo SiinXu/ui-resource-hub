@@ -1,6 +1,6 @@
 {
- "generated": "2026-11-19",
- "count": 5166,
+ "generated": "2026-11-20",
+ "count": 5179,
  "items": [
   {
    "id": "ued-transitions-dev-craft",
@@ -194777,6 +194777,376 @@
    },
    "pub": "2026-11-19",
    "added": "2026-11-19"
+  },
+  {
+   "id": "aw-colorise-online-en-shadcn",
+   "name": "oklch-studio",
+   "url": "https://colorise.online/en/shadcn",
+   "note": "awesome-shadcn-ui 收录：Reference of all 26 shadcn/ui themes as OKLCH CSS variables with hex values, light and dark swatches, and a WCAG contrast audit of each theme's text and background pairs; free, no sign-up.",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat",
+    "background"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Reference of all 26 shadcn/ui themes as OKLCH CSS variables with hex values, light and dark swatches, and a WCAG contrast audit of each theme's text and background pairs; free, no sign-up.",
+   "added": "2026-11-20"
+  },
+  {
+   "id": "aw-gradients-sh",
+   "name": "gradients-sh",
+   "url": "https://gradients.sh",
+   "note": "awesome-shadcn-ui 收录：Animated mesh, aurora and grain gradient backgrounds for React that pause when scrolled off screen, installable with the shadcn CLI; free MIT components plus a paid Pro collection.",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat",
+    "motion",
+    "background"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Animated mesh, aurora and grain gradient backgrounds for React that pause when scrolled off screen, installable with the shadcn CLI; free MIT components plus a paid Pro collection.",
+   "added": "2026-11-20"
+  },
+  {
+   "id": "aw-github-com-mekai-ui-mekai-ui",
+   "name": "mekai-ui",
+   "url": "https://github.com/mekai-ui/mekai-ui",
+   "note": "awesome-shadcn-ui 收录：Animated React components installed from their own shadcn registry: 53 free under MIT plus a paid Pro set, with text effects, WebGL backgrounds, app UI and game UI like XP bars and health bars.",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat",
+    "motion",
+    "background"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Animated React components installed from their own shadcn registry: 53 free under MIT plus a paid Pro set, with text effects, WebGL backgrounds, app UI and game UI like XP bars and health bars.",
+   "added": "2026-11-20"
+  },
+  {
+   "id": "aw-scrollfx-ui-vercel-app",
+   "name": "scrollfx",
+   "url": "https://scrollfx-ui.vercel.app",
+   "note": "awesome-shadcn-ui 收录：Scroll-drawn sections for React and Tailwind, installed with the shadcn CLI: a hero, chart, features, steps, changelog and pricing, each with a pen-plotter drawing (flow field, contour map, harmonogra",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat",
+    "chart",
+    "layout"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Scroll-drawn sections for React and Tailwind, installed with the shadcn CLI: a hero, chart, features, steps, changelog and pricing, each with a pen-plotter drawing (flow field, contour map, harmonogra",
+   "added": "2026-11-20"
+  },
+  {
+   "id": "aw-tentui-com",
+   "name": "tentui",
+   "url": "https://tentui.com/",
+   "note": "awesome-shadcn-ui 收录：Free, source-available registry of interactive React components and landing-page blocks for shadcn/ui, with motion, sound and haptic details, installable with the shadcn CLI.",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat",
+    "motion",
+    "layout"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Free, source-available registry of interactive React components and landing-page blocks for shadcn/ui, with motion, sound and haptic details, installable with the shadcn CLI.",
+   "added": "2026-11-20"
+  },
+  {
+   "id": "aw-svg-scroll-draw-vercel-app-blocks",
+   "name": "svg-scroll-draw",
+   "url": "https://svg-scroll-draw.vercel.app/blocks",
+   "note": "awesome-shadcn-ui 收录：MIT shadcn registry of scroll-driven blocks (SVG signature drawing, reveal cards, counters, pinned tours, text reveal, video scrub) on the native CSS scroll timeline, installable with the shadcn, shad",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: MIT shadcn registry of scroll-driven blocks (SVG signature drawing, reveal cards, counters, pinned tours, text reveal, video scrub) on the native CSS scroll timeline, installable with the shadcn, shad",
+   "added": "2026-11-20"
+  },
+  {
+   "id": "aw-kerry-studio",
+   "name": "kerry studio",
+   "url": "https://kerry.studio/",
+   "note": "awesome-shadcn-ui 收录：A modern SQL database manager built to help developers work faster, stay organized, and get more done",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: A modern SQL database manager built to help developers work faster, stay organized, and get more done",
+   "added": "2026-11-20"
+  },
+  {
+   "id": "aw-github-com-abuarchiv-manawg",
+   "name": "manawg",
+   "url": "https://github.com/Abuarchiv/manawg",
+   "note": "awesome-shadcn-ui 收录：Free, open-source, self-hostable app for shared flats (expenses, cleaning rota, shopping list, calendar and chat) with a mobile-first Next.js interface built on shadcn/ui components.",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat",
+    "table"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Free, open-source, self-hostable app for shared flats (expenses, cleaning rota, shopping list, calendar and chat) with a mobile-first Next.js interface built on shadcn/ui components.",
+   "added": "2026-11-20"
+  },
+  {
+   "id": "aw-swiftui-flexnative-com",
+   "name": "swift-swiftui-flx",
+   "url": "https://swiftui.flexnative.com",
+   "note": "awesome-shadcn-ui 收录：SwiftUI port of shadcn/ui for iPhone, iPad and Mac, built on native controls and installed with the shadcn CLI.",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: SwiftUI port of shadcn/ui for iPhone, iPad and Mac, built on native controls and installed with the shadcn CLI.",
+   "added": "2026-11-20"
+  },
+  {
+   "id": "aw-github-com-agusmdev-fullstack-ai-template",
+   "name": "burntop",
+   "url": "https://github.com/agusmdev/fullstack-ai-template",
+   "note": "awesome-shadcn-ui 收录：Full-stack starter for AI coding agents with a React 19 and TanStack Start frontend built on shadcn/ui and Tailwind 4, a FastAPI and Postgres backend, auth, CRUD and end-to-end tests.",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Full-stack starter for AI coding agents with a React 19 and TanStack Start frontend built on shadcn/ui and Tailwind 4, a FastAPI and Postgres backend, auth, CRUD and end-to-end tests.",
+   "added": "2026-11-20"
+  },
+  {
+   "id": "aw-electron-appstack-com",
+   "name": "electron-appstack",
+   "url": "https://electron-appstack.com",
+   "note": "awesome-shadcn-ui 收录：Electron desktop app template with its UI built on shadcn/ui and Tailwind CSS, plus a typed tRPC backend, SQLite, auto update and signed releases.",
+   "type": "collection",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat",
+    "layout"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Electron desktop app template with its UI built on shadcn/ui and Tailwind CSS, plus a typed tRPC backend, SQLite, auto update and signed releases.",
+   "added": "2026-11-20"
+  },
+  {
+   "id": "aw-github-com-yilecoding-fastapi-react-admin",
+   "name": "fastapi-react-admin",
+   "url": "https://github.com/yilecoding/fastapi-react-admin",
+   "note": "awesome-shadcn-ui 收录：Open-source admin foundation with a FastAPI backend and a React 19 frontend built on shadcn/ui, featuring row-level permissions, multi-tab pages that keep their state, approval workflows and a permiss",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Open-source admin foundation with a FastAPI backend and a React 19 frontend built on shadcn/ui, featuring row-level permissions, multi-tab pages that keep their state, approval workflows and a permiss",
+   "added": "2026-11-20"
+  },
+  {
+   "id": "aw-github-com-vilqor-midnight-lite",
+   "name": "midnight-lite",
+   "url": "https://github.com/vilqor/midnight-lite",
+   "note": "awesome-shadcn-ui 收录：Free MIT dark landing page for AI and SaaS products, built on shadcn/ui with a night sky and guilloche hero; its theme and sections install with npx shadcn add from the @vilqor registry, and a paid fu",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "awesome-shadcn-ui",
+   "pricing": "unknown",
+   "tags": [
+    "React",
+    "shadcn",
+    "自动收录"
+   ],
+   "ct": [
+    "chat",
+    "layout"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "Listed in awesome-shadcn-ui: Free MIT dark landing page for AI and SaaS products, built on shadcn/ui with a night sky and guilloche hero; its theme and sections install with npx shadcn add from the @vilqor registry, and a paid fu",
+   "added": "2026-11-20"
   }
  ],
  "guides": [
@@ -194979,5 +195349,5 @@
    ]
   }
  ],
- "updatedAt": "2026-11-19T21:45Z"
+ "updatedAt": "2026-11-20T07:10Z"
 }

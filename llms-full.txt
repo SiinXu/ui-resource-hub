@@ -1,6 +1,6 @@
 # UI Hub
 
-> Curated, multilingual directory of 5166 public UI resources (component libraries, component style demos, effects, design systems, design skills for AI agents) plus original blog analysis of AI design techniques. Data updated 2026-11-19 21:45 UTC.
+> Curated, multilingual directory of 5179 public UI resources (component libraries, component style demos, effects, design systems, design skills for AI agents) plus original blog analysis of AI design techniques. Data updated 2026-11-20 07:10 UTC.
 
 Use the JSON endpoints, not the SPA, when acting as an agent. Every entry links to its original site; licenses belong to the original authors.
 
@@ -142,11 +142,11 @@ Use the JSON endpoints, not the SPA, when acting as an agent. Every entry links 
 - [visx](https://airbnb.io/visx/): Airbnb's low-level visualization components
 
 ## FAQ
-- **What is UI Hub?** A free, curated directory of 5166 public UI resources: 250 component libraries, 1989 component style demos with light/dark screenshots, 70 design skills for AI agents, plus effects, templates, specs and tutorials. It links to original sites and never hosts paid source code.
+- **What is UI Hub?** A free, curated directory of 5179 public UI resources: 255 component libraries, 1989 component style demos with light/dark screenshots, 70 design skills for AI agents, plus effects, templates, specs and tutorials. It links to original sites and never hosts paid source code.
 - **How do I find a component in a given style?** Load https://ui.incidental.site/api/resources.json and filter by ct (component kind, e.g. "dialog") and vs (visual style, e.g. "minimal" or "motion"). type="style" entries are concrete component demos with a libName and page URL; type="library" entries are whole libraries with install info on the site.
 - **Which skills should an agent use for good UI?** One direction skill (frontend-design or taste-skill), emil-design-eng for motion and interaction polish, then impeccable, baseline-ui, web-design-guidelines and accessibility as an audit pass. See https://ui.incidental.site/api/skills.json.
 - **Can I copy the code?** Open-source libraries can be used under their own licenses (MIT, Apache-2.0 etc.); the card shows the original link. Paid tiers (marked paid/freemium) must be bought from the original vendor.
-- **How often is it updated?** Daily via a GitHub Actions job that adds new UI repositories and tools from GitHub, awesome-shadcn-ui and Hacker News. Nothing is deleted. Last update: 2026-11-19 21:45 UTC.
+- **How often is it updated?** Daily via a GitHub Actions job that adds new UI repositories and tools from GitHub, awesome-shadcn-ui and Hacker News. Nothing is deleted. Last update: 2026-11-20 07:10 UTC.
 
 
 # Blog posts (full text, English)
@@ -6070,6 +6070,19 @@ Get Hyped. Get Noticed. Get Results.
 - codex-design-shadcn-theme-generator | collection | https://codexdesign.io/tools/shadcn-theme-generator | Listed in awesome-shadcn-ui: Free in-browser generator that builds a complete light and dark shadcn/ui theme from one brand color, radius and font, previews it 
 - Docker Rebrand | inspiration | https://x.com/avstorm/status/2123471265167999156 | Docker's logo refresh replaces the detailed whale-with-containers mark with a simplified, solid rounded whale icon alongside the unchanged wordmark.
 - WebGPU HTML Text Renderer | inspiration | https://x.com/jesper_alpacka/status/2120947205158883672 | A scrollable demo site for DOMGL, a WebGPU skill that renders HTML text directly from font curves per pixel, with DOM and GPU split-screen comparison overlays.
+- oklch-studio | collection | https://colorise.online/en/shadcn | Listed in awesome-shadcn-ui: Reference of all 26 shadcn/ui themes as OKLCH CSS variables with hex values, light and dark swatches, and a WCAG contrast audit of 
+- gradients-sh | collection | https://gradients.sh | Listed in awesome-shadcn-ui: Animated mesh, aurora and grain gradient backgrounds for React that pause when scrolled off screen, installable with the shadcn CLI
+- mekai-ui | library | https://github.com/mekai-ui/mekai-ui | Listed in awesome-shadcn-ui: Animated React components installed from their own shadcn registry: 53 free under MIT plus a paid Pro set, with text effects, WebGL
+- scrollfx | collection | https://scrollfx-ui.vercel.app | Listed in awesome-shadcn-ui: Scroll-drawn sections for React and Tailwind, installed with the shadcn CLI: a hero, chart, features, steps, changelog and pricing,
+- tentui | collection | https://tentui.com/ | Listed in awesome-shadcn-ui: Free, source-available registry of interactive React components and landing-page blocks for shadcn/ui, with motion, sound and hapti
+- svg-scroll-draw | collection | https://svg-scroll-draw.vercel.app/blocks | Listed in awesome-shadcn-ui: MIT shadcn registry of scroll-driven blocks (SVG signature drawing, reveal cards, counters, pinned tours, text reveal, video scrub)
+- kerry studio | collection | https://kerry.studio/ | Listed in awesome-shadcn-ui: A modern SQL database manager built to help developers work faster, stay organized, and get more done
+- manawg | library | https://github.com/Abuarchiv/manawg | Listed in awesome-shadcn-ui: Free, open-source, self-hostable app for shared flats (expenses, cleaning rota, shopping list, calendar and chat) with a mobile-fir
+- swift-swiftui-flx | collection | https://swiftui.flexnative.com | Listed in awesome-shadcn-ui: SwiftUI port of shadcn/ui for iPhone, iPad and Mac, built on native controls and installed with the shadcn CLI.
+- burntop | library | https://github.com/agusmdev/fullstack-ai-template | Listed in awesome-shadcn-ui: Full-stack starter for AI coding agents with a React 19 and TanStack Start frontend built on shadcn/ui and Tailwind 4, a FastAPI an
+- electron-appstack | collection | https://electron-appstack.com | Listed in awesome-shadcn-ui: Electron desktop app template with its UI built on shadcn/ui and Tailwind CSS, plus a typed tRPC backend, SQLite, auto update and s
+- fastapi-react-admin | library | https://github.com/yilecoding/fastapi-react-admin | Listed in awesome-shadcn-ui: Open-source admin foundation with a FastAPI backend and a React 19 frontend built on shadcn/ui, featuring row-level permissions, mu
+- midnight-lite | library | https://github.com/vilqor/midnight-lite | Listed in awesome-shadcn-ui: Free MIT dark landing page for AI and SaaS products, built on shadcn/ui with a night sky and guilloche hero; its theme and sections
 
 # Component style demos: 1989 entries, see api/resources.json (type=style)
 
