@@ -1,6 +1,6 @@
 {
  "generated": "2026-11-21",
- "count": 5186,
+ "count": 5187,
  "items": [
   {
    "id": "ued-transitions-dev-craft",
@@ -195488,6 +195488,58 @@
    "official": "https://libraries.dev/voice",
    "pub": "2026-11-20",
    "added": "2026-11-20"
+  },
+  {
+   "id": "rd-tbkt6wk-type-flicker-animation",
+   "name": "Type Flicker Animation",
+   "url": "https://x.com/iamnotsrc/status/2123495272584253522",
+   "note": "Repeating text fragments flicker and cycle through vivid neon colors across a black canvas in a dense, glitchy kinetic typography loop.",
+   "noteEn": "Repeating text fragments flicker and cycle through vivid neon colors across a black canvas in a dense, glitchy kinetic typography loop.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@iamnotsrc",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "motion"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/tbkt6wk-type-flicker-animation",
+   "rdkind": "Design",
+   "rdcat": "Motion",
+   "rdstyle": [
+    "Typographic",
+    "Experimental",
+    "High Contrast",
+    "Dark",
+    "Vibrant"
+   ],
+   "author": {
+    "name": "src",
+    "handle": "@iamnotsrc",
+    "url": "https://x.com/iamnotsrc"
+   },
+   "x_post": "https://x.com/iamnotsrc/status/2123495272584253522",
+   "xsrc": {
+    "post": "https://x.com/iamnotsrc/status/2123495272584253522",
+    "author": "@iamnotsrc",
+    "likes": 1472,
+    "bookmarks": 707,
+    "reposts": 95,
+    "impressions": 22783,
+    "date": "2026-11-19"
+   },
+   "pub": "2026-11-21",
+   "added": "2026-11-21"
   }
  ],
  "guides": [
@@ -195690,5 +195742,5 @@
    ]
   }
  ],
- "updatedAt": "2026-11-21T08:44Z"
+ "updatedAt": "2026-11-21T20:13Z"
 }
