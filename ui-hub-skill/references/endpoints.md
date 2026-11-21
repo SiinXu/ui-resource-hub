@@ -6,4 +6,4 @@
 - Full text: https://ui.incidental.site/llms-full.txt
 - Human guide: https://ui.incidental.site/agents/
 
-Always fetch the live JSON; the bundled copy below is a snapshot (2026-11-20 21:30 UTC).
+Always fetch the live JSON; the bundled copy below is a snapshot (2026-11-21 07:02 UTC).
