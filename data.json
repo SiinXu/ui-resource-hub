@@ -1,6 +1,6 @@
 {
- "generated": "2026-11-21",
- "count": 5187,
+ "generated": "2026-11-22",
+ "count": 5188,
  "items": [
   {
    "id": "ued-transitions-dev-craft",
@@ -195540,6 +195540,35 @@
    },
    "pub": "2026-11-21",
    "added": "2026-11-21"
+  },
+  {
+   "id": "gh-neoruaa-glasmio",
+   "name": "Glasmio",
+   "url": "https://github.com/NEORUAA/Glasmio",
+   "note": "GitHub 新晋 UI 仓库：A Jetpack Compose UI framework bringing a faithful 1:1 recreation of iOS 27 Liquid Glass, animations, controls, and interactions to Android.（GitHub ★151，Apache-2.0 许可，仓库 NEORUAA/Glasmio）",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "GitHub",
+   "pricing": "free",
+   "tags": [
+    "HTML",
+    "开源",
+    "自动收录"
+   ],
+   "ct": [
+    "chat",
+    "motion"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "New GitHub UI repo: A Jetpack Compose UI framework bringing a faithful 1:1 recreation of iOS 27 Liquid Glass, animations, controls, and interactions to Android. (★151, Apache-2.0, NEORUAA/Glasmio)",
+   "added": "2026-11-22"
   }
  ],
  "guides": [
@@ -195742,5 +195771,5 @@
    ]
   }
  ],
- "updatedAt": "2026-11-21T20:13Z"
+ "updatedAt": "2026-11-22T06:43Z"
 }
