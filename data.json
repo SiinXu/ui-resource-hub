@@ -1,6 +1,6 @@
 {
  "generated": "2026-11-23",
- "count": 5189,
+ "count": 5204,
  "items": [
   {
    "id": "ued-transitions-dev-craft",
@@ -195599,6 +195599,410 @@
    ],
    "noteEn": "New GitHub UI repo: Free, open-source library of premium, single-file HTML landing pages, motion components, and interactive experiences. No frameworks. No dependencies. Built for humans and AI coding (★199, MIT, RayVelez27/instalanding.ai)",
    "added": "2026-11-23"
+  },
+  {
+   "id": "bestdesignsonx-com",
+   "name": "Best Designs on X",
+   "url": "https://bestdesignsonx.com/",
+   "note": "每小时更新的 X 设计灵感站，精选设计师作品，涵盖视觉展示、Logo、UI 和品牌设计",
+   "noteTw": "每小時更新的 X 設計靈感站，精選設計師作品，涵蓋視覺展示、Logo、UI 和品牌設計",
+   "noteEn": "Hourly-updated gallery of the best design work posted on X — visual showcases, logos, UI and branding, hand-picked from top creatives",
+   "type": "inspiration",
+   "section": "UI 灵感站与素材 · 新增",
+   "sectionTitle": "十五、UI 灵感站、组件与素材 · 2026-10 新增",
+   "sectionDesc": "",
+   "source": "bestdesignsonx.com",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial"
+   ],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "visualexplorer-app",
+   "name": "Visual Explorer",
+   "url": "https://visualexplorer.app/",
+   "note": "编辑精选的设计灵感库，以原分辨率展示网站、App、Logo、图形、编辑设计和 UI 组件，并署名作者",
+   "noteTw": "編輯精選的設計靈感庫，以原解析度展示網站、App、Logo、圖形、編輯設計和 UI 組件，並署名作者",
+   "noteEn": "A curated archive of design inspiration shown at full resolution — websites, apps, logos, graphics, editorial design and UI components, credited to their makers",
+   "type": "inspiration",
+   "section": "UI 灵感站与素材 · 新增",
+   "sectionTitle": "十五、UI 灵感站、组件与素材 · 2026-10 新增",
+   "sectionDesc": "",
+   "source": "visualexplorer.app",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "editorial"
+   ],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "vibedesign-tips",
+   "name": "Vibe Design Tips",
+   "url": "https://vibedesign.tips/",
+   "note": "枯白（@kubai087）的免费设计技巧站，计划 999 条。每条讲一个界面细节或交互，配有实时演示，并可下载成 Prompt 或 Skill 交给 AI 编程工具，支持 16 种语言",
+   "noteTw": "枯白（@kubai087）的免費設計技巧站，計畫 999 條。每條講一個介面細節或交互，附即時演示，並可下載成 Prompt 或 Skill 交給 AI 編程工具，支援 16 種語言",
+   "noteEn": "Free design tips by Kubai (@kubai087): 999 short lessons on interface details and interactions, each with a live demo and a prompt or skill you can paste into an AI coding tool. Available in 16 languages",
+   "type": "tutorial",
+   "section": "设计教程",
+   "sectionTitle": "十三、设计教程：组件体系、token、字体、间距、动效、无障碍",
+   "sectionDesc": "",
+   "source": "@kubai087",
+   "pricing": "free",
+   "tags": [
+    "中文",
+    "Skill"
+   ],
+   "ct": [],
+   "rt": [
+    "tutorial",
+    "skill"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "tactileui-dev",
+   "name": "Tactile UI",
+   "url": "https://tactileui.dev/",
+   "note": "仿真实硬件的 UI 组件库：旋钮、开关、表盘等，共 39 个物件、59 个页面区块和 1200 多套示例，支持 React、Vue、Svelte 和原生 JS。部分组件免费，完整套件需 Founder Pass（99 美元）",
+   "noteTw": "仿真實硬體的 UI 組件庫：旋鈕、開關、表盤等，共 39 個物件、59 個頁面區塊和 1200 多套示例，支援 React、Vue、Svelte 和原生 JS。部分組件免費，完整套件需 Founder Pass（99 美元）",
+   "noteEn": "UI components that work like real hardware — knobs, switches and dials. 39 objects, 59 page sections and 1,200+ examples, for React, Vue, Svelte or plain JS. Some pieces are free; the full kit needs a $99 Founder Pass",
+   "type": "component",
+   "section": "UI 灵感站与素材 · 新增",
+   "sectionTitle": "十五、UI 灵感站、组件与素材 · 2026-10 新增",
+   "sectionDesc": "",
+   "source": "tactileui.dev",
+   "pricing": "freemium",
+   "tags": [
+    "React",
+    "Vue",
+    "Svelte",
+    "JS"
+   ],
+   "ct": [],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "skeuomorphic"
+   ],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "ui-camera",
+   "name": "ui.camera",
+   "url": "https://ui.camera/",
+   "note": "在浏览器里把界面截图做成影棚级的软件产品图和视频",
+   "noteTw": "在瀏覽器裡把介面截圖做成影棚級的軟體產品圖和影片",
+   "noteEn": "Create studio-quality product photos and videos of software from your UI, right in the browser",
+   "type": "tool",
+   "section": "UI 灵感站与素材 · 新增",
+   "sectionTitle": "十五、UI 灵感站、组件与素材 · 2026-10 新增",
+   "sectionDesc": "",
+   "source": "ui.camera",
+   "pricing": "unknown",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "tool"
+   ],
+   "vs": [
+    "3d"
+   ],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "dialkit-dev",
+   "name": "DialKit",
+   "url": "https://dialkit.dev/",
+   "note": "可嵌入界面的浮动调节面板，在 React、Solid、Svelte、Vue 和原生 JS 中实时调整动效、布局、颜色和动画节奏。MIT 开源（npm install dialkit）",
+   "noteTw": "可嵌入介面的浮動調節面板，在 React、Solid、Svelte、Vue 和原生 JS 中即時調整動效、佈局、顏色和動畫節奏。MIT 開源（npm install dialkit）",
+   "noteEn": "A floating live-controls panel for React, Solid, Svelte, Vue and plain JavaScript. Tune motion, layout, color and animation timing directly in your interface. MIT-licensed (npm install dialkit)",
+   "type": "tool",
+   "section": "UI 灵感站与素材 · 新增",
+   "sectionTitle": "十五、UI 灵感站、组件与素材 · 2026-10 新增",
+   "sectionDesc": "",
+   "source": "@joshpuckett",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Vue",
+    "Svelte",
+    "Solid",
+    "JS",
+    "开源",
+    "动效"
+   ],
+   "ct": [],
+   "rt": [
+    "tool",
+    "motion"
+   ],
+   "vs": [
+    "motion"
+   ],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "torph-lochie-me",
+   "name": "Torph",
+   "url": "https://torph.lochie.me/",
+   "note": "无依赖的文字变形过渡组件，文字可在不同单词之间平滑变形。支持 React、Vue、Svelte 和 TypeScript，MIT 开源（npm i torph）",
+   "noteTw": "無依賴的文字變形過渡組件，文字可在不同單詞之間平滑變形。支援 React、Vue、Svelte 和 TypeScript，MIT 開源（npm i torph）",
+   "noteEn": "A dependency-free animated text component that morphs one word into another. Works with React, Vue, Svelte and TypeScript. MIT-licensed (npm i torph)",
+   "type": "component",
+   "section": "UI 灵感站与素材 · 新增",
+   "sectionTitle": "十五、UI 灵感站、组件与素材 · 2026-10 新增",
+   "sectionDesc": "",
+   "source": "Lochie",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "Vue",
+    "Svelte",
+    "开源",
+    "动效"
+   ],
+   "ct": [],
+   "rt": [
+    "component-library",
+    "motion"
+   ],
+   "vs": [
+    "motion"
+   ],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "aiforui-dev-skills",
+   "name": "AI Skills for UI",
+   "url": "https://aiforui.dev/skills",
+   "note": "Emil Kowalski 的免费开源 AI Skills 目录（MIT），教 Agent 做好界面动效、手势和移动端细节。可用 npx skills add emilkowalski/skills 安装；Skills 本身免费，站点另有付费课程",
+   "noteTw": "Emil Kowalski 的免費開源 AI Skills 目錄（MIT），教 Agent 做好介面動效、手勢和行動端細節。可用 npx skills add emilkowalski/skills 安裝；Skills 本身免費，網站另有付費課程",
+   "noteEn": "Emil Kowalski’s free, MIT-licensed AI skills for better interface animation, gestures and mobile polish. Install with npx skills add emilkowalski/skills. The skills are free; the site also offers a paid course",
+   "type": "skill",
+   "section": "Agent 设计 Skills · 新增",
+   "sectionTitle": "十一、Agent 设计 Skills（Cursor / Claude Code / Codex）· 2026-10 新增",
+   "sectionDesc": "",
+   "source": "Emil Kowalski",
+   "pricing": "free",
+   "tags": [
+    "Skill",
+    "开源",
+    "动效"
+   ],
+   "ct": [],
+   "rt": [
+    "skill",
+    "motion"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "designbookmark-com-motion",
+   "name": "DesignBookmark Motion",
+   "url": "https://designbookmark.com/motion",
+   "note": "DesignBookmark 的动效组件页：页面上直接播放动画组件，可复制 Prompt 交给 Claude 或 Codex 加进项目。该目录本身免费",
+   "noteTw": "DesignBookmark 的動效組件頁：頁面上直接播放動畫組件，可複製 Prompt 交給 Claude 或 Codex 加進專案。該目錄本身免費",
+   "noteEn": "DesignBookmark’s motion page: animated UI components run live on the page, and you can copy a prompt for Claude or Codex to add one to your project. The directory itself is free",
+   "type": "collection",
+   "section": "UI 灵感站与素材 · 新增",
+   "sectionTitle": "十五、UI 灵感站、组件与素材 · 2026-10 新增",
+   "sectionDesc": "",
+   "source": "DesignBookmark",
+   "pricing": "free",
+   "tags": [
+    "动效"
+   ],
+   "ct": [],
+   "rt": [
+    "inspiration",
+    "motion"
+   ],
+   "vs": [
+    "motion",
+    "dark-tech"
+   ],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "heygen-com-hyperframes",
+   "name": "HyperFrames",
+   "url": "https://github.com/heygen-com/hyperframes",
+   "note": "HeyGen 开源的 AI 视频编辑器（Apache-2.0）：可用 Claude Code、Codex 或免费 Studio 应用编写 HTML 并渲染成 MP4",
+   "noteTw": "HeyGen 開源的 AI 影片編輯器（Apache-2.0）：可用 Claude Code、Codex 或免費 Studio 應用編寫 HTML 並渲染成 MP4",
+   "noteEn": "HeyGen’s open-source AI video editor (Apache-2.0): write HTML and render MP4 with Claude Code, Codex, or the free Studio app",
+   "type": "tool",
+   "section": "AI Coding × 设计",
+   "sectionTitle": "十六、AI Coding × 设计：工作流、工具、DESIGN.md、课程与资讯",
+   "sectionDesc": "",
+   "source": "HeyGen",
+   "pricing": "free",
+   "tags": [
+    "开源",
+    "动效",
+    "智能体"
+   ],
+   "ct": [],
+   "rt": [
+    "tool"
+   ],
+   "vs": [
+    "motion"
+   ],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "remotion-dev-skills",
+   "name": "Remotion Agent Skills",
+   "url": "https://github.com/remotion-dev/skills",
+   "note": "Remotion 官方 Agent Skills，教 AI 在 Remotion 项目里创建视频并遵循最佳实践。可用 npx remotion skills add 或 npx skills add remotion-dev/skills 安装。仓库未附许可声明",
+   "noteTw": "Remotion 官方 Agent Skills，教 AI 在 Remotion 專案裡建立影片並遵循最佳實踐。可用 npx remotion skills add 或 npx skills add remotion-dev/skills 安裝。倉庫未附許可聲明",
+   "noteEn": "Official Remotion agent skills for creating videos and following best practices in Remotion projects. Install with npx remotion skills add or npx skills add remotion-dev/skills. The repo does not include a license file",
+   "type": "skill",
+   "section": "Agent 设计 Skills · 新增",
+   "sectionTitle": "十一、Agent 设计 Skills（Cursor / Claude Code / Codex）· 2026-10 新增",
+   "sectionDesc": "",
+   "source": "Remotion",
+   "pricing": "free",
+   "tags": [
+    "Skill"
+   ],
+   "ct": [],
+   "rt": [
+    "skill"
+   ],
+   "vs": [
+    "motion"
+   ],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "motion-canvas",
+   "name": "Motion Canvas",
+   "url": "https://github.com/motion-canvas/motion-canvas",
+   "note": "用 TypeScript 和 Canvas API 编写动画视频的开源库（MIT），可在代码和可视化编辑器之间来回切换",
+   "noteTw": "用 TypeScript 和 Canvas API 編寫動畫影片的開源庫（MIT），可在程式碼和視覺化編輯器之間來回切換",
+   "noteEn": "An open-source TypeScript library (MIT) for creating animated videos with the Canvas API, switching between code and a visual editor",
+   "type": "library",
+   "section": "动效与通用组件",
+   "sectionTitle": "五、动效和好看的通用组件",
+   "sectionDesc": "",
+   "source": "Motion Canvas",
+   "pricing": "free",
+   "tags": [
+    "开源",
+    "动效",
+    "JS"
+   ],
+   "ct": [],
+   "rt": [
+    "motion"
+   ],
+   "vs": [
+    "motion"
+   ],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "el4cteo-blender-skills",
+   "name": "Blender Agent Skills",
+   "url": "https://github.com/EL4CTEO/blender-skills",
+   "note": "把专业 Blender 工作流做成 Agent Skills（MIT），覆盖建模、UV、材质、绑定、动画、导出和质检，可用于 Claude Code、Codex、Cursor 等",
+   "noteTw": "把專業 Blender 工作流做成 Agent Skills（MIT），涵蓋建模、UV、材質、綁定、動畫、匯出和質檢，可用於 Claude Code、Codex、Cursor 等",
+   "noteEn": "Professional Blender workflows packaged as MIT-licensed agent skills — modeling, UVs, materials, rigging, animation, export and QA — for Claude Code, Codex, Cursor and others",
+   "type": "skill",
+   "section": "Agent 设计 Skills · 新增",
+   "sectionTitle": "十一、Agent 设计 Skills（Cursor / Claude Code / Codex）· 2026-10 新增",
+   "sectionDesc": "",
+   "source": "EL4CTEO",
+   "pricing": "free",
+   "tags": [
+    "Skill",
+    "开源"
+   ],
+   "ct": [],
+   "rt": [
+    "skill"
+   ],
+   "vs": [
+    "3d"
+   ],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "motionsites-ai-backgrounds",
+   "name": "MotionSites Backgrounds",
+   "url": "https://motionsites.ai/backgrounds",
+   "note": "MotionSites 的手绘动画背景库，可在线浏览；完整下载需付费订阅（Unlimited）",
+   "noteTw": "MotionSites 的手繪動畫背景庫，可線上瀏覽；完整下載需付費訂閱（Unlimited）",
+   "noteEn": "MotionSites’ library of handcrafted animated backgrounds, free to browse online; full downloads require a paid Unlimited subscription",
+   "type": "collection",
+   "section": "AI Coding × 设计",
+   "sectionTitle": "十六、AI Coding × 设计：工作流、工具、DESIGN.md、课程与资讯",
+   "sectionDesc": "",
+   "source": "MotionSites",
+   "pricing": "freemium",
+   "tags": [
+    "动效"
+   ],
+   "ct": [
+    "background"
+   ],
+   "rt": [
+    "motion",
+    "assets"
+   ],
+   "vs": [
+    "motion"
+   ],
+   "added": "2026-11-23"
+  },
+  {
+   "id": "ismnoiet-border-beam-ios",
+   "name": "BorderBeam (SwiftUI)",
+   "url": "https://github.com/ismnoiet/border-beam-ios",
+   "note": "SwiftUI 的 BorderBeam 组件（MIT）：用 Metal 着色器在输入框等控件边框上跑一圈光带，支持自定义颜色、形状和减弱动效",
+   "noteTw": "SwiftUI 的 BorderBeam 組件（MIT）：用 Metal 著色器在輸入框等控件邊框上跑一圈光帶，支援自訂顏色、形狀和減弱動效",
+   "noteEn": "A MIT-licensed SwiftUI BorderBeam component: a Metal-shader glow that runs around the border of text fields and other views, with custom colors, shapes and reduced-motion support",
+   "type": "component",
+   "section": "动效与通用组件",
+   "sectionTitle": "五、动效和好看的通用组件",
+   "sectionDesc": "",
+   "source": "ismnoiet",
+   "pricing": "free",
+   "tags": [
+    "开源",
+    "动效",
+    "移动端"
+   ],
+   "ct": [
+    "input"
+   ],
+   "rt": [
+    "motion",
+    "component-library"
+   ],
+   "vs": [
+    "motion"
+   ],
+   "added": "2026-11-23"
   }
  ],
  "guides": [
@@ -195801,5 +196205,5 @@
    ]
   }
  ],
- "updatedAt": "2026-11-23T07:32Z"
+ "updatedAt": "2026-11-23T09:07Z"
 }

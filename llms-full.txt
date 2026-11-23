@@ -1,6 +1,6 @@
 # UI Hub
 
-> Curated, multilingual directory of 5189 public UI resources (component libraries, component style demos, effects, design systems, design skills for AI agents) plus original blog analysis of AI design techniques. Data updated 2026-11-23 07:32 UTC.
+> Curated, multilingual directory of 5204 public UI resources (component libraries, component style demos, effects, design systems, design skills for AI agents) plus original blog analysis of AI design techniques. Data updated 2026-11-23 09:07 UTC.
 
 Use the JSON endpoints, not the SPA, when acting as an agent. Every entry links to its original site; licenses belong to the original authors.
 
@@ -142,11 +142,11 @@ Use the JSON endpoints, not the SPA, when acting as an agent. Every entry links 
 - [visx](https://airbnb.io/visx/): Airbnb's low-level visualization components
 
 ## FAQ
-- **What is UI Hub?** A free, curated directory of 5189 public UI resources: 257 component libraries, 1989 component style demos with light/dark screenshots, 70 design skills for AI agents, plus effects, templates, specs and tutorials. It links to original sites and never hosts paid source code.
+- **What is UI Hub?** A free, curated directory of 5204 public UI resources: 258 component libraries, 1989 component style demos with light/dark screenshots, 73 design skills for AI agents, plus effects, templates, specs and tutorials. It links to original sites and never hosts paid source code.
 - **How do I find a component in a given style?** Load https://ui.incidental.site/api/resources.json and filter by ct (component kind, e.g. "dialog") and vs (visual style, e.g. "minimal" or "motion"). type="style" entries are concrete component demos with a libName and page URL; type="library" entries are whole libraries with install info on the site.
 - **Which skills should an agent use for good UI?** One direction skill (frontend-design or taste-skill), emil-design-eng for motion and interaction polish, then impeccable, baseline-ui, web-design-guidelines and accessibility as an audit pass. See https://ui.incidental.site/api/skills.json.
 - **Can I copy the code?** Open-source libraries can be used under their own licenses (MIT, Apache-2.0 etc.); the card shows the original link. Paid tiers (marked paid/freemium) must be bought from the original vendor.
-- **How often is it updated?** Daily via a GitHub Actions job that adds new UI repositories and tools from GitHub, awesome-shadcn-ui and Hacker News. Nothing is deleted. Last update: 2026-11-23 07:32 UTC.
+- **How often is it updated?** Daily via a GitHub Actions job that adds new UI repositories and tools from GitHub, awesome-shadcn-ui and Hacker News. Nothing is deleted. Last update: 2026-11-23 09:07 UTC.
 
 
 # Blog posts (full text, English)
@@ -6093,6 +6093,21 @@ Get Hyped. Get Noticed. Get Results.
 - Type Flicker Animation | inspiration | https://x.com/iamnotsrc/status/2123495272584253522 | Repeating text fragments flicker and cycle through vivid neon colors across a black canvas in a dense, glitchy kinetic typography loop.
 - Glasmio | library | https://github.com/NEORUAA/Glasmio | New GitHub UI repo: A Jetpack Compose UI framework bringing a faithful 1:1 recreation of iOS 27 Liquid Glass, animations, controls, and interactions to Android.
 - instalanding.ai | library | https://instalanding.ai | New GitHub UI repo: Free, open-source library of premium, single-file HTML landing pages, motion components, and interactive experiences. No frameworks. No depe
+- Best Designs on X | inspiration | https://bestdesignsonx.com/ | Hourly-updated gallery of the best design work posted on X — visual showcases, logos, UI and branding, hand-picked from top creatives
+- Visual Explorer | inspiration | https://visualexplorer.app/ | A curated archive of design inspiration shown at full resolution — websites, apps, logos, graphics, editorial design and UI components, credited to their makers
+- Vibe Design Tips | tutorial | https://vibedesign.tips/ | Free design tips by Kubai (@kubai087): 999 short lessons on interface details and interactions, each with a live demo and a prompt or skill you can paste into a
+- Tactile UI | component | https://tactileui.dev/ | UI components that work like real hardware — knobs, switches and dials. 39 objects, 59 page sections and 1,200+ examples, for React, Vue, Svelte or plain JS. So
+- ui.camera | tool | https://ui.camera/ | Create studio-quality product photos and videos of software from your UI, right in the browser
+- DialKit | tool | https://dialkit.dev/ | A floating live-controls panel for React, Solid, Svelte, Vue and plain JavaScript. Tune motion, layout, color and animation timing directly in your interface. M
+- Torph | component | https://torph.lochie.me/ | A dependency-free animated text component that morphs one word into another. Works with React, Vue, Svelte and TypeScript. MIT-licensed (npm i torph)
+- AI Skills for UI | skill | https://aiforui.dev/skills | Emil Kowalski’s free, MIT-licensed AI skills for better interface animation, gestures and mobile polish. Install with npx skills add emilkowalski/skills. The sk
+- DesignBookmark Motion | collection | https://designbookmark.com/motion | DesignBookmark’s motion page: animated UI components run live on the page, and you can copy a prompt for Claude or Codex to add one to your project. The directo
+- HyperFrames | tool | https://github.com/heygen-com/hyperframes | HeyGen’s open-source AI video editor (Apache-2.0): write HTML and render MP4 with Claude Code, Codex, or the free Studio app
+- Remotion Agent Skills | skill | https://github.com/remotion-dev/skills | Official Remotion agent skills for creating videos and following best practices in Remotion projects. Install with npx remotion skills add or npx skills add rem
+- Motion Canvas | library | https://github.com/motion-canvas/motion-canvas | An open-source TypeScript library (MIT) for creating animated videos with the Canvas API, switching between code and a visual editor
+- Blender Agent Skills | skill | https://github.com/EL4CTEO/blender-skills | Professional Blender workflows packaged as MIT-licensed agent skills — modeling, UVs, materials, rigging, animation, export and QA — for Claude Code, Codex, Cur
+- MotionSites Backgrounds | collection | https://motionsites.ai/backgrounds | MotionSites’ library of handcrafted animated backgrounds, free to browse online; full downloads require a paid Unlimited subscription
+- BorderBeam (SwiftUI) | component | https://github.com/ismnoiet/border-beam-ios | A MIT-licensed SwiftUI BorderBeam component: a Metal-shader glow that runs around the border of text fields and other views, with custom colors, shapes and redu
 
 # Component style demos: 1989 entries, see api/resources.json (type=style)
 

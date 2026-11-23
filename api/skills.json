@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23 07:32 UTC",
+ "updated": "2026-11-23 09:07 UTC",
  "workflow": [
   "Read the brief and pick ONE direction skill (frontend-design or taste-skill)",
   "Search api/resources.json for components matching style (vs) and kind (ct)",
@@ -603,6 +603,24 @@
    "name": "Jakub Krehel · skills（含 /state-machine）",
    "url": "https://github.com/jakubkrehel/skills",
    "note": "Jakub 的 Agent 技能集，/state-machine 会把组件所有状态渲染在一页上供检查（X 来源：@jakubkrehel，977 赞 / 1246 收藏，2026-10-08）"
+  },
+  {
+   "id": "aiforui-dev-skills",
+   "name": "AI Skills for UI",
+   "url": "https://aiforui.dev/skills",
+   "note": "Emil Kowalski’s free, MIT-licensed AI skills for better interface animation, gestures and mobile polish. Install with npx skills add emilkowalski/skills. The skills are free; the site also offers a paid course"
+  },
+  {
+   "id": "remotion-dev-skills",
+   "name": "Remotion Agent Skills",
+   "url": "https://github.com/remotion-dev/skills",
+   "note": "Official Remotion agent skills for creating videos and following best practices in Remotion projects. Install with npx remotion skills add or npx skills add remotion-dev/skills. The repo does not include a license file"
+  },
+  {
+   "id": "el4cteo-blender-skills",
+   "name": "Blender Agent Skills",
+   "url": "https://github.com/EL4CTEO/blender-skills",
+   "note": "Professional Blender workflows packaged as MIT-licensed agent skills — modeling, UVs, materials, rigging, animation, export and QA — for Claude Code, Codex, Cursor and others"
   }
  ]
 }
