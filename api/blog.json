@@ -1,5 +1,5 @@
 {
- "count": 58,
+ "count": 59,
  "rss": "https://ui.incidental.site/blog/rss.xml",
  "categories": {
   "tools": "Tools",
@@ -18,6 +18,108 @@
   "weekly": "Series: Weekly roundup"
  },
  "posts": [
+  {
+   "slug": "ai-slop-patterns-frontier-design-benchmark",
+   "url": "https://ui.incidental.site/blog/ai-slop-patterns-frontier-design-benchmark/",
+   "date": "2026-11-23",
+   "category": "craft",
+   "series": null,
+   "featured": true,
+   "tags": [
+    "Frontier Design Benchmark",
+    "Contra Labs",
+    "AI slop",
+    "design evaluation",
+    "design rubric",
+    "taste"
+   ],
+   "title": {
+    "en": "AI slop is now measurable: what a blind design benchmark found, and how to check your own pages",
+    "zh": "「AI 味」可以量化了：一个盲评设计基准发现了什么，以及怎样检查你自己的页面",
+    "zht": "「AI 味」可以量化了：一個盲評設計基準發現了什麼，以及怎樣檢查你自己的頁面",
+    "ja": "AIっぽさは測れるようになった：ブラインド評価のデザインベンチマークが示したことと、自分のページの点検法",
+    "ko": "AI 티를 측정할 수 있게 됐다: 블라인드 디자인 벤치마크가 밝힌 것과 내 페이지 점검법",
+    "ms": "Rupa “AI” kini boleh diukur: dapatan penanda aras reka bentuk buta, dan cara menyemak halaman anda sendiri",
+    "vi": "“Mùi AI” giờ đã đo được: một benchmark thiết kế chấm mù phát hiện điều gì, và cách tự kiểm tra trang của bạn",
+    "fr": "L’effet « fait par une IA » se mesure désormais : ce qu’a révélé un benchmark de design à l’aveugle, et comment vérifier vos pages",
+    "es": "El aspecto «hecho por IA» ya se puede medir: lo que encontró un benchmark de diseño a ciegas y cómo revisar tus páginas",
+    "de": "KI-Einheitslook ist jetzt messbar: was ein blinder Design-Benchmark gefunden hat und wie Sie Ihre eigenen Seiten prüfen"
+   },
+   "summary": {
+    "en": "On 18 November 2026 Contra Labs and BenchFlow published the Frontier Design Benchmark: 33 real client briefs, sites built by 15 models, and 4,311 blind votes from 35 professional designers. A stealth model called Gestalt topped it, but the more useful output is a list of patterns that make a page look AI-made, counted across hundreds of pages. What the benchmark measured, why designers still preferred flawed human work, our take on using it, plus a slop-lint checklist, a small eval you can run and an agent prompt.",
+    "zh": "2026 年 11 月 18 日，Contra Labs 与 BenchFlow 发布 Frontier Design Benchmark：33 份真实客户需求、15 个模型各自做出的网站，以及 35 位职业设计师投出的 4,311 张盲评票。一个名叫 Gestalt 的匿名模型排名第一，但更有用的产出是一份「AI 味」模式清单，并在数百个页面上做了统计。本文讲这个基准测了什么、为什么设计师仍然偏爱有瑕疵的人类作品、我们怎么看、怎么用，并附 AI 味检查清单、一套你能自己跑的小评测和智能体提示词。",
+    "zht": "2026 年 11 月 18 日，Contra Labs 與 BenchFlow 發布 Frontier Design Benchmark：33 份真實客戶需求、15 個模型各自做出的網站，以及 35 位職業設計師投出的 4,311 張盲評票。一個名叫 Gestalt 的匿名模型排名第一，但更有用的產出是一份「AI 味」模式清單，並在數百個頁面上做了統計。本文講這個基準測了什麼、為什麼設計師仍然偏愛有瑕疵的人類作品、我們怎麼看、怎麼用，並附 AI 味檢查清單、一套你能自己跑的小評測和智能體提示詞。",
+    "ja": "2026年11月18日、Contra LabsとBenchFlowがFrontier Design Benchmarkを公開した。実際のクライアント案件33件、15モデルが作ったサイト、35人のプロデザイナーによる4,311票のブラインド投票。首位はGestaltという匿名モデルだが、より役立つのは「AIっぽく見える」パターンの一覧と、数百ページでの出現率だ。何を測ったのか、なぜ欠点のある人間の作品が好まれたのか、使い方への見解、チェックリスト、自分で回せる小さな評価、エージェント用プロンプト付き。",
+    "ko": "2026년 11월 18일 Contra Labs와 BenchFlow가 Frontier Design Benchmark를 공개했다. 실제 클라이언트 브리프 33건, 15개 모델이 만든 사이트, 전문 디자이너 35명의 블라인드 투표 4,311표. 1위는 Gestalt라는 스텔스 모델이지만, 더 쓸모 있는 결과는 페이지를 AI가 만든 것처럼 보이게 하는 패턴 목록과 수백 페이지에서 센 빈도다. 무엇을 측정했는지, 왜 디자이너들이 결함 있는 사람 작업을 더 골랐는지, 활용법에 대한 견해, 체크리스트, 직접 돌릴 수 있는 작은 평가와 에이전트 프롬프트 포함.",
+    "ms": "Pada 18 November 2026 Contra Labs dan BenchFlow menerbitkan Frontier Design Benchmark: 33 taklimat pelanggan sebenar, laman yang dibina oleh 15 model, dan 4,311 undian buta daripada 35 pereka profesional. Model rahsia bernama Gestalt di tempat pertama, tetapi hasil yang lebih berguna ialah senarai corak yang membuat halaman nampak dibuat AI, dikira merentas ratusan halaman. Apa yang diukur, mengapa pereka masih memilih kerja manusia yang ada cacat, pandangan kami, senarai semak, penilaian kecil dan prompt ejen.",
+    "vi": "Ngày 18/11/2026, Contra Labs và BenchFlow công bố Frontier Design Benchmark: 33 brief khách hàng thật, website do 15 mô hình dựng, và 4.311 phiếu chấm mù từ 35 nhà thiết kế chuyên nghiệp. Mô hình ẩn danh Gestalt đứng đầu, nhưng kết quả hữu ích hơn là danh sách các mẫu khiến trang trông “do AI làm”, được đếm trên hàng trăm trang. Benchmark đo gì, vì sao nhà thiết kế vẫn chọn bản của người dù còn lỗi, nhận định của chúng tôi, kèm checklist, một bài đánh giá nhỏ tự chạy được và prompt cho agent.",
+    "fr": "Le 18 novembre 2026, Contra Labs et BenchFlow ont publié le Frontier Design Benchmark : 33 vrais briefs clients, des sites construits par 15 modèles et 4 311 votes à l’aveugle de 35 designers professionnels. Un modèle furtif, Gestalt, arrive en tête, mais le résultat le plus utile est une liste de motifs qui donnent un air « fait par une IA », comptés sur des centaines de pages. Ce qui est mesuré, pourquoi les designers préfèrent encore un travail humain imparfait, notre avis, checklist, mini-évaluation et prompt.",
+    "es": "El 18 de noviembre de 2026 Contra Labs y BenchFlow publicaron el Frontier Design Benchmark: 33 briefs reales de clientes, sitios creados por 15 modelos y 4.311 votos a ciegas de 35 diseñadores profesionales. Un modelo en sigilo, Gestalt, quedó primero, pero lo más útil es una lista de patrones que hacen que una página parezca hecha por IA, contados en cientos de páginas. Qué mide, por qué los diseñadores aún prefieren trabajo humano con fallos, nuestra opinión, checklist, una evaluación pequeña y un prompt.",
+    "de": "Am 18. November 2026 haben Contra Labs und BenchFlow den Frontier Design Benchmark veröffentlicht: 33 echte Kundenbriefings, Websites von 15 Modellen und 4.311 Blindstimmen von 35 professionellen Designern. Ein Stealth-Modell namens Gestalt liegt vorn, nützlicher ist aber eine Liste von Mustern, die eine Seite nach KI aussehen lassen, gezählt über Hunderte Seiten. Was gemessen wurde, warum Designer fehlerhafte menschliche Arbeit trotzdem vorziehen, unsere Sicht, Checkliste, Mini-Eval und Agent-Prompt."
+   },
+   "reading_minutes": {
+    "en": 6,
+    "zh": 8
+   },
+   "cover": "https://ui.incidental.site/blog/img/ai-slop-patterns-frontier-design-benchmark-cover.webp",
+   "references": [
+    {
+     "title": "Frontier Design: Evaluating AI on Real World Design Tasks",
+     "by": "Contra Labs",
+     "url": "https://contralabs.com/research/frontier-design-benchmark"
+    },
+    {
+     "title": "Frontier Design Benchmark leaderboard",
+     "by": "Contra Labs × BenchFlow",
+     "url": "https://contralabs.com/frontierdesign/leaderboard"
+    },
+    {
+     "title": "Methodology",
+     "by": "Contra Labs × BenchFlow",
+     "url": "https://contralabs.com/frontierdesign/methodology"
+    },
+    {
+     "title": "Design Critique Rubric and Slop Detector",
+     "by": "Contra Labs × BenchFlow",
+     "url": "https://contralabs.com/frontierdesign/rubric"
+    },
+    {
+     "title": "Gallery of model and human outputs",
+     "by": "Contra Labs × BenchFlow",
+     "url": "https://contralabs.com/frontierdesign/gallery"
+    },
+    {
+     "title": "Stealth model Gestalt beats Claude Fable 5.2 on the Frontier Design Benchmark",
+     "by": "Pasquale Pillitteri",
+     "url": "https://pasqualepillitteri.it/en/news/35144/stealth-model-gestalt-beats-fable-5-2-frontier-design-benchmark"
+    },
+    {
+     "title": "Two stealth models just appeared on the leaderboard, both ahead of Fable 5.2 (discussion)",
+     "by": "Hacker News",
+     "url": "https://news.ycombinator.com/item?id=50558559"
+    },
+    {
+     "title": "BenchFlow",
+     "by": "BenchFlow",
+     "url": "https://benchflow.ai"
+    },
+    {
+     "title": "Bradley–Terry model",
+     "by": "Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Bradley%E2%80%93Terry_model"
+    },
+    {
+     "title": "The Aesthetic-Usability Effect",
+     "by": "Kate Moran · Nielsen Norman Group",
+     "url": "https://www.nngroup.com/articles/aesthetic-usability-effect/"
+    },
+    {
+     "title": "How to Conduct a Heuristic Evaluation",
+     "by": "Nielsen Norman Group",
+     "url": "https://www.nngroup.com/articles/how-to-conduct-a-heuristic-evaluation/"
+    }
+   ]
+  },
   {
    "slug": "ai-off-switch-global-ai-controls",
    "url": "https://ui.incidental.site/blog/ai-off-switch-global-ai-controls/",

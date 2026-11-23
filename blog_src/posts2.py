@@ -3330,4 +3330,115 @@ Add a global "AI features" setting to this app.
 <p>UI Hub 相关阅读：<a href="../agent-approval-ui-budgets-interruptions/">智能体的审批界面</a>、<a href="../accessibility-in-ai-generated-ui/">AI 生成界面的无障碍</a>，以及<a href="../native-popover-dialog-overlays-for-ai-ui/">AI 界面的原生弹层与对话框</a>。</p>""",
  refs=[('Flodesk Brings Studio Inside Its Platform With a Whole New Way to Create Emails','Flodesk via PR Newswire','https://www.prnewswire.com/news-releases/flodesk-brings-studio-inside-its-platform-with-a-whole-new-way-to-create-emails-302941983.html'),('Create an email from a prompt in Flodesk (incl. how to turn off AI features)','Flodesk Help Center','https://help.flodesk.com/en/articles/14449281'),('How to send a newsletter in Flodesk','Flodesk Help Center','https://help.flodesk.com/en/articles/4482113'),('Official information about Flodesk (AI)','Flodesk','https://flodesk.com/ai-information'),('AI controls are coming to Firefox','Ajit Varma · Mozilla blog','https://blog.mozilla.org/en/firefox/ai-controls/'),('How to turn off AI features in Firefox, or choose the ones you want','Mozilla blog','https://blog.mozilla.org/en/firefox/how-to-use-ai-controls/'),('Firefox AI controls','Mozilla Support','https://support.mozilla.org/en-US/kb/firefox-ai-controls'),('A new way to design your SNO site, on your terms','SNO Sites','https://snosites.com/news-announcements/2026/11/17/a-new-way-to-design-your-sno-site-on-your-terms/'),('Provide global controls (Guideline 17)','Microsoft HAX Toolkit','https://www.microsoft.com/en-us/haxtoolkit/guideline/provide-global-controls/'),('Guidelines for Human-AI Interaction','Saleema Amershi et al. · Microsoft Research (CHI 2019)','https://www.microsoft.com/en-us/research/publication/guidelines-for-human-ai-interaction/'),('Toggle-Switch Guidelines','Alita Kendrick · Nielsen Norman Group','https://www.nngroup.com/articles/toggle-switch-guidelines/')]),
 
+dict(slug='ai-slop-patterns-frontier-design-benchmark', date='2026-11-23', cat='craft', series=None, featured=True, tags=['Frontier Design Benchmark','Contra Labs','AI slop','design evaluation','design rubric','taste'],
+ t=T('AI slop is now measurable: what a blind design benchmark found, and how to check your own pages',
+     '「AI 味」可以量化了：一个盲评设计基准发现了什么，以及怎样检查你自己的页面',
+     '「AI 味」可以量化了：一個盲評設計基準發現了什麼，以及怎樣檢查你自己的頁面',
+     'AIっぽさは測れるようになった：ブラインド評価のデザインベンチマークが示したことと、自分のページの点検法',
+     'AI 티를 측정할 수 있게 됐다: 블라인드 디자인 벤치마크가 밝힌 것과 내 페이지 점검법',
+     'Rupa “AI” kini boleh diukur: dapatan penanda aras reka bentuk buta, dan cara menyemak halaman anda sendiri',
+     '“Mùi AI” giờ đã đo được: một benchmark thiết kế chấm mù phát hiện điều gì, và cách tự kiểm tra trang của bạn',
+     'L’effet « fait par une IA » se mesure désormais : ce qu’a révélé un benchmark de design à l’aveugle, et comment vérifier vos pages',
+     'El aspecto «hecho por IA» ya se puede medir: lo que encontró un benchmark de diseño a ciegas y cómo revisar tus páginas',
+     'KI-Einheitslook ist jetzt messbar: was ein blinder Design-Benchmark gefunden hat und wie Sie Ihre eigenen Seiten prüfen'),
+ s=T('On 18 November 2026 Contra Labs and BenchFlow published the Frontier Design Benchmark: 33 real client briefs, sites built by 15 models, and 4,311 blind votes from 35 professional designers. A stealth model called Gestalt topped it, but the more useful output is a list of patterns that make a page look AI-made, counted across hundreds of pages. What the benchmark measured, why designers still preferred flawed human work, our take on using it, plus a slop-lint checklist, a small eval you can run and an agent prompt.',
+     '2026 年 11 月 18 日，Contra Labs 与 BenchFlow 发布 Frontier Design Benchmark：33 份真实客户需求、15 个模型各自做出的网站，以及 35 位职业设计师投出的 4,311 张盲评票。一个名叫 Gestalt 的匿名模型排名第一，但更有用的产出是一份「AI 味」模式清单，并在数百个页面上做了统计。本文讲这个基准测了什么、为什么设计师仍然偏爱有瑕疵的人类作品、我们怎么看、怎么用，并附 AI 味检查清单、一套你能自己跑的小评测和智能体提示词。',
+     '2026 年 11 月 18 日，Contra Labs 與 BenchFlow 發布 Frontier Design Benchmark：33 份真實客戶需求、15 個模型各自做出的網站，以及 35 位職業設計師投出的 4,311 張盲評票。一個名叫 Gestalt 的匿名模型排名第一，但更有用的產出是一份「AI 味」模式清單，並在數百個頁面上做了統計。本文講這個基準測了什麼、為什麼設計師仍然偏愛有瑕疵的人類作品、我們怎麼看、怎麼用，並附 AI 味檢查清單、一套你能自己跑的小評測和智能體提示詞。',
+     '2026年11月18日、Contra LabsとBenchFlowがFrontier Design Benchmarkを公開した。実際のクライアント案件33件、15モデルが作ったサイト、35人のプロデザイナーによる4,311票のブラインド投票。首位はGestaltという匿名モデルだが、より役立つのは「AIっぽく見える」パターンの一覧と、数百ページでの出現率だ。何を測ったのか、なぜ欠点のある人間の作品が好まれたのか、使い方への見解、チェックリスト、自分で回せる小さな評価、エージェント用プロンプト付き。',
+     '2026년 11월 18일 Contra Labs와 BenchFlow가 Frontier Design Benchmark를 공개했다. 실제 클라이언트 브리프 33건, 15개 모델이 만든 사이트, 전문 디자이너 35명의 블라인드 투표 4,311표. 1위는 Gestalt라는 스텔스 모델이지만, 더 쓸모 있는 결과는 페이지를 AI가 만든 것처럼 보이게 하는 패턴 목록과 수백 페이지에서 센 빈도다. 무엇을 측정했는지, 왜 디자이너들이 결함 있는 사람 작업을 더 골랐는지, 활용법에 대한 견해, 체크리스트, 직접 돌릴 수 있는 작은 평가와 에이전트 프롬프트 포함.',
+     'Pada 18 November 2026 Contra Labs dan BenchFlow menerbitkan Frontier Design Benchmark: 33 taklimat pelanggan sebenar, laman yang dibina oleh 15 model, dan 4,311 undian buta daripada 35 pereka profesional. Model rahsia bernama Gestalt di tempat pertama, tetapi hasil yang lebih berguna ialah senarai corak yang membuat halaman nampak dibuat AI, dikira merentas ratusan halaman. Apa yang diukur, mengapa pereka masih memilih kerja manusia yang ada cacat, pandangan kami, senarai semak, penilaian kecil dan prompt ejen.',
+     'Ngày 18/11/2026, Contra Labs và BenchFlow công bố Frontier Design Benchmark: 33 brief khách hàng thật, website do 15 mô hình dựng, và 4.311 phiếu chấm mù từ 35 nhà thiết kế chuyên nghiệp. Mô hình ẩn danh Gestalt đứng đầu, nhưng kết quả hữu ích hơn là danh sách các mẫu khiến trang trông “do AI làm”, được đếm trên hàng trăm trang. Benchmark đo gì, vì sao nhà thiết kế vẫn chọn bản của người dù còn lỗi, nhận định của chúng tôi, kèm checklist, một bài đánh giá nhỏ tự chạy được và prompt cho agent.',
+     'Le 18 novembre 2026, Contra Labs et BenchFlow ont publié le Frontier Design Benchmark : 33 vrais briefs clients, des sites construits par 15 modèles et 4 311 votes à l’aveugle de 35 designers professionnels. Un modèle furtif, Gestalt, arrive en tête, mais le résultat le plus utile est une liste de motifs qui donnent un air « fait par une IA », comptés sur des centaines de pages. Ce qui est mesuré, pourquoi les designers préfèrent encore un travail humain imparfait, notre avis, checklist, mini-évaluation et prompt.',
+     'El 18 de noviembre de 2026 Contra Labs y BenchFlow publicaron el Frontier Design Benchmark: 33 briefs reales de clientes, sitios creados por 15 modelos y 4.311 votos a ciegas de 35 diseñadores profesionales. Un modelo en sigilo, Gestalt, quedó primero, pero lo más útil es una lista de patrones que hacen que una página parezca hecha por IA, contados en cientos de páginas. Qué mide, por qué los diseñadores aún prefieren trabajo humano con fallos, nuestra opinión, checklist, una evaluación pequeña y un prompt.',
+     'Am 18. November 2026 haben Contra Labs und BenchFlow den Frontier Design Benchmark veröffentlicht: 33 echte Kundenbriefings, Websites von 15 Modellen und 4.311 Blindstimmen von 35 professionellen Designern. Ein Stealth-Modell namens Gestalt liegt vorn, nützlicher ist aber eine Liste von Mustern, die eine Seite nach KI aussehen lassen, gezählt über Hunderte Seiten. Was gemessen wurde, warum Designer fehlerhafte menschliche Arbeit trotzdem vorziehen, unsere Sicht, Checkliste, Mini-Eval und Agent-Prompt.'),
+ en="""<p>On 18 November Contra Labs, the research arm of the freelance marketplace Contra, published the <strong>Frontier Design Benchmark</strong> together with BenchFlow, a company that runs AI agents in sandboxes and records what they produce. The headline went around X and Hacker News within a day: a stealth model called <strong>Gestalt</strong>, with no named maker, ranked first at about 1,930 Elo, ahead of both the best named model and the human designers. A commenter from Contra clarified on Hacker News that it is a single model and not Contra’s own.</p>
+<p>The leaderboard is the least durable part of the release. Gestalt cannot be used, and model names will change by spring. What lasts is the method and one of its by-products: a list of the visual habits that make a page look machine-made, each with a measured frequency. If you generate interfaces with AI, that list is a lint rule set you can run on your own work this week.</p>
+<h2>What the benchmark actually measured</h2>
+<ul><li><strong>Real briefs, not “a landing page for a coffee shop”.</strong> 27 of the 33 tasks are rewritten jobs from Contra’s marketplace and 6 come from startups with their own brand files and old sites. Contra says the median website brief on its platform runs 138 words on a budget of about $1,050, and three in four stack two or more constraints such as a logo, an audience and a business goal. Outputs include multi-page marketing sites, web apps with working flows and two mobile apps.</li>
+<li><strong>A human bar in the same race.</strong> Contra designers made a moodboard of three directions, got feedback, built the site with tools of their choice and iterated. These “golden” designs were voted on blind alongside the models.</li>
+<li><strong>Three different instruments.</strong> Blind pairwise votes from 35 professional designers (4,311 votes over five rounds, turned into ratings with a Bradley–Terry model; two random halves of the panel agree at Spearman 0.95). A Design Critique Rubric of about 35 checks grouped into structure, visual craft, and content and use, such as type hierarchy, spacing, contrast and whether everything renders whole. And a Slop Detector, a classifier trained on human-made and AI-made pages that scores 0 to 100 for how AI-looking a page is and lists the traits behind the score.</li></ul>
+<h2>Three findings worth more than the ranking</h2>
+<p><strong>The rubric agrees with designers about models, and disagrees about people.</strong> Across the 15 models, rubric score tracks the vote ranking closely (r = 0.94). But the human golden designs scored 73.6 on the rubric, sixth of 16 and behind the top Claude and GPT models, because they had concrete faults: a button label too dark to read, a wordmark clipped by the section above. Designers still picked them in 74% of matchups (425 of 574). A checklist catches mistakes; it does not measure the thing people were voting on.</p>
+<p><strong>Slop is mostly about frequency, and it is countable.</strong> Contra published a small subset of its pattern list with numbers. A tiny letter-spaced label above a heading that repeats the heading appears on at least half the sections of 93% of AI pages in the detector’s training set, against 11% of human pages. One italic word in the headline: up to 51% of one model’s pages, no human golden design. Numbered sections (01, 02, 03): 17% of AI pages, no human page at all. Content boxed in cards almost everywhere: 86% to 97% of pages for three models.</p>
+<p><strong>Each lab leaves fingerprints.</strong> Claude models put a horizontal arrow on links and buttons on 81% to 96% of their pages; GPT models use a diagonal arrow on 87% to 94%. One GPT model writes two- or three-phrase slogan headings on 55% of pages, against 4% for other labs. Another model centres every section heading on 44% of pages, against 1% elsewhere. On the Slop Detector, human goldens read 0.9 and Gestalt read close to them; the three Claude models read 31 to 38, the two GPT models 41 to 53 and the two Gemini models 54 to 57. Among the models Contra ran itself, the lowest reading belonged to DeepSeek V4 Pro, which also ranked last, because its pages were often unfinished. Looking less like AI is not the same as being good.</p>
+<h2>Our take</h2>
+<p>Treat the three instruments as three questions, and never collapse them into one score. <em>Votes</em> answer “which direction do people want?”. The <em>rubric</em> answers “what is broken and fixable?”. The <em>slop reading</em> answers “will this look like everyone else’s generated page?”. The golden-design result shows why the order matters: pick the direction by taste first, then use the rubric as a fix list, then lint for slop. Running the rubric first would have ranked the designs people liked best below five models.</p>
+<p>Lint for ratios, not bans. An eyebrow label on one section is a choice; on every section it is a default showing through. The same goes for cards, arrows and centred headings. The fix is rarely to delete the pattern. It is to decide it once in your design system, which arrow glyph, which heading alignment, when a group earns a box, so the model’s house style stops deciding for you.</p>
+<p>Read the headline with care. The operator of the ranking also sells evaluation data to labs, Gestalt’s sites do not appear in the public gallery, and its edge over the human designers rests on 28 head-to-head votes. NN/g’s aesthetic-usability effect is a reminder that a blind “which is better” vote rewards appeal, and appeal can hide usability problems. Use the leaderboard to shortlist tools, then test them on your own briefs.</p>
+<p>We ran the published list against this blog. Our diagrams numbered their steps, so the diagrams in this post do not. The small uppercase keys inside our diagram boxes stay: each names a different value rather than repeating a heading, which is the case the list warns about.</p>
+<h2>How to run a small design eval of your own</h2>
+<ol><li><strong>Write three real briefs.</strong> Take them from past projects, each with at least two constraints: a logo or palette, an audience, a mobile requirement, a business goal. Same assets for every contestant.</li>
+<li><strong>Generate with each candidate, plus one human reference.</strong> Same time box and the same number of revision turns. If you can, run each model in the tool you would actually use.</li>
+<li><strong>Vote blind in pairs.</strong> Three to five people who ship design. Strip tool names, shuffle sides for each pair, ask one question (“which would you hand to this client?”) and one optional sentence of why.</li>
+<li><strong>Diagnose after voting.</strong> Score each output on a short rubric (hierarchy, spacing, contrast, broken or clipped elements, prompt adherence) and run the slop lint below. The deliverable is a fix list per tool, not just a winner.</li>
+<li><strong>Feed fixes back as rules.</strong> Every recurring fault becomes a line in your design guidelines or agent skill, so the next generation starts above it.</li></ol>
+<h2>Slop-lint checklist</h2>
+<ul><li>Small uppercase, letter-spaced labels above more than half of the section headings?</li>
+<li>An italic or highlighted word inside the main headline?</li>
+<li>Sections numbered 01, 02, 03 when the order carries no meaning?</li>
+<li>Most content groups inside bordered or filled cards?</li>
+<li>The same arrow glyph (→ or ↗) on nearly every link and button?</li>
+<li>Headings written as parallel slogans, with body copy that never says how the product works?</li>
+<li>Every section heading centred, or cards and phones tilted at an angle by default?</li>
+<li>Rubric basics: one clear type hierarchy, consistent spacing, readable contrast on every button, nothing clipped at 390 px and 1280 px, light and dark?</li></ul>
+<pre><code># Paste this into your design or coding agent
+Audit the pages in &lt;folder or URL list&gt; for AI-default patterns.
+- For each page, count sections and report the share that have:
+  a small uppercase letter-spaced label right above the heading,
+  a bordered or filled card around most content, a centred heading,
+  a rotated element, and an arrow glyph (→ ↗) in links or buttons.
+- Flag an italic or highlighted word inside the h1, numbered section
+  labels (01, 02 …), and slogan-style headings.
+- Flag any ratio above 50% and propose one design-system rule per flag
+  (e.g. "arrows only on external links"). Do not change code yet.
+- Then check rubric basics at 390 px and 1280 px, light and dark:
+  contrast on buttons, clipped text or logos, type hierarchy, spacing.
+Return a table and a short fix list. Wait for my approval.</code></pre>
+<p>Related on UI Hub: <a href="../taste-and-skills-for-agents/">teaching agents taste with design skills</a>, <a href="../lint-agents-onto-your-design-system/">linting agents onto your design system</a>, and <a href="../parallel-design-directions-drafts-stitch-rapid/">making AI design variants comparable</a>.</p>""",
+ zh="""<p>11 月 18 日，自由职业平台 Contra 旗下的研究团队 Contra Labs 与 BenchFlow 联合发布了 <strong>Frontier Design Benchmark</strong>。BenchFlow 的业务是在沙箱里运行 AI 智能体并记录产出。一天之内，结论就在 X 和 Hacker News 上传开了：一个名叫 <strong>Gestalt</strong>、没有公开开发方的匿名模型以约 1,930 的 Elo 排名第一，既超过了最强的已知模型，也超过了人类设计师。一位来自 Contra 的评论者在 Hacker News 上澄清，这是单个模型，而且不是 Contra 自己的。</p>
+<p>排行榜是这次发布里最不耐久的部分。Gestalt 用不了，模型名字到明年春天也会换一轮。真正留得住的是方法，以及它的一个副产品：一份让页面「看起来像机器做的」视觉习惯清单，每一条都有实测频率。如果你用 AI 生成界面，这份清单就是一套这周就能拿来检查自己作品的规则。</p>
+<h2>这个基准到底测了什么</h2>
+<ul><li><strong>真实需求，而不是「给咖啡店做个落地页」。</strong>33 个任务中，27 个改写自 Contra 平台上的真实订单，6 个来自初创公司，附带它们自己的品牌素材和旧网站。Contra 称，平台上网站类需求的中位数是 138 个词、预算约 1,050 美元，四分之三同时叠加两个以上约束，比如 Logo、目标受众和业务目标。产出包括多页营销网站、带完整流程的 Web 应用和两个移动应用。</li>
+<li><strong>人类标杆同场比赛。</strong>Contra 的设计师先做三个方向的情绪板，收到反馈后用自选工具做出网站并迭代。这些「黄金设计」和模型产出一起接受盲评。</li>
+<li><strong>三种不同的测量工具。</strong>35 位职业设计师两两盲评（五轮共 4,311 票，用 Bradley–Terry 模型换算成评分；评委随机分成两半，两组排名的 Spearman 相关为 0.95）。一套约 35 项的设计评审细则，分为结构、视觉工艺、内容与可用性三组，比如字号层级、间距、对比度、元素是否完整渲染。还有一个 AI 味检测器：用人做的和 AI 做的页面训练的分类器，按 0 到 100 给出「有多像 AI 做的」，并列出导致这个分数的特征。</li></ul>
+<h2>比排名更有价值的三个发现</h2>
+<p><strong>评分细则在模型上和设计师意见一致，在人身上却不一致。</strong>在 15 个模型之间，细则分数和投票排名高度吻合（r = 0.94）。但人类黄金设计的细则得分只有 73.6，16 个参赛者中排第六，落后于排名靠前的 Claude 和 GPT 模型，因为它们有具体的瑕疵：按钮文字颜色太深看不清、字标被上一个区块挡住一截。即便如此，设计师在 74% 的对决中仍然选了它们（574 票中 425 票）。检查清单能抓住错误，但测不到大家真正在投的那样东西。</p>
+<p><strong>AI 味主要是频率问题，而且可以计数。</strong>Contra 公开了模式清单的一小部分，并附上数字。标题上方那行字号很小、字距拉开、只是重复标题内容的标签：检测器训练集里 93% 的 AI 页面有一半以上的区块这样做，人类页面只有 11%。标题里单独一个斜体词：某个模型最多 51% 的页面这样做，人类黄金设计一个都没有。01、02、03 编号的分区：17% 的 AI 页面，人类页面一个都没有。几乎所有内容都装进卡片：三个模型在 86% 到 97% 的页面上这样做。</p>
+<p><strong>每家实验室都会留下指纹。</strong>Claude 系模型在 81% 到 96% 的页面上给链接和按钮加横向箭头 →；GPT 系模型在 87% 到 94% 的页面上用斜向箭头 ↗。某个 GPT 模型在 55% 的页面上把标题写成两三个并列短语的口号，其他实验室只有 4%。另一个模型在 44% 的页面上把所有区块标题居中，其他模型只有 1%。在 AI 味检测器上，人类黄金设计读数为 0.9，Gestalt 与之接近；三个 Claude 模型在 31 到 38 之间，两个 GPT 模型在 41 到 53 之间，两个 Gemini 模型在 54 到 57 之间。在 Contra 自己跑的模型里，读数最低的是 DeepSeek V4 Pro，而它的排名也是最后，因为它的页面常常没做完。看起来不像 AI，并不等于做得好。</p>
+<h2>我们怎么看</h2>
+<p>把这三种工具当成三个问题，永远不要压成一个分数。<em>投票</em>回答「大家想要哪个方向」；<em>评分细则</em>回答「哪里坏了、能修」；<em>AI 味读数</em>回答「这会不会和别人生成的页面长得一样」。黄金设计的结果说明了顺序为什么重要：先凭品味选方向，再拿细则当修改清单，最后检查 AI 味。如果先跑细则，大家最喜欢的设计会被排在五个模型后面。</p>
+<p>检查比例，而不是一刀切禁止。一个区块上有小标签是选择；每个区块都有，就是默认值露了馅。卡片、箭头、居中标题都一样。解决办法很少是删掉这个模式，而是在设计系统里定一次：用哪个箭头字符、标题怎么对齐、什么样的内容组才配一个框。这样就不再由模型的「家族风格」替你做决定。</p>
+<p>对头条结论要谨慎。排行榜的运营方同时向模型实验室出售评测数据；Gestalt 的网站没有出现在公开作品库里；它胜过人类设计师的结论只建立在 28 场对决上。NN/g 讲的「美感—可用性效应」也提醒我们：盲评「哪个更好」奖励的是吸引力，而吸引力可能掩盖可用性问题。排行榜适合拿来缩小候选范围，然后用你自己的需求再测一遍。</p>
+<p>我们拿这份公开清单检查了本博客：我们的示意图一直给步骤编号，所以这篇文章里的示意图不再编号。示意图格子里的小号大写键名保留：每个键名标注的是不同的数值，而不是重复标题，清单警告的是后一种情况。</p>
+<h2>怎样自己跑一个小型设计评测</h2>
+<ol><li><strong>写三份真实需求。</strong>从过去的项目里取，每份至少两个约束：Logo 或配色、目标受众、移动端要求、业务目标。所有参赛者用同一套素材。</li>
+<li><strong>每个候选工具各生成一版，再加一份人工参考。</strong>同样的时间限制、同样的修改轮数。尽量让每个模型跑在你实际会用的工具里。</li>
+<li><strong>两两盲评。</strong>找三到五位真正做设计交付的人。去掉工具名，每组随机左右，只问一个问题（「你会把哪个交给这个客户？」），可以选填一句理由。</li>
+<li><strong>投完票再诊断。</strong>用一份简短细则给每份产出打分（层级、间距、对比度、元素破损或被裁切、是否符合需求），再跑下面的 AI 味检查。交付物是每个工具的修改清单，而不只是一个赢家。</li>
+<li><strong>把修改变成规则。</strong>反复出现的问题写进设计规范或智能体技能，下一次生成就从更高的起点开始。</li></ol>
+<h2>AI 味检查清单</h2>
+<ul><li>超过一半的区块标题上方有小号大写、字距拉开的标签吗？</li>
+<li>主标题里有单独一个斜体或高亮的词吗？</li>
+<li>顺序没有意义，却用 01、02、03 给区块编号？</li>
+<li>大部分内容组都装在带边框或底色的卡片里？</li>
+<li>几乎每个链接和按钮都用同一个箭头字符（→ 或 ↗）？</li>
+<li>标题写成并列口号，正文却从不说明产品怎么运作？</li>
+<li>所有区块标题都居中，或者卡片、手机默认倾斜摆放？</li>
+<li>细则基本项：字号层级是否清楚、间距是否一致、每个按钮的对比度是否可读、在 390px 和 1280px 宽度以及亮色、暗色下有没有内容被裁切？</li></ul>
+<pre><code># 把这段贴给你的设计或编程智能体
+检查 &lt;文件夹或 URL 列表&gt; 中的页面有没有 AI 默认样式。
+- 对每个页面统计区块数，并报告以下情况各占多少比例：
+  标题正上方有小号大写、字距拉开的标签；大部分内容被带边框或
+  底色的卡片包住；标题居中；有旋转元素；链接或按钮里有箭头字符（→ ↗）。
+- 标出：h1 里有单独的斜体或高亮词、区块编号（01、02 …）、
+  口号式标题。
+- 任何比例超过 50% 都要标出，并为每一项提出一条设计系统规则
+  （例如「箭头只用于外部链接」）。先不要改代码。
+- 然后在 390px 和 1280px、亮色和暗色下检查细则基本项：
+  按钮对比度、被裁切的文字或 Logo、字号层级、间距。
+输出一张表和一份简短修改清单，等我确认。</code></pre>
+<p>UI Hub 相关阅读：<a href="../taste-and-skills-for-agents/">用设计技能教智能体品味</a>、<a href="../lint-agents-onto-your-design-system/">用 lint 让智能体守住设计系统</a>，以及<a href="../parallel-design-directions-drafts-stitch-rapid/">让 AI 设计变体可以公平比较</a>。</p>""",
+ refs=[('Frontier Design: Evaluating AI on Real World Design Tasks','Contra Labs','https://contralabs.com/research/frontier-design-benchmark'),('Frontier Design Benchmark leaderboard','Contra Labs × BenchFlow','https://contralabs.com/frontierdesign/leaderboard'),('Methodology','Contra Labs × BenchFlow','https://contralabs.com/frontierdesign/methodology'),('Design Critique Rubric and Slop Detector','Contra Labs × BenchFlow','https://contralabs.com/frontierdesign/rubric'),('Gallery of model and human outputs','Contra Labs × BenchFlow','https://contralabs.com/frontierdesign/gallery'),('Stealth model Gestalt beats Claude Fable 5.2 on the Frontier Design Benchmark','Pasquale Pillitteri','https://pasqualepillitteri.it/en/news/35144/stealth-model-gestalt-beats-fable-5-2-frontier-design-benchmark'),('Two stealth models just appeared on the leaderboard, both ahead of Fable 5.2 (discussion)','Hacker News','https://news.ycombinator.com/item?id=50558559'),('BenchFlow','BenchFlow','https://benchflow.ai'),('Bradley–Terry model','Wikipedia','https://en.wikipedia.org/wiki/Bradley%E2%80%93Terry_model'),('The Aesthetic-Usability Effect','Kate Moran · Nielsen Norman Group','https://www.nngroup.com/articles/aesthetic-usability-effect/'),('How to Conduct a Heuristic Evaluation','Nielsen Norman Group','https://www.nngroup.com/articles/how-to-conduct-a-heuristic-evaluation/')]),
+
+
 ]
