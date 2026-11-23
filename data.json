@@ -1,6 +1,6 @@
 {
- "generated": "2026-11-22",
- "count": 5188,
+ "generated": "2026-11-23",
+ "count": 5189,
  "items": [
   {
    "id": "ued-transitions-dev-craft",
@@ -195569,6 +195569,36 @@
    ],
    "noteEn": "New GitHub UI repo: A Jetpack Compose UI framework bringing a faithful 1:1 recreation of iOS 27 Liquid Glass, animations, controls, and interactions to Android. (★151, Apache-2.0, NEORUAA/Glasmio)",
    "added": "2026-11-22"
+  },
+  {
+   "id": "gh-rayvelez27-instalanding-ai",
+   "name": "instalanding.ai",
+   "url": "https://instalanding.ai",
+   "note": "GitHub 新晋 UI 仓库：Free, open-source library of premium, single-file HTML landing pages, motion components, and interactive experiences. No frameworks. No dependencies. Built for humans and AI coding（GitHub ★199，MIT 许可，仓库 RayVelez27/instalanding.ai）",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "GitHub",
+   "pricing": "free",
+   "tags": [
+    "HTML",
+    "开源",
+    "自动收录"
+   ],
+   "ct": [
+    "chat",
+    "motion",
+    "layout"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "New GitHub UI repo: Free, open-source library of premium, single-file HTML landing pages, motion components, and interactive experiences. No frameworks. No dependencies. Built for humans and AI coding (★199, MIT, RayVelez27/instalanding.ai)",
+   "added": "2026-11-23"
   }
  ],
  "guides": [
@@ -195771,5 +195801,5 @@
    ]
   }
  ],
- "updatedAt": "2026-11-22T20:27Z"
+ "updatedAt": "2026-11-23T07:32Z"
 }
