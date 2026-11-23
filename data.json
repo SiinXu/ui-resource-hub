@@ -1,6 +1,6 @@
 {
  "generated": "2026-11-23",
- "count": 5204,
+ "count": 5209,
  "items": [
   {
    "id": "ued-transitions-dev-craft",
@@ -196003,6 +196003,252 @@
     "motion"
    ],
    "added": "2026-11-23"
+  },
+  {
+   "id": "rd-73ao45d-suna-health-splash-animation",
+   "name": "Suna Health Splash Animation",
+   "url": "https://x.com/dwijaxo/status/2124497878634910035",
+   "note": "Splash animation for the Suna Health iOS app where a botanical sun motif expands behind the serif wordmark before a warm orange gradient floods in to reveal the sign-up screen.",
+   "noteEn": "Splash animation for the Suna Health iOS app where a botanical sun motif expands behind the serif wordmark before a warm orange gradient floods in to reveal the sign-up screen.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@dwijaxo",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal",
+    "gradient"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/73ao45d-suna-health-splash-animation",
+   "rdkind": "Design",
+   "rdcat": "Interface",
+   "rdstyle": [
+    "Minimal",
+    "Gradient"
+   ],
+   "author": {
+    "name": "dwija",
+    "handle": "@dwijaxo",
+    "url": "https://x.com/dwijaxo"
+   },
+   "x_post": "https://x.com/dwijaxo/status/2124497878634910035",
+   "xsrc": {
+    "post": "https://x.com/dwijaxo/status/2124497878634910035",
+    "author": "@dwijaxo",
+    "likes": 471,
+    "bookmarks": 252,
+    "reposts": 21,
+    "impressions": 10195,
+    "date": "2026-11-22"
+   },
+   "pub": "2026-11-22",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "rd-lrzetpg-eraser-word-interaction",
+   "name": "Eraser Interaction",
+   "url": "https://www.bubbbly.com/overthinking",
+   "note": "An interactive page where dragging a illustrated eraser removes words from a paragraph, scattering letters into a pile that can be picked up and restored.",
+   "noteEn": "An interactive page where dragging a illustrated eraser removes words from a paragraph, scattering letters into a pile that can be picked up and restored.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@ann_nnng",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "playful"
+   ],
+   "origin": "site",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/lrzetpg-eraser-word-interaction",
+   "rdkind": "Design",
+   "rdcat": "Interface",
+   "rdstyle": [
+    "Experimental",
+    "Playful",
+    "Light"
+   ],
+   "author": {
+    "name": "Ann Nguyen",
+    "handle": "@ann_nnng",
+    "url": "https://x.com/ann_nnng"
+   },
+   "x_post": "https://x.com/ann_nnng/status/2124389917262283017",
+   "xsrc": {
+    "post": "https://x.com/ann_nnng/status/2124389917262283017",
+    "author": "@ann_nnng",
+    "likes": 675,
+    "bookmarks": 378,
+    "reposts": 50,
+    "impressions": 19536,
+    "date": "2026-11-22"
+   },
+   "official": "https://www.bubbbly.com/overthinking",
+   "pub": "2026-11-22",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "rd-b0bab4i-pop-up-room-book",
+   "name": "Pop-Up Room Book",
+   "url": "https://x.com/duckwhocodes/status/2124169434998939918",
+   "note": "An interactive pop-up book where tapping a sketch cover unfolds into navigable isometric rooms illustrated in blue ink with soft pastel color fills.",
+   "noteEn": "An interactive pop-up book where tapping a sketch cover unfolds into navigable isometric rooms illustrated in blue ink with soft pastel color fills.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@duckwhocodes",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "playful"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/b0bab4i-pop-up-room-book",
+   "rdkind": "Design",
+   "rdcat": "Interface",
+   "rdstyle": [
+    "Playful",
+    "Illustrative",
+    "Light",
+    "Pastel"
+   ],
+   "author": {
+    "name": "Dakshie",
+    "handle": "@duckwhocodes",
+    "url": "https://x.com/duckwhocodes"
+   },
+   "x_post": "https://x.com/duckwhocodes/status/2124169434998939918",
+   "xsrc": {
+    "post": "https://x.com/duckwhocodes/status/2124169434998939918",
+    "author": "@duckwhocodes",
+    "likes": 4067,
+    "bookmarks": 1893,
+    "reposts": 368,
+    "impressions": 88953,
+    "date": "2026-11-21"
+   },
+   "pub": "2026-11-22",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "rd-ru8xe2f-dot-led-poster-series",
+   "name": "Dot-Led Poster Series",
+   "url": "https://x.com/oliverhamrin/status/2124575870572744977",
+   "note": "Nine poster designs across subjects including film, music, brands and science, each built around circles or dots as the primary graphic element.",
+   "noteEn": "Nine poster designs across subjects including film, music, brands and science, each built around circles or dots as the primary graphic element.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@oliverhamrin",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/ru8xe2f-dot-led-poster-series",
+   "rdkind": "Design",
+   "rdcat": "Posters",
+   "rdstyle": [
+    "Typographic",
+    "Geometric",
+    "Experimental",
+    "Illustrative",
+    "Vibrant"
+   ],
+   "author": {
+    "name": "Oliver",
+    "handle": "@oliverhamrin",
+    "url": "https://x.com/oliverhamrin"
+   },
+   "x_post": "https://x.com/oliverhamrin/status/2124575870572744977",
+   "xsrc": {
+    "post": "https://x.com/oliverhamrin/status/2124575870572744977",
+    "author": "@oliverhamrin",
+    "likes": 829,
+    "bookmarks": 287,
+    "reposts": 51,
+    "impressions": 18468,
+    "date": "2026-11-22"
+   },
+   "pub": "2026-11-22",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "rd-jlhp900-few-brand-identity",
+   "name": "FEW Brand Identity",
+   "url": "https://x.com/laurentdelrey/status/2124585515097993474",
+   "note": "A geometric wordmark for FEW built from maze-like rectangular letterforms, shown across colorways, scales, and real-world applications like signage and stickers.",
+   "noteEn": "A geometric wordmark for FEW built from maze-like rectangular letterforms, shown across colorways, scales, and real-world applications like signage and stickers.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@laurentdelrey",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/jlhp900-few-brand-identity",
+   "rdkind": "Design",
+   "rdcat": "Branding",
+   "rdstyle": [
+    "Typographic",
+    "Geometric",
+    "Experimental",
+    "Vibrant",
+    "Black & White"
+   ],
+   "author": {
+    "name": "saint laurent del rey",
+    "handle": "@laurentdelrey",
+    "url": "https://x.com/laurentdelrey"
+   },
+   "x_post": "https://x.com/laurentdelrey/status/2124585515097993474",
+   "xsrc": {
+    "post": "https://x.com/laurentdelrey/status/2124585515097993474",
+    "author": "@laurentdelrey",
+    "likes": 213,
+    "bookmarks": 83,
+    "reposts": 0,
+    "impressions": 7427,
+    "date": "2026-11-22"
+   },
+   "pub": "2026-11-22",
+   "added": "2026-11-23"
   }
  ],
  "guides": [
@@ -196205,5 +196451,5 @@
    ]
   }
  ],
- "updatedAt": "2026-11-23T09:07Z"
+ "updatedAt": "2026-11-23T09:43Z"
 }
