@@ -1,6 +1,6 @@
 {
  "generated": "2026-11-24",
- "count": 5214,
+ "count": 5216,
  "items": [
   {
    "id": "ued-transitions-dev-craft",
@@ -196492,6 +196492,60 @@
    },
    "pub": "2026-11-23",
    "added": "2026-11-24"
+  },
+  {
+   "id": "gh-bilalgursen-liquid-glass",
+   "name": "liquid-glass",
+   "url": "https://onemorethink.dev",
+   "note": "GitHub 新晋 UI 仓库：Open-source glass controls for React: every button, switch and slider is a refracting WebGL lens with spring physics.（GitHub ★272，MIT 许可，仓库 bilalgursen/liquid-glass）",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "GitHub",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "开源",
+    "自动收录"
+   ],
+   "ct": [],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "New GitHub UI repo: Open-source glass controls for React: every button, switch and slider is a refracting WebGL lens with spring physics. (★272, MIT, bilalgursen/liquid-glass)",
+   "added": "2026-11-24"
+  },
+  {
+   "id": "gh-ckryptickunal-opendesigner",
+   "name": "OpenDesigner",
+   "url": "https://opendesigner.dev",
+   "note": "GitHub 新晋 UI 仓库：A free, open-source add-on for Claude, ChatGPT, Codex and Cursor that turns a few plain answers into a design system, so everything you build looks like it belongs together.（GitHub ★203，MIT 许可，仓库 ckryptickunal/OpenDesigner）",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "GitHub",
+   "pricing": "free",
+   "tags": [
+    "HTML",
+    "开源",
+    "自动收录"
+   ],
+   "ct": [
+    "chat"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "New GitHub UI repo: A free, open-source add-on for Claude, ChatGPT, Codex and Cursor that turns a few plain answers into a design system, so everything you build looks like it belongs together. (★203, MIT, ckryptickunal/OpenDesigner)",
+   "added": "2026-11-24"
   }
  ],
  "guides": [
@@ -196694,5 +196748,5 @@
    ]
   }
  ],
- "updatedAt": "2026-11-24T01:10Z"
+ "updatedAt": "2026-11-24T09:50Z"
 }
