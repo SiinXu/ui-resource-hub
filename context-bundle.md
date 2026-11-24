@@ -424,3 +424,4 @@ curl -s https://ui.incidental.site/api/resources.json | jq --arg d "$(date -u -d
 - AI made design variants cheap. Now make them comparable: Lovable Drafts, Stitch Rapid and parallel design — https://ui.incidental.site/kb/note/blog-parallel-design-directions-drafts-stitch-rapid.md
 - Design the AI off switch: what Flodesk and Firefox teach about global AI controls — https://ui.incidental.site/kb/note/blog-ai-off-switch-global-ai-controls.md
 - AI slop is now measurable: what a blind design benchmark found, and how to check your own pages — https://ui.incidental.site/kb/note/blog-ai-slop-patterns-frontier-design-benchmark.md
+- Canva MCP is open to every agent: ask for an editable design, not a picture — https://ui.incidental.site/kb/note/blog-canva-mcp-editable-designs-not-pictures.md

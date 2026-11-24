@@ -1,5 +1,5 @@
 {
- "count": 59,
+ "count": 60,
  "rss": "https://ui.incidental.site/blog/rss.xml",
  "categories": {
   "tools": "Tools",
@@ -18,6 +18,133 @@
   "weekly": "Series: Weekly roundup"
  },
  "posts": [
+  {
+   "slug": "canva-mcp-editable-designs-not-pictures",
+   "url": "https://ui.incidental.site/blog/canva-mcp-editable-designs-not-pictures/",
+   "date": "2026-11-24",
+   "category": "agents",
+   "series": null,
+   "featured": true,
+   "tags": [
+    "Canva MCP",
+    "Magic Layers",
+    "Canva CLI",
+    "design handoff",
+    "editable output",
+    "agents"
+   ],
+   "title": {
+    "en": "Canva MCP is open to every agent: ask for an editable design, not a picture",
+    "zh": "Canva MCP 向所有智能体开放：要一份能改的设计稿，而不是一张图",
+    "zht": "Canva MCP 向所有智能體開放：要一份能改的設計稿，而不是一張圖",
+    "ja": "Canva MCPがすべてのエージェントに開放：画像ではなく編集できるデザインを受け取ろう",
+    "ko": "Canva MCP가 모든 에이전트에 열렸다: 그림 말고 편집 가능한 디자인을 받자",
+    "ms": "Canva MCP kini terbuka kepada semua ejen: minta reka bentuk yang boleh disunting, bukan gambar",
+    "vi": "Canva MCP mở cho mọi agent: hãy đòi một bản thiết kế sửa được, không phải một bức ảnh",
+    "fr": "Canva MCP s’ouvre à tous les agents : demandez un design modifiable, pas une image",
+    "es": "Canva MCP se abre a todos los agentes: pide un diseño editable, no una imagen",
+    "de": "Canva MCP steht jetzt allen Agents offen: Verlangen Sie ein editierbares Design, kein Bild"
+   },
+   "summary": {
+    "en": "Canva made its MCP server generally available this week with no waitlist, rebuilt the toolset for agents, and added REST APIs, a CLI for bulk jobs and service accounts. The useful shift is in what comes back: a design with layers and an edit link instead of a flat PNG. How to choose between MCP, REST and CLI, what Magic Layers can and cannot rescue, how to design the handoff in your own AI features, plus a checklist and an agent prompt.",
+    "zh": "本周 Canva 把 MCP 服务器正式开放、取消等候名单，为智能体重做了工具集，并新增 REST API、用于批量任务的 CLI 和服务账号。真正有用的变化在于拿回来的东西：一份带图层和编辑链接的设计稿，而不是一张扁平的 PNG。本文讲怎样在 MCP、REST 和 CLI 之间选择，Magic Layers 能救回什么、救不回什么，怎样在你自己的 AI 功能里设计交接环节，并附检查清单和智能体提示词。",
+    "zht": "本週 Canva 把 MCP 伺服器正式開放、取消候補名單，為智能體重做了工具集，並新增 REST API、用於批次任務的 CLI 和服務帳號。真正有用的變化在於拿回來的東西：一份帶圖層和編輯連結的設計稿，而不是一張扁平的 PNG。本文講怎樣在 MCP、REST 和 CLI 之間選擇，Magic Layers 能救回什麼、救不回什麼，怎樣在你自己的 AI 功能裡設計交接環節，並附檢查清單和智能體提示詞。",
+    "ja": "CanvaはMCPサーバーを今週一般提供し、待機リストを廃止。エージェント向けにツール群を作り直し、REST API、一括処理向けCLI、サービスアカウントも追加した。本当に役立つ変化は返ってくるもの：平らなPNGではなく、レイヤーと編集リンク付きのデザインだ。MCP・REST・CLIの選び方、Magic Layersで救えるもの・救えないもの、自社AI機能での受け渡し設計、チェックリストとエージェント用プロンプト付き。",
+    "ko": "Canva가 이번 주 MCP 서버를 정식 공개하며 대기자 명단을 없앴고, 에이전트용으로 도구 세트를 다시 만들었으며 REST API, 대량 작업용 CLI, 서비스 계정을 추가했다. 진짜 유용한 변화는 돌아오는 결과물이다. 평평한 PNG가 아니라 레이어와 편집 링크가 있는 디자인. MCP·REST·CLI 선택법, Magic Layers로 살릴 수 있는 것과 없는 것, 내 AI 기능의 인계 설계, 체크리스트와 에이전트 프롬프트 포함.",
+    "ms": "Minggu ini Canva menjadikan pelayan MCP tersedia umum tanpa senarai menunggu, membina semula set alatnya untuk ejen, dan menambah REST API, CLI untuk kerja pukal serta akaun servis. Perubahan yang berguna ialah apa yang dipulangkan: reka bentuk berlapis dengan pautan sunting, bukan PNG rata. Cara memilih antara MCP, REST dan CLI, apa yang Magic Layers boleh dan tidak boleh selamatkan, cara mereka serahan dalam ciri AI anda, senarai semak dan prompt ejen.",
+    "vi": "Tuần này Canva mở MCP server cho mọi người, bỏ danh sách chờ, làm lại bộ công cụ cho agent, thêm REST API, CLI cho việc hàng loạt và tài khoản dịch vụ. Thay đổi hữu ích nằm ở thứ nhận về: một bản thiết kế có lớp và đường dẫn chỉnh sửa thay vì một PNG phẳng. Cách chọn giữa MCP, REST và CLI, Magic Layers cứu được gì và không cứu được gì, cách thiết kế khâu bàn giao trong tính năng AI của bạn, kèm checklist và prompt cho agent.",
+    "fr": "Cette semaine, Canva a ouvert son serveur MCP à tous, sans liste d’attente, a reconstruit ses outils pour les agents et ajouté des API REST, une CLI pour les traitements en lot et des comptes de service. Le vrai changement, c’est ce qui revient : un design en calques avec un lien d’édition, pas un PNG plat. Choisir entre MCP, REST et CLI, ce que Magic Layers peut sauver ou non, concevoir le passage de relais dans vos fonctions IA, checklist et prompt.",
+    "es": "Esta semana Canva abrió su servidor MCP a todos, sin lista de espera, rehízo sus herramientas para agentes y añadió API REST, una CLI para trabajos en lote y cuentas de servicio. El cambio útil está en lo que se devuelve: un diseño con capas y un enlace de edición, no un PNG plano. Cómo elegir entre MCP, REST y CLI, qué puede y qué no puede rescatar Magic Layers, cómo diseñar el traspaso en tus funciones de IA, más checklist y prompt.",
+    "de": "Canva hat seinen MCP-Server diese Woche ohne Warteliste allgemein verfügbar gemacht, die Tools für Agents neu gebaut und REST-APIs, eine CLI für Massenjobs sowie Service-Accounts ergänzt. Der nützliche Wandel liegt im Ergebnis: ein Design mit Ebenen und Bearbeitungslink statt eines flachen PNG. Wie man zwischen MCP, REST und CLI wählt, was Magic Layers retten kann und was nicht, wie man die Übergabe in eigenen KI-Funktionen gestaltet, plus Checkliste und Agent-Prompt."
+   },
+   "reading_minutes": {
+    "en": 5,
+    "zh": 6
+   },
+   "cover": "https://ui.incidental.site/blog/img/canva-mcp-editable-designs-not-pictures-cover.webp",
+   "references": [
+    {
+     "title": "Building the design layer of the internet: opening Canva to every agent and developer",
+     "by": "Anwar Haneef · Canva Newsroom",
+     "url": "https://www.canva.com/newsroom/news/canva-mcp-update/"
+    },
+    {
+     "title": "Campaign-ready video generation, Magic Layers and several new ways to create with Canva + AI assistants",
+     "by": "Canva Newsroom",
+     "url": "https://www.canva.com/newsroom/news/canva-mcp-video-generation/"
+    },
+    {
+     "title": "Canva opens its design tools to AI agents and outside developers",
+     "by": "Ana Maria Constantin · The Next Web",
+     "url": "https://thenextweb.com/news/canva-mcp-ai-agents-developers"
+    },
+    {
+     "title": "How to use Canva MCP in your AI application",
+     "by": "Meredith Hassett · Canva Developers Blog",
+     "url": "https://www.canva.dev/blog/developers/canva-mcp-ga/"
+    },
+    {
+     "title": "Best practices for Canva MCP",
+     "by": "Canva Developers",
+     "url": "https://www.canva.dev/docs/apps/mcp/best-practices/"
+    },
+    {
+     "title": "Design edit handoff",
+     "by": "Canva Developers",
+     "url": "https://www.canva.dev/docs/apps/mcp/workflows/design-edit/"
+    },
+    {
+     "title": "MCP tools and rate limits",
+     "by": "Canva Developers",
+     "url": "https://www.canva.dev/docs/apps/mcp/tools/"
+    },
+    {
+     "title": "Access and permissions",
+     "by": "Canva Developers",
+     "url": "https://www.canva.dev/docs/apps/mcp/access/"
+    },
+    {
+     "title": "separate-image-layers",
+     "by": "Canva Developers",
+     "url": "https://www.canva.dev/docs/apps/mcp/tools/separate-image-layers/"
+    },
+    {
+     "title": "autofill-design",
+     "by": "Canva Developers",
+     "url": "https://www.canva.dev/docs/apps/mcp/tools/autofill-design/"
+    },
+    {
+     "title": "commit-editing-transaction",
+     "by": "Canva Developers",
+     "url": "https://www.canva.dev/docs/apps/mcp/tools/commit-editing-transaction/"
+    },
+    {
+     "title": "Create image-to-design import job",
+     "by": "Canva Developers",
+     "url": "https://www.canva.dev/docs/apps/rest-apis/reference/design-imports/create-image-to-design-import-job/"
+    },
+    {
+     "title": "Canva REST API credit rates",
+     "by": "Canva Developers",
+     "url": "https://www.canva.dev/docs/apps/rest-apis/credit-rates/"
+    },
+    {
+     "title": "Canva CLI",
+     "by": "Canva Developers",
+     "url": "https://www.canva.dev/docs/apps/canva-cli/"
+    },
+    {
+     "title": "The Figma agent is now available in FigJam and Slides",
+     "by": "Jinen Kamdar · Figma Blog",
+     "url": "https://www.figma.com/blog/introducing-figma-agent-in-figjam-and-slides/"
+    },
+    {
+     "title": "Canva launches Craft, its first in-house image model",
+     "by": "Maximilian Schreiner · The Decoder",
+     "url": "https://the-decoder.com/canva-launches-craft-its-first-in-house-image-model/"
+    }
+   ]
+  },
   {
    "slug": "ai-slop-patterns-frontier-design-benchmark",
    "url": "https://ui.incidental.site/blog/ai-slop-patterns-frontier-design-benchmark/",

@@ -3441,4 +3441,102 @@ Return a table and a short fix list. Wait for my approval.</code></pre>
  refs=[('Frontier Design: Evaluating AI on Real World Design Tasks','Contra Labs','https://contralabs.com/research/frontier-design-benchmark'),('Frontier Design Benchmark leaderboard','Contra Labs × BenchFlow','https://contralabs.com/frontierdesign/leaderboard'),('Methodology','Contra Labs × BenchFlow','https://contralabs.com/frontierdesign/methodology'),('Design Critique Rubric and Slop Detector','Contra Labs × BenchFlow','https://contralabs.com/frontierdesign/rubric'),('Gallery of model and human outputs','Contra Labs × BenchFlow','https://contralabs.com/frontierdesign/gallery'),('Stealth model Gestalt beats Claude Fable 5.2 on the Frontier Design Benchmark','Pasquale Pillitteri','https://pasqualepillitteri.it/en/news/35144/stealth-model-gestalt-beats-fable-5-2-frontier-design-benchmark'),('Two stealth models just appeared on the leaderboard, both ahead of Fable 5.2 (discussion)','Hacker News','https://news.ycombinator.com/item?id=50558559'),('BenchFlow','BenchFlow','https://benchflow.ai'),('Bradley–Terry model','Wikipedia','https://en.wikipedia.org/wiki/Bradley%E2%80%93Terry_model'),('The Aesthetic-Usability Effect','Kate Moran · Nielsen Norman Group','https://www.nngroup.com/articles/aesthetic-usability-effect/'),('How to Conduct a Heuristic Evaluation','Nielsen Norman Group','https://www.nngroup.com/articles/how-to-conduct-a-heuristic-evaluation/')]),
 
 
+dict(slug='canva-mcp-editable-designs-not-pictures', date='2026-11-24', cat='agents', series=None, featured=True, tags=['Canva MCP','Magic Layers','Canva CLI','design handoff','editable output','agents'],
+ t=T('Canva MCP is open to every agent: ask for an editable design, not a picture',
+     'Canva MCP 向所有智能体开放：要一份能改的设计稿，而不是一张图',
+     'Canva MCP 向所有智能體開放：要一份能改的設計稿，而不是一張圖',
+     'Canva MCPがすべてのエージェントに開放：画像ではなく編集できるデザインを受け取ろう',
+     'Canva MCP가 모든 에이전트에 열렸다: 그림 말고 편집 가능한 디자인을 받자',
+     'Canva MCP kini terbuka kepada semua ejen: minta reka bentuk yang boleh disunting, bukan gambar',
+     'Canva MCP mở cho mọi agent: hãy đòi một bản thiết kế sửa được, không phải một bức ảnh',
+     'Canva MCP s’ouvre à tous les agents : demandez un design modifiable, pas une image',
+     'Canva MCP se abre a todos los agentes: pide un diseño editable, no una imagen',
+     'Canva MCP steht jetzt allen Agents offen: Verlangen Sie ein editierbares Design, kein Bild'),
+ s=T('Canva made its MCP server generally available this week with no waitlist, rebuilt the toolset for agents, and added REST APIs, a CLI for bulk jobs and service accounts. The useful shift is in what comes back: a design with layers and an edit link instead of a flat PNG. How to choose between MCP, REST and CLI, what Magic Layers can and cannot rescue, how to design the handoff in your own AI features, plus a checklist and an agent prompt.',
+     '本周 Canva 把 MCP 服务器正式开放、取消等候名单，为智能体重做了工具集，并新增 REST API、用于批量任务的 CLI 和服务账号。真正有用的变化在于拿回来的东西：一份带图层和编辑链接的设计稿，而不是一张扁平的 PNG。本文讲怎样在 MCP、REST 和 CLI 之间选择，Magic Layers 能救回什么、救不回什么，怎样在你自己的 AI 功能里设计交接环节，并附检查清单和智能体提示词。',
+     '本週 Canva 把 MCP 伺服器正式開放、取消候補名單，為智能體重做了工具集，並新增 REST API、用於批次任務的 CLI 和服務帳號。真正有用的變化在於拿回來的東西：一份帶圖層和編輯連結的設計稿，而不是一張扁平的 PNG。本文講怎樣在 MCP、REST 和 CLI 之間選擇，Magic Layers 能救回什麼、救不回什麼，怎樣在你自己的 AI 功能裡設計交接環節，並附檢查清單和智能體提示詞。',
+     'CanvaはMCPサーバーを今週一般提供し、待機リストを廃止。エージェント向けにツール群を作り直し、REST API、一括処理向けCLI、サービスアカウントも追加した。本当に役立つ変化は返ってくるもの：平らなPNGではなく、レイヤーと編集リンク付きのデザインだ。MCP・REST・CLIの選び方、Magic Layersで救えるもの・救えないもの、自社AI機能での受け渡し設計、チェックリストとエージェント用プロンプト付き。',
+     'Canva가 이번 주 MCP 서버를 정식 공개하며 대기자 명단을 없앴고, 에이전트용으로 도구 세트를 다시 만들었으며 REST API, 대량 작업용 CLI, 서비스 계정을 추가했다. 진짜 유용한 변화는 돌아오는 결과물이다. 평평한 PNG가 아니라 레이어와 편집 링크가 있는 디자인. MCP·REST·CLI 선택법, Magic Layers로 살릴 수 있는 것과 없는 것, 내 AI 기능의 인계 설계, 체크리스트와 에이전트 프롬프트 포함.',
+     'Minggu ini Canva menjadikan pelayan MCP tersedia umum tanpa senarai menunggu, membina semula set alatnya untuk ejen, dan menambah REST API, CLI untuk kerja pukal serta akaun servis. Perubahan yang berguna ialah apa yang dipulangkan: reka bentuk berlapis dengan pautan sunting, bukan PNG rata. Cara memilih antara MCP, REST dan CLI, apa yang Magic Layers boleh dan tidak boleh selamatkan, cara mereka serahan dalam ciri AI anda, senarai semak dan prompt ejen.',
+     'Tuần này Canva mở MCP server cho mọi người, bỏ danh sách chờ, làm lại bộ công cụ cho agent, thêm REST API, CLI cho việc hàng loạt và tài khoản dịch vụ. Thay đổi hữu ích nằm ở thứ nhận về: một bản thiết kế có lớp và đường dẫn chỉnh sửa thay vì một PNG phẳng. Cách chọn giữa MCP, REST và CLI, Magic Layers cứu được gì và không cứu được gì, cách thiết kế khâu bàn giao trong tính năng AI của bạn, kèm checklist và prompt cho agent.',
+     'Cette semaine, Canva a ouvert son serveur MCP à tous, sans liste d’attente, a reconstruit ses outils pour les agents et ajouté des API REST, une CLI pour les traitements en lot et des comptes de service. Le vrai changement, c’est ce qui revient : un design en calques avec un lien d’édition, pas un PNG plat. Choisir entre MCP, REST et CLI, ce que Magic Layers peut sauver ou non, concevoir le passage de relais dans vos fonctions IA, checklist et prompt.',
+     'Esta semana Canva abrió su servidor MCP a todos, sin lista de espera, rehízo sus herramientas para agentes y añadió API REST, una CLI para trabajos en lote y cuentas de servicio. El cambio útil está en lo que se devuelve: un diseño con capas y un enlace de edición, no un PNG plano. Cómo elegir entre MCP, REST y CLI, qué puede y qué no puede rescatar Magic Layers, cómo diseñar el traspaso en tus funciones de IA, más checklist y prompt.',
+     'Canva hat seinen MCP-Server diese Woche ohne Warteliste allgemein verfügbar gemacht, die Tools für Agents neu gebaut und REST-APIs, eine CLI für Massenjobs sowie Service-Accounts ergänzt. Der nützliche Wandel liegt im Ergebnis: ein Design mit Ebenen und Bearbeitungslink statt eines flachen PNG. Wie man zwischen MCP, REST und CLI wählt, was Magic Layers retten kann und was nicht, wie man die Übergabe in eigenen KI-Funktionen gestaltet, plus Checkliste und Agent-Prompt.'),
+ en="""<p>Canva has made its MCP server generally available. Its newsroom post, dated 23 November, says there is no longer a waitlist: any developer can create an app in the Canva Developer Portal, switch on MCP and connect. The same release adds REST APIs for design generation, image generation, background removal and Magic Layers, a wider Canva CLI, service accounts with API billing, and access to Canva’s own image model, Craft. The Next Web picked it up the next morning, and posts on X were already showing chat assistants returning layered Canva files instead of images.</p>
+<p>The numbers Canva shared explain why it is pushing: nearly 500,000 people signed up for Canva through MCP since October, MCP usage rose 93% from September to October, and 72% of the commands typed into the Canva CLI in October came from agents. For people who design or build interfaces, the interesting part is not the growth. It is the shape of the result. An agent that used to hand back a picture now hands back an object you can open, edit, comment on and resize.</p>
+<h2>What changed in this release</h2>
+<ul><li><strong>Open access, per-user sign-in.</strong> MCP now has no waitlist. Each person still signs in with their own Canva account, and the tools only do what that account is allowed to do. Canva’s docs say MCP does not support organisation-level or service-account sign-in.</li>
+<li><strong>A smaller, clearer toolset.</strong> Canva says it merged overlapping tools so agents, even on smaller models, choose the right one with less context. The public tool list covers generating design candidates, editing through draft transactions, resizing, autofilling templates, separating a flat image into layers, comments and exports to PDF, PNG, JPG, PPTX and MP4.</li>
+<li><strong>Three ways in.</strong> MCP lets the agent decide the steps. REST APIs give fixed, predictable calls inside your own product, and with service accounts your users do not need Canva accounts while you pay per job from a credit pool. The CLI gives coding agents one focused command at a time, with one JSON object per call on standard output, which suits bulk and repeated jobs.</li>
+<li><strong>Editing in the chat.</strong> In ChatGPT and Claude, Canva’s connector now opens an editing side panel for text, images and layout, with one click into the full editor. Video generation follows the same idea: you approve a timed production plan before anything is generated, and the result lands on an editable timeline.</li></ul>
+<h2>Our take: the edit link is the deliverable</h2>
+<p>We have argued before that AI design is moving from generating to editing. This release turns that into an interface contract. Canva’s own developer guidance is unusually direct about it: after any tool touches a design, return the edit URL and tell the user they can open it, show candidates instead of auto-picking one, report success only after the tool confirms it, and treat thumbnail and export links as short-lived. That is good advice for anyone building AI features, not only Canva partners.</p>
+<p>The same day, Figma made its agent generally available in FigJam and Slides on paid plans, pitching boards turned into a Spec that “your team, and your agents, can act on”. Two of the biggest design tools are converging on the same idea: the agent’s output should be a live file in the tool where people already review work. A flat image ends the conversation. A layered file with a link starts the next round of edits.</p>
+<p>Two cautions. First, Magic Layers is a rescue tool, not a source format. Canva says it is built for flat, non-photographic graphics such as posters, banners and social posts, does not accept SVG or EPS, and its REST version is still a preview API that public integrations cannot ship with. If you already have the layered source, use it; do not export to PNG and ask a model to guess the layers back. Second, decide who owns the account before you build. MCP acts as each signed-in user, REST service accounts act as your app, and those choices decide who sees the files, who pays and what plan features exist: autofill, brand kits and resizing need Canva Pro or above.</p>
+<h2>How to choose the path</h2>
+<ol><li><strong>Your users chat with an assistant and already have Canva:</strong> use MCP. Send the full brief, not a summary, and let the user choose between candidates.</li>
+<li><strong>Your product generates assets for users who may not have Canva:</strong> use REST with a service account. Budget per job from Canva’s credit table, for example 10 credits per autofilled page, 3 per CRAFT-1 2K image and 1.7 per page through Magic Layers. Failed jobs refund their credits.</li>
+<li><strong>A coding agent runs a batch:</strong> use the CLI. Run <code>--dry-run</code> first, pipe the JSON into <code>jq</code>, and keep the design IDs it returns.</li>
+<li><strong>Someone sends you a flattened poster:</strong> separate it into layers, then check every text box before you trust the result.</li></ol>
+<h2>Editable handoff checklist</h2>
+<ul><li>Does every design-touching step return an edit link with a short, clear call to action?</li>
+<li>Are several candidates shown for the person to pick, rather than the agent choosing silently?</li>
+<li>Is “done” shown only after the tool confirms success, with progress shown during long jobs?</li>
+<li>Do edits stay in a draft until someone commits them, and does a failed commit start a fresh draft instead of retrying a stale one?</li>
+<li>Is anything destructive, such as refilling a template in place, behind an explicit yes? Canva notes that in-place autofill cannot be undone.</li>
+<li>After layer separation: is the headline live text in your brand font, is the background its own layer, and are any logos still sharp?</li>
+<li>Are preview and export URLs kept out of your database and out of shared messages?</li>
+<li>Does the result use the brand kit, not colours the model guessed, and is the plan tier that brand kits require actually in place?</li></ul>
+<pre><code># Paste this into an agent that has a design tool connected (Canva MCP or similar)
+Make &lt;asset&gt; for &lt;audience&gt; in &lt;format and size&gt;.
+Brief: purpose, key copy (exact text), tone, brand kit name, things to avoid.
+Rules:
+- Return 2–4 candidates with thumbnails and wait for me to pick one.
+- Use live text and my brand kit fonts and colours. No text baked into images.
+- Keep edits in a draft. Show me the changes, then commit only when I say yes.
+- Never overwrite an existing design in place.
+- When done, give me the edit link and list the layers: text, images, background.
+- If you only have a flat image, separate it into layers first and tell me
+  which parts could not be recovered.</code></pre>
+<p>Related on UI Hub: <a href="../canva-brush-edit-dont-regenerate/">Canva Brush and the shift from generating to editing</a>, <a href="../adobe-max-2026-agents-keep-layers-editable/">keeping layered files tidy for agents</a>, and <a href="../ai-design-tool-shutdowns-keep-work-portable/">keeping AI design work portable</a>.</p>""",
+ zh="""<p>Canva 把 MCP 服务器正式开放了。它在 11 月 23 日的新闻稿里说，从此不再有等候名单：任何开发者都可以在 Canva 开发者平台创建应用、打开 MCP 开关然后接入。同一次发布还新增了用于设计生成、图像生成、去背景和 Magic Layers 的 REST API，功能更多的 Canva CLI，带 API 计费的服务账号，并开放了 Canva 自研的图像模型 Craft。第二天早上 The Next Web 做了报道，X 上也已经有人展示聊天助手拿回来的是分好图层的 Canva 文件，而不是图片。</p>
+<p>Canva 公布的数据说明了它为什么这么积极：自 10 月以来，有近 50 万人通过 MCP 注册了 Canva；MCP 使用量从 9 月到 10 月增长了 93%；10 月输入 Canva CLI 的命令里有 72% 来自智能体。对做设计或做界面的人来说，有意思的不是增长，而是结果的形态。过去智能体交回来的是一张图，现在交回来的是一个你能打开、修改、评论和改尺寸的对象。</p>
+<h2>这次发布改变了什么</h2>
+<ul><li><strong>开放接入，按人登录。</strong>MCP 不再需要排队。但每个人仍然用自己的 Canva 账号登录，工具只能做这个账号有权限做的事。Canva 文档写明，MCP 不支持组织级或服务账号登录。</li>
+<li><strong>更少、更清楚的工具集。</strong>Canva 说它合并了功能重叠的工具，让智能体即使跑在较小的模型上，也能用更少的上下文选对工具。公开的工具列表包括生成设计候选、通过草稿事务编辑、改尺寸、自动填充模板、把扁平图片拆成图层、评论，以及导出 PDF、PNG、JPG、PPTX 和 MP4。</li>
+<li><strong>三种接入方式。</strong>MCP 让智能体自己决定步骤。REST API 在你自己的产品里提供固定、可预期的调用；配合服务账号，你的用户不需要 Canva 账号，由你按任务从积分池付费。CLI 让编程智能体一次调用一个聚焦的命令，每次调用在标准输出写一个 JSON 对象，适合批量和重复任务。</li>
+<li><strong>在对话里直接编辑。</strong>在 ChatGPT 和 Claude 里，Canva 连接器现在会打开一个侧边编辑面板，可以改文字、图片和版式，一键进入完整编辑器。视频生成也是同样的思路：生成之前你先确认一份带时间轴的制作计划，结果落在一条可编辑的时间线上。</li></ul>
+<h2>我们的看法：编辑链接才是交付物</h2>
+<p>我们之前写过，AI 设计正在从「生成」转向「编辑」。这次发布把这件事变成了一份界面约定。Canva 自己的开发者指南说得非常直接：任何工具碰过设计之后，都要返回编辑链接并告诉用户可以打开它；展示候选，而不是替用户自动选一个；只有在工具确认完成后才报告成功；缩略图和导出链接要当作短期有效。这些建议适用于所有在做 AI 功能的人，而不只是 Canva 的合作方。</p>
+<p>同一天，Figma 也让它的智能体在 FigJam 和 Slides 的付费方案中正式可用，主打把白板整理成一份「你的团队和你的智能体都能据此行动」的 Spec。两家最大的设计工具在往同一个方向走：智能体的产出应该是一个活的文件，放在大家本来就在评审作品的工具里。一张扁平的图会让对话结束；一个带链接、分好图层的文件会开启下一轮修改。</p>
+<p>有两点要小心。第一，Magic Layers 是补救工具，不是源格式。Canva 说它是为海报、横幅、社交图这类扁平、非照片的图形设计的，不支持 SVG 或 EPS，REST 版本仍是预览 API，公开集成不能用它上线。如果你手里已经有分层的源文件，就用源文件，别先导出成 PNG 再让模型猜回图层。第二，动手之前先决定账号归谁。MCP 以每个登录用户的身份操作，REST 服务账号以你的应用身份操作，这决定了谁能看到文件、谁付费、有哪些方案功能：自动填充、品牌套件和改尺寸都需要 Canva Pro 或更高方案。</p>
+<h2>怎样选择接入方式</h2>
+<ol><li><strong>你的用户在和助手对话，而且已经有 Canva：</strong>用 MCP。把完整需求发过去，不要只发摘要，让用户在候选之间挑。</li>
+<li><strong>你的产品为可能没有 Canva 账号的用户生成素材：</strong>用 REST 加服务账号。按 Canva 的积分表给每个任务做预算，比如自动填充每页 10 积分，CRAFT-1 2K 每张 3 积分，Magic Layers 每页 1.7 积分。失败的任务会退回积分。</li>
+<li><strong>编程智能体跑一批任务：</strong>用 CLI。先跑 <code>--dry-run</code>，把 JSON 输出接给 <code>jq</code>，并保存返回的设计 ID。</li>
+<li><strong>有人发给你一张拍平的海报：</strong>先拆成图层，在信任结果之前逐个检查文字框。</li></ol>
+<h2>可编辑交接检查清单</h2>
+<ul><li>每一个碰过设计的步骤，都返回了编辑链接和一句简短明确的行动提示吗？</li>
+<li>是把几个候选展示给人来挑，而不是由智能体悄悄选定吗？</li>
+<li>只有在工具确认成功后才显示「完成」，长任务期间有进度提示吗？</li>
+<li>修改先留在草稿里，等有人确认再提交吗？提交失败时，是重新开一个草稿，而不是反复重试过期的那个吗？</li>
+<li>任何破坏性操作，比如原地重新填充模板，都要先得到明确同意吗？Canva 提醒原地自动填充无法撤销。</li>
+<li>拆分图层之后：标题是用品牌字体的可编辑文字吗？背景是单独一层吗？Logo 还清晰吗？</li>
+<li>预览和导出链接没有存进数据库，也没有发进共享消息吗？</li>
+<li>结果用的是品牌套件，而不是模型猜的颜色吗？品牌套件所需的方案等级确实已经开通了吗？</li></ul>
+<pre><code># 把这段贴给接好了设计工具（Canva MCP 或类似工具）的智能体
+为 &lt;受众&gt; 制作 &lt;素材&gt;，格式和尺寸为 &lt;格式与尺寸&gt;。
+需求：用途、关键文案（准确文字）、语气、品牌套件名称、要避免的东西。
+规则：
+- 返回 2–4 个带缩略图的候选，等我挑一个。
+- 使用可编辑文字以及我的品牌套件字体和颜色，不要把文字烧进图片。
+- 修改先放在草稿里，给我看改了什么，我说可以再提交。
+- 永远不要原地覆盖已有设计。
+- 完成后给我编辑链接，并列出图层：文字、图片、背景。
+- 如果你手里只有一张扁平图片，先拆成图层，并告诉我
+  哪些部分没能还原。</code></pre>
+<p>UI Hub 相关阅读：<a href="../canva-brush-edit-dont-regenerate/">Canva Brush：AI 设计从生成走向编辑</a>、<a href="../adobe-max-2026-agents-keep-layers-editable/">给智能体保持分层文件整洁</a>，以及<a href="../ai-design-tool-shutdowns-keep-work-portable/">让 AI 设计作品可以带走</a>。</p>""",
+ refs=[('Building the design layer of the internet: opening Canva to every agent and developer','Anwar Haneef · Canva Newsroom','https://www.canva.com/newsroom/news/canva-mcp-update/'),('Campaign-ready video generation, Magic Layers and several new ways to create with Canva + AI assistants','Canva Newsroom','https://www.canva.com/newsroom/news/canva-mcp-video-generation/'),('Canva opens its design tools to AI agents and outside developers','Ana Maria Constantin · The Next Web','https://thenextweb.com/news/canva-mcp-ai-agents-developers'),('How to use Canva MCP in your AI application','Meredith Hassett · Canva Developers Blog','https://www.canva.dev/blog/developers/canva-mcp-ga/'),('Best practices for Canva MCP','Canva Developers','https://www.canva.dev/docs/apps/mcp/best-practices/'),('Design edit handoff','Canva Developers','https://www.canva.dev/docs/apps/mcp/workflows/design-edit/'),('MCP tools and rate limits','Canva Developers','https://www.canva.dev/docs/apps/mcp/tools/'),('Access and permissions','Canva Developers','https://www.canva.dev/docs/apps/mcp/access/'),('separate-image-layers','Canva Developers','https://www.canva.dev/docs/apps/mcp/tools/separate-image-layers/'),('autofill-design','Canva Developers','https://www.canva.dev/docs/apps/mcp/tools/autofill-design/'),('commit-editing-transaction','Canva Developers','https://www.canva.dev/docs/apps/mcp/tools/commit-editing-transaction/'),('Create image-to-design import job','Canva Developers','https://www.canva.dev/docs/apps/rest-apis/reference/design-imports/create-image-to-design-import-job/'),('Canva REST API credit rates','Canva Developers','https://www.canva.dev/docs/apps/rest-apis/credit-rates/'),('Canva CLI','Canva Developers','https://www.canva.dev/docs/apps/canva-cli/'),('The Figma agent is now available in FigJam and Slides','Jinen Kamdar · Figma Blog','https://www.figma.com/blog/introducing-figma-agent-in-figjam-and-slides/'),('Canva launches Craft, its first in-house image model','Maximilian Schreiner · The Decoder','https://the-decoder.com/canva-launches-craft-its-first-in-house-image-model/')]),
+
+
 ]
