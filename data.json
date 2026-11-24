@@ -1,6 +1,6 @@
 {
- "generated": "2026-11-23",
- "count": 5209,
+ "generated": "2026-11-24",
+ "count": 5214,
  "items": [
   {
    "id": "ued-transitions-dev-craft",
@@ -196249,6 +196249,249 @@
    },
    "pub": "2026-11-22",
    "added": "2026-11-23"
+  },
+  {
+   "id": "rd-arytsng-app-icon-portfolio",
+   "name": "App Icon Portfolio",
+   "url": "https://x.com/Sdymoondesign/status/2124449261853237413",
+   "note": "A collection of character mascot and abstract app icons spanning playful illustrated faces, geometric symbols, and glassmorphic shapes across multiple styles and palettes.",
+   "noteEn": "A collection of character mascot and abstract app icons spanning playful illustrated faces, geometric symbols, and glassmorphic shapes across multiple styles and palettes.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@sdymoondesign",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "playful"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/arytsng-app-icon-portfolio",
+   "rdkind": "Design",
+   "rdcat": "Interface",
+   "rdstyle": [
+    "Playful",
+    "Illustrative",
+    "Dark",
+    "Vibrant"
+   ],
+   "author": {
+    "name": "Moon",
+    "handle": "@sdymoondesign",
+    "url": "https://x.com/sdymoondesign"
+   },
+   "x_post": "https://x.com/Sdymoondesign/status/2124449261853237413",
+   "xsrc": {
+    "post": "https://x.com/Sdymoondesign/status/2124449261853237413",
+    "author": "@Sdymoondesign",
+    "likes": 1210,
+    "bookmarks": 990,
+    "reposts": 46,
+    "impressions": 40288,
+    "date": "2026-11-22"
+   },
+   "pub": "2026-11-23",
+   "added": "2026-11-24"
+  },
+  {
+   "id": "rd-e10man1-brink-podcast-app",
+   "name": "Brink Podcast App",
+   "url": "https://x.com/gow88_/status/2124526725053010023",
+   "note": "Onboarding screen for Brink, a podcast discovery app, featuring an animated 3D tunnel of scrolling podcast artwork converging behind the welcome UI and sign-in options.",
+   "noteEn": "Onboarding screen for Brink, a podcast discovery app, featuring an animated 3D tunnel of scrolling podcast artwork converging behind the welcome UI and sign-in options.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@gow88_",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "3d"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/e10man1-brink-podcast-app",
+   "rdkind": "Design",
+   "rdcat": "Interface",
+   "rdstyle": [
+    "3D",
+    "Dark",
+    "Vibrant"
+   ],
+   "author": {
+    "name": "OG",
+    "handle": "@gow88_",
+    "url": "https://x.com/gow88_"
+   },
+   "x_post": "https://x.com/gow88_/status/2124526725053010023",
+   "xsrc": {
+    "post": "https://x.com/gow88_/status/2124526725053010023",
+    "author": "@gow88_",
+    "likes": 650,
+    "bookmarks": 474,
+    "reposts": 33,
+    "impressions": 18993,
+    "date": "2026-11-22"
+   },
+   "pub": "2026-11-23",
+   "added": "2026-11-24"
+  },
+  {
+   "id": "rd-14gap8c-carousel-to-top-nav-transition",
+   "name": "Carousel to Top Nav Transition",
+   "url": "https://x.com/rakshaa_t/status/2124462420618076223",
+   "note": "A task manager app where the spaces carousel morphs into a row of colored orbs at the top, letting users switch between workspaces while viewing tasks and focus timers below.",
+   "noteEn": "A task manager app where the spaces carousel morphs into a row of colored orbs at the top, letting users switch between workspaces while viewing tasks and focus timers below.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@rakshaa_t",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/14gap8c-carousel-to-top-nav-transition",
+   "rdkind": "Design",
+   "rdcat": "Interface",
+   "rdstyle": [
+    "Minimal",
+    "Vibrant",
+    "Light"
+   ],
+   "author": {
+    "name": "Raksha T",
+    "handle": "@rakshaa_t",
+    "url": "https://x.com/rakshaa_t"
+   },
+   "x_post": "https://x.com/rakshaa_t/status/2124462420618076223",
+   "xsrc": {
+    "post": "https://x.com/rakshaa_t/status/2124462420618076223",
+    "author": "@rakshaa_t",
+    "likes": 744,
+    "bookmarks": 567,
+    "reposts": 26,
+    "impressions": 20282,
+    "date": "2026-11-22"
+   },
+   "pub": "2026-11-23",
+   "added": "2026-11-24"
+  },
+  {
+   "id": "rd-tbxsi9o-quartr-x-nvidia-portrait",
+   "name": "Quartr x NVIDIA",
+   "url": "https://x.com/Quartr_App/status/2124873152383578133",
+   "note": "Co-branded editorial portrait for Quartr and NVIDIA, shot with dramatic low-key lighting against a near-black background.",
+   "noteEn": "Co-branded editorial portrait for Quartr and NVIDIA, shot with dramatic low-key lighting against a near-black background.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@quartr_app",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal",
+    "editorial"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/tbxsi9o-quartr-x-nvidia-portrait",
+   "rdkind": "Design",
+   "rdcat": "Illustration",
+   "rdstyle": [
+    "Minimal",
+    "Editorial",
+    "High Contrast",
+    "Dark",
+    "Monochrome"
+   ],
+   "author": {
+    "name": "Quartr",
+    "handle": "@quartr_app",
+    "url": "https://x.com/quartr_app"
+   },
+   "x_post": "https://x.com/Quartr_App/status/2124873152383578133",
+   "xsrc": {
+    "post": "https://x.com/Quartr_App/status/2124873152383578133",
+    "author": "@Quartr_App",
+    "likes": 14576,
+    "bookmarks": 734,
+    "reposts": 949,
+    "impressions": 154931,
+    "date": "2026-11-23"
+   },
+   "pub": "2026-11-23",
+   "added": "2026-11-24"
+  },
+  {
+   "id": "rd-3vkziqx-position-reduce-slider",
+   "name": "Position Slider",
+   "url": "https://x.com/nickpyl/status/2124837342284235239",
+   "note": "A mobile bottom sheet in Phantom lets users drag a percentage slider to partially or fully close a leveraged position, with the dollar amount and CTA label updating live.",
+   "noteEn": "A mobile bottom sheet in Phantom lets users drag a percentage slider to partially or fully close a leveraged position, with the dollar amount and CTA label updating live.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@nickpyl",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/3vkziqx-position-reduce-slider",
+   "rdkind": "Design",
+   "rdcat": "Interface",
+   "rdstyle": [
+    "Minimal",
+    "Dark"
+   ],
+   "author": {
+    "name": "Nick Pyl",
+    "handle": "@nickpyl",
+    "url": "https://x.com/nickpyl"
+   },
+   "x_post": "https://x.com/nickpyl/status/2124837342284235239",
+   "xsrc": {
+    "post": "https://x.com/nickpyl/status/2124837342284235239",
+    "author": "@nickpyl",
+    "likes": 223,
+    "bookmarks": 139,
+    "reposts": 7,
+    "impressions": 7089,
+    "date": "2026-11-23"
+   },
+   "pub": "2026-11-23",
+   "added": "2026-11-24"
   }
  ],
  "guides": [
@@ -196451,5 +196694,5 @@
    ]
   }
  ],
- "updatedAt": "2026-11-23T09:43Z"
+ "updatedAt": "2026-11-24T01:10Z"
 }
