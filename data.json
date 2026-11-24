@@ -1,6 +1,6 @@
 {
  "generated": "2026-11-24",
- "count": 5216,
+ "count": 5219,
  "items": [
   {
    "id": "ued-transitions-dev-craft",
@@ -196546,6 +196546,147 @@
    ],
    "noteEn": "New GitHub UI repo: A free, open-source add-on for Claude, ChatGPT, Codex and Cursor that turns a few plain answers into a design system, so everything you build looks like it belongs together. (★203, MIT, ckryptickunal/OpenDesigner)",
    "added": "2026-11-24"
+  },
+  {
+   "id": "rd-f5wrmbq-animated-menu-icon",
+   "name": "Animated Menu Icon",
+   "url": "https://x.com/iconists/status/2125150712216863014",
+   "note": "A hamburger menu icon inside a circular button morphs into a back arrow as a side panel slides in, demonstrating a fluid icon transition microinteraction on iOS.",
+   "noteEn": "A hamburger menu icon inside a circular button morphs into a back arrow as a side panel slides in, demonstrating a fluid icon transition microinteraction on iOS.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@iconists",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/f5wrmbq-animated-menu-icon",
+   "rdkind": "Design",
+   "rdcat": "Interface",
+   "rdstyle": [
+    "Minimal",
+    "Black & White"
+   ],
+   "author": {
+    "name": "Iconists",
+    "handle": "@iconists",
+    "url": "https://x.com/iconists"
+   },
+   "x_post": "https://x.com/iconists/status/2125150712216863014",
+   "xsrc": {
+    "post": "https://x.com/iconists/status/2125150712216863014",
+    "author": "@iconists",
+    "likes": 273,
+    "bookmarks": 100,
+    "reposts": 8,
+    "impressions": 6207,
+    "date": "2026-11-24"
+   },
+   "pub": "2026-11-24",
+   "added": "2026-11-24"
+  },
+  {
+   "id": "rd-dvhqj42-cinema-seat-preview-ui",
+   "name": "Cinema Seat Preview",
+   "url": "https://x.com/PostiauxCharles/status/2124825172138184760",
+   "note": "A movie ticket booking interface where tapping Preview transitions from a 2D seat map into a 3D-rendered first-person view of the theater, showing the selected seats' perspective.",
+   "noteEn": "A movie ticket booking interface where tapping Preview transitions from a 2D seat map into a 3D-rendered first-person view of the theater, showing the selected seats' perspective.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@postiauxcharles",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "3d"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/dvhqj42-cinema-seat-preview-ui",
+   "rdkind": "Design",
+   "rdcat": "Interface",
+   "rdstyle": [
+    "3D",
+    "Dark"
+   ],
+   "author": {
+    "name": "Charles Postiaux",
+    "handle": "@postiauxcharles",
+    "url": "https://x.com/postiauxcharles"
+   },
+   "x_post": "https://x.com/PostiauxCharles/status/2124825172138184760",
+   "xsrc": {
+    "post": "https://x.com/PostiauxCharles/status/2124825172138184760",
+    "author": "@PostiauxCharles",
+    "likes": 927,
+    "bookmarks": 571,
+    "reposts": 39,
+    "impressions": 41964,
+    "date": "2026-11-23"
+   },
+   "pub": "2026-11-24",
+   "added": "2026-11-24"
+  },
+  {
+   "id": "rd-gmj9mxq-crypto-transfer-security-checks",
+   "name": "Crypto Transfer Security Checks",
+   "url": "https://x.com/builtbysasha/status/2124934369286713504",
+   "note": "Mobile wallet send flow that runs five animated recipient safety checks before revealing a green-ringed confirmation screen and a Send button.",
+   "noteEn": "Mobile wallet send flow that runs five animated recipient safety checks before revealing a green-ringed confirmation screen and a Send button.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@builtbysasha",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/gmj9mxq-crypto-transfer-security-checks",
+   "rdkind": "Design",
+   "rdcat": "Interface",
+   "rdstyle": [
+    "Minimal",
+    "Dark"
+   ],
+   "author": {
+    "name": "Sasha",
+    "handle": "@builtbysasha",
+    "url": "https://x.com/builtbysasha"
+   },
+   "x_post": "https://x.com/builtbysasha/status/2124934369286713504",
+   "xsrc": {
+    "post": "https://x.com/builtbysasha/status/2124934369286713504",
+    "author": "@builtbysasha",
+    "likes": 253,
+    "bookmarks": 226,
+    "reposts": 6,
+    "impressions": 8662,
+    "date": "2026-11-23"
+   },
+   "pub": "2026-11-24",
+   "added": "2026-11-24"
   }
  ],
  "guides": [
@@ -196748,5 +196889,5 @@
    ]
   }
  ],
- "updatedAt": "2026-11-24T09:50Z"
+ "updatedAt": "2026-11-24T11:34Z"
 }
