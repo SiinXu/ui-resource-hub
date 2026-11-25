@@ -1,0 +1,39 @@
+<p>Anthropic 正在推送改版后的 Claude 安卓应用。产品经理 Robert Bye 11 月 23 日在 X 上宣布：“我们全面采用了 Material 3 Expressive，让一切尽可能像原生应用。” 9to5Google 的 Ben Schoon 当天体验了新版，他看到的是：底部导航栏取代了过去对汉堡菜单的依赖（菜单还在，但现在主要放聊天记录）；模型切换器和聊天背景用上了 Material 3 元素；配色仍是 Anthropic 自己的，没有跟随手机壁纸取色。三天前 Bye 刚发布了在 iOS 和安卓上都带标签栏的新版移动应用，所以这次是在共用结构之上专为安卓加的一层。</p><figure><img src="../../blog/img/claude-android-native-shell-brand-surface-1.webp" alt="9to5Google 2026 年 11 月 23 日 Ben Schoon 的报道：Claude 安卓应用的 Material 3 Expressive 改版，配图为手机上的新版应用" loading="lazy" decoding="async" width="1280" height="800"><figcaption>9to5Google 2026 年 11 月 23 日 Ben Schoon 的报道：Claude 安卓应用的 Material 3 Expressive 改版，配图为手机上的新版应用 · 截图：9to5Google（<a href="https://9to5google.com/2026/11/23/claude-android-material-3-update/" rel="noopener" target="_blank">9to5google.com</a>），2026-11-25 截取，版权归原站所有</figcaption></figure>
+<p>值得单独写一篇的是外界的反应。Matthew McCullough 代表安卓开发者团队向 Anthropic 致谢时总结说：“原生的导航……Material 3 Expressive 的动效，而且依然很有 Claude 的感觉。”最后半句正是每个 AI 产品团队眼下的设计难题。聊天应用的外壳几乎一样：输入框、历史列表、模型选择、设置。它们真正的差别在对话本身，不在外壳。所以外壳完全可以按平台的方式运作，品牌则放到更有用的地方去。</p>
+<h2>实际改了什么</h2>
+<ul><li><strong>导航变得看得见。</strong>核心入口移到了拇指够得着的底部导航栏。Material 3 建议在宽度小于 840dp 的窗口里，用导航栏承载 3–5 个同等重要的入口；Expressive 更新用更矮的“灵活导航栏”替换了原来的基础版。聊天记录是一长串列表而不是入口，所以仍然放在菜单里。</li>
+<li><strong>组件来自系统。</strong>模型切换器和聊天界面用的是 Material 3 组件，直接继承平台的状态、形状和基于弹簧的动效，而不是自己仿一套。</li>
+<li><strong>颜色守住品牌。</strong>9to5Google 没有看到明显的 Material You 动态取色。安卓本身支持这种选择：官方文档说明了怎样固定品牌色，以及怎样“协调”自定义颜色，让它和用户壁纸生成的配色放在一起也和谐。</li>
+<li><strong>一个小瑕疵。</strong>返回手势会让搜索栏做一个动画，但没有像安卓预测性返回规范要求的那样预览上一个界面。9to5Google 说这是吹毛求疵。我们反而认为这是整件事里最有用的细节，因为用户说不出来，却能感觉到。</li></ul><figure><img src="../../blog/img/claude-android-native-shell-brand-surface-2.webp" alt="分工网格：采纳平台的底部导航栏、预测性返回、系统组件和弹簧动效 token；保留品牌映射到颜色角色的配色、字体与文案语气，以及一两个高光时刻" loading="lazy" decoding="async" width="1200" height="675"><figcaption>分工网格：采纳平台的底部导航栏、预测性返回、系统组件和弹簧动效 token；保留品牌映射到颜色角色的配色、字体与文案语气，以及一两个高光时刻 · 示意图：UI Hub 原创，CC BY 4.0</figcaption></figure>
+<h2>我们的看法：骨架借平台，皮肤留品牌</h2>
+<p>多年来很多 AI 应用只做一套跨平台设计，到处都是汉堡菜单和自定义配色。这样做省事，却把产品的结构藏了起来。Nielsen Norman Group 对隐藏式导航的定量研究发现，把主导航藏起来会让可发现性下降将近一半，并建议在手机上直接展示不超过四个的一级链接。底部导航栏就是移动端的答案，而 Material 3 Expressive 连动效和状态都已经调好了。</p>
+<p>我们会照搬的分工很简单。凡是用户的手和习惯已经熟悉的东西，都交给平台：导航放哪里、返回怎么走、面板怎么弹出、弹簧动效有多快。凡是让产品被认出来的东西，都留给品牌：配色、字体、插画、文案语气，以及一两个高光时刻。Google 自己的 Expressive 指南对最后一点也是这么说的：高光时刻只留一两个，多了就会分散注意力。对 AI 应用来说，最自然的候选是回复开始流式输出的那一刻。</p>
+<p>有两点要注意。第一，“原生”是一份承诺，不是一种风格。外观看起来像平台，用户就会期待它的行为也像平台；返回手势不预览、面板压住手势区域，在原生外观的应用里会比在明显自定义的应用里更显得坏掉了。第二，按平台原生意味着 iOS 要有自己的答案。Bye 的第一条公告里两个系统都有标签栏；在 iOS 上应参照 Apple 的标签栏规范，而不是把安卓的底栏直接搬过去。</p>
+<h2>采纳还是保留：一份可用的分工</h2>
+<ol><li><strong>采纳导航模型。</strong>数一数你的一级入口。3–5 个同等重要的放进底部导航栏；历史记录这类长列表放进抽屉、底部面板或搜索。</li>
+<li><strong>采纳返回行为。</strong>开启预测性返回。从 Android 15 起，已开启的应用会自动获得返回桌面、跨 Activity 和跨任务的系统动画。自己的全屏界面按安卓规范：离开的画面缩到 90%，在手势进度 35% 处淡入淡出切换。</li>
+<li><strong>采纳动效 token。</strong>组件动画用 Expressive 的弹簧 token，不要自己挑时长。</li>
+<li><strong>有意识地保留配色。</strong>把品牌色映射到 Material 的颜色角色（primary、secondary、tertiary、surface container），让组件正确取色，然后对动态取色做出决定：关闭，或者协调自定义颜色。把决定写下来。</li>
+<li><strong>保留字体和语气。</strong>通过字号阶梯的角色使用自己的字体，标签和空状态里保持自己的文案风格。</li>
+<li><strong>保留一两个高光时刻。</strong>把品牌的动效和颜色用在最重要的地方，其他地方保持安静。</li></ol>
+<figure><img src="../../blog/img/claude-android-native-shell-brand-surface-3.webp" alt="Material Design 3 导航栏规范页，展示带四个入口和胶囊形选中指示的手机底部导航栏" loading="lazy" decoding="async" width="1280" height="800"><figcaption>Material Design 3 导航栏规范页，展示带四个入口和胶囊形选中指示的手机底部导航栏 · 截图：Material Design (Google)（<a href="https://m3.material.io/components/navigation-bar/overview" rel="noopener" target="_blank">m3.material.io</a>），2026-11-25 截取，版权归原站所有</figcaption></figure><h2>平台适配检查清单</h2>
+<ul><li>底部导航栏的 3–5 个入口在每个页面都保持不变吗？长列表没有塞进导航栏吗？</li>
+<li>每次返回滑动都能预览目的地吗？中途松手时画面能完全复原吗？</li>
+<li>全面屏布局里，没有把可点区域放在系统手势区域下面吧？</li>
+<li>品牌色映射到了颜色角色，亮色和暗色下都检查过对比度，动态取色的决定也记录下来了吗？</li>
+<li>模型选择器、菜单和面板用的是系统组件，状态和动效直接免费获得吗？</li>
+<li>富有表现力的高光时刻最多一两个，其他地方都很克制吗？</li>
+<li>iOS 上按它自己的规范也检查过一遍，而不是照搬安卓布局吗？</li></ul>
+<pre><code># 贴给正在做安卓界面的编程智能体（Jetpack Compose）
+用 Material 3 Expressive 组件构建 &lt;界面&gt;。
+导航：底部导航栏，入口为以下 3–5 个：&lt;列表&gt;。
+历史记录、文件等长列表放进抽屉或搜索，不要放进导航栏。
+返回：开启预测性返回；自定义全屏转场缩放到 90%，
+在手势进度 35% 处淡入淡出；中途松手要恢复原状态。
+颜色：把我们的品牌色映射到颜色角色（primary、secondary、tertiary、
+surface container）。动态取色：&lt;关闭 | 协调自定义颜色&gt;。
+字体：通过 Material 字号阶梯角色使用我们的字体。
+动效：只用 Expressive 弹簧 token；唯一的高光时刻：&lt;描述&gt;。
+遵守全面屏手势区域。交付亮色和暗色截图，
+并列出所有不得不手写的组件。</code></pre>
+<p>UI Hub 相关阅读：<a href="../figma-motion-physics-springs-handoff/">交接基于物理的弹簧动效</a>、<a href="../motion-pinch-press-gestures-with-fallbacks/">带降级方案的手势交互</a>，以及<a href="../safari-adaptive-dark-mode-design-for-it/">为平台自适应暗色模式做设计</a>。</p>

@@ -3539,4 +3539,106 @@ Rules:
  refs=[('Building the design layer of the internet: opening Canva to every agent and developer','Anwar Haneef · Canva Newsroom','https://www.canva.com/newsroom/news/canva-mcp-update/'),('Campaign-ready video generation, Magic Layers and several new ways to create with Canva + AI assistants','Canva Newsroom','https://www.canva.com/newsroom/news/canva-mcp-video-generation/'),('Canva opens its design tools to AI agents and outside developers','Ana Maria Constantin · The Next Web','https://thenextweb.com/news/canva-mcp-ai-agents-developers'),('How to use Canva MCP in your AI application','Meredith Hassett · Canva Developers Blog','https://www.canva.dev/blog/developers/canva-mcp-ga/'),('Best practices for Canva MCP','Canva Developers','https://www.canva.dev/docs/apps/mcp/best-practices/'),('Design edit handoff','Canva Developers','https://www.canva.dev/docs/apps/mcp/workflows/design-edit/'),('MCP tools and rate limits','Canva Developers','https://www.canva.dev/docs/apps/mcp/tools/'),('Access and permissions','Canva Developers','https://www.canva.dev/docs/apps/mcp/access/'),('separate-image-layers','Canva Developers','https://www.canva.dev/docs/apps/mcp/tools/separate-image-layers/'),('autofill-design','Canva Developers','https://www.canva.dev/docs/apps/mcp/tools/autofill-design/'),('commit-editing-transaction','Canva Developers','https://www.canva.dev/docs/apps/mcp/tools/commit-editing-transaction/'),('Create image-to-design import job','Canva Developers','https://www.canva.dev/docs/apps/rest-apis/reference/design-imports/create-image-to-design-import-job/'),('Canva REST API credit rates','Canva Developers','https://www.canva.dev/docs/apps/rest-apis/credit-rates/'),('Canva CLI','Canva Developers','https://www.canva.dev/docs/apps/canva-cli/'),('The Figma agent is now available in FigJam and Slides','Jinen Kamdar · Figma Blog','https://www.figma.com/blog/introducing-figma-agent-in-figjam-and-slides/'),('Canva launches Craft, its first in-house image model','Maximilian Schreiner · The Decoder','https://the-decoder.com/canva-launches-craft-its-first-in-house-image-model/')]),
 
 
+dict(slug='claude-android-native-shell-brand-surface', date='2026-11-25', cat='teardown', series=None, featured=True, tags=['Material 3 Expressive','Android','Claude','navigation bar','predictive back','dynamic color'],
+ t=T('Claude’s Android redesign: go native on structure, keep your brand on the surface',
+     'Claude 安卓版改版：结构跟随平台，品牌留在表面',
+     'Claude Android 版改版：結構跟隨平台，品牌留在表面',
+     'ClaudeのAndroid版リデザイン：構造はネイティブに、ブランドは表層に',
+     'Claude 안드로이드 리디자인: 구조는 네이티브로, 브랜드는 표면에',
+     'Reka bentuk semula Claude untuk Android: struktur ikut platform, jenama kekal di permukaan',
+     'Claude làm mới app Android: cấu trúc theo nền tảng, thương hiệu ở bề mặt',
+     'La refonte Android de Claude : la structure native, la marque en surface',
+     'El rediseño de Claude para Android: estructura nativa, marca en la superficie',
+     'Claudes Android-Redesign: Struktur nativ, Marke an der Oberfläche'),
+ s=T('Anthropic rolled out a Material 3 Expressive redesign of the Claude Android app this week: a bottom navigation bar instead of a hamburger-first layout, Material components in the model switcher, and Anthropic’s own colours instead of wallpaper-based dynamic colour. We read it as a pattern for every AI product shipping a mobile app: borrow the platform’s navigation, back gesture and motion, keep your palette, type and one or two hero moments. What to adopt, what to keep, a checklist and a prompt for coding agents.',
+     '本周 Anthropic 为 Claude 安卓应用推出了 Material 3 Expressive 改版：用底部导航栏取代以汉堡菜单为主的布局，模型切换器换成 Material 组件，配色仍用 Anthropic 自己的颜色，没有跟随壁纸动态取色。我们把它看作所有做移动端的 AI 产品都能用的模式：导航、返回手势和动效借用平台的，配色、字体和一两个高光时刻留给品牌。本文讲该采纳什么、该保留什么，并附检查清单和给编程智能体的提示词。',
+     '本週 Anthropic 為 Claude Android 應用推出了 Material 3 Expressive 改版：用底部導覽列取代以漢堡選單為主的版面，模型切換器換成 Material 元件，配色仍用 Anthropic 自己的顏色，沒有跟隨桌布動態取色。我們把它看作所有做行動端的 AI 產品都能用的模式：導覽、返回手勢和動態效果借用平台的，配色、字體和一兩個高光時刻留給品牌。本文講該採納什麼、該保留什麼，並附檢查清單和給程式設計智能體的提示詞。',
+     'AnthropicはClaudeのAndroidアプリにMaterial 3 Expressiveのリデザインを今週配信した。ハンバーガーメニュー中心の構成をやめて下部ナビゲーションバーを採用し、モデル切り替えにはMaterialコンポーネントを使い、配色は壁紙由来のダイナミックカラーではなくAnthropic独自の色を維持した。モバイルアプリを出すすべてのAI製品に通じる型として読み解く：ナビゲーション、戻るジェスチャー、モーションはプラットフォームに従い、配色、書体、1〜2個のヒーローモーメントはブランドに残す。採用すべきもの、残すもの、チェックリストとコーディングエージェント向けプロンプト付き。',
+     'Anthropic이 이번 주 Claude 안드로이드 앱에 Material 3 Expressive 리디자인을 배포했다. 햄버거 메뉴 중심 구성 대신 하단 내비게이션 바를 쓰고, 모델 전환기에는 Material 컴포넌트를 적용했으며, 배경화면 기반 다이내믹 컬러 대신 Anthropic 고유 색을 유지했다. 모바일 앱을 내는 모든 AI 제품에 통하는 패턴으로 읽는다: 내비게이션, 뒤로 가기 제스처, 모션은 플랫폼을 따르고 색, 서체, 한두 개의 히어로 모먼트는 브랜드에 남긴다. 무엇을 채택하고 무엇을 지킬지, 체크리스트와 코딩 에이전트용 프롬프트 포함.',
+     'Minggu ini Anthropic melancarkan reka bentuk semula Material 3 Expressive untuk aplikasi Claude di Android: bar navigasi bawah menggantikan susun atur yang bergantung pada menu hamburger, komponen Material dalam pemilih model, dan warna Anthropic sendiri, bukan warna dinamik daripada kertas dinding. Kami melihatnya sebagai corak untuk setiap produk AI yang membina aplikasi mudah alih: pinjam navigasi, gerak isyarat kembali dan gerakan platform; kekalkan palet, fon dan satu atau dua detik utama jenama. Apa yang patut diambil, apa yang patut dikekalkan, senarai semak dan prompt untuk ejen pengekodan.',
+     'Tuần này Anthropic tung bản thiết kế lại theo Material 3 Expressive cho app Claude trên Android: thanh điều hướng dưới cùng thay cho bố cục dựa vào menu hamburger, component Material trong bộ chọn model, và vẫn giữ màu riêng của Anthropic thay vì màu động lấy từ hình nền. Chúng tôi xem đây là khuôn mẫu cho mọi sản phẩm AI làm app di động: mượn điều hướng, cử chỉ quay lại và chuyển động của nền tảng; giữ bảng màu, kiểu chữ và một hai khoảnh khắc nổi bật cho thương hiệu. Nên áp dụng gì, nên giữ gì, kèm checklist và prompt cho agent lập trình.',
+     'Anthropic a déployé cette semaine une refonte Material 3 Expressive de l’app Android de Claude : une barre de navigation en bas au lieu d’une mise en page centrée sur le menu hamburger, des composants Material dans le sélecteur de modèle, et les couleurs d’Anthropic plutôt que la couleur dynamique tirée du fond d’écran. Nous y voyons un modèle pour tout produit d’IA qui sort une app mobile : empruntez la navigation, le geste retour et le mouvement de la plateforme, gardez votre palette, votre typographie et un ou deux moments forts. Quoi adopter, quoi garder, une checklist et un prompt pour agents de code.',
+     'Anthropic lanzó esta semana un rediseño Material 3 Expressive de la app de Claude para Android: una barra de navegación inferior en lugar de un diseño centrado en el menú hamburguesa, componentes Material en el selector de modelo y los colores propios de Anthropic en vez del color dinámico del fondo de pantalla. Lo leemos como un patrón para cualquier producto de IA con app móvil: toma de la plataforma la navegación, el gesto atrás y el movimiento; conserva tu paleta, tu tipografía y uno o dos momentos estrella. Qué adoptar, qué conservar, una checklist y un prompt para agentes de código.',
+     'Anthropic hat diese Woche ein Material-3-Expressive-Redesign der Claude-App für Android ausgerollt: eine untere Navigationsleiste statt eines Layouts rund um das Hamburger-Menü, Material-Komponenten im Modellwechsler und Anthropics eigene Farben statt dynamischer Farben aus dem Hintergrundbild. Wir lesen das als Muster für jedes KI-Produkt mit einer Mobile-App: Navigation, Zurück-Geste und Bewegung von der Plattform übernehmen, Palette, Schrift und ein bis zwei Hero-Momente der Marke behalten. Was übernehmen, was behalten, eine Checkliste und ein Prompt für Coding-Agents.'),
+ en="""<p>Anthropic is rolling out a redesigned Claude app for Android. Product manager Robert Bye announced it on X on 23 November: “we went full Material 3 Expressive to make everything feel as native as possible.” 9to5Google’s Ben Schoon, who looked at the build the same day, describes a bottom bar that replaces the old reliance on the hamburger menu (the menu stays, but now mostly holds chat history), Material 3 elements in the model switcher and the chat background, and colours that stay Anthropic’s own rather than following the phone’s wallpaper. Three days earlier Bye had introduced a new mobile app with a tab bar on both iOS and Android, so this is the Android-specific layer on top of a shared structure.</p>
+<p>The reaction is what makes it worth a post. Matthew McCullough, thanking Anthropic on behalf of Android’s developer team, summed it up as “native navigation… and Material 3 Expressive motion, and it still feels like Claude.” That last clause is the design problem every AI product team has right now. Chat apps all share the same shell: a composer, a history list, a model picker, settings. The difference between them is the conversation, not the chrome. So the chrome can afford to behave like the platform, and the brand can live somewhere more useful.</p>
+<h2>What actually changed</h2>
+<ul><li><strong>Navigation became visible.</strong> Core destinations moved to a bottom navigation bar within thumb reach. Material 3 recommends a navigation bar for 3–5 destinations of equal importance on windows narrower than 840dp, and the Expressive update replaced the baseline bar with a shorter “flexible” one. Chat history, which is a long list rather than a destination, stays behind the menu.</li>
+<li><strong>Components came from the system.</strong> The model switcher and chat surfaces use Material 3 components, so they inherit the platform’s states, shapes and spring-based motion instead of a custom imitation.</li>
+<li><strong>Colour stayed on brand.</strong> 9to5Google saw no obvious use of Material You dynamic colour. Android supports this choice: its docs show how to keep brand colours fixed, and how to harmonise custom colours so they sit well next to user-generated palettes.</li>
+<li><strong>One rough edge.</strong> The back gesture animates the search bar, but does not preview the previous screen the way Android’s predictive back guidance expects. 9to5Google called it nit-picking. We think it is the most useful detail in the story, because it is the part users feel without being able to name it.</li></ul>
+<h2>Our take: borrow the skeleton, keep the skin</h2>
+<p>For years many AI apps shipped one cross-platform design with a hamburger menu and a custom palette everywhere. It was cheap, and it hid the product’s structure. Nielsen Norman Group’s quantitative study of hidden navigation found that hiding the main navigation cut discoverability almost in half, and recommended showing up to four top-level links on phones. A bottom bar is the mobile answer to that, and Material 3 Expressive gives it to you with motion and states already tuned.</p>
+<p>The split we would copy is simple. Anything the user’s hands and habits already know belongs to the platform: where navigation lives, how back works, how sheets open, how fast things spring. Anything that makes the product recognisable belongs to the brand: palette, typeface, illustration, the tone of the copy, and one or two hero moments. Google’s own Expressive guidance says the same about the last point: stick to one or two hero moments, because more becomes distracting. For an AI app the obvious candidate is the moment a response starts to stream.</p>
+<p>Two cautions. First, “native” is a contract, not a style. If you adopt the platform’s look, people expect its behaviour, and a back gesture that does not preview, or a sheet that ignores gesture insets, feels more broken in a native-looking app than in an obviously custom one. Second, native per platform means iOS gets its own answer. Bye’s first announcement covered a tab bar on both systems; on iOS the reference is Apple’s tab bar guidance, not the Android bar ported across.</p>
+<h2>Adopt or keep: a working split</h2>
+<ol><li><strong>Adopt the navigation model.</strong> Count your top-level destinations. Three to five equal ones go in the bottom bar; long lists such as history go in a drawer, sheet or search.</li>
+<li><strong>Adopt back behaviour.</strong> Opt in to predictive back. Since Android 15, the system back-to-home, cross-activity and cross-task animations appear for apps that opt in. For your own full-screen surfaces, Android’s spec scales the outgoing screen to 90% and fades through at 35% of the gesture.</li>
+<li><strong>Adopt motion tokens.</strong> Use the Expressive spring tokens for components instead of hand-picked durations.</li>
+<li><strong>Keep your palette, deliberately.</strong> Map brand colours to Material colour roles (primary, secondary, tertiary, surface containers) so components theme correctly, then decide on dynamic colour: off, or harmonised custom colours. Write the decision down.</li>
+<li><strong>Keep type and voice.</strong> Use your typeface through the type scale roles, and keep your copy style in labels and empty states.</li>
+<li><strong>Keep one or two hero moments.</strong> Put the brand’s motion and colour where it matters most, and leave everything else calm.</li></ol>
+<h2>Platform-fit checklist</h2>
+<ul><li>Do the 3–5 bottom-bar destinations stay the same on every screen, with long lists kept out of the bar?</li>
+<li>Does every back swipe preview where it goes, and does releasing early restore the screen exactly?</li>
+<li>Are no touch targets placed under the system gesture insets in edge-to-edge layouts?</li>
+<li>Are brand colours mapped to colour roles, checked for contrast in light and dark, with the dynamic-colour decision recorded?</li>
+<li>Do model pickers, menus and sheets use system components, so states and motion come for free?</li>
+<li>Is there at most one or two expressive hero moments, and is everything else quiet?</li>
+<li>Does the same check pass on iOS against its own conventions, rather than a port of the Android layout?</li></ul>
+<pre><code># Paste into a coding agent building an Android screen (Jetpack Compose)
+Build &lt;screen&gt; with Material 3 Expressive components.
+Navigation: bottom navigation bar with these 3–5 destinations: &lt;list&gt;.
+Put long lists (history, files) in a drawer or search, not in the bar.
+Back: enable predictive back; custom full-screen transitions scale to 90%
+and fade through at 35% of gesture progress; releasing early restores state.
+Colour: map our brand colours to colour roles (primary, secondary, tertiary,
+surface containers). Dynamic colour: &lt;off | harmonise custom colours&gt;.
+Type: our typeface via the Material type scale roles.
+Motion: Expressive spring tokens only; one hero moment: &lt;describe&gt;.
+Respect edge-to-edge gesture insets. Report light and dark screenshots
+and a list of any component you had to build by hand.</code></pre>
+<p>Related on UI Hub: <a href="../figma-motion-physics-springs-handoff/">handing off physics-based springs</a>, <a href="../motion-pinch-press-gestures-with-fallbacks/">gestures with fallbacks</a>, and <a href="../safari-adaptive-dark-mode-design-for-it/">designing for the platform’s adaptive dark mode</a>.</p>""",
+ zh="""<p>Anthropic 正在推送改版后的 Claude 安卓应用。产品经理 Robert Bye 11 月 23 日在 X 上宣布：“我们全面采用了 Material 3 Expressive，让一切尽可能像原生应用。” 9to5Google 的 Ben Schoon 当天体验了新版，他看到的是：底部导航栏取代了过去对汉堡菜单的依赖（菜单还在，但现在主要放聊天记录）；模型切换器和聊天背景用上了 Material 3 元素；配色仍是 Anthropic 自己的，没有跟随手机壁纸取色。三天前 Bye 刚发布了在 iOS 和安卓上都带标签栏的新版移动应用，所以这次是在共用结构之上专为安卓加的一层。</p>
+<p>值得单独写一篇的是外界的反应。Matthew McCullough 代表安卓开发者团队向 Anthropic 致谢时总结说：“原生的导航……Material 3 Expressive 的动效，而且依然很有 Claude 的感觉。”最后半句正是每个 AI 产品团队眼下的设计难题。聊天应用的外壳几乎一样：输入框、历史列表、模型选择、设置。它们真正的差别在对话本身，不在外壳。所以外壳完全可以按平台的方式运作，品牌则放到更有用的地方去。</p>
+<h2>实际改了什么</h2>
+<ul><li><strong>导航变得看得见。</strong>核心入口移到了拇指够得着的底部导航栏。Material 3 建议在宽度小于 840dp 的窗口里，用导航栏承载 3–5 个同等重要的入口；Expressive 更新用更矮的“灵活导航栏”替换了原来的基础版。聊天记录是一长串列表而不是入口，所以仍然放在菜单里。</li>
+<li><strong>组件来自系统。</strong>模型切换器和聊天界面用的是 Material 3 组件，直接继承平台的状态、形状和基于弹簧的动效，而不是自己仿一套。</li>
+<li><strong>颜色守住品牌。</strong>9to5Google 没有看到明显的 Material You 动态取色。安卓本身支持这种选择：官方文档说明了怎样固定品牌色，以及怎样“协调”自定义颜色，让它和用户壁纸生成的配色放在一起也和谐。</li>
+<li><strong>一个小瑕疵。</strong>返回手势会让搜索栏做一个动画，但没有像安卓预测性返回规范要求的那样预览上一个界面。9to5Google 说这是吹毛求疵。我们反而认为这是整件事里最有用的细节，因为用户说不出来，却能感觉到。</li></ul>
+<h2>我们的看法：骨架借平台，皮肤留品牌</h2>
+<p>多年来很多 AI 应用只做一套跨平台设计，到处都是汉堡菜单和自定义配色。这样做省事，却把产品的结构藏了起来。Nielsen Norman Group 对隐藏式导航的定量研究发现，把主导航藏起来会让可发现性下降将近一半，并建议在手机上直接展示不超过四个的一级链接。底部导航栏就是移动端的答案，而 Material 3 Expressive 连动效和状态都已经调好了。</p>
+<p>我们会照搬的分工很简单。凡是用户的手和习惯已经熟悉的东西，都交给平台：导航放哪里、返回怎么走、面板怎么弹出、弹簧动效有多快。凡是让产品被认出来的东西，都留给品牌：配色、字体、插画、文案语气，以及一两个高光时刻。Google 自己的 Expressive 指南对最后一点也是这么说的：高光时刻只留一两个，多了就会分散注意力。对 AI 应用来说，最自然的候选是回复开始流式输出的那一刻。</p>
+<p>有两点要注意。第一，“原生”是一份承诺，不是一种风格。外观看起来像平台，用户就会期待它的行为也像平台；返回手势不预览、面板压住手势区域，在原生外观的应用里会比在明显自定义的应用里更显得坏掉了。第二，按平台原生意味着 iOS 要有自己的答案。Bye 的第一条公告里两个系统都有标签栏；在 iOS 上应参照 Apple 的标签栏规范，而不是把安卓的底栏直接搬过去。</p>
+<h2>采纳还是保留：一份可用的分工</h2>
+<ol><li><strong>采纳导航模型。</strong>数一数你的一级入口。3–5 个同等重要的放进底部导航栏；历史记录这类长列表放进抽屉、底部面板或搜索。</li>
+<li><strong>采纳返回行为。</strong>开启预测性返回。从 Android 15 起，已开启的应用会自动获得返回桌面、跨 Activity 和跨任务的系统动画。自己的全屏界面按安卓规范：离开的画面缩到 90%，在手势进度 35% 处淡入淡出切换。</li>
+<li><strong>采纳动效 token。</strong>组件动画用 Expressive 的弹簧 token，不要自己挑时长。</li>
+<li><strong>有意识地保留配色。</strong>把品牌色映射到 Material 的颜色角色（primary、secondary、tertiary、surface container），让组件正确取色，然后对动态取色做出决定：关闭，或者协调自定义颜色。把决定写下来。</li>
+<li><strong>保留字体和语气。</strong>通过字号阶梯的角色使用自己的字体，标签和空状态里保持自己的文案风格。</li>
+<li><strong>保留一两个高光时刻。</strong>把品牌的动效和颜色用在最重要的地方，其他地方保持安静。</li></ol>
+<h2>平台适配检查清单</h2>
+<ul><li>底部导航栏的 3–5 个入口在每个页面都保持不变吗？长列表没有塞进导航栏吗？</li>
+<li>每次返回滑动都能预览目的地吗？中途松手时画面能完全复原吗？</li>
+<li>全面屏布局里，没有把可点区域放在系统手势区域下面吧？</li>
+<li>品牌色映射到了颜色角色，亮色和暗色下都检查过对比度，动态取色的决定也记录下来了吗？</li>
+<li>模型选择器、菜单和面板用的是系统组件，状态和动效直接免费获得吗？</li>
+<li>富有表现力的高光时刻最多一两个，其他地方都很克制吗？</li>
+<li>iOS 上按它自己的规范也检查过一遍，而不是照搬安卓布局吗？</li></ul>
+<pre><code># 贴给正在做安卓界面的编程智能体（Jetpack Compose）
+用 Material 3 Expressive 组件构建 &lt;界面&gt;。
+导航：底部导航栏，入口为以下 3–5 个：&lt;列表&gt;。
+历史记录、文件等长列表放进抽屉或搜索，不要放进导航栏。
+返回：开启预测性返回；自定义全屏转场缩放到 90%，
+在手势进度 35% 处淡入淡出；中途松手要恢复原状态。
+颜色：把我们的品牌色映射到颜色角色（primary、secondary、tertiary、
+surface container）。动态取色：&lt;关闭 | 协调自定义颜色&gt;。
+字体：通过 Material 字号阶梯角色使用我们的字体。
+动效：只用 Expressive 弹簧 token；唯一的高光时刻：&lt;描述&gt;。
+遵守全面屏手势区域。交付亮色和暗色截图，
+并列出所有不得不手写的组件。</code></pre>
+<p>UI Hub 相关阅读：<a href="../figma-motion-physics-springs-handoff/">交接基于物理的弹簧动效</a>、<a href="../motion-pinch-press-gestures-with-fallbacks/">带降级方案的手势交互</a>，以及<a href="../safari-adaptive-dark-mode-design-for-it/">为平台自适应暗色模式做设计</a>。</p>""",
+ refs=[('For Android users, we went full Material 3 Expressive','Robert Bye · X','https://x.com/RobertJBye/status/2124961333494124589'),('Meet the new Claude mobile app','Robert Bye · X','https://x.com/RobertJBye/status/2123930535437504635'),('Native navigation and Material 3 Expressive motion, and it still feels like Claude','Matthew McCullough · X','https://x.com/matthewmccull/status/2125372019583963610'),('Claude rolling out updated Android app with Material 3 Expressive redesign','Ben Schoon · 9to5Google','https://9to5google.com/2026/11/23/claude-android-material-3-update/'),('Claude rolls out updated Android app with Material 3 Expressive design','The Mac Observer','https://www.macobserver.com/news/claude-rolls-out-updated-android-app-with-material-3-expressive-design/'),('Start building with Material 3 Expressive','Material Design','https://m3.material.io/blog/building-with-m3-expressive'),('Navigation bar','Material Design 3','https://m3.material.io/components/navigation-bar/overview'),('Predictive back design','Android Developers','https://developer.android.com/design/ui/mobile/guides/patterns/predictive-back'),('Add support for the predictive back gesture','Android Developers','https://developer.android.com/guide/navigation/custom-back/predictive-back-gesture'),('Enable users to personalize their color experience in your app','Android Developers','https://developer.android.com/develop/ui/views/theming/dynamic-colors'),('Hamburger Menus and Hidden Navigation Hurt UX Metrics','Kara Pernice, Raluca Budiu · Nielsen Norman Group','https://www.nngroup.com/articles/hamburger-menus/'),('Tab bars','Apple Human Interface Guidelines','https://developer.apple.com/design/human-interface-guidelines/tab-bars')]),
+
+
 ]

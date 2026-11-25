@@ -1,5 +1,5 @@
 {
- "count": 60,
+ "count": 61,
  "rss": "https://ui.incidental.site/blog/rss.xml",
  "categories": {
   "tools": "Tools",
@@ -18,6 +18,113 @@
   "weekly": "Series: Weekly roundup"
  },
  "posts": [
+  {
+   "slug": "claude-android-native-shell-brand-surface",
+   "url": "https://ui.incidental.site/blog/claude-android-native-shell-brand-surface/",
+   "date": "2026-11-25",
+   "category": "teardown",
+   "series": null,
+   "featured": true,
+   "tags": [
+    "Material 3 Expressive",
+    "Android",
+    "Claude",
+    "navigation bar",
+    "predictive back",
+    "dynamic color"
+   ],
+   "title": {
+    "en": "Claude’s Android redesign: go native on structure, keep your brand on the surface",
+    "zh": "Claude 安卓版改版：结构跟随平台，品牌留在表面",
+    "zht": "Claude Android 版改版：結構跟隨平台，品牌留在表面",
+    "ja": "ClaudeのAndroid版リデザイン：構造はネイティブに、ブランドは表層に",
+    "ko": "Claude 안드로이드 리디자인: 구조는 네이티브로, 브랜드는 표면에",
+    "ms": "Reka bentuk semula Claude untuk Android: struktur ikut platform, jenama kekal di permukaan",
+    "vi": "Claude làm mới app Android: cấu trúc theo nền tảng, thương hiệu ở bề mặt",
+    "fr": "La refonte Android de Claude : la structure native, la marque en surface",
+    "es": "El rediseño de Claude para Android: estructura nativa, marca en la superficie",
+    "de": "Claudes Android-Redesign: Struktur nativ, Marke an der Oberfläche"
+   },
+   "summary": {
+    "en": "Anthropic rolled out a Material 3 Expressive redesign of the Claude Android app this week: a bottom navigation bar instead of a hamburger-first layout, Material components in the model switcher, and Anthropic’s own colours instead of wallpaper-based dynamic colour. We read it as a pattern for every AI product shipping a mobile app: borrow the platform’s navigation, back gesture and motion, keep your palette, type and one or two hero moments. What to adopt, what to keep, a checklist and a prompt for coding agents.",
+    "zh": "本周 Anthropic 为 Claude 安卓应用推出了 Material 3 Expressive 改版：用底部导航栏取代以汉堡菜单为主的布局，模型切换器换成 Material 组件，配色仍用 Anthropic 自己的颜色，没有跟随壁纸动态取色。我们把它看作所有做移动端的 AI 产品都能用的模式：导航、返回手势和动效借用平台的，配色、字体和一两个高光时刻留给品牌。本文讲该采纳什么、该保留什么，并附检查清单和给编程智能体的提示词。",
+    "zht": "本週 Anthropic 為 Claude Android 應用推出了 Material 3 Expressive 改版：用底部導覽列取代以漢堡選單為主的版面，模型切換器換成 Material 元件，配色仍用 Anthropic 自己的顏色，沒有跟隨桌布動態取色。我們把它看作所有做行動端的 AI 產品都能用的模式：導覽、返回手勢和動態效果借用平台的，配色、字體和一兩個高光時刻留給品牌。本文講該採納什麼、該保留什麼，並附檢查清單和給程式設計智能體的提示詞。",
+    "ja": "AnthropicはClaudeのAndroidアプリにMaterial 3 Expressiveのリデザインを今週配信した。ハンバーガーメニュー中心の構成をやめて下部ナビゲーションバーを採用し、モデル切り替えにはMaterialコンポーネントを使い、配色は壁紙由来のダイナミックカラーではなくAnthropic独自の色を維持した。モバイルアプリを出すすべてのAI製品に通じる型として読み解く：ナビゲーション、戻るジェスチャー、モーションはプラットフォームに従い、配色、書体、1〜2個のヒーローモーメントはブランドに残す。採用すべきもの、残すもの、チェックリストとコーディングエージェント向けプロンプト付き。",
+    "ko": "Anthropic이 이번 주 Claude 안드로이드 앱에 Material 3 Expressive 리디자인을 배포했다. 햄버거 메뉴 중심 구성 대신 하단 내비게이션 바를 쓰고, 모델 전환기에는 Material 컴포넌트를 적용했으며, 배경화면 기반 다이내믹 컬러 대신 Anthropic 고유 색을 유지했다. 모바일 앱을 내는 모든 AI 제품에 통하는 패턴으로 읽는다: 내비게이션, 뒤로 가기 제스처, 모션은 플랫폼을 따르고 색, 서체, 한두 개의 히어로 모먼트는 브랜드에 남긴다. 무엇을 채택하고 무엇을 지킬지, 체크리스트와 코딩 에이전트용 프롬프트 포함.",
+    "ms": "Minggu ini Anthropic melancarkan reka bentuk semula Material 3 Expressive untuk aplikasi Claude di Android: bar navigasi bawah menggantikan susun atur yang bergantung pada menu hamburger, komponen Material dalam pemilih model, dan warna Anthropic sendiri, bukan warna dinamik daripada kertas dinding. Kami melihatnya sebagai corak untuk setiap produk AI yang membina aplikasi mudah alih: pinjam navigasi, gerak isyarat kembali dan gerakan platform; kekalkan palet, fon dan satu atau dua detik utama jenama. Apa yang patut diambil, apa yang patut dikekalkan, senarai semak dan prompt untuk ejen pengekodan.",
+    "vi": "Tuần này Anthropic tung bản thiết kế lại theo Material 3 Expressive cho app Claude trên Android: thanh điều hướng dưới cùng thay cho bố cục dựa vào menu hamburger, component Material trong bộ chọn model, và vẫn giữ màu riêng của Anthropic thay vì màu động lấy từ hình nền. Chúng tôi xem đây là khuôn mẫu cho mọi sản phẩm AI làm app di động: mượn điều hướng, cử chỉ quay lại và chuyển động của nền tảng; giữ bảng màu, kiểu chữ và một hai khoảnh khắc nổi bật cho thương hiệu. Nên áp dụng gì, nên giữ gì, kèm checklist và prompt cho agent lập trình.",
+    "fr": "Anthropic a déployé cette semaine une refonte Material 3 Expressive de l’app Android de Claude : une barre de navigation en bas au lieu d’une mise en page centrée sur le menu hamburger, des composants Material dans le sélecteur de modèle, et les couleurs d’Anthropic plutôt que la couleur dynamique tirée du fond d’écran. Nous y voyons un modèle pour tout produit d’IA qui sort une app mobile : empruntez la navigation, le geste retour et le mouvement de la plateforme, gardez votre palette, votre typographie et un ou deux moments forts. Quoi adopter, quoi garder, une checklist et un prompt pour agents de code.",
+    "es": "Anthropic lanzó esta semana un rediseño Material 3 Expressive de la app de Claude para Android: una barra de navegación inferior en lugar de un diseño centrado en el menú hamburguesa, componentes Material en el selector de modelo y los colores propios de Anthropic en vez del color dinámico del fondo de pantalla. Lo leemos como un patrón para cualquier producto de IA con app móvil: toma de la plataforma la navegación, el gesto atrás y el movimiento; conserva tu paleta, tu tipografía y uno o dos momentos estrella. Qué adoptar, qué conservar, una checklist y un prompt para agentes de código.",
+    "de": "Anthropic hat diese Woche ein Material-3-Expressive-Redesign der Claude-App für Android ausgerollt: eine untere Navigationsleiste statt eines Layouts rund um das Hamburger-Menü, Material-Komponenten im Modellwechsler und Anthropics eigene Farben statt dynamischer Farben aus dem Hintergrundbild. Wir lesen das als Muster für jedes KI-Produkt mit einer Mobile-App: Navigation, Zurück-Geste und Bewegung von der Plattform übernehmen, Palette, Schrift und ein bis zwei Hero-Momente der Marke behalten. Was übernehmen, was behalten, eine Checkliste und ein Prompt für Coding-Agents."
+   },
+   "reading_minutes": {
+    "en": 5,
+    "zh": 6
+   },
+   "cover": "https://ui.incidental.site/blog/img/claude-android-native-shell-brand-surface-cover.webp",
+   "references": [
+    {
+     "title": "For Android users, we went full Material 3 Expressive",
+     "by": "Robert Bye · X",
+     "url": "https://x.com/RobertJBye/status/2124961333494124589"
+    },
+    {
+     "title": "Meet the new Claude mobile app",
+     "by": "Robert Bye · X",
+     "url": "https://x.com/RobertJBye/status/2123930535437504635"
+    },
+    {
+     "title": "Native navigation and Material 3 Expressive motion, and it still feels like Claude",
+     "by": "Matthew McCullough · X",
+     "url": "https://x.com/matthewmccull/status/2125372019583963610"
+    },
+    {
+     "title": "Claude rolling out updated Android app with Material 3 Expressive redesign",
+     "by": "Ben Schoon · 9to5Google",
+     "url": "https://9to5google.com/2026/11/23/claude-android-material-3-update/"
+    },
+    {
+     "title": "Claude rolls out updated Android app with Material 3 Expressive design",
+     "by": "The Mac Observer",
+     "url": "https://www.macobserver.com/news/claude-rolls-out-updated-android-app-with-material-3-expressive-design/"
+    },
+    {
+     "title": "Start building with Material 3 Expressive",
+     "by": "Material Design",
+     "url": "https://m3.material.io/blog/building-with-m3-expressive"
+    },
+    {
+     "title": "Navigation bar",
+     "by": "Material Design 3",
+     "url": "https://m3.material.io/components/navigation-bar/overview"
+    },
+    {
+     "title": "Predictive back design",
+     "by": "Android Developers",
+     "url": "https://developer.android.com/design/ui/mobile/guides/patterns/predictive-back"
+    },
+    {
+     "title": "Add support for the predictive back gesture",
+     "by": "Android Developers",
+     "url": "https://developer.android.com/guide/navigation/custom-back/predictive-back-gesture"
+    },
+    {
+     "title": "Enable users to personalize their color experience in your app",
+     "by": "Android Developers",
+     "url": "https://developer.android.com/develop/ui/views/theming/dynamic-colors"
+    },
+    {
+     "title": "Hamburger Menus and Hidden Navigation Hurt UX Metrics",
+     "by": "Kara Pernice, Raluca Budiu · Nielsen Norman Group",
+     "url": "https://www.nngroup.com/articles/hamburger-menus/"
+    },
+    {
+     "title": "Tab bars",
+     "by": "Apple Human Interface Guidelines",
+     "url": "https://developer.apple.com/design/human-interface-guidelines/tab-bars"
+    }
+   ]
+  },
   {
    "slug": "canva-mcp-editable-designs-not-pictures",
    "url": "https://ui.incidental.site/blog/canva-mcp-editable-designs-not-pictures/",
