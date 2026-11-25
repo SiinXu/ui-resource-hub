@@ -1,6 +1,6 @@
 {
  "generated": "2026-11-25",
- "count": 5223,
+ "count": 5224,
  "items": [
   {
    "id": "ued-transitions-dev-craft",
@@ -196892,6 +196892,56 @@
    },
    "pub": "2026-11-25",
    "added": "2026-11-25"
+  },
+  {
+   "id": "rd-1vdjvsw-codex-icon-animations",
+   "name": "Codex Icon Animations",
+   "url": "https://x.com/iconists/status/2125581848361255050",
+   "note": "Five outline icons loop through morphing state changes, each shifting between alternate forms such as flag to photo frame and filled to outline globe.",
+   "noteEn": "Five outline icons loop through morphing state changes, each shifting between alternate forms such as flag to photo frame and filled to outline globe.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@iconists",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "motion"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/1vdjvsw-codex-icon-animations",
+   "rdkind": "Design",
+   "rdcat": "Motion",
+   "rdstyle": [
+    "Minimal",
+    "Black & White",
+    "Light"
+   ],
+   "author": {
+    "name": "Iconists",
+    "handle": "@iconists",
+    "url": "https://x.com/iconists"
+   },
+   "x_post": "https://x.com/iconists/status/2125581848361255050",
+   "xsrc": {
+    "post": "https://x.com/iconists/status/2125581848361255050",
+    "author": "@iconists",
+    "likes": 600,
+    "bookmarks": 312,
+    "reposts": 6,
+    "impressions": 19740,
+    "date": "2026-11-25"
+   },
+   "pub": "2026-11-25",
+   "added": "2026-11-25"
   }
  ],
  "guides": [
@@ -197094,5 +197144,5 @@
    ]
   }
  ],
- "updatedAt": "2026-11-25T10:24Z"
+ "updatedAt": "2026-11-25T22:42Z"
 }
