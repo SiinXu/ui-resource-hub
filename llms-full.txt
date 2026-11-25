@@ -1,6 +1,6 @@
 # UI Hub
 
-> Curated, multilingual directory of 5219 public UI resources (component libraries, component style demos, effects, design systems, design skills for AI agents) plus original blog analysis of AI design techniques. Data updated 2026-11-25 08:28 UTC.
+> Curated, multilingual directory of 5223 public UI resources (component libraries, component style demos, effects, design systems, design skills for AI agents) plus original blog analysis of AI design techniques. Data updated 2026-11-25 10:24 UTC.
 
 Use the JSON endpoints, not the SPA, when acting as an agent. Every entry links to its original site; licenses belong to the original authors.
 
@@ -144,11 +144,11 @@ Use the JSON endpoints, not the SPA, when acting as an agent. Every entry links 
 - [visx](https://airbnb.io/visx/): Airbnb's low-level visualization components
 
 ## FAQ
-- **What is UI Hub?** A free, curated directory of 5219 public UI resources: 260 component libraries, 1989 component style demos with light/dark screenshots, 73 design skills for AI agents, plus effects, templates, specs and tutorials. It links to original sites and never hosts paid source code.
+- **What is UI Hub?** A free, curated directory of 5223 public UI resources: 260 component libraries, 1989 component style demos with light/dark screenshots, 73 design skills for AI agents, plus effects, templates, specs and tutorials. It links to original sites and never hosts paid source code.
 - **How do I find a component in a given style?** Load https://ui.incidental.site/api/resources.json and filter by ct (component kind, e.g. "dialog") and vs (visual style, e.g. "minimal" or "motion"). type="style" entries are concrete component demos with a libName and page URL; type="library" entries are whole libraries with install info on the site.
 - **Which skills should an agent use for good UI?** One direction skill (frontend-design or taste-skill), emil-design-eng for motion and interaction polish, then impeccable, baseline-ui, web-design-guidelines and accessibility as an audit pass. See https://ui.incidental.site/api/skills.json.
 - **Can I copy the code?** Open-source libraries can be used under their own licenses (MIT, Apache-2.0 etc.); the card shows the original link. Paid tiers (marked paid/freemium) must be bought from the original vendor.
-- **How often is it updated?** Daily via a GitHub Actions job that adds new UI repositories and tools from GitHub, awesome-shadcn-ui and Hacker News. Nothing is deleted. Last update: 2026-11-25 08:28 UTC.
+- **How often is it updated?** Daily via a GitHub Actions job that adds new UI repositories and tools from GitHub, awesome-shadcn-ui and Hacker News. Nothing is deleted. Last update: 2026-11-25 10:24 UTC.
 
 
 # Blog posts (full text, English)
@@ -6243,6 +6243,10 @@ Get Hyped. Get Noticed. Get Results.
 - Animated Menu Icon | inspiration | https://x.com/iconists/status/2125150712216863014 | A hamburger menu icon inside a circular button morphs into a back arrow as a side panel slides in, demonstrating a fluid icon transition microinteraction on iOS
 - Cinema Seat Preview | inspiration | https://x.com/PostiauxCharles/status/2124825172138184760 | A movie ticket booking interface where tapping Preview transitions from a 2D seat map into a 3D-rendered first-person view of the theater, showing the selected 
 - Crypto Transfer Security Checks | inspiration | https://x.com/builtbysasha/status/2124934369286713504 | Mobile wallet send flow that runs five animated recipient safety checks before revealing a green-ringed confirmation screen and a Send button.
+- Spin to Reveal Reward | inspiration | https://x.com/suriadesign/status/2125468344036004282 | Mobile reward template where spinning a blob character animates into darkness then bursts open to reveal a graded Pokémon card with confetti and claim actions.
+- Neon Particle Hands | inspiration | https://x.com/doortodivinity/status/2125301484145557716 | A hand moves through gestures wrapped in shifting blue and purple glittering particle light against a dark background, with the neon texture animating continuou
+- Moody Status Badges | inspiration | https://x.com/aleksksaa/status/2125246139771535841 | Pill-shaped workflow status badges cycle through states like Draft, In progress, Completed, and Blocked, each with a color-coded background and an expressive em
+- Animated Snake | inspiration | https://x.com/ermanmalak/status/2125317967118544920 | A looping animation of a stippled snake illustration cycling through coiling poses, framed by archival specimen typography on a grid-paper background.
 
 # Component style demos: 1989 entries, see api/resources.json (type=style)
 

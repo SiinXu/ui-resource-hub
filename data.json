@@ -1,6 +1,6 @@
 {
  "generated": "2026-11-25",
- "count": 5219,
+ "count": 5223,
  "items": [
   {
    "id": "ued-transitions-dev-craft",
@@ -196687,6 +196687,211 @@
    },
    "pub": "2026-11-24",
    "added": "2026-11-24"
+  },
+  {
+   "id": "rd-p4h1xki-spin-to-reveal-reward",
+   "name": "Spin to Reveal Reward",
+   "url": "https://x.com/suriadesign/status/2125468344036004282",
+   "note": "Mobile reward template where spinning a blob character animates into darkness then bursts open to reveal a graded Pokémon card with confetti and claim actions.",
+   "noteEn": "Mobile reward template where spinning a blob character animates into darkness then bursts open to reveal a graded Pokémon card with confetti and claim actions.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@suriadesign",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "playful",
+    "gradient"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/p4h1xki-spin-to-reveal-reward",
+   "rdkind": "Design",
+   "rdcat": "Interface",
+   "rdstyle": [
+    "Playful",
+    "Soft UI",
+    "Dark",
+    "Gradient"
+   ],
+   "author": {
+    "name": "Yogi Suria",
+    "handle": "@suriadesign",
+    "url": "https://x.com/suriadesign"
+   },
+   "x_post": "https://x.com/suriadesign/status/2125468344036004282",
+   "xsrc": {
+    "post": "https://x.com/suriadesign/status/2125468344036004282",
+    "author": "@suriadesign",
+    "likes": 182,
+    "bookmarks": 144,
+    "reposts": 4,
+    "impressions": 4364,
+    "date": "2026-11-25"
+   },
+   "official": "https://uimaxx.ing",
+   "pub": "2026-11-25",
+   "added": "2026-11-25"
+  },
+  {
+   "id": "rd-35qkcdd-neon-particle-hand-study",
+   "name": "Neon Particle Hands",
+   "url": "https://x.com/doortodivinity/status/2125301484145557716",
+   "note": "A hand moves through gestures wrapped in shifting blue and purple glittering particle light against a dark background, with the neon texture animating continuously across the form.",
+   "noteEn": "A hand moves through gestures wrapped in shifting blue and purple glittering particle light against a dark background, with the neon texture animating continuously across the form.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@doortodivinity",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "motion"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/35qkcdd-neon-particle-hand-study",
+   "rdkind": "Design",
+   "rdcat": "Motion",
+   "rdstyle": [
+    "Abstract",
+    "Experimental",
+    "Dark",
+    "Vibrant",
+    "Neon"
+   ],
+   "author": {
+    "name": "☾",
+    "handle": "@doortodivinity",
+    "url": "https://x.com/doortodivinity"
+   },
+   "x_post": "https://x.com/doortodivinity/status/2125301484145557716",
+   "xsrc": {
+    "post": "https://x.com/doortodivinity/status/2125301484145557716",
+    "author": "@doortodivinity",
+    "likes": 5805,
+    "bookmarks": 870,
+    "reposts": 1533,
+    "impressions": 98933,
+    "date": "2026-11-24"
+   },
+   "pub": "2026-11-25",
+   "added": "2026-11-25"
+  },
+  {
+   "id": "rd-eaj2ae4-moody-status-badges",
+   "name": "Moody Status Badges",
+   "url": "https://x.com/aleksksaa/status/2125246139771535841",
+   "note": "Pill-shaped workflow status badges cycle through states like Draft, In progress, Completed, and Blocked, each with a color-coded background and an expressive emoji face icon.",
+   "noteEn": "Pill-shaped workflow status badges cycle through states like Draft, In progress, Completed, and Blocked, each with a color-coded background and an expressive emoji face icon.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@aleksksaa",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal",
+    "playful"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/eaj2ae4-moody-status-badges",
+   "rdkind": "Design",
+   "rdcat": "Interface",
+   "rdstyle": [
+    "Minimal",
+    "Playful",
+    "Light",
+    "Pastel"
+   ],
+   "author": {
+    "name": "Sasha ༊·˚",
+    "handle": "@aleksksaa",
+    "url": "https://x.com/aleksksaa"
+   },
+   "x_post": "https://x.com/aleksksaa/status/2125246139771535841",
+   "xsrc": {
+    "post": "https://x.com/aleksksaa/status/2125246139771535841",
+    "author": "@aleksksaa",
+    "likes": 520,
+    "bookmarks": 268,
+    "reposts": 15,
+    "impressions": 15319,
+    "date": "2026-11-24"
+   },
+   "pub": "2026-11-25",
+   "added": "2026-11-25"
+  },
+  {
+   "id": "rd-5xakohy-animated-snake-specimen",
+   "name": "Animated Snake",
+   "url": "https://x.com/ermanmalak/status/2125317967118544920",
+   "note": "A looping animation of a stippled snake illustration cycling through coiling poses, framed by archival specimen typography on a grid-paper background.",
+   "noteEn": "A looping animation of a stippled snake illustration cycling through coiling poses, framed by archival specimen typography on a grid-paper background.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@ermanmalak",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "motion"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/5xakohy-animated-snake-specimen",
+   "rdkind": "Design",
+   "rdcat": "Motion",
+   "rdstyle": [
+    "Minimal",
+    "Illustrative",
+    "Textured",
+    "Light",
+    "Monochrome"
+   ],
+   "author": {
+    "name": "Erman Malak",
+    "handle": "@ermanmalak",
+    "url": "https://x.com/ermanmalak"
+   },
+   "x_post": "https://x.com/ermanmalak/status/2125317967118544920",
+   "xsrc": {
+    "post": "https://x.com/ermanmalak/status/2125317967118544920",
+    "author": "@ermanmalak",
+    "likes": 200,
+    "bookmarks": 103,
+    "reposts": 6,
+    "impressions": 4753,
+    "date": "2026-11-24"
+   },
+   "pub": "2026-11-25",
+   "added": "2026-11-25"
   }
  ],
  "guides": [
@@ -196889,5 +197094,5 @@
    ]
   }
  ],
- "updatedAt": "2026-11-25T08:28Z"
+ "updatedAt": "2026-11-25T10:24Z"
 }
