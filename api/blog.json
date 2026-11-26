@@ -1,5 +1,5 @@
 {
- "count": 61,
+ "count": 62,
  "rss": "https://ui.incidental.site/blog/rss.xml",
  "categories": {
   "tools": "Tools",
@@ -18,6 +18,108 @@
   "weekly": "Series: Weekly roundup"
  },
  "posts": [
+  {
+   "slug": "design-agent-taste-in-context-rules-in-code",
+   "url": "https://ui.incidental.site/blog/design-agent-taste-in-context-rules-in-code/",
+   "date": "2026-11-26",
+   "category": "agents",
+   "series": null,
+   "featured": true,
+   "tags": [
+    "Content Studio",
+    "LangChain",
+    "design agent",
+    "brand pack",
+    "HyperFrames",
+    "Paper"
+   ],
+   "title": {
+    "en": "LangChain open-sourced its design agent: put taste in context and the rules in code",
+    "zh": "LangChain 开源了自己的设计智能体：品味写进上下文，规则写进代码",
+    "zht": "LangChain 開源了自己的設計智能體：品味寫進上下文，規則寫進程式碼",
+    "ja": "LangChainがデザインエージェントをオープンソース化：センスは文脈に、ルールはコードに",
+    "ko": "LangChain이 디자인 에이전트를 오픈소스로 공개: 취향은 컨텍스트에, 규칙은 코드에",
+    "ms": "LangChain membuka sumber ejen reka bentuknya: letak cita rasa dalam konteks, peraturan dalam kod",
+    "vi": "LangChain mở mã nguồn agent thiết kế của mình: gu thẩm mỹ đặt vào ngữ cảnh, quy tắc đặt vào code",
+    "fr": "LangChain ouvre le code de son agent de design : le goût dans le contexte, les règles dans le code",
+    "es": "LangChain libera su agente de diseño: el gusto en el contexto, las reglas en el código",
+    "de": "LangChain veröffentlicht seinen Design-Agent als Open Source: Geschmack in den Kontext, Regeln in den Code"
+   },
+   "summary": {
+    "en": "Content Studio, the Slack design agent LangChain says has shipped more than 3,000 assets for its own team, is open source (Apache 2.0) and got a fresh push this week. The interesting part is not the model but how the work is split: every asset is code, design knowledge is divided into skills, a wiki, deterministic gates and memory, cheap storyboards come before expensive renders, and people point at a shared canvas instead of describing positions in chat. What to copy even if you never fork it, a checklist and a prompt for turning your brand guide into a brand pack with checks.",
+    "zh": "LangChain 称 Content Studio 这个 Slack 设计智能体已为自家团队交付 3000 多份素材，它以 Apache 2.0 开源，本周又被重点推了一次。值得看的不是模型，而是分工方式：每份素材都是代码；设计知识拆成技能、知识库、确定性检查和记忆四类；先做便宜的分镜，再做昂贵的渲染；大家在共享画布上直接指出问题，而不是在聊天里描述位置。本文讲即使不 fork 也值得照搬的做法，并附检查清单和一段把品牌手册变成“品牌包 + 检查”的提示词。",
+    "zht": "LangChain 稱 Content Studio 這個 Slack 設計智能體已為自家團隊交付 3000 多份素材，它以 Apache 2.0 開源，本週又被重點推了一次。值得看的不是模型，而是分工方式：每份素材都是程式碼；設計知識拆成技能、知識庫、確定性檢查和記憶四類；先做便宜的分鏡，再做昂貴的算圖；大家在共享畫布上直接指出問題，而不是在聊天裡描述位置。本文講即使不 fork 也值得照搬的做法，並附檢查清單和一段把品牌手冊變成「品牌包 + 檢查」的提示詞。",
+    "ja": "LangChainが自社チーム向けに3,000点以上の制作物を出したというSlackのデザインエージェントContent Studioは、Apache 2.0のオープンソースで、今週あらためて大きく紹介された。注目すべきはモデルではなく仕事の分け方だ。すべての制作物はコードで、デザイン知識はスキル、Wiki、決定的なチェック、メモリーの4つに分かれ、高価なレンダリングの前に安い絵コンテを作り、チャットで位置を説明する代わりに共有キャンバスで直接指し示す。フォークしなくても真似できる点、チェックリスト、ブランドガイドを「ブランドパック＋チェック」に変えるプロンプト付き。",
+    "ko": "LangChain이 자사 팀을 위해 3,000개 넘는 결과물을 냈다고 밝힌 Slack 디자인 에이전트 Content Studio는 Apache 2.0 오픈소스이며 이번 주 다시 크게 소개됐다. 볼 만한 것은 모델이 아니라 일을 나누는 방식이다. 모든 결과물은 코드이고, 디자인 지식은 스킬, 위키, 결정적 검사, 메모리 네 가지로 나뉘며, 비싼 렌더링 전에 싼 스토리보드를 먼저 만들고, 채팅으로 위치를 설명하는 대신 공유 캔버스에서 직접 가리킨다. 포크하지 않아도 따라 할 점, 체크리스트, 브랜드 가이드를 \"브랜드 팩 + 검사\"로 바꾸는 프롬프트 포함.",
+    "ms": "Content Studio, ejen reka bentuk Slack yang menurut LangChain telah menghasilkan lebih 3,000 aset untuk pasukannya sendiri, adalah sumber terbuka (Apache 2.0) dan diketengahkan semula minggu ini. Yang menarik bukan modelnya tetapi cara kerja dibahagikan: setiap aset ialah kod, pengetahuan reka bentuk dipecah kepada kemahiran, wiki, semakan deterministik dan memori, papan cerita murah dibuat sebelum render yang mahal, dan orang menunjuk terus pada kanvas bersama dan bukan menerangkan kedudukan dalam sembang. Apa yang patut ditiru walaupun anda tidak fork, senarai semak dan prompt untuk menukar panduan jenama kepada pek jenama dengan semakan.",
+    "vi": "Content Studio, agent thiết kế trên Slack mà LangChain cho biết đã làm hơn 3.000 tài sản cho chính đội của họ, là mã nguồn mở (Apache 2.0) và được đẩy mạnh trở lại trong tuần này. Điều đáng xem không phải là model mà là cách chia việc: mọi tài sản đều là code, kiến thức thiết kế được tách thành skill, wiki, các bước kiểm tra tất định và bộ nhớ, storyboard rẻ làm trước khi render tốn kém, và mọi người chỉ thẳng lên canvas dùng chung thay vì tả vị trí trong chat. Những gì nên học theo dù không fork, kèm checklist và prompt biến brand guide thành brand pack có kiểm tra.",
+    "fr": "Content Studio, l’agent de design sur Slack qui, selon LangChain, a livré plus de 3 000 visuels pour sa propre équipe, est open source (Apache 2.0) et a été remis en avant cette semaine. L’intérêt n’est pas le modèle mais le partage du travail : chaque visuel est du code, le savoir de design est réparti entre skills, wiki, vérifications déterministes et mémoire, des storyboards bon marché passent avant les rendus coûteux, et l’équipe pointe sur un canevas partagé au lieu de décrire des positions dans le chat. Ce qu’il faut copier même sans forker, une checklist et un prompt pour transformer votre charte en brand pack avec contrôles.",
+    "es": "Content Studio, el agente de diseño en Slack que, según LangChain, ha entregado más de 3.000 piezas para su propio equipo, es de código abierto (Apache 2.0) y recibió un nuevo impulso esta semana. Lo interesante no es el modelo sino el reparto del trabajo: cada pieza es código, el conocimiento de diseño se divide en skills, wiki, comprobaciones deterministas y memoria, los storyboards baratos van antes que los renders caros y la gente señala sobre un lienzo compartido en vez de describir posiciones en el chat. Qué copiar aunque nunca hagas fork, una checklist y un prompt para convertir tu guía de marca en un brand pack con comprobaciones.",
+    "de": "Content Studio, der Slack-Design-Agent, der laut LangChain mehr als 3.000 Assets für das eigene Team geliefert hat, ist Open Source (Apache 2.0) und wurde diese Woche erneut prominent vorgestellt. Spannend ist nicht das Modell, sondern die Arbeitsteilung: Jedes Asset ist Code, Designwissen ist auf Skills, Wiki, deterministische Prüfungen und Gedächtnis verteilt, günstige Storyboards kommen vor teuren Renderings, und das Team zeigt auf einer gemeinsamen Canvas, statt Positionen im Chat zu beschreiben. Was sich auch ohne Fork übernehmen lässt, eine Checkliste und ein Prompt, der Ihren Brand Guide in ein Brand Pack mit Prüfungen verwandelt."
+   },
+   "reading_minutes": {
+    "en": 7,
+    "zh": 7
+   },
+   "cover": "https://ui.incidental.site/blog/img/design-agent-taste-in-context-rules-in-code-cover.webp",
+   "references": [
+    {
+     "title": "langchain-ai/design-agent (Content Studio)",
+     "by": "LangChain · GitHub",
+     "url": "https://github.com/langchain-ai/design-agent"
+    },
+    {
+     "title": "How We Built Our Design Agent",
+     "by": "Amal Irgashev, Shreya Talegaonkar · LangChain",
+     "url": "https://www.langchain.com/blog/design-agent"
+    },
+    {
+     "title": "Content Studio is the design agent we use every day at LangChain",
+     "by": "LangChain · X",
+     "url": "https://x.com/LangChain/status/2124926152703655977"
+    },
+    {
+     "title": "Meet the Open-Source Slack Agent Behind 3,000 Branded Assets",
+     "by": "Julian Horsey · Geeky Gadgets",
+     "url": "https://www.geeky-gadgets.com/langchain-content-studio-design-agent/"
+    },
+    {
+     "title": "Deploy the open-source design agent",
+     "by": "LangChain Docs",
+     "url": "https://docs.langchain.com/langsmith/python/managed-deep-agents-design-agent"
+    },
+    {
+     "title": "Design agent spec (docs/spec.md)",
+     "by": "LangChain · GitHub",
+     "url": "https://github.com/langchain-ai/design-agent/blob/main/docs/spec.md"
+    },
+    {
+     "title": "Evals (docs/evals.md)",
+     "by": "LangChain · GitHub",
+     "url": "https://github.com/langchain-ai/design-agent/blob/main/docs/evals.md"
+    },
+    {
+     "title": "How HyperFrames fits into an application",
+     "by": "HeyGen · HyperFrames docs",
+     "url": "https://hyperframes.heygen.com/developers/overview"
+    },
+    {
+     "title": "Paper",
+     "by": "Paper",
+     "url": "https://paper.design"
+    },
+    {
+     "title": "Lovable changelog (Chat connectors: Paper, 23 Nov 2026)",
+     "by": "Lovable",
+     "url": "https://docs.lovable.dev/changelog"
+    },
+    {
+     "title": "Improving frontend design through Skills",
+     "by": "Anthropic · Claude blog",
+     "url": "https://www.claude.com/blog/improving-frontend-design-through-skills"
+    }
+   ]
+  },
   {
    "slug": "claude-android-native-shell-brand-surface",
    "url": "https://ui.incidental.site/blog/claude-android-native-shell-brand-surface/",

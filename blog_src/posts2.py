@@ -3641,4 +3641,116 @@ surface container）。动态取色：&lt;关闭 | 协调自定义颜色&gt;。
  refs=[('For Android users, we went full Material 3 Expressive','Robert Bye · X','https://x.com/RobertJBye/status/2124961333494124589'),('Meet the new Claude mobile app','Robert Bye · X','https://x.com/RobertJBye/status/2123930535437504635'),('Native navigation and Material 3 Expressive motion, and it still feels like Claude','Matthew McCullough · X','https://x.com/matthewmccull/status/2125372019583963610'),('Claude rolling out updated Android app with Material 3 Expressive redesign','Ben Schoon · 9to5Google','https://9to5google.com/2026/11/23/claude-android-material-3-update/'),('Claude rolls out updated Android app with Material 3 Expressive design','The Mac Observer','https://www.macobserver.com/news/claude-rolls-out-updated-android-app-with-material-3-expressive-design/'),('Start building with Material 3 Expressive','Material Design','https://m3.material.io/blog/building-with-m3-expressive'),('Navigation bar','Material Design 3','https://m3.material.io/components/navigation-bar/overview'),('Predictive back design','Android Developers','https://developer.android.com/design/ui/mobile/guides/patterns/predictive-back'),('Add support for the predictive back gesture','Android Developers','https://developer.android.com/guide/navigation/custom-back/predictive-back-gesture'),('Enable users to personalize their color experience in your app','Android Developers','https://developer.android.com/develop/ui/views/theming/dynamic-colors'),('Hamburger Menus and Hidden Navigation Hurt UX Metrics','Kara Pernice, Raluca Budiu · Nielsen Norman Group','https://www.nngroup.com/articles/hamburger-menus/'),('Tab bars','Apple Human Interface Guidelines','https://developer.apple.com/design/human-interface-guidelines/tab-bars')]),
 
 
+dict(slug='design-agent-taste-in-context-rules-in-code', date='2026-11-26', cat='agents', series=None, featured=True, tags=['Content Studio','LangChain','design agent','brand pack','HyperFrames','Paper'],
+ t=T('LangChain open-sourced its design agent: put taste in context and the rules in code',
+     'LangChain 开源了自己的设计智能体：品味写进上下文，规则写进代码',
+     'LangChain 開源了自己的設計智能體：品味寫進上下文，規則寫進程式碼',
+     'LangChainがデザインエージェントをオープンソース化：センスは文脈に、ルールはコードに',
+     'LangChain이 디자인 에이전트를 오픈소스로 공개: 취향은 컨텍스트에, 규칙은 코드에',
+     'LangChain membuka sumber ejen reka bentuknya: letak cita rasa dalam konteks, peraturan dalam kod',
+     'LangChain mở mã nguồn agent thiết kế của mình: gu thẩm mỹ đặt vào ngữ cảnh, quy tắc đặt vào code',
+     'LangChain ouvre le code de son agent de design : le goût dans le contexte, les règles dans le code',
+     'LangChain libera su agente de diseño: el gusto en el contexto, las reglas en el código',
+     'LangChain veröffentlicht seinen Design-Agent als Open Source: Geschmack in den Kontext, Regeln in den Code'),
+ s=T('Content Studio, the Slack design agent LangChain says has shipped more than 3,000 assets for its own team, is open source (Apache 2.0) and got a fresh push this week. The interesting part is not the model but how the work is split: every asset is code, design knowledge is divided into skills, a wiki, deterministic gates and memory, cheap storyboards come before expensive renders, and people point at a shared canvas instead of describing positions in chat. What to copy even if you never fork it, a checklist and a prompt for turning your brand guide into a brand pack with checks.',
+     'LangChain 称 Content Studio 这个 Slack 设计智能体已为自家团队交付 3000 多份素材，它以 Apache 2.0 开源，本周又被重点推了一次。值得看的不是模型，而是分工方式：每份素材都是代码；设计知识拆成技能、知识库、确定性检查和记忆四类；先做便宜的分镜，再做昂贵的渲染；大家在共享画布上直接指出问题，而不是在聊天里描述位置。本文讲即使不 fork 也值得照搬的做法，并附检查清单和一段把品牌手册变成“品牌包 + 检查”的提示词。',
+     'LangChain 稱 Content Studio 這個 Slack 設計智能體已為自家團隊交付 3000 多份素材，它以 Apache 2.0 開源，本週又被重點推了一次。值得看的不是模型，而是分工方式：每份素材都是程式碼；設計知識拆成技能、知識庫、確定性檢查和記憶四類；先做便宜的分鏡，再做昂貴的算圖；大家在共享畫布上直接指出問題，而不是在聊天裡描述位置。本文講即使不 fork 也值得照搬的做法，並附檢查清單和一段把品牌手冊變成「品牌包 + 檢查」的提示詞。',
+     'LangChainが自社チーム向けに3,000点以上の制作物を出したというSlackのデザインエージェントContent Studioは、Apache 2.0のオープンソースで、今週あらためて大きく紹介された。注目すべきはモデルではなく仕事の分け方だ。すべての制作物はコードで、デザイン知識はスキル、Wiki、決定的なチェック、メモリーの4つに分かれ、高価なレンダリングの前に安い絵コンテを作り、チャットで位置を説明する代わりに共有キャンバスで直接指し示す。フォークしなくても真似できる点、チェックリスト、ブランドガイドを「ブランドパック＋チェック」に変えるプロンプト付き。',
+     'LangChain이 자사 팀을 위해 3,000개 넘는 결과물을 냈다고 밝힌 Slack 디자인 에이전트 Content Studio는 Apache 2.0 오픈소스이며 이번 주 다시 크게 소개됐다. 볼 만한 것은 모델이 아니라 일을 나누는 방식이다. 모든 결과물은 코드이고, 디자인 지식은 스킬, 위키, 결정적 검사, 메모리 네 가지로 나뉘며, 비싼 렌더링 전에 싼 스토리보드를 먼저 만들고, 채팅으로 위치를 설명하는 대신 공유 캔버스에서 직접 가리킨다. 포크하지 않아도 따라 할 점, 체크리스트, 브랜드 가이드를 "브랜드 팩 + 검사"로 바꾸는 프롬프트 포함.',
+     'Content Studio, ejen reka bentuk Slack yang menurut LangChain telah menghasilkan lebih 3,000 aset untuk pasukannya sendiri, adalah sumber terbuka (Apache 2.0) dan diketengahkan semula minggu ini. Yang menarik bukan modelnya tetapi cara kerja dibahagikan: setiap aset ialah kod, pengetahuan reka bentuk dipecah kepada kemahiran, wiki, semakan deterministik dan memori, papan cerita murah dibuat sebelum render yang mahal, dan orang menunjuk terus pada kanvas bersama dan bukan menerangkan kedudukan dalam sembang. Apa yang patut ditiru walaupun anda tidak fork, senarai semak dan prompt untuk menukar panduan jenama kepada pek jenama dengan semakan.',
+     'Content Studio, agent thiết kế trên Slack mà LangChain cho biết đã làm hơn 3.000 tài sản cho chính đội của họ, là mã nguồn mở (Apache 2.0) và được đẩy mạnh trở lại trong tuần này. Điều đáng xem không phải là model mà là cách chia việc: mọi tài sản đều là code, kiến thức thiết kế được tách thành skill, wiki, các bước kiểm tra tất định và bộ nhớ, storyboard rẻ làm trước khi render tốn kém, và mọi người chỉ thẳng lên canvas dùng chung thay vì tả vị trí trong chat. Những gì nên học theo dù không fork, kèm checklist và prompt biến brand guide thành brand pack có kiểm tra.',
+     'Content Studio, l’agent de design sur Slack qui, selon LangChain, a livré plus de 3 000 visuels pour sa propre équipe, est open source (Apache 2.0) et a été remis en avant cette semaine. L’intérêt n’est pas le modèle mais le partage du travail : chaque visuel est du code, le savoir de design est réparti entre skills, wiki, vérifications déterministes et mémoire, des storyboards bon marché passent avant les rendus coûteux, et l’équipe pointe sur un canevas partagé au lieu de décrire des positions dans le chat. Ce qu’il faut copier même sans forker, une checklist et un prompt pour transformer votre charte en brand pack avec contrôles.',
+     'Content Studio, el agente de diseño en Slack que, según LangChain, ha entregado más de 3.000 piezas para su propio equipo, es de código abierto (Apache 2.0) y recibió un nuevo impulso esta semana. Lo interesante no es el modelo sino el reparto del trabajo: cada pieza es código, el conocimiento de diseño se divide en skills, wiki, comprobaciones deterministas y memoria, los storyboards baratos van antes que los renders caros y la gente señala sobre un lienzo compartido en vez de describir posiciones en el chat. Qué copiar aunque nunca hagas fork, una checklist y un prompt para convertir tu guía de marca en un brand pack con comprobaciones.',
+     'Content Studio, der Slack-Design-Agent, der laut LangChain mehr als 3.000 Assets für das eigene Team geliefert hat, ist Open Source (Apache 2.0) und wurde diese Woche erneut prominent vorgestellt. Spannend ist nicht das Modell, sondern die Arbeitsteilung: Jedes Asset ist Code, Designwissen ist auf Skills, Wiki, deterministische Prüfungen und Gedächtnis verteilt, günstige Storyboards kommen vor teuren Renderings, und das Team zeigt auf einer gemeinsamen Canvas, statt Positionen im Chat zu beschreiben. Was sich auch ohne Fork übernehmen lässt, eine Checkliste und ein Prompt, der Ihren Brand Guide in ein Brand Pack mit Prüfungen verwandelt.'),
+ en="""<p>LangChain’s design agent, Content Studio, is open source as <code>langchain-ai/design-agent</code> under the Apache 2.0 licence. The repository first appeared in October alongside a long build post, and this week LangChain pushed it again: on 23 November the README gained a launch video and the company re-posted the project on X (“ICYMI: It’s open source”), and Geeky Gadgets wrote it up on 25 November. It is a Slack agent: someone mentions it in a thread with a brief and attachments, and finished files come back to the same thread. LangChain says it has produced more than 3,000 assets since August, including more than 80 slide decks, that three in four requests now come from outside marketing, and that the median request costs about 50 cents in model spend, down from about $8 in mid-September.</p>
+<p>The numbers are LangChain’s own, so treat them as a claim. The part worth studying is the structure, because it answers a question most teams hit after their first “brand skill”: why does an agent that knows our colours and fonts still produce work that looks like everybody else’s? LangChain shows the same prompt given to a local coding agent with a brand skill and to Content Studio. The first got the logo lockup, the font and the primary colour wrong. The model was not the difference. The difference was how much of the brief the agent had to fill in by itself, and with what.</p>
+<h2>What is in the repo</h2>
+<ul><li><strong>Every asset is code.</strong> A slide is an HTML page, a chart is a data spec, a video is an animation timeline. Each Slack thread gets its own sandbox (a Linux machine with Chrome, FFmpeg, HyperFrames, D2 and the brand fonts), and the brief, plan, scene code, audio and renders live in one project folder. Moving one element earlier is a changed value and a re-render, not a new generation.</li>
+<li><strong>Four kinds of knowledge, kept apart.</strong> Skills say how to do a specific job; a router skill, mostly one table, maps each kind of ask to a workflow and keeps small edits out of the big process. The wiki holds the craft and the brand facts, and skills link to it instead of copying it. Anything measurable is a gate, a deterministic check in code: colours, fonts, contrast, sizes and chart maths are checked on every render. Memory holds what people teach it.</li>
+<li><strong>Memory in two layers.</strong> “Never use orange on LinkedIn” is saved in the same turn, either to team memory or to one person’s memory, and team standards win. Each layer has an index that loads on every run; LangChain capped it at 200 lines after an early version grew to 500K tokens. After each job a <code>learn_from_job</code> step writes up to five evidence-backed notes against the skill it used, and later jobs rate them.</li>
+<li><strong>Cheap before expensive.</strong> A storyboard frame renders in about 50 ms; a second of finished film takes 8 to 40 seconds. So films go storyboard, animatic, production. When the agent sometimes skipped a review to save time, LangChain moved the order into code: assembly waits until every part passes.</li>
+<li><strong>Point, don’t describe.</strong> A Slack thread is linear and a storyboard is spatial, so the agent drafts on a shared Paper canvas through Paper’s MCP server, where people compare directions, comment on a frame or edit it themselves. Lovable added Paper as a chat connector on 23 November, so this shared-canvas pattern is spreading beyond one team.</li>
+<li><strong>Long jobs that stay steerable.</strong> The main agent splits big jobs between background subagents and keeps the thread updated with a plan, live status, spend and an approval step before anything goes public. One overnight job reskinned a 52-slide deck by doing three sample slides first, then numbered batches for approval.</li></ul>
+<h2>Our take: the rules that last are the ones you can check</h2>
+<p>The most useful sentence in LangChain’s write-up is about where things live: the order that must always hold lives in code, and the judgment stays in the prompt. Their first harness did the opposite. It shipped 115 reusable components and a lot of instructions to make up for what the model could not yet do, and the output stayed on brand but repeated the same layouts. After a model upgrade they removed most of the hard-coded rules, kept the design principles, and got more variety. Rules that patch a model’s weaknesses expire. Brand facts, principles and countable checks do not.</p>
+<p>That gives a clean test for anything in your own agent setup. If a rule can be counted (this hex value, this font, contrast at least 4.5:1, no title case, the chart axis starts at zero), make it a gate that fails the render. If it is a fact (logo lockups, primary versus secondary colours, voice), put it in one brand pack that every skill links to. If it is judgment (is the idea strong, does the message land), write the reasoning down as a principle with an example and let the model apply it. LangChain’s evals follow the same split: they grade delivered files, exact copy and tool-call order without a model judging taste.</p>
+<p>Some caution before forking. Managed Deep Agents is in public beta on LangSmith, the first sandbox build takes 10 to 15 minutes, the full eval set costs about $120 per model, and the setup leans on HyperFrames for video and Paper Desktop for the canvas. The bigger limit is your brand. If your guide is a logo and two hex codes, the agent will still fill the gaps with defaults. Most of the work is writing down decisions your designers make without thinking.</p>
+<h2>Set up a design agent the same way</h2>
+<ol><li><strong>Pick a code format per asset type.</strong> HTML and CSS for stills and slides, a chart spec for data, a timeline for motion. Never accept a flat image as the master file.</li>
+<li><strong>Write the brand pack once.</strong> Tokens, fonts, logo lockups with clear space, which colour is primary, voice and a short list of things the brand never does. Skills link to it; nothing copies it.</li>
+<li><strong>Turn every countable rule into a gate.</strong> Run it after every render and fail loudly. Start with off-palette colours, wrong fonts, contrast, minimum text size, canvas size and capitalisation.</li>
+<li><strong>Make the agent look before it posts.</strong> Render, inspect the image, fix, then deliver. A file that was never looked at is not done.</li>
+<li><strong>Route small asks away from the big pipeline.</strong> A resize should not trigger a storyboard; a launch film should not skip one.</li>
+<li><strong>Keep memory small and layered.</strong> Team rules over personal preferences, one index per layer, and a regular pass that drops notes which did not hold up.</li>
+<li><strong>Put feedback where it can point.</strong> A shared canvas or at least numbered frames, so “the second card, left edge” is not the main way to give notes.</li></ol>
+<h2>Design-agent checklist</h2>
+<ul><li>Can every delivered asset be reopened as code and changed with one edit and a re-render?</li>
+<li>Is there exactly one brand pack, and do skills link to it instead of repeating it?</li>
+<li>Do colours, fonts, contrast, sizes and chart maths fail the render automatically when they are wrong?</li>
+<li>Does the agent look at each render before posting it?</li>
+<li>Do expensive jobs start with a cheap draft that a person approves, enforced in code rather than in the prompt?</li>
+<li>Is memory split into team and personal layers with a capped index?</li>
+<li>Is there an approval step before anything is published, and can people steer a long job mid-run?</li>
+<li>Have you deleted the workaround rules you wrote for an older model?</li></ul>
+<pre><code># Paste into a coding agent, with our brand guide and website attached
+Turn our brand guide into a brand pack and a set of render gates.
+1. brand/tokens.json: colours with roles (primary, secondary, surface, ink),
+   font families and weights, spacing scale, radii.
+2. brand/brand.md: logo lockups and clear space, which colour leads,
+   voice in five rules, and a "never" list. Facts only, no workarounds.
+3. gates/: one script per countable rule. Fail on off-palette colours,
+   fonts outside the pack, text contrast under 4.5:1, text under &lt;min&gt;px,
+   wrong canvas size, Title Case in headings.
+4. A render step: build the asset from code, screenshot it, run every gate,
+   and print each failure with the element that caused it.
+List anything in the guide you could not turn into a fact or a check,
+so a designer can write it down as a principle.</code></pre>
+<p>UI Hub related reading: <a href="../ai-slop-patterns-frontier-design-benchmark/">measuring AI slop</a>, <a href="../lint-agents-onto-your-design-system/">linting agents onto your design system</a>, <a href="../canva-mcp-editable-designs-not-pictures/">asking for editable designs, not pictures</a>, and <a href="../lovart-arti-design-agent-memory/">design agents with memory</a>.</p>""",
+ zh="""<p>LangChain 的设计智能体 Content Studio 已经以 <code>langchain-ai/design-agent</code> 的名字、按 Apache 2.0 许可开源。仓库 10 月就随一篇很长的构建复盘出现了，本周 LangChain 又重点推了一次：11 月 23 日 README 加上了发布视频，公司在 X 上再次转发项目（“错过了的话：它是开源的”），Geeky Gadgets 也在 11 月 25 日做了报道。它是一个 Slack 智能体：有人在讨论串里 @ 它，附上需求和素材，成品文件就回到同一个讨论串里。LangChain 称它自 8 月以来已产出 3000 多份素材，其中包括 80 多套幻灯片；如今四分之三的请求来自市场部以外；单次请求的模型花费中位数约 0.5 美元，9 月中旬还是约 8 美元。</p>
+<p>这些数字来自 LangChain 自己，可当作一家之言。真正值得研究的是它的结构，因为它回答了很多团队写完第一个“品牌技能”后都会碰到的问题：智能体明明知道我们的颜色和字体，为什么做出来的东西还是跟别人家的差不多？LangChain 把同一条提示分别交给装了品牌技能的本地编程智能体和 Content Studio。前者把 Logo 组合、字体和主色都弄错了。差别不在模型，而在需求里有多少决定要智能体自己补，以及它拿什么来补。</p>
+<h2>仓库里有什么</h2>
+<ul><li><strong>每份素材都是代码。</strong>一张幻灯片是一个 HTML 页面，一张图表是一份数据规格，一段视频是一条动画时间轴。每个 Slack 讨论串都有自己的沙箱（一台装了 Chrome、FFmpeg、HyperFrames、D2 和品牌字体的 Linux 机器），需求、计划、场景代码、音频和渲染结果都放在同一个项目文件夹里。把某个元素提前出场，只是改一个数值再渲染一次，而不是重新生成。</li>
+<li><strong>四类知识，分开存放。</strong>技能讲某一种具体任务怎么做；一个路由技能基本就是一张表，把每类请求对应到一条工作流，并把小修改挡在大流程之外。知识库存放设计手艺和品牌事实，技能链接过去而不是复制一份。凡是能量化的都做成关卡，也就是写在代码里的确定性检查：颜色、字体、对比度、尺寸和图表计算在每次渲染时都会检查。记忆则保存大家教给它的东西。</li>
+<li><strong>两层记忆。</strong>“领英上永远不用橙色”这样的规则会在当轮就存下来，存进团队记忆或某个人的个人记忆，团队标准优先。每层都有一个每次运行都会加载的索引；早期版本膨胀到 50 万 token 后，LangChain 把它限制在 200 行。每次任务结束后，<code>learn_from_job</code> 会针对所用技能写下最多五条有证据支撑的心得，后续任务再给这些心得打分。</li>
+<li><strong>先便宜，后昂贵。</strong>一帧分镜渲染约 50 毫秒，成片每一秒要 8 到 40 秒。所以视频按分镜、动态预演、正式制作的顺序走。智能体有时为了省时间跳过审核，LangChain 就把顺序写进了代码：所有部分都通过审核后才会合成。</li>
+<li><strong>直接指出来，而不是用文字描述。</strong>Slack 讨论串是线性的，分镜却是空间的，所以智能体通过 Paper 的 MCP 服务器在共享的 Paper 画布上出稿，大家可以并排比较方向、在某一帧上评论或者自己动手改。Lovable 在 11 月 23 日把 Paper 加成了聊天连接器，可见这种共享画布的做法正在扩散。</li>
+<li><strong>长任务也能随时调整。</strong>主智能体把大任务拆给后台子智能体，并在讨论串里持续更新计划、实时状态、花费，发布前还有一步审批。有一个通宵任务给 52 页幻灯片换皮，先做三页样张，再按编号分批送审。</li></ul>
+<h2>我们的看法：能长久留下来的，是可以检查的规则</h2>
+<p>LangChain 的复盘里最有用的一句，讲的是东西该放在哪里：必须始终成立的顺序写进代码，判断留在提示里。他们的第一版做法正好相反：做了 115 个可复用组件和大量说明，去弥补模型当时做不到的事，结果品牌是对了，版式却一再重复。模型升级后，他们删掉了大部分硬编码规则，只留下设计原则，产出反而更多样。为弥补模型弱点而写的规则会过期；品牌事实、设计原则和可计数的检查不会。</p>
+<p>这给了一个很清楚的标准，可以拿来审视你自己的智能体配置。能计数的规则（这个色值、这个字体、对比度至少 4.5:1、不用首字母大写、坐标轴从零开始），就做成会让渲染失败的关卡。属于事实的（Logo 组合、主色与辅色、语气），放进唯一的品牌包，所有技能都链接它。属于判断的（创意够不够好、信息有没有传达到），就把理由写成带例子的原则，让模型去运用。LangChain 的评测也按这个分法：检查交付的文件、文案是否一字不差、工具调用的顺序，而不让模型来评判品味。</p>
+<p>fork 之前也要留意几点。Managed Deep Agents 目前在 LangSmith 上公开测试，第一次构建沙箱要 10 到 15 分钟，完整评测集每个模型约 120 美元，视频依赖 HyperFrames，画布依赖 Paper 桌面版。更大的限制在你的品牌本身。如果你的规范只有一个 Logo 和两个色值，智能体照样会用默认值去补空白。大部分工作其实是把设计师凭直觉做的决定写下来。</p>
+<h2>照这个思路搭一个设计智能体</h2>
+<ol><li><strong>为每类素材选一种代码格式。</strong>静态图和幻灯片用 HTML 和 CSS，数据用图表规格，动效用时间轴。不要把一张扁平图片当作母版文件。</li>
+<li><strong>品牌包只写一份。</strong>Token、字体、带安全距离的 Logo 组合、哪个颜色是主色、语气，再加一份品牌绝不做的事。技能链接它，任何地方都不复制它。</li>
+<li><strong>把每条能计数的规则变成关卡。</strong>每次渲染后都运行，出错就明确报错。从色板外的颜色、错误字体、对比度、最小字号、画布尺寸和大小写开始。</li>
+<li><strong>让智能体先看再发。</strong>渲染、查看图片、修正，然后再交付。没被看过的文件不算完成。</li>
+<li><strong>把小请求引离大流程。</strong>改个尺寸不该触发分镜，发布片也不该跳过分镜。</li>
+<li><strong>记忆要小，要分层。</strong>团队规则优先于个人偏好，每层一个索引，并定期清掉经不起检验的心得。</li>
+<li><strong>让反馈可以直接指出来。</strong>用共享画布，至少也要给每帧编号，别让“第二张卡片左边那里”成为主要的反馈方式。</li></ol>
+<h2>设计智能体检查清单</h2>
+<ul><li>每份交付的素材都能作为代码重新打开，改一处再渲染一次就能修改吗？</li>
+<li>品牌包是否只有一份，技能都链接它而不是重复它？</li>
+<li>颜色、字体、对比度、尺寸和图表计算出错时，渲染会自动失败吗？</li>
+<li>智能体发出每次渲染结果之前，都先看过了吗？</li>
+<li>昂贵的任务是否先从一份便宜的草稿开始、由人批准，而且这一点写在代码里而不是提示里？</li>
+<li>记忆是否分成团队层和个人层，索引有上限吗？</li>
+<li>发布前有没有审批步骤，长任务进行中能不能随时调整？</li>
+<li>为旧模型写的那些补丁规则，你删掉了吗？</li></ul>
+<pre><code># 贴给编程智能体，并附上我们的品牌手册和官网
+把我们的品牌手册变成一个品牌包和一组渲染关卡。
+1. brand/tokens.json：带角色的颜色（primary、secondary、surface、ink）、
+   字体家族和字重、间距阶梯、圆角。
+2. brand/brand.md：Logo 组合和安全距离、哪个颜色打头、
+   五条语气规则，以及一份“绝不”清单。只写事实，不写补丁规则。
+3. gates/：每条可计数的规则一个脚本。以下情况判为失败：色板外的颜色、
+   品牌包以外的字体、文字对比度低于 4.5:1、文字小于 &lt;最小&gt;px、
+   画布尺寸不对、标题用了首字母大写。
+4. 一个渲染步骤：用代码构建素材、截图、运行所有关卡，
+   并打印每个失败项以及导致它的元素。
+列出手册里无法变成事实或检查的内容，
+方便设计师把它们写成原则。</code></pre>
+<p>UI Hub 相关阅读：<a href="../ai-slop-patterns-frontier-design-benchmark/">如何量化 AI 味</a>、<a href="../lint-agents-onto-your-design-system/">用 lint 让智能体守住设计系统</a>、<a href="../canva-mcp-editable-designs-not-pictures/">要能改的设计稿，而不是图片</a>，以及<a href="../lovart-arti-design-agent-memory/">带记忆的设计智能体</a>。</p>""",
+ refs=[('langchain-ai/design-agent (Content Studio)','LangChain · GitHub','https://github.com/langchain-ai/design-agent'),('How We Built Our Design Agent','Amal Irgashev, Shreya Talegaonkar · LangChain','https://www.langchain.com/blog/design-agent'),('Content Studio is the design agent we use every day at LangChain','LangChain · X','https://x.com/LangChain/status/2124926152703655977'),('Meet the Open-Source Slack Agent Behind 3,000 Branded Assets','Julian Horsey · Geeky Gadgets','https://www.geeky-gadgets.com/langchain-content-studio-design-agent/'),('Deploy the open-source design agent','LangChain Docs','https://docs.langchain.com/langsmith/python/managed-deep-agents-design-agent'),('Design agent spec (docs/spec.md)','LangChain · GitHub','https://github.com/langchain-ai/design-agent/blob/main/docs/spec.md'),('Evals (docs/evals.md)','LangChain · GitHub','https://github.com/langchain-ai/design-agent/blob/main/docs/evals.md'),('How HyperFrames fits into an application','HeyGen · HyperFrames docs','https://hyperframes.heygen.com/developers/overview'),('Paper','Paper','https://paper.design'),('Lovable changelog (Chat connectors: Paper, 23 Nov 2026)','Lovable','https://docs.lovable.dev/changelog'),('Improving frontend design through Skills','Anthropic · Claude blog','https://www.claude.com/blog/improving-frontend-design-through-skills')]),
+
+
 ]
