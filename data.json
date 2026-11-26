@@ -1,6 +1,6 @@
 {
  "generated": "2026-11-26",
- "count": 5224,
+ "count": 5229,
  "items": [
   {
    "id": "ued-transitions-dev-craft",
@@ -196942,6 +196942,257 @@
    },
    "pub": "2026-11-25",
    "added": "2026-11-25"
+  },
+  {
+   "id": "rd-cvlbs4p-variable-font-motion-studies",
+   "name": "Variable Font Motion Studies",
+   "url": "https://x.com/PLANT_UEKI/status/2125551786866184438",
+   "note": "Animated variable-font glyph studies where letter forms cycle through width and weight axes across perspective-warped typographic grids in four bold two-tone colorways.",
+   "noteEn": "Animated variable-font glyph studies where letter forms cycle through width and weight axes across perspective-warped typographic grids in four bold two-tone colorways.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@plant_ueki",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "motion"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/cvlbs4p-variable-font-motion-studies",
+   "rdkind": "Design",
+   "rdcat": "Motion",
+   "rdstyle": [
+    "Typographic",
+    "Geometric",
+    "Experimental",
+    "Vibrant"
+   ],
+   "author": {
+    "name": "植木 駿｜PLANT",
+    "handle": "@plant_ueki",
+    "url": "https://x.com/plant_ueki"
+   },
+   "x_post": "https://x.com/PLANT_UEKI/status/2125551786866184438",
+   "xsrc": {
+    "post": "https://x.com/PLANT_UEKI/status/2125551786866184438",
+    "author": "@PLANT_UEKI",
+    "likes": 868,
+    "bookmarks": 432,
+    "reposts": 40,
+    "impressions": 18823,
+    "date": "2026-11-25"
+   },
+   "pub": "2026-11-26",
+   "added": "2026-11-26"
+  },
+  {
+   "id": "rd-zx1w0u6-inception-ai-thinking-states",
+   "name": "Inception AI Thinking States",
+   "url": "https://x.com/sarsanedas_/status/2125543594396099047",
+   "note": "Animated spheres built from shifting checkerboard pixels represent eight distinct thinking states for an AI product, each with its own motion character and label.",
+   "noteEn": "Animated spheres built from shifting checkerboard pixels represent eight distinct thinking states for an AI product, each with its own motion character and label.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@sarsanedas_",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "motion"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/zx1w0u6-inception-ai-thinking-states",
+   "rdkind": "Design",
+   "rdcat": "Motion",
+   "rdstyle": [
+    "Geometric",
+    "Minimal",
+    "Dark",
+    "Monochrome"
+   ],
+   "author": {
+    "name": "Joan",
+    "handle": "@sarsanedas_",
+    "url": "https://x.com/sarsanedas_"
+   },
+   "x_post": "https://x.com/sarsanedas_/status/2125543594396099047",
+   "xsrc": {
+    "post": "https://x.com/sarsanedas_/status/2125543594396099047",
+    "author": "@sarsanedas_",
+    "likes": 272,
+    "bookmarks": 188,
+    "reposts": 7,
+    "impressions": 7908,
+    "date": "2026-11-25"
+   },
+   "pub": "2026-11-26",
+   "added": "2026-11-26"
+  },
+  {
+   "id": "rd-qunuepe-weekly-vault-onboarding",
+   "name": "Weekly Vault Onboarding",
+   "url": "https://x.com/heysatya_/status/2125536719630176286",
+   "note": "Six-screen mobile onboarding for a habit app, using animated 3D gold objects like keys, chains, and vault dials to introduce missions, streaks, badges, and weekly rewards.",
+   "noteEn": "Six-screen mobile onboarding for a habit app, using animated 3D gold objects like keys, chains, and vault dials to introduce missions, streaks, badges, and weekly rewards.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@heysatya_",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "3d",
+    "gradient"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/qunuepe-weekly-vault-onboarding",
+   "rdkind": "Design",
+   "rdcat": "Interface",
+   "rdstyle": [
+    "3D",
+    "Dark",
+    "Gradient"
+   ],
+   "author": {
+    "name": "Satya",
+    "handle": "@heysatya_",
+    "url": "https://x.com/heysatya_"
+   },
+   "x_post": "https://x.com/heysatya_/status/2125536719630176286",
+   "xsrc": {
+    "post": "https://x.com/heysatya_/status/2125536719630176286",
+    "author": "@heysatya_",
+    "likes": 417,
+    "bookmarks": 284,
+    "reposts": 11,
+    "impressions": 14566,
+    "date": "2026-11-25"
+   },
+   "pub": "2026-11-26",
+   "added": "2026-11-26"
+  },
+  {
+   "id": "rd-6yx2qw0-ios-typewriter-keyboard",
+   "name": "iOS Typewriter Keyboard",
+   "url": "https://x.com/soybonjour/status/2125285106591936993",
+   "note": "An iOS keyboard redesign concept with 3D-rendered round typewriter keys mounted on visible mechanical levers that press down as you type.",
+   "noteEn": "An iOS keyboard redesign concept with 3D-rendered round typewriter keys mounted on visible mechanical levers that press down as you type.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@soybonjour",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "retro",
+    "3d"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/6yx2qw0-ios-typewriter-keyboard",
+   "rdkind": "Design",
+   "rdcat": "Interface",
+   "rdstyle": [
+    "Retro",
+    "3D",
+    "Light"
+   ],
+   "author": {
+    "name": "Soybean°",
+    "handle": "@soybonjour",
+    "url": "https://x.com/soybonjour"
+   },
+   "x_post": "https://x.com/soybonjour/status/2125285106591936993",
+   "xsrc": {
+    "post": "https://x.com/soybonjour/status/2125285106591936993",
+    "author": "@soybonjour",
+    "likes": 2574,
+    "bookmarks": 1069,
+    "reposts": 138,
+    "impressions": 108720,
+    "date": "2026-11-24"
+   },
+   "pub": "2026-11-26",
+   "added": "2026-11-26"
+  },
+  {
+   "id": "rd-40ga8dy-allo-font-website",
+   "name": "Allo Font Iteration",
+   "url": "https://x.com/joshpuckett/status/2125616807713350052",
+   "note": "The Allo font family website iterates through multiple UI layouts, featuring a character subset customizer with a slider that lets users build a minimal font from 11 KB.",
+   "noteEn": "The Allo font family website iterates through multiple UI layouts, featuring a character subset customizer with a slider that lets users build a minimal font from 11 KB.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@joshpuckett",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/40ga8dy-allo-font-website",
+   "rdkind": "Design",
+   "rdcat": "Web",
+   "rdstyle": [
+    "Typographic",
+    "Minimal",
+    "Vibrant",
+    "Light"
+   ],
+   "author": {
+    "name": "joshpuckett",
+    "handle": "@joshpuckett",
+    "url": "https://x.com/joshpuckett"
+   },
+   "x_post": "https://x.com/joshpuckett/status/2125616807713350052",
+   "xsrc": {
+    "post": "https://x.com/joshpuckett/status/2125616807713350052",
+    "author": "@joshpuckett",
+    "likes": 792,
+    "bookmarks": 381,
+    "reposts": 8,
+    "impressions": 17409,
+    "date": "2026-11-25"
+   },
+   "pub": "2026-11-25",
+   "added": "2026-11-26"
   }
  ],
  "guides": [
@@ -197144,5 +197395,5 @@
    ]
   }
  ],
- "updatedAt": "2026-11-26T08:12Z"
+ "updatedAt": "2026-11-26T10:00Z"
 }

@@ -1,6 +1,6 @@
 # UI Hub
 
-> Curated, multilingual directory of 5224 public UI resources (component libraries, component style demos, effects, design systems, design skills for AI agents) plus original blog analysis of AI design techniques. Data updated 2026-11-26 08:12 UTC.
+> Curated, multilingual directory of 5229 public UI resources (component libraries, component style demos, effects, design systems, design skills for AI agents) plus original blog analysis of AI design techniques. Data updated 2026-11-26 10:00 UTC.
 
 Use the JSON endpoints, not the SPA, when acting as an agent. Every entry links to its original site; licenses belong to the original authors.
 
@@ -145,11 +145,11 @@ Use the JSON endpoints, not the SPA, when acting as an agent. Every entry links 
 - [visx](https://airbnb.io/visx/): Airbnb's low-level visualization components
 
 ## FAQ
-- **What is UI Hub?** A free, curated directory of 5224 public UI resources: 260 component libraries, 1989 component style demos with light/dark screenshots, 73 design skills for AI agents, plus effects, templates, specs and tutorials. It links to original sites and never hosts paid source code.
+- **What is UI Hub?** A free, curated directory of 5229 public UI resources: 260 component libraries, 1989 component style demos with light/dark screenshots, 73 design skills for AI agents, plus effects, templates, specs and tutorials. It links to original sites and never hosts paid source code.
 - **How do I find a component in a given style?** Load https://ui.incidental.site/api/resources.json and filter by ct (component kind, e.g. "dialog") and vs (visual style, e.g. "minimal" or "motion"). type="style" entries are concrete component demos with a libName and page URL; type="library" entries are whole libraries with install info on the site.
 - **Which skills should an agent use for good UI?** One direction skill (frontend-design or taste-skill), emil-design-eng for motion and interaction polish, then impeccable, baseline-ui, web-design-guidelines and accessibility as an audit pass. See https://ui.incidental.site/api/skills.json.
 - **Can I copy the code?** Open-source libraries can be used under their own licenses (MIT, Apache-2.0 etc.); the card shows the original link. Paid tiers (marked paid/freemium) must be bought from the original vendor.
-- **How often is it updated?** Daily via a GitHub Actions job that adds new UI repositories and tools from GitHub, awesome-shadcn-ui and Hacker News. Nothing is deleted. Last update: 2026-11-26 08:12 UTC.
+- **How often is it updated?** Daily via a GitHub Actions job that adds new UI repositories and tools from GitHub, awesome-shadcn-ui and Hacker News. Nothing is deleted. Last update: 2026-11-26 10:00 UTC.
 
 
 # Blog posts (full text, English)
@@ -6305,6 +6305,11 @@ Get Hyped. Get Noticed. Get Results.
 - Moody Status Badges | inspiration | https://x.com/aleksksaa/status/2125246139771535841 | Pill-shaped workflow status badges cycle through states like Draft, In progress, Completed, and Blocked, each with a color-coded background and an expressive em
 - Animated Snake | inspiration | https://x.com/ermanmalak/status/2125317967118544920 | A looping animation of a stippled snake illustration cycling through coiling poses, framed by archival specimen typography on a grid-paper background.
 - Codex Icon Animations | inspiration | https://x.com/iconists/status/2125581848361255050 | Five outline icons loop through morphing state changes, each shifting between alternate forms such as flag to photo frame and filled to outline globe.
+- Variable Font Motion Studies | inspiration | https://x.com/PLANT_UEKI/status/2125551786866184438 | Animated variable-font glyph studies where letter forms cycle through width and weight axes across perspective-warped typographic grids in four bold two-tone co
+- Inception AI Thinking States | inspiration | https://x.com/sarsanedas_/status/2125543594396099047 | Animated spheres built from shifting checkerboard pixels represent eight distinct thinking states for an AI product, each with its own motion character and labe
+- Weekly Vault Onboarding | inspiration | https://x.com/heysatya_/status/2125536719630176286 | Six-screen mobile onboarding for a habit app, using animated 3D gold objects like keys, chains, and vault dials to introduce missions, streaks, badges, and week
+- iOS Typewriter Keyboard | inspiration | https://x.com/soybonjour/status/2125285106591936993 | An iOS keyboard redesign concept with 3D-rendered round typewriter keys mounted on visible mechanical levers that press down as you type.
+- Allo Font Iteration | inspiration | https://x.com/joshpuckett/status/2125616807713350052 | The Allo font family website iterates through multiple UI layouts, featuring a character subset customizer with a slider that lets users build a minimal font fr
 
 # Component style demos: 1989 entries, see api/resources.json (type=style)
 
