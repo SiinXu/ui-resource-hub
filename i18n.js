@@ -377,3 +377,20 @@ var SO=window.UI_SEC_ORDER=window.UI_SEC_ORDER||[],K='质感动效 · 新增',n=
 var A={"zh-CN": "质感动效 · 新增", "zh-TW": "質感動效 · 新增", "en": "Craft motion · new", "ja": "質感モーション・新着", "ko": "질감 모션 · 신규", "ms": "Animasi berkualiti · baharu", "vi": "Chuyển động chất cảm · mới", "es": "Motion con craft · nuevo", "de": "Craft-Motion · neu", "fr": "Motion craft · nouveau"};
 Object.keys(A).forEach(function(l){var d=window.UI_I18N[l];if(!d)return;if(d['sec_'+n]==null)d['sec_'+n]=A[l];});
 })();
+
+/* 11-25: after a successful copy, point to similar resources + subscribe (existing sheet / sub-band). */
+(function(){
+  var A={
+    "zh-CN":{next_after_copy:"下面是同类资源和订阅"},
+    "zh-TW":{next_after_copy:"下面是同類資源和訂閱"},
+    "en":{next_after_copy:"Similar resources and subscribe are below"},
+    "ja":{next_after_copy:"類似のリソースと購読は下にあります"},
+    "ko":{next_after_copy:"비슷한 자료와 구독은 아래에 있습니다"},
+    "ms":{next_after_copy:"Sumber serupa dan langganan ada di bawah"},
+    "vi":{next_after_copy:"Tài nguyên tương tự và đăng ký ở bên dưới"},
+    "fr":{next_after_copy:"Des ressources similaires et l’abonnement sont juste en dessous"},
+    "es":{next_after_copy:"Recursos similares y la suscripción están abajo"},
+    "de":{next_after_copy:"Ähnliche Ressourcen und Abo finden Sie darunter"}
+  };
+  Object.keys(A).forEach(function(l){var d=window.UI_I18N[l]||(window.UI_I18N[l]={});d.next_after_copy=A[l].next_after_copy});
+})();
