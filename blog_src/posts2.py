@@ -3753,4 +3753,116 @@ so a designer can write it down as a principle.</code></pre>
  refs=[('langchain-ai/design-agent (Content Studio)','LangChain · GitHub','https://github.com/langchain-ai/design-agent'),('How We Built Our Design Agent','Amal Irgashev, Shreya Talegaonkar · LangChain','https://www.langchain.com/blog/design-agent'),('Content Studio is the design agent we use every day at LangChain','LangChain · X','https://x.com/LangChain/status/2124926152703655977'),('Meet the Open-Source Slack Agent Behind 3,000 Branded Assets','Julian Horsey · Geeky Gadgets','https://www.geeky-gadgets.com/langchain-content-studio-design-agent/'),('Deploy the open-source design agent','LangChain Docs','https://docs.langchain.com/langsmith/python/managed-deep-agents-design-agent'),('Design agent spec (docs/spec.md)','LangChain · GitHub','https://github.com/langchain-ai/design-agent/blob/main/docs/spec.md'),('Evals (docs/evals.md)','LangChain · GitHub','https://github.com/langchain-ai/design-agent/blob/main/docs/evals.md'),('How HyperFrames fits into an application','HeyGen · HyperFrames docs','https://hyperframes.heygen.com/developers/overview'),('Paper','Paper','https://paper.design'),('Lovable changelog (Chat connectors: Paper, 23 Nov 2026)','Lovable','https://docs.lovable.dev/changelog'),('Improving frontend design through Skills','Anthropic · Claude blog','https://www.claude.com/blog/improving-frontend-design-through-skills')]),
 
 
+dict(slug='ui-mockup-image-models-reference-not-layout', date='2026-11-27', cat='workflow', series=None, featured=True, tags=['Ming-Image','inclusionAI','Ling UI Design','image-to-code','layer decomposition','UI mockups'],
+ t=T('Open image models now draw UI drafts. Use the picture as a reference, never as the layout',
+     '开源图像模型开始画 UI 草图了：把图当参考，别把图当布局',
+     '開源圖像模型開始畫 UI 草圖了：把圖當參考，別把圖當版面',
+     'オープンな画像モデルがUIの下絵を描く時代に：画像は参考にして、レイアウトにはしない',
+     '오픈 이미지 모델이 UI 시안을 그리기 시작했다: 그림은 참고로만, 레이아웃으로 쓰지 말 것',
+     'Model imej terbuka kini melukis draf UI. Guna gambar sebagai rujukan, jangan sebagai susun atur',
+     'Mô hình ảnh mã nguồn mở giờ đã vẽ được bản nháp UI. Hãy dùng ảnh làm tham chiếu, đừng dùng làm bố cục',
+     'Les modèles d’image ouverts dessinent désormais des maquettes d’UI. L’image sert de référence, jamais de mise en page',
+     'Los modelos de imagen abiertos ya dibujan bocetos de UI. Usa la imagen como referencia, nunca como maquetación',
+     'Offene Bildmodelle zeichnen jetzt UI-Entwürfe. Nutzen Sie das Bild als Referenz, nie als Layout'),
+ s=T('Ant Group’s inclusionAI open-sourced Ming-Image-0.2-Design this week, an MIT-licensed 6B image model aimed at UI drafts, hero images and posters, which the team says now leads open-weight models on a public text-to-image leaderboard. A picture of a screen is a tempting handoff and a bad one: the copy is invented, the text is pixels and nothing has states. The companion Ling UI Design skill shows the discipline that makes it useful: the brief owns copy and behaviour, the image only guides appearance, layers become assets rather than layout, and every build is rendered and compared. What to copy, where image models help in UI work and where they do not, a checklist and a prompt.',
+     '蚂蚁集团 inclusionAI 本周开源了 Ming-Image-0.2-Design：一个 MIT 许可、60 亿参数的图像模型，面向 UI 草图、主视觉和海报，团队称它在一个公开的文生图榜单上位列开源权重模型第一。把一张界面图交给开发很诱人，却是糟糕的交接：文案是编的，文字是像素，也没有任何状态。配套的 Ling UI Design 技能展示了让它真正有用的纪律：需求说明决定文案和行为，图片只指导外观，分层拆出来的是素材而不是布局，每次构建都要渲染并对比。本文讲哪些做法值得照搬、图像模型在 UI 工作里擅长什么不擅长什么，并附检查清单和提示词。',
+     '螞蟻集團 inclusionAI 本週開源了 Ming-Image-0.2-Design：一個 MIT 授權、60 億參數的圖像模型，面向 UI 草圖、主視覺和海報，團隊稱它在一個公開的文生圖排行榜上位列開源權重模型第一。把一張介面圖交給開發很誘人，卻是糟糕的交接：文案是編的，文字是像素，也沒有任何狀態。配套的 Ling UI Design 技能展示了讓它真正有用的紀律：需求說明決定文案和行為，圖片只指導外觀，分層拆出來的是素材而不是版面，每次建置都要算圖並比對。本文講哪些做法值得照搬、圖像模型在 UI 工作裡擅長什麼不擅長什麼，並附檢查清單和提示詞。',
+     'Ant GroupのinclusionAIが今週、UIの下絵、ヒーロー画像、ポスター向けの6B画像モデルMing-Image-0.2-DesignをMITライセンスで公開した。チームによれば、公開のテキスト画像生成ランキングでオープンウェイトのモデルとして首位だという。画面の画像をそのまま開発に渡すのは魅力的だが悪い引き継ぎだ。文言は作り話で、文字はピクセルで、状態は何もない。付属のLing UI Designスキルは使いこなすための規律を示している。文言と挙動はブリーフが決め、画像は見た目だけを導き、レイヤーはレイアウトではなく素材になり、ビルドのたびにレンダリングして比べる。真似すべき点、UI制作で画像モデルが役立つ所と役立たない所、チェックリストとプロンプト付き。',
+     '앤트그룹 inclusionAI가 이번 주 UI 시안, 히어로 이미지, 포스터용 6B 이미지 모델 Ming-Image-0.2-Design을 MIT 라이선스로 공개했다. 팀은 공개 텍스트-이미지 리더보드에서 오픈 웨이트 모델 중 1위라고 밝혔다. 화면 그림을 개발에 그대로 넘기는 것은 솔깃하지만 나쁜 인계다. 문구는 지어낸 것이고, 텍스트는 픽셀이며, 상태는 하나도 없다. 함께 나온 Ling UI Design 스킬은 이를 쓸모 있게 만드는 규율을 보여 준다. 문구와 동작은 브리프가 정하고, 이미지는 외형만 안내하며, 레이어는 레이아웃이 아니라 에셋이 되고, 빌드할 때마다 렌더링해 비교한다. 따라 할 점, UI 작업에서 이미지 모델이 도움이 되는 곳과 아닌 곳, 체크리스트와 프롬프트 포함.',
+     'inclusionAI dari Ant Group membuka sumber Ming-Image-0.2-Design minggu ini, model imej 6B berlesen MIT untuk draf UI, imej hero dan poster, yang menurut pasukannya kini mendahului model berpemberat terbuka dalam satu papan pendahulu teks-ke-imej awam. Gambar skrin ialah serahan yang menggoda tetapi buruk: teksnya direka, tulisannya piksel dan tiada keadaan langsung. Kemahiran Ling UI Design yang menyertainya menunjukkan disiplin yang menjadikannya berguna: taklimat menentukan teks dan tingkah laku, imej hanya memandu rupa, lapisan menjadi aset dan bukan susun atur, dan setiap binaan dirender lalu dibandingkan. Apa yang patut ditiru, di mana model imej membantu kerja UI dan di mana tidak, senarai semak dan prompt.',
+     'Tuần này inclusionAI của Ant Group mở mã nguồn Ming-Image-0.2-Design, mô hình ảnh 6B giấy phép MIT dành cho bản nháp UI, ảnh hero và poster, và nhóm cho biết nó đang dẫn đầu các mô hình trọng số mở trên một bảng xếp hạng text-to-image công khai. Một bức ảnh màn hình là cách bàn giao hấp dẫn nhưng tệ: nội dung chữ là bịa, chữ là pixel và chẳng có trạng thái nào. Skill Ling UI Design đi kèm cho thấy kỷ luật giúp nó hữu ích: brief quyết định nội dung và hành vi, ảnh chỉ định hướng vẻ ngoài, các lớp tách ra thành tài nguyên chứ không phải bố cục, và mỗi bản build đều được render rồi so sánh. Những gì nên học theo, chỗ mô hình ảnh giúp ích trong việc làm UI và chỗ không, kèm checklist và prompt.',
+     'inclusionAI, chez Ant Group, a ouvert cette semaine Ming-Image-0.2-Design, un modèle d’image de 6 milliards de paramètres sous licence MIT, conçu pour les maquettes d’UI, les visuels hero et les affiches ; l’équipe affirme qu’il mène les modèles à poids ouverts d’un classement public texte-vers-image. Une image d’écran est un livrable tentant et mauvais : le texte est inventé, les lettres sont des pixels et aucun état n’existe. Le skill Ling UI Design qui l’accompagne montre la discipline qui le rend utile : le brief fixe les textes et le comportement, l’image guide seulement l’apparence, les calques deviennent des ressources et non une mise en page, et chaque build est rendu puis comparé. Ce qu’il faut copier, où les modèles d’image aident en UI et où non, une checklist et un prompt.',
+     'inclusionAI, de Ant Group, liberó esta semana Ming-Image-0.2-Design, un modelo de imagen de 6B con licencia MIT pensado para bocetos de UI, imágenes hero y pósteres, que según el equipo lidera los modelos de pesos abiertos en una clasificación pública de texto a imagen. Una imagen de pantalla es una entrega tentadora y mala: el texto es inventado, las letras son píxeles y no hay ningún estado. El skill Ling UI Design que lo acompaña muestra la disciplina que lo vuelve útil: el brief manda en textos y comportamiento, la imagen solo guía la apariencia, las capas se convierten en recursos y no en maquetación, y cada build se renderiza y se compara. Qué copiar, dónde ayudan los modelos de imagen en UI y dónde no, una checklist y un prompt.',
+     'inclusionAI von der Ant Group hat diese Woche Ming-Image-0.2-Design als Open Source veröffentlicht, ein MIT-lizenziertes 6B-Bildmodell für UI-Entwürfe, Hero-Bilder und Poster, das laut Team ein öffentliches Text-zu-Bild-Ranking unter den Open-Weight-Modellen anführt. Ein Bild eines Screens ist eine verlockende und schlechte Übergabe: Der Text ist erfunden, die Schrift besteht aus Pixeln, und es gibt keine Zustände. Der begleitende Skill Ling UI Design zeigt die Disziplin, die es nützlich macht: Das Briefing bestimmt Texte und Verhalten, das Bild lenkt nur die Optik, Ebenen werden zu Assets statt zu Layout, und jeder Build wird gerendert und verglichen. Was sich übernehmen lässt, wo Bildmodelle in der UI-Arbeit helfen und wo nicht, eine Checkliste und ein Prompt.'),
+ en="""<p>On 25 November inclusionAI, Ant Group’s open model team, put the weights of <strong>Ming-Image-0.2-Design</strong> on Hugging Face and announced it a day later. It is a 6-billion-parameter diffusion transformer under the MIT licence, built for the pictures designers are asked for most: e-commerce hero images, posters, spatial renderings and UI design drafts. The model card says it handles complex composition, lighting and in-image text better than the 0.1 release from September, and inclusionAI reports that on 25 November it ranked first among open-weight models on Artificial Analysis’s text-to-image leaderboard (AA-Image-T2I v2.1, 1,095 Elo, ahead of FLUX.2 [max] and Qwen-Image-2.0 in the team’s own chart). That ranking is the maker’s claim, and leaderboards move weekly, so read it as “good enough to try”, not “best”.</p>
+<p>The interesting part for UI work is not the leaderboard. It is that the release ships with a way of working: a structured prompt format, a model that splits a flat design into layers, and an MIT-licensed agent skill, <strong>Ling UI Design</strong>, that turns a generated or supplied screen image into real front-end code. Read together, they are a clear answer to a question every team using image models for interfaces runs into: what is the picture actually for?</p>
+<h2>What shipped, in practical terms</h2>
+<p><strong>The model.</strong> Defaults are 2048 × 2048 output, 12 sampling steps and CFG 1.0, with 2K buckets for 16:9, 4:3 and 2:3. inclusionAI validated it on a single CUDA GPU with 80 GB of memory in BF16, served through vLLM-Omni, so most teams will reach it through a hosted API rather than a laptop. <strong>The prompt format.</strong> Plain sentences work, but the team recommends a Figma-style JSON caption: <code>canvas_settings</code> (aspect ratio, lighting, style) plus a list of <code>layers</code> from back to front, each with a description, coordinates, its relation to other layers and hex colours. Any text to render is quoted verbatim, once. <strong>The layer model.</strong> Ming-Image-0.1-Design-Layer turns a flattened design into separate transparent PNG layers; inclusionAI says a finer version is due next week. <strong>The skill.</strong> Ling UI Design wires the image model and the layer model into a coding agent, with a default 4-layer split into text, image, container and background.</p>
+<h2>The workflow worth copying</h2>
+<ol><li><strong>The brief comes first and stays in charge.</strong> The agent reads the repository, the brief, the required views and the target viewports before any image is made, and keeps the existing stack.</li>
+<li><strong>Get one usable reference.</strong> Either the person supplies screenshots, or the agent generates a page image in a chosen visual direction. It retries only for structural defects such as the wrong page type, a collapsed layout or the wrong mood, names the defect each time, and stops after three attempts. Wrong copy or a missing section is not a reason to regenerate: those get fixed in code from the brief.</li>
+<li><strong>Turn the image into assets, not layout.</strong> Decompose once, crop candidate assets, inspect every one, and record each material raster region as accepted, refined, generated or omitted. An unresolved region blocks the build. A gradient, a flat fill, an emoji or the whole screenshot is never allowed to stand in for a real asset.</li>
+<li><strong>Write down the layout before writing code.</strong> Region order, column proportions, spacing, heading wraps, type scale and colours go into a short checklist, then text, controls, layout and simple icons are built in code.</li>
+<li><strong>Render, compare, fix the biggest mismatch, repeat.</strong> Capture the requested viewports, fix the largest structural, asset, type, overflow or interaction difference, and capture again, with a ceiling of five cycles so polishing does not run forever.</li></ol>
+<h2>Why a picture of a screen is a bad handoff</h2>
+<p>A generated screen looks finished, which is exactly the problem. Its copy was invented by the model, its text is pixels that a screen reader cannot read and a translator cannot change, its spacing is approximate rather than on your scale, and it shows one state of a component that in real life has hover, focus, loading, empty and error states. Traced pixel for pixel, it also locks in the model’s defaults: the centred hero, the three soft cards, the single purple button. The Ling UI Design skill guards against this with an explicit order of evidence: the brief, supplied screenshots and supplied assets first; the selected generated image second, for appearance only and never as the source of copy; a screenshot of the current build third; decomposed layers last, because they can overlap, drop content or invent hidden pixels. When two sources disagree, the higher one wins.</p>
+<h2>Our take</h2>
+<p>Image models are becoming a normal step in front-end work, and an MIT model that a team can self-host makes that step cheaper to automate. The useful shift is in what the agent is allowed to take from the picture. Taking colour, mood, density, hierarchy and real raster assets is a fast way past the blank page. Taking copy, structure for screen readers, component behaviour or the exact layout is how AI-flavoured, inaccessible pages get shipped. Put that boundary in writing, in the skill or in <code>AGENTS.md</code>, and give the agent hard stopping rules, because “regenerate until it looks right” is the most expensive loop in the workflow.</p>
+<h2>Where image models help in UI work, and where they do not</h2>
+<ul><li><strong>Use them for direction:</strong> two or three mood boards or page studies before anyone commits to a layout. Figma’s image tools added multi-model, multi-image generation on 18 November for the same reason.</li>
+<li><strong>Use them for raster assets:</strong> hero art, product shots, illustrations and empty-state pictures, cut out from layers and saved at a defined slot size.</li>
+<li><strong>Use them as a review target:</strong> a reference makes “the hero feels heavier than the mockup” a checkable statement.</li>
+<li><strong>Do not use them for copy:</strong> every word on the page comes from the brief or a writer, then is localised in code.</li>
+<li><strong>Do not use them for components:</strong> buttons, inputs, tables and charts come from your design system with real states and real data.</li>
+<li><strong>Do not ship text inside images:</strong> headings and labels in pictures fail translation, search and accessibility checks.</li></ul>
+<h2>Reference-first UI checklist</h2>
+<ul><li>Is the brief, not the mockup, the source for every word on the page?</li>
+<li>Is the reference stored in <code>artifacts/</code> and kept out of the shipped bundle?</li>
+<li>Does every raster region on the page have an outcome: accepted, refined, generated or omitted?</li>
+<li>Are there zero full-screen screenshots, gradients or emoji standing in for real assets?</li>
+<li>Are buttons, inputs and icons real elements from your component library, with focus and disabled states?</li>
+<li>Was the build rendered at every target viewport and compared with the reference, in light and dark?</li>
+<li>Are retries capped (three for references, five for render-and-fix) and are the reasons logged?</li>
+<li>Are API keys read from the environment and kept out of prompts, logs and the repository?</li></ul>
+<pre><code># Paste into a coding agent, with the brief and one reference image attached
+Build this page from the brief, using the image only as a visual reference.
+1. Write down from the brief: every heading, label and paragraph, the views,
+   the target viewports (375, 768, 1440) and the components we already have.
+2. From the image, take only: colours, type scale, spacing rhythm, density,
+   region order and column proportions. Record them in notes/reference.md.
+3. List every raster region (photos, illustrations). For each one, record
+   accepted / cropped / generated / omitted and the slot size it will fill.
+   Never use the whole screenshot, a gradient or an emoji as a stand-in.
+4. Build text, controls and layout in code with our components and tokens.
+   No copy from the image. No text inside images.
+5. Render each viewport in light and dark, compare with the reference, fix
+   the largest mismatch, and repeat at most 5 times. Report what still differs.</code></pre>
+<p>UI Hub related reading: <a href="../layers-brand-kits-json-ai-visuals/">layers, brand kits and JSON prompts for AI visuals</a>, <a href="../annotate-dont-describe-visual-prompts/">visual prompts for UI edits</a>, <a href="../parallel-design-directions-drafts-stitch-rapid/">comparing parallel design directions</a>, and <a href="../design-agent-taste-in-context-rules-in-code/">putting the rules of a design agent in code</a>.</p>""",
+ zh="""<p>11 月 25 日，蚂蚁集团的开源模型团队 inclusionAI 把 <strong>Ming-Image-0.2-Design</strong> 的权重放上 Hugging Face，次日正式发布。它是一个 60 亿参数的扩散 Transformer，采用 MIT 许可，专门面向设计师最常被要的那几类图：电商主图、海报、空间效果图和 UI 设计草图。模型卡称，它在复杂构图、光照和图中文字上比 9 月的 0.1 版更好；inclusionAI 还表示，截至 11 月 25 日，它在 Artificial Analysis 文生图榜单（AA-Image-T2I v2.1，1095 Elo）上位列开源权重模型第一，在团队自己的图表里排在 FLUX.2 [max] 和 Qwen-Image-2.0 之前。这个排名是厂商自己的说法，榜单每周都在变，理解成“值得一试”就好，别当成“最好”。</p>
+<p>对 UI 工作来说，有意思的不是榜单，而是这次发布附带了一套工作方式：一种结构化提示格式、一个能把扁平设计稿拆成图层的模型，以及一个 MIT 许可的智能体技能 <strong>Ling UI Design</strong>，它能把生成的或你提供的界面图变成真正的前端代码。放在一起看，它们清楚地回答了每个用图像模型做界面的团队都会遇到的问题：这张图到底是拿来干什么的？</p>
+<h2>这次发布了什么（讲实用的）</h2>
+<p><strong>模型。</strong>默认输出 2048 × 2048，12 步采样，CFG 1.0，另有 16:9、4:3、2:3 的 2K 尺寸档。inclusionAI 验证过的配置是一张 80 GB 显存的 CUDA GPU、BF16 精度、用 vLLM-Omni 部署，所以多数团队会通过托管 API 而不是笔记本来用它。<strong>提示格式。</strong>普通句子也能用，但团队推荐类似 Figma 的 JSON 描述：<code>canvas_settings</code>（比例、光照、风格）加上从底到顶排列的 <code>layers</code> 列表，每层写描述、坐标、与其他层的关系和十六进制颜色；要渲染的文字逐字加引号，而且只写一次。<strong>分层模型。</strong>Ming-Image-0.1-Design-Layer 能把扁平的设计稿拆成多张透明 PNG 图层，inclusionAI 说更精细的版本下周推出。<strong>技能。</strong>Ling UI Design 把图像模型和分层模型接进编程智能体，默认拆成文字、图片、容器、背景 4 层。</p>
+<h2>值得照搬的流程</h2>
+<ol><li><strong>需求说明先行，并且始终说了算。</strong>在生成任何图片之前，智能体先读仓库、需求、需要的视图和目标视口，并沿用现有技术栈。</li>
+<li><strong>拿到一张可用的参考图。</strong>要么由人提供截图，要么由智能体按选定的视觉方向生成一张页面图。只有出现结构性问题才重试，比如页面类型不对、布局塌了或气质不对；每次都要说清是什么问题，最多三次。文案不对或少了一个区块不是重新生成的理由，这些按需求说明在代码里补回来。</li>
+<li><strong>把图变成素材，而不是布局。</strong>拆层一次，裁出候选素材，逐个检查，并给每块重要的位图区域记录结果：采用、修整、生成或省略。有未解决的区域就不能开工。渐变、纯色块、emoji 或整张截图都不允许代替真正的素材。</li>
+<li><strong>写代码前先把布局写下来。</strong>区块顺序、栏宽比例、间距、标题换行、字号阶梯和颜色写进一份简短清单，然后用代码实现文字、控件、布局和简单图标。</li>
+<li><strong>渲染、对比、修最大的差异，再来一遍。</strong>按要求的视口截图，修掉最大的结构、素材、字体、溢出或交互差异，再截图；最多五轮，避免无休止地抠细节。</li></ol>
+<h2>为什么一张界面图是糟糕的交接</h2>
+<p>生成的界面图看起来像做完了，问题恰恰在这里。它的文案是模型编的；文字是像素，读屏软件读不出来，翻译也改不了；间距只是大概，不在你的间距阶梯上；它只画出组件的一种状态，而真实组件还有悬停、焦点、加载、空状态和错误状态。如果逐像素照描，还会把模型的默认审美一起锁进来：居中的主视觉、三张柔和的卡片、一个紫色按钮。Ling UI Design 技能用一个明确的证据优先级来防止这一点：需求说明、你提供的截图和素材排第一；选中的生成图排第二，只用来参考外观，绝不作为文案来源；当前构建的截图排第三；拆出来的图层排最后，因为它们可能互相重叠、丢内容，甚至编造被遮住的像素。两个来源冲突时，以排名高的为准。</p>
+<h2>我们的看法</h2>
+<p>图像模型正在变成前端工作里的常规一步，一个团队可以自己部署的 MIT 模型让这一步更容易自动化。真正有用的变化在于：智能体被允许从图里拿走什么。拿走颜色、气质、密度、层级和真正的位图素材，是摆脱空白页的快捷方式；拿走文案、给读屏软件的结构、组件行为或精确布局，则是做出满是 AI 味、无障碍不合格的页面的捷径。把这条边界写下来，写进技能或 <code>AGENTS.md</code>，再给智能体设定硬性的停止规则，因为“一直重新生成直到看着对”是整个流程里最费钱的循环。</p>
+<h2>图像模型在 UI 工作里擅长什么、不擅长什么</h2>
+<ul><li><strong>用来定方向：</strong>在任何人确定布局之前，先出两三张情绪板或页面草图。Figma 的图像工具 11 月 18 日加入一次生成多张、同时跑多个模型，也是为了这个。</li>
+<li><strong>用来做位图素材：</strong>主视觉插画、产品图、插图和空状态配图，从图层里抠出来，按固定的位置尺寸保存。</li>
+<li><strong>用来当评审目标：</strong>有了参考图，“首屏比稿子显得重”就变成可以核对的说法。</li>
+<li><strong>别用来写文案：</strong>页面上的每个字都来自需求说明或文案作者，再在代码里做本地化。</li>
+<li><strong>别用来做组件：</strong>按钮、输入框、表格和图表来自你的设计系统，带真实状态和真实数据。</li>
+<li><strong>别把文字放进图片：</strong>图片里的标题和标签过不了翻译、搜索和无障碍检查。</li></ul>
+<h2>参考图优先的 UI 检查清单</h2>
+<ul><li>页面上的每个字都来自需求说明，而不是来自稿子吗？</li>
+<li>参考图是否放在 <code>artifacts/</code> 里，没有进入上线的包？</li>
+<li>页面上每块位图区域都有结论吗：采用、修整、生成还是省略？</li>
+<li>有没有用整屏截图、渐变或 emoji 冒充真正的素材？一个都不应该有。</li>
+<li>按钮、输入框和图标是否都是组件库里的真实元素，带焦点和禁用状态？</li>
+<li>构建结果是否在每个目标视口、亮色和暗色下都渲染过，并和参考图对比过？</li>
+<li>重试次数有上限吗（参考图三次，渲染修正五轮），原因记下来了吗？</li>
+<li>API 密钥是否从环境变量读取，没有出现在提示、日志和仓库里？</li></ul>
+<pre><code># 贴给编程智能体，并附上需求说明和一张参考图
+按需求说明搭这个页面，图片只当视觉参考。
+1. 从需求说明里写下：每个标题、标签和段落，需要的视图，
+   目标视口（375、768、1440），以及我们已有的组件。
+2. 从图片里只拿：颜色、字号阶梯、间距节奏、密度、
+   区块顺序和栏宽比例。记到 notes/reference.md。
+3. 列出每块位图区域（照片、插画），逐个记录
+   采用 / 裁切 / 生成 / 省略，以及它要填的位置尺寸。
+   绝不用整张截图、渐变或 emoji 代替。
+4. 用我们的组件和 token 在代码里实现文字、控件和布局。
+   不抄图里的文案，不把文字放进图片。
+5. 每个视口分别在亮色和暗色下渲染，和参考图对比，
+   修掉最大的差异，最多重复 5 次。报告仍然不一致的地方。</code></pre>
+<p>UI Hub 相关阅读：<a href="../layers-brand-kits-json-ai-visuals/">图层、品牌包和 JSON 提示让 AI 视觉不再千篇一律</a>、<a href="../annotate-dont-describe-visual-prompts/">改 UI 时用视觉提示</a>、<a href="../parallel-design-directions-drafts-stitch-rapid/">让并行的设计方向可以比较</a>，以及<a href="../design-agent-taste-in-context-rules-in-code/">把设计智能体的规则写进代码</a>。</p>""",
+ refs=[('Ming-Image-0.2-Design (model card)','inclusionAI · Hugging Face','https://huggingface.co/inclusionAI/Ming-Image-0.2-Design'),('inclusionAI/Ming-Image (inference code, prompt format, layer decomposition)','inclusionAI · GitHub','https://github.com/inclusionAI/Ming-Image'),('Ming-Image-0.1-Design-Layer (model card)','inclusionAI · Hugging Face','https://huggingface.co/inclusionAI/Ming-Image-0.1-Design-Layer'),('Ling UI Design (README)','inclusionAI · ling-cookbook on GitHub','https://github.com/inclusionAI/ling-cookbook/blob/main/resources/recommended-skills/ling-ui-design/README.md'),('Ling UI Design (SKILL.md)','inclusionAI · ling-cookbook on GitHub','https://github.com/inclusionAI/ling-cookbook/blob/main/resources/recommended-skills/ling-ui-design/SKILL.md'),('Ant Group open-sources Ming-Image-0.2-Design: a design image model under MIT, validated on one 80 GB GPU','GPUJournal','https://gpujournal.ai/story/ming-image-0-2-design-nov-26'),('inclusionAI open-sources 6B Ming-Image-0.2-Design under MIT licence','Ashutosh Shrivastava · AI Compass','https://ashutoshai.com/ai-compass/2026/11/26/inclusionai-ming-image-0-2-design-mit/'),('New AI design tool releases','AI Pix Tools','https://www.aipixtools.com/releases/'),('Text to Image leaderboard','Artificial Analysis','https://artificialanalysis.ai/image/leaderboard/text-to-image'),('Figma release notes (Generate multiple images from a single prompt, 18 Nov 2026)','Figma','https://www.figma.com/release-notes/')]),
+
+
 ]

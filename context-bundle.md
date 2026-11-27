@@ -427,3 +427,4 @@ curl -s https://ui.incidental.site/api/resources.json | jq --arg d "$(date -u -d
 - Canva MCP is open to every agent: ask for an editable design, not a picture — https://ui.incidental.site/kb/note/blog-canva-mcp-editable-designs-not-pictures.md
 - Claude’s Android redesign: go native on structure, keep your brand on the surface — https://ui.incidental.site/kb/note/blog-claude-android-native-shell-brand-surface.md
 - LangChain open-sourced its design agent: put taste in context and the rules in code — https://ui.incidental.site/kb/note/blog-design-agent-taste-in-context-rules-in-code.md
+- Open image models now draw UI drafts. Use the picture as a reference, never as the layout — https://ui.incidental.site/kb/note/blog-ui-mockup-image-models-reference-not-layout.md

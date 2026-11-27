@@ -655,6 +655,22 @@
     1200,
     630
   ],
+  "ui-mockup-image-models-reference-not-layout-1": [
+    1280,
+    800
+  ],
+  "ui-mockup-image-models-reference-not-layout-2": [
+    1200,
+    675
+  ],
+  "ui-mockup-image-models-reference-not-layout-3": [
+    1200,
+    675
+  ],
+  "ui-mockup-image-models-reference-not-layout-cover": [
+    1200,
+    630
+  ],
   "v0-prompt-to-shadcn-1": [
     1280,
     800

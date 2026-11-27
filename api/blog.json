@@ -1,5 +1,5 @@
 {
- "count": 62,
+ "count": 63,
  "rss": "https://ui.incidental.site/blog/rss.xml",
  "categories": {
   "tools": "Tools",
@@ -18,6 +18,103 @@
   "weekly": "Series: Weekly roundup"
  },
  "posts": [
+  {
+   "slug": "ui-mockup-image-models-reference-not-layout",
+   "url": "https://ui.incidental.site/blog/ui-mockup-image-models-reference-not-layout/",
+   "date": "2026-11-27",
+   "category": "workflow",
+   "series": null,
+   "featured": true,
+   "tags": [
+    "Ming-Image",
+    "inclusionAI",
+    "Ling UI Design",
+    "image-to-code",
+    "layer decomposition",
+    "UI mockups"
+   ],
+   "title": {
+    "en": "Open image models now draw UI drafts. Use the picture as a reference, never as the layout",
+    "zh": "开源图像模型开始画 UI 草图了：把图当参考，别把图当布局",
+    "zht": "開源圖像模型開始畫 UI 草圖了：把圖當參考，別把圖當版面",
+    "ja": "オープンな画像モデルがUIの下絵を描く時代に：画像は参考にして、レイアウトにはしない",
+    "ko": "오픈 이미지 모델이 UI 시안을 그리기 시작했다: 그림은 참고로만, 레이아웃으로 쓰지 말 것",
+    "ms": "Model imej terbuka kini melukis draf UI. Guna gambar sebagai rujukan, jangan sebagai susun atur",
+    "vi": "Mô hình ảnh mã nguồn mở giờ đã vẽ được bản nháp UI. Hãy dùng ảnh làm tham chiếu, đừng dùng làm bố cục",
+    "fr": "Les modèles d’image ouverts dessinent désormais des maquettes d’UI. L’image sert de référence, jamais de mise en page",
+    "es": "Los modelos de imagen abiertos ya dibujan bocetos de UI. Usa la imagen como referencia, nunca como maquetación",
+    "de": "Offene Bildmodelle zeichnen jetzt UI-Entwürfe. Nutzen Sie das Bild als Referenz, nie als Layout"
+   },
+   "summary": {
+    "en": "Ant Group’s inclusionAI open-sourced Ming-Image-0.2-Design this week, an MIT-licensed 6B image model aimed at UI drafts, hero images and posters, which the team says now leads open-weight models on a public text-to-image leaderboard. A picture of a screen is a tempting handoff and a bad one: the copy is invented, the text is pixels and nothing has states. The companion Ling UI Design skill shows the discipline that makes it useful: the brief owns copy and behaviour, the image only guides appearance, layers become assets rather than layout, and every build is rendered and compared. What to copy, where image models help in UI work and where they do not, a checklist and a prompt.",
+    "zh": "蚂蚁集团 inclusionAI 本周开源了 Ming-Image-0.2-Design：一个 MIT 许可、60 亿参数的图像模型，面向 UI 草图、主视觉和海报，团队称它在一个公开的文生图榜单上位列开源权重模型第一。把一张界面图交给开发很诱人，却是糟糕的交接：文案是编的，文字是像素，也没有任何状态。配套的 Ling UI Design 技能展示了让它真正有用的纪律：需求说明决定文案和行为，图片只指导外观，分层拆出来的是素材而不是布局，每次构建都要渲染并对比。本文讲哪些做法值得照搬、图像模型在 UI 工作里擅长什么不擅长什么，并附检查清单和提示词。",
+    "zht": "螞蟻集團 inclusionAI 本週開源了 Ming-Image-0.2-Design：一個 MIT 授權、60 億參數的圖像模型，面向 UI 草圖、主視覺和海報，團隊稱它在一個公開的文生圖排行榜上位列開源權重模型第一。把一張介面圖交給開發很誘人，卻是糟糕的交接：文案是編的，文字是像素，也沒有任何狀態。配套的 Ling UI Design 技能展示了讓它真正有用的紀律：需求說明決定文案和行為，圖片只指導外觀，分層拆出來的是素材而不是版面，每次建置都要算圖並比對。本文講哪些做法值得照搬、圖像模型在 UI 工作裡擅長什麼不擅長什麼，並附檢查清單和提示詞。",
+    "ja": "Ant GroupのinclusionAIが今週、UIの下絵、ヒーロー画像、ポスター向けの6B画像モデルMing-Image-0.2-DesignをMITライセンスで公開した。チームによれば、公開のテキスト画像生成ランキングでオープンウェイトのモデルとして首位だという。画面の画像をそのまま開発に渡すのは魅力的だが悪い引き継ぎだ。文言は作り話で、文字はピクセルで、状態は何もない。付属のLing UI Designスキルは使いこなすための規律を示している。文言と挙動はブリーフが決め、画像は見た目だけを導き、レイヤーはレイアウトではなく素材になり、ビルドのたびにレンダリングして比べる。真似すべき点、UI制作で画像モデルが役立つ所と役立たない所、チェックリストとプロンプト付き。",
+    "ko": "앤트그룹 inclusionAI가 이번 주 UI 시안, 히어로 이미지, 포스터용 6B 이미지 모델 Ming-Image-0.2-Design을 MIT 라이선스로 공개했다. 팀은 공개 텍스트-이미지 리더보드에서 오픈 웨이트 모델 중 1위라고 밝혔다. 화면 그림을 개발에 그대로 넘기는 것은 솔깃하지만 나쁜 인계다. 문구는 지어낸 것이고, 텍스트는 픽셀이며, 상태는 하나도 없다. 함께 나온 Ling UI Design 스킬은 이를 쓸모 있게 만드는 규율을 보여 준다. 문구와 동작은 브리프가 정하고, 이미지는 외형만 안내하며, 레이어는 레이아웃이 아니라 에셋이 되고, 빌드할 때마다 렌더링해 비교한다. 따라 할 점, UI 작업에서 이미지 모델이 도움이 되는 곳과 아닌 곳, 체크리스트와 프롬프트 포함.",
+    "ms": "inclusionAI dari Ant Group membuka sumber Ming-Image-0.2-Design minggu ini, model imej 6B berlesen MIT untuk draf UI, imej hero dan poster, yang menurut pasukannya kini mendahului model berpemberat terbuka dalam satu papan pendahulu teks-ke-imej awam. Gambar skrin ialah serahan yang menggoda tetapi buruk: teksnya direka, tulisannya piksel dan tiada keadaan langsung. Kemahiran Ling UI Design yang menyertainya menunjukkan disiplin yang menjadikannya berguna: taklimat menentukan teks dan tingkah laku, imej hanya memandu rupa, lapisan menjadi aset dan bukan susun atur, dan setiap binaan dirender lalu dibandingkan. Apa yang patut ditiru, di mana model imej membantu kerja UI dan di mana tidak, senarai semak dan prompt.",
+    "vi": "Tuần này inclusionAI của Ant Group mở mã nguồn Ming-Image-0.2-Design, mô hình ảnh 6B giấy phép MIT dành cho bản nháp UI, ảnh hero và poster, và nhóm cho biết nó đang dẫn đầu các mô hình trọng số mở trên một bảng xếp hạng text-to-image công khai. Một bức ảnh màn hình là cách bàn giao hấp dẫn nhưng tệ: nội dung chữ là bịa, chữ là pixel và chẳng có trạng thái nào. Skill Ling UI Design đi kèm cho thấy kỷ luật giúp nó hữu ích: brief quyết định nội dung và hành vi, ảnh chỉ định hướng vẻ ngoài, các lớp tách ra thành tài nguyên chứ không phải bố cục, và mỗi bản build đều được render rồi so sánh. Những gì nên học theo, chỗ mô hình ảnh giúp ích trong việc làm UI và chỗ không, kèm checklist và prompt.",
+    "fr": "inclusionAI, chez Ant Group, a ouvert cette semaine Ming-Image-0.2-Design, un modèle d’image de 6 milliards de paramètres sous licence MIT, conçu pour les maquettes d’UI, les visuels hero et les affiches ; l’équipe affirme qu’il mène les modèles à poids ouverts d’un classement public texte-vers-image. Une image d’écran est un livrable tentant et mauvais : le texte est inventé, les lettres sont des pixels et aucun état n’existe. Le skill Ling UI Design qui l’accompagne montre la discipline qui le rend utile : le brief fixe les textes et le comportement, l’image guide seulement l’apparence, les calques deviennent des ressources et non une mise en page, et chaque build est rendu puis comparé. Ce qu’il faut copier, où les modèles d’image aident en UI et où non, une checklist et un prompt.",
+    "es": "inclusionAI, de Ant Group, liberó esta semana Ming-Image-0.2-Design, un modelo de imagen de 6B con licencia MIT pensado para bocetos de UI, imágenes hero y pósteres, que según el equipo lidera los modelos de pesos abiertos en una clasificación pública de texto a imagen. Una imagen de pantalla es una entrega tentadora y mala: el texto es inventado, las letras son píxeles y no hay ningún estado. El skill Ling UI Design que lo acompaña muestra la disciplina que lo vuelve útil: el brief manda en textos y comportamiento, la imagen solo guía la apariencia, las capas se convierten en recursos y no en maquetación, y cada build se renderiza y se compara. Qué copiar, dónde ayudan los modelos de imagen en UI y dónde no, una checklist y un prompt.",
+    "de": "inclusionAI von der Ant Group hat diese Woche Ming-Image-0.2-Design als Open Source veröffentlicht, ein MIT-lizenziertes 6B-Bildmodell für UI-Entwürfe, Hero-Bilder und Poster, das laut Team ein öffentliches Text-zu-Bild-Ranking unter den Open-Weight-Modellen anführt. Ein Bild eines Screens ist eine verlockende und schlechte Übergabe: Der Text ist erfunden, die Schrift besteht aus Pixeln, und es gibt keine Zustände. Der begleitende Skill Ling UI Design zeigt die Disziplin, die es nützlich macht: Das Briefing bestimmt Texte und Verhalten, das Bild lenkt nur die Optik, Ebenen werden zu Assets statt zu Layout, und jeder Build wird gerendert und verglichen. Was sich übernehmen lässt, wo Bildmodelle in der UI-Arbeit helfen und wo nicht, eine Checkliste und ein Prompt."
+   },
+   "reading_minutes": {
+    "en": 6,
+    "zh": 7
+   },
+   "cover": "https://ui.incidental.site/blog/img/ui-mockup-image-models-reference-not-layout-cover.webp",
+   "references": [
+    {
+     "title": "Ming-Image-0.2-Design (model card)",
+     "by": "inclusionAI · Hugging Face",
+     "url": "https://huggingface.co/inclusionAI/Ming-Image-0.2-Design"
+    },
+    {
+     "title": "inclusionAI/Ming-Image (inference code, prompt format, layer decomposition)",
+     "by": "inclusionAI · GitHub",
+     "url": "https://github.com/inclusionAI/Ming-Image"
+    },
+    {
+     "title": "Ming-Image-0.1-Design-Layer (model card)",
+     "by": "inclusionAI · Hugging Face",
+     "url": "https://huggingface.co/inclusionAI/Ming-Image-0.1-Design-Layer"
+    },
+    {
+     "title": "Ling UI Design (README)",
+     "by": "inclusionAI · ling-cookbook on GitHub",
+     "url": "https://github.com/inclusionAI/ling-cookbook/blob/main/resources/recommended-skills/ling-ui-design/README.md"
+    },
+    {
+     "title": "Ling UI Design (SKILL.md)",
+     "by": "inclusionAI · ling-cookbook on GitHub",
+     "url": "https://github.com/inclusionAI/ling-cookbook/blob/main/resources/recommended-skills/ling-ui-design/SKILL.md"
+    },
+    {
+     "title": "Ant Group open-sources Ming-Image-0.2-Design: a design image model under MIT, validated on one 80 GB GPU",
+     "by": "GPUJournal",
+     "url": "https://gpujournal.ai/story/ming-image-0-2-design-nov-26"
+    },
+    {
+     "title": "inclusionAI open-sources 6B Ming-Image-0.2-Design under MIT licence",
+     "by": "Ashutosh Shrivastava · AI Compass",
+     "url": "https://ashutoshai.com/ai-compass/2026/11/26/inclusionai-ming-image-0-2-design-mit/"
+    },
+    {
+     "title": "New AI design tool releases",
+     "by": "AI Pix Tools",
+     "url": "https://www.aipixtools.com/releases/"
+    },
+    {
+     "title": "Text to Image leaderboard",
+     "by": "Artificial Analysis",
+     "url": "https://artificialanalysis.ai/image/leaderboard/text-to-image"
+    },
+    {
+     "title": "Figma release notes (Generate multiple images from a single prompt, 18 Nov 2026)",
+     "by": "Figma",
+     "url": "https://www.figma.com/release-notes/"
+    }
+   ]
+  },
   {
    "slug": "design-agent-taste-in-context-rules-in-code",
    "url": "https://ui.incidental.site/blog/design-agent-taste-in-context-rules-in-code/",
