@@ -1,6 +1,6 @@
 {
  "generated": "2026-11-27",
- "count": 5236,
+ "count": 5241,
  "items": [
   {
    "id": "ued-transitions-dev-craft",
@@ -197533,6 +197533,249 @@
    },
    "pub": "2026-11-27",
    "added": "2026-11-27"
+  },
+  {
+   "id": "rd-e9pm41m-portfolio-timeline-with-previews",
+   "name": "Portfolio Timeline with Previews",
+   "url": "https://x.com/brinjalmafia/status/2120192179184476178",
+   "note": "A horizontal portfolio timeline where hovering project nodes reveals photo preview cards inline, with selected entries highlighted in blue against a minimal white canvas.",
+   "noteEn": "A horizontal portfolio timeline where hovering project nodes reveals photo preview cards inline, with selected entries highlighted in blue against a minimal white canvas.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@brinjalmafia",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/e9pm41m-portfolio-timeline-with-previews",
+   "rdkind": "Design",
+   "rdcat": "Interface",
+   "rdstyle": [
+    "Minimal",
+    "Light"
+   ],
+   "author": {
+    "name": "Tejas Nishad",
+    "handle": "@brinjalmafia",
+    "url": "https://x.com/brinjalmafia"
+   },
+   "x_post": "https://x.com/brinjalmafia/status/2120192179184476178",
+   "xsrc": {
+    "post": "https://x.com/brinjalmafia/status/2120192179184476178",
+    "author": "@brinjalmafia",
+    "likes": 6,
+    "bookmarks": 1,
+    "reposts": 1,
+    "impressions": 153,
+    "date": "2026-11-10"
+   },
+   "pub": "2026-11-27",
+   "added": "2026-11-27"
+  },
+  {
+   "id": "rd-feoejhl-blendmodemultiply-poster-series",
+   "name": "BlendModeMultiply Poster Series",
+   "url": "https://x.com/brinjalmafia/status/2122005321904431401",
+   "note": "A ten-piece showcase of experimental graphic posters mixing distressed photography, dense system typography, duotone treatments, and maximalist collage across dark and vibrant palettes.",
+   "noteEn": "A ten-piece showcase of experimental graphic posters mixing distressed photography, dense system typography, duotone treatments, and maximalist collage across dark and vibrant palettes.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@brinjalmafia",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/feoejhl-blendmodemultiply-poster-series",
+   "rdkind": "Design",
+   "rdcat": "Posters",
+   "rdstyle": [
+    "Typographic",
+    "Experimental",
+    "Textured",
+    "Dark",
+    "Vibrant"
+   ],
+   "author": {
+    "name": "Tejas Nishad",
+    "handle": "@brinjalmafia",
+    "url": "https://x.com/brinjalmafia"
+   },
+   "x_post": "https://x.com/brinjalmafia/status/2122005321904431401",
+   "xsrc": {
+    "post": "https://x.com/brinjalmafia/status/2122005321904431401",
+    "author": "@brinjalmafia",
+    "likes": 8,
+    "bookmarks": 4,
+    "reposts": 1,
+    "impressions": 729,
+    "date": "2026-11-15"
+   },
+   "pub": "2026-11-27",
+   "added": "2026-11-27"
+  },
+  {
+   "id": "rd-94slfma-claimed-waitlist-landing-page",
+   "name": "Claimed Waitlist Landing Page",
+   "url": "https://x.com/DenisJeliazkov/status/2123336005327663342",
+   "note": "Waitlist landing page for Claimed, a travel memory app, showing user pins traversing a 3D rendered city map as a camera slowly pans across the scene.",
+   "noteEn": "Waitlist landing page for Claimed, a travel memory app, showing user pins traversing a 3D rendered city map as a camera slowly pans across the scene.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@denisjeliazkov",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "3d"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/94slfma-claimed-waitlist-landing-page",
+   "rdkind": "Design",
+   "rdcat": "Web",
+   "rdstyle": [
+    "3D",
+    "Light"
+   ],
+   "author": {
+    "name": "Denislav Jeliazkov",
+    "handle": "@denisjeliazkov",
+    "url": "https://x.com/denisjeliazkov"
+   },
+   "x_post": "https://x.com/DenisJeliazkov/status/2123336005327663342",
+   "xsrc": {
+    "post": "https://x.com/DenisJeliazkov/status/2123336005327663342",
+    "author": "@DenisJeliazkov",
+    "likes": 242,
+    "bookmarks": 200,
+    "reposts": 9,
+    "impressions": 13229,
+    "date": "2026-11-19"
+   },
+   "pub": "2026-11-27",
+   "added": "2026-11-27"
+  },
+  {
+   "id": "rd-jxikl9m-agentic-toast-notifications",
+   "name": "Agentic Toast Notifications",
+   "url": "https://x.com/pitus_/status/2125619571705196849",
+   "note": "Animated toast notification components for agentic developer events, each with a custom mini data-viz icon that fills or animates to reflect CI status.",
+   "noteEn": "Animated toast notification components for agentic developer events, each with a custom mini data-viz icon that fills or animates to reflect CI status.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@pitus_",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/jxikl9m-agentic-toast-notifications",
+   "rdkind": "Design",
+   "rdcat": "Interface",
+   "rdstyle": [
+    "Minimal",
+    "Light"
+   ],
+   "author": {
+    "name": "Phil Pitus",
+    "handle": "@pitus_",
+    "url": "https://x.com/pitus_"
+   },
+   "x_post": "https://x.com/pitus_/status/2125619571705196849",
+   "xsrc": {
+    "post": "https://x.com/pitus_/status/2125619571705196849",
+    "author": "@pitus_",
+    "likes": 770,
+    "bookmarks": 667,
+    "reposts": 19,
+    "impressions": 25677,
+    "date": "2026-11-25"
+   },
+   "pub": "2026-11-27",
+   "added": "2026-11-27"
+  },
+  {
+   "id": "rd-kydn5g1-solutions-website-portfolio",
+   "name": ".solutions Website Portfolio",
+   "url": "https://x.com/iamerrormade/status/2126280581004587412",
+   "note": "A fashion e-commerce site shown inside a portfolio, featuring a circular grid catalog of streetwear items with smooth scroll and zoom transitions between views.",
+   "noteEn": "A fashion e-commerce site shown inside a portfolio, featuring a circular grid catalog of streetwear items with smooth scroll and zoom transitions between views.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@iamerrormade",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "layout"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/kydn5g1-solutions-website-portfolio",
+   "rdkind": "Design",
+   "rdcat": "Web",
+   "rdstyle": [
+    "Minimal",
+    "Light",
+    "Monochrome"
+   ],
+   "author": {
+    "name": "Viktor T.",
+    "handle": "@iamerrormade",
+    "url": "https://x.com/iamerrormade"
+   },
+   "x_post": "https://x.com/iamerrormade/status/2126280581004587412",
+   "xsrc": {
+    "post": "https://x.com/iamerrormade/status/2126280581004587412",
+    "author": "@iamerrormade",
+    "likes": 215,
+    "bookmarks": 154,
+    "reposts": 2,
+    "impressions": 4868,
+    "date": "2026-11-27"
+   },
+   "pub": "2026-11-27",
+   "added": "2026-11-27"
   }
  ],
  "guides": [
@@ -197735,5 +197978,5 @@
    ]
   }
  ],
- "updatedAt": "2026-11-27T10:05Z"
+ "updatedAt": "2026-11-27T22:17Z"
 }
