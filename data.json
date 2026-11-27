@@ -1,6 +1,6 @@
 {
  "generated": "2026-11-27",
- "count": 5229,
+ "count": 5236,
  "items": [
   {
    "id": "ued-transitions-dev-craft",
@@ -197193,6 +197193,346 @@
    },
    "pub": "2026-11-25",
    "added": "2026-11-26"
+  },
+  {
+   "id": "rd-a430lxw-arcfront-ai-research-lab-branding",
+   "name": "Arcfront AI Research Lab Branding",
+   "url": "https://x.com/kyleanthony/status/2125946341616476506",
+   "note": "Full identity system for an AI research lab built around an arc mark rendered across gradient, halftone, glitch, and editorial layouts with a consistent technical annotation language.",
+   "noteEn": "Full identity system for an AI research lab built around an arc mark rendered across gradient, halftone, glitch, and editorial layouts with a consistent technical annotation language.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@kyleanthony",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "gradient"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/a430lxw-arcfront-ai-research-lab-branding",
+   "rdkind": "Design",
+   "rdcat": "Branding",
+   "rdstyle": [
+    "Typographic",
+    "Experimental",
+    "Textured",
+    "Vibrant",
+    "Gradient"
+   ],
+   "author": {
+    "name": "Kyle Anthony Miller",
+    "handle": "@kyleanthony",
+    "url": "https://x.com/kyleanthony"
+   },
+   "x_post": "https://x.com/kyleanthony/status/2125946341616476506",
+   "xsrc": {
+    "post": "https://x.com/kyleanthony/status/2125946341616476506",
+    "author": "@kyleanthony",
+    "likes": 455,
+    "bookmarks": 189,
+    "reposts": 17,
+    "impressions": 9556,
+    "date": "2026-11-26"
+   },
+   "pub": "2026-11-27",
+   "added": "2026-11-27"
+  },
+  {
+   "id": "rd-sas2qfu-holographic-depth-transition-shader",
+   "name": "Holographic Depth Shader",
+   "url": "https://x.com/Jaenam97/status/2125952982957048161",
+   "note": "A surrealist collage illustration liquifies and dissolves into swirling holographic fluid using a GLSL depth-transition shader, cycling between composed and abstract marbled states.",
+   "noteEn": "A surrealist collage illustration liquifies and dissolves into swirling holographic fluid using a GLSL depth-transition shader, cycling between composed and abstract marbled states.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@jaenam97",
+   "pricing": "free",
+   "tags": [],
+   "ct": [
+    "motion"
+   ],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/sas2qfu-holographic-depth-transition-shader",
+   "rdkind": "Design",
+   "rdcat": "Motion",
+   "rdstyle": [
+    "Abstract",
+    "Experimental",
+    "Dark"
+   ],
+   "author": {
+    "name": "Jae",
+    "handle": "@jaenam97",
+    "url": "https://x.com/jaenam97"
+   },
+   "x_post": "https://x.com/Jaenam97/status/2125952982957048161",
+   "xsrc": {
+    "post": "https://x.com/Jaenam97/status/2125952982957048161",
+    "author": "@Jaenam97",
+    "likes": 176,
+    "bookmarks": 66,
+    "reposts": 18,
+    "impressions": 4191,
+    "date": "2026-11-26"
+   },
+   "pub": "2026-11-27",
+   "added": "2026-11-27"
+  },
+  {
+   "id": "rd-xsy5aye-outcome-profile-cards",
+   "name": "Outcome Profile Cards",
+   "url": "https://x.com/jumeh/status/2125930002852315279",
+   "note": "Animated profile cards for Outcome cycle through Hype, Captain, and Closer roles, each with vivid illustrative art and live stats, tilting and rotating in 3D space.",
+   "noteEn": "Animated profile cards for Outcome cycle through Hype, Captain, and Closer roles, each with vivid illustrative art and live stats, tilting and rotating in 3D space.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@jumeh",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/xsy5aye-outcome-profile-cards",
+   "rdkind": "Design",
+   "rdcat": "Interface",
+   "rdstyle": [
+    "Illustrative",
+    "Dark",
+    "Vibrant"
+   ],
+   "author": {
+    "name": "Jumeh",
+    "handle": "@jumeh",
+    "url": "https://x.com/jumeh"
+   },
+   "x_post": "https://x.com/jumeh/status/2125930002852315279",
+   "xsrc": {
+    "post": "https://x.com/jumeh/status/2125930002852315279",
+    "author": "@jumeh",
+    "likes": 107,
+    "bookmarks": 74,
+    "reposts": 0,
+    "impressions": 3441,
+    "date": "2026-11-26"
+   },
+   "pub": "2026-11-27",
+   "added": "2026-11-27"
+  },
+  {
+   "id": "rd-cq4f1e0-plasma-wallet-send-flow",
+   "name": "Plasma Wallet Send Flow",
+   "url": "https://x.com/ssemenov/status/2125953159608578336",
+   "note": "Particle explosion animation plays across the screen as $2,500 is sent via swipe, with a glowing Dynamic Island logo confirming the transfer before the home balance updates.",
+   "noteEn": "Particle explosion animation plays across the screen as $2,500 is sent via swipe, with a glowing Dynamic Island logo confirming the transfer before the home balance updates.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@ssemenov",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/cq4f1e0-plasma-wallet-send-flow",
+   "rdkind": "Design",
+   "rdcat": "Interface",
+   "rdstyle": [
+    "Minimal",
+    "Light"
+   ],
+   "author": {
+    "name": "Sergei Semenov",
+    "handle": "@ssemenov",
+    "url": "https://x.com/ssemenov"
+   },
+   "x_post": "https://x.com/ssemenov/status/2125953159608578336",
+   "xsrc": {
+    "post": "https://x.com/ssemenov/status/2125953159608578336",
+    "author": "@ssemenov",
+    "likes": 398,
+    "bookmarks": 272,
+    "reposts": 19,
+    "impressions": 17447,
+    "date": "2026-11-26"
+   },
+   "pub": "2026-11-27",
+   "added": "2026-11-27"
+  },
+  {
+   "id": "rd-x8xr1s6-stock-gift-capsule",
+   "name": "Stock Gift Capsule",
+   "url": "https://x.com/builtbysasha/status/2126045409982177657",
+   "note": "Mobile app concept where a 3D glass capsule fills with branded stock coins one by one, then seals into a gift card revealing the total value and unlock date.",
+   "noteEn": "Mobile app concept where a 3D glass capsule fills with branded stock coins one by one, then seals into a gift card revealing the total value and unlock date.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@builtbysasha",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "3d",
+    "playful"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/x8xr1s6-stock-gift-capsule",
+   "rdkind": "Design",
+   "rdcat": "Interface",
+   "rdstyle": [
+    "3D",
+    "Playful",
+    "Light"
+   ],
+   "author": {
+    "name": "Sasha",
+    "handle": "@builtbysasha",
+    "url": "https://x.com/builtbysasha"
+   },
+   "x_post": "https://x.com/builtbysasha/status/2126045409982177657",
+   "xsrc": {
+    "post": "https://x.com/builtbysasha/status/2126045409982177657",
+    "author": "@builtbysasha",
+    "likes": 191,
+    "bookmarks": 123,
+    "reposts": 6,
+    "impressions": 4626,
+    "date": "2026-11-26"
+   },
+   "pub": "2026-11-27",
+   "added": "2026-11-27"
+  },
+  {
+   "id": "rd-ekdr2cw-woven-micrographics",
+   "name": "Woven Micrographics",
+   "url": "https://x.com/kraigdesigns/status/2125922810145235218",
+   "note": "A series of small graphic design objects for Woven, mixing barcodes, monospaced labels, and vivid painted textures into stamp-like compositions.",
+   "noteEn": "A series of small graphic design objects for Woven, mixing barcodes, monospaced labels, and vivid painted textures into stamp-like compositions.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@kraigdesigns",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/ekdr2cw-woven-micrographics",
+   "rdkind": "Design",
+   "rdcat": "Branding",
+   "rdstyle": [
+    "Typographic",
+    "Experimental",
+    "Vibrant",
+    "Light"
+   ],
+   "author": {
+    "name": "KraiG",
+    "handle": "@kraigdesigns",
+    "url": "https://x.com/kraigdesigns"
+   },
+   "x_post": "https://x.com/kraigdesigns/status/2125922810145235218",
+   "xsrc": {
+    "post": "https://x.com/kraigdesigns/status/2125922810145235218",
+    "author": "@kraigdesigns",
+    "likes": 490,
+    "bookmarks": 254,
+    "reposts": 9,
+    "impressions": 7489,
+    "date": "2026-11-26"
+   },
+   "pub": "2026-11-27",
+   "added": "2026-11-27"
+  },
+  {
+   "id": "rd-u8fpnli-bending-nav-indicator",
+   "name": "Bending Nav Indicator",
+   "url": "https://x.com/keviduk/status/2125963533821067730",
+   "note": "A sidebar table-of-contents component where a blue line bends outward into a curved bracket to mark the active section as you navigate between items.",
+   "noteEn": "A sidebar table-of-contents component where a blue line bends outward into a curved bracket to mark the active section as you navigate between items.",
+   "type": "inspiration",
+   "section": "设计灵感 · 原作",
+   "sectionTitle": "设计灵感 · 原作",
+   "sectionDesc": "",
+   "source": "@keviduk",
+   "pricing": "free",
+   "tags": [],
+   "ct": [],
+   "rt": [
+    "inspiration"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "origin": "X",
+   "discovered_via": "recent.design",
+   "via": "https://recent.design/i/u8fpnli-bending-nav-indicator",
+   "rdkind": "Design",
+   "rdcat": "Interface",
+   "rdstyle": [
+    "Minimal",
+    "Light"
+   ],
+   "author": {
+    "name": "Kevin",
+    "handle": "@keviduk",
+    "url": "https://x.com/keviduk"
+   },
+   "x_post": "https://x.com/keviduk/status/2125963533821067730",
+   "xsrc": {
+    "post": "https://x.com/keviduk/status/2125963533821067730",
+    "author": "@keviduk",
+    "likes": 215,
+    "bookmarks": 142,
+    "reposts": 5,
+    "impressions": 5953,
+    "date": "2026-11-26"
+   },
+   "pub": "2026-11-27",
+   "added": "2026-11-27"
   }
  ],
  "guides": [
@@ -197395,5 +197735,5 @@
    ]
   }
  ],
- "updatedAt": "2026-11-27T08:24Z"
+ "updatedAt": "2026-11-27T10:05Z"
 }
