@@ -1,5 +1,5 @@
 {
- "count": 63,
+ "count": 64,
  "rss": "https://ui.incidental.site/blog/rss.xml",
  "categories": {
   "tools": "Tools",
@@ -18,6 +18,108 @@
   "weekly": "Series: Weekly roundup"
  },
  "posts": [
+  {
+   "slug": "ai-speed-up-design-decisions-not-pixels",
+   "url": "https://ui.incidental.site/blog/ai-speed-up-design-decisions-not-pixels/",
+   "date": "2026-11-28",
+   "category": "workflow",
+   "series": null,
+   "featured": true,
+   "tags": [
+    "design decisions",
+    "Adam Wathan",
+    "reversible decisions",
+    "confirmation dialogs",
+    "decision log",
+    "agents"
+   ],
+   "title": {
+    "en": "AI made the code fast but not the design decisions: speed up the decision, not the pixels",
+    "zh": "AI 让写代码变快了，设计决策却没有：该提速的是决策，不是像素",
+    "zht": "AI 讓寫程式變快了，設計決策卻沒有：該提速的是決策，不是像素",
+    "ja": "AIでコードは速くなったが、デザインの判断は速くならない：速くすべきはピクセルではなく判断",
+    "ko": "AI로 코드는 빨라졌지만 디자인 결정은 그대로다: 픽셀이 아니라 결정을 빠르게 하라",
+    "ms": "AI mempercepat kod tetapi bukan keputusan reka bentuk: percepatkan keputusan, bukan piksel",
+    "vi": "AI làm code nhanh hơn nhưng quyết định thiết kế thì không: hãy tăng tốc quyết định, không phải pixel",
+    "fr": "L’IA a accéléré le code, pas les décisions de design : accélérez la décision, pas les pixels",
+    "es": "La IA aceleró el código, no las decisiones de diseño: acelera la decisión, no los píxeles",
+    "de": "KI hat den Code beschleunigt, nicht die Designentscheidungen: Beschleunigen Sie die Entscheidung, nicht die Pixel"
+   },
+   "summary": {
+    "en": "On 26 November Tailwind CSS creator Adam Wathan wrote that he still spends as long on every design decision as he did in 2021, and the post drew about 2,000 likes and 360 replies in two days. His examples were not pixel problems: what to show, dialog or page, save instantly or confirm, how to mark unsaved batch edits. AI cannot make those calls for you, but it can shorten the three slow parts of every decision: gathering evidence, making the options concrete and remembering what was decided. How to sort decisions by how hard they are to undo, his four questions worked through, a checklist and a prompt.",
+    "zh": "11 月 26 日，Tailwind CSS 作者 Adam Wathan 发帖说，他在每个设计决策上花的时间和 2021 年一样多；两天里这条帖子收获约 2000 个赞和 360 条回复。他举的例子都不是像素问题：这里该显示什么、用弹窗还是单独页面、按钮是立即保存还是先确认、批量编辑时怎么标出未保存的改动。AI 替不了你拍板，但能缩短每个决策里最慢的三段：收集证据、把选项做成实物、记住已经做过的决定。本文讲怎么按“能不能撤回”给决策分级，逐个拆解他的四个问题，并附检查清单和提示词。",
+    "zht": "11 月 26 日，Tailwind CSS 作者 Adam Wathan 發文說，他在每個設計決策上花的時間和 2021 年一樣多；兩天裡這則貼文收穫約 2000 個讚和 360 則回覆。他舉的例子都不是像素問題：這裡該顯示什麼、用對話框還是獨立頁面、按鈕是立即儲存還是先確認、批次編輯時怎麼標出未儲存的變更。AI 替不了你拍板，但能縮短每個決策裡最慢的三段：蒐集證據、把選項做成實物、記住已經做過的決定。本文講怎麼按「能不能撤回」替決策分級，逐一拆解他的四個問題，並附檢查清單和提示詞。",
+    "ja": "11月26日、Tailwind CSSの作者Adam Wathanは、デザインの判断一つひとつにかかる時間が2021年と変わらないと投稿し、2日間で約2,000のいいねと360件の返信を集めた。彼の例はピクセルの問題ではない。ここに何を表示するか、ダイアログか専用ページか、即時保存か確認を挟むか、一括編集の未保存の変更をどう示すか。AIが代わりに決めることはできないが、判断の遅い三つの部分、つまり根拠集め、選択肢の具体化、決めたことの記録は短くできる。取り消しやすさで判断を分ける方法、彼の四つの問いの検討、チェックリストとプロンプト付き。",
+    "ko": "11월 26일 Tailwind CSS를 만든 Adam Wathan은 디자인 결정 하나하나에 쓰는 시간이 2021년과 똑같다고 썼고, 이 글은 이틀 만에 약 2,000개의 좋아요와 360개의 답글을 받았다. 그가 든 예시는 픽셀 문제가 아니다. 여기에 무엇을 보여 줄지, 다이얼로그인지 별도 페이지인지, 바로 저장할지 확인 단계를 둘지, 일괄 편집에서 저장 안 된 변경을 어떻게 표시할지. AI가 대신 결정해 줄 수는 없지만, 모든 결정에서 느린 세 부분인 근거 수집, 선택지의 구체화, 결정 내용의 기록은 줄여 준다. 되돌리기 쉬운 정도로 결정을 나누는 법, 그의 네 가지 질문 풀이, 체크리스트와 프롬프트 포함.",
+    "ms": "Pada 26 November pencipta Tailwind CSS, Adam Wathan, menulis bahawa dia masih menghabiskan masa yang sama untuk setiap keputusan reka bentuk seperti pada 2021, dan hantaran itu meraih kira-kira 2,000 suka dan 360 balasan dalam dua hari. Contohnya bukan masalah piksel: apa yang patut dipaparkan, dialog atau halaman, simpan serta-merta atau minta pengesahan, cara menandakan suntingan pukal yang belum disimpan. AI tidak boleh membuat keputusan itu untuk anda, tetapi ia boleh memendekkan tiga bahagian yang perlahan dalam setiap keputusan: mengumpul bukti, menjadikan pilihan konkrit dan mengingati apa yang telah diputuskan. Cara menyusun keputusan mengikut betapa sukar ia dibatalkan, empat soalannya dihuraikan, senarai semak dan prompt.",
+    "vi": "Ngày 26/11, Adam Wathan, tác giả Tailwind CSS, viết rằng anh vẫn mất chừng ấy thời gian cho mỗi quyết định thiết kế như năm 2021, và bài đăng nhận khoảng 2.000 lượt thích cùng 360 phản hồi trong hai ngày. Các ví dụ của anh không phải vấn đề pixel: nên hiển thị gì, dùng hộp thoại hay trang riêng, lưu ngay hay hỏi xác nhận, đánh dấu các chỉnh sửa hàng loạt chưa lưu thế nào. AI không thể quyết thay bạn, nhưng có thể rút ngắn ba phần chậm nhất của mọi quyết định: thu thập bằng chứng, biến các phương án thành thứ cụ thể và ghi nhớ điều đã quyết. Cách phân loại quyết định theo mức khó hoàn tác, bốn câu hỏi của anh được phân tích, kèm checklist và prompt.",
+    "fr": "Le 26 novembre, Adam Wathan, créateur de Tailwind CSS, a écrit qu’il passe toujours autant de temps sur chaque décision de design qu’en 2021, et son message a reçu environ 2 000 j’aime et 360 réponses en deux jours. Ses exemples ne sont pas des problèmes de pixels : quoi afficher, boîte de dialogue ou page, enregistrer tout de suite ou confirmer, comment signaler des modifications groupées non enregistrées. L’IA ne peut pas trancher à votre place, mais elle peut raccourcir les trois étapes lentes de toute décision : réunir des éléments, rendre les options concrètes et garder la trace de ce qui a été décidé. Comment classer les décisions selon leur réversibilité, ses quatre questions passées en revue, une checklist et un prompt.",
+    "es": "El 26 de noviembre Adam Wathan, creador de Tailwind CSS, escribió que sigue dedicando a cada decisión de diseño el mismo tiempo que en 2021, y la publicación sumó unos 2.000 me gusta y 360 respuestas en dos días. Sus ejemplos no son problemas de píxeles: qué mostrar, diálogo o página, guardar al instante o pedir confirmación, cómo marcar ediciones en lote sin guardar. La IA no puede decidir por ti, pero sí acortar las tres partes lentas de cualquier decisión: reunir evidencia, concretar las opciones y recordar lo decidido. Cómo clasificar las decisiones según lo difícil que es deshacerlas, sus cuatro preguntas resueltas, una checklist y un prompt.",
+    "de": "Am 26. November schrieb Tailwind-CSS-Erfinder Adam Wathan, dass er für jede Designentscheidung noch genauso lange braucht wie 2021; der Beitrag bekam in zwei Tagen rund 2.000 Likes und 360 Antworten. Seine Beispiele sind keine Pixelprobleme: was hier angezeigt wird, Dialog oder eigene Seite, sofort speichern oder bestätigen, wie ungespeicherte Sammeländerungen markiert werden. KI kann diese Entscheidungen nicht für Sie treffen, aber sie kann die drei langsamen Teile jeder Entscheidung verkürzen: Belege sammeln, Optionen greifbar machen und festhalten, was entschieden wurde. Wie Sie Entscheidungen danach sortieren, wie schwer sie rückgängig zu machen sind, seine vier Fragen durchgearbeitet, eine Checkliste und ein Prompt."
+   },
+   "reading_minutes": {
+    "en": 6,
+    "zh": 7
+   },
+   "cover": "https://ui.incidental.site/blog/img/ai-speed-up-design-decisions-not-pixels-cover.webp",
+   "references": [
+    {
+     "title": "“I still haven’t figured out how to use AI to meaningfully accelerate design work”",
+     "by": "Adam Wathan · X",
+     "url": "https://x.com/adamwathan/status/2125974928327369009"
+    },
+    {
+     "title": "Examples of the design decisions he means",
+     "by": "Adam Wathan · X",
+     "url": "https://x.com/adamwathan/status/2126323078254694755"
+    },
+    {
+     "title": "AI works best as a support when it comes to design",
+     "by": "Emil Kowalski · X",
+     "url": "https://x.com/emilkowalski/status/2126324277154652350"
+    },
+    {
+     "title": "Reply: “it appears so slow compared to how quickly we can move on other things”",
+     "by": "Adam Wathan · X",
+     "url": "https://x.com/adamwathan/status/2126325200249876820"
+    },
+    {
+     "title": "Where designers’ frustration with AI usually comes from",
+     "by": "Alex Barashkov · X",
+     "url": "https://x.com/alex_barashkov/status/2126000568820724122"
+    },
+    {
+     "title": "Lovable changelog (Lovable keeps working while you answer its questions, 19 Nov 2026)",
+     "by": "Lovable",
+     "url": "https://docs.lovable.dev/changelog"
+    },
+    {
+     "title": "2016 Letter to Shareholders (two-way doors, decisions with about 70% of the information)",
+     "by": "Jeff Bezos · Amazon",
+     "url": "https://www.aboutamazon.com/news/company-news/2016-letter-to-shareholders"
+    },
+    {
+     "title": "Confirmation Dialogs Can Prevent User Errors — If Not Overused",
+     "by": "Jakob Nielsen · Nielsen Norman Group",
+     "url": "https://www.nngroup.com/articles/confirmation-dialog/"
+    },
+    {
+     "title": "Modal & Nonmodal Dialogs: When (& When Not) to Use Them",
+     "by": "Nielsen Norman Group",
+     "url": "https://www.nngroup.com/articles/modal-nonmodal-dialog/"
+    },
+    {
+     "title": "Check answers pattern",
+     "by": "GOV.UK Design System",
+     "url": "https://design-system.service.gov.uk/patterns/check-answers/"
+    },
+    {
+     "title": "Understanding SC 1.4.1: Use of Color",
+     "by": "W3C WAI",
+     "url": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color.html"
+    }
+   ]
+  },
   {
    "slug": "ui-mockup-image-models-reference-not-layout",
    "url": "https://ui.incidental.site/blog/ui-mockup-image-models-reference-not-layout/",
