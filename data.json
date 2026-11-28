@@ -1,6 +1,6 @@
 {
- "generated": "2026-11-27",
- "count": 5241,
+ "generated": "2026-11-28",
+ "count": 5242,
  "items": [
   {
    "id": "ued-transitions-dev-craft",
@@ -197776,6 +197776,35 @@
    },
    "pub": "2026-11-27",
    "added": "2026-11-27"
+  },
+  {
+   "id": "gh-expokit-expokit",
+   "name": "ExpoKit",
+   "url": "https://expokit.in",
+   "note": "GitHub 新晋 UI 仓库：Copy-paste UI components, screens and charts for Expo.（GitHub ★151，MIT 许可，仓库 ExpoKit/ExpoKit）",
+   "type": "library",
+   "section": "每日新收录",
+   "sectionTitle": "开源组件库与组件注册表 · 补全",
+   "sectionDesc": "",
+   "source": "GitHub",
+   "pricing": "free",
+   "tags": [
+    "React",
+    "开源",
+    "自动收录"
+   ],
+   "ct": [
+    "motion",
+    "chart"
+   ],
+   "rt": [
+    "component-library"
+   ],
+   "vs": [
+    "minimal"
+   ],
+   "noteEn": "New GitHub UI repo: Copy-paste UI components, screens and charts for Expo. (★151, MIT, ExpoKit/ExpoKit)",
+   "added": "2026-11-28"
   }
  ],
  "guides": [
@@ -197978,5 +198007,5 @@
    ]
   }
  ],
- "updatedAt": "2026-11-27T22:17Z"
+ "updatedAt": "2026-11-28T07:44Z"
 }
