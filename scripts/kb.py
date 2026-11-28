@@ -99,6 +99,23 @@ def build(g):
                 if (MEDIA.get(i['id']) or {}).get('img'):
                     picked.append(i); seen.add(i['id'])
                 if len(picked) >= nmin: break
+        # Prefer real covers in the block (letter placeholders were the weak part of the first pass).
+        def _has_img(i):
+            return bool((MEDIA.get(i['id']) or {}).get('img'))
+        extras = [i for i in ITEMS if i['id'] not in seen and _has_img(i)]
+        filled=[]
+        for i in picked:
+            if _has_img(i) or not extras:
+                filled.append(i)
+            else:
+                nxt=extras.pop(0); filled.append(nxt); seen.add(nxt['id'])
+        picked=filled
+        # Featured tile = first card; lead with a cover when we have one.
+        if picked and not _has_img(picked[0]):
+            for j,i in enumerate(picked[1:],1):
+                if _has_img(i):
+                    picked[0], picked[j] = picked[j], picked[0]
+                    break
         return picked[:nmax]
     def library_href(root, article_tags, picked):
         from collections import Counter
@@ -132,23 +149,44 @@ def build(g):
             return ''
         href = library_href(root, e.get('tags') or [], picked)
         cards = []
-        for i in picked:
+        for n, i in enumerate(picked):
             mid = MEDIA.get(i['id']) or {}
             img = mid.get('img') or ''
             if img:
-                thumb = f'<img src="{root}{E(img)}" alt="" loading="lazy">'
+                thumb = f'<img src="{root}{E(img)}" alt="" loading="lazy" width="640" height="400">'
             else:
                 seed = (i.get('name_en') or i.get('name') or '?')
                 seed = g['_strip_cjk'](seed) or seed
                 initials = E((seed.split('/')[-1][:2]) or '?')
                 thumb = f'<span class="rm">{initials}</span>'
-            cards.append(f'<button type="button" data-open="{E(i["id"])}" data-evt="card_click" data-evt-from="kb_related" data-evt-id="{E(i["id"])}">{thumb}<b>{card_title(i)}</b></button>')
+            feat = ' is-feature' if n == 0 else ''
+            cards.append(
+                f'<button type="button" class="kb-rel-card{feat}" data-open="{E(i["id"])}" data-evt="card_click" data-evt-from="kb_related" data-evt-id="{E(i["id"])}">'
+                f'<span class="kb-rel-media">{thumb}</span>'
+                f'<span class="kb-rel-cap"><b>{card_title(i)}</b></span>'
+                f'</button>'
+            )
+        count = f'{len(ITEMS):,}'
+        cta = (
+            f'<a class="kb-rel-cta" href="{E(href)}" data-evt="cta_click" data-evt-from="kb_open_library">'
+            f'{ml("kb_open_library")}<span class="kb-rel-n">{count}</span></a>'
+        )
+        # Pointer spotlight is scoped to this block (React Bits Spotlight Card language; see DESIGN_NOTES).
+        spot = (
+            '<script>(function(){var r=document.getElementById("kb-related");'
+            'if(!r||matchMedia("(pointer:coarse)").matches)return;'
+            'var raf=0,ev=null;r.addEventListener("pointermove",function(e){'
+            'ev=e;if(raf)return;raf=requestAnimationFrame(function(){raf=0;'
+            'var el=ev.target.closest(".kb-rel-card");if(!el||!r.contains(el))return;'
+            'var b=el.getBoundingClientRect();'
+            'el.style.setProperty("--mx",(ev.clientX-b.left)+"px");'
+            'el.style.setProperty("--my",(ev.clientY-b.top)+"px")})},{passive:true})})();</script>'
+        )
         return (
             f'<section class="refs" id="kb-related">'
-            f'<h2>{ml("kb_related")}</h2>'
-            f'<p>{ml("kb_related_lead")}</p>'
-            f'<div class="rel">{"".join(cards)}</div>'
-            f'<div class="acts"><a class="btn" href="{E(href)}" data-evt="cta_click" data-evt-from="kb_open_library">{ml("kb_open_library")}</a></div>'
+            f'<div class="kb-rel-head"><div class="kb-rel-copy"><h2>{ml("kb_related")}</h2><p>{ml("kb_related_lead")}</p></div>{cta}</div>'
+            f'<div class="kb-rel-grid" data-n="{len(picked)}">{"".join(cards)}</div>'
+            f'{spot}'
             f'</section>'
         )
     def note_sheet_and_loader(root='../../../'):
@@ -259,7 +297,7 @@ def build(g):
         page = head(f"{e['title']} · UI Hub encyclopedia", e['summary'][:160] or e['title'], p+'/', ld, '../../../')
         page_css = css
         if is_note:
-            page = page.replace('<style>', '<link rel="stylesheet" href="../../../styles.css?v=15"><style>', 1)
+            page = page.replace('<style>', '<link rel="stylesheet" href="../../../styles.css?v=15"><link rel="stylesheet" href="../../../kb-related.css?v=3"><style>', 1)
             page_css = css.replace('</style>', 'body{padding-bottom:0}article.md a{text-decoration:underline}</style>', 1)
         page += page_css + copyjs + f"""<body>{topbar('../../../','kb')}<article class="md"><p class="meta"><a href="../../">← {ml('kb')}</a> · {ml('ty_'+e['type'])} · {' · '.join(E(t) for t in e['tags'])}</p>
 {h1}<div class="acts kba">{postlink}<a class="btn" href="../{e['slug']}.md">{ml('kb_raw')}</a><button class="btn" type="button" onclick="fetch('../{e['slug']}.md').then(r=>r.text()).then(t=>cpx(t,this))">{ml('kb_copy')}</button></div>{note}{rest}{related}</article>{foot('../../../')}{SCRIPT}{note_sheet_and_loader() if is_note else ''}</body></html>"""

@@ -1,0 +1,94 @@
+/* Scoped to #kb-related only.
+   Visual sources (see /workspace/reports/d1127/kb-related/DESIGN_NOTES.md):
+   - Primary: React Bits Masonry — previews/cs/cs2-reactbits-dev--layout--components-masonry--v0.webp
+   - Comp: React Bits Spotlight Card — previews/cs/cs2-reactbits-dev--card--components-spotlight-card--v0.webp
+   - Comp: Transitions.dev CTA + count — previews/site/transitions-dev.webp
+   Tokens and type stay with the article page (Instrument Serif + Geist, --ink/--surf/--acc). */
+#kb-related .kb-rel-head{
+  display:flex;align-items:flex-end;justify-content:space-between;
+  gap:14px 20px;flex-wrap:wrap;margin:0 0 14px
+}
+#kb-related h2{margin:0 0 6px;font:400 26px/1.2 var(--serif);letter-spacing:-.01em}
+#kb-related .kb-rel-copy p{margin:0;color:var(--ink2);font-size:13.5px;line-height:1.5;max-width:44ch}
+#kb-related .kb-rel-cta{
+  display:inline-flex;align-items:center;gap:0;
+  height:36px;padding:0 14px 0 16px;border-radius:999px;
+  background:var(--ink);color:var(--bg);
+  font:500 13.5px/1 var(--sans);text-decoration:none!important;white-space:nowrap;flex:none
+}
+#kb-related .kb-rel-cta:hover{color:var(--bg);filter:brightness(1.08)}
+#kb-related .kb-rel-n{
+  margin-left:10px;padding-left:10px;
+  border-left:1px solid color-mix(in srgb,var(--bg) 30%,transparent);
+  font-weight:500;font-variant-numeric:tabular-nums;opacity:.72
+}
+#kb-related .kb-rel-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  grid-auto-rows:minmax(96px,auto);
+  gap:8px
+}
+#kb-related .kb-rel-card{
+  position:relative;display:block;min-width:0;height:100%;
+  border-radius:var(--r2,12px);overflow:hidden;isolation:isolate;
+  background:var(--mat);box-shadow:0 0 0 1px var(--line);text-align:left;cursor:pointer;
+  transition:transform .22s var(--ease,cubic-bezier(.2,.7,.2,1)),box-shadow .22s var(--ease,cubic-bezier(.2,.7,.2,1))
+}
+#kb-related .kb-rel-card.is-feature{grid-column:1 / 3;grid-row:1 / 3}
+#kb-related .kb-rel-grid[data-n="4"]{grid-template-columns:repeat(2,minmax(0,1fr))}
+#kb-related .kb-rel-grid[data-n="4"] .kb-rel-card.is-feature{grid-column:1 / 3;grid-row:auto;min-height:200px}
+#kb-related .kb-rel-media{position:relative;display:block;width:100%;height:100%;min-height:108px;aspect-ratio:16/10;background:var(--mat)}
+#kb-related .kb-rel-card.is-feature .kb-rel-media{aspect-ratio:auto;height:100%;min-height:100%}
+#kb-related .kb-rel-media img{
+  position:absolute;inset:0;width:100%;height:100%;
+  object-fit:cover;object-position:top;display:block
+}
+#kb-related .kb-rel-media .rm{
+  position:absolute;inset:0;display:grid;place-items:center;
+  font:400 28px var(--serif);color:var(--ink3);background:var(--mat)
+}
+#kb-related .kb-rel-cap{
+  position:absolute;left:0;right:0;bottom:0;z-index:1;
+  padding:28px 10px 10px;
+  background:linear-gradient(180deg,transparent,color-mix(in srgb,var(--bg) 78%,transparent) 50%,color-mix(in srgb,var(--bg) 94%,transparent) 100%);
+  pointer-events:none
+}
+#kb-related .kb-rel-cap b{
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;
+  font:500 12.5px/1.3 var(--sans);color:var(--ink)
+}
+#kb-related .kb-rel-card.is-feature .kb-rel-cap{padding:40px 14px 12px}
+#kb-related .kb-rel-card.is-feature .kb-rel-cap b{font-size:16px}
+#kb-related .kb-rel-card::after{
+  content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;z-index:2;
+  background:radial-gradient(220px circle at var(--mx,50%) var(--my,0%),color-mix(in srgb,var(--ink) 16%,transparent),transparent 65%);
+  opacity:0;transition:opacity .3s
+}
+#kb-related .kb-rel-card:hover{
+  transform:translateY(-3px);z-index:1;
+  box-shadow:0 0 0 1px var(--line2),0 18px 40px -28px rgba(0,0,0,.45)
+}
+#kb-related .kb-rel-card:hover::after{opacity:1}
+#kb-related .kb-rel-card:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+@media(max-width:599px){
+  #kb-related .kb-rel-head{align-items:stretch}
+  #kb-related .kb-rel-cta{width:100%;justify-content:center;order:1}
+  #kb-related .kb-rel-grid{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:minmax(88px,auto)}
+  #kb-related .kb-rel-card.is-feature,
+  #kb-related .kb-rel-grid[data-n="4"] .kb-rel-card.is-feature{grid-column:1 / 3;grid-row:auto;min-height:200px}
+  #kb-related .kb-rel-card.is-feature .kb-rel-media{min-height:200px}
+  /* After the featured row, an odd leftover tile should span the row (no orphan cell). */
+  #kb-related .kb-rel-grid[data-n="4"] .kb-rel-card:last-child,
+  #kb-related .kb-rel-grid[data-n="6"] .kb-rel-card:last-child{grid-column:1 / 3;min-height:0}
+  #kb-related .kb-rel-grid[data-n="4"] .kb-rel-card:last-child .kb-rel-media,
+  #kb-related .kb-rel-grid[data-n="6"] .kb-rel-card:last-child .kb-rel-media{aspect-ratio:2/1;min-height:120px;max-height:168px}
+}
+@media(pointer:coarse){
+  #kb-related .kb-rel-card:hover{transform:none}
+  #kb-related .kb-rel-card::after{display:none}
+}
+@media(prefers-reduced-motion:reduce){
+  #kb-related .kb-rel-card,#kb-related .kb-rel-card::after{transition:none}
+  #kb-related .kb-rel-card:hover{transform:none}
+  #kb-related .kb-rel-card:hover::after{opacity:0}
+}
