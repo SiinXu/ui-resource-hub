@@ -13,6 +13,208 @@ DIGEST_UP = {'web-design-guidelines':'https://github.com/vercel-labs/web-interfa
 PRIVATE = {'workflow-ship-change','iterate-until-verified','secrets-management','deploy-to-vercel'}  # internal/ops, not published
 def build(g):
     E, w, ml, U, BASE, ITEMS, UPD, ROOT, head, topbar, foot, SCRIPT, POSTS = [g[k] for k in 'E w ml U BASE ITEMS UPD ROOT head topbar foot SCRIPT POSTS'.split()]
+    # Related resource cards on /kb/note pages reuse the homepage sheet's `.rel` card
+    # (app.js related() markup + styles.css `.rel`) and the existing centered modal /
+    # mobile bottom sheet (`#sheet` `#scrim` `#toast` in index.html + styles.css).
+    # Section chrome is the shared extras `.refs` rule (scripts/build_extras.py).
+    # The library CTA uses the existing kb `.btn` class in this file.
+    # styles.css is linked before extras/kb CSS so typography stays with the article
+    # stylesheet; the two declarations appended to `css` only cancel homepage leftovers
+    # (styles.css `body{padding-bottom:64px}` and `a{text-decoration:none}`).
+    _HAN = re.compile(r'[\u3400-\u9fff\uf900-\ufaff]')
+    MORE = ['motion-primitives-com', 'www-beautifului-dev', 'www-shadcnblocks-com', 'reactbits-dev-animations-metallic-paint']
+    SKIP_TAGS = {'blog', 'comparison'}
+    TAG_CT = {'motion':'motion','motion design':'motion','lottie':'motion','gestures':'motion','animation':'motion','remotion':'motion','hyperframes':'motion','button':'button','card':'card','chat':'chat','input':'input','dialog':'dialog','table':'table','form':'form','nav':'nav','tabs':'tabs','icon':'icon','chart':'chart','carousel':'carousel','background':'background'}
+    TAG_RT = {'motion':'motion','motion design':'motion','skill':'skill','skills':'skill','agent skills':'skill','mcp':'mcp','webmcp':'mcp','template':'template','tutorial':'tutorial','a11y':'a11y','accessibility':'a11y','accessible':'a11y','anti-slop':'anti-slop','design system':'design-system','design systems':'design-system','design-system':'design-system','tokens':'tokens-spec','tokens-spec':'tokens-spec','shadcn':'component-library'}
+    def _load_media():
+        fp = os.path.join(ROOT, 'media.js')
+        raw = open(fp, encoding='utf-8').read()
+        i = raw.find('{'); j = raw.rfind('}')
+        try:
+            return json.loads(raw[i:j+1])
+        except Exception:
+            return {}
+    MEDIA = _load_media()
+    def _tok(s):
+        return (s or '').lower().strip()
+    WEAK_PARTS = {'skill','skills','agent','agents','design','ui','app','code','tools','names','licences','licenses','kit','kits'}
+    def _expand_tags(article_tags):
+        out=[]
+        for raw in article_tags or []:
+            t=_tok(raw)
+            if not t or t in SKIP_TAGS: continue
+            out.append(t)
+            for p in re.split(r'[\s/_-]+', t):
+                if p and p not in SKIP_TAGS and p not in WEAK_PARTS and len(p)>=3 and p not in out:
+                    out.append(p)
+        return out
+    def _is_weak_tag(t):
+        words=[w for w in re.split(r'[\s/_-]+', t) if w]
+        return bool(words) and all(w in WEAK_PARTS or len(w)<3 for w in words)
+    def _item_tokens(i):
+        toks = set()
+        for k in ('tags', 'ct', 'rt', 'vs'):
+            for x in i.get(k) or []:
+                toks.add(_tok(x))
+        if i.get('type'):
+            toks.add(_tok(i['type']))
+        return toks
+    def pick_related_resources(article_tags, nmin=4, nmax=6):
+        tags = _expand_tags(article_tags)
+        want = set(tags)
+        for t in tags:
+            if TAG_CT.get(t): want.add(TAG_CT[t])
+            if TAG_RT.get(t) and not _is_weak_tag(t): want.add(TAG_RT[t])
+        scored = []
+        by = {}
+        for i in ITEMS:
+            by[i['id']] = i
+            toks = _item_tokens(i)
+            overlap = len(want & toks)
+            name = (i.get('name_en') or i.get('name') or '').lower()
+            for t in tags:
+                if len(t) >= 4 and t in name:
+                    overlap += 1
+            if overlap <= 0:
+                continue
+            has_img = 1 if (MEDIA.get(i['id']) or {}).get('img') else 0
+            score = overlap * 10 + has_img * 3 + (1 if i.get('type') in ('library', 'style', 'component', 'effect', 'skill') else 0)
+            scored.append((score, has_img, i))
+        scored.sort(key=lambda x: (-x[0], -x[1], x[2]['id']))
+        picked, seen = [], set()
+        for score, has_img, i in scored:
+            if i['id'] in seen: continue
+            picked.append(i); seen.add(i['id'])
+            if len(picked) >= nmax: break
+        if len(picked) < nmin:
+            for mid in MORE:
+                if mid in seen: continue
+                it = by.get(mid)
+                if it:
+                    picked.append(it); seen.add(mid)
+                if len(picked) >= nmin: break
+        if len(picked) < nmin:
+            for i in ITEMS:
+                if i['id'] in seen: continue
+                if (MEDIA.get(i['id']) or {}).get('img'):
+                    picked.append(i); seen.add(i['id'])
+                if len(picked) >= nmin: break
+        # Prefer real covers in the block (letter placeholders were the weak part of the first pass).
+        def _has_img(i):
+            return bool((MEDIA.get(i['id']) or {}).get('img'))
+        extras = [i for i in ITEMS if i['id'] not in seen and _has_img(i)]
+        filled=[]
+        for i in picked:
+            if _has_img(i) or not extras:
+                filled.append(i)
+            else:
+                nxt=extras.pop(0); filled.append(nxt); seen.add(nxt['id'])
+        picked=filled
+        # Featured tile = first card; lead with a cover when we have one.
+        if picked and not _has_img(picked[0]):
+            for j,i in enumerate(picked[1:],1):
+                if _has_img(i):
+                    picked[0], picked[j] = picked[j], picked[0]
+                    break
+        return picked[:nmax]
+    def library_href(root, article_tags, picked):
+        from collections import Counter
+        tags = _expand_tags(article_tags)
+        mapped_ct = [TAG_CT[t] for t in tags if TAG_CT.get(t)]
+        mapped_rt = [TAG_RT[t] for t in tags if TAG_RT.get(t)]
+        if mapped_ct:
+            return root + '?ct=' + Counter(mapped_ct).most_common(1)[0][0]
+        if mapped_rt:
+            return root + '?rt=' + Counter(mapped_rt).most_common(1)[0][0]
+        c, r = Counter(), Counter()
+        for i in picked:
+            for ct in i.get('ct') or []: c[ct] += 1
+            for rt in i.get('rt') or []: r[rt] += 1
+        for ct, n in c.most_common():
+            if ct != 'layout' and n >= 2:
+                return root + '?ct=' + ct
+        for rt, n in r.most_common():
+            if rt not in ('inspiration', 'component-demo') and n >= 2:
+                return root + '?rt=' + rt
+        return root
+    def card_title(i):
+        zh_name = i.get('name') or ''
+        en = g['en_name'](i) or i.get('name_en') or g['_strip_cjk'](zh_name) or zh_name
+        # Chinese name only on zh-Hans / zh-Hant; every other locale gets the English / stripped name (no Han).
+        zh = zh_name if _HAN.search(zh_name) else en
+        return ml({'zh': zh, 'zht': zh, 'en': en, 'ja': en, 'ko': en, 'ms': en, 'vi': en, 'fr': en, 'es': en, 'de': en}, 'span')
+    def related_section(e, root='../../../'):
+        picked = pick_related_resources(e.get('tags') or [])
+        if not picked:
+            return ''
+        href = library_href(root, e.get('tags') or [], picked)
+        cards = []
+        for n, i in enumerate(picked):
+            mid = MEDIA.get(i['id']) or {}
+            img = mid.get('img') or ''
+            if img:
+                thumb = f'<img src="{root}{E(img)}" alt="" loading="lazy" width="640" height="400">'
+            else:
+                seed = (i.get('name_en') or i.get('name') or '?')
+                seed = g['_strip_cjk'](seed) or seed
+                initials = E((seed.split('/')[-1][:2]) or '?')
+                thumb = f'<span class="rm">{initials}</span>'
+            feat = ' is-feature' if n == 0 else ''
+            cards.append(
+                f'<button type="button" class="kb-rel-card{feat}" data-open="{E(i["id"])}" data-evt="card_click" data-evt-from="kb_related" data-evt-id="{E(i["id"])}">'
+                f'<span class="kb-rel-media">{thumb}</span>'
+                f'<span class="kb-rel-cap"><b>{card_title(i)}</b></span>'
+                f'</button>'
+            )
+        count = f'{len(ITEMS):,}'
+        cta = (
+            f'<a class="kb-rel-cta" href="{E(href)}" data-evt="cta_click" data-evt-from="kb_open_library">'
+            f'{ml("kb_open_library")}<span class="kb-rel-n">{count}</span></a>'
+        )
+        # Pointer spotlight is scoped to this block (React Bits Spotlight Card language; see DESIGN_NOTES).
+        spot = (
+            '<script>(function(){var r=document.getElementById("kb-related");'
+            'if(!r||matchMedia("(pointer:coarse)").matches)return;'
+            'var raf=0,ev=null;r.addEventListener("pointermove",function(e){'
+            'ev=e;if(raf)return;raf=requestAnimationFrame(function(){raf=0;'
+            'var el=ev.target.closest(".kb-rel-card");if(!el||!r.contains(el))return;'
+            'var b=el.getBoundingClientRect();'
+            'el.style.setProperty("--mx",(ev.clientX-b.left)+"px");'
+            'el.style.setProperty("--my",(ev.clientY-b.top)+"px")})},{passive:true})})();</script>'
+        )
+        return (
+            f'<section class="refs" id="kb-related">'
+            f'<div class="kb-rel-head"><div class="kb-rel-copy"><h2>{ml("kb_related")}</h2><p>{ml("kb_related_lead")}</p></div>{cta}</div>'
+            f'<div class="kb-rel-grid" data-n="{len(picked)}">{"".join(cards)}</div>'
+            f'{spot}'
+            f'</section>'
+        )
+    def note_sheet_and_loader(root='../../../'):
+        idx = open(os.path.join(ROOT, 'index.html'), encoding='utf-8').read()
+        m = re.search(r'window\.__uhV=/\*UHV\*/(\{.*?})/\*/UHV\*/', idx)
+        uhv = m.group(1) if m else '{}'
+        # Same nodes as index.html (sheet / scrim / toast / play / menu). Clicks stay on
+        # the article and open the existing centered modal / bottom sheet — never a drawer.
+        return (
+            f'<div class="scrim" id="scrim" hidden></div>'
+            f'<aside class="sheet" id="sheet" role="dialog" aria-modal="true" aria-hidden="true"></aside>'
+            f'<div class="play" id="play" hidden></div>'
+            f'<div class="mscrim" id="menuScrim" hidden></div>'
+            f'<div class="menu" id="menu" role="menu" hidden></div>'
+            f'<div class="toast" id="toast"></div>'
+            f'<script>window.__uhEmbed=true;window.__uhRoot={json.dumps(root)};'
+            f'(function(){{var V=window.__uhV={uhv};'
+            f'function vu(f,k){{return (window.__uhRoot||"")+f+"?h="+(V[k]||"0")}}'
+            f'var L=document.documentElement.lang||"en";L={{"zh-Hans":"zh-CN","zh-Hant":"zh-TW"}}[L]||L;window.__uhL=L;'
+            f'var EN=[vu("notes.js","notes"),vu("names_en.js","en")];'
+            f'window.__uhEN=function(cb){{if(window.UI_EN&&window.UI_NOTES)return cb();var n=0;EN.forEach(function(u){{var e=document.createElement("script");e.src=u;e.async=true;e.onload=e.onerror=function(){{if(++n===EN.length)cb()}};document.body.appendChild(e)}})}};'
+            f'function add(u){{var e=document.createElement("script");e.src=u;e.async=false;document.body.appendChild(e)}}'
+            f'var q=[vu("split/i18n-"+L+".js","i18n"),(window.__uhRoot||"")+"app.js?v=27"];'
+            f'function go(){{q.forEach(add)}}'
+            f'if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",go);else go();'
+            f'}})();</script>'
+        )
+
     import sys; sys.path.insert(0, os.path.join(ROOT,'kb_src')); from specs import SPECS, NOTES
     src = os.path.join(ROOT,'kb_src','skills'); os.makedirs(src, exist_ok=True)
     if os.path.isdir(SK_SRC):
@@ -67,7 +269,10 @@ def build(g):
       'ty_skill':dict(zh='Skill',zht='Skill',en='Skill',ja='スキル',ko='스킬',ms='Kemahiran',vi='Skill',fr='Skill',es='Skill',de='Skill'),
       'ty_spec':dict(zh='设计规范',zht='設計規範',en='Spec',ja='仕様',ko='규범',ms='Spesifikasi',vi='Quy chuẩn',fr='Spécification',es='Especificación',de='Spezifikation'),
       'ty_note':dict(zh='笔记',zht='筆記',en='Note',ja='ノート',ko='노트',ms='Nota',vi='Ghi chú',fr='Note',es='Nota',de='Notiz'),
-      'kb_all':dict(zh='全部',zht='全部',en='All',ja='すべて',ko='전체',ms='Semua',vi='Tất cả',fr='Tout',es='Todo',de='Alle')})
+      'kb_all':dict(zh='全部',zht='全部',en='All',ja='すべて',ko='전체',ms='Semua',vi='Tất cả',fr='Tout',es='Todo',de='Alle'),
+      'kb_related':dict(zh='相关资源',zht='相關資源',en='Related resources',ja='関連リソース',ko='관련 리소스',ms='Sumber berkaitan',vi='Tài nguyên liên quan',fr='Ressources similaires',es='Recursos relacionados',de='Ähnliche Ressourcen'),
+      'kb_related_lead':dict(zh='与本篇主题相近的资源，点开即可预览。',zht='與本篇主題相近的資源，點開即可預覽。',en='Nearby resources on this topic. Open a card to preview.',ja='この記事に近いリソースです。カードを開くとプレビューできます。',ko='이 글과 가까운 리소스입니다. 카드를 열면 미리볼 수 있습니다.',ms='Sumber berdekatan dengan topik ini. Buka kad untuk pratonton.',vi='Tài nguyên gần với chủ đề bài viết. Mở thẻ để xem trước.',fr='Ressources proches de ce sujet. Ouvrez une carte pour l’aperçu.',es='Recursos cercanos a este tema. Abre una tarjeta para previsualizar.',de='Ressourcen zum Thema dieses Artikels. Öffnen Sie eine Karte für die Vorschau.'),
+      'kb_open_library':dict(zh='打开资源库',zht='打開資源庫',en='Open the resource library',ja='リソースライブラリを開く',ko='리소스 라이브러리 열기',ms='Buka pustaka sumber',vi='Mở thư viện tài nguyên',fr='Ouvrir la bibliothèque de ressources',es='Abrir la biblioteca de recursos',de='Ressourcenbibliothek öffnen')})
     css = """<style>.kbs{display:flex;gap:8px;align-items:center;padding:12px 14px;border-radius:14px;background:var(--surf);border:1px solid var(--line2);margin:6px 0 10px}.kbs input{flex:1;font:inherit;font-size:16px;border:0;background:none;color:var(--ink);outline:none}
 .chips{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 14px}.chips button{font:500 12.5px var(--sans);color:var(--ink2);background:var(--surf);border:1px solid var(--line);border-radius:99px;padding:5px 11px;cursor:pointer}.chips button.on{color:var(--bg);background:var(--ink);border-color:var(--ink)}
 .res{display:grid;gap:10px;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));padding-bottom:30px}.r{display:flex;flex-direction:column;gap:6px;padding:14px 16px;border-radius:14px;background:var(--surf);border:1px solid var(--line);text-decoration:none}.r:hover{border-color:var(--acc)}
@@ -87,8 +292,16 @@ def build(g):
         else: postlink = ''
         note = ''.join(f'<p class="kbn" data-l="{c}">{E(U["kb_en"][k])}</p>' for c,_,k in g['LANGS'] if U['kb_en'][k])
         ld = {'@context':'https://schema.org','@type':'TechArticle','headline':e['title'],'description':e['summary'],'url':e['url'],'dateModified':UPD[:10],'isPartOf':{'@type':'CollectionPage','name':'UI Hub encyclopedia','url':BASE+'kb/'},'encoding':{'@type':'MediaObject','contentUrl':e['raw'],'encodingFormat':'text/markdown'}}
-        w(p+'/index.html', head(f"{e['title']} · UI Hub encyclopedia", e['summary'][:160] or e['title'], p+'/', ld, '../../../') + css + copyjs + f"""<body>{topbar('../../../','kb')}<article class="md"><p class="meta"><a href="../../">← {ml('kb')}</a> · {ml('ty_'+e['type'])} · {' · '.join(E(t) for t in e['tags'])}</p>
-{h1}<div class="acts kba">{postlink}<a class="btn" href="../{e['slug']}.md">{ml('kb_raw')}</a><button class="btn" type="button" onclick="fetch('../{e['slug']}.md').then(r=>r.text()).then(t=>cpx(t,this))">{ml('kb_copy')}</button></div>{note}{rest}</article>{foot('../../../')}{SCRIPT}</body></html>""")
+        is_note = e['type']=='note'
+        related = related_section(e) if is_note else ''
+        page = head(f"{e['title']} · UI Hub encyclopedia", e['summary'][:160] or e['title'], p+'/', ld, '../../../')
+        page_css = css
+        if is_note:
+            page = page.replace('<style>', '<link rel="stylesheet" href="../../../styles.css?v=15"><link rel="stylesheet" href="../../../kb-related.css?v=3"><style>', 1)
+            page_css = css.replace('</style>', 'body{padding-bottom:0}article.md a{text-decoration:underline}</style>', 1)
+        page += page_css + copyjs + f"""<body>{topbar('../../../','kb')}<article class="md"><p class="meta"><a href="../../">← {ml('kb')}</a> · {ml('ty_'+e['type'])} · {' · '.join(E(t) for t in e['tags'])}</p>
+{h1}<div class="acts kba">{postlink}<a class="btn" href="../{e['slug']}.md">{ml('kb_raw')}</a><button class="btn" type="button" onclick="fetch('../{e['slug']}.md').then(r=>r.text()).then(t=>cpx(t,this))">{ml('kb_copy')}</button></div>{note}{rest}{related}</article>{foot('../../../')}{SCRIPT}{note_sheet_and_loader() if is_note else ''}</body></html>"""
+        w(p+'/index.html', page)
     # api
     kbj = [{k:e.get(k) for k in ('type','slug','title','summary','tags','url','raw','license','upstream','md')} for e in entries]
     w('api/kb.json', json.dumps({'updated':UPD,'count':len(kbj),'types':['skill','spec','note'],'entries':kbj}, ensure_ascii=False))
