@@ -1,6 +1,6 @@
 # UI Hub
 
-> Curated, multilingual directory of 5236 public UI resources (component libraries, component style demos, effects, design systems, design skills for AI agents) plus original blog analysis of AI design techniques. Data updated 2026-11-27 10:05 UTC.
+> Curated, multilingual directory of 5241 public UI resources (component libraries, component style demos, effects, design systems, design skills for AI agents) plus original blog analysis of AI design techniques. Data updated 2026-11-27 22:17 UTC.
 
 Use the JSON endpoints, not the SPA, when acting as an agent. Every entry links to its original site; licenses belong to the original authors.
 
@@ -147,11 +147,11 @@ Use the JSON endpoints, not the SPA, when acting as an agent. Every entry links 
 - [visx](https://airbnb.io/visx/): Airbnb's low-level visualization components
 
 ## FAQ
-- **What is UI Hub?** A free, curated directory of 5236 public UI resources: 260 component libraries, 1989 component style demos with light/dark screenshots, 73 design skills for AI agents, plus effects, templates, specs and tutorials. It links to original sites and never hosts paid source code.
+- **What is UI Hub?** A free, curated directory of 5241 public UI resources: 260 component libraries, 1989 component style demos with light/dark screenshots, 73 design skills for AI agents, plus effects, templates, specs and tutorials. It links to original sites and never hosts paid source code.
 - **How do I find a component in a given style?** Load https://ui.incidental.site/api/resources.json and filter by ct (component kind, e.g. "dialog") and vs (visual style, e.g. "minimal" or "motion"). type="style" entries are concrete component demos with a libName and page URL; type="library" entries are whole libraries with install info on the site.
 - **Which skills should an agent use for good UI?** One direction skill (frontend-design or taste-skill), emil-design-eng for motion and interaction polish, then impeccable, baseline-ui, web-design-guidelines and accessibility as an audit pass. See https://ui.incidental.site/api/skills.json.
 - **Can I copy the code?** Open-source libraries can be used under their own licenses (MIT, Apache-2.0 etc.); the card shows the original link. Paid tiers (marked paid/freemium) must be bought from the original vendor.
-- **How often is it updated?** Daily via a GitHub Actions job that adds new UI repositories and tools from GitHub, awesome-shadcn-ui and Hacker News. Nothing is deleted. Last update: 2026-11-27 10:05 UTC.
+- **How often is it updated?** Daily via a GitHub Actions job that adds new UI repositories and tools from GitHub, awesome-shadcn-ui and Hacker News. Nothing is deleted. Last update: 2026-11-27 22:17 UTC.
 
 
 # Blog posts (full text, English)
@@ -6438,6 +6438,11 @@ Get Hyped. Get Noticed. Get Results.
 - Stock Gift Capsule | inspiration | https://x.com/builtbysasha/status/2126045409982177657 | Mobile app concept where a 3D glass capsule fills with branded stock coins one by one, then seals into a gift card revealing the total value and unlock date.
 - Woven Micrographics | inspiration | https://x.com/kraigdesigns/status/2125922810145235218 | A series of small graphic design objects for Woven, mixing barcodes, monospaced labels, and vivid painted textures into stamp-like compositions.
 - Bending Nav Indicator | inspiration | https://x.com/keviduk/status/2125963533821067730 | A sidebar table-of-contents component where a blue line bends outward into a curved bracket to mark the active section as you navigate between items.
+- Portfolio Timeline with Previews | inspiration | https://x.com/brinjalmafia/status/2120192179184476178 | A horizontal portfolio timeline where hovering project nodes reveals photo preview cards inline, with selected entries highlighted in blue against a minimal whi
+- BlendModeMultiply Poster Series | inspiration | https://x.com/brinjalmafia/status/2122005321904431401 | A ten-piece showcase of experimental graphic posters mixing distressed photography, dense system typography, duotone treatments, and maximalist collage across d
+- Claimed Waitlist Landing Page | inspiration | https://x.com/DenisJeliazkov/status/2123336005327663342 | Waitlist landing page for Claimed, a travel memory app, showing user pins traversing a 3D rendered city map as a camera slowly pans across the scene.
+- Agentic Toast Notifications | inspiration | https://x.com/pitus_/status/2125619571705196849 | Animated toast notification components for agentic developer events, each with a custom mini data-viz icon that fills or animates to reflect CI status.
+- .solutions Website Portfolio | inspiration | https://x.com/iamerrormade/status/2126280581004587412 | A fashion e-commerce site shown inside a portfolio, featuring a circular grid catalog of streetwear items with smooth scroll and zoom transitions between views.
 
 # Component style demos: 1989 entries, see api/resources.json (type=style)
 
