@@ -90,7 +90,7 @@
    NOTE: syntax-check inline scripts before pushing (python3 scripts/check_inline_js.py) — a parse error here leaves the whole page without data. */
 (function(){var V=window.__uhV=/*UHV*/{"first":"459dedee4a","core":"d4fc1382de","detail":"3a30ece2db","i18n":"17c96332ef","ctx":"dd79451a44","cts":"accordion,alert,avatar,background,badge,breadcrumb,button,card,carousel,chart,chat,checkbox,color,data,date,dialog,dnd,editor,empty,flow,form,icon,input,list,loader,menu,mobile,nav,pagination,pricing,progress,rating,select,slider,steps,switch,table,tabs,threed,timeline,toast,tooltip,tree,upload","media":"8b1b9be901","legal":"0b47e5a9ce","notes":"a1ceba7a25","en":"674ce65ec3","orig":"993aed1845"}/*/UHV*/;function vu(f,k){return f+'?h='+(V[k]||'0')}
 var EN=[vu('notes.js','notes'),vu('names_en.js','en')],L=window.__uhL||'en';
-var q=[vu('split/first-'+L+'.js','first'),vu('split/i18n-'+L+'.js','i18n'),'app.js?v=26'];
+var q=[vu('split/first-'+L+'.js','first'),vu('split/i18n-'+L+'.js','i18n'),'app.js?v=27'];
 /* perf 2026-10-26: ?ct=<kind> deep link: also load that kind's small split/ct-<kind>.js so the filtered grid renders without core.js */
 (function(){var c=(location.search.match(/[?&]ct=([\w-]+)/)||[])[1];if(c&&(','+(V.cts||'')+',').indexOf(','+c+',')>-1)q.splice(2,0,vu('split/ct-'+c+'.js','ctx'))})();
 function add(u,cb){var e=document.createElement('script');e.src=u;e.async=false;if(cb)e.onload=e.onerror=cb;document.body.appendChild(e)}
